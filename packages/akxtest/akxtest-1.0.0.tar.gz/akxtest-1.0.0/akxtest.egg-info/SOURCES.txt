@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+akxtest/__init__.py
+akxtest/akxtest.py
+akxtest.egg-info/PKG-INFO
+akxtest.egg-info/SOURCES.txt
+akxtest.egg-info/dependency_links.txt
+akxtest.egg-info/entry_points.txt
+akxtest.egg-info/top_level.txt

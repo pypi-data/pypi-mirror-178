@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: akxtest
+Version: 1.0.0
+Summary: Python project.
+Home-page: https://github.com/ITSN0B1T4
+Author: ITSN0B1T4
+Author-email: toxinum.org@gmail.com
+License: MIT
+Keywords: PYTHON PROJECT
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Console
+Requires-Python: >=3.9.5
+Description-Content-Type: text/markdown
+
+akxtest
