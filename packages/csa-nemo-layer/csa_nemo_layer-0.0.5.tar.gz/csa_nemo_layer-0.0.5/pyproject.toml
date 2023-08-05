@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "csa_nemo_layer"
+version = "0.0.5"
+authors = [
+  { name="Andrii Struk", email="andrii@struk.net.ua" },
+]
+description = "Shared libraries for CSA Lambdas"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies=['aioboto3', 'simplejson', 'aws_lambda_powertools']
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/struk77/csa_nemo_layer"
+"Bug Tracker" = "https://github.com/struk77/csa_nemo_layer/issues"
