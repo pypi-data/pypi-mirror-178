@@ -1,0 +1,12 @@
+aws_assume_role/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aws_assume_role/accounts.py,sha256=BPh2djFRGAWTyV2N4ut0eSSCnTDjhZVR2VTtQ6QcFew,3870
+aws_assume_role/aws-assume-role.py,sha256=wlrE87RP7FKxwELnE7IdKCptMAtB9Sm7-sBpegvtgd4,39267
+aws_assume_role/aws_assume_role.py,sha256=wlrE87RP7FKxwELnE7IdKCptMAtB9Sm7-sBpegvtgd4,39267
+aws_assume_role/version.py,sha256=BWDU6UEdIYzgzbkt0gPTgFzBf2hVNseZMH9DUIhbFsc,47
+aws_assume_role/writer.py,sha256=H-JGfIFsD0crziLSzghxd8M92BcQZMe19qr3CC5cu2w,8978
+onelogin_aws_assume_role-1.10.1.dist-info/LICENSE,sha256=R1V06KpTLasgYH9fhcgiY9nQLcmYGnDNUiT-8g4YxGQ,1062
+onelogin_aws_assume_role-1.10.1.dist-info/METADATA,sha256=jOSBQ6PRxOTcuXic4VZVuA6rTr5DoZ-wRxpXrmJLyVw,962
+onelogin_aws_assume_role-1.10.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+onelogin_aws_assume_role-1.10.1.dist-info/entry_points.txt,sha256=AO5KA82RhPzo7SMNK6KotuJ6nhEfPvRsiqmKihf4S2c,82
+onelogin_aws_assume_role-1.10.1.dist-info/top_level.txt,sha256=rdiNAtwuAiVzGNpGPeXMAkVK97dXlb8jix4K1udDj7g,16
+onelogin_aws_assume_role-1.10.1.dist-info/RECORD,,
