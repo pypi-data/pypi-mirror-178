@@ -1,0 +1,3 @@
+[console_scripts]
+galatasaray=galatasaray.cli:main
+
