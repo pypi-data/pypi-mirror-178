@@ -1,0 +1,7 @@
+setup.py
+gparms.egg-info/PKG-INFO
+gparms.egg-info/SOURCES.txt
+gparms.egg-info/dependency_links.txt
+gparms.egg-info/top_level.txt
+libname/__init__.py
+libname/gparms.py
