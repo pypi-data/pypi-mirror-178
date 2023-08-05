@@ -1,0 +1,11 @@
+configparser
+console
+fire
+h5py
+inotify
+pylatex
+pympler
+pytermgui
+root_numpy
+tables
+tabulate
