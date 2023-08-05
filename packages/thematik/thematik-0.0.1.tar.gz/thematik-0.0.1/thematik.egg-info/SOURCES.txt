@@ -1,0 +1,7 @@
+README.md
+setup.py
+thematik.py
+thematik.egg-info/PKG-INFO
+thematik.egg-info/SOURCES.txt
+thematik.egg-info/dependency_links.txt
+thematik.egg-info/top_level.txt
