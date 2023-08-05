@@ -1,0 +1,3 @@
+[console_scripts]
+randname = randname.__main__:main
+
