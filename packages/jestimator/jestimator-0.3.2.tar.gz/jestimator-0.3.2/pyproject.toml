@@ -1,0 +1,51 @@
+[project]
+name = "jestimator"
+description = "Implementation of the Amos optimizer from the JEstimator lib."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {file = "LICENSE"}
+authors = [{name = "jestimator authors", email="no-reply@google.com"}]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "License :: OSI Approved :: Apache Software License",
+    "Intended Audience :: Science/Research",
+]
+keywords = []
+
+# pip dependencies of the project
+dependencies = [
+    "flax",
+]
+
+# This is set automatically by flit using `jestimator.__version__`
+dynamic = ["version"]
+
+[project.urls]
+homepage = "https://github.com/google-research/jestimator"
+repository = "https://github.com/google-research/jestimator"
+# Other: `documentation`, `changelog`
+
+[project.optional-dependencies]
+# Installed through `pip install .[test]`
+test = [
+    "absl-py",
+]
+
+[build-system]
+requires = ["flit_core >=3.5,<4"]
+build-backend = "flit_core.buildapi"
+
+# Only publish the Amos optimizer to pip.
+[tool.flit.sdist]
+exclude = [
+    "jestimator/amos_helper_test.py",
+    "jestimator/amos_test.py",
+    "jestimator/checkpoint_utils.py",
+    "jestimator/data/",
+    "jestimator/data_utils.py",
+    "jestimator/estimator.py",
+    "jestimator/modeling.py",
+    "jestimator/models/",
+    "jestimator/states.py",
+]
