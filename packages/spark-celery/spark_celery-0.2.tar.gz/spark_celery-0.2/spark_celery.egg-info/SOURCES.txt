@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+spark_celery/__init__.py
+spark_celery/app.py
+spark_celery/cache.py
+spark_celery/loader.py
+spark_celery/main.py
+spark_celery/task.py
+spark_celery.egg-info/PKG-INFO
+spark_celery.egg-info/SOURCES.txt
+spark_celery.egg-info/dependency_links.txt
+spark_celery.egg-info/requires.txt
+spark_celery.egg-info/top_level.txt
