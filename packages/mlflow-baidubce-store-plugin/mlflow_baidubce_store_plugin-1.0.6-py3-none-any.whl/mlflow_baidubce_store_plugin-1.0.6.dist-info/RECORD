@@ -1,0 +1,8 @@
+mlflow_baidubce_store_plugin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mlflow_baidubce_store_plugin/bce_bos_artifact_repo.py,sha256=vI4zunUG6bKTlyXZALpZfOJM5GsoWCVmmHFMfPtBGpQ,4452
+mlflow_baidubce_store_plugin-1.0.6.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+mlflow_baidubce_store_plugin-1.0.6.dist-info/METADATA,sha256=IvG9x3o1xqmiQ6JhVEG9fdv1UMG1vrCxS9Fem63jDLs,1374
+mlflow_baidubce_store_plugin-1.0.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+mlflow_baidubce_store_plugin-1.0.6.dist-info/entry_points.txt,sha256=ilNXpePkWqH3fXqJTzTlQkN6yTS69HqywNkwYX8nhI8,111
+mlflow_baidubce_store_plugin-1.0.6.dist-info/top_level.txt,sha256=09Qvozz-jPQEZKXdMtwZ5f9v0dNtEin5oqfLdVQ9GcA,29
+mlflow_baidubce_store_plugin-1.0.6.dist-info/RECORD,,
