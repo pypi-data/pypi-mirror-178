@@ -1,0 +1,4 @@
+numpy
+numba
+semantic_version
+deprecated
