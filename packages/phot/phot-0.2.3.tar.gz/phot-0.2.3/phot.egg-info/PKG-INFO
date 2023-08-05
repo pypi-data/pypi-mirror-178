@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: phot
+Version: 0.2.3
+Summary: A Python library for the simulation of optical fiber transmission.
+Home-page: https://github.com/phot-lab/pyphot
+Author: Chunyu Li
+Author-email: cyli0212@gmail.com
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# PyPhot
+
+A Python library for the simulation of optical fiber transmission, characterized by the ability of running on both CPU and GPU to gain powerful acceleration.
+
+## Quick start
+
+```shell
+# Install PyPhot library
+pip3 install phot
+
+# Run example
+python3 example.py
+```
+
+The Python file **example.py** under the root directory showing how to use our API (for PyPhotEngine). Please read it carefully.
+
+## Development Document
+
+For developers, check [this](docs/dev-doc.md).
