@@ -1,0 +1,3 @@
+[console_scripts]
+ascii-minesweeper = minesweeper.play:main
+minesweeper = minesweeper.play:main
