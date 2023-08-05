@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: vistats
+Version: 0.1.3
+Summary: package of visualization for statistical tests.
+Home-page: https://github.com/takato86/vistats
+Author: takato86
+Author-email: okudo@nii.ac.jp
+Requires-Python: >=3.9
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: ipykernel (>=6.17.1,<7.0.0)
+Requires-Dist: matplotlib (>=3.6.2,<4.0.0)
+Requires-Dist: numpy (>=1.23.5,<2.0.0)
+Requires-Dist: pandas (>=1.5.2,<2.0.0)
+Project-URL: Repository, https://github.com/takato86/vistats
+Description-Content-Type: text/markdown
+
+# vistats
+Visualization for statistical tests.
+
+## Background
+We would like to 
+write a line and asterisks between bars when we get a statistically significant difference by a statistical test. However, there is no appropriate package for visualizing them with 'matplotlib'. This package provides them.
+
+## Installation
+
+```
+pip install vistats
+```
+
+## Usage
+Please see [here](https://github.com/takato86/vistats/blob/main/examples/barplot_example.ipynb)
+
