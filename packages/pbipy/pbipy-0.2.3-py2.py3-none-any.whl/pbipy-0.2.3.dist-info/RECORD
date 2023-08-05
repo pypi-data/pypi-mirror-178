@@ -1,0 +1,15 @@
+pbipy/__init__.py,sha256=AUs0qrhUEYRtHFM1z7pnPxZKz8tAOvFKQ1qVbMGKYW0,29
+pbipy/__version__.py,sha256=QADkJ32MDmhFm-y66ZKwEaU44dHNpiGJEjL3EqNu3Mk,314
+pbipy/models.py,sha256=ctju7QdKouwK4STsATC4ggKG1jvskU4TUAC6V1BUwP8,5252
+pbipy/powerbi.py,sha256=OMs2s63loFmtbyV4I25AgepNKMpS-ihlimNjMBDJKwU,10082
+pbipy/utils.py,sha256=ARbrTJJBtMKs9nVGvMjKaBwPIl_bkL9ZPnO7Y55ensA,1059
+pybi/__init__.py,sha256=AUs0qrhUEYRtHFM1z7pnPxZKz8tAOvFKQ1qVbMGKYW0,29
+pybi/__version__.py,sha256=A_jitTAkp1Q0rE0lbaT9rNqZWxdSi_5FeqiVwraXhh8,312
+pybi/models.py,sha256=EaMq4SUQ5jm00hKpE4DvRYs4VfLSiX0aIQL4gxmqrkA,5253
+pybi/powerbi.py,sha256=LBu2uAn1rHrxkS5gazQAHqL5TmgneAx7mw3umrEXK3E,9307
+pybi/utils.py,sha256=ARbrTJJBtMKs9nVGvMjKaBwPIl_bkL9ZPnO7Y55ensA,1059
+pbipy-0.2.3.dist-info/LICENSE,sha256=mIss5rXpPuoTTN6McpTgDcUOXnmOl5lopcYvmLMI9oY,11523
+pbipy-0.2.3.dist-info/METADATA,sha256=N_zAFzWTL5eIHuiZp_s7xKMLZMXp96NUVhCZv0Xnhzg,5864
+pbipy-0.2.3.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+pbipy-0.2.3.dist-info/top_level.txt,sha256=NI5TmrUhArskoX1UYMrvbOHMWpnMXED3nEYyQpbrwFk,6
+pbipy-0.2.3.dist-info/RECORD,,
