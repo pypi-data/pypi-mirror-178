@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: auto-email-parse
+Version: 0.0.2
+Summary: A small example package for parse email
+Home-page: https://github.com/Web3-Base-Installation/auto-email-parse.git
+Author: Xsu
+Author-email: bbworktime@gmail.com
+License: UNKNOWN
+Description: # auto-email-parse
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
