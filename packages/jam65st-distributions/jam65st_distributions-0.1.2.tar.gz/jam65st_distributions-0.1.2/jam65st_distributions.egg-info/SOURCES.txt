@@ -1,0 +1,12 @@
+README.md
+setup.py
+jam65st_distributions/BinomialDistribution.py
+jam65st_distributions/GaussianDistribution.py
+jam65st_distributions/GeneralDistribution.py
+jam65st_distributions/__init__.py
+jam65st_distributions.egg-info/PKG-INFO
+jam65st_distributions.egg-info/SOURCES.txt
+jam65st_distributions.egg-info/dependency_links.txt
+jam65st_distributions.egg-info/not-zip-safe
+jam65st_distributions.egg-info/top_level.txt
+tests/test.py

@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: jam65st_distributions
+Version: 0.1.2
+Summary: Gaussian distributions
+Author: Jaime Alexander Mendez Medina
+Author-email: jam65st@gmail.com
+License: MIT
+Keywords: udacity AWS machine learning foundations
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console :: Curses
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Education :: Testing
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Utilities
+
+# distributions
+
+This package was made in the fulfillment of the requirements of the Udacity program: AWS Machine Learning Foundations. It is exposed in section: Introduction to Object-Oriented Programing (part 28)
+
+The package covers the usage of a Gaussian and a Binomial Class, through a general distribution common to both classes. These classes are used to define Probabilities.
+
+The code here is my implementation according to my developer experience. 
+
+Enjoy it.
+
+## Files
+
+### distribution
+
+#### General Distribution
+#### Binomial Distribution
+#### Gaussian Distribution
+#### __init__
+
+### test
+
+## Installation
+It is simple such as:
+
+``pip install jam65st_distributions``
+
