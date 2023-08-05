@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: cebsyldec_package_EEMBERDA
+Version: 0.0.1
+Summary: Decodes a Cebuano word into syllables
+Project-URL: Homepage, https://github.com/eemberda/Cebuano-Syllable-Decoder
+Project-URL: Bug Tracker, https://github.com/eemberda/Cebuano-Syllable-Decoder/issues
+Author-email: Eric John Emberda <eric.emberda@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Cebuano-Syllable-Decoder
+Cebuano Syllable Decoder
+
+## Installation
+* `pip install cebsyldec` or
+* inside the folder run `python setup.py install`
+
+## Requirements
+* `python>=2.7`
+
+## Functions
+* get_syllables(word)
+   - Accepts a Cebuano word and returns the syllables of the word
+   - Default Output: List of syllables
+   - Ex. get_syllables("nangaon")
+      ```
+        ['na', 'nga', 'on']
+      ```
+* get_syllable_sequence(word)
+   - Accepts a Cebuano word and returns the syllable sequence of the word
+   - Default Output: Syllable sequence of the word
+   - Ex. get_syllable_sequence("nangaon")
+      ```
+        'CV-CV-VC'
+      ```   
+## How to Use
+```
+from cebsyldec import syllabledecoder
+
+syllabledecoder.get_syllables("nangaon")
+
+Output: 
+   ['na', 'nga', 'on']
+
+
+syllabledecoder.get_syllable_sequence("nangaon")
+
+Output:
+   'CV + V + CVC'
+```
+
+## References
+
+* https://www.youtube.com/watch?v=ZULS0evRLHg
