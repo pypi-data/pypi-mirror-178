@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: leafmap-lite
+Version: 0.0.5
+Summary: Leafmap for JupyterLite
+Home-page: https://github.com/giswqs/leafmap-lite
+Author: Qiusheng Wu
+Author-email: giswqs@gmail.com
+License: MIT license
+Keywords: leafmap_lite
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: bokeh
+Requires-Dist: bqplot
+Requires-Dist: colour
+Requires-Dist: folium (>=0.11.0)
+Requires-Dist: geojson
+Requires-Dist: ipyevents
+Requires-Dist: ipyfilechooser (>=0.6.0)
+Requires-Dist: ipyleaflet (>=0.17.0)
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pyshp (>=2.1.3)
+Requires-Dist: pystac-client
+Requires-Dist: python-box
+Requires-Dist: scooby
+Requires-Dist: whiteboxgui (>=0.6.0)
+Requires-Dist: xyzservices
+
+# leafmap-lite
+
+
+[![image](https://img.shields.io/pypi/v/leafmap-lite.svg)](https://pypi.python.org/pypi/leafmap-lite)
+[![image](https://img.shields.io/conda/vn/conda-forge/leafmap-lite.svg)](https://anaconda.org/conda-forge/leafmap-lite)
+
+
+**Leafmap for JupyterLite**
+
+
+-   Free software: MIT license
+-   Documentation: https://giswqs.github.io/leafmap-lite
+    
+
+## Features
+
+-   TODO
+
+## Credits
+
+This package was created with [Cookiecutter](https://github.com/cookiecutter/cookiecutter) and the [giswqs/pypackage](https://github.com/giswqs/pypackage) project template.
