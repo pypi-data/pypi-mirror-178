@@ -1,0 +1,9 @@
+
+[build]
+tox==3.24.3
+build
+twine
+pylint
+
+[numpy]
+numpy>=1.19.5
