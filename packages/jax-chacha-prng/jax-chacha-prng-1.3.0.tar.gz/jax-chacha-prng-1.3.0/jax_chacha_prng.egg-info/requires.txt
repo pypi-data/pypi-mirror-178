@@ -1,0 +1,10 @@
+numpy<2,>=1.16
+deprecation<3
+jax<=2.0.0,>=0.2.12
+
+[compatible-jax]
+jax<=0.3.25,>=0.2.12
+
+[tests]
+jax[minimum-jaxlib]
+pytest
