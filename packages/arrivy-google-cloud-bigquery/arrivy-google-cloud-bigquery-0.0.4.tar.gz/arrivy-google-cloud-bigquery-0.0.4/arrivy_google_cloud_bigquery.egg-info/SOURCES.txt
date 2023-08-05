@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+arrivy_google_cloud_bigquery.egg-info/PKG-INFO
+arrivy_google_cloud_bigquery.egg-info/SOURCES.txt
+arrivy_google_cloud_bigquery.egg-info/dependency_links.txt
+arrivy_google_cloud_bigquery.egg-info/not-zip-safe
+arrivy_google_cloud_bigquery.egg-info/requires.txt
+arrivy_google_cloud_bigquery.egg-info/top_level.txt
