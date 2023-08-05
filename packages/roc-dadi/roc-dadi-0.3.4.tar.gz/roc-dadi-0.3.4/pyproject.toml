@@ -1,0 +1,61 @@
+[tool]
+
+[tool.black]
+skip-string-normalization = true
+line-length = 79
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.poetry]
+name = "roc-dadi"
+version = "0.3.4"
+readme = "README.rst"
+license = "CeCILL-C"
+repository = "https://gitlab.obspm.fr/ROC/Pipelines/Plugins/DADI"
+description = "RPW DAta DIspatcher (DADI): Plugin to handle data files read/write by the pipeline"
+authors = ["Xavier Bonnin <xavier.bonnin@obspm.fr>", "ROC Team <roc.support@sympa.obspm.fr>"]
+exclude = ["bump_descriptor.py"]
+
+# handle namespace with poetry
+packages = [
+    { include = "roc" }
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4"
+maser-tools = ">=0.1.3"
+xmltodict = "=0.13.0"
+pandas = ">=1.1.3"
+psycopg2 = "^2.8.4"
+SQLAlchemy = "^1.3"
+h5py = "^3.7"
+spacepy = "^0.4"
+"poppy-core" = {version = "*" }
+"poppy-pop" = {version = "*" }
+"roc-dingo" =  {version="^1.0"}
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+pytest-cov = "^2.10.1"
+pytest-timeout = "^1.4"
+pre-commit = "^2.8"
+toml = "*"
+PyYaml = "*"
+
+[build-system]
+requires = [ "setuptools==54", "wheel", "poetry==1.1.8", "poetry-core==1.0.4", "numpy!=1.19.5"]
+build-backend = "poetry.core.masonry.api"
+
+
