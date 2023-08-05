@@ -1,0 +1,10 @@
+molgenis/api_support.py,sha256=A-LrQdJdGTc5AM3upnJSpny7pWAdHrlKMLMznwa1fRg,1516
+molgenis/client.py,sha256=NhR6lQDCkAGCMGQJm5bl84CWf8UZ7k2m0drOcGRoTNI,20440
+molgenis/errors.py,sha256=x8XhclFxdQeBLJCnm1Kgsh4FkoIrwEwWvmUYnzU03Ho,825
+molgenis/query_utils.py,sha256=0QVJPtT0DyGPOqfcrfXI3VEZ-ZRnQ-m870o8fNhKPb8,2816
+molgenis/utils.py,sha256=4HWpKG6MqW1Y_zXbEbIYtU1DQF1KVnjTE9Nvn1W0T9w,1390
+molgenis_py_client-2.4.1.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+molgenis_py_client-2.4.1.dist-info/METADATA,sha256=gJfRV8xDdjsInCX6ygWRLm2uj2PYkHrMALIpE35CNgA,308
+molgenis_py_client-2.4.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+molgenis_py_client-2.4.1.dist-info/top_level.txt,sha256=00y7uxi_o6CjCJuuXahC2u6D-Jxc40vMWkZIW0wxJpE,9
+molgenis_py_client-2.4.1.dist-info/RECORD,,
