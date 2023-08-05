@@ -1,0 +1,5 @@
+graph_force-0.2.0.dist-info/METADATA,sha256=CJMoB_XNKPlRUS528tVmH6VMjcUzk7WV9_8YT8efIIs,3169
+graph_force-0.2.0.dist-info/WHEEL,sha256=AUh_RARtm8VuAw2yBwammGqc0WyhNcVDbfDp9gwrW80,109
+graph_force/__init__.py,sha256=yNhMLxLukJfACxSeMi7fIPTe8Mkz1zP2xj7XJcXeWsM,127
+graph_force/graph_force.cpython-311-x86_64-linux-gnu.so,sha256=6wKleQ3OZYKFPactg8kfKU_GvIk4yF92-JNgH12DNn8,485816
+graph_force-0.2.0.dist-info/RECORD,,
