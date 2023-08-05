@@ -1,0 +1,3 @@
+[console_scripts]
+orcbench=orcbench.__main__:main
+
