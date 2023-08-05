@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: wp-client-aio
+Version: 1.0.4
+Summary: 
+Author: Maxim Yurevich
+Author-email: maxim.yurewitch@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: aiodns (==3.0.0)
+Requires-Dist: aiohttp (==3.8.1)
+Requires-Dist: aiosignal (==1.2.0)
+Requires-Dist: astroid (>=2.12.13,<3.0.0)
+Requires-Dist: async-timeout (==4.0.1)
+Requires-Dist: attrs (==21.2.0)
+Requires-Dist: brotli (==1.0.9)
+Requires-Dist: cchardet (==2.1.7)
+Requires-Dist: cffi (==1.15.0)
+Requires-Dist: charset-normalizer (==2.0.9)
+Requires-Dist: frozenlist (==1.2.0)
+Requires-Dist: idna (==3.3)
+Requires-Dist: lazy-object-proxy (>=1.8.0,<2.0.0)
+Requires-Dist: multidict (==5.2.0)
+Requires-Dist: platformdirs (==2.4.0)
+Requires-Dist: pycares (==4.1.2)
+Requires-Dist: pycparser (>=2.21,<3.0)
+Requires-Dist: wrapt (>=1.14.1,<2.0.0)
+Requires-Dist: yarl (==1.7.2)
+Description-Content-Type: text/markdown
+
+# wp-client-aio
+
+WordPress REST API Python Client based on aiohttp python library
+
+## Installation
+
+```bash
+pip install wp-client-aio
+```
+
+## Usage
+
+Create new client
+
+```python
+wp_client = WordpressRestApiClient(
+    os.environ.get("URL"),
+    os.environ.get("WP_USER"),
+    os.environ.get("WP_PASS")
+)
+```
+
+
+Call API
+
+```python
+    await asyncio.gather(
+        wp_client.get(client, endpoint = 2),
+        wp_client.delete(client, endpoint = 3),
+        wp_client.get(client),
+        wp_client.post(client,
+            payload =
+                {
+                    "title": "Lorem Ipsum",
+                    "content": "Lorem ipsum sit amet",
+                    "status": "publish"
+                }
+            ),
+
+        wp_client.patch(client, endpoint=4, payload = {
+            "title": "Съешь ещё этих мягких французских булок",
+        }),
+        wp_client.put(client, endpoint=4,
+            payload =
+                {
+                    "title": "съешь ещё этих мягких французских булок",
+                    "content": "Да выпей чаю",
+                    "status": "publish"
+                }
+            ),
+    )
+```
+
