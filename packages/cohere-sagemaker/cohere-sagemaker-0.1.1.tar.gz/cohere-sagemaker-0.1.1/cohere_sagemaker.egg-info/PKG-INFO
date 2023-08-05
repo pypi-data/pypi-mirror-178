@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: cohere-sagemaker
+Version: 0.1.1
+Summary: A Python library for the Cohere endpoints in AWS Sagemaker
+Home-page: https://github.com/cohere-ai/cohere-sagemaker
+Author: Cohere
+Author-email: support@cohere.ai
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Cohere Python SDK (AWS SageMaker)
+
+## Install
+
+```
+pip install cohere-sagemaker
+```
+
+## Usage
+
+```python
+from cohere_sagemaker import Client
+
+client = Client(endpoint_name='my-cohere-endpoint')
+response = client.generate(prompt="Tell me a story about")
+
+print(response.generations[0].text)
+# a time when you had to make a difficult decision. What did you do
+```
