@@ -1,0 +1,2 @@
+[console_scripts]
+secomlint = secomlint.__main__:main
