@@ -1,0 +1,6 @@
+synapse_token_authenticator/__init__.py,sha256=Do5lDA9oWl_kYBjj27NDLcxyj1liGxD9Taj8wkNoU6I,79
+synapse_token_authenticator/token_authenticator.py,sha256=vMgg_GP4nOEEkUJ4nC2MePAQuGxQ0S6whPzTeMa_XP8,6199
+synapse_token_authenticator-0.3.1.dist-info/METADATA,sha256=Pu_vbdP5exaUQdY5vFVtjZw9Fow0hMmYwM5KoCZQi1Q,3713
+synapse_token_authenticator-0.3.1.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+synapse_token_authenticator-0.3.1.dist-info/licenses/LICENSE,sha256=TspYfXtoLPb8BlxNaRkUJuQwX3oIxxEU--ARLdYPgLw,34468
+synapse_token_authenticator-0.3.1.dist-info/RECORD,,
