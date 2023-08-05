@@ -1,0 +1,6 @@
+fastcore
+pandas
+psycopg2
+seaborn
+
+[dev]
