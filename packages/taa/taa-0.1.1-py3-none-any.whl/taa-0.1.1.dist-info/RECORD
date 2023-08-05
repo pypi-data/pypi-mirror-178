@@ -1,0 +1,14 @@
+taa/__init__.py,sha256=UYQZklLnO1SzMpY00tj4JvH_BTRCaj_1gGpHGiVJi-E,120
+taa/cli.py,sha256=S6_seBx9G5dQTJ1ffmYPZ7TW9d1xPW30HQODWlKlWxA,1349
+taa/config.py,sha256=Fn02niJ7fAymMqBJEfdV6YHKhngGgkNFh7A76CnwmQU,3268
+taa/dao.py,sha256=lvBb8svSXERAXuD3M1nHaZik88S1rMuLD-ohy7i1bWA,843
+taa/fixture.py,sha256=E5dpm_ptj6bcYZRzPNB0jRlxjEjjM-VwfBey4GLl88E,2164
+taa/func.py,sha256=UgY_NDDYUp9GmOvL7CL5ARSthhqVLIi4a7_goKgYwPY,11049
+taa/logger.py,sha256=Cbr1NEL_tCMyqZJhv5PZaacSt8_FuzF2i3D14RazG5w,3820
+taa/plugin.py,sha256=At8wQlJXJdxpIeqMgrAnS58S91m98zQCdbp5iqtkNVM,2796
+taa/sample.py,sha256=x504SSvrfhSm5bmbBOySvXD2rE1lgkN1k_ZfCJO3aZs,57682
+taa/scaffold.py,sha256=e8Ce5d9-qIKJHanz9EfXpaIM3d6leq9AYU7cToiKx8o,6039
+taa-0.1.1.dist-info/entry_points.txt,sha256=sJAsPRrb5KQgthrgwULV-92784mCZm-CPdQzYMUk8Dw,70
+taa-0.1.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+taa-0.1.1.dist-info/METADATA,sha256=BcQU_0NCx848JAwvX0GNTkmrgRjaVSZb0mUAmtgctRo,950
+taa-0.1.1.dist-info/RECORD,,

@@ -1,0 +1,6 @@
+[console_scripts]
+taa=taa.cli:main
+
+[pytest11]
+taa=taa.plugin:Plugin
+

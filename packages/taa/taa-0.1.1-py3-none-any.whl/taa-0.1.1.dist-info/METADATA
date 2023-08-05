@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: taa
+Version: 0.1.1
+Summary: 接口自动化工具
+Home-page: https://github.com/xuefeng365/api-autotest.git
+License: MIT
+Author: 雪峰365
+Author-email: 120158568@qq.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: allure-pytest (>=2.12.0,<3.0.0)
+Requires-Dist: colorlog (>=6.7.0,<7.0.0)
+Requires-Dist: pyyaml (>=6.0,<7.0)
+Requires-Dist: sqlalchemy (>=1.4.44,<2.0.0)
+Requires-Dist: texttable (>=1.6.7,<2.0.0)
+Project-URL: Repository, https://github.com/xuefeng365/api-autotest.git
+Description-Content-Type: text/markdown
+
+try-api-auto
+尝试编写接口自动化-脚手架
