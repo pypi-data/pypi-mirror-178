@@ -1,0 +1,9 @@
+README.rst
+setup.cfg
+setup.py
+src/beyondaccuracy.egg-info/PKG-INFO
+src/beyondaccuracy.egg-info/SOURCES.txt
+src/beyondaccuracy.egg-info/dependency_links.txt
+src/beyondaccuracy.egg-info/requires.txt
+src/beyondaccuracy.egg-info/top_level.txt
+src/metrics/__init__.py
