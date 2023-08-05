@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+wp/__init__.py
+wp_connector.egg-info/PKG-INFO
+wp_connector.egg-info/SOURCES.txt
+wp_connector.egg-info/dependency_links.txt
+wp_connector.egg-info/requires.txt
+wp_connector.egg-info/top_level.txt

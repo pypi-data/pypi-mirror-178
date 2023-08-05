@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: wp-connector
+Version: 0.0.1
+Summary: WorldPop Connector to get country border data
+Home-page: https://github.com/Repsay/wp-connector
+Author: Jasper Delahaije
+Author-email: jdelahaije@gmail.com
+License: MIT
+Download-URL: https://github.com/Repsay/wp-connector/releases
+Description: # Wp-connector
+        
+        ![Supported Versions](https://img.shields.io/pypi/pyversions/wp-connector)
+        ![Version](https://img.shields.io/pypi/v/wp-connector?label=package%20version)
+        ![Downloads](https://img.shields.io/pypi/dm/wp-connector)
+        ![Status](https://img.shields.io/pypi/status/wp-connector)
+        
+        Simple donwloader for wp population data.
+        
+        ```python
+        
+        import wp
+        
+        Client = wp.WP()
+        
+        Client.to_pandas("NLD", "ppp_2020")
+        
+        ```
+        
+        ## Installing
+        
+        Wp-connector is available on PyPI:
+        
+        ```console
+        python -m pip install wp-connector
+        ```
+        
+        Wp-connector is build for python 3.8+.
+        
+        ## Features
+        
+        * download raster data from WorldPop Server
+        * format data to pandas dataframe
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Natural Language :: English
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
