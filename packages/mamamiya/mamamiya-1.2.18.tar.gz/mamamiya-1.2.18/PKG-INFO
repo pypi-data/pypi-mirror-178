@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: mamamiya
+Version: 1.2.18
+Summary: A utility for crawling historical and Real-time Quotes data of China stocks
+Home-page: http://tushare.org
+Author: Jimmy Liu
+Author-email: jimmysoa@sina.cn
+License: BSD
+Keywords: Global Financial Data
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: License :: OSI Approved :: BSD License
+License-File: LICENSE
+
+a data api only for test! 
