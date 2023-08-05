@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: lino-shop
+Version: 22.11.0
+Summary: A Lino for managing a webshop
+Home-page: https://gitlab.com/lino-framework/shop
+Author: Rumma & Ko Ltd
+Author-email: info@lino-framework.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Customer Service
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Office/Business
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content :: Content Management System
+License-File: COPYING
+
+
+Lino Shop is a customizable management system for web shops.
+
+- Project homepage: https://gitlab.com/lino-framework/shop
+
+- Documentation:
+  https://lino-framework.gitlab.io/shop/
+
+- For *introductions* and *commercial information* 
+  please see `www.saffre-rumma.net
+  <https://www.saffre-rumma.net>`__.
+
+
+

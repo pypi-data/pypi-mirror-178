@@ -1,0 +1,12 @@
+<h1>{{tostring(obj.obj2href(ar))}}</h1>
+
+{{obj.body_full_preview}}
+
+<p>Category: {{tostring(obj.category.obj2href(ar))}}</p>
+
+
+{% if False %}
+{% for mf in rt.models.albums.UsagesByController.request(obj) %}
+<img src="{{settings.SITE.build_media_url(mf.file.file.name)}}" width="100px"/>
+{% endfor %}
+{% endif %}
