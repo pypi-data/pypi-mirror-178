@@ -1,0 +1,16 @@
+blastoise/__init__.py,sha256=mq8phkyu7ZmjnOJ-4GCk2cQTCr8C0A8WTIqk1ptQDmo,71
+blastoise/fs/__init__.py,sha256=NLcS_AK6-ADUyYz9RPHU_mk7gUYcWubxY-XILjvrhnw,239
+blastoise/fs/exception.py,sha256=YyvnwooV3jgP2rtaguvEVioYDpsVu_-Ij7hH5bp9jHs,141
+blastoise/fs/hierarchy.py,sha256=ooAXdLWR7t97dIO2n0D64peyvcEs98KmHJY0f6lLSnQ,885
+blastoise/fs/local_file_system.py,sha256=M4HKmVPHWlXo13CBuQZ6c9u_1WjQWfVbVDXVuH7mkFA,4412
+blastoise/parquet/__init__.py,sha256=G65YV687VM75hXJdPXOwcugsh_0tnAKiNDCHHwGNxeU,184
+blastoise/parquet/exception.py,sha256=M2QlEp5hKXp241qSlZiFPY7524lotBxg-AoYk7UzVrk,150
+blastoise/parquet/loader.py,sha256=3Nxf6A6-3GdrRe3WcX_h7daWEhBYmq5kRuVvxSVsHL8,1782
+blastoise/util/__init__.py,sha256=kosdijLudQtEULEAQhNq8EwU2eP8ExX01OhwFTsKyvA,79
+blastoise/util/path.py,sha256=vldrl9_EHUpxYkEO2O_KNZg30DJNwIkfkUjRVDvgeDQ,319
+blastoise-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+blastoise-0.0.1.dist-info/METADATA,sha256=urJ-Gr6X9lxBSjAFli9UvFeKqLx90k0gYXQjqGSlDmA,766
+blastoise-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+blastoise-0.0.1.dist-info/top_level.txt,sha256=AcOMyv3AWrqSvfXa4srsbn4U-Oeim5vjAGTrReSgLbY,10
+blastoise-0.0.1.dist-info/zip-safe,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+blastoise-0.0.1.dist-info/RECORD,,
