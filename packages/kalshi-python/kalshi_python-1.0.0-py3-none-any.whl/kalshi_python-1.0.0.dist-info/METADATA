@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: kalshi-python
+Version: 1.0.0
+Summary: Kalshi Trade API
+Home-page: UNKNOWN
+Author-email: support@kalshi.com
+License: UNKNOWN
+Keywords: Swagger,Kalshi Trade API
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: urllib3 (>=1.15)
+Requires-Dist: six (>=1.10)
+Requires-Dist: certifi
+Requires-Dist: python-dateutil
+
+    #kalshi-python
+    
+    This library is the official python SDK for algorithmic trading on [Kalshi](https://kalshi.com). 
+    
+    This SDK is powered by Kalshi's trading rest api v2. The documentation for the underlying api [can be found here](https://trading-api.readme.io). 
+    
+    By using this SDK, you agree to Kalshi's Developer Agreement (https://kalshi.com/developer-agreement).
+    
+
