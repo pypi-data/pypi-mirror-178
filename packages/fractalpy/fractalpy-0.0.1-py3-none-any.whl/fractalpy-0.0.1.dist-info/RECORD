@@ -1,0 +1,16 @@
+fractalpy/__init__.py,sha256=Ne1Z6yaD32xcymrGSY9x_PoPwB1y_PsmkEW_bLE9ocs,167
+fractalpy/__main__.py,sha256=aV1k0Hq2WsO6h1jq3wbE1-GFCKdVJkM7XtzMfb6Ropc,177
+fractalpy/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fractalpy/cli/cli_main.py,sha256=xFCmGDeGtSZcfteQZcsY3KZ5rBZWhWfctOPZTZ0nT8w,1018
+fractalpy/cli/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fractalpy/cli/commands/cmd_fractal_base.py,sha256=x5HwQXU4_CxG-XxfVLuAK2x_XgqIo2nNzkfBN6aV7MI,7384
+fractalpy/cli/commands/cmd_julia.py,sha256=2bqbtAEgqHvCqxS9dEeQolKLLp3ENhh02zJPc2j6yjw,3176
+fractalpy/cli/commands/cmd_mandelbrot.py,sha256=d8KRAYJeTBQWuoq2NNmswBxyKSbLjfoyumAypUScCOo,1296
+fractalpy/cli/helper.py,sha256=1aklPte9YOKUKdnHqEt4arYQ8UpBF8zjv0j_om09CvI,226
+fractalpy/fractals/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fractalpy/fractals/fractal_base.py,sha256=GPkT5CuOSYjF2F52mrse9n1SaFANLCVHxfWTqAHarA4,13152
+fractalpy/fractals/fractals.py,sha256=2sLW7F61yZ7diA4kNDjLAAHH6dB87m8NQ1sy2C2GMCs,5193
+fractalpy-0.0.1.dist-info/entry_points.txt,sha256=NoFMxsLfN6laCO6fvyIQT7F1ImyXanT-96L_4Tv2RZo,57
+fractalpy-0.0.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+fractalpy-0.0.1.dist-info/METADATA,sha256=kIgeJwROmx2qDAdHB94QfsxsuDGnXLqB_554QCtDuBs,4704
+fractalpy-0.0.1.dist-info/RECORD,,
