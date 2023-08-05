@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: BigM
+Version: 0.0.0
+Requires-Python: >=3.9
+License-File: LICENCE
+Requires-Dist: numpy (>=1.23.4)
+Requires-Dist: pandas (>=1.5.1)
+Requires-Dist: python-dateutil (>=2.8.2)
+Requires-Dist: pytz (>=2022.6)
+Requires-Dist: six (>=1.16.0)
+

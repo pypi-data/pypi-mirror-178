@@ -1,0 +1,13 @@
+BigM/BigM.py,sha256=tMZpMjtZT46wbN6b8bLck9oN1gVhQkpUVokP2ReoANs,12141
+BigM/InputHandling.py,sha256=hnu1i17qWYc7E3kNUS6_PWSEfTjBqm7PUvS2pyX7SPI,5202
+BigM/__init__.py,sha256=Es9uFttDhJGOeIbjh_WVbCrx2-WyYu8j2dYXOgYJDpk,113
+BigM/aliases.py,sha256=xh6PQMItwU5BgkQ5NMjT4Yae30qb7nvKSHwRn-qUJJc,600
+BigM/analyse.py,sha256=QcwYEf4kg3D-ZtxOXKNAlUke0jNbqQ8rtVfHfUz4OKg,2205
+BigM/graph.py,sha256=J65chRFLwqkRpXj5cvYwN6ieTMLZloK5sChrgcDHtUg,8320
+BigM/simplex.py,sha256=3w58RytdfvrfNZE-IzVpD1N2RHKlPwYmR3ScLHkYFMg,9311
+BigM/utilities.py,sha256=4PFz_kSodKuYb89gEZIkwDzDOWehc-vsO7HVfvNB8HA,807
+BigM-0.0.0.dist-info/LICENCE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+BigM-0.0.0.dist-info/METADATA,sha256=4IDGIzCumyPfwPjKcko4i6NaOQnIGGy6MLlt_SldcFo,260
+BigM-0.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+BigM-0.0.0.dist-info/top_level.txt,sha256=igWU7_FmyB-yuQ7i6zrJcx6I65PC7sQfpsriZtlT_to,5
+BigM-0.0.0.dist-info/RECORD,,
