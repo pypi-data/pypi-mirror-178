@@ -1,0 +1,2 @@
+This is the license belonngs to SCSVMV university project 17,22-23 batch.
+This is a python module created using vosk and argistranslate opensource libraries.
