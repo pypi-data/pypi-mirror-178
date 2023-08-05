@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "dj-link"
+version = "0.1.0"
+description = ""
+authors = ["dongjin2008 <80329234+dongjin2008@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "dj_link"}, {include = "dj_link/link_shortener.py"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pyshorteners = "^1.0.1"
+
+[tool.poetry.scripts]
+djlink = "dj_link.Main:cli"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
