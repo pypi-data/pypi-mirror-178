@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/json_to_models/__init__.py
+src/json_to_models.egg-info/PKG-INFO
+src/json_to_models.egg-info/SOURCES.txt
+src/json_to_models.egg-info/dependency_links.txt
+src/json_to_models.egg-info/top_level.txt
