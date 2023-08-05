@@ -1,0 +1,3 @@
+celery~=5.0
+cubicweb<3.39.0,>=3.38.0
+cw-celerytask-helpers>=0.11.0
