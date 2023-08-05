@@ -1,0 +1,3 @@
+[console_scripts]
+mailipy-gen = mailipy.gen:main
+mailipy-send = mailipy.send:main
