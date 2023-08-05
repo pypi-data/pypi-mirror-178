@@ -1,0 +1,10 @@
+LICENSE
+README.md
+main.py
+setup.py
+TPython.egg-info/PKG-INFO
+TPython.egg-info/SOURCES.txt
+TPython.egg-info/dependency_links.txt
+TPython.egg-info/entry_points.txt
+TPython.egg-info/requires.txt
+TPython.egg-info/top_level.txt
