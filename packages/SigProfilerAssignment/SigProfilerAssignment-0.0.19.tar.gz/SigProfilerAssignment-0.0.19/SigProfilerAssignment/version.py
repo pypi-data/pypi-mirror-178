@@ -1,0 +1,7 @@
+
+# THIS FILE IS GENERATED FROM SigProfilerAssignment SETUP.PY
+short_version = '0.0.19'
+version = '0.0.19'
+Update = '(1) Add probabilities per mutation'
+    
+    
