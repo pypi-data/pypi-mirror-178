@@ -1,0 +1,17 @@
+{
+    "namespace": "NepheleNamespaceEC2",
+    "dimensions_list": [
+        {
+            "Name": "InstanceId",
+            "Value": ""
+        },
+        {
+            "Name": "cpu",
+            "Value": "cpu-total"
+        }
+    ],
+    "metric_name": "cpu_usage_user",
+    "metric_id": "nephele",
+    "metric_unit": "Percent",
+    "metric_description": "Precentage of total CPU used over time"
+}
