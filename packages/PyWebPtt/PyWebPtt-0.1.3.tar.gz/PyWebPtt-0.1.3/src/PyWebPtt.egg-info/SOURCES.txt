@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+src/PyWebPtt/PttClient.py
+src/PyWebPtt/PttCralwer.py
+src/PyWebPtt/PyEntity.py
+src/PyWebPtt/WebLib.py
+src/PyWebPtt/__init__.py
+src/PyWebPtt.egg-info/PKG-INFO
+src/PyWebPtt.egg-info/SOURCES.txt
+src/PyWebPtt.egg-info/dependency_links.txt
+src/PyWebPtt.egg-info/top_level.txt
