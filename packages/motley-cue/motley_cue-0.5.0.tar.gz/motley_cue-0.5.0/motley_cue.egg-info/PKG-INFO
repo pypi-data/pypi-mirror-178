@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: motley-cue
+Version: 0.5.0
+Summary: Mapper Oidc To Local idEntitY with loCal User managEment
+Home-page: https://github.com/dianagudu/motley_cue
+Author: Diana Gudu
+Author-email: gudu@kit.edu
+License: MIT
+Project-URL: Bug Tracker, https://github.com/dianagudu/motley_cue/issues
+Project-URL: Documentation, https://motley-cue.readthedocs.io
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: System :: Systems Administration :: Authentication/Directory
+Classifier: Topic :: Utilities
+Description-Content-Type: text/x-rst
+
+README.rst
