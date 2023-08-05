@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: confai
+Version: 0.0.6
+Summary: build ai with config
+Home-page: UNKNOWN
+Author: Chen Hao
+Author-email: jerrychen1990@gmail.com
+License: MIT
+Keywords: furnace ai
+Platform: UNKNOWN
+Requires-Dist: requests
+Requires-Dist: numpy
+Requires-Dist: transformers
+Requires-Dist: tqdm
+Requires-Dist: tritonclient[http]
+Requires-Dist: whale-ai-schema
+Requires-Dist: pandas
+Requires-Dist: datasets
+Requires-Dist: click
+Requires-Dist: torch
+Requires-Dist: accelerate
+Requires-Dist: onnx
+Requires-Dist: jsonpath-ng
+
+UNKNOWN
+
