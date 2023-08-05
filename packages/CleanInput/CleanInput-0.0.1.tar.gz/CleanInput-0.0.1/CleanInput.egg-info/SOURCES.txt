@@ -1,0 +1,7 @@
+setup.py
+CleanInput/CleanInput.py
+CleanInput/__init__.py
+CleanInput.egg-info/PKG-INFO
+CleanInput.egg-info/SOURCES.txt
+CleanInput.egg-info/dependency_links.txt
+CleanInput.egg-info/top_level.txt
