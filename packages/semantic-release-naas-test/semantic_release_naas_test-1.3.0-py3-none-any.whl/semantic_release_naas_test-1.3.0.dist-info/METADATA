@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: semantic-release-naas-test
+Version: 1.3.0
+Summary: Test semantic release
+Home-page: UNKNOWN
+Author: Maxime Jublou
+Author-email: maxime@naas.ai
+Maintainer: Maxime Jublou
+Maintainer-email: maxime@naas.ai
+License: UNKNOWN
+Keywords: test,semantic-release
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
+Provides-Extra: deploy
+Requires-Dist: twine (~=4.0) ; extra == 'deploy'
+
+Simply test semantic release with pypi
+
+
