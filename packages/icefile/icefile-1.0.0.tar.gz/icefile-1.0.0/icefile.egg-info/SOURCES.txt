@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+icefile.egg-info/PKG-INFO
+icefile.egg-info/SOURCES.txt
+icefile.egg-info/dependency_links.txt
+icefile.egg-info/top_level.txt
