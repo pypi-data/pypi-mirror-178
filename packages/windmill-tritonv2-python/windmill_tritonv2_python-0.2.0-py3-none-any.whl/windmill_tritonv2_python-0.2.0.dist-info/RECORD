@@ -1,0 +1,13 @@
+windmill-tritonv2-python/__init__.py,sha256=IqUHx9gJlYFB4mX7-r6xUzZ0Rdaa-gC6DSHDb313E0g,141
+windmill-tritonv2-python/client.py,sha256=OS0cMYBSKUh7MYPgfKbfO_JqU4uPEyAPoIeVXpOO3z8,332
+windmill-tritonv2-python/client_factory.py,sha256=NEWUcpI0qxlYxDwre9eH8LnbCok-iV5M1XFOW8GkLVY,5722
+windmill-tritonv2-python/constants.py,sha256=WFI9qXSrF8XQ9dRZfIGq9oMYiVn6kHcCcwb5vXp9Rbg,653
+windmill-tritonv2-python/exceptions.py,sha256=8wOezhBxPUnAqWDOqB1M-Wnq7xGF61tI_Bc7wCCubaw,259
+windmill-tritonv2-python/grpc_aio_client.py,sha256=6FiQGlTt0bd86MdYf1opkCtlc22MAuWaEiBx2Us0Q4o,13123
+windmill-tritonv2-python/grpc_client.py,sha256=vw1O_BOjkVRdp3jvSC7kl1OBExkQZ9RdO_ZgHshV6SA,13064
+windmill-tritonv2-python/http_aio_client.py,sha256=deDYfTCy47f0x585fNwVyNk0gqmpPIcoYCyVkIjk6vU,18157
+windmill-tritonv2-python/http_client.py,sha256=cbosNkLeiK_fCOA8yahLYwXKSP8Vh3vmJQyap4lNrfE,17724
+windmill_tritonv2_python-0.2.0.dist-info/METADATA,sha256=3Lr9LnxfH1QFavpdamGBJKUJ7aVQFGnB-Hm5jDunBuM,650
+windmill_tritonv2_python-0.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+windmill_tritonv2_python-0.2.0.dist-info/top_level.txt,sha256=uypSFsQy0RchKwxw1zfz3IimCfaE61U4lOpe0IsGrWc,25
+windmill_tritonv2_python-0.2.0.dist-info/RECORD,,
