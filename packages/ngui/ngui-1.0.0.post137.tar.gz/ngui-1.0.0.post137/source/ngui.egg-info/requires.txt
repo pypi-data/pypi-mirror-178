@@ -1,0 +1,13 @@
+kaleido
+matplotlib
+nmath
+nutil
+opencv-python
+plotly
+xhtml2pdf
+
+[dev]
+check-manifest
+
+[test]
+coverage
