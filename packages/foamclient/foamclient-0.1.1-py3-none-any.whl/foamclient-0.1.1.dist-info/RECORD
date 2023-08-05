@@ -1,0 +1,12 @@
+foamclient/__init__.py,sha256=TRDBA2z_S8p2818rvR_msRE1BVFLI7Q7WYuMz-7praA,115
+foamclient/deserializer.py,sha256=LwoxnWh9SE_R5tvme4eIWGPBS5rwDBPpFL6DRTxXP7s,675
+foamclient/redis_client.py,sha256=KuB_8_7SjMd6Rc6lZ-N9gv2Cy6YRrBSXDG6yKi0equs,1867
+foamclient/zmq_client.py,sha256=ZOyYBXdTBszEHX9IVK7bc33WlrM42lv32WPmgzKe1VA,2498
+foamclient/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+foamclient/tests/test_redis_client.py,sha256=B-YGrMIlS_9iJ8JYXGX90k0rqsCk57nbZiaQ7jAOVO0,166
+foamclient/tests/test_zmq_client.py,sha256=dfC8G1e8tgTLHLkYWw_QNFS6DwZsZKDpDTVhNLIzBsM,3290
+foamclient-0.1.1.dist-info/LICENSE,sha256=oCsmt8OIScdHYA5apQ_K0HA_TkZBRFC4jME_8HNqdIU,1511
+foamclient-0.1.1.dist-info/METADATA,sha256=loKBTDk3kmRN5RI-ops54MA058CpeL2zzseJtxlUZaQ,3180
+foamclient-0.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+foamclient-0.1.1.dist-info/top_level.txt,sha256=dNV5Fzg2bv_KJhNss8IrwwSEvsuuGh4ePKuZVIlH-uY,11
+foamclient-0.1.1.dist-info/RECORD,,
