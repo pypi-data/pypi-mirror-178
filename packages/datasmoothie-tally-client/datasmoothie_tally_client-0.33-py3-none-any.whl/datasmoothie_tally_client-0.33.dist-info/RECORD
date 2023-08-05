@@ -1,0 +1,13 @@
+tally/__init__.py,sha256=mCQBLZ8uBoTKM4h4G5L5d2-cvDevPA_USnkWhEJVYFY,138
+tally/build.py,sha256=yO_IeRPs6E1kkj4qX21kfEYQvA5eVlCyAlVYFXjAtcM,6771
+tally/build_defaults.py,sha256=XJnM7AHYCAwPL8fSLJp1wvgrvvfBzMhzdhGzs2rl6sM,1491
+tally/dataset.py,sha256=YtUwT9rmiFdXlRQ8HRoyS4tihPzOXFcHkbAZiJaJCgE,14516
+tally/decorators.py,sha256=ximOAdLe0rnUPneWZpmX4pgriULhORyXz_6gPvYohCI,3839
+tally/options.py,sha256=E98IzYkGUZe6Fn85ogReW2SkAQin4znhbwXGLAtakT4,5213
+tally/sheet.py,sha256=TPTfdyu97fDxbHzjVQbRxfdqsQsSPiKGbhjE2mqb3Ew,11663
+tally/tally.py,sha256=tJDz-RmwXH2WE-hDvipaDGnmCdrmP_oR32i2RU3VWTU,6151
+datasmoothie_tally_client-0.33.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+datasmoothie_tally_client-0.33.dist-info/METADATA,sha256=QrV6lEL_XiPNc5oIWwo9DuZwyliuScD_KRelsE8bQ4Y,596
+datasmoothie_tally_client-0.33.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+datasmoothie_tally_client-0.33.dist-info/top_level.txt,sha256=MCq5jeYlnLOcv8w2E0l21RSWpVtF5PnKhEFu37s9Ov0,6
+datasmoothie_tally_client-0.33.dist-info/RECORD,,
