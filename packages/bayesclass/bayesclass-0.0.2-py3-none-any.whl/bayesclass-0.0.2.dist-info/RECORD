@@ -1,0 +1,16 @@
+bayesclass/__init__.py,sha256=ksIAt0CmFSdf1aIVYY8wI2sCoZ76KvRiuLqrx1tV_Mg,415
+bayesclass/_version.py,sha256=QvlVh4JTl3JL7jQAja76yKtT-IvF4631ASjWY1wS6AQ,22
+bayesclass/clfs.py,sha256=xCsmPt_aWNQCHsdWiVkLtDYQnlD2l2BEHQpARsVRHYo,13214
+bayesclass/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bayesclass/tests/test_AODE.py,sha256=aCD99ZFSa8nu7YTxdPjEe6axqoTqwTyI5zkXJYd4uhk,2420
+bayesclass/tests/test_KDB.py,sha256=cHyibj0MG0B7ea0UXaBHj26Ae82_6hnpb5IsCySWo9w,2465
+bayesclass/tests/test_TAN.py,sha256=tSySg2T4h6V7vU0yWVcSJJVsaUpjkhHVo2-IKgsRhKQ,2726
+bayesclass/tests/test_common.py,sha256=Dav7HTq7-1PDPSNdqG29FgP-l3s4us4-xMM4dj2SxoQ,414
+bayesclass/tests/baseline_images/test_AODE/line_dashes_AODE.png,sha256=WI04Cfp46jy9I4UtV25dGpdfC3QbFwq2vp-S6zb0bAY,56050
+bayesclass/tests/baseline_images/test_KDB/line_dashes_KDB.png,sha256=3yAGu9WzIrTm3tuvpt4s95eGZkZZ8h7mg7-IWGISpsU,51400
+bayesclass/tests/baseline_images/test_TAN/line_dashes_TAN.png,sha256=Jhe0ChH-Lc1SRO4iaoc0WZq69ya7q9Rx_qRwapQLWmc,45222
+bayesclass-0.0.2.dist-info/LICENSE,sha256=lwCtY1g9u0Hn-xyL364PzgSKaRuqbAwIzG0GbSYqt_o,1088
+bayesclass-0.0.2.dist-info/METADATA,sha256=K8XZiTU7KOITEGSzzUbHyG-XXgi8mqT4o53UKCksHZ8,2170
+bayesclass-0.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+bayesclass-0.0.2.dist-info/top_level.txt,sha256=pRXoh5zmcMwGLbmpNcNLwdDzBnBRZjdbdE9dlhqg6ME,11
+bayesclass-0.0.2.dist-info/RECORD,,
