@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: typing-speed_zevt88
+Version: 1.0.0
+Summary: A package that allows running a typing speed test in the terminal
+Author-email: zevt88 <zev.tovbin@gmail.com>
+Project-URL: Homepage, https://github.com/ZevT88/typing-speed
+Project-URL: Bug Tracker, https://github.com/ZevT88/typing-speed/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# typing-speed
+A python package that allows for a simple typing speed test in the terminal
+## To use: 
+from typing-speed import RunTest
+
+
+RunTest(Rounds)
+
+Each round is 10 words devided by a space. Press enter after the last word of each round.

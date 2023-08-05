@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/example_package_zevt88/__init__.py
+src/example_package_zevt88/example.py
+src/typing_speed_zevt88.egg-info/PKG-INFO
+src/typing_speed_zevt88.egg-info/SOURCES.txt
+src/typing_speed_zevt88.egg-info/dependency_links.txt
+src/typing_speed_zevt88.egg-info/top_level.txt
