@@ -1,0 +1,11 @@
+dbpystream/__init__.py,sha256=GguExVvPjZSzXo71lobgnF2p1asz6PxbdsAQ0WZOQfc,295
+dbpystream/api.py,sha256=f69nklI82eDU45S6Pcm2uWxoKsQg_eQ4iD03b4koH0Y,14335
+dbpystream/client.py,sha256=-05QXFEOI_ULkSqEPsgLwMR6AfH9YfgXsAb3Va6cqbo,5816
+dbpystream/utils.py,sha256=ATyinx4Z1WFl-NK64I1O1OpOaq7YG-92IuQctEThhBs,9454
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test.py,sha256=tU_IEhxPqYNcKrU_dzehk5bGoJWDQkV0VaeiQMd-iOg,2041
+dbpystream-0.7.1.dist-info/LICENSE,sha256=iheYQ5uq9uena88CK8Ae9IM_EHp-3YNSRZErppsTfBU,1092
+dbpystream-0.7.1.dist-info/METADATA,sha256=09b5lRH7iCpoQxgA0ogGTssIFTLglesYThw5kWggU_o,7848
+dbpystream-0.7.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+dbpystream-0.7.1.dist-info/top_level.txt,sha256=O_gev9xdIvDAuciqGv_jAHFCAiHxC7SAvgP8_5mweBY,16
+dbpystream-0.7.1.dist-info/RECORD,,
