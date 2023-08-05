@@ -1,0 +1,10 @@
+swork_mound/__init__.py,sha256=21T-dLEriqxcvZZ7hkIHGHC411X-fjSEe1Y2ypioVek,285
+swork_mound/converter.py,sha256=4J9QJndRmlJKSXk0qIqlcVQNLjQzZ-Z2TryO5AH-6NY,191
+swork_mound/patch/__init__.py,sha256=4cVGejn87cgim8hW-tzeUkntoL566vI_3XCqO6DYsKY,120
+swork_mound/patch/print_patch.py,sha256=pBBjYToHxjkVR-TZaXLedrcAxTuQc614kaEFvrGlGGU,3002
+swork_mound-0.0.2.dist-info/LICENSE,sha256=yXdB5TJZSYvFPk_gtE7T7_Znupc0T8vOuO88J806P00,1084
+swork_mound-0.0.2.dist-info/METADATA,sha256=GTWaaWtdRpRKU1nAkCHt5n4yp2zV54kPnHvINg9gIdY,415
+swork_mound-0.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+swork_mound-0.0.2.dist-info/entry_points.txt,sha256=BFzumlzEt6E-0vUnywayryG_VpwqxSH-zwX-Q9nLItY,49
+swork_mound-0.0.2.dist-info/top_level.txt,sha256=NO7sn2aav6HBBAqzPpgrJ21bjtrS1DRqnt0v9l_p3Y0,12
+swork_mound-0.0.2.dist-info/RECORD,,
