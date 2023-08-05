@@ -1,0 +1,13 @@
+calendar_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+calendar_cli/cal.py,sha256=VBJh7fUY2L1sc746QWGLdNXyB8u0STtug1plminKxCs,22080
+calendar_cli/legacy.py,sha256=_xjcFTPfULHx5v5rUiyCS-bw5YlD31CfS0m_Tst0tNM,47653
+calendar_cli/metadata.py,sha256=HopWWt_qxycDnwmrPoa626fezzg_4iFonT4LghQnZt0,612
+calendar_cli/template.py,sha256=CxL0Dsztv-QaiE5zxQKaBhnreHAf_Di8mVqDlvPrMZA,1395
+calendar_cli-0.14.0.data/scripts/calendar-cli,sha256=IMHWpVOaixZjUHrH3vSDDjWlVaWrUuKkmdXBRfBPyGI,64
+calendar_cli-0.14.0.data/scripts/calendar-cli.py,sha256=IMHWpVOaixZjUHrH3vSDDjWlVaWrUuKkmdXBRfBPyGI,64
+calendar_cli-0.14.0.dist-info/LICENSE.TXT,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+calendar_cli-0.14.0.dist-info/METADATA,sha256=mnNfIUcthUSevzjtxGBe_l4oyPMAf3LrB7VcYRXr1yk,817
+calendar_cli-0.14.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+calendar_cli-0.14.0.dist-info/entry_points.txt,sha256=e1b9VB6zPxDj2hdYaDUwp0KZqvLa26X05VZ-VxjHdlc,45
+calendar_cli-0.14.0.dist-info/top_level.txt,sha256=PSMUeI_-1KH5f0V7_SBHWo6WxaEgbSNQ5nfiCiTqZSA,17
+calendar_cli-0.14.0.dist-info/RECORD,,
