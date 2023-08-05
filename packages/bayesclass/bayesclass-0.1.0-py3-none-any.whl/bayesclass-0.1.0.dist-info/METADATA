@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: bayesclass
+Version: 0.1.0
+Summary: A collection of Bayesian Estimators.
+Author-email: Ricardo Montañana <ricardo.montanana@alu.uclm.es>
+Project-URL: Home, https://github.com/doctorado-ml/bayesclass
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: scipy
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: pgmpy
+Requires-Dist: networkx
+Requires-Dist: matplotlib
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Provides-Extra: doc
+Requires-Dist: sphinx ; extra == 'doc'
+Requires-Dist: sphinx-gallery ; extra == 'doc'
+Requires-Dist: sphinx-rtd-theme ; extra == 'doc'
+Requires-Dist: numpydoc ; extra == 'doc'
+
+# bayesclass
+
+## Bayesian Estimators
+
+### TAN Tree augmented naive Bayes
+
+Friedman, N., Geiger, D. & Goldszmidt, M. Bayesian Network Classifiers. Machine Learning 29, 131–163 (1997). https://doi.org/10.1023/A:1007465528199
+
+### KDB
+
+Mehran Sahami. 1996. Learning limited dependence Bayesian classifiers. In Proceedings of the Second International Conference on Knowledge Discovery and Data Mining (KDD'96). AAAI Press, 335–338.
+
+### AODE Averaged One-Dependence Estimators
+
+Webb, G., Boughton, J. & Wang, Z. Not So Naive Bayes: Aggregating One-Dependence Estimators. Mach Learn 58, 5–24 (2005). https://doi.org/10.1007/s10994-005-4258-6
