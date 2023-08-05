@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: hpopt
+Version: 0.3.0
+Summary: Hyper-parameters Optimization
+Home-page: https://github.com/openvinotoolkit/hyper_parameter_optimization
+License-File: LICENSE
+Requires-Dist: bayesian-optimization (>=1.2.0)
+
+A Python library of automatic hyper-parameters optimization
