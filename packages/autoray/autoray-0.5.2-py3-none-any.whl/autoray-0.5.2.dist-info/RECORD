@@ -1,0 +1,12 @@
+autoray/__init__.py,sha256=4l01AyveJE9-z-FGvHJ2PeMA5h6-Tc9KFAMENv_IzBQ,1051
+autoray/_version.py,sha256=RUoY9-6SGn-IPte-2d1yWrgZOGdTB4r0cE5Qq_m0Tjw,497
+autoray/autoray.py,sha256=gVYLou2LtqcOasAP9_7JPKiIAEjaYtwtGoa4pH0DqFA,49221
+autoray/compiler.py,sha256=TocsaDeYDsstgEWVk4eOj--BbfksOH7hbPskFUtwglQ,11136
+autoray/lazy/__init__.py,sha256=IV2-am9L__PGwohpZFpAqTqGCM64ugfEW36tSJT61jg,1766
+autoray/lazy/core.py,sha256=K-1YTbirVMY6s-GS6ULZtjepqF7nGsmgMENIpQJn1ho,38394
+autoray/lazy/linalg.py,sha256=dlwpSG2z-aJHMz95JqoSrYJ0PK1YbfP6_N3FQC0Yp8s,2287
+autoray-0.5.2.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+autoray-0.5.2.dist-info/METADATA,sha256=GshWO6lJtHeICmZGIGgDdZo0PUGhEOZIk8gL_W5yXc4,17073
+autoray-0.5.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+autoray-0.5.2.dist-info/top_level.txt,sha256=F_f4qCU7dCvjlrHuMZ5HanPWIhAhC-kqVsz5N2DXlOo,8
+autoray-0.5.2.dist-info/RECORD,,
