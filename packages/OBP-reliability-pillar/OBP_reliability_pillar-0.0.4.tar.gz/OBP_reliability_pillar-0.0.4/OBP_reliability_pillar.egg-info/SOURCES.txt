@@ -1,0 +1,10 @@
+LICENCE
+README.md
+pyproject.toml
+OBP_reliability_pillar/__init__.py
+OBP_reliability_pillar/aws_client.py
+OBP_reliability_pillar/compliance_functions.py
+OBP_reliability_pillar.egg-info/PKG-INFO
+OBP_reliability_pillar.egg-info/SOURCES.txt
+OBP_reliability_pillar.egg-info/dependency_links.txt
+OBP_reliability_pillar.egg-info/top_level.txt
