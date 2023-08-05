@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: jupyter-kernel-proxy
+Version: 1.0
+Summary: Jupyter kernel acting as a proxy to any other, already running, kernel.
+Home-page: https://github.com/eset/jupyter-kernel-proxy
+Author: Marc-Etienne M.Léveillé
+Author-email: leveille@eset.com
+License: BSD
+Classifier: Environment :: Plugins
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=2.7
+License-File: LICENSE
+Requires-Dist: jupyter-core
+Requires-Dist: pyzmq (>=17)
+Requires-Dist: tornado (>=5)
+Requires-Dist: six
+
