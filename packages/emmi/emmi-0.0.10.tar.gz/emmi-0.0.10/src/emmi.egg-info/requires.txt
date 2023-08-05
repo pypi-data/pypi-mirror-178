@@ -1,0 +1,7 @@
+pyvisa
+
+[test]
+pytest
+pytest-cov
+softioc
+pyepics
