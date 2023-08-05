@@ -1,0 +1,10 @@
+autodiff26/__init__.py,sha256=jARXjnRS2Pd4CnAgucB2B_wb-0jGw0gFSYSKZxhv3QM,258
+autodiff26/forward_mode/__init__.py,sha256=S1yLXGnpOtbp8zQCwVlfPkhT2QbhoNOOb7l5qhl8bcw,265
+autodiff26/forward_mode/ad_calculator.py,sha256=DjKFQT4n9fb8IO41xSEjsg0Zp4JJepEGZd_SZ_7D8SY,1121
+autodiff26/forward_mode/functions.py,sha256=KfTj39g6N8-1Idq6V_5XM4hOXAgkAknAn0mGsITy0JI,16301
+autodiff26/reverse_mode/__init__.py,sha256=TuuGHNPnD90fKgW2oTmNiCPdIDwRuaGP4etbFtl1IpA,228
+autodiff26-0.0.1.dist-info/LICENSE,sha256=QmzWev-auNORhLpntUGgTzu_rhHAz2kR_x-S3_i19cE,1119
+autodiff26-0.0.1.dist-info/METADATA,sha256=DRtC6YAGF1f5eDqJaCO5G73YcTaLmehV2Y_oo0tfBqk,1091
+autodiff26-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+autodiff26-0.0.1.dist-info/top_level.txt,sha256=ETQNdxqB1mx0-lK3Kv-2xRAQI5akUQCYlX5QpFK_CnU,11
+autodiff26-0.0.1.dist-info/RECORD,,
