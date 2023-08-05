@@ -1,0 +1,15 @@
+deltafi/__init__.py,sha256=wt6u7pXRkT9nsnhyNQnm1-4fmqEq2J1bDtk8WSF-vOk,680
+deltafi/action.py,sha256=H1s_keECS-mX6fdSCu4IvQf1fPCqOB_FrqWF1xz3Ajg,8833
+deltafi/actioneventqueue.py,sha256=3m98qt_E5L4aZdEbxxNbB_j8vobb02bwlXUnEyrqjmw,1689
+deltafi/actiontype.py,sha256=ObSwiCCTXpNzduooatSkwCUEZUPhyDQRE_OGAv3XV3I,957
+deltafi/configserver.py,sha256=SJhh1bOvetYO9iBK9PK3uZvM_S__hj7BzJLQF6qF3sI,2989
+deltafi/domain.py,sha256=nQ8j6MrABW6ZtQr8YpQ0Ws8XMofS2qHpqDcdpXhb7go,6329
+deltafi/exception.py,sha256=LqxdjZW7ZmC8zj_IU1XJlcy7JTywWP5y8wno2yaFqhE,1245
+deltafi/input.py,sha256=mtb8J-5P0kA14OqYGyCRUGfPzCSE_LvSiHIV-Jj8Sy0,9286
+deltafi/logger.py,sha256=1KmAQDQ__cu06RIhb-Ux71TzigXIQiX-r6QOA7hBm14,2078
+deltafi/plugin.py,sha256=lJTv3qQ0D7MiDjC_5Ks7PdyvVBO6WmiURfYJIjY4SxY,7739
+deltafi/result.py,sha256=86ycjC2yNQAlfUbkHnST1m6ua-pZvbWNYmZJnIK3Xos,6574
+deltafi/storage.py,sha256=YMOYmJp42MQWiARbiYOeiDQ7cBJUaZtptU3yBUh2LMA,3480
+deltafi-0.99.4.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+deltafi-0.99.4.dist-info/METADATA,sha256=XEWr9OtfehF9eyIbPRbEYw7g9nI0rIyRdAigj9e_lAM,1744
+deltafi-0.99.4.dist-info/RECORD,,
