@@ -1,0 +1,17 @@
+specifipy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+specifipy/file_scanners/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+specifipy/file_scanners/directory_scanner.py,sha256=7M-J97SETKjM7Cw6EEoV6z9D6YTixHpd-TIAY2YYLek,3112
+specifipy/parsers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+specifipy/parsers/diagram_generator.py,sha256=k6CyZjhCYTGIe1bJYQgSbxWOEzFflG9SJ-wnsbRIQTs,3905
+specifipy/parsers/generic_parser.py,sha256=poGs6Z0sW8kjgSDTAftPYBW0cjFDusGD76JDSzJUZIk,3911
+specifipy/parsers/results.py,sha256=OGyXRX1qeIFq3y88NQyiOsVPqX3J0ZUhMLPi4A3kPwA,372
+specifipy/parsers/structure/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+specifipy/parsers/structure/code_structure_definitions.py,sha256=yAfcEBPPK4ByH8EFkKvmA37JbygZqalwu_oPX5LnIw4,1349
+specifipy/resources/icons/class_icon.png,sha256=LbqXxnhFC6aJyRMpjXRYeW_9o5ipfnLhxjKx_dww2dE,702
+specifipy/resources/icons/field_icon.png,sha256=eTLDej-uqLyu9DasMW19OyJz-ZN-1fHqw8xnADoGCOY,657
+specifipy/resources/icons/function_icon.png,sha256=VK5w1iZdlZzwXAqtWEon73guqsfMQ-zAdcOO7a8MZ60,1058
+specifipy/resources/icons/param_icon.png,sha256=Lyx2ObVq4eTvf1-jjPha25a3f2AjEdk5i9f9UpEkM7M,1177
+specifipy-0.1.6.dist-info/LICENSE,sha256=wR-qrdW3h1q83aEP6Ej3jblFIWNKuUFKomED1KGkspI,784
+specifipy-0.1.6.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+specifipy-0.1.6.dist-info/METADATA,sha256=M1bqo64VQJSdzH45YcJN9mMJC6slBRl58JwBMsOcW_c,578
+specifipy-0.1.6.dist-info/RECORD,,
