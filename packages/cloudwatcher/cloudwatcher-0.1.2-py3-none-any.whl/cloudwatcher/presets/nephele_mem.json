@@ -1,0 +1,13 @@
+{
+    "namespace": "NepheleNamespaceEC2",
+    "dimensions_list": [
+        {
+            "Name": "InstanceId",
+            "Value": ""
+        }
+    ],
+    "metric_name": "mem_used",
+    "metric_id": "nephele",
+    "metric_unit": "Bytes",
+    "metric_description": "Memory used over time"
+}

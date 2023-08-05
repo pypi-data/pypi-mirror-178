@@ -1,0 +1,25 @@
+{
+    "namespace": "NepheleNamespaceEC2",
+    "dimensions_list": [
+        {
+            "Name": "InstanceId",
+            "Value": ""
+        },
+        {
+            "Name": "path",
+            "Value": "/"
+        },
+        {
+            "Name": "fstype",
+            "Value": "ext4"
+        },
+        {
+            "Name": "device",
+            "Value": "nvme2n1p1"
+        }
+    ],
+    "metric_name": "disk_used_percent",
+    "metric_id": "root",
+    "metric_unit": "Percent",
+    "metric_description": "Percentage of disk used over time. Path: <code>/</code> (root)"
+}
