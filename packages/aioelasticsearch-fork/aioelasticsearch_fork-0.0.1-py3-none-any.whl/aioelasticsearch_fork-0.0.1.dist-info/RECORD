@@ -1,0 +1,11 @@
+aioelasticsearch_fork/__init__.py,sha256=NbiGoBM_uJOkRPhR9VgF0iMrZcxAZJX3P5PtNq2_Q5c,1107
+aioelasticsearch_fork/connection.py,sha256=lOubpKwxYUqhac4ePSw9CW7IFHn14cOecb0O0K_ZGCg,5468
+aioelasticsearch_fork/exceptions.py,sha256=2nnWfzYjp4FwQNIhV4sVqY4UGNU4nCeyOTaQgUrmxWQ,206
+aioelasticsearch_fork/helpers.py,sha256=MPm5iEHricpc5aHbjsOgGrr5zTEK7vRDCFtZVhqrZuw,4042
+aioelasticsearch_fork/pool.py,sha256=q6XKj62GxpBsSCcQuA_NgUrQzieynXs1rtKeJ6wyycY,4099
+aioelasticsearch_fork/transport.py,sha256=C7H1wVBhYMKzbYpX6xpKOfJlulyCPItnyXdQcBMdCbo,11760
+aioelasticsearch_fork-0.0.1.dist-info/LICENSE,sha256=4MfZhjtcRRDl4B-lW0B6lbDAnX5uvSNZw2Aruf5ZmGw,1226
+aioelasticsearch_fork-0.0.1.dist-info/METADATA,sha256=1wWnWPqRjl5FkadsOVeZ6H74LwiC6sZds3c6igYhgM4,1039
+aioelasticsearch_fork-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+aioelasticsearch_fork-0.0.1.dist-info/top_level.txt,sha256=ggdu2llnVpE_ygSoGNkBu_LUwFnr819IA_I7urkgGxo,22
+aioelasticsearch_fork-0.0.1.dist-info/RECORD,,
