@@ -1,0 +1,8 @@
+purse/__init__.py,sha256=8-wv8N5dtiH0q_cbjDoUznbS-lZHCQt2f6p7_noTb2A,370
+purse/collections.py,sha256=fUMwGQK_1C3RYRJsLcijtN38G00Md0zKtLl3_HnbVv0,40771
+purse/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+purse/redlock.py,sha256=AHSBPcUG8Sp8rTJk8NApdJFOlfdf13pfEbyK3kwUEzg,13554
+redis_purse-0.25.0.dist-info/LICENSE,sha256=5xsxxVKW9W-A_vpTHmuuWeUEcmb5bAgHYHwzy2u7wqY,11380
+redis_purse-0.25.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+redis_purse-0.25.0.dist-info/METADATA,sha256=BQB-9Ptw-BpKDiwoT_wCuHVlOtQjbl6qMYHPGQJLWT8,7786
+redis_purse-0.25.0.dist-info/RECORD,,
