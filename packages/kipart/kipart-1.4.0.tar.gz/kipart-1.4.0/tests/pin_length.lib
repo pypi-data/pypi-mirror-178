@@ -1,0 +1,267 @@
+EESchema-LIBRARY Version 2.3
+DEF four_sided U 0 20 Y Y 1 L N
+F0 "U" -1450 1550 50 H V R CNN
+F1 "four_sided" -1450 1450 50 H V R CNN
+F2 "" -1450 1350 50 H I R CNN
+F3 "" -1450 1150 50 H I R CNN
+DRAW
+X A5_extra_stuff AAA123 -2000 500 600 R 50 50 1 1 B 
+X B1_extra_stuff AAA124 -2000 400 600 R 50 50 1 1 B 
+X C3_extra_stuff AAA125 -2000 300 600 R 50 50 1 1 B 
+X D22_extra_stuff AAA126 -2000 200 600 R 50 50 1 1 B 
+X D3_extra_stuff AAA127 -2000 100 600 R 50 50 1 1 B I
+X VCC_extra_stuff AAA128 -2000 0 600 R 50 50 1 1 B 
+X GND_extra_stuff AAA129 -2000 -100 600 R 50 50 1 1 B 
+X VCC_extra_stuff AAA130 -2000 -200 600 R 50 50 1 1 B 
+X GND_extra_stuff AAA131 -2000 -300 600 R 50 50 1 1 B 
+X VCC_extra_stuff AAA132 -2000 -400 600 R 50 50 1 1 B 
+X GND_extra_stuff AAA133 -2000 -500 600 R 50 50 1 1 B 
+X GND_extra_stuff QWQWQW5684 2000 -500 600 L 50 50 1 1 B 
+X VCC_extra_stuff QWQWQW5683 2000 -400 600 L 50 50 1 1 B I
+X GND_extra_stuff QWQWQW5682 2000 -300 600 L 50 50 1 1 B 
+X VCC_extra_stuff QWQWQW5681 2000 -200 600 L 50 50 1 1 B 
+X GND_extra_stuff QWQWQW5680 2000 -100 600 L 50 50 1 1 B 
+X VCC_extra_stuff QWQWQW5679 2000 0 600 L 50 50 1 1 B 
+X D3_extra_stuff QWQWQW5678 2000 100 600 L 50 50 1 1 B 
+X D22_extra_stuff AAA148 2000 200 600 L 50 50 1 1 B 
+X C3_extra_stuff AAA147 2000 300 600 L 50 50 1 1 B C
+X B1_extra_stuff AAA146 2000 400 600 L 50 50 1 1 B 
+X A5_extra_stuff AAA145 2000 500 600 L 50 50 1 1 B 
+X GND_extra_stuff QWQWQW5695 500 2000 600 D 50 50 1 1 B 
+X VCC_extra_stuff QWQWQW5694 400 2000 600 D 50 50 1 1 B 
+X GND_extra_stuff QWQWQW5693 300 2000 600 D 50 50 1 1 B 
+X VCC_extra_stuff QWQWQW5692 200 2000 600 D 50 50 1 1 B 
+X GND_extra_stuff QWQWQW5691 100 2000 600 D 50 50 1 1 B 
+X VCC_extra_stuff QWQWQW5690 0 2000 600 D 50 50 1 1 B 
+X D3_extra_stuff QWQWQW5689 -100 2000 600 D 50 50 1 1 B 
+X D22_extra_stuff QWQWQW5688 -200 2000 600 D 50 50 1 1 B 
+X C3_extra_stuff QWQWQW5687 -300 2000 600 D 50 50 1 1 B 
+X B1_extra_stuff QWQWQW5686 -400 2000 600 D 50 50 1 1 B 
+X A5_extra_stuff QWQWQW5685 -500 2000 600 D 50 50 1 1 B 
+X A5_extra_stuff AAA134 -500 -2000 600 U 50 50 1 1 B 
+X B1_extra_stuff AAA135 -400 -2000 600 U 50 50 1 1 B 
+X C3_extra_stuff AAA136 -300 -2000 600 U 50 50 1 1 B 
+X D22_extra_stuff AAA137 -200 -2000 600 U 50 50 1 1 B 
+X D3_extra_stuff AAA138 -100 -2000 600 U 50 50 1 1 B 
+X VCC_extra_stuff AAA139 0 -2000 600 U 50 50 1 1 B 
+X GND_extra_stuff AAA140 100 -2000 600 U 50 50 1 1 B 
+X VCC_extra_stuff AAA141 200 -2000 600 U 50 50 1 1 B 
+X GND_extra_stuff AAA142 300 -2000 600 U 50 50 1 1 B 
+X VCC_extra_stuff AAA143 400 -2000 600 U 50 50 1 1 B 
+X GND_extra_stuff AAA144 500 -2000 600 U 50 50 1 1 B 
+S -1400 1400 1400 -1400 1 1 10 f
+ENDDRAW
+ENDDEF
+DEF four_sided_unbalanced U 0 20 Y Y 1 L N
+F0 "U" -1300 1900 50 H V R CNN
+F1 "four_sided_unbalanced" -1300 1800 50 H V R CNN
+F2 "" -1300 1700 50 H I R CNN
+F3 "" -1300 1500 50 H I R CNN
+DRAW
+X A5_extra_stuff 1 -1700 700 450 R 50 50 1 1 B 
+X B1_extra_stuff 2 -1700 600 450 R 50 50 1 1 B 
+X C3_extra_stuff 3 -1700 500 450 R 50 50 1 1 B 
+X D22_extra_stuff 4 -1700 400 450 R 50 50 1 1 B 
+X D3_extra_stuff 5 -1700 300 450 R 50 50 1 1 B 
+X VCC_extra_stuff FRTBN45 -1700 200 450 R 50 50 1 1 B 
+X GND_extra_stuff FRTBN46 -1700 100 450 R 50 50 1 1 B 
+X VCC_extra_stuff FRTBN47 -1700 0 450 R 50 50 1 1 B 
+X GND_extra_stuff 9 -1700 -100 450 R 50 50 1 1 B 
+X VCC_extra_stuff 10 -1700 -200 450 R 50 50 1 1 B 
+X GND_extra_stuff 11 -1700 -300 450 R 50 50 1 1 B 
+X A5_extra_stuff 12 -1700 -400 450 R 50 50 1 1 B 
+X B1_extra_stuff 13 -1700 -500 450 R 50 50 1 1 B 
+X C3_extra_stuff QWERTYU5 -1700 -600 450 R 50 50 1 1 B 
+X D22_extra_stuff QWERTYU6 -1700 -700 450 R 50 50 1 1 B 
+X VCC_extra_stuff FLIPO680 1700 -800 450 L 50 50 1 1 B 
+X D3_extra_stuff FLIPO679 1700 -700 450 L 50 50 1 1 B 
+X D22_extra_stuff 37 1700 -600 450 L 50 50 1 1 B 
+X C3_extra_stuff 36 1700 -500 450 L 50 50 1 1 B 
+X B1_extra_stuff 35 1700 -400 450 L 50 50 1 1 B 
+X A5_extra_stuff 34 1700 -300 450 L 50 50 1 1 B 
+X GND_extra_stuff 33 1700 -200 450 L 50 50 1 1 B 
+X VCC_extra_stuff 32 1700 -100 450 L 50 50 1 1 B 
+X GND_extra_stuff 31 1700 0 450 L 50 50 1 1 B 
+X VCC_extra_stuff 30 1700 100 450 L 50 50 1 1 B 
+X GND_extra_stuff 29 1700 200 450 L 50 50 1 1 B 
+X VCC_extra_stuff 28 1700 300 450 L 50 50 1 1 B 
+X D3_extra_stuff 27 1700 400 450 L 50 50 1 1 B 
+X D22_extra_stuff 26 1700 500 450 L 50 50 1 1 B 
+X C3_extra_stuff 25 1700 600 450 L 50 50 1 1 B 
+X B1_extra_stuff 24 1700 700 450 L 50 50 1 1 B 
+X A5_extra_stuff 23 1700 800 450 L 50 50 1 1 B 
+X GND_extra_stuff 44 200 2200 450 D 50 50 1 1 B 
+X VCC_extra_stuff 43 100 2200 450 D 50 50 1 1 B 
+X GND_extra_stuff 42 0 2200 450 D 50 50 1 1 B 
+X VCC_extra_stuff FLIPO682 -100 2200 450 D 50 50 1 1 B 
+X GND_extra_stuff FLIPO681 -200 2200 450 D 50 50 1 1 B 
+X D3_extra_stuff QWERTYU7 -300 -2200 450 U 50 50 1 1 B 
+X VCC_extra_stuff QWERTYU8 -200 -2200 450 U 50 50 1 1 B 
+X GND_extra_stuff QWERTYU9 -100 -2200 450 U 50 50 1 1 B 
+X VCC_extra_stuff QWERTYU10 0 -2200 450 U 50 50 1 1 B 
+X GND_extra_stuff 20 100 -2200 450 U 50 50 1 1 B 
+X VCC_extra_stuff 21 200 -2200 450 U 50 50 1 1 B 
+X GND_extra_stuff 22 300 -2200 450 U 50 50 1 1 B 
+S -1250 1750 1250 -1750 1 1 10 f
+ENDDRAW
+ENDDEF
+DEF LR_sided U 0 20 Y Y 1 L N
+F0 "U" -800 1650 50 H V L CNN
+F1 "LR_sided" -800 1550 50 H V L CNN
+F2 "" -800 1450 50 H I L CNN
+F3 "" -800 1250 50 H I L CNN
+DRAW
+X A5_extra_stuff 1 -1200 1400 400 R 50 50 1 1 B 
+X B1_extra_stuff 2 -1200 1300 400 R 50 50 1 1 B 
+X C3_extra_stuff 3 -1200 1200 400 R 50 50 1 1 B 
+X D22_extra_stuff 4 -1200 1100 400 R 50 50 1 1 B 
+X D3_extra_stuff 5 -1200 1000 400 R 50 50 1 1 B 
+X VCC_extra_stuff 6 -1200 900 400 R 50 50 1 1 B 
+X GND_extra_stuff 7 -1200 800 400 R 50 50 1 1 B 
+X VCC_extra_stuff 8 -1200 700 400 R 50 50 1 1 B 
+X GND_extra_stuff 9 -1200 600 400 R 50 50 1 1 B 
+X VCC_extra_stuff 10 -1200 500 400 R 50 50 1 1 B 
+X GND_extra_stuff 11 -1200 400 400 R 50 50 1 1 B 
+X A5_extra_stuff 12 -1200 300 400 R 50 50 1 1 B 
+X B1_extra_stuff 13 -1200 200 400 R 50 50 1 1 B 
+X C3_extra_stuff 14 -1200 100 400 R 50 50 1 1 B 
+X D22_extra_stuff 15 -1200 0 400 R 50 50 1 1 B 
+X D3_extra_stuff 16 -1200 -100 400 R 50 50 1 1 B 
+X VCC_extra_stuff 17 -1200 -200 400 R 50 50 1 1 B 
+X GND_extra_stuff 18 -1200 -300 400 R 50 50 1 1 B 
+X VCC_extra_stuff 19 -1200 -400 400 R 50 50 1 1 B 
+X GND_extra_stuff 20 -1200 -500 400 R 50 50 1 1 B 
+X VCC_extra_stuff 21 -1200 -600 400 R 50 50 1 1 B 
+X GND_extra_stuff 22 -1200 -700 400 R 50 50 1 1 B 
+X A5_extra_stuff 23 -1200 -800 400 R 50 50 1 1 B 
+X B1_extra_stuff 24 -1200 -900 400 R 50 50 1 1 B 
+X C3_extra_stuff 25 -1200 -1000 400 R 50 50 1 1 B 
+X D22_extra_stuff 26 -1200 -1100 400 R 50 50 1 1 B 
+X D3_extra_stuff 27 -1200 -1200 400 R 50 50 1 1 B 
+X VCC_extra_stuff 28 -1200 -1300 400 R 50 50 1 1 B 
+X GND_extra_stuff 29 -1200 -1400 400 R 50 50 1 1 B 
+X GND_extra_stuff 44 1200 -700 400 L 50 50 1 1 B 
+X VCC_extra_stuff 43 1200 -600 400 L 50 50 1 1 B 
+X GND_extra_stuff 42 1200 -500 400 L 50 50 1 1 B 
+X VCC_extra_stuff 41 1200 -400 400 L 50 50 1 1 B 
+X GND_extra_stuff 40 1200 -300 400 L 50 50 1 1 B 
+X VCC_extra_stuff 39 1200 -200 400 L 50 50 1 1 B 
+X D3_extra_stuff 38 1200 -100 400 L 50 50 1 1 B 
+X D22_extra_stuff 37 1200 0 400 L 50 50 1 1 B 
+X C3_extra_stuff 36 1200 100 400 L 50 50 1 1 B 
+X B1_extra_stuff 35 1200 200 400 L 50 50 1 1 B 
+X A5_extra_stuff 34 1200 300 400 L 50 50 1 1 B 
+X GND_extra_stuff 33 1200 400 400 L 50 50 1 1 B 
+X VCC_extra_stuff 32 1200 500 400 L 50 50 1 1 B 
+X GND_extra_stuff DFERTG56 1200 600 400 L 50 50 1 1 B 
+X VCC_extra_stuff 30 1200 700 400 L 50 50 1 1 B 
+S -800 1500 800 -1500 1 1 10 f
+ENDDRAW
+ENDDEF
+DEF TB_sided U 0 20 Y Y 1 L N
+F0 "U" -1550 950 50 H V R CNN
+F1 "TB_sided" -1550 850 50 H V R CNN
+F2 "" -1550 750 50 H I R CNN
+F3 "" -1550 550 50 H I R CNN
+DRAW
+X GND_extra_stuff 44 700 1100 300 D 50 50 1 1 B 
+X VCC_extra_stuff 43 600 1100 300 D 50 50 1 1 B 
+X GND_extra_stuff 42 500 1100 300 D 50 50 1 1 B 
+X VCC_extra_stuff 41 400 1100 300 D 50 50 1 1 B 
+X GND_extra_stuff 40 300 1100 300 D 50 50 1 1 B 
+X VCC_extra_stuff 39 200 1100 300 D 50 50 1 1 B 
+X D3_extra_stuff 38 100 1100 300 D 50 50 1 1 B 
+X D22_extra_stuff 37 0 1100 300 D 50 50 1 1 B 
+X C3_extra_stuff 36 -100 1100 300 D 50 50 1 1 B 
+X B1_extra_stuff 35 -200 1100 300 D 50 50 1 1 B 
+X A5_extra_stuff 34 -300 1100 300 D 50 50 1 1 B 
+X GND_extra_stuff 33 -400 1100 300 D 50 50 1 1 B 
+X VCC_extra_stuff FLOP64 -500 1100 300 D 50 50 1 1 B 
+X GND_extra_stuff FLOP63 -600 1100 300 D 50 50 1 1 B 
+X VCC_extra_stuff FLOP62 -700 1100 300 D 50 50 1 1 B 
+X GND_extra_stuff FLOP61 -800 1100 300 D 50 50 1 1 B 
+X A5_extra_stuff 1 -1400 -1100 300 U 50 50 1 1 B 
+X B1_extra_stuff 2 -1300 -1100 300 U 50 50 1 1 B 
+X C3_extra_stuff 3 -1200 -1100 300 U 50 50 1 1 B 
+X D22_extra_stuff 4 -1100 -1100 300 U 50 50 1 1 B 
+X D3_extra_stuff 5 -1000 -1100 300 U 50 50 1 1 B 
+X VCC_extra_stuff 6 -900 -1100 300 U 50 50 1 1 B 
+X GND_extra_stuff 7 -800 -1100 300 U 50 50 1 1 B 
+X VCC_extra_stuff 8 -700 -1100 300 U 50 50 1 1 B 
+X GND_extra_stuff 9 -600 -1100 300 U 50 50 1 1 B 
+X VCC_extra_stuff 10 -500 -1100 300 U 50 50 1 1 B 
+X GND_extra_stuff 11 -400 -1100 300 U 50 50 1 1 B 
+X A5_extra_stuff 12 -300 -1100 300 U 50 50 1 1 B 
+X B1_extra_stuff 13 -200 -1100 300 U 50 50 1 1 B 
+X C3_extra_stuff 14 -100 -1100 300 U 50 50 1 1 B 
+X D22_extra_stuff 15 0 -1100 300 U 50 50 1 1 B 
+X D3_extra_stuff 16 100 -1100 300 U 50 50 1 1 B 
+X VCC_extra_stuff 17 200 -1100 300 U 50 50 1 1 B 
+X GND_extra_stuff 18 300 -1100 300 U 50 50 1 1 B 
+X VCC_extra_stuff 19 400 -1100 300 U 50 50 1 1 B 
+X GND_extra_stuff 20 500 -1100 300 U 50 50 1 1 B 
+X VCC_extra_stuff 21 600 -1100 300 U 50 50 1 1 B 
+X GND_extra_stuff 22 700 -1100 300 U 50 50 1 1 B 
+X A5_extra_stuff 23 800 -1100 300 U 50 50 1 1 B 
+X B1_extra_stuff FLOP56 900 -1100 300 U 50 50 1 1 B 
+X C3_extra_stuff FLOP57 1000 -1100 300 U 50 50 1 1 B 
+X D22_extra_stuff FLOP58 1100 -1100 300 U 50 50 1 1 B 
+X D3_extra_stuff FLOP59 1200 -1100 300 U 50 50 1 1 B 
+X VCC_extra_stuff FLOP60 1300 -1100 300 U 50 50 1 1 B 
+S -1500 800 1400 -800 1 1 10 f
+ENDDRAW
+ENDDEF
+DEF three_sided U 0 20 Y Y 1 L N
+F0 "U" -1500 1350 50 H V L CNN
+F1 "three_sided" -1500 1250 50 H V L CNN
+F2 "" -1500 1150 50 H I L CNN
+F3 "" -1500 950 50 H I L CNN
+DRAW
+X A5_extra_stuff TRESDFFG34 -2000 1100 500 R 50 50 1 1 B 
+X B1_extra_stuff 2 -2000 1000 500 R 50 50 1 1 B 
+X C3_extra_stuff 3 -2000 900 500 R 50 50 1 1 B 
+X D22_extra_stuff 4 -2000 800 500 R 50 50 1 1 B 
+X D3_extra_stuff 5 -2000 700 500 R 50 50 1 1 B 
+X VCC_extra_stuff 6 -2000 600 500 R 50 50 1 1 B 
+X GND_extra_stuff 7 -2000 500 500 R 50 50 1 1 B 
+X VCC_extra_stuff 8 -2000 400 500 R 50 50 1 1 B 
+X GND_extra_stuff 9 -2000 300 500 R 50 50 1 1 B 
+X VCC_extra_stuff 10 -2000 200 500 R 50 50 1 1 B 
+X GND_extra_stuff 11 -2000 100 500 R 50 50 1 1 B 
+X A5_extra_stuff 12 -2000 0 500 R 50 50 1 1 B 
+X B1_extra_stuff GHTY89 -2000 -100 500 R 50 50 1 1 B 
+X C3_extra_stuff 14 -2000 -200 500 R 50 50 1 1 B 
+X D22_extra_stuff 15 -2000 -300 500 R 50 50 1 1 B 
+X GND_extra_stuff 44 2100 -300 500 L 50 50 1 1 B 
+X VCC_extra_stuff 43 2100 -200 500 L 50 50 1 1 B 
+X GND_extra_stuff 42 2100 -100 500 L 50 50 1 1 B 
+X VCC_extra_stuff 41 2100 0 500 L 50 50 1 1 B 
+X GND_extra_stuff 40 2100 100 500 L 50 50 1 1 B 
+X VCC_extra_stuff 39 2100 200 500 L 50 50 1 1 B 
+X D3_extra_stuff 38 2100 300 500 L 50 50 1 1 B 
+X D22_extra_stuff 37 2100 400 500 L 50 50 1 1 B 
+X C3_extra_stuff IOPU89 2100 500 500 L 50 50 1 1 B 
+X B1_extra_stuff 35 2100 600 500 L 50 50 1 1 B 
+X A5_extra_stuff 34 2100 700 500 L 50 50 1 1 B 
+X GND_extra_stuff 33 2100 800 500 L 50 50 1 1 B 
+X VCC_extra_stuff 32 2100 900 500 L 50 50 1 1 B 
+X GND_extra_stuff 31 2100 1000 500 L 50 50 1 1 B 
+X VCC_extra_stuff 30 2100 1100 500 L 50 50 1 1 B 
+X D3_extra_stuff 16 -600 -1700 500 U 50 50 1 1 B 
+X VCC_extra_stuff 17 -500 -1700 500 U 50 50 1 1 B 
+X GND_extra_stuff 18 -400 -1700 500 U 50 50 1 1 B 
+X VCC_extra_stuff 19 -300 -1700 500 U 50 50 1 1 B 
+X GND_extra_stuff 20 -200 -1700 500 U 50 50 1 1 B 
+X VCC_extra_stuff 21 -100 -1700 500 U 50 50 1 1 B 
+X GND_extra_stuff 22 0 -1700 500 U 50 50 1 1 B 
+X A5_extra_stuff 23 100 -1700 500 U 50 50 1 1 B 
+X B1_extra_stuff 24 200 -1700 500 U 50 50 1 1 B 
+X C3_extra_stuff 25 300 -1700 500 U 50 50 1 1 B 
+X D22_extra_stuff GHTRRY67 400 -1700 500 U 50 50 1 1 B 
+X D3_extra_stuff 27 500 -1700 500 U 50 50 1 1 B 
+X VCC_extra_stuff 28 600 -1700 500 U 50 50 1 1 B 
+X GND_extra_stuff 29 700 -1700 500 U 50 50 1 1 B 
+S -1500 1200 1600 -1200 1 1 10 f
+ENDDRAW
+ENDDEF
+#End Library
