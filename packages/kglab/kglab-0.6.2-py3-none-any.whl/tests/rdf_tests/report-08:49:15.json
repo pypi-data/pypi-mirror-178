@@ -1,0 +1,302 @@
+{
+    "Basic - Prefix/Base 1": {
+        "input": "basic/data-1.ttl",
+        "query": "basic/base-prefix-1.rq",
+        "error": null,
+        "length_check_error": null
+    },
+    "Basic - Prefix/Base 2": {
+        "input": "basic/data-1.ttl",
+        "query": "basic/base-prefix-2.rq",
+        "error": null,
+        "length_check_error": null
+    },
+    "Basic - Prefix/Base 3": {
+        "input": "basic/data-1.ttl",
+        "query": "basic/base-prefix-3.rq",
+        "error": null,
+        "length_check_error": null
+    },
+    "Basic - Prefix/Base 4": {
+        "input": "basic/data-1.ttl",
+        "query": "basic/base-prefix-4.rq",
+        "error": null,
+        "length_check_error": null
+    },
+    "Basic - Prefix/Base 5": {
+        "input": "basic/data-1.ttl",
+        "query": "basic/base-prefix-5.rq",
+        "error": null,
+        "length_check_error": null
+    },
+    "Basic - List 1": {
+        "input": "basic/data-2.ttl",
+        "query": "basic/list-1.rq",
+        "error": null,
+        "length_check_error": null
+    },
+    "Basic - List 2": {
+        "input": "basic/data-2.ttl",
+        "query": "basic/list-2.rq",
+        "error": null,
+        "length_check_error": null
+    },
+    "Basic - List 3": {
+        "input": "basic/data-2.ttl",
+        "query": "basic/list-3.rq",
+        "error": null,
+        "length_check_error": null
+    },
+    "Basic - List 4": {
+        "input": "basic/data-2.ttl",
+        "query": "basic/list-4.rq",
+        "error": null,
+        "length_check_error": null
+    },
+    "Basic - Quotes 1": {
+        "input": "basic/data-3.ttl",
+        "query": "basic/quotes-1.rq",
+        "error": null,
+        "length_check_error": null
+    },
+    "Basic - Quotes 2": {
+        "input": "basic/data-3.ttl",
+        "query": "basic/quotes-2.rq",
+        "error": null,
+        "length_check_error": null
+    },
+    "Basic - Quotes 3": {
+        "input": "basic/data-3.ttl",
+        "query": "basic/quotes-3.rq",
+        "error": null,
+        "length_check_error": null
+    },
+    "Basic - Quotes 4": {
+        "input": "basic/data-3.ttl",
+        "query": "basic/quotes-4.rq",
+        "error": null,
+        "length_check_error": null
+    },
+    "Basic - Term 1": {
+        "input": "basic/data-4.ttl",
+        "query": "basic/term-1.rq",
+        "error": null,
+        "length_check_error": null
+    },
+    "Basic - Term 2": {
+        "input": "basic/data-4.ttl",
+        "query": "basic/term-2.rq",
+        "error": null,
+        "length_check_error": null
+    },
+    "Basic - Term 3": {
+        "input": "basic/data-4.ttl",
+        "query": "basic/term-3.rq",
+        "error": null,
+        "length_check_error": null
+    },
+    "Basic - Term 4": {
+        "input": "basic/data-4.ttl",
+        "query": "basic/term-4.rq",
+        "error": null,
+        "length_check_error": null
+    },
+    "Basic - Term 5": {
+        "input": "basic/data-4.ttl",
+        "query": "basic/term-5.rq",
+        "error": null,
+        "length_check_error": null
+    },
+    "Basic - Term 6": {
+        "input": "basic/data-4.ttl",
+        "query": "basic/term-6.rq",
+        "error": null,
+        "length_check_error": null
+    },
+    "Basic - Term 7": {
+        "input": "basic/data-4.ttl",
+        "query": "basic/term-7.rq",
+        "error": "Expected {SelectQuery | ConstructQuery | DescribeQuery | AskQuery}, found '.'  (at char 140), (line:5, col:23)",
+        "length_check_error": null
+    },
+    "Basic - Term 8": {
+        "input": "basic/data-4.ttl",
+        "query": "basic/term-8.rq",
+        "error": null,
+        "length_check_error": null
+    },
+    "Basic - Term 9": {
+        "input": "basic/data-4.ttl",
+        "query": "basic/term-9.rq",
+        "error": null,
+        "length_check_error": null
+    },
+    "Basic - Var 1": {
+        "input": "basic/data-5.ttl",
+        "query": "basic/var-1.rq",
+        "error": null,
+        "length_check_error": null
+    },
+    "Basic - Var 2": {
+        "input": "basic/data-5.ttl",
+        "query": "basic/var-2.rq",
+        "error": null,
+        "length_check_error": null
+    },
+    "Non-matching triple pattern": {
+        "input": "basic/data-7.ttl",
+        "query": "basic/bgp-no-match.rq",
+        "error": null,
+        "length_check_error": "object of type 'NoneType' has no len()"
+    },
+    "Basic graph pattern - spoo": {
+        "input": "basic/data-6.ttl",
+        "query": "basic/spoo-1.rq",
+        "error": null,
+        "length_check_error": null
+    },
+    "Prefix name 1": {
+        "input": "basic/data-6.ttl",
+        "query": "basic/prefix-name-1.rq",
+        "error": null,
+        "length_check_error": null
+    },
+    "Multibytes character at the end of a unicode espace sequence": {
+        "input": null,
+        "query": "oxigraph-tests/sparql/long_unicode_escape_with_multibytes_char.ru",
+        "error": "Expected {SelectQuery | ConstructQuery | DescribeQuery | AskQuery}, found '\\'  (at char 0), (line:1, col:1)",
+        "length_check_error": null
+    },
+    "Simple DESCRIBE request": {
+        "input": "oxigraph-tests/sparql/describe_input.ttl",
+        "query": "oxigraph-tests/sparql/describe_where.rq",
+        "error": "DESCRIBE not implemented",
+        "length_check_error": null
+    },
+    "GROUP_CONCAT with NULL": {
+        "input": "oxigraph-tests/sparql/group_concat_with_null.ttl",
+        "query": "oxigraph-tests/sparql/group_concat_with_null.rq",
+        "error": null,
+        "length_check_error": null
+    },
+    "query with only a FILTER NOT EXISTS": {
+        "input": "oxigraph-tests/sparql/describe_input.ttl",
+        "query": "oxigraph-tests/sparql/single_not_exists.rq",
+        "error": null,
+        "length_check_error": "object of type 'NoneType' has no len()"
+    },
+    "VALUES inside of FILTER EXISTS": {
+        "input": null,
+        "query": "oxigraph-tests/sparql/subquery_in_filter_not_exists.rq",
+        "error": null,
+        "length_check_error": null
+    },
+    "rdf:langString with the same language are comparable": {
+        "input": null,
+        "query": "oxigraph-tests/sparql/cmp_langString.rq",
+        "error": null,
+        "length_check_error": null
+    },
+    "Halloween Problem: An update operation should not be able to read its own writes": {
+        "input": null,
+        "query": "oxigraph-tests/sparql/halloween_problem.ru",
+        "error": "Expected {SelectQuery | ConstructQuery | DescribeQuery | AskQuery}, found 'INSERT'  (at char 33), (line:2, col:1)",
+        "length_check_error": null
+    },
+    "A very nested property path": {
+        "input": null,
+        "query": "oxigraph-tests/sparql/nested_path.rq",
+        "error": "maximum recursion depth exceeded while calling a Python object",
+        "length_check_error": null
+    },
+    "A very nested expression": {
+        "input": null,
+        "query": "oxigraph-tests/sparql/nested_expression.rq",
+        "error": "maximum recursion depth exceeded",
+        "length_check_error": null
+    },
+    "Nested Optionals - 1": {
+        "input": "algebra/two-nested-opt.ttl",
+        "query": "algebra/two-nested-opt.rq",
+        "error": null,
+        "length_check_error": null
+    },
+    "Nested Optionals - 2": {
+        "input": "algebra/two-nested-opt.ttl",
+        "query": "algebra/two-nested-opt-alt.rq",
+        "error": null,
+        "length_check_error": null
+    },
+    "Optional-filter - 1": {
+        "input": "algebra/opt-filter-1.ttl",
+        "query": "algebra/opt-filter-1.rq",
+        "error": null,
+        "length_check_error": null
+    },
+    "Optional-filter - 2 filters": {
+        "input": "algebra/opt-filter-2.ttl",
+        "query": "algebra/opt-filter-2.rq",
+        "error": null,
+        "length_check_error": null
+    },
+    "Optional-filter - scope of variable": {
+        "input": "algebra/opt-filter-3.ttl",
+        "query": "algebra/opt-filter-3.rq",
+        "error": null,
+        "length_check_error": "object of type 'NoneType' has no len()"
+    },
+    "Filter-placement - 1": {
+        "input": "algebra/data-2.ttl",
+        "query": "algebra/filter-placement-1.rq",
+        "error": null,
+        "length_check_error": null
+    },
+    "Filter-placement - 2": {
+        "input": "algebra/data-2.ttl",
+        "query": "algebra/filter-placement-2.rq",
+        "error": null,
+        "length_check_error": null
+    },
+    "Filter-placement - 3": {
+        "input": "algebra/data-2.ttl",
+        "query": "algebra/filter-placement-3.rq",
+        "error": null,
+        "length_check_error": null
+    },
+    "Filter-nested - 1": {
+        "input": "algebra/data-1.ttl",
+        "query": "algebra/filter-nested-1.rq",
+        "error": null,
+        "length_check_error": null
+    },
+    "Filter-nested - 2": {
+        "input": "algebra/data-1.ttl",
+        "query": "algebra/filter-nested-2.rq",
+        "error": null,
+        "length_check_error": "object of type 'NoneType' has no len()"
+    },
+    "Filter-scope - 1": {
+        "input": "algebra/data-2.ttl",
+        "query": "algebra/filter-scope-1.rq",
+        "error": null,
+        "length_check_error": null
+    },
+    "Join scope - 1": {
+        "input": "algebra/var-scope-join-1.ttl",
+        "query": "algebra/var-scope-join-1.rq",
+        "error": null,
+        "length_check_error": "object of type 'NoneType' has no len()"
+    },
+    "Join operator with OPTs, BGPs, and UNIONs": {
+        "input": "algebra/join-combo-graph-2.ttl",
+        "query": "algebra/join-combo-1.rq",
+        "error": null,
+        "length_check_error": null
+    },
+    "Join operator with Graph and Union": {
+        "input": "algebra/join-combo-graph-2.ttl",
+        "query": "algebra/join-combo-2.rq",
+        "error": "You performed a query operation requiring a dataset (i.e. ConjunctiveGraph), but operating currently on a single graph.",
+        "length_check_error": null
+    }
+}
