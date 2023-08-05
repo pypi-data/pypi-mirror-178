@@ -1,0 +1,10 @@
+emmi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+emmi/_version.py,sha256=crT17vp6E1qkOg_Jk7st7SkKxIAPVi-qs8JtppUXD4E,178
+emmi/app.py,sha256=gpPDUuJjuyBh99FZ5hir4v-vZx1z8VwROJM0VeolQV0,3198
+emmi/eda.py,sha256=9XNPGxUR049YZJHusUWNyKufJn3j5SltjBfr3CH_xp4,31013
+emmi/scpi.py,sha256=4_ByEAvb2Q_ZQ6tHg5C7vpgQh1mnWaKYCHtBu782sos,7152
+emmi-0.0.10.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+emmi-0.0.10.dist-info/METADATA,sha256=CxLLifXYt0H6IbmmIieAvr3usCW9cxX2AaHMXZ25ubI,11042
+emmi-0.0.10.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+emmi-0.0.10.dist-info/top_level.txt,sha256=Bc8ycRmMFJ5efUNmCIoG8hGs-uKCRl3aMdR40ShVrDE,5
+emmi-0.0.10.dist-info/RECORD,,
