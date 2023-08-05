@@ -1,0 +1,41 @@
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spacy-annotation-tool"
+version = "1.5.0"
+authors = [{ name="Yousafxai", email="ayazpk6630@gmail.com" }]
+description = "spacy annotation tool which help datascientist to label NER"
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pyqt5",
+    "pandas",
+]
+
+
+[project.scripts]
+realpython = "annotation:main"
+
+[tool.bumpver]
+current_version = "1.5.0"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message = "bump version {old_version} -> {new_version}"
+commit = true
+tag = true
+push = false
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = [
+    'current_version = "{version}"','version = "{version}"']
+"src/packages/__init__.py" = ["{version}"]
+"README.md" = [
+    "{version}",
+    "{pep440_version}",
+]
+
