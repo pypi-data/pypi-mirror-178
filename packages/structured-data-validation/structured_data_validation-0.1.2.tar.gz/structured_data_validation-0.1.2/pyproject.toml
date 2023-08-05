@@ -1,0 +1,76 @@
+[tool.poetry]
+name = "structured_data_validation"
+version = "0.1.2"
+description = "Python package for the validation of AROS [semi]structured data using pydantic models."
+license = "GPLv3"
+authors = [
+    "Javier Díez Pérez <jdiezperezj@gmail.com>",
+]
+maintainers = [
+    "Javier Díez Pérez <jdiezperezj@gmail.com>",
+]
+readme = "README.md"
+classifiers = [
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.11"
+pyarrow = "^9.0.0"
+pydantic = "^1.10.2"
+pandas = "^1.5.1"
+loguru = "^0.6.0"
+email-validator = "^1.3.0"
+hydra-core = "^1.2.0"
+hydra-zen = "^0.8.0"
+python-dotenv = "^0.21.0"
+hypothesis = "^6.56.4"
+hydra-colorlog = "^1.2.0"
+importlib-metadata = "^5.0.0"
+coverage = "^6.5.0"
+fastavro = "^1.7.0"
+google-events = "^0.2.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.2.0"
+coverage = "^6.5.0"
+pytest-cov = "^4.0.0"
+flake8 = "^5.0.4"
+black = "^22.10.0"
+flake8-bandit = "^4.1.1"
+flake8-black = "^0.3.3"
+flake8-bugbear = "^22.10.27"
+flake8-import-order = "^0.18.1"
+safety = "^2.3.1"
+mypy = "^0.982"
+hypothesis = "^6.56.4"
+nox-poetry = "^1.0.1"
+email-validator = "^1.3.0"
+pytype = "^2022.10.26"
+typeguard = "^2.13.3"
+flake8-annotations = "^2.9.1"
+flake8-docstrings = "^1.6.0"
+darglint = "^1.8.1"
+Sphinx = "^5.3.0"
+sphinx-autodoc-typehints = "^1.19.5"
+pandas-stubs = "^1.5.1"
+autodoc-pydantic = "^1.8.0"
+codecov = "^2.1.12"
+rinohtype = "^0.5.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+validate = "structured_data_validation.scripts.validate_file:main"
+
+# pyproject.toml
+[tool.coverage.paths]
+source = ["src", "*/site-packages"]
+[tool.coverage.run]
+branch = true
+source = ["structured_data_validation"]
+[tool.coverage.report]
+show_missing = true
+fail_under = 10
