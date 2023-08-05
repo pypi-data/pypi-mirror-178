@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+discordies/__init__.py
+discordies.egg-info/PKG-INFO
+discordies.egg-info/SOURCES.txt
+discordies.egg-info/dependency_links.txt
+discordies.egg-info/top_level.txt
