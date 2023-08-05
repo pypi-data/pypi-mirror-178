@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: legendarycli
+Version: 0.0.6
+Summary: This is a simple CLI to show my CV and resume
+Author: Amir M. Ghanem
+Author-email: amirghanem95@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE.txt
+Requires-Dist: Click
+Requires-Dist: termcolor
+Requires-Dist: pyfiglet
+Requires-Dist: requests
+
+# legendaryCLI
+
+### simple CLI project using Click TermColor and pyfiglet  
