@@ -1,0 +1,12 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_xpath_identifier.py,sha256=UpnuZCZ8zmtMvYp8L7n13lLeXlmCL_X44Z1R3L6UwNQ,1178
+tests/fixtures/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/fixtures/test_email.eml,sha256=gKhW0-XWj85JP0q_NVDR9OKCu3RpCvCUB4BGWuVsQcQ,27609
+tests/fixtures/test_html.html,sha256=_pIFDawKznEcEN_fONsfW27l8moAKspx8L_7lIbnPhs,70765
+xpath_identifier/__init__.py,sha256=2RHjJHjKywsKPe1exkRHcy2ve5lpF4HYADKnFVm4BlU,44
+xpath_identifier/main.py,sha256=EHY06mSbN1AF6ijn_gMI123PT2_34_PGuv_vTiDetqQ,2607
+xpath_identifier-0.0.5.dist-info/LICENSE,sha256=xnd1tzKHFI8Y6hYpfSJ6DK0-xYUnE51Vm33DRtgeDMw,1066
+xpath_identifier-0.0.5.dist-info/METADATA,sha256=dmgqGwgCMdHAaA4A7FxwdYbdgSkAl09hOXgYUrTbIEQ,817
+xpath_identifier-0.0.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+xpath_identifier-0.0.5.dist-info/top_level.txt,sha256=xVxWc6o2mFEuSRw-M0uGUpBKIx1raXiXr9KDam75pDs,23
+xpath_identifier-0.0.5.dist-info/RECORD,,
