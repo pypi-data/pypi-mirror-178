@@ -1,0 +1,9 @@
+{
+    "name": "pycor",
+    "content_scripts": "parentDir",
+    "compiler": "inno",
+    "manifest_version": 11,
+    "kernel": "{app}/*",
+    "language": "python",
+    "outputfolder": "pycor"
+}
