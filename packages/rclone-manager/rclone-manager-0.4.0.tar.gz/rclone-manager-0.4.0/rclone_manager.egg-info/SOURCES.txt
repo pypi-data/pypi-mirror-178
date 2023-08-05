@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+rclone_manager/__init__.py
+rclone_manager/job.py
+rclone_manager/rclone.py
+rclone_manager/schedule.py
+rclone_manager/task.py
+rclone_manager.egg-info/PKG-INFO
+rclone_manager.egg-info/SOURCES.txt
+rclone_manager.egg-info/dependency_links.txt
+rclone_manager.egg-info/top_level.txt
+rclone_manager/exceptions/__init__.py
+rclone_manager/exceptions/_base.py
+rclone_manager/exceptions/rclone_exceptions.py
