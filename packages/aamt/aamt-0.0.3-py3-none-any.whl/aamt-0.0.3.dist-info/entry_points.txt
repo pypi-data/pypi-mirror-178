@@ -1,0 +1,6 @@
+[console_scripts]
+aat=aamt.cli:main
+
+[pytest11]
+aamt=aamt.plugin:Plugin
+
