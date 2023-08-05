@@ -1,0 +1,10 @@
+daemon_application/__init__.py,sha256=mzXywJWmSwo8Ck8DF2UXT3WU4fuao0oTKsFnfVPf_7o,383
+daemon_application/app.py,sha256=D_kZ2usBZfw-CDVc6pvn_D01Tt99y2Z2aQNcfx7_o3k,12618
+daemon_application/base.py,sha256=LHSmYn-P-26qIXnd_uMF7by620yfcJzDuZt4x2tLbRY,5727
+daemon_application/example.py,sha256=weZUbXOfYAUb_VbqkWLUj7BoV5oCVW8_8XtOYVXdWp0,742
+daemon_application-0.5.8.dist-info/LICENSE,sha256=XO4ia4ZQeQVVd06OxmRLbROjHPNiMbpzFnSYVPNAdhY,1067
+daemon_application-0.5.8.dist-info/METADATA,sha256=BhAeh4ZAOF5PhYszXCMiR1ukP53emtjccCZAemdmjx4,5478
+daemon_application-0.5.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+daemon_application-0.5.8.dist-info/entry_points.txt,sha256=kimEvfxhC-c4wYdYdE48bJ4BPixst94SxZCmO6NalB4,73
+daemon_application-0.5.8.dist-info/top_level.txt,sha256=mYxygdFFvqjAgEqqK3v2Rc_iiOci77sjGEc3on9X1zM,19
+daemon_application-0.5.8.dist-info/RECORD,,
