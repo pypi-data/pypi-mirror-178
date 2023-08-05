@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: qito
+Version: 1.0.5
+Summary: 视频音乐下载播放器
+Home-page: https://github.com/qitoqito/qito
+Author: KEDAYA
+Author-email: ii@iippcc.com
+License: MIT
+Platform: any
+Classifier: License :: OSI Approved :: MIT License
+Requires: requests
+Requires: pysocks
+Requires: coloredlogs
+Requires: pyexecjs
+Requires: pyaes
+Requires-Python: >=3.5
+
+基于Python,视频、音乐、直播下载器,支持YouKu、QQ、Iqiyi等

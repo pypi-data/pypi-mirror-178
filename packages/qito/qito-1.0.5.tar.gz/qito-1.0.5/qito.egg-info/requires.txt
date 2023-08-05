@@ -1,0 +1,5 @@
+requests
+pysocks
+coloredlogs
+pyexecjs
+pyaes

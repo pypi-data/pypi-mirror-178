@@ -1,0 +1,2 @@
+[console_scripts]
+qito = qito.__main__:main
