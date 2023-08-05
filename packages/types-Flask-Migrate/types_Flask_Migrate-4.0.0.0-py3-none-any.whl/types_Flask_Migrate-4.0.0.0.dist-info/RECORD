@@ -1,0 +1,6 @@
+flask_migrate-stubs/METADATA.toml,sha256=jq2O0pYnafzTAiKp1g8I8-d1WWORq5k03yxyGQj_fc0,56
+flask_migrate-stubs/__init__.pyi,sha256=WQ746d6Q_sOhY4g2YjVFnLxAUHhBurXreqa0Ssh5TOI,3648
+types_Flask_Migrate-4.0.0.0.dist-info/METADATA,sha256=RCxQDnGTl_LCwos0C9uQnfsvcetIM8d63nnWxMeZBh0,1252
+types_Flask_Migrate-4.0.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+types_Flask_Migrate-4.0.0.0.dist-info/top_level.txt,sha256=vztwnQb8NNbd-UioMobP9pwi-ED_MO43c7B8qwPj5Oc,20
+types_Flask_Migrate-4.0.0.0.dist-info/RECORD,,
