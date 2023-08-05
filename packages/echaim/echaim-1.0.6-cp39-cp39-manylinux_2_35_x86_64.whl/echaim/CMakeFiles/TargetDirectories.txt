@@ -1,0 +1,4 @@
+C:/Users/vadym/OneDrive/Desktop/echaim/src/echaim/CMakeFiles/ALL_BUILD.dir
+C:/Users/vadym/OneDrive/Desktop/echaim/src/echaim/CMakeFiles/ZERO_CHECK.dir
+C:/Users/vadym/OneDrive/Desktop/echaim/src/echaim/source_c/CMakeFiles/ECHAIM.dir
+C:/Users/vadym/OneDrive/Desktop/echaim/src/echaim/source_c/CMakeFiles/ALL_BUILD.dir
