@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+income_flow_predict/__init__.py
+income_flow_predict/flowincomepredict.py
+income_flow_predict.egg-info/PKG-INFO
+income_flow_predict.egg-info/SOURCES.txt
+income_flow_predict.egg-info/dependency_links.txt
+income_flow_predict.egg-info/requires.txt
+income_flow_predict.egg-info/top_level.txt

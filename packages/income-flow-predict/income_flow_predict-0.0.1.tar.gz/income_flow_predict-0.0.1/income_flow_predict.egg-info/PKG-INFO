@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: income-flow-predict
+Version: 0.0.1
+Summary: package for match best sample to predict income or flow
+Author: wufeipku
+Author-email: wufei.pku@163.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENCE
