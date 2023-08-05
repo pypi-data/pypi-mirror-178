@@ -1,0 +1,8 @@
+click>=6.7
+httpx
+pandas>=0.23.3
+prettytable>=2.2.0
+tenacity>=8.0.1
+tqdm>=4.37.0
+pyyaml
+tdxpy
