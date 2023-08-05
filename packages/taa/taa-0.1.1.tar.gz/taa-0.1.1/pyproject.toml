@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "taa"
+version = "0.1.1"
+description = "接口自动化工具"
+authors = ["雪峰365 <120158568@qq.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/xuefeng365/api-autotest.git"
+repository = "https://github.com/xuefeng365/api-autotest.git"
+packages = [{include = "taa"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pyyaml = "^6.0"
+sqlalchemy = "^1.4.44"
+texttable = "^1.6.7"
+colorlog = "^6.7.0"
+allure-pytest = "^2.12.0"
+
+[tool.poetry.dev-dependencies]
+
+[[tool.poetry.source]]
+name = "tsinghua"
+default = true
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+
+[tool.poetry.scripts]
+taa = "taa.cli:main"
+
+[tool.poetry.plugins."pytest11"]
+"taa" = "taa.plugin:Plugin"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
