@@ -1,0 +1,348 @@
+Metadata-Version: 2.1
+Name: jd-wechatpay
+Version: 0.0.9
+Summary: Wechat pay v3 python sdk, by JD
+Author-email: wxg001 <wxg001@21cn.com>
+License: MIT
+Project-URL: Homepage, https://pypi.org/project/jd-wechatpay/
+Project-URL: Bug Tracker, https://pypi.org/project/jd-wechatpay/
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Cryptography
+Requires-Dist: requests
+
+# jd-wechatpay
+
+JD 微信支付 V3 版 python 库。 
+
+[![PyPI version](https://badge.fury.io/py/jd-wechatpay.svg)](https://pypi.python.org/pypi/jd-wechatpay)
+[![Python](https://img.shields.io/pypi/pyversions/jd-wechatpay)](https://pypi.python.org/pypi/jd-wechatpay)
+[![Downloads](https://img.shields.io/pypi/dm/jd-wechatpay)](https://pypi.python.org/pypi/jd-wechatpay)
+
+
+## 安装
+
+```
+pip install jd-wechatpay
+```
+
+## 适用对象
+
+**jd-wechatpay**同时支持微信支付[直连模式](https://pay.weixin.qq.com/wiki/doc/apiv3/index.shtml)及[服务商模式](https://pay.weixin.qq.com/wiki/doc/apiv3_partner/index.shtml)，接口说明详见官网。
+
+项目参考 https://gitee.com/minibear2021/wechatpayv3， 区别和其区别是，调用方法时，做了分类。 对 Core.request 方法做了扩展。
+[github](https://github.com/minibear2021/wechatpayv3)
+
+
+## 导入
+
+```
+from jd_wechatpay import WeChatPay, WeChatPayType
+```
+
+## 使用方法
+
+### 准备
+
+参考微信官方文档准备好密钥, 证书文件和配置([证书/密钥/签名介绍](https://pay.weixin.qq.com/wiki/doc/apiv3/wechatpay/wechatpay3_0.shtml))
+
+- **商户 API 证书私钥：PRIVATE_KEY**。商户申请商户 API 证书时，会生成商户私钥，并保存在本地证书文件夹的文件 `api_client_key.pem` 中。
+  > :warning: 不要把私钥文件暴露在公共场合，如上传到 Github，写在客户端代码等。
+- **商户 API 证书序列号：CERT_SERIAL_NO**。每个证书都有一个由 CA 颁发的唯一编号，即证书序列号。扩展阅读 [如何查看证书序列号](https://wechatpay-api.gitbook.io/wechatpay-api-v3/chang-jian-wen-ti/zheng-shu-xiang-guan#ru-he-cha-kan-zheng-shu-xu-lie-hao)。
+- **微信支付 APIv3 密钥：`API_V3_KEY**`，是在回调通知和微信支付平台证书下载接口中，为加强数据安全，对关键信息 `AES-256-GCM` 加密时使用的对称加密密钥。
+
+### 一个最小的后端
+
+以下代码演示一个带有[Native 支付下单](https://pay.weixin.qq.com/wiki/doc/apiv3/apis/chapter3_4_1.shtml)接口和[支付通知](https://pay.weixin.qq.com/wiki/doc/apiv3/apis/chapter3_4_5.shtml)接口的后端。
+服务商模式
+
+```
+import os
+import logging
+from flask import Flask, jsonify
+from jd_wechatpay import WeChatPay, WeChatPayType
+from jd_tools import get_nonce
+
+
+# 微信支付商户号，服务商模式下为服务商户号，即官方文档中的sp_mchid。
+SP_MCHID = '1230000109'
+SUB_MCH_ID = '1230000000'   # 服务商下子商户号
+
+# 商户证书私钥，此文件不要放置在下面设置的CERT_DIR目录里。
+with open('path_to_key/api_client_key.pem') as f:
+    PRIVATE_KEY = f.read()
+
+# 商户证书序列号
+CERT_SERIAL_NO = '444F4864EA9B34415...'
+
+# API v3密钥， https://pay.weixin.qq.com/wiki/doc/apiv3/wechatpay/wechatpay3_2.shtml
+API_V3_KEY = 'MIIEvwIBADANBg1qh2iG9w0B5QE...'
+
+# APPID，应用ID，服务商模式下为服务商应用ID，即官方文档中的sp_appid，也可以在调用接口的时候覆盖。
+APPID = 'wxd678efh567hg6787'
+
+# 回调地址，也可以在调用接口的时候覆盖。
+NOTIFY_URL = 'https://www.xxxx.com/notify_v3'
+
+# 微信支付平台证书缓存目录，初始调试的时候可以设为None，首次使用确保此目录为空目录。
+CERT_DIR = './cert'
+
+# 日志记录器，记录web请求和回调细节，便于调试排错。 请根据自己项目要求，配置日志模块
+logging.basicConfig(filename=os.path.join(os.getcwd(), 'demo.log'), level=logging.DEBUG, filemode='a', format='%(asctime)s - %(process)s - %(levelname)s: %(message)s')
+LOGGER = logging.getLogger('demo')
+
+# 接入模式：False=直连商户模式，True=服务商模式。
+PARTNER_MODE = True
+
+# 代理设置，None或者{"https": "http://10.10.1.10:1080"}，详细格式参见 requests 库说明文档
+PROXY = None
+
+
+# 接下来初始化 WechatPay 实例并配置一个合适的接口：
+wxpay = WeChatPay(
+    WeChatPayType.NATIVE,
+    mch_id=SP_MCHID,
+    private_key=PRIVATE_KEY,
+    cert_serial_no=CERT_SERIAL_NO,
+    app_id=APPID,
+    api_v3_key=API_V3_KEY,
+    notify_url=NOTIFY_URL,
+    cert_dir=CERT_DIR,
+    logger=LOGGER,
+    partner_mode=PARTNER_MODE,
+    proxy=PROXY)
+
+app = Flask(__name__)
+
+
+@app.route('/pay', methods=['POST', 'GET'])
+def pay():
+    # 以native下单为例，下单成功后即可获取到 'code_url'，将 'code_url' 转换为二维码，并用微信扫码即可进行支付测试。
+    out_trade_no = get_nonce(8)
+    description = 'demo-description'
+    amount = 1
+    code, message = wxpay.pay.pay(
+        description=description,
+        out_trade_no=out_trade_no,
+        amount={'total': amount},
+        sub_mch_id=SUB_MCH_ID,
+        pay_type=WeChatPayType.NATIVE
+    )
+    return jsonify({'code': code, 'message': message})
+```
+
+
+
+检查一下参数无误，现在就可以用 python 解释器来运行：
+
+```shell
+$ python examples_sp.py
+ * Serving Flask app "examples_sp" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+```
+
+现在访问 http://127.0.0.1:5000/pay ，如果一切正常，你会看到下面一串 json 字符串：
+
+```
+{
+  "code": 200,
+  "message": "{\"code_url\":\"weixin://wxpay/bizpayurl?pr=abcdefghi\"}"
+}
+```
+
+
+## 模块内方法说明
+
+| 函数、对象名称            | 类型    | 说明                          |
+|---------------------------|---------|-------------------------------|
+| WeChatPay                 | 对象    | 微信支付对象，V3版本API，支持服务商 和 直连商户 |
+
+
+## 接口清单
+
+已适配的微信支付 V3 版 API 接口列表如下：
+
+| 大类     | 小类                                     | 接口                     | 接口函数                       | 直连商户 | 服务商 |
+| -------- | ---------------------------------------- | ------------------------ | ------------------------------ | ---------| ------ |
+| 公用     | 公用                                     | 调起支付签名             | sign                           | 是       | 是 |
+| 公用     | 公用                                     | 回调通知                 | callback                       | 是       | 是 |
+| 公用     | 公用                                     | 敏感信息参数解密         | decrypt                        | 是       | 是 |
+| 公用     | 公用                           pay       | 下载账单                 | download_bill                  | 是       | 是 |
+| 商户进件 | 特约商户进件、小微商户进件     apply     | 提交申请单               | applyment                      | ×       | 是 |
+| 商户进件 | 特约商户进件、小微商户进件     apply     | 查询申请单状态           | applyment_query                | ×       | 是 |
+| 商户进件 | 特约商户进件、小微商户进件     apply     | 修改结算账号             | settlement_modify              | ×       | 是 |
+| 商户进件 | 特约商户进件、小微商户进件     apply     | 查询结算账号             | settlement_query               | ×       | 是 |
+| 基础支付 | JSAPI、APP、H5、Native、小程序支付  pay  | 统一下单                 | pay                            | 是       | 是 |
+| 基础支付 | JSAPI、APP、H5、Native、小程序支付  pay  | 查询订单                 | query                          | 是       | 是 |
+| 基础支付 | JSAPI、APP、H5、Native、小程序支付  pay  | 关闭订单                 | close                          | 是       | 是 |
+| 基础支付 | 合单支付                            pay  | 统一下单                 | combine_pay                    | 是       | 是 |
+| 基础支付 | 合单支付                            pay  | 查询订单                 | combine_query                  | 是       | 是 |
+| 基础支付 | 合单支付                            pay  | 关闭订单                 | combine_close                  | 是       | 是 |
+| 基础支付 | JSAPI、APP、H5、Native、小程序、合单支付 | 申请退款        pay      | refund                         | 是       | 是 |
+| 基础支付 | JSAPI、APP、H5、Native、小程序、合单支付 | 查询单笔退款    pay      | query_refund                   | 是       | 是 |
+| 基础支付 | JSAPI、APP、H5、Native、小程序、合单支付 | 申请交易账单    pay      | trade_bill                     | 是       | 是 |
+| 基础支付 | JSAPI、APP、H5、Native、小程序、合单支付 | 申请资金账单    pay      | fund_flow_bill                 | 是       | 是 |
+| 基础支付 | JSAPI、APP、H5、Native、小程序、合单支付 | 申请单个子商户资金账单   | sub_merchant_fund_flow_bill    | ×       | 是 |
+| 基础支付 | JSAPI、APP、H5、Native、小程序、合单支付 | 下载账单        pay      | download_bill                  | 是       | 是 |
+| 经营能力 | 微信支付分（免确认模式）      pay_score  | 创单结单合并             | direct_complete                | 是       | × |
+| 经营能力 | 微信支付分（免确认预授权模式）pay_score  | 商户预授权               | permission                     | 是       | × |
+| 经营能力 | 微信支付分（免确认预授权模式）pay_score  | 查询用户授权记录         | permission_query               | 是       | × |
+| 经营能力 | 微信支付分（免确认预授权模式）pay_score  | 解除用户授权关系         | permission_terminate           | 是       | × |
+| 经营能力 | 微信支付分（公共 API）        pay_score  | 创建支付分订单           | create                         | 是       | × |
+| 经营能力 | 微信支付分（公共 API）        pay_score  | 查询支付分订单           | query                          | 是       | × |
+| 经营能力 | 微信支付分（公共 API）        pay_score  | 取消支付分订单           | cancel                         | 是       | × |
+| 经营能力 | 微信支付分（公共 API）        pay_score  | 修改订单金额             | modify                         | 是       | × |
+| 经营能力 | 微信支付分（公共 API）        pay_score  | 完结支付分订单           | complete                       | 是       | × |
+| 经营能力 | 微信支付分（公共 API）        pay_score  | 商户发起催收扣款         | pay                            | 是       | × |
+| 经营能力 | 微信支付分（公共 API）        pay_score  | 同步服务订单信息         | sync                           | 是       | × |
+| 经营能力 | 微信支付分（公共 API）        pay_score  | 申请退款                 | refund                         | 是       | × |
+| 经营能力 | 微信支付分（公共 API）        pay_score  | 查询单笔退款             | refund_query                   | 是       | × |
+| 经营能力 | 微信支付分（公共 API）        pay_score  | 商户申请获取对账单       | merchant_bill                  | 是       | × |
+| 经营能力 | 支付即服务                    guide      | 服务人员注册             | register                       | 是       | 是 |
+| 经营能力 | 支付即服务                    guide      | 服务人员分配             | assign                         | 是       | 是 |
+| 经营能力 | 支付即服务                    guide      | 服务人员查询             | guides_query                   | 是       | 是 |
+| 经营能力 | 支付即服务                    guide      | 服务人员信息更新         | update                         | 是       | 是 |
+| 经营能力 | 点金计划                      gold       | 点金计划管理             | plan_change                    | ×       | 是 |
+| 经营能力 | 点金计划                      gold       | 商家小票管理             | custom_page_change             | ×       | 是 |
+| 经营能力 | 点金计划                      gold       | 同业过滤标签管理         | advertising_filter             | ×       | 是 |
+| 经营能力 | 点金计划                      gold       | 开通广告展示             | advertising_open               | ×       | 是 |
+| 经营能力 | 点金计划                      gold       | 关闭广告展示             | advertising_close              | ×       | 是 |
+| 行业方案 | 电商收付通                               | 尚未适配                 | 尚未适配                       | ×       | 是 |
+| 行业方案 | 智慧商圈             business_circle     | 商圈积分同步             | points_notify                  | 是       | 是 |
+| 行业方案 | 智慧商圈             business_circle     | 商圈积分授权查询         | user_authorization             | 是       | 是 |
+| 行业方案 | 智慧商圈             business_circle     | 商圈会员待积分状态查询   | business_point_status          | 是       | 是 |
+| 行业方案 | 智慧商圈             business_circle     | 商圈会员停车状态同步     | business_parking_sync          | 是       | 是 |
+| 行业方案 | 微信支付分停车服务   parking             | 查询车牌服务开通信息     | find                           | 是       | 是 |
+| 行业方案 | 微信支付分停车服务   parking             | 创建停车入场             | parking_enter                  | 是       | 是 |
+| 行业方案 | 微信支付分停车服务   parking             | 扣费受理                 | order                          | 是       | 是 |
+| 行业方案 | 微信支付分停车服务   parking             | 查询订单                 | order_query                    | 是       | 是 |
+| 营销工具 | 代金券         marketing                 | 创建代金券批次           | favor_stocks_create            | 是       | 是 |
+| 营销工具 | 代金券         marketing                 | 激活代金券批次           | favor_stocks_start             | 是       | 是 |
+| 营销工具 | 代金券         marketing                 | 发放代金券批次           | favor_stocks_send              | 是       | 是 |
+| 营销工具 | 代金券         marketing                 | 暂停代金券批次           | favor_stocks_pause             | 是       | 是 |
+| 营销工具 | 代金券         marketing                 | 重启代金券批次           | favor_stocks_restart           | 是       | 是 |
+| 营销工具 | 代金券         marketing                 | 条件查询批次列表         | favor_stocks_list              | 是       | 是 |
+| 营销工具 | 代金券         marketing                 | 查询批次详情             | favor_stocks_detail            | 是       | 是 |
+| 营销工具 | 代金券         marketing                 | 查询代金券详情           | favor_stocks_coupons_detail    | 是       | 是 |
+| 营销工具 | 代金券         marketing                 | 查询代金券可用商户       | favor_stocks_merchants         | 是       | 是 |
+| 营销工具 | 代金券         marketing                 | 查询代金券可用单品       | favor_stocks_items             | 是       | 是 |
+| 营销工具 | 代金券         marketing                 | 根据商户号查用户的券     | favor_stocks_user_coupon       | 是       | 是 |
+| 营销工具 | 代金券         marketing                 | 下载批次核销明细         | favor_stocks_use_flow          | 是       | 是 |
+| 营销工具 | 代金券         marketing                 | 下载批次退款明细         | favor_stocks_refund_flow       | 是       | 是 |
+| 营销工具 | 代金券         marketing                 | 设置消息通知地址         | favor_stocks_callback_update   | 是       | 是 |
+| 营销工具 | 商家券         marketing                 | 创建商家券               | bi_favor_stocks_create         | 是       | 是 |
+| 营销工具 | 商家券         marketing                 | 查询商家券详情           | bi_favor_stocks_query          | 是       | 是 |
+| 营销工具 | 商家券         marketing                 | 核销用户券               | bi_favor_stocks_use            | 是       | 是 |
+| 营销工具 | 商家券         marketing                 | 根据过滤条件查询用户券   | bi_favor_user_coupon           | 是       | 是 |
+| 营销工具 | 商家券         marketing                 | 查询用户单张券详情       | bi_favor_coupon_detail         | 是       | 是 |
+| 营销工具 | 商家券         marketing                 | 上传预存 code            | bi_favor_coupon_code_upload    | 是       | 是 |
+| 营销工具 | 商家券         marketing                 | 设置商家券事件通知地址   | bi_favor_callback_update       | 是       | 是 |
+| 营销工具 | 商家券         marketing                 | 查询商家券事件通知地址   | bi_favor_callback_query        | 是       | 是 |
+| 营销工具 | 商家券         marketing                 | 关联订单信息             | bi_favor_coupon_associate      | 是       | 是 |
+| 营销工具 | 商家券         marketing                 | 取消关联订单信息         | bi_favor_coupon_disassociate   | 是       | 是 |
+| 营销工具 | 商家券         marketing                 | 修改批次预算             | bi_favor_stocks_budget         | 是       | 是 |
+| 营销工具 | 商家券         marketing                 | 修改商家券基本信息       | bi_favor_stocks_modify         | 是       | 是 |
+| 营销工具 | 商家券         marketing                 | 申请退券                 | bi_favor_stocks_return         | 是       | 是 |
+| 营销工具 | 商家券         marketing                 | 使券失效                 | bi_favor_stocks_deactivate     | 是       | 是 |
+| 营销工具 | 商家券         marketing                 | 营销补差付款             | bi_favor_stocks_subsidy_pay    | 是       | 是 | 
+| 营销工具 | 商家券         marketing                 | 查询营销补差付款单详情   | bi_favor_stocks_subsidy_query  | 是       | 是 |
+| 营销工具 | 委托营销       marketing                 | 建立合作关系             | partnership_build              | 是       | 是 |
+| 营销工具 | 委托营销       marketing                 | 查询合作关系列表         | partnership_query              | 是       | 是 |
+| 营销工具 | 消费卡         marketing                 | 发放消费卡               | card_send                      | 是       | × |
+| 营销工具 | 支付有礼       marketing                 | 创建全场满额送活动       | pay_gift_activity_create       | 是       | 是 |
+| 营销工具 | 支付有礼       marketing                 | 查询活动详情接口         | pay_gift_activity_detail       | 是       | 是 |
+| 营销工具 | 支付有礼       marketing                 | 查询活动发券商户号       | pay_gift_merchants_list        | 是       | 是 |
+| 营销工具 | 支付有礼       marketing                 | 查询活动指定商品列表     | pay_gift_goods_list            | 是       | 是 |
+| 营销工具 | 支付有礼       marketing                 | 终止活动                 | pay_gift_activity_terminate    | 是       | 是 |
+| 营销工具 | 支付有礼       marketing                 | 新增活动发券商户号       | pay_gift_merchants_add         | 是       | 是 |
+| 营销工具 | 支付有礼       marketing                 | 获取支付有礼活动列表     | pay_gift_activity_list         | 是       | 是 |
+| 营销工具 | 支付有礼       marketing                 | 删除活动发券商户号       | pay_gift_merchants_delete      | 是       | 是 |
+| 营销工具 | 代扣服务切卡组件  marketing              | 出行券切卡组件预下单     | industry_coupon_token          | 是 | 是 |
+| 营销工具 | 图片上传        marketing                | 图片上传(营销专用)       | image_upload                   | 是 | 是 |
+| 资金应用 | 商家转账到零钱  transfer                 | 发起商家转账             | transfer_batch                 | 是 | × |
+| 资金应用 | 商家转账到零钱  transfer                 | 微信批次单号查询批次单   | transfer_query_batch           | 是 | × |
+| 资金应用 | 商家转账到零钱  transfer                 | 微信明细单号查询明细单   | transfer_query_detail_id       | 是 | × |
+| 资金应用 | 商家转账到零钱  transfer                 | 商家批次单号查询批次单   | transfer_query_out_batch_no    | 是 | × |
+| 资金应用 | 商家转账到零钱  transfer                 | 商家明细单号查询明细单   | transfer_query_out_detail_no   | 是 | × |
+| 资金应用 | 商家转账到零钱  transfer                 | 转账电子回单申请受理     | transfer_bill_receipt          | 是 | × |
+| 资金应用 | 商家转账到零钱  transfer                 | 查询转账电子回单         | transfer_query_bill_receipt    | 是 | × |
+| 资金应用 | 商家转账到零钱  transfer                 | 转账明细电子回单受理     | transfer_detail_receipt        | 是 | × |
+| 资金应用 | 商家转账到零钱  transfer                 | 查询转账明细电子回单受理结果| transfer_query_receipt      | 是 | × |
+| 资金应用 | 分账            profit_sharing           | 请求分账                 | orders                         | 是 | 是 |
+| 资金应用 | 分账            profit_sharing           | 查询分账结果             | orders_query                   | 是 | 是 |
+| 资金应用 | 分账            profit_sharing           | 请求分账回退             | return_orders                  | 是 | 是 |
+| 资金应用 | 分账            profit_sharing           | 查询分账回退结果         | return_orders_query            | 是 | 是 |
+| 资金应用 | 分账            profit_sharing           | 解冻剩余资金             | unfreeze                       | 是 | 是 |
+| 资金应用 | 分账            profit_sharing           | 查询剩余待分金额         | amounts_query                  | 是 | 是 |
+| 资金应用 | 分账            profit_sharing           | 查询最大分账比例         | config_query                   | × | 是 |
+| 资金应用 | 分账            profit_sharing           | 添加分账接收方           | receivers_add                  | 是 | 是 |
+| 资金应用 | 分账            profit_sharing           | 删除分账接收方           | receivers_delete               | 是 | 是 |
+| 资金应用 | 分账            profit_sharing           | 申请分账账单             | bills                          | 是 | 是 |
+| 资金应用 | 分账            pay                      | 下载账单                 | download_bill                  | 是 | 是 |
+| 资金应用 | 连锁品牌分账    profit_sharing           | 请求分账                 | brand_order                    | × | 是 |
+| 资金应用 | 连锁品牌分账    profit_sharing           | 查询分账结果             | brand_order_query              | × | 是 |
+| 资金应用 | 连锁品牌分账    profit_sharing           | 请求分账回退             | brand_return                   | × | 是 |
+| 资金应用 | 连锁品牌分账    profit_sharing           | 查询分账回退结果         | brand_return_query             | × | 是 |
+| 资金应用 | 连锁品牌分账    profit_sharing           | 完结分账                 | brand_unfreeze                 | × | 是 |
+| 资金应用 | 连锁品牌分账    profit_sharing           | 查询剩余待分金额         | brand_amount_query             | × | 是 |
+| 资金应用 | 连锁品牌分账    profit_sharing           | 查询最大分账比例         | brand_config_query             | × | 是 |
+| 资金应用 | 连锁品牌分账    profit_sharing           | 添加分账接收方           | brand_add_receiver             | × | 是 |
+| 资金应用 | 连锁品牌分账    profit_sharing           | 删除分账接收方           | brand_delete_receiver          | × | 是 |
+| 资金应用 | 连锁品牌分账    profit_sharing           | 申请分账账单             | bills                          | × | 是 |
+| 资金应用 | 连锁品牌分账    pay                      | 下载账单                 | download_bill                  | 是 | 是 |
+| 风险合规 | 商户开户意愿确认     apply4subject       | 提交申请单               | applyment                      | × | 是 |
+| 风险合规 | 商户开户意愿确认     apply4subject       | 撤销申请单               | cancel                         | × | 是 |
+| 风险合规 | 商户开户意愿确认     apply4subject       | 查询申请单审核结果       | query                          | × | 是 |
+| 风险合规 | 商户开户意愿确认     apply4subject       | 获取商户开户意愿确认状态 | state                          | × | 是 |
+| 风险合规 | 消费者投诉 2.0       complaint           | 查询投诉单列表           | list_query                     | 是 | 是 |
+| 风险合规 | 消费者投诉 2.0       complaint           | 查询投诉单详情           | details                        | 是 | 是 |
+| 风险合规 | 消费者投诉 2.0       complaint           | 查询投诉协商历史         | history_query                  | 是 | 是 |
+| 风险合规 | 消费者投诉 2.0       complaint           | 创建投诉通知回调地址     | notification_create            | 是 | 是 |
+| 风险合规 | 消费者投诉 2.0       complaint           | 查询投诉通知回调地址     | notification_query             | 是 | 是 |
+| 风险合规 | 消费者投诉 2.0       complaint           | 更新投诉通知回调地址     | notification_update            | 是 | 是 |
+| 风险合规 | 消费者投诉 2.0       complaint           | 删除投诉通知回调地址     | notification_delete            | 是 | 是 |
+| 风险合规 | 消费者投诉 2.0       complaint           | 提交回复                 | response                       | 是 | 是 |
+| 风险合规 | 消费者投诉 2.0       complaint           | 反馈处理完成             | complete                       | 是 | 是 |
+| 风险合规 | 消费者投诉 2.0       complaint           | 更新退款审批结果         | update_refund                  | 是 | 是 |
+| 风险合规 | 消费者投诉 2.0       complaint           | 商户上传反馈图片         | image_upload                   | 是 | 是 |
+| 风险合规 | 消费者投诉 2.0       complaint           | 图片下载                 | image_download                 | 是 | 是 |
+| 风险合规 | 商户违规通知回调          risk           | 创建商户违规通知回调地址 | callback_create                | × | 是 | 
+| 风险合规 | 商户违规通知回调          risk           | 查询商户违规通知回调地址 | callback_query                 | × | 是 |
+| 风险合规 | 商户违规通知回调          risk           | 修改商户违规通知回调地址 | callback_update                | × | 是 |
+| 风险合规 | 商户违规通知回调          risk           | 删除商户违规通知回调地址 | callback_delete                | × | 是 |
+| 其他能力 | 图片上传                  media          | 图片上传                 | image_upload                   | 是 | 是 |
+| 其他能力 | 视频上传                  media          | 视频上传                 | video_upload                   | 是 | 是 |
+| 其他     | 电子发票（公共API）       invoice        | 创建电子发票卡券模板     | card_template                  | 是 | 是 |
+| 其他     | 电子发票（公共API）       invoice        | 配置开发选项             | merchant_config                | 是 | 是 |
+| 其他     | 电子发票（公共API）       invoice        | 查询商户配置的开发选项   | get_merchant_config            | 是 | 是 |
+| 其他     | 电子发票（公共API）       invoice        | 获取抬头填写链接         | title_url                      | 是 | 是 |
+| 其他     | 电子发票（公共API）       invoice        | 获取用户填写的抬头       | title                          | 是 | 是 |
+| 其他     | 电子发票(区块链模式)      invoice        | 获取商品和服务税收分类对照表 | tax_codes                  | 是 | 是 |
+| 其他     | 电子发票(区块链模式)      invoice        | 获取商户开票基础信息     | merchant_base_info             | 是 | 是 |
+| 其他     | 电子发票(区块链模式)      invoice        | 开具电子发票             | applications                   | 是 | 是 |
+| 其他     | 电子发票(区块链模式)      invoice        | 查询电子发票             | invoice_query                  | 是 | 是 |
+| 其他     | 电子发票(区块链模式)      invoice        | 冲红电子发票             | invoice_reverse                | 是 | 是 |
+| 其他     | 电子发票(自建平台模式)    invoice        | 上传电子发票文件         | invoice_upload_file            | 是 | 是 |
+| 其他     | 电子发票(自建平台模式)    invoice        | 将电子发票插入微信用户卡包 | invoice_insert_cards         | 是 | 是 |
+| 其他     | 银行组件                  capital        | 获取对私银行卡号开户银行 | search_bank_number             | 是 | 是 |
+| 其他     | 银行组件                  capital        | 查询支持个人业务的银行列表 | personal_banks               | 是 | 是 |
+| 其他     | 银行组件                  capital        | 查询支持对公业务的银行列表 | corporate_banks              | 是 | 是 |
+| 其他     | 银行组件                  capital        | 查询省份列表            | provinces                       | 是 | 是 |
+| 其他     | 银行组件                  capital        | 查询城市列表            | cities                          | 是 | 是 |
+| 其他     | 银行组件                  capital        | 查询支行列表            | branches                        | 是 | 是 |
+
+
+## 修改记录
+
+[修改记录](CHANGELOG.md)
