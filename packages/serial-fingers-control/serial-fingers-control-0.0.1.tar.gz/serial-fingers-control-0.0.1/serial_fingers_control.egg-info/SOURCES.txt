@@ -1,0 +1,14 @@
+CalculateGoalPositionTest.py
+ExampleFingersControl.py
+FingersControlTest.py
+LICENSE
+README.md
+setup.py
+serial_fingers_control/CalculateGoalPosition.py
+serial_fingers_control/FingersControl.py
+serial_fingers_control/__init__.py
+serial_fingers_control.egg-info/PKG-INFO
+serial_fingers_control.egg-info/SOURCES.txt
+serial_fingers_control.egg-info/dependency_links.txt
+serial_fingers_control.egg-info/requires.txt
+serial_fingers_control.egg-info/top_level.txt
