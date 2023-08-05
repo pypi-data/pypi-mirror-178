@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/lamineml_root/__init__.py
+src/lamineml_root/main.py
+src/laminemlroot.egg-info/PKG-INFO
+src/laminemlroot.egg-info/SOURCES.txt
+src/laminemlroot.egg-info/dependency_links.txt
+src/laminemlroot.egg-info/top_level.txt
