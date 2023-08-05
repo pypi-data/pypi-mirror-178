@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "poetry-demo-taurus"
+version = "0.1.0"
+description = ""
+authors = ["袁郑 <yzheng@epoint.com.cn>"]
+readme = "README.md"
+packages = [{include = "poetry_demo"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+loguru = "^0.6.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
