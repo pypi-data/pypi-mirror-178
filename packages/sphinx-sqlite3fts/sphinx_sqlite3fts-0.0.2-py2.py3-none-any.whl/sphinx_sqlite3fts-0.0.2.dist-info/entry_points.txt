@@ -1,0 +1,3 @@
+[console_scripts]
+sphinx-sqlite3fts=sphinx_sqlite3fts.cli:main
+
