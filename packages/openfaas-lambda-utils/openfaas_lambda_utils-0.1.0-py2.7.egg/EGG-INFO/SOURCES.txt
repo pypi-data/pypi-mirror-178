@@ -1,0 +1,8 @@
+README.md
+setup.py
+openfaas_lambda_utils/__init__.py
+openfaas_lambda_utils/types.py
+openfaas_lambda_utils.egg-info/PKG-INFO
+openfaas_lambda_utils.egg-info/SOURCES.txt
+openfaas_lambda_utils.egg-info/dependency_links.txt
+openfaas_lambda_utils.egg-info/top_level.txt
