@@ -1,0 +1,3 @@
+[console_scripts]
+mtat-weditor = mtatweditor.__main__:main
+
