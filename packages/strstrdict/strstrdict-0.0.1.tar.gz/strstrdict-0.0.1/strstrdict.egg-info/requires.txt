@@ -1,0 +1,14 @@
+
+[benchmark]
+memory_profiler
+tabulate
+sqlitedict
+gmpy2
+
+[release]
+sphinx
+bumpversion
+
+[test]
+pytest
+flake8
