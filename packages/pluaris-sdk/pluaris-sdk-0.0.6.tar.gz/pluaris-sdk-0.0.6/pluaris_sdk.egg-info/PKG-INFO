@@ -1,0 +1,280 @@
+Metadata-Version: 2.1
+Name: pluaris-sdk
+Version: 0.0.6
+Summary: Create a DAPP for your organisation and Manage all your Organisational Activities.
+Home-page: UNKNOWN
+Author: Chethan Pasupuleti
+Author-email: <chethanpss24@gmail.com>
+License: UNKNOWN
+Keywords: python,pluaris,algorand,sdk,smart contract
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+
+*MAIN*
+
+
+**SDK_INIT** : This method will take pluaris registered email and will return client_id and clien_secret.
+
+PluarisSDK.sdkInit(email)
+
+    email : email of user who is registered with Pluaris.
+
+
+**LOGIN** : This method will help in logining with the DApp.
+
+PluarisSDK.login(id,client_secret,appid,passphrase)
+ 
+    _app_id_ : Name of the organisation.
+    _passphrase_ : passphrase of owner / manager / employee.
+
+
+
+
+**DEPLOY** : This method will create an DApp for an organisation.
+
+PluarisSDK.deploySmartContract(owner_passphrase,org_name,org_Email)
+
+     
+    owner_passphrase : passphrase of the Smart Contract Owner.
+    Org_name : Name of the organisation.
+    Org_email : email of the organisation.
+
+
+**CREATE WALLET** : creating a wallet for the employees and managers in the organisation by the organisation.
+
+PluarisSDK.createWallet( app_id,owner_passphrase,name,email,designation,password, mobile,manager)
+
+_App id_ : the Id which we got while deploying the contract.
+_owner passphrase_ : we are getting a public address and private key.
+Public address for transaction,  Private key for signing the transaction.
+_Owner passphrase_ : we are getting a public address and private key.
+Public address for transaction,  Private key for signing the transaction.
+_Name_ : name of the employee
+_Email_ : email of the employee
+_Designation_ : role of the employee.
+_Mobile_ : mobile number of the employee
+_Manager_  : managers wallet address under whom the employee is assigned.
+
+
+
+
+**CHECK IN** : this is to check when the employee is checking in to the organisation, for checking his attendance.
+
+PluarisSDK.checkIn(app_id, employee_passphrase)
+
+_App id_ : your application Id.
+_Employee passphrase_ : employee's passphrase.
+
+
+
+
+**CHECK OUT** : this is to check when the employee is checking out of the organisation.
+
+PluarisSDK.checkOut(app_id,employee_passphrase)
+
+_App id_ : your application Id.
+_Employee passphrase_ : employee's passphrase.
+
+
+
+
+**leaveRequest** : employee applying for the leave by mentioning the details why they need leave.
+
+PluarisSDK.leaveRequest(app_id,employee_passphrase, reason,fromdate,duration)
+
+_app id_ : the Id which we got while deploying the contract.
+_Employee passphrase_ : for getting a public address and private key.
+Public address for transaction,  Private key for signing the transaction
+_Reason_ : reason why the employee is taking leave.
+_From date_ : from when the leave has been taken.
+_Duration_ : how many days the leave has been taken.
+
+**leaveApprove**  : employee leave request will be approved by the manager after checking the details given by the employee.
+
+PluarisSDK.leaveApprove(app_id,manager_passphrase, employee_addr, reason, fromdate,duration, status)
+
+_App id_ : the Id which we got while deploying the contract.
+_Manager passphrase_ : for getting a public address and private key.
+Public address for transaction,  Private key for signing the transaction
+_Employee address_ : To know the particular employee who requested leave.
+_Reason_ : reason why the employee is taking leave.
+_From date_ : from when the leave has been taken.
+_Duration_ : how many days the leave has been taken.
+_Status_ : whether the request has been approved or rejected.
+
+
+
+**proofOfLearningRequest** : employee is requesting for proof of learning in the organisation.
+
+PluarisSDK.proofOfLearningRequest(app_id,employee_passphrase, topic,url)
+
+_App id_ : the Id which we got while deploying the contract.
+_Employee passphrase_ : for getting a public address and private key.
+Public address for transaction,  Private key for signing the transaction
+_Topic_ : on which topic the employee is requesting proof of learning.
+_Url_ : link or documentation certified after learning.
+
+**proofOfLearningApproval** : approval of proof of learning requested by the employee by checking the details given by the employee.
+
+PluarisSDK.proofOfLearningApproval(app_id,owner_passphrase,employee_addr, topic,url,status)
+
+_App id_ : the Id which we got while deploying the contract.
+_Owner passphrase_ : for getting a public address and private key.
+Public address for transaction,  Private key for signing the transaction.
+_Employee address_ : To know the particular employee who requested proof of learning.
+_Topic_ : on which topic the employee is requesting proof of learning.
+_Url_ : link or documentation certified after learning.
+_Status_ : whether the request has been approved or rejected.
+
+**proofOfExperienceRequest** : employee is requesting for proof of experience in the organisation.
+
+PluarisSDK.proofOfExperienceRequest(app_id,employee_passphrase, org,domain,exp,leaving_date)
+
+_App id_ : the Id which we got while deploying the contract.
+_Employee passphrase_ : for getting a public address and private key.
+Public address for transaction,  Private key for signing the transaction.
+_Organisation_ : from which organisation the employee is requesting the proof of experience.
+_Domain_ : on which topic the employee is requesting proof of experience.
+_Experience_ : how many years the employee had worked.
+_Leaving date_ : the of leaving the organisation.
+
+**proofOfExperienceApprovalL** : approval of proof of experience requested by employee by checking the details given by employee.
+
+PluarisSDK.proofOfExperienceApproval(app_id,owner_passphrase,employee_addr, org,domain,exp,leaving_date,status)
+
+_App id_ : the Id which we got while deploying the contract.
+_Owner passphrase_ : for getting a public address and private key.
+Public address for transaction,  Private key for signing the transaction.
+_Employee address_ : To know the particular employee who requested proof of experience.
+_Organisation_ : from which organisation the employee is requesting the proof of experience.
+_Domain_ : on which topic the employee has requested proof of experience.
+_Experience_ : how many years the employee had worked.
+_Leaving date_ : the of leaving the organisation.
+_Status_ : whether the request has been approved or rejected.
+
+
+
+
+
+
+
+*LOG*
+
+**getAllEmployees** : in this method it will get all the employees under that app_id.
+
+FetchData.getAllEmployees(client_id,client_secret,appid,owner_passphrase)
+
+_appid_ : Application id.
+_owner_passphrase_ : passphrase of the owner
+
+
+**getAllManager** : in this method it will get all managers.
+
+FetchData.getAllManager(client_id,client_secret,appid,owner_passphrase)
+
+_appid_ : Application id.
+_owner_passphrase_ : passphrase of the owner
+
+
+
+**getAllEmpsUnderManager** : in this method it will get all the employees under a particular manager.
+
+FetchData.getAllEmpsUnderManager(client_id,client_secret,appid,manager_passphrase)
+
+_App id_ : the Id which we got while deploying the contract.
+_manager_passphrase_ : Manager's Passphrase
+
+  
+**getAllEmpsLeaveData** : in this method it will get all the leave requests of the employees in that app id.
+
+FetchData.getAllEmpsLeaveData(client_id,client_secret,appid,emp_passphrase)
+
+_app_id_ : the Id which we got while deploying the contract.
+_emp_passphrase_ : Employee's passphrase
+
+
+**getAllEmpsLeaveDataUnderManager** : in this method it will get all the leave requests of the employees under a Manager in that app id.
+
+FetchData.getAllEmpsLeaveDataUnderManager(client_id,client_secret,appid,manager_passphrase)
+
+_app_id_ : the Id which we got while deploying the contract.
+_manager_passphrase_ : Manager's passphrase
+
+ 
+  
+
+**GET ALL PROOF OF LEARNINGS DATA** : it will get all proof of learnings data.
+
+FetchData.getAllPOLs(client_id,client_secret,appid,passphrase)
+
+_app_id_ : the Id which we got while deploying the contract.
+_passphrase_ : Employee's or Owner's passphrase
+
+
+
+
+**GET ALL PROOF OF EXPERIENCE DATA** : it will get all proof of learnings data.
+
+FetchData.getAllPOEs(client_id,client_secret,appid,passphrase)
+
+_app_id_ : the Id which we got while deploying the contract.
+_passphrase_ : Employee's or Owner's passphrase
+
+
+
+
+
+*VERIFY*
+  
+
+**Verify Proof of Learning** this will return verified email-id for provided wallet address
+ Verify.verifyPOL(client_id,client_secret,appid,verifier_passphrase,wallet_address,topic)
+
+note: if a verfied topic exists for a user. one algo will be transferred from verifier's wallet to the given wallet address
+
+_app_id_ : the Id which we got while deploying the contract.
+_verifier_passphrase_: Verifier's passphrase
+_wallet_address_ : address of the one's wallet that will return their verified given topic if exisits
+_topic_ : topic to be verfied
+
+
+
+**Verify Proof of Experience** this will return verified email-id for provided wallet address
+ Verify.verifyPOE(client_id,client_secret,appid,verifier_passphrase,wallet_address,domain)
+
+note: if a verfied domain exists for a user. one algo will be transferred from verifier's wallet to the given wallet address
+
+_app_id_ : the Id which we got while deploying the contract.
+_verifier_passphrase_: Verifier's passphrase
+_wallet_address_ : address of the one's wallet that will return their verified Emailid if exisits
+_domain_ : domain to be verified
+
+
+
+**verifyEmail** this will return verified email-id for provided wallet address
+ Verify.verifyEmail(client_id,client_secret,appid,verifier_passphrase,wallet_address)
+
+note: if a verfied email id exists for a user. one algo will be transferred from verifier's wallet to the given wallet address
+
+_app_id_ : the Id which we got while deploying the contract.
+_verifier_passphrase_: Verifier's passphrase
+_wallet_address_ : address of the one's wallet that will return their verified Emailid if exisits
+
+
+
+**verifyMobile** this will return verified Mobile number for provided wallet address
+ Verify.verifyMobile(client_id,client_secret,appid,verifier_passphrase,wallet_address)
+
+ note: if a verfied mobile number exists for a user. one algo will be transferred from verifier's wallet to the given wallet address
+
+_app_id_ : the Id which we got while deploying the contract.
+_verifier_passphrase_: Verifier's passphrase
+_wallet_address_ : address of the one's wallet that will return their verified mobile number if exisits
+

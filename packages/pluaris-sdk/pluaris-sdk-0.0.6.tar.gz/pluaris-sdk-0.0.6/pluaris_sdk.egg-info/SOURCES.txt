@@ -1,0 +1,9 @@
+setup.py
+pluaris_sdk/__init__.py
+pluaris_sdk/log.py
+pluaris_sdk/verification.py
+pluaris_sdk.egg-info/PKG-INFO
+pluaris_sdk.egg-info/SOURCES.txt
+pluaris_sdk.egg-info/dependency_links.txt
+pluaris_sdk.egg-info/requires.txt
+pluaris_sdk.egg-info/top_level.txt
