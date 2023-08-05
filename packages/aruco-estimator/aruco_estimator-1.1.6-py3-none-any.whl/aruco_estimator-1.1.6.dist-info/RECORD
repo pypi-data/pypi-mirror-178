@@ -1,0 +1,11 @@
+aruco_estimator/__init__.py,sha256=Bp2thEXNABlkt3SpadRFuZQwaM_rKdEmhVpZtPGzT8U,332
+aruco_estimator/aruco.py,sha256=rsUTg-425HJ8NVawfZAoKdQYm8aM4yhimqHS-g-rz-Q,6995
+aruco_estimator/aruco_scale_factor.py,sha256=1qEFFl5TqiVp27-3R5A3i5TlXYDlyJq51Z_kD40Bq1Q,13822
+aruco_estimator/base.py,sha256=rUUYyx31PG4dAwLtUjzLEr6HAxQBFlsm7WzQenA-14w,1068
+aruco_estimator/download.py,sha256=rzleIKcukD64rNY-bqfSWBuSDI9kfQsb9Zp2vJxY0YM,3214
+aruco_estimator/opt.py,sha256=4NBYbvXHnedFZYd3HDKEiqNea8KEVX_TAc55R9c6Scc,7296
+aruco_estimator-1.1.6.dist-info/LICENSE,sha256=NA18lBN6goL6dk2OAU3b70CR7rfB3NxYLvHj5jHGhD4,1068
+aruco_estimator-1.1.6.dist-info/METADATA,sha256=NlHovBiY9t6Fq9wRb9LlbY5XKscDDVVByjip8yGMey8,8258
+aruco_estimator-1.1.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+aruco_estimator-1.1.6.dist-info/top_level.txt,sha256=cnPBo773tbhLK1qaqH28sTNxj2J38IXq4CBZG8q9gjQ,16
+aruco_estimator-1.1.6.dist-info/RECORD,,
