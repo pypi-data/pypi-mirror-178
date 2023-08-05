@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: opensearch-py-ml
+Version: 1.0.0b1
+Summary: Python Client and Toolkit for DataFrames, Big Data, Machine Learning and ETL in OpenSearch
+Home-page: https://github.com/opensearch-project/opensearch-py-ml
+Author: Dhrubo Saha
+Author-email: dhrubo@amazon.com, 
+Maintainer: Dhrubo Saha, Yaliang Wu
+Maintainer-email: dhrubo@amazon.com, ylwu@amazon.com
+License: Apache-2.0
+Project-URL: Source Code, https://github.com/opensearch-project/opensearch-py-ml
+Project-URL: Issue Tracker, https://github.com/opensearch-project/opensearch-py-ml/issues
+Keywords: Opensearch opensearch_py_ml pandas python
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Environment :: Console
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: all
+License-File: LICENSE
+License-File: NOTICE
+
+
+[![CI](https://github.com/opensearch-project/opensearch-py-ml/actions/workflows/ci.yml/badge.svg)](https://github.com/opensearch-project/opensearch-py-ml/actions/workflows/ci.yml)
+[![Integration](https://github.com/opensearch-project/opensearch-py-ml/actions/workflows/integration.yml/badge.svg)](https://github.com/opensearch-project/opensearch-py-ml/actions/workflows/integration.yml)
+![PRs welcome!](https://img.shields.io/badge/PRs-welcome!-success)
+
+![OpenSearch logo](https://github.com/opensearch-project/opensearch-py/raw/main/OpenSearch.svg)
+
+OpenSearch-py-ml
+
+- [Welcome!](https://github.com/opensearch-project/opensearch-py-ml#welcome)
+- [Getting Started](https://github.com/opensearch-project/opensearch-py-ml#getting-started)
+- [Compatibility with OpenSearch](https://github.com/opensearch-project/opensearch-py-ml#compatibility-with-opensearch)
+- [Project Resources](https://github.com/opensearch-project/opensearch-py-ml#project-resources)
+- [Code of Conduct](https://github.com/opensearch-project/opensearch-py-ml#code-of-conduct)
+- [License](https://github.com/opensearch-project/opensearch-py-ml#license)
+- [Copyright](https://github.com/opensearch-project/opensearch-py-ml#copyright)
+
+## Welcome!
+
+**opensearch-py-ml** is a Python client that provides a suite of data analytics and machine learning tools for OpenSearch.
+**Opensearch-py-ml is an experimental project**
+It is [a community-driven, open source fork](https://aws.amazon.com/blogs/opensource/introducing-opensearch/) a fork of [eland](https://github.com/elastic/eland), which provides data analysis and machine learning
+licensed under the [Apache v2.0 License](https://github.com/opensearch-project/opensearch-py/blob/main/LICENSE.txt). 
+
+**opensearch-py-ml** lets users call OpenSearch indices and manipulate them as if they were pandas DataFrames, supporting
+complex filtering and aggregation operations. It also provides rudimentary support for uploading models to OpenSearch
+clusters using the [ml-commons](https://github.com/opensearch-project/ml-commons) plugin.
+
+
+## Code of Conduct
+
+This project has adopted the 
+[Amazon Open Source Code of Conduct](https://github.com/opensearch-project/opensearch-py-ml/blob/main/CODE_OF_CONDUCT.md).
+For more information see the [Code of Conduct FAQ](https://aws.github.io/code-of-conduct-faq), or contact 
+[opensource-codeofconduct@amazon.com](mailto:opensource-codeofconduct@amazon.com) with any additional questions or comments.
+
+## License
+
+This project is licensed under the
+[Apache v2.0 License](https://github.com/opensearch-project/opensearch-py-ml/blob/main/LICENSE).
+
+## Copyright
+
+Copyright OpenSearch Contributors. See 
+[NOTICE](https://github.com/opensearch-project/opensearch-py-ml/blob/main/NOTICE) for details.
