@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling", "typing", "pytest", "pytest-unordered"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+pythonpath = "src"
+
+[project]
+name = "hashtable_nicolerg"
+version = "1.0.0"
+authors = [
+  { name="Nicole Gay", email="nicole.r.gay@gmail.com" },
+]
+description = "An exercise to learn about hash tables, unit tests, TDD, and Python packages"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Guiding Tutorial" = "https://realpython.com/python-hash-table"
+"Source Code" = "https://github.com/nicolerg/python-hashtable"
