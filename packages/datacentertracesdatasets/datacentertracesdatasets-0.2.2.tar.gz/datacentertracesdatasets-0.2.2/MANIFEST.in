@@ -1,0 +1,3 @@
+include src/datacentertracesdatasets/alibaba2018/*.csv
+include src/datacentertracesdatasets/azure_v2/*.csv
+include src/datacentertracesdatasets/google2019/*.csv
