@@ -1,0 +1,11 @@
+datahub_classify/__init__.py,sha256=l-0z0qo4d3yNJJnKCNQ6xAjWLkHS3U3aUUEYKnVAlhs,271
+datahub_classify/constants.py,sha256=_KmU82BuIyPQKc69PaY4xVDbbQyq4VMU48XW9BiA4nI,265
+datahub_classify/helper_classes.py,sha256=1Jc89u1gCurRlf-muLwlJqPhIeSCgGDQp63ESSgGp-E,819
+datahub_classify/infotype_helper.py,sha256=__Ulb3W5DwCL2ZmF3UXcVtR_XR3ZWQzxQ8w8upvN8zM,39158
+datahub_classify/infotype_predictor.py,sha256=hRK1zxpHK-_ia4V-kJoH06RR29O7jPxVeqogVPJoBS0,3263
+datahub_classify/infotype_utils.py,sha256=C2Ie8hisjjamY0361J6ZAlCJt67pg459v8LDixCvioo,2943
+datahub_classify/reference_input.py,sha256=GXq1lx9UiWw3H7ES9jUXCPXTBsfMv1ozOaKrCzPaI6w,19740
+acryl_datahub_classify-0.0.4.dist-info/METADATA,sha256=1cUGJdm66EogvbGBcIH1AZMkAthOAeLwzCCkeA8xHbI,7597
+acryl_datahub_classify-0.0.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+acryl_datahub_classify-0.0.4.dist-info/top_level.txt,sha256=uVCbL7R_oNGBcci0lt8NHlhEYBI-H6W7GgaHopwaRpU,17
+acryl_datahub_classify-0.0.4.dist-info/RECORD,,
