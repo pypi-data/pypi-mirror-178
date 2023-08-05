@@ -1,0 +1,10 @@
+neval/__init__.py,sha256=49bl_L2id9zVXaRWeIaXCcwzn7z82bh2NhIcFhxfn8Q,72
+neval/_neval.py,sha256=uTDwpK_st3b9R6cr78aYwI0PcVwpUkoWLyZzG6FpweI,4866
+neval/flagged_dict.py,sha256=m8kI5ebWwJRU0z5xv-I8WMezT4enACnqaJ999XidKgI,1449
+neval/util.py,sha256=_RU4FBYMnflRKNYbqcd_xrht_nDRXO5bcWLkVDdnRc0,1476
+neval/version.py,sha256=tcW5WR5SDjuBEIjLMShMi_qo95F90_X0yoMvgycBv8k,176
+neval-0.0.4.dist-info/LICENSE,sha256=MEr3k_H_ahl-zADHArJyhnXF4-FBcuuK5a5GM_KQXpE,1068
+neval-0.0.4.dist-info/METADATA,sha256=oa3px2GUdTDsSR7DDKVlAERXlUElr9w_R3gs8g19wTA,3429
+neval-0.0.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+neval-0.0.4.dist-info/top_level.txt,sha256=V9MZRKUi30jhb4q0dTxXWQeHtsxZ0ABahxJUvrIn1XU,6
+neval-0.0.4.dist-info/RECORD,,
