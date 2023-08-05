@@ -1,0 +1,2 @@
+[console_scripts]
+cybershbd = cybershbd.cybershbd:main
