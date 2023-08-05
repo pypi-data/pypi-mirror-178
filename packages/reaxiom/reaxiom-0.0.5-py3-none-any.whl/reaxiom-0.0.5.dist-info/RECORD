@@ -1,0 +1,16 @@
+axiom/__data.py,sha256=0V5ELqTF2M0JgEr_1dDllnIe7hNFcCoL_fZbufPBRWs,481
+axiom/__import.py,sha256=HjRpZnBIOGYxIFMs_aKb7xcOa_EuMpE-EdcFW8SshVQ,4125
+axiom/__init__.py,sha256=9DBAwKPVNwuontWHMmFzrmFr-767jApSRMJZpFadxSg,182
+axiom/__main__.py,sha256=2FoxncfQT8wzpczEm2ZEpyO01c9Z2dS4bCO00GroUNY,5829
+axiom/__type.py,sha256=zeBCm6VHgIlBm4o2eX90CJVUkUYjxzIFTgTdbrLkmv0,21
+axiom/common.py,sha256=tsD1IoOfGhyEKubS_-s5jpvtKd2wcR-R3PmMK8ChVsM,5411
+axiom/data_reader.py,sha256=SxhpPEhMwzq5JRB_XP5lPoQdCCUzQOs8MFRLf_VucZg,750
+axiom/info.py,sha256=lTQGfuPd1UAnEGH6JUjYM7OmFZk6lNbsZudD87cgiCk,82
+axiom/settings.py,sha256=oiLCqe_vjjzo3hd9EfjovmlsV5cu6gvCMC-uEMa9wrM,262
+axiom/example/simple_add/add_func.py,sha256=2yI-vWbAUsK5ZWqGaivOOREWPou_YtpO59rr5xIJu-4,1163
+axiom/example/simple_add/add_one_and_two.py,sha256=K88YeTIGN-kfJ0py2dKvaU25ppgGqupKyxAHyuNbDTk,1094
+axiom/example/simple_add/add_one_func.py,sha256=-lNZpkT5NVKPX_jXv2fO506U3iqYkAwNKFVHDxAT9ys,1008
+reaxiom-0.0.5.dist-info/METADATA,sha256=xFRbLZsBsOUG-Ox4WZbnFcDyAEreKhsBdfJ-aZModQQ,417
+reaxiom-0.0.5.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+reaxiom-0.0.5.dist-info/licenses/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+reaxiom-0.0.5.dist-info/RECORD,,
