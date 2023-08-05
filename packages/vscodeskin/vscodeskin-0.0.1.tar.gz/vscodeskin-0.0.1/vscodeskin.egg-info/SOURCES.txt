@@ -1,0 +1,7 @@
+README.md
+setup.py
+vscodeskin.py
+vscodeskin.egg-info/PKG-INFO
+vscodeskin.egg-info/SOURCES.txt
+vscodeskin.egg-info/dependency_links.txt
+vscodeskin.egg-info/top_level.txt
