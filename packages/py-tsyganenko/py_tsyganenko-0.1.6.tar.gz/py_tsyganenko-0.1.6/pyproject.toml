@@ -1,0 +1,27 @@
+[build-system]
+build-backend = 'mesonpy'
+requires = ['meson-python', 'numpy']
+
+[project]
+name = "py_tsyganenko"
+description="A simple python wrapper of N. A. Tsyganenko Fortran models and Geopack module"
+authors = [{name="Alexis Jeandet", email="alexis.jeandet@member.fsf.org"}]
+summary = "A simple python wrapper of N. A. Tsyganenko Fortran models and Geopack module"
+requires-python=">=3.7"
+license = {file="COPYING"}
+readme = "README.md"
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+dependencies = ["numpy"]
+[project.urls]
+homepage = "https://github.com/LaboratoryOfPlasmaPhysics/py_tsyganenko"

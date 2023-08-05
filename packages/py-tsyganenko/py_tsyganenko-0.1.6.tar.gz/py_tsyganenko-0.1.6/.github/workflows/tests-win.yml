@@ -1,0 +1,25 @@
+name: Tests on Windows
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    strategy:
+      max-parallel: 1
+      matrix:
+        python-version: ['3.7', '3.10']
+    name: Python ${{ matrix.python-version }}
+    steps:
+      - uses: actions/checkout@v1
+      - name: Build python wheel
+        uses: actions/setup-python@v1
+        with:
+          python-version: ${{ matrix.python-version }}
+          architecture: x64
+      - run: |
+          choco install ninja
+          pip install --upgrade twine build requests wheel meson
+          meson . build
+          ninja -C build
+          python -m build .

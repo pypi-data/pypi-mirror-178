@@ -1,0 +1,22 @@
+name: C/C++ CI
+
+on: [push]
+
+jobs:
+  build:
+    name: build an tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+        with:
+          submodules: true
+      - name: Install dependencies
+        run: sudo apt update && sudo apt install -y libcurl4-openssl-dev python3-astropy lcov g++ ninja-build && sudo pip3 install --upgrade requests twine build meson
+      - name: Configure with meson
+        run: meson -Db_coverage=true . build
+      - name: Build (meson)
+        run: ninja -C build
+      - name: Build Package
+        run: python3 -m build .
+      - name: Check wheels
+        run: twine check dist/*.whl
