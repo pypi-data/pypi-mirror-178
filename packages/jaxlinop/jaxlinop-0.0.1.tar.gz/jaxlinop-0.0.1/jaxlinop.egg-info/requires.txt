@@ -1,0 +1,9 @@
+jax
+jaxlib
+jaxtyping
+distrax
+
+[dev]
+pytest
+pre-commit
+pytest-cov
