@@ -1,0 +1,4 @@
+jupyter-core
+pyzmq>=17
+tornado>=5
+six
