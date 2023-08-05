@@ -1,0 +1,13 @@
+README.md
+setup.py
+telebase/__init__.py
+telebase/bot.py
+telebase/criar_tabela.py
+telebase/gerenciador.py
+telebase/start.py
+telebase/tabela.py
+telebase.egg-info/PKG-INFO
+telebase.egg-info/SOURCES.txt
+telebase.egg-info/dependency_links.txt
+telebase.egg-info/requires.txt
+telebase.egg-info/top_level.txt
