@@ -1,0 +1,8 @@
+django>=4.0.0
+djangorestframework
+djangorestframework-simplejwt>=4.8.0
+google-auth
+requests
+
+[dev]
+check-manifest
