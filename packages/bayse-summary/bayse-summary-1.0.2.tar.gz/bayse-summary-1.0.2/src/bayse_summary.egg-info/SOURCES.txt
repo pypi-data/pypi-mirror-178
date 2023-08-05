@@ -1,0 +1,12 @@
+LICENSE
+pyproject.toml
+setup.cfg
+src/bayse_summary/__init__.py
+src/bayse_summary/networktraffic_2022Feb12.1900UTC_filtered.bf
+src/bayse_summary/networktraffic_2022Feb19.1900UTC_filtered.bf
+src/bayse_summary/summarize.py
+src/bayse_summary.egg-info/PKG-INFO
+src/bayse_summary.egg-info/SOURCES.txt
+src/bayse_summary.egg-info/dependency_links.txt
+src/bayse_summary.egg-info/requires.txt
+src/bayse_summary.egg-info/top_level.txt

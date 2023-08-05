@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: bayse-summary
+Version: 1.0.2
+Summary: Takes one or more BayseFlow files and summarizes them by the BayseFlows that are N-S or S-N.
+Home-page: https://github.com/BayseIntelligence/bayseflow_summary
+Author: Bayse, Inc.
+Author-email: david@bayse.io
+Project-URL: Bug Tracker, https://github.com/BayseIntelligence/bayseflow_summary/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
