@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE
+MANIFEST.in
+README.txt
+setup.py
+trebasiccalculator/__init__.py
+trebasiccalculator.egg-info/PKG-INFO
+trebasiccalculator.egg-info/SOURCES.txt
+trebasiccalculator.egg-info/dependency_links.txt
+trebasiccalculator.egg-info/top_level.txt

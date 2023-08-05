@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: trebasiccalculator
+Version: 0.0.1
+Summary: A basic calculator
+Home-page: 
+Author: Tre Robinson
+Author-email: trerrobinson@gmail.com
+License: MIT
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: MacOS
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+
+A basic calculator that was created for gaining a better understanding of creating, packaging, and publishing Python Packages.
+
+This is code that was generated while following the Youtube tutorial here: https://www.youtube.com/watch?v=zhpI6Yhz9_4
+
+
+
+Change Log
+==========
+
+0.0.1 (11/23/22)
+----------------
+- First Release
