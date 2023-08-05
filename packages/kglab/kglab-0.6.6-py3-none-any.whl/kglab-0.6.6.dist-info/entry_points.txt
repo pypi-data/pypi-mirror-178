@@ -1,0 +1,2 @@
+[rdf.plugins.store]
+kglab = kglab:PropertyStore
