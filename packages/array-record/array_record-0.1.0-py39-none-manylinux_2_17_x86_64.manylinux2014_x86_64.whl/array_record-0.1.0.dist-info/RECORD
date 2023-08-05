@@ -1,0 +1,10 @@
+array_record-0.1.0.dist-info/WHEEL,sha256=8WETrhqyCxP92OSrl3r__C1ope6RdpxNFYidtj-r15A,170
+array_record-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+array_record-0.1.0.dist-info/top_level.txt,sha256=tXm19-b93OrmJ3F0IKm4705VPls3c0UiF6i-r5qnn88,13
+array_record-0.1.0.dist-info/METADATA,sha256=F_EC7hstVw29RMOBf25YIaLaWPi5XAxpaLuwZtMpecg,423
+array_record-0.1.0.dist-info/RECORD,,
+array_record/setup.py,sha256=4mpvjrC3I1bdzJxvr2Tt2wWsUQbn1t2ICBliKtZRx4I,707
+array_record/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+array_record/python/array_record_module.so,sha256=j7gWWlOBFZTP6miwiPR2VRozzmFFQMNj9FRJ10Pj3s8,8656312
+array_record/python/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+array_record/python/array_record_module_test.py,sha256=s21ZGKANZXL125B0ktcFp6OtJlHRXTbDYtwIuYkey4w,4242
