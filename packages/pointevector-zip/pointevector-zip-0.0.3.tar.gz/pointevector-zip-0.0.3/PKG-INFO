@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pointevector-zip
+Version: 0.0.3
+Home-page: https://github.com/Pointe-Vector/zip
+Author: Andrew Hoekstra
+Author-email: andrew@pointevector.com
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Overview
+Process a ZIP file in a single-pass stream without loading the whole archive into memory.
+
+# Usage
+```
+import pointevector.zip
+
+parser = pointevector.zip.StreamParser()
+for chunk in chunks():
+    for header, file_data in parser.feed(chunk):
+        pass # Do something with the file
+    
+    # (Optional) Stop when no more files are in the archive
+    if parser.end_of_files:
+        break
+```
