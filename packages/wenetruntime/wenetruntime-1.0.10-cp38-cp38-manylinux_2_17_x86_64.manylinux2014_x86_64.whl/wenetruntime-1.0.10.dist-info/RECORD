@@ -1,0 +1,11 @@
+libwenet_api.so,sha256=x4XIrhg_8HwGuCQxj8QfCjNqR2QMO1EQf9Jk8-ymZ-c,7040944
+_wenet.cpython-38-x86_64-linux-gnu.so,sha256=kfcfWpqYVmc0UyxB_7dLnlh1XVrmufO33p1z6I1-Kck,246224
+wenetruntime/decoder.py,sha256=JbxJKKo4ifKnxXeMYaWV2QU2z2CnHRmWdwWOyHUHuQ8,3846
+wenetruntime/__init__.py,sha256=oF7dIOTRnj3jlxqeAvhoEnLMYvnt8xQoy48BxWj1lHs,101
+wenetruntime/hub.py,sha256=76e_ED3nvjJurtFr6qytOYJ_TTfDISa4ZwMHNNvBQRs,3252
+wenetruntime.libs/libwenet_api-f35ac005.so,sha256=ahr_oeToY4kTG-pps35MqbG65yxsGFEGr-8d9yPVbWY,8225832
+wenetruntime.libs/libgomp-a34b3233-7923ba20.so.1,sha256=h0kdg5191fs6NVbJGgfV-d0hLWfP_s2z6B_N_9un0K4,188808
+wenetruntime-1.0.10.dist-info/top_level.txt,sha256=CPpyAd_UVWAX6_Noia8XuzCkXvrw97ReQF07u1UCES0,20
+wenetruntime-1.0.10.dist-info/METADATA,sha256=13T7AnOy9DyFBexI9WNkT92C8Kaw7C0cW3DjlsIQvVw,3380
+wenetruntime-1.0.10.dist-info/RECORD,,
+wenetruntime-1.0.10.dist-info/WHEEL,sha256=-ijGDuALlPxm3HbhKntps0QzHsi-DPlXqgerYTTJkFE,148
