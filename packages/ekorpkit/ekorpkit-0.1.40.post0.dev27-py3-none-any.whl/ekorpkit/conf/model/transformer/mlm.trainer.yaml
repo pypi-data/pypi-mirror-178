@@ -1,0 +1,15 @@
+defaults:
+  - /auto: default
+  - /batch: default
+  - /secret: default
+  - /project: language-modeling
+  - /path: _batch_
+  - /dataset: mlm
+  - model: mlm
+  - training: mlm
+  - tokenizer: mlm
+
+_target_: ekorpkit.models.transformer.trainers.MlmTrainer
+name: mlm-trainer
+verbose: ${oc.select:..verbose, false}
+use_accelerator: false
