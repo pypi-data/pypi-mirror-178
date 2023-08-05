@@ -1,0 +1,17 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+er_evaluation/__init__.py
+er_evaluation/data_structures.py
+er_evaluation/error_analysis.py
+er_evaluation/estimators.py
+er_evaluation/metrics.py
+er_evaluation/plots.py
+er_evaluation/summary.py
+er_evaluation/utils.py
+er_evaluation.egg-info/PKG-INFO
+er_evaluation.egg-info/SOURCES.txt
+er_evaluation.egg-info/dependency_links.txt
+er_evaluation.egg-info/requires.txt
+er_evaluation.egg-info/top_level.txt
