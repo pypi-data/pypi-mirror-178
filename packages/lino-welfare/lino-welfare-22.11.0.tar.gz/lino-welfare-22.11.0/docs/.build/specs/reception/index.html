@@ -1,0 +1,758 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>reception : receive clients at a reception desk &#8212; Lino Welfare</title>
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/insipid.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/atelier.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/insipid-cust.css" />
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script defer src="../../_static/insipid.js"></script>
+    <script defer src="../../_static/insipid-sidebar.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../copyright.html" />
+    <link rel="next" title="Uploads in Lino Welfare" href="../uploads.html" />
+    <link rel="prev" title="The Jobs plugin" href="../jobs.html" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+  </head><body>
+    <script type="text/javascript">
+        document.body.classList.add('js');
+    </script>
+    <input type="checkbox" id="sidebar-checkbox" style="display: none;">
+    <label id="overlay" for="sidebar-checkbox"></label>
+    <div class="sidebar-resize-handle"></div>
+    <script type="text/javascript">
+        try {
+            let sidebar = localStorage.getItem('sphinx-sidebar');
+            const sidebar_width = localStorage.getItem('sphinx-sidebar-width');
+            if (sidebar_width) {
+                document.documentElement.style.setProperty('--sidebar-width', sidebar_width);
+            }
+            // show sidebar on wide screen
+            if (!sidebar && window.matchMedia('(min-width: 100rem)').matches) {
+                sidebar = 'visible';
+                // NB: We don't store the value in localStorage!
+            }
+            if (sidebar === 'visible') {
+                document.getElementById('sidebar-checkbox').checked = true;
+            }
+        } catch(e) {
+            console.info(e);
+        }
+    </script>
+    <header id="topbar-placeholder">
+      <div id="topbar">
+        <div id="titlebar">
+          <div class="buttons">
+            <label for="sidebar-checkbox" id="sidebar-button" role="button" tabindex="0" aria-controls="sphinxsidebar" accesskey="M">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></svg>
+            </label><a href="../../index.html" title="Lino Welfare">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
+</a>
+          </div>
+          <div class="title">
+            <a class="parent" href="../plugins.html" accesskey="U">Plugins</a>
+            <a class="top" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">reception</span></code> : receive clients at a reception desk</a>
+          </div>
+          <div class="buttons">
+            <button id="fullscreen-button" type="button" aria-hidden="true">
+              <span class="enable">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M212.686 315.314L120 408l32.922 31.029c15.12 15.12 4.412 40.971-16.97 40.971h-112C10.697 480 0 469.255 0 456V344c0-21.382 25.803-32.09 40.922-16.971L72 360l92.686-92.686c6.248-6.248 16.379-6.248 22.627 0l25.373 25.373c6.249 6.248 6.249 16.378 0 22.627zm22.628-118.628L328 104l-32.922-31.029C279.958 57.851 290.666 32 312.048 32h112C437.303 32 448 42.745 448 56v112c0 21.382-25.803 32.09-40.922 16.971L376 152l-92.686 92.686c-6.248 6.248-16.379 6.248-22.627 0l-25.373-25.373c-6.249-6.248-6.249-16.378 0-22.627z"/></svg>
+              </span>
+              <span class="disable">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M4.686 427.314L104 328l-32.922-31.029C55.958 281.851 66.666 256 88.048 256h112C213.303 256 224 266.745 224 280v112c0 21.382-25.803 32.09-40.922 16.971L152 376l-99.314 99.314c-6.248 6.248-16.379 6.248-22.627 0L4.686 449.941c-6.248-6.248-6.248-16.379 0-22.627zM443.314 84.686L344 184l32.922 31.029c15.12 15.12 4.412 40.971-16.97 40.971h-112C234.697 256 224 245.255 224 232V120c0-21.382 25.803-32.09 40.922-16.971L296 136l99.314-99.314c6.248-6.248 16.379-6.248 22.627 0l25.373 25.373c6.248 6.248 6.248 16.379 0 22.627z"/></svg>
+              </span>
+            </button><a href="https://www.facebook.com/sharer/sharer.php?u=https://welfare.lino-framework.org/specs/reception/" title="Share on Facebook" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+</a>
+
+<!---
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+---!>
+
+<a href="https://twitter.com/share?ref_src=https://welfare.lino-framework.org/specs/reception/" title="Share on Twitter" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <a href="../jobs.html" class="nav-icon previous" title="previous:&#13;The Jobs plugin" aria-label="Previous topic" accesskey="P" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"/></svg>
+      </a>
+      <a href="../uploads.html" class="nav-icon next" title="next:&#13;Uploads in Lino Welfare" aria-label="Next topic" accesskey="N" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg>
+      </a>
+    </nav>
+
+    <nav class="relbar">
+      <a class="previous" href="../jobs.html" aria-label="Previous topic" >
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg>
+        </div>
+        <div class="title">
+          <span class="text">
+            <span class="direction">previous</span>
+            The Jobs plugin
+          </span>
+        </div>
+      </a>
+      <a class="next" href="../uploads.html" aria-label="Next topic" >
+        <div class="title">
+          <span class="text">
+            <span class="direction">next</span>
+            Uploads in Lino Welfare
+          </span>
+        </div>
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+        </div>
+      </a>
+    </nav>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+<section id="reception-receive-clients-at-a-reception-desk">
+<span id="welfare-specs-reception"></span><h1><a class="toc-backref" href="#id1" role="doc-backlink"><code class="xref py py-mod docutils literal notranslate"><span class="pre">reception</span></code> : receive clients at a reception desk</a><a class="headerlink" href="#reception-receive-clients-at-a-reception-desk" title="Permalink to this heading">¶</a></h1>
+<p>The <a class="reference internal" href="../../api/lino_welfare.modlib.reception.html#module-lino_welfare.modlib.reception" title="lino_welfare.modlib.reception"><code class="xref py py-mod docutils literal notranslate"><span class="pre">lino_welfare.modlib.reception</span></code></a> plugin adds functionality for
+receiving guests by an independent reception clerk. It extends the
+<a class="reference external" href="https://dev.lino-framework.org/api/lino_xl.lib.reception.html#module-lino_xl.lib.reception" title="(in Lino Developer Guide v20.1)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">lino_xl.lib.reception</span></code></a> plugin.</p>
+<nav class="contents" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#reception-receive-clients-at-a-reception-desk" id="id1"><code class="xref py py-mod docutils literal notranslate"><span class="pre">reception</span></code> : receive clients at a reception desk</a></p>
+<ul>
+<li><p><a class="reference internal" href="#scenario" id="id2">Scenario</a></p></li>
+<li><p><a class="reference internal" href="#appointmentsbypartner" id="id3">AppointmentsByPartner</a></p></li>
+<li><p><a class="reference internal" href="#agentsbyclient" id="id4">AgentsByClient</a></p></li>
+<li><p><a class="reference internal" href="#some-tables" id="id5">Some tables</a></p></li>
+<li><p><a class="reference internal" href="#create-a-visit" id="id6">Create a visit</a></p></li>
+<li><p><a class="reference internal" href="#assign-to-me" id="id7">Assign to me</a></p></li>
+<li><p><a class="reference internal" href="#do-not-read" id="id8">Do not read</a></p></li>
+<li><p><a class="reference internal" href="#reception-clerk-sees-career-tab" id="id9">Reception clerk sees “Career” tab</a></p></li>
+<li><p><a class="reference internal" href="#cannot-select-a-coaching-type-for-user" id="id10">Cannot select a coaching type for user</a></p></li>
+</ul>
+</li>
+</ul>
+</nav>
+<p>This is a <a class="reference external" href="https://dev.lino-framework.org/dev/doctests.html#tested-docs" title="(in Lino Developer Guide v20.1)"><span class="xref std std-ref">tested document</span></a>.  The following instructions are
+used for initialization:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino</span> <span class="kn">import</span> <span class="n">startup</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">startup</span><span class="p">(</span><span class="s1">&#39;lino_welfare.projects.gerd.settings.doctests&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino.api.doctest</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">translation</span><span class="o">.</span><span class="n">activate</span><span class="p">(</span><span class="s1">&#39;fr&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dd</span><span class="o">.</span><span class="n">plugins</span><span class="o">.</span><span class="n">reception</span>
+<span class="go">lino_welfare.modlib.reception</span>
+</pre></div>
+</div>
+<section id="scenario">
+<span id="welfare-tour-reception"></span><h2><a class="toc-backref" href="#id2" role="doc-backlink">Scenario</a><a class="headerlink" href="#scenario" title="Permalink to this heading">¶</a></h2>
+<p>Imagine you are the reception clerk.
+A visitor enters.</p>
+<ul>
+<li><p>Visitor: My name is xxx and I’d like to get social help.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Clerk: Can I have your id card please?</p></li>
+<li><p>Search manually by name. Create manually a client record.</p></li>
+<li><p>Read the id card.  If the person has a client record in our
+database, then Lino opens the the detail of this record. Otherwise
+it asks whether to create the client.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Visitor: “My name is xxx, I have an appointment with Roger.”
+(You know that Roger is one of the social agents.)</p>
+<ul class="simple">
+<li><p>Open the clients table
+(<span class="menuselection">Reception ‣ Clients</span>) and find the client.</p></li>
+<li><p>Click on “create visit” action.</p></li>
+<li><p>Consult the <em>Waiting Visitors</em> table in your
+dashboard (if necessary, click on the <img alt="external link" class="pi-button" src="../../_images/external-link.svg" /> icon).</p></li>
+<li><p>Click on “Checkin”</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="appointmentsbypartner">
+<span id="welfare-specs-reception-appointmentsbypartner"></span><h2><a class="toc-backref" href="#id3" role="doc-backlink">AppointmentsByPartner</a><a class="headerlink" href="#appointmentsbypartner" title="Permalink to this heading">¶</a></h2>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">obj</span> <span class="o">=</span> <span class="n">pcsw</span><span class="o">.</span><span class="n">Client</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="mi">127</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>
+<span class="go">EVERS Eberhart (127)</span>
+</pre></div>
+</div>
+<p>This client has the following appointments.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;romain&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">reception</span><span class="o">.</span><span class="n">AppointmentsByPartner</span><span class="p">,</span> <span class="n">obj</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">column_names</span><span class="o">=</span><span class="s2">&quot;event__start_date event__start_time event__user event__summary event__state workflow_buttons&quot;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">language</span><span class="o">=</span><span class="s2">&quot;en&quot;</span><span class="p">)</span>  
+<span class="go">============ ============ ================= =================== ============ =======================================================</span>
+<span class="go"> Start date   Start time   Managed by        Short description   State        Workflow</span>
+<span class="go">------------ ------------ ----------------- ------------------- ------------ -------------------------------------------------------</span>
+<span class="go"> 15/05/2014   13:30:00     Mélanie Mélard    Souper              Took place   [Checkin] **Accepted** → [Present] [Absent] [Excused]</span>
+<span class="go"> 22/05/2014                Mélanie Mélard    Urgent problem      Published    [Receive] [Checkout] **Waiting** → [Absent] [Excused]</span>
+<span class="go"> 23/05/2014   09:00:00     Caroline Carnol   Auswertung 2        Suggested    [Checkin] **Accepted** → [Absent] [Excused]</span>
+<span class="go"> 23/06/2014   09:00:00     Caroline Carnol   Auswertung 3        Suggested    [Checkin] **Accepted** → [Absent] [Excused]</span>
+<span class="go"> 23/07/2014   09:00:00     Caroline Carnol   Auswertung 4        Suggested    [Checkin] **Accepted** → [Absent] [Excused]</span>
+<span class="go"> 25/08/2014   09:00:00     Caroline Carnol   Auswertung 5        Suggested    [Checkin] **Accepted** → [Absent] [Excused]</span>
+<span class="go"> 25/09/2014   09:00:00     Caroline Carnol   Auswertung 6        Suggested    [Checkin] **Accepted** → [Absent] [Excused]</span>
+<span class="go"> 27/10/2014   09:00:00     Caroline Carnol   Auswertung 7        Suggested    [Checkin] **Accepted** → [Absent] [Excused]</span>
+<span class="go"> 27/11/2014   09:00:00     Caroline Carnol   Auswertung 8        Suggested    [Checkin] **Accepted** → [Absent] [Excused]</span>
+<span class="go"> 29/12/2014   09:00:00     Caroline Carnol   Auswertung 9        Suggested    [Checkin] **Accepted** → [Absent] [Excused]</span>
+<span class="go"> 29/01/2015   09:00:00     Caroline Carnol   Auswertung 10       Suggested    [Checkin] **Accepted** → [Absent] [Excused]</span>
+<span class="go">============ ============ ================= =================== ============ =======================================================</span>
+</pre></div>
+</div>
+<p>Note that even Theresia who is a reception clerk and has no calendar
+functionality can click on the dates to see their detail:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;theresia&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">reception</span><span class="o">.</span><span class="n">AppointmentsByPartner</span><span class="p">,</span> <span class="n">obj</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">language</span><span class="o">=</span><span class="s2">&quot;en&quot;</span><span class="p">)</span>  
+<span class="go">====================================== ================= =======================================================</span>
+<span class="go"> When                                   Managed by        Workflow</span>
+<span class="go">-------------------------------------- ----------------- -------------------------------------------------------</span>
+<span class="go"> `Thu 15/05/2014 at 13:30 &lt;Detail&gt;`__   Mélanie Mélard    [Checkin] **Accepted** → [Present] [Absent] [Excused]</span>
+<span class="go"> `Thu 22/05/2014 &lt;Detail&gt;`__            Mélanie Mélard    [Receive] [Checkout] **Waiting** → [Absent] [Excused]</span>
+<span class="go"> `Fri 23/05/2014 at 09:00 &lt;Detail&gt;`__   Caroline Carnol   [Checkin] **Accepted** → [Absent] [Excused]</span>
+<span class="go"> `Mon 23/06/2014 at 09:00 &lt;Detail&gt;`__   Caroline Carnol   [Checkin] **Accepted** → [Absent] [Excused]</span>
+<span class="go"> `Wed 23/07/2014 at 09:00 &lt;Detail&gt;`__   Caroline Carnol   [Checkin] **Accepted** → [Absent] [Excused]</span>
+<span class="go"> `Mon 25/08/2014 at 09:00 &lt;Detail&gt;`__   Caroline Carnol   [Checkin] **Accepted** → [Absent] [Excused]</span>
+<span class="go"> `Thu 25/09/2014 at 09:00 &lt;Detail&gt;`__   Caroline Carnol   [Checkin] **Accepted** → [Absent] [Excused]</span>
+<span class="go"> `Mon 27/10/2014 at 09:00 &lt;Detail&gt;`__   Caroline Carnol   [Checkin] **Accepted** → [Absent] [Excused]</span>
+<span class="go"> `Thu 27/11/2014 at 09:00 &lt;Detail&gt;`__   Caroline Carnol   [Checkin] **Accepted** → [Absent] [Excused]</span>
+<span class="go"> `Mon 29/12/2014 at 09:00 &lt;Detail&gt;`__   Caroline Carnol   [Checkin] **Accepted** → [Absent] [Excused]</span>
+<span class="go"> `Thu 29/01/2015 at 09:00 &lt;Detail&gt;`__   Caroline Carnol   [Checkin] **Accepted** → [Absent] [Excused]</span>
+<span class="go">====================================== ================= =======================================================</span>
+</pre></div>
+</div>
+</section>
+<section id="agentsbyclient">
+<span id="welfare-specs-reception-agentsbyclient"></span><h2><a class="toc-backref" href="#id4" role="doc-backlink">AgentsByClient</a><a class="headerlink" href="#agentsbyclient" title="Permalink to this heading">¶</a></h2>
+<p>The <code class="xref py py-class docutils literal notranslate"><span class="pre">AgentsByClient</span></code> table shows the
+users for whom a reception clerk can make an appointment with a given
+client. Per user you have two possible buttons: (1) a prompt
+consultation (client will wait in the lounge until the user receives
+them) or (2) a scheduled appointment in the user’s calendar.</p>
+<p>Client #127 is <cite>ClientStates.coached</cite> and has two coachings:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">obj</span> <span class="o">=</span> <span class="n">pcsw</span><span class="o">.</span><span class="n">Client</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="mi">127</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>
+<span class="go">EVERS Eberhart (127)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">obj</span><span class="o">.</span><span class="n">client_state</span>
+<span class="go">&lt;clients.ClientStates.coached:30&gt;</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;romain&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">reception</span><span class="o">.</span><span class="n">AgentsByClient</span><span class="p">,</span> <span class="n">obj</span><span class="p">,</span> <span class="n">language</span><span class="o">=</span><span class="s1">&#39;en&#39;</span><span class="p">)</span>
+<span class="go">================= =============== =========================</span>
+<span class="go"> Agent             Coaching type   Actions</span>
+<span class="go">----------------- --------------- -------------------------</span>
+<span class="go"> Hubert Huppertz   General         **Visit** **Find date**</span>
+<span class="go"> Caroline Carnol   Integ           **Visit** **Find date**</span>
+<span class="go">================= =============== =========================</span>
+</pre></div>
+</div>
+<p>Client 257 is a <cite>ClientStates.newcomer</cite> and <em>not</em> coached. In that
+case Lino shows all social agents who care for newcomers (i.e. who
+have a non-zero <code class="xref py py-attr docutils literal notranslate"><span class="pre">newcomer_quota</span></code>).</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">obj</span> <span class="o">=</span> <span class="n">pcsw</span><span class="o">.</span><span class="n">Client</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">first_name</span><span class="o">=</span><span class="s2">&quot;Bruno&quot;</span><span class="p">,</span> <span class="n">last_name</span><span class="o">=</span><span class="s2">&quot;Braun&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>
+<span class="go">BRAUN Bruno (259)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">obj</span><span class="o">.</span><span class="n">client_state</span>
+<span class="go">&lt;clients.ClientStates.newcomer:10&gt;</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;romain&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">reception</span><span class="o">.</span><span class="n">AgentsByClient</span><span class="p">,</span> <span class="n">obj</span><span class="p">,</span> <span class="n">language</span><span class="o">=</span><span class="s1">&#39;en&#39;</span><span class="p">)</span>
+<span class="go">================= =============== =========================</span>
+<span class="go"> Agent             Coaching type   Actions</span>
+<span class="go">----------------- --------------- -------------------------</span>
+<span class="go"> Alicia Allmanns   Integ           **Visit** **Find date**</span>
+<span class="go"> Caroline Carnol   General         **Visit** **Find date**</span>
+<span class="go"> Hubert Huppertz   Integ           **Visit**</span>
+<span class="go"> Judith Jousten    General         **Visit** **Find date**</span>
+<span class="go">================= =============== =========================</span>
+</pre></div>
+</div>
+<p>Now let’s have a closer look at the action buttons in the third column
+of above table.  This column is defined by a
+<a class="reference external" href="https://dev.lino-framework.org/api/lino.core.fields.html#lino.core.fields.displayfield" title="(in Lino Developer Guide v20.1)"><code class="xref py py-func docutils literal notranslate"><span class="pre">lino.core.fields.displayfield()</span></code></a>.</p>
+<p>It has up to two actions (labeled <cite>Create prompt event</cite> and <cite>Find
+date</cite>)</p>
+<p>We are going to inspect the AgentsByClient panel.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">soup</span> <span class="o">=</span> <span class="n">get_json_soup</span><span class="p">(</span><span class="s1">&#39;romain&#39;</span><span class="p">,</span> <span class="s1">&#39;pcsw/Clients/127&#39;</span><span class="p">,</span> <span class="s1">&#39;AgentsByClient&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>It contains a table, and we want the cell at the first data row and
+third column:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">td</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">table</span><span class="o">.</span><span class="n">tbody</span><span class="o">.</span><span class="n">tr</span><span class="o">.</span><span class="n">contents</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>The first button (“Visit”) is here:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">btn</span> <span class="o">=</span> <span class="n">td</span><span class="o">.</span><span class="n">contents</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">btn</span><span class="o">.</span><span class="n">contents</span><span class="p">)</span>
+<span class="go">[&lt;img alt=&quot;hourglass&quot; src=&quot;/static/images/mjames/hourglass.png&quot;/&gt;]</span>
+</pre></div>
+</div>
+<p>And yes, the <cite>href</cite> attribute is a javascript snippet:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">btn</span><span class="p">[</span><span class="s1">&#39;href&#39;</span><span class="p">])</span>
+<span class="gp">... </span>
+<span class="go">javascript:Lino.pcsw.Clients.create_visit.run(null,...)</span>
+</pre></div>
+</div>
+<p>Now let’s inspect the three dots (<cite>…</cite>).</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dots</span> <span class="o">=</span> <span class="n">btn</span><span class="p">[</span><span class="s1">&#39;href&#39;</span><span class="p">][</span><span class="mi">51</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">dots</span><span class="p">)</span>  
+<span class="go">{ ... }</span>
+</pre></div>
+</div>
+<p>They are a big “object” (in Python we call it a <cite>dict</cite>):</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">d</span> <span class="o">=</span> <span class="n">AttrDict</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">dots</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>It has 4 keys:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span> 
+<span class="go">[u&#39;record_id&#39;, u&#39;field_values&#39;, u&#39;param_values&#39;, u&#39;base_params&#39;]</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">d</span><span class="o">.</span><span class="n">record_id</span>
+<span class="go">127</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">d</span><span class="o">.</span><span class="n">base_params</span><span class="p">[</span><span class="s1">&#39;mt&#39;</span><span class="p">]</span> 
+<span class="go">5...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">d</span><span class="o">.</span><span class="n">base_params</span><span class="p">[</span><span class="s1">&#39;mk&#39;</span><span class="p">]</span>
+<span class="go">127</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pprint</span><span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">field_values</span><span class="p">)</span>
+<span class="go">{&#39;summary&#39;: &#39;&#39;,</span>
+<span class="go"> &#39;user&#39;: &#39;Hubert Huppertz&#39;,</span>
+<span class="go"> &#39;userHidden&#39;: 5,</span>
+<span class="go"> &#39;waiting_number&#39;: &#39;&#39;}</span>
+</pre></div>
+</div>
+<p><strong>Now the second action (Find date):</strong></p>
+<p>The button is here:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">btn</span> <span class="o">=</span> <span class="n">td</span><span class="o">.</span><span class="n">contents</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">btn</span><span class="o">.</span><span class="n">contents</span><span class="p">)</span>
+<span class="go">[&lt;img alt=&quot;calendar&quot; src=&quot;/static/images/mjames/calendar.png&quot;/&gt;]</span>
+</pre></div>
+</div>
+<p>And also here, the <cite>href</cite> attribute is a javascript snippet:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">btn</span><span class="p">[</span><span class="s1">&#39;href&#39;</span><span class="p">])</span>
+<span class="gp">... </span>
+<span class="go">javascript:Lino.extensible.CalendarPanel.grid.run(null,{ &quot;base_params&quot;: { &quot;prj&quot;: 127, &quot;su&quot;: 5 }, &quot;su&quot;: 5 })</span>
+</pre></div>
+</div>
+<p>This one is shorter, so we don’t need to parse it for inspecting it.
+Note that <cite>su</cite> (subst_user) is the id of the user whose calendar is to
+be displayed.  And <cite>prj</cite> will become the value of the <cite>project</cite> field
+if a new event would be created.</p>
+</section>
+<section id="some-tables">
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Some tables</a><a class="headerlink" href="#some-tables" title="Permalink to this heading">¶</a></h2>
+<p>In the following tables we remove some columns which are not relevant
+here. Here we define the keyword arguments we are going to pass to the
+<a class="reference external" href="https://dev.lino-framework.org/api/lino.core.requests.html#lino.core.requests.BaseRequest.show" title="(in Lino Developer Guide v20.1)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">show</span></code></a> method:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">kwargs</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">language</span><span class="o">=</span><span class="s2">&quot;en&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">kwargs</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">column_names</span><span class="o">=</span><span class="s2">&quot;client position workflow_buttons&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Social workers can see on their computer who is waiting for them in
+the lounge:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;alicia&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">reception</span><span class="o">.</span><span class="n">MyWaitingVisitors</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">========================= ========== =======================================================</span>
+<span class="go"> Client                    Position   Workflow</span>
+<span class="go">------------------------- ---------- -------------------------------------------------------</span>
+<span class="go"> HILGERS Hildegard (133)   1          [Receive] [Checkout] **Waiting** → [Absent] [Excused]</span>
+<span class="go"> KAIVERS Karl (141)        2          [Receive] [Checkout] **Waiting** → [Absent] [Excused]</span>
+<span class="go">========================= ========== =======================================================</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;hubert&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">reception</span><span class="o">.</span><span class="n">MyWaitingVisitors</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">===================== ========== =======================================================</span>
+<span class="go"> Client                Position   Workflow</span>
+<span class="go">--------------------- ---------- -------------------------------------------------------</span>
+<span class="go"> EMONTS Daniel (128)   1          [Receive] [Checkout] **Waiting** → [Absent] [Excused]</span>
+<span class="go"> JONAS Josef (139)     2          [Receive] [Checkout] **Waiting** → [Absent] [Excused]</span>
+<span class="go"> LAZARUS Line (144)    3          [Receive] [Checkout] **Waiting** → [Absent] [Excused]</span>
+<span class="go">===================== ========== =======================================================</span>
+</pre></div>
+</div>
+<p>Theresia is the reception clerk. She has no visitors on her own.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;theresia&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">reception</span><span class="o">.</span><span class="n">MyWaitingVisitors</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="gp">... </span>
+
+<span class="go">No data to display</span>
+</pre></div>
+</div>
+<p>Theresia is rather going to use the overview tables:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">kwargs</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">column_names</span><span class="o">=</span><span class="s2">&quot;client event__user workflow_buttons&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;theresia&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">reception</span><span class="o">.</span><span class="n">WaitingVisitors</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">========================= ================= =======================================================</span>
+<span class="go"> Client                    Managed by        Workflow</span>
+<span class="go">------------------------- ----------------- -------------------------------------------------------</span>
+<span class="go"> EMONTS Daniel (128)       Hubert Huppertz   [Receive] [Checkout] **Waiting** → [Absent] [Excused]</span>
+<span class="go"> EVERS Eberhart (127)      Mélanie Mélard    [Receive] [Checkout] **Waiting** → [Absent] [Excused]</span>
+<span class="go"> HILGERS Hildegard (133)   Alicia Allmanns   [Receive] [Checkout] **Waiting** → [Absent] [Excused]</span>
+<span class="go"> JACOBS Jacqueline (137)   Judith Jousten    [Receive] [Checkout] **Waiting** → [Absent] [Excused]</span>
+<span class="go"> JONAS Josef (139)         Hubert Huppertz   [Receive] [Checkout] **Waiting** → [Absent] [Excused]</span>
+<span class="go"> KAIVERS Karl (141)        Alicia Allmanns   [Receive] [Checkout] **Waiting** → [Absent] [Excused]</span>
+<span class="go"> LAMBERTZ Guido (142)      Mélanie Mélard    [Receive] [Checkout] **Waiting** → [Absent] [Excused]</span>
+<span class="go"> LAZARUS Line (144)        Hubert Huppertz   [Receive] [Checkout] **Waiting** → [Absent] [Excused]</span>
+<span class="go">========================= ================= =======================================================</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;theresia&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">reception</span><span class="o">.</span><span class="n">BusyVisitors</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">========================= ================= ==========================================</span>
+<span class="go"> Client                    Managed by        Workflow</span>
+<span class="go">------------------------- ----------------- ------------------------------------------</span>
+<span class="go"> BRECHT Bernd (177)        Hubert Huppertz   [Checkout] **Busy** → [Absent] [Excused]</span>
+<span class="go"> COLLARD Charlotte (118)   Alicia Allmanns   [Checkout] **Busy** → [Absent] [Excused]</span>
+<span class="go"> DUBOIS Robin (179)        Mélanie Mélard    [Checkout] **Busy** → [Absent] [Excused]</span>
+<span class="go"> ENGELS Edgar (129)        Judith Jousten    [Checkout] **Busy** → [Absent] [Excused]</span>
+<span class="go">========================= ================= ==========================================</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;theresia&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">reception</span><span class="o">.</span><span class="n">GoneVisitors</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">============================ ================= ===============================</span>
+<span class="go"> Client                       Managed by        Workflow</span>
+<span class="go">---------------------------- ----------------- -------------------------------</span>
+<span class="go"> MALMENDIER Marc (146)        Alicia Allmanns   **Gone** → [Absent] [Excused]</span>
+<span class="go"> KELLER Karl (178)            Judith Jousten    **Gone** → [Absent] [Excused]</span>
+<span class="go"> JEANÉMART Jérôme (181)       Mélanie Mélard    **Gone** → [Absent] [Excused]</span>
+<span class="go"> GROTECLAES Gregory (132)     Hubert Huppertz   **Gone** → [Absent] [Excused]</span>
+<span class="go"> EMONTS-GAST Erna (152)       Alicia Allmanns   **Gone** → [Absent] [Excused]</span>
+<span class="go"> DOBBELSTEIN Dorothée (124)   Judith Jousten    **Gone** → [Absent] [Excused]</span>
+<span class="go"> AUSDEMWALD Alfons (116)      Mélanie Mélard    **Gone** → [Absent] [Excused]</span>
+<span class="go">============================ ================= ===============================</span>
+</pre></div>
+</div>
+</section>
+<section id="create-a-visit">
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Create a visit</a><a class="headerlink" href="#create-a-visit" title="Permalink to this heading">¶</a></h2>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">py2rst</span><span class="p">(</span><span class="n">pcsw</span><span class="o">.</span><span class="n">Clients</span><span class="o">.</span><span class="n">create_visit</span><span class="p">))</span>
+<span class="go">Enregistrer consultation</span>
+<span class="go">(main) [visible for all]: **Utilisateur** (user), **Raison** (summary), **N° d&#39;attente** (waiting_number)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">show_fields</span><span class="p">(</span><span class="n">pcsw</span><span class="o">.</span><span class="n">Clients</span><span class="o">.</span><span class="n">create_visit</span><span class="p">,</span> <span class="nb">all</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">- Utilisateur (user) :</span>
+<span class="go">- Raison (summary) :</span>
+<span class="go">- N° d&#39;attente (waiting_number) :</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">show_choices</span><span class="p">(</span><span class="s1">&#39;romain&#39;</span><span class="p">,</span> <span class="s1">&#39;/apchoices/pcsw/Clients/create_visit/user&#39;</span><span class="p">)</span>
+<span class="go">Alicia Allmanns</span>
+<span class="go">Caroline Carnol</span>
+<span class="go">Hubert Huppertz</span>
+<span class="go">Judith Jousten</span>
+</pre></div>
+</div>
+</section>
+<section id="assign-to-me">
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Assign to me</a><a class="headerlink" href="#assign-to-me" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="do-not-read">
+<h2><a class="toc-backref" href="#id8" role="doc-backlink">Do not read</a><a class="headerlink" href="#do-not-read" title="Permalink to this heading">¶</a></h2>
+<section id="when-the-primary-key-is-a-onetoonefield">
+<h3>When the primary key is a OneToOneField<a class="headerlink" href="#when-the-primary-key-is-a-onetoonefield" title="Permalink to this heading">¶</a></h3>
+<p>Before <a class="reference external" href="https://jane.mylino.net/#/api/tickets/PublicTickets/2436">#2436</a>, a OneToOneField resulted in a StoreField giving
+a single atomic value (the database object).</p>
+<p>The primary key of a client is <cite>id</cite>:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pk</span> <span class="o">=</span> <span class="n">pcsw</span><span class="o">.</span><span class="n">Client</span><span class="o">.</span><span class="n">_meta</span><span class="o">.</span><span class="n">get_field</span><span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pk</span>
+<span class="go">&lt;django.db.models.fields.BigAutoField: id&gt;</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pk</span> <span class="o">=</span> <span class="n">pcsw</span><span class="o">.</span><span class="n">Client</span><span class="o">.</span><span class="n">_meta</span><span class="o">.</span><span class="n">pk</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pk</span>
+<span class="go">&lt;django.db.models.fields.related.OneToOneField: person_ptr&gt;</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pk</span><span class="o">.</span><span class="n">primary_key</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ptr</span> <span class="o">=</span> <span class="n">pcsw</span><span class="o">.</span><span class="n">Client</span><span class="o">.</span><span class="n">_meta</span><span class="o">.</span><span class="n">get_field</span><span class="p">(</span><span class="s1">&#39;person_ptr&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ptr</span>
+<span class="go">&lt;django.db.models.fields.related.OneToOneField: person_ptr&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ptr</span><span class="o">.</span><span class="n">primary_key</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ah</span> <span class="o">=</span> <span class="n">reception</span><span class="o">.</span><span class="n">Clients</span><span class="o">.</span><span class="n">get_handle</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pprint</span><span class="p">(</span><span class="n">ah</span><span class="o">.</span><span class="n">store</span><span class="o">.</span><span class="n">list_fields</span><span class="p">)</span>
+<span class="go">((virtual)DisplayStoreField &#39;name_column&#39;,</span>
+<span class="go"> (virtual)DisplayStoreField &#39;address_column&#39;,</span>
+<span class="go"> StoreField &#39;national_id&#39;,</span>
+<span class="go"> (virtual)DisplayStoreField &#39;workflow_buttons&#39;,</span>
+<span class="go"> OneToOneStoreField &#39;person_ptr&#39;,</span>
+<span class="go"> DisabledFieldsStoreField &#39;disabled_fields&#39;,</span>
+<span class="go"> DisableEditingStoreField &#39;disable_editing&#39;,</span>
+<span class="go"> RowClassStoreField &#39;row_class&#39;)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ah</span><span class="o">.</span><span class="n">store</span><span class="o">.</span><span class="n">pk</span>
+<span class="go">&lt;django.db.models.fields.related.OneToOneField: person_ptr&gt;</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ah</span><span class="o">.</span><span class="n">store</span><span class="o">.</span><span class="n">pk_index</span>
+<span class="go">4</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ah</span><span class="o">.</span><span class="n">store</span><span class="o">.</span><span class="n">list_fields</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+<span class="go">OneToOneStoreField &#39;person_ptr&#39;</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span> <span class="o">=</span> <span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s2">&quot;robin&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ar</span> <span class="o">=</span> <span class="n">reception</span><span class="o">.</span><span class="n">Clients</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="n">user</span><span class="o">=</span><span class="n">ses</span><span class="o">.</span><span class="n">user</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">obj</span> <span class="o">=</span> <span class="n">pcsw</span><span class="o">.</span><span class="n">Client</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="mi">116</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lst</span> <span class="o">=</span> <span class="n">ah</span><span class="o">.</span><span class="n">store</span><span class="o">.</span><span class="n">row2list</span><span class="p">(</span><span class="n">ar</span><span class="p">,</span> <span class="n">obj</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1">#lst</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">lst</span><span class="p">[</span><span class="n">ah</span><span class="o">.</span><span class="n">store</span><span class="o">.</span><span class="n">pk_index</span><span class="p">]</span>
+<span class="go">Person #116 (&#39;M. Alfons AUSDEMWALD&#39;)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="reception-clerk-sees-career-tab">
+<span id="welfare-specs-20150715"></span><h2><a class="toc-backref" href="#id9" role="doc-backlink">Reception clerk sees “Career” tab</a><a class="headerlink" href="#reception-clerk-sees-career-tab" title="Permalink to this heading">¶</a></h2>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino.utils.jsgen</span> <span class="kn">import</span> <span class="n">with_user_profile</span>
+</pre></div>
+</div>
+<p>The following helped us to understand and solve ticket <a class="reference external" href="https://jane.mylino.net/#/api/tickets/PublicTickets/340">#340</a>
+(discovered <a class="reference external" href="https://luc.lino-framework.org/blog/2015/0714.html">2015-07-14</a>).</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">translation</span><span class="o">.</span><span class="n">activate</span><span class="p">(</span><span class="s1">&#39;en&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The problem: A reception clerk in Eupen
+(<code class="xref py py-mod docutils literal notranslate"><span class="pre">lino_welfare.projects.gerd</span></code>) should not see the career tab of
+a client because the <a class="reference external" href="https://dev.lino-framework.org/api/lino.core.permissions.html#lino.core.permissions.Permittable.required_roles" title="(in Lino Developer Guide v20.1)"><code class="xref py py-attr docutils literal notranslate"><span class="pre">required_roles</span></code></a> of that panel
+include <a class="reference internal" href="../../api/lino_welfare.modlib.integ.roles.html#lino_welfare.modlib.integ.roles.IntegUser" title="lino_welfare.modlib.integ.roles.IntegUser"><code class="xref py py-class docutils literal notranslate"><span class="pre">IntegUser</span></code></a>.  But they saw it
+nevertheless:</p>
+<img alt="../../_images/20150715.png" src="../../_images/20150715.png" />
+<p>A reception clerk is not an integration agent:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino_welfare.modlib.welfare.user_types</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">isinstance</span><span class="p">(</span><span class="n">ReceptionClerk</span><span class="p">,</span> <span class="n">IntegUser</span><span class="p">)</span>
+<span class="go">False</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ia_user_type</span> <span class="o">=</span> <span class="n">users</span><span class="o">.</span><span class="n">UserTypes</span><span class="o">.</span><span class="n">get_by_value</span><span class="p">(</span><span class="s1">&#39;100&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">ia_user_type</span><span class="p">)</span>
+<span class="go">100 (Integration agent)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rc_user_type</span> <span class="o">=</span> <span class="n">users</span><span class="o">.</span><span class="n">UserTypes</span><span class="o">.</span><span class="n">get_by_value</span><span class="p">(</span><span class="s1">&#39;210&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">rc_user_type</span><span class="p">)</span>
+<span class="go">210 (Reception clerk)</span>
+</pre></div>
+</div>
+<p>We are talking about the detail layout of a client, defined by
+<code class="xref py py-class docutils literal notranslate"><span class="pre">lino_weleup.lib.pcsw.models.ClientDetail</span></code>:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dtl</span> <span class="o">=</span> <span class="n">rt</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">pcsw</span><span class="o">.</span><span class="n">Clients</span><span class="o">.</span><span class="n">detail_layout</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dtl</span>  
+<span class="go">&lt;lino_weleup.lib.pcsw.models.ClientDetail object at ...&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dtl</span><span class="o">.</span><span class="vm">__class__</span>
+<span class="go">&lt;class &#39;lino_weleup.lib.pcsw.models.ClientDetail&#39;&gt;</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">lh</span> <span class="o">=</span> <span class="n">dtl</span><span class="o">.</span><span class="n">get_layout_handle</span><span class="p">(</span><span class="n">settings</span><span class="o">.</span><span class="n">SITE</span><span class="o">.</span><span class="n">kernel</span><span class="o">.</span><span class="n">default_ui</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">lh</span><span class="p">)</span>
+<span class="go">LayoutHandle for lino_weleup.lib.pcsw.models.ClientDetail on lino_welfare.modlib.pcsw.models.Clients</span>
+</pre></div>
+</div>
+<p>Let’s get the <cite>career</cite> panel. It is a <a class="reference external" href="https://dev.lino-framework.org/api/lino.core.elems.html#lino.core.elems.Panel" title="(in Lino Developer Guide v20.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">lino.core.elems.Panel</span></code></a>:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># career_panel = lh.main.find_by_name(&#39;career&#39;)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">career_panel</span> <span class="o">=</span> <span class="n">with_user_profile</span><span class="p">(</span><span class="n">ia_user_type</span><span class="p">,</span> <span class="n">lh</span><span class="o">.</span><span class="n">main</span><span class="o">.</span><span class="n">find_by_name</span><span class="p">,</span> <span class="s1">&#39;career&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">career_panel</span>
+<span class="go">&lt;Panel career in lino_weleup.lib.pcsw.models.ClientDetail on lino_welfare.modlib.pcsw.models.Clients&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">career_panel</span><span class="o">.</span><span class="vm">__class__</span>
+<span class="go">&lt;class &#39;lino.core.elems.Panel&#39;&gt;</span>
+</pre></div>
+</div>
+<p>To see this panel, you need to be an integration agent:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">career_panel</span><span class="o">.</span><span class="n">required_roles</span> <span class="o">==</span> <span class="p">{</span><span class="n">IntegUser</span><span class="p">}</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<p>Theresia is a reception clerk
+(<code class="xref py py-class docutils literal notranslate"><span class="pre">lino_welfare.modlib.welfare.user_types.ReceptionClerk</span></code>):</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">theresia</span> <span class="o">=</span> <span class="n">users</span><span class="o">.</span><span class="n">User</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">username</span><span class="o">=</span><span class="s2">&quot;theresia&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">theresia</span><span class="o">.</span><span class="n">user_type</span><span class="o">.</span><span class="n">role</span>  
+<span class="go">&lt;lino_welfare.modlib.welfare.user_types.ReceptionClerk object at ...&gt;</span>
+</pre></div>
+</div>
+<p>And that’s not the role required to view this panel:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">theresia</span><span class="o">.</span><span class="n">user_type</span><span class="o">.</span><span class="n">has_required_roles</span><span class="p">(</span><span class="n">career_panel</span><span class="o">.</span><span class="n">required_roles</span><span class="p">)</span>
+<span class="go">False</span>
+</pre></div>
+</div>
+<p>And thus this panel is not visible for her:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">career_panel</span><span class="o">.</span><span class="n">get_view_permission</span><span class="p">(</span><span class="n">theresia</span><span class="o">.</span><span class="n">user_type</span><span class="p">)</span>
+<span class="go">False</span>
+</pre></div>
+</div>
+<p>Note that the Panel objects which are not visible continue to be in
+<cite>lh.main.elements</cite>:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">e</span><span class="o">.</span><span class="n">name</span> <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">lh</span><span class="o">.</span><span class="n">main</span><span class="o">.</span><span class="n">elements</span><span class="p">]))</span>
+<span class="gp">... </span>
+<span class="go">general contact coaching aids_tab work_tab_1 career languages</span>
+<span class="go">competences contracts history calendar MovementsByProject misc cbss debts</span>
+</pre></div>
+</div>
+<p>Lino filters removes them only when generating the js files, IOW
+during <a class="reference external" href="https://dev.lino-framework.org/api/lino.utils.jsgen.html#lino.utils.jsgen.py2js" title="(in Lino Developer Guide v20.1)"><code class="xref py py-func docutils literal notranslate"><span class="pre">lino.utils.jsgen.py2js()</span></code></a>:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino.utils.jsgen</span> <span class="kn">import</span> <span class="n">with_user_profile</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino.utils.jsgen</span> <span class="kn">import</span> <span class="n">py2js</span><span class="p">,</span> <span class="n">declare_vars</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">f</span><span class="p">():</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="n">py2js</span><span class="p">(</span><span class="n">lh</span><span class="o">.</span><span class="n">main</span><span class="o">.</span><span class="n">elements</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">with_user_profile</span><span class="p">(</span><span class="n">theresia</span><span class="o">.</span><span class="n">user_type</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">[ general_panel1172, contact_panel1199, coaching_panel1428, aids_tab_panel1543, work_tab_1_panel1571, contracts_panel2318, history_panel2321, calendar_panel2401, misc_panel2442 ]</span>
+</pre></div>
+</div>
+<p>I can even render the <code class="file docutils literal notranslate"><span class="pre">lino*.js</span></code> files (at least once):</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">class</span> <span class="nc">W</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="k">def</span> <span class="nf">write</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">s</span><span class="p">):</span>
+<span class="gp">... </span>        <span class="k">if</span> <span class="s2">&quot;career&quot;</span> <span class="ow">in</span> <span class="n">s</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">w</span> <span class="o">=</span> <span class="n">W</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">f</span><span class="p">():</span>
+<span class="gp">... </span>    <span class="n">dd</span><span class="o">.</span><span class="n">plugins</span><span class="o">.</span><span class="n">extjs</span><span class="o">.</span><span class="n">renderer</span><span class="o">.</span><span class="n">write_lino_js</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">with_user_profile</span><span class="p">(</span><span class="n">theresia</span><span class="o">.</span><span class="n">user_type</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span>
+<span class="gp">... </span>
+</pre></div>
+</div>
+<p>So until now everything looks okay.</p>
+<p>The problem was that until <a class="reference external" href="https://luc.lino-framework.org/blog/2015/0716.html">2015-07-16</a>, <code class="xref py py-meth docutils literal notranslate"><span class="pre">write_lino_js()</span></code>
+left the requirements of our career panel modified (loosened) after
+having run.  So the following was <cite>False</cite> only after the first time
+and <cite>True</cite> all subsequent times:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">theresia</span><span class="o">.</span><span class="n">user_type</span><span class="o">.</span><span class="n">has_required_roles</span><span class="p">(</span><span class="n">career_panel</span><span class="o">.</span><span class="n">required_roles</span><span class="p">)</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">theresia</span><span class="o">.</span><span class="n">user_type</span><span class="o">.</span><span class="n">has_required_roles</span><span class="p">(</span><span class="n">career_panel</span><span class="o">.</span><span class="n">required_roles</span><span class="p">)</span>
+<span class="go">False</span>
+</pre></div>
+</div>
+</section>
+<section id="cannot-select-a-coaching-type-for-user">
+<span id="welfare-specs-20200825"></span><h2><a class="toc-backref" href="#id10" role="doc-backlink">Cannot select a coaching type for user</a><a class="headerlink" href="#cannot-select-a-coaching-type-for-user" title="Permalink to this heading">¶</a></h2>
+<p>The following failed before 20200825.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">show_choices</span><span class="p">(</span><span class="s1">&#39;romain&#39;</span><span class="p">,</span> <span class="s1">&#39;/choices/users/Users/coaching_type&#39;</span><span class="p">)</span>
+<span class="go">&lt;br/&gt;</span>
+<span class="go">SSG</span>
+<span class="go">SI</span>
+<span class="go">Médiation de dettes</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+
+            <p class="logo"><a href="../../index.html">
+              <img class="logo" src="../../_static/logo_web3.png" alt="Logo"/>
+            </a></p>
+          <div class="sidebar-resize-handle"></div>
+<p align="center"><b>EN</b> | <a href="de/index.rst">DE</a> | <a href="fr/index.rst">FR</a></p>
+<h3><a href="../../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../about/index.html">About Lino Welfare</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../usage/index.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../changes/index.html">Changes</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Specs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../install/index.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../copyright.html">Copyright &amp; legal notes</a></li>
+</ul>
+
+<hr class="docutils" />
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+<ul>
+  <li class="toctree-l1"><a class="reference internal" href="../../py-modindex.html">Python Module Index</a></li>
+</ul><p align="center">
+</p>
+
+<div id="ethical-ad-placement"></div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+    <nav class="relbar">
+      <a class="previous" href="../jobs.html" aria-label="Previous topic" >
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg>
+        </div>
+        <div class="title">
+          <span class="text">
+            <span class="direction">previous</span>
+            The Jobs plugin
+          </span>
+        </div>
+      </a>
+      <a class="next" href="../uploads.html" aria-label="Next topic" >
+        <div class="title">
+          <span class="text">
+            <span class="direction">next</span>
+            Uploads in Lino Welfare
+          </span>
+        </div>
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+        </div>
+      </a>
+    </nav>
+
+    <footer role="contentinfo">
+      &#169; <a href="../../copyright.html">Copyright</a> 2012-2022 Rumma &amp; Ko Ltd.
+      Last updated on 2022-11-08.
+      Created using <a class="reference external" href="https://www.sphinx-doc.org/">Sphinx</a> 5.1.1.
+      <a class="reference external" href="https://insipid-sphinx-theme.readthedocs.io/">Insipid Theme</a>.
+<a href="https://gitlab.com/lino-framework/welfare/-/blob/master/docs/specs/reception/index.rst?plain=1"
+  rel="nofollow">Source code</a>.
+<br>
+
+Online link: <a href="https://welfare.lino-framework.org/specs/reception/index.html">https://welfare.lino-framework.org/specs/reception/index.html</a>.
+
+
+    </footer>
+  </body>
+</html>

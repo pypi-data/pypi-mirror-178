@@ -1,0 +1,622 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>The Jobs plugin &#8212; Lino Welfare</title>
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/insipid.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/atelier.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/insipid-cust.css" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script defer src="../_static/insipid.js"></script>
+    <script defer src="../_static/insipid-sidebar.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="copyright" title="Copyright" href="../copyright.html" />
+    <link rel="next" title="reception : receive clients at a reception desk" href="reception/index.html" />
+    <link rel="prev" title="isip : Individual Social Integration Projects" href="isip.html" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+  </head><body>
+    <script type="text/javascript">
+        document.body.classList.add('js');
+    </script>
+    <input type="checkbox" id="sidebar-checkbox" style="display: none;">
+    <label id="overlay" for="sidebar-checkbox"></label>
+    <div class="sidebar-resize-handle"></div>
+    <script type="text/javascript">
+        try {
+            let sidebar = localStorage.getItem('sphinx-sidebar');
+            const sidebar_width = localStorage.getItem('sphinx-sidebar-width');
+            if (sidebar_width) {
+                document.documentElement.style.setProperty('--sidebar-width', sidebar_width);
+            }
+            // show sidebar on wide screen
+            if (!sidebar && window.matchMedia('(min-width: 100rem)').matches) {
+                sidebar = 'visible';
+                // NB: We don't store the value in localStorage!
+            }
+            if (sidebar === 'visible') {
+                document.getElementById('sidebar-checkbox').checked = true;
+            }
+        } catch(e) {
+            console.info(e);
+        }
+    </script>
+    <header id="topbar-placeholder">
+      <div id="topbar">
+        <div id="titlebar">
+          <div class="buttons">
+            <label for="sidebar-checkbox" id="sidebar-button" role="button" tabindex="0" aria-controls="sphinxsidebar" accesskey="M">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></svg>
+            </label><a href="../index.html" title="Lino Welfare">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
+</a>
+          </div>
+          <div class="title">
+            <a class="parent" href="plugins.html" accesskey="U">Plugins</a>
+            <a class="top" href="#">The Jobs plugin</a>
+          </div>
+          <div class="buttons">
+            <button id="fullscreen-button" type="button" aria-hidden="true">
+              <span class="enable">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M212.686 315.314L120 408l32.922 31.029c15.12 15.12 4.412 40.971-16.97 40.971h-112C10.697 480 0 469.255 0 456V344c0-21.382 25.803-32.09 40.922-16.971L72 360l92.686-92.686c6.248-6.248 16.379-6.248 22.627 0l25.373 25.373c6.249 6.248 6.249 16.378 0 22.627zm22.628-118.628L328 104l-32.922-31.029C279.958 57.851 290.666 32 312.048 32h112C437.303 32 448 42.745 448 56v112c0 21.382-25.803 32.09-40.922 16.971L376 152l-92.686 92.686c-6.248 6.248-16.379 6.248-22.627 0l-25.373-25.373c-6.249-6.248-6.249-16.378 0-22.627z"/></svg>
+              </span>
+              <span class="disable">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M4.686 427.314L104 328l-32.922-31.029C55.958 281.851 66.666 256 88.048 256h112C213.303 256 224 266.745 224 280v112c0 21.382-25.803 32.09-40.922 16.971L152 376l-99.314 99.314c-6.248 6.248-16.379 6.248-22.627 0L4.686 449.941c-6.248-6.248-6.248-16.379 0-22.627zM443.314 84.686L344 184l32.922 31.029c15.12 15.12 4.412 40.971-16.97 40.971h-112C234.697 256 224 245.255 224 232V120c0-21.382 25.803-32.09 40.922-16.971L296 136l99.314-99.314c6.248-6.248 16.379-6.248 22.627 0l25.373 25.373c6.248 6.248 6.248 16.379 0 22.627z"/></svg>
+              </span>
+            </button><a href="https://www.facebook.com/sharer/sharer.php?u=https://welfare.lino-framework.org/specs/jobs/" title="Share on Facebook" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+</a>
+
+<!---
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+---!>
+
+<a href="https://twitter.com/share?ref_src=https://welfare.lino-framework.org/specs/jobs/" title="Share on Twitter" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <a href="isip.html" class="nav-icon previous" title="previous:&#13;isip : Individual Social Integration Projects" aria-label="Previous topic" accesskey="P" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"/></svg>
+      </a>
+      <a href="reception/index.html" class="nav-icon next" title="next:&#13;reception : receive clients at a reception desk" aria-label="Next topic" accesskey="N" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg>
+      </a>
+    </nav>
+
+    <nav class="relbar">
+      <a class="previous" href="isip.html" aria-label="Previous topic" >
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg>
+        </div>
+        <div class="title">
+          <span class="text">
+            <span class="direction">previous</span>
+            <code class="docutils literal notranslate"><span class="pre">isip</span></code> : Individual Social Integration Projects
+          </span>
+        </div>
+      </a>
+      <a class="next" href="reception/index.html" aria-label="Next topic" >
+        <div class="title">
+          <span class="text">
+            <span class="direction">next</span>
+            <code class="xref py py-mod docutils literal notranslate"><span class="pre">reception</span></code> : receive clients at a reception desk
+          </span>
+        </div>
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+        </div>
+      </a>
+    </nav>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+<section id="the-jobs-plugin">
+<span id="welfare-specs-jobs"></span><h1>The Jobs plugin<a class="headerlink" href="#the-jobs-plugin" title="Permalink to this heading">¶</a></h1>
+<p>The <a class="reference internal" href="../api/lino_welfare.modlib.jobs.html#module-lino_welfare.modlib.jobs" title="lino_welfare.modlib.jobs"><code class="xref py py-mod docutils literal notranslate"><span class="pre">lino_welfare.modlib.jobs</span></code></a> plugin provides functionality for
+managing <a class="reference internal" href="../usage/jobs.html#term-job-supplyment"><span class="xref std std-term">job supplyments</span></a>.</p>
+<p>See also <a class="reference internal" href="../usage/jobs.html#ug-plugins-jobs"><span class="std std-ref">jobs :  Job supplyments</span></a>.</p>
+<section id="dependencies">
+<h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this heading">¶</a></h2>
+<p>This plugin needs the <a class="reference internal" href="../api/lino_welfare.modlib.isip.html#module-lino_welfare.modlib.isip" title="lino_welfare.modlib.isip"><code class="xref py py-mod docutils literal notranslate"><span class="pre">lino_welfare.modlib.isip</span></code></a> plugin.</p>
+</section>
+<section id="jobs">
+<h2>Jobs<a class="headerlink" href="#jobs" title="Permalink to this heading">¶</a></h2>
+<p>The central concept added by this module is a table of <strong>jobs</strong>.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span> <span class="o">=</span> <span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;rolf&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">jobs</span><span class="o">.</span><span class="n">Jobs</span><span class="p">,</span> <span class="n">column_names</span><span class="o">=</span><span class="s2">&quot;function provider sector&quot;</span><span class="p">,</span> <span class="n">language</span><span class="o">=</span><span class="s2">&quot;de&quot;</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">=================== ================================ ==========================</span>
+<span class="go"> Berufsbezeichnung   Stellenanbieter                  Sektor</span>
+<span class="go">------------------- -------------------------------- --------------------------</span>
+<span class="go"> Kellner             BISA                             Horeca</span>
+<span class="go"> Kellner             R-Cycle Sperrgutsortierzentrum   Landwirtschaft &amp; Garten</span>
+<span class="go"> Koch                BISA                             Seefahrt</span>
+<span class="go"> Koch                Pro Aktiv V.o.G.                 Unterricht</span>
+<span class="go"> Küchenassistent     Pro Aktiv V.o.G.                 Medizin &amp; Paramedizin</span>
+<span class="go"> Küchenassistent     R-Cycle Sperrgutsortierzentrum   Reinigung</span>
+<span class="go"> Tellerwäscher       BISA                             Transport</span>
+<span class="go"> Tellerwäscher       R-Cycle Sperrgutsortierzentrum   Bauwesen &amp; Gebäudepflege</span>
+<span class="go">=================== ================================ ==========================</span>
+</pre></div>
+</div>
+</section>
+<section id="job-providers">
+<h2>Job providers<a class="headerlink" href="#job-providers" title="Permalink to this heading">¶</a></h2>
+<p>A <a class="reference internal" href="../usage/jobs.html#term-job-provider"><span class="xref std std-term">job provider</span></a> (Stellenanbieter, Partenaire social) is an
+organisation where the work will be executed. They are not
+necessarily also the employer. It may be either some public
+service or a private company.</p>
+<p>Employeur ou Services utilisateur</p>
+<p>The <a class="reference internal" href="#lino_welfare.modlib.jobs.JobProvider" title="lino_welfare.modlib.jobs.JobProvider"><code class="xref py py-class docutils literal notranslate"><span class="pre">JobProvider</span></code></a> model is a polymorphic specialization (“MTI child”) of
+<code class="xref py py-class docutils literal notranslate"><span class="pre">contacts.Company</span></code>.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">jobs</span><span class="o">.</span><span class="n">JobProviders</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">================================ ============ ================ ========= ======= ===== =========</span>
+<span class="go"> Name                             Adresse      E-Mail-Adresse   Telefon   Handy   ID    Sprache</span>
+<span class="go">-------------------------------- ------------ ---------------- --------- ------- ----- ---------</span>
+<span class="go"> BISA                             4700 Eupen                                      188   de</span>
+<span class="go"> Pro Aktiv V.o.G.                 4700 Eupen                                      191   de</span>
+<span class="go"> R-Cycle Sperrgutsortierzentrum   4700 Eupen                                      189   de</span>
+<span class="go">================================ ============ ================ ========= ======= ===== =========</span>
+</pre></div>
+</div>
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.jobs.JobProvider">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.jobs.</span></span><span class="sig-name descname"><span class="pre">JobProvider</span></span><a class="headerlink" href="#lino_welfare.modlib.jobs.JobProvider" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.jobs.JobProvider.is_social">
+<span class="sig-name descname"><span class="pre">is_social</span></span><a class="headerlink" href="#lino_welfare.modlib.jobs.JobProvider.is_social" title="Permalink to this definition">¶</a></dt>
+<dd><p>Organisation bénéficiant de l’agrément « Initiative d’économie sociale »
+octroyé par la Wallonie.</p>
+<p>Cet agrément vise à soutenir la mise en place de projets à finalité sociale
+et l’insertion socioprofessionnelle de travailleurs peu qualifiés par le
+biais d’une activité économique.
+<a class="reference external" href="https://economie.wallonie.be/Dvlp_Economique/Economie_sociale/AgrementES.html">https://economie.wallonie.be/Dvlp_Economique/Economie_sociale/AgrementES.html</a></p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="job-offers">
+<span id="welfare-jobs-offers"></span><h2>Job Offers<a class="headerlink" href="#job-offers" title="Permalink to this heading">¶</a></h2>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># settings.SITE.catch_layout_exceptions = False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">jobs</span><span class="o">.</span><span class="n">Offers</span><span class="p">)</span>  
+<span class="go">======================== ================== ========================= =================== ================ ============== =============</span>
+<span class="go"> Name                     Stellenanbieter    Sektor                    Berufsbezeichnung   Beginn Auswahl   Ende Auswahl   Beginndatum</span>
+<span class="go">------------------------ ------------------ ------------------------- ------------------- ---------------- -------------- -------------</span>
+<span class="go"> Übersetzer DE-FR (m/w)   Pro Aktiv V.o.G.   Landwirtschaft &amp; Garten   Kellner             22.01.14         02.05.14       01.06.14</span>
+<span class="go">======================== ================== ========================= =================== ================ ============== =============</span>
+</pre></div>
+</div>
+<section id="experiences-by-job-offer">
+<span id="welfare-jobs-experiencesbyoffer"></span><h3>Experiences by Job Offer<a class="headerlink" href="#experiences-by-job-offer" title="Permalink to this heading">¶</a></h3>
+<p>This table shows the Experiences which satisfy a given Job offer.</p>
+<p>Example:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">obj</span> <span class="o">=</span> <span class="n">jobs</span><span class="o">.</span><span class="n">Offer</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">jobs</span><span class="o">.</span><span class="n">ExperiencesByOffer</span><span class="p">,</span> <span class="n">obj</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">============ ========== ==================== =================================== ===================</span>
+<span class="go"> Beginnt am   Enddatum   Klient               Organisation                        Land</span>
+<span class="go">------------ ---------- -------------------- ----------------------------------- -------------------</span>
+<span class="go"> 07.02.11     07.03.11   LAZARUS Line (144)   Belgisches Rotes Kreuz              Andorra</span>
+<span class="go"> 04.04.11     04.04.13   JONAS Josef (139)    Pharmacies Populaires de Verviers   Brunei Darussalam</span>
+<span class="go">============ ========== ==================== =================================== ===================</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="candidatures-by-job-offer">
+<span id="welfare-jobs-candidaturesbyoffer"></span><h2>Candidatures by job offer<a class="headerlink" href="#candidatures-by-job-offer" title="Permalink to this heading">¶</a></h2>
+<p>This table shows the Candidatures which satisfy a given Job offer.</p>
+<p>Example:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">obj</span> <span class="o">=</span> <span class="n">jobs</span><span class="o">.</span><span class="n">Offer</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">jobs</span><span class="o">.</span><span class="n">CandidaturesByOffer</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="n">obj</span><span class="p">))</span>
+<span class="gp">... </span>
+<span class="go">============== ======================= ======== ====================</span>
+<span class="go"> Anfragedatum   Klient                  Stelle   Kandidatur-Zustand</span>
+<span class="go">-------------- ----------------------- -------- --------------------</span>
+<span class="go"> 02.05.14       MALMENDIER Marc (146)            Inaktiv</span>
+<span class="go"> 27.06.14       KAIVERS Karl (141)               Arbeitet</span>
+<span class="go">============== ======================= ======== ====================</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">jobs</span><span class="o">.</span><span class="n">ContractTypes</span><span class="p">)</span>  
+<span class="go">=========================== ==========</span>
+<span class="go"> Bezeichnung                 Referenz</span>
+<span class="go">--------------------------- ----------</span>
+<span class="go"> Sozialökonomie              art60-7a</span>
+<span class="go"> Sozialökonomie - majoré     art60-7b</span>
+<span class="go"> Stadt Eupen                 art60-7e</span>
+<span class="go"> mit Rückerstattung          art60-7c</span>
+<span class="go"> mit Rückerstattung Schule   art60-7d</span>
+<span class="go">=========================== ==========</span>
+</pre></div>
+</div>
+</section>
+<section id="contracts">
+<h2>Contracts<a class="headerlink" href="#contracts" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.jobs.Contracts">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.jobs.</span></span><span class="sig-name descname"><span class="pre">Contracts</span></span><a class="headerlink" href="#lino_welfare.modlib.jobs.Contracts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shows all <a class="reference internal" href="../usage/jobs.html#term-job-supplyment"><span class="xref std std-term">Art60 job supplyments</span></a>.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.jobs.ContractsByClient">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.jobs.</span></span><span class="sig-name descname"><span class="pre">ContractsByClient</span></span><a class="headerlink" href="#lino_welfare.modlib.jobs.ContractsByClient" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shows the <a class="reference internal" href="../usage/jobs.html#term-job-supplyment"><span class="xref std std-term">Art60 job supplyments</span></a> for this client.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.jobs.JobSupplyment">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.jobs.</span></span><span class="sig-name descname"><span class="pre">JobSupplyment</span></span><a class="headerlink" href="#lino_welfare.modlib.jobs.JobSupplyment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Model mixin for <code class="xref py py-class docutils literal notranslate"><span class="pre">jobs.Contract</span></code>
+and <a class="reference internal" href="welcht/art61.html#lino_welfare.modlib.art61.Contract" title="lino_welfare.modlib.art61.Contract"><code class="xref py py-class docutils literal notranslate"><span class="pre">art61.Contract</span></code></a>. And also
+for <code class="xref py py-class docutils literal notranslate"><span class="pre">art60.Contract</span></code>.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.jobs.JobSupplyment.duration">
+<span class="sig-name descname"><span class="pre">duration</span></span><a class="headerlink" href="#lino_welfare.modlib.jobs.JobSupplyment.duration" title="Permalink to this definition">¶</a></dt>
+<dd><p>The duration of this job supplyment (number of working days).</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="show-all-contracts">
+<h2>Show all contracts<a class="headerlink" href="#show-all-contracts" title="Permalink to this heading">¶</a></h2>
+<p>Via :menuselection`Explorer –&gt; DSBE –&gt; Art.60§7-Konventionen` you
+can see a list of all job supplyment contracts.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">show_menu_path</span><span class="p">(</span><span class="n">jobs</span><span class="o">.</span><span class="n">Contracts</span><span class="p">)</span>
+<span class="go">Explorer --&gt; DSBE --&gt; Art.60§7-Konventionen</span>
+</pre></div>
+</div>
+<p>The demo database contains 16 job supplyment contracts:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">jobs</span><span class="o">.</span><span class="n">Contracts</span><span class="p">)</span>  
+<span class="go">==== ============================= =============== ============== ========== ==================================================== ========================= =========================</span>
+<span class="go"> ID   Klient                        NR-Nummer       Laufzeit von   Enddatum   Stelle                                               Verantwortlicher (DSBE)   Art</span>
+<span class="go">---- ----------------------------- --------------- -------------- ---------- ---------------------------------------------------- ------------------------- -------------------------</span>
+<span class="go"> 4    FAYMONVILLE Luc (130*)        890202 001-76   17.11.13       17.11.14   Koch bei Pro Aktiv V.o.G.                            Hubert Huppertz           Sozialökonomie</span>
+<span class="go"> 5    HILGERS Hildegard (133)       870325 002-29   01.12.12       30.11.14   Küchenassistent bei Pro Aktiv V.o.G.                 Alicia Allmanns           Stadt Eupen</span>
+<span class="go"> 6    LAMBERTZ Guido (142)          810823 001-96   29.12.12       28.12.14   Küchenassistent bei R-Cycle Sperrgutsortierzentrum   Alicia Allmanns           Sozialökonomie - majoré</span>
+<span class="go"> 8    MALMENDIER Marc (146)         791013 001-77   12.01.14       12.01.15   Tellerwäscher bei R-Cycle Sperrgutsortierzentrum     Mélanie Mélard            mit Rückerstattung</span>
+<span class="go"> 10   RADERMACHER Christian (155)   761227 001-93   09.02.14       09.02.15   Kellner bei R-Cycle Sperrgutsortierzentrum           Mélanie Mélard            Sozialökonomie</span>
+<span class="go"> 11   RADERMACHER Fritz (158)       750805 001-25   23.02.13       22.02.15   Koch bei BISA                                        Alicia Allmanns           Sozialökonomie - majoré</span>
+<span class="go"> 12   VAN VEEN Vincent (166)        710528 001-06   23.03.13       22.03.15   Koch bei Pro Aktiv V.o.G.                            Alicia Allmanns           Sozialökonomie</span>
+<span class="go"> 14   RADERMECKER Rik (173)         730407 001-89   06.04.14       06.04.15   Küchenassistent bei R-Cycle Sperrgutsortierzentrum   Hubert Huppertz           Sozialökonomie - majoré</span>
+<span class="go"> 16   DENON Denis (180*)            950810 001-04   04.05.14       04.05.15   Tellerwäscher bei R-Cycle Sperrgutsortierzentrum     Hubert Huppertz           mit Rückerstattung</span>
+<span class="go">==== ============================= =============== ============== ========== ==================================================== ========================= =========================</span>
+</pre></div>
+</div>
+<p>Use the filter parameters to show e.g. only contracts that were active on
+2012-11-18:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pv</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">observed_event</span><span class="o">=</span><span class="n">isip</span><span class="o">.</span><span class="n">ContractEvents</span><span class="o">.</span><span class="n">active</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">start_date</span><span class="o">=</span><span class="n">i2d</span><span class="p">(</span><span class="mi">20121118</span><span class="p">),</span> <span class="n">end_date</span><span class="o">=</span><span class="n">i2d</span><span class="p">(</span><span class="mi">20121118</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">kwargs</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">kwargs</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">param_values</span><span class="o">=</span><span class="n">pv</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">jobs</span><span class="o">.</span><span class="n">Contracts</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">==== ========================= =============== ============== ========== ============================================ ========================= ===========================</span>
+<span class="go"> ID   Klient                    NR-Nummer       Laufzeit von   Enddatum   Stelle                                       Verantwortlicher (DSBE)   Art</span>
+<span class="go">---- ------------------------- --------------- -------------- ---------- -------------------------------------------- ------------------------- ---------------------------</span>
+<span class="go"> 1    COLLARD Charlotte (118)   960715 002-61   06.10.12       05.10.13   Kellner bei BISA                             Alicia Allmanns           mit Rückerstattung Schule</span>
+<span class="go"> 2    EVERTZ Bernd (126)        890722 001-93   20.10.12       19.04.14   Kellner bei R-Cycle Sperrgutsortierzentrum   Alicia Allmanns           Sozialökonomie</span>
+<span class="go"> 3    FAYMONVILLE Luc (130*)    890202 001-76   17.11.12       16.11.13   Koch bei BISA                                Alicia Allmanns           Sozialökonomie - majoré</span>
+<span class="go">==== ========================= =============== ============== ========== ============================================ ========================= ===========================</span>
+</pre></div>
+</div>
+<p>Use the filter parameters to show e.g. only contracts that started in October
+2012:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pv</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">observed_event</span><span class="o">=</span><span class="n">isip</span><span class="o">.</span><span class="n">ContractEvents</span><span class="o">.</span><span class="n">started</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">start_date</span><span class="o">=</span><span class="n">i2d</span><span class="p">(</span><span class="mi">20121001</span><span class="p">),</span> <span class="n">end_date</span><span class="o">=</span><span class="n">i2d</span><span class="p">(</span><span class="mi">20121030</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">jobs</span><span class="o">.</span><span class="n">Contracts</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">==== ========================= =============== ============== ========== ============================================ ========================= ===========================</span>
+<span class="go"> ID   Klient                    NR-Nummer       Laufzeit von   Enddatum   Stelle                                       Verantwortlicher (DSBE)   Art</span>
+<span class="go">---- ------------------------- --------------- -------------- ---------- -------------------------------------------- ------------------------- ---------------------------</span>
+<span class="go"> 1    COLLARD Charlotte (118)   960715 002-61   06.10.12       05.10.13   Kellner bei BISA                             Alicia Allmanns           mit Rückerstattung Schule</span>
+<span class="go"> 2    EVERTZ Bernd (126)        890722 001-93   20.10.12       19.04.14   Kellner bei R-Cycle Sperrgutsortierzentrum   Alicia Allmanns           Sozialökonomie</span>
+<span class="go">==== ========================= =============== ============== ========== ============================================ ========================= ===========================</span>
+</pre></div>
+</div>
+</section>
+<section id="evaluations-of-a-project">
+<h2>Evaluations of a project<a class="headerlink" href="#evaluations-of-a-project" title="Permalink to this heading">¶</a></h2>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">obj</span> <span class="o">=</span> <span class="n">jobs</span><span class="o">.</span><span class="n">Contract</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">obj</span><span class="o">.</span><span class="n">client</span><span class="p">))</span>
+<span class="go">LAMBERTZ Guido (142)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">obj</span><span class="o">.</span><span class="n">active_period</span><span class="p">()</span>
+<span class="go">(datetime.date(2012, 12, 29), datetime.date(2014, 12, 28))</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">obj</span><span class="o">.</span><span class="n">get_recurrence_set</span><span class="p">()</span>
+<span class="go">ExamPolicy #3 (&#39;Alle 3 Monate&#39;)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">obj</span><span class="o">.</span><span class="n">get_recurrence_set</span><span class="p">()</span><span class="o">.</span><span class="n">event_type</span><span class="p">))</span>
+<span class="go">Auswertung</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">obj</span><span class="o">.</span><span class="n">get_recurrence_set</span><span class="p">()</span><span class="o">.</span><span class="n">event_type</span><span class="o">.</span><span class="n">max_conflicting</span><span class="p">)</span>
+<span class="go">4</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">settings</span><span class="o">.</span><span class="n">SITE</span><span class="o">.</span><span class="n">verbose_client_info_message</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="o">.</span><span class="n">start_date</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">obj</span><span class="o">.</span><span class="n">get_existing_auto_events</span><span class="p">()]</span>
+<span class="go">[&#39;2013-04-02&#39;, &#39;2013-07-02&#39;, &#39;2013-10-02&#39;, &#39;2014-01-02&#39;, &#39;2014-04-02&#39;, &#39;2014-07-02&#39;, &#39;2014-10-02&#39;]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">wanted</span><span class="p">,</span> <span class="n">unwanted</span> <span class="o">=</span> <span class="n">obj</span><span class="o">.</span><span class="n">get_wanted_auto_events</span><span class="p">(</span><span class="n">ses</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">ses</span><span class="o">.</span><span class="n">response</span><span class="p">[</span><span class="s1">&#39;info_message&#39;</span><span class="p">])</span>  
+<span class="go">Generating events between 2013-03-29 and 2014-12-28 (max. 72).</span>
+<span class="go">Évaluation 1 wants 2013-03-29 but conflicts with &lt;QuerySet [Event #77 (&#39;Karfreitag (29.03.2013)&#39;)]&gt;, moving to 2013-04-01.</span>
+<span class="go">Évaluation 1 wants 2013-04-01 but conflicts with &lt;QuerySet [Event #58 (&#39;Ostermontag (01.04.2013)&#39;)]&gt;, moving to 2013-04-02.</span>
+<span class="go">Reached upper date limit 2014-12-28 for 7</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">settings</span><span class="o">.</span><span class="n">SITE</span><span class="o">.</span><span class="n">site_config</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">hide_events_before</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">cal</span><span class="o">.</span><span class="n">EntriesByController</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="n">obj</span><span class="p">),</span>
+<span class="gp">... </span><span class="n">column_names</span><span class="o">=</span><span class="s2">&quot;when_html summary&quot;</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">================ ==================</span>
+<span class="go"> Wann             Kurzbeschreibung</span>
+<span class="go">---------------- ------------------</span>
+<span class="go"> *Do. 02.10.14*   Évaluation 7</span>
+<span class="go"> *Mi. 02.07.14*   Évaluation 6</span>
+<span class="go"> *Mi. 02.04.14*   Évaluation 5</span>
+<span class="go"> *Do. 02.01.14*   Évaluation 4</span>
+<span class="go"> *Mi. 02.10.13*   Évaluation 3</span>
+<span class="go"> *Di. 02.07.13*   Évaluation 2</span>
+<span class="go"> *Di. 02.04.13*   Évaluation 1</span>
+<span class="go">================ ==================</span>
+</pre></div>
+</div>
+<p>Mélanie has two appointments on 2014-09-15:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">django.db.models</span> <span class="kn">import</span> <span class="n">Count</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino.utils</span> <span class="kn">import</span> <span class="n">SumCollector</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sc</span> <span class="o">=</span> <span class="n">SumCollector</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">cal</span><span class="o">.</span><span class="n">Event</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">event_type__is_appointment</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="n">sc</span><span class="o">.</span><span class="n">collect</span><span class="p">((</span><span class="n">e</span><span class="o">.</span><span class="n">user</span><span class="o">.</span><span class="n">username</span><span class="p">,</span> <span class="n">e</span><span class="o">.</span><span class="n">start_date</span><span class="p">),</span> <span class="mi">1</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">username_date</span><span class="p">,</span> <span class="n">count</span> <span class="ow">in</span> <span class="n">sc</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+<span class="gp">... </span>    <span class="k">if</span> <span class="n">count</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+<span class="gp">... </span>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{1}</span><span class="s2"> has </span><span class="si">{0}</span><span class="s2"> appointments on </span><span class="si">{2}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">count</span><span class="p">,</span> <span class="o">*</span><span class="n">username_date</span><span class="p">))</span>
+<span class="gp">... </span>        <span class="k">break</span>
+<span class="go">melanie has 2 appointments on 2013-10-09</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">d</span> <span class="o">=</span> <span class="n">i2d</span><span class="p">(</span><span class="mi">20131009</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pv</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">start_date</span><span class="o">=</span><span class="n">d</span><span class="p">,</span> <span class="n">end_date</span><span class="o">=</span><span class="n">d</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">cal</span><span class="o">.</span><span class="n">EntriesByDay</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="n">param_values</span><span class="o">=</span><span class="n">pv</span><span class="p">),</span>
+<span class="gp">... </span>    <span class="n">column_names</span><span class="o">=</span><span class="s2">&quot;user start_date start_time summary project&quot;</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">================= ============ ============ ================== ==========================</span>
+<span class="go"> Verwaltet durch   Beginnt am   Beginnt um   Kurzbeschreibung   Klient</span>
+<span class="go">----------------- ------------ ------------ ------------------ --------------------------</span>
+<span class="go"> Mélanie Mélard    09.10.13     09:00:00     Évaluation 2       AUSDEMWALD Alfons (116)</span>
+<span class="go"> Mélanie Mélard    09.10.13     09:00:00     Évaluation 9       LAZARUS Line (144)</span>
+<span class="go"> Alicia Allmanns   09.10.13     09:00:00     Évaluation 8       RADERMACHER Alfons (153)</span>
+<span class="go">================= ============ ============ ================== ==========================</span>
+</pre></div>
+</div>
+<p>The two appointments conflict, at least strictly speaking. This is because the
+EventType of these automatically generated evaluation appointments is configured
+to allow for up to 4 conflicting events:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">e</span> <span class="o">=</span> <span class="n">cal</span><span class="o">.</span><span class="n">EntriesByDay</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="n">param_values</span><span class="o">=</span><span class="n">pv</span><span class="p">)</span><span class="o">.</span><span class="n">data_iterator</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">e</span><span class="o">.</span><span class="n">event_type</span>
+<span class="go">EventType #6 (&#39;Auswertung&#39;)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">e</span><span class="o">.</span><span class="n">event_type</span><span class="o">.</span><span class="n">max_conflicting</span>
+<span class="go">4</span>
+</pre></div>
+</div>
+<p>After modifying <a class="reference external" href="https://dev.lino-framework.org/specs/system.html#lino.modlib.system.SiteConfig.hide_events_before" title="(in Lino Developer Guide v20.1)"><code class="xref py py-attr docutils literal notranslate"><span class="pre">hide_events_before</span></code></a> we must tidy up
+and reset it in order to not disturb other test cases:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">settings</span><span class="o">.</span><span class="n">SITE</span><span class="o">.</span><span class="n">site_config</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">hide_events_before</span><span class="o">=</span><span class="n">i2d</span><span class="p">(</span><span class="mi">20140401</span><span class="p">))</span>
+</pre></div>
+</div>
+</section>
+<section id="jobsoverview">
+<h2>JobsOverview<a class="headerlink" href="#jobsoverview" title="Permalink to this heading">¶</a></h2>
+<p>The <code class="xref py py-class docutils literal notranslate"><span class="pre">JobsOverview</span></code> report
+helps integration agents to make decisions like:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>which jobs are soon going to be free, and which candidate(s) should we
+suggest?</p></li>
+</ul>
+</div></blockquote>
+<p>Example content:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">jobs</span><span class="o">.</span><span class="n">JobsOverview</span><span class="p">)</span>
+<span class="go">----------------------------</span>
+<span class="go">Sozialwirtschaft = &quot;majorés&quot;</span>
+<span class="go">----------------------------</span>
+
+<span class="go">+----------------------------------------------------------------------------------------------+--------------------------------------------------------+-------------------------------------+--------------------------------------+</span>
+<span class="go">| Stelle                                                                                       | Arbeitet                                               | Probezeit                           | Kandidaten                           |</span>
+<span class="go">+==============================================================================================+========================================================+=====================================+======================================+</span>
+<span class="go">| `Kellner &lt;Detail&gt;`__ bei `R-Cycle Sperrgutsortierzentrum &lt;Detail&gt;`__ (1) *Sehr harte Stelle* | `RADERMACHER Christian (155) &lt;Detail&gt;`__ bis 09.02.15  | `FAYMONVILLE Luc (130*) &lt;Detail&gt;`__ | `JEANÉMART Jérôme (181) &lt;Detail&gt;`__  |</span>
+<span class="go">+----------------------------------------------------------------------------------------------+--------------------------------------------------------+-------------------------------------+--------------------------------------+</span>
+<span class="go">| `Koch &lt;Detail&gt;`__ bei `Pro Aktiv V.o.G. &lt;Detail&gt;`__ (1)                                      | `VAN VEEN Vincent (166) &lt;Detail&gt;`__ bis 22.03.15 |br|  | `EMONTS-GAST Erna (152) &lt;Detail&gt;`__ | `JACOBS Jacqueline (137) &lt;Detail&gt;`__ |</span>
+<span class="go">|                                                                                              | `FAYMONVILLE Luc (130*) &lt;Detail&gt;`__ bis 17.11.14       |                                     |                                      |</span>
+<span class="go">+----------------------------------------------------------------------------------------------+--------------------------------------------------------+-------------------------------------+--------------------------------------+</span>
+
+<span class="go">------</span>
+<span class="go">Intern</span>
+<span class="go">------</span>
+
+<span class="go">+------------------------------------------------------------------------------------------------------+------------------------------------------------------+--------------------------------------+------------------------------------+</span>
+<span class="go">| Stelle                                                                                               | Arbeitet                                             | Probezeit                            | Kandidaten                         |</span>
+<span class="go">+======================================================================================================+======================================================+======================================+====================================+</span>
+<span class="go">| `Koch &lt;Detail&gt;`__ bei `BISA &lt;Detail&gt;`__ (1)                                                          | `RADERMACHER Fritz (158) &lt;Detail&gt;`__ bis 22.02.15    | `AUSDEMWALD Alfons (116) &lt;Detail&gt;`__ | `MEESSEN Melissa (147) &lt;Detail&gt;`__ |</span>
+<span class="go">+------------------------------------------------------------------------------------------------------+------------------------------------------------------+--------------------------------------+------------------------------------+</span>
+<span class="go">| `Küchenassistent &lt;Detail&gt;`__ bei `R-Cycle Sperrgutsortierzentrum &lt;Detail&gt;`__ (1) *Sehr harte Stelle* | `LAMBERTZ Guido (142) &lt;Detail&gt;`__ bis 28.12.14 |br|  | `BRECHT Bernd (177) &lt;Detail&gt;`__      | `JONAS Josef (139) &lt;Detail&gt;`__     |</span>
+<span class="go">|                                                                                                      | `RADERMECKER Rik (173) &lt;Detail&gt;`__ bis 06.04.15      |                                      |                                    |</span>
+<span class="go">+------------------------------------------------------------------------------------------------------+------------------------------------------------------+--------------------------------------+------------------------------------+</span>
+
+<span class="go">----------------------------------------------</span>
+<span class="go">Extern (Öffentl. VoE mit Kostenrückerstattung)</span>
+<span class="go">----------------------------------------------</span>
+
+<span class="go">================================================================================================================== =================================================== ================================= ==================================</span>
+<span class="go"> Stelle                                                                                                             Arbeitet                                            Probezeit                         Kandidaten</span>
+<span class="go">------------------------------------------------------------------------------------------------------------------ --------------------------------------------------- --------------------------------- ----------------------------------</span>
+<span class="go"> `Küchenassistent &lt;Detail&gt;`__ bei `Pro Aktiv V.o.G. &lt;Detail&gt;`__ (1) *No supervisor. Only for independent people.*   `HILGERS Hildegard (133) &lt;Detail&gt;`__ bis 30.11.14   `JONAS Josef (139) &lt;Detail&gt;`__</span>
+<span class="go"> `Tellerwäscher &lt;Detail&gt;`__ bei `BISA &lt;Detail&gt;`__ (1)                                                                                                                   `KAIVERS Karl (141) &lt;Detail&gt;`__   `EMONTS Daniel (128) &lt;Detail&gt;`__</span>
+<span class="go">================================================================================================================== =================================================== ================================= ==================================</span>
+
+<span class="go">------------------------------------</span>
+<span class="go">Extern (Privat Kostenrückerstattung)</span>
+<span class="go">------------------------------------</span>
+
+<span class="go">+--------------------------------------------------------------------------------+-------------------------------------------------------+---------------------------------+--------------------------------------+</span>
+<span class="go">| Stelle                                                                         | Arbeitet                                              | Probezeit                       | Kandidaten                           |</span>
+<span class="go">+================================================================================+=======================================================+=================================+======================================+</span>
+<span class="go">| `Tellerwäscher &lt;Detail&gt;`__ bei `R-Cycle Sperrgutsortierzentrum &lt;Detail&gt;`__ (1) | `MALMENDIER Marc (146) &lt;Detail&gt;`__ bis 12.01.15 |br|  | `ENGELS Edgar (129) &lt;Detail&gt;`__ | `RADERMACHER Guido (159) &lt;Detail&gt;`__ |</span>
+<span class="go">|                                                                                | `DENON Denis (180*) &lt;Detail&gt;`__ bis 04.05.15          |                                 |                                      |</span>
+<span class="go">+--------------------------------------------------------------------------------+-------------------------------------------------------+---------------------------------+--------------------------------------+</span>
+
+<span class="go">--------</span>
+<span class="go">Sonstige</span>
+<span class="go">--------</span>
+
+<span class="go">================================================ ========== ===================================== =================================</span>
+<span class="go"> Stelle                                           Arbeitet   Probezeit                             Kandidaten</span>
+<span class="go">------------------------------------------------ ---------- ------------------------------------- ---------------------------------</span>
+<span class="go"> `Kellner &lt;Detail&gt;`__ bei `BISA &lt;Detail&gt;`__ (1)              `RADERMACHER Hedi (161) &lt;Detail&gt;`__   `ENGELS Edgar (129) &lt;Detail&gt;`__</span>
+<span class="go">================================================ ========== ===================================== =================================</span>
+</pre></div>
+</div>
+<p>Printing this report caused a “NotImplementedError: &lt;i&gt; inside
+&lt;text:p&gt;” traceback when one of the jobs had a remark.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">settings</span><span class="o">.</span><span class="n">SITE</span><span class="o">.</span><span class="n">default_build_method</span> <span class="o">=</span> <span class="s2">&quot;appyodt&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">obj</span> <span class="o">=</span> <span class="n">ses</span><span class="o">.</span><span class="n">spawn</span><span class="p">(</span><span class="n">jobs</span><span class="o">.</span><span class="n">JobsOverview</span><span class="p">)</span><span class="o">.</span><span class="n">create_instance</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">rv</span> <span class="o">=</span> <span class="n">ses</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">obj</span><span class="o">.</span><span class="n">do_print</span><span class="p">)</span>  
+<span class="go">appy.pod render .../lino/modlib/printing/config/report/Default.odt -&gt; .../media/webdav/userdocs/appyodt/jobs.JobsOverview.odt</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">rv</span><span class="p">[</span><span class="s1">&#39;success&#39;</span><span class="p">])</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">rv</span><span class="p">[</span><span class="s1">&#39;open_url&#39;</span><span class="p">])</span>
+<span class="gp">... </span>
+<span class="go">/.../jobs.JobsOverview.odt</span>
+</pre></div>
+</div>
+<p>This bug was fixed <a class="reference external" href="https://luc.lino-framework.org/blog/2013/0423.html">2013-04-23</a>.
+Note: the <code class="docutils literal notranslate"><span class="pre">webdav/</span></code> is only there when <a class="reference external" href="https://dev.lino-framework.org/api/lino.core.site.html#lino.core.site.Site.use_java" title="(in Lino Developer Guide v20.1)"><code class="xref py py-attr docutils literal notranslate"><span class="pre">lino.core.site.Site.use_java</span></code></a> is <cite>True</cite>.</p>
+</section>
+<section id="configuration">
+<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this heading">¶</a></h2>
+<dl class="std setting">
+<dt class="sig sig-object std" id="setting-jobs.with_employer_model">
+<span class="sig-name descname"><span class="pre">jobs.with_employer_model</span></span><a class="headerlink" href="#setting-jobs.with_employer_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set this to True if you want to differentiate between two types of job
+providers, “services utilisateurs” and “employers”.</p>
+</dd></dl>
+
+</section>
+</section>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/logo_web3.png" alt="Logo"/>
+            </a></p>
+          <div class="sidebar-resize-handle"></div>
+<p align="center"><b>EN</b> | <a href="de/index.rst">DE</a> | <a href="fr/index.rst">FR</a></p>
+<h3><a href="../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../about/index.html">About Lino Welfare</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/index.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changes/index.html">Changes</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Specs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/index.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../copyright.html">Copyright &amp; legal notes</a></li>
+</ul>
+
+<hr class="docutils" />
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+<ul>
+  <li class="toctree-l1"><a class="reference internal" href="../py-modindex.html">Python Module Index</a></li>
+</ul><p align="center">
+</p>
+
+<div id="ethical-ad-placement"></div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+    <nav class="relbar">
+      <a class="previous" href="isip.html" aria-label="Previous topic" >
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg>
+        </div>
+        <div class="title">
+          <span class="text">
+            <span class="direction">previous</span>
+            <code class="docutils literal notranslate"><span class="pre">isip</span></code> : Individual Social Integration Projects
+          </span>
+        </div>
+      </a>
+      <a class="next" href="reception/index.html" aria-label="Next topic" >
+        <div class="title">
+          <span class="text">
+            <span class="direction">next</span>
+            <code class="xref py py-mod docutils literal notranslate"><span class="pre">reception</span></code> : receive clients at a reception desk
+          </span>
+        </div>
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+        </div>
+      </a>
+    </nav>
+
+    <footer role="contentinfo">
+      &#169; <a href="../copyright.html">Copyright</a> 2012-2022 Rumma &amp; Ko Ltd.
+      Last updated on 2022-11-08.
+      Created using <a class="reference external" href="https://www.sphinx-doc.org/">Sphinx</a> 5.1.1.
+      <a class="reference external" href="https://insipid-sphinx-theme.readthedocs.io/">Insipid Theme</a>.
+<a href="https://gitlab.com/lino-framework/welfare/-/blob/master/docs/specs/jobs.rst?plain=1"
+  rel="nofollow">Source code</a>.
+<br>
+
+Online link: <a href="https://welfare.lino-framework.org/specs/jobs.html">https://welfare.lino-framework.org/specs/jobs.html</a>.
+
+
+    </footer>
+  </body>
+</html>

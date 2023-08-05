@@ -1,0 +1,576 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>esf : European Social Fund &#8212; Lino Welfare</title>
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/insipid.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/atelier.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/insipid-cust.css" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script defer src="../_static/insipid.js"></script>
+    <script defer src="../_static/insipid-sidebar.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="copyright" title="Copyright" href="../copyright.html" />
+    <link rel="next" title="Topics" href="topics/index.html" />
+    <link rel="prev" title="Financial vouchers in Lino Welfare" href="finan.html" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+  </head><body>
+    <script type="text/javascript">
+        document.body.classList.add('js');
+    </script>
+    <input type="checkbox" id="sidebar-checkbox" style="display: none;">
+    <label id="overlay" for="sidebar-checkbox"></label>
+    <div class="sidebar-resize-handle"></div>
+    <script type="text/javascript">
+        try {
+            let sidebar = localStorage.getItem('sphinx-sidebar');
+            const sidebar_width = localStorage.getItem('sphinx-sidebar-width');
+            if (sidebar_width) {
+                document.documentElement.style.setProperty('--sidebar-width', sidebar_width);
+            }
+            // show sidebar on wide screen
+            if (!sidebar && window.matchMedia('(min-width: 100rem)').matches) {
+                sidebar = 'visible';
+                // NB: We don't store the value in localStorage!
+            }
+            if (sidebar === 'visible') {
+                document.getElementById('sidebar-checkbox').checked = true;
+            }
+        } catch(e) {
+            console.info(e);
+        }
+    </script>
+    <header id="topbar-placeholder">
+      <div id="topbar">
+        <div id="titlebar">
+          <div class="buttons">
+            <label for="sidebar-checkbox" id="sidebar-button" role="button" tabindex="0" aria-controls="sphinxsidebar" accesskey="M">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></svg>
+            </label><a href="../index.html" title="Lino Welfare">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
+</a>
+          </div>
+          <div class="title">
+            <a class="parent" href="plugins.html" accesskey="U">Plugins</a>
+            <a class="top" href="#"><code class="docutils literal notranslate"><span class="pre">esf</span></code> : European Social Fund</a>
+          </div>
+          <div class="buttons">
+            <button id="fullscreen-button" type="button" aria-hidden="true">
+              <span class="enable">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M212.686 315.314L120 408l32.922 31.029c15.12 15.12 4.412 40.971-16.97 40.971h-112C10.697 480 0 469.255 0 456V344c0-21.382 25.803-32.09 40.922-16.971L72 360l92.686-92.686c6.248-6.248 16.379-6.248 22.627 0l25.373 25.373c6.249 6.248 6.249 16.378 0 22.627zm22.628-118.628L328 104l-32.922-31.029C279.958 57.851 290.666 32 312.048 32h112C437.303 32 448 42.745 448 56v112c0 21.382-25.803 32.09-40.922 16.971L376 152l-92.686 92.686c-6.248 6.248-16.379 6.248-22.627 0l-25.373-25.373c-6.249-6.248-6.249-16.378 0-22.627z"/></svg>
+              </span>
+              <span class="disable">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M4.686 427.314L104 328l-32.922-31.029C55.958 281.851 66.666 256 88.048 256h112C213.303 256 224 266.745 224 280v112c0 21.382-25.803 32.09-40.922 16.971L152 376l-99.314 99.314c-6.248 6.248-16.379 6.248-22.627 0L4.686 449.941c-6.248-6.248-6.248-16.379 0-22.627zM443.314 84.686L344 184l32.922 31.029c15.12 15.12 4.412 40.971-16.97 40.971h-112C234.697 256 224 245.255 224 232V120c0-21.382 25.803-32.09 40.922-16.971L296 136l99.314-99.314c6.248-6.248 16.379-6.248 22.627 0l25.373 25.373c6.248 6.248 6.248 16.379 0 22.627z"/></svg>
+              </span>
+            </button><a href="https://www.facebook.com/sharer/sharer.php?u=https://welfare.lino-framework.org/specs/esf/" title="Share on Facebook" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+</a>
+
+<!---
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+---!>
+
+<a href="https://twitter.com/share?ref_src=https://welfare.lino-framework.org/specs/esf/" title="Share on Twitter" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <a href="finan.html" class="nav-icon previous" title="previous:&#13;Financial vouchers in Lino Welfare" aria-label="Previous topic" accesskey="P" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"/></svg>
+      </a>
+      <a href="topics/index.html" class="nav-icon next" title="next:&#13;Topics" aria-label="Next topic" accesskey="N" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg>
+      </a>
+    </nav>
+
+    <nav class="relbar">
+      <a class="previous" href="finan.html" aria-label="Previous topic" >
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg>
+        </div>
+        <div class="title">
+          <span class="text">
+            <span class="direction">previous</span>
+            Financial vouchers in Lino Welfare
+          </span>
+        </div>
+      </a>
+      <a class="next" href="topics/index.html" aria-label="Next topic" >
+        <div class="title">
+          <span class="text">
+            <span class="direction">next</span>
+            Topics
+          </span>
+        </div>
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+        </div>
+      </a>
+    </nav>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+<section id="esf-european-social-fund">
+<span id="welfare-specs-esf"></span><h1><code class="docutils literal notranslate"><span class="pre">esf</span></code> : European Social Fund<a class="headerlink" href="#esf-european-social-fund" title="Permalink to this heading">¶</a></h1>
+<p>The <a class="reference internal" href="../api/lino_welfare.modlib.esf.html#module-lino_welfare.modlib.esf" title="lino_welfare.modlib.esf"><code class="xref py py-mod docutils literal notranslate"><span class="pre">lino_welfare.modlib.esf</span></code></a> plugin helps writing yearly reports for the
+<a class="reference external" href="http://ec.europa.eu/esf/main.jsp?catId=35&amp;langId=en">European Social Fund</a>
+(ESF).</p>
+<nav class="contents local" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#dependencies" id="id1">Dependencies</a></p></li>
+<li><p><a class="reference internal" href="#client-summaries" id="id2">Client summaries</a></p></li>
+<li><p><a class="reference internal" href="#hoursbydossier" id="id3">HoursByDossier</a></p></li>
+<li><p><a class="reference internal" href="#notes-de-discussion" id="id4">Notes de discussion</a></p></li>
+<li><p><a class="reference internal" href="#choicelists" id="id5">Choicelists</a></p></li>
+</ul>
+</nav>
+<p>This is a <a class="reference external" href="https://dev.lino-framework.org/dev/doctests.html#tested-docs" title="(in Lino Developer Guide v20.1)"><span class="xref std std-ref">tested document</span></a>.  The following instructions are
+used for initialization:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino</span> <span class="kn">import</span> <span class="n">startup</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">startup</span><span class="p">(</span><span class="s1">&#39;lino_welfare.projects.mathieu.settings.demo&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino.api.doctest</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+<section id="dependencies">
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">Dependencies</a><a class="headerlink" href="#dependencies" title="Permalink to this heading">¶</a></h2>
+<p>This plugin needs <a class="reference external" href="https://dev.lino-framework.org/api/lino.modlib.summaries.html#module-lino.modlib.summaries" title="(in Lino Developer Guide v20.1)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">lino.modlib.summaries</span></code></a> and
+<a class="reference external" href="https://dev.lino-framework.org/api/lino.modlib.weasyprint.html#module-lino.modlib.weasyprint" title="(in Lino Developer Guide v20.1)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">lino.modlib.weasyprint</span></code></a>: A client summary is a subclass of
+<a class="reference external" href="https://dev.lino-framework.org/specs/summaries.html#lino.modlib.summaries.MonthlySlaveSummary" title="(in Lino Developer Guide v20.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">lino.modlib.summaries.MonthlySlaveSummary</span></code></a></p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dd</span><span class="o">.</span><span class="n">plugins</span><span class="o">.</span><span class="n">esf</span><span class="o">.</span><span class="n">needs_plugins</span>
+<span class="go">[&#39;lino.modlib.summaries&#39;, &#39;lino.modlib.weasyprint&#39;]</span>
+</pre></div>
+</div>
+<p>This plugin injects
+a field <a class="reference internal" href="pcsw.html#lino_welfare.modlib.pcsw.Client.has_esf" title="lino_welfare.modlib.pcsw.Client.has_esf"><code class="xref py py-attr docutils literal notranslate"><span class="pre">has_esf</span></code></a> to every <em>client</em>
+and a field <code class="xref py py-attr docutils literal notranslate"><span class="pre">esf_field</span></code> to every <em>calendar entry type</em>.</p>
+</section>
+<section id="client-summaries">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Client summaries</a><a class="headerlink" href="#client-summaries" title="Permalink to this heading">¶</a></h2>
+<p>A <strong>client summary</strong> is a database entry holding statistical information for a
+given year about a given client.  Client summaries are generated database
+content. Every client summary can be printed as a document called “Fiche
+stagiaire”.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.esf.ClientSummary">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.esf.</span></span><span class="sig-name descname"><span class="pre">ClientSummary</span></span><a class="headerlink" href="#lino_welfare.modlib.esf.ClientSummary" title="Permalink to this definition">¶</a></dt>
+<dd><p>The Django model that represents a <em>client summary</em>.</p>
+<p>It is a <a class="reference external" href="https://dev.lino-framework.org/specs/summaries.html#lino.modlib.summaries.MonthlySlaveSummary" title="(in Lino Developer Guide v20.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">lino.modlib.summaries.MonthlySlaveSummary</span></code></a> and
+<a class="reference external" href="https://dev.lino-framework.org/specs/excerpts.html#lino_xl.lib.excerpts.Certifiable" title="(in Lino Developer Guide v20.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">lino_xl.lib.excerpts.Certifiable</span></code></a>.</p>
+</dd></dl>
+
+<p>List of the data fields per <em>client summary</em>:</p>
+<ul class="simple">
+<li><p><cite>client</cite> : a pointer to the <code class="xref py py-class docutils literal notranslate"><span class="pre">Client</span></code></p></li>
+<li><p>The observed period (<cite>start_date</cite> and <cite>end_date</cite>, usually one
+calendar year)</p></li>
+</ul>
+<p>The remaining fields are configured in the <code class="xref py py-class docutils literal notranslate"><span class="pre">SummaryFields</span></code> choicelist.</p>
+<ul class="simple">
+<li><p>Situation professionnelle à l’entrée: Bénéficiaire CPAS (ce sera
+uniquement cette appellation)</p></li>
+<li><p>Inoccupé(e) depuis : date field filled from «Cherche du travail
+depuis» date FSE (onglet RAE))</p></li>
+<li><p>Ménage: combo box (“ménage sans emploi”, “ménage dont au moins 1
+personne occupe un emploi”)</p></li>
+<li><p>Enfant(s) à charge: checkbox</p></li>
+<li><p>Niveau diplôme: combobox (Sans diplôme - CEB - CE1D - CESI -
+CESS-CQ6-CE6P-7P - Bachelier-graduat - Master-licence -
+Enseignement secondaire complémentaire - Non reconnu – inconnu)</p></li>
+<li><p>Handicap reconnu: checkbox</p></li>
+<li><p>Autre difficulté rencontrée:  checkbox</p></li>
+<li><p>Date d’entrée: reprendre date de l’atelier « Séance d’information »</p></li>
+<li><p>Contrat de travail sous art. 60 depuis le: date field filled from <cite>jobs.Contract</cite></p></li>
+<li><p>Date de sortie: Onglet intervenant – module intervention date « au »</p></li>
+<li><p>Type de sortie: Onglet intervenants – Module intervention - « Cause d’abandon »</p></li>
+<li><p>Acquis en fin de formation : filled from Onglet Compétence – Module
+compétences professionnelles - case « Preuve de qualification »</p></li>
+<li><p>Attestation de participation: combobox (Epreuve d’évaluation réussie
+sans titre spécifique - Certificat sectoriel - Titre de validation
+des compétences - Certificat de valorisation de l’acquis de
+l’expérience - Diplôme ou certificat délivré par un établissement
+scolaire - Pas d’acquis)</p></li>
+</ul>
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.esf.Summaries">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.esf.</span></span><span class="sig-name descname"><span class="pre">Summaries</span></span><a class="headerlink" href="#lino_welfare.modlib.esf.Summaries" title="Permalink to this definition">¶</a></dt>
+<dd><p>Base class for all tables on <a class="reference internal" href="#lino_welfare.modlib.esf.ClientSummary" title="lino_welfare.modlib.esf.ClientSummary"><code class="xref py py-class docutils literal notranslate"><span class="pre">ClientSummary</span></code></a>.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.esf.AllSummaries">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.esf.</span></span><span class="sig-name descname"><span class="pre">AllSummaries</span></span><a class="headerlink" href="#lino_welfare.modlib.esf.AllSummaries" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lists all ESF summaries for all clients.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.esf.SummariesByClient">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.esf.</span></span><span class="sig-name descname"><span class="pre">SummariesByClient</span></span><a class="headerlink" href="#lino_welfare.modlib.esf.SummariesByClient" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lists the ESF summaries for a given client.</p>
+</dd></dl>
+
+</section>
+<section id="hoursbydossier">
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">HoursByDossier</a><a class="headerlink" href="#hoursbydossier" title="Permalink to this heading">¶</a></h2>
+<p>And then the module provides a way for defining a series of
+“statistical numbers” which represent the activity of that client
+during a given period.</p>
+<p>For most fields this is the total duration of presences (<code class="xref py py-class docutils literal notranslate"><span class="pre">Guest</span></code> objects) of that client.</p>
+<ul class="simple">
+<li><p>Information : Séance d’info. (2h FSE)</p></li>
+<li><p>Orientation - suivi:</p>
+<ul>
+<li><p>Entretien individuel (1h FSE)</p></li>
+<li><p>Evaluation formation externe et art.61 (1h FSE)</p></li>
+</ul>
+</li>
+<li><p>Mobilisation : S.I.S. agréé (en fonction de la participation à un ou
+plusieurs ateliers)</p></li>
+<li><p>Apprentissage de base</p>
+<ul>
+<li><p>Test de niveau (math, français, informatique) (3h FSE)</p></li>
+<li><p>Initiation informatique (3h FSE)</p></li>
+<li><p>Mobilité (3h FSE)</p></li>
+<li><p>Remédiation mathématique et français (3h FSE)</p></li>
+</ul>
+</li>
+<li><p>Module projet : Activons-nous (3h FSE)</p></li>
+<li><p>Mise en situation professionnelle Case « Heure » à ajouter au module</p></li>
+<li><p>Recherche d’emploi : Cyber emploi (à discuter)</p></li>
+<li><p>Mise à l’emploi sous contrat art.60§7 (Sélection des années – case Heure)</p></li>
+</ul>
+<p>This distribution will probably require a choicelist with one choice
+for each field.</p>
+<p>These fields will probably not be columns of a slave table but
+(dynamicaly generated) database fields in the Dossier model.</p>
+<p>There will also be a pointer to
+(one entry per <cite>courses.Line</cite> as it seems), but some columns are
+special and require a hard-coded method.</p>
+</section>
+<section id="notes-de-discussion">
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Notes de discussion</a><a class="headerlink" href="#notes-de-discussion" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Par bénéficiaire il peut y avoir plusieurs fiches stagiaire au cours
+du temps. En principe une fiche pour chaque stage.</p></li>
+<li><p>Où dans le détail du bénéficaire faut-il afficher ce panneau avec
+les “fiches stagiaire”? –&gt; dans l’onglet “Historique”</p></li>
+<li><p>Idéal serait d’avoir une checkbox “Générer fiches stagiaire” par
+bénéficiaire.</p></li>
+<li><p>Bouton “Remplir les données”</p></li>
+<li><p>la fiche est un document à usage interne utilisé par Sandra pour
+encoder les données dans un fichier Excel protégé issu par X.</p></li>
+<li><p>Colonne “Mise en situation professionnelle” : calculer les heures
+par stage d’immersion, en fonction des dates de début et de fin et
+de l’horaire de travail.</p></li>
+<li><p>Colonne “Recherche d’emploi” : Somme des présences aux ateliers
+“Cyber-emploi”, mais pour ces ateliers on note les heures d’arrivée
+et de départ par participation.</p></li>
+<li><p>Colonne “Mise à l’emploi sous contrat a60” : comme pour
+“Mise en situation professionnelle”</p></li>
+<li><p>Tous les “champs statistiques” représentent des heures de présences.
+Il y a deux modes d’encodage de présences des ateliers: soit avec
+soit sans les heures de d’arrivée de départ individuelles.  Par
+exemple en Insertion si la personne arrive en retard, elle aura les
+heures de présence de l’évènement (tant pis pour la statistique).</p></li>
+</ul>
+<p>Par type d’entrée calendrier on doit configurer le champ FSE dans
+lequel seront totalisés les heures.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">cal</span><span class="o">.</span><span class="n">EventTypes</span><span class="p">,</span> <span class="n">language</span><span class="o">=</span><span class="s2">&quot;fr&quot;</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">======================================== ======================================== =============================== ======================== ==============================</span>
+<span class="go"> Désignation                              Désignation (de)                         Désignation (en)                Inviter le bénéficiare   Champ FSE</span>
+<span class="go">---------------------------------------- ---------------------------------------- ------------------------------- ------------------------ ------------------------------</span>
+<span class="go"> Absences                                 Abwesenheiten                            Absences                        Non</span>
+<span class="go"> Atelier                                  Atelier                                  Workshop                        Non</span>
+<span class="go"> Consultations avec le bénéficiaire       Beratungen mit Klient                    Consultations with client       Non</span>
+<span class="go"> Informational meetings                   Informational meetings                   Informational meetings          Oui                      S.I.S. agréé</span>
+<span class="go"> Internal meetings with client            Internal meetings with client            Internal meetings with client   Oui                      Séance d’information</span>
+<span class="go"> Interne                                  Intern                                   Internal                        Non</span>
+<span class="go"> Jours fériés                             Feiertage                                Holidays                        Non</span>
+<span class="go"> Privé                                    Privat                                   Private                         Non</span>
+<span class="go"> Réunion                                  Versammlung                              Meeting                         Non</span>
+<span class="go"> Réunions externe                         Réunions externe                         External meetings               Non</span>
+<span class="go"> Réunions externes avec le bénéficiaire   Réunions externes avec le bénéficiaire   External meetings with client   Oui                      Evaluation formation externe</span>
+<span class="go"> Réunions interne                         Réunions interne                         Internal meetings               Non</span>
+<span class="go"> Évaluation                               Auswertung                               Evaluation                      Oui                      Entretien individuel</span>
+<span class="go">======================================== ======================================== =============================== ======================== ==============================</span>
+</pre></div>
+</div>
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.esf.StatisticalFields">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.esf.</span></span><span class="sig-name descname"><span class="pre">StatisticalFields</span></span><a class="headerlink" href="#lino_welfare.modlib.esf.StatisticalFields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">esf</span><span class="o">.</span><span class="n">StatisticalFields</span><span class="p">,</span> <span class="n">language</span><span class="o">=</span><span class="s2">&quot;fr&quot;</span><span class="p">)</span>
+<span class="go">======= ============ =================================== =================</span>
+<span class="go"> value   Short name   text                                Type</span>
+<span class="go">------- ------------ ----------------------------------- -----------------</span>
+<span class="go"> 10      S.Inf        Séance d’information                GuestHoursFixed</span>
+<span class="go"> 20      E.Ind        Entretien individuel                GuestHoursFixed</span>
+<span class="go"> 21      E.For        Evaluation formation externe        GuestHoursFixed</span>
+<span class="go"> 30      SIS          S.I.S. agréé                        GuestHoursFixed</span>
+<span class="go"> 40      Tst          Tests de niveau                     GuestHoursFixed</span>
+<span class="go"> 41      Info         Initiation informatique             GuestHoursFixed</span>
+<span class="go"> 42      Mob          Mobilité                            GuestHoursFixed</span>
+<span class="go"> 43      Rem          Remédiation                         GuestHoursFixed</span>
+<span class="go"> 44      AN!          Activons-nous!                      GuestHoursEvent</span>
+<span class="go"> 50      MSP          Mise en situation professionnelle   ImmersionHours</span>
+<span class="go"> 60      CyE          Cyber Emploi                        GuestHoursEvent</span>
+<span class="go"> 70      60§7         Mise à l’emploi art.60§7            Art60Hours</span>
+<span class="go">======= ============ =================================== =================</span>
+</pre></div>
+</div>
+<p>Les types de champ suivants sont disponibles par défaut:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#lino_welfare.modlib.esf.choicelists.GuestHoursFixed" title="lino_welfare.modlib.esf.choicelists.GuestHoursFixed"><code class="xref py py-class docutils literal notranslate"><span class="pre">GuestHoursFixed</span></code></a></p></li>
+<li><p><code class="xref py py-class docutils literal notranslate"><span class="pre">GuestHours&gt;</span></code></p></li>
+<li><p><a class="reference internal" href="#lino_welfare.modlib.esf.choicelists.ImmersionHours" title="lino_welfare.modlib.esf.choicelists.ImmersionHours"><code class="xref py py-class docutils literal notranslate"><span class="pre">ImmersionHours</span></code></a></p></li>
+<li><p><a class="reference internal" href="#lino_welfare.modlib.esf.choicelists.Art60Hours" title="lino_welfare.modlib.esf.choicelists.Art60Hours"><code class="xref py py-class docutils literal notranslate"><span class="pre">Art60Hours</span></code></a></p></li>
+</ul>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># rt.show(esf.AllSummaries)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dd</span><span class="o">.</span><span class="n">plugins</span><span class="o">.</span><span class="n">summaries</span><span class="o">.</span><span class="n">start_year</span>
+<span class="go">2012</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dd</span><span class="o">.</span><span class="n">plugins</span><span class="o">.</span><span class="n">summaries</span><span class="o">.</span><span class="n">end_year</span>
+<span class="go">2014</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">obj</span> <span class="o">=</span> <span class="n">pcsw</span><span class="o">.</span><span class="n">Client</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="mi">116</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>
+<span class="go">AUSDEMWALD Alfons (116)</span>
+</pre></div>
+</div>
+<p>The field <a class="reference internal" href="pcsw.html#lino_welfare.modlib.pcsw.Client.has_esf" title="lino_welfare.modlib.pcsw.Client.has_esf"><code class="xref py py-attr docutils literal notranslate"><span class="pre">has_esf</span></code></a> must be checked:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">obj</span><span class="o">.</span><span class="n">has_esf</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">show_fields</span><span class="p">(</span><span class="n">rt</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">pcsw</span><span class="o">.</span><span class="n">Client</span><span class="p">,</span> <span class="s1">&#39;has_esf&#39;</span><span class="p">)</span>
+<span class="go">- ESF data (has_esf) : Whether Lino should make ESF summaries for this client.</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">esf</span><span class="o">.</span><span class="n">SummariesByClient</span><span class="p">,</span> <span class="n">obj</span><span class="p">,</span> <span class="n">language</span><span class="o">=</span><span class="s2">&quot;en&quot;</span><span class="p">)</span>
+<span class="go">====== ======= ======= ======= ====== ====== ====== ====== ====== ====== ====== ====== ======</span>
+<span class="go"> Year   S.Inf   E.Ind   E.For   SIS    Tst    Info   Mob    Rem    AN!    MSP    CyE    60§7</span>
+<span class="go">------ ------- ------- ------- ------ ------ ------ ------ ------ ------ ------ ------ ------</span>
+<span class="go"> 2012   0:00    3:00    0:00    0:00   0:00   0:00   0:00   0:00   0:00   0:00   0:00   0:00</span>
+<span class="go"> 2013   0:00    11:00   0:00    0:00   0:00   0:00   0:00   0:00   0:00   0:00   0:00   0:00</span>
+<span class="go"> 2014   2:00    11:00   0:00    0:00   0:00   0:00   0:00   0:00   0:00   0:00   0:00   0:00</span>
+<span class="go">====== ======= ======= ======= ====== ====== ====== ====== ====== ====== ====== ====== ======</span>
+</pre></div>
+</div>
+<p>Running check_summaries will have no effect since data has been
+checked as part of <a class="reference external" href="https://dev.lino-framework.org/specs/lino.html#management_command-prep" title="(in Lino Developer Guide v20.1)"><code class="xref std std-manage docutils literal notranslate"><span class="pre">prep</span></code></a>:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">()</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">obj</span><span class="o">.</span><span class="n">check_summaries</span><span class="p">)</span>
+<span class="go">{&#39;refresh&#39;: True}</span>
+</pre></div>
+</div>
+<p>The data has not changed:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">esf</span><span class="o">.</span><span class="n">SummariesByClient</span><span class="p">,</span> <span class="n">obj</span><span class="p">,</span> <span class="n">language</span><span class="o">=</span><span class="s2">&quot;en&quot;</span><span class="p">)</span>
+<span class="go">====== ======= ======= ======= ====== ====== ====== ====== ====== ====== ====== ====== ======</span>
+<span class="go"> Year   S.Inf   E.Ind   E.For   SIS    Tst    Info   Mob    Rem    AN!    MSP    CyE    60§7</span>
+<span class="go">------ ------- ------- ------- ------ ------ ------ ------ ------ ------ ------ ------ ------</span>
+<span class="go"> 2012   0:00    3:00    0:00    0:00   0:00   0:00   0:00   0:00   0:00   0:00   0:00   0:00</span>
+<span class="go"> 2013   0:00    11:00   0:00    0:00   0:00   0:00   0:00   0:00   0:00   0:00   0:00   0:00</span>
+<span class="go"> 2014   2:00    11:00   0:00    0:00   0:00   0:00   0:00   0:00   0:00   0:00   0:00   0:00</span>
+<span class="go">====== ======= ======= ======= ====== ====== ====== ====== ====== ====== ====== ====== ======</span>
+</pre></div>
+</div>
+<p>As another example, here is the ESF summary for a client with <a class="reference internal" href="../usage/jobs.html#term-job-supplyment"><span class="xref std std-term">job
+supplyments</span></a>:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">art60</span><span class="o">.</span><span class="n">Contract</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">values_list</span><span class="p">(</span><span class="s1">&#39;client&#39;</span><span class="p">,</span> <span class="n">flat</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="go">&lt;QuerySet [118, 126, 132, 137, 137, 146, 152, 152, 159, 159, 165, 178, 180, 180]&gt;</span>
+</pre></div>
+</div>
+<p>We pick one of above clients.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">obj</span> <span class="o">=</span> <span class="n">pcsw</span><span class="o">.</span><span class="n">Client</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="mi">118</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">esf</span><span class="o">.</span><span class="n">SummariesByClient</span><span class="p">,</span> <span class="n">obj</span><span class="p">,</span> <span class="n">language</span><span class="o">=</span><span class="s2">&quot;en&quot;</span><span class="p">)</span>
+<span class="go">====== ======= ======= ======= ====== ====== ====== ====== ====== ====== ====== ====== ========</span>
+<span class="go"> Year   S.Inf   E.Ind   E.For   SIS    Tst    Info   Mob    Rem    AN!    MSP    CyE    60§7</span>
+<span class="go">------ ------- ------- ------- ------ ------ ------ ------ ------ ------ ------ ------ --------</span>
+<span class="go"> 2012   0:00    0:00    0:00    0:00   0:00   0:00   0:00   0:00   0:00   0:00   0:00   463:36</span>
+<span class="go"> 2013   0:00    3:00    0:00    0:00   0:00   0:00   0:00   0:00   0:00   0:00   0:00   0:00</span>
+<span class="go"> 2014   0:00    0:00    1:00    0:00   0:00   0:00   0:00   0:00   0:00   0:00   0:00   0:00</span>
+<span class="go">====== ======= ======= ======= ====== ====== ====== ====== ====== ====== ====== ====== ========</span>
+</pre></div>
+</div>
+</section>
+<section id="choicelists">
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Choicelists</a><a class="headerlink" href="#choicelists" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.esf.choicelists.ParticipationCertificates">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.esf.choicelists.</span></span><span class="sig-name descname"><span class="pre">ParticipationCertificates</span></span><a class="headerlink" href="#lino_welfare.modlib.esf.choicelists.ParticipationCertificates" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.esf.choicelists.StatisticalField">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.esf.choicelists.</span></span><span class="sig-name descname"><span class="pre">StatisticalField</span></span><a class="headerlink" href="#lino_welfare.modlib.esf.choicelists.StatisticalField" title="Permalink to this definition">¶</a></dt>
+<dd><p>Base class for all statistical fields.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.esf.choicelists.StatisticalField.short_name">
+<span class="sig-name descname"><span class="pre">short_name</span></span><a class="headerlink" href="#lino_welfare.modlib.esf.choicelists.StatisticalField.short_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Used as the verbose_name of <a class="reference internal" href="#lino_welfare.modlib.esf.choicelists.StatisticalField.field" title="lino_welfare.modlib.esf.choicelists.StatisticalField.field"><code class="xref py py-attr docutils literal notranslate"><span class="pre">field</span></code></a>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.esf.choicelists.StatisticalField.field_name">
+<span class="sig-name descname"><span class="pre">field_name</span></span><a class="headerlink" href="#lino_welfare.modlib.esf.choicelists.StatisticalField.field_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The internal field name.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.esf.choicelists.StatisticalField.field">
+<span class="sig-name descname"><span class="pre">field</span></span><a class="headerlink" href="#lino_welfare.modlib.esf.choicelists.StatisticalField.field" title="Permalink to this definition">¶</a></dt>
+<dd><p>The field descriptor (an instance of a Django Field)</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.esf.choicelists.GuestCount">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.esf.choicelists.</span></span><span class="sig-name descname"><span class="pre">GuestCount</span></span><a class="headerlink" href="#lino_welfare.modlib.esf.choicelists.GuestCount" title="Permalink to this definition">¶</a></dt>
+<dd><p>Count the number of presences.</p>
+<p>Not used in reality.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.esf.choicelists.GuestHours">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.esf.choicelists.</span></span><span class="sig-name descname"><span class="pre">GuestHours</span></span><a class="headerlink" href="#lino_welfare.modlib.esf.choicelists.GuestHours" title="Permalink to this definition">¶</a></dt>
+<dd><p>Count the real hours of presence.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.esf.choicelists.GuestHoursEvent">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.esf.choicelists.</span></span><span class="sig-name descname"><span class="pre">GuestHoursEvent</span></span><a class="headerlink" href="#lino_welfare.modlib.esf.choicelists.GuestHoursEvent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Count the event’s duration for each presence.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.esf.choicelists.GuestHoursFixed">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.esf.choicelists.</span></span><span class="sig-name descname"><span class="pre">GuestHoursFixed</span></span><a class="headerlink" href="#lino_welfare.modlib.esf.choicelists.GuestHoursFixed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Count a fixed time for each presence.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.esf.choicelists.ImmersionHours">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.esf.choicelists.</span></span><span class="sig-name descname"><span class="pre">ImmersionHours</span></span><a class="headerlink" href="#lino_welfare.modlib.esf.choicelists.ImmersionHours" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.esf.choicelists.Art60Hours">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.esf.choicelists.</span></span><span class="sig-name descname"><span class="pre">Art60Hours</span></span><a class="headerlink" href="#lino_welfare.modlib.esf.choicelists.Art60Hours" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+</section>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/logo_web3.png" alt="Logo"/>
+            </a></p>
+          <div class="sidebar-resize-handle"></div>
+<p align="center"><b>EN</b> | <a href="de/index.rst">DE</a> | <a href="fr/index.rst">FR</a></p>
+<h3><a href="../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../about/index.html">About Lino Welfare</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/index.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changes/index.html">Changes</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Specs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/index.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../copyright.html">Copyright &amp; legal notes</a></li>
+</ul>
+
+<hr class="docutils" />
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+<ul>
+  <li class="toctree-l1"><a class="reference internal" href="../py-modindex.html">Python Module Index</a></li>
+</ul><p align="center">
+</p>
+
+<div id="ethical-ad-placement"></div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+    <nav class="relbar">
+      <a class="previous" href="finan.html" aria-label="Previous topic" >
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg>
+        </div>
+        <div class="title">
+          <span class="text">
+            <span class="direction">previous</span>
+            Financial vouchers in Lino Welfare
+          </span>
+        </div>
+      </a>
+      <a class="next" href="topics/index.html" aria-label="Next topic" >
+        <div class="title">
+          <span class="text">
+            <span class="direction">next</span>
+            Topics
+          </span>
+        </div>
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+        </div>
+      </a>
+    </nav>
+
+    <footer role="contentinfo">
+      &#169; <a href="../copyright.html">Copyright</a> 2012-2022 Rumma &amp; Ko Ltd.
+      Last updated on 2022-11-08.
+      Created using <a class="reference external" href="https://www.sphinx-doc.org/">Sphinx</a> 5.1.1.
+      <a class="reference external" href="https://insipid-sphinx-theme.readthedocs.io/">Insipid Theme</a>.
+<a href="https://gitlab.com/lino-framework/welfare/-/blob/master/docs/specs/esf.rst?plain=1"
+  rel="nofollow">Source code</a>.
+<br>
+
+Online link: <a href="https://welfare.lino-framework.org/specs/esf.html">https://welfare.lino-framework.org/specs/esf.html</a>.
+
+
+    </footer>
+  </body>
+</html>

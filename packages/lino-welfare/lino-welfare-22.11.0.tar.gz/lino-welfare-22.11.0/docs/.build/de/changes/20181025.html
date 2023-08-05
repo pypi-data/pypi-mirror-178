@@ -1,0 +1,441 @@
+
+<!DOCTYPE html>
+
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>2018-10-25 &#8212; Lino für ÖSHZ</title>
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/insipid.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/atelier.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/insipid-cust.css" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script defer src="../_static/insipid.js"></script>
+    <script defer src="../_static/insipid-sidebar.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="search" title="Suche" href="../search.html" />
+    <link rel="next" title="Alte Release-Notizen" href="old.html" />
+    <link rel="prev" title="19.11.0 (coming)" href="19.11.0.html" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+  </head><body>
+    <script type="text/javascript">
+        document.body.classList.add('js');
+    </script>
+    <input type="checkbox" id="sidebar-checkbox" style="display: none;">
+    <label id="overlay" for="sidebar-checkbox"></label>
+    <div class="sidebar-resize-handle"></div>
+    <script type="text/javascript">
+        try {
+            let sidebar = localStorage.getItem('sphinx-sidebar');
+            const sidebar_width = localStorage.getItem('sphinx-sidebar-width');
+            if (sidebar_width) {
+                document.documentElement.style.setProperty('--sidebar-width', sidebar_width);
+            }
+            // show sidebar on wide screen
+            if (!sidebar && window.matchMedia('(min-width: 100rem)').matches) {
+                sidebar = 'visible';
+                // NB: We don't store the value in localStorage!
+            }
+            if (sidebar === 'visible') {
+                document.getElementById('sidebar-checkbox').checked = true;
+            }
+        } catch(e) {
+            console.info(e);
+        }
+    </script>
+    <header id="topbar-placeholder">
+      <div id="topbar">
+        <div id="titlebar">
+          <div class="buttons">
+            <label for="sidebar-checkbox" id="sidebar-button" role="button" tabindex="0" aria-controls="sphinxsidebar" accesskey="M">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></svg>
+            </label><a href="../index.html" title="Lino für ÖSHZ">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
+</a>
+          </div>
+          <div class="title">
+            <a class="parent" href="index.html" accesskey="U">Release-Notizen</a>
+            <a class="top" href="#">2018-10-25</a>
+          </div>
+          <div class="buttons">
+            <button id="fullscreen-button" type="button" aria-hidden="true">
+              <span class="enable">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M212.686 315.314L120 408l32.922 31.029c15.12 15.12 4.412 40.971-16.97 40.971h-112C10.697 480 0 469.255 0 456V344c0-21.382 25.803-32.09 40.922-16.971L72 360l92.686-92.686c6.248-6.248 16.379-6.248 22.627 0l25.373 25.373c6.249 6.248 6.249 16.378 0 22.627zm22.628-118.628L328 104l-32.922-31.029C279.958 57.851 290.666 32 312.048 32h112C437.303 32 448 42.745 448 56v112c0 21.382-25.803 32.09-40.922 16.971L376 152l-92.686 92.686c-6.248 6.248-16.379 6.248-22.627 0l-25.373-25.373c-6.249-6.248-6.249-16.378 0-22.627z"/></svg>
+              </span>
+              <span class="disable">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M4.686 427.314L104 328l-32.922-31.029C55.958 281.851 66.666 256 88.048 256h112C213.303 256 224 266.745 224 280v112c0 21.382-25.803 32.09-40.922 16.971L152 376l-99.314 99.314c-6.248 6.248-16.379 6.248-22.627 0L4.686 449.941c-6.248-6.248-6.248-16.379 0-22.627zM443.314 84.686L344 184l32.922 31.029c15.12 15.12 4.412 40.971-16.97 40.971h-112C234.697 256 224 245.255 224 232V120c0-21.382 25.803-32.09 40.922-16.971L296 136l99.314-99.314c6.248-6.248 16.379-6.248 22.627 0l25.373 25.373c6.248 6.248 6.248 16.379 0 22.627z"/></svg>
+              </span>
+            </button><a href="https://www.facebook.com/sharer/sharer.php?u=https://welfare.lino-framework.org/changes/20181025/" title="Share on Facebook" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+</a>
+
+<!---
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+---!>
+
+<a href="https://twitter.com/share?ref_src=https://welfare.lino-framework.org/changes/20181025/" title="Share on Twitter" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <a href="19.11.0.html" class="nav-icon previous" title="zurück:&#13;19.11.0 (coming)" aria-label="Vorheriges Thema" accesskey="P" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"/></svg>
+      </a>
+      <a href="old.html" class="nav-icon next" title="weiter:&#13;Alte Release-Notizen" aria-label="Nächstes Thema" accesskey="N" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg>
+      </a>
+    </nav>
+
+    <nav class="relbar">
+      <a class="previous" href="19.11.0.html" aria-label="Vorheriges Thema" >
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg>
+        </div>
+        <div class="title">
+          <span class="text">
+            <span class="direction">zurück</span>
+            19.11.0 (coming)
+          </span>
+        </div>
+      </a>
+      <a class="next" href="old.html" aria-label="Nächstes Thema" >
+        <div class="title">
+          <span class="text">
+            <span class="direction">weiter</span>
+            Alte Release-Notizen
+          </span>
+        </div>
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+        </div>
+      </a>
+    </nav>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+<section id="id1">
+<h1>2018-10-25<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
+<nav class="contents local" id="inhalt">
+<ul class="simple">
+<li><p><a class="reference internal" href="#regressionen-nach-dem-einsatz" id="id2">Regressionen nach dem Einsatz</a></p></li>
+<li><p><a class="reference internal" href="#anderungen" id="id3">Änderungen</a></p></li>
+<li><p><a class="reference internal" href="#ungefragte-neuerungen" id="id4">Ungefragte Neuerungen</a></p></li>
+<li><p><a class="reference internal" href="#prufung-datumsbereich-beschlusse-bescheinigungen" id="id5">Prüfung Datumsbereich Beschlüsse &amp; Bescheinigungen</a></p></li>
+<li><p><a class="reference internal" href="#technische-checkliste" id="id6">Technische Checkliste</a></p></li>
+</ul>
+</nav>
+<section id="regressionen-nach-dem-einsatz">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Regressionen nach dem Einsatz</a><a class="headerlink" href="#regressionen-nach-dem-einsatz" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://jane.mylino.net/#/api/tickets/PublicTickets/2619">#2619</a> Vertragspartner einer VSE per Doppelklick eingeben.
+–&gt; Workaround : die Benutzer müssen im Feld Organisation der
+Phantomzeile auf [F2] drücken und dann den Namen der Organisation
+eintippen.  Für die nächste Version stellen wir den Doppelklick wieder
+her.</p></li>
+<li><p><a class="reference external" href="https://jane.mylino.net/#/api/tickets/PublicTickets/2602">#2602</a> [Automatisch aktualisieren] ist weg.
+–&gt; Wurde wiederhergestellt.</p></li>
+</ul>
+</section>
+<section id="anderungen">
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Änderungen</a><a class="headerlink" href="#anderungen" title="Permalink to this heading">¶</a></h2>
+<p>Die folgenden Punkte sind erledigt seit dem 2018-10-25.</p>
+<ul class="simple">
+<li><p>(caroline) In der Historie konnten wir keine neuen Einträge
+hinzufügen bei Personen, die schon viele Einträge haben. Z.B.
+Klient 21748.  Das Panel zeigt jetzt eine zusammenfassende Ansicht
+(die fünf letzten Einträge) und einen Button (+), um einen neuen
+Eintrag zu erstellen. Um alle Einträge zu sehen wie gewohnt auf den
+Button oben rechts klicken.</p></li>
+<li><p>(Schuldnerberatung) Bei manchen Tabellen im Ausdruck eines Budgets
+war die Formatierung noch nicht korrekt.  Genauer gesagt kam das
+Problem vor allem in Budgets mit zwei Akteuren und diversen Arten
+von Schulden, so dass in manchen Tabellen der Platz zu eng wurde.
+Lino machte dann unsinnige Zeilenumbrüche in Beträgen.</p></li>
+<li><p>(melanie) Inhalt der Bescheinigungen: Adressfeld ist versetzt!
+Layout nicht ok!  –&gt; Das lag daran, dass Lino jetzt lxml-Elemente
+benutzt und <code class="docutils literal notranslate"><span class="pre">class_=&quot;Recipient&quot;</span></code> deshalb ersetzt werden muss durch
+die neue Syntax <code class="docutils literal notranslate"><span class="pre">**{'class':&quot;Recipient&quot;}</span></code>.  NB Falls das Problem
+wiederkommt bzw. nicht gelöst ist, habe ich wahrscheinlich lediglich
+vergessen, nach der letzten Datenübername die Druckvorlage
+<cite>excerpts/Default.odt</cite> anzupassen.</p></li>
+<li><p>(caroline) Für Benutzerart X fehlt im Reiter „Verträge“ das Panel wo
+die VSE-Verträge angezeigt wurden.</p></li>
+<li><p>(melanie) Übersetzung AMK Französisch war unverändert nicht
+korrekt.  Zum Beispiel
+<code class="file docutils literal notranslate"><span class="pre">/media/cache/appypdf/aids.RefundConfirmation-5341.pdf</span></code>.  NB
+Falls das Problem wiederkommt bzw. nicht gelöst ist, habe ich
+wahrscheinlich lediglich vergessen, nach der letzten Datenübername
+die Textkörpervorlage <code class="xref std std-xfile docutils literal notranslate"><span class="pre">aids/medical_refund.body.html</span></code> zu
+löschen.</p></li>
+<li><p>(server) Export nach Excel ging nicht. Ein Benutzer hat versucht,
+Bescheinigungen zu exportieren.</p></li>
+<li><p>(server) Fehlermeldung beim Ausdrucken gewisser Verträge.</p></li>
+<li><p>(melanie) Kann kein Komma in Zahlenfelder eingeben.</p></li>
+<li><p>(martina) in Schuldnerberatung erscheint jetzt bei der 1000 Stelle
+ein Komma anstatt ein Freizeichen.</p></li>
+</ul>
+<ul class="simple">
+<li><p>wdav und beid ohne Java</p></li>
+<li><p><strong>Kontauszüge um den Jahreswechsel herum</strong> wurden bisher nicht
+importiert, weil Lino da einen Fehlalarm „different years“ auslöste.
+In der testlino kann man das jetzt noch nicht sehen, aber wenn die
+neue Version aktiviert worden ist, müssten die fehlenden Auszüge
+automatisch (nach dem nächsten Import) erscheinen.</p></li>
+<li><p><a class="reference internal" href="#prufung-datumsbereich-beschlusse-bescheinigungen">Prüfung Datumsbereich Beschlüsse &amp; Bescheinigungen</a> (siehe unten)</p></li>
+<li><p>Die Mitarbeiter des Sekretariats/Backoffice/Empfang (Benutzerart 210
+„Empfangsschalter“) können jetzt auch die Reiter „Kalender“ und
+„Verträge“ sehen.</p></li>
+<li><p>In Klienten kann man jetzt wieder <strong>per Schnellsuche nach Adresse
+und Nationalregisternummer</strong> suchen (so wie es früher schon mal
+war).</p></li>
+<li><p>Tipp : um einen Klienten nach seiner ID (Partnernummer) zu finden,
+kann man im Schnellsuch-Feld ein „#“ vor die Nummer setzen.  Das
+Gleiche gilt auch für Verträge, Auszüge etc.</p></li>
+<li><p>Lino schlug par défaut „Pflegemutter“ statt „Mutter“ vor.</p></li>
+<li><p>Beim Einfügen eines Termins vom Klienten aus ist das Dialogfenster
+optimiert: Enddatum steht dort jetzt nicht mehr, und die Eintragsart
+wurde hinzugefügt.</p></li>
+<li><p>Eine ungefragte Änderung: Es gibt jetzt einen Quicklink <cite>[Suchen]</cite>,
+mit dem man eine <strong>Schnellsuche in allen Tabellen</strong> auf einmal
+durchführen kann. Momentan ist die Funktion nur sichtbar für
+Systemverwalter. Wartet auf Feedback.</p></li>
+<li><p>Deutlichere Fehlermeldung im Fall eines Problems bei der Verbindung
+zur Datenbank.</p></li>
+<li><p>Die Buttons im Fenster „Meine Einstellungen“ sind jetzt oben (wie
+gewohnt) statt unten. Und jetzt haben sie auch alle einen Hilfetext.</p></li>
+<li><p>Bescheinigung Kleiderkammer (Kostenübernahme Kleidung) : Der Satz
+„Wir bescheinigen hiermit, für folgende Personen die Kosten für den
+Ankauf von Kleidung bis in Höhe von 20 EUR zu übernehmen:“ war noch
+nicht übersetzt. Ab jetzt „Par la présente nous confirmons la prise
+en charge des achats de vêtements jusqu’à un montant de 20 € pour
+les personnes suivantes:“</p></li>
+<li><p>Wenn ein Benutzer eine Vollmacht hatte, deren Feld <cite>user</cite> (d.h. der
+vollmachtgebende Benutzer) leer war, dann konnte dieser Benutzer
+sich nicht mehr anmelden bzw. bekam dann einen Fehler 500 mit
+interner Fehlermeldung <code class="docutils literal notranslate"><span class="pre">AttributeError:</span> <span class="pre">'NoneType'</span> <span class="pre">object</span>
+<span class="pre">has</span> <span class="pre">no</span> <span class="pre">attribute</span> <span class="pre">'id'</span></code>.</p></li>
+<li><p>Behoben: Fehlermeldung „AttrDict instance has no key ‚immersion‘“
+beim Aktualisieren der ESF-Daten.</p></li>
+<li><p>Wenn man einen Begleiter zuweist, steht die neue Begleitung jetzt
+automatisch auf primär. Falls es bereits einen PB gab, wird dieser
+abgeschaltet.</p></li>
+<li><p>Was tun, wenn ein Sozi aufhört?  end_date ausfüllen. Benutzerart
+nicht auf leer setzen, weil man sonst nicht mehr als dieser User
+arbeiten kann.</p></li>
+<li><p>Kalendereinträge pro Klient werden jetzt chronologisch rückwärts
+sortiert</p></li>
+<li><p>Fehlermeldung bei Ausdruck einer Anwesenheitsbestätigung, wenn der
+Gast noch nicht ausgecheckt war (<a class="reference external" href="https://jane.mylino.net/#/api/tickets/PublicTickets/2443">#2443</a>).</p></li>
+<li><p><span class="menuselection">Explorer ‣ Büro ‣ Auszüge</span> zeigte „There was a
+problem with the database connection. If the error persists, try
+reloading your browser“, und in der <a class="reference external" href="https://hosting.lino-framework.org/logging/#xfile-lino.log" title="(in Lino Hosting Guide)"><code class="xref std std-xfile docutils literal notranslate"><span class="pre">lino.log</span></code></a> stand dann
+<code class="docutils literal notranslate"><span class="pre">'datetime.time</span> <span class="pre">object'</span> <span class="pre">has</span> <span class="pre">no</span> <span class="pre">attribute</span> <span class="pre">'date'</span></code>.</p></li>
+</ul>
+</section>
+<section id="ungefragte-neuerungen">
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Ungefragte Neuerungen</a><a class="headerlink" href="#ungefragte-neuerungen" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Eine neue Tabelle <strong>Tagesplaner</strong> zeigt eine Tagesübersicht der
+Termine aller Benutzer an, wobei die Termine je nach Art in
+verschiedene Kolonnen ventiliert werden.  (<a class="reference external" href="https://jane.mylino.net/#/api/tickets/PublicTickets/2382">#2382</a>)</p></li>
+<li><p><a class="reference external" href="https://jane.mylino.net/#/api/tickets/PublicTickets/2441">#2441</a> : „Intelligentere“ Übersicht der Termine pro Kurs.</p></li>
+<li><p><strong>Überfällige Termine</strong> zeigt jetzt nicht mehr die von heute an,
+sondern endet schon gestern. Denn die von heute sind ja unter „Meine
+Termine“ zu sehen.</p></li>
+</ul>
+</section>
+<section id="prufung-datumsbereich-beschlusse-bescheinigungen">
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Prüfung Datumsbereich Beschlüsse &amp; Bescheinigungen</a><a class="headerlink" href="#prufung-datumsbereich-beschlusse-bescheinigungen" title="Permalink to this heading">¶</a></h2>
+<p>Wir haben die Erklärung für <a class="reference external" href="https://jane.mylino.net/#/api/tickets/PublicTickets/1354">#1354</a> gefunden : es ist üblich,
+dass ein Hilfebeschluss zunächst ohne Enddatum registriert wird, und
+dass daraus dann eine Serie von Bestätigungen ebenfalls ohne Enddatum
+erstellt werden. Wenn dann irgendwann der Beschluss abgeschlossen
+wird, dann setzt der verantwortliche Sozi auf dem Beschluss ein
+Enddatum ein und erstellt ggf einen neuen Beschluss. Was Lino in
+diesem Moment nicht meldete, war, dass dadurch -zumindest für Lino-
+alle Bescheinigungen ungültig wurden, deren Enddatum leer war : Wenn
+der Beschluss ein bekanntes Enddatum hat, dann darf die Bescheinigung
+nicht ohne Enddatum sein. Diese Regel hat bis März 2017 regelmäßig zum
+Verlust von Bescheinigungen geführt, weil Lino den Regelverstoß erst
+bei der Datenmigration bemerkte und betroffene Bescheinigungen
+löschte. Ich berichtete dann zwar immer, dass wieder eine Serie von
+ungültigen Bescheinigungen gelöscht worden waren, aber weil keiner
+eine Ahnung hatte, worum es genau ging, habt ihr euch erst Anfang 2017
+erstmals beschwert, dass manche Bescheinigungen nicht mehr in Lino
+drin sind. Woraufhin ich die -wie wir annahmen allzu strenge- Regel
+entfernt habe. Aber seitdem hatten die Benutzer Narrenfreiheit und
+haben dann auch prompt versehentlich neue Bescheinigungen zu alten
+Hilfebeschlüssen ausgedruckt.</p>
+<p>Soweit die Erklärung. Jetzt die Lösung bzw. der Anfang davon.</p>
+<ol class="arabic simple">
+<li><p>ich habe die Regel entschärft : wenn der Beschluss ein Enddatum
+hat, dann darf das Enddatum der Bescheinigung leer sein. Wenn sie
+eines hat, dann darf es nicht nach dem Enddatum des Beschlusses
+liegen.</p></li>
+<li><p>mit der entschärften Regel haben wir den Integritätstest
+(checkdata) neu laufen lassen. Dadurch wurden die ursprünglich 682
+Fehlwarnungen auf ein paar Dutzend echte Warnungen reduziert.</p></li>
+</ol>
+<p>TODO: Ich sollte die (entschärfte) Prüfung wieder auf „hart“ schalten,
+damit Lino es schon bei der Eingabe prüft und nicht erst im
+nächtlichen checkdata.</p>
+<p>Aber was machen wir dann mit diesen paar Dutzend echten Warnungen?
+Beispiel: AMK/01.10.14/22346/4232. Also das sind Bescheinigungen,
+deren Datenbereich tatsächlich ungültig ist. Wenn wir die
+(entschärfte) Prüfung wieder auf hart schalten, dann würden diese echt
+falschen Bescheinigungen wieder gelöscht.  Was sagt ihr dazu? Ich sehe
+zwei Möglichkeiten:</p>
+<ol class="loweralpha simple">
+<li><p>Das wollen wir nicht, denn die sind ja ausgestellt worden und
+rausgegangen. Also Lino muss ein System kriegen, mit dem man
+solche Datenproblemmeldungen dann „absegnen“ kann, also dass man Lino
+irgendwie mitteilt „Ja, Bescheinigung X verstößt gegen die Regel,
+aber wir drücken da ausnahmsweise ein Auge zu“.</p></li>
+<li><p>Es ist uns egal, wenn Lino diese Bescheinigungen
+löscht. Hauptsache, dass die entschärfte Regel wieder aktiviert
+wird und es zukünftig nicht mehr zu solchen echten Fehlern kommt.</p></li>
+</ol>
+<p>Weil keine Antwort kam, habe ich eine dritte Möglichkeit programmiert:
+<a class="reference external" href="https://welfare.lino-framework.org/api/lino_welfare.modlib.aids.html#lino_welfare.modlib.aids.Plugin.no_date_range_veto_until" title="(in Lino Welfare v22.10)"><code class="xref py py-attr docutils literal notranslate"><span class="pre">lino_welfare.modlib.aids.Plugin.no_date_range_veto_until</span></code></a>. Also
+<span class="menuselection">Explorer ‣ ÖSHZ ‣ Hilfebeschlüsse</span> um die letzte
+Nummer zu sehen (3942 am 07.05.18).</p>
+</section>
+<section id="technische-checkliste">
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Technische Checkliste</a><a class="headerlink" href="#technische-checkliste" title="Permalink to this heading">¶</a></h2>
+<p>Start the last data migration:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ go testlino
+$ sudo service apache2 stop
+$ sudo service supervisor stop
+$ ./initdb_preview_from_prod.sh
+</pre></div>
+</div>
+<p>The data migration lasts about 1:30 hours.  When it is done:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ swap preview and prod
+
+$ sudo service apache2 start
+$ sudo service supervisor start
+</pre></div>
+</div>
+<p>Open the <cite>excerpts/Default.odt</cite> document template and manually
+edit it:</p>
+<ul class="simple">
+<li><p>(melanie) Inhalt der Bescheinigungen: Adressfeld ist versetzt!
+Layout nicht ok!  –&gt; Das lag daran, dass Lino jetzt lxml-Elemente
+benutzt und <code class="docutils literal notranslate"><span class="pre">class_=&quot;Recipient&quot;</span></code> deshalb ersetzt werden muss durch
+die neue Syntax <code class="docutils literal notranslate"><span class="pre">**{'class':&quot;Recipient&quot;}</span></code>.  NB Falls das Problem
+wiederkommt bzw. nicht gelöst ist, habe ich wahrscheinlich lediglich
+vergessen, nach der letzten Datenübername die Druckvorlage
+<cite>excerpts/Default.odt</cite> anzupassen.</p></li>
+</ul>
+<p>Maybe also check the other local document templates?</p>
+<blockquote>
+<div><p>$ find config/ -name Default.odt</p>
+</div></blockquote>
+</section>
+</section>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/logo_web3.png" alt="Logo"/>
+            </a></p>
+          <div class="sidebar-resize-handle"></div>
+<p align="center"><a href="index.rst">EN</a> | <b>DE</b> | <a href="fr/index.rst">FR</a></p>
+<h3><a href="../index.html">Inhaltsverzeichnis</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../about/index.html">Über Lino Welfare</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/index.html">Benutzung</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Release-Notizen</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="19.11.0.html">19.11.0 (coming)</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">2018-10-25</a></li>
+<li class="toctree-l2"><a class="reference internal" href="old.html">Alte Release-Notizen</a></li>
+</ul>
+</li>
+</ul>
+
+<hr class="docutils" />
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Schnellsuche</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Los" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+<ul>
+</ul><p align="center">
+</p>
+
+<div id="ethical-ad-placement"></div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+    <nav class="relbar">
+      <a class="previous" href="19.11.0.html" aria-label="Vorheriges Thema" >
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg>
+        </div>
+        <div class="title">
+          <span class="text">
+            <span class="direction">zurück</span>
+            19.11.0 (coming)
+          </span>
+        </div>
+      </a>
+      <a class="next" href="old.html" aria-label="Nächstes Thema" >
+        <div class="title">
+          <span class="text">
+            <span class="direction">weiter</span>
+            Alte Release-Notizen
+          </span>
+        </div>
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+        </div>
+      </a>
+    </nav>
+
+    <footer role="contentinfo">
+      &#169; Copyright 2012-2022 Rumma &amp; Ko Ltd.
+      Zuletzt aktualisiert am 2022-11-08.
+      Created using <a class="reference external" href="https://www.sphinx-doc.org/">Sphinx</a> 5.1.1.
+      <a class="reference external" href="https://insipid-sphinx-theme.readthedocs.io/">Insipid Theme</a>.
+<a href="https://gitlab.com/lino-framework/welfare/-/blob/master/docs/changes/20181025.rst?plain=1"
+  rel="nofollow">Source code</a>.
+<br>
+
+Online link: <a href="https://welfare.lino-framework.org/de/changes/20181025.html">https://welfare.lino-framework.org/de/changes/20181025.html</a>.
+
+
+    </footer>
+  </body>
+</html>

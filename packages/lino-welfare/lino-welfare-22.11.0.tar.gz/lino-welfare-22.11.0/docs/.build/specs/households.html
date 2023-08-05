@@ -1,0 +1,640 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Households &#8212; Lino Welfare</title>
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/insipid.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/atelier.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/insipid-cust.css" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script defer src="../_static/insipid.js"></script>
+    <script defer src="../_static/insipid-sidebar.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="copyright" title="Copyright" href="../copyright.html" />
+    <link rel="next" title="Avoiding duplicate clients" href="dupable_clients.html" />
+    <link rel="prev" title="Newcomers (tested tour)" href="newcomers.html" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+  </head><body>
+    <script type="text/javascript">
+        document.body.classList.add('js');
+    </script>
+    <input type="checkbox" id="sidebar-checkbox" style="display: none;">
+    <label id="overlay" for="sidebar-checkbox"></label>
+    <div class="sidebar-resize-handle"></div>
+    <script type="text/javascript">
+        try {
+            let sidebar = localStorage.getItem('sphinx-sidebar');
+            const sidebar_width = localStorage.getItem('sphinx-sidebar-width');
+            if (sidebar_width) {
+                document.documentElement.style.setProperty('--sidebar-width', sidebar_width);
+            }
+            // show sidebar on wide screen
+            if (!sidebar && window.matchMedia('(min-width: 100rem)').matches) {
+                sidebar = 'visible';
+                // NB: We don't store the value in localStorage!
+            }
+            if (sidebar === 'visible') {
+                document.getElementById('sidebar-checkbox').checked = true;
+            }
+        } catch(e) {
+            console.info(e);
+        }
+    </script>
+    <header id="topbar-placeholder">
+      <div id="topbar">
+        <div id="titlebar">
+          <div class="buttons">
+            <label for="sidebar-checkbox" id="sidebar-button" role="button" tabindex="0" aria-controls="sphinxsidebar" accesskey="M">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></svg>
+            </label><a href="../index.html" title="Lino Welfare">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
+</a>
+          </div>
+          <div class="title">
+            <a class="parent" href="plugins.html" accesskey="U">Plugins</a>
+            <a class="top" href="#">Households</a>
+          </div>
+          <div class="buttons">
+            <button id="fullscreen-button" type="button" aria-hidden="true">
+              <span class="enable">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M212.686 315.314L120 408l32.922 31.029c15.12 15.12 4.412 40.971-16.97 40.971h-112C10.697 480 0 469.255 0 456V344c0-21.382 25.803-32.09 40.922-16.971L72 360l92.686-92.686c6.248-6.248 16.379-6.248 22.627 0l25.373 25.373c6.249 6.248 6.249 16.378 0 22.627zm22.628-118.628L328 104l-32.922-31.029C279.958 57.851 290.666 32 312.048 32h112C437.303 32 448 42.745 448 56v112c0 21.382-25.803 32.09-40.922 16.971L376 152l-92.686 92.686c-6.248 6.248-16.379 6.248-22.627 0l-25.373-25.373c-6.249-6.248-6.249-16.378 0-22.627z"/></svg>
+              </span>
+              <span class="disable">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M4.686 427.314L104 328l-32.922-31.029C55.958 281.851 66.666 256 88.048 256h112C213.303 256 224 266.745 224 280v112c0 21.382-25.803 32.09-40.922 16.971L152 376l-99.314 99.314c-6.248 6.248-16.379 6.248-22.627 0L4.686 449.941c-6.248-6.248-6.248-16.379 0-22.627zM443.314 84.686L344 184l32.922 31.029c15.12 15.12 4.412 40.971-16.97 40.971h-112C234.697 256 224 245.255 224 232V120c0-21.382 25.803-32.09 40.922-16.971L296 136l99.314-99.314c6.248-6.248 16.379-6.248 22.627 0l25.373 25.373c6.248 6.248 6.248 16.379 0 22.627z"/></svg>
+              </span>
+            </button><a href="https://www.facebook.com/sharer/sharer.php?u=https://welfare.lino-framework.org/specs/households/" title="Share on Facebook" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+</a>
+
+<!---
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+---!>
+
+<a href="https://twitter.com/share?ref_src=https://welfare.lino-framework.org/specs/households/" title="Share on Twitter" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <a href="newcomers.html" class="nav-icon previous" title="previous:&#13;Newcomers (tested tour)" aria-label="Previous topic" accesskey="P" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"/></svg>
+      </a>
+      <a href="dupable_clients.html" class="nav-icon next" title="next:&#13;Avoiding duplicate clients" aria-label="Next topic" accesskey="N" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg>
+      </a>
+    </nav>
+
+    <nav class="relbar">
+      <a class="previous" href="newcomers.html" aria-label="Previous topic" >
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg>
+        </div>
+        <div class="title">
+          <span class="text">
+            <span class="direction">previous</span>
+            Newcomers (tested tour)
+          </span>
+        </div>
+      </a>
+      <a class="next" href="dupable_clients.html" aria-label="Next topic" >
+        <div class="title">
+          <span class="text">
+            <span class="direction">next</span>
+            Avoiding duplicate clients
+          </span>
+        </div>
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+        </div>
+      </a>
+    </nav>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+<span class="target" id="welfare-specs-households"></span><section id="households">
+<h1>Households<a class="headerlink" href="#households" title="Permalink to this heading">¶</a></h1>
+<p>The <a class="reference internal" href="../api/lino_welfare.modlib.households.html#module-lino_welfare.modlib.households" title="lino_welfare.modlib.households"><code class="xref py py-mod docutils literal notranslate"><span class="pre">lino_welfare.modlib.households</span></code></a> plugin extends
+<code class="xref py py-mod docutils literal notranslate"><span class="pre">lino.modlib.households</span></code> by adding some PCSW-specific features.</p>
+<nav class="contents local" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#added-features" id="id1">Added features</a></p></li>
+<li><p><a class="reference internal" href="#paul-frisch" id="id2">Paul Frisch</a></p></li>
+<li><p><a class="reference internal" href="#an-edge-case" id="id3">An edge case</a></p></li>
+<li><p><a class="reference internal" href="#melba-getting-adult" id="id4">Melba getting adult</a></p></li>
+<li><p><a class="reference internal" href="#inspecting-the-membersbyperson-panel" id="id5">Inspecting the MembersByPerson panel</a></p></li>
+<li><p><a class="reference internal" href="#the-household-summary" id="id6">The household summary</a></p></li>
+<li><p><a class="reference internal" href="#member-objects" id="id7">Member objects</a></p></li>
+</ul>
+</nav>
+<p>This is a <a class="reference external" href="https://dev.lino-framework.org/dev/doctests.html#tested-docs" title="(in Lino Developer Guide v20.1)"><span class="xref std std-ref">tested document</span></a>.  The following instructions are
+used for initialization:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino</span> <span class="kn">import</span> <span class="n">startup</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">startup</span><span class="p">(</span><span class="s1">&#39;lino_welfare.projects.gerd.settings.doctests&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino.api.doctest</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">datetime</span>
+</pre></div>
+</div>
+<section id="added-features">
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">Added features</a><a class="headerlink" href="#added-features" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.households.RefundsByPerson">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.households.</span></span><span class="sig-name descname"><span class="pre">RefundsByPerson</span></span><a class="headerlink" href="#lino_welfare.modlib.households.RefundsByPerson" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shows the members of the primary household of this person together with an
+amount which depends on whether that member is adult or not.</p>
+<p>This is a special form of <code class="xref py py-class docutils literal notranslate"><span class="pre">lino_xl.lib.households.SiblingsByPerson</span></code>,
+used e.g. in <code class="xref std std-xfile docutils literal notranslate"><span class="pre">aids/Confirmation/clothes_bank.body.html</span></code>.</p>
+<p>It has two configurable attributes:</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.households.RefundsByPerson.child_tariff">
+<span class="sig-name descname"><span class="pre">child_tariff</span></span><a class="headerlink" href="#lino_welfare.modlib.households.RefundsByPerson.child_tariff" title="Permalink to this definition">¶</a></dt>
+<dd><p>The amount to refund for children (household members less than
+<a class="reference external" href="https://dev.lino-framework.org/api/lino_xl.lib.households.html#lino_xl.lib.households.Plugin.adult_age" title="(in Lino Developer Guide v20.1)"><code class="xref py py-attr docutils literal notranslate"><span class="pre">lino_xl.lib.households.Plugin.adult_age</span></code></a> years old).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.households.RefundsByPerson.adult_tariff">
+<span class="sig-name descname"><span class="pre">adult_tariff</span></span><a class="headerlink" href="#lino_welfare.modlib.households.RefundsByPerson.adult_tariff" title="Permalink to this definition">¶</a></dt>
+<dd><p>The amount to refund for children (household members who are
+<a class="reference external" href="https://dev.lino-framework.org/api/lino_xl.lib.households.html#lino_xl.lib.households.Plugin.adult_age" title="(in Lino Developer Guide v20.1)"><code class="xref py py-attr docutils literal notranslate"><span class="pre">lino_xl.lib.households.Plugin.adult_age</span></code></a> years or older).</p>
+</dd></dl>
+
+<p>The values of these attributes are hard-coded and defaul to 10 and 20:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">households</span><span class="o">.</span><span class="n">RefundsByPerson</span><span class="o">.</span><span class="n">child_tariff</span>
+<span class="go">Decimal(&#39;10&#39;)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">households</span><span class="o">.</span><span class="n">RefundsByPerson</span><span class="o">.</span><span class="n">adult_tariff</span>
+<span class="go">Decimal(&#39;20&#39;)</span>
+</pre></div>
+</div>
+<p>You might change them locally e.g. in the
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">lino.core.site.Site.custom_layouts</span></code> module.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.households.RefundsByPerson.person_info">
+<span class="sig-name descname"><span class="pre">person_info</span></span><a class="headerlink" href="#lino_welfare.modlib.households.RefundsByPerson.person_info" title="Permalink to this definition">¶</a></dt>
+<dd><p>The full name of the household member.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.households.RefundsByPerson.amount">
+<span class="sig-name descname"><span class="pre">amount</span></span><a class="headerlink" href="#lino_welfare.modlib.households.RefundsByPerson.amount" title="Permalink to this definition">¶</a></dt>
+<dd><p>The amount to pay. This is either <a class="reference internal" href="#lino_welfare.modlib.households.RefundsByPerson.child_tariff" title="lino_welfare.modlib.households.RefundsByPerson.child_tariff"><code class="xref py py-attr docutils literal notranslate"><span class="pre">child_tariff</span></code></a> or
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">adult_tarif</span></code> depending on the age of the household member.</p>
+</dd></dl>
+
+<p>See the examples below.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="lino_welfare.modlib.households.get_household_summary">
+<span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.households.</span></span><span class="sig-name descname"><span class="pre">get_household_summary</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">person</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">today</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">adult_age</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lino_welfare.modlib.households.get_household_summary" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a string which expresses the household composition in a few
+words. See <a class="reference internal" href="#the-household-summary">The household summary</a>.</p>
+<p>Note that members without <cite>birth_date</cite> are considered children.</p>
+</dd></dl>
+
+</section>
+<section id="paul-frisch">
+<span id="paulfrisch"></span><h2><a class="toc-backref" href="#id2" role="doc-backlink">Paul Frisch</a><a class="headerlink" href="#paul-frisch" title="Permalink to this heading">¶</a></h2>
+<p>Mr. Paul Frisch is a fictive client for which the demo database
+contains fictive family links.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">paul</span> <span class="o">=</span> <span class="n">contacts</span><span class="o">.</span><span class="n">Person</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">first_name</span><span class="o">=</span><span class="s2">&quot;Paul&quot;</span><span class="p">,</span> <span class="n">last_name</span><span class="o">=</span><span class="s2">&quot;Frisch&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">paul</span><span class="o">.</span><span class="n">id</span><span class="p">)</span>
+<span class="go">240</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">paul</span><span class="p">)</span>
+<span class="go">Herr Paul FRISCH</span>
+</pre></div>
+</div>
+<p>His primary household consists of 2 adults and 3 children:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">rt</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">households</span><span class="o">.</span><span class="n">get_household_summary</span><span class="p">(</span><span class="n">paul</span><span class="p">))</span>
+<span class="go">2 Erwachsene und 3 Kinder</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">test_client</span><span class="o">.</span><span class="n">force_login</span><span class="p">(</span><span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;rolf&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">user</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">check</span><span class="p">(</span><span class="n">uri</span><span class="p">,</span> <span class="n">fieldname</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;/api/</span><span class="si">%s</span><span class="s1">?fmt=json&amp;an=detail&#39;</span> <span class="o">%</span> <span class="n">uri</span>
+<span class="gp">... </span>    <span class="n">res</span> <span class="o">=</span> <span class="n">test_client</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">REMOTE_USER</span><span class="o">=</span><span class="s1">&#39;rolf&#39;</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="k">assert</span> <span class="n">res</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span>
+<span class="gp">... </span>    <span class="n">d</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">res</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="k">if</span> <span class="ow">not</span> <span class="n">fieldname</span> <span class="ow">in</span> <span class="n">d</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">]:</span>
+<span class="gp">... </span>        <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;20181023 &#39;</span><span class="si">{}</span><span class="s2">&#39; not in </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+<span class="gp">... </span>            <span class="n">fieldname</span><span class="p">,</span> <span class="n">d</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">keys</span><span class="p">()))</span>
+<span class="gp">... </span>    <span class="k">return</span> <span class="n">d</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">][</span><span class="n">fieldname</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">uri</span> <span class="o">=</span> <span class="s1">&#39;contacts/Persons/</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">paul</span><span class="o">.</span><span class="n">id</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">html</span> <span class="o">=</span> <span class="n">check</span><span class="p">(</span><span class="n">uri</span><span class="p">,</span> <span class="s1">&#39;humanlinks.LinksByHuman&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">html</span><span class="p">,</span> <span class="s1">&#39;lxml&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">links</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">len</span><span class="p">(</span><span class="n">links</span><span class="p">)</span>
+<span class="go">23</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">links</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;href&#39;</span><span class="p">))</span>
+<span class="gp">... </span>
+<span class="go">javascript:Lino.contacts.Persons.detail.run(null,{ &quot;record_id&quot;: 248 })</span>
+</pre></div>
+</div>
+<p>These are the family relationships of Paul Frisch:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">soup</span><span class="o">.</span><span class="n">get_text</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="n">strip</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+<span class="gp">... </span>
+<span class="go">Paul ist Vater von Dennis (12 Jahre) Vater von Clara (14 Jahre) Vater</span>
+<span class="go">von Philippe (16 Jahre) Vater von Peter (26 Jahre) Ehemann von Petra</span>
+<span class="go">ZWEITH (45 Jahre) Sohn von Gaby FROGEMUTH (79 Jahre) Sohn von Hubert</span>
+<span class="go">(80 Jahre) Beziehung erstellen als Vater / Sohn Adoptivvater /</span>
+<span class="go">Adoptivsohn Pflegevater / Pflegesohn Ehemann Partner Stiefvater /</span>
+<span class="go">Stiefsohn Bruder Vetter Onkel / Neffe Verwandter Sonstiger</span>
+</pre></div>
+</div>
+<p>The previous AJAX call caused Django’s translation machine to switch
+to German. Switch back to English.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">translation</span><span class="o">.</span><span class="n">activate</span><span class="p">(</span><span class="s1">&#39;en&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Paul’s father Hubert is married with Gaby and they live
+together. Their children have moved out.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">obj</span> <span class="o">=</span> <span class="n">contacts</span><span class="o">.</span><span class="n">Person</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;Frisch Hubert&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>
+<span class="go">Mr Hubert FRISCH</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span> <span class="o">=</span> <span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;rolf&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">households</span><span class="o">.</span><span class="n">SiblingsByPerson</span><span class="p">,</span> <span class="n">master_instance</span><span class="o">=</span><span class="n">obj</span><span class="p">)</span>
+<span class="go">========== =================== =============== ==================== ============ =========== ============ ========</span>
+<span class="go"> Age        Role                Dependency      Person               First name   Last name   Birth date   Gender</span>
+<span class="go">---------- ------------------- --------------- -------------------- ------------ ----------- ------------ --------</span>
+<span class="go"> 80 years   Head of household   Not at charge   Mr Hubert FRISCH     Hubert       Frisch      1933-07-21   Male</span>
+<span class="go"> 79 years   Partner             Not at charge   Mrs Gaby FROGEMUTH   Gaby         Frogemuth   1934-08-04   Female</span>
+<span class="go">========== =================== =============== ==================== ============ =========== ============ ========</span>
+</pre></div>
+</div>
+<p>Paul Frisch is married with Petra Zweith and has a child from divorced
+marriage with Paula Einzig.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">obj</span> <span class="o">=</span> <span class="n">contacts</span><span class="o">.</span><span class="n">Person</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;Frisch Paul&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>
+<span class="go">Mr Paul FRISCH</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">households</span><span class="o">.</span><span class="n">SiblingsByPerson</span><span class="p">,</span> <span class="n">master_instance</span><span class="o">=</span><span class="n">obj</span><span class="p">)</span>
+<span class="go">========== =================== ================ ==================== ============ =========== ============ ========</span>
+<span class="go"> Age        Role                Dependency       Person               First name   Last name   Birth date   Gender</span>
+<span class="go">---------- ------------------- ---------------- -------------------- ------------ ----------- ------------ --------</span>
+<span class="go"> 46 years   Head of household   Not at charge    Mr Paul FRISCH       Paul         Frisch      1967-06-19   Male</span>
+<span class="go"> 45 years   Partner             Not at charge    Mrs Petra ZWEITH     Petra        Zweith      1968-12-19   Female</span>
+<span class="go"> 16 years   Child               At full charge   Mr Philippe FRISCH   Philippe     Frisch      1997-06-19   Male</span>
+<span class="go"> 14 years   Child               At full charge   Mrs Clara FRISCH     Clara        Frisch      1999-06-19   Female</span>
+<span class="go"> 12 years   Child               At full charge   Mr Dennis FRISCH     Dennis       Frisch      2001-06-19   Male</span>
+<span class="go">========== =================== ================ ==================== ============ =========== ============ ========</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">households</span><span class="o">.</span><span class="n">RefundsByPerson</span><span class="p">,</span> <span class="n">master_instance</span><span class="o">=</span><span class="n">obj</span><span class="p">)</span>
+<span class="go">========== ======== ==================== ===========</span>
+<span class="go"> Age        Gender   Person               Amount</span>
+<span class="go">---------- -------- -------------------- -----------</span>
+<span class="go"> 46 years   Male     Paul FRISCH          20,00</span>
+<span class="go"> 45 years   Female   Petra ZWEITH         20,00</span>
+<span class="go"> 16 years   Male     Philippe FRISCH      10,00</span>
+<span class="go"> 14 years   Female   Clara FRISCH         10,00</span>
+<span class="go"> 12 years   Male     Dennis FRISCH        10,00</span>
+<span class="go">                     **Total (5 rows)**   **70,00**</span>
+<span class="go">========== ======== ==================== ===========</span>
+</pre></div>
+</div>
+<p>Ludwig Frisch is married with Laura Loslever and they live together
+with their two children.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">obj</span> <span class="o">=</span> <span class="n">contacts</span><span class="o">.</span><span class="n">Person</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;Frisch Ludwig&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>
+<span class="go">Mr Ludwig FRISCH</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">households</span><span class="o">.</span><span class="n">SiblingsByPerson</span><span class="p">,</span> <span class="n">master_instance</span><span class="o">=</span><span class="n">obj</span><span class="p">)</span>
+<span class="go">========== =================== ================ ==================== ============ =========== ============ ========</span>
+<span class="go"> Age        Role                Dependency       Person               First name   Last name   Birth date   Gender</span>
+<span class="go">---------- ------------------- ---------------- -------------------- ------------ ----------- ------------ --------</span>
+<span class="go"> 46 years   Partner             Not at charge    Mrs Laura LOSLEVER   Laura        Loslever    1968-04-27   Female</span>
+<span class="go"> 45 years   Head of household   Not at charge    Mr Ludwig FRISCH     Ludwig       Frisch      1968-06-01   Male</span>
+<span class="go"> 12 years   Child               At full charge   Mrs Melba FRISCH     Melba        Frisch      2002-04-05   Female</span>
+<span class="go"> 6 years    Child               At full charge   Mrs Irma FRISCH      Irma         Frisch      2008-03-24   Female</span>
+<span class="go">========== =================== ================ ==================== ============ =========== ============ ========</span>
+</pre></div>
+</div>
+<p>Here is what Ludwig’s LinksByHuman panel shows:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">humanlinks</span><span class="o">.</span><span class="n">LinksByHuman</span><span class="p">,</span> <span class="n">master_instance</span><span class="o">=</span><span class="n">obj</span><span class="p">)</span>
+<span class="go">Ludwig is</span>
+<span class="go">Father of `Irma &lt;Detail&gt;`__ (6 years)</span>
+<span class="go">Father of `Melba &lt;Detail&gt;`__ (12 years)</span>
+<span class="go">Husband of `Laura LOSLEVER &lt;Detail&gt;`__ (46 years)</span>
+<span class="go">Son of `Gaby FROGEMUTH &lt;Detail&gt;`__ (79 years)</span>
+<span class="go">Son of `Hubert &lt;Detail&gt;`__ (80 years)</span>
+
+<span class="go">Create relationship as **Father**/**Son** **Adoptive father**/**Adopted son** **Foster father**/**Foster son** **Husband** **Partner** **Stepfather**/**Stepson** **Brother** **Cousin** **Uncle**/**Nephew** **Relative** **Other**</span>
+</pre></div>
+</div>
+<p>Here is his <a class="reference internal" href="#lino_welfare.modlib.households.RefundsByPerson" title="lino_welfare.modlib.households.RefundsByPerson"><code class="xref py py-class docutils literal notranslate"><span class="pre">RefundsByPerson</span></code></a> table:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">households</span><span class="o">.</span><span class="n">RefundsByPerson</span><span class="p">,</span> <span class="n">master_instance</span><span class="o">=</span><span class="n">obj</span><span class="p">)</span>
+<span class="go">========== ======== ==================== ===========</span>
+<span class="go"> Age        Gender   Person               Amount</span>
+<span class="go">---------- -------- -------------------- -----------</span>
+<span class="go"> 46 years   Female   Laura LOSLEVER       20,00</span>
+<span class="go"> 45 years   Male     Ludwig FRISCH        20,00</span>
+<span class="go"> 12 years   Female   Melba FRISCH         10,00</span>
+<span class="go"> 6 years    Female   Irma FRISCH          10,00</span>
+<span class="go">                     **Total (4 rows)**   **60,00**</span>
+<span class="go">========== ======== ==================== ===========</span>
+</pre></div>
+</div>
+</section>
+<section id="an-edge-case">
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">An edge case</a><a class="headerlink" href="#an-edge-case" title="Permalink to this heading">¶</a></h2>
+<p>The following edge case failed before 20170206:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">humanlinks</span><span class="o">.</span><span class="n">LinksByHuman</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="melba-getting-adult">
+<span id="welfare-specs-households-20190326"></span><h2><a class="toc-backref" href="#id4" role="doc-backlink">Melba getting adult</a><a class="headerlink" href="#melba-getting-adult" title="Permalink to this heading">¶</a></h2>
+<p>The <a class="reference internal" href="#lino_welfare.modlib.households.RefundsByPerson" title="lino_welfare.modlib.households.RefundsByPerson"><code class="xref py py-class docutils literal notranslate"><span class="pre">RefundsByPerson</span></code></a> table depends on the current date, which is
+2014-05-22 for this demo:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dd</span><span class="o">.</span><span class="n">today</span><span class="p">()</span>
+<span class="go">datetime.date(2014, 5, 22)</span>
+</pre></div>
+</div>
+<p>The demo date is stored in a site attribute <a class="reference external" href="https://dev.lino-framework.org/api/lino.core.site.html#lino.core.site.Site.the_demo_date" title="(in Lino Developer Guide v20.1)"><code class="xref py py-attr docutils literal notranslate"><span class="pre">the_demo_date</span></code></a>:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">settings</span><span class="o">.</span><span class="n">SITE</span><span class="o">.</span><span class="n">the_demo_date</span>
+<span class="go">datetime.date(2014, 5, 22)</span>
+</pre></div>
+</div>
+<p>Let’s have a look at Ludwig’s <a class="reference internal" href="#lino_welfare.modlib.households.RefundsByPerson" title="lino_welfare.modlib.households.RefundsByPerson"><code class="xref py py-class docutils literal notranslate"><span class="pre">RefundsByPerson</span></code></a> table when Melba gets
+adult.  The default configuration says that you get adult at 18:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dd</span><span class="o">.</span><span class="n">plugins</span><span class="o">.</span><span class="n">households</span><span class="o">.</span><span class="n">adult_age</span>
+<span class="go">18</span>
+</pre></div>
+</div>
+<p>In 2019 Melba is 17, still a child:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">settings</span><span class="o">.</span><span class="n">SITE</span><span class="o">.</span><span class="n">the_demo_date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="p">(</span><span class="mi">2019</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">22</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">households</span><span class="o">.</span><span class="n">RefundsByPerson</span><span class="p">,</span> <span class="n">master_instance</span><span class="o">=</span><span class="n">obj</span><span class="p">)</span>
+<span class="go">========== ======== ==================== ===========</span>
+<span class="go"> Age        Gender   Person               Amount</span>
+<span class="go">---------- -------- -------------------- -----------</span>
+<span class="go"> 51 years   Female   Laura LOSLEVER       20,00</span>
+<span class="go"> 50 years   Male     Ludwig FRISCH        20,00</span>
+<span class="go"> 17 years   Female   Melba FRISCH         10,00</span>
+<span class="go"> 11 years   Female   Irma FRISCH          10,00</span>
+<span class="go">                     **Total (4 rows)**   **60,00**</span>
+<span class="go">========== ======== ==================== ===========</span>
+</pre></div>
+</div>
+<p>But in 2020 she is 18, now her refunded amount is that of an adult:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">settings</span><span class="o">.</span><span class="n">SITE</span><span class="o">.</span><span class="n">the_demo_date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="p">(</span><span class="mi">2020</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">22</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">households</span><span class="o">.</span><span class="n">RefundsByPerson</span><span class="p">,</span> <span class="n">master_instance</span><span class="o">=</span><span class="n">obj</span><span class="p">)</span>
+<span class="go">========== ======== ==================== ===========</span>
+<span class="go"> Age        Gender   Person               Amount</span>
+<span class="go">---------- -------- -------------------- -----------</span>
+<span class="go"> 52 years   Female   Laura LOSLEVER       20,00</span>
+<span class="go"> 51 years   Male     Ludwig FRISCH        20,00</span>
+<span class="go"> 18 years   Female   Melba FRISCH         20,00</span>
+<span class="go"> 12 years   Female   Irma FRISCH          10,00</span>
+<span class="go">                     **Total (4 rows)**   **70,00**</span>
+<span class="go">========== ======== ==================== ===========</span>
+</pre></div>
+</div>
+<p>Note: Before 20190326 above table gave an amount of 10,00 for Melba because of
+a bug (you got adult only one year after the age specified in
+<a class="reference external" href="https://dev.lino-framework.org/api/lino_xl.lib.households.html#lino_xl.lib.households.Plugin.adult_age" title="(in Lino Developer Guide v20.1)"><code class="xref py py-attr docutils literal notranslate"><span class="pre">lino_xl.lib.households.Plugin.adult_age</span></code></a>).</p>
+<p>For the following tests we set <a class="reference external" href="https://dev.lino-framework.org/api/lino.core.site.html#lino.core.site.Site.the_demo_date" title="(in Lino Developer Guide v20.1)"><code class="xref py py-attr docutils literal notranslate"><span class="pre">the_demo_date</span></code></a> back to its original value:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">settings</span><span class="o">.</span><span class="n">SITE</span><span class="o">.</span><span class="n">the_demo_date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="p">(</span><span class="mi">2014</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">22</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="inspecting-the-membersbyperson-panel">
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Inspecting the MembersByPerson panel</a><a class="headerlink" href="#inspecting-the-membersbyperson-panel" title="Permalink to this heading">¶</a></h2>
+<p>The following code caused an exception “ParameterStore of LayoutHandle
+for ParamsLayout on pcsw.Clients expects a list of 12 values but got
+16” on <a class="reference external" href="https://luc.lino-framework.org/blog/2014/0429.html">2014-04-29</a>.</p>
+<p>We need a client who is member of multiple households.</p>
+<p>&gt;&gt; ses = rt.login(“hubert”)
+&gt;&gt; cli = ses.spawn(integ.Clients)[1]</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">cli</span> <span class="o">=</span> <span class="n">pcsw</span><span class="o">.</span><span class="n">Client</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="mi">181</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cli</span>
+<span class="go">Client #181 (&#39;JEANÉMART Jérôme (181)&#39;)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">integ</span><span class="o">.</span><span class="n">Clients</span><span class="o">.</span><span class="n">params_layout</span><span class="o">.</span><span class="n">get_layout_handle</span><span class="p">()</span><span class="o">.</span><span class="n">_data_elems</span><span class="p">))</span>
+<span class="go">16</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;/api/integ/Clients/</span><span class="si">{}</span><span class="s1">?&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">cli</span><span class="o">.</span><span class="n">pk</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">url</span> <span class="o">+=</span> <span class="s1">&#39;pv=30&amp;pv=5&amp;pv=&amp;pv=29.04.2014&amp;pv=29.04.2014&amp;pv=&amp;pv=&amp;pv=&amp;pv=&amp;pv=&amp;pv=false&amp;pv=&amp;pv=&amp;pv=1&amp;pv=false&amp;pv=false&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">url</span> <span class="o">+=</span> <span class="s1">&#39;&amp;an=detail&amp;rp=ext-comp-1351&amp;fmt=json&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">res</span> <span class="o">=</span> <span class="n">test_client</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">REMOTE_USER</span><span class="o">=</span><span class="s1">&#39;rolf&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">res</span><span class="o">.</span><span class="n">status_code</span><span class="p">)</span>
+<span class="go">200</span>
+</pre></div>
+</div>
+<p>The response to this AJAX request is in JSON:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">d</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">res</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>We test the MembersByPerson panel. It contains a summary:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">][</span><span class="s1">&#39;households.MembersByPerson&#39;</span><span class="p">])</span>
+<span class="gp">... </span>
+<span class="go">&lt;div&gt;JEAN&amp;#201;MART J&amp;#233;r&amp;#244;me (181) ist&lt;ul&gt;&lt;li&gt;&lt;a ...href=&quot;javascript:Lino.households.Members.set_primary(...)...&lt;/div&gt;</span>
+</pre></div>
+</div>
+<p>Since this is not very human-readable, we are going to analyze it with
+<a class="reference external" href="http://beautiful-soup-4.readthedocs.org/en/latest">BeautifulSoup</a>.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">][</span><span class="s1">&#39;households.MembersByPerson&#39;</span><span class="p">],</span> <span class="s1">&#39;lxml&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">soup</span><span class="o">.</span><span class="n">get_text</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="n">strip</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+<span class="gp">... </span>
+<span class="go">JEANÉMART Jérôme (181) ist</span>
+<span class="go">☐ Vorstand in Jérôme &amp; Marie-Louise Jeanémart-Vandenmeulenbos (Sonstige)</span>
+<span class="go">☐ Vorstand in Jérôme &amp; Theresia Jeanémart-Thelen (Faktischer Haushalt)</span>
+<span class="go">Bestehendem Haushalt beitreten oder einen neuen erstellen .</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">links</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>It contains 6 links:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">len</span><span class="p">(</span><span class="n">links</span><span class="p">)</span>
+<span class="go">6</span>
+</pre></div>
+</div>
+<p>The first link is the disabled checkbox for the <code class="xref py py-attr docutils literal notranslate"><span class="pre">primary</span></code> field:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">links</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">string</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">☐</span>
+</pre></div>
+</div>
+<p>Clicking on this would run the following JavaScript:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">links</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;href&#39;</span><span class="p">))</span>
+<span class="go">javascript:Lino.households.Members.set_primary(&quot;ext-comp-1351&quot;,false,11,{  })</span>
+</pre></div>
+</div>
+<p>The next link is the name of the household, and clicking on it would
+equally execute some Javascript code:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">links</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">string</span><span class="p">)</span>
+<span class="go">Jérôme &amp; Marie-Louise Jeanémart-Vandenmeulenbos (Sonstige)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">links</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;href&#39;</span><span class="p">))</span>
+<span class="go">javascript:Lino.households.Households.detail.run(&quot;ext-comp-1351&quot;,{ &quot;record_id&quot;: 237 })</span>
+</pre></div>
+</div>
+<p>The second last link is:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">links</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">string</span><span class="p">)</span>
+<span class="go">Bestehendem Haushalt beitreten</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">links</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;href&#39;</span><span class="p">))</span>
+<span class="gp">... </span>
+<span class="go">javascript:Lino.households.MembersByPerson.insert.run(&quot;ext-comp-1351&quot;,{...})</span>
+</pre></div>
+</div>
+<p>The <a class="reference external" href="https://dev.lino-framework.org/api/lino.api.doctest.html#lino.api.doctest.get_json_soup" title="(in Lino Developer Guide v20.1)"><code class="xref py py-func docutils literal notranslate"><span class="pre">lino.api.doctest.get_json_soup()</span></code></a> automates this trick:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">soup</span> <span class="o">=</span> <span class="n">get_json_soup</span><span class="p">(</span><span class="s1">&#39;rolf&#39;</span><span class="p">,</span> <span class="s1">&#39;integ/Clients/181&#39;</span><span class="p">,</span> <span class="s1">&#39;households.MembersByPerson&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">links</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">len</span><span class="p">(</span><span class="n">links</span><span class="p">)</span>
+<span class="go">6</span>
+</pre></div>
+</div>
+</section>
+<section id="the-household-summary">
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">The household summary</a><a class="headerlink" href="#the-household-summary" title="Permalink to this heading">¶</a></h2>
+<p>The utility function <a class="reference external" href="lino_welfare.modlib.households.models.get_household_summary">get_household_summary</a> is
+used for printing certain aid confirmations. Some examples:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">cli</span> <span class="ow">in</span> <span class="n">pcsw</span><span class="o">.</span><span class="n">Client</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">order_by</span><span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="n">s</span> <span class="o">=</span> <span class="n">households</span><span class="o">.</span><span class="n">get_household_summary</span><span class="p">(</span><span class="n">cli</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="k">if</span> <span class="ow">not</span> <span class="n">s</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;ist in keinem Haushalt&quot;</span><span class="p">):</span>
+<span class="gp">... </span>        <span class="nb">print</span><span class="p">(</span><span class="sa">u</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> : </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">cli</span><span class="p">,</span> <span class="n">s</span><span class="p">))</span>
+<span class="go">VANDENMEULENBOS Marie-Louise (174) : 2 Erwachsene</span>
+<span class="go">LAHM Lisa (176) : 2 Erwachsene</span>
+<span class="go">DUBOIS Robin (179) : 2 Erwachsene</span>
+<span class="go">DENON Denis (180*) : 1 Erwachsener und 1 Kind</span>
+<span class="go">JEANÉMART Jérôme (181) : 2 Erwachsene</span>
+<span class="go">KASENNOVA Tatjana (213) : 1 Erwachsener und 1 Kind</span>
+<span class="go">FRISCH Paul (240) : 2 Erwachsene und 3 Kinder</span>
+<span class="go">BRAUN Bruno (259) : BRAUN Bruno (259) ist in mehreren Haushalten zugleich</span>
+</pre></div>
+</div>
+</section>
+<section id="member-objects">
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Member objects</a><a class="headerlink" href="#member-objects" title="Permalink to this heading">¶</a></h2>
+<p>The following code snippet was used to reproduce <a class="reference external" href="https://jane.mylino.net/#/api/tickets/PublicTickets/844">#844</a>:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">translation</span><span class="o">.</span><span class="n">activate</span><span class="p">(</span><span class="s1">&#39;en&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Member</span> <span class="o">=</span> <span class="n">households</span><span class="o">.</span><span class="n">Member</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">Member</span><span class="p">())</span>
+<span class="go">Member object</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">person</span> <span class="o">=</span> <span class="n">contacts</span><span class="o">.</span><span class="n">Person</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="mi">259</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">Member</span><span class="p">(</span><span class="n">person</span><span class="o">=</span><span class="n">person</span><span class="p">))</span>
+<span class="go">Mr Bruno BRAUN (Child)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">Member</span><span class="p">(</span><span class="n">person</span><span class="o">=</span><span class="n">person</span><span class="p">,</span> <span class="n">role</span><span class="o">=</span><span class="n">households</span><span class="o">.</span><span class="n">MemberRoles</span><span class="o">.</span><span class="n">head</span><span class="p">))</span>
+<span class="go">Mr Bruno BRAUN (Head of household)</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/logo_web3.png" alt="Logo"/>
+            </a></p>
+          <div class="sidebar-resize-handle"></div>
+<p align="center"><b>EN</b> | <a href="de/index.rst">DE</a> | <a href="fr/index.rst">FR</a></p>
+<h3><a href="../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../about/index.html">About Lino Welfare</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/index.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changes/index.html">Changes</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Specs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/index.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../copyright.html">Copyright &amp; legal notes</a></li>
+</ul>
+
+<hr class="docutils" />
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+<ul>
+  <li class="toctree-l1"><a class="reference internal" href="../py-modindex.html">Python Module Index</a></li>
+</ul><p align="center">
+</p>
+
+<div id="ethical-ad-placement"></div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+    <nav class="relbar">
+      <a class="previous" href="newcomers.html" aria-label="Previous topic" >
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg>
+        </div>
+        <div class="title">
+          <span class="text">
+            <span class="direction">previous</span>
+            Newcomers (tested tour)
+          </span>
+        </div>
+      </a>
+      <a class="next" href="dupable_clients.html" aria-label="Next topic" >
+        <div class="title">
+          <span class="text">
+            <span class="direction">next</span>
+            Avoiding duplicate clients
+          </span>
+        </div>
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+        </div>
+      </a>
+    </nav>
+
+    <footer role="contentinfo">
+      &#169; <a href="../copyright.html">Copyright</a> 2012-2022 Rumma &amp; Ko Ltd.
+      Last updated on 2022-11-08.
+      Created using <a class="reference external" href="https://www.sphinx-doc.org/">Sphinx</a> 5.1.1.
+      <a class="reference external" href="https://insipid-sphinx-theme.readthedocs.io/">Insipid Theme</a>.
+<a href="https://gitlab.com/lino-framework/welfare/-/blob/master/docs/specs/households.rst?plain=1"
+  rel="nofollow">Source code</a>.
+<br>
+
+Online link: <a href="https://welfare.lino-framework.org/specs/households.html">https://welfare.lino-framework.org/specs/households.html</a>.
+
+
+    </footer>
+  </body>
+</html>

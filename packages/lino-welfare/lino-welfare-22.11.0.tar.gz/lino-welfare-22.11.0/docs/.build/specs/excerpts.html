@@ -1,0 +1,346 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Usage of database excerpts in Lino Welfare &#8212; Lino Welfare</title>
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/insipid.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/atelier.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/insipid-cust.css" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script defer src="../_static/insipid.js"></script>
+    <script defer src="../_static/insipid-sidebar.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="copyright" title="Copyright" href="../copyright.html" />
+    <link rel="next" title="isip : Individual Social Integration Projects" href="isip.html" />
+    <link rel="prev" title="Debts mediation" href="debts.html" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+  </head><body>
+    <script type="text/javascript">
+        document.body.classList.add('js');
+    </script>
+    <input type="checkbox" id="sidebar-checkbox" style="display: none;">
+    <label id="overlay" for="sidebar-checkbox"></label>
+    <div class="sidebar-resize-handle"></div>
+    <script type="text/javascript">
+        try {
+            let sidebar = localStorage.getItem('sphinx-sidebar');
+            const sidebar_width = localStorage.getItem('sphinx-sidebar-width');
+            if (sidebar_width) {
+                document.documentElement.style.setProperty('--sidebar-width', sidebar_width);
+            }
+            // show sidebar on wide screen
+            if (!sidebar && window.matchMedia('(min-width: 100rem)').matches) {
+                sidebar = 'visible';
+                // NB: We don't store the value in localStorage!
+            }
+            if (sidebar === 'visible') {
+                document.getElementById('sidebar-checkbox').checked = true;
+            }
+        } catch(e) {
+            console.info(e);
+        }
+    </script>
+    <header id="topbar-placeholder">
+      <div id="topbar">
+        <div id="titlebar">
+          <div class="buttons">
+            <label for="sidebar-checkbox" id="sidebar-button" role="button" tabindex="0" aria-controls="sphinxsidebar" accesskey="M">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></svg>
+            </label><a href="../index.html" title="Lino Welfare">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
+</a>
+          </div>
+          <div class="title">
+            <a class="parent" href="plugins.html" accesskey="U">Plugins</a>
+            <a class="top" href="#">Usage of database excerpts in Lino Welfare</a>
+          </div>
+          <div class="buttons">
+            <button id="fullscreen-button" type="button" aria-hidden="true">
+              <span class="enable">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M212.686 315.314L120 408l32.922 31.029c15.12 15.12 4.412 40.971-16.97 40.971h-112C10.697 480 0 469.255 0 456V344c0-21.382 25.803-32.09 40.922-16.971L72 360l92.686-92.686c6.248-6.248 16.379-6.248 22.627 0l25.373 25.373c6.249 6.248 6.249 16.378 0 22.627zm22.628-118.628L328 104l-32.922-31.029C279.958 57.851 290.666 32 312.048 32h112C437.303 32 448 42.745 448 56v112c0 21.382-25.803 32.09-40.922 16.971L376 152l-92.686 92.686c-6.248 6.248-16.379 6.248-22.627 0l-25.373-25.373c-6.249-6.248-6.249-16.378 0-22.627z"/></svg>
+              </span>
+              <span class="disable">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M4.686 427.314L104 328l-32.922-31.029C55.958 281.851 66.666 256 88.048 256h112C213.303 256 224 266.745 224 280v112c0 21.382-25.803 32.09-40.922 16.971L152 376l-99.314 99.314c-6.248 6.248-16.379 6.248-22.627 0L4.686 449.941c-6.248-6.248-6.248-16.379 0-22.627zM443.314 84.686L344 184l32.922 31.029c15.12 15.12 4.412 40.971-16.97 40.971h-112C234.697 256 224 245.255 224 232V120c0-21.382 25.803-32.09 40.922-16.971L296 136l99.314-99.314c6.248-6.248 16.379-6.248 22.627 0l25.373 25.373c6.248 6.248 6.248 16.379 0 22.627z"/></svg>
+              </span>
+            </button><a href="https://www.facebook.com/sharer/sharer.php?u=https://welfare.lino-framework.org/specs/excerpts/" title="Share on Facebook" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+</a>
+
+<!---
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+---!>
+
+<a href="https://twitter.com/share?ref_src=https://welfare.lino-framework.org/specs/excerpts/" title="Share on Twitter" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <a href="debts.html" class="nav-icon previous" title="previous:&#13;Debts mediation" aria-label="Previous topic" accesskey="P" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"/></svg>
+      </a>
+      <a href="isip.html" class="nav-icon next" title="next:&#13;isip : Individual Social Integration Projects" aria-label="Next topic" accesskey="N" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg>
+      </a>
+    </nav>
+
+    <nav class="relbar">
+      <a class="previous" href="debts.html" aria-label="Previous topic" >
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg>
+        </div>
+        <div class="title">
+          <span class="text">
+            <span class="direction">previous</span>
+            Debts mediation
+          </span>
+        </div>
+      </a>
+      <a class="next" href="isip.html" aria-label="Next topic" >
+        <div class="title">
+          <span class="text">
+            <span class="direction">next</span>
+            <code class="docutils literal notranslate"><span class="pre">isip</span></code> : Individual Social Integration Projects
+          </span>
+        </div>
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+        </div>
+      </a>
+    </nav>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+<section id="usage-of-database-excerpts-in-lino-welfare">
+<span id="welfare-specs-excerpts"></span><h1>Usage of database excerpts in Lino Welfare<a class="headerlink" href="#usage-of-database-excerpts-in-lino-welfare" title="Permalink to this heading">¶</a></h1>
+<nav class="contents local" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#configuring-excerpts" id="id1">Configuring excerpts</a></p></li>
+<li><p><a class="reference internal" href="#demo-excerpts" id="id2">Demo excerpts</a></p></li>
+<li><p><a class="reference internal" href="#the-default-template-for-excerpts" id="id3">The default template for excerpts</a></p></li>
+</ul>
+</nav>
+<section id="configuring-excerpts">
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">Configuring excerpts</a><a class="headerlink" href="#configuring-excerpts" title="Permalink to this heading">¶</a></h2>
+<p>See also <a class="reference external" href="https://dev.lino-framework.org/dev/printing.html#lino-admin-printing" title="(in Lino Developer Guide v20.1)"><span>Developer intro to printing</span></a>.</p>
+<p>Here is a more complete list of excerpt types:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">excerpts</span><span class="o">.</span><span class="n">ExcerptTypes</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">======================================================= ======== =============== =========================== ===================== ============================= ================================</span>
+<span class="go"> Modell                                                  Primär   Bescheinigend   Bezeichnung                 Druckmethode          Vorlage                       Textkörper-Vorlage</span>
+<span class="go">------------------------------------------------------- -------- --------------- --------------------------- --------------------- ----------------------------- --------------------------------</span>
+<span class="go"> *aids.IncomeConfirmation (Einkommensbescheinigung)*     Ja       Ja              Einkommensbescheinigung                           Default.odt                   certificate.body.html</span>
+<span class="go"> *aids.RefundConfirmation (Kostenübernahmeschein)*       Ja       Ja              Kostenübernahmeschein                             Default.odt                   certificate.body.html</span>
+<span class="go"> *aids.SimpleConfirmation (Einfache Bescheinigung)*      Ja       Ja              Einfache Bescheinigung                            Default.odt                   certificate.body.html</span>
+<span class="go"> *art61.Contract (Art.61-Konvention)*                    Ja       Ja              Art.61-Konvention                                                               contract.body.html</span>
+<span class="go"> *cal.Guest (Anwesenheit)*                               Ja       Nein            Anwesenheitsbescheinigung                         Default.odt                   presence_certificate.body.html</span>
+<span class="go"> *cbss.IdentifyPersonRequest (IdentifyPerson-Anfrage)*   Ja       Ja              IdentifyPerson-Anfrage</span>
+<span class="go"> *cbss.ManageAccessRequest (ManageAccess-Anfrage)*       Ja       Ja              ManageAccess-Anfrage</span>
+<span class="go"> *cbss.RetrieveTIGroupsRequest (Tx25-Anfrage)*           Ja       Ja              Tx25-Anfrage</span>
+<span class="go"> *contacts.Partner (Partner)*                            Nein     Nein            Zahlungserinnerung          WeasyPdfBuildMethod   payment_reminder.weasy.html</span>
+<span class="go"> *contacts.Person (Person)*                              Nein     Nein            Nutzungsbestimmungen        AppyPdfBuildMethod    TermsConditions.odt</span>
+<span class="go"> *debts.Budget (Budget)*                                 Ja       Ja              Finanzielle Situation</span>
+<span class="go"> *esf.ClientSummary (ESF Summary)*                       Ja       Ja              Training report             WeasyPdfBuildMethod</span>
+<span class="go"> *finan.BankStatement (Kontoauszug)*                     Ja       Ja              Kontoauszug</span>
+<span class="go"> *finan.JournalEntry (Diverse Buchung)*                  Ja       Ja              Diverse Buchung</span>
+<span class="go"> *finan.PaymentOrder (Zahlungsauftrag)*                  Ja       Ja              Zahlungsauftrag</span>
+<span class="go"> *isip.Contract (VSE)*                                   Ja       Ja              VSE</span>
+<span class="go"> *jobs.Contract (Art.60§7-Konvention)*                   Ja       Ja              Art.60§7-Konvention</span>
+<span class="go"> *pcsw.Client (Klient)*                                  Ja       Nein            Aktenblatt                                        file_sheet.odt</span>
+<span class="go"> *pcsw.Client (Klient)*                                  Nein     Nein            Aktionsplan                                       Default.odt                   pac.body.html</span>
+<span class="go"> *pcsw.Client (Klient)*                                  Nein     Nein            Curriculum vitae            AppyRtfBuildMethod    cv.odt</span>
+<span class="go"> *pcsw.Client (Klient)*                                  Nein     Nein            eID-Inhalt                                        eid-content.odt</span>
+<span class="go">======================================================= ======== =============== =========================== ===================== ============================= ================================</span>
+</pre></div>
+</div>
+</section>
+<section id="demo-excerpts">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Demo excerpts</a><a class="headerlink" href="#demo-excerpts" title="Permalink to this heading">¶</a></h2>
+<p>Here is a list of all demo excerpts.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">excerpts</span><span class="o">.</span><span class="n">AllExcerpts</span><span class="p">,</span> <span class="n">language</span><span class="o">=</span><span class="s2">&quot;en&quot;</span><span class="p">,</span> <span class="n">column_names</span><span class="o">=</span><span class="s2">&quot;id excerpt_type owner project company language&quot;</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">==== ======================== ===================================================== ============================= ================================ ==========</span>
+<span class="go"> ID   Excerpt Type             Controlled by                                         Client                        Recipient (Organization)         Language</span>
+<span class="go">---- ------------------------ ----------------------------------------------------- ----------------------------- -------------------------------- ----------</span>
+<span class="go"> 77   Action plan              *AUSDEMWALD Alfons (116)*                             AUSDEMWALD Alfons (116)                                        de</span>
+<span class="go"> 76   eID sheet                *AUSDEMWALD Alfons (116)*                             AUSDEMWALD Alfons (116)                                        de</span>
+<span class="go"> 75   File sheet               *AUSDEMWALD Alfons (116)*                             AUSDEMWALD Alfons (116)                                        de</span>
+<span class="go"> 74   Curriculum vitae         *AUSDEMWALD Alfons (116)*                             AUSDEMWALD Alfons (116)                                        de</span>
+<span class="go"> 73   Presence certificate     *Presence #1 (22.05.2014)*                            AUSDEMWALD Alfons (116)                                        de</span>
+<span class="go"> 72   Payment reminder         *Belgisches Rotes Kreuz*                                                                                             de</span>
+<span class="go"> 71   Art60§7 job supplyment   *Art60§7 job supplyment#16 (Denis DENON)*             DENON Denis (180*)            R-Cycle Sperrgutsortierzentrum   de</span>
+<span class="go"> 70   Art60§7 job supplyment   *Art60§7 job supplyment#15 (Denis DENON)*             DENON Denis (180*)            BISA                             de</span>
+<span class="go"> 69   Art60§7 job supplyment   *Art60§7 job supplyment#14 (Rik RADERMECKER)*         RADERMECKER Rik (173)         R-Cycle Sperrgutsortierzentrum   de</span>
+<span class="go"> 68   Art60§7 job supplyment   *Art60§7 job supplyment#13 (Rik RADERMECKER)*         RADERMECKER Rik (173)         Pro Aktiv V.o.G.                 de</span>
+<span class="go"> 67   Art60§7 job supplyment   *Art60§7 job supplyment#12 (Vincent VAN VEEN)*        VAN VEEN Vincent (166)        Pro Aktiv V.o.G.                 de</span>
+<span class="go"> 66   Art60§7 job supplyment   *Art60§7 job supplyment#11 (Fritz RADERMACHER)*       RADERMACHER Fritz (158)       BISA                             de</span>
+<span class="go"> ...</span>
+<span class="go"> 14   Art61 job supplyment     *Art61 job supplyment#2 (Josef JONAS)*                JONAS Josef (139)                                              de</span>
+<span class="go"> 13   Art61 job supplyment     *Art61 job supplyment#1 (Daniel EMONTS)*              EMONTS Daniel (128)                                            de</span>
+<span class="go"> 12   Terms &amp; conditions       *Mr Albert ADAM*                                                                                                     de</span>
+<span class="go"> 11   Simple confirmation      *Clothes bank/22/05/2014/240/19*                      FRISCH Paul (240)             Belgisches Rotes Kreuz           de</span>
+<span class="go"> 10   Simple confirmation      *Clothes bank/01/06/2014/159/16*                      RADERMACHER Guido (159)                                        de</span>
+<span class="go"> 9    Simple confirmation      *Food bank/31/05/2014/155/13*                         RADERMACHER Christian (155)                                    en</span>
+<span class="go"> 8    Simple confirmation      *Heating costs/30/05/2014/152/10*                     EMONTS-GAST Erna (152)                                         fr</span>
+<span class="go"> 7    Simple confirmation      *Furniture/29/05/2014/146/7*                          MALMENDIER Marc (146)                                          de</span>
+<span class="go"> 6    Refund confirmation      *DMH/28/05/2014/142/7*                                LAMBERTZ Guido (142)                                           de</span>
+<span class="go"> 5    Refund confirmation      *AMK/27/05/2014/139/1*                                JONAS Josef (139)                                              fr</span>
+<span class="go"> 4    Simple confirmation      *Erstattung/25/05/2014/130/1*                         FAYMONVILLE Luc (130*)                                         de</span>
+<span class="go"> 3    Income confirmation      *Feste Beihilfe/24/05/2014/128/58*                    EMONTS Daniel (128)                                            de</span>
+<span class="go"> 2    Income confirmation      *Ausländerbeihilfe/08/08/2013/116/2*                  AUSDEMWALD Alfons (116)                                        de</span>
+<span class="go"> 1    Income confirmation      *EiEi/29/09/2012/116/1*                               AUSDEMWALD Alfons (116)                                        de</span>
+<span class="go">==== ======================== ===================================================== ============================= ================================ ==========</span>
+</pre></div>
+</div>
+<p>As for the default language of an excerpt: the recipient overrides the
+owner.</p>
+<p>The above list no longer shows well how the language of an excerpt
+depends on the recipient and the client.  That would need some more
+excerpts.  Excerpt 88 (the only example) is in <em>French</em> because the
+recipient (BISA) speaks French and although the owner (Charlotte)
+speaks <em>German</em>:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">contacts</span><span class="o">.</span><span class="n">Partner</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">196</span><span class="p">)</span><span class="o">.</span><span class="n">language</span><span class="p">)</span>
+<span class="go">fr</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">contacts</span><span class="o">.</span><span class="n">Partner</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">118</span><span class="p">)</span><span class="o">.</span><span class="n">language</span><span class="p">)</span>
+<span class="go">de</span>
+</pre></div>
+</div>
+</section>
+<section id="the-default-template-for-excerpts">
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">The default template for excerpts</a><a class="headerlink" href="#the-default-template-for-excerpts" title="Permalink to this heading">¶</a></h2>
+<dl class="std xfile">
+<dt class="sig sig-object std" id="xfile-excerpts-Default.odt">
+<span class="sig-name descname"><span class="pre">excerpts/Default.odt</span></span><a class="headerlink" href="#xfile-excerpts-Default.odt" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>This template should be customized locally to contain the <a class="reference external" href="https://community.lino-framework.org/so.html#term-site-operator" title="(in Lino Community Guide)"><span class="xref std std-term">site
+operator</span></a>’s layout.</p>
+<p>The template inserts the recipient address using this appy.pod code:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">do</span> <span class="n">text</span>
+<span class="kn">from</span> <span class="nn">html</span><span class="p">(</span><span class="n">this</span><span class="o">.</span><span class="n">get_address_html</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="o">**</span><span class="p">{</span><span class="s1">&#39;class&#39;</span><span class="p">:</span><span class="s2">&quot;Recipient&quot;</span><span class="p">})</span>
+</pre></div>
+</div>
+<p>This code is inserted as a command in some paragraph whose content in
+the template can be anything since it will be replaced by the computed
+text.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">obj</span> <span class="o">=</span> <span class="n">aids</span><span class="o">.</span><span class="n">SimpleConfirmation</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="mi">19</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">obj</span><span class="o">.</span><span class="n">get_address_html</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="o">**</span><span class="p">{</span><span class="s1">&#39;class&#39;</span><span class="p">:</span><span class="s2">&quot;Recipient&quot;</span><span class="p">}))</span>
+<span class="go">&lt;p class=&quot;Recipient&quot;&gt;Belgisches Rotes Kreuz&lt;br/&gt;Hillstraße 1&lt;br/&gt;4700 Eupen&lt;/p&gt;</span>
+</pre></div>
+</div>
+<p>That paragraph should also contain another comment:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">do</span> <span class="n">text</span> <span class="k">if</span> <span class="n">this</span><span class="o">.</span><span class="n">excerpt_type</span><span class="o">.</span><span class="n">print_recipient</span>
+</pre></div>
+</div>
+<p>There should of course be a paragraph style “Recipient” with proper
+margins and spacing set.</p>
+</section>
+</section>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/logo_web3.png" alt="Logo"/>
+            </a></p>
+          <div class="sidebar-resize-handle"></div>
+<p align="center"><b>EN</b> | <a href="de/index.rst">DE</a> | <a href="fr/index.rst">FR</a></p>
+<h3><a href="../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../about/index.html">About Lino Welfare</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/index.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changes/index.html">Changes</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Specs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/index.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../copyright.html">Copyright &amp; legal notes</a></li>
+</ul>
+
+<hr class="docutils" />
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+<ul>
+  <li class="toctree-l1"><a class="reference internal" href="../py-modindex.html">Python Module Index</a></li>
+</ul><p align="center">
+</p>
+
+<div id="ethical-ad-placement"></div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+    <nav class="relbar">
+      <a class="previous" href="debts.html" aria-label="Previous topic" >
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg>
+        </div>
+        <div class="title">
+          <span class="text">
+            <span class="direction">previous</span>
+            Debts mediation
+          </span>
+        </div>
+      </a>
+      <a class="next" href="isip.html" aria-label="Next topic" >
+        <div class="title">
+          <span class="text">
+            <span class="direction">next</span>
+            <code class="docutils literal notranslate"><span class="pre">isip</span></code> : Individual Social Integration Projects
+          </span>
+        </div>
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+        </div>
+      </a>
+    </nav>
+
+    <footer role="contentinfo">
+      &#169; <a href="../copyright.html">Copyright</a> 2012-2022 Rumma &amp; Ko Ltd.
+      Last updated on 2022-11-08.
+      Created using <a class="reference external" href="https://www.sphinx-doc.org/">Sphinx</a> 5.1.1.
+      <a class="reference external" href="https://insipid-sphinx-theme.readthedocs.io/">Insipid Theme</a>.
+<a href="https://gitlab.com/lino-framework/welfare/-/blob/master/docs/specs/excerpts.rst?plain=1"
+  rel="nofollow">Source code</a>.
+<br>
+
+Online link: <a href="https://welfare.lino-framework.org/specs/excerpts.html">https://welfare.lino-framework.org/specs/excerpts.html</a>.
+
+
+    </footer>
+  </body>
+</html>

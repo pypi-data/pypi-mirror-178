@@ -1,0 +1,456 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Preventing accidental deletes &#8212; Lino Welfare</title>
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/insipid.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/atelier.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/insipid-cust.css" />
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script defer src="../../_static/insipid.js"></script>
+    <script defer src="../../_static/insipid-sidebar.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../copyright.html" />
+    <link rel="next" title="Tx25 requests" href="tx25.html" />
+    <link rel="prev" title="Choicelists in Lino Welfare" href="choicelists.html" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+  </head><body>
+    <script type="text/javascript">
+        document.body.classList.add('js');
+    </script>
+    <input type="checkbox" id="sidebar-checkbox" style="display: none;">
+    <label id="overlay" for="sidebar-checkbox"></label>
+    <div class="sidebar-resize-handle"></div>
+    <script type="text/javascript">
+        try {
+            let sidebar = localStorage.getItem('sphinx-sidebar');
+            const sidebar_width = localStorage.getItem('sphinx-sidebar-width');
+            if (sidebar_width) {
+                document.documentElement.style.setProperty('--sidebar-width', sidebar_width);
+            }
+            // show sidebar on wide screen
+            if (!sidebar && window.matchMedia('(min-width: 100rem)').matches) {
+                sidebar = 'visible';
+                // NB: We don't store the value in localStorage!
+            }
+            if (sidebar === 'visible') {
+                document.getElementById('sidebar-checkbox').checked = true;
+            }
+        } catch(e) {
+            console.info(e);
+        }
+    </script>
+    <header id="topbar-placeholder">
+      <div id="topbar">
+        <div id="titlebar">
+          <div class="buttons">
+            <label for="sidebar-checkbox" id="sidebar-button" role="button" tabindex="0" aria-controls="sphinxsidebar" accesskey="M">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></svg>
+            </label><a href="../../index.html" title="Lino Welfare">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
+</a>
+          </div>
+          <div class="title">
+            <a class="parent" href="index.html" accesskey="U">Topics</a>
+            <a class="top" href="#">Preventing accidental deletes</a>
+          </div>
+          <div class="buttons">
+            <button id="fullscreen-button" type="button" aria-hidden="true">
+              <span class="enable">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M212.686 315.314L120 408l32.922 31.029c15.12 15.12 4.412 40.971-16.97 40.971h-112C10.697 480 0 469.255 0 456V344c0-21.382 25.803-32.09 40.922-16.971L72 360l92.686-92.686c6.248-6.248 16.379-6.248 22.627 0l25.373 25.373c6.249 6.248 6.249 16.378 0 22.627zm22.628-118.628L328 104l-32.922-31.029C279.958 57.851 290.666 32 312.048 32h112C437.303 32 448 42.745 448 56v112c0 21.382-25.803 32.09-40.922 16.971L376 152l-92.686 92.686c-6.248 6.248-16.379 6.248-22.627 0l-25.373-25.373c-6.249-6.248-6.249-16.378 0-22.627z"/></svg>
+              </span>
+              <span class="disable">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M4.686 427.314L104 328l-32.922-31.029C55.958 281.851 66.666 256 88.048 256h112C213.303 256 224 266.745 224 280v112c0 21.382-25.803 32.09-40.922 16.971L152 376l-99.314 99.314c-6.248 6.248-16.379 6.248-22.627 0L4.686 449.941c-6.248-6.248-6.248-16.379 0-22.627zM443.314 84.686L344 184l32.922 31.029c15.12 15.12 4.412 40.971-16.97 40.971h-112C234.697 256 224 245.255 224 232V120c0-21.382 25.803-32.09 40.922-16.971L296 136l99.314-99.314c6.248-6.248 16.379-6.248 22.627 0l25.373 25.373c6.248 6.248 6.248 16.379 0 22.627z"/></svg>
+              </span>
+            </button><a href="https://www.facebook.com/sharer/sharer.php?u=https://welfare.lino-framework.org/specs/topics/ddh/" title="Share on Facebook" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+</a>
+
+<!---
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+---!>
+
+<a href="https://twitter.com/share?ref_src=https://welfare.lino-framework.org/specs/topics/ddh/" title="Share on Twitter" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <a href="choicelists.html" class="nav-icon previous" title="previous:&#13;Choicelists in Lino Welfare" aria-label="Previous topic" accesskey="P" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"/></svg>
+      </a>
+      <a href="tx25.html" class="nav-icon next" title="next:&#13;Tx25 requests" aria-label="Next topic" accesskey="N" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg>
+      </a>
+    </nav>
+
+    <nav class="relbar">
+      <a class="previous" href="choicelists.html" aria-label="Previous topic" >
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg>
+        </div>
+        <div class="title">
+          <span class="text">
+            <span class="direction">previous</span>
+            Choicelists in Lino Welfare
+          </span>
+        </div>
+      </a>
+      <a class="next" href="tx25.html" aria-label="Next topic" >
+        <div class="title">
+          <span class="text">
+            <span class="direction">next</span>
+            Tx25 requests
+          </span>
+        </div>
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+        </div>
+      </a>
+    </nav>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+<section id="preventing-accidental-deletes">
+<span id="welfare-specs-ddh"></span><h1>Preventing accidental deletes<a class="headerlink" href="#preventing-accidental-deletes" title="Permalink to this heading">¶</a></h1>
+<section id="foreign-keys-and-their-on-delete-setting">
+<h2>Foreign Keys and their <cite>on_delete</cite> setting<a class="headerlink" href="#foreign-keys-and-their-on-delete-setting" title="Permalink to this heading">¶</a></h2>
+<p>Here is the output of <a class="reference external" href="https://dev.lino-framework.org/api/lino.utils.diag.html#lino.utils.diag.Analyzer.show_foreign_keys" title="(in Lino Developer Guide v20.1)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">lino.utils.diag.Analyzer.show_foreign_keys()</span></code></a> in
+Lino Welfare:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino.utils.diag</span> <span class="kn">import</span> <span class="n">analyzer</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">analyzer</span><span class="o">.</span><span class="n">show_foreign_keys</span><span class="p">())</span>
+<span class="gp">... </span>
+<span class="go">- aids.AidType :</span>
+<span class="go">  - PROTECT : aids.Granting.aid_type</span>
+<span class="go">- aids.Category :</span>
+<span class="go">  - PROTECT : aids.Granting.category, aids.IncomeConfirmation.category</span>
+<span class="go">- aids.Granting :</span>
+<span class="go">  - PROTECT : aids.IncomeConfirmation.granting, aids.RefundConfirmation.granting, aids.SimpleConfirmation.granting</span>
+<span class="go">- art61.ContractType :</span>
+<span class="go">  - PROTECT : art61.Contract.type</span>
+<span class="go">- b2c.Account :</span>
+<span class="go">  - PROTECT : b2c.Statement.account</span>
+<span class="go">- b2c.Statement :</span>
+<span class="go">  - PROTECT : b2c.Transaction.statement</span>
+<span class="go">- boards.Board :</span>
+<span class="go">  - PROTECT : aids.AidType.board, aids.Granting.board, boards.Member.board</span>
+<span class="go">- cal.Calendar :</span>
+<span class="go">  - CASCADE : cal.Subscription.calendar</span>
+<span class="go">  - PROTECT : system.SiteConfig.site_calendar, users.User.calendar</span>
+<span class="go">- cal.Event :</span>
+<span class="go">  - CASCADE : cal.Guest.event</span>
+<span class="go">  - PROTECT : cal.EntryRepeater.cal_entry</span>
+<span class="go">- cal.EventType :</span>
+<span class="go">  - PROTECT : cal.Event.event_type, cal.EventPolicy.event_type, cal.RecurrentEvent.event_type, isip.ExamPolicy.event_type, system.SiteConfig.client_calendar, system.SiteConfig.default_event_type, system.SiteConfig.prompt_calendar, users.User.event_type</span>
+<span class="go">- cal.GuestRole :</span>
+<span class="go">  - PROTECT : cal.Guest.role, coachings.CoachingType.eval_guestrole, system.SiteConfig.client_guestrole, system.SiteConfig.team_guestrole, xcourses.CourseOffer.guest_role</span>
+<span class="go">- cal.Room :</span>
+<span class="go">  - PROTECT : cal.Event.room</span>
+<span class="go">- cbss.Purpose :</span>
+<span class="go">  - PROTECT : cbss.ManageAccessRequest.purpose</span>
+<span class="go">- cbss.Sector :</span>
+<span class="go">  - PROTECT : cbss.ManageAccessRequest.sector</span>
+<span class="go">- clients.ClientContactType :</span>
+<span class="go">  - PROTECT : aids.AidType.pharmacy_type, aids.RefundConfirmation.doctor_type, clients.ClientContact.type, contacts.Partner.client_contact_type</span>
+<span class="go">- coachings.CoachingEnding :</span>
+<span class="go">  - PROTECT : coachings.Coaching.ending</span>
+<span class="go">- coachings.CoachingType :</span>
+<span class="go">  - PROTECT : coachings.Coaching.type, coachings.CoachingEnding.type, users.User.coaching_type</span>
+<span class="go">- contacts.Company :</span>
+<span class="go">  - CASCADE : jobs.JobProvider.company_ptr, xcourses.CourseProvider.company_ptr</span>
+<span class="go">  - PROTECT : aids.AidType.company, aids.IncomeConfirmation.company, aids.RefundConfirmation.company, aids.RefundConfirmation.pharmacy, aids.SimpleConfirmation.company, cal.Room.company, clients.ClientContact.company, contacts.Role.company, debts.Entry.bailiff, excerpts.Excerpt.company, isip.ContractPartner.company, jobs.Contract.company, ledger.Journal.partner, notes.Note.company, pcsw.Client.health_insurance, pcsw.Client.pharmacy, system.SiteConfig.site_company, uploads.Upload.company</span>
+<span class="go">- contacts.CompanyType :</span>
+<span class="go">  - PROTECT : contacts.Company.type</span>
+<span class="go">- contacts.Partner :</span>
+<span class="go">  - CASCADE : addresses.Address.partner, contacts.Company.partner_ptr, contacts.Person.partner_ptr, households.Household.partner_ptr, sepa.Account.partner</span>
+<span class="go">  - PROTECT : cal.Guest.partner, debts.Actor.partner, debts.Budget.partner, debts.Entry.partner, finan.BankStatementItem.partner, finan.JournalEntryItem.partner, finan.PaymentOrderItem.partner, ledger.Movement.partner, outbox.Recipient.partner, users.User.partner, vatless.AccountInvoice.partner</span>
+<span class="go">- contacts.Person :</span>
+<span class="go">  - CASCADE : pcsw.Client.person_ptr</span>
+<span class="go">  - PROTECT : aids.AidType.contact_person, aids.IncomeConfirmation.contact_person, aids.RefundConfirmation.contact_person, aids.RefundConfirmation.doctor, aids.SimpleConfirmation.contact_person, art61.Contract.contact_person, art61.Contract.signer1, art61.Contract.signer2, boards.Member.person, cal.Room.contact_person, clients.ClientContact.contact_person, contacts.Role.person, excerpts.Excerpt.contact_person, households.Member.person, humanlinks.Link.child, humanlinks.Link.parent, isip.Contract.signer1, isip.Contract.signer2, isip.ContractPartner.contact_person, jobs.Contract.contact_person, jobs.Contract.signer1, jobs.Contract.signer2, notes.Note.contact_person, system.SiteConfig.signer1, system.SiteConfig.signer2, uploads.Upload.contact_person</span>
+<span class="go">- contacts.Role :</span>
+<span class="go">  - PROTECT : pcsw.Client.job_office_contact</span>
+<span class="go">- contacts.RoleType :</span>
+<span class="go">  - PROTECT : aids.AidType.contact_role, aids.IncomeConfirmation.contact_role, aids.RefundConfirmation.contact_role, aids.SimpleConfirmation.contact_role, art61.Contract.contact_role, boards.Member.role, cal.Room.contact_role, clients.ClientContact.contact_role, contacts.Role.type, excerpts.Excerpt.contact_role, isip.ContractPartner.contact_role, jobs.Contract.contact_role, notes.Note.contact_role, system.SiteConfig.signer1_function, system.SiteConfig.signer2_function, uploads.Upload.contact_role</span>
+<span class="go">- contenttypes.ContentType :</span>
+<span class="go">  - PROTECT : cal.Event.owner_type, cal.Task.owner_type, changes.Change.master_type, changes.Change.object_type, checkdata.Message.owner_type, excerpts.Excerpt.owner_type, excerpts.ExcerptType.content_type, gfks.HelpText.content_type, notes.Note.owner_type, notify.Message.owner_type, outbox.Attachment.owner_type, outbox.Mail.owner_type, uploads.Upload.owner_type</span>
+<span class="go">- countries.Country :</span>
+<span class="go">  - PROTECT : addresses.Address.country, contacts.Partner.country, countries.Country.actual_country, countries.Place.country, cv.Experience.country, cv.Study.country, cv.Training.country, pcsw.Client.birth_country, pcsw.Client.nationality</span>
+<span class="go">- countries.Place :</span>
+<span class="go">  - PROTECT : addresses.Address.city, addresses.Address.region, contacts.Partner.city, contacts.Partner.region, countries.Place.parent, cv.Experience.city, cv.Study.city, cv.Training.city</span>
+<span class="go">- cv.Duration :</span>
+<span class="go">  - PROTECT : art61.Contract.cv_duration, cv.Experience.duration</span>
+<span class="go">- cv.EducationLevel :</span>
+<span class="go">  - PROTECT : cv.Study.education_level, cv.StudyType.education_level, esf.ClientSummary.education_level</span>
+<span class="go">- cv.Function :</span>
+<span class="go">  - PROTECT : art61.Contract.function, cv.Experience.function, cv.Training.function, jobs.Candidature.function, jobs.Job.function, jobs.Offer.function</span>
+<span class="go">- cv.Regime :</span>
+<span class="go">  - PROTECT : art61.Contract.regime, cv.Experience.regime, jobs.Contract.regime</span>
+<span class="go">- cv.Sector :</span>
+<span class="go">  - PROTECT : art61.Contract.sector, cv.Experience.sector, cv.Function.sector, cv.Training.sector, jobs.Candidature.sector, jobs.Job.sector, jobs.Offer.sector</span>
+<span class="go">- cv.Status :</span>
+<span class="go">  - PROTECT : art61.Contract.status, cv.Experience.status</span>
+<span class="go">- cv.StudyType :</span>
+<span class="go">  - PROTECT : cv.Study.type, cv.Training.type, isip.Contract.study_type</span>
+<span class="go">- debts.Account :</span>
+<span class="go">  - PROTECT : debts.Entry.account</span>
+<span class="go">- debts.Actor :</span>
+<span class="go">  - PROTECT : debts.Entry.actor</span>
+<span class="go">- debts.Budget :</span>
+<span class="go">  - CASCADE : debts.Actor.budget, debts.Entry.budget</span>
+<span class="go">  - PROTECT : system.SiteConfig.master_budget</span>
+<span class="go">- debts.Group :</span>
+<span class="go">  - PROTECT : debts.Account.group</span>
+<span class="go">- excerpts.Excerpt :</span>
+<span class="go">  - SET_NULL : aids.IncomeConfirmation.printed_by, aids.RefundConfirmation.printed_by, aids.SimpleConfirmation.printed_by, art61.Contract.printed_by, cbss.IdentifyPersonRequest.printed_by, cbss.ManageAccessRequest.printed_by, cbss.RetrieveTIGroupsRequest.printed_by, debts.Budget.printed_by, esf.ClientSummary.printed_by, finan.BankStatement.printed_by, finan.JournalEntry.printed_by, finan.PaymentOrder.printed_by, isip.Contract.printed_by, jobs.Contract.printed_by</span>
+<span class="go">- excerpts.ExcerptType :</span>
+<span class="go">  - PROTECT : excerpts.Excerpt.excerpt_type</span>
+<span class="go">- finan.BankStatement :</span>
+<span class="go">  - CASCADE : finan.BankStatementItem.voucher</span>
+<span class="go">- finan.JournalEntry :</span>
+<span class="go">  - CASCADE : finan.JournalEntryItem.voucher</span>
+<span class="go">- finan.PaymentOrder :</span>
+<span class="go">  - CASCADE : finan.PaymentOrderItem.voucher</span>
+<span class="go">- households.Household :</span>
+<span class="go">  - CASCADE : households.Member.household</span>
+<span class="go">- households.Type :</span>
+<span class="go">  - PROTECT : households.Household.type</span>
+<span class="go">- isip.Contract :</span>
+<span class="go">  - CASCADE : isip.ContractPartner.contract</span>
+<span class="go">- isip.ContractEnding :</span>
+<span class="go">  - PROTECT : art61.Contract.ending, isip.Contract.ending, jobs.Contract.ending</span>
+<span class="go">- isip.ContractType :</span>
+<span class="go">  - PROTECT : isip.Contract.type</span>
+<span class="go">- isip.ExamPolicy :</span>
+<span class="go">  - PROTECT : art61.Contract.exam_policy, art61.ContractType.exam_policy, isip.Contract.exam_policy, isip.ContractType.exam_policy, jobs.Contract.exam_policy, jobs.ContractType.exam_policy</span>
+<span class="go">- jobs.ContractType :</span>
+<span class="go">  - PROTECT : jobs.Contract.type, jobs.Job.contract_type</span>
+<span class="go">- jobs.Job :</span>
+<span class="go">  - PROTECT : jobs.Candidature.job, jobs.Contract.job</span>
+<span class="go">- jobs.JobProvider :</span>
+<span class="go">  - PROTECT : art61.Contract.company, jobs.Job.provider, jobs.Offer.provider</span>
+<span class="go">- jobs.JobType :</span>
+<span class="go">  - PROTECT : jobs.Job.type</span>
+<span class="go">- jobs.Schedule :</span>
+<span class="go">  - PROTECT : jobs.Contract.schedule</span>
+<span class="go">- languages.Language :</span>
+<span class="go">  - PROTECT : cv.LanguageKnowledge.language, cv.Study.language, cv.Training.language</span>
+<span class="go">- ledger.Account :</span>
+<span class="go">  - PROTECT : finan.BankStatement.item_account, finan.BankStatementItem.account, finan.JournalEntry.item_account, finan.JournalEntryItem.account, finan.PaymentOrder.item_account, finan.PaymentOrderItem.account, ledger.Journal.account, ledger.MatchRule.account, ledger.Movement.account, vatless.InvoiceItem.account</span>
+<span class="go">- ledger.AccountingPeriod :</span>
+<span class="go">  - PROTECT : ledger.Voucher.accounting_period</span>
+<span class="go">- ledger.FiscalYear :</span>
+<span class="go">  - PROTECT : ledger.AccountingPeriod.year</span>
+<span class="go">- ledger.Journal :</span>
+<span class="go">  - CASCADE : ledger.MatchRule.journal</span>
+<span class="go">  - PROTECT : ledger.Voucher.journal</span>
+<span class="go">- ledger.PaymentTerm :</span>
+<span class="go">  - PROTECT : contacts.Partner.payment_term, vatless.AccountInvoice.payment_term</span>
+<span class="go">- ledger.Voucher :</span>
+<span class="go">  - CASCADE : ledger.Movement.voucher</span>
+<span class="go">  - PROTECT : finan.BankStatement.voucher_ptr, finan.JournalEntry.voucher_ptr, finan.PaymentOrder.voucher_ptr, vatless.AccountInvoice.voucher_ptr</span>
+<span class="go">- newcomers.Broker :</span>
+<span class="go">  - PROTECT : pcsw.Client.broker</span>
+<span class="go">- newcomers.Faculty :</span>
+<span class="go">  - PROTECT : newcomers.Competence.faculty, pcsw.Client.faculty</span>
+<span class="go">- notes.EventType :</span>
+<span class="go">  - PROTECT : notes.Note.event_type, system.SiteConfig.system_note_type</span>
+<span class="go">- notes.NoteType :</span>
+<span class="go">  - PROTECT : notes.Note.type</span>
+<span class="go">- outbox.Mail :</span>
+<span class="go">  - CASCADE : outbox.Attachment.mail, outbox.Recipient.mail</span>
+<span class="go">- pcsw.Activity :</span>
+<span class="go">  - PROTECT : contacts.Partner.activity</span>
+<span class="go">- pcsw.AidType :</span>
+<span class="go">  - PROTECT : pcsw.Client.aid_type</span>
+<span class="go">- pcsw.Client :</span>
+<span class="go">  - CASCADE : aids.IncomeConfirmation.client, aids.RefundConfirmation.client, aids.SimpleConfirmation.client, coachings.Coaching.client, cv.LanguageKnowledge.person, cv.PersonProperty.person, dupable_clients.Word.owner, esf.ClientSummary.master, pcsw.Dispense.client</span>
+<span class="go">  - PROTECT : aids.Granting.client, art61.Contract.client, cal.Event.project, cal.Task.project, cbss.IdentifyPersonRequest.person, cbss.ManageAccessRequest.person, cbss.RetrieveTIGroupsRequest.person, clients.ClientContact.client, cv.Experience.person, cv.Study.person, cv.Training.person, excerpts.Excerpt.project, finan.BankStatementItem.project, finan.JournalEntry.project, finan.JournalEntryItem.project, finan.PaymentOrderItem.project, isip.Contract.client, jobs.Candidature.person, jobs.Contract.client, ledger.Movement.project, notes.Note.project, outbox.Mail.project, pcsw.Conviction.client, pcsw.Exclusion.person, uploads.Upload.project, vatless.AccountInvoice.project, vatless.InvoiceItem.project, xcourses.CourseRequest.person</span>
+<span class="go">- pcsw.DispenseReason :</span>
+<span class="go">  - PROTECT : pcsw.Dispense.reason</span>
+<span class="go">- pcsw.ExclusionType :</span>
+<span class="go">  - PROTECT : pcsw.Exclusion.type</span>
+<span class="go">- pcsw.PersonGroup :</span>
+<span class="go">  - PROTECT : pcsw.Client.group</span>
+<span class="go">- properties.PropGroup :</span>
+<span class="go">  - PROTECT : cv.PersonProperty.group, properties.Property.group, system.SiteConfig.propgroup_obstacles, system.SiteConfig.propgroup_skills, system.SiteConfig.propgroup_softskills</span>
+<span class="go">- properties.PropType :</span>
+<span class="go">  - PROTECT : properties.PropChoice.type, properties.Property.type</span>
+<span class="go">- properties.Property :</span>
+<span class="go">  - PROTECT : cv.PersonProperty.property</span>
+<span class="go">- sepa.Account :</span>
+<span class="go">  - PROTECT : finan.PaymentOrderItem.bank_account, ledger.Journal.sepa_account, vatless.AccountInvoice.bank_account</span>
+<span class="go">- uploads.UploadType :</span>
+<span class="go">  - PROTECT : uploads.Upload.type</span>
+<span class="go">- uploads.Volume :</span>
+<span class="go">  - PROTECT : ledger.Journal.uploads_volume, uploads.Upload.volume</span>
+<span class="go">- users.User :</span>
+<span class="go">  - CASCADE : cal.Subscription.user, ledger.LedgerInfo.user</span>
+<span class="go">  - PROTECT : aids.Granting.signer, aids.Granting.user, aids.IncomeConfirmation.signer, aids.IncomeConfirmation.user, aids.RefundConfirmation.signer, aids.RefundConfirmation.user, aids.SimpleConfirmation.signer, aids.SimpleConfirmation.user, art61.Contract.user, art61.Contract.user_asd, cal.Event.assigned_to, cal.Event.user, cal.RecurrentEvent.user, cal.Task.user, cbss.IdentifyPersonRequest.user, cbss.ManageAccessRequest.user, cbss.RetrieveTIGroupsRequest.user, changes.Change.user, checkdata.Message.user, coachings.Coaching.user, dashboard.Widget.user, debts.Budget.user, excerpts.Excerpt.user, isip.Contract.user, isip.Contract.user_asd, isip.Contract.user_dsbe, jobs.Contract.user, jobs.Contract.user_asd, ledger.Voucher.user, newcomers.Competence.user, notes.Note.user, notify.Message.user, outbox.Mail.user, tinymce.TextFieldTemplate.user, uploads.Upload.user, users.Authority.authorized, users.Authority.user</span>
+<span class="go">- vatless.AccountInvoice :</span>
+<span class="go">  - CASCADE : vatless.InvoiceItem.voucher</span>
+<span class="go">- xcourses.Course :</span>
+<span class="go">  - PROTECT : xcourses.CourseRequest.course</span>
+<span class="go">- xcourses.CourseContent :</span>
+<span class="go">  - PROTECT : xcourses.CourseOffer.content, xcourses.CourseRequest.content</span>
+<span class="go">- xcourses.CourseOffer :</span>
+<span class="go">  - PROTECT : xcourses.Course.offer, xcourses.CourseRequest.offer</span>
+<span class="go">- xcourses.CourseProvider :</span>
+<span class="go">  - PROTECT : xcourses.CourseOffer.provider</span>
+</pre></div>
+</div>
+</section>
+<section id="users-and-partners">
+<h2>Users and partners<a class="headerlink" href="#users-and-partners" title="Permalink to this heading">¶</a></h2>
+<p>It is not allowed to delete a person who is being used as the
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">partner</span></code> of a user
+(although that field is nullable).</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="s1">&#39;users.AllUsers&#39;</span><span class="p">,</span> <span class="n">column_names</span><span class="o">=</span><span class="s2">&quot;id username partner partner__id&quot;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">language</span><span class="o">=</span><span class="s2">&quot;en&quot;</span><span class="p">)</span>
+<span class="go">==== ========== ================= =====</span>
+<span class="go"> ID   Username   Partner           ID</span>
+<span class="go">---- ---------- ----------------- -----</span>
+<span class="go"> 6    alicia     Allmanns Alicia   184</span>
+<span class="go"> 9    caroline</span>
+<span class="go"> 5    hubert     Huppertz Hubert   183</span>
+<span class="go"> 10   judith     Jousten Judith    186</span>
+<span class="go"> 13   kerstin</span>
+<span class="go"> 4    melanie    Mélard Mélanie    182</span>
+<span class="go"> 8    nicolas</span>
+<span class="go"> 11   patrick</span>
+<span class="go"> 3    robin</span>
+<span class="go"> 1    rolf</span>
+<span class="go"> 2    romain</span>
+<span class="go"> 7    theresia   Thelen Theresia   185</span>
+<span class="go"> 12   wilfried</span>
+<span class="go">==== ========== ================= =====</span>
+</pre></div>
+</div>
+<p>The message is the same whether you try on the Person or on the Partner:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">obj</span> <span class="o">=</span> <span class="n">contacts</span><span class="o">.</span><span class="n">Person</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">184</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">translation</span><span class="o">.</span><span class="n">override</span><span class="p">(</span><span class="s1">&#39;en&#39;</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="n">obj</span><span class="o">.</span><span class="n">disable_delete</span><span class="p">())</span>
+<span class="go">Cannot delete Partner Allmanns Alicia because 45 Presences refer to it.</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">translation</span><span class="o">.</span><span class="n">override</span><span class="p">(</span><span class="s1">&#39;en&#39;</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="n">obj</span><span class="o">.</span><span class="n">disable_delete</span><span class="p">())</span>
+<span class="go">Cannot delete Partner Allmanns Alicia because 45 Presences refer to it.</span>
+</pre></div>
+</div>
+<p>You can delete a partner when a person or some other MTI child exists:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">obj</span> <span class="o">=</span> <span class="n">contacts</span><span class="o">.</span><span class="n">Partner</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">190</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">translation</span><span class="o">.</span><span class="n">override</span><span class="p">(</span><span class="s1">&#39;en&#39;</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="n">obj</span><span class="o">.</span><span class="n">disable_delete</span><span class="p">())</span>
+<span class="go">Cannot delete Partner Die neue Alternative V.o.G. because 2 Budget Entries refer to it.</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+
+            <p class="logo"><a href="../../index.html">
+              <img class="logo" src="../../_static/logo_web3.png" alt="Logo"/>
+            </a></p>
+          <div class="sidebar-resize-handle"></div>
+<p align="center"><b>EN</b> | <a href="de/index.rst">DE</a> | <a href="fr/index.rst">FR</a></p>
+<h3><a href="../../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../about/index.html">About Lino Welfare</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../usage/index.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../changes/index.html">Changes</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Specs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../install/index.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../copyright.html">Copyright &amp; legal notes</a></li>
+</ul>
+
+<hr class="docutils" />
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+<ul>
+  <li class="toctree-l1"><a class="reference internal" href="../../py-modindex.html">Python Module Index</a></li>
+</ul><p align="center">
+</p>
+
+<div id="ethical-ad-placement"></div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+    <nav class="relbar">
+      <a class="previous" href="choicelists.html" aria-label="Previous topic" >
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg>
+        </div>
+        <div class="title">
+          <span class="text">
+            <span class="direction">previous</span>
+            Choicelists in Lino Welfare
+          </span>
+        </div>
+      </a>
+      <a class="next" href="tx25.html" aria-label="Next topic" >
+        <div class="title">
+          <span class="text">
+            <span class="direction">next</span>
+            Tx25 requests
+          </span>
+        </div>
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+        </div>
+      </a>
+    </nav>
+
+    <footer role="contentinfo">
+      &#169; <a href="../../copyright.html">Copyright</a> 2012-2022 Rumma &amp; Ko Ltd.
+      Last updated on 2022-11-08.
+      Created using <a class="reference external" href="https://www.sphinx-doc.org/">Sphinx</a> 5.1.1.
+      <a class="reference external" href="https://insipid-sphinx-theme.readthedocs.io/">Insipid Theme</a>.
+<a href="https://gitlab.com/lino-framework/welfare/-/blob/master/docs/specs/topics/ddh.rst?plain=1"
+  rel="nofollow">Source code</a>.
+<br>
+
+Online link: <a href="https://welfare.lino-framework.org/specs/topics/ddh.html">https://welfare.lino-framework.org/specs/topics/ddh.html</a>.
+
+
+    </footer>
+  </body>
+</html>

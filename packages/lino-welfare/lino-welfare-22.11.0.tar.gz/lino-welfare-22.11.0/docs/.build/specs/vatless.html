@@ -1,0 +1,515 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Incoming invoices &#8212; Lino Welfare</title>
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/insipid.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/atelier.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/insipid-cust.css" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script defer src="../_static/insipid.js"></script>
+    <script defer src="../_static/insipid-sidebar.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="copyright" title="Copyright" href="../copyright.html" />
+    <link rel="next" title="Financial vouchers in Lino Welfare" href="finan.html" />
+    <link rel="prev" title="Accounting for Lino Welfare" href="ledger.html" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+  </head><body>
+    <script type="text/javascript">
+        document.body.classList.add('js');
+    </script>
+    <input type="checkbox" id="sidebar-checkbox" style="display: none;">
+    <label id="overlay" for="sidebar-checkbox"></label>
+    <div class="sidebar-resize-handle"></div>
+    <script type="text/javascript">
+        try {
+            let sidebar = localStorage.getItem('sphinx-sidebar');
+            const sidebar_width = localStorage.getItem('sphinx-sidebar-width');
+            if (sidebar_width) {
+                document.documentElement.style.setProperty('--sidebar-width', sidebar_width);
+            }
+            // show sidebar on wide screen
+            if (!sidebar && window.matchMedia('(min-width: 100rem)').matches) {
+                sidebar = 'visible';
+                // NB: We don't store the value in localStorage!
+            }
+            if (sidebar === 'visible') {
+                document.getElementById('sidebar-checkbox').checked = true;
+            }
+        } catch(e) {
+            console.info(e);
+        }
+    </script>
+    <header id="topbar-placeholder">
+      <div id="topbar">
+        <div id="titlebar">
+          <div class="buttons">
+            <label for="sidebar-checkbox" id="sidebar-button" role="button" tabindex="0" aria-controls="sphinxsidebar" accesskey="M">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></svg>
+            </label><a href="../index.html" title="Lino Welfare">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
+</a>
+          </div>
+          <div class="title">
+            <a class="parent" href="plugins.html" accesskey="U">Plugins</a>
+            <a class="top" href="#">Incoming invoices</a>
+          </div>
+          <div class="buttons">
+            <button id="fullscreen-button" type="button" aria-hidden="true">
+              <span class="enable">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M212.686 315.314L120 408l32.922 31.029c15.12 15.12 4.412 40.971-16.97 40.971h-112C10.697 480 0 469.255 0 456V344c0-21.382 25.803-32.09 40.922-16.971L72 360l92.686-92.686c6.248-6.248 16.379-6.248 22.627 0l25.373 25.373c6.249 6.248 6.249 16.378 0 22.627zm22.628-118.628L328 104l-32.922-31.029C279.958 57.851 290.666 32 312.048 32h112C437.303 32 448 42.745 448 56v112c0 21.382-25.803 32.09-40.922 16.971L376 152l-92.686 92.686c-6.248 6.248-16.379 6.248-22.627 0l-25.373-25.373c-6.249-6.248-6.249-16.378 0-22.627z"/></svg>
+              </span>
+              <span class="disable">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M4.686 427.314L104 328l-32.922-31.029C55.958 281.851 66.666 256 88.048 256h112C213.303 256 224 266.745 224 280v112c0 21.382-25.803 32.09-40.922 16.971L152 376l-99.314 99.314c-6.248 6.248-16.379 6.248-22.627 0L4.686 449.941c-6.248-6.248-6.248-16.379 0-22.627zM443.314 84.686L344 184l32.922 31.029c15.12 15.12 4.412 40.971-16.97 40.971h-112C234.697 256 224 245.255 224 232V120c0-21.382 25.803-32.09 40.922-16.971L296 136l99.314-99.314c6.248-6.248 16.379-6.248 22.627 0l25.373 25.373c6.248 6.248 6.248 16.379 0 22.627z"/></svg>
+              </span>
+            </button><a href="https://www.facebook.com/sharer/sharer.php?u=https://welfare.lino-framework.org/specs/vatless/" title="Share on Facebook" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+</a>
+
+<!---
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+---!>
+
+<a href="https://twitter.com/share?ref_src=https://welfare.lino-framework.org/specs/vatless/" title="Share on Twitter" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <a href="ledger.html" class="nav-icon previous" title="previous:&#13;Accounting for Lino Welfare" aria-label="Previous topic" accesskey="P" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"/></svg>
+      </a>
+      <a href="finan.html" class="nav-icon next" title="next:&#13;Financial vouchers in Lino Welfare" aria-label="Next topic" accesskey="N" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg>
+      </a>
+    </nav>
+
+    <nav class="relbar">
+      <a class="previous" href="ledger.html" aria-label="Previous topic" >
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg>
+        </div>
+        <div class="title">
+          <span class="text">
+            <span class="direction">previous</span>
+            Accounting for Lino Welfare
+          </span>
+        </div>
+      </a>
+      <a class="next" href="finan.html" aria-label="Next topic" >
+        <div class="title">
+          <span class="text">
+            <span class="direction">next</span>
+            Financial vouchers in Lino Welfare
+          </span>
+        </div>
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+        </div>
+      </a>
+    </nav>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+<section id="incoming-invoices">
+<span id="welfare-specs-vatless"></span><h1>Incoming invoices<a class="headerlink" href="#incoming-invoices" title="Permalink to this heading">¶</a></h1>
+<p>This document is based on and extends <a class="reference internal" href="ledger.html#welfare-specs-ledger"><span class="std std-ref">Accounting for Lino Welfare</span></a>.</p>
+<nav class="contents local" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id1" id="id2">Incoming invoices</a></p></li>
+<li><p><a class="reference internal" href="#collective-invoices" id="id3">Collective invoices</a></p></li>
+<li><p><a class="reference internal" href="#incoming-invoices-partners-and-clients" id="id4">Incoming invoices, partners and clients</a></p></li>
+<li><p><a class="reference internal" href="#registering-new-incoming-invoices" id="id5">Registering new incoming invoices</a></p></li>
+<li><p><a class="reference internal" href="#some-choices-requests" id="id6">Some choices requests</a></p></li>
+</ul>
+</nav>
+<p>Code snippets in this document are tested on the
+<code class="xref py py-mod docutils literal notranslate"><span class="pre">lino_welfare.projects.gerd</span></code> demo project.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino</span> <span class="kn">import</span> <span class="n">startup</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">startup</span><span class="p">(</span><span class="s1">&#39;lino_welfare.projects.gerd.settings.doctests&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino.api.doctest</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino.api</span> <span class="kn">import</span> <span class="n">rt</span>
+</pre></div>
+</div>
+<section id="id1">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Incoming invoices</a><a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h2>
+<p>In Lino Welfare, <strong>incoming invoices</strong> are different from “real”
+incoming invoices in that their recipient is some client of the
+center, not to the center itself. The center has no direct legal
+obligation, it just agrees (or not) to pay these invoices in the name
+of their client.</p>
+<p>There are two types of incoming invoices: “simple” and “collective”.
+The demo database has two journals with <em>incoming invoices</em>, one for
+each type, referenced as “REG” (for German <em>Rechnungseingang</em>) and
+SREG (<em>Sammelrechnungen</em>).</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">REG</span> <span class="o">=</span> <span class="n">ledger</span><span class="o">.</span><span class="n">Journal</span><span class="o">.</span><span class="n">get_by_ref</span><span class="p">(</span><span class="s1">&#39;REG&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">REG</span><span class="o">.</span><span class="n">voucher_type</span><span class="o">.</span><span class="n">table_class</span>
+<span class="go">lino_xl.lib.vatless.ui.ProjectInvoicesByJournal</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">SREG</span> <span class="o">=</span> <span class="n">ledger</span><span class="o">.</span><span class="n">Journal</span><span class="o">.</span><span class="n">get_by_ref</span><span class="p">(</span><span class="s1">&#39;SREG&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">SREG</span><span class="o">.</span><span class="n">voucher_type</span><span class="o">.</span><span class="n">table_class</span>
+<span class="go">lino_xl.lib.vatless.ui.InvoicesByJournal</span>
+</pre></div>
+</div>
+<p>The REG journal contains the following invoices:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">REG</span><span class="o">.</span><span class="n">voucher_type</span><span class="o">.</span><span class="n">table_class</span><span class="p">,</span> <span class="n">REG</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">======================= =============== ============================ =============================== ============ ============== ================== =================</span>
+<span class="go"> Nr.                     Buchungsdatum   Klient                       Zahlungsempfänger               Betrag       Zahlungsziel   Autor              Workflow</span>
+<span class="go">----------------------- --------------- ---------------------------- ------------------------------- ------------ -------------- ------------------ -----------------</span>
+<span class="go"> 1/2013                  28.12.13        EVERS Eberhart (127)         Leffin Electronics              12,50        27.01.14       Wilfried Willems   **Registriert**</span>
+<span class="go"> 19/2014                 07.01.14        EVERS Eberhart (127)         Ethias s.a.                     5,33         06.02.14       Wilfried Willems   **Registriert**</span>
+<span class="go"> 18/2014                 12.01.14        COLLARD Charlotte (118)      Electrabel Customer Solutions   120,00       11.02.14       Wilfried Willems   **Registriert**</span>
+<span class="go"> 17/2014                 22.01.14        EVERS Eberhart (127)         Maksu- ja Tolliamet             120,00       21.02.14       Wilfried Willems   **Registriert**</span>
+<span class="go"> 16/2014                 27.01.14        COLLARD Charlotte (118)      IIZI kindlustusmaakler AS       29,95        26.02.14       Wilfried Willems   **Registriert**</span>
+<span class="go"> 15/2014                 06.02.14        COLLARD Charlotte (118)      AS Matsalu Veevärk              12,50        08.03.14       Wilfried Willems   **Registriert**</span>
+<span class="go"> 14/2014                 11.02.14        EMONTS Daniel (128)          AS Express Post                 10,00        13.03.14       Wilfried Willems   **Registriert**</span>
+<span class="go"> 13/2014                 21.02.14        COLLARD Charlotte (118)      Niederau Eupen AG               10,00        23.03.14       Wilfried Willems   **Registriert**</span>
+<span class="go"> 12/2014                 26.02.14        EMONTS Daniel (128)          Ethias s.a.                     5,33         28.03.14       Wilfried Willems   **Registriert**</span>
+<span class="go"> 11/2014                 08.03.14        EMONTS Daniel (128)          Ragn-Sells AS                   29,95        07.04.14       Wilfried Willems   **Registriert**</span>
+<span class="go"> 10/2014                 13.03.14        DOBBELSTEIN Dorothée (124)   Maksu- ja Tolliamet             25,00        12.04.14       Wilfried Willems   **Registriert**</span>
+<span class="go"> 9/2014                  23.03.14        EMONTS Daniel (128)          Eesti Energia AS                25,00        22.04.14       Wilfried Willems   **Registriert**</span>
+<span class="go"> 8/2014                  28.03.14        DOBBELSTEIN Dorothée (124)   AS Matsalu Veevärk              12,50        27.04.14       Wilfried Willems   **Registriert**</span>
+<span class="go"> 7/2014                  07.04.14        DOBBELSTEIN Dorothée (124)   Leffin Electronics              5,33         07.05.14       Wilfried Willems   **Registriert**</span>
+<span class="go"> 6/2014                  12.04.14        AUSDEMWALD Alfons (116)      Niederau Eupen AG               120,00       12.05.14       Wilfried Willems   **Registriert**</span>
+<span class="go"> 5/2014                  22.04.14        DOBBELSTEIN Dorothée (124)   Electrabel Customer Solutions   120,00       22.05.14       Wilfried Willems   **Registriert**</span>
+<span class="go"> 4/2014                  27.04.14        AUSDEMWALD Alfons (116)      Ragn-Sells AS                   29,95        27.05.14       Wilfried Willems   **Registriert**</span>
+<span class="go"> 3/2014                  07.05.14        AUSDEMWALD Alfons (116)      IIZI kindlustusmaakler AS       12,50        06.06.14       Wilfried Willems   **Registriert**</span>
+<span class="go"> 2/2014                  12.05.14        EVERS Eberhart (127)         Eesti Energia AS                10,00        11.06.14       Wilfried Willems   **Registriert**</span>
+<span class="go"> 1/2014                  22.05.14        AUSDEMWALD Alfons (116)      AS Express Post                 10,00        21.06.14       Wilfried Willems   **Registriert**</span>
+<span class="go"> **Total (20 Zeilen)**                                                                                **725,84**</span>
+<span class="go">======================= =============== ============================ =============================== ============ ============== ================== =================</span>
+</pre></div>
+</div>
+</section>
+<section id="collective-invoices">
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Collective invoices</a><a class="headerlink" href="#collective-invoices" title="Permalink to this heading">¶</a></h2>
+<p>The SREG journal contains the following invoices:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">SREG</span><span class="o">.</span><span class="n">voucher_type</span><span class="o">.</span><span class="n">table_class</span><span class="p">,</span> <span class="n">SREG</span><span class="p">)</span>
+<span class="go">======================= =============== =============================== ============== ============== ================== =================</span>
+<span class="go"> Nr.                     Buchungsdatum   Zahlungsempfänger               Betrag         Zahlungsziel   Autor              Workflow</span>
+<span class="go">----------------------- --------------- ------------------------------- -------------- -------------- ------------------ -----------------</span>
+<span class="go"> 10/2014                 02.01.14        Niederau Eupen AG               212,78         01.02.14       Wilfried Willems   **Registriert**</span>
+<span class="go"> 9/2014                  17.01.14        Ragn-Sells AS                   82,78          16.02.14       Wilfried Willems   **Registriert**</span>
+<span class="go"> 8/2014                  01.02.14        Eesti Energia AS                227,78         03.03.14       Wilfried Willems   **Registriert**</span>
+<span class="go"> 7/2014                  16.02.14        Leffin Electronics              192,78         18.03.14       Wilfried Willems   **Registriert**</span>
+<span class="go"> 6/2014                  03.03.14        Electrabel Customer Solutions   322,78         02.04.14       Wilfried Willems   **Registriert**</span>
+<span class="go"> 5/2014                  18.03.14        IIZI kindlustusmaakler AS       177,78         17.04.14       Wilfried Willems   **Registriert**</span>
+<span class="go"> 4/2014                  02.04.14        AS Express Post                 212,78         02.05.14       Wilfried Willems   **Registriert**</span>
+<span class="go"> 3/2014                  17.04.14        Ethias s.a.                     82,78          17.05.14       Wilfried Willems   **Registriert**</span>
+<span class="go"> 2/2014                  02.05.14        Maksu- ja Tolliamet             227,78         01.06.14       Wilfried Willems   **Registriert**</span>
+<span class="go"> 1/2014                  17.05.14        AS Matsalu Veevärk              192,78         16.06.14       Wilfried Willems   **Registriert**</span>
+<span class="go"> **Total (10 Zeilen)**                                                   **1 932,80**</span>
+<span class="go">======================= =============== =============================== ============== ============== ================== =================</span>
+</pre></div>
+</div>
+</section>
+<section id="incoming-invoices-partners-and-clients">
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Incoming invoices, partners and clients</a><a class="headerlink" href="#incoming-invoices-partners-and-clients" title="Permalink to this heading">¶</a></h2>
+<p>Let’s have a closer look at an incoming invoice:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">obj</span> <span class="o">=</span> <span class="n">SREG</span><span class="o">.</span><span class="n">voucher_type</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">number</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">journal</span><span class="o">=</span><span class="n">SREG</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The partner of this invoice is Ethias:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">obj</span><span class="o">.</span><span class="n">partner</span>
+<span class="go">Partner #227 (&#39;Ethias s.a.&#39;)</span>
+</pre></div>
+</div>
+<p>It is a collective invoice whose costs are distributed over five
+clients:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;wilfried&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">rt</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">vatless</span><span class="o">.</span><span class="n">ItemsByInvoice</span><span class="p">,</span> <span class="n">obj</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">============================ =================================== =========== ============== ============</span>
+<span class="go"> Klient                       Haushaltsartikel                    Betrag      Beschreibung   Bearbeiten</span>
+<span class="go">---------------------------- ----------------------------------- ----------- -------------- ------------</span>
+<span class="go"> EMONTS Daniel (128)          (832/330/01) Allgemeine Beihilfen   5,33                       [⚇]</span>
+<span class="go"> AUSDEMWALD Alfons (116)      (832/330/01) Allgemeine Beihilfen   10,00                      [⚇]</span>
+<span class="go"> COLLARD Charlotte (118)      (832/330/01) Allgemeine Beihilfen   12,50                      [⚇]</span>
+<span class="go"> DOBBELSTEIN Dorothée (124)   (832/330/01) Allgemeine Beihilfen   25,00                      [⚇]</span>
+<span class="go"> EVERS Eberhart (127)         (832/330/01) Allgemeine Beihilfen   29,95                      [⚇]</span>
+<span class="go"> **Total (5 Zeilen)**                                             **82,78**</span>
+<span class="go">============================ =================================== =========== ============== ============</span>
+</pre></div>
+</div>
+<p>This invoice is registered, so the <a class="reference external" href="https://using.lino-framework.org/plugins/ledger.html#term-ledger-movement" title="(in Lino User Guide)"><span class="xref std std-term">ledger movements</span></a>
+have been created:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">obj</span><span class="o">.</span><span class="n">state</span>
+<span class="go">&lt;ledger.VoucherStates.registered:20&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">rt</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">ledger</span><span class="o">.</span><span class="n">MovementsByVoucher</span><span class="p">,</span> <span class="n">obj</span><span class="p">)</span>
+<span class="go">=================================== ============================ =================== =========== =========== ================= ===========</span>
+<span class="go"> Haushaltsartikel                    Klient                       Zahlungsempfänger   Debit       Kredit      Match             Beglichen</span>
+<span class="go">----------------------------------- ---------------------------- ------------------- ----------- ----------- ----------------- -----------</span>
+<span class="go"> (832/330/01) Allgemeine Beihilfen   EMONTS Daniel (128)                              5,33                                      Ja</span>
+<span class="go"> (832/330/01) Allgemeine Beihilfen   AUSDEMWALD Alfons (116)                          10,00                                     Ja</span>
+<span class="go"> (832/330/01) Allgemeine Beihilfen   COLLARD Charlotte (118)                          12,50                                     Ja</span>
+<span class="go"> (832/330/01) Allgemeine Beihilfen   DOBBELSTEIN Dorothée (124)                       25,00                                     Ja</span>
+<span class="go"> (832/330/01) Allgemeine Beihilfen   EVERS Eberhart (127)                             29,95                                     Ja</span>
+<span class="go"> (4100) Lieferanten                  EMONTS Daniel (128)          Ethias s.a.                     5,33        **SREG 3/2014**   Nein</span>
+<span class="go"> (4100) Lieferanten                  AUSDEMWALD Alfons (116)      Ethias s.a.                     10,00       **SREG 3/2014**   Nein</span>
+<span class="go"> (4100) Lieferanten                  COLLARD Charlotte (118)      Ethias s.a.                     12,50       **SREG 3/2014**   Nein</span>
+<span class="go"> (4100) Lieferanten                  DOBBELSTEIN Dorothée (124)   Ethias s.a.                     25,00       **SREG 3/2014**   Nein</span>
+<span class="go"> (4100) Lieferanten                  EVERS Eberhart (127)         Ethias s.a.                     29,95       **SREG 3/2014**   Nein</span>
+<span class="go">                                                                                      **82,78**   **82,78**</span>
+<span class="go">=================================== ============================ =================== =========== =========== ================= ===========</span>
+</pre></div>
+</div>
+<p>The last five movements are <em>cleared</em> because their account is not
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">clearable</span></code>.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">cost_account</span> <span class="o">=</span> <span class="n">rt</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">ledger</span><span class="o">.</span><span class="n">Account</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">ref</span><span class="o">=</span><span class="s2">&quot;832/330/01&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cost_account</span><span class="o">.</span><span class="n">clearable</span>
+<span class="go">False</span>
+</pre></div>
+</div>
+<p>The first five movements go into the suppliers account, which is
+clearable:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">suppliers_account</span> <span class="o">=</span> <span class="n">rt</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">ledger</span><span class="o">.</span><span class="n">Account</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">ref</span><span class="o">=</span><span class="s2">&quot;4100&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">suppliers_account</span> <span class="o">=</span> <span class="n">ledger</span><span class="o">.</span><span class="n">CommonAccounts</span><span class="o">.</span><span class="n">suppliers</span><span class="o">.</span><span class="n">get_object</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">suppliers_account</span><span class="o">.</span><span class="n">clearable</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<p>The match rules table defines how to clear these movements:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">ledger</span><span class="o">.</span><span class="n">MatchRulesByAccount</span><span class="p">,</span> <span class="n">suppliers_account</span><span class="p">)</span>
+<span class="go">==========================</span>
+<span class="go"> Journal</span>
+<span class="go">--------------------------</span>
+<span class="go"> Ausgabeanweisungen (AAW)</span>
+<span class="go">==========================</span>
+</pre></div>
+</div>
+<p>This rule means: “Uncleared amounts in the suppliers account may be
+cleared by the AAW (disbursement instructions) journal”.</p>
+<p>Since AAW is a financial journal, our story continues in <a class="reference internal" href="finan.html"><span class="doc">Financial vouchers in Lino Welfare</span></a>.</p>
+</section>
+<section id="registering-new-incoming-invoices">
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Registering new incoming invoices</a><a class="headerlink" href="#registering-new-incoming-invoices" title="Permalink to this heading">¶</a></h2>
+<p>It is possible to create new invoices from the detail view of a partner.</p>
+<p>The partner is usually some company.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">obj</span><span class="o">.</span><span class="n">partner</span>
+<span class="go">Partner #227 (&#39;Ethias s.a.&#39;)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;rolf&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">rt</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">vatless</span><span class="o">.</span><span class="n">VouchersByPartner</span><span class="p">,</span> <span class="n">obj</span><span class="o">.</span><span class="n">partner</span><span class="p">)</span>
+<span class="go">Beleg erstellen in Journal **Sammelrechnungen (SREG)**, **Rechnungseingänge (REG)**</span>
+</pre></div>
+</div>
+<p>Our partner has 11 movements which are not yet <em>cleared</em>.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">rt</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">ledger</span><span class="o">.</span><span class="n">MovementsByPartner</span><span class="p">,</span> <span class="n">obj</span><span class="o">.</span><span class="n">partner</span><span class="p">)</span>
+<span class="go">**7 offene Bewegungen (93.44 €)**</span>
+</pre></div>
+</div>
+<p>Let’s look at the detail of these movements:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">rt</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">ledger</span><span class="o">.</span><span class="n">MovementsByPartner</span><span class="p">,</span> <span class="n">obj</span><span class="o">.</span><span class="n">partner</span><span class="p">,</span> <span class="n">nosummary</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="go">========== =============== ==================================================================================== =========== ============ ============= ===========</span>
+<span class="go"> Valuta     Beleg           Beschreibung                                                                         Debit       Kredit       Match         Beglichen</span>
+<span class="go">---------- --------------- ------------------------------------------------------------------------------------ ----------- ------------ ------------- -----------</span>
+<span class="go"> 17.04.14   *SREG 3/2014*   *(4100) Lieferanten* | *AUSDEMWALD Alfons (116)*                                                 10,00        SREG 3/2014   Nein</span>
+<span class="go"> 17.04.14   *SREG 3/2014*   *(4100) Lieferanten* | *COLLARD Charlotte (118)*                                                 12,50        SREG 3/2014   Nein</span>
+<span class="go"> 17.04.14   *SREG 3/2014*   *(4100) Lieferanten* | *DOBBELSTEIN Dorothée (124)*                                              25,00        SREG 3/2014   Nein</span>
+<span class="go"> 17.04.14   *SREG 3/2014*   *(4100) Lieferanten* | *EVERS Eberhart (127)*                                                    29,95        SREG 3/2014   Nein</span>
+<span class="go"> 17.04.14   *SREG 3/2014*   *(4100) Lieferanten* | *EMONTS Daniel (128)*                                                     5,33         SREG 3/2014   Nein</span>
+<span class="go"> 21.03.14   *ZKBC 3/2014*   *(4300) Offene Zahlungsaufträge* | *Ethias s.a.* | *EMONTS Daniel (128)*                         5,33         REG 12/2014   Nein</span>
+<span class="go"> 21.03.14   *ZKBC 3/2014*   *(4450) Auszuführende Ausgabeanweisungen* | *Ethias s.a.* | *EMONTS Daniel (128)*    5,33                     REG 12/2014   Ja</span>
+<span class="go"> 13.03.14   *AAW 21/2014*   *(4100) Lieferanten* | *Ethias s.a.* | *EMONTS Daniel (128)*                         5,33                     REG 12/2014   Ja</span>
+<span class="go"> 13.03.14   *AAW 21/2014*   *(4450) Auszuführende Ausgabeanweisungen* | *Ethias s.a.* | *EMONTS Daniel (128)*                5,33         REG 12/2014   Ja</span>
+<span class="go"> 26.02.14   *REG 12/2014*   *(4100) Lieferanten* | *EMONTS Daniel (128)*                                                     5,33         REG 12/2014   Ja</span>
+<span class="go"> 21.01.14   *ZKBC 1/2014*   *(4300) Offene Zahlungsaufträge* | *Ethias s.a.* | *EVERS Eberhart (127)*                        5,33         REG 19/2014   Nein</span>
+<span class="go"> 21.01.14   *ZKBC 1/2014*   *(4450) Auszuführende Ausgabeanweisungen* | *Ethias s.a.* | *EVERS Eberhart (127)*   5,33                     REG 19/2014   Ja</span>
+<span class="go"> 13.01.14   *AAW 19/2014*   *(4100) Lieferanten* | *Ethias s.a.* | *EVERS Eberhart (127)*                        5,33                     REG 19/2014   Ja</span>
+<span class="go"> 13.01.14   *AAW 19/2014*   *(4450) Auszuführende Ausgabeanweisungen* | *Ethias s.a.* | *EVERS Eberhart (127)*               5,33         REG 19/2014   Ja</span>
+<span class="go"> 07.01.14   *REG 19/2014*   *(4100) Lieferanten* | *EVERS Eberhart (127)*                                                    5,33         REG 19/2014   Ja</span>
+<span class="go">                            **Saldo -93.44 (15 Bewegungen)**                                                     **21,32**   **114,76**</span>
+<span class="go">========== =============== ==================================================================================== =========== ============ ============= ===========</span>
+</pre></div>
+</div>
+<p>The first two movements are invoices which have been admitted for
+payment (i.e. a disbursement instruction (AAW) has been registered),
+but the payment has not yet been executed.</p>
+<p>Let’s look at one of these movements via its client.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">client</span> <span class="o">=</span> <span class="n">rt</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">pcsw</span><span class="o">.</span><span class="n">Client</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="mi">128</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">client</span><span class="p">)</span>
+<span class="go">EMONTS Daniel (128)</span>
+</pre></div>
+</div>
+<p>Our client has lots of other open transactions:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">ledger</span><span class="o">.</span><span class="n">MovementsByProject</span><span class="p">,</span> <span class="n">client</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">========== =============== ================================================================================================== =============== =============== ================== ===========</span>
+<span class="go"> Valuta     Beleg           Beschreibung                                                                                       Debit           Kredit          Match              Beglichen</span>
+<span class="go">---------- --------------- -------------------------------------------------------------------------------------------------- --------------- --------------- ------------------ -----------</span>
+<span class="go"> 23.05.14   *AAW 13/2014*   *(832/330/01) Allgemeine Beihilfen* / Allgemeine Beihilfen / *Emonts Daniel*                       648,91                          **AAW 13:5**       Nein</span>
+<span class="go"> 23.05.14   *AAW 13/2014*   *(4450) Auszuführende Ausgabeanweisungen* / Allgemeine Beihilfen / *Emonts Daniel*                                 648,91          **AAW 13:5**       Nein</span>
+<span class="go"> 23.05.14   *AAW 14/2014*   *(832/330/03) Heizkosten- u. Energiebeihilfe* / Heizkosten- u. Energiebeihilfe / *Emonts Daniel*   817,36                          **AAW 14:5**       Nein</span>
+<span class="go"> 23.05.14   *AAW 14/2014*   *(4450) Auszuführende Ausgabeanweisungen* / Heizkosten- u. Energiebeihilfe / *Emonts Daniel*                       817,36          **AAW 14:5**       Nein</span>
+<span class="go"> 23.05.14   *AAW 15/2014*   *(832/330/03F) Fonds Gas und Elektrizität* / Fonds Gas und Elektrizität / *Emonts Daniel*          544,91                          **AAW 15:5**       Nein</span>
+<span class="go"> 23.05.14   *AAW 15/2014*   *(4450) Auszuführende Ausgabeanweisungen* / Fonds Gas und Elektrizität / *Emonts Daniel*                           544,91          **AAW 15:5**       Nein</span>
+<span class="go"> 23.05.14   *AAW 16/2014*   *(832/3331/01) Eingliederungseinkommen* / Eingliederungseinkommen / *Emonts Daniel*                800,08                          **AAW 16:5**       Nein</span>
+<span class="go"> 23.05.14   *AAW 16/2014*   *(4450) Auszuführende Ausgabeanweisungen* / Eingliederungseinkommen / *Emonts Daniel*                              800,08          **AAW 16:5**       Nein</span>
+<span class="go"> 23.05.14   *AAW 17/2014*   *(832/334/27) Sozialhilfe* / Sozialhilfe / *Emonts Daniel*                                         648,91                          **AAW 17:5**       Nein</span>
+<span class="go"> 23.05.14   *AAW 17/2014*   *(4450) Auszuführende Ausgabeanweisungen* / Sozialhilfe / *Emonts Daniel*                                          648,91          **AAW 17:5**       Nein</span>
+<span class="go"> 23.05.14   *AAW 18/2014*   *(832/3343/21) Beihilfe für Ausländer* / Beihilfe für Ausländer / *Emonts Daniel*                  817,36                          **AAW 18:5**       Nein</span>
+<span class="go"> 23.05.14   *AAW 18/2014*   *(4450) Auszuführende Ausgabeanweisungen* / Beihilfe für Ausländer / *Emonts Daniel*                               817,36          **AAW 18:5**       Nein</span>
+<span class="go"> 17.05.14   *SREG 1/2014*   *(4100) Lieferanten* / *AS Matsalu Veevärk*                                                                        29,95           **SREG 1/2014**    Nein</span>
+<span class="go"> 02.05.14   *SREG 2/2014*   *(4100) Lieferanten* / *Maksu- ja Tolliamet*                                                                       120,00          **SREG 2/2014**    Nein</span>
+<span class="go"> 23.04.14   *AAW 7/2014*    *(832/330/01) Allgemeine Beihilfen* / Allgemeine Beihilfen / *Emonts Daniel*                       544,91                          **AAW 7:5**        Nein</span>
+<span class="go"> 23.04.14   *AAW 7/2014*    *(4450) Auszuführende Ausgabeanweisungen* / Allgemeine Beihilfen / *Emonts Daniel*                                 544,91          **AAW 7:5**        Nein</span>
+<span class="go"> 23.04.14   *AAW 8/2014*    *(832/330/03) Heizkosten- u. Energiebeihilfe* / Heizkosten- u. Energiebeihilfe / *Emonts Daniel*   800,08                          **AAW 8:5**        Nein</span>
+<span class="go"> 23.04.14   *AAW 8/2014*    *(4450) Auszuführende Ausgabeanweisungen* / Heizkosten- u. Energiebeihilfe / *Emonts Daniel*                       800,08          **AAW 8:5**        Nein</span>
+<span class="go"> 23.04.14   *AAW 9/2014*    *(832/330/03F) Fonds Gas und Elektrizität* / Fonds Gas und Elektrizität / *Emonts Daniel*          648,91                          **AAW 9:5**        Nein</span>
+<span class="go"> 23.04.14   *AAW 9/2014*    *(4450) Auszuführende Ausgabeanweisungen* / Fonds Gas und Elektrizität / *Emonts Daniel*                           648,91          **AAW 9:5**        Nein</span>
+<span class="go"> 23.04.14   *AAW 10/2014*   *(832/3331/01) Eingliederungseinkommen* / Eingliederungseinkommen / *Emonts Daniel*                817,36                          **AAW 10:5**       Nein</span>
+<span class="go"> 23.04.14   *AAW 10/2014*   *(4450) Auszuführende Ausgabeanweisungen* / Eingliederungseinkommen / *Emonts Daniel*                              817,36          **AAW 10:5**       Nein</span>
+<span class="go"> 23.04.14   *AAW 11/2014*   *(832/334/27) Sozialhilfe* / Sozialhilfe / *Emonts Daniel*                                         544,91                          **AAW 11:5**       Nein</span>
+<span class="go"> 23.04.14   *AAW 11/2014*   *(4450) Auszuführende Ausgabeanweisungen* / Sozialhilfe / *Emonts Daniel*                                          544,91          **AAW 11:5**       Nein</span>
+<span class="go"> 23.04.14   *AAW 12/2014*   *(832/3343/21) Beihilfe für Ausländer* / Beihilfe für Ausländer / *Emonts Daniel*                  800,08                          **AAW 12:5**       Nein</span>
+<span class="go"> 23.04.14   *AAW 12/2014*   *(4450) Auszuführende Ausgabeanweisungen* / Beihilfe für Ausländer / *Emonts Daniel*                               800,08          **AAW 12:5**       Nein</span>
+<span class="go"> 21.04.14   *ZKBC 4/2014*   *(4300) Offene Zahlungsaufträge* / *Emonts Daniel*                                                                 648,91          **AAW 1:5**        Nein</span>
+<span class="go"> 21.04.14   *ZKBC 4/2014*   *(4300) Offene Zahlungsaufträge* / *Emonts Daniel*                                                                 817,36          **AAW 2:5**        Nein</span>
+<span class="go"> 21.04.14   *ZKBC 4/2014*   *(4300) Offene Zahlungsaufträge* / *Emonts Daniel*                                                                 544,91          **AAW 3:5**        Nein</span>
+<span class="go"> 21.04.14   *ZKBC 4/2014*   *(4300) Offene Zahlungsaufträge* / *Emonts Daniel*                                                                 800,08          **AAW 4:5**        Nein</span>
+<span class="go"> 21.04.14   *ZKBC 4/2014*   *(4300) Offene Zahlungsaufträge* / *Emonts Daniel*                                                                 648,91          **AAW 5:5**        Nein</span>
+<span class="go"> 21.04.14   *ZKBC 4/2014*   *(4300) Offene Zahlungsaufträge* / *Emonts Daniel*                                                                 817,36          **AAW 6:5**        Nein</span>
+<span class="go"> 21.04.14   *ZKBC 4/2014*   *(4300) Offene Zahlungsaufträge* / *AS Express Post*                                                               15,33           **SREG 4/2014**    Nein</span>
+<span class="go"> 21.04.14   *ZKBC 4/2014*   *(4300) Offene Zahlungsaufträge* / *Eesti Energia AS*                                                              25,00           **REG 9/2014**     Nein</span>
+<span class="go"> 21.04.14   *ZKBC 4/2014*   *(4300) Offene Zahlungsaufträge* / *IIZI kindlustusmaakler AS*                                                     10,00           **SREG 5/2014**    Nein</span>
+<span class="go"> 17.04.14   *SREG 3/2014*   *(4100) Lieferanten* / *Ethias s.a.*                                                                               5,33            **SREG 3/2014**    Nein</span>
+<span class="go"> 23.03.14   *AAW 1/2014*    *(832/330/01) Allgemeine Beihilfen* / Allgemeine Beihilfen / *Emonts Daniel*                       648,91                          **AAW 1:5**        Nein</span>
+<span class="go"> 23.03.14   *AAW 2/2014*    *(832/330/03) Heizkosten- u. Energiebeihilfe* / Heizkosten- u. Energiebeihilfe / *Emonts Daniel*   817,36                          **AAW 2:5**        Nein</span>
+<span class="go"> 23.03.14   *AAW 3/2014*    *(832/330/03F) Fonds Gas und Elektrizität* / Fonds Gas und Elektrizität / *Emonts Daniel*          544,91                          **AAW 3:5**        Nein</span>
+<span class="go"> 23.03.14   *AAW 4/2014*    *(832/3331/01) Eingliederungseinkommen* / Eingliederungseinkommen / *Emonts Daniel*                800,08                          **AAW 4:5**        Nein</span>
+<span class="go"> 23.03.14   *AAW 5/2014*    *(832/334/27) Sozialhilfe* / Sozialhilfe / *Emonts Daniel*                                         648,91                          **AAW 5:5**        Nein</span>
+<span class="go"> 23.03.14   *AAW 6/2014*    *(832/3343/21) Beihilfe für Ausländer* / Beihilfe für Ausländer / *Emonts Daniel*                  817,36                          **AAW 6:5**        Nein</span>
+<span class="go"> 21.03.14   *ZKBC 3/2014*   *(4300) Offene Zahlungsaufträge* / *Ragn-Sells AS*                                                                 29,95           **REG 11/2014**    Nein</span>
+<span class="go"> 21.03.14   *ZKBC 3/2014*   *(4300) Offene Zahlungsaufträge* / *Electrabel Customer Solutions*                                                 12,50           **SREG 6/2014**    Nein</span>
+<span class="go"> 21.03.14   *ZKBC 3/2014*   *(4300) Offene Zahlungsaufträge* / *Ethias s.a.*                                                                   5,33            **REG 12/2014**    Nein</span>
+<span class="go"> 21.03.14   *ZKBC 3/2014*   *(4300) Offene Zahlungsaufträge* / *Leffin Electronics*                                                            25,00           **SREG 7/2014**    Nein</span>
+<span class="go"> 21.02.14   *ZKBC 2/2014*   *(4300) Offene Zahlungsaufträge* / *AS Express Post*                                                               10,00           **REG 14/2014**    Nein</span>
+<span class="go"> 21.02.14   *ZKBC 2/2014*   *(4300) Offene Zahlungsaufträge* / *Eesti Energia AS*                                                              54,95           **SREG 8/2014**    Nein</span>
+<span class="go"> 21.02.14   *ZKBC 2/2014*   *(4300) Offene Zahlungsaufträge* / *Ragn-Sells AS*                                                                 29,95           **SREG 9/2014**    Nein</span>
+<span class="go"> 21.01.14   *ZKBC 1/2014*   *(4300) Offene Zahlungsaufträge* / *Niederau Eupen AG*                                                             120,00          **SREG 10/2014**   Nein</span>
+<span class="go">                            **Saldo -493.29 (50 Bewegungen)**                                                                  **12 711,31**   **13 204,60**</span>
+<span class="go">========== =============== ================================================================================================== =============== =============== ================== ===========</span>
+</pre></div>
+</div>
+</section>
+<section id="some-choices-requests">
+<span id="welfare-specs-r20160105"></span><h2><a class="toc-backref" href="#id6" role="doc-backlink">Some choices requests</a><a class="headerlink" href="#some-choices-requests" title="Permalink to this heading">¶</a></h2>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fields</span> <span class="o">=</span> <span class="s1">&#39;count rows&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mt</span> <span class="o">=</span> <span class="n">contenttypes</span><span class="o">.</span><span class="n">ContentType</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get_for_model</span><span class="p">(</span><span class="n">vatless</span><span class="o">.</span><span class="n">InvoiceItem</span><span class="p">)</span><span class="o">.</span><span class="n">pk</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">demo_get</span><span class="p">(</span>
+<span class="gp">... </span>   <span class="s1">&#39;wilfried&#39;</span><span class="p">,</span> <span class="s1">&#39;choices/vatless/ItemsByProjectInvoice/account&#39;</span><span class="p">,</span>
+<span class="gp">... </span>   <span class="n">fields</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="n">mt</span><span class="o">=</span><span class="n">mt</span><span class="p">,</span> <span class="n">mk</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/logo_web3.png" alt="Logo"/>
+            </a></p>
+          <div class="sidebar-resize-handle"></div>
+<p align="center"><b>EN</b> | <a href="de/index.rst">DE</a> | <a href="fr/index.rst">FR</a></p>
+<h3><a href="../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../about/index.html">About Lino Welfare</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/index.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changes/index.html">Changes</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Specs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/index.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../copyright.html">Copyright &amp; legal notes</a></li>
+</ul>
+
+<hr class="docutils" />
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+<ul>
+  <li class="toctree-l1"><a class="reference internal" href="../py-modindex.html">Python Module Index</a></li>
+</ul><p align="center">
+</p>
+
+<div id="ethical-ad-placement"></div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+    <nav class="relbar">
+      <a class="previous" href="ledger.html" aria-label="Previous topic" >
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg>
+        </div>
+        <div class="title">
+          <span class="text">
+            <span class="direction">previous</span>
+            Accounting for Lino Welfare
+          </span>
+        </div>
+      </a>
+      <a class="next" href="finan.html" aria-label="Next topic" >
+        <div class="title">
+          <span class="text">
+            <span class="direction">next</span>
+            Financial vouchers in Lino Welfare
+          </span>
+        </div>
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+        </div>
+      </a>
+    </nav>
+
+    <footer role="contentinfo">
+      &#169; <a href="../copyright.html">Copyright</a> 2012-2022 Rumma &amp; Ko Ltd.
+      Last updated on 2022-11-08.
+      Created using <a class="reference external" href="https://www.sphinx-doc.org/">Sphinx</a> 5.1.1.
+      <a class="reference external" href="https://insipid-sphinx-theme.readthedocs.io/">Insipid Theme</a>.
+<a href="https://gitlab.com/lino-framework/welfare/-/blob/master/docs/specs/vatless.rst?plain=1"
+  rel="nofollow">Source code</a>.
+<br>
+
+Online link: <a href="https://welfare.lino-framework.org/specs/vatless.html">https://welfare.lino-framework.org/specs/vatless.html</a>.
+
+
+    </footer>
+  </body>
+</html>

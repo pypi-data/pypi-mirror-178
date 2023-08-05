@@ -1,0 +1,421 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>The Lino Welfare Standard User Types &#8212; Lino Welfare</title>
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/insipid.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/atelier.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/insipid-cust.css" />
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script defer src="../../_static/insipid.js"></script>
+    <script defer src="../../_static/insipid-sidebar.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../copyright.html" />
+    <link rel="next" title="Choicelists in Lino Welfare" href="choicelists.html" />
+    <link rel="prev" title="General overview of Lino Welfare" href="general.html" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+  </head><body>
+    <script type="text/javascript">
+        document.body.classList.add('js');
+    </script>
+    <input type="checkbox" id="sidebar-checkbox" style="display: none;">
+    <label id="overlay" for="sidebar-checkbox"></label>
+    <div class="sidebar-resize-handle"></div>
+    <script type="text/javascript">
+        try {
+            let sidebar = localStorage.getItem('sphinx-sidebar');
+            const sidebar_width = localStorage.getItem('sphinx-sidebar-width');
+            if (sidebar_width) {
+                document.documentElement.style.setProperty('--sidebar-width', sidebar_width);
+            }
+            // show sidebar on wide screen
+            if (!sidebar && window.matchMedia('(min-width: 100rem)').matches) {
+                sidebar = 'visible';
+                // NB: We don't store the value in localStorage!
+            }
+            if (sidebar === 'visible') {
+                document.getElementById('sidebar-checkbox').checked = true;
+            }
+        } catch(e) {
+            console.info(e);
+        }
+    </script>
+    <header id="topbar-placeholder">
+      <div id="topbar">
+        <div id="titlebar">
+          <div class="buttons">
+            <label for="sidebar-checkbox" id="sidebar-button" role="button" tabindex="0" aria-controls="sphinxsidebar" accesskey="M">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></svg>
+            </label><a href="../../index.html" title="Lino Welfare">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
+</a>
+          </div>
+          <div class="title">
+            <a class="parent" href="index.html" accesskey="U">Topics</a>
+            <a class="top" href="#">The Lino Welfare Standard User Types</a>
+          </div>
+          <div class="buttons">
+            <button id="fullscreen-button" type="button" aria-hidden="true">
+              <span class="enable">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M212.686 315.314L120 408l32.922 31.029c15.12 15.12 4.412 40.971-16.97 40.971h-112C10.697 480 0 469.255 0 456V344c0-21.382 25.803-32.09 40.922-16.971L72 360l92.686-92.686c6.248-6.248 16.379-6.248 22.627 0l25.373 25.373c6.249 6.248 6.249 16.378 0 22.627zm22.628-118.628L328 104l-32.922-31.029C279.958 57.851 290.666 32 312.048 32h112C437.303 32 448 42.745 448 56v112c0 21.382-25.803 32.09-40.922 16.971L376 152l-92.686 92.686c-6.248 6.248-16.379 6.248-22.627 0l-25.373-25.373c-6.249-6.248-6.249-16.378 0-22.627z"/></svg>
+              </span>
+              <span class="disable">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M4.686 427.314L104 328l-32.922-31.029C55.958 281.851 66.666 256 88.048 256h112C213.303 256 224 266.745 224 280v112c0 21.382-25.803 32.09-40.922 16.971L152 376l-99.314 99.314c-6.248 6.248-16.379 6.248-22.627 0L4.686 449.941c-6.248-6.248-6.248-16.379 0-22.627zM443.314 84.686L344 184l32.922 31.029c15.12 15.12 4.412 40.971-16.97 40.971h-112C234.697 256 224 245.255 224 232V120c0-21.382 25.803-32.09 40.922-16.971L296 136l99.314-99.314c6.248-6.248 16.379-6.248 22.627 0l25.373 25.373c6.248 6.248 6.248 16.379 0 22.627z"/></svg>
+              </span>
+            </button><a href="https://www.facebook.com/sharer/sharer.php?u=https://welfare.lino-framework.org/specs/topics/usertypes/" title="Share on Facebook" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+</a>
+
+<!---
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+---!>
+
+<a href="https://twitter.com/share?ref_src=https://welfare.lino-framework.org/specs/topics/usertypes/" title="Share on Twitter" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <a href="general.html" class="nav-icon previous" title="previous:&#13;General overview of Lino Welfare" aria-label="Previous topic" accesskey="P" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"/></svg>
+      </a>
+      <a href="choicelists.html" class="nav-icon next" title="next:&#13;Choicelists in Lino Welfare" aria-label="Next topic" accesskey="N" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg>
+      </a>
+    </nav>
+
+    <nav class="relbar">
+      <a class="previous" href="general.html" aria-label="Previous topic" >
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg>
+        </div>
+        <div class="title">
+          <span class="text">
+            <span class="direction">previous</span>
+            General overview of Lino Welfare
+          </span>
+        </div>
+      </a>
+      <a class="next" href="choicelists.html" aria-label="Next topic" >
+        <div class="title">
+          <span class="text">
+            <span class="direction">next</span>
+            Choicelists in Lino Welfare
+          </span>
+        </div>
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+        </div>
+      </a>
+    </nav>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+<section id="the-lino-welfare-standard-user-types">
+<span id="welfare-usertypes"></span><h1>The Lino Welfare Standard User Types<a class="headerlink" href="#the-lino-welfare-standard-user-types" title="Permalink to this heading">¶</a></h1>
+<p>Defining user types and their respective permissions is a complex area
+where it is difficult to get an overview and where it is easy to
+forget some aspect when deciding about a change.  This document is an
+attempt to fix this problem at least for Lino Welfare by developing a
+standard set of user types.</p>
+<p>The default set of user types for Lino Welfare is defined in the
+<a class="reference internal" href="../../api/lino_welfare.modlib.welfare.user_types.html#module-lino_welfare.modlib.welfare.user_types" title="lino_welfare.modlib.welfare.user_types"><code class="xref py py-mod docutils literal notranslate"><span class="pre">lino_welfare.modlib.welfare.user_types</span></code></a> module.  Individual
+centers can define their own local <code class="xref py py-attr docutils literal notranslate"><span class="pre">user_types_module</span></code>, Lino does not force you to
+use the following.</p>
+<p>But we recommend to use the standard set of user types and to join our
+common effort.  If you discover a problem with what’s described
+hereafter, please contact the responsible author (currently Luc
+Saffre).</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino</span> <span class="kn">import</span> <span class="n">startup</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">startup</span><span class="p">(</span><span class="s1">&#39;lino_welfare.projects.gerd.settings.doctests&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino.api.doctest</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+<p>The default set of user types for Lino Welfare lives in the
+<a class="reference external" href="https://dev.lino-framework.org/specs/users.html#lino.modlib.users.UserTypes" title="(in Lino Developer Guide v20.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">lino.modlib.users.UserTypes</span></code></a> choicelist:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">users</span><span class="o">.</span><span class="n">UserTypes</span><span class="p">,</span> <span class="n">language</span><span class="o">=</span><span class="s2">&quot;en&quot;</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">======= =========== ==============================</span>
+<span class="go"> value   name        text</span>
+<span class="go">------- ----------- ------------------------------</span>
+<span class="go"> 000     anonymous   Anonymous</span>
+<span class="go"> 100                 Integration agent</span>
+<span class="go"> 110                 Integration agent (Manager)</span>
+<span class="go"> 120                 Integration agent (Flexible)</span>
+<span class="go"> 200                 Newcomers consultant</span>
+<span class="go"> 210                 Reception clerk</span>
+<span class="go"> 220                 Reception clerk (Flexible)</span>
+<span class="go"> 300                 Debts consultant</span>
+<span class="go"> 400                 Social agent</span>
+<span class="go"> 410                 Social agent (Manager)</span>
+<span class="go"> 420                 Social agent (Flexible)</span>
+<span class="go"> 500                 Accountant</span>
+<span class="go"> 510                 Accountant (Manager)</span>
+<span class="go"> 800                 Supervisor</span>
+<span class="go"> 900     admin       Administrator</span>
+<span class="go"> 910                 Security advisor</span>
+<span class="go">======= =========== ==============================</span>
+</pre></div>
+</div>
+<p>A <strong>social agent</strong> is a user who does individual coaching of
+clients.  Certain privacy-relevant client data is visible only
+to social agents.</p>
+<p>A <strong>social staff member</strong> is a social agent who has access to more
+technical information about welfare clients.  For example the
+<cite>Miscellaneous</cite> panel.</p>
+<p>An <strong>integration agent</strong> is a specialized social agent who works with
+immigrants who want to integrate into local society.  They can access
+database content specific to integration work: CV, language courses,
+workshops, …</p>
+<p>A <em>flexible</em> integration agent can also assign coaches to clients and
+create budgets for debts mediation.</p>
+<p>A <strong>newcomers consultant</strong> manages new client applications.</p>
+<p>A <strong>newcomers operator</strong> is a user who is not <em>social agent</em> but
+can e.g. register newcomers and assign them a coach.</p>
+<p>A <strong>reception clerk</strong> is a user who is not a <em>social agent</em> but
+receives clients and does certain administrative tasks (in Eupen they
+call them <a class="reference external" href="https://en.wikipedia.org/wiki/Back_office">back office</a>).  A flexible
+<em>reception clerk</em> can also  assign coaches to clients.</p>
+<p>An <strong>accountant</strong> is a user who enters invoices, bank statements,
+payment orders and other ledger operations.
+The <em>manager</em> variant also has access to configuration.</p>
+<p>A <strong>site adminstrator</strong> has permission for everything.</p>
+<p>A <strong>supervisor</strong> is a backoffice user who can act as others.</p>
+<p>The <em>Manager</em> variants of <em>Integration agent</em>, <em>Social agent</em> and
+<em>Accountant</em> give some additional permissions like editing contracts
+authored by other users, more configuration options, but they are not
+a <a class="reference external" href="https://dev.lino-framework.org/api/lino.core.roles.html#lino.core.roles.SiteStaff" title="(in Lino Developer Guide v20.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">SiteStaff</span></code></a>.</p>
+<p>The <em>Flexible</em> variants 120, 220 and 420 are designed to be used in
+centers where they don’t use 100, 200 and 400.</p>
+<p>An <em>Integration agent (Manager)</em> has some staff permissions</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino.core.roles</span> <span class="kn">import</span> <span class="n">SiteStaff</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino_xl.lib.contacts.roles</span> <span class="kn">import</span> <span class="n">ContactsStaff</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">p100</span> <span class="o">=</span> <span class="n">users</span><span class="o">.</span><span class="n">UserTypes</span><span class="o">.</span><span class="n">get_by_value</span><span class="p">(</span><span class="s1">&#39;100&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">p110</span> <span class="o">=</span> <span class="n">users</span><span class="o">.</span><span class="n">UserTypes</span><span class="o">.</span><span class="n">get_by_value</span><span class="p">(</span><span class="s1">&#39;110&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">p210</span> <span class="o">=</span> <span class="n">users</span><span class="o">.</span><span class="n">UserTypes</span><span class="o">.</span><span class="n">get_by_value</span><span class="p">(</span><span class="s1">&#39;210&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">p110</span><span class="o">.</span><span class="n">has_required_roles</span><span class="p">([</span><span class="n">SiteStaff</span><span class="p">])</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">p210</span><span class="o">.</span><span class="n">has_required_roles</span><span class="p">([</span><span class="n">SiteStaff</span><span class="p">])</span>
+<span class="go">False</span>
+</pre></div>
+</div>
+<p>A reception clerk is a <a class="reference external" href="https://dev.lino-framework.org/specs/contacts.html#lino_xl.lib.contacts.ContactsStaff" title="(in Lino Developer Guide v20.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ContactsStaff</span></code></a>:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">p100</span><span class="o">.</span><span class="n">has_required_roles</span><span class="p">([</span><span class="n">ContactsStaff</span><span class="p">])</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">p110</span><span class="o">.</span><span class="n">has_required_roles</span><span class="p">([</span><span class="n">ContactsStaff</span><span class="p">])</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">p210</span><span class="o">.</span><span class="n">has_required_roles</span><span class="p">([</span><span class="n">ContactsStaff</span><span class="p">])</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<p>A reception clerk is an <code class="xref py py-class docutils literal notranslate"><span class="pre">OfficeOperator</span></code>:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino_welfare.modlib.welfare.user_types</span> <span class="kn">import</span> <span class="n">OfficeOperator</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">p210</span><span class="o">.</span><span class="n">has_required_roles</span><span class="p">([</span><span class="n">OfficeOperator</span><span class="p">])</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<p>A reception clerk can see the <span class="guilabel">Calendar</span> tab because it
+contains the <code class="xref py py-class docutils literal notranslate"><span class="pre">EntriesByClient</span></code> panel.  Since 20180124 also
+TasksByProject of that tab.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">cal</span><span class="o">.</span><span class="n">EntriesByClient</span><span class="o">.</span><span class="n">get_view_permission</span><span class="p">(</span><span class="n">p210</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">py2rst</span><span class="p">(</span><span class="n">pcsw</span><span class="o">.</span><span class="n">Clients</span><span class="o">.</span><span class="n">detail_layout</span><span class="p">[</span><span class="s1">&#39;calendar&#39;</span><span class="p">]))</span>
+<span class="go">**Kalender** (calendar) [visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910]:</span>
+<span class="go">- **Kalendereinträge** (cal.EntriesByClient)</span>
+<span class="go">- **Aufgaben** (cal.TasksByProject)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">users</span><span class="o">.</span><span class="n">UserRoles</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">================================== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== =====</span>
+<span class="go"> Name                               000   100   110   120   200   210   220   300   400   410   420   500   510   800   900   910</span>
+<span class="go">---------------------------------- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----</span>
+<span class="go"> aids.AidsStaff                                 ☑     ☑           ☑                       ☑     ☑     ☑     ☑     ☑     ☑     ☑</span>
+<span class="go"> aids.AidsUser                            ☑     ☑     ☑     ☑     ☑           ☑     ☑     ☑     ☑     ☑     ☑     ☑     ☑     ☑</span>
+<span class="go"> beid.BeIdUser                            ☑     ☑     ☑     ☑     ☑     ☑     ☑     ☑     ☑     ☑                 ☑     ☑     ☑</span>
+<span class="go"> cal.GuestOperator                        ☑     ☑     ☑     ☑     ☑     ☑     ☑     ☑     ☑     ☑                 ☑     ☑     ☑</span>
+<span class="go"> cbss.CBSSUser                            ☑     ☑     ☑     ☑     ☑           ☑     ☑     ☑     ☑                       ☑     ☑</span>
+<span class="go"> checkdata.CheckdataUser                  ☑     ☑     ☑     ☑                 ☑     ☑     ☑     ☑                       ☑     ☑</span>
+<span class="go"> coachings.CoachingsStaff                       ☑     ☑           ☑                       ☑     ☑                       ☑     ☑</span>
+<span class="go"> coachings.CoachingsUser                  ☑     ☑     ☑     ☑     ☑           ☑     ☑     ☑     ☑                       ☑     ☑</span>
+<span class="go"> contacts.ContactsStaff                         ☑     ☑           ☑                       ☑     ☑                 ☑     ☑     ☑</span>
+<span class="go"> contacts.ContactsUser                    ☑     ☑     ☑     ☑     ☑           ☑     ☑     ☑     ☑     ☑     ☑     ☑     ☑     ☑</span>
+<span class="go"> contacts.SimpleContactsUser              ☑     ☑     ☑     ☑     ☑     ☑     ☑     ☑     ☑     ☑     ☑     ☑     ☑     ☑     ☑</span>
+<span class="go"> core.Anonymous                     ☑</span>
+<span class="go"> core.SiteUser                            ☑     ☑     ☑     ☑     ☑     ☑     ☑     ☑     ☑     ☑     ☑     ☑     ☑     ☑     ☑</span>
+<span class="go"> courses.CoursesTeacher                         ☑     ☑                                         ☑                       ☑     ☑</span>
+<span class="go"> courses.CoursesUser                      ☑     ☑     ☑     ☑     ☑           ☑     ☑     ☑     ☑                 ☑     ☑     ☑</span>
+<span class="go"> cv.CareerStaff                                 ☑     ☑                                         ☑                       ☑     ☑</span>
+<span class="go"> cv.CareerUser                            ☑     ☑     ☑                                         ☑                       ☑     ☑</span>
+<span class="go"> debts.DebtsStaff                                                                                                       ☑     ☑</span>
+<span class="go"> debts.DebtsUser                                      ☑                       ☑                 ☑                       ☑     ☑</span>
+<span class="go"> excerpts.ExcerptsStaff                                                                                                 ☑     ☑</span>
+<span class="go"> excerpts.ExcerptsUser                    ☑     ☑     ☑           ☑     ☑           ☑     ☑     ☑     ☑     ☑     ☑     ☑     ☑</span>
+<span class="go"> integ.IntegUser                          ☑     ☑     ☑                                         ☑                       ☑     ☑</span>
+<span class="go"> integ.IntegrationStaff                         ☑     ☑                                         ☑                       ☑     ☑</span>
+<span class="go"> ledger.LedgerStaff                                                                                         ☑           ☑     ☑</span>
+<span class="go"> ledger.LedgerUser                                                                                    ☑     ☑           ☑     ☑</span>
+<span class="go"> newcomers.NewcomersOperator                    ☑     ☑     ☑           ☑     ☑                 ☑                 ☑     ☑     ☑</span>
+<span class="go"> newcomers.NewcomersUser                              ☑     ☑           ☑     ☑                 ☑                       ☑     ☑</span>
+<span class="go"> notes.NotesStaff                               ☑     ☑                                         ☑                       ☑     ☑</span>
+<span class="go"> notes.NotesUser                          ☑     ☑     ☑     ☑     ☑     ☑     ☑     ☑     ☑     ☑     ☑     ☑     ☑     ☑     ☑</span>
+<span class="go"> office.OfficeOperator                          ☑     ☑     ☑     ☑     ☑     ☑           ☑     ☑                 ☑     ☑     ☑</span>
+<span class="go"> office.OfficeStaff                             ☑     ☑                                   ☑     ☑                       ☑     ☑</span>
+<span class="go"> office.OfficeUser                        ☑     ☑     ☑     ☑                 ☑     ☑     ☑     ☑     ☑     ☑           ☑     ☑</span>
+<span class="go"> pcsw.SocialCoordinator                                           ☑                 ☑     ☑</span>
+<span class="go"> pcsw.SocialStaff                               ☑     ☑                                   ☑     ☑                       ☑     ☑</span>
+<span class="go"> pcsw.SocialUser                          ☑     ☑     ☑     ☑                 ☑     ☑     ☑     ☑                       ☑     ☑</span>
+<span class="go"> polls.PollsStaff                               ☑     ☑                                   ☑     ☑                       ☑     ☑</span>
+<span class="go"> polls.PollsUser                          ☑     ☑     ☑     ☑                 ☑     ☑     ☑     ☑                       ☑     ☑</span>
+<span class="go"> search.SiteSearcher                                                                                                    ☑     ☑</span>
+<span class="go"> sepa.SepaStaff                                 ☑     ☑                                   ☑     ☑     ☑     ☑           ☑     ☑</span>
+<span class="go"> sepa.SepaUser                            ☑     ☑     ☑     ☑     ☑           ☑     ☑     ☑     ☑     ☑     ☑     ☑     ☑     ☑</span>
+<span class="go"> users.AuthorshipTaker                                            ☑     ☑           ☑     ☑                       ☑     ☑     ☑</span>
+<span class="go"> welfare.Accountant                                                                                   ☑</span>
+<span class="go"> welfare.AccountantManager                                                                                  ☑</span>
+<span class="go"> welfare.DebtsConsultant                                                      ☑</span>
+<span class="go"> welfare.IntegrationAgent                 ☑     ☑     ☑                                         ☑</span>
+<span class="go"> welfare.IntegrationAgentFlexible                     ☑                                         ☑</span>
+<span class="go"> welfare.IntegrationAgentManager                ☑     ☑                                         ☑</span>
+<span class="go"> welfare.NewcomersConsultant                                ☑</span>
+<span class="go"> welfare.ReceptionClerk                                           ☑</span>
+<span class="go"> welfare.ReceptionClerkFlexible                                         ☑</span>
+<span class="go"> welfare.SecurityAdvisor                                                                                                      ☑</span>
+<span class="go"> welfare.SiteAdmin                                                                                                      ☑     ☑</span>
+<span class="go"> welfare.SocialAgent                                                                ☑     ☑</span>
+<span class="go"> welfare.SocialAgentManager                                                               ☑</span>
+<span class="go"> welfare.Supervisor                                                                                               ☑</span>
+<span class="go"> xcourses.CoursesStaff                          ☑     ☑                                         ☑                       ☑     ☑</span>
+<span class="go"> xcourses.CoursesUser                     ☑     ☑     ☑                                         ☑                       ☑     ☑</span>
+<span class="go">================================== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== =====</span>
+</pre></div>
+</div>
+<section id="user-types-versus-user-roles">
+<h2>User <em>types</em> versus user <em>roles</em><a class="headerlink" href="#user-types-versus-user-roles" title="Permalink to this heading">¶</a></h2>
+<p>A user type is an arbitrary choice of user roles made available for a
+given application.</p>
+<p>For example the <a class="reference internal" href="../isip.html#lino_welfare.modlib.isip.ContractsByClient" title="lino_welfare.modlib.isip.ContractsByClient"><code class="xref py py-class docutils literal notranslate"><span class="pre">lino_welfare.modlib.isip.ContractsByClient</span></code></a>
+table is visible for users having the IntegUser or SocialCoordinator
+role:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="n">isip</span><span class="o">.</span><span class="n">ContractsByClient</span><span class="o">.</span><span class="n">required_roles</span><span class="p">)</span>
+<span class="go">[(&lt;class &#39;lino_welfare.modlib.integ.roles.IntegUser&#39;&gt;, &lt;class &#39;lino_welfare.modlib.pcsw.roles.SocialCoordinator&#39;&gt;)]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">visible_for</span><span class="p">(</span><span class="n">isip</span><span class="o">.</span><span class="n">ContractsByClient</span><span class="p">))</span>
+<span class="go">100 110 120 210 400 410 420 admin 910</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+
+            <p class="logo"><a href="../../index.html">
+              <img class="logo" src="../../_static/logo_web3.png" alt="Logo"/>
+            </a></p>
+          <div class="sidebar-resize-handle"></div>
+<p align="center"><b>EN</b> | <a href="de/index.rst">DE</a> | <a href="fr/index.rst">FR</a></p>
+<h3><a href="../../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../about/index.html">About Lino Welfare</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../usage/index.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../changes/index.html">Changes</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Specs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../install/index.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../copyright.html">Copyright &amp; legal notes</a></li>
+</ul>
+
+<hr class="docutils" />
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+<ul>
+  <li class="toctree-l1"><a class="reference internal" href="../../py-modindex.html">Python Module Index</a></li>
+</ul><p align="center">
+</p>
+
+<div id="ethical-ad-placement"></div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+    <nav class="relbar">
+      <a class="previous" href="general.html" aria-label="Previous topic" >
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg>
+        </div>
+        <div class="title">
+          <span class="text">
+            <span class="direction">previous</span>
+            General overview of Lino Welfare
+          </span>
+        </div>
+      </a>
+      <a class="next" href="choicelists.html" aria-label="Next topic" >
+        <div class="title">
+          <span class="text">
+            <span class="direction">next</span>
+            Choicelists in Lino Welfare
+          </span>
+        </div>
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+        </div>
+      </a>
+    </nav>
+
+    <footer role="contentinfo">
+      &#169; <a href="../../copyright.html">Copyright</a> 2012-2022 Rumma &amp; Ko Ltd.
+      Last updated on 2022-11-08.
+      Created using <a class="reference external" href="https://www.sphinx-doc.org/">Sphinx</a> 5.1.1.
+      <a class="reference external" href="https://insipid-sphinx-theme.readthedocs.io/">Insipid Theme</a>.
+<a href="https://gitlab.com/lino-framework/welfare/-/blob/master/docs/specs/topics/usertypes.rst?plain=1"
+  rel="nofollow">Source code</a>.
+<br>
+
+Online link: <a href="https://welfare.lino-framework.org/specs/topics/usertypes.html">https://welfare.lino-framework.org/specs/topics/usertypes.html</a>.
+
+
+    </footer>
+  </body>
+</html>

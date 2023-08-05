@@ -1,0 +1,548 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Uploads in Lino Welfare &#8212; Lino Welfare</title>
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/insipid.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/atelier.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/insipid-cust.css" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script defer src="../_static/insipid.js"></script>
+    <script defer src="../_static/insipid-sidebar.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="copyright" title="Copyright" href="../copyright.html" />
+    <link rel="next" title="Multiple postal addresses" href="addresses.html" />
+    <link rel="prev" title="reception : receive clients at a reception desk" href="reception/index.html" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+  </head><body>
+    <script type="text/javascript">
+        document.body.classList.add('js');
+    </script>
+    <input type="checkbox" id="sidebar-checkbox" style="display: none;">
+    <label id="overlay" for="sidebar-checkbox"></label>
+    <div class="sidebar-resize-handle"></div>
+    <script type="text/javascript">
+        try {
+            let sidebar = localStorage.getItem('sphinx-sidebar');
+            const sidebar_width = localStorage.getItem('sphinx-sidebar-width');
+            if (sidebar_width) {
+                document.documentElement.style.setProperty('--sidebar-width', sidebar_width);
+            }
+            // show sidebar on wide screen
+            if (!sidebar && window.matchMedia('(min-width: 100rem)').matches) {
+                sidebar = 'visible';
+                // NB: We don't store the value in localStorage!
+            }
+            if (sidebar === 'visible') {
+                document.getElementById('sidebar-checkbox').checked = true;
+            }
+        } catch(e) {
+            console.info(e);
+        }
+    </script>
+    <header id="topbar-placeholder">
+      <div id="topbar">
+        <div id="titlebar">
+          <div class="buttons">
+            <label for="sidebar-checkbox" id="sidebar-button" role="button" tabindex="0" aria-controls="sphinxsidebar" accesskey="M">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></svg>
+            </label><a href="../index.html" title="Lino Welfare">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
+</a>
+          </div>
+          <div class="title">
+            <a class="parent" href="plugins.html" accesskey="U">Plugins</a>
+            <a class="top" href="#">Uploads in Lino Welfare</a>
+          </div>
+          <div class="buttons">
+            <button id="fullscreen-button" type="button" aria-hidden="true">
+              <span class="enable">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M212.686 315.314L120 408l32.922 31.029c15.12 15.12 4.412 40.971-16.97 40.971h-112C10.697 480 0 469.255 0 456V344c0-21.382 25.803-32.09 40.922-16.971L72 360l92.686-92.686c6.248-6.248 16.379-6.248 22.627 0l25.373 25.373c6.249 6.248 6.249 16.378 0 22.627zm22.628-118.628L328 104l-32.922-31.029C279.958 57.851 290.666 32 312.048 32h112C437.303 32 448 42.745 448 56v112c0 21.382-25.803 32.09-40.922 16.971L376 152l-92.686 92.686c-6.248 6.248-16.379 6.248-22.627 0l-25.373-25.373c-6.249-6.248-6.249-16.378 0-22.627z"/></svg>
+              </span>
+              <span class="disable">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M4.686 427.314L104 328l-32.922-31.029C55.958 281.851 66.666 256 88.048 256h112C213.303 256 224 266.745 224 280v112c0 21.382-25.803 32.09-40.922 16.971L152 376l-99.314 99.314c-6.248 6.248-16.379 6.248-22.627 0L4.686 449.941c-6.248-6.248-6.248-16.379 0-22.627zM443.314 84.686L344 184l32.922 31.029c15.12 15.12 4.412 40.971-16.97 40.971h-112C234.697 256 224 245.255 224 232V120c0-21.382 25.803-32.09 40.922-16.971L296 136l99.314-99.314c6.248-6.248 16.379-6.248 22.627 0l25.373 25.373c6.248 6.248 6.248 16.379 0 22.627z"/></svg>
+              </span>
+            </button><a href="https://www.facebook.com/sharer/sharer.php?u=https://welfare.lino-framework.org/specs/uploads/" title="Share on Facebook" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+</a>
+
+<!---
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+---!>
+
+<a href="https://twitter.com/share?ref_src=https://welfare.lino-framework.org/specs/uploads/" title="Share on Twitter" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <a href="reception/index.html" class="nav-icon previous" title="previous:&#13;reception : receive clients at a reception desk" aria-label="Previous topic" accesskey="P" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"/></svg>
+      </a>
+      <a href="addresses.html" class="nav-icon next" title="next:&#13;Multiple postal addresses" aria-label="Next topic" accesskey="N" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg>
+      </a>
+    </nav>
+
+    <nav class="relbar">
+      <a class="previous" href="reception/index.html" aria-label="Previous topic" >
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg>
+        </div>
+        <div class="title">
+          <span class="text">
+            <span class="direction">previous</span>
+            <code class="xref py py-mod docutils literal notranslate"><span class="pre">reception</span></code> : receive clients at a reception desk
+          </span>
+        </div>
+      </a>
+      <a class="next" href="addresses.html" aria-label="Next topic" >
+        <div class="title">
+          <span class="text">
+            <span class="direction">next</span>
+            Multiple postal addresses
+          </span>
+        </div>
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+        </div>
+      </a>
+    </nav>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+<section id="uploads-in-lino-welfare">
+<span id="welfare-specs-uploads"></span><h1><a class="toc-backref" href="#id1" role="doc-backlink">Uploads in Lino Welfare</a><a class="headerlink" href="#uploads-in-lino-welfare" title="Permalink to this heading">¶</a></h1>
+<p>This document describes the <code class="xref py py-mod docutils literal notranslate"><span class="pre">lino_xl.lib.uploads</span></code> plugin as used by
+<a class="reference internal" href="../index.html#welfare"><span class="std std-ref">Lino Welfare</span></a>.</p>
+<nav class="contents" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#uploads-in-lino-welfare" id="id1">Uploads in Lino Welfare</a></p>
+<ul>
+<li><p><a class="reference internal" href="#configuring-upload-types" id="id2">Configuring upload types</a></p></li>
+<li><p><a class="reference internal" href="#two-clients-and-their-uploads" id="id3">Two clients and their uploads</a></p></li>
+<li><p><a class="reference internal" href="#my-uploads" id="id4">My uploads</a></p></li>
+<li><p><a class="reference internal" href="#shortcut-fields" id="id5">Shortcut fields</a></p></li>
+<li><p><a class="reference internal" href="#uploads-by-client" id="id6">Uploads by client</a></p></li>
+</ul>
+</li>
+</ul>
+</nav>
+<p>This is a <a class="reference external" href="https://dev.lino-framework.org/dev/doctests.html#tested-docs" title="(in Lino Developer Guide v20.1)"><span class="xref std std-ref">tested document</span></a>.  The following instructions are
+used for initialization:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">lino</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lino</span><span class="o">.</span><span class="n">startup</span><span class="p">(</span><span class="s1">&#39;lino_welfare.projects.gerd.settings.doctests&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino.api.doctest</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+<p>Lino Welfare uses the <code class="xref py py-mod docutils literal notranslate"><span class="pre">lino_xl.lib.uploads</span></code> plugin together with the
+<a class="reference external" href="https://dev.lino-framework.org/api/lino_xl.lib.coachings.html#module-lino_xl.lib.coachings" title="(in Lino Developer Guide v20.1)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">lino_xl.lib.coachings</span></code></a> plugin, which changes some aspects.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">cal</span><span class="o">.</span><span class="n">TasksByController</span><span class="o">.</span><span class="n">detail_layout</span><span class="o">.</span><span class="n">main</span><span class="p">)</span>
+
+<span class="go">    start_date due_date id workflow_buttons</span>
+<span class="go">    summary</span>
+<span class="go">    project user delegated</span>
+<span class="go">    owner created:20 modified:20</span>
+<span class="go">    description #notes.NotesByTask</span>
+</pre></div>
+</div>
+<section id="configuring-upload-types">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Configuring upload types</a><a class="headerlink" href="#configuring-upload-types" title="Permalink to this heading">¶</a></h2>
+<p>This is the list of upload types:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;rolf&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">uploads</span><span class="o">.</span><span class="n">UploadTypes</span><span class="p">)</span>
+<span class="go">==== ============================ ======== ================ ============= ========================= ====================== ============================</span>
+<span class="go"> ID   Bezeichnung                  Wanted   Upload-Bereich   Max. number   Ablaufwarnung (Einheit)   Ablaufwarnung (Wert)   Upload shortcut</span>
+<span class="go">---- ---------------------------- -------- ---------------- ------------- ------------------------- ---------------------- ----------------------------</span>
+<span class="go"> 3    Arbeitserlaubnis             Ja       Allgemein        1             monatlich                 2</span>
+<span class="go"> 2    Aufenthaltserlaubnis         Ja       Allgemein        1             monatlich                 2</span>
+<span class="go"> 8    Behindertenausweis           Nein     Allgemein        -1                                      1</span>
+<span class="go"> 9    Diplom                       Ja       Allgemein        -1                                      1</span>
+<span class="go"> 4    Führerschein                 Ja       Allgemein        1             monatlich                 1</span>
+<span class="go"> 5    Identifizierendes Dokument   Ja       Allgemein        1             monatlich                 1                      Identifizierendes Dokument</span>
+<span class="go"> 10   Personalausweis              Nein     Allgemein        -1                                      1</span>
+<span class="go"> 1    Source document              Ja       Allgemein        1             monatlich                 2</span>
+<span class="go"> 6    Vertrag                      Nein     Allgemein        -1                                      1</span>
+<span class="go"> 7    Ärztliche Bescheinigung      Nein     Allgemein        -1                                      1</span>
+<span class="go">                                                             **0**                                   **13**</span>
+<span class="go">==== ============================ ======== ================ ============= ========================= ====================== ============================</span>
+</pre></div>
+</div>
+</section>
+<section id="two-clients-and-their-uploads">
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Two clients and their uploads</a><a class="headerlink" href="#two-clients-and-their-uploads" title="Permalink to this heading">¶</a></h2>
+<p>The following newcomer has uploaded 2 identifying documents. One of
+these is no longer valid, and we know it: <cite>needed</cite> has been unchecked.
+The other is still valid but will expire in 3 days.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">newcomer</span> <span class="o">=</span> <span class="n">pcsw</span><span class="o">.</span><span class="n">Client</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="mi">121</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">newcomer</span><span class="p">)</span>
+<span class="go">DERICUM Daniel (121)</span>
+</pre></div>
+</div>
+<p>The UploadsByProject summary shows a summary grouped by upload type.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">uploads</span><span class="o">.</span><span class="n">UploadsByProject</span><span class="p">,</span> <span class="n">newcomer</span><span class="p">)</span>
+<span class="go">Identifizierendes Dokument: *12*, *11* / Diplom: *9* / Personalausweis: *10* / `❏ &lt;javascript:Lino.pcsw.Clients.show_uploads(null,false,121,{  })&gt;`__</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">uploads</span><span class="o">.</span><span class="n">UploadsByProject</span><span class="p">,</span> <span class="n">newcomer</span><span class="p">,</span> <span class="n">nosummary</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="go">============================ ============ ======= =============================== ===================</span>
+<span class="go"> Upload-Art                   Gültig bis   Nötig   Beschreibung                    Hochgeladen durch</span>
+<span class="go">---------------------------- ------------ ------- ------------------------------- -------------------</span>
+<span class="go"> Identifizierendes Dokument   25.05.14     Ja      Identifizierendes Dokument 12   Theresia Thelen</span>
+<span class="go"> Identifizierendes Dokument   22.04.14     Nein    Identifizierendes Dokument 11   Theresia Thelen</span>
+<span class="go"> Personalausweis              26.06.15     Nein    Personalausweis 10              Hubert Huppertz</span>
+<span class="go"> Diplom                       26.06.15     Nein    Diplom 9                        Hubert Huppertz</span>
+<span class="go">============================ ============ ======= =============================== ===================</span>
+</pre></div>
+</div>
+<p>Here is another <a class="reference internal" href="../about/general.html#term-beneficiary"><span class="xref std std-term">beneficiary</span></a> with three uploads:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">oldclient</span> <span class="o">=</span> <span class="n">pcsw</span><span class="o">.</span><span class="n">Client</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="mi">124</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">oldclient</span><span class="p">))</span>
+<span class="go">DOBBELSTEIN Dorothée (124)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">uploads</span><span class="o">.</span><span class="n">UploadsByProject</span><span class="p">,</span> <span class="n">oldclient</span><span class="p">)</span>
+<span class="go">Aufenthaltserlaubnis: *residence_permit.pdf* `⇲ &lt;/media/uploads/2014/05/residence_permit.pdf&gt;`__ / Arbeitserlaubnis: *work_permit.pdf* `⇲ &lt;/media/uploads/2014/05/work_permit.pdf&gt;`__ / Führerschein: *driving_license.pdf* `⇲ &lt;/media/uploads/2014/05/driving_license.pdf&gt;`__ / `❏ &lt;javascript:Lino.pcsw.Clients.show_uploads(null,false,124,{  })&gt;`__</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">uploads</span><span class="o">.</span><span class="n">UploadsByProject</span><span class="p">,</span> <span class="n">oldclient</span><span class="p">,</span> <span class="n">nosummary</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="go">====================== ============ ======= ============================================================================================= ===================</span>
+<span class="go"> Upload-Art             Gültig bis   Nötig   Beschreibung                                                                                  Hochgeladen durch</span>
+<span class="go">---------------------- ------------ ------- --------------------------------------------------------------------------------------------- -------------------</span>
+<span class="go"> Führerschein           01.06.14     Ja      `Führerschein driving_license.pdf &lt;/media/uploads/2014/05/driving_license.pdf&gt;`__             Caroline Carnol</span>
+<span class="go"> Arbeitserlaubnis       30.08.14     Ja      `Arbeitserlaubnis work_permit.pdf &lt;/media/uploads/2014/05/work_permit.pdf&gt;`__                 Alicia Allmanns</span>
+<span class="go"> Aufenthaltserlaubnis   18.03.15     Ja      `Aufenthaltserlaubnis residence_permit.pdf &lt;/media/uploads/2014/05/residence_permit.pdf&gt;`__   Theresia Thelen</span>
+<span class="go">====================== ============ ======= ============================================================================================= ===================</span>
+</pre></div>
+</div>
+</section>
+<section id="my-uploads">
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">My uploads</a><a class="headerlink" href="#my-uploads" title="Permalink to this heading">¶</a></h2>
+<p>Most users can open two tables which show “their” uploads.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">uploads</span><span class="o">.</span><span class="n">MyUploads</span><span class="o">.</span><span class="n">label</span><span class="p">))</span>
+<span class="go">Meine Upload-Dateien</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">uploads</span><span class="o">.</span><span class="n">MyExpiringUploads</span><span class="o">.</span><span class="n">label</span><span class="p">))</span>
+<span class="go">Meine ablaufenden Upload-Dateien</span>
+</pre></div>
+</div>
+<p>This is the <code class="xref py py-class docutils literal notranslate"><span class="pre">MyUploads</span></code> table for Theresia:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;theresia&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">uploads</span><span class="o">.</span><span class="n">MyUploads</span><span class="p">)</span>
+<span class="go">==== ============================ ============================ ============ ============ ======= ============================================================================================= ======================================</span>
+<span class="go"> ID   Klient                       Upload-Art                   Gültig von   Gültig bis   Nötig   Beschreibung                                                                                  Datei</span>
+<span class="go">---- ---------------------------- ---------------------------- ------------ ------------ ------- --------------------------------------------------------------------------------------------- --------------------------------------</span>
+<span class="go"> 13   DOBBELSTEIN Dorothée (124)   Aufenthaltserlaubnis                      18.03.15     Ja      `Aufenthaltserlaubnis residence_permit.pdf &lt;/media/uploads/2014/05/residence_permit.pdf&gt;`__   uploads/2014/05/residence_permit.pdf</span>
+<span class="go"> 12   DERICUM Daniel (121)         Identifizierendes Dokument                25.05.14     Ja      Identifizierendes Dokument 12</span>
+<span class="go"> 11   DERICUM Daniel (121)         Identifizierendes Dokument                22.04.14     Nein    Identifizierendes Dokument 11</span>
+<span class="go">==== ============================ ============================ ============ ============ ======= ============================================================================================= ======================================</span>
+</pre></div>
+</div>
+<p>And the same for Caroline:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;caroline&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">uploads</span><span class="o">.</span><span class="n">MyUploads</span><span class="p">)</span>
+<span class="go">==== ============================ ============== ============ ============ ======= =================================================================================== =====================================</span>
+<span class="go"> ID   Klient                       Upload-Art     Gültig von   Gültig bis   Nötig   Beschreibung                                                                        Datei</span>
+<span class="go">---- ---------------------------- -------------- ------------ ------------ ------- ----------------------------------------------------------------------------------- -------------------------------------</span>
+<span class="go"> 15   DOBBELSTEIN Dorothée (124)   Führerschein                01.06.14     Ja      `Führerschein driving_license.pdf &lt;/media/uploads/2014/05/driving_license.pdf&gt;`__   uploads/2014/05/driving_license.pdf</span>
+<span class="go">==== ============================ ============== ============ ============ ======= =================================================================================== =====================================</span>
+</pre></div>
+</div>
+<p>This is the <a class="reference external" href="https://dev.lino-framework.org/specs/avanti/uploads.html#lino_xl.lib.uploads.MyExpiringUploads" title="(in Lino Developer Guide v20.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">MyExpiringUploads</span></code></a> table for <a class="reference internal" href="weleup/eupen.html#hubert"><span class="std std-ref">Hubert</span></a>:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;hubert&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">uploads</span><span class="o">.</span><span class="n">MyExpiringUploads</span><span class="p">)</span>
+<span class="go">========================= ====================== ======================== =================== ============ ============ =======</span>
+<span class="go"> Klient                    Upload-Art             Beschreibung             Hochgeladen durch   Gültig von   Gültig bis   Nötig</span>
+<span class="go">------------------------- ---------------------- ------------------------ ------------------- ------------ ------------ -------</span>
+<span class="go"> AUSDEMWALD Alfons (116)   Source document        Source document 1        Hubert Huppertz                  17.05.15     Ja</span>
+<span class="go"> AUSDEMWALD Alfons (116)   Aufenthaltserlaubnis   Aufenthaltserlaubnis 2   Hubert Huppertz                  17.05.15     Ja</span>
+<span class="go">========================= ====================== ======================== =================== ============ ============ =======</span>
+</pre></div>
+</div>
+<p><a class="reference internal" href="weleup/eupen.html#theresia"><span class="std std-ref">Theresia</span></a> does not coach anybody, so the <a class="reference external" href="https://dev.lino-framework.org/specs/avanti/uploads.html#lino_xl.lib.uploads.MyExpiringUploads" title="(in Lino Developer Guide v20.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">MyExpiringUploads</span></code></a>
+table is empty for her:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;theresia&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">uploads</span><span class="o">.</span><span class="n">MyExpiringUploads</span><span class="p">)</span>
+<span class="go">Keine Daten anzuzeigen</span>
+</pre></div>
+</div>
+</section>
+<section id="shortcut-fields">
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Shortcut fields</a><a class="headerlink" href="#shortcut-fields" title="Permalink to this heading">¶</a></h2>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">id_document</span> <span class="o">=</span> <span class="n">uploads</span><span class="o">.</span><span class="n">UploadType</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">shortcut</span><span class="o">=</span><span class="n">uploads</span><span class="o">.</span><span class="n">Shortcuts</span><span class="o">.</span><span class="n">id_document</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">uploads</span><span class="o">.</span><span class="n">UploadsByType</span><span class="p">,</span> <span class="n">id_document</span><span class="p">)</span>
+<span class="go">=================== ========================= ============================ ======= ============ ============ ======= ===============================</span>
+<span class="go"> Hochgeladen durch   Klient                    Upload-Art                   Datei   Gültig von   Gültig bis   Nötig   Beschreibung</span>
+<span class="go">------------------- ------------------------- ---------------------------- ------- ------------ ------------ ------- -------------------------------</span>
+<span class="go"> Theresia Thelen     DERICUM Daniel (121)      Identifizierendes Dokument                        25.05.14     Ja      Identifizierendes Dokument 12</span>
+<span class="go"> Theresia Thelen     DERICUM Daniel (121)      Identifizierendes Dokument                        22.04.14     Nein    Identifizierendes Dokument 11</span>
+<span class="go"> Hubert Huppertz     COLLARD Charlotte (118)   Identifizierendes Dokument                        06.06.15     Ja      Identifizierendes Dokument 5</span>
+<span class="go">=================== ========================= ============================ ======= ============ ============ ======= ===============================</span>
+</pre></div>
+</div>
+<p>Let’s have a closer look at the <cite>id_document</cite> shortcut field for
+some customers.</p>
+<p>The response to this AJAX request is in JSON, and we want to inspect
+the <cite>id_document</cite> field using <a class="reference external" href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">BeautifulSoup</a>:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">uri</span> <span class="o">=</span> <span class="s2">&quot;pcsw/Clients/</span><span class="si">{0}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">newcomer</span><span class="o">.</span><span class="n">pk</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">soup</span> <span class="o">=</span> <span class="n">get_json_soup</span><span class="p">(</span><span class="s1">&#39;romain&#39;</span><span class="p">,</span> <span class="n">uri</span><span class="p">,</span> <span class="s1">&#39;id_document&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This is an upload shortcut field whose target has more than one
+row. Which means that it has two buttons.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">div</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">div</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">len</span><span class="p">(</span><span class="n">div</span><span class="o">.</span><span class="n">contents</span><span class="p">)</span>
+<span class="go">3</span>
+</pre></div>
+</div>
+<p>The first button opens a detail window on the <em>last</em> uploaded filed:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">div</span><span class="o">.</span><span class="n">contents</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="go">&lt;a href=&#39;javascript:Lino.uploads.Uploads.detail.run(null,{ &quot;record_id&quot;: 12 })&#39;&gt;Letzte&lt;/a&gt;</span>
+</pre></div>
+</div>
+<p>The second item is just the comma which separates the two buttons:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">div</span><span class="o">.</span><span class="n">contents</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="go">&#39;, &#39;</span>
+</pre></div>
+</div>
+<p>The second button opens the list of uploads:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">div</span><span class="o">.</span><span class="n">contents</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>  
+<span class="go">&lt;a href=&#39;javascript:Lino.uploads.UploadsByProject.grid.run(null,...)&#39;...&gt;Alle 2 Dateien&lt;/a&gt;</span>
+</pre></div>
+</div>
+<p>And as you can see, it does not use the default table
+(UploadsByController) but the welfare specific table UploadsByProject.</p>
+<p>Let’s inspect these three dots (<cite>…</cite>) of this second button.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">btn</span> <span class="o">=</span> <span class="n">div</span><span class="o">.</span><span class="n">contents</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dots</span> <span class="o">=</span> <span class="n">btn</span><span class="p">[</span><span class="s1">&#39;href&#39;</span><span class="p">][</span><span class="mi">55</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">dots</span><span class="p">)</span>  
+<span class="go">{ ... }</span>
+</pre></div>
+</div>
+<p>They are a big “object”, which is represented in Python as a <cite>dict</cite>:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">d</span> <span class="o">=</span> <span class="n">AttrDict</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">dots</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>It has 3 keys:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">keys</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">keys</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">keys</span><span class="p">))</span>
+<span class="go">[&quot;base_params&quot;, &quot;param_values&quot;, &quot;record_id&quot;]</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">d</span><span class="o">.</span><span class="n">record_id</span>
+<span class="go">12</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">d</span><span class="o">.</span><span class="n">base_params</span> 
+<span class="go">{&#39;mk&#39;: 121, &#39;mt&#39;: 57, &#39;type&#39;: 5}</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pprint</span><span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">param_values</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">{&#39;coached_by&#39;: None,</span>
+<span class="go"> &#39;coached_byHidden&#39;: None,</span>
+<span class="go"> &#39;end_date&#39;: None,</span>
+<span class="go"> &#39;observed_event&#39;: &#39;Est active&#39;,</span>
+<span class="go"> &#39;observed_eventHidden&#39;: &#39;20&#39;,</span>
+<span class="go"> &#39;start_date&#39;: None,</span>
+<span class="go"> &#39;upload_type&#39;: None,</span>
+<span class="go"> &#39;upload_typeHidden&#39;: None,</span>
+<span class="go"> &#39;user&#39;: None,</span>
+<span class="go"> &#39;userHidden&#39;: None}</span>
+</pre></div>
+</div>
+</section>
+<section id="uploads-by-client">
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Uploads by client</a><a class="headerlink" href="#uploads-by-client" title="Permalink to this heading">¶</a></h2>
+<p><code class="xref py py-class docutils literal notranslate"><span class="pre">UploadsByProject</span></code> shows all the
+uploads of a given client, but it has a customized
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">get_slave_summary</span></code>.</p>
+<p>The following example is going to use client #121 as master.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">obj</span> <span class="o">=</span> <span class="n">oldclient</span>
+</pre></div>
+</div>
+<p>Here we use <a class="reference external" href="https://dev.lino-framework.org/api/lino.api.doctest.html#lino.api.doctest.get_json_soup" title="(in Lino Developer Guide v20.1)"><code class="xref py py-func docutils literal notranslate"><span class="pre">lino.api.doctest.get_json_soup()</span></code></a> to inspect what the
+summary view of <cite>UploadsByProject</cite> returns for this client.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">soup</span> <span class="o">=</span> <span class="n">get_json_soup</span><span class="p">(</span><span class="s1">&#39;rolf&#39;</span><span class="p">,</span> <span class="s1">&#39;pcsw/Clients/124&#39;</span><span class="p">,</span> <span class="s1">&#39;uploads.UploadsByProject&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">soup</span><span class="o">.</span><span class="n">get_text</span><span class="p">())</span>
+<span class="gp">... </span>
+<span class="go">Source document: Aufenthaltserlaubnis: residence_permit.pdf ⇲Arbeitserlaubnis: work_permit.pdf ⇲Führerschein: driving_license.pdf ⇲Identifizierendes Dokument: Diplom:</span>
+</pre></div>
+</div>
+<p>The HTML fragment contains five links:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">links</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">len</span><span class="p">(</span><span class="n">links</span><span class="p">)</span>
+<span class="go">9</span>
+</pre></div>
+</div>
+<p>The first link would run the insert action on <cite>UploadsByProject</cite>, with
+the owner set to this client</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">btn</span> <span class="o">=</span> <span class="n">links</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">btn</span><span class="o">.</span><span class="n">string</span><span class="p">)</span>
+<span class="go">None</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">btn</span><span class="o">.</span><span class="n">img</span><span class="p">[</span><span class="s1">&#39;src&#39;</span><span class="p">])</span>
+<span class="go">/static/images/mjames/add.png</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">btn</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">&lt;a href=&#39;javascript:Lino.uploads.UploadsByProject.insert.run(null,{ ... })&#39;</span>
+<span class="go">style=&quot;vertical-align:-30%;&quot;</span>
+<span class="go">title=&quot;Öffnet ein Dialogfenster, um einen neuen Datensatz (Upload-Datei) zu erstellen.&quot;&gt;&lt;img alt=&quot;add&quot;</span>
+<span class="go">src=&quot;/static/images/mjames/add.png&quot;/&gt;&lt;/a&gt;</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">links</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;href&#39;</span><span class="p">))</span>
+<span class="gp">... </span>
+<span class="go">/media/uploads/2014/05/residence_permit.pdf</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">links</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;href&#39;</span><span class="p">))</span>
+<span class="gp">... </span>
+<span class="go">javascript:Lino.uploads.Uploads.detail.run(null,{ &quot;record_id&quot;: 14 })</span>
+</pre></div>
+</div>
+<p>Now let’s inspect the javascript of the first button</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dots</span> <span class="o">=</span> <span class="n">btn</span><span class="p">[</span><span class="s1">&#39;href&#39;</span><span class="p">][</span><span class="mi">57</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">dots</span><span class="p">)</span>  
+<span class="go">{ ... }</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">d</span> <span class="o">=</span> <span class="n">AttrDict</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">dots</span><span class="p">))</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pprint</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">{&#39;base_params&#39;: {&#39;mk&#39;: 124, &#39;mt&#39;: 57, &#39;type_id&#39;: 1},</span>
+<span class="go"> &#39;data_record&#39;: {&#39;data&#39;: {&#39;description&#39;: &#39;&#39;,</span>
+<span class="go">                          &#39;disabled_fields&#39;: {&#39;file_size&#39;: True,</span>
+<span class="go">                                              &#39;mimetype&#39;: True},</span>
+<span class="go">                          &#39;end_date&#39;: None,</span>
+<span class="go">                          &#39;file&#39;: &#39;&#39;,</span>
+<span class="go">                          &#39;needed&#39;: True,</span>
+<span class="go">                          &#39;project&#39;: &#39;DOBBELSTEIN Dorothée (124)&#39;,</span>
+<span class="go">                          &#39;projectHidden&#39;: 124,</span>
+<span class="go">                          &#39;start_date&#39;: None,</span>
+<span class="go">                          &#39;type&#39;: &#39;Source document&#39;,</span>
+<span class="go">                          &#39;typeHidden&#39;: 1},</span>
+<span class="go">                 &#39;phantom&#39;: True,</span>
+<span class="go">                 &#39;title&#39;: &#39;Upload-Datei erstellen&#39;},</span>
+<span class="go"> &#39;param_values&#39;: {&#39;coached_by&#39;: None,</span>
+<span class="go">                  &#39;coached_byHidden&#39;: None,</span>
+<span class="go">                  &#39;end_date&#39;: None,</span>
+<span class="go">                  &#39;observed_event&#39;: &#39;Ist aktiv&#39;,</span>
+<span class="go">                  &#39;observed_eventHidden&#39;: &#39;20&#39;,</span>
+<span class="go">                  &#39;start_date&#39;: None,</span>
+<span class="go">                  &#39;upload_type&#39;: None,</span>
+<span class="go">                  &#39;upload_typeHidden&#39;: None,</span>
+<span class="go">                  &#39;user&#39;: None,</span>
+<span class="go">                  &#39;userHidden&#39;: None},</span>
+<span class="go"> &#39;record_id&#39;: None}</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/logo_web3.png" alt="Logo"/>
+            </a></p>
+          <div class="sidebar-resize-handle"></div>
+<p align="center"><b>EN</b> | <a href="de/index.rst">DE</a> | <a href="fr/index.rst">FR</a></p>
+<h3><a href="../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../about/index.html">About Lino Welfare</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/index.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changes/index.html">Changes</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Specs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/index.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../copyright.html">Copyright &amp; legal notes</a></li>
+</ul>
+
+<hr class="docutils" />
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+<ul>
+  <li class="toctree-l1"><a class="reference internal" href="../py-modindex.html">Python Module Index</a></li>
+</ul><p align="center">
+</p>
+
+<div id="ethical-ad-placement"></div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+    <nav class="relbar">
+      <a class="previous" href="reception/index.html" aria-label="Previous topic" >
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg>
+        </div>
+        <div class="title">
+          <span class="text">
+            <span class="direction">previous</span>
+            <code class="xref py py-mod docutils literal notranslate"><span class="pre">reception</span></code> : receive clients at a reception desk
+          </span>
+        </div>
+      </a>
+      <a class="next" href="addresses.html" aria-label="Next topic" >
+        <div class="title">
+          <span class="text">
+            <span class="direction">next</span>
+            Multiple postal addresses
+          </span>
+        </div>
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+        </div>
+      </a>
+    </nav>
+
+    <footer role="contentinfo">
+      &#169; <a href="../copyright.html">Copyright</a> 2012-2022 Rumma &amp; Ko Ltd.
+      Last updated on 2022-11-08.
+      Created using <a class="reference external" href="https://www.sphinx-doc.org/">Sphinx</a> 5.1.1.
+      <a class="reference external" href="https://insipid-sphinx-theme.readthedocs.io/">Insipid Theme</a>.
+<a href="https://gitlab.com/lino-framework/welfare/-/blob/master/docs/specs/uploads.rst?plain=1"
+  rel="nofollow">Source code</a>.
+<br>
+
+Online link: <a href="https://welfare.lino-framework.org/specs/uploads.html">https://welfare.lino-framework.org/specs/uploads.html</a>.
+
+
+    </footer>
+  </body>
+</html>

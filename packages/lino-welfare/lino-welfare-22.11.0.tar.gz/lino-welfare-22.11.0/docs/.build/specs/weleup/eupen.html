@@ -1,0 +1,1652 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>The Lino Welfare “Eupen” variant &#8212; Lino Welfare</title>
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/insipid.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/atelier.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/insipid-cust.css" />
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script defer src="../../_static/insipid.js"></script>
+    <script defer src="../../_static/insipid-sidebar.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../copyright.html" />
+    <link rel="next" title="Database structure" href="db_eupen.html" />
+    <link rel="prev" title="Clients (Eupen)" href="clients_eupen.html" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+  </head><body>
+    <script type="text/javascript">
+        document.body.classList.add('js');
+    </script>
+    <input type="checkbox" id="sidebar-checkbox" style="display: none;">
+    <label id="overlay" for="sidebar-checkbox"></label>
+    <div class="sidebar-resize-handle"></div>
+    <script type="text/javascript">
+        try {
+            let sidebar = localStorage.getItem('sphinx-sidebar');
+            const sidebar_width = localStorage.getItem('sphinx-sidebar-width');
+            if (sidebar_width) {
+                document.documentElement.style.setProperty('--sidebar-width', sidebar_width);
+            }
+            // show sidebar on wide screen
+            if (!sidebar && window.matchMedia('(min-width: 100rem)').matches) {
+                sidebar = 'visible';
+                // NB: We don't store the value in localStorage!
+            }
+            if (sidebar === 'visible') {
+                document.getElementById('sidebar-checkbox').checked = true;
+            }
+        } catch(e) {
+            console.info(e);
+        }
+    </script>
+    <header id="topbar-placeholder">
+      <div id="topbar">
+        <div id="titlebar">
+          <div class="buttons">
+            <label for="sidebar-checkbox" id="sidebar-button" role="button" tabindex="0" aria-controls="sphinxsidebar" accesskey="M">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></svg>
+            </label><a href="../../index.html" title="Lino Welfare">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
+</a>
+          </div>
+          <div class="title">
+            <a class="parent" href="index.html" accesskey="U">Lino Welfare Eupen specs</a>
+            <a class="top" href="#">The Lino Welfare “Eupen” variant</a>
+          </div>
+          <div class="buttons">
+            <button id="fullscreen-button" type="button" aria-hidden="true">
+              <span class="enable">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M212.686 315.314L120 408l32.922 31.029c15.12 15.12 4.412 40.971-16.97 40.971h-112C10.697 480 0 469.255 0 456V344c0-21.382 25.803-32.09 40.922-16.971L72 360l92.686-92.686c6.248-6.248 16.379-6.248 22.627 0l25.373 25.373c6.249 6.248 6.249 16.378 0 22.627zm22.628-118.628L328 104l-32.922-31.029C279.958 57.851 290.666 32 312.048 32h112C437.303 32 448 42.745 448 56v112c0 21.382-25.803 32.09-40.922 16.971L376 152l-92.686 92.686c-6.248 6.248-16.379 6.248-22.627 0l-25.373-25.373c-6.249-6.248-6.249-16.378 0-22.627z"/></svg>
+              </span>
+              <span class="disable">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M4.686 427.314L104 328l-32.922-31.029C55.958 281.851 66.666 256 88.048 256h112C213.303 256 224 266.745 224 280v112c0 21.382-25.803 32.09-40.922 16.971L152 376l-99.314 99.314c-6.248 6.248-16.379 6.248-22.627 0L4.686 449.941c-6.248-6.248-6.248-16.379 0-22.627zM443.314 84.686L344 184l32.922 31.029c15.12 15.12 4.412 40.971-16.97 40.971h-112C234.697 256 224 245.255 224 232V120c0-21.382 25.803-32.09 40.922-16.971L296 136l99.314-99.314c6.248-6.248 16.379-6.248 22.627 0l25.373 25.373c6.248 6.248 6.248 16.379 0 22.627z"/></svg>
+              </span>
+            </button><a href="https://www.facebook.com/sharer/sharer.php?u=https://welfare.lino-framework.org/specs/weleup/eupen/" title="Share on Facebook" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+</a>
+
+<!---
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+---!>
+
+<a href="https://twitter.com/share?ref_src=https://welfare.lino-framework.org/specs/weleup/eupen/" title="Share on Twitter" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <a href="clients_eupen.html" class="nav-icon previous" title="previous:&#13;Clients (Eupen)" aria-label="Previous topic" accesskey="P" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"/></svg>
+      </a>
+      <a href="db_eupen.html" class="nav-icon next" title="next:&#13;Database structure" aria-label="Next topic" accesskey="N" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg>
+      </a>
+    </nav>
+
+    <nav class="relbar">
+      <a class="previous" href="clients_eupen.html" aria-label="Previous topic" >
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg>
+        </div>
+        <div class="title">
+          <span class="text">
+            <span class="direction">previous</span>
+            Clients (Eupen)
+          </span>
+        </div>
+      </a>
+      <a class="next" href="db_eupen.html" aria-label="Next topic" >
+        <div class="title">
+          <span class="text">
+            <span class="direction">next</span>
+            Database structure
+          </span>
+        </div>
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+        </div>
+      </a>
+    </nav>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+<section id="the-lino-welfare-eupen-variant">
+<span id="welfare-specs-eupen"></span><h1>The Lino Welfare “Eupen” variant<a class="headerlink" href="#the-lino-welfare-eupen-variant" title="Permalink to this heading">¶</a></h1>
+<nav class="contents local" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#overview" id="id6">Overview</a></p></li>
+<li><p><a class="reference internal" href="#database-structure" id="id7">Database structure</a></p></li>
+<li><p><a class="reference internal" href="#the-main-menu" id="id8">The main menu</a></p>
+<ul>
+<li><p><a class="reference internal" href="#rolf" id="id9">Rolf</a></p></li>
+<li><p><a class="reference internal" href="#hubert" id="id10">Hubert</a></p></li>
+<li><p><a class="reference internal" href="#melanie" id="id11">Mélanie</a></p></li>
+<li><p><a class="reference internal" href="#kerstin" id="id12">Kerstin</a></p></li>
+<li><p><a class="reference internal" href="#caroline" id="id13">Caroline</a></p></li>
+<li><p><a class="reference internal" href="#theresia" id="id14">Theresia</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#welfare-specs-db-eupen" id="id15">Database structure</a></p></li>
+<li><p><a class="reference internal" href="#list-of-window-layouts" id="id16">List of window layouts</a></p></li>
+<li><p><a class="reference internal" href="#windows-and-permissions" id="id17">Windows and permissions</a></p></li>
+<li><p><a class="reference internal" href="#visibility-of-eid-reader-actions" id="id18">Visibility of eID reader actions</a></p></li>
+<li><p><a class="reference internal" href="#dialog-actions" id="id19">Dialog actions</a></p></li>
+<li><p><a class="reference internal" href="#menu-walk" id="id20">Menu walk</a></p></li>
+<li><p><a class="reference internal" href="#the-murderer-bug" id="id21">The murderer bug</a></p></li>
+<li><p><a class="reference internal" href="#some-requests" id="id22">Some requests</a></p></li>
+<li><p><a class="reference internal" href="#learnable-combo-fields" id="id23">Learnable combo fields</a></p></li>
+<li><p><a class="reference internal" href="#mytasks-start-date" id="id24">mytasks_start_date</a></p></li>
+<li><p><a class="reference internal" href="#remote-virtual-fields" id="id25">Remote virtual fields</a></p></li>
+</ul>
+</nav>
+<p>This is a <a class="reference external" href="https://dev.lino-framework.org/dev/doctests.html#tested-docs" title="(in Lino Developer Guide v20.1)"><span class="xref std std-ref">tested document</span></a>.  The following instructions are
+used for initialization:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino</span> <span class="kn">import</span> <span class="n">startup</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">startup</span><span class="p">(</span><span class="s1">&#39;lino_welfare.projects.gerd.settings.doctests&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino.api.doctest</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+<section id="overview">
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Overview</a><a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
+<p>Lino Welfare à la Eupen is the oldest Lino application in the world,
+it was the first Lino that went into production in 2010.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">analyzer</span><span class="o">.</span><span class="n">show_complexity_factors</span><span class="p">())</span>
+<span class="gp">... </span>
+<span class="go">- 65 plugins</span>
+<span class="go">- 142 models</span>
+<span class="go">- 16 user types</span>
+<span class="go">- 530 views</span>
+<span class="go">- 29 dialog actions</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino.utils.code</span> <span class="kn">import</span> <span class="n">analyze_rst</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">analyze_rst</span><span class="p">(</span><span class="s1">&#39;lino&#39;</span><span class="p">,</span> <span class="s1">&#39;lino_xl&#39;</span><span class="p">,</span> <span class="s1">&#39;lino_welfare&#39;</span><span class="p">))</span>  
+<span class="go">============== ============ =========== =============== =============</span>
+<span class="go"> name           code lines   doc lines   comment lines   total lines</span>
+<span class="go">-------------- ------------ ----------- --------------- -------------</span>
+<span class="go"> lino           36.6k        24.9k       11.1k           90.3k</span>
+<span class="go"> lino_xl        10.8k        5.9k        2.5k            23.8k</span>
+<span class="go"> lino_welfare   5.9k         5.3k        3.0k            17.8k</span>
+<span class="go"> total          53.3k        36.1k       16.5k           131.9k</span>
+<span class="go">============== ============ =========== =============== =============</span>
+</pre></div>
+</div>
+</section>
+<section id="database-structure">
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Database structure</a><a class="headerlink" href="#database-structure" title="Permalink to this heading">¶</a></h2>
+<p>This is the list of models used in the Eupen variant of Lino Welfare:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino.utils.diag</span> <span class="kn">import</span> <span class="n">analyzer</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">analyzer</span><span class="o">.</span><span class="n">show_db_overview</span><span class="p">())</span> 
+<span class="go">65 apps: lino, printing, system, staticfiles, about, jinja, bootstrap3, extjs, help, office, xl, countries, contacts, appypod, humanize, users, contenttypes, gfks, memo, notify, changes, properties, checkdata, addresses, excerpts, uploads, outbox, extensible, cal, reception, boards, clients, coachings, pcsw, welfare, sales, weasyprint, ledger, sepa, cosi, b2c, finan, vatless, languages, cv, integ, isip, jobs, art61, xcourses, newcomers, cbss, households, humanlinks, debts, notes, aids, summaries, esf, beid, dashboard, export_excel, dupable_clients, tinymce, sessions.</span>
+<span class="go">142 models:</span>
+<span class="go">============================== =============================== ========= =======</span>
+<span class="go"> Name                           Default table                   #fields   #rows</span>
+<span class="go">------------------------------ ------------------------------- --------- -------</span>
+<span class="go"> addresses.Address              addresses.Addresses             16        175</span>
+<span class="go"> aids.AidType                   aids.AidTypes                   21        11</span>
+<span class="go"> aids.Category                  aids.Categories                 4         3</span>
+<span class="go"> aids.Granting                  aids.Grantings                  12        59</span>
+<span class="go"> aids.IncomeConfirmation        aids.IncomeConfirmations        17        60</span>
+<span class="go"> aids.RefundConfirmation        aids.RefundConfirmations        18        12</span>
+<span class="go"> aids.SimpleConfirmation        aids.SimpleConfirmations        15        19</span>
+<span class="go"> art61.Contract                 art61.Contracts                 38        7</span>
+<span class="go"> art61.ContractType             art61.ContractTypes             9         1</span>
+<span class="go"> b2c.Account                    b2c.Accounts                    6         34</span>
+<span class="go"> b2c.Statement                  b2c.Statements                  8         34</span>
+<span class="go"> b2c.Transaction                b2c.Transactions                17        57</span>
+<span class="go"> boards.Board                   boards.Boards                   6         3</span>
+<span class="go"> boards.Member                  boards.Members                  4         0</span>
+<span class="go"> cal.Calendar                   cal.Calendars                   6         11</span>
+<span class="go"> cal.EntryRepeater              cal.EntryRepeaterTable          17        0</span>
+<span class="go"> cal.Event                      cal.OneEvent                    28        618</span>
+<span class="go"> cal.EventPolicy                cal.EventPolicies               20        6</span>
+<span class="go"> cal.EventType                  cal.EventTypes                  25        12</span>
+<span class="go"> cal.Guest                      cal.Guests                      10        727</span>
+<span class="go"> cal.GuestRole                  cal.GuestRoles                  5         4</span>
+<span class="go"> cal.RecurrentEvent             cal.RecurrentEvents             22        15</span>
+<span class="go"> cal.RemoteCalendar             cal.RemoteCalendars             7         0</span>
+<span class="go"> cal.Room                       cal.Rooms                       9         0</span>
+<span class="go"> cal.Subscription               cal.Subscriptions               4         9</span>
+<span class="go"> cal.Task                       cal.Tasks                       20        40</span>
+<span class="go"> cbss.IdentifyPersonRequest     cbss.IdentifyPersonRequests     21        5</span>
+<span class="go"> cbss.ManageAccessRequest       cbss.ManageAccessRequests       24        1</span>
+<span class="go"> cbss.Purpose                   cbss.Purposes                   6         106</span>
+<span class="go"> cbss.RetrieveTIGroupsRequest   cbss.RetrieveTIGroupsRequests   15        6</span>
+<span class="go"> cbss.Sector                    cbss.Sectors                    9         209</span>
+<span class="go"> changes.Change                 changes.Changes                 10        0</span>
+<span class="go"> checkdata.Message              checkdata.Messages              6         12</span>
+<span class="go"> clients.ClientContact          clients.ClientContacts          7         14</span>
+<span class="go"> clients.ClientContactType      clients.ClientContactTypes      7         10</span>
+<span class="go"> coachings.Coaching             coachings.Coachings             8         90</span>
+<span class="go"> coachings.CoachingEnding       coachings.CoachingEndings       6         4</span>
+<span class="go"> coachings.CoachingType         coachings.CoachingTypes         7         3</span>
+<span class="go"> contacts.Company               contacts.Companies              29        51</span>
+<span class="go"> contacts.CompanyType           contacts.CompanyTypes           7         14</span>
+<span class="go"> contacts.Partner               contacts.Partners               26        174</span>
+<span class="go"> contacts.Person                contacts.Persons                33        109</span>
+<span class="go"> contacts.Role                  contacts.Roles                  4         13</span>
+<span class="go"> contacts.RoleType              contacts.RoleTypes              6         5</span>
+<span class="go"> contenttypes.ContentType       gfks.ContentTypes               3         142</span>
+<span class="go"> countries.Country              countries.Countries             8         270</span>
+<span class="go"> countries.Place                countries.Places                10        80</span>
+<span class="go"> cv.Duration                    cv.Durations                    4         5</span>
+<span class="go"> cv.EducationLevel              cv.EducationLevels              7         5</span>
+<span class="go"> cv.Experience                  cv.Experiences                  18        30</span>
+<span class="go"> cv.Function                    cv.Functions                    6         4</span>
+<span class="go"> cv.LanguageKnowledge           cv.LanguageKnowledges           10        112</span>
+<span class="go"> cv.PersonProperty              cv.PersonProperties             6         310</span>
+<span class="go"> cv.Regime                      cv.Regimes                      4         3</span>
+<span class="go"> cv.Sector                      cv.Sectors                      5         14</span>
+<span class="go"> cv.Status                      cv.Statuses                     4         7</span>
+<span class="go"> cv.Study                       cv.Studies                      15        22</span>
+<span class="go"> cv.StudyType                   cv.StudyTypes                   7         11</span>
+<span class="go"> cv.Training                    cv.Trainings                    17        20</span>
+<span class="go"> dashboard.Widget               dashboard.Widgets               5         0</span>
+<span class="go"> debts.Account                  debts.Accounts                  12        51</span>
+<span class="go"> debts.Actor                    debts.Actors                    6         63</span>
+<span class="go"> debts.Budget                   debts.Budgets                   11        17</span>
+<span class="go"> debts.Entry                    debts.Entries                   16        871</span>
+<span class="go"> debts.Group                    debts.Groups                    7         8</span>
+<span class="go"> dupable_clients.Word           dupable_clients.Words           3         130</span>
+<span class="go"> esf.ClientSummary              esf.Summaries                   24        189</span>
+<span class="go"> excerpts.Excerpt               excerpts.Excerpts               12        77</span>
+<span class="go"> excerpts.ExcerptType           excerpts.ExcerptTypes           17        21</span>
+<span class="go"> finan.BankStatement            finan.BankStatements            16        0</span>
+<span class="go"> finan.BankStatementItem        finan.BankStatementItemTable    10        0</span>
+<span class="go"> finan.JournalEntry             finan.FinancialVouchers         15        0</span>
+<span class="go"> finan.JournalEntryItem         finan.JournalEntryItemTable     10        0</span>
+<span class="go"> finan.PaymentOrder             finan.PaymentOrders             15        26</span>
+<span class="go"> finan.PaymentOrderItem         finan.PaymentOrderItemTable     10        220</span>
+<span class="go"> gfks.HelpText                  gfks.HelpTexts                  4         5</span>
+<span class="go"> households.Household           households.Households           28        14</span>
+<span class="go"> households.Member              households.Members              14        63</span>
+<span class="go"> households.Type                households.Types                4         6</span>
+<span class="go"> humanlinks.Link                humanlinks.Links                4         59</span>
+<span class="go"> isip.Contract                  isip.Contracts                  24        34</span>
+<span class="go"> isip.ContractEnding            isip.ContractEndings            6         4</span>
+<span class="go"> isip.ContractPartner           isip.ContractPartners           8         38</span>
+<span class="go"> isip.ContractType              isip.ContractTypes              10        5</span>
+<span class="go"> isip.ExamPolicy                isip.ExamPolicies               20        6</span>
+<span class="go"> jobs.Candidature               jobs.Candidatures               10        74</span>
+<span class="go"> jobs.Contract                  jobs.Contracts                  28        16</span>
+<span class="go"> jobs.ContractType              jobs.ContractTypes              9         5</span>
+<span class="go"> jobs.Job                       jobs.Jobs                       10        8</span>
+<span class="go"> jobs.JobProvider               jobs.JobProviders               31        3</span>
+<span class="go"> jobs.JobType                   jobs.JobTypes                   5         5</span>
+<span class="go"> jobs.Offer                     jobs.Offers                     9         1</span>
+<span class="go"> jobs.Schedule                  jobs.Schedules                  4         3</span>
+<span class="go"> languages.Language             languages.Languages             5         5</span>
+<span class="go"> ledger.Account                 ledger.Accounts                 16        41</span>
+<span class="go"> ledger.AccountingPeriod        ledger.AccountingPeriods        7         29</span>
+<span class="go"> ledger.FiscalYear              ledger.FiscalYears              5         8</span>
+<span class="go"> ledger.Journal                 ledger.Journals                 26        4</span>
+<span class="go"> ledger.LedgerInfo              ledger.LedgerInfoTable          2         0</span>
+<span class="go"> ledger.MatchRule               ledger.MatchRules               3         2</span>
+<span class="go"> ledger.Movement                ledger.Movements                10        580</span>
+<span class="go"> ledger.PaymentTerm             ledger.PaymentTerms             11        8</span>
+<span class="go"> ledger.Voucher                 ledger.AllVouchers              8         56</span>
+<span class="go"> newcomers.Broker               newcomers.Brokers               2         2</span>
+<span class="go"> newcomers.Competence           newcomers.Competences           5         7</span>
+<span class="go"> newcomers.Faculty              newcomers.Faculties             5         5</span>
+<span class="go"> notes.EventType                notes.EventTypes                8         10</span>
+<span class="go"> notes.Note                     notes.Notes                     18        118</span>
+<span class="go"> notes.NoteType                 notes.NoteTypes                 11        13</span>
+<span class="go"> notify.Message                 notify.Messages                 11        1</span>
+<span class="go"> outbox.Attachment              outbox.Attachments              4         0</span>
+<span class="go"> outbox.Mail                    outbox.Mails                    9         0</span>
+<span class="go"> outbox.Recipient               outbox.Recipients               6         0</span>
+<span class="go"> pcsw.Activity                  pcsw.Activities                 3         0</span>
+<span class="go"> pcsw.AidType                   pcsw.AidTypes                   4         0</span>
+<span class="go"> pcsw.Client                    pcsw.Clients                    81        63</span>
+<span class="go"> pcsw.Conviction                pcsw.Convictions                5         0</span>
+<span class="go"> pcsw.Dispense                  pcsw.Dispenses                  6         0</span>
+<span class="go"> pcsw.DispenseReason            pcsw.DispenseReasons            5         4</span>
+<span class="go"> pcsw.Exclusion                 pcsw.Exclusions                 6         0</span>
+<span class="go"> pcsw.ExclusionType             pcsw.ExclusionTypes             2         2</span>
+<span class="go"> pcsw.PersonGroup               pcsw.PersonGroups               4         5</span>
+<span class="go"> properties.PropChoice          properties.PropChoices          6         2</span>
+<span class="go"> properties.PropGroup           properties.PropGroups           4         3</span>
+<span class="go"> properties.PropType            properties.PropTypes            8         3</span>
+<span class="go"> properties.Property            properties.Properties           6         23</span>
+<span class="go"> sepa.Account                   sepa.Accounts                   8         52</span>
+<span class="go"> sessions.Session               users.Sessions                  3         ...</span>
+<span class="go"> system.SiteConfig              system.SiteConfigs              33        1</span>
+<span class="go"> tinymce.TextFieldTemplate      tinymce.TextFieldTemplates      5         2</span>
+<span class="go"> uploads.Upload                 uploads.Uploads                 20        15</span>
+<span class="go"> uploads.UploadType             uploads.UploadTypes             10        10</span>
+<span class="go"> uploads.Volume                 uploads.Volumes                 5         0</span>
+<span class="go"> users.Authority                users.Authorities               3         3</span>
+<span class="go"> users.User                     users.AllUsers                  28        13</span>
+<span class="go"> vatless.AccountInvoice         vatless.Invoices                18        30</span>
+<span class="go"> vatless.InvoiceItem            vatless.InvoiceItemTable        7         80</span>
+<span class="go"> xcourses.Course                xcourses.Courses                5         3</span>
+<span class="go"> xcourses.CourseContent         xcourses.CourseContents         2         2</span>
+<span class="go"> xcourses.CourseOffer           xcourses.CourseOffers           6         3</span>
+<span class="go"> xcourses.CourseProvider        xcourses.CourseProviders        30        2</span>
+<span class="go"> xcourses.CourseRequest         xcourses.CourseRequests         10        20</span>
+<span class="go">============================== =============================== ========= =======</span>
+</pre></div>
+</div>
+</section>
+<section id="the-main-menu">
+<h2><a class="toc-backref" href="#id8" role="doc-backlink">The main menu</a><a class="headerlink" href="#the-main-menu" title="Permalink to this heading">¶</a></h2>
+<section id="rolf">
+<span id="id1"></span><h3><a class="toc-backref" href="#id9" role="doc-backlink">Rolf</a><a class="headerlink" href="#rolf" title="Permalink to this heading">¶</a></h3>
+<p>Rolf is the local system administrator, he has a complete menu:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">show_menu</span><span class="p">(</span><span class="s1">&#39;rolf&#39;</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">- Kontakte : Personen,  ▶ Klienten, Organisationen, -, Partner (alle), Haushalte</span>
+<span class="go">- Büro : Meine Benachrichtigungen, Meine Auszüge, Meine ablaufenden Upload-Dateien, Meine Upload-Dateien, Mein E-Mail-Ausgang, Meine Ereignisse/Notizen, Meine Datenkontrollliste</span>
+<span class="go">- Kalender : Kalender, Meine Termine, Überfällige Termine, Meine unbestätigten Termine, Meine Aufgaben, Meine Gäste, Meine Anwesenheiten, Meine überfälligen Termine</span>
+<span class="go">- Empfang : Klienten, Termine heute, Wartende Besucher, Beschäftigte Besucher, Gegangene Besucher, Meine Warteschlange</span>
+<span class="go">- ÖSHZ : Klienten, Meine Begleitungen, Zu bestätigende Hilfebeschlüsse</span>
+<span class="go">- Buchhaltung :</span>
+<span class="go">  - Rechnungseingänge : Rechnungseingänge (REG), Sammelrechnungen (SREG)</span>
+<span class="go">  - Ausgabeanweisungen : Ausgabeanweisungen (AAW)</span>
+<span class="go">  - Zahlungsaufträge : KBC Zahlungsaufträge (ZKBC)</span>
+<span class="go">  - SEPA-Import</span>
+<span class="go">- DSBE :</span>
+<span class="go">  - Klienten</span>
+<span class="go">  - VSEs</span>
+<span class="go">  - Stellenanbieter</span>
+<span class="go">  - Stellen</span>
+<span class="go">  - Stellenangebote</span>
+<span class="go">  - Art.60§7-Konventionen</span>
+<span class="go">  - Art.61-Konventionen</span>
+<span class="go">  - ZDSS : Meine IdentifyPerson-Anfragen, Meine ManageAccess-Anfragen, Meine Tx25-Anfragen</span>
+<span class="go">- Kurse : Kursanbieter, Kursangebote, Offene Kursanfragen</span>
+<span class="go">- Erstempfang : Neue Klienten, Verfügbare Begleiter</span>
+<span class="go">- Schuldnerberatung : Klienten, Meine Budgets</span>
+<span class="go">- Berichte :</span>
+<span class="go">  - Buchhaltung : Schuldner, Gläubiger</span>
+<span class="go">  - DSBE : Benutzer und ihre Klienten, Übersicht Art.60§7-Konventionen, Tätigkeitsbericht</span>
+<span class="go">- Konfigurierung :</span>
+<span class="go">  - System : Site-Parameter, Benutzer, Hilfetexte</span>
+<span class="go">  - Orte : Länder, Orte</span>
+<span class="go">  - Kontakte : Rechtsformen, Funktionen, Gremien, Haushaltsarten</span>
+<span class="go">  - Eigenschaften : Eigenschaftsgruppen, Eigenschafts-Datentypen, Fachkompetenzen, Sozialkompetenzen, Hindernisse</span>
+<span class="go">  - Büro : Auszugsarten, Dateibibliotheken, Upload-Arten, Notizarten, Ereignisarten, Meine Einfügetexte</span>
+<span class="go">  - Kalender : Kalenderliste, Räume, Regelmäßige Ereignisse, Gastrollen, Kalendereintragsarten, Wiederholungsregeln, Externe Kalender</span>
+<span class="go">  - ÖSHZ : Integrationsphasen, Berufe, AG-Sperrgründe, Dispenzgründe, Hilfearten, Kategorien, Klientenkontaktarten, Dienste, Begleitungsbeendigungsgründe</span>
+<span class="go">  - Buchhaltung : Haushaltsartikel, Journale, Geschäftsjahre, Buchungsperioden, Zahlungsbedingungen</span>
+<span class="go">  - Lebenslauf : Bildungsarten, Akademische Grade, Sektoren, Berufsbezeichnungen, Arbeitsregimes, Statuus, Vertragsdauern, Sprachen</span>
+<span class="go">  - DSBE : VSE-Arten, Vertragsbeendigungsgründe, Auswertungsstrategien, Art.60§7-Konventionsarten, Stellenarten, Stundenpläne, Art.61-Konventionsarten</span>
+<span class="go">  - Kurse : Kursinhalte</span>
+<span class="go">  - Erstempfang : Vermittler, Fachbereiche</span>
+<span class="go">  - ZDSS : Sektoren, Eigenschafts-Codes</span>
+<span class="go">  - Schuldnerberatung : Kontengruppen, Konten, Budget-Kopiervorlage</span>
+<span class="go">- Explorer :</span>
+<span class="go">  - Kontakte : Kontaktpersonen, Partner, Adressenarten, Adressen, Gremienmitglieder, Haushaltsmitgliedsrollen, Mitglieder, Verwandtschaftsbeziehungen, Verwandschaftsarten</span>
+<span class="go">  - System : Vollmachten, Benutzerarten, Benutzerrollen, Benachrichtigungen, Änderungen, All dashboard widgets, Datenbankmodelle, Datentests, Datenproblemmeldungen</span>
+<span class="go">  - Eigenschaften : Eigenschaften</span>
+<span class="go">  - Büro : Auszüge, Upload-Dateien, Upload-Bereiche, E-Mail-Ausgänge, Anhänge, Ereignisse/Notizen, Einfügetexte</span>
+<span class="go">  - Kalender : Kalendereinträge, Aufgaben, Anwesenheiten, Abonnements, Kalendereintrag-Zustände, Anwesenheits-Zustände, Aufgaben-Zustände, Tagesplanerkolonnen, Zugriffsklassen, Display colors</span>
+<span class="go">  - ÖSHZ : AG-Sperren, Vorstrafen, Klienten, Zivilstände, Bearbeitungszustände Klienten, eID-Kartenarten, Hilfebeschlüsse, Einkommensbescheinigungen, Kostenübernahmescheine, Einfache Bescheinigungen, Phonetische Wörter, Klientenkontakte, Standard-Klientenkontaktarten, Begleitungen</span>
+<span class="go">  - Buchhaltung : Gemeinkonten, Begleichungsregeln, Belege, Belegarten, Bewegungen, Handelsarten, Journalgruppen, Rechnungen</span>
+<span class="go">  - SEPA : Bankkonten, Importierte  Bankkonten, Kontoauszüge, Transaktionen</span>
+<span class="go">  - Finanzjournale : Kontoauszüge, Diverse Buchungen, Zahlungsaufträge</span>
+<span class="go">  - Lebenslauf : Sprachkenntnisse, Ausbildungen, Studien, Berufserfahrungen</span>
+<span class="go">  - DSBE : VSEs, Art.60§7-Konventionen, Stellenanfragen, Vertragspartner, Art.61-Konventionen, ESF Summaries, ESF fields</span>
+<span class="go">  - Kurse : Kurse, Kursanfragen</span>
+<span class="go">  - Erstempfang : Kompetenzen</span>
+<span class="go">  - ZDSS : IdentifyPerson-Anfragen, ManageAccess-Anfragen, Tx25-Anfragen</span>
+<span class="go">  - Schuldnerberatung : Budgets, Einträge</span>
+<span class="go">- Site : Info, Benutzersitzungen</span>
+</pre></div>
+</div>
+</section>
+<section id="hubert">
+<span id="id2"></span><h3><a class="toc-backref" href="#id10" role="doc-backlink">Hubert</a><a class="headerlink" href="#hubert" title="Permalink to this heading">¶</a></h3>
+<p>Hubert is an Integration agent.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">show_menu</span><span class="p">(</span><span class="s1">&#39;hubert&#39;</span><span class="p">,</span> <span class="n">language</span><span class="o">=</span><span class="s1">&#39;de&#39;</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">- Kontakte : Personen,  ▶ Klienten, Organisationen, -, Partner (alle), Haushalte</span>
+<span class="go">- Büro : Meine Benachrichtigungen, Meine Auszüge, Meine ablaufenden Upload-Dateien, Meine Upload-Dateien, Mein E-Mail-Ausgang, Meine Ereignisse/Notizen, Meine Datenkontrollliste</span>
+<span class="go">- Kalender : Kalender, Meine Termine, Meine unbestätigten Termine, Meine Aufgaben, Meine Gäste, Meine Anwesenheiten, Meine überfälligen Termine</span>
+<span class="go">- Empfang : Klienten, Termine heute, Wartende Besucher, Beschäftigte Besucher, Gegangene Besucher, Meine Warteschlange</span>
+<span class="go">- ÖSHZ : Klienten, Meine Begleitungen, Zu bestätigende Hilfebeschlüsse</span>
+<span class="go">- DSBE :</span>
+<span class="go">  - Klienten</span>
+<span class="go">  - VSEs</span>
+<span class="go">  - Stellenanbieter</span>
+<span class="go">  - Stellen</span>
+<span class="go">  - Stellenangebote</span>
+<span class="go">  - Art.60§7-Konventionen</span>
+<span class="go">  - Art.61-Konventionen</span>
+<span class="go">  - ZDSS : Meine IdentifyPerson-Anfragen, Meine ManageAccess-Anfragen, Meine Tx25-Anfragen</span>
+<span class="go">- Kurse : Kursanbieter, Kursangebote, Offene Kursanfragen</span>
+<span class="go">- Berichte :</span>
+<span class="go">  - DSBE : Benutzer und ihre Klienten, Übersicht Art.60§7-Konventionen, Tätigkeitsbericht</span>
+<span class="go">- Konfigurierung :</span>
+<span class="go">  - Büro : Meine Einfügetexte</span>
+<span class="go">- Explorer :</span>
+<span class="go">  - Kontakte : Partner</span>
+<span class="go">  - SEPA : Importierte  Bankkonten, Kontoauszüge, Transaktionen</span>
+<span class="go">  - DSBE : VSEs, Art.60§7-Konventionen, Art.61-Konventionen</span>
+<span class="go">- Site : Info</span>
+</pre></div>
+</div>
+</section>
+<section id="melanie">
+<span id="id3"></span><h3><a class="toc-backref" href="#id11" role="doc-backlink">Mélanie</a><a class="headerlink" href="#melanie" title="Permalink to this heading">¶</a></h3>
+<p>Mélanie is a manager of the Integration service.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">p</span> <span class="o">=</span> <span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;melanie&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">get_user</span><span class="p">()</span><span class="o">.</span><span class="n">user_type</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+<span class="go">110 (Sozialarbeiter DSBE (Verwalter))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">p</span><span class="o">.</span><span class="n">role</span>  
+<span class="go">&lt;lino_welfare.modlib.welfare.user_types.IntegrationAgentManager object at ...&gt;</span>
+</pre></div>
+</div>
+<p>Because Mélanie has her <code class="xref py py-attr docutils literal notranslate"><span class="pre">language</span></code> field set to French, we need
+to explicitly override the language of <code class="xref py py-meth docutils literal notranslate"><span class="pre">show_menu</span></code> to get her menu in German:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">show_menu</span><span class="p">(</span><span class="s1">&#39;melanie&#39;</span><span class="p">,</span> <span class="n">language</span><span class="o">=</span><span class="s2">&quot;de&quot;</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">- Kontakte : Personen,  ▶ Klienten, Organisationen, -, Partner (alle), Haushalte</span>
+<span class="go">- Büro : Meine Benachrichtigungen, Meine Auszüge, Meine ablaufenden Upload-Dateien, Meine Upload-Dateien, Mein E-Mail-Ausgang, Meine Ereignisse/Notizen, Meine Datenkontrollliste</span>
+<span class="go">- Kalender : Kalender, Meine Termine, Überfällige Termine, Meine unbestätigten Termine, Meine Aufgaben, Meine Gäste, Meine Anwesenheiten, Meine überfälligen Termine</span>
+<span class="go">- Empfang : Klienten, Termine heute, Wartende Besucher, Beschäftigte Besucher, Gegangene Besucher, Meine Warteschlange</span>
+<span class="go">- ÖSHZ : Klienten, Meine Begleitungen, Zu bestätigende Hilfebeschlüsse</span>
+<span class="go">- DSBE :</span>
+<span class="go">  - Klienten</span>
+<span class="go">  - VSEs</span>
+<span class="go">  - Stellenanbieter</span>
+<span class="go">  - Stellen</span>
+<span class="go">  - Stellenangebote</span>
+<span class="go">  - Art.60§7-Konventionen</span>
+<span class="go">  - Art.61-Konventionen</span>
+<span class="go">  - ZDSS : Meine IdentifyPerson-Anfragen, Meine ManageAccess-Anfragen, Meine Tx25-Anfragen</span>
+<span class="go">- Kurse : Kursanbieter, Kursangebote, Offene Kursanfragen</span>
+<span class="go">- Berichte :</span>
+<span class="go">  - DSBE : Benutzer und ihre Klienten, Übersicht Art.60§7-Konventionen, Tätigkeitsbericht</span>
+<span class="go">- Konfigurierung :</span>
+<span class="go">  - Orte : Länder, Orte</span>
+<span class="go">  - Kontakte : Rechtsformen, Funktionen, Haushaltsarten</span>
+<span class="go">  - Büro : Dateibibliotheken, Upload-Arten, Notizarten, Ereignisarten, Meine Einfügetexte</span>
+<span class="go">  - Kalender : Kalenderliste, Räume, Regelmäßige Ereignisse, Kalendereintragsarten, Wiederholungsregeln, Externe Kalender</span>
+<span class="go">  - ÖSHZ : Integrationsphasen, Berufe, AG-Sperrgründe, Dispenzgründe, Hilfearten, Kategorien, Klientenkontaktarten, Dienste, Begleitungsbeendigungsgründe</span>
+<span class="go">  - Lebenslauf : Bildungsarten, Akademische Grade, Sektoren, Berufsbezeichnungen, Arbeitsregimes, Statuus, Vertragsdauern, Sprachen</span>
+<span class="go">  - DSBE : VSE-Arten, Vertragsbeendigungsgründe, Auswertungsstrategien, Art.60§7-Konventionsarten, Stellenarten, Stundenpläne, Art.61-Konventionsarten</span>
+<span class="go">  - Kurse : Kursinhalte</span>
+<span class="go">  - Erstempfang : Vermittler, Fachbereiche</span>
+<span class="go">- Explorer :</span>
+<span class="go">  - Kontakte : Kontaktpersonen, Partner, Adressenarten, Haushaltsmitgliedsrollen, Mitglieder, Verwandtschaftsbeziehungen, Verwandschaftsarten</span>
+<span class="go">  - Büro : Upload-Dateien, Upload-Bereiche, E-Mail-Ausgänge, Anhänge, Ereignisse/Notizen</span>
+<span class="go">  - Kalender : Aufgaben, Abonnements</span>
+<span class="go">  - ÖSHZ : AG-Sperren, Vorstrafen, Klienten, Bearbeitungszustände Klienten, Hilfebeschlüsse, Einkommensbescheinigungen, Kostenübernahmescheine, Einfache Bescheinigungen, Klientenkontakte, Standard-Klientenkontaktarten, Begleitungen</span>
+<span class="go">  - SEPA : Bankkonten, Importierte  Bankkonten, Kontoauszüge, Transaktionen</span>
+<span class="go">  - Lebenslauf : Sprachkenntnisse, Ausbildungen, Studien, Berufserfahrungen</span>
+<span class="go">  - DSBE : VSEs, Art.60§7-Konventionen, Stellenanfragen, Vertragspartner, Art.61-Konventionen</span>
+<span class="go">  - Kurse : Kurse, Kursanfragen</span>
+<span class="go">  - Erstempfang : Kompetenzen</span>
+<span class="go">- Site : Info</span>
+</pre></div>
+</div>
+</section>
+<section id="kerstin">
+<h3><a class="toc-backref" href="#id12" role="doc-backlink">Kerstin</a><a class="headerlink" href="#kerstin" title="Permalink to this heading">¶</a></h3>
+<p>Kerstin is a debts consultant.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">p</span> <span class="o">=</span> <span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;kerstin&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">get_user</span><span class="p">()</span><span class="o">.</span><span class="n">user_type</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+<span class="go">300 (Schuldenberater)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">show_menu</span><span class="p">(</span><span class="s1">&#39;kerstin&#39;</span><span class="p">,</span> <span class="n">language</span><span class="o">=</span><span class="s1">&#39;de&#39;</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">- Kontakte : Personen,  ▶ Klienten, Organisationen, -, Partner (alle), Haushalte</span>
+<span class="go">- Büro : Meine Benachrichtigungen, Meine Auszüge, Meine ablaufenden Upload-Dateien, Meine Upload-Dateien, Mein E-Mail-Ausgang, Meine Ereignisse/Notizen, Meine Datenkontrollliste</span>
+<span class="go">- Kalender : Kalender, Meine Termine, Meine unbestätigten Termine, Meine Aufgaben, Meine Gäste, Meine Anwesenheiten, Meine überfälligen Termine</span>
+<span class="go">- Empfang : Klienten, Termine heute, Wartende Besucher, Beschäftigte Besucher, Gegangene Besucher, Meine Warteschlange</span>
+<span class="go">- ÖSHZ : Klienten, Meine Begleitungen, Zu bestätigende Hilfebeschlüsse</span>
+<span class="go">- DSBE :</span>
+<span class="go">  - ZDSS : Meine IdentifyPerson-Anfragen, Meine ManageAccess-Anfragen, Meine Tx25-Anfragen</span>
+<span class="go">- Erstempfang : Neue Klienten, Verfügbare Begleiter</span>
+<span class="go">- Schuldnerberatung : Klienten, Meine Budgets</span>
+<span class="go">- Konfigurierung :</span>
+<span class="go">  - Büro : Meine Einfügetexte</span>
+<span class="go">  - Schuldnerberatung : Budget-Kopiervorlage</span>
+<span class="go">- Explorer :</span>
+<span class="go">  - Kontakte : Partner</span>
+<span class="go">  - SEPA : Importierte  Bankkonten, Kontoauszüge, Transaktionen</span>
+<span class="go">  - DSBE : VSEs, Art.60§7-Konventionen</span>
+<span class="go">- Site : Info</span>
+</pre></div>
+</div>
+</section>
+<section id="caroline">
+<h3><a class="toc-backref" href="#id13" role="doc-backlink">Caroline</a><a class="headerlink" href="#caroline" title="Permalink to this heading">¶</a></h3>
+<p>Caroline is a newcomers consultant.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">p</span> <span class="o">=</span> <span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;caroline&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">get_user</span><span class="p">()</span><span class="o">.</span><span class="n">user_type</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+<span class="go">200 (Berater Erstempfang)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">show_menu</span><span class="p">(</span><span class="s1">&#39;caroline&#39;</span><span class="p">,</span> <span class="n">language</span><span class="o">=</span><span class="s1">&#39;de&#39;</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">- Kontakte : Personen,  ▶ Klienten, Organisationen, -, Partner (alle), Haushalte</span>
+<span class="go">- Büro : Meine Benachrichtigungen, Meine Auszüge, Meine ablaufenden Upload-Dateien, Meine Upload-Dateien, Mein E-Mail-Ausgang, Meine Ereignisse/Notizen, Meine Datenkontrollliste</span>
+<span class="go">- Kalender : Kalender, Meine Termine, Meine unbestätigten Termine, Meine Aufgaben, Meine Gäste, Meine Anwesenheiten, Meine überfälligen Termine</span>
+<span class="go">- Empfang : Klienten, Termine heute, Wartende Besucher, Beschäftigte Besucher, Gegangene Besucher, Meine Warteschlange</span>
+<span class="go">- ÖSHZ : Klienten, Meine Begleitungen, Zu bestätigende Hilfebeschlüsse</span>
+<span class="go">- DSBE :</span>
+<span class="go">  - ZDSS : Meine IdentifyPerson-Anfragen, Meine ManageAccess-Anfragen, Meine Tx25-Anfragen</span>
+<span class="go">- Erstempfang : Neue Klienten, Verfügbare Begleiter</span>
+<span class="go">- Konfigurierung :</span>
+<span class="go">  - Büro : Meine Einfügetexte</span>
+<span class="go">- Explorer :</span>
+<span class="go">  - Kontakte : Partner</span>
+<span class="go">  - SEPA : Importierte  Bankkonten, Kontoauszüge, Transaktionen</span>
+<span class="go">  - DSBE : VSEs, Art.60§7-Konventionen</span>
+<span class="go">- Site : Info</span>
+</pre></div>
+</div>
+</section>
+<section id="theresia">
+<span id="id4"></span><h3><a class="toc-backref" href="#id14" role="doc-backlink">Theresia</a><a class="headerlink" href="#theresia" title="Permalink to this heading">¶</a></h3>
+<p>Theresia is a reception clerk.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;theresia&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">get_user</span><span class="p">()</span><span class="o">.</span><span class="n">user_type</span><span class="p">)</span>
+<span class="go">210 (Empfangsschalter)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">show_menu</span><span class="p">(</span><span class="s1">&#39;theresia&#39;</span><span class="p">,</span> <span class="n">language</span><span class="o">=</span><span class="s2">&quot;de&quot;</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">- Kontakte : Personen,  ▶ Klienten, Organisationen, -, Partner (alle), Haushalte</span>
+<span class="go">- Büro : Meine Auszüge, Meine ablaufenden Upload-Dateien, Meine Upload-Dateien, Meine Ereignisse/Notizen</span>
+<span class="go">- Empfang : Klienten, Termine heute, Wartende Besucher, Beschäftigte Besucher, Gegangene Besucher</span>
+<span class="go">- ÖSHZ : Meine Begleitungen</span>
+<span class="go">- DSBE :</span>
+<span class="go">  - ZDSS : Meine IdentifyPerson-Anfragen, Meine ManageAccess-Anfragen, Meine Tx25-Anfragen</span>
+<span class="go">- Konfigurierung :</span>
+<span class="go">  - Orte : Länder, Orte</span>
+<span class="go">  - Kontakte : Rechtsformen, Funktionen, Haushaltsarten</span>
+<span class="go">  - ÖSHZ : Hilfearten, Kategorien, Klientenkontaktarten, Dienste, Begleitungsbeendigungsgründe</span>
+<span class="go">- Explorer :</span>
+<span class="go">  - Kontakte : Kontaktpersonen, Partner, Haushaltsmitgliedsrollen, Mitglieder, Verwandtschaftsbeziehungen, Verwandschaftsarten</span>
+<span class="go">  - ÖSHZ : Bearbeitungszustände Klienten, Hilfebeschlüsse, Einkommensbescheinigungen, Kostenübernahmescheine, Einfache Bescheinigungen, Klientenkontakte, Standard-Klientenkontaktarten, Begleitungen</span>
+<span class="go">  - SEPA : Importierte  Bankkonten, Kontoauszüge, Transaktionen</span>
+<span class="go">- Site : Info</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="welfare-specs-db-eupen">
+<span id="id5"></span><h2><a class="toc-backref" href="#id15" role="doc-backlink">Database structure</a><a class="headerlink" href="#welfare-specs-db-eupen" title="Permalink to this heading">¶</a></h2>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">analyzer</span><span class="o">.</span><span class="n">show_database_structure</span><span class="p">())</span>
+<span class="gp">... </span>
+<span class="go">- addresses.Address : id, country, city, zip_code, region, addr1, street_prefix, street, street_no, street_box, addr2, data_source, address_type, partner, remark, primary</span>
+<span class="go">- aids.AidType : id, name, contact_person, contact_role, company, excerpt_title, aid_regime, confirmation_type, short_name, board, print_directly, is_integ_duty, is_urgent, confirmed_by_primary_coach, pharmacy_type, address_type, body_template, name_fr, name_en, excerpt_title_fr, excerpt_title_en</span>
+<span class="go">- aids.Category : id, name, name_fr, name_en</span>
+<span class="go">- aids.Granting : id, start_date, end_date, user, decision_date, board, signer, state, client, aid_type, category, request_date</span>
+<span class="go">- aids.IncomeConfirmation : id, created, start_date, end_date, user, contact_person, contact_role, company, printed_by, signer, state, client, granting, remark, language, category, amount</span>
+<span class="go">- aids.RefundConfirmation : id, created, start_date, end_date, user, contact_person, contact_role, company, printed_by, signer, state, client, granting, remark, language, doctor_type, doctor, pharmacy</span>
+<span class="go">- aids.SimpleConfirmation : id, created, start_date, end_date, user, contact_person, contact_role, company, printed_by, signer, state, client, granting, remark, language</span>
+<span class="go">- art61.Contract : id, signer1, signer2, user, contact_person, contact_role, printed_by, sector, function, client, language, applies_from, applies_until, date_decided, date_issued, user_asd, exam_policy, ending, date_ended, reference_person, responsibilities, duration, remark, company, type, job_title, status, cv_duration, regime, sub_10_amount, sub_10_start, sub_10_end, sub_20_amount, sub_20_start, sub_20_end, sub_30_amount, sub_30_start, sub_30_end</span>
+<span class="go">- art61.ContractType : id, ref, name, full_name, exam_policy, overlap_group, template, name_fr, name_en</span>
+<span class="go">- b2c.Account : id, iban, bic, account_name, owner_name, last_transaction</span>
+<span class="go">- b2c.Statement : id, account, statement_number, start_date, end_date, balance_start, balance_end, local_currency</span>
+<span class="go">- b2c.Transaction : id, statement, seqno, amount, remote_account, remote_bic, message, eref, remote_owner, remote_owner_address, remote_owner_city, remote_owner_postalcode, remote_owner_country_code, txcd, txcd_issuer, booking_date, value_date</span>
+<span class="go">- boards.Board : id, start_date, end_date, name, name_fr, name_en</span>
+<span class="go">- boards.Member : id, board, person, role</span>
+<span class="go">- cal.Calendar : id, name, description, color, name_fr, name_en</span>
+<span class="go">- cal.EntryRepeater : id, start_date, start_time, end_date, end_time, every_unit, every, positions, monday, tuesday, wednesday, thursday, friday, saturday, sunday, max_events, cal_entry</span>
+<span class="go">- cal.Event : id, modified, created, project, start_date, start_time, end_date, end_time, build_time, build_method, user, assigned_to, owner_type, owner_id, summary, description, access_class, sequence, auto_type, priority, event_type, transparent, guests_edited, room, state, notify_before, notify_unit, notified</span>
+<span class="go">- cal.EventPolicy : id, start_date, start_time, end_date, end_time, name, every_unit, every, positions, monday, tuesday, wednesday, thursday, friday, saturday, sunday, max_events, event_type, name_fr, name_en</span>
+<span class="go">- cal.EventType : id, ref, seqno, name, attach_to_email, email_template, description, is_appointment, all_rooms, locks_user, force_guest_states, fill_presences, start_date, event_label, max_conflicting, max_days, transparent, planner_column, default_duration, invite_client, name_fr, name_en, event_label_fr, event_label_en, esf_field</span>
+<span class="go">- cal.Guest : id, event, partner, role, state, remark, waiting_since, busy_since, gone_since, waiting_number</span>
+<span class="go">- cal.GuestRole : id, ref, name, name_fr, name_en</span>
+<span class="go">- cal.RecurrentEvent : id, start_date, start_time, end_date, end_time, name, user, every_unit, every, positions, monday, tuesday, wednesday, thursday, friday, saturday, sunday, max_events, event_type, description, name_fr, name_en</span>
+<span class="go">- cal.RemoteCalendar : id, seqno, type, url_template, username, password, readonly</span>
+<span class="go">- cal.Room : id, name, display_color, contact_person, contact_role, company, description, name_fr, name_en</span>
+<span class="go">- cal.Subscription : id, user, calendar, is_hidden</span>
+<span class="go">- cal.Task : id, modified, created, project, start_date, start_time, user, owner_type, owner_id, summary, description, access_class, sequence, auto_type, priority, due_date, due_time, percent, state, delegated</span>
+<span class="go">- cbss.IdentifyPersonRequest : id, user, printed_by, person, sent, status, environment, ticket, request_xml, response_xml, debug_messages, info_messages, national_id, birth_date, sis_card_no, id_card_no, first_name, last_name, middle_name, gender, tolerance</span>
+<span class="go">- cbss.ManageAccessRequest : id, user, printed_by, person, sent, status, environment, ticket, request_xml, response_xml, debug_messages, info_messages, national_id, birth_date, sis_card_no, id_card_no, first_name, last_name, sector, purpose, start_date, end_date, action, query_register</span>
+<span class="go">- cbss.Purpose : id, name, sector_code, code, name_fr, name_en</span>
+<span class="go">- cbss.RetrieveTIGroupsRequest : id, user, printed_by, person, sent, status, environment, ticket, request_xml, response_xml, debug_messages, info_messages, national_id, language, history</span>
+<span class="go">- cbss.Sector : id, name, code, subcode, abbr, abbr_fr, abbr_en, name_fr, name_en</span>
+<span class="go">- changes.Change : id, time, type, user, object_type, object_id, master_type, master_id, diff, changed_fields</span>
+<span class="go">- checkdata.Message : id, user, owner_type, owner_id, checker, message</span>
+<span class="go">- clients.ClientContact : id, contact_person, contact_role, company, type, client, remark</span>
+<span class="go">- clients.ClientContactType : id, name, known_contact_type, name_fr, name_en, is_bailiff, can_refund</span>
+<span class="go">- coachings.Coaching : id, start_date, end_date, user, client, type, primary, ending</span>
+<span class="go">- coachings.CoachingEnding : id, seqno, name, type, name_fr, name_en</span>
+<span class="go">- coachings.CoachingType : id, name, does_integ, does_gss, eval_guestrole, name_fr, name_en</span>
+<span class="go">- contacts.Company : id, email, language, url, phone, gsm, fax, modified, created, country, city, zip_code, region, addr1, street_prefix, street, street_no, street_box, addr2, prefix, name, remarks, is_obsolete, activity, client_contact_type, payment_term, partner_ptr, type, vat_id</span>
+<span class="go">- contacts.CompanyType : id, name, abbr, abbr_fr, abbr_en, name_fr, name_en</span>
+<span class="go">- contacts.Partner : id, email, language, url, phone, gsm, fax, modified, created, country, city, zip_code, region, addr1, street_prefix, street, street_no, street_box, addr2, prefix, name, remarks, is_obsolete, activity, client_contact_type, payment_term</span>
+<span class="go">- contacts.Person : id, email, language, url, phone, gsm, fax, modified, created, country, city, zip_code, region, addr1, street_prefix, street, street_no, street_box, addr2, prefix, name, remarks, is_obsolete, activity, client_contact_type, payment_term, partner_ptr, title, first_name, middle_name, last_name, gender, birth_date</span>
+<span class="go">- contacts.Role : id, type, person, company</span>
+<span class="go">- contacts.RoleType : id, name, can_sign, name_fr, name_en, use_in_contracts</span>
+<span class="go">- contenttypes.ContentType : id, app_label, model</span>
+<span class="go">- countries.Country : name, isocode, short_code, iso3, inscode, actual_country, name_fr, name_en</span>
+<span class="go">- countries.Place : id, parent, name, country, zip_code, type, show_type, inscode, name_fr, name_en</span>
+<span class="go">- cv.Duration : id, name, name_fr, name_en</span>
+<span class="go">- cv.EducationLevel : id, seqno, name, is_study, is_training, name_fr, name_en</span>
+<span class="go">- cv.Experience : id, start_date, end_date, country, city, zip_code, sector, function, person, duration_text, company, title, status, duration, regime, is_training, remarks, termination_reason</span>
+<span class="go">- cv.Function : id, name, remark, sector, name_fr, name_en</span>
+<span class="go">- cv.LanguageKnowledge : id, person, language, spoken, written, spoken_passively, written_passively, native, cef_level, has_certificate</span>
+<span class="go">- cv.PersonProperty : id, group, property, value, person, remark</span>
+<span class="go">- cv.Regime : id, name, name_fr, name_en</span>
+<span class="go">- cv.Sector : id, name, remark, name_fr, name_en</span>
+<span class="go">- cv.Status : id, name, name_fr, name_en</span>
+<span class="go">- cv.Study : id, start_date, end_date, country, city, zip_code, person, duration_text, language, school, state, remarks, type, education_level, content</span>
+<span class="go">- cv.StudyType : id, name, is_study, is_training, education_level, name_fr, name_en</span>
+<span class="go">- cv.Training : id, start_date, end_date, country, city, zip_code, sector, function, person, duration_text, language, school, state, remarks, type, content, certificates</span>
+<span class="go">- dashboard.Widget : id, seqno, user, item_name, visible</span>
+<span class="go">- debts.Account : id, ref, seqno, name, group, type, required_for_household, required_for_person, periods, default_amount, name_fr, name_en</span>
+<span class="go">- debts.Actor : id, seqno, budget, partner, header, remark</span>
+<span class="go">- debts.Budget : id, user, printed_by, date, partner, print_todos, print_empty_rows, include_yearly_incomes, intro, conclusion, dist_amount</span>
+<span class="go">- debts.Entry : id, seqno, budget, account_type, account, partner, amount, actor, circa, distribute, todo, remark, description, periods, monthly_rate, bailiff</span>
+<span class="go">- debts.Group : id, name, ref, account_type, entries_layout, name_fr, name_en</span>
+<span class="go">- dupable_clients.Word : id, word, owner</span>
+<span class="go">- esf.ClientSummary : id, printed_by, year, month, esf10, esf20, esf21, esf30, esf40, esf41, esf42, esf43, esf44, esf50, esf60, esf70, master, education_level, children_at_charge, certified_handicap, other_difficulty, result, remark, user_modified</span>
+<span class="go">- excerpts.Excerpt : id, project, build_time, build_method, user, owner_type, owner_id, contact_person, contact_role, company, excerpt_type, language</span>
+<span class="go">- excerpts.ExcerptType : id, name, build_method, template, attach_to_email, email_template, certifying, remark, body_template, content_type, primary, backward_compat, print_recipient, print_directly, shortcut, name_fr, name_en</span>
+<span class="go">- finan.BankStatement : id, user, journal, entry_date, voucher_date, accounting_period, number, narration, voucher_ptr, printed_by, state, item_account, item_remark, last_item_date, balance1, balance2</span>
+<span class="go">- finan.BankStatementItem : id, seqno, project, match, amount, remark, account, partner, date, voucher</span>
+<span class="go">- finan.JournalEntry : id, user, journal, entry_date, voucher_date, accounting_period, number, narration, voucher_ptr, printed_by, project, state, item_account, item_remark, last_item_date</span>
+<span class="go">- finan.JournalEntryItem : id, seqno, project, match, amount, remark, account, partner, date, voucher</span>
+<span class="go">- finan.PaymentOrder : id, user, journal, entry_date, voucher_date, accounting_period, number, narration, voucher_ptr, printed_by, state, item_account, item_remark, total, execution_date</span>
+<span class="go">- finan.PaymentOrderItem : id, seqno, project, match, amount, remark, account, partner, bank_account, voucher</span>
+<span class="go">- gfks.HelpText : id, content_type, field, help_text</span>
+<span class="go">- households.Household : id, email, language, url, phone, gsm, fax, modified, created, country, city, zip_code, region, addr1, street_prefix, street, street_no, street_box, addr2, prefix, name, remarks, is_obsolete, activity, client_contact_type, payment_term, partner_ptr, type</span>
+<span class="go">- households.Member : id, start_date, end_date, title, first_name, middle_name, last_name, gender, birth_date, role, person, household, dependency, primary</span>
+<span class="go">- households.Type : id, name, name_fr, name_en</span>
+<span class="go">- humanlinks.Link : id, type, parent, child</span>
+<span class="go">- isip.Contract : id, signer1, signer2, user, printed_by, client, language, applies_from, applies_until, date_decided, date_issued, user_asd, exam_policy, ending, date_ended, type, study_type, stages, goals, duties_asd, duties_dsbe, duties_pcsw, duties_person, user_dsbe</span>
+<span class="go">- isip.ContractEnding : id, name, use_in_isip, use_in_jobs, is_success, needs_date_ended</span>
+<span class="go">- isip.ContractPartner : id, contact_person, contact_role, reference_person, responsibilities, company, contract, duties_company</span>
+<span class="go">- isip.ContractType : id, name, full_name, exam_policy, overlap_group, template, ref, needs_study_type, name_fr, name_en</span>
+<span class="go">- isip.ExamPolicy : id, start_date, start_time, end_date, end_time, name, every_unit, every, positions, monday, tuesday, wednesday, thursday, friday, saturday, sunday, max_events, event_type, name_fr, name_en</span>
+<span class="go">- jobs.Candidature : id, sector, function, person, job, date_submitted, remark, state, art60, art61</span>
+<span class="go">- jobs.Contract : id, signer1, signer2, user, contact_person, contact_role, printed_by, client, language, applies_from, applies_until, date_decided, date_issued, user_asd, exam_policy, ending, date_ended, reference_person, responsibilities, duration, remark, company, type, job, regime, schedule, hourly_rate, refund_rate</span>
+<span class="go">- jobs.ContractType : id, ref, name, full_name, exam_policy, overlap_group, template, name_fr, name_en</span>
+<span class="go">- jobs.Job : id, sector, function, name, type, provider, contract_type, hourly_rate, capacity, remark</span>
+<span class="go">- jobs.JobProvider : id, email, language, url, phone, gsm, fax, modified, created, country, city, zip_code, region, addr1, street_prefix, street, street_no, street_box, addr2, prefix, name, remarks, is_obsolete, activity, client_contact_type, payment_term, partner_ptr, type, vat_id, company_ptr, is_social</span>
+<span class="go">- jobs.JobType : id, seqno, name, remark, is_social</span>
+<span class="go">- jobs.Offer : id, sector, function, name, provider, selection_from, selection_until, start_date, remark</span>
+<span class="go">- jobs.Schedule : id, name, name_fr, name_en</span>
+<span class="go">- languages.Language : name, id, iso2, name_fr, name_en</span>
+<span class="go">- ledger.Account : id, ref, seqno, name, common_account, needs_partner, clearable, default_amount, name_fr, name_en, sales_allowed, purchases_allowed, wages_allowed, taxes_allowed, clearings_allowed, bank_po_allowed</span>
+<span class="go">- ledger.AccountingPeriod : id, ref, start_date, end_date, state, year, remark</span>
+<span class="go">- ledger.FiscalYear : id, ref, start_date, end_date, state</span>
+<span class="go">- ledger.Journal : id, ref, seqno, name, build_method, template, trade_type, voucher_type, journal_group, auto_check_clearings, auto_fill_suggestions, force_sequence, preliminary, make_ledger_movements, account, partner, printed_name, dc, yearly_numbering, must_declare, uploads_volume, printed_name_fr, printed_name_en, name_fr, name_en, sepa_account</span>
+<span class="go">- ledger.LedgerInfo : user, entry_date</span>
+<span class="go">- ledger.MatchRule : id, account, journal</span>
+<span class="go">- ledger.Movement : id, project, voucher, partner, seqno, account, amount, match, cleared, value_date</span>
+<span class="go">- ledger.PaymentTerm : id, ref, name, days, months, end_of_month, printed_text, printed_text_fr, printed_text_en, name_fr, name_en</span>
+<span class="go">- ledger.Voucher : id, user, journal, entry_date, voucher_date, accounting_period, number, narration</span>
+<span class="go">- newcomers.Broker : id, name</span>
+<span class="go">- newcomers.Competence : id, seqno, user, faculty, weight</span>
+<span class="go">- newcomers.Faculty : id, name, weight, name_fr, name_en</span>
+<span class="go">- notes.EventType : id, name, remark, body, body_fr, body_en, name_fr, name_en</span>
+<span class="go">- notes.Note : id, project, build_time, build_method, user, owner_type, owner_id, contact_person, contact_role, company, date, time, type, event_type, subject, body, language, important</span>
+<span class="go">- notes.NoteType : id, name, build_method, template, attach_to_email, email_template, important, remark, special_type, name_fr, name_en</span>
+<span class="go">- notify.Message : id, created, user, owner_type, owner_id, message_type, seen, sent, body, mail_mode, subject</span>
+<span class="go">- outbox.Attachment : id, owner_type, owner_id, mail</span>
+<span class="go">- outbox.Mail : id, project, user, owner_type, owner_id, date, subject, body, sent</span>
+<span class="go">- outbox.Recipient : id, mail, partner, type, address, name</span>
+<span class="go">- pcsw.Activity : id, name, lst104</span>
+<span class="go">- pcsw.AidType : id, name, name_fr, name_en</span>
+<span class="go">- pcsw.Client : id, email, language, url, phone, gsm, fax, modified, created, country, city, zip_code, region, addr1, street_prefix, street, street_no, street_box, addr2, prefix, name, remarks, is_obsolete, activity, client_contact_type, payment_term, partner_ptr, title, first_name, middle_name, last_name, gender, birth_date, person_ptr, client_state, national_id, nationality, birth_country, birth_place, card_number, card_valid_from, card_valid_until, card_type, card_issuer, nationality_text, noble_condition, group, civil_state, residence_type, in_belgium_since, residence_until, unemployed_since, seeking_since, needs_residence_permit, needs_work_permit, work_permit_suspended_until, aid_type, declared_name, is_seeking, unavailable_until, unavailable_why, obstacles, skills, job_office_contact, refusal_reason, remarks2, gesdos_id, tim_id, is_cpas, is_senior, health_insurance, pharmacy, income_ag, income_wg, income_kg, income_rente, income_misc, job_agents, broker, faculty, has_esf</span>
+<span class="go">- pcsw.Conviction : id, client, date, prejudicial, designation</span>
+<span class="go">- pcsw.Dispense : id, client, reason, remarks, start_date, end_date</span>
+<span class="go">- pcsw.DispenseReason : id, seqno, name, name_fr, name_en</span>
+<span class="go">- pcsw.Exclusion : id, person, type, excluded_from, excluded_until, remark</span>
+<span class="go">- pcsw.ExclusionType : id, name</span>
+<span class="go">- pcsw.PersonGroup : id, name, ref_name, active</span>
+<span class="go">- properties.PropChoice : id, type, value, text, text_fr, text_en</span>
+<span class="go">- properties.PropGroup : id, name, name_fr, name_en</span>
+<span class="go">- properties.PropType : id, name, choicelist, default_value, limit_to_choices, multiple_choices, name_fr, name_en</span>
+<span class="go">- properties.Property : id, name, group, type, name_fr, name_en</span>
+<span class="go">- sepa.Account : id, partner, iban, bic, remark, primary, account_type, managed</span>
+<span class="go">- sessions.Session : session_key, session_data, expire_date</span>
+<span class="go">- system.SiteConfig : id, default_build_method, simulate_today, site_company, signer1, signer2, signer1_function, signer2_function, next_partner_id, default_event_type, site_calendar, max_auto_events, hide_events_before, default_color, client_calendar, client_guestrole, team_guestrole, prompt_calendar, propgroup_skills, propgroup_softskills, propgroup_obstacles, master_budget, system_note_type, job_office, residence_permit_upload_type, work_permit_upload_type, driving_licence_upload_type, sector, cbss_org_unit, ssdn_user_id, ssdn_email, cbss_http_username, cbss_http_password</span>
+<span class="go">- tinymce.TextFieldTemplate : id, user, name, description, text</span>
+<span class="go">- uploads.Upload : id, project, start_date, end_date, file, mimetype, file_size, user, owner_type, owner_id, contact_person, contact_role, company, upload_area, type, volume, library_file, description, remark, needed</span>
+<span class="go">- uploads.UploadType : id, name, upload_area, max_number, wanted, shortcut, warn_expiry_unit, warn_expiry_value, name_fr, name_en</span>
+<span class="go">- uploads.Volume : id, ref, root_dir, base_url, description</span>
+<span class="go">- users.Authority : id, user, authorized</span>
+<span class="go">- users.User : id, email, language, modified, created, start_date, end_date, password, last_login, username, user_type, initials, first_name, last_name, remarks, partner, date_format, dashboard_layout, newcomer_consultations, newcomer_appointments, notify_myself, mail_mode, access_class, event_type, calendar, coaching_type, coaching_supervisor, newcomer_quota</span>
+<span class="go">- vatless.AccountInvoice : id, user, journal, entry_date, voucher_date, accounting_period, number, narration, voucher_ptr, project, partner, payment_term, your_ref, due_date, match, bank_account, state, amount</span>
+<span class="go">- vatless.InvoiceItem : id, seqno, project, account, voucher, title, amount</span>
+<span class="go">- xcourses.Course : id, offer, title, start_date, remark</span>
+<span class="go">- xcourses.CourseContent : id, name</span>
+<span class="go">- xcourses.CourseOffer : id, title, guest_role, content, provider, description</span>
+<span class="go">- xcourses.CourseProvider : id, email, language, url, phone, gsm, fax, modified, created, country, city, zip_code, region, addr1, street_prefix, street, street_no, street_box, addr2, prefix, name, remarks, is_obsolete, activity, client_contact_type, payment_term, partner_ptr, type, vat_id, company_ptr</span>
+<span class="go">- xcourses.CourseRequest : id, person, offer, content, date_submitted, urgent, state, course, remark, date_ended</span>
+</pre></div>
+</div>
+</section>
+<section id="list-of-window-layouts">
+<h2><a class="toc-backref" href="#id16" role="doc-backlink">List of window layouts</a><a class="headerlink" href="#list-of-window-layouts" title="Permalink to this heading">¶</a></h2>
+<p>The following table lists information about all <em>data entry form
+definitions</em> (called <strong>window layouts</strong>) used by Lino Welfare.  There
+are <em>detail</em> layouts, <em>insert</em> layouts and <em>action parameter</em> layouts.</p>
+<p>Each window layout defines a given set of fields.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1">#settings.SITE.catch_layout_exceptions = False</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">analyzer</span><span class="o">.</span><span class="n">show_window_fields</span><span class="p">())</span>
+<span class="gp">... </span>
+<span class="go">- about.About.show :</span>
+<span class="go">- about.About.sign_in : username, password</span>
+<span class="go">- addresses.Addresses.detail : country, city, zip_code, addr1, street, street_no, street_box, addr2, address_type, remark, data_source, partner</span>
+<span class="go">- addresses.Addresses.insert : country, city, street, street_no, street_box, address_type, remark</span>
+<span class="go">- aids.AidTypes.detail : id, short_name, confirmation_type, name, name_fr, name_en, excerpt_title, excerpt_title_fr, excerpt_title_en, body_template, print_directly, is_integ_duty, is_urgent, confirmed_by_primary_coach, board, company, contact_person, contact_role, pharmacy_type</span>
+<span class="go">- aids.AidTypes.insert : name, name_fr, name_en, confirmation_type</span>
+<span class="go">- aids.Categories.detail : id, name, name_fr, name_en</span>
+<span class="go">- aids.Grantings.detail : id, client, user, signer, workflow_buttons, request_date, board, decision_date, aid_type, category, start_date, end_date, custom_actions</span>
+<span class="go">- aids.Grantings.insert : client, aid_type, signer, board, decision_date, start_date, end_date</span>
+<span class="go">- aids.GrantingsByClient.insert : aid_type, board, decision_date, start_date, end_date</span>
+<span class="go">- aids.IncomeConfirmations.detail : client, user, signer, workflow_buttons, printed, company, contact_person, language, granting, start_date, end_date, category, amount, id, remark</span>
+<span class="go">- aids.IncomeConfirmationsByGranting.insert : client, granting, start_date, end_date, category, amount, company, contact_person, language, remark</span>
+<span class="go">- aids.RefundConfirmations.detail : id, client, user, signer, workflow_buttons, granting, start_date, end_date, doctor_type, doctor, pharmacy, company, contact_person, language, printed, remark</span>
+<span class="go">- aids.RefundConfirmationsByGranting.insert : start_date, end_date, doctor_type, doctor, pharmacy, company, contact_person, language, printed, remark</span>
+<span class="go">- aids.SimpleConfirmations.detail : id, client, user, signer, workflow_buttons, granting, start_date, end_date, company, contact_person, language, printed, remark</span>
+<span class="go">- aids.SimpleConfirmationsByGranting.insert : start_date, end_date, company, contact_person, language, remark</span>
+<span class="go">- art61.ContractTypes.detail : id, name, name_fr, name_en, ref, overlap_group</span>
+<span class="go">- art61.ContractTypes.merge_row : merge_to, reason</span>
+<span class="go">- art61.Contracts.detail : id, client, user, language, company, contact_person, contact_role, applies_from, duration, applies_until, exam_policy, type, sector, function, job_title, status, cv_duration, regime, reference_person, remark, printed, date_decided, date_issued, date_ended, ending, sub_10_amount, sub_20_amount, sub_30_amount, sub_10_start, sub_20_start, sub_30_start, sub_10_end, sub_20_end, sub_30_end, responsibilities</span>
+<span class="go">- art61.Contracts.insert : client, company, type</span>
+<span class="go">- b2c.Accounts.detail : iban, bic, last_transaction, owner_name, account_name, partners</span>
+<span class="go">- b2c.Statements.detail : account, account__owner_name, account__account_name, statement_number, local_currency, balance_start, start_date, balance_end, end_date</span>
+<span class="go">- b2c.Transactions.detail : statement, seqno, booking_date, value_date, amount, remote_account, remote_bic, eref, txcd_text, remote_owner, remote_owner_address, remote_owner_city, remote_owner_postalcode, remote_owner_country_code, message</span>
+<span class="go">- boards.Boards.detail : id, name, name_fr, name_en</span>
+<span class="go">- boards.Boards.insert : name, name_fr, name_en</span>
+<span class="go">- cal.Calendars.detail : name, name_fr, name_en, color, id, description</span>
+<span class="go">- cal.Calendars.insert : name, name_fr, name_en, color</span>
+<span class="go">- cal.EntriesByClient.insert : event_type, summary, start_date, start_time, end_date, end_time</span>
+<span class="go">- cal.EntriesByGuest.insert : start_date, start_time, end_time, summary, event_type</span>
+<span class="go">- cal.EntriesByProject.insert : start_date, start_time, end_time, summary, event_type</span>
+<span class="go">- cal.EventTypes.detail : name, name_fr, name_en, event_label, event_label_fr, event_label_en, planner_column, max_conflicting, max_days, esf_field, email_template, id, all_rooms, locks_user, invite_client, is_appointment, attach_to_email</span>
+<span class="go">- cal.EventTypes.insert : name, name_fr, name_en, invite_client</span>
+<span class="go">- cal.EventTypes.merge_row : merge_to, reason</span>
+<span class="go">- cal.Events.detail : event_type, summary, project, start_date, start_time, end_date, end_time, user, assigned_to, room, priority, access_class, transparent, owner, workflow_buttons, description, id, created, modified, state</span>
+<span class="go">- cal.Events.insert : summary, start_date, start_time, end_date, end_time, event_type, project</span>
+<span class="go">- cal.GuestRoles.detail : ref, name, name_fr, name_en, id</span>
+<span class="go">- cal.GuestRoles.merge_row : merge_to, reason</span>
+<span class="go">- cal.GuestStates.wf1 : notify_subject, notify_body, notify_silent</span>
+<span class="go">- cal.GuestStates.wf2 : notify_subject, notify_body, notify_silent</span>
+<span class="go">- cal.Guests.checkin : notify_subject, notify_body, notify_silent</span>
+<span class="go">- cal.Guests.detail : event, client, role, state, remark, workflow_buttons, waiting_since, busy_since, gone_since</span>
+<span class="go">- cal.Guests.insert : event, partner, role</span>
+<span class="go">- cal.RecurrentEvents.detail : name, name_fr, name_en, id, user, event_type, start_date, start_time, end_date, end_time, every_unit, every, positions, max_events, monday, tuesday, wednesday, thursday, friday, saturday, sunday, description</span>
+<span class="go">- cal.RecurrentEvents.insert : name, name_fr, name_en, start_date, end_date, every_unit, event_type</span>
+<span class="go">- cal.Rooms.detail : id, name, name_fr, name_en, company, contact_person, display_color, description</span>
+<span class="go">- cal.Rooms.insert : id, name, name_fr, name_en, display_color, company, contact_person</span>
+<span class="go">- cal.Tasks.detail : start_date, due_date, id, workflow_buttons, summary, project, user, delegated, owner, created, modified, description</span>
+<span class="go">- cal.Tasks.insert : summary, user, project</span>
+<span class="go">- cal.TasksByController.insert : summary, start_date, due_date, user, delegated</span>
+<span class="go">- cbss.IdentifyPersonRequests.detail : id, person, user, sent, status, printed, national_id, first_name, middle_name, last_name, birth_date, tolerance, gender, environment, ticket, info_messages, debug_messages</span>
+<span class="go">- cbss.IdentifyPersonRequests.insert : person, national_id, first_name, middle_name, last_name, birth_date, tolerance, gender</span>
+<span class="go">- cbss.ManageAccessRequests.detail : id, person, user, sent, status, printed, action, start_date, end_date, purpose, query_register, national_id, sis_card_no, id_card_no, first_name, last_name, birth_date, result, environment, ticket, info_messages, debug_messages</span>
+<span class="go">- cbss.ManageAccessRequests.insert : person, action, start_date, end_date, purpose, query_register, national_id, sis_card_no, id_card_no, first_name, last_name, birth_date</span>
+<span class="go">- cbss.RetrieveTIGroupsRequests.detail : id, person, user, sent, status, printed, national_id, language, history, environment, ticket, info_messages, debug_messages</span>
+<span class="go">- cbss.RetrieveTIGroupsRequests.insert : person, national_id, language, history</span>
+<span class="go">- changes.Changes.detail : time, user, type, master, object, id, diff</span>
+<span class="go">- checkdata.Checkers.detail : value, text</span>
+<span class="go">- checkdata.Messages.detail : checker, owner, message, user, id</span>
+<span class="go">- clients.ClientContactTypes.detail : id, name, name_fr, name_en, can_refund, is_bailiff</span>
+<span class="go">- coachings.CoachingEndings.detail : id, name, name_fr, name_en, seqno</span>
+<span class="go">- coachings.Coachings.create_visit : user, summary, waiting_number</span>
+<span class="go">- contacts.Companies.detail : overview, prefix, name, type, vat_id, client_contact_type, url, email, phone, gsm, fax, remarks, notes.NotesByCompany, payment_term, vatless.VouchersByPartner, ledger.MovementsByPartner, id, language, activity, is_obsolete, created, modified</span>
+<span class="go">- contacts.Companies.insert : name, email, type</span>
+<span class="go">- contacts.Companies.merge_row : merge_to, addresses_Address, sepa_Account, reason</span>
+<span class="go">- contacts.Partners.detail : overview, id, language, activity, client_contact_type, url, email, phone, gsm, fax, country, region, city, zip_code, addr1, street_prefix, street, street_no, street_box, addr2, remarks, payment_term, vatless.VouchersByPartner, ledger.MovementsByPartner, is_obsolete, created, modified</span>
+<span class="go">- contacts.Partners.merge_row : merge_to, addresses_Address, sepa_Account, reason</span>
+<span class="go">- contacts.Persons.create_household : head, type, partner</span>
+<span class="go">- contacts.Persons.detail : overview, title, first_name, middle_name, last_name, gender, birth_date, age, id, language, email, phone, gsm, fax, households.MembersByPerson, humanlinks.LinksByHuman, remarks, payment_term, vatless.VouchersByPartner, ledger.MovementsByPartner, activity, url, client_contact_type, is_obsolete, created, modified</span>
+<span class="go">- contacts.Persons.insert : first_name, last_name, gender, email</span>
+<span class="go">- contacts.Persons.merge_row : merge_to, addresses_Address, sepa_Account, reason</span>
+<span class="go">- countries.Countries.detail : isocode, name, name_fr, name_en, short_code, inscode, actual_country</span>
+<span class="go">- countries.Countries.insert : isocode, inscode, name, name_fr, name_en</span>
+<span class="go">- countries.Places.detail : name, name_fr, name_en, country, inscode, zip_code, parent, type, id</span>
+<span class="go">- countries.Places.insert : name, name_fr, name_en, country, zip_code, type, parent</span>
+<span class="go">- cv.Durations.detail : id, name, name_fr, name_en</span>
+<span class="go">- cv.EducationLevels.detail : name, name_fr, name_en, is_study, is_training</span>
+<span class="go">- cv.Experiences.detail : person, company, country, city, sector, function, title, status, duration, regime, is_training, start_date, end_date, duration_text, termination_reason, remarks</span>
+<span class="go">- cv.ExperiencesByPerson.insert : start_date, end_date, company, function</span>
+<span class="go">- cv.Functions.detail : id, name, name_fr, name_en, sector, remark</span>
+<span class="go">- cv.LanguageKnowledgesByPerson.detail : language, native, has_certificate, cef_level, spoken_passively, spoken, written</span>
+<span class="go">- cv.LanguageKnowledgesByPerson.insert : language, native, has_certificate, cef_level, spoken_passively, spoken, written</span>
+<span class="go">- cv.Regimes.detail : id, name, name_fr, name_en</span>
+<span class="go">- cv.Sectors.detail : id, name, name_fr, name_en, remark</span>
+<span class="go">- cv.Statuses.detail : id, name, name_fr, name_en</span>
+<span class="go">- cv.Studies.detail : person, start_date, end_date, duration_text, type, content, education_level, state, school, country, city, remarks</span>
+<span class="go">- cv.StudiesByPerson.insert : start_date, end_date, type, content</span>
+<span class="go">- cv.StudyTypes.detail : name, name_fr, name_en, id, education_level, is_study, is_training</span>
+<span class="go">- cv.StudyTypes.insert : name, name_fr, name_en, is_study, is_training, education_level</span>
+<span class="go">- cv.Trainings.detail : person, start_date, end_date, duration_text, type, state, certificates, sector, function, school, country, city, remarks</span>
+<span class="go">- cv.Trainings.insert : person, start_date, end_date, type, state, certificates, sector, function, school, country, city</span>
+<span class="go">- debts.Accounts.detail : ref, name, name_fr, name_en, group, type, required_for_household, required_for_person, periods, default_amount</span>
+<span class="go">- debts.Accounts.insert : ref, group, type, name, name_fr, name_en</span>
+<span class="go">- debts.Accounts.merge_row : merge_to, reason</span>
+<span class="go">- debts.Budgets.detail : date, partner, id, user, intro, ResultByBudget, DebtsByBudget, AssetsByBudgetSummary, conclusion, dist_amount, printed, total_debt, include_yearly_incomes, print_empty_rows, print_todos, DistByBudget, data_box, summary_box</span>
+<span class="go">- debts.Budgets.insert : partner, date, user</span>
+<span class="go">- debts.Groups.detail : ref, name, name_fr, name_en, id, account_type, entries_layout</span>
+<span class="go">- debts.Groups.insert : name, name_fr, name_en, account_type, ref</span>
+<span class="go">- esf.Summaries.detail : master, year, children_at_charge, certified_handicap, other_difficulty, user_modified, education_level, result, remark, id, results</span>
+<span class="go">- excerpts.ExcerptTypes.detail : id, name, name_fr, name_en, content_type, build_method, template, body_template, email_template, shortcut, primary, print_directly, certifying, print_recipient, backward_compat, attach_to_email</span>
+<span class="go">- excerpts.ExcerptTypes.insert : name, name_fr, name_en, content_type, primary, certifying, build_method, template, body_template</span>
+<span class="go">- excerpts.Excerpts.detail : id, excerpt_type, project, user, build_method, company, contact_person, language, owner, build_time, body_template_content</span>
+<span class="go">- finan.BankStatements.detail : entry_date, number, balance1, balance2, narration, workflow_buttons, uploads.UploadsByController, journal, accounting_period, user, id, item_account, item_remark, MovementsByVoucher</span>
+<span class="go">- finan.BankStatements.insert : entry_date, balance1</span>
+<span class="go">- finan.DisbursementOrders.detail : journal, number, voucher_date, entry_date, accounting_period, item_account, total, workflow_buttons, narration, item_remark, state, user, id, MovementsByVoucher</span>
+<span class="go">- finan.DisbursementOrdersByJournal.insert : item_account, voucher_date</span>
+<span class="go">- finan.FinancialVouchers.detail : entry_date, number, workflow_buttons, narration, journal, accounting_period, user, id, item_account, item_remark, MovementsByVoucher</span>
+<span class="go">- finan.FinancialVouchers.insert : entry_date, narration</span>
+<span class="go">- finan.PaymentOrders.detail : entry_date, number, total, execution_date, workflow_buttons, narration, journal, accounting_period, user, id, item_account, item_remark, MovementsByVoucher</span>
+<span class="go">- gfks.ContentTypes.detail : id, app_label, model, base_classes</span>
+<span class="go">- households.Households.detail : type, prefix, name, id, overview, language, email, phone, gsm</span>
+<span class="go">- households.Households.insert : name, type</span>
+<span class="go">- households.Households.merge_row : merge_to, households_Member, addresses_Address, sepa_Account, reason</span>
+<span class="go">- households.HouseholdsByType.detail : type, prefix, name, id, overview, language, email, phone, gsm</span>
+<span class="go">- households.HouseholdsByType.insert : name, language</span>
+<span class="go">- households.MembersByPerson.insert : person, role, household, primary</span>
+<span class="go">- households.Types.detail : name, name_fr, name_en</span>
+<span class="go">- humanlinks.Links.detail : parent, type, child</span>
+<span class="go">- humanlinks.Links.insert : parent, type, child</span>
+<span class="go">- isip.ContractEndings.detail : name, use_in_isip, use_in_jobs, is_success, needs_date_ended</span>
+<span class="go">- isip.ContractPartners.detail : company, contact_person, contact_role, duties_company</span>
+<span class="go">- isip.ContractPartners.insert : company, contact_person, contact_role</span>
+<span class="go">- isip.ContractTypes.detail : id, ref, exam_policy, overlap_group, needs_study_type, name, name_fr, name_en, full_name</span>
+<span class="go">- isip.Contracts.detail : id, client, type, user, user_dsbe, user_asd, study_type, applies_from, applies_until, exam_policy, language, date_decided, date_issued, printed, date_ended, ending, stages, goals, duties_person, duties_asd, duties_dsbe, duties_pcsw</span>
+<span class="go">- isip.Contracts.insert : client, type</span>
+<span class="go">- isip.ExamPolicies.detail : id, name, name_fr, name_en, max_events, every, every_unit, event_type, monday, tuesday, wednesday, thursday, friday, saturday, sunday</span>
+<span class="go">- jobs.ContractTypes.detail : id, name, name_fr, name_en, ref, overlap_group</span>
+<span class="go">- jobs.ContractTypes.merge_row : merge_to, reason</span>
+<span class="go">- jobs.Contracts.detail : id, client, user, user_asd, language, job, type, company, contact_person, contact_role, applies_from, duration, applies_until, exam_policy, regime, schedule, hourly_rate, refund_rate, reference_person, remark, printed, date_decided, date_issued, date_ended, ending, responsibilities</span>
+<span class="go">- jobs.Contracts.insert : client, job</span>
+<span class="go">- jobs.JobProviders.detail : overview, prefix, name, type, vat_id, client_contact_type, is_social, url, email, phone, gsm, fax, uploads.UploadsByController, notes.NotesByCompany</span>
+<span class="go">- jobs.JobProviders.merge_row : merge_to, addresses_Address, sepa_Account, reason</span>
+<span class="go">- jobs.JobTypes.detail : id, name, is_social</span>
+<span class="go">- jobs.Jobs.detail : name, provider, contract_type, type, id, sector, function, capacity, hourly_rate, remark</span>
+<span class="go">- jobs.Jobs.insert : name, provider, contract_type, type, sector, function</span>
+<span class="go">- jobs.JobsOverview.show : body</span>
+<span class="go">- jobs.Offers.detail : name, provider, sector, function, selection_from, selection_until, start_date, remark</span>
+<span class="go">- jobs.Schedules.detail : id, name, name_fr, name_en</span>
+<span class="go">- languages.Languages.detail : id, iso2, name, name_fr, name_en</span>
+<span class="go">- ledger.AccountingPeriods.merge_row : merge_to, reason</span>
+<span class="go">- ledger.Accounts.detail : ref, common_account, id, name, name_fr, name_en, needs_partner, clearable, default_amount, MovementsByAccount</span>
+<span class="go">- ledger.Accounts.insert : ref, name, name_fr, name_en</span>
+<span class="go">- ledger.Accounts.merge_row : merge_to, reason</span>
+<span class="go">- ledger.FiscalYears.merge_row : merge_to, reason</span>
+<span class="go">- ledger.Journals.detail : name, name_fr, name_en, ref, journal_group, voucher_type, trade_type, seqno, id, account, partner, build_method, template, uploads_volume, dc, force_sequence, yearly_numbering, auto_fill_suggestions, make_ledger_movements, auto_check_clearings, must_declare, preliminary, printed_name, printed_name_fr, printed_name_en</span>
+<span class="go">- ledger.Journals.insert : ref, name, name_fr, name_en, journal_group, voucher_type</span>
+<span class="go">- ledger.Journals.merge_row : merge_to, ledger_MatchRule, reason</span>
+<span class="go">- ledger.PaymentTerms.detail : ref, months, days, end_of_month, name, name_fr, name_en, printed_text, printed_text_fr, printed_text_en</span>
+<span class="go">- ledger.PaymentTerms.merge_row : merge_to, reason</span>
+<span class="go">- newcomers.AvailableCoachesByClient.assign_coach : notify_subject, notify_body, notify_silent</span>
+<span class="go">- newcomers.Faculties.detail : id, name, name_fr, name_en, weight</span>
+<span class="go">- newcomers.Faculties.insert : name, name_fr, name_en, weight</span>
+<span class="go">- notes.EventTypes.detail : id, name, name_fr, name_en, remark</span>
+<span class="go">- notes.NoteTypes.detail : id, name, name_fr, name_en, build_method, template, special_type, email_template, attach_to_email, remark</span>
+<span class="go">- notes.NoteTypes.insert : name, name_fr, name_en, build_method</span>
+<span class="go">- notes.Notes.detail : date, time, event_type, type, project, subject, important, company, contact_person, user, language, build_time, id, body, uploads.UploadsByController</span>
+<span class="go">- notes.Notes.insert : event_type, type, subject, project</span>
+<span class="go">- notes.NotesByProject.insert : event_type, type, subject, project</span>
+<span class="go">- outbox.Mails.detail : subject, project, date, user, sent, id, owner, outbox.AttachmentsByMail, uploads.UploadsByController, body</span>
+<span class="go">- outbox.Mails.insert : project, subject, body</span>
+<span class="go">- pcsw.Clients.create_visit : user, summary, waiting_number</span>
+<span class="go">- pcsw.Clients.detail : overview, gender, id, tim_id, first_name, middle_name, last_name, birth_date, age, national_id, nationality, declared_name, civil_state, birth_country, birth_place, language, email, phone, fax, gsm, image, AgentsByClient, dupable_clients.SimilarClients, humanlinks.LinksByHuman, cbss_relations, households.MembersByPerson, workflow_buttons, id_document, broker, faculty, refusal_reason, in_belgium_since, residence_type, gesdos_id, job_agents, group, income_ag, income_wg, income_kg, income_rente, income_misc, seeking_since, unemployed_since, work_permit_suspended_until, needs_residence_permit, needs_work_permit, uploads.UploadsByProject, cvs_emitted, cv.LanguageKnowledgesByPerson, skills, obstacles, notes.NotesByProject, excerpts.ExcerptsByProject, MovementsByProject, activity, client_state, noble_condition, unavailable_until, unavailable_why, is_cpas, is_senior, is_obsolete, created, modified, remarks, remarks2, checkdata.MessagesByOwner, cbss_identify_person, cbss_manage_access, cbss_retrieve_ti_groups, cbss_summary</span>
+<span class="go">- pcsw.Clients.insert : first_name, last_name, national_id, gender, language</span>
+<span class="go">- pcsw.Clients.merge_row : merge_to, aids_IncomeConfirmation, aids_RefundConfirmation, aids_SimpleConfirmation, coachings_Coaching, cv_LanguageKnowledge, cv_PersonProperty, dupable_clients_Word, esf_ClientSummary, pcsw_Dispense, addresses_Address, sepa_Account, reason</span>
+<span class="go">- pcsw.Clients.refuse_client : reason, remark</span>
+<span class="go">- properties.PropGroups.detail : id, name, name_fr, name_en</span>
+<span class="go">- properties.PropTypes.detail : id, name, name_fr, name_en, choicelist, default_value</span>
+<span class="go">- properties.Properties.detail : id, group, type, name, name_fr, name_en</span>
+<span class="go">- sepa.AccountsByPartner.insert : iban, bic, remark</span>
+<span class="go">- system.SiteConfigs.detail : site_company, next_partner_id, job_office, master_budget, signer1, signer2, signer1_function, signer2_function, system_note_type, default_build_method, propgroup_skills, propgroup_softskills, propgroup_obstacles, residence_permit_upload_type, work_permit_upload_type, driving_licence_upload_type, default_event_type, prompt_calendar, hide_events_before, client_guestrole, team_guestrole, cbss_org_unit, sector, ssdn_user_id, ssdn_email, cbss_http_username, cbss_http_password</span>
+<span class="go">- tinymce.TextFieldTemplates.detail : id, name, user, description, text</span>
+<span class="go">- tinymce.TextFieldTemplates.insert : name, user</span>
+<span class="go">- uploads.AllUploads.detail : file, user, volume, library_file, upload_area, type, description, owner</span>
+<span class="go">- uploads.AllUploads.insert : type, description, file, volume, library_file, user</span>
+<span class="go">- uploads.UploadTypes.detail : id, upload_area, shortcut, name, name_fr, name_en, warn_expiry_unit, warn_expiry_value, wanted, max_number</span>
+<span class="go">- uploads.UploadTypes.insert : upload_area, name, name_fr, name_en, warn_expiry_unit, warn_expiry_value</span>
+<span class="go">- uploads.Uploads.detail : user, project, id, type, description, start_date, end_date, needed, company, contact_person, contact_role, file, owner, remark</span>
+<span class="go">- uploads.Uploads.insert : file, type, project, start_date, end_date, needed, description</span>
+<span class="go">- uploads.UploadsByController.insert : file, type, end_date, needed, description</span>
+<span class="go">- uploads.Volumes.detail : ref, description, root_dir, base_url, overview</span>
+<span class="go">- uploads.Volumes.insert : ref, description, root_dir, base_url</span>
+<span class="go">- uploads.Volumes.merge_row : merge_to, reason</span>
+<span class="go">- users.AllUsers.change_password : current, new1, new2</span>
+<span class="go">- users.AllUsers.detail : username, user_type, partner, first_name, last_name, initials, email, language, mail_mode, id, created, modified, remarks, event_type, access_class, calendar, newcomer_quota, coaching_type, coaching_supervisor, newcomer_consultations, newcomer_appointments</span>
+<span class="go">- users.AllUsers.insert : username, email, first_name, last_name, partner, language, user_type</span>
+<span class="go">- users.AllUsers.merge_row : merge_to, cal_Subscription, reason</span>
+<span class="go">- vatless.Invoices.detail : journal, number, entry_date, voucher_date, accounting_period, workflow_buttons, partner, payment_term, due_date, bank_account, your_ref, narration, amount, match, state, user, id, MovementsByVoucher</span>
+<span class="go">- vatless.Invoices.insert : journal, partner, entry_date</span>
+<span class="go">- vatless.InvoicesByJournal.insert : partner, entry_date</span>
+<span class="go">- vatless.ProjectInvoicesByJournal.detail : journal, number, entry_date, voucher_date, accounting_period, workflow_buttons, project, narration, partner, your_ref, payment_term, due_date, bank_account, amount, match, state, user, id, MovementsByVoucher</span>
+<span class="go">- vatless.ProjectInvoicesByJournal.insert : project, partner, entry_date</span>
+<span class="go">- xcourses.CourseContents.detail : id, name</span>
+<span class="go">- xcourses.CourseOffers.detail : id, title, content, provider, guest_role, description</span>
+<span class="go">- xcourses.CourseOffers.insert : provider, content, title</span>
+<span class="go">- xcourses.CourseProviders.detail : overview, prefix, name, type, vat_id, client_contact_type, url, email, phone, gsm, fax, notes.NotesByCompany</span>
+<span class="go">- xcourses.CourseProviders.merge_row : merge_to, addresses_Address, sepa_Account, reason</span>
+<span class="go">- xcourses.CourseRequests.detail : date_submitted, person, content, offer, urgent, course, state, date_ended, id, remark, uploads.UploadsByController</span>
+<span class="go">- xcourses.Courses.detail : id, start_date, offer, title, remark</span>
+<span class="go">- xcourses.Courses.insert : start_date, offer, title</span>
+</pre></div>
+</div>
+<p>TODO: explain why the following items were no longer shown in above list after
+20190107:</p>
+<ul class="simple">
+<li><p>integ.ActivityReport.show : body</p></li>
+<li><p>ledger.Situation.show : body</p></li>
+</ul>
+</section>
+<section id="windows-and-permissions">
+<h2><a class="toc-backref" href="#id17" role="doc-backlink">Windows and permissions</a><a class="headerlink" href="#windows-and-permissions" title="Permalink to this heading">¶</a></h2>
+<p>Each window layout is <strong>viewable</strong> by a given set of user types.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">analyzer</span><span class="o">.</span><span class="n">show_window_permissions</span><span class="p">())</span>
+<span class="gp">... </span>
+<span class="go">- about.About.show : visible for all</span>
+<span class="go">- about.About.sign_in : visible for all</span>
+<span class="go">- addresses.Addresses.detail : visible for admin 910</span>
+<span class="go">- addresses.Addresses.insert : visible for admin 910</span>
+<span class="go">- aids.AidTypes.detail : visible for 110 120 210 410 420 500 510 800 admin 910</span>
+<span class="go">- aids.AidTypes.insert : visible for 110 120 210 410 420 500 510 800 admin 910</span>
+<span class="go">- aids.Categories.detail : visible for 110 120 210 410 420 500 510 800 admin 910</span>
+<span class="go">- aids.Grantings.detail : visible for 100 110 120 200 210 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- aids.Grantings.insert : visible for 100 110 120 200 210 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- aids.GrantingsByClient.insert : visible for 100 110 120 200 210 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- aids.IncomeConfirmations.detail : visible for 100 110 120 200 210 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- aids.IncomeConfirmationsByGranting.insert : visible for 100 110 120 200 210 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- aids.RefundConfirmations.detail : visible for 100 110 120 200 210 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- aids.RefundConfirmationsByGranting.insert : visible for 100 110 120 200 210 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- aids.SimpleConfirmations.detail : visible for 100 110 120 200 210 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- aids.SimpleConfirmationsByGranting.insert : visible for 100 110 120 200 210 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- art61.ContractTypes.detail : visible for 110 120 420 admin 910</span>
+<span class="go">- art61.ContractTypes.merge_row : visible for admin 910</span>
+<span class="go">- art61.Contracts.detail : visible for 100 110 120 420 admin 910</span>
+<span class="go">- art61.Contracts.insert : visible for 100 110 120 420 admin 910</span>
+<span class="go">- b2c.Accounts.detail : visible for 100 110 120 200 210 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- b2c.Statements.detail : visible for 100 110 120 200 210 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- b2c.Transactions.detail : visible for 100 110 120 200 210 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- boards.Boards.detail : visible for admin 910</span>
+<span class="go">- boards.Boards.insert : visible for admin 910</span>
+<span class="go">- cal.Calendars.detail : visible for 110 120 410 420 admin 910</span>
+<span class="go">- cal.Calendars.insert : visible for 110 120 410 420 admin 910</span>
+<span class="go">- cal.EntriesByClient.insert : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- cal.EntriesByGuest.insert : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- cal.EntriesByProject.insert : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- cal.EventTypes.detail : visible for 110 120 410 420 admin 910</span>
+<span class="go">- cal.EventTypes.insert : visible for 110 120 410 420 admin 910</span>
+<span class="go">- cal.EventTypes.merge_row : visible for admin 910</span>
+<span class="go">- cal.Events.detail : visible for 110 120 410 420 admin 910</span>
+<span class="go">- cal.Events.insert : visible for 110 120 410 420 admin 910</span>
+<span class="go">- cal.GuestRoles.detail : visible for admin 910</span>
+<span class="go">- cal.GuestRoles.merge_row : visible for admin 910</span>
+<span class="go">- cal.GuestStates.wf1 : visible for 100 110 120 200 210 220 300 400 410 420 800 admin 910</span>
+<span class="go">- cal.GuestStates.wf2 : visible for 100 110 120 200 210 220 300 400 410 420 800 admin 910</span>
+<span class="go">- cal.Guests.checkin : visible for 100 110 120 200 210 220 300 400 410 420 800 admin 910</span>
+<span class="go">- cal.Guests.detail : visible for 100 110 120 200 210 220 300 400 410 420 800 admin 910</span>
+<span class="go">- cal.Guests.insert : visible for 100 110 120 200 210 220 300 400 410 420 800 admin 910</span>
+<span class="go">- cal.RecurrentEvents.detail : visible for 110 120 410 420 admin 910</span>
+<span class="go">- cal.RecurrentEvents.insert : visible for 110 120 410 420 admin 910</span>
+<span class="go">- cal.Rooms.detail : visible for 110 120 410 420 admin 910</span>
+<span class="go">- cal.Rooms.insert : visible for 110 120 410 420 admin 910</span>
+<span class="go">- cal.Tasks.detail : visible for 110 120 410 420 admin 910</span>
+<span class="go">- cal.Tasks.insert : visible for 110 120 410 420 admin 910</span>
+<span class="go">- cal.TasksByController.insert : visible for 100 110 120 200 300 400 410 420 500 510 admin 910</span>
+<span class="go">- cbss.IdentifyPersonRequests.detail : visible for 100 110 120 200 210 300 400 410 420 admin 910</span>
+<span class="go">- cbss.IdentifyPersonRequests.insert : visible for 100 110 120 200 210 300 400 410 420 admin 910</span>
+<span class="go">- cbss.ManageAccessRequests.detail : visible for 100 110 120 200 210 300 400 410 420 admin 910</span>
+<span class="go">- cbss.ManageAccessRequests.insert : visible for 100 110 120 200 210 300 400 410 420 admin 910</span>
+<span class="go">- cbss.RetrieveTIGroupsRequests.detail : visible for 100 110 120 200 210 300 400 410 420 admin 910</span>
+<span class="go">- cbss.RetrieveTIGroupsRequests.insert : visible for 100 110 120 200 210 300 400 410 420 admin 910</span>
+<span class="go">- changes.Changes.detail : visible for admin 910</span>
+<span class="go">- checkdata.Checkers.detail : visible for admin 910</span>
+<span class="go">- checkdata.Messages.detail : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- clients.ClientContactTypes.detail : visible for 110 120 210 410 420 800 admin 910</span>
+<span class="go">- coachings.CoachingEndings.detail : visible for 110 120 210 410 420 admin 910</span>
+<span class="go">- coachings.Coachings.create_visit : visible for 110 120 210 410 420 admin 910</span>
+<span class="go">- contacts.Companies.detail : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- contacts.Companies.insert : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- contacts.Companies.merge_row : visible for admin 910</span>
+<span class="go">- contacts.Partners.detail : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- contacts.Partners.merge_row : visible for admin 910</span>
+<span class="go">- contacts.Persons.create_household : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- contacts.Persons.detail : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- contacts.Persons.insert : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- contacts.Persons.merge_row : visible for admin 910</span>
+<span class="go">- countries.Countries.detail : visible for 110 120 210 410 420 800 admin 910</span>
+<span class="go">- countries.Countries.insert : visible for 110 120 210 410 420 800 admin 910</span>
+<span class="go">- countries.Places.detail : visible for 110 120 210 410 420 800 admin 910</span>
+<span class="go">- countries.Places.insert : visible for 110 120 210 410 420 800 admin 910</span>
+<span class="go">- cv.Durations.detail : visible for 110 120 420 admin 910</span>
+<span class="go">- cv.EducationLevels.detail : visible for 110 120 420 admin 910</span>
+<span class="go">- cv.Experiences.detail : visible for 110 120 420 admin 910</span>
+<span class="go">- cv.ExperiencesByPerson.insert : visible for 100 110 120 420 admin 910</span>
+<span class="go">- cv.Functions.detail : visible for 110 120 420 admin 910</span>
+<span class="go">- cv.LanguageKnowledgesByPerson.detail : visible for 100 110 120 420 admin 910</span>
+<span class="go">- cv.LanguageKnowledgesByPerson.insert : visible for 100 110 120 420 admin 910</span>
+<span class="go">- cv.Regimes.detail : visible for 110 120 420 admin 910</span>
+<span class="go">- cv.Sectors.detail : visible for 110 120 420 admin 910</span>
+<span class="go">- cv.Statuses.detail : visible for 110 120 420 admin 910</span>
+<span class="go">- cv.Studies.detail : visible for 110 120 420 admin 910</span>
+<span class="go">- cv.StudiesByPerson.insert : visible for 100 110 120 420 admin 910</span>
+<span class="go">- cv.StudyTypes.detail : visible for 110 120 420 admin 910</span>
+<span class="go">- cv.StudyTypes.insert : visible for 110 120 420 admin 910</span>
+<span class="go">- cv.Trainings.detail : visible for 100 110 120 420 admin 910</span>
+<span class="go">- cv.Trainings.insert : visible for 100 110 120 420 admin 910</span>
+<span class="go">- debts.Accounts.detail : visible for admin 910</span>
+<span class="go">- debts.Accounts.insert : visible for admin 910</span>
+<span class="go">- debts.Accounts.merge_row : visible for admin 910</span>
+<span class="go">- debts.Budgets.detail : visible for admin 910</span>
+<span class="go">- debts.Budgets.insert : visible for admin 910</span>
+<span class="go">- debts.Groups.detail : visible for admin 910</span>
+<span class="go">- debts.Groups.insert : visible for admin 910</span>
+<span class="go">- esf.Summaries.detail : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- excerpts.ExcerptTypes.detail : visible for admin 910</span>
+<span class="go">- excerpts.ExcerptTypes.insert : visible for admin 910</span>
+<span class="go">- excerpts.Excerpts.detail : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- finan.BankStatements.detail : visible for 500 510 admin 910</span>
+<span class="go">- finan.BankStatements.insert : visible for 500 510 admin 910</span>
+<span class="go">- finan.DisbursementOrders.detail : visible for 500 510 admin 910</span>
+<span class="go">- finan.DisbursementOrdersByJournal.insert : visible for 500 510 admin 910</span>
+<span class="go">- finan.FinancialVouchers.detail : visible for 500 510 admin 910</span>
+<span class="go">- finan.FinancialVouchers.insert : visible for 500 510 admin 910</span>
+<span class="go">- finan.PaymentOrders.detail : visible for 500 510 admin 910</span>
+<span class="go">- gfks.ContentTypes.detail : visible for admin 910</span>
+<span class="go">- households.Households.detail : visible for 100 110 120 200 210 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- households.Households.insert : visible for 100 110 120 200 210 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- households.Households.merge_row : visible for admin 910</span>
+<span class="go">- households.HouseholdsByType.detail : visible for 100 110 120 200 210 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- households.HouseholdsByType.insert : visible for 100 110 120 200 210 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- households.MembersByPerson.insert : visible for 100 110 120 200 210 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- households.Types.detail : visible for 110 120 210 410 420 800 admin 910</span>
+<span class="go">- humanlinks.Links.detail : visible for 110 120 210 410 420 800 admin 910</span>
+<span class="go">- humanlinks.Links.insert : visible for 110 120 210 410 420 800 admin 910</span>
+<span class="go">- isip.ContractEndings.detail : visible for 110 120 410 420 admin 910</span>
+<span class="go">- isip.ContractPartners.detail : visible for 110 120 410 420 admin 910</span>
+<span class="go">- isip.ContractPartners.insert : visible for 110 120 410 420 admin 910</span>
+<span class="go">- isip.ContractTypes.detail : visible for 110 120 410 420 admin 910</span>
+<span class="go">- isip.Contracts.detail : visible for 100 110 120 200 300 400 410 420 admin 910</span>
+<span class="go">- isip.Contracts.insert : visible for 100 110 120 200 300 400 410 420 admin 910</span>
+<span class="go">- isip.ExamPolicies.detail : visible for 110 120 410 420 admin 910</span>
+<span class="go">- jobs.ContractTypes.detail : visible for 110 120 410 420 admin 910</span>
+<span class="go">- jobs.ContractTypes.merge_row : visible for admin 910</span>
+<span class="go">- jobs.Contracts.detail : visible for 100 110 120 200 300 400 410 420 admin 910</span>
+<span class="go">- jobs.Contracts.insert : visible for 100 110 120 200 300 400 410 420 admin 910</span>
+<span class="go">- jobs.JobProviders.detail : visible for 100 110 120 420 admin 910</span>
+<span class="go">- jobs.JobProviders.merge_row : visible for admin 910</span>
+<span class="go">- jobs.JobTypes.detail : visible for 110 120 410 420 admin 910</span>
+<span class="go">- jobs.Jobs.detail : visible for 100 110 120 420 admin 910</span>
+<span class="go">- jobs.Jobs.insert : visible for 100 110 120 420 admin 910</span>
+<span class="go">- jobs.JobsOverview.show : visible for 100 110 120 420 admin 910</span>
+<span class="go">- jobs.Offers.detail : visible for 100 110 120 420 admin 910</span>
+<span class="go">- jobs.Schedules.detail : visible for 110 120 410 420 admin 910</span>
+<span class="go">- languages.Languages.detail : visible for 110 120 410 420 admin 910</span>
+<span class="go">- ledger.AccountingPeriods.merge_row : visible for admin 910</span>
+<span class="go">- ledger.Accounts.detail : visible for 510 admin 910</span>
+<span class="go">- ledger.Accounts.insert : visible for 510 admin 910</span>
+<span class="go">- ledger.Accounts.merge_row : visible for admin 910</span>
+<span class="go">- ledger.FiscalYears.merge_row : visible for admin 910</span>
+<span class="go">- ledger.Journals.detail : visible for 510 admin 910</span>
+<span class="go">- ledger.Journals.insert : visible for 510 admin 910</span>
+<span class="go">- ledger.Journals.merge_row : visible for admin 910</span>
+<span class="go">- ledger.PaymentTerms.detail : visible for 510 admin 910</span>
+<span class="go">- ledger.PaymentTerms.merge_row : visible for admin 910</span>
+<span class="go">- newcomers.AvailableCoachesByClient.assign_coach : visible for 110 120 200 220 300 420 800 admin 910</span>
+<span class="go">- newcomers.Faculties.detail : visible for 110 120 410 420 admin 910</span>
+<span class="go">- newcomers.Faculties.insert : visible for 110 120 410 420 admin 910</span>
+<span class="go">- notes.EventTypes.detail : visible for 110 120 410 420 admin 910</span>
+<span class="go">- notes.NoteTypes.detail : visible for 110 120 410 420 admin 910</span>
+<span class="go">- notes.NoteTypes.insert : visible for 110 120 410 420 admin 910</span>
+<span class="go">- notes.Notes.detail : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- notes.Notes.insert : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- notes.NotesByProject.insert : visible for 100 110 120 200 210 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- outbox.Mails.detail : visible for 110 120 410 420 admin 910</span>
+<span class="go">- outbox.Mails.insert : visible for 110 120 410 420 admin 910</span>
+<span class="go">- pcsw.Clients.create_visit : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- pcsw.Clients.detail : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- pcsw.Clients.insert : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- pcsw.Clients.merge_row : visible for admin 910</span>
+<span class="go">- pcsw.Clients.refuse_client : visible for 120 200 220 300 420 admin 910</span>
+<span class="go">- properties.PropGroups.detail : visible for admin 910</span>
+<span class="go">- properties.PropTypes.detail : visible for admin 910</span>
+<span class="go">- properties.Properties.detail : visible for admin 910</span>
+<span class="go">- sepa.AccountsByPartner.insert : visible for 100 110 120 200 210 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- system.SiteConfigs.detail : visible for admin 910</span>
+<span class="go">- tinymce.TextFieldTemplates.detail : visible for admin 910</span>
+<span class="go">- tinymce.TextFieldTemplates.insert : visible for admin 910</span>
+<span class="go">- uploads.AllUploads.detail : visible for 110 120 410 420 admin 910</span>
+<span class="go">- uploads.AllUploads.insert : visible for 110 120 410 420 admin 910</span>
+<span class="go">- uploads.UploadTypes.detail : visible for 110 120 410 420 admin 910</span>
+<span class="go">- uploads.UploadTypes.insert : visible for 110 120 410 420 admin 910</span>
+<span class="go">- uploads.Uploads.detail : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- uploads.Uploads.insert : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- uploads.UploadsByController.insert : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- uploads.Volumes.detail : visible for 110 120 410 420 admin 910</span>
+<span class="go">- uploads.Volumes.insert : visible for 110 120 410 420 admin 910</span>
+<span class="go">- uploads.Volumes.merge_row : visible for admin 910</span>
+<span class="go">- users.AllUsers.change_password : visible for admin 910</span>
+<span class="go">- users.AllUsers.detail : visible for admin 910</span>
+<span class="go">- users.AllUsers.insert : visible for admin 910</span>
+<span class="go">- users.AllUsers.merge_row : visible for admin 910</span>
+<span class="go">- vatless.Invoices.detail : visible for 500 510 admin 910</span>
+<span class="go">- vatless.Invoices.insert : visible for 500 510 admin 910</span>
+<span class="go">- vatless.InvoicesByJournal.insert : visible for 500 510 admin 910</span>
+<span class="go">- vatless.ProjectInvoicesByJournal.detail : visible for 500 510 admin 910</span>
+<span class="go">- vatless.ProjectInvoicesByJournal.insert : visible for 500 510 admin 910</span>
+<span class="go">- xcourses.CourseContents.detail : visible for 110 120 420 admin 910</span>
+<span class="go">- xcourses.CourseOffers.detail : visible for 100 110 120 420 admin 910</span>
+<span class="go">- xcourses.CourseOffers.insert : visible for 100 110 120 420 admin 910</span>
+<span class="go">- xcourses.CourseProviders.detail : visible for 100 110 120 420 admin 910</span>
+<span class="go">- xcourses.CourseProviders.merge_row : visible for admin 910</span>
+<span class="go">- xcourses.CourseRequests.detail : visible for 110 120 420 admin 910</span>
+<span class="go">- xcourses.Courses.detail : visible for 110 120 420 admin 910</span>
+<span class="go">- xcourses.Courses.insert : visible for 110 120 420 admin 910</span>
+</pre></div>
+</div>
+</section>
+<section id="visibility-of-eid-reader-actions">
+<h2><a class="toc-backref" href="#id18" role="doc-backlink">Visibility of eID reader actions</a><a class="headerlink" href="#visibility-of-eid-reader-actions" title="Permalink to this heading">¶</a></h2>
+<p>Here is a list of the eid card reader actions and their availability
+per user user_type.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino_xl.lib.beid.actions</span> <span class="kn">import</span> <span class="n">BaseBeIdReadCardAction</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">analyzer</span><span class="o">.</span><span class="n">show_action_permissions</span><span class="p">(</span><span class="n">BaseBeIdReadCardAction</span><span class="p">))</span>
+<span class="gp">... </span>
+<span class="go">- debts.Clients.find_by_beid : visible for 120 300 420 admin 910</span>
+<span class="go">- debts.Clients.read_beid : visible for 120 300 420 admin 910</span>
+<span class="go">- integ.Clients.find_by_beid : visible for 100 110 120 420 admin 910</span>
+<span class="go">- integ.Clients.read_beid : visible for 100 110 120 420 admin 910</span>
+<span class="go">- newcomers.ClientsByFaculty.find_by_beid : visible for 100 110 120 200 210 220 300 400 410 420 800 admin 910</span>
+<span class="go">- newcomers.ClientsByFaculty.read_beid : visible for 100 110 120 200 210 220 300 400 410 420 800 admin 910</span>
+<span class="go">- newcomers.NewClients.find_by_beid : visible for 120 200 220 300 420 admin 910</span>
+<span class="go">- newcomers.NewClients.read_beid : visible for 120 200 220 300 420 admin 910</span>
+<span class="go">- pcsw.AllClients.find_by_beid : visible for 110 120 410 420 admin 910</span>
+<span class="go">- pcsw.AllClients.read_beid : visible for 110 120 410 420 admin 910</span>
+<span class="go">- pcsw.Clients.find_by_beid : visible for 100 110 120 200 210 220 300 400 410 420 800 admin 910</span>
+<span class="go">- pcsw.Clients.read_beid : visible for 100 110 120 200 210 220 300 400 410 420 800 admin 910</span>
+<span class="go">- pcsw.ClientsByNationality.find_by_beid : visible for 100 110 120 200 210 220 300 400 410 420 800 admin 910</span>
+<span class="go">- pcsw.ClientsByNationality.read_beid : visible for 100 110 120 200 210 220 300 400 410 420 800 admin 910</span>
+<span class="go">- pcsw.CoachedClients.find_by_beid : visible for 100 110 120 200 300 400 410 420 admin 910</span>
+<span class="go">- pcsw.CoachedClients.read_beid : visible for 100 110 120 200 300 400 410 420 admin 910</span>
+<span class="go">- reception.Clients.find_by_beid : visible for 100 110 120 200 210 220 300 400 410 420 800 admin 910</span>
+<span class="go">- reception.Clients.read_beid : visible for 100 110 120 200 210 220 300 400 410 420 800 admin 910</span>
+</pre></div>
+</div>
+</section>
+<section id="dialog-actions">
+<h2><a class="toc-backref" href="#id19" role="doc-backlink">Dialog actions</a><a class="headerlink" href="#dialog-actions" title="Permalink to this heading">¶</a></h2>
+<p>Global list of all actions that have a parameter dialog.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">show_dialog_actions</span><span class="p">()</span>
+<span class="gp">... </span>
+<span class="go">- about.About.sign_in : Anmelden</span>
+<span class="go">  (main) [visible for all]:</span>
+<span class="go">  - (login_panel): **Benutzername** (username), **Passwort** (password)</span>
+<span class="go">- art61.ContractTypes.merge_row : Fusionieren</span>
+<span class="go">  (main) [visible for all]: **nach...** (merge_to), **Begründung** (reason)</span>
+<span class="go">- cal.EventTypes.merge_row : Fusionieren</span>
+<span class="go">  (main) [visible for all]: **nach...** (merge_to), **Begründung** (reason)</span>
+<span class="go">- cal.GuestRoles.merge_row : Fusionieren</span>
+<span class="go">  (main) [visible for all]: **nach...** (merge_to), **Begründung** (reason)</span>
+<span class="go">- cal.GuestStates.wf1 : Zusagen</span>
+<span class="go">  (main) [visible for all]: **Kurzbeschreibung** (notify_subject), **Beschreibung** (notify_body), **Keine Mitteilung an andere** (notify_silent)</span>
+<span class="go">- cal.GuestStates.wf2 : Absagen</span>
+<span class="go">  (main) [visible for all]: **Kurzbeschreibung** (notify_subject), **Beschreibung** (notify_body), **Keine Mitteilung an andere** (notify_silent)</span>
+<span class="go">- cal.Guests.checkin : Einchecken</span>
+<span class="go">  (main) [visible for all]: **Kurzbeschreibung** (notify_subject), **Beschreibung** (notify_body), **Keine Mitteilung an andere** (notify_silent)</span>
+<span class="go">- coachings.Coachings.create_visit : Visite erstellen</span>
+<span class="go">  (main) [visible for all]: **Benutzer** (user), **Begründung** (summary), **Wartenummer** (waiting_number)</span>
+<span class="go">- contacts.Companies.merge_row : Fusionieren</span>
+<span class="go">  (main) [visible for all]:</span>
+<span class="go">  - **nach...** (merge_to)</span>
+<span class="go">  - **Auch vergängliche verknüpfte Objekte überweisen** (keep_volatiles): **Adressen** (addresses_Address), **Bankkonten** (sepa_Account)</span>
+<span class="go">  - **Begründung** (reason)</span>
+<span class="go">- contacts.Partners.merge_row : Fusionieren</span>
+<span class="go">  (main) [visible for all]:</span>
+<span class="go">  - **nach...** (merge_to)</span>
+<span class="go">  - **Auch vergängliche verknüpfte Objekte überweisen** (keep_volatiles): **Adressen** (addresses_Address), **Bankkonten** (sepa_Account)</span>
+<span class="go">  - **Begründung** (reason)</span>
+<span class="go">- contacts.Persons.create_household : Haushalt erstellen</span>
+<span class="go">  (main) [visible for all]: **Vorstand** (head), **Haushaltsart** (type), **Partner** (partner)</span>
+<span class="go">- contacts.Persons.merge_row : Fusionieren</span>
+<span class="go">  (main) [visible for all]:</span>
+<span class="go">  - **nach...** (merge_to)</span>
+<span class="go">  - **Auch vergängliche verknüpfte Objekte überweisen** (keep_volatiles): **Adressen** (addresses_Address), **Bankkonten** (sepa_Account)</span>
+<span class="go">  - **Begründung** (reason)</span>
+<span class="go">- debts.Accounts.merge_row : Fusionieren</span>
+<span class="go">  (main) [visible for all]: **nach...** (merge_to), **Begründung** (reason)</span>
+<span class="go">- households.Households.merge_row : Fusionieren</span>
+<span class="go">  (main) [visible for all]:</span>
+<span class="go">  - **nach...** (merge_to)</span>
+<span class="go">  - **Auch vergängliche verknüpfte Objekte überweisen** (keep_volatiles):</span>
+<span class="go">    - (keep_volatiles_1): **Mitglieder** (households_Member), **Adressen** (addresses_Address)</span>
+<span class="go">    - **Bankkonten** (sepa_Account)</span>
+<span class="go">  - **Begründung** (reason)</span>
+<span class="go">- jobs.ContractTypes.merge_row : Fusionieren</span>
+<span class="go">  (main) [visible for all]: **nach...** (merge_to), **Begründung** (reason)</span>
+<span class="go">- jobs.JobProviders.merge_row : Fusionieren</span>
+<span class="go">  (main) [visible for all]:</span>
+<span class="go">  - **nach...** (merge_to)</span>
+<span class="go">  - **Auch vergängliche verknüpfte Objekte überweisen** (keep_volatiles): **Adressen** (addresses_Address), **Bankkonten** (sepa_Account)</span>
+<span class="go">  - **Begründung** (reason)</span>
+<span class="go">- ledger.AccountingPeriods.merge_row : Fusionieren</span>
+<span class="go">  (main) [visible for all]: **nach...** (merge_to), **Begründung** (reason)</span>
+<span class="go">- ledger.Accounts.merge_row : Fusionieren</span>
+<span class="go">  (main) [visible for all]: **nach...** (merge_to), **Begründung** (reason)</span>
+<span class="go">- ledger.FiscalYears.merge_row : Fusionieren</span>
+<span class="go">  (main) [visible for all]: **nach...** (merge_to), **Begründung** (reason)</span>
+<span class="go">- ledger.Journals.merge_row : Fusionieren</span>
+<span class="go">  (main) [visible for all]: **nach...** (merge_to), **Begleichungsregeln** (ledger_MatchRule), **Begründung** (reason)</span>
+<span class="go">- ledger.PaymentTerms.merge_row : Fusionieren</span>
+<span class="go">  (main) [visible for all]: **nach...** (merge_to), **Begründung** (reason)</span>
+<span class="go">- newcomers.AvailableCoachesByClient.assign_coach : Zuweisen</span>
+<span class="go">  (main) [visible for all]: **Kurzbeschreibung** (notify_subject), **Beschreibung** (notify_body), **Keine Mitteilung an andere** (notify_silent)</span>
+<span class="go">- pcsw.Clients.create_visit : Visite erstellen</span>
+<span class="go">  (main) [visible for all]: **Benutzer** (user), **Begründung** (summary), **Wartenummer** (waiting_number)</span>
+<span class="go">- pcsw.Clients.merge_row : Fusionieren</span>
+<span class="go">  (main) [visible for all]:</span>
+<span class="go">  - **nach...** (merge_to)</span>
+<span class="go">  - **Auch vergängliche verknüpfte Objekte überweisen** (keep_volatiles):</span>
+<span class="go">    - (keep_volatiles_1): **Einkommensbescheinigungen** (aids_IncomeConfirmation), **Kostenübernahmescheine** (aids_RefundConfirmation)</span>
+<span class="go">    - (keep_volatiles_2): **Einfache Bescheinigungen** (aids_SimpleConfirmation), **Begleitungen** (coachings_Coaching)</span>
+<span class="go">    - (keep_volatiles_3): **Sprachkenntnisse** (cv_LanguageKnowledge), **Eigenschaften** (cv_PersonProperty)</span>
+<span class="go">    - (keep_volatiles_4): **Phonetische Wörter** (dupable_clients_Word), **ESF Summaries** (esf_ClientSummary)</span>
+<span class="go">    - (keep_volatiles_5): **Dispenzen** (pcsw_Dispense), **Adressen** (addresses_Address)</span>
+<span class="go">    - **Bankkonten** (sepa_Account)</span>
+<span class="go">  - **Begründung** (reason)</span>
+<span class="go">- pcsw.Clients.refuse_client : Ablehnen</span>
+<span class="go">  (main) [visible for all]: **Ablehnungsgrund** (reason), **Bemerkung** (remark)</span>
+<span class="go">- uploads.Volumes.merge_row : Fusionieren</span>
+<span class="go">  (main) [visible for all]: **nach...** (merge_to), **Begründung** (reason)</span>
+<span class="go">- users.AllUsers.change_password : Passwort ändern</span>
+<span class="go">  (main) [visible for all]: **Aktuelles Passwort** (current), **Neues Passwort** (new1), **Neues Passwort nochmal** (new2)</span>
+<span class="go">- users.AllUsers.merge_row : Fusionieren</span>
+<span class="go">  (main) [visible for all]: **nach...** (merge_to), **Abonnements** (cal_Subscription), **Begründung** (reason)</span>
+<span class="go">- xcourses.CourseProviders.merge_row : Fusionieren</span>
+<span class="go">  (main) [visible for all]:</span>
+<span class="go">  - **nach...** (merge_to)</span>
+<span class="go">  - **Auch vergängliche verknüpfte Objekte überweisen** (keep_volatiles): **Adressen** (addresses_Address), **Bankkonten** (sepa_Account)</span>
+<span class="go">  - **Begründung** (reason)</span>
+</pre></div>
+</div>
+</section>
+<section id="menu-walk">
+<h2><a class="toc-backref" href="#id20" role="doc-backlink">Menu walk</a><a class="headerlink" href="#menu-walk" title="Permalink to this heading">¶</a></h2>
+<p>Here is the output of <code class="xref py py-func docutils literal notranslate"><span class="pre">walk_menu_items</span></code> for this database:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">walk_menu_items</span><span class="p">(</span><span class="s1">&#39;rolf&#39;</span><span class="p">,</span> <span class="n">severe</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">- Kontakte --&gt; Personen : 103</span>
+<span class="go">- Kontakte --&gt; Klienten : 57</span>
+<span class="go">- Kontakte --&gt; Organisationen : 52</span>
+<span class="go">- Kontakte --&gt; Partner (alle) : 175</span>
+<span class="go">- Kontakte --&gt; Haushalte : 15</span>
+<span class="go">- Büro --&gt; Meine Benachrichtigungen : 1</span>
+<span class="go">- Büro --&gt; Meine Auszüge : 0</span>
+<span class="go">- Büro --&gt; Meine ablaufenden Upload-Dateien : 1</span>
+<span class="go">- Büro --&gt; Meine Upload-Dateien : 1</span>
+<span class="go">- Büro --&gt; Mein E-Mail-Ausgang : 1</span>
+<span class="go">- Büro --&gt; Meine Ereignisse/Notizen : 10</span>
+<span class="go">- Büro --&gt; Meine Datenkontrollliste : 0</span>
+<span class="go">- Kalender --&gt; Meine Termine : 9</span>
+<span class="go">- Kalender --&gt; Überfällige Termine : 268</span>
+<span class="go">- Kalender --&gt; Meine unbestätigten Termine : 4</span>
+<span class="go">- Kalender --&gt; Meine Aufgaben : 1</span>
+<span class="go">- Kalender --&gt; Meine Gäste : 17</span>
+<span class="go">- Kalender --&gt; Meine Anwesenheiten : 1</span>
+<span class="go">- Kalender --&gt; Meine überfälligen Termine : 1</span>
+<span class="go">- Empfang --&gt; Klienten : 29</span>
+<span class="go">- Empfang --&gt; Termine heute : 6</span>
+<span class="go">- Empfang --&gt; Wartende Besucher : 8</span>
+<span class="go">- Empfang --&gt; Beschäftigte Besucher : 4</span>
+<span class="go">- Empfang --&gt; Gegangene Besucher : 7</span>
+<span class="go">- Empfang --&gt; Meine Warteschlange : 0</span>
+<span class="go">- ÖSHZ --&gt; Klienten : 29</span>
+<span class="go">- ÖSHZ --&gt; Meine Begleitungen : 0</span>
+<span class="go">- ÖSHZ --&gt; Zu bestätigende Hilfebeschlüsse : 1</span>
+<span class="go">- Buchhaltung --&gt; Rechnungseingänge --&gt; Rechnungseingänge (REG) : 0</span>
+<span class="go">- Buchhaltung --&gt; Rechnungseingänge --&gt; Sammelrechnungen (SREG) : 0</span>
+<span class="go">- Buchhaltung --&gt; Ausgabeanweisungen --&gt; Ausgabeanweisungen (AAW) : 0</span>
+<span class="go">- Buchhaltung --&gt; Zahlungsaufträge --&gt; KBC Zahlungsaufträge (ZKBC) : 0</span>
+<span class="go">- DSBE --&gt; Klienten : 0</span>
+<span class="go">- DSBE --&gt; VSEs : 0</span>
+<span class="go">- DSBE --&gt; Stellenanbieter : 4</span>
+<span class="go">- DSBE --&gt; Stellen : 9</span>
+<span class="go">- DSBE --&gt; Stellenangebote : 2</span>
+<span class="go">- DSBE --&gt; Art.60§7-Konventionen : 0</span>
+<span class="go">- DSBE --&gt; Art.61-Konventionen : 0</span>
+<span class="go">- DSBE --&gt; ZDSS --&gt; Meine IdentifyPerson-Anfragen : 1</span>
+<span class="go">- DSBE --&gt; ZDSS --&gt; Meine ManageAccess-Anfragen : 1</span>
+<span class="go">- DSBE --&gt; ZDSS --&gt; Meine Tx25-Anfragen : 1</span>
+<span class="go">- Kurse --&gt; Kursanbieter : 3</span>
+<span class="go">- Kurse --&gt; Kursangebote : 4</span>
+<span class="go">- Kurse --&gt; Offene Kursanfragen : 20</span>
+<span class="go">- Erstempfang --&gt; Neue Klienten : 22</span>
+<span class="go">- Erstempfang --&gt; Verfügbare Begleiter : 3</span>
+<span class="go">- Schuldnerberatung --&gt; Klienten : 0</span>
+<span class="go">- Schuldnerberatung --&gt; Meine Budgets : 4</span>
+<span class="go">- Berichte --&gt; Buchhaltung --&gt; Schuldner : 0</span>
+<span class="go">- Berichte --&gt; Buchhaltung --&gt; Gläubiger : 15</span>
+<span class="go">- Berichte --&gt; DSBE --&gt; Benutzer und ihre Klienten : 3</span>
+<span class="go">- Konfigurierung --&gt; System --&gt; Benutzer : 14</span>
+<span class="go">- Konfigurierung --&gt; System --&gt; Hilfetexte : 6</span>
+<span class="go">- Konfigurierung --&gt; Orte --&gt; Länder : 271</span>
+<span class="go">- Konfigurierung --&gt; Orte --&gt; Orte : 81</span>
+<span class="go">- Konfigurierung --&gt; Kontakte --&gt; Rechtsformen : 15</span>
+<span class="go">- Konfigurierung --&gt; Kontakte --&gt; Funktionen : 6</span>
+<span class="go">- Konfigurierung --&gt; Kontakte --&gt; Gremien : 4</span>
+<span class="go">- Konfigurierung --&gt; Kontakte --&gt; Haushaltsarten : 7</span>
+<span class="go">- Konfigurierung --&gt; Eigenschaften --&gt; Eigenschaftsgruppen : 4</span>
+<span class="go">- Konfigurierung --&gt; Eigenschaften --&gt; Eigenschafts-Datentypen : 4</span>
+<span class="go">- Konfigurierung --&gt; Eigenschaften --&gt; Fachkompetenzen : 0</span>
+<span class="go">- Konfigurierung --&gt; Eigenschaften --&gt; Sozialkompetenzen : 0</span>
+<span class="go">- Konfigurierung --&gt; Eigenschaften --&gt; Hindernisse : 0</span>
+<span class="go">- Konfigurierung --&gt; Büro --&gt; Auszugsarten : 22</span>
+<span class="go">- Konfigurierung --&gt; Büro --&gt; Dateibibliotheken : 1</span>
+<span class="go">- Konfigurierung --&gt; Büro --&gt; Upload-Arten : 11</span>
+<span class="go">- Konfigurierung --&gt; Büro --&gt; Notizarten : 14</span>
+<span class="go">- Konfigurierung --&gt; Büro --&gt; Ereignisarten : 11</span>
+<span class="go">- Konfigurierung --&gt; Büro --&gt; Meine Einfügetexte : 1</span>
+<span class="go">- Konfigurierung --&gt; Kalender --&gt; Kalenderliste : ...</span>
+<span class="go">- Konfigurierung --&gt; Kalender --&gt; Räume : 1</span>
+<span class="go">- Konfigurierung --&gt; Kalender --&gt; Regelmäßige Ereignisse : 16</span>
+<span class="go">- Konfigurierung --&gt; Kalender --&gt; Gastrollen : 5</span>
+<span class="go">- Konfigurierung --&gt; Kalender --&gt; Kalendereintragsarten : 13</span>
+<span class="go">- Konfigurierung --&gt; Kalender --&gt; Wiederholungsregeln : 7</span>
+<span class="go">- Konfigurierung --&gt; Kalender --&gt; Externe Kalender : 1</span>
+<span class="go">- Konfigurierung --&gt; ÖSHZ --&gt; Integrationsphasen : 6</span>
+<span class="go">- Konfigurierung --&gt; ÖSHZ --&gt; Berufe : 1</span>
+<span class="go">- Konfigurierung --&gt; ÖSHZ --&gt; AG-Sperrgründe : 3</span>
+<span class="go">- Konfigurierung --&gt; ÖSHZ --&gt; Dispenzgründe : 5</span>
+<span class="go">- Konfigurierung --&gt; ÖSHZ --&gt; Hilfearten : 12</span>
+<span class="go">- Konfigurierung --&gt; ÖSHZ --&gt; Kategorien : 4</span>
+<span class="go">- Konfigurierung --&gt; ÖSHZ --&gt; Klientenkontaktarten : 11</span>
+<span class="go">- Konfigurierung --&gt; ÖSHZ --&gt; Dienste : 4</span>
+<span class="go">- Konfigurierung --&gt; ÖSHZ --&gt; Begleitungsbeendigungsgründe : 5</span>
+<span class="go">- Konfigurierung --&gt; Buchhaltung --&gt; Haushaltsartikel : 42</span>
+<span class="go">- Konfigurierung --&gt; Buchhaltung --&gt; Journale : 5</span>
+<span class="go">- Konfigurierung --&gt; Buchhaltung --&gt; Geschäftsjahre : 9</span>
+<span class="go">- Konfigurierung --&gt; Buchhaltung --&gt; Buchungsperioden : 30</span>
+<span class="go">- Konfigurierung --&gt; Buchhaltung --&gt; Zahlungsbedingungen : 9</span>
+<span class="go">- Konfigurierung --&gt; Lebenslauf --&gt; Bildungsarten : 12</span>
+<span class="go">- Konfigurierung --&gt; Lebenslauf --&gt; Akademische Grade : 6</span>
+<span class="go">- Konfigurierung --&gt; Lebenslauf --&gt; Sektoren : 15</span>
+<span class="go">- Konfigurierung --&gt; Lebenslauf --&gt; Berufsbezeichnungen : 5</span>
+<span class="go">- Konfigurierung --&gt; Lebenslauf --&gt; Arbeitsregimes : 4</span>
+<span class="go">- Konfigurierung --&gt; Lebenslauf --&gt; Statuus : 8</span>
+<span class="go">- Konfigurierung --&gt; Lebenslauf --&gt; Vertragsdauern : 6</span>
+<span class="go">- Konfigurierung --&gt; Lebenslauf --&gt; Sprachen : 6</span>
+<span class="go">- Konfigurierung --&gt; DSBE --&gt; VSE-Arten : 6</span>
+<span class="go">- Konfigurierung --&gt; DSBE --&gt; Vertragsbeendigungsgründe : 5</span>
+<span class="go">- Konfigurierung --&gt; DSBE --&gt; Auswertungsstrategien : 7</span>
+<span class="go">- Konfigurierung --&gt; DSBE --&gt; Art.60§7-Konventionsarten : 6</span>
+<span class="go">- Konfigurierung --&gt; DSBE --&gt; Stellenarten : 6</span>
+<span class="go">- Konfigurierung --&gt; DSBE --&gt; Stundenpläne : 4</span>
+<span class="go">- Konfigurierung --&gt; DSBE --&gt; Art.61-Konventionsarten : 2</span>
+<span class="go">- Konfigurierung --&gt; Kurse --&gt; Kursinhalte : 3</span>
+<span class="go">- Konfigurierung --&gt; Erstempfang --&gt; Vermittler : 3</span>
+<span class="go">- Konfigurierung --&gt; Erstempfang --&gt; Fachbereiche : 6</span>
+<span class="go">- Konfigurierung --&gt; ZDSS --&gt; Sektoren : 210</span>
+<span class="go">- Konfigurierung --&gt; ZDSS --&gt; Eigenschafts-Codes : 107</span>
+<span class="go">- Konfigurierung --&gt; Schuldnerberatung --&gt; Kontengruppen : 9</span>
+<span class="go">- Konfigurierung --&gt; Schuldnerberatung --&gt; Konten : 52</span>
+<span class="go">- Explorer --&gt; Kontakte --&gt; Kontaktpersonen : 14</span>
+<span class="go">- Explorer --&gt; Kontakte --&gt; Partner : 175</span>
+<span class="go">- Explorer --&gt; Kontakte --&gt; Adressenarten : 6</span>
+<span class="go">- Explorer --&gt; Kontakte --&gt; Adressen : 176</span>
+<span class="go">- Explorer --&gt; Kontakte --&gt; Gremienmitglieder : 1</span>
+<span class="go">- Explorer --&gt; Kontakte --&gt; Haushaltsmitgliedsrollen : 9</span>
+<span class="go">- Explorer --&gt; Kontakte --&gt; Mitglieder : 64</span>
+<span class="go">- Explorer --&gt; Kontakte --&gt; Verwandtschaftsbeziehungen : 60</span>
+<span class="go">- Explorer --&gt; Kontakte --&gt; Verwandschaftsarten : 13</span>
+<span class="go">- Explorer --&gt; System --&gt; Vollmachten : 4</span>
+<span class="go">- Explorer --&gt; System --&gt; Benutzerarten : 16</span>
+<span class="go">- Explorer --&gt; System --&gt; Benutzerrollen : 57</span>
+<span class="go">- Explorer --&gt; System --&gt; Benachrichtigungen : 2</span>
+<span class="go">- Explorer --&gt; System --&gt; Änderungen : 0</span>
+<span class="go">- Explorer --&gt; System --&gt; All dashboard widgets : 1</span>
+<span class="go">- Explorer --&gt; System --&gt; Datenbankmodelle : 143</span>
+<span class="go">- Explorer --&gt; System --&gt; Datentests : 19</span>
+<span class="go">- Explorer --&gt; System --&gt; Datenproblemmeldungen : 12</span>
+<span class="go">- Explorer --&gt; Eigenschaften --&gt; Eigenschaften : 24</span>
+<span class="go">- Explorer --&gt; Büro --&gt; Auszüge : 77</span>
+<span class="go">- Explorer --&gt; Büro --&gt; Upload-Dateien : 16</span>
+<span class="go">- Explorer --&gt; Büro --&gt; Upload-Bereiche : 2</span>
+<span class="go">- Explorer --&gt; Büro --&gt; E-Mail-Ausgänge : 1</span>
+<span class="go">- Explorer --&gt; Büro --&gt; Anhänge : 1</span>
+<span class="go">- Explorer --&gt; Büro --&gt; Ereignisse/Notizen : 119</span>
+<span class="go">- Explorer --&gt; Büro --&gt; Einfügetexte : 3</span>
+<span class="go">- Explorer --&gt; Kalender --&gt; Kalendereinträge : 619</span>
+<span class="go">- Explorer --&gt; Kalender --&gt; Aufgaben : 41</span>
+<span class="go">- Explorer --&gt; Kalender --&gt; Anwesenheiten : 728</span>
+<span class="go">- Explorer --&gt; Kalender --&gt; Abonnements : 10</span>
+<span class="go">- Explorer --&gt; Kalender --&gt; Kalendereintrag-Zustände : 5</span>
+<span class="go">- Explorer --&gt; Kalender --&gt; Anwesenheits-Zustände : 9</span>
+<span class="go">- Explorer --&gt; Kalender --&gt; Aufgaben-Zustände : 5</span>
+<span class="go">- Explorer --&gt; Kalender --&gt; Tagesplanerkolonnen : 2</span>
+<span class="go">- Explorer --&gt; Kalender --&gt; Zugriffsklassen : 3</span>
+<span class="go">- Explorer --&gt; Kalender --&gt; Display colors : 16</span>
+<span class="go">- Explorer --&gt; ÖSHZ --&gt; AG-Sperren : 1</span>
+<span class="go">- Explorer --&gt; ÖSHZ --&gt; Vorstrafen : 1</span>
+<span class="go">- Explorer --&gt; ÖSHZ --&gt; Klienten : 57</span>
+<span class="go">- Explorer --&gt; ÖSHZ --&gt; Zivilstände : 7</span>
+<span class="go">- Explorer --&gt; ÖSHZ --&gt; Bearbeitungszustände Klienten : 4</span>
+<span class="go">- Explorer --&gt; ÖSHZ --&gt; eID-Kartenarten : 11</span>
+<span class="go">- Explorer --&gt; ÖSHZ --&gt; Hilfebeschlüsse : 60</span>
+<span class="go">- Explorer --&gt; ÖSHZ --&gt; Einkommensbescheinigungen : 61</span>
+<span class="go">- Explorer --&gt; ÖSHZ --&gt; Kostenübernahmescheine : 13</span>
+<span class="go">- Explorer --&gt; ÖSHZ --&gt; Einfache Bescheinigungen : 20</span>
+<span class="go">- Explorer --&gt; ÖSHZ --&gt; Phonetische Wörter : 131</span>
+<span class="go">- Explorer --&gt; ÖSHZ --&gt; Klientenkontakte : 15</span>
+<span class="go">- Explorer --&gt; ÖSHZ --&gt; Standard-Klientenkontaktarten : 2</span>
+<span class="go">- Explorer --&gt; ÖSHZ --&gt; Begleitungen : 90</span>
+<span class="go">- Explorer --&gt; Buchhaltung --&gt; Gemeinkonten : 23</span>
+<span class="go">- Explorer --&gt; Buchhaltung --&gt; Begleichungsregeln : 3</span>
+<span class="go">- Explorer --&gt; Buchhaltung --&gt; Belege : 56</span>
+<span class="go">- Explorer --&gt; Buchhaltung --&gt; Belegarten : 6</span>
+<span class="go">- Explorer --&gt; Buchhaltung --&gt; Bewegungen : 580</span>
+<span class="go">- Explorer --&gt; Buchhaltung --&gt; Handelsarten : 3</span>
+<span class="go">- Explorer --&gt; Buchhaltung --&gt; Journalgruppen : 5</span>
+<span class="go">- Explorer --&gt; Buchhaltung --&gt; Rechnungen : 31</span>
+<span class="go">- Explorer --&gt; SEPA --&gt; Bankkonten : 53</span>
+<span class="go">- Explorer --&gt; SEPA --&gt; Importierte  Bankkonten : 34</span>
+<span class="go">- Explorer --&gt; SEPA --&gt; Kontoauszüge : 34</span>
+<span class="go">- Explorer --&gt; SEPA --&gt; Transaktionen : 57</span>
+<span class="go">- Explorer --&gt; Finanzjournale --&gt; Kontoauszüge : 1</span>
+<span class="go">- Explorer --&gt; Finanzjournale --&gt; Diverse Buchungen : 1</span>
+<span class="go">- Explorer --&gt; Finanzjournale --&gt; Zahlungsaufträge : 27</span>
+<span class="go">- Explorer --&gt; Lebenslauf --&gt; Sprachkenntnisse : 113</span>
+<span class="go">- Explorer --&gt; Lebenslauf --&gt; Ausbildungen : 21</span>
+<span class="go">- Explorer --&gt; Lebenslauf --&gt; Studien : 23</span>
+<span class="go">- Explorer --&gt; Lebenslauf --&gt; Berufserfahrungen : 31</span>
+<span class="go">- Explorer --&gt; DSBE --&gt; VSEs : 13</span>
+<span class="go">- Explorer --&gt; DSBE --&gt; Art.60§7-Konventionen : 9</span>
+<span class="go">- Explorer --&gt; DSBE --&gt; Stellenanfragen : 75</span>
+<span class="go">- Explorer --&gt; DSBE --&gt; Vertragspartner : 39</span>
+<span class="go">- Explorer --&gt; DSBE --&gt; Art.61-Konventionen : 5</span>
+<span class="go">- Explorer --&gt; DSBE --&gt; ESF Summaries : 189</span>
+<span class="go">- Explorer --&gt; DSBE --&gt; ESF fields : 12</span>
+<span class="go">- Explorer --&gt; Kurse --&gt; Kurse : 4</span>
+<span class="go">- Explorer --&gt; Kurse --&gt; Kursanfragen : 20</span>
+<span class="go">- Explorer --&gt; Erstempfang --&gt; Kompetenzen : 8</span>
+<span class="go">- Explorer --&gt; ZDSS --&gt; IdentifyPerson-Anfragen : 6</span>
+<span class="go">- Explorer --&gt; ZDSS --&gt; ManageAccess-Anfragen : 2</span>
+<span class="go">- Explorer --&gt; ZDSS --&gt; Tx25-Anfragen : 7</span>
+<span class="go">- Explorer --&gt; Schuldnerberatung --&gt; Budgets : 18</span>
+<span class="go">- Explorer --&gt; Schuldnerberatung --&gt; Einträge : 872</span>
+<span class="go">- Site --&gt; Benutzersitzungen : ...</span>
+</pre></div>
+</div>
+</section>
+<section id="the-murderer-bug">
+<h2><a class="toc-backref" href="#id21" role="doc-backlink">The murderer bug</a><a class="headerlink" href="#the-murderer-bug" title="Permalink to this heading">¶</a></h2>
+<p>Before 20150623 it was possible to inadvertently cause a cascaded
+delete by calling <code class="xref py py-meth docutils literal notranslate"><span class="pre">delete()</span></code> on an object in a script. For example the
+following line would have deleted client 127 and all related data
+instead of raising an exception:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pcsw</span><span class="o">.</span><span class="n">Client</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">127</span><span class="p">)</span><span class="o">.</span><span class="n">delete</span><span class="p">()</span>
+<span class="gt">Traceback (most recent call last):</span>
+<span class="c">...</span>
+<span class="gr">Warning</span>: <span class="n">Kann Partner Evers Eberhart nicht löschen weil 28 Anwesenheiten darauf verweisen.</span>
+</pre></div>
+</div>
+</section>
+<section id="some-requests">
+<h2><a class="toc-backref" href="#id22" role="doc-backlink">Some requests</a><a class="headerlink" href="#some-requests" title="Permalink to this heading">¶</a></h2>
+<p>Some choices lists:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fields</span> <span class="o">=</span> <span class="s1">&#39;count rows&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">demo_get</span><span class="p">(</span><span class="s1">&#39;rolf&#39;</span><span class="p">,</span> <span class="s1">&#39;choices/cv/SkillsByPerson/property&#39;</span><span class="p">,</span> <span class="n">fields</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">demo_get</span><span class="p">(</span><span class="s1">&#39;rolf&#39;</span><span class="p">,</span> <span class="s1">&#39;choices/cv/ObstaclesByPerson/property&#39;</span><span class="p">,</span> <span class="n">fields</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="learnable-combo-fields">
+<h2><a class="toc-backref" href="#id23" role="doc-backlink">Learnable combo fields</a><a class="headerlink" href="#learnable-combo-fields" title="Permalink to this heading">¶</a></h2>
+<p>The feature <a class="reference external" href="https://jane.mylino.net/#/api/tickets/PublicTickets/3419">#3419</a> (contacts.Role.person is now a learning foreign key)
+was originally disabled in weleup because the <a class="reference external" href="https://community.lino-framework.org/so.html#term-site-operator" title="(in Lino Community Guide)"><span class="xref std std-term">site operator</span></a> doesn’t like
+unrequested changes. But since 20221017 the feature is limited to users having
+the <code class="xref py py-class docutils literal notranslate"><span class="pre">Expert</span></code> role.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">obj</span> <span class="o">=</span> <span class="n">contacts</span><span class="o">.</span><span class="n">Role</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span> <span class="o">=</span> <span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s2">&quot;hubert&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pprint</span><span class="p">(</span><span class="n">obj</span><span class="o">.</span><span class="n">create_person_choice</span><span class="p">(</span><span class="s2">&quot;Joe Smith&quot;</span><span class="p">,</span> <span class="n">ses</span><span class="p">))</span>
+<span class="gt">Traceback (most recent call last):</span>
+<span class="c">...</span>
+<span class="gr">django.core.exceptions.ValidationError</span>: <span class="n">[&quot;Cannot create new Person from &#39;Joe Smith&#39; (You are not an expert)&quot;]</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span> <span class="o">=</span> <span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s2">&quot;robin&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pprint</span><span class="p">(</span><span class="n">obj</span><span class="o">.</span><span class="n">create_person_choice</span><span class="p">(</span><span class="s2">&quot;Joe Smith&quot;</span><span class="p">,</span> <span class="n">ses</span><span class="p">,</span> <span class="n">save</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
+<span class="go">Person(name=&#39;Smith Joe&#39;,first_name=&#39;Joe&#39;,last_name=&#39;Smith&#39;)</span>
+</pre></div>
+</div>
+</section>
+<section id="mytasks-start-date">
+<h2><a class="toc-backref" href="#id24" role="doc-backlink">mytasks_start_date</a><a class="headerlink" href="#mytasks-start-date" title="Permalink to this heading">¶</a></h2>
+<p>The gerd demo project sets <code class="xref py py-attr docutils literal notranslate"><span class="pre">lino_xl.lib.cal.Plugin.mytasks_start_date</span></code> to
+-30, which means that users don’t see tasks that are older than 30 days.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dd</span><span class="o">.</span><span class="n">plugins</span><span class="o">.</span><span class="n">cal</span><span class="o">.</span><span class="n">mytasks_start_date</span>
+<span class="go">-30</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dd</span><span class="o">.</span><span class="n">plugins</span><span class="o">.</span><span class="n">cal</span><span class="o">.</span><span class="n">mytasks_end_date</span>
+<span class="go">30</span>
+</pre></div>
+</div>
+</section>
+<section id="remote-virtual-fields">
+<h2><a class="toc-backref" href="#id25" role="doc-backlink">Remote virtual fields</a><a class="headerlink" href="#remote-virtual-fields" title="Permalink to this heading">¶</a></h2>
+<p>Here is a list of all <a class="reference external" href="https://dev.lino-framework.org/dev/remote_fields.html#term-remote-virtual-field" title="(in Lino Developer Guide v20.1)"><span class="xref std std-term">remote virtual fields</span></a> that
+are being used in a <a class="reference external" href="https://using.lino-framework.org/basics/index.html#term-detail-window" title="(in Lino User Guide)"><span class="xref std std-term">detail window</span></a>.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">a</span><span class="p">,</span> <span class="n">sf</span> <span class="ow">in</span> <span class="n">walk_store_fields</span><span class="p">(</span><span class="n">only_detail_fields</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="k">if</span> <span class="s2">&quot;__&quot;</span> <span class="ow">in</span> <span class="n">sf</span><span class="o">.</span><span class="n">name</span><span class="p">:</span>
+<span class="gp">... </span>        <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">sf</span><span class="p">,</span> <span class="n">sf</span><span class="o">.</span><span class="n">field</span><span class="p">)</span>  
+<span class="go">b2c.Statements StoreField &#39;account__owner_name&#39; b2c.Account.owner_name</span>
+<span class="go">b2c.Statements StoreField &#39;account__account_name&#39; b2c.Account.account_name</span>
+<span class="go">b2c.StatementsByAccount StoreField &#39;account__owner_name&#39; b2c.Account.owner_name</span>
+<span class="go">b2c.StatementsByAccount StoreField &#39;account__account_name&#39; b2c.Account.account_name</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+
+            <p class="logo"><a href="../../index.html">
+              <img class="logo" src="../../_static/logo_web3.png" alt="Logo"/>
+            </a></p>
+          <div class="sidebar-resize-handle"></div>
+<p align="center"><b>EN</b> | <a href="de/index.rst">DE</a> | <a href="fr/index.rst">FR</a></p>
+<h3><a href="../../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../about/index.html">About Lino Welfare</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../usage/index.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../changes/index.html">Changes</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Specs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../install/index.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../copyright.html">Copyright &amp; legal notes</a></li>
+</ul>
+
+<hr class="docutils" />
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+<ul>
+  <li class="toctree-l1"><a class="reference internal" href="../../py-modindex.html">Python Module Index</a></li>
+</ul><p align="center">
+</p>
+
+<div id="ethical-ad-placement"></div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+    <nav class="relbar">
+      <a class="previous" href="clients_eupen.html" aria-label="Previous topic" >
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg>
+        </div>
+        <div class="title">
+          <span class="text">
+            <span class="direction">previous</span>
+            Clients (Eupen)
+          </span>
+        </div>
+      </a>
+      <a class="next" href="db_eupen.html" aria-label="Next topic" >
+        <div class="title">
+          <span class="text">
+            <span class="direction">next</span>
+            Database structure
+          </span>
+        </div>
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+        </div>
+      </a>
+    </nav>
+
+    <footer role="contentinfo">
+      &#169; <a href="../../copyright.html">Copyright</a> 2012-2022 Rumma &amp; Ko Ltd.
+      Last updated on 2022-11-08.
+      Created using <a class="reference external" href="https://www.sphinx-doc.org/">Sphinx</a> 5.1.1.
+      <a class="reference external" href="https://insipid-sphinx-theme.readthedocs.io/">Insipid Theme</a>.
+<a href="https://gitlab.com/lino-framework/welfare/-/blob/master/docs/specs/weleup/eupen.rst?plain=1"
+  rel="nofollow">Source code</a>.
+<br>
+
+Online link: <a href="https://welfare.lino-framework.org/specs/weleup/eupen.html">https://welfare.lino-framework.org/specs/weleup/eupen.html</a>.
+
+
+    </footer>
+  </body>
+</html>

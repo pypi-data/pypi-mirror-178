@@ -1,0 +1,514 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>The lino_welfare.modlib.pcsw plugin &#8212; Lino Welfare</title>
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/insipid.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/atelier.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/insipid-cust.css" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script defer src="../_static/insipid.js"></script>
+    <script defer src="../_static/insipid-sidebar.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="copyright" title="Copyright" href="../copyright.html" />
+    <link rel="next" title="welfare : the central Lino Welfare plugin" href="welfare.html" />
+    <link rel="prev" title="Users" href="users.html" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+  </head><body>
+    <script type="text/javascript">
+        document.body.classList.add('js');
+    </script>
+    <input type="checkbox" id="sidebar-checkbox" style="display: none;">
+    <label id="overlay" for="sidebar-checkbox"></label>
+    <div class="sidebar-resize-handle"></div>
+    <script type="text/javascript">
+        try {
+            let sidebar = localStorage.getItem('sphinx-sidebar');
+            const sidebar_width = localStorage.getItem('sphinx-sidebar-width');
+            if (sidebar_width) {
+                document.documentElement.style.setProperty('--sidebar-width', sidebar_width);
+            }
+            // show sidebar on wide screen
+            if (!sidebar && window.matchMedia('(min-width: 100rem)').matches) {
+                sidebar = 'visible';
+                // NB: We don't store the value in localStorage!
+            }
+            if (sidebar === 'visible') {
+                document.getElementById('sidebar-checkbox').checked = true;
+            }
+        } catch(e) {
+            console.info(e);
+        }
+    </script>
+    <header id="topbar-placeholder">
+      <div id="topbar">
+        <div id="titlebar">
+          <div class="buttons">
+            <label for="sidebar-checkbox" id="sidebar-button" role="button" tabindex="0" aria-controls="sphinxsidebar" accesskey="M">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></svg>
+            </label><a href="../index.html" title="Lino Welfare">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
+</a>
+          </div>
+          <div class="title">
+            <a class="parent" href="plugins.html" accesskey="U">Plugins</a>
+            <a class="top" href="#">The <code class="xref py py-mod docutils literal notranslate"><span class="pre">lino_welfare.modlib.pcsw</span></code> plugin</a>
+          </div>
+          <div class="buttons">
+            <button id="fullscreen-button" type="button" aria-hidden="true">
+              <span class="enable">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M212.686 315.314L120 408l32.922 31.029c15.12 15.12 4.412 40.971-16.97 40.971h-112C10.697 480 0 469.255 0 456V344c0-21.382 25.803-32.09 40.922-16.971L72 360l92.686-92.686c6.248-6.248 16.379-6.248 22.627 0l25.373 25.373c6.249 6.248 6.249 16.378 0 22.627zm22.628-118.628L328 104l-32.922-31.029C279.958 57.851 290.666 32 312.048 32h112C437.303 32 448 42.745 448 56v112c0 21.382-25.803 32.09-40.922 16.971L376 152l-92.686 92.686c-6.248 6.248-16.379 6.248-22.627 0l-25.373-25.373c-6.249-6.248-6.249-16.378 0-22.627z"/></svg>
+              </span>
+              <span class="disable">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M4.686 427.314L104 328l-32.922-31.029C55.958 281.851 66.666 256 88.048 256h112C213.303 256 224 266.745 224 280v112c0 21.382-25.803 32.09-40.922 16.971L152 376l-99.314 99.314c-6.248 6.248-16.379 6.248-22.627 0L4.686 449.941c-6.248-6.248-6.248-16.379 0-22.627zM443.314 84.686L344 184l32.922 31.029c15.12 15.12 4.412 40.971-16.97 40.971h-112C234.697 256 224 245.255 224 232V120c0-21.382 25.803-32.09 40.922-16.971L296 136l99.314-99.314c6.248-6.248 16.379-6.248 22.627 0l25.373 25.373c6.248 6.248 6.248 16.379 0 22.627z"/></svg>
+              </span>
+            </button><a href="https://www.facebook.com/sharer/sharer.php?u=https://welfare.lino-framework.org/specs/pcsw/" title="Share on Facebook" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+</a>
+
+<!---
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+---!>
+
+<a href="https://twitter.com/share?ref_src=https://welfare.lino-framework.org/specs/pcsw/" title="Share on Twitter" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <a href="users.html" class="nav-icon previous" title="previous:&#13;Users" aria-label="Previous topic" accesskey="P" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"/></svg>
+      </a>
+      <a href="welfare.html" class="nav-icon next" title="next:&#13;welfare : the central Lino Welfare plugin" aria-label="Next topic" accesskey="N" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg>
+      </a>
+    </nav>
+
+    <nav class="relbar">
+      <a class="previous" href="users.html" aria-label="Previous topic" >
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg>
+        </div>
+        <div class="title">
+          <span class="text">
+            <span class="direction">previous</span>
+            Users
+          </span>
+        </div>
+      </a>
+      <a class="next" href="welfare.html" aria-label="Next topic" >
+        <div class="title">
+          <span class="text">
+            <span class="direction">next</span>
+            <cite>welfare</cite> : the central Lino Welfare plugin
+          </span>
+        </div>
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+        </div>
+      </a>
+    </nav>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+<section id="the-lino-welfare-modlib-pcsw-plugin">
+<span id="welfare-specs-pcsw"></span><h1>The <a class="reference internal" href="../api/lino_welfare.modlib.pcsw.html#module-lino_welfare.modlib.pcsw" title="lino_welfare.modlib.pcsw"><code class="xref py py-mod docutils literal notranslate"><span class="pre">lino_welfare.modlib.pcsw</span></code></a> plugin<a class="headerlink" href="#the-lino-welfare-modlib-pcsw-plugin" title="Permalink to this heading">¶</a></h1>
+<p>This page describes the <a class="reference internal" href="../api/lino_welfare.modlib.pcsw.html#module-lino_welfare.modlib.pcsw" title="lino_welfare.modlib.pcsw"><code class="xref py py-mod docutils literal notranslate"><span class="pre">lino_welfare.modlib.pcsw</span></code></a> plugin.</p>
+<nav class="contents local" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#client-events" id="id1">Client events</a></p></li>
+<li><p><a class="reference internal" href="#refusal-reasons" id="id2">Refusal reasons</a></p></li>
+<li><p><a class="reference internal" href="#eid-card-summary" id="id3">eID card summary</a></p></li>
+<li><p><a class="reference internal" href="#coaching-types" id="id4">Coaching types</a></p></li>
+<li><p><a class="reference internal" href="#creating-a-new-client" id="id5">Creating a new client</a></p></li>
+<li><p><a class="reference internal" href="#the-detail-action" id="id6">The detail action</a></p></li>
+<li><p><a class="reference internal" href="#virtual-fields-on-client" id="id7">Virtual fields on client</a></p></li>
+</ul>
+</nav>
+<p>This is a <a class="reference external" href="https://dev.lino-framework.org/dev/doctests.html#tested-docs" title="(in Lino Developer Guide v20.1)"><span class="xref std std-ref">tested document</span></a>.  The following instructions are
+used for initialization:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino</span> <span class="kn">import</span> <span class="n">startup</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">startup</span><span class="p">(</span><span class="s1">&#39;lino_welfare.projects.gerd.settings.doctests&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino.api.doctest</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+<section id="client-events">
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">Client events</a><a class="headerlink" href="#client-events" title="Permalink to this heading">¶</a></h2>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">show_choicelist</span><span class="p">(</span><span class="n">pcsw</span><span class="o">.</span><span class="n">ClientEvents</span><span class="p">)</span>
+<span class="go">=========== =========== ===================== ========================= ========================</span>
+<span class="go"> value       name        de                    fr                        en</span>
+<span class="go">----------- ----------- --------------------- ------------------------- ------------------------</span>
+<span class="go"> created     created     Erstellt              Créé                      Created</span>
+<span class="go"> modified    modified    Bearbeitet            Modifié                   Modified</span>
+<span class="go"> note        note        Notiz                 Notiz                     Note</span>
+<span class="go"> dispense    dispense    Dispenz               Dispenz                   Dispense</span>
+<span class="go"> penalty     penalty     AG-Sperre             AG-Sperre                 Penalty</span>
+<span class="go"> active      active      Begleitung            Intervention              Coaching</span>
+<span class="go"> isip        isip        VSE                   PIIS                      ISIP</span>
+<span class="go"> jobs        jobs        Art.60§7-Konvention   Mise à l&#39;emploi art60§7   Art60§7 job supplyment</span>
+<span class="go"> available   available   Verfügbar             Disponible                Available</span>
+<span class="go"> art61       art61       Art.61-Konvention     Mise à l&#39;emploi art.61    Art61 job supplyment</span>
+<span class="go">=========== =========== ===================== ========================= ========================</span>
+</pre></div>
+</div>
+</section>
+<section id="refusal-reasons">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Refusal reasons</a><a class="headerlink" href="#refusal-reasons" title="Permalink to this heading">¶</a></h2>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">show_choicelist</span><span class="p">(</span><span class="n">pcsw</span><span class="o">.</span><span class="n">RefusalReasons</span><span class="p">)</span>
+<span class="go">======= ====== ============================================= ============================================ ==========================================</span>
+<span class="go"> value   name   de                                            fr                                           en</span>
+<span class="go">------- ------ --------------------------------------------- -------------------------------------------- ------------------------------------------</span>
+<span class="go"> 10      None   Information (keine Begleitung erforderlich)   Demande d&#39;information (pas d&#39;intervention)   Information request (No coaching needed)</span>
+<span class="go"> 20      None   ÖSHZ ist nicht zuständig                      CPAS n&#39;est pas compétent                     PCSW is not competent</span>
+<span class="go"> 30      None   Antragsteller ist nicht zurück gekommen       Client n&#39;est plus revenu                     Client did not return</span>
+<span class="go">======= ====== ============================================= ============================================ ==========================================</span>
+</pre></div>
+</div>
+</section>
+<section id="eid-card-summary">
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">eID card summary</a><a class="headerlink" href="#eid-card-summary" title="Permalink to this heading">¶</a></h2>
+<p>Here a test case (fixed <a class="reference external" href="https://luc.lino-framework.org/blog/2013/0827.html">2013-08-27</a>)
+to test the new <cite>eid_info</cite> field:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">soup</span> <span class="o">=</span> <span class="n">get_json_soup</span><span class="p">(</span><span class="s1">&#39;rolf&#39;</span><span class="p">,</span> <span class="s1">&#39;pcsw/Clients/116&#39;</span><span class="p">,</span> <span class="s1">&#39;overview&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">soup</span><span class="o">.</span><span class="n">get_text</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">))</span>
+<span class="gp">... </span>
+<span class="go">Ansicht als Partner , Person , Klient</span>
+<span class="go">Herr</span>
+<span class="go">Alfons Ausdemwald</span>
+<span class="go">Am Bahndamm</span>
+<span class="go">4700 Eupen</span>
+<span class="go">Adressen verwalten</span>
+<span class="go">Karte Nr. 123456789012 (C (Personalausweis für Ausländer)), ausgestellt durch Eupen</span>
+<span class="go">, gültig von 19.08.12 bis 18.08.13</span>
+<span class="go">Muss eID-Karte einlesen!</span>
+<span class="go">Keinen Kaffee anbieten</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">soup</span> <span class="o">=</span> <span class="n">get_json_soup</span><span class="p">(</span><span class="s1">&#39;rolf&#39;</span><span class="p">,</span> <span class="s1">&#39;pcsw/Clients/118&#39;</span><span class="p">,</span> <span class="s1">&#39;overview&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">soup</span><span class="o">.</span><span class="n">get_text</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">))</span>
+<span class="gp">... </span>
+<span class="go">Ansicht als Partner , Person ,  Klient</span>
+<span class="go">Frau</span>
+<span class="go">Charlotte Collard</span>
+<span class="go">Auf dem Spitzberg</span>
+<span class="go">4700 Eupen</span>
+<span class="go">Adressen verwalten</span>
+<span class="go">Karte Nr. 591413288107 (Belgischer Staatsbürger), ausgestellt durch Eupen, gültig von 19.08.11 bis 19.08.16</span>
+</pre></div>
+</div>
+</section>
+<section id="coaching-types">
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Coaching types</a><a class="headerlink" href="#coaching-types" title="Permalink to this heading">¶</a></h2>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span> <span class="o">=</span> <span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;rolf&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="s1">&#39;coachings.CoachingTypes&#39;</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">=================== ====== ====== =====================</span>
+<span class="go"> Bezeichnung         DSBE   ASD    Role in evaluations</span>
+<span class="go">------------------- ------ ------ ---------------------</span>
+<span class="go"> ASD                 Nein   Ja     Kollege</span>
+<span class="go"> DSBE                Ja     Nein   Kollege</span>
+<span class="go"> Schuldnerberatung   Nein   Nein</span>
+<span class="go">=================== ====== ====== =====================</span>
+</pre></div>
+</div>
+</section>
+<section id="creating-a-new-client">
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Creating a new client</a><a class="headerlink" href="#creating-a-new-client" title="Permalink to this heading">¶</a></h2>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;/api/pcsw/CoachedClients/-99999?an=insert&amp;fmt=json&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">res</span> <span class="o">=</span> <span class="n">test_client</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">REMOTE_USER</span><span class="o">=</span><span class="s1">&#39;rolf&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">res</span><span class="o">.</span><span class="n">status_code</span>
+<span class="go">200</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">d</span> <span class="o">=</span> <span class="n">AttrDict</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">res</span><span class="o">.</span><span class="n">content</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">keys</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">keys</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">rmu</span><span class="p">(</span><span class="n">keys</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">[&#39;data&#39;, &#39;phantom&#39;, &#39;title&#39;]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">d</span><span class="o">.</span><span class="n">phantom</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">title</span><span class="p">)</span>
+<span class="go">Klient erstellen</span>
+</pre></div>
+</div>
+<p>There are a lot of data fields:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">len</span><span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+<span class="go">8</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">keys</span><span class="p">())))</span>
+<span class="gp">... </span>
+<span class="go">disabled_fields first_name gender genderHidden language languageHidden last_name national_id</span>
+</pre></div>
+</div>
+</section>
+<section id="the-detail-action">
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">The detail action</a><a class="headerlink" href="#the-detail-action" title="Permalink to this heading">¶</a></h2>
+<p>The following would have detected a bug which caused the MTI navigator
+to not work (bug has been fixed <a class="reference external" href="https://luc.lino-framework.org/blog/2015/0227.html">2015-02-27</a>) :</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">etgen.html</span> <span class="kn">import</span> <span class="n">E</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">p</span> <span class="o">=</span> <span class="n">contacts</span><span class="o">.</span><span class="n">Person</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="mi">178</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cli</span> <span class="o">=</span> <span class="n">pcsw</span><span class="o">.</span><span class="n">Client</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="mi">178</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span> <span class="o">=</span> <span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;robin&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ar</span> <span class="o">=</span> <span class="n">contacts</span><span class="o">.</span><span class="n">Partners</span><span class="o">.</span><span class="n">request_from</span><span class="p">(</span><span class="n">ses</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cli</span><span class="o">.</span><span class="n">get_detail_action</span><span class="p">(</span><span class="n">ses</span><span class="p">)</span>
+<span class="go">&lt;BoundAction(pcsw.Clients, &lt;lino.core.actions.ShowDetail detail (&#39;Detail&#39;)&gt;)&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cli</span><span class="o">.</span><span class="n">get_detail_action</span><span class="p">(</span><span class="n">ar</span><span class="p">)</span>
+<span class="go">&lt;BoundAction(pcsw.Clients, &lt;lino.core.actions.ShowDetail detail (&#39;Detail&#39;)&gt;)&gt;</span>
+</pre></div>
+</div>
+<p>And this tests a potential source of problems in <cite>E.tostring</cite> which I
+removed at the same time:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span> <span class="o">=</span> <span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;robin&#39;</span><span class="p">,</span> <span class="n">renderer</span><span class="o">=</span><span class="n">settings</span><span class="o">.</span><span class="n">SITE</span><span class="o">.</span><span class="n">kernel</span><span class="o">.</span><span class="n">default_renderer</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ar</span> <span class="o">=</span> <span class="n">contacts</span><span class="o">.</span><span class="n">Partners</span><span class="o">.</span><span class="n">request_from</span><span class="p">(</span><span class="n">ses</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ar</span><span class="o">.</span><span class="n">renderer</span> <span class="o">=</span> <span class="n">settings</span><span class="o">.</span><span class="n">SITE</span><span class="o">.</span><span class="n">kernel</span><span class="o">.</span><span class="n">extjs_renderer</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">tostring</span><span class="p">(</span><span class="n">ar</span><span class="o">.</span><span class="n">obj2html</span><span class="p">(</span><span class="n">p</span><span class="p">)))</span>
+<span class="go">&lt;a href=&quot;javascript:Lino.contacts.Persons.detail.run(null,{ &amp;quot;record_id&amp;quot;: 178 })&quot;&gt;Herr Karl KELLER&lt;/a&gt;</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">tostring</span><span class="p">(</span><span class="n">ar</span><span class="o">.</span><span class="n">obj2html</span><span class="p">(</span><span class="n">cli</span><span class="p">)))</span>
+<span class="go">&lt;a href=&quot;javascript:Lino.pcsw.Clients.detail.run(null,{ &amp;quot;record_id&amp;quot;: 178 })&quot;&gt;KELLER Karl (178)&lt;/a&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">settings</span><span class="o">.</span><span class="n">SITE</span><span class="o">.</span><span class="n">kernel</span><span class="o">.</span><span class="n">extjs_renderer</span><span class="o">.</span><span class="n">instance_handler</span><span class="p">(</span><span class="n">ar</span><span class="p">,</span> <span class="n">cli</span><span class="p">,</span> <span class="kc">None</span><span class="p">))</span>
+<span class="go">Lino.pcsw.Clients.detail.run(null,{ &quot;record_id&quot;: 178 })</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">tostring</span><span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">get_mti_buttons</span><span class="p">(</span><span class="n">ar</span><span class="p">)))</span>
+<span class="gp">... </span>
+<span class="go">&lt;a href=&quot;javascript:Lino.contacts.Partners.detail.run(null,{ &amp;quot;record_id&amp;quot;: 178 })&quot;&gt;Partner&lt;/a&gt;,</span>
+<span class="go">&lt;b&gt;Person&lt;/b&gt;, &lt;a</span>
+<span class="go">href=&quot;javascript:Lino.pcsw.Clients.detail.run(null,{ &amp;quot;record_id&amp;quot;: 178 })&quot;&gt;Klient&lt;/a&gt; [&lt;a</span>
+<span class="go">...javascript:Lino.contacts.Partners.del_client(null,true,178,{ })...&quot;&gt;❌&lt;/a&gt;]</span>
+</pre></div>
+</div>
+</section>
+<section id="virtual-fields-on-client">
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Virtual fields on client</a><a class="headerlink" href="#virtual-fields-on-client" title="Permalink to this heading">¶</a></h2>
+<p>The following snippet just tests some virtual fields on Client for
+runtime errors.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">vfields</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;primary_coach&#39;</span><span class="p">,</span> <span class="s1">&#39;coaches&#39;</span><span class="p">,</span> <span class="s1">&#39;active_contract&#39;</span><span class="p">,</span> <span class="s1">&#39;contract_company&#39;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="s1">&#39;find_appointment&#39;</span><span class="p">,</span> <span class="s1">&#39;cbss_relations&#39;</span><span class="p">,</span> <span class="s1">&#39;applies_from&#39;</span><span class="p">,</span> <span class="s1">&#39;applies_until&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">counters</span> <span class="o">=</span> <span class="p">{</span> <span class="n">k</span><span class="p">:</span> <span class="nb">set</span><span class="p">()</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">vfields</span> <span class="p">}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">cli</span> <span class="ow">in</span> <span class="n">pcsw</span><span class="o">.</span><span class="n">Client</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">all</span><span class="p">():</span>
+<span class="gp">... </span>    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">vfields</span><span class="p">:</span>
+<span class="gp">... </span>        <span class="n">counters</span><span class="p">[</span><span class="n">k</span><span class="p">]</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="nb">getattr</span><span class="p">(</span><span class="n">cli</span><span class="p">,</span> <span class="n">k</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">counters</span><span class="p">[</span><span class="n">k</span><span class="p">])</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">vfields</span><span class="p">]</span>
+<span class="go">[1, 20, 23, 4, 1, 1, 22, 22]</span>
+</pre></div>
+</div>
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.pcsw.Client">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.pcsw.</span></span><span class="sig-name descname"><span class="pre">Client</span></span><a class="headerlink" href="#lino_welfare.modlib.pcsw.Client" title="Permalink to this definition">¶</a></dt>
+<dd><p>Django model used to represent a <a class="reference internal" href="../about/general.html#term-beneficiary"><span class="xref std std-term">beneficiary</span></a>.</p>
+<p>Inherits from <code class="xref py py-class docutils literal notranslate"><span class="pre">lino_welfare.modlib.contacts.Person</span></code> and
+<a class="reference external" href="https://dev.lino-framework.org/specs/beid.html#lino_xl.lib.beid.BeIdCardHolder" title="(in Lino Developer Guide v20.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">lino_xl.lib.beid.BeIdCardHolder</span></code></a>.</p>
+<p>A <a class="reference internal" href="#lino_welfare.modlib.pcsw.Client" title="lino_welfare.modlib.pcsw.Client"><code class="xref py py-class docutils literal notranslate"><span class="pre">Client</span></code></a> is a polymorphic specialization of <code class="xref py py-class docutils literal notranslate"><span class="pre">Person</span></code>.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.pcsw.Client.has_esf">
+<span class="sig-name descname"><span class="pre">has_esf</span></span><a class="headerlink" href="#lino_welfare.modlib.pcsw.Client.has_esf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether Lino should make ESF summaries for this client.</p>
+<p>This field exists only if <code class="xref py py-mod docutils literal notranslate"><span class="pre">lino_welfasre.modlib.esf</span></code> is
+installed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.pcsw.Client.overview">
+<span class="sig-name descname"><span class="pre">overview</span></span><a class="headerlink" href="#lino_welfare.modlib.pcsw.Client.overview" title="Permalink to this definition">¶</a></dt>
+<dd><p>A panel with general information about this client.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.pcsw.Client.cvs_emitted">
+<span class="sig-name descname"><span class="pre">cvs_emitted</span></span><a class="headerlink" href="#lino_welfare.modlib.pcsw.Client.cvs_emitted" title="Permalink to this definition">¶</a></dt>
+<dd><p>A virtual field displaying a group of shortcut links for managing CVs
+(Curriculum Vitaes).</p>
+<p>This field is an excerpts shortcut
+(<code class="xref py py-class docutils literal notranslate"><span class="pre">lino_xl.lib.excerpts.models.Shortcuts</span></code>) and works only if
+the database has an <code class="xref py py-class docutils literal notranslate"><span class="pre">ExcerptType</span></code> whose <cite>shortcut</cite> points
+to it.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.pcsw.Client.id_document">
+<span class="sig-name descname"><span class="pre">id_document</span></span><a class="headerlink" href="#lino_welfare.modlib.pcsw.Client.id_document" title="Permalink to this definition">¶</a></dt>
+<dd><p>A virtual field displaying a group of buttons for managing the
+“identifying document”, i.e. an uploaded document which has been
+used as alternative to the eID card.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.pcsw.Client.group">
+<span class="sig-name descname"><span class="pre">group</span></span><a class="headerlink" href="#lino_welfare.modlib.pcsw.Client.group" title="Permalink to this definition">¶</a></dt>
+<dd><p>Pointer to <code class="xref py py-class docutils literal notranslate"><span class="pre">PersonGroup</span></code>.
+The intergration phase of this client.</p>
+<p>The <code class="xref py py-class docutils literal notranslate"><span class="pre">UsersWithClients</span></code>
+table groups clients using this field.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.pcsw.Client.civil_state">
+<span class="sig-name descname"><span class="pre">civil_state</span></span><a class="headerlink" href="#lino_welfare.modlib.pcsw.Client.civil_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>The civil state of this client. Allowed choices are defined in
+<a class="reference external" href="https://using.lino-framework.org/plugins/contacts.html#lino_xl.lib.contacts.CivilStates" title="(in Lino User Guide)"><code class="xref py py-class docutils literal notranslate"><span class="pre">CivilState</span></code></a>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.pcsw.Client.client_state">
+<span class="sig-name descname"><span class="pre">client_state</span></span><a class="headerlink" href="#lino_welfare.modlib.pcsw.Client.client_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>Pointer to <code class="xref py py-class docutils literal notranslate"><span class="pre">ClientStates</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.pcsw.Client.needs_residence_permit">
+<span class="sig-name descname"><span class="pre">needs_residence_permit</span></span><a class="headerlink" href="#lino_welfare.modlib.pcsw.Client.needs_residence_permit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.pcsw.Client.unemployed_since">
+<span class="sig-name descname"><span class="pre">unemployed_since</span></span><a class="headerlink" href="#lino_welfare.modlib.pcsw.Client.unemployed_since" title="Permalink to this definition">¶</a></dt>
+<dd><p>The date when this client got unemployed and stopped to have a
+regular work.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.pcsw.Client.seeking_since">
+<span class="sig-name descname"><span class="pre">seeking_since</span></span><a class="headerlink" href="#lino_welfare.modlib.pcsw.Client.seeking_since" title="Permalink to this definition">¶</a></dt>
+<dd><p>The date when this client registered as unemployed and started
+to look for a new job.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.pcsw.Client.work_permit_suspended_until">
+<span class="sig-name descname"><span class="pre">work_permit_suspended_until</span></span><a class="headerlink" href="#lino_welfare.modlib.pcsw.Client.work_permit_suspended_until" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lino_welfare.modlib.pcsw.Client.get_first_meeting">
+<span class="sig-name descname"><span class="pre">get_first_meeting</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">today</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lino_welfare.modlib.pcsw.Client.get_first_meeting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the last note of type “First meeting” for this client.
+Usage example see <a class="reference internal" href="debts.html"><span class="doc">Debts mediation</span></a> and
+<a class="reference internal" href="notes.html"><span class="doc">Notes</span></a>.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.pcsw.Clients">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.pcsw.</span></span><span class="sig-name descname"><span class="pre">Clients</span></span><a class="headerlink" href="#lino_welfare.modlib.pcsw.Clients" title="Permalink to this definition">¶</a></dt>
+<dd><p>The list that opens by <span class="menuselection">Contacts ‣ Clients</span>.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.pcsw.Clients.client_state">
+<span class="sig-name descname"><span class="pre">client_state</span></span><a class="headerlink" href="#lino_welfare.modlib.pcsw.Clients.client_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>If not empty, show only Clients whose <cite>client_state</cite> equals
+the specified value.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/logo_web3.png" alt="Logo"/>
+            </a></p>
+          <div class="sidebar-resize-handle"></div>
+<p align="center"><b>EN</b> | <a href="de/index.rst">DE</a> | <a href="fr/index.rst">FR</a></p>
+<h3><a href="../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../about/index.html">About Lino Welfare</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/index.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changes/index.html">Changes</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Specs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/index.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../copyright.html">Copyright &amp; legal notes</a></li>
+</ul>
+
+<hr class="docutils" />
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+<ul>
+  <li class="toctree-l1"><a class="reference internal" href="../py-modindex.html">Python Module Index</a></li>
+</ul><p align="center">
+</p>
+
+<div id="ethical-ad-placement"></div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+    <nav class="relbar">
+      <a class="previous" href="users.html" aria-label="Previous topic" >
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg>
+        </div>
+        <div class="title">
+          <span class="text">
+            <span class="direction">previous</span>
+            Users
+          </span>
+        </div>
+      </a>
+      <a class="next" href="welfare.html" aria-label="Next topic" >
+        <div class="title">
+          <span class="text">
+            <span class="direction">next</span>
+            <cite>welfare</cite> : the central Lino Welfare plugin
+          </span>
+        </div>
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+        </div>
+      </a>
+    </nav>
+
+    <footer role="contentinfo">
+      &#169; <a href="../copyright.html">Copyright</a> 2012-2022 Rumma &amp; Ko Ltd.
+      Last updated on 2022-11-08.
+      Created using <a class="reference external" href="https://www.sphinx-doc.org/">Sphinx</a> 5.1.1.
+      <a class="reference external" href="https://insipid-sphinx-theme.readthedocs.io/">Insipid Theme</a>.
+<a href="https://gitlab.com/lino-framework/welfare/-/blob/master/docs/specs/pcsw.rst?plain=1"
+  rel="nofollow">Source code</a>.
+<br>
+
+Online link: <a href="https://welfare.lino-framework.org/specs/pcsw.html">https://welfare.lino-framework.org/specs/pcsw.html</a>.
+
+
+    </footer>
+  </body>
+</html>

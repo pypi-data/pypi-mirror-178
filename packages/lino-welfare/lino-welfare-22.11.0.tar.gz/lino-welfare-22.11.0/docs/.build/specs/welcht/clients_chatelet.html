@@ -1,0 +1,399 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Clients (Chatelet) &#8212; Lino Welfare</title>
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/insipid.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/atelier.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/insipid-cust.css" />
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script defer src="../../_static/insipid.js"></script>
+    <script defer src="../../_static/insipid-sidebar.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../copyright.html" />
+    <link rel="next" title="The Lino Welfare “Châtelet” variant" href="chatelet.html" />
+    <link rel="prev" title="Lino Welfare Chatelet Specs" href="index.html" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+  </head><body>
+    <script type="text/javascript">
+        document.body.classList.add('js');
+    </script>
+    <input type="checkbox" id="sidebar-checkbox" style="display: none;">
+    <label id="overlay" for="sidebar-checkbox"></label>
+    <div class="sidebar-resize-handle"></div>
+    <script type="text/javascript">
+        try {
+            let sidebar = localStorage.getItem('sphinx-sidebar');
+            const sidebar_width = localStorage.getItem('sphinx-sidebar-width');
+            if (sidebar_width) {
+                document.documentElement.style.setProperty('--sidebar-width', sidebar_width);
+            }
+            // show sidebar on wide screen
+            if (!sidebar && window.matchMedia('(min-width: 100rem)').matches) {
+                sidebar = 'visible';
+                // NB: We don't store the value in localStorage!
+            }
+            if (sidebar === 'visible') {
+                document.getElementById('sidebar-checkbox').checked = true;
+            }
+        } catch(e) {
+            console.info(e);
+        }
+    </script>
+    <header id="topbar-placeholder">
+      <div id="topbar">
+        <div id="titlebar">
+          <div class="buttons">
+            <label for="sidebar-checkbox" id="sidebar-button" role="button" tabindex="0" aria-controls="sphinxsidebar" accesskey="M">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></svg>
+            </label><a href="../../index.html" title="Lino Welfare">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
+</a>
+          </div>
+          <div class="title">
+            <a class="parent" href="index.html" accesskey="U">Lino Welfare Chatelet Specs</a>
+            <a class="top" href="#">Clients (Chatelet)</a>
+          </div>
+          <div class="buttons">
+            <button id="fullscreen-button" type="button" aria-hidden="true">
+              <span class="enable">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M212.686 315.314L120 408l32.922 31.029c15.12 15.12 4.412 40.971-16.97 40.971h-112C10.697 480 0 469.255 0 456V344c0-21.382 25.803-32.09 40.922-16.971L72 360l92.686-92.686c6.248-6.248 16.379-6.248 22.627 0l25.373 25.373c6.249 6.248 6.249 16.378 0 22.627zm22.628-118.628L328 104l-32.922-31.029C279.958 57.851 290.666 32 312.048 32h112C437.303 32 448 42.745 448 56v112c0 21.382-25.803 32.09-40.922 16.971L376 152l-92.686 92.686c-6.248 6.248-16.379 6.248-22.627 0l-25.373-25.373c-6.249-6.248-6.249-16.378 0-22.627z"/></svg>
+              </span>
+              <span class="disable">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M4.686 427.314L104 328l-32.922-31.029C55.958 281.851 66.666 256 88.048 256h112C213.303 256 224 266.745 224 280v112c0 21.382-25.803 32.09-40.922 16.971L152 376l-99.314 99.314c-6.248 6.248-16.379 6.248-22.627 0L4.686 449.941c-6.248-6.248-6.248-16.379 0-22.627zM443.314 84.686L344 184l32.922 31.029c15.12 15.12 4.412 40.971-16.97 40.971h-112C234.697 256 224 245.255 224 232V120c0-21.382 25.803-32.09 40.922-16.971L296 136l99.314-99.314c6.248-6.248 16.379-6.248 22.627 0l25.373 25.373c6.248 6.248 6.248 16.379 0 22.627z"/></svg>
+              </span>
+            </button><a href="https://www.facebook.com/sharer/sharer.php?u=https://welfare.lino-framework.org/specs/welcht/clients_chatelet/" title="Share on Facebook" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+</a>
+
+<!---
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+---!>
+
+<a href="https://twitter.com/share?ref_src=https://welfare.lino-framework.org/specs/welcht/clients_chatelet/" title="Share on Twitter" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <a href="index.html" class="nav-icon previous" title="previous:&#13;Lino Welfare Chatelet Specs" aria-label="Previous topic" accesskey="P" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"/></svg>
+      </a>
+      <a href="chatelet.html" class="nav-icon next" title="next:&#13;The Lino Welfare “Châtelet” variant" aria-label="Next topic" accesskey="N" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg>
+      </a>
+    </nav>
+
+    <nav class="relbar">
+      <a class="previous" href="index.html" aria-label="Previous topic" >
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg>
+        </div>
+        <div class="title">
+          <span class="text">
+            <span class="direction">previous</span>
+            Lino Welfare Chatelet Specs
+          </span>
+        </div>
+      </a>
+      <a class="next" href="chatelet.html" aria-label="Next topic" >
+        <div class="title">
+          <span class="text">
+            <span class="direction">next</span>
+            The Lino Welfare “Châtelet” variant
+          </span>
+        </div>
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+        </div>
+      </a>
+    </nav>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+<section id="clients-chatelet">
+<span id="welfare-specs-clients-chatelet"></span><h1>Clients (Chatelet)<a class="headerlink" href="#clients-chatelet" title="Permalink to this heading">¶</a></h1>
+<nav class="contents local" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#the-detail-layout-of-a-client" id="id1">The detail layout of a client</a></p></li>
+<li><p><a class="reference internal" href="#filtering-clients-about-their-career" id="id2">Filtering clients about their career</a></p></li>
+</ul>
+</nav>
+<p>This is a <a class="reference external" href="https://dev.lino-framework.org/dev/doctests.html#tested-docs" title="(in Lino Developer Guide v20.1)"><span class="xref std std-ref">tested document</span></a>.  The following instructions are
+used for initialization:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">lino</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lino</span><span class="o">.</span><span class="n">startup</span><span class="p">(</span><span class="s1">&#39;lino_welfare.projects.mathieu.settings.demo&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino.api.doctest</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+<section id="the-detail-layout-of-a-client">
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">The detail layout of a client</a><a class="headerlink" href="#the-detail-layout-of-a-client" title="Permalink to this heading">¶</a></h2>
+<p>Here is a textual description of the fields and their layout used in
+the <code class="xref py py-class docutils literal notranslate"><span class="pre">ClientDetail</span></code> of a
+Lino Welfare à la Chatelet.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino.utils.diag</span> <span class="kn">import</span> <span class="n">py2rst</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">py2rst</span><span class="p">(</span><span class="n">pcsw</span><span class="o">.</span><span class="n">Clients</span><span class="o">.</span><span class="n">detail_layout</span><span class="p">,</span> <span class="kc">True</span><span class="p">))</span>
+<span class="gp">... </span>
+<span class="go">(main) [visible for all]:</span>
+<span class="go">- **Personne** (general):</span>
+<span class="go">  - (general_1):</span>
+<span class="go">    - **None** (overview)</span>
+<span class="go">    - (general2):</span>
+<span class="go">      - (general2_1): **Sexe** (gender), **ID** (id), **Nationalité** (nationality)</span>
+<span class="go">      - **Nom de famille** (last_name)</span>
+<span class="go">      - (general2_3): **Prénom** (first_name), **Deuxième prénom** (middle_name)</span>
+<span class="go">      - (general2_4): **Date de naissance** (birth_date), **Âge** (age), **Langue** (language)</span>
+<span class="go">    - (general3): **adresse e-mail** (email), **Téléphone** (phone), **Fax** (fax), **Mobile** (gsm)</span>
+<span class="go">    - **None** (image)</span>
+<span class="go">  - (general_2): **NISS** (national_id), **Etat civil** (civil_state), **Pays de naissance** (birth_country), **Lieu de naissance** (birth_place), **Nom déclaré** (declared_name), **besoin permis de séjour** (needs_residence_permit), **besoin permis de travail** (needs_work_permit)</span>
+<span class="go">  - (general_3): **en Belgique depuis** (in_belgium_since), **Titre de séjour** (residence_type), **Inscription jusque** (residence_until), **Phase d&#39;insertion** (group), **Type d&#39;aide sociale** (aid_type)</span>
+<span class="go">  - (general_4) [visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910]:</span>
+<span class="go">    - **Rendez-vous** (reception.AppointmentsByPartner)</span>
+<span class="go">    - **Créer rendez-vous avec** (AgentsByClient)</span>
+<span class="go">    - **Inscriptions dans Ateliers** (courses.EnrolmentsByPupil) [visible for 100 110 120 200 210 300 400 410 420 800 admin 910]</span>
+<span class="go">- **Intervenants** (coaching) [visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910]:</span>
+<span class="go">  - (coaching_1) [visible for 110 120 200 220 300 420 800 admin 910]:</span>
+<span class="go">    - (newcomers_left):</span>
+<span class="go">      - (newcomers_left_1) [visible for all]: **Workflow** (workflow_buttons), **Document identifiant** (id_document)</span>
+<span class="go">      - **Spécificité** (faculty) [visible for all]</span>
+<span class="go">      - **Contacts** (clients.ContactsByClient) [visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910]</span>
+<span class="go">    - **Agents disponibles** (newcomers.AvailableCoachesByClient)</span>
+<span class="go">  - **Interventions** (coachings.CoachingsByClient)</span>
+<span class="go">- **Situation familiale** (family) [visible for 100 110 120 200 210 300 400 410 420 500 510 800 admin 910]:</span>
+<span class="go">  - (family_1) [visible for all]:</span>
+<span class="go">    - (family_left): **Appartenance aux ménages** (households.MembersByPerson) [visible for 100 110 120 200 210 300 400 410 420 500 510 800 admin 910], **Garde d&#39;enfant** (child_custody)</span>
+<span class="go">    - **Composition de ménage** (households.SiblingsByPerson) [visible for 100 110 120 200 210 300 400 410 420 500 510 800 admin 910]</span>
+<span class="go">  - **Liens de parenté** (humanlinks.LinksByHuman)</span>
+<span class="go">- **Parcours** (career) [visible for 100 110 120 420 admin 910]:</span>
+<span class="go">  - **Études** (cv.StudiesByPerson)</span>
+<span class="go">  - **Formations** (cv.TrainingsByPerson)</span>
+<span class="go">  - **Expériences professionnelles** (cv.ExperiencesByPerson)</span>
+<span class="go">- **Compétences** (competences) [visible for 100 110 120 420 admin 910]:</span>
+<span class="go">  - **Tests de niveau** (badges.AwardsByHolder) [visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910]</span>
+<span class="go">  - **Autres atouts** (skills) [visible for all]</span>
+<span class="go">- **Freins** (obstacles_tab) [visible for 100 110 120 420 admin 910]:</span>
+<span class="go">  - **Freins** (cv.ObstaclesByPerson)</span>
+<span class="go">  - **Autres freins** (obstacles) [visible for all]</span>
+<span class="go">- **PIISs** (isip.ContractsByClient) [visible for 100 110 120 210 400 410 420 admin 910]</span>
+<span class="go">- **O.I.** (courses_tab) [visible for 100 110 120 200 210 300 400 410 420 800 admin 910]:</span>
+<span class="go">  - **Inscriptions dans Ateliers d&#39;insertion sociale** (courses.BasicEnrolmentsByPupil)</span>
+<span class="go">  - **Inscriptions dans Ateliers d&#39;Insertion socioprofessionnelle** (courses.JobEnrolmentsByPupil)</span>
+<span class="go">- **Stages d&#39;immersion** (immersion.ContractsByClient) [visible for 100 110 120 210 400 410 420 admin 910]</span>
+<span class="go">- **Mise à l&#39;emploi** (contracts) [visible for 100 110 120 200 210 300 400 410 420 admin 910]:</span>
+<span class="go">  - **Candidatures** (jobs.CandidaturesByPerson)</span>
+<span class="go">  - **Mises à l&#39;emploi art60§7** (art60.ContractsByClient)</span>
+<span class="go">  - **Mises à l&#39;emploi art.61 et activations** (art61.ContractsByClient) [visible for 100 110 120 210 400 410 420 admin 910]</span>
+<span class="go">- **Historique** (history):</span>
+<span class="go">  - **Observations** (notes.NotesByProject) [visible for 100 110 120 200 210 300 400 410 420 500 510 800 admin 910]</span>
+<span class="go">  - (history_right):</span>
+<span class="go">    - **Fichiers téléchargés** (uploads.UploadsByProject) [visible for 100 110 120 200 210 300 400 410 420 500 510 800 admin 910]</span>
+<span class="go">    - (history_right_2): **cherche du travail** (is_seeking), **Inoccupé depuis** (unemployed_since), **Cherche du travail depuis** (seeking_since)</span>
+<span class="go">    - **Situation chômage** (pcsw.ExclusionsByClient) [visible for 100 110 120 200 300 400 410 420 admin 910]</span>
+<span class="go">    - **Fiches FSE** (esf.SummariesByClient) [visible for 100 110 120 420 admin 910]</span>
+<span class="go">- **Calendrier** (calendar) [visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910]:</span>
+<span class="go">  - **Entrées calendrier** (cal.EntriesByClient)</span>
+<span class="go">  - **Tâches** (cal.TasksByProject)</span>
+<span class="go">- **Divers** (misc) [visible for 110 120 410 420 admin 910]:</span>
+<span class="go">  - (misc_1) [visible for all]: **Activité** (activity), **État** (client_state), **Titre de noblesse** (noble_condition), **Indisponible jusque** (unavailable_until), **Raison** (unavailable_why)</span>
+<span class="go">  - (misc_2) [visible for all]: **obsolete** (is_obsolete), **ESF data** (has_esf), **Créé** (created), **Modifié** (modified)</span>
+<span class="go">  - **Remarques** (remarks) [visible for all]</span>
+<span class="go">  - (misc_4) [visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910]:</span>
+<span class="go">    - **Messages de problème** (checkdata.MessagesByOwner)</span>
+<span class="go">    - **contact pour** (contacts.RolesByPerson)</span>
+<span class="go">- **Médiation de dettes** (debts) [visible for 120 300 420 admin 910]:</span>
+<span class="go">  - **Is partner of these budgets:** (debts.BudgetsByPartner)</span>
+<span class="go">  - **Is actor in these budgets:** (debts.ActorsByPartner)</span>
+</pre></div>
+</div>
+<p>Some panels are not visible to everybody. Their visibility is marked
+between brackets (e.g. <cite>[visible for all except anonymous, 210]</cite>).</p>
+<p>The window itself is visible to everybody:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ui</span> <span class="o">=</span> <span class="n">dd</span><span class="o">.</span><span class="n">plugins</span><span class="o">.</span><span class="n">extjs</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lh</span> <span class="o">=</span> <span class="n">rt</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">pcsw</span><span class="o">.</span><span class="n">Clients</span><span class="o">.</span><span class="n">detail_layout</span><span class="o">.</span><span class="n">get_layout_handle</span><span class="p">(</span><span class="n">ui</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lh</span><span class="o">.</span><span class="n">main</span>
+<span class="go">&lt;TabPanel main in lino_welcht.lib.pcsw.models.ClientDetail on lino_welfare.modlib.pcsw.models.Clients&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="n">lh</span><span class="o">.</span><span class="n">main</span><span class="o">.</span><span class="n">required_roles</span><span class="p">)</span>
+<span class="go">[]</span>
+</pre></div>
+</div>
+<p>The “General” tab is visible to everybody:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="n">lh</span><span class="p">[</span><span class="s1">&#39;general&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">required_roles</span><span class="p">)</span>
+<span class="go">[]</span>
+</pre></div>
+</div>
+<p>But e.g. the “Miscellaneous” tab is visible only to users having
+the <a class="reference internal" href="../../api/lino_welfare.modlib.pcsw.roles.html#lino_welfare.modlib.pcsw.roles.SocialStaff" title="lino_welfare.modlib.pcsw.roles.SocialStaff"><code class="xref py py-class docutils literal notranslate"><span class="pre">SocialStaff</span></code></a> role:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">misc</span> <span class="o">=</span> <span class="n">lh</span><span class="p">[</span><span class="s1">&#39;misc&#39;</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">misc</span>
+<span class="go">&lt;Panel misc in lino_welcht.lib.pcsw.models.ClientDetail on lino_welfare.modlib.pcsw.models.Clients&gt;</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="n">misc</span><span class="o">.</span><span class="n">required_roles</span><span class="p">)</span>
+<span class="go">[&lt;class &#39;lino_welfare.modlib.pcsw.roles.SocialStaff&#39;&gt;]</span>
+</pre></div>
+</div>
+</section>
+<section id="filtering-clients-about-their-career">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Filtering clients about their career</a><a class="headerlink" href="#filtering-clients-about-their-career" title="Permalink to this heading">¶</a></h2>
+<p>Show all clients who were learning between 2011-03-11 and 2012-03-11
+(at least):</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span> <span class="o">=</span> <span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;robin&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">translation</span><span class="o">.</span><span class="n">activate</span><span class="p">(</span><span class="s1">&#39;en&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pv</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">start_date</span><span class="o">=</span><span class="n">i2d</span><span class="p">(</span><span class="mi">20110311</span><span class="p">),</span> <span class="n">end_date</span><span class="o">=</span><span class="n">i2d</span><span class="p">(</span><span class="mi">20120311</span><span class="p">),</span> <span class="n">observed_event</span><span class="o">=</span><span class="n">pcsw</span><span class="o">.</span><span class="n">ClientEvents</span><span class="o">.</span><span class="n">learning</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pv</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">client_state</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">pcsw</span><span class="o">.</span><span class="n">CoachedClients</span><span class="p">,</span> <span class="n">column_names</span><span class="o">=</span><span class="s2">&quot;name_column&quot;</span><span class="p">,</span> <span class="n">param_values</span><span class="o">=</span><span class="n">pv</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">==========================</span>
+<span class="go"> Name</span>
+<span class="go">--------------------------</span>
+<span class="go"> DUBOIS Robin (179)</span>
+<span class="go"> JACOBS Jacqueline (137)</span>
+<span class="go"> JONAS Josef (139)</span>
+<span class="go"> RADERMACHER Alfons (153)</span>
+<span class="go"> RADERMACHER Guido (159)</span>
+<span class="go"> RADERMACHER Hedi (161)</span>
+<span class="go"> DA VINCI David (165)</span>
+<span class="go">==========================</span>
+</pre></div>
+</div>
+<p>Just as a random sample, let’s verify one of these clients.  Vincent van Veen
+does have a training, but that ended only two days after it started:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">obj</span> <span class="o">=</span> <span class="n">pcsw</span><span class="o">.</span><span class="n">Client</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="mi">166</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">cv</span><span class="o">.</span><span class="n">TrainingsByPerson</span><span class="p">,</span> <span class="n">obj</span><span class="p">,</span> <span class="n">column_names</span><span class="o">=</span><span class="s2">&quot;type start_date end_date&quot;</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">================ ============ ============</span>
+<span class="go"> Education Type   Start date   End date</span>
+<span class="go">---------------- ------------ ------------</span>
+<span class="go"> Alpha            01/03/2011   01/05/2011</span>
+<span class="go">================ ============ ============</span>
+</pre></div>
+</div>
+<p>And he has no studies:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">cv</span><span class="o">.</span><span class="n">StudiesByPerson</span><span class="p">,</span> <span class="n">obj</span><span class="p">,</span> <span class="n">column_names</span><span class="o">=</span><span class="s2">&quot;type start_date end_date&quot;</span><span class="p">)</span>
+<span class="gp">... </span>
+
+<span class="go">No data to display</span>
+</pre></div>
+</div>
+<p>… but a work experience:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">cv</span><span class="o">.</span><span class="n">ExperiencesByPerson</span><span class="p">,</span> <span class="n">obj</span><span class="p">,</span> <span class="n">column_names</span><span class="o">=</span><span class="s2">&quot;company country start_date end_date function&quot;</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">====================== ============ ============ ============ ================</span>
+<span class="go"> Company                Country      Start date   End date     Job title</span>
+<span class="go">---------------------- ------------ ------------ ------------ ----------------</span>
+<span class="go"> Reinhards Baumschule   Antarctica   27/02/2011   27/03/2011   Cook assistant</span>
+<span class="go">====================== ============ ============ ============ ================</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+
+            <p class="logo"><a href="../../index.html">
+              <img class="logo" src="../../_static/logo_web3.png" alt="Logo"/>
+            </a></p>
+          <div class="sidebar-resize-handle"></div>
+<p align="center"><b>EN</b> | <a href="de/index.rst">DE</a> | <a href="fr/index.rst">FR</a></p>
+<h3><a href="../../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../about/index.html">About Lino Welfare</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../usage/index.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../changes/index.html">Changes</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Specs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../install/index.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../copyright.html">Copyright &amp; legal notes</a></li>
+</ul>
+
+<hr class="docutils" />
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+<ul>
+  <li class="toctree-l1"><a class="reference internal" href="../../py-modindex.html">Python Module Index</a></li>
+</ul><p align="center">
+</p>
+
+<div id="ethical-ad-placement"></div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+    <nav class="relbar">
+      <a class="previous" href="index.html" aria-label="Previous topic" >
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg>
+        </div>
+        <div class="title">
+          <span class="text">
+            <span class="direction">previous</span>
+            Lino Welfare Chatelet Specs
+          </span>
+        </div>
+      </a>
+      <a class="next" href="chatelet.html" aria-label="Next topic" >
+        <div class="title">
+          <span class="text">
+            <span class="direction">next</span>
+            The Lino Welfare “Châtelet” variant
+          </span>
+        </div>
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+        </div>
+      </a>
+    </nav>
+
+    <footer role="contentinfo">
+      &#169; <a href="../../copyright.html">Copyright</a> 2012-2022 Rumma &amp; Ko Ltd.
+      Last updated on 2022-11-08.
+      Created using <a class="reference external" href="https://www.sphinx-doc.org/">Sphinx</a> 5.1.1.
+      <a class="reference external" href="https://insipid-sphinx-theme.readthedocs.io/">Insipid Theme</a>.
+<a href="https://gitlab.com/lino-framework/welfare/-/blob/master/docs/specs/welcht/clients_chatelet.rst?plain=1"
+  rel="nofollow">Source code</a>.
+<br>
+
+Online link: <a href="https://welfare.lino-framework.org/specs/welcht/clients_chatelet.html">https://welfare.lino-framework.org/specs/welcht/clients_chatelet.html</a>.
+
+
+    </footer>
+  </body>
+</html>

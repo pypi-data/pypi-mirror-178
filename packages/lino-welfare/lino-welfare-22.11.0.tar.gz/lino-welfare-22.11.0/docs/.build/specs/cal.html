@@ -1,0 +1,603 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>cal : Calendar plugin for Lino Welfare &#8212; Lino Welfare</title>
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/insipid.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/atelier.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/insipid-cust.css" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script defer src="../_static/insipid.js"></script>
+    <script defer src="../_static/insipid-sidebar.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="copyright" title="Copyright" href="../copyright.html" />
+    <link rel="next" title="The lino_xl.lib.statbel.countries plugin" href="countries.html" />
+    <link rel="prev" title="Multiple postal addresses" href="addresses.html" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+  </head><body>
+    <script type="text/javascript">
+        document.body.classList.add('js');
+    </script>
+    <input type="checkbox" id="sidebar-checkbox" style="display: none;">
+    <label id="overlay" for="sidebar-checkbox"></label>
+    <div class="sidebar-resize-handle"></div>
+    <script type="text/javascript">
+        try {
+            let sidebar = localStorage.getItem('sphinx-sidebar');
+            const sidebar_width = localStorage.getItem('sphinx-sidebar-width');
+            if (sidebar_width) {
+                document.documentElement.style.setProperty('--sidebar-width', sidebar_width);
+            }
+            // show sidebar on wide screen
+            if (!sidebar && window.matchMedia('(min-width: 100rem)').matches) {
+                sidebar = 'visible';
+                // NB: We don't store the value in localStorage!
+            }
+            if (sidebar === 'visible') {
+                document.getElementById('sidebar-checkbox').checked = true;
+            }
+        } catch(e) {
+            console.info(e);
+        }
+    </script>
+    <header id="topbar-placeholder">
+      <div id="topbar">
+        <div id="titlebar">
+          <div class="buttons">
+            <label for="sidebar-checkbox" id="sidebar-button" role="button" tabindex="0" aria-controls="sphinxsidebar" accesskey="M">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></svg>
+            </label><a href="../index.html" title="Lino Welfare">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
+</a>
+          </div>
+          <div class="title">
+            <a class="parent" href="plugins.html" accesskey="U">Plugins</a>
+            <a class="top" href="#"><code class="docutils literal notranslate"><span class="pre">cal</span></code> : Calendar plugin for Lino Welfare</a>
+          </div>
+          <div class="buttons">
+            <button id="fullscreen-button" type="button" aria-hidden="true">
+              <span class="enable">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M212.686 315.314L120 408l32.922 31.029c15.12 15.12 4.412 40.971-16.97 40.971h-112C10.697 480 0 469.255 0 456V344c0-21.382 25.803-32.09 40.922-16.971L72 360l92.686-92.686c6.248-6.248 16.379-6.248 22.627 0l25.373 25.373c6.249 6.248 6.249 16.378 0 22.627zm22.628-118.628L328 104l-32.922-31.029C279.958 57.851 290.666 32 312.048 32h112C437.303 32 448 42.745 448 56v112c0 21.382-25.803 32.09-40.922 16.971L376 152l-92.686 92.686c-6.248 6.248-16.379 6.248-22.627 0l-25.373-25.373c-6.249-6.248-6.249-16.378 0-22.627z"/></svg>
+              </span>
+              <span class="disable">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M4.686 427.314L104 328l-32.922-31.029C55.958 281.851 66.666 256 88.048 256h112C213.303 256 224 266.745 224 280v112c0 21.382-25.803 32.09-40.922 16.971L152 376l-99.314 99.314c-6.248 6.248-16.379 6.248-22.627 0L4.686 449.941c-6.248-6.248-6.248-16.379 0-22.627zM443.314 84.686L344 184l32.922 31.029c15.12 15.12 4.412 40.971-16.97 40.971h-112C234.697 256 224 245.255 224 232V120c0-21.382 25.803-32.09 40.922-16.971L296 136l99.314-99.314c6.248-6.248 16.379-6.248 22.627 0l25.373 25.373c6.248 6.248 6.248 16.379 0 22.627z"/></svg>
+              </span>
+            </button><a href="https://www.facebook.com/sharer/sharer.php?u=https://welfare.lino-framework.org/specs/cal/" title="Share on Facebook" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+</a>
+
+<!---
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+---!>
+
+<a href="https://twitter.com/share?ref_src=https://welfare.lino-framework.org/specs/cal/" title="Share on Twitter" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <a href="addresses.html" class="nav-icon previous" title="previous:&#13;Multiple postal addresses" aria-label="Previous topic" accesskey="P" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"/></svg>
+      </a>
+      <a href="countries.html" class="nav-icon next" title="next:&#13;The lino_xl.lib.statbel.countries plugin" aria-label="Next topic" accesskey="N" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg>
+      </a>
+    </nav>
+
+    <nav class="relbar">
+      <a class="previous" href="addresses.html" aria-label="Previous topic" >
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg>
+        </div>
+        <div class="title">
+          <span class="text">
+            <span class="direction">previous</span>
+            Multiple postal addresses
+          </span>
+        </div>
+      </a>
+      <a class="next" href="countries.html" aria-label="Next topic" >
+        <div class="title">
+          <span class="text">
+            <span class="direction">next</span>
+            The <code class="xref py py-mod docutils literal notranslate"><span class="pre">lino_xl.lib.statbel.countries</span></code> plugin
+          </span>
+        </div>
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+        </div>
+      </a>
+    </nav>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+<section id="cal-calendar-plugin-for-lino-welfare">
+<span id="welfare-specs-cal"></span><h1><code class="docutils literal notranslate"><span class="pre">cal</span></code> : Calendar plugin for Lino Welfare<a class="headerlink" href="#cal-calendar-plugin-for-lino-welfare" title="Permalink to this heading">¶</a></h1>
+<p>The <a class="reference internal" href="../api/lino_welfare.modlib.cal.html#module-lino_welfare.modlib.cal" title="lino_welfare.modlib.cal"><code class="xref py py-mod docutils literal notranslate"><span class="pre">lino_welfare.modlib.cal</span></code></a> plugin extends
+<code class="xref py py-mod docutils literal notranslate"><span class="pre">lino_xl.modlib.cal</span></code> for <a class="reference internal" href="../index.html#welfare"><span class="std std-ref">Lino Welfare</span></a>.</p>
+<p>See also <a class="reference external" href="https://dev.lino-framework.org/specs/cal.html#book-specs-cal" title="(in Lino Developer Guide v20.1)"><span>cal : Calendar functionality</span></a>.</p>
+<nav class="contents local" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#calendar-entry-types" id="id1">Calendar entry types</a></p></li>
+<li><p><a class="reference internal" href="#guests" id="id2">Guests</a></p></li>
+<li><p><a class="reference internal" href="#lifecycle-of-a-calendar-entry" id="id3">Lifecycle of a calendar entry</a></p></li>
+<li><p><a class="reference internal" href="#not-for-everybody" id="id4">Not for everybody</a></p></li>
+<li><p><a class="reference internal" href="#events-today" id="id5">Events today</a></p></li>
+<li><p><a class="reference internal" href="#my-calendar-entries" id="id6">My calendar entries</a></p></li>
+<li><p><a class="reference internal" href="#overdue-appointments" id="id7">Overdue appointments</a></p></li>
+<li><p><a class="reference internal" href="#calendars-and-subscriptions" id="id8">Calendars and Subscriptions</a></p></li>
+<li><p><a class="reference internal" href="#events-by-client" id="id9">Events by client</a></p></li>
+<li><p><a class="reference internal" href="#hiding-all-events-before-a-given-date" id="id10">Hiding all events before a given date</a></p></li>
+<li><p><a class="reference internal" href="#events-generated-by-a-contract" id="id11">Events generated by a contract</a></p></li>
+<li><p><a class="reference internal" href="#filter-list-of-clients-when-creating-appointment" id="id12">Filter list of clients when creating appointment</a></p></li>
+<li><p><a class="reference internal" href="#paramspanel-main-has-no-variables" id="id13">&lt;ParamsPanel main …has no variables</a></p></li>
+</ul>
+</nav>
+<p>This is a <a class="reference external" href="https://dev.lino-framework.org/dev/doctests.html#tested-docs" title="(in Lino Developer Guide v20.1)"><span class="xref std std-ref">tested document</span></a>.  The following instructions are
+used for initialization:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino</span> <span class="kn">import</span> <span class="n">startup</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">startup</span><span class="p">(</span><span class="s1">&#39;lino_welfare.projects.gerd.settings.doctests&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino.api.doctest</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+<p>Repair database after uncomplete test run:
+&gt;&gt;&gt; settings.SITE.site_config.update(hide_events_before=i2d(20140401))</p>
+<section id="calendar-entry-types">
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">Calendar entry types</a><a class="headerlink" href="#calendar-entry-types" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.cal.EventType">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.cal.</span></span><span class="sig-name descname"><span class="pre">EventType</span></span><a class="headerlink" href="#lino_welfare.modlib.cal.EventType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds two fields.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.cal.EventType.invite_client">
+<span class="sig-name descname"><span class="pre">invite_client</span></span><a class="headerlink" href="#lino_welfare.modlib.cal.EventType.invite_client" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.cal.EventType.esf_field">
+<span class="sig-name descname"><span class="pre">esf_field</span></span><a class="headerlink" href="#lino_welfare.modlib.cal.EventType.esf_field" title="Permalink to this definition">¶</a></dt>
+<dd><p>How to summarize entries of this type in the ESF summary.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="guests">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Guests</a><a class="headerlink" href="#guests" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.cal.Guest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.cal.</span></span><span class="sig-name descname"><span class="pre">Guest</span></span><a class="headerlink" href="#lino_welfare.modlib.cal.Guest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds a virtual field <a class="reference internal" href="#lino_welfare.modlib.cal.Guest.client" title="lino_welfare.modlib.cal.Guest.client"><code class="xref py py-attr docutils literal notranslate"><span class="pre">client</span></code></a>.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.cal.Guest.client">
+<span class="sig-name descname"><span class="pre">client</span></span><a class="headerlink" href="#lino_welfare.modlib.cal.Guest.client" title="Permalink to this definition">¶</a></dt>
+<dd><p>Virtual field which returns the <cite>partner</cite> if it is a client.</p>
+<p>When clicking in <code class="xref py py-class docutils literal notranslate"><span class="pre">WaitingVisitors</span></code> on the partner
+show the <em>Client’s</em> and not the <em>Partner’s</em> detail.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="lifecycle-of-a-calendar-entry">
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Lifecycle of a calendar entry</a><a class="headerlink" href="#lifecycle-of-a-calendar-entry" title="Permalink to this heading">¶</a></h2>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">cal</span><span class="o">.</span><span class="n">EntryStates</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">====== ============ ================ ============= ================= ======== =================== =========</span>
+<span class="go"> Wert   name         Text             Button text   Gäste ausfüllen   Stabil   nicht blockierend   No auto</span>
+<span class="go">------ ------------ ---------------- ------------- ----------------- -------- ------------------- ---------</span>
+<span class="go"> 10     suggested    Vorschlag        ?             Ja                Nein     Nein                Nein</span>
+<span class="go"> 20     draft        Entwurf          ☐             Ja                Nein     Nein                Nein</span>
+<span class="go"> 40     published    Veröffentlicht   ☼             Ja                Ja       Nein                Nein</span>
+<span class="go"> 50     took_place   Stattgefunden    ☑             Nein              Ja       Nein                Nein</span>
+<span class="go"> 70     cancelled    Storniert        ☒             Nein              Ja       Ja                  Ja</span>
+<span class="go">====== ============ ================ ============= ================= ======== =================== =========</span>
+</pre></div>
+</div>
+</section>
+<section id="not-for-everybody">
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Not for everybody</a><a class="headerlink" href="#not-for-everybody" title="Permalink to this heading">¶</a></h2>
+<p>Only users with the <code class="xref py py-class docutils literal notranslate"><span class="pre">OfficeUser</span></code> role can see the calendar
+functionality.  All users with one of the following user_types can see
+each other’s calendars:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino.modlib.office.roles</span> <span class="kn">import</span> <span class="n">OfficeUser</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">users</span><span class="o">.</span><span class="n">UserTypes</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+<span class="gp">... </span>    <span class="k">if</span> <span class="n">p</span><span class="o">.</span><span class="n">has_required_roles</span><span class="p">([</span><span class="n">OfficeUser</span><span class="p">]):</span>
+<span class="gp">... </span>        <span class="nb">print</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">100 (Begleiter im DSBE)</span>
+<span class="go">110 (Sozialarbeiter DSBE (Verwalter))</span>
+<span class="go">120 (Sozialarbeiter DSBE (flexibel))</span>
+<span class="go">200 (Berater Erstempfang)</span>
+<span class="go">300 (Schuldenberater)</span>
+<span class="go">400 (Sozi)</span>
+<span class="go">410 (Sozialarbeiter (Verwalter))</span>
+<span class="go">420 (Sozialarbeiter ASD (flexibel))</span>
+<span class="go">500 (Buchhalter)</span>
+<span class="go">510 (Buchhalter (Verwalter))</span>
+<span class="go">900 (Verwalter)</span>
+<span class="go">910 (Security advisor)</span>
+</pre></div>
+</div>
+</section>
+<section id="events-today">
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Events today</a><a class="headerlink" href="#events-today" title="Permalink to this heading">¶</a></h2>
+<p>Here is what the <a class="reference external" href="https://dev.lino-framework.org/specs/cal.html#lino_xl.lib.cal.EntriesByDay" title="(in Lino Developer Guide v20.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">lino_xl.lib.cal.EntriesByDay</span></code></a> table gives:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;theresia&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">cal</span><span class="o">.</span><span class="n">EntriesByDay</span><span class="p">,</span> <span class="n">language</span><span class="o">=</span><span class="s1">&#39;en&#39;</span><span class="p">,</span> <span class="n">header_level</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">===========================</span>
+<span class="go">Thu 22/05/2014 (22.05.2014)</span>
+<span class="go">===========================</span>
+<span class="go">============ ======================== ============================ ================== ============= ===================== ====== =======================================</span>
+<span class="go"> Start time   Client                   Short description            Managed by         Assigned to   Calendar entry type   Room   Workflow</span>
+<span class="go">------------ ------------------------ ---------------------------- ------------------ ------------- --------------------- ------ ---------------------------------------</span>
+<span class="go">                                       Absent for private reasons   Patrick Paraneau                 Absences                     [⚑] **☑ Took place** → [☐]</span>
+<span class="go"> 08:30:00                              Treffen                      Rolf Rompen                      External meetings            [⚑] **☼ Published** → [☑] [☒] [☐]</span>
+<span class="go"> 09:00:00     BRECHT Bernd (177)       Évaluation 13                Hubert Huppertz                  Evaluation                   [▽] [⚑] **? Suggested** → [☼] [☑] [☒]</span>
+<span class="go"> 09:00:00     JEANÉMART Jérôme (181)   Auswertung 2                 Hubert Huppertz                  Evaluation                   [▽] [⚑] **? Suggested** → [☼] [☑] [☒]</span>
+<span class="go"> 13:30:00                              Petit-déjeuner               Romain Raffault                  Internal meetings            [⚑] **☒ Cancelled**</span>
+<span class="go">============ ======================== ============================ ================== ============= ===================== ====== =======================================</span>
+</pre></div>
+</div>
+</section>
+<section id="my-calendar-entries">
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">My calendar entries</a><a class="headerlink" href="#my-calendar-entries" title="Permalink to this heading">¶</a></h2>
+<p>Here is the <a class="reference external" href="https://using.lino-framework.org/plugins/cal.html#term-My-calendar-entries" title="(in Lino User Guide)"><span class="xref std std-term">My calendar entries</span></a> view for Alicia.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;alicia&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">cal</span><span class="o">.</span><span class="n">MyEntries</span><span class="p">,</span> <span class="n">language</span><span class="o">=</span><span class="s1">&#39;en&#39;</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">====================================== ========================= ===================== ============================ ===============================</span>
+<span class="go"> When                                   Client                    Calendar entry type   Short description            Workflow</span>
+<span class="go">-------------------------------------- ------------------------- --------------------- ---------------------------- -------------------------------</span>
+<span class="go"> `Sat 24/05/2014 at 10:20 &lt;Detail&gt;`__                             Meeting               Séminaire                    **☐ Draft** → [☼] [☒]</span>
+<span class="go"> `Sun 25/05/2014 &lt;Detail&gt;`__                                      Absences              Absent for private reasons   **☐ Draft** → [☼] [☒]</span>
+<span class="go"> `Mon 26/05/2014 &lt;Detail&gt;`__            RADERMACHER Fritz (158)   Evaluation            Évaluation 5                 [▽] **? Suggested** → [☼] [☒]</span>
+<span class="go"> `Mon 26/05/2014 at 09:00 &lt;Detail&gt;`__   DA VINCI David (165)      Evaluation            Évaluation 14                [▽] **? Suggested** → [☼] [☒]</span>
+<span class="go"> `Thu 29/05/2014 at 08:30 &lt;Detail&gt;`__                             Meeting               Consultation                 **☐ Draft** → [☼] [☒]</span>
+<span class="go"> `Tue 03/06/2014 at 11:10 &lt;Detail&gt;`__                             Meeting               Rencontre                    **☐ Draft** → [☼] [☒]</span>
+<span class="go"> `Wed 04/06/2014 &lt;Detail&gt;`__            HILGERS Hildegard (133)   Evaluation            Évaluation 6                 [▽] **? Suggested** → [☼] [☒]</span>
+<span class="go"> `Mon 09/06/2014 at 09:40 &lt;Detail&gt;`__                             Meeting               Petit-déjeuner               **☐ Draft** → [☼] [☒]</span>
+<span class="go"> `Thu 26/06/2014 at 09:00 &lt;Detail&gt;`__   DA VINCI David (165)      Evaluation            Évaluation 15                [▽] **? Suggested** → [☼] [☒]</span>
+<span class="go"> `Tue 26/08/2014 &lt;Detail&gt;`__            RADERMACHER Fritz (158)   Evaluation            Évaluation 6                 [▽] **? Suggested** → [☼] [☒]</span>
+<span class="go"> `Thu 04/09/2014 &lt;Detail&gt;`__            HILGERS Hildegard (133)   Evaluation            Évaluation 7                 [▽] **? Suggested** → [☼] [☒]</span>
+<span class="go"> `Wed 10/09/2014 at 09:00 &lt;Detail&gt;`__   DA VINCI David (165)      Evaluation            Évaluation 1                 [▽] **? Suggested** → [☼] [☒]</span>
+<span class="go"> `Fri 10/10/2014 at 09:00 &lt;Detail&gt;`__   DA VINCI David (165)      Evaluation            Évaluation 2                 [▽] **? Suggested** → [☼] [☒]</span>
+<span class="go"> `Mon 10/11/2014 at 09:00 &lt;Detail&gt;`__   DA VINCI David (165)      Evaluation            Évaluation 3                 [▽] **? Suggested** → [☼] [☒]</span>
+<span class="go"> `Wed 26/11/2014 &lt;Detail&gt;`__            RADERMACHER Fritz (158)   Evaluation            Évaluation 7                 [▽] **? Suggested** → [☼] [☒]</span>
+<span class="go"> `Wed 10/12/2014 at 09:00 &lt;Detail&gt;`__   DA VINCI David (165)      Evaluation            Évaluation 4                 [▽] **? Suggested** → [☼] [☒]</span>
+<span class="go"> `Mon 12/01/2015 at 09:00 &lt;Detail&gt;`__   DA VINCI David (165)      Evaluation            Évaluation 5                 [▽] **? Suggested** → [☼] [☒]</span>
+<span class="go"> `Thu 12/02/2015 at 09:00 &lt;Detail&gt;`__   DA VINCI David (165)      Evaluation            Évaluation 6                 [▽] **? Suggested** → [☼] [☒]</span>
+<span class="go"> `Thu 12/03/2015 at 09:00 &lt;Detail&gt;`__   DA VINCI David (165)      Evaluation            Évaluation 7                 [▽] **? Suggested** → [☼] [☒]</span>
+<span class="go"> `Mon 13/04/2015 at 09:00 &lt;Detail&gt;`__   DA VINCI David (165)      Evaluation            Évaluation 8                 [▽] **? Suggested** → [☼] [☒]</span>
+<span class="go"> `Wed 13/05/2015 at 09:00 &lt;Detail&gt;`__   DA VINCI David (165)      Evaluation            Évaluation 9                 [▽] **? Suggested** → [☼] [☒]</span>
+<span class="go"> `Mon 15/06/2015 at 09:00 &lt;Detail&gt;`__   DA VINCI David (165)      Evaluation            Évaluation 10                [▽] **? Suggested** → [☼] [☒]</span>
+<span class="go">====================================== ========================= ===================== ============================ ===============================</span>
+</pre></div>
+</div>
+<p>These are for Hubert:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;hubert&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">cal</span><span class="o">.</span><span class="n">MyEntries</span><span class="p">,</span> <span class="n">language</span><span class="o">=</span><span class="s1">&#39;en&#39;</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">====================================== ========================= =============================== ============================ ===================================</span>
+<span class="go"> When                                   Client                    Calendar entry type             Short description            Workflow</span>
+<span class="go">-------------------------------------- ------------------------- ------------------------------- ---------------------------- -----------------------------------</span>
+<span class="go"> `Thu 22/05/2014 at 09:00 &lt;Detail&gt;`__   BRECHT Bernd (177)        Evaluation                      Évaluation 13                [▽] **? Suggested** → [☼] [☑] [☒]</span>
+<span class="go"> `Thu 22/05/2014 at 09:00 &lt;Detail&gt;`__   JEANÉMART Jérôme (181)    Evaluation                      Auswertung 2                 [▽] **? Suggested** → [☼] [☑] [☒]</span>
+<span class="go"> `Sat 24/05/2014 at 11:10 &lt;Detail&gt;`__   HILGERS Hildegard (133)   Internal meetings with client   Auswertung                   **? Suggested** → [☼] [☒]</span>
+<span class="go"> `Mon 26/05/2014 &lt;Detail&gt;`__                                      Absences                        Absent for private reasons   **? Suggested** → [☼] [☒]</span>
+<span class="go"> `Fri 30/05/2014 at 09:40 &lt;Detail&gt;`__   JACOBS Jacqueline (137)   Internal meetings with client   Seminar                      **? Suggested** → [☼] [☒]</span>
+<span class="go"> ...</span>
+<span class="go"> `Mon 02/03/2015 at 09:00 &lt;Detail&gt;`__   JEANÉMART Jérôme (181)    Evaluation                      Auswertung 11                [▽] **? Suggested** → [☼] [☒]</span>
+<span class="go"> `Thu 02/04/2015 at 09:00 &lt;Detail&gt;`__   JEANÉMART Jérôme (181)    Evaluation                      Auswertung 12                [▽] **? Suggested** → [☼] [☒]</span>
+<span class="go"> `Mon 04/05/2015 &lt;Detail&gt;`__            DENON Denis (180*)        Evaluation                      Auswertung 4                 [▽] **? Suggested** → [☼] [☒]</span>
+<span class="go"> `Mon 04/05/2015 at 09:00 &lt;Detail&gt;`__   JEANÉMART Jérôme (181)    Evaluation                      Auswertung 13                [▽] **? Suggested** → [☼] [☒]</span>
+<span class="go"> `Thu 04/06/2015 at 09:00 &lt;Detail&gt;`__   JEANÉMART Jérôme (181)    Evaluation                      Auswertung 14                [▽] **? Suggested** → [☼] [☒]</span>
+<span class="go"> `Mon 06/07/2015 at 09:00 &lt;Detail&gt;`__   JEANÉMART Jérôme (181)    Evaluation                      Auswertung 15                [▽] **? Suggested** → [☼] [☒]</span>
+<span class="go">====================================== ========================= =============================== ============================ ===================================</span>
+</pre></div>
+</div>
+<p>And these for Mélanie:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;melanie&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">cal</span><span class="o">.</span><span class="n">MyEntries</span><span class="p">,</span> <span class="n">language</span><span class="o">=</span><span class="s1">&#39;en&#39;</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">====================================== ============================= =============================== ============================ ===============================</span>
+<span class="go"> When                                   Client                        Calendar entry type             Short description            Workflow</span>
+<span class="go">-------------------------------------- ----------------------------- ------------------------------- ---------------------------- -------------------------------</span>
+<span class="go"> `Mon 26/05/2014 at 08:30 &lt;Detail&gt;`__   INGELS Irene (135)            External meetings with client   Interview                    **? Suggested** → [☼] [☒]</span>
+<span class="go"> `Wed 28/05/2014 &lt;Detail&gt;`__                                          Absences                        Absent for private reasons   **? Suggested** → [☼] [☒]</span>
+<span class="go"> `Wed 28/05/2014 at 09:00 &lt;Detail&gt;`__   MEESSEN Melissa (147)         Evaluation                      Évaluation 5                 [▽] **? Suggested** → [☼] [☒]</span>
+<span class="go"> `Wed 28/05/2014 at 09:00 &lt;Detail&gt;`__   RADERMACHER Edgard (157)      Evaluation                      Évaluation 15                [▽] **? Suggested** → [☼] [☒]</span>
+<span class="go"> `Sat 31/05/2014 at 11:10 &lt;Detail&gt;`__   JONAS Josef (139)             External meetings with client   Première rencontre           **? Suggested** → [☼] [☒]</span>
+<span class="go"> ...</span>
+<span class="go"> `Mon 04/05/2015 at 09:00 &lt;Detail&gt;`__   RADERMACHER Guido (159)       Evaluation                      Évaluation 10                [▽] **? Suggested** → [☼] [☒]</span>
+<span class="go"> `Mon 04/05/2015 at 09:00 &lt;Detail&gt;`__   ÖSTGES Otto (168)             Evaluation                      Évaluation 9                 [▽] **? Suggested** → [☼] [☒]</span>
+<span class="go"> `Mon 18/05/2015 at 09:00 &lt;Detail&gt;`__   DUBOIS Robin (179)            Evaluation                      Évaluation 14                [▽] **? Suggested** → [☼] [☒]</span>
+<span class="go"> `Wed 20/05/2015 at 09:00 &lt;Detail&gt;`__   RADERMACHER Edgard (157)      Evaluation                      Évaluation 10                [▽] **? Suggested** → [☼] [☒]</span>
+<span class="go"> `Thu 18/06/2015 at 09:00 &lt;Detail&gt;`__   DUBOIS Robin (179)            Evaluation                      Évaluation 15                [▽] **? Suggested** → [☼] [☒]</span>
+<span class="go">====================================== ============================= =============================== ============================ ===============================</span>
+</pre></div>
+</div>
+<p>These are Alicia’s appointments of the last two months:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pv</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">start_date</span><span class="o">=</span><span class="n">dd</span><span class="o">.</span><span class="n">today</span><span class="p">(</span><span class="o">-</span><span class="mi">15</span><span class="p">),</span> <span class="n">end_date</span><span class="o">=</span><span class="n">dd</span><span class="o">.</span><span class="n">today</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;alicia&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">cal</span><span class="o">.</span><span class="n">MyEntries</span><span class="p">,</span> <span class="n">language</span><span class="o">=</span><span class="s1">&#39;en&#39;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">param_values</span><span class="o">=</span><span class="n">pv</span><span class="p">)</span>
+<span class="go">====================================== ======== ===================== ==================== ===============================</span>
+<span class="go"> When                                   Client   Calendar entry type   Short description    Workflow</span>
+<span class="go">-------------------------------------- -------- --------------------- -------------------- -------------------------------</span>
+<span class="go"> `Thu 08/05/2014 at 11:10 &lt;Detail&gt;`__            Meeting               Interview            **☒ Cancelled**</span>
+<span class="go"> `Tue 13/05/2014 at 09:40 &lt;Detail&gt;`__            Meeting               Première rencontre   **☑ Took place** → [☐]</span>
+<span class="go"> `Sun 18/05/2014 at 13:30 &lt;Detail&gt;`__            Meeting               Evaluation           **☼ Published** → [☑] [☒] [☐]</span>
+<span class="go">====================================== ======== ===================== ==================== ===============================</span>
+</pre></div>
+</div>
+</section>
+<section id="overdue-appointments">
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Overdue appointments</a><a class="headerlink" href="#overdue-appointments" title="Permalink to this heading">¶</a></h2>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;alicia&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">cal</span><span class="o">.</span><span class="n">MyOverdueAppointments</span><span class="p">,</span> <span class="n">language</span><span class="o">=</span><span class="s1">&#39;en&#39;</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">========================================================================= ======================================================== ===================== ===================================</span>
+<span class="go"> Calendar entry                                                            Controlled by                                            Calendar entry type   Workflow</span>
+<span class="go">------------------------------------------------------------------------- -------------------------------------------------------- --------------------- -----------------------------------</span>
+<span class="go"> `Évaluation 5 (02.04.2014) with LAMBERTZ Guido (142) &lt;Detail&gt;`__          `Art60§7 job supplyment#6 (Guido LAMBERTZ) &lt;Detail&gt;`__   Evaluation            [▽] **? Suggested** → [☼] [☑] [☒]</span>
+<span class="go"> `Évaluation 13 (24.04.2014 09:00) with DA VINCI David (165) &lt;Detail&gt;`__   `ISIP#24 (David DA VINCI) &lt;Detail&gt;`__                    Evaluation            [▽] **? Suggested** → [☼] [☑] [☒]</span>
+<span class="go">========================================================================= ======================================================== ===================== ===================================</span>
+</pre></div>
+</div>
+</section>
+<section id="calendars-and-subscriptions">
+<h2><a class="toc-backref" href="#id8" role="doc-backlink">Calendars and Subscriptions</a><a class="headerlink" href="#calendars-and-subscriptions" title="Permalink to this heading">¶</a></h2>
+<p>A Calendar is a set of events that can be shown or hidden in the
+Calendar Panel.</p>
+<p>In Lino Welfare, we have one Calendar per User.  Or to be more
+precise:</p>
+<ul class="simple">
+<li><p>The <code class="xref py py-class docutils literal notranslate"><span class="pre">User</span></code> model has a <code class="xref py py-attr docutils literal notranslate"><span class="pre">calendar</span></code> field.</p></li>
+<li><p>The calendar of a calendar entry is indirectly defined by the
+Event’s <code class="xref py py-attr docutils literal notranslate"><span class="pre">user</span></code> field.</p></li>
+</ul>
+<p>Two users can share a common calendar.  This is possible when two
+colleagues really work together when receiving visitors.</p>
+<p>A Subscription is when a given user decides that she wants to see the
+calendar of another user.</p>
+<p>Every user is, by default, subscribed to her own calendar.
+For example, demo user <cite>rolf</cite> is automatically subscribed to the
+following calendars:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span> <span class="o">=</span> <span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;rolf&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">translation</span><span class="o">.</span><span class="n">override</span><span class="p">(</span><span class="s1">&#39;de&#39;</span><span class="p">):</span>
+<span class="gp">... </span>   <span class="n">ses</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">cal</span><span class="o">.</span><span class="n">SubscriptionsByUser</span><span class="p">,</span> <span class="n">ses</span><span class="o">.</span><span class="n">get_user</span><span class="p">())</span> 
+<span class="go">==== ========== ===========</span>
+<span class="go"> ID   Kalender   versteckt</span>
+<span class="go">---- ---------- -----------</span>
+<span class="go"> 8    rolf       Nein</span>
+<span class="go">==== ========== ===========</span>
+</pre></div>
+</div>
+</section>
+<section id="events-by-client">
+<h2><a class="toc-backref" href="#id9" role="doc-backlink">Events by client</a><a class="headerlink" href="#events-by-client" title="Permalink to this heading">¶</a></h2>
+<p>This table is special in that it shows not only events directly
+related to the client (i.e. <code class="xref py py-attr docutils literal notranslate"><span class="pre">Event.project</span></code> pointing to it) but
+also those where this client is among the guests.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">obj</span> <span class="o">=</span> <span class="n">pcsw</span><span class="o">.</span><span class="n">Client</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">176</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">cal</span><span class="o">.</span><span class="n">EntriesByClient</span><span class="p">,</span> <span class="n">obj</span><span class="p">,</span> <span class="n">header_level</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">language</span><span class="o">=</span><span class="s2">&quot;en&quot;</span><span class="p">,</span> <span class="n">column_names</span><span class="o">=</span><span class="s2">&quot;when_text user summary project&quot;</span><span class="p">)</span>
+<span class="gp">... </span>    
+<span class="go">=============================================================</span>
+<span class="go">Calendar entries of LAHM Lisa (176) (Dates 01.04.2014 to ...)</span>
+<span class="go">=============================================================</span>
+<span class="go">=========================== ============ =================== ========</span>
+<span class="go"> When                        Managed by   Short description   Client</span>
+<span class="go">--------------------------- ------------ ------------------- --------</span>
+<span class="go"> *Tue 17/06/2014 at 09:00*   Robin Rood</span>
+<span class="go">=========================== ============ =================== ========</span>
+</pre></div>
+</div>
+<p>TODO: above example does not illustrate what this section wants to
+show…</p>
+</section>
+<section id="hiding-all-events-before-a-given-date">
+<h2><a class="toc-backref" href="#id10" role="doc-backlink">Hiding all events before a given date</a><a class="headerlink" href="#hiding-all-events-before-a-given-date" title="Permalink to this heading">¶</a></h2>
+<p>This database has <a class="reference external" href="https://dev.lino-framework.org/specs/system.html#lino.modlib.system.SiteConfig.hide_events_before" title="(in Lino Developer Guide v20.1)"><code class="xref py py-attr docutils literal notranslate"><span class="pre">hide_events_before</span></code></a> set to 2014-04-01.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">settings</span><span class="o">.</span><span class="n">SITE</span><span class="o">.</span><span class="n">site_config</span><span class="o">.</span><span class="n">hide_events_before</span>
+<span class="go">datetime.date(2014, 4, 1)</span>
+</pre></div>
+</div>
+</section>
+<section id="events-generated-by-a-contract">
+<h2><a class="toc-backref" href="#id11" role="doc-backlink">Events generated by a contract</a><a class="headerlink" href="#events-generated-by-a-contract" title="Permalink to this heading">¶</a></h2>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">settings</span><span class="o">.</span><span class="n">SITE</span><span class="o">.</span><span class="n">site_config</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">hide_events_before</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">obj</span> <span class="o">=</span> <span class="n">isip</span><span class="o">.</span><span class="n">Contract</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">18</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">cal</span><span class="o">.</span><span class="n">EntriesByController</span><span class="p">,</span> <span class="n">obj</span><span class="p">,</span> <span class="n">header_level</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">language</span><span class="o">=</span><span class="s2">&quot;en&quot;</span><span class="p">)</span>
+<span class="go">Calendar entries of ISIP#18 (Alfons RADERMACHER)</span>
+<span class="go">================================================</span>
+<span class="go">========================== =================== ================= ===== =================</span>
+<span class="go"> When                       Short description   Managed by        No.   Workflow</span>
+<span class="go">-------------------------- ------------------- ----------------- ----- -----------------</span>
+<span class="go"> *Tue 12/11/2013 (09:00)*   Évaluation 9        Alicia Allmanns   9     **? Suggested**</span>
+<span class="go"> *Wed 09/10/2013 (09:00)*   Évaluation 8        Alicia Allmanns   8     **? Suggested**</span>
+<span class="go"> *Mon 09/09/2013 (09:00)*   Évaluation 7        Alicia Allmanns   7     **? Suggested**</span>
+<span class="go"> *Thu 08/08/2013 (09:00)*   Évaluation 6        Alicia Allmanns   6     **? Suggested**</span>
+<span class="go"> *Mon 08/07/2013 (09:00)*   Évaluation 5        Alicia Allmanns   5     **? Suggested**</span>
+<span class="go"> *Thu 06/06/2013 (09:00)*   Évaluation 4        Alicia Allmanns   4     **? Suggested**</span>
+<span class="go"> *Mon 06/05/2013 (09:00)*   Évaluation 3        Alicia Allmanns   3     **? Suggested**</span>
+<span class="go"> *Thu 04/04/2013 (09:00)*   Évaluation 2        Alicia Allmanns   2     **? Suggested**</span>
+<span class="go"> *Mon 04/03/2013 (09:00)*   Évaluation 1        Alicia Allmanns   1     **? Suggested**</span>
+<span class="go">========================== =================== ================= ===== =================</span>
+</pre></div>
+</div>
+<p>After modifying <a class="reference external" href="https://dev.lino-framework.org/specs/system.html#lino.modlib.system.SiteConfig.hide_events_before" title="(in Lino Developer Guide v20.1)"><code class="xref py py-attr docutils literal notranslate"><span class="pre">hide_events_before</span></code></a> we must tidy up
+and reset it in order to not disturb other test cases:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">settings</span><span class="o">.</span><span class="n">SITE</span><span class="o">.</span><span class="n">site_config</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">hide_events_before</span><span class="o">=</span><span class="n">i2d</span><span class="p">(</span><span class="mi">20140401</span><span class="p">))</span>
+</pre></div>
+</div>
+</section>
+<section id="filter-list-of-clients-when-creating-appointment">
+<h2><a class="toc-backref" href="#id12" role="doc-backlink">Filter list of clients when creating appointment</a><a class="headerlink" href="#filter-list-of-clients-when-creating-appointment" title="Permalink to this heading">¶</a></h2>
+<p>The “Client” field of a calendar entry in <a class="reference internal" href="../index.html#welfare"><span class="std std-ref">Lino Welfare</span></a> has a
+filtered choice list which shows only coached clients.  “Quand on veut
+ajouter un rendez-vous dans le panneau “Rendez-vous aujourd’hui”, la
+liste déroulante pour le choix du bénéficiaire fait référence à la
+liste de l’onglet CONTACTS –&gt; BÉNÉFICIAIRES.  Nous souhaitons que la
+liste de référence soit celle de l’onglet CPAS –&gt; BÉNÉFICIAIRES.  En
+effet, cette dernière ne reprend que les dossiers actifs (attribués
+aux travailleurs sociaux).”</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">show_choices</span><span class="p">(</span><span class="s1">&#39;romain&#39;</span><span class="p">,</span> <span class="s1">&#39;/choices/cal/AllEntries/project&#39;</span><span class="p">)</span>
+<span class="go">&lt;br/&gt;</span>
+<span class="go">AUSDEMWALD Alfons (116)</span>
+<span class="go">BRECHT Bernd (177)</span>
+<span class="go">COLLARD Charlotte (118)</span>
+<span class="go">DENON Denis (180*)</span>
+<span class="go">DOBBELSTEIN Dorothée (124)</span>
+<span class="go">DUBOIS Robin (179)</span>
+<span class="go">EMONTS Daniel (128)</span>
+<span class="go">EMONTS-GAST Erna (152)</span>
+<span class="go">ENGELS Edgar (129)</span>
+<span class="go">EVERS Eberhart (127)</span>
+<span class="go">FAYMONVILLE Luc (130*)</span>
+<span class="go">GROTECLAES Gregory (132)</span>
+<span class="go">HILGERS Hildegard (133)</span>
+<span class="go">JACOBS Jacqueline (137)</span>
+<span class="go">JEANÉMART Jérôme (181)</span>
+<span class="go">JONAS Josef (139)</span>
+<span class="go">KAIVERS Karl (141)</span>
+<span class="go">KELLER Karl (178)</span>
+<span class="go">LAMBERTZ Guido (142)</span>
+<span class="go">LAZARUS Line (144)</span>
+<span class="go">MALMENDIER Marc (146)</span>
+<span class="go">MEESSEN Melissa (147)</span>
+<span class="go">RADERMACHER Alfons (153)</span>
+<span class="go">RADERMACHER Christian (155)</span>
+<span class="go">RADERMACHER Edgard (157)</span>
+<span class="go">RADERMACHER Guido (159)</span>
+<span class="go">RADERMACHER Hedi (161)</span>
+<span class="go">RADERMECKER Rik (173)</span>
+<span class="go">DA VINCI David (165)</span>
+<span class="go">VAN VEEN Vincent (166)</span>
+<span class="go">ÖSTGES Otto (168)</span>
+</pre></div>
+</div>
+</section>
+<section id="paramspanel-main-has-no-variables">
+<span id="welfare-specs-20150717"></span><h2><a class="toc-backref" href="#id13" role="doc-backlink">&lt;ParamsPanel main …has no variables</a><a class="headerlink" href="#paramspanel-main-has-no-variables" title="Permalink to this heading">¶</a></h2>
+<p>This section helped us to understand and solve another problem which
+occured while working on ticket <a class="reference external" href="https://jane.mylino.net/#/api/tickets/PublicTickets/340">#340</a>.</p>
+<p>&lt;ParamsPanel main in ParamsLayout on cal.Subscriptions&gt; of
+LayoutHandle for ParamsLayout on cal.Subscriptions has no variables</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino.utils.jsgen</span> <span class="kn">import</span> <span class="n">with_user_profile</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">class</span> <span class="nc">W</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="k">def</span> <span class="nf">write</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">s</span><span class="p">):</span>
+<span class="gp">... </span>        <span class="k">pass</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">w</span> <span class="o">=</span> <span class="n">W</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">f</span><span class="p">():</span>
+<span class="gp">... </span>    <span class="n">dd</span><span class="o">.</span><span class="n">plugins</span><span class="o">.</span><span class="n">extjs</span><span class="o">.</span><span class="n">renderer</span><span class="o">.</span><span class="n">write_lino_js</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">with_user_profile</span><span class="p">(</span><span class="n">users</span><span class="o">.</span><span class="n">UserTypes</span><span class="o">.</span><span class="n">anonymous</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span>
+<span class="gp">... </span>
+</pre></div>
+</div>
+</section>
+</section>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/logo_web3.png" alt="Logo"/>
+            </a></p>
+          <div class="sidebar-resize-handle"></div>
+<p align="center"><b>EN</b> | <a href="de/index.rst">DE</a> | <a href="fr/index.rst">FR</a></p>
+<h3><a href="../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../about/index.html">About Lino Welfare</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/index.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changes/index.html">Changes</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Specs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/index.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../copyright.html">Copyright &amp; legal notes</a></li>
+</ul>
+
+<hr class="docutils" />
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+<ul>
+  <li class="toctree-l1"><a class="reference internal" href="../py-modindex.html">Python Module Index</a></li>
+</ul><p align="center">
+</p>
+
+<div id="ethical-ad-placement"></div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+    <nav class="relbar">
+      <a class="previous" href="addresses.html" aria-label="Previous topic" >
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg>
+        </div>
+        <div class="title">
+          <span class="text">
+            <span class="direction">previous</span>
+            Multiple postal addresses
+          </span>
+        </div>
+      </a>
+      <a class="next" href="countries.html" aria-label="Next topic" >
+        <div class="title">
+          <span class="text">
+            <span class="direction">next</span>
+            The <code class="xref py py-mod docutils literal notranslate"><span class="pre">lino_xl.lib.statbel.countries</span></code> plugin
+          </span>
+        </div>
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+        </div>
+      </a>
+    </nav>
+
+    <footer role="contentinfo">
+      &#169; <a href="../copyright.html">Copyright</a> 2012-2022 Rumma &amp; Ko Ltd.
+      Last updated on 2022-11-08.
+      Created using <a class="reference external" href="https://www.sphinx-doc.org/">Sphinx</a> 5.1.1.
+      <a class="reference external" href="https://insipid-sphinx-theme.readthedocs.io/">Insipid Theme</a>.
+<a href="https://gitlab.com/lino-framework/welfare/-/blob/master/docs/specs/cal.rst?plain=1"
+  rel="nofollow">Source code</a>.
+<br>
+
+Online link: <a href="https://welfare.lino-framework.org/specs/cal.html">https://welfare.lino-framework.org/specs/cal.html</a>.
+
+
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,1294 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>The Lino Welfare “Châtelet” variant &#8212; Lino Welfare</title>
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/insipid.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/atelier.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/insipid-cust.css" />
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script defer src="../../_static/insipid.js"></script>
+    <script defer src="../../_static/insipid-sidebar.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../copyright.html" />
+    <link rel="next" title="art61 : Article 61 job supplyments" href="art61.html" />
+    <link rel="prev" title="Clients (Chatelet)" href="clients_chatelet.html" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+  </head><body>
+    <script type="text/javascript">
+        document.body.classList.add('js');
+    </script>
+    <input type="checkbox" id="sidebar-checkbox" style="display: none;">
+    <label id="overlay" for="sidebar-checkbox"></label>
+    <div class="sidebar-resize-handle"></div>
+    <script type="text/javascript">
+        try {
+            let sidebar = localStorage.getItem('sphinx-sidebar');
+            const sidebar_width = localStorage.getItem('sphinx-sidebar-width');
+            if (sidebar_width) {
+                document.documentElement.style.setProperty('--sidebar-width', sidebar_width);
+            }
+            // show sidebar on wide screen
+            if (!sidebar && window.matchMedia('(min-width: 100rem)').matches) {
+                sidebar = 'visible';
+                // NB: We don't store the value in localStorage!
+            }
+            if (sidebar === 'visible') {
+                document.getElementById('sidebar-checkbox').checked = true;
+            }
+        } catch(e) {
+            console.info(e);
+        }
+    </script>
+    <header id="topbar-placeholder">
+      <div id="topbar">
+        <div id="titlebar">
+          <div class="buttons">
+            <label for="sidebar-checkbox" id="sidebar-button" role="button" tabindex="0" aria-controls="sphinxsidebar" accesskey="M">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></svg>
+            </label><a href="../../index.html" title="Lino Welfare">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
+</a>
+          </div>
+          <div class="title">
+            <a class="parent" href="index.html" accesskey="U">Lino Welfare Chatelet Specs</a>
+            <a class="top" href="#">The Lino Welfare “Châtelet” variant</a>
+          </div>
+          <div class="buttons">
+            <button id="fullscreen-button" type="button" aria-hidden="true">
+              <span class="enable">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M212.686 315.314L120 408l32.922 31.029c15.12 15.12 4.412 40.971-16.97 40.971h-112C10.697 480 0 469.255 0 456V344c0-21.382 25.803-32.09 40.922-16.971L72 360l92.686-92.686c6.248-6.248 16.379-6.248 22.627 0l25.373 25.373c6.249 6.248 6.249 16.378 0 22.627zm22.628-118.628L328 104l-32.922-31.029C279.958 57.851 290.666 32 312.048 32h112C437.303 32 448 42.745 448 56v112c0 21.382-25.803 32.09-40.922 16.971L376 152l-92.686 92.686c-6.248 6.248-16.379 6.248-22.627 0l-25.373-25.373c-6.249-6.248-6.249-16.378 0-22.627z"/></svg>
+              </span>
+              <span class="disable">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M4.686 427.314L104 328l-32.922-31.029C55.958 281.851 66.666 256 88.048 256h112C213.303 256 224 266.745 224 280v112c0 21.382-25.803 32.09-40.922 16.971L152 376l-99.314 99.314c-6.248 6.248-16.379 6.248-22.627 0L4.686 449.941c-6.248-6.248-6.248-16.379 0-22.627zM443.314 84.686L344 184l32.922 31.029c15.12 15.12 4.412 40.971-16.97 40.971h-112C234.697 256 224 245.255 224 232V120c0-21.382 25.803-32.09 40.922-16.971L296 136l99.314-99.314c6.248-6.248 16.379-6.248 22.627 0l25.373 25.373c6.248 6.248 6.248 16.379 0 22.627z"/></svg>
+              </span>
+            </button><a href="https://www.facebook.com/sharer/sharer.php?u=https://welfare.lino-framework.org/specs/welcht/chatelet/" title="Share on Facebook" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+</a>
+
+<!---
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+---!>
+
+<a href="https://twitter.com/share?ref_src=https://welfare.lino-framework.org/specs/welcht/chatelet/" title="Share on Twitter" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <a href="clients_chatelet.html" class="nav-icon previous" title="previous:&#13;Clients (Chatelet)" aria-label="Previous topic" accesskey="P" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"/></svg>
+      </a>
+      <a href="art61.html" class="nav-icon next" title="next:&#13;art61 : Article 61 job supplyments" aria-label="Next topic" accesskey="N" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg>
+      </a>
+    </nav>
+
+    <nav class="relbar">
+      <a class="previous" href="clients_chatelet.html" aria-label="Previous topic" >
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg>
+        </div>
+        <div class="title">
+          <span class="text">
+            <span class="direction">previous</span>
+            Clients (Chatelet)
+          </span>
+        </div>
+      </a>
+      <a class="next" href="art61.html" aria-label="Next topic" >
+        <div class="title">
+          <span class="text">
+            <span class="direction">next</span>
+            <code class="docutils literal notranslate"><span class="pre">art61</span></code> : Article 61 job supplyments
+          </span>
+        </div>
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+        </div>
+      </a>
+    </nav>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+<section id="the-lino-welfare-chatelet-variant">
+<span id="welfare-specs-chatelet"></span><h1>The Lino Welfare “Châtelet” variant<a class="headerlink" href="#the-lino-welfare-chatelet-variant" title="Permalink to this heading">¶</a></h1>
+<nav class="contents local" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#overview" id="id1">Overview</a></p></li>
+<li><p><a class="reference internal" href="#hidden-site-languages" id="id2">Hidden site languages</a></p></li>
+<li><p><a class="reference internal" href="#the-main-menu" id="id3">The main menu</a></p>
+<ul>
+<li><p><a class="reference internal" href="#romain" id="id4">Romain</a></p></li>
+<li><p><a class="reference internal" href="#theresia" id="id5">Theresia</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#checkdata-results" id="id6">Checkdata results</a></p></li>
+<li><p><a class="reference internal" href="#database-structure" id="id7">Database structure</a></p></li>
+<li><p><a class="reference internal" href="#user-types" id="id8">user types</a></p></li>
+<li><p><a class="reference internal" href="#list-of-window-layouts" id="id9">List of window layouts</a></p></li>
+<li><p><a class="reference internal" href="#windows-and-permissions" id="id10">Windows and permissions</a></p></li>
+<li><p><a class="reference internal" href="#userswithclients" id="id11">UsersWithClients</a></p></li>
+<li><p><a class="reference internal" href="#dialog-actions" id="id12">Dialog actions</a></p></li>
+<li><p><a class="reference internal" href="#menu-walk" id="id13">Menu walk</a></p></li>
+</ul>
+</nav>
+<p>This is a <a class="reference external" href="https://dev.lino-framework.org/dev/doctests.html#tested-docs" title="(in Lino Developer Guide v20.1)"><span class="xref std std-ref">tested document</span></a>.  The following instructions are
+used for initialization:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino</span> <span class="kn">import</span> <span class="n">startup</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">startup</span><span class="p">(</span><span class="s1">&#39;lino_welfare.projects.mathieu.settings.demo&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino.api.doctest</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+<section id="overview">
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">Overview</a><a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
+<p>The <em>Châtelet</em> variant of Lino Welfare went online in 2013.</p>
+<p>From the beginning on it was clear that some functionalities differ.</p>
+<p>For example it uses <strong>internal courses</strong> (<a class="reference internal" href="../../api/lino_welcht.lib.courses.html#module-lino_welcht.lib.courses" title="lino_welcht.lib.courses"><code class="xref py py-mod docutils literal notranslate"><span class="pre">lino_welcht.lib.courses</span></code></a>, a
+sub-plugin of <a class="reference external" href="https://dev.lino-framework.org/api/lino_xl.lib.courses.html#module-lino_xl.lib.courses" title="(in Lino Developer Guide v20.1)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">lino_xl.lib.courses</span></code></a>) instead of <strong>external courses</strong>
+(<a class="reference internal" href="../../api/lino_welfare.modlib.xcourses.html#module-lino_welfare.modlib.xcourses" title="lino_welfare.modlib.xcourses"><code class="xref py py-mod docutils literal notranslate"><span class="pre">lino_welfare.modlib.xcourses</span></code></a>). And the “Courses” are labelled
+“Workshops” (“Ateliers”).  It does not use certain plugins (e.g. cbss, aids),
+adds some plugins (eg art61, immersion, esf), uses some plugins differently…</p>
+<p>In February 2019 the code was moved to its own repository <a class="reference internal" href="../../api/index.html#module-lino_welcht" title="lino_welcht"><code class="xref py py-mod docutils literal notranslate"><span class="pre">lino_welcht</span></code></a>.</p>
+</section>
+<section id="hidden-site-languages">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Hidden site languages</a><a class="headerlink" href="#hidden-site-languages" title="Permalink to this heading">¶</a></h2>
+<p>The default language distribution (<code class="xref py py-attr docutils literal notranslate"><span class="pre">languages</span></code>) is French, Dutch, German and
+English, but Dutch is currently hidden because we don’t yet have any
+Flemish speaking users (<code class="xref py py-attr docutils literal notranslate"><span class="pre">hidden_languages</span></code>):</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">lng</span><span class="o">.</span><span class="n">name</span> <span class="k">for</span> <span class="n">lng</span> <span class="ow">in</span> <span class="n">settings</span><span class="o">.</span><span class="n">SITE</span><span class="o">.</span><span class="n">languages</span><span class="p">]))</span>
+<span class="go">fr nl de en</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">settings</span><span class="o">.</span><span class="n">SITE</span><span class="o">.</span><span class="n">hidden_languages</span>
+<span class="go">&#39;nl&#39;</span>
+</pre></div>
+</div>
+</section>
+<section id="the-main-menu">
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">The main menu</a><a class="headerlink" href="#the-main-menu" title="Permalink to this heading">¶</a></h2>
+<section id="romain">
+<h3><a class="toc-backref" href="#id4" role="doc-backlink">Romain</a><a class="headerlink" href="#romain" title="Permalink to this heading">¶</a></h3>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">show_menu</span><span class="p">(</span><span class="s1">&#39;romain&#39;</span><span class="p">)</span> 
+<span class="go">- Contacts : Personnes,  ▶ Bénéficiaires, Organisations, -, Partenaires (tous), Ménages</span>
+<span class="go">- Bureau : Mes Notifications, Mes Extraits, Mes fichiers téléchargés à renouveler, Mes Fichiers téléchargés, Mon courrier sortant, Mes Observations, Mes messages de problème de données</span>
+<span class="go">- Calendrier : Calendrier, Mes rendez-vous, Rendez-vous dépassés, Mes rendez-vous à confirmer, Mes tâches, Mes visiteurs, Mes présences, Mes rendez-vous dépassés, Calendrier</span>
+<span class="go">- Réception : Bénéficiaires, Rendez-vous aujourd&#39;hui, Salle d&#39;attente, Visiteurs occupés, Visiteurs repartis, Visiteurs qui m&#39;attendent</span>
+<span class="go">- CPAS : Bénéficiaires, Mes Interventions, Octrois à confirmer</span>
+<span class="go">- Intégration :</span>
+<span class="go">  - Bénéficiaires</span>
+<span class="go">  - PIISs</span>
+<span class="go">  - Services utilisateurs</span>
+<span class="go">  - Employeurs</span>
+<span class="go">  - Postes de travail</span>
+<span class="go">  - Offres d&#39;emploi</span>
+<span class="go">  - Mes contrats art60§7 (SI)</span>
+<span class="go">  - Mes contrats art60§7 (SSG)</span>
+<span class="go">  - Mises à l&#39;emploi art61</span>
+<span class="go">  - Stages d&#39;immersion</span>
+<span class="go">  - BCSS : Mes Requêtes IdentifyPerson, Mes Requêtes ManageAccess, Mes Requêtes Tx25</span>
+<span class="go">- Ateliers : Mes Ateliers, Ateliers d&#39;insertion sociale, Ateliers d&#39;Insertion socioprofessionnelle, -, Séries d&#39;ateliers, Demandes d’inscription en attente, Demandes d’inscription confirmées, Mes ateliers donnés</span>
+<span class="go">- Nouvelles demandes : Nouveaux bénéficiaires, Agents disponibles</span>
+<span class="go">- Médiation de dettes : Bénéficiaires, Mes Budgets</span>
+<span class="go">- Questionnaires : Mes Questionnaires, Mes Interviews</span>
+<span class="go">- Rapports :</span>
+<span class="go">  - Intégration : Agents et leurs clients, Situation contrats Art 60-7, Rapport d&#39;activité</span>
+<span class="go">- Configuration :</span>
+<span class="go">  - Système : Paramètres du Site, Utilisateurs, Textes d&#39;aide</span>
+<span class="go">  - Endroits : Pays, Endroits</span>
+<span class="go">  - Contacts : Formes juridiques, Fonctions, Conseils, Types de ménage</span>
+<span class="go">  - Bureau : Types d&#39;extrait, Libraries de fichiers, Types de téléchargement, Types d&#39;observation, Types d&#39;événements, Mes Text Field Templates</span>
+<span class="go">  - Calendrier : Calendriers, Locaux, Évènements periodiques, Rôles de participants, Types d&#39;entrée calendrier, Règles de récurrence, Calendriers externes, Lignes de planificateur</span>
+<span class="go">  - Ateliers : Savoirs de base, Topics, Timetable Slots</span>
+<span class="go">  - CPAS : Droits chômage, Types d&#39;aide sociale, Catégories , Types de contact client, Services, Raisons d’arrêt d&#39;intervention</span>
+<span class="go">  - Parcours : Types d&#39;éducation, Niveaux académiques, Secteurs d&#39;activité, Fonctions professionnelles, Régimes de travail, Statuts, Types de contrat, Types de compétence sociale, Types de freins, Preuves de qualification, Langues</span>
+<span class="go">  - Intégration : Types de PIIS, Motifs d’arrêt de contrat, Régimes d&#39;évaluation, Types de mise à l&#39;emploi art60§7, Types de poste, Horaires, Types de mise à l&#39;emploi art.61, Types de stage d&#39;immersion, Objectifs</span>
+<span class="go">  - Nouvelles demandes : Intermédiaires, Spécificités</span>
+<span class="go">  - BCSS : Secteurs, Codes fonction</span>
+<span class="go">  - Médiation de dettes : Groupes de comptes, Comptes, Budget modèle</span>
+<span class="go">  - Questionnaires : Listes de choix</span>
+<span class="go">- Explorateur :</span>
+<span class="go">  - Contacts : Personnes de contact, Partenaires, Types d&#39;adresses, Adresses, Membres du conseil, Rôles de membres de ménage, Membres de ménage, Liens de parenté, Types de parenté</span>
+<span class="go">  - Système : Procurations, Types d&#39;utilisateur, Rôles d&#39;utilisateur, Notifications, Changes, All dashboard widgets, Types de contenu, Tests de données, Messages de problème</span>
+<span class="go">  - Bureau : Extraits, Fichiers téléchargés, Domaines de téléchargement, Mails envoyés, Pièces jointes, Observations, Text Field Templates</span>
+<span class="go">  - Calendrier : Entrées calendrier, Tâches, Présences, Abonnements, Entry states, Presence states, Task states, Colonnes planificateur, Classes d&#39;accès, Display colors</span>
+<span class="go">  - Ateliers : Tests de niveau, Ateliers, Inscriptions, États Inscription, Course layouts, États Atelier</span>
+<span class="go">  - CPAS : Exclusions du chômage, Antécédents judiciaires, Bénéficiaires, Etats civils, Etats bénéficiaires, Types de carte eID, Octrois d&#39;aide, Certificats de revenu, Refund confirmations, Confirmations simple, Contacts client, Types de contact connus, Interventions</span>
+<span class="go">  - Parcours : Connaissances de langue, Formations, Études, Expériences professionnelles, Connaissances de langue, Compétences professionnelles, Compétences sociales, Freins</span>
+<span class="go">  - Intégration : PIISs, Mises à l&#39;emploi art60§7, Candidatures, Services utilisateurs, Mises à l&#39;emploi art60§7, Mises à l&#39;emploi art61, Stages d&#39;immersion, Preuves de recherche, Fiches FSE, Champs FSE</span>
+<span class="go">  - Nouvelles demandes : Compétences</span>
+<span class="go">  - BCSS : Requêtes IdentifyPerson, Requêtes ManageAccess, Requêtes Tx25</span>
+<span class="go">  - Médiation de dettes : Budgets, Entrées</span>
+<span class="go">  - Questionnaires : Questionnaires, Questions, Choix, Interviews, Choix de réponse, Answer Remarks</span>
+<span class="go">- Site : à propos, Sessions utilisateurs</span>
+</pre></div>
+</div>
+</section>
+<section id="theresia">
+<h3><a class="toc-backref" href="#id5" role="doc-backlink">Theresia</a><a class="headerlink" href="#theresia" title="Permalink to this heading">¶</a></h3>
+<p>Theresia est un agent d’accueil. Elle ne voit pas les questionnaires,
+les données de parcours, compétences professionnelles, compétences
+sociales, freins. Elle peut faire des requètes CBSS. Elle peut
+modifier les intervention d’autres utilisateurs.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;theresia&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">user</span><span class="o">.</span><span class="n">user_type</span>
+<span class="go">&lt;users.UserTypes:210&gt;</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">show_menu</span><span class="p">(</span><span class="s1">&#39;theresia&#39;</span><span class="p">)</span> 
+<span class="go">- Contacts : Personnes,  ▶ Bénéficiaires, Organisations, -, Partenaires (tous), Ménages</span>
+<span class="go">- Bureau : Mes Extraits, Mes fichiers téléchargés à renouveler, Mes Fichiers téléchargés, Mes Observations</span>
+<span class="go">- Réception : Bénéficiaires, Rendez-vous aujourd&#39;hui, Salle d&#39;attente, Visiteurs occupés, Visiteurs repartis</span>
+<span class="go">- CPAS : Mes Interventions</span>
+<span class="go">- Intégration :</span>
+<span class="go">  - BCSS : Mes Requêtes IdentifyPerson, Mes Requêtes ManageAccess, Mes Requêtes Tx25</span>
+<span class="go">- Ateliers : Mes Ateliers, Ateliers d&#39;insertion sociale, Ateliers d&#39;Insertion socioprofessionnelle, -, Séries d&#39;ateliers</span>
+<span class="go">- Configuration :</span>
+<span class="go">  - Endroits : Pays, Endroits</span>
+<span class="go">  - Contacts : Formes juridiques, Fonctions, Types de ménage</span>
+<span class="go">  - CPAS : Types d&#39;aide sociale, Catégories , Types de contact client, Services, Raisons d’arrêt d&#39;intervention</span>
+<span class="go">- Explorateur :</span>
+<span class="go">  - Contacts : Personnes de contact, Partenaires, Rôles de membres de ménage, Membres de ménage, Liens de parenté, Types de parenté</span>
+<span class="go">  - CPAS : Etats bénéficiaires, Octrois d&#39;aide, Certificats de revenu, Refund confirmations, Confirmations simple, Contacts client, Types de contact connus, Interventions</span>
+<span class="go">- Site : à propos</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="checkdata-results">
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Checkdata results</a><a class="headerlink" href="#checkdata-results" title="Permalink to this heading">¶</a></h2>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">checkdata</span><span class="o">.</span><span class="n">Messages</span><span class="p">)</span>
+<span class="go">========================= =============================================================== =============================================================== ========================================</span>
+<span class="go"> Utilisateur responsable   Database object                                                 Texte du message                                                Checker</span>
+<span class="go">------------------------- --------------------------------------------------------------- --------------------------------------------------------------- ----------------------------------------</span>
+<span class="go"> Robin Rood                                                                                File uploads/2014/05/foo.pdf has no upload entry.               Find orphaned files in uploads folder</span>
+<span class="go"> Robin Rood                *Permis de séjour residence_permit.pdf*                         Upload entry uploads/2014/05/residence_permit.pdf has no file   Check metadata of upload files</span>
+<span class="go"> Robin Rood                *Ascension (29.05.2014)*                                        Event conflicts with 4 other events.                            Check for conflicting calendar entries</span>
+<span class="go"> Robin Rood                *Pentecôte (09.06.2014)*                                        Event conflicts with 3 other events.                            Check for conflicting calendar entries</span>
+<span class="go"> Romain Raffault           *Internal meetings with client (09.06.2014 09:00)*              Event conflicts with Pentecôte (09.06.2014).                    Check for conflicting calendar entries</span>
+<span class="go"> Alicia Allmanns           *Consultation (29.05.2014 08:30) avec JANSEN Jérémy (136)*      Event conflicts with Ascension (29.05.2014).                    Check for conflicting calendar entries</span>
+<span class="go"> Alicia Allmanns           *Petit-déjeuner (09.06.2014 09:40) avec LAMBERTZ Guido (142)*   Event conflicts with Pentecôte (09.06.2014).                    Check for conflicting calendar entries</span>
+<span class="go"> Hubert Huppertz           *Rencontre (09.06.2014 10:20) avec LASCHET Laura (143)*         Event conflicts with Pentecôte (09.06.2014).                    Check for conflicting calendar entries</span>
+<span class="go"> Patrick Paraneau          *Absent for private reasons (29.05.2014)*                       Event conflicts with Ascension (29.05.2014).                    Check for conflicting calendar entries</span>
+<span class="go"> Caroline Carnol           *FAYMONVILLE Luc (130*)*                                        Both coached and obsolete.                                      Check coachings</span>
+<span class="go"> Caroline Carnol           *DENON Denis (180*)*                                            Both coached and obsolete.                                      Check coachings</span>
+<span class="go">========================= =============================================================== =============================================================== ========================================</span>
+</pre></div>
+</div>
+</section>
+<section id="database-structure">
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Database structure</a><a class="headerlink" href="#database-structure" title="Permalink to this heading">¶</a></h2>
+<p>This is the list of models used in the Châtelet variant of Lino Welfare:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino.utils.diag</span> <span class="kn">import</span> <span class="n">analyzer</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">analyzer</span><span class="o">.</span><span class="n">show_db_overview</span><span class="p">())</span> 
+<span class="go">64 apps: lino, printing, system, staticfiles, about, jinja, bootstrap3, extjs,</span>
+<span class="go">help, office, xl, countries, contacts, appypod, humanize, users, contenttypes,</span>
+<span class="go">gfks, memo, notify, changes, checkdata, addresses, excerpts, uploads, outbox,</span>
+<span class="go">extensible, cal, reception, calview, badges, boards, clients, coachings, pcsw,</span>
+<span class="go">welfare, sales, languages, cv, integ, isip, jobs, art60, art61, immersion,</span>
+<span class="go">active_job_search, courses, newcomers, cbss, households, humanlinks, debts,</span>
+<span class="go">notes, aids, polls, summaries, weasyprint, esf, beid, dashboard, export_excel,</span>
+<span class="go">tinymce, lino_welcht, sessions.</span>
+<span class="go">138 models:</span>
+<span class="go">============================== =============================== ========= =======</span>
+<span class="go"> Name                           Default table                   #fields   #rows</span>
+<span class="go">------------------------------ ------------------------------- --------- -------</span>
+<span class="go"> active_job_search.Proof        active_job_search.Proofs        7         10</span>
+<span class="go"> addresses.Address              addresses.Addresses             16        161</span>
+<span class="go"> aids.AidType                   aids.AidTypes                   23        11</span>
+<span class="go"> aids.Category                  aids.Categories                 5         3</span>
+<span class="go"> aids.Granting                  aids.Grantings                  12        54</span>
+<span class="go"> aids.IncomeConfirmation        aids.IncomeConfirmations        17        52</span>
+<span class="go"> aids.RefundConfirmation        aids.RefundConfirmations        18        12</span>
+<span class="go"> aids.SimpleConfirmation        aids.SimpleConfirmations        15        19</span>
+<span class="go"> art60.Contract                 art60.Contracts                 18        14</span>
+<span class="go"> art60.Convention               art60.Conventions               14        14</span>
+<span class="go"> art61.Contract                 art61.Contracts                 38        6</span>
+<span class="go"> art61.ContractType             art61.ContractTypes             10        1</span>
+<span class="go"> badges.Award                   badges.Awards                   6         0</span>
+<span class="go"> badges.Badge                   badges.Badges                   5         0</span>
+<span class="go"> boards.Board                   boards.Boards                   7         3</span>
+<span class="go"> boards.Member                  boards.Members                  4         0</span>
+<span class="go"> cal.Calendar                   cal.Calendars                   7         ...</span>
+<span class="go"> cal.EntryRepeater              cal.EntryRepeaterTable          17        0</span>
+<span class="go"> cal.Event                      cal.OneEvent                    28        551</span>
+<span class="go"> cal.EventPolicy                cal.EventPolicies               21        6</span>
+<span class="go"> cal.EventType                  cal.EventTypes                  27        13</span>
+<span class="go"> cal.Guest                      cal.Guests                      10        675</span>
+<span class="go"> cal.GuestRole                  cal.GuestRoles                  6         4</span>
+<span class="go"> cal.RecurrentEvent             cal.RecurrentEvents             23        15</span>
+<span class="go"> cal.RemoteCalendar             cal.RemoteCalendars             7         0</span>
+<span class="go"> cal.Room                       cal.Rooms                       10        0</span>
+<span class="go"> cal.Subscription               cal.Subscriptions               4         9</span>
+<span class="go"> cal.Task                       cal.Tasks                       20        28</span>
+<span class="go"> calview.DailyPlannerRow        calview.DailyPlannerRows        8         2</span>
+<span class="go"> cbss.IdentifyPersonRequest     cbss.IdentifyPersonRequests     21        5</span>
+<span class="go"> cbss.ManageAccessRequest       cbss.ManageAccessRequests       24        1</span>
+<span class="go"> cbss.Purpose                   cbss.Purposes                   7         106</span>
+<span class="go"> cbss.RetrieveTIGroupsRequest   cbss.RetrieveTIGroupsRequests   15        6</span>
+<span class="go"> cbss.Sector                    cbss.Sectors                    11        209</span>
+<span class="go"> changes.Change                 changes.Changes                 10        0</span>
+<span class="go"> checkdata.Message              checkdata.Messages              6         11</span>
+<span class="go"> clients.ClientContact          clients.ClientContacts          7         14</span>
+<span class="go"> clients.ClientContactType      clients.ClientContactTypes      8         10</span>
+<span class="go"> coachings.Coaching             coachings.Coachings             8         90</span>
+<span class="go"> coachings.CoachingEnding       coachings.CoachingEndings       7         4</span>
+<span class="go"> coachings.CoachingType         coachings.CoachingTypes         8         3</span>
+<span class="go"> contacts.Company               contacts.Companies              28        39</span>
+<span class="go"> contacts.CompanyType           contacts.CompanyTypes           9         16</span>
+<span class="go"> contacts.Partner               contacts.Partners               25        162</span>
+<span class="go"> contacts.Person                contacts.Persons                32        109</span>
+<span class="go"> contacts.Role                  contacts.Roles                  4         13</span>
+<span class="go"> contacts.RoleType              contacts.RoleTypes              7         5</span>
+<span class="go"> contenttypes.ContentType       gfks.ContentTypes               3         138</span>
+<span class="go"> countries.Country              countries.Countries             9         270</span>
+<span class="go"> countries.Place                countries.Places                11        80</span>
+<span class="go"> courses.Course                 courses.Activities              31        7</span>
+<span class="go"> courses.Enrolment              courses.Enrolments              15        100</span>
+<span class="go"> courses.Line                   courses.Lines                   24        7</span>
+<span class="go"> courses.Slot                   courses.Slots                   5         0</span>
+<span class="go"> courses.Topic                  courses.Topics                  5         0</span>
+<span class="go"> cv.Duration                    cv.Durations                    5         5</span>
+<span class="go"> cv.EducationLevel              cv.EducationLevels              8         5</span>
+<span class="go"> cv.Experience                  cv.Experiences                  18        30</span>
+<span class="go"> cv.Function                    cv.Functions                    7         4</span>
+<span class="go"> cv.LanguageKnowledge           cv.LanguageKnowledges           10        112</span>
+<span class="go"> cv.Obstacle                    cv.Obstacles                    6         20</span>
+<span class="go"> cv.ObstacleType                cv.ObstacleTypes                5         4</span>
+<span class="go"> cv.Proof                       cv.Proofs                       5         4</span>
+<span class="go"> cv.Regime                      cv.Regimes                      5         3</span>
+<span class="go"> cv.Sector                      cv.Sectors                      6         14</span>
+<span class="go"> cv.Skill                       cv.Skills                       6         0</span>
+<span class="go"> cv.SoftSkill                   cv.SoftSkills                   5         0</span>
+<span class="go"> cv.SoftSkillType               cv.SoftSkillTypes               5         0</span>
+<span class="go"> cv.Status                      cv.Statuses                     5         7</span>
+<span class="go"> cv.Study                       cv.Studies                      15        22</span>
+<span class="go"> cv.StudyType                   cv.StudyTypes                   8         11</span>
+<span class="go"> cv.Training                    cv.Trainings                    17        20</span>
+<span class="go"> dashboard.Widget               dashboard.Widgets               5         0</span>
+<span class="go"> debts.Account                  debts.Accounts                  13        51</span>
+<span class="go"> debts.Actor                    debts.Actors                    6         63</span>
+<span class="go"> debts.Budget                   debts.Budgets                   11        17</span>
+<span class="go"> debts.Entry                    debts.Entries                   16        871</span>
+<span class="go"> debts.Group                    debts.Groups                    8         8</span>
+<span class="go"> esf.ClientSummary              esf.Summaries                   24        189</span>
+<span class="go"> excerpts.Excerpt               excerpts.Excerpts               12        93</span>
+<span class="go"> excerpts.ExcerptType           excerpts.ExcerptTypes           18        20</span>
+<span class="go"> gfks.HelpText                  gfks.HelpTexts                  4         5</span>
+<span class="go"> households.Household           households.Households           27        14</span>
+<span class="go"> households.Member              households.Members              14        63</span>
+<span class="go"> households.Type                households.Types                5         6</span>
+<span class="go"> humanlinks.Link                humanlinks.Links                4         59</span>
+<span class="go"> immersion.Contract             immersion.Contracts             25        8</span>
+<span class="go"> immersion.ContractType         immersion.ContractTypes         9         3</span>
+<span class="go"> immersion.Goal                 immersion.Goals                 5         4</span>
+<span class="go"> isip.Contract                  isip.Contracts                  24        29</span>
+<span class="go"> isip.ContractEnding            isip.ContractEndings            6         4</span>
+<span class="go"> isip.ContractPartner           isip.ContractPartners           8         33</span>
+<span class="go"> isip.ContractType              isip.ContractTypes              11        5</span>
+<span class="go"> isip.ExamPolicy                isip.ExamPolicies               21        6</span>
+<span class="go"> jobs.Candidature               jobs.Candidatures               10        74</span>
+<span class="go"> jobs.ContractType              jobs.ContractTypes              10        5</span>
+<span class="go"> jobs.Employer                  jobs.Employers                  30        2</span>
+<span class="go"> jobs.Job                       jobs.Jobs                       10        8</span>
+<span class="go"> jobs.JobProvider               jobs.JobProviders               30        3</span>
+<span class="go"> jobs.JobType                   jobs.JobTypes                   5         5</span>
+<span class="go"> jobs.Offer                     jobs.Offers                     9         1</span>
+<span class="go"> jobs.Schedule                  jobs.Schedules                  5         3</span>
+<span class="go"> languages.Language             languages.Languages             6         5</span>
+<span class="go"> newcomers.Broker               newcomers.Brokers               2         2</span>
+<span class="go"> newcomers.Competence           newcomers.Competences           5         7</span>
+<span class="go"> newcomers.Faculty              newcomers.Faculties             6         5</span>
+<span class="go"> notes.EventType                notes.EventTypes                10        10</span>
+<span class="go"> notes.Note                     notes.Notes                     18        118</span>
+<span class="go"> notes.NoteType                 notes.NoteTypes                 12        13</span>
+<span class="go"> notify.Message                 notify.Messages                 11        1</span>
+<span class="go"> outbox.Attachment              outbox.Attachments              4         0</span>
+<span class="go"> outbox.Mail                    outbox.Mails                    9         0</span>
+<span class="go"> outbox.Recipient               outbox.Recipients               6         0</span>
+<span class="go"> pcsw.Activity                  pcsw.Activities                 3         0</span>
+<span class="go"> pcsw.AidType                   pcsw.AidTypes                   5         0</span>
+<span class="go"> pcsw.Client                    pcsw.Clients                    69        63</span>
+<span class="go"> pcsw.Conviction                pcsw.Convictions                5         0</span>
+<span class="go"> pcsw.Dispense                  pcsw.Dispenses                  6         0</span>
+<span class="go"> pcsw.DispenseReason            pcsw.DispenseReasons            6         4</span>
+<span class="go"> pcsw.Exclusion                 pcsw.Exclusions                 9         0</span>
+<span class="go"> pcsw.ExclusionType             pcsw.ExclusionTypes             2         2</span>
+<span class="go"> pcsw.PersonGroup               pcsw.PersonGroups               4         5</span>
+<span class="go"> pcsw.UnemploymentRight         pcsw.UnemploymentRights         4         0</span>
+<span class="go"> polls.AnswerChoice             polls.AnswerChoices             4         88</span>
+<span class="go"> polls.AnswerRemark             polls.AnswerRemarks             4         0</span>
+<span class="go"> polls.Choice                   polls.Choices                   7         39</span>
+<span class="go"> polls.ChoiceSet                polls.ChoiceSets                5         9</span>
+<span class="go"> polls.Poll                     polls.Polls                     11        2</span>
+<span class="go"> polls.Question                 polls.Questions                 9         38</span>
+<span class="go"> polls.Response                 polls.Responses                 7         6</span>
+<span class="go"> sessions.Session               users.Sessions                  3         ...</span>
+<span class="go"> system.SiteConfig              system.SiteConfigs              31        1</span>
+<span class="go"> tinymce.TextFieldTemplate      tinymce.TextFieldTemplates      5         2</span>
+<span class="go"> uploads.Upload                 uploads.Uploads                 20        5</span>
+<span class="go"> uploads.UploadType             uploads.UploadTypes             11        9</span>
+<span class="go"> uploads.Volume                 uploads.Volumes                 5         0</span>
+<span class="go"> users.Authority                users.Authorities               3         3</span>
+<span class="go"> users.User                     users.AllUsers                  28        12</span>
+<span class="go">============================== =============================== ========= =======</span>
+</pre></div>
+</div>
+</section>
+<section id="user-types">
+<h2><a class="toc-backref" href="#id8" role="doc-backlink">user types</a><a class="headerlink" href="#user-types" title="Permalink to this heading">¶</a></h2>
+<p>We use the user types described in <a class="reference internal" href="../topics/usertypes.html#welfare-usertypes"><span class="std std-ref">The Lino Welfare Standard User Types</span></a>. Here are their
+French labels.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">settings</span><span class="o">.</span><span class="n">SITE</span><span class="o">.</span><span class="n">user_types_module</span>
+<span class="go">&#39;lino_welfare.modlib.welfare.user_types&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">users</span><span class="o">.</span><span class="n">UserTypes</span><span class="p">)</span>
+<span class="go">======= =========== =====================================</span>
+<span class="go"> value   name        text</span>
+<span class="go">------- ----------- -------------------------------------</span>
+<span class="go"> 000     anonymous   Anonyme</span>
+<span class="go"> 100                 Agent d&#39;insertion</span>
+<span class="go"> 110                 Agent d&#39;insertion (chef de service)</span>
+<span class="go"> 120                 Agent d&#39;insertion (Flexible)</span>
+<span class="go"> 200                 Consultant nouveaux bénéficiaires</span>
+<span class="go"> 210                 Agent d&#39;accueil</span>
+<span class="go"> 220                 Agent d&#39;accueil (Flexible)</span>
+<span class="go"> 300                 Médiateur de dettes</span>
+<span class="go"> 400                 Agent social</span>
+<span class="go"> 410                 Agent social (Chef de service)</span>
+<span class="go"> 420                 Agent social (Flexible)</span>
+<span class="go"> 500                 Comptable</span>
+<span class="go"> 510                 Comptable (Chef de service)</span>
+<span class="go"> 800                 Supervisor</span>
+<span class="go"> 900     admin       Administrateur</span>
+<span class="go"> 910                 Security advisor</span>
+<span class="go">======= =========== =====================================</span>
+</pre></div>
+</div>
+</section>
+<section id="list-of-window-layouts">
+<h2><a class="toc-backref" href="#id9" role="doc-backlink">List of window layouts</a><a class="headerlink" href="#list-of-window-layouts" title="Permalink to this heading">¶</a></h2>
+<p>The following table lists information about all <em>data entry form
+definitions</em> (called <strong>window layouts</strong>) used by Lino Welfare.  There
+are <em>detail</em> layouts, <em>insert</em> layouts and <em>action parameter</em> layouts.</p>
+<p>Each window layout defines a given set of fields.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">analyzer</span><span class="o">.</span><span class="n">show_window_fields</span><span class="p">())</span> 
+<span class="go">- about.About.show :</span>
+<span class="go">- about.About.sign_in : username, password</span>
+<span class="go">- active_job_search.Proofs.detail : date, client, company, id, spontaneous, response, remarks</span>
+<span class="go">- addresses.Addresses.detail : country, city, zip_code, addr1, street, street_no, street_box, addr2, address_type, remark, data_source, partner</span>
+<span class="go">- addresses.Addresses.insert : country, city, street, street_no, street_box, address_type, remark</span>
+<span class="go">- aids.AidTypes.detail : id, short_name, confirmation_type, name, name_nl, name_de, name_en, excerpt_title, excerpt_title_nl, excerpt_title_de, excerpt_title_en, body_template, print_directly, is_integ_duty, is_urgent, confirmed_by_primary_coach, board, company, contact_person, contact_role, pharmacy_type</span>
+<span class="go">- aids.AidTypes.insert : name, name_nl, name_de, name_en, confirmation_type</span>
+<span class="go">- aids.Categories.detail : id, name, name_nl, name_de, name_en</span>
+<span class="go">- aids.Grantings.detail : id, client, user, signer, workflow_buttons, request_date, board, decision_date, aid_type, category, start_date, end_date, custom_actions</span>
+<span class="go">- aids.Grantings.insert : client, aid_type, signer, board, decision_date, start_date, end_date</span>
+<span class="go">- aids.GrantingsByClient.insert : aid_type, board, decision_date, start_date, end_date</span>
+<span class="go">- aids.IncomeConfirmations.detail : client, user, signer, workflow_buttons, printed, company, contact_person, language, granting, start_date, end_date, category, amount, id, remark</span>
+<span class="go">- aids.IncomeConfirmationsByGranting.insert : client, granting, start_date, end_date, category, amount, company, contact_person, language, remark</span>
+<span class="go">- aids.RefundConfirmations.detail : id, client, user, signer, workflow_buttons, granting, start_date, end_date, doctor_type, doctor, pharmacy, company, contact_person, language, printed, remark</span>
+<span class="go">- aids.RefundConfirmationsByGranting.insert : start_date, end_date, doctor_type, doctor, pharmacy, company, contact_person, language, printed, remark</span>
+<span class="go">- aids.SimpleConfirmations.detail : id, client, user, signer, workflow_buttons, granting, start_date, end_date, company, contact_person, language, printed, remark</span>
+<span class="go">- aids.SimpleConfirmationsByGranting.insert : start_date, end_date, company, contact_person, language, remark</span>
+<span class="go">- art60.Contracts.detail : id, client, user, user_asd, language, type, printed, applies_from, duration, applies_until, exam_policy, remark, date_decided, date_issued, date_ended, ending, ConventionsByContract</span>
+<span class="go">- art60.Contracts.insert : client, type, user_asd</span>
+<span class="go">- art60.Conventions.detail : id, contract, job, company, contact_person, contact_role, start_date, reference_person, regime, schedule, monthly_refund, responsibilities</span>
+<span class="go">- art60.Conventions.insert : job, start_date</span>
+<span class="go">- art61.ContractTypes.detail : id, name, name_nl, name_de, name_en, ref, overlap_group</span>
+<span class="go">- art61.ContractTypes.merge_row : merge_to, reason</span>
+<span class="go">- art61.Contracts.detail : id, client, user, language, company, contact_person, contact_role, applies_from, duration, applies_until, exam_policy, type, sector, function, job_title, status, cv_duration, regime, reference_person, remark, printed, date_decided, date_issued, date_ended, ending, sub_10_amount, sub_20_amount, sub_30_amount, sub_10_start, sub_20_start, sub_30_start, sub_10_end, sub_20_end, sub_30_end, responsibilities</span>
+<span class="go">- art61.Contracts.insert : client, company, type</span>
+<span class="go">- boards.Boards.detail : id, name, name_nl, name_de, name_en</span>
+<span class="go">- boards.Boards.insert : name, name_nl, name_de, name_en</span>
+<span class="go">- cal.Calendars.detail : name, name_nl, name_de, name_en, color, id, description</span>
+<span class="go">- cal.Calendars.insert : name, name_nl, name_de, name_en, color</span>
+<span class="go">- cal.EntriesByClient.insert : event_type, summary, start_date, start_time, end_date, end_time</span>
+<span class="go">- cal.EntriesByGuest.insert : start_date, start_time, end_time, summary, event_type</span>
+<span class="go">- cal.EntriesByProject.insert : start_date, start_time, end_time, summary, event_type</span>
+<span class="go">- cal.EventTypes.detail : name, name_nl, name_de, name_en, event_label, event_label_nl, event_label_de, event_label_en, planner_column, max_conflicting, max_days, esf_field, email_template, id, all_rooms, locks_user, invite_client, is_appointment, attach_to_email</span>
+<span class="go">- cal.EventTypes.insert : name, name_nl, name_de, name_en, invite_client</span>
+<span class="go">- cal.EventTypes.merge_row : merge_to, reason</span>
+<span class="go">- cal.Events.detail : event_type, summary, project, start_date, start_time, end_date, end_time, user, assigned_to, room, priority, access_class, transparent, owner, workflow_buttons, description, id, created, modified, state</span>
+<span class="go">- cal.Events.insert : summary, start_date, start_time, end_date, end_time, event_type, project</span>
+<span class="go">- cal.GuestRoles.detail : ref, name, name_nl, name_de, name_en, id</span>
+<span class="go">- cal.GuestRoles.merge_row : merge_to, reason</span>
+<span class="go">- cal.GuestStates.wf1 : notify_subject, notify_body, notify_silent</span>
+<span class="go">- cal.GuestStates.wf2 : notify_subject, notify_body, notify_silent</span>
+<span class="go">- cal.Guests.checkin : notify_subject, notify_body, notify_silent</span>
+<span class="go">- cal.Guests.detail : event, client, role, state, remark, workflow_buttons, waiting_since, busy_since, gone_since</span>
+<span class="go">- cal.Guests.insert : event, partner, role</span>
+<span class="go">- cal.RecurrentEvents.detail : name, name_nl, name_de, name_en, id, user, event_type, start_date, start_time, end_date, end_time, every_unit, every, positions, max_events, monday, tuesday, wednesday, thursday, friday, saturday, sunday, description</span>
+<span class="go">- cal.RecurrentEvents.insert : name, name_nl, name_de, name_en, start_date, end_date, every_unit, event_type</span>
+<span class="go">- cal.Rooms.detail : id, name, name_nl, name_de, name_en, company, contact_person, display_color, description</span>
+<span class="go">- cal.Rooms.insert : id, name, name_nl, name_de, name_en, display_color, company, contact_person</span>
+<span class="go">- cal.Tasks.detail : start_date, due_date, id, workflow_buttons, summary, project, user, delegated, owner, created, modified, description</span>
+<span class="go">- cal.Tasks.insert : summary, user, project</span>
+<span class="go">- cal.TasksByController.insert : summary, start_date, due_date, user, delegated</span>
+<span class="go">- calview.DailyView.detail :</span>
+<span class="go">- calview.MonthlyView.detail :</span>
+<span class="go">- calview.WeeklyView.detail :</span>
+<span class="go">- cbss.IdentifyPersonRequests.detail : id, person, user, sent, status, printed, national_id, first_name, middle_name, last_name, birth_date, tolerance, gender, environment, ticket, info_messages, debug_messages</span>
+<span class="go">- cbss.IdentifyPersonRequests.insert : person, national_id, first_name, middle_name, last_name, birth_date, tolerance, gender</span>
+<span class="go">- cbss.ManageAccessRequests.detail : id, person, user, sent, status, printed, action, start_date, end_date, purpose, query_register, national_id, sis_card_no, id_card_no, first_name, last_name, birth_date, result, environment, ticket, info_messages, debug_messages</span>
+<span class="go">- cbss.ManageAccessRequests.insert : person, action, start_date, end_date, purpose, query_register, national_id, sis_card_no, id_card_no, first_name, last_name, birth_date</span>
+<span class="go">- cbss.RetrieveTIGroupsRequests.detail : id, person, user, sent, status, printed, national_id, language, history, environment, ticket, info_messages, debug_messages</span>
+<span class="go">- cbss.RetrieveTIGroupsRequests.insert : person, national_id, language, history</span>
+<span class="go">- changes.Changes.detail : time, user, type, master, object, id, diff</span>
+<span class="go">- checkdata.Checkers.detail : value, text</span>
+<span class="go">- checkdata.Messages.detail : checker, owner, message, user, id</span>
+<span class="go">- clients.ClientContactTypes.detail : id, name, name_nl, name_de, name_en</span>
+<span class="go">- coachings.CoachingEndings.detail : id, name, name_nl, name_de, name_en, seqno</span>
+<span class="go">- coachings.Coachings.create_visit : user, summary, waiting_number</span>
+<span class="go">- contacts.Companies.detail : overview, prefix, name, type, vat_id, client_contact_type, url, email, phone, gsm, fax, remarks, notes.NotesByCompany, id, language, activity, is_obsolete, created, modified</span>
+<span class="go">- contacts.Companies.insert : name, email, type</span>
+<span class="go">- contacts.Companies.merge_row : merge_to, addresses_Address, reason</span>
+<span class="go">- contacts.Partners.detail : overview, id, language, activity, client_contact_type, url, email, phone, gsm, fax, country, region, city, zip_code, addr1, street_prefix, street, street_no, street_box, addr2, remarks, is_obsolete, created, modified</span>
+<span class="go">- contacts.Partners.merge_row : merge_to, addresses_Address, reason</span>
+<span class="go">- contacts.Persons.create_household : head, type, partner</span>
+<span class="go">- contacts.Persons.detail : overview, title, first_name, middle_name, last_name, gender, birth_date, age, id, language, email, phone, gsm, fax, households.MembersByPerson, humanlinks.LinksByHuman, remarks, activity, url, client_contact_type, is_obsolete, created, modified</span>
+<span class="go">- contacts.Persons.insert : first_name, last_name, gender, email</span>
+<span class="go">- contacts.Persons.merge_row : merge_to, cv_LanguageKnowledge, cv_Obstacle, cv_Skill, cv_SoftSkill, addresses_Address, reason</span>
+<span class="go">- countries.Countries.detail : isocode, name, name_nl, name_de, name_en, short_code, inscode, actual_country</span>
+<span class="go">- countries.Countries.insert : isocode, inscode, name, name_nl, name_de, name_en</span>
+<span class="go">- countries.Places.detail : name, name_nl, name_de, name_en, country, inscode, zip_code, parent, type, id</span>
+<span class="go">- countries.Places.insert : name, name_nl, name_de, name_en, country, zip_code, type, parent</span>
+<span class="go">- courses.Activities.detail : line, teacher, start_date, start_time, end_time, end_date, room, workflow_buttons, id, user, name, description, description_nl, description_de, description_en, max_events, max_date, every_unit, every, positions, monday, tuesday, wednesday, thursday, friday, saturday, sunday, enrolments_until, max_places, confirmed, free_places, print_actions, EnrolmentsByCourse</span>
+<span class="go">- courses.Activities.insert : line, teacher, name, start_date</span>
+<span class="go">- courses.Activities.print_presence_sheet : start_date, end_date, show_remarks, show_states</span>
+<span class="go">- courses.Activities.print_presence_sheet_html : start_date, end_date, show_remarks, show_states</span>
+<span class="go">- courses.Enrolments.detail : request_date, user, course, pupil, remark, workflow_buttons, printed, motivation, problems</span>
+<span class="go">- courses.Enrolments.insert : request_date, user, course, pupil, remark</span>
+<span class="go">- courses.EnrolmentsByCourse.insert : pupil, remark, request_date, user</span>
+<span class="go">- courses.EnrolmentsByPupil.insert : course_area, course, places, remark, request_date, user</span>
+<span class="go">- courses.Lines.detail : id, name, name_nl, name_de, name_en, ref, company, contact_person, course_area, topic, body_template, event_type, guest_role, every_unit, every, excerpt_title, excerpt_title_nl, excerpt_title_de, excerpt_title_en, description, description_nl, description_de, description_en</span>
+<span class="go">- courses.Lines.insert : name, name_nl, name_de, name_en, ref, topic, every_unit, every, event_type, description, description_nl, description_de, description_en</span>
+<span class="go">- courses.Lines.merge_row : merge_to, reason</span>
+<span class="go">- courses.Slots.detail : name, start_time, end_time</span>
+<span class="go">- courses.Slots.insert : start_time, end_time, name</span>
+<span class="go">- courses.Topics.detail : id, name, name_nl, name_de, name_en</span>
+<span class="go">- cv.Durations.detail : id, name, name_nl, name_de, name_en</span>
+<span class="go">- cv.EducationLevels.detail : name, name_nl, name_de, name_en, is_study, is_training</span>
+<span class="go">- cv.Experiences.detail : person, company, country, city, sector, function, title, status, duration, regime, is_training, start_date, end_date, duration_text, termination_reason, remarks</span>
+<span class="go">- cv.ExperiencesByPerson.insert : start_date, end_date, company, function</span>
+<span class="go">- cv.Functions.detail : id, name, name_nl, name_de, name_en, sector, remark</span>
+<span class="go">- cv.LanguageKnowledgesByPerson.detail : language, native, has_certificate, cef_level, spoken_passively, spoken, written</span>
+<span class="go">- cv.LanguageKnowledgesByPerson.insert : language, native, has_certificate, cef_level, spoken_passively, spoken, written</span>
+<span class="go">- cv.Regimes.detail : id, name, name_nl, name_de, name_en</span>
+<span class="go">- cv.Sectors.detail : id, name, name_nl, name_de, name_en, remark</span>
+<span class="go">- cv.Statuses.detail : id, name, name_nl, name_de, name_en</span>
+<span class="go">- cv.Studies.detail : person, start_date, end_date, duration_text, type, content, education_level, state, school, country, city, remarks</span>
+<span class="go">- cv.StudiesByPerson.insert : start_date, end_date, type, content</span>
+<span class="go">- cv.StudyTypes.detail : name, name_nl, name_de, name_en, id, education_level, is_study, is_training</span>
+<span class="go">- cv.StudyTypes.insert : name, name_nl, name_de, name_en, is_study, is_training, education_level</span>
+<span class="go">- cv.Trainings.detail : person, start_date, end_date, duration_text, type, state, certificates, sector, function, school, country, city, remarks</span>
+<span class="go">- cv.Trainings.insert : person, start_date, end_date, type, state, certificates, sector, function, school, country, city</span>
+<span class="go">- debts.Accounts.detail : ref, name, name_nl, name_de, name_en, group, type, required_for_household, required_for_person, periods, default_amount</span>
+<span class="go">- debts.Accounts.insert : ref, group, type, name, name_nl, name_de, name_en</span>
+<span class="go">- debts.Accounts.merge_row : merge_to, reason</span>
+<span class="go">- debts.Budgets.detail : date, partner, id, user, intro, ResultByBudget, DebtsByBudget, AssetsByBudgetSummary, conclusion, dist_amount, printed, total_debt, include_yearly_incomes, print_empty_rows, print_todos, DistByBudget, data_box, summary_box</span>
+<span class="go">- debts.Budgets.insert : partner, date, user</span>
+<span class="go">- debts.Groups.detail : ref, name, name_nl, name_de, name_en, id, account_type, entries_layout</span>
+<span class="go">- debts.Groups.insert : name, name_nl, name_de, name_en, account_type, ref</span>
+<span class="go">- esf.Summaries.detail : master, year, children_at_charge, certified_handicap, other_difficulty, user_modified, education_level, result, remark, id, results</span>
+<span class="go">- excerpts.ExcerptTypes.detail : id, name, name_nl, name_de, name_en, content_type, build_method, template, body_template, email_template, shortcut, primary, print_directly, certifying, print_recipient, backward_compat, attach_to_email</span>
+<span class="go">- excerpts.ExcerptTypes.insert : name, name_nl, name_de, name_en, content_type, primary, certifying, build_method, template, body_template</span>
+<span class="go">- excerpts.Excerpts.detail : id, excerpt_type, project, user, build_method, company, contact_person, language, owner, build_time, body_template_content</span>
+<span class="go">- gfks.ContentTypes.detail : id, app_label, model, base_classes</span>
+<span class="go">- households.Households.detail : type, prefix, name, id, overview, language, email, phone, gsm</span>
+<span class="go">- households.Households.insert : name, type</span>
+<span class="go">- households.Households.merge_row : merge_to, households_Member, addresses_Address, reason</span>
+<span class="go">- households.HouseholdsByType.detail : type, prefix, name, id, overview, language, email, phone, gsm</span>
+<span class="go">- households.HouseholdsByType.insert : name, language</span>
+<span class="go">- households.MembersByPerson.insert : person, role, household, primary</span>
+<span class="go">- households.Types.detail : name, name_nl, name_de, name_en</span>
+<span class="go">- humanlinks.Links.detail : parent, type, child</span>
+<span class="go">- humanlinks.Links.insert : parent, type, child</span>
+<span class="go">- immersion.ContractTypes.detail : id, name, name_nl, name_de, name_en, exam_policy, template, overlap_group, full_name</span>
+<span class="go">- immersion.ContractTypes.insert : name, name_nl, name_de, name_en, exam_policy</span>
+<span class="go">- immersion.Contracts.detail : id, client, user, language, type, goal, company, contact_person, contact_role, applies_from, applies_until, exam_policy, sector, function, reference_person, printed, date_decided, date_issued, date_ended, ending, remark</span>
+<span class="go">- immersion.Contracts.insert : client, company, type, goal</span>
+<span class="go">- immersion.Goals.detail : id, name, name_nl, name_de, name_en</span>
+<span class="go">- isip.ContractEndings.detail : name, use_in_isip, use_in_jobs, is_success, needs_date_ended</span>
+<span class="go">- isip.ContractPartners.detail : company, contact_person, contact_role, duties_company</span>
+<span class="go">- isip.ContractPartners.insert : company, contact_person, contact_role</span>
+<span class="go">- isip.ContractTypes.detail : id, ref, exam_policy, overlap_group, needs_study_type, name, name_nl, name_de, name_en, full_name</span>
+<span class="go">- isip.Contracts.detail : id, client, type, user, user_asd, study_type, applies_from, applies_until, exam_policy, language, date_decided, date_issued, printed, date_ended, ending, uploads.UploadsByController</span>
+<span class="go">- isip.Contracts.insert : client, type</span>
+<span class="go">- isip.ExamPolicies.detail : id, name, name_nl, name_de, name_en, max_events, every, every_unit, event_type, monday, tuesday, wednesday, thursday, friday, saturday, sunday</span>
+<span class="go">- jobs.ContractTypes.detail : id, name, name_nl, name_de, name_en, ref, overlap_group</span>
+<span class="go">- jobs.ContractTypes.merge_row : merge_to, reason</span>
+<span class="go">- jobs.Employers.detail : overview, prefix, name, type, vat_id, client_contact_type, is_social, url, email, phone, gsm, fax, uploads.UploadsByController, notes.NotesByCompany</span>
+<span class="go">- jobs.Employers.merge_row : merge_to, addresses_Address, reason</span>
+<span class="go">- jobs.JobProviders.detail : overview, prefix, name, type, vat_id, client_contact_type, is_social, url, email, phone, gsm, fax, uploads.UploadsByController, notes.NotesByCompany</span>
+<span class="go">- jobs.JobProviders.merge_row : merge_to, addresses_Address, reason</span>
+<span class="go">- jobs.JobTypes.detail : id, name, is_social</span>
+<span class="go">- jobs.Jobs.detail : name, provider, contract_type, type, id, sector, function, capacity, hourly_rate, remark</span>
+<span class="go">- jobs.Jobs.insert : name, provider, contract_type, type, sector, function</span>
+<span class="go">- jobs.JobsOverview.show : body</span>
+<span class="go">- jobs.Offers.detail : name, provider, sector, function, selection_from, selection_until, start_date, remark</span>
+<span class="go">- jobs.Schedules.detail : id, name, name_nl, name_de, name_en</span>
+<span class="go">- languages.Languages.detail : id, iso2, name, name_nl, name_de, name_en</span>
+<span class="go">- newcomers.AvailableCoachesByClient.assign_coach : notify_subject, notify_body, notify_silent</span>
+<span class="go">- newcomers.Faculties.detail : id, name, name_nl, name_de, name_en, weight</span>
+<span class="go">- newcomers.Faculties.insert : name, name_nl, name_de, name_en, weight</span>
+<span class="go">- notes.EventTypes.detail : id, name, name_nl, name_de, name_en, remark</span>
+<span class="go">- notes.NoteTypes.detail : id, name, name_nl, name_de, name_en, build_method, template, special_type, email_template, attach_to_email, remark</span>
+<span class="go">- notes.NoteTypes.insert : name, name_nl, name_de, name_en, build_method</span>
+<span class="go">- notes.Notes.detail : date, time, event_type, type, project, subject, important, company, contact_person, user, language, build_time, id, body, uploads.UploadsByController</span>
+<span class="go">- notes.Notes.insert : event_type, type, subject, project</span>
+<span class="go">- notes.NotesByProject.insert : event_type, type, subject, project</span>
+<span class="go">- outbox.Mails.detail : subject, project, date, user, sent, id, owner, outbox.AttachmentsByMail, uploads.UploadsByController, body</span>
+<span class="go">- outbox.Mails.insert : project, subject, body</span>
+<span class="go">- pcsw.Clients.create_visit : user, summary, waiting_number</span>
+<span class="go">- pcsw.Clients.detail : overview, gender, id, nationality, last_name, first_name, middle_name, birth_date, age, language, email, phone, fax, gsm, image, national_id, civil_state, birth_country, birth_place, declared_name, needs_residence_permit, needs_work_permit, in_belgium_since, residence_type, residence_until, group, aid_type, AgentsByClient, workflow_buttons, id_document, faculty, households.MembersByPerson, child_custody, humanlinks.LinksByHuman, skills, obstacles, is_seeking, unemployed_since, seeking_since, activity, client_state, noble_condition, unavailable_until, unavailable_why, is_obsolete, has_esf, created, modified, remarks, checkdata.MessagesByOwner</span>
+<span class="go">- pcsw.Clients.insert : first_name, last_name, national_id, gender, language</span>
+<span class="go">- pcsw.Clients.merge_row : merge_to, aids_IncomeConfirmation, aids_RefundConfirmation, aids_SimpleConfirmation, coachings_Coaching, esf_ClientSummary, pcsw_Dispense, cv_LanguageKnowledge, cv_Obstacle, cv_Skill, cv_SoftSkill, addresses_Address, reason</span>
+<span class="go">- pcsw.Clients.refuse_client : reason, remark</span>
+<span class="go">- polls.AnswerRemarks.detail : remark, response, question</span>
+<span class="go">- polls.AnswerRemarks.insert : remark, response, question</span>
+<span class="go">- polls.ChoiceSets.detail : name, name_nl, name_de, name_en</span>
+<span class="go">- polls.Polls.detail : ref, title, workflow_buttons, details, default_choiceset, default_multiple_choices, id, user, created, modified, state</span>
+<span class="go">- polls.Polls.insert : ref, title, default_choiceset, default_multiple_choices, questions_to_add</span>
+<span class="go">- polls.Polls.merge_row : merge_to, polls_Question, reason</span>
+<span class="go">- polls.Questions.detail : poll, number, is_heading, choiceset, multiple_choices, title, details</span>
+<span class="go">- polls.Responses.detail : poll, partner, date, workflow_buttons, polls.AnswersByResponseEditor, user, state, remark, polls.AnswersByResponsePrint</span>
+<span class="go">- polls.Responses.insert : user, date, poll</span>
+<span class="go">- system.SiteConfigs.detail : site_company, next_partner_id, job_office, master_budget, signer1, signer2, signer1_function, signer2_function, system_note_type, default_build_method, residence_permit_upload_type, work_permit_upload_type, driving_licence_upload_type, default_event_type, prompt_calendar, hide_events_before, client_guestrole, team_guestrole, cbss_org_unit, sector, ssdn_user_id, ssdn_email, cbss_http_username, cbss_http_password</span>
+<span class="go">- tinymce.TextFieldTemplates.detail : id, name, user, description, text</span>
+<span class="go">- tinymce.TextFieldTemplates.insert : name, user</span>
+<span class="go">- uploads.AllUploads.detail : file, user, volume, library_file, upload_area, type, description, owner</span>
+<span class="go">- uploads.AllUploads.insert : type, description, file, volume, library_file, user</span>
+<span class="go">- uploads.UploadTypes.detail : id, upload_area, shortcut, name, name_nl, name_de, name_en, warn_expiry_unit, warn_expiry_value, wanted, max_number</span>
+<span class="go">- uploads.UploadTypes.insert : upload_area, name, name_nl, name_de, name_en, warn_expiry_unit, warn_expiry_value</span>
+<span class="go">- uploads.Uploads.detail : user, project, id, type, description, start_date, end_date, needed, company, contact_person, contact_role, file, owner, remark</span>
+<span class="go">- uploads.Uploads.insert : file, type, project, start_date, end_date, needed, description</span>
+<span class="go">- uploads.UploadsByController.insert : file, type, end_date, needed, description</span>
+<span class="go">- uploads.Volumes.detail : ref, description, root_dir, base_url, overview</span>
+<span class="go">- uploads.Volumes.insert : ref, description, root_dir, base_url</span>
+<span class="go">- uploads.Volumes.merge_row : merge_to, reason</span>
+<span class="go">- users.AllUsers.change_password : current, new1, new2</span>
+<span class="go">- users.AllUsers.detail : username, user_type, partner, first_name, last_name, initials, email, language, mail_mode, id, created, modified, remarks, event_type, access_class, calendar, newcomer_quota, coaching_type, coaching_supervisor, newcomer_consultations, newcomer_appointments</span>
+<span class="go">- users.AllUsers.insert : username, email, first_name, last_name, partner, language, user_type</span>
+<span class="go">- users.AllUsers.merge_row : merge_to, cal_Subscription, reason</span>
+</pre></div>
+</div>
+</section>
+<section id="windows-and-permissions">
+<h2><a class="toc-backref" href="#id10" role="doc-backlink">Windows and permissions</a><a class="headerlink" href="#windows-and-permissions" title="Permalink to this heading">¶</a></h2>
+<p>Each window layout is <strong>viewable</strong> by a given set of user types.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">analyzer</span><span class="o">.</span><span class="n">show_window_permissions</span><span class="p">())</span> 
+<span class="go">- about.About.show : visible for all</span>
+<span class="go">- about.About.sign_in : visible for all</span>
+<span class="go">- active_job_search.Proofs.detail : visible for 110 120 420 admin 910</span>
+<span class="go">- addresses.Addresses.detail : visible for admin 910</span>
+<span class="go">- addresses.Addresses.insert : visible for admin 910</span>
+<span class="go">- aids.AidTypes.detail : visible for 110 120 210 410 420 500 510 800 admin 910</span>
+<span class="go">- aids.AidTypes.insert : visible for 110 120 210 410 420 500 510 800 admin 910</span>
+<span class="go">- aids.Categories.detail : visible for 110 120 210 410 420 500 510 800 admin 910</span>
+<span class="go">- aids.Grantings.detail : visible for 100 110 120 200 210 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- aids.Grantings.insert : visible for 100 110 120 200 210 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- aids.GrantingsByClient.insert : visible for 100 110 120 200 210 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- aids.IncomeConfirmations.detail : visible for 100 110 120 200 210 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- aids.IncomeConfirmationsByGranting.insert : visible for 100 110 120 200 210 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- aids.RefundConfirmations.detail : visible for 100 110 120 200 210 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- aids.RefundConfirmationsByGranting.insert : visible for 100 110 120 200 210 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- aids.SimpleConfirmations.detail : visible for 100 110 120 200 210 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- aids.SimpleConfirmationsByGranting.insert : visible for 100 110 120 200 210 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- art60.Contracts.detail : visible for 100 110 120 200 300 400 410 420 admin 910</span>
+<span class="go">- art60.Contracts.insert : visible for 100 110 120 200 300 400 410 420 admin 910</span>
+<span class="go">- art60.Conventions.detail : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- art60.Conventions.insert : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- art61.ContractTypes.detail : visible for 110 120 420 admin 910</span>
+<span class="go">- art61.ContractTypes.merge_row : visible for admin 910</span>
+<span class="go">- art61.Contracts.detail : visible for 100 110 120 420 admin 910</span>
+<span class="go">- art61.Contracts.insert : visible for 100 110 120 420 admin 910</span>
+<span class="go">- boards.Boards.detail : visible for admin 910</span>
+<span class="go">- boards.Boards.insert : visible for admin 910</span>
+<span class="go">- cal.Calendars.detail : visible for 110 120 410 420 admin 910</span>
+<span class="go">- cal.Calendars.insert : visible for 110 120 410 420 admin 910</span>
+<span class="go">- cal.EntriesByClient.insert : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- cal.EntriesByGuest.insert : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- cal.EntriesByProject.insert : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- cal.EventTypes.detail : visible for 110 120 410 420 admin 910</span>
+<span class="go">- cal.EventTypes.insert : visible for 110 120 410 420 admin 910</span>
+<span class="go">- cal.EventTypes.merge_row : visible for admin 910</span>
+<span class="go">- cal.Events.detail : visible for 110 120 410 420 admin 910</span>
+<span class="go">- cal.Events.insert : visible for 110 120 410 420 admin 910</span>
+<span class="go">- cal.GuestRoles.detail : visible for admin 910</span>
+<span class="go">- cal.GuestRoles.merge_row : visible for admin 910</span>
+<span class="go">- cal.GuestStates.wf1 : visible for 100 110 120 200 210 220 300 400 410 420 800 admin 910</span>
+<span class="go">- cal.GuestStates.wf2 : visible for 100 110 120 200 210 220 300 400 410 420 800 admin 910</span>
+<span class="go">- cal.Guests.checkin : visible for 100 110 120 200 210 220 300 400 410 420 800 admin 910</span>
+<span class="go">- cal.Guests.detail : visible for 100 110 120 200 210 220 300 400 410 420 800 admin 910</span>
+<span class="go">- cal.Guests.insert : visible for 100 110 120 200 210 220 300 400 410 420 800 admin 910</span>
+<span class="go">- cal.RecurrentEvents.detail : visible for 110 120 410 420 admin 910</span>
+<span class="go">- cal.RecurrentEvents.insert : visible for 110 120 410 420 admin 910</span>
+<span class="go">- cal.Rooms.detail : visible for 110 120 410 420 admin 910</span>
+<span class="go">- cal.Rooms.insert : visible for 110 120 410 420 admin 910</span>
+<span class="go">- cal.Tasks.detail : visible for 110 120 410 420 admin 910</span>
+<span class="go">- cal.Tasks.insert : visible for 110 120 410 420 admin 910</span>
+<span class="go">- cal.TasksByController.insert : visible for 100 110 120 200 300 400 410 420 500 510 admin 910</span>
+<span class="go">- calview.DailyView.detail : visible for 100 110 120 200 300 400 410 420 500 510 admin 910</span>
+<span class="go">- calview.MonthlyView.detail : visible for 100 110 120 200 300 400 410 420 500 510 admin 910</span>
+<span class="go">- calview.WeeklyView.detail : visible for 100 110 120 200 300 400 410 420 500 510 admin 910</span>
+<span class="go">- cbss.IdentifyPersonRequests.detail : visible for 100 110 120 200 210 300 400 410 420 admin 910</span>
+<span class="go">- cbss.IdentifyPersonRequests.insert : visible for 100 110 120 200 210 300 400 410 420 admin 910</span>
+<span class="go">- cbss.ManageAccessRequests.detail : visible for 100 110 120 200 210 300 400 410 420 admin 910</span>
+<span class="go">- cbss.ManageAccessRequests.insert : visible for 100 110 120 200 210 300 400 410 420 admin 910</span>
+<span class="go">- cbss.RetrieveTIGroupsRequests.detail : visible for 100 110 120 200 210 300 400 410 420 admin 910</span>
+<span class="go">- cbss.RetrieveTIGroupsRequests.insert : visible for 100 110 120 200 210 300 400 410 420 admin 910</span>
+<span class="go">- changes.Changes.detail : visible for admin 910</span>
+<span class="go">- checkdata.Checkers.detail : visible for admin 910</span>
+<span class="go">- checkdata.Messages.detail : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- clients.ClientContactTypes.detail : visible for 110 120 210 410 420 800 admin 910</span>
+<span class="go">- coachings.CoachingEndings.detail : visible for 110 120 210 410 420 admin 910</span>
+<span class="go">- coachings.Coachings.create_visit : visible for 110 120 210 410 420 admin 910</span>
+<span class="go">- contacts.Companies.detail : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- contacts.Companies.insert : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- contacts.Companies.merge_row : visible for admin 910</span>
+<span class="go">- contacts.Partners.detail : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- contacts.Partners.merge_row : visible for admin 910</span>
+<span class="go">- contacts.Persons.create_household : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- contacts.Persons.detail : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- contacts.Persons.insert : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- contacts.Persons.merge_row : visible for admin 910</span>
+<span class="go">- countries.Countries.detail : visible for 110 120 210 410 420 800 admin 910</span>
+<span class="go">- countries.Countries.insert : visible for 110 120 210 410 420 800 admin 910</span>
+<span class="go">- countries.Places.detail : visible for 110 120 210 410 420 800 admin 910</span>
+<span class="go">- countries.Places.insert : visible for 110 120 210 410 420 800 admin 910</span>
+<span class="go">- courses.Activities.detail : visible for 100 110 120 200 210 300 400 410 420 800 admin 910</span>
+<span class="go">- courses.Activities.insert : visible for 100 110 120 200 210 300 400 410 420 800 admin 910</span>
+<span class="go">- courses.Activities.print_presence_sheet : visible for 100 110 120 200 210 300 400 410 420 800 admin 910</span>
+<span class="go">- courses.Activities.print_presence_sheet_html : visible for 100 110 120 200 210 300 400 410 420 800 admin 910</span>
+<span class="go">- courses.Enrolments.detail : visible for 100 110 120 200 210 300 400 410 420 800 admin 910</span>
+<span class="go">- courses.Enrolments.insert : visible for 100 110 120 200 210 300 400 410 420 800 admin 910</span>
+<span class="go">- courses.EnrolmentsByCourse.insert : visible for 100 110 120 200 210 300 400 410 420 800 admin 910</span>
+<span class="go">- courses.EnrolmentsByPupil.insert : visible for 100 110 120 200 210 300 400 410 420 800 admin 910</span>
+<span class="go">- courses.Lines.detail : visible for 100 110 120 200 210 300 400 410 420 800 admin 910</span>
+<span class="go">- courses.Lines.insert : visible for 100 110 120 200 210 300 400 410 420 800 admin 910</span>
+<span class="go">- courses.Lines.merge_row : visible for admin 910</span>
+<span class="go">- courses.Slots.detail : visible for admin 910</span>
+<span class="go">- courses.Slots.insert : visible for admin 910</span>
+<span class="go">- courses.Topics.detail : visible for admin 910</span>
+<span class="go">- cv.Durations.detail : visible for 110 120 420 admin 910</span>
+<span class="go">- cv.EducationLevels.detail : visible for 110 120 420 admin 910</span>
+<span class="go">- cv.Experiences.detail : visible for 110 120 420 admin 910</span>
+<span class="go">- cv.ExperiencesByPerson.insert : visible for 100 110 120 420 admin 910</span>
+<span class="go">- cv.Functions.detail : visible for 110 120 420 admin 910</span>
+<span class="go">- cv.LanguageKnowledgesByPerson.detail : visible for 100 110 120 420 admin 910</span>
+<span class="go">- cv.LanguageKnowledgesByPerson.insert : visible for 100 110 120 420 admin 910</span>
+<span class="go">- cv.Regimes.detail : visible for 110 120 420 admin 910</span>
+<span class="go">- cv.Sectors.detail : visible for 110 120 420 admin 910</span>
+<span class="go">- cv.Statuses.detail : visible for 110 120 420 admin 910</span>
+<span class="go">- cv.Studies.detail : visible for 110 120 420 admin 910</span>
+<span class="go">- cv.StudiesByPerson.insert : visible for 100 110 120 420 admin 910</span>
+<span class="go">- cv.StudyTypes.detail : visible for 110 120 420 admin 910</span>
+<span class="go">- cv.StudyTypes.insert : visible for 110 120 420 admin 910</span>
+<span class="go">- cv.Trainings.detail : visible for 100 110 120 420 admin 910</span>
+<span class="go">- cv.Trainings.insert : visible for 100 110 120 420 admin 910</span>
+<span class="go">- debts.Accounts.detail : visible for admin 910</span>
+<span class="go">- debts.Accounts.insert : visible for admin 910</span>
+<span class="go">- debts.Accounts.merge_row : visible for admin 910</span>
+<span class="go">- debts.Budgets.detail : visible for admin 910</span>
+<span class="go">- debts.Budgets.insert : visible for admin 910</span>
+<span class="go">- debts.Groups.detail : visible for admin 910</span>
+<span class="go">- debts.Groups.insert : visible for admin 910</span>
+<span class="go">- esf.Summaries.detail : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- excerpts.ExcerptTypes.detail : visible for admin 910</span>
+<span class="go">- excerpts.ExcerptTypes.insert : visible for admin 910</span>
+<span class="go">- excerpts.Excerpts.detail : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- gfks.ContentTypes.detail : visible for admin 910</span>
+<span class="go">- households.Households.detail : visible for 100 110 120 200 210 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- households.Households.insert : visible for 100 110 120 200 210 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- households.Households.merge_row : visible for admin 910</span>
+<span class="go">- households.HouseholdsByType.detail : visible for 100 110 120 200 210 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- households.HouseholdsByType.insert : visible for 100 110 120 200 210 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- households.MembersByPerson.insert : visible for 100 110 120 200 210 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- households.Types.detail : visible for 110 120 210 410 420 800 admin 910</span>
+<span class="go">- humanlinks.Links.detail : visible for 110 120 210 410 420 800 admin 910</span>
+<span class="go">- humanlinks.Links.insert : visible for 110 120 210 410 420 800 admin 910</span>
+<span class="go">- immersion.ContractTypes.detail : visible for 110 120 420 admin 910</span>
+<span class="go">- immersion.ContractTypes.insert : visible for 110 120 420 admin 910</span>
+<span class="go">- immersion.Contracts.detail : visible for 100 110 120 420 admin 910</span>
+<span class="go">- immersion.Contracts.insert : visible for 100 110 120 420 admin 910</span>
+<span class="go">- immersion.Goals.detail : visible for 110 120 420 admin 910</span>
+<span class="go">- isip.ContractEndings.detail : visible for 110 120 410 420 admin 910</span>
+<span class="go">- isip.ContractPartners.detail : visible for 110 120 410 420 admin 910</span>
+<span class="go">- isip.ContractPartners.insert : visible for 110 120 410 420 admin 910</span>
+<span class="go">- isip.ContractTypes.detail : visible for 110 120 410 420 admin 910</span>
+<span class="go">- isip.Contracts.detail : visible for 100 110 120 200 300 400 410 420 admin 910</span>
+<span class="go">- isip.Contracts.insert : visible for 100 110 120 200 300 400 410 420 admin 910</span>
+<span class="go">- isip.ExamPolicies.detail : visible for 110 120 410 420 admin 910</span>
+<span class="go">- jobs.ContractTypes.detail : visible for 110 120 410 420 admin 910</span>
+<span class="go">- jobs.ContractTypes.merge_row : visible for admin 910</span>
+<span class="go">- jobs.Employers.detail : visible for 100 110 120 420 admin 910</span>
+<span class="go">- jobs.Employers.merge_row : visible for admin 910</span>
+<span class="go">- jobs.JobProviders.detail : visible for 100 110 120 420 admin 910</span>
+<span class="go">- jobs.JobProviders.merge_row : visible for admin 910</span>
+<span class="go">- jobs.JobTypes.detail : visible for 110 120 410 420 admin 910</span>
+<span class="go">- jobs.Jobs.detail : visible for 100 110 120 420 admin 910</span>
+<span class="go">- jobs.Jobs.insert : visible for 100 110 120 420 admin 910</span>
+<span class="go">- jobs.JobsOverview.show : visible for 100 110 120 420 admin 910</span>
+<span class="go">- jobs.Offers.detail : visible for 100 110 120 420 admin 910</span>
+<span class="go">- jobs.Schedules.detail : visible for 110 120 410 420 admin 910</span>
+<span class="go">- languages.Languages.detail : visible for 110 120 410 420 admin 910</span>
+<span class="go">- newcomers.AvailableCoachesByClient.assign_coach : visible for 110 120 200 220 300 420 800 admin 910</span>
+<span class="go">- newcomers.Faculties.detail : visible for 110 120 410 420 admin 910</span>
+<span class="go">- newcomers.Faculties.insert : visible for 110 120 410 420 admin 910</span>
+<span class="go">- notes.EventTypes.detail : visible for 110 120 410 420 admin 910</span>
+<span class="go">- notes.NoteTypes.detail : visible for 110 120 410 420 admin 910</span>
+<span class="go">- notes.NoteTypes.insert : visible for 110 120 410 420 admin 910</span>
+<span class="go">- notes.Notes.detail : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- notes.Notes.insert : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- notes.NotesByProject.insert : visible for 100 110 120 200 210 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- outbox.Mails.detail : visible for 110 120 410 420 admin 910</span>
+<span class="go">- outbox.Mails.insert : visible for 110 120 410 420 admin 910</span>
+<span class="go">- pcsw.Clients.create_visit : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- pcsw.Clients.detail : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- pcsw.Clients.insert : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- pcsw.Clients.merge_row : visible for admin 910</span>
+<span class="go">- pcsw.Clients.refuse_client : visible for 120 200 220 300 420 admin 910</span>
+<span class="go">- polls.AnswerRemarks.detail : visible for 100 110 120 200 300 400 410 420 admin 910</span>
+<span class="go">- polls.AnswerRemarks.insert : visible for 100 110 120 200 300 400 410 420 admin 910</span>
+<span class="go">- polls.ChoiceSets.detail : visible for 110 120 410 420 admin 910</span>
+<span class="go">- polls.Polls.detail : visible for 100 110 120 200 300 400 410 420 admin 910</span>
+<span class="go">- polls.Polls.insert : visible for 100 110 120 200 300 400 410 420 admin 910</span>
+<span class="go">- polls.Polls.merge_row : visible for admin 910</span>
+<span class="go">- polls.Questions.detail : visible for 110 120 410 420 admin 910</span>
+<span class="go">- polls.Responses.detail : visible for 100 110 120 200 300 400 410 420 admin 910</span>
+<span class="go">- polls.Responses.insert : visible for 100 110 120 200 300 400 410 420 admin 910</span>
+<span class="go">- system.SiteConfigs.detail : visible for admin 910</span>
+<span class="go">- tinymce.TextFieldTemplates.detail : visible for admin 910</span>
+<span class="go">- tinymce.TextFieldTemplates.insert : visible for admin 910</span>
+<span class="go">- uploads.AllUploads.detail : visible for 110 120 410 420 admin 910</span>
+<span class="go">- uploads.AllUploads.insert : visible for 110 120 410 420 admin 910</span>
+<span class="go">- uploads.UploadTypes.detail : visible for 110 120 410 420 admin 910</span>
+<span class="go">- uploads.UploadTypes.insert : visible for 110 120 410 420 admin 910</span>
+<span class="go">- uploads.Uploads.detail : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- uploads.Uploads.insert : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- uploads.UploadsByController.insert : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- uploads.Volumes.detail : visible for 110 120 410 420 admin 910</span>
+<span class="go">- uploads.Volumes.insert : visible for 110 120 410 420 admin 910</span>
+<span class="go">- uploads.Volumes.merge_row : visible for admin 910</span>
+<span class="go">- users.AllUsers.change_password : visible for admin 910</span>
+<span class="go">- users.AllUsers.detail : visible for admin 910</span>
+<span class="go">- users.AllUsers.insert : visible for admin 910</span>
+<span class="go">- users.AllUsers.merge_row : visible for admin 910</span>
+</pre></div>
+</div>
+</section>
+<section id="userswithclients">
+<h2><a class="toc-backref" href="#id11" role="doc-backlink">UsersWithClients</a><a class="headerlink" href="#userswithclients" title="Permalink to this heading">¶</a></h2>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">integ</span><span class="o">.</span><span class="n">UsersWithClients</span><span class="p">)</span> 
+<span class="go">====================== ============ =========== ======== ========= ========= =================== ====================== ========</span>
+<span class="go"> Intervenant            Évaluation   Formation   Search   Travail   Standby   Dossiers complèts   Bénéficiaires actifs   Total</span>
+<span class="go">---------------------- ------------ ----------- -------- --------- --------- ------------------- ---------------------- --------</span>
+<span class="go"> Alicia Allmanns        **1**                             **1**     **1**     **3**               **3**                  **7**</span>
+<span class="go"> Hubert Huppertz        **4**        **4**       **6**                        **14**              **14**                 **17**</span>
+<span class="go"> Mélanie Mélard         **1**        **2**       **2**    **3**     **2**     **10**              **10**                 **19**</span>
+<span class="go"> **Total (3 lignes)**   **6**        **6**       **8**    **4**     **3**     **27**              **27**                 **43**</span>
+<span class="go">====================== ============ =========== ======== ========= ========= =================== ====================== ========</span>
+</pre></div>
+</div>
+<p>Note that the numbers in this table depend on
+<a class="reference internal" href="../../api/lino_welfare.modlib.integ.html#lino_welfare.modlib.integ.Plugin.only_primary" title="lino_welfare.modlib.integ.Plugin.only_primary"><code class="xref py py-attr docutils literal notranslate"><span class="pre">lino_welfare.modlib.integ.Plugin.only_primary</span></code></a> whose default
+value in chatelet is <cite>True</cite>.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dd</span><span class="o">.</span><span class="n">plugins</span><span class="o">.</span><span class="n">integ</span><span class="o">.</span><span class="n">only_primary</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</section>
+<section id="dialog-actions">
+<h2><a class="toc-backref" href="#id12" role="doc-backlink">Dialog actions</a><a class="headerlink" href="#dialog-actions" title="Permalink to this heading">¶</a></h2>
+<p>Voici une liste des actions qui ont un dialogue, càd pour lesquelles,
+avant de les exécuter, Lino ouvre une fenêtre à part pour demander des
+options.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">show_dialog_actions</span><span class="p">()</span>  
+<span class="go">- about.About.sign_in : Sign in</span>
+<span class="go">  (main) [visible for all]:</span>
+<span class="go">  - (login_panel): **Nom d&#39;utilisateur** (username), **Mot de passe** (password)</span>
+<span class="go">- art61.ContractTypes.merge_row : Fusionner</span>
+<span class="go">  (main) [visible for all]: **vers...** (merge_to), **Raison** (reason)</span>
+<span class="go">- cal.EventTypes.merge_row : Fusionner</span>
+<span class="go">  (main) [visible for all]: **vers...** (merge_to), **Raison** (reason)</span>
+<span class="go">- cal.GuestRoles.merge_row : Fusionner</span>
+<span class="go">  (main) [visible for all]: **vers...** (merge_to), **Raison** (reason)</span>
+<span class="go">- cal.GuestStates.wf1 : Accepter</span>
+<span class="go">  (main) [visible for all]: **Résumé** (notify_subject), **Description** (notify_body), **Ne pas avertir les autres** (notify_silent)</span>
+<span class="go">- cal.GuestStates.wf2 : Rejeter</span>
+<span class="go">  (main) [visible for all]: **Résumé** (notify_subject), **Description** (notify_body), **Ne pas avertir les autres** (notify_silent)</span>
+<span class="go">- cal.Guests.checkin : Arriver</span>
+<span class="go">  (main) [visible for all]: **Résumé** (notify_subject), **Description** (notify_body), **Ne pas avertir les autres** (notify_silent)</span>
+<span class="go">- coachings.Coachings.create_visit : Enregistrer consultation</span>
+<span class="go">  (main) [visible for all]: **Utilisateur** (user), **Raison** (summary), **N° d&#39;attente** (waiting_number)</span>
+<span class="go">- contacts.Companies.merge_row : Fusionner</span>
+<span class="go">  (main) [visible for all]: **vers...** (merge_to), **Adresses** (addresses_Address), **Raison** (reason)</span>
+<span class="go">- contacts.Partners.merge_row : Fusionner</span>
+<span class="go">  (main) [visible for all]: **vers...** (merge_to), **Adresses** (addresses_Address), **Raison** (reason)</span>
+<span class="go">- contacts.Persons.create_household : Créer un ménage</span>
+<span class="go">  (main) [visible for all]: **Chef de ménage** (head), **Type de ménage** (type), **Partenaire** (partner)</span>
+<span class="go">- contacts.Persons.merge_row : Fusionner</span>
+<span class="go">  (main) [visible for all]:</span>
+<span class="go">  - **vers...** (merge_to)</span>
+<span class="go">  - **Also reassign volatile related objects** (keep_volatiles):</span>
+<span class="go">    - (keep_volatiles_1): **Connaissances de langue** (cv_LanguageKnowledge), **Freins** (cv_Obstacle)</span>
+<span class="go">    - (keep_volatiles_2): **Compétences professionnelles** (cv_Skill), **Compétences sociales** (cv_SoftSkill)</span>
+<span class="go">    - **Adresses** (addresses_Address)</span>
+<span class="go">  - **Raison** (reason)</span>
+<span class="go">- courses.Activities.print_presence_sheet : Fiche de présences</span>
+<span class="go">  (main) [visible for all]: **Date du** (start_date), **au ** (end_date), **Show remarks** (show_remarks), **Show states** (show_states)</span>
+<span class="go">- courses.Activities.print_presence_sheet_html : Fiche de présences (HTML)</span>
+<span class="go">  (main) [visible for all]: **Date du** (start_date), **au ** (end_date), **Show remarks** (show_remarks), **Show states** (show_states)</span>
+<span class="go">- courses.Lines.merge_row : Fusionner</span>
+<span class="go">  (main) [visible for all]: **vers...** (merge_to), **Raison** (reason)</span>
+<span class="go">- debts.Accounts.merge_row : Fusionner</span>
+<span class="go">  (main) [visible for all]: **vers...** (merge_to), **Raison** (reason)</span>
+<span class="go">- households.Households.merge_row : Fusionner</span>
+<span class="go">  (main) [visible for all]:</span>
+<span class="go">  - **vers...** (merge_to)</span>
+<span class="go">  - **Also reassign volatile related objects** (keep_volatiles): **Membres de ménage** (households_Member), **Adresses** (addresses_Address)</span>
+<span class="go">  - **Raison** (reason)</span>
+<span class="go">- jobs.ContractTypes.merge_row : Fusionner</span>
+<span class="go">  (main) [visible for all]: **vers...** (merge_to), **Raison** (reason)</span>
+<span class="go">- jobs.Employers.merge_row : Fusionner</span>
+<span class="go">  (main) [visible for all]: **vers...** (merge_to), **Adresses** (addresses_Address), **Raison** (reason)</span>
+<span class="go">- jobs.JobProviders.merge_row : Fusionner</span>
+<span class="go">  (main) [visible for all]: **vers...** (merge_to), **Adresses** (addresses_Address), **Raison** (reason)</span>
+<span class="go">- newcomers.AvailableCoachesByClient.assign_coach : Attribuer</span>
+<span class="go">  (main) [visible for all]: **Résumé** (notify_subject), **Description** (notify_body), **Ne pas avertir les autres** (notify_silent)</span>
+<span class="go">- pcsw.Clients.create_visit : Enregistrer consultation</span>
+<span class="go">  (main) [visible for all]: **Utilisateur** (user), **Raison** (summary), **N° d&#39;attente** (waiting_number)</span>
+<span class="go">- pcsw.Clients.merge_row : Fusionner</span>
+<span class="go">  (main) [visible for all]:</span>
+<span class="go">  - **vers...** (merge_to)</span>
+<span class="go">  - **Also reassign volatile related objects** (keep_volatiles):</span>
+<span class="go">    - (keep_volatiles_1): **Certificats de revenu** (aids_IncomeConfirmation), **Refund confirmations** (aids_RefundConfirmation)</span>
+<span class="go">    - (keep_volatiles_2): **Confirmations simple** (aids_SimpleConfirmation), **Interventions** (coachings_Coaching)</span>
+<span class="go">    - (keep_volatiles_3): **Fiches FSE** (esf_ClientSummary), **Dispenses** (pcsw_Dispense)</span>
+<span class="go">    - (keep_volatiles_4): **Connaissances de langue** (cv_LanguageKnowledge), **Freins** (cv_Obstacle)</span>
+<span class="go">    - (keep_volatiles_5): **Compétences professionnelles** (cv_Skill), **Compétences sociales** (cv_SoftSkill)</span>
+<span class="go">    - **Adresses** (addresses_Address)</span>
+<span class="go">  - **Raison** (reason)</span>
+<span class="go">- pcsw.Clients.refuse_client : Refuser</span>
+<span class="go">  (main) [visible for all]: **Raison de refus** (reason), **Remarque** (remark)</span>
+<span class="go">- polls.Polls.merge_row : Fusionner</span>
+<span class="go">  (main) [visible for all]: **vers...** (merge_to), **Questions** (polls_Question), **Raison** (reason)</span>
+<span class="go">- uploads.Volumes.merge_row : Fusionner</span>
+<span class="go">  (main) [visible for all]: **vers...** (merge_to), **Raison** (reason)</span>
+<span class="go">- users.AllUsers.change_password : Changer mot de passe</span>
+<span class="go">  (main) [visible for all]: **Mot de passe actuel** (current), **Nouveau mot de passe** (new1), **Encore une fois** (new2)</span>
+<span class="go">- users.AllUsers.merge_row : Fusionner</span>
+<span class="go">  (main) [visible for all]: **vers...** (merge_to), **Abonnements** (cal_Subscription), **Raison** (reason)</span>
+</pre></div>
+</div>
+</section>
+<section id="menu-walk">
+<h2><a class="toc-backref" href="#id13" role="doc-backlink">Menu walk</a><a class="headerlink" href="#menu-walk" title="Permalink to this heading">¶</a></h2>
+<p>Here is the output of <code class="xref py py-func docutils literal notranslate"><span class="pre">walk_menu_items</span></code> for this database:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">walk_menu_items</span><span class="p">(</span><span class="s1">&#39;romain&#39;</span><span class="p">)</span> 
+<span class="go">- Contacts --&gt; Personnes : 103</span>
+<span class="go">- Contacts --&gt; Bénéficiaires : 57</span>
+<span class="go">- Contacts --&gt; Organisations : 40</span>
+<span class="go">- Contacts --&gt; Partenaires (tous) : 163</span>
+<span class="go">- Contacts --&gt; Ménages : 15</span>
+<span class="go">- Bureau --&gt; Mes Notifications : 1</span>
+<span class="go">- Bureau --&gt; Mes Extraits : 0</span>
+<span class="go">- Bureau --&gt; Mes fichiers téléchargés à renouveler : 1</span>
+<span class="go">- Bureau --&gt; Mes Fichiers téléchargés : 1</span>
+<span class="go">- Bureau --&gt; Mon courrier sortant : 1</span>
+<span class="go">- Bureau --&gt; Mes Observations : 11</span>
+<span class="go">- Bureau --&gt; Mes messages de problème de données : 1</span>
+<span class="go">- Calendrier --&gt; Mes rendez-vous : 10</span>
+<span class="go">- Calendrier --&gt; Rendez-vous dépassés : 56</span>
+<span class="go">- Calendrier --&gt; Mes rendez-vous à confirmer : 4</span>
+<span class="go">- Calendrier --&gt; Mes tâches : 1</span>
+<span class="go">- Calendrier --&gt; Mes visiteurs : 17</span>
+<span class="go">- Calendrier --&gt; Mes présences : 1</span>
+<span class="go">- Calendrier --&gt; Mes rendez-vous dépassés : 1</span>
+<span class="go">- Réception --&gt; Bénéficiaires : 29</span>
+<span class="go">- Réception --&gt; Rendez-vous aujourd&#39;hui : 6</span>
+<span class="go">- Réception --&gt; Salle d&#39;attente : 8</span>
+<span class="go">- Réception --&gt; Visiteurs occupés : 4</span>
+<span class="go">- Réception --&gt; Visiteurs repartis : 7</span>
+<span class="go">- Réception --&gt; Visiteurs qui m&#39;attendent : 0</span>
+<span class="go">- CPAS --&gt; Bénéficiaires : 29</span>
+<span class="go">- CPAS --&gt; Mes Interventions : 0</span>
+<span class="go">- CPAS --&gt; Octrois à confirmer : 1</span>
+<span class="go">- Intégration --&gt; Bénéficiaires : 0</span>
+<span class="go">- Intégration --&gt; PIISs : 0</span>
+<span class="go">- Intégration --&gt; Services utilisateurs : 4</span>
+<span class="go">- Intégration --&gt; Employeurs : 3</span>
+<span class="go">- Intégration --&gt; Postes de travail : 9</span>
+<span class="go">- Intégration --&gt; Offres d&#39;emploi : 2</span>
+<span class="go">- Intégration --&gt; Mes contrats art60§7 (SI) : 0</span>
+<span class="go">- Intégration --&gt; Mes contrats art60§7 (SSG) : 0</span>
+<span class="go">- Intégration --&gt; Mises à l&#39;emploi art61 : 0</span>
+<span class="go">- Intégration --&gt; Stages d&#39;immersion : 0</span>
+<span class="go">- Intégration --&gt; BCSS --&gt; Mes Requêtes IdentifyPerson : 1</span>
+<span class="go">- Intégration --&gt; BCSS --&gt; Mes Requêtes ManageAccess : 1</span>
+<span class="go">- Intégration --&gt; BCSS --&gt; Mes Requêtes Tx25 : 1</span>
+<span class="go">- Ateliers --&gt; Mes Ateliers : 1</span>
+<span class="go">- Ateliers --&gt; Ateliers d&#39;insertion sociale : 6</span>
+<span class="go">- Ateliers --&gt; Ateliers d&#39;Insertion socioprofessionnelle : 3</span>
+<span class="go">- Ateliers --&gt; Séries d&#39;ateliers : 8</span>
+<span class="go">- Ateliers --&gt; Demandes d’inscription en attente : 18</span>
+<span class="go">- Ateliers --&gt; Demandes d’inscription confirmées : 18</span>
+<span class="go">- Ateliers --&gt; Mes ateliers donnés : 1</span>
+<span class="go">- Nouvelles demandes --&gt; Nouveaux bénéficiaires : 22</span>
+<span class="go">- Nouvelles demandes --&gt; Agents disponibles : 3</span>
+<span class="go">- Médiation de dettes --&gt; Bénéficiaires : 0</span>
+<span class="go">- Médiation de dettes --&gt; Mes Budgets : 4</span>
+<span class="go">- Questionnaires --&gt; Mes Questionnaires : 1</span>
+<span class="go">- Questionnaires --&gt; Mes Interviews : 1</span>
+<span class="go">- Rapports --&gt; Intégration --&gt; Agents et leurs clients : 3</span>
+<span class="go">- Configuration --&gt; Système --&gt; Utilisateurs : 13</span>
+<span class="go">- Configuration --&gt; Système --&gt; Textes d&#39;aide : 6</span>
+<span class="go">- Configuration --&gt; Endroits --&gt; Pays : 271</span>
+<span class="go">- Configuration --&gt; Endroits --&gt; Endroits : 81</span>
+<span class="go">- Configuration --&gt; Contacts --&gt; Formes juridiques : 17</span>
+<span class="go">- Configuration --&gt; Contacts --&gt; Fonctions : 6</span>
+<span class="go">- Configuration --&gt; Contacts --&gt; Conseils : 4</span>
+<span class="go">- Configuration --&gt; Contacts --&gt; Types de ménage : 7</span>
+<span class="go">- Configuration --&gt; Bureau --&gt; Types d&#39;extrait : 21</span>
+<span class="go">- Configuration --&gt; Bureau --&gt; Libraries de fichiers : 1</span>
+<span class="go">- Configuration --&gt; Bureau --&gt; Types de téléchargement : 10</span>
+<span class="go">- Configuration --&gt; Bureau --&gt; Types d&#39;observation : 14</span>
+<span class="go">- Configuration --&gt; Bureau --&gt; Types d&#39;événements : 11</span>
+<span class="go">- Configuration --&gt; Bureau --&gt; Mes Text Field Templates : 1</span>
+<span class="go">- Configuration --&gt; Calendrier --&gt; Calendriers : 12</span>
+<span class="go">- Configuration --&gt; Calendrier --&gt; Locaux : 1</span>
+<span class="go">- Configuration --&gt; Calendrier --&gt; Évènements periodiques : 16</span>
+<span class="go">- Configuration --&gt; Calendrier --&gt; Rôles de participants : 5</span>
+<span class="go">- Configuration --&gt; Calendrier --&gt; Types d&#39;entrée calendrier : 14</span>
+<span class="go">- Configuration --&gt; Calendrier --&gt; Règles de récurrence : 7</span>
+<span class="go">- Configuration --&gt; Calendrier --&gt; Calendriers externes : 1</span>
+<span class="go">- Configuration --&gt; Calendrier --&gt; Lignes de planificateur : 3</span>
+<span class="go">- Configuration --&gt; Ateliers --&gt; Savoirs de base : 1</span>
+<span class="go">- Configuration --&gt; Ateliers --&gt; Topics : 1</span>
+<span class="go">- Configuration --&gt; Ateliers --&gt; Timetable Slots : 1</span>
+<span class="go">- Configuration --&gt; CPAS --&gt; Droits chômage : 1</span>
+<span class="go">- Configuration --&gt; CPAS --&gt; Types d&#39;aide sociale : 12</span>
+<span class="go">- Configuration --&gt; CPAS --&gt; Catégories : 4</span>
+<span class="go">- Configuration --&gt; CPAS --&gt; Types de contact client : 11</span>
+<span class="go">- Configuration --&gt; CPAS --&gt; Services : 4</span>
+<span class="go">- Configuration --&gt; CPAS --&gt; Raisons d’arrêt d&#39;intervention : 5</span>
+<span class="go">- Configuration --&gt; Parcours --&gt; Types d&#39;éducation : 12</span>
+<span class="go">- Configuration --&gt; Parcours --&gt; Niveaux académiques : 6</span>
+<span class="go">- Configuration --&gt; Parcours --&gt; Secteurs d&#39;activité : 15</span>
+<span class="go">- Configuration --&gt; Parcours --&gt; Fonctions professionnelles : 5</span>
+<span class="go">- Configuration --&gt; Parcours --&gt; Régimes de travail : 4</span>
+<span class="go">- Configuration --&gt; Parcours --&gt; Statuts : 8</span>
+<span class="go">- Configuration --&gt; Parcours --&gt; Types de contrat : 6</span>
+<span class="go">- Configuration --&gt; Parcours --&gt; Types de compétence sociale : 1</span>
+<span class="go">- Configuration --&gt; Parcours --&gt; Types de freins : 5</span>
+<span class="go">- Configuration --&gt; Parcours --&gt; Preuves de qualification : 5</span>
+<span class="go">- Configuration --&gt; Parcours --&gt; Langues : 6</span>
+<span class="go">- Configuration --&gt; Intégration --&gt; Types de PIIS : 6</span>
+<span class="go">- Configuration --&gt; Intégration --&gt; Motifs d’arrêt de contrat : 5</span>
+<span class="go">- Configuration --&gt; Intégration --&gt; Régimes d&#39;évaluation : 7</span>
+<span class="go">- Configuration --&gt; Intégration --&gt; Types de mise à l&#39;emploi art60§7 : 6</span>
+<span class="go">- Configuration --&gt; Intégration --&gt; Types de poste : 6</span>
+<span class="go">- Configuration --&gt; Intégration --&gt; Horaires : 4</span>
+<span class="go">- Configuration --&gt; Intégration --&gt; Types de mise à l&#39;emploi art.61 : 2</span>
+<span class="go">- Configuration --&gt; Intégration --&gt; Types de stage d&#39;immersion : 4</span>
+<span class="go">- Configuration --&gt; Intégration --&gt; Objectifs : 5</span>
+<span class="go">- Configuration --&gt; Nouvelles demandes --&gt; Intermédiaires : 3</span>
+<span class="go">- Configuration --&gt; Nouvelles demandes --&gt; Spécificités : 6</span>
+<span class="go">- Configuration --&gt; BCSS --&gt; Secteurs : 210</span>
+<span class="go">- Configuration --&gt; BCSS --&gt; Codes fonction : 107</span>
+<span class="go">- Configuration --&gt; Médiation de dettes --&gt; Groupes de comptes : 9</span>
+<span class="go">- Configuration --&gt; Médiation de dettes --&gt; Comptes : 52</span>
+<span class="go">- Configuration --&gt; Questionnaires --&gt; Listes de choix : 10</span>
+<span class="go">- Explorateur --&gt; Contacts --&gt; Personnes de contact : 14</span>
+<span class="go">- Explorateur --&gt; Contacts --&gt; Partenaires : 163</span>
+<span class="go">- Explorateur --&gt; Contacts --&gt; Types d&#39;adresses : 6</span>
+<span class="go">- Explorateur --&gt; Contacts --&gt; Adresses : 162</span>
+<span class="go">- Explorateur --&gt; Contacts --&gt; Membres du conseil : 1</span>
+<span class="go">- Explorateur --&gt; Contacts --&gt; Rôles de membres de ménage : 9</span>
+<span class="go">- Explorateur --&gt; Contacts --&gt; Membres de ménage : 64</span>
+<span class="go">- Explorateur --&gt; Contacts --&gt; Liens de parenté : 60</span>
+<span class="go">- Explorateur --&gt; Contacts --&gt; Types de parenté : 13</span>
+<span class="go">- Explorateur --&gt; Système --&gt; Procurations : 4</span>
+<span class="go">- Explorateur --&gt; Système --&gt; Types d&#39;utilisateur : 16</span>
+<span class="go">- Explorateur --&gt; Système --&gt; Rôles d&#39;utilisateur : 57</span>
+<span class="go">- Explorateur --&gt; Système --&gt; Notifications : 2</span>
+<span class="go">- Explorateur --&gt; Système --&gt; Changes : 0</span>
+<span class="go">- Explorateur --&gt; Système --&gt; All dashboard widgets : 1</span>
+<span class="go">- Explorateur --&gt; Système --&gt; Types de contenu : 139</span>
+<span class="go">- Explorateur --&gt; Système --&gt; Tests de données : 16</span>
+<span class="go">- Explorateur --&gt; Système --&gt; Messages de problème : 11</span>
+<span class="go">- Explorateur --&gt; Bureau --&gt; Extraits : 93</span>
+<span class="go">- Explorateur --&gt; Bureau --&gt; Fichiers téléchargés : 6</span>
+<span class="go">- Explorateur --&gt; Bureau --&gt; Domaines de téléchargement : 2</span>
+<span class="go">- Explorateur --&gt; Bureau --&gt; Mails envoyés : 1</span>
+<span class="go">- Explorateur --&gt; Bureau --&gt; Pièces jointes : 1</span>
+<span class="go">- Explorateur --&gt; Bureau --&gt; Observations : 119</span>
+<span class="go">- Explorateur --&gt; Bureau --&gt; Text Field Templates : 3</span>
+<span class="go">- Explorateur --&gt; Calendrier --&gt; Entrées calendrier : 369</span>
+<span class="go">- Explorateur --&gt; Calendrier --&gt; Tâches : 29</span>
+<span class="go">- Explorateur --&gt; Calendrier --&gt; Présences : 676</span>
+<span class="go">- Explorateur --&gt; Calendrier --&gt; Abonnements : 10</span>
+<span class="go">- Explorateur --&gt; Calendrier --&gt; Entry states : 5</span>
+<span class="go">- Explorateur --&gt; Calendrier --&gt; Presence states : 9</span>
+<span class="go">- Explorateur --&gt; Calendrier --&gt; Task states : 5</span>
+<span class="go">- Explorateur --&gt; Calendrier --&gt; Colonnes planificateur : 2</span>
+<span class="go">- Explorateur --&gt; Calendrier --&gt; Classes d&#39;accès : 3</span>
+<span class="go">- Explorateur --&gt; Calendrier --&gt; Display colors : 16</span>
+<span class="go">- Explorateur --&gt; Ateliers --&gt; Tests de niveau : 1</span>
+<span class="go">- Explorateur --&gt; Ateliers --&gt; Ateliers : 8</span>
+<span class="go">- Explorateur --&gt; Ateliers --&gt; Inscriptions : 84</span>
+<span class="go">- Explorateur --&gt; Ateliers --&gt; États Inscription : 6</span>
+<span class="go">- Explorateur --&gt; Ateliers --&gt; Course layouts : 2</span>
+<span class="go">- Explorateur --&gt; Ateliers --&gt; États Atelier : 4</span>
+<span class="go">- Explorateur --&gt; CPAS --&gt; Exclusions du chômage : 1</span>
+<span class="go">- Explorateur --&gt; CPAS --&gt; Antécédents judiciaires : 1</span>
+<span class="go">- Explorateur --&gt; CPAS --&gt; Bénéficiaires : 57</span>
+<span class="go">- Explorateur --&gt; CPAS --&gt; Etats civils : 7</span>
+<span class="go">- Explorateur --&gt; CPAS --&gt; Etats bénéficiaires : 4</span>
+<span class="go">- Explorateur --&gt; CPAS --&gt; Types de carte eID : 11</span>
+<span class="go">- Explorateur --&gt; CPAS --&gt; Octrois d&#39;aide : 55</span>
+<span class="go">- Explorateur --&gt; CPAS --&gt; Certificats de revenu : 53</span>
+<span class="go">- Explorateur --&gt; CPAS --&gt; Refund confirmations : 13</span>
+<span class="go">- Explorateur --&gt; CPAS --&gt; Confirmations simple : 20</span>
+<span class="go">- Explorateur --&gt; CPAS --&gt; Contacts client : 15</span>
+<span class="go">- Explorateur --&gt; CPAS --&gt; Types de contact connus : 2</span>
+<span class="go">- Explorateur --&gt; CPAS --&gt; Interventions : 90</span>
+<span class="go">- Explorateur --&gt; Parcours --&gt; Connaissances de langue : 113</span>
+<span class="go">- Explorateur --&gt; Parcours --&gt; Formations : 21</span>
+<span class="go">- Explorateur --&gt; Parcours --&gt; Études : 23</span>
+<span class="go">- Explorateur --&gt; Parcours --&gt; Expériences professionnelles : 31</span>
+<span class="go">- Explorateur --&gt; Parcours --&gt; Connaissances de langue : 113</span>
+<span class="go">- Explorateur --&gt; Parcours --&gt; Compétences professionnelles : 1</span>
+<span class="go">- Explorateur --&gt; Parcours --&gt; Compétences sociales : 1</span>
+<span class="go">- Explorateur --&gt; Parcours --&gt; Freins : 21</span>
+<span class="go">- Explorateur --&gt; Intégration --&gt; PIISs : 11</span>
+<span class="go">- Explorateur --&gt; Intégration --&gt; Mises à l&#39;emploi art60§7 : 7</span>
+<span class="go">- Explorateur --&gt; Intégration --&gt; Candidatures : 75</span>
+<span class="go">- Explorateur --&gt; Intégration --&gt; Services utilisateurs : 34</span>
+<span class="go">- Explorateur --&gt; Intégration --&gt; Mises à l&#39;emploi art60§7 : 7</span>
+<span class="go">- Explorateur --&gt; Intégration --&gt; Mises à l&#39;emploi art61 : 4</span>
+<span class="go">- Explorateur --&gt; Intégration --&gt; Stages d&#39;immersion : 3</span>
+<span class="go">- Explorateur --&gt; Intégration --&gt; Preuves de recherche : 11</span>
+<span class="go">- Explorateur --&gt; Intégration --&gt; Fiches FSE : 189</span>
+<span class="go">- Explorateur --&gt; Intégration --&gt; Champs FSE : 12</span>
+<span class="go">- Explorateur --&gt; Nouvelles demandes --&gt; Compétences : 8</span>
+<span class="go">- Explorateur --&gt; BCSS --&gt; Requêtes IdentifyPerson : 6</span>
+<span class="go">- Explorateur --&gt; BCSS --&gt; Requêtes ManageAccess : 2</span>
+<span class="go">- Explorateur --&gt; BCSS --&gt; Requêtes Tx25 : 7</span>
+<span class="go">- Explorateur --&gt; Médiation de dettes --&gt; Budgets : 18</span>
+<span class="go">- Explorateur --&gt; Médiation de dettes --&gt; Entrées : 872</span>
+<span class="go">- Explorateur --&gt; Questionnaires --&gt; Questionnaires : 3</span>
+<span class="go">- Explorateur --&gt; Questionnaires --&gt; Questions : 39</span>
+<span class="go">- Explorateur --&gt; Questionnaires --&gt; Choix : 40</span>
+<span class="go">- Explorateur --&gt; Questionnaires --&gt; Interviews : 7</span>
+<span class="go">- Explorateur --&gt; Questionnaires --&gt; Choix de réponse : 89</span>
+<span class="go">- Explorateur --&gt; Questionnaires --&gt; Answer Remarks : 1</span>
+<span class="go">- Site --&gt; Sessions utilisateurs : ...</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+
+            <p class="logo"><a href="../../index.html">
+              <img class="logo" src="../../_static/logo_web3.png" alt="Logo"/>
+            </a></p>
+          <div class="sidebar-resize-handle"></div>
+<p align="center"><b>EN</b> | <a href="de/index.rst">DE</a> | <a href="fr/index.rst">FR</a></p>
+<h3><a href="../../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../about/index.html">About Lino Welfare</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../usage/index.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../changes/index.html">Changes</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Specs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../install/index.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../copyright.html">Copyright &amp; legal notes</a></li>
+</ul>
+
+<hr class="docutils" />
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+<ul>
+  <li class="toctree-l1"><a class="reference internal" href="../../py-modindex.html">Python Module Index</a></li>
+</ul><p align="center">
+</p>
+
+<div id="ethical-ad-placement"></div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+    <nav class="relbar">
+      <a class="previous" href="clients_chatelet.html" aria-label="Previous topic" >
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg>
+        </div>
+        <div class="title">
+          <span class="text">
+            <span class="direction">previous</span>
+            Clients (Chatelet)
+          </span>
+        </div>
+      </a>
+      <a class="next" href="art61.html" aria-label="Next topic" >
+        <div class="title">
+          <span class="text">
+            <span class="direction">next</span>
+            <code class="docutils literal notranslate"><span class="pre">art61</span></code> : Article 61 job supplyments
+          </span>
+        </div>
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+        </div>
+      </a>
+    </nav>
+
+    <footer role="contentinfo">
+      &#169; <a href="../../copyright.html">Copyright</a> 2012-2022 Rumma &amp; Ko Ltd.
+      Last updated on 2022-11-08.
+      Created using <a class="reference external" href="https://www.sphinx-doc.org/">Sphinx</a> 5.1.1.
+      <a class="reference external" href="https://insipid-sphinx-theme.readthedocs.io/">Insipid Theme</a>.
+<a href="https://gitlab.com/lino-framework/welfare/-/blob/master/docs/specs/welcht/chatelet.rst?plain=1"
+  rel="nofollow">Source code</a>.
+<br>
+
+Online link: <a href="https://welfare.lino-framework.org/specs/welcht/chatelet.html">https://welfare.lino-framework.org/specs/welcht/chatelet.html</a>.
+
+
+    </footer>
+  </body>
+</html>

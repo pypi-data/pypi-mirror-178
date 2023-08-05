@@ -1,0 +1,739 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>isip : Individual Social Integration Projects &#8212; Lino Welfare</title>
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/insipid.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/atelier.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/insipid-cust.css" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script defer src="../_static/insipid.js"></script>
+    <script defer src="../_static/insipid-sidebar.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="copyright" title="Copyright" href="../copyright.html" />
+    <link rel="next" title="The Jobs plugin" href="jobs.html" />
+    <link rel="prev" title="Usage of database excerpts in Lino Welfare" href="excerpts.html" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+  </head><body>
+    <script type="text/javascript">
+        document.body.classList.add('js');
+    </script>
+    <input type="checkbox" id="sidebar-checkbox" style="display: none;">
+    <label id="overlay" for="sidebar-checkbox"></label>
+    <div class="sidebar-resize-handle"></div>
+    <script type="text/javascript">
+        try {
+            let sidebar = localStorage.getItem('sphinx-sidebar');
+            const sidebar_width = localStorage.getItem('sphinx-sidebar-width');
+            if (sidebar_width) {
+                document.documentElement.style.setProperty('--sidebar-width', sidebar_width);
+            }
+            // show sidebar on wide screen
+            if (!sidebar && window.matchMedia('(min-width: 100rem)').matches) {
+                sidebar = 'visible';
+                // NB: We don't store the value in localStorage!
+            }
+            if (sidebar === 'visible') {
+                document.getElementById('sidebar-checkbox').checked = true;
+            }
+        } catch(e) {
+            console.info(e);
+        }
+    </script>
+    <header id="topbar-placeholder">
+      <div id="topbar">
+        <div id="titlebar">
+          <div class="buttons">
+            <label for="sidebar-checkbox" id="sidebar-button" role="button" tabindex="0" aria-controls="sphinxsidebar" accesskey="M">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></svg>
+            </label><a href="../index.html" title="Lino Welfare">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
+</a>
+          </div>
+          <div class="title">
+            <a class="parent" href="plugins.html" accesskey="U">Plugins</a>
+            <a class="top" href="#"><code class="docutils literal notranslate"><span class="pre">isip</span></code> : Individual Social Integration Projects</a>
+          </div>
+          <div class="buttons">
+            <button id="fullscreen-button" type="button" aria-hidden="true">
+              <span class="enable">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M212.686 315.314L120 408l32.922 31.029c15.12 15.12 4.412 40.971-16.97 40.971h-112C10.697 480 0 469.255 0 456V344c0-21.382 25.803-32.09 40.922-16.971L72 360l92.686-92.686c6.248-6.248 16.379-6.248 22.627 0l25.373 25.373c6.249 6.248 6.249 16.378 0 22.627zm22.628-118.628L328 104l-32.922-31.029C279.958 57.851 290.666 32 312.048 32h112C437.303 32 448 42.745 448 56v112c0 21.382-25.803 32.09-40.922 16.971L376 152l-92.686 92.686c-6.248 6.248-16.379 6.248-22.627 0l-25.373-25.373c-6.249-6.248-6.249-16.378 0-22.627z"/></svg>
+              </span>
+              <span class="disable">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M4.686 427.314L104 328l-32.922-31.029C55.958 281.851 66.666 256 88.048 256h112C213.303 256 224 266.745 224 280v112c0 21.382-25.803 32.09-40.922 16.971L152 376l-99.314 99.314c-6.248 6.248-16.379 6.248-22.627 0L4.686 449.941c-6.248-6.248-6.248-16.379 0-22.627zM443.314 84.686L344 184l32.922 31.029c15.12 15.12 4.412 40.971-16.97 40.971h-112C234.697 256 224 245.255 224 232V120c0-21.382 25.803-32.09 40.922-16.971L296 136l99.314-99.314c6.248-6.248 16.379-6.248 22.627 0l25.373 25.373c6.248 6.248 6.248 16.379 0 22.627z"/></svg>
+              </span>
+            </button><a href="https://www.facebook.com/sharer/sharer.php?u=https://welfare.lino-framework.org/specs/isip/" title="Share on Facebook" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+</a>
+
+<!---
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+---!>
+
+<a href="https://twitter.com/share?ref_src=https://welfare.lino-framework.org/specs/isip/" title="Share on Twitter" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <a href="excerpts.html" class="nav-icon previous" title="previous:&#13;Usage of database excerpts in Lino Welfare" aria-label="Previous topic" accesskey="P" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"/></svg>
+      </a>
+      <a href="jobs.html" class="nav-icon next" title="next:&#13;The Jobs plugin" aria-label="Next topic" accesskey="N" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg>
+      </a>
+    </nav>
+
+    <nav class="relbar">
+      <a class="previous" href="excerpts.html" aria-label="Previous topic" >
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg>
+        </div>
+        <div class="title">
+          <span class="text">
+            <span class="direction">previous</span>
+            Usage of database excerpts in Lino Welfare
+          </span>
+        </div>
+      </a>
+      <a class="next" href="jobs.html" aria-label="Next topic" >
+        <div class="title">
+          <span class="text">
+            <span class="direction">next</span>
+            The Jobs plugin
+          </span>
+        </div>
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+        </div>
+      </a>
+    </nav>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+<section id="isip-individual-social-integration-projects">
+<span id="welfare-specs-isip"></span><h1><code class="docutils literal notranslate"><span class="pre">isip</span></code> : Individual Social Integration Projects<a class="headerlink" href="#isip-individual-social-integration-projects" title="Permalink to this heading">¶</a></h1>
+<p>The <a class="reference internal" href="../api/lino_welfare.modlib.isip.html#module-lino_welfare.modlib.isip" title="lino_welfare.modlib.isip"><code class="xref py py-mod docutils literal notranslate"><span class="pre">lino_welfare.modlib.isip</span></code></a> package provides data definitions for
+Individual Social Integration Projects (<a class="reference internal" href="#term-ISIP"><span class="xref std std-term">ISIP</span></a>).</p>
+<nav class="contents local" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#concepts" id="id1">Concepts</a></p></li>
+<li><p><a class="reference internal" href="#dependencies" id="id2">Dependencies</a></p></li>
+<li><p><a class="reference internal" href="#contracts" id="id3">Contracts</a></p></li>
+<li><p><a class="reference internal" href="#related-models" id="id4">Related models</a></p></li>
+<li><p><a class="reference internal" href="#miscellaneous-models" id="id5">Miscellaneous models</a></p></li>
+<li><p><a class="reference internal" href="#overlapping-contracts" id="id6">Overlapping contracts</a></p></li>
+<li><p><a class="reference internal" href="#visibility" id="id7">Visibility</a></p></li>
+<li><p><a class="reference internal" href="#configuration" id="id8">Configuration</a></p></li>
+<li><p><a class="reference internal" href="#contracts-and-grantings" id="id9">Contracts and Grantings</a></p></li>
+</ul>
+</nav>
+<p>This is a <a class="reference external" href="https://dev.lino-framework.org/dev/doctests.html#tested-docs" title="(in Lino Developer Guide v20.1)"><span class="xref std std-ref">tested document</span></a>.  The following instructions are
+used for initialization:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">lino</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lino</span><span class="o">.</span><span class="n">startup</span><span class="p">(</span><span class="s1">&#39;lino_welfare.projects.gerd.settings.doctests&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino.api.doctest</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span> <span class="o">=</span> <span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;robin&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">translation</span><span class="o">.</span><span class="n">activate</span><span class="p">(</span><span class="s1">&#39;en&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<section id="concepts">
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">Concepts</a><a class="headerlink" href="#concepts" title="Permalink to this heading">¶</a></h2>
+<dl class="glossary">
+<dt id="term-ISIP">ISIP<a class="headerlink" href="#term-ISIP" title="Permalink to this term">¶</a></dt><dd><p>An <a class="reference internal" href="#term-integration-contract"><span class="xref std std-term">integration contract</span></a> aiming at an individual coaching of a
+<a class="reference internal" href="../about/general.html#term-beneficiary"><span class="xref std std-term">beneficiary</span></a> during their scholar education.</p>
+<p>French: PIIS (Projet individuel d’insertion sociale).
+German: VSE (Vertrag zur Sozialen Eingliederung)</p>
+</dd>
+<dt id="term-integration-contract">integration contract<a class="headerlink" href="#term-integration-contract" title="Permalink to this term">¶</a></dt><dd><p>An agreement between the PCSW and a client, and potentially an external
+legal person as a third partner.</p>
+</dd>
+<dt id="term-examination-policy">examination policy<a class="headerlink" href="#term-examination-policy" title="Permalink to this term">¶</a></dt><dd><p>A strategy used for planning regular evaluation meetings.  That is, Lino
+automatically suggests dates where the agent invites the client.</p>
+</dd>
+</dl>
+</section>
+<section id="dependencies">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Dependencies</a><a class="headerlink" href="#dependencies" title="Permalink to this heading">¶</a></h2>
+<p>This module is also used and extended by
+<a class="reference internal" href="../api/lino_welfare.modlib.jobs.html#module-lino_welfare.modlib.jobs" title="lino_welfare.modlib.jobs"><code class="xref py py-mod docutils literal notranslate"><span class="pre">lino_welfare.modlib.jobs</span></code></a> and
+<a class="reference internal" href="../api/lino_welfare.modlib.immersion.html#module-lino_welfare.modlib.immersion" title="lino_welfare.modlib.immersion"><code class="xref py py-mod docutils literal notranslate"><span class="pre">lino_welfare.modlib.immersion</span></code></a>,
+<a class="reference internal" href="../api/lino_welfare.modlib.art61.html#module-lino_welfare.modlib.art61" title="lino_welfare.modlib.art61"><code class="xref py py-mod docutils literal notranslate"><span class="pre">lino_welfare.modlib.art61</span></code></a>.</p>
+<p>See also <a class="reference internal" href="topics/autoevents.html"><span class="doc">Automatic calendar events</span></a>.</p>
+</section>
+<section id="contracts">
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Contracts</a><a class="headerlink" href="#contracts" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.isip.ContractBase">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.isip.</span></span><span class="sig-name descname"><span class="pre">ContractBase</span></span><a class="headerlink" href="#lino_welfare.modlib.isip.ContractBase" title="Permalink to this definition">¶</a></dt>
+<dd><p>Model mixin for all <a class="reference internal" href="#term-integration-contract"><span class="xref std std-term">integration contracts</span></a>.</p>
+<p>Inherited by
+<a class="reference internal" href="#lino_welfare.modlib.isip.Contract" title="lino_welfare.modlib.isip.Contract"><code class="xref py py-class docutils literal notranslate"><span class="pre">isip.Contract</span></code></a>
+<code class="xref py py-class docutils literal notranslate"><span class="pre">jobs.Contract</span></code> and
+<code class="xref py py-class docutils literal notranslate"><span class="pre">immersions.Contract</span></code>.</p>
+<p>Inherits from <code class="xref py py-class docutils literal notranslate"><span class="pre">lino_welfare.modlib.system.Signers</span></code>,
+<code class="xref py py-class docutils literal notranslate"><span class="pre">Certifiable</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">EventGenerator</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">UserAuthored</span></code>.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.isip.ContractBase.user">
+<span class="sig-name descname"><span class="pre">user</span></span><a class="headerlink" href="#lino_welfare.modlib.isip.ContractBase.user" title="Permalink to this definition">¶</a></dt>
+<dd><p>The person who created this contract.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.isip.ContractBase.user_asd">
+<span class="sig-name descname"><span class="pre">user_asd</span></span><a class="headerlink" href="#lino_welfare.modlib.isip.ContractBase.user_asd" title="Permalink to this definition">¶</a></dt>
+<dd><p>The responsible person at the general social service.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.isip.ContractBase.client">
+<span class="sig-name descname"><span class="pre">client</span></span><a class="headerlink" href="#lino_welfare.modlib.isip.ContractBase.client" title="Permalink to this definition">¶</a></dt>
+<dd><p>The client for whom this contract is done.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.isip.ContractBase.applies_from">
+<span class="sig-name descname"><span class="pre">applies_from</span></span><a class="headerlink" href="#lino_welfare.modlib.isip.ContractBase.applies_from" title="Permalink to this definition">¶</a></dt>
+<dd><p>The start date of the contract.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.isip.ContractBase.applies_until">
+<span class="sig-name descname"><span class="pre">applies_until</span></span><a class="headerlink" href="#lino_welfare.modlib.isip.ContractBase.applies_until" title="Permalink to this definition">¶</a></dt>
+<dd><p>The <em>planned</em> end date of this contract.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.isip.ContractBase.date_ended">
+<span class="sig-name descname"><span class="pre">date_ended</span></span><a class="headerlink" href="#lino_welfare.modlib.isip.ContractBase.date_ended" title="Permalink to this definition">¶</a></dt>
+<dd><p>The date when this contract was <em>effectively</em> ended.
+This field is set to the same value as <a class="reference internal" href="#lino_welfare.modlib.isip.ContractBase.applies_until" title="lino_welfare.modlib.isip.ContractBase.applies_until"><code class="xref py py-attr docutils literal notranslate"><span class="pre">applies_until</span></code></a>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.isip.ContractBase.ending">
+<span class="sig-name descname"><span class="pre">ending</span></span><a class="headerlink" href="#lino_welfare.modlib.isip.ContractBase.ending" title="Permalink to this definition">¶</a></dt>
+<dd><p>The reason of prematured ending.  Pointer to
+<code class="xref py py-class docutils literal notranslate"><span class="pre">ContractEnding</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.isip.ContractBase.date_issued">
+<span class="sig-name descname"><span class="pre">date_issued</span></span><a class="headerlink" href="#lino_welfare.modlib.isip.ContractBase.date_issued" title="Permalink to this definition">¶</a></dt>
+<dd><p>When the contract was issued to the client and signed by them.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.isip.ContractBase.date_decided">
+<span class="sig-name descname"><span class="pre">date_decided</span></span><a class="headerlink" href="#lino_welfare.modlib.isip.ContractBase.date_decided" title="Permalink to this definition">¶</a></dt>
+<dd><p>When the contract was ratified by the responsible board.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.isip.ContractBase.language">
+<span class="sig-name descname"><span class="pre">language</span></span><a class="headerlink" href="#lino_welfare.modlib.isip.ContractBase.language" title="Permalink to this definition">¶</a></dt>
+<dd><p>The language of this contract. Default value is the client’s
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">language</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.isip.ContractBase.type">
+<span class="sig-name descname"><span class="pre">type</span></span><a class="headerlink" href="#lino_welfare.modlib.isip.ContractBase.type" title="Permalink to this definition">¶</a></dt>
+<dd><p>The type of this contract. Pointer to a subclass of
+<a class="reference internal" href="#lino_welfare.modlib.isip.ContractTypeBase" title="lino_welfare.modlib.isip.ContractTypeBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">ContractTypeBase</span></code></a>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lino_welfare.modlib.isip.ContractBase.get_excerpt_title">
+<span class="sig-name descname"><span class="pre">get_excerpt_title</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lino_welfare.modlib.isip.ContractBase.get_excerpt_title" title="Permalink to this definition">¶</a></dt>
+<dd><p>The printed title of a contract specifies just the contract type
+(not the number and name of client).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lino_welfare.modlib.isip.ContractBase.get_excerpt_templates">
+<span class="sig-name descname"><span class="pre">get_excerpt_templates</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bm</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lino_welfare.modlib.isip.ContractBase.get_excerpt_templates" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overrides
+<a class="reference external" href="https://dev.lino-framework.org/specs/excerpts.html#lino_xl.lib.excerpts.Certifiable.get_excerpt_templates" title="(in Lino Developer Guide v20.1)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">lino_xl.lib.excerpts.Certifiable.get_excerpt_templates()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lino_welfare.modlib.isip.ContractBase.client_changed">
+<span class="sig-name descname"><span class="pre">client_changed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ar</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lino_welfare.modlib.isip.ContractBase.client_changed" title="Permalink to this definition">¶</a></dt>
+<dd><p>If the contract’s author is the client’s primary coach, then set
+user_asd to None, otherwise set user_asd to the primary coach.
+We no longer suppose that only integration agents write
+contracts.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lino_welfare.modlib.isip.ContractBase.full_clean">
+<span class="sig-name descname"><span class="pre">full_clean</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lino_welfare.modlib.isip.ContractBase.full_clean" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks for the following error conditions:</p>
+<ul class="simple">
+<li><p>You must specify a contract type.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Contract</span> <span class="pre">ends</span> <span class="pre">before</span> <span class="pre">it</span> <span class="pre">started.</span></code></p></li>
+<li><p>Any error message returned by <a class="reference internal" href="#lino_welfare.modlib.isip.OverlappingContractsTest" title="lino_welfare.modlib.isip.OverlappingContractsTest"><code class="xref py py-class docutils literal notranslate"><span class="pre">OverlappingContractsTest</span></code></a></p></li>
+</ul>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lino_welfare.modlib.isip.ContractBase.get_aid_confirmation">
+<span class="sig-name descname"><span class="pre">get_aid_confirmation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lino_welfare.modlib.isip.ContractBase.get_aid_confirmation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the last aid confirmation that has been issued for this
+contract. May be used in <cite>.odt</cite> template.</p>
+<p>Update 20170530: not the last <em>confirmation</em> but the last
+<em>granting</em>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lino_welfare.modlib.isip.ContractBase.suggest_cal_guests">
+<span class="sig-name descname"><span class="pre">suggest_cal_guests</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lino_welfare.modlib.isip.ContractBase.suggest_cal_guests" title="Permalink to this definition">¶</a></dt>
+<dd><p>Automatic evaluation events have the client as mandatory
+participant, plus possibly some other coach.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lino_welfare.modlib.isip.ContractBase.get_printable_demo_objects">
+<span class="sig-name descname"><span class="pre">get_printable_demo_objects</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cls</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lino_welfare.modlib.isip.ContractBase.get_printable_demo_objects" title="Permalink to this definition">¶</a></dt>
+<dd><p>All contracts of a demo project (not only one) are being printed.
+Overrides
+<a class="reference external" href="https://dev.lino-framework.org/specs/printing.html#lino.modlib.printing.Printable.get_printable_demo_objects" title="(in Lino Developer Guide v20.1)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">lino.modlib.printing.Printable.get_printable_demo_objects()</span></code></a>.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.isip.ContractPartnerBase">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.isip.</span></span><span class="sig-name descname"><span class="pre">ContractPartnerBase</span></span><a class="headerlink" href="#lino_welfare.modlib.isip.ContractPartnerBase" title="Permalink to this definition">¶</a></dt>
+<dd><p>Model mixin for <a class="reference internal" href="#term-integration-contract"><span class="xref std std-term">integration contracts</span></a>
+that have a single partner.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.isip.ContractBaseTable">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.isip.</span></span><span class="sig-name descname"><span class="pre">ContractBaseTable</span></span><a class="headerlink" href="#lino_welfare.modlib.isip.ContractBaseTable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Base for contract tables. Defines the following parameter fields:</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.isip.ContractBaseTable.user">
+<span class="sig-name descname"><span class="pre">user</span></span><a class="headerlink" href="#lino_welfare.modlib.isip.ContractBaseTable.user" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.isip.ContractBaseTable.observed_event">
+<span class="sig-name descname"><span class="pre">observed_event</span></span><a class="headerlink" href="#lino_welfare.modlib.isip.ContractBaseTable.observed_event" title="Permalink to this definition">¶</a></dt>
+<dd><p>See <a class="reference internal" href="#lino_welfare.modlib.isip.ContractEvents" title="lino_welfare.modlib.isip.ContractEvents"><code class="xref py py-class docutils literal notranslate"><span class="pre">ContractEvents</span></code></a>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.isip.ContractBaseTable.ending">
+<span class="sig-name descname"><span class="pre">ending</span></span><a class="headerlink" href="#lino_welfare.modlib.isip.ContractBaseTable.ending" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show only contracts with the specified
+<code class="xref py py-class docutils literal notranslate"><span class="pre">ContractEnding</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.isip.ContractBaseTable.ending_success">
+<span class="sig-name descname"><span class="pre">ending_success</span></span><a class="headerlink" href="#lino_welfare.modlib.isip.ContractBaseTable.ending_success" title="Permalink to this definition">¶</a></dt>
+<dd><p>Select “Yes” to show only contracts whose ending
+<code class="xref py py-class docutils literal notranslate"><span class="pre">ContractEnding</span></code> has
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">is_success</span></code>
+checked.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.isip.Contract">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.isip.</span></span><span class="sig-name descname"><span class="pre">Contract</span></span><a class="headerlink" href="#lino_welfare.modlib.isip.Contract" title="Permalink to this definition">¶</a></dt>
+<dd><p>The Django model representing an <a class="reference internal" href="#term-ISIP"><span class="xref std std-term">ISIP</span></a>.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.isip.Contract.type">
+<span class="sig-name descname"><span class="pre">type</span></span><a class="headerlink" href="#lino_welfare.modlib.isip.Contract.type" title="Permalink to this definition">¶</a></dt>
+<dd><p>The type of this contract.
+Pointer to <a class="reference internal" href="#lino_welfare.modlib.isip.ContractType" title="lino_welfare.modlib.isip.ContractType"><code class="xref py py-class docutils literal notranslate"><span class="pre">ContractType</span></code></a>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.isip.Contract.study_type">
+<span class="sig-name descname"><span class="pre">study_type</span></span><a class="headerlink" href="#lino_welfare.modlib.isip.Contract.study_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>The type of study that is going to be followed during this
+contract.</p>
+<p>Pointer to <code class="xref py py-class docutils literal notranslate"><span class="pre">lino_xl.lib.cv.models.StudyType</span></code>.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="related-models">
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Related models</a><a class="headerlink" href="#related-models" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.isip.ContractTypes">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.isip.</span></span><span class="sig-name descname"><span class="pre">ContractTypes</span></span><a class="headerlink" href="#lino_welfare.modlib.isip.ContractTypes" title="Permalink to this definition">¶</a></dt>
+<dd><p>The table of all ISIP contract types.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.isip.ContractType">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.isip.</span></span><span class="sig-name descname"><span class="pre">ContractType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ContractTypeBase</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lino_welfare.modlib.isip.ContractType" title="Permalink to this definition">¶</a></dt>
+<dd><p>The type of a <a class="reference internal" href="#lino_welfare.modlib.isip.Contract" title="lino_welfare.modlib.isip.Contract"><code class="xref py py-class docutils literal notranslate"><span class="pre">Contract</span></code></a>.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.isip.ContractType.needs_study_type">
+<span class="sig-name descname"><span class="pre">needs_study_type</span></span><a class="headerlink" href="#lino_welfare.modlib.isip.ContractType.needs_study_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether contracts of this type need their <code class="xref py py-attr docutils literal notranslate"><span class="pre">study_type</span></code>
+field filled in.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.isip.ExamPolicy">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.isip.</span></span><span class="sig-name descname"><span class="pre">ExamPolicy</span></span><a class="headerlink" href="#lino_welfare.modlib.isip.ExamPolicy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Django model to represent an <a class="reference internal" href="#term-examination-policy"><span class="xref std std-term">examination policy</span></a>.</p>
+<p>TODO: replace this by <a class="reference external" href="https://dev.lino-framework.org/specs/cal.html#lino_xl.lib.cal.EventPolicy" title="(in Lino Developer Guide v20.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">lino_xl.lib.cal.EventPolicy</span></code></a> (?).</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.isip.ContractEnding">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.isip.</span></span><span class="sig-name descname"><span class="pre">ContractEnding</span></span><a class="headerlink" href="#lino_welfare.modlib.isip.ContractEnding" title="Permalink to this definition">¶</a></dt>
+<dd><p>A possible reason for premature termination of a contract.</p>
+<p>TODO: move this to <a class="reference internal" href="../api/lino_welfare.modlib.integ.html#module-lino_welfare.modlib.integ" title="lino_welfare.modlib.integ"><code class="xref py py-mod docutils literal notranslate"><span class="pre">lino_welfare.modlib.integ</span></code></a>.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.isip.ContractPartner">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.isip.</span></span><span class="sig-name descname"><span class="pre">ContractPartner</span></span><a class="headerlink" href="#lino_welfare.modlib.isip.ContractPartner" title="Permalink to this definition">¶</a></dt>
+<dd><p>Represents a third-party external partner who participates in this
+contract. For every partner there is a rich text field describing
+their duties.</p>
+</dd></dl>
+
+</section>
+<section id="miscellaneous-models">
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Miscellaneous models</a><a class="headerlink" href="#miscellaneous-models" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.isip.ContractEvents">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.isip.</span></span><span class="sig-name descname"><span class="pre">ContractEvents</span></span><a class="headerlink" href="#lino_welfare.modlib.isip.ContractEvents" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of observable events for filtering contracts
+(<a class="reference internal" href="#lino_welfare.modlib.isip.ContractBaseTable.observed_event" title="lino_welfare.modlib.isip.ContractBaseTable.observed_event"><code class="xref py py-attr docutils literal notranslate"><span class="pre">ContractBaseTable.observed_event</span></code></a>).</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">isip</span><span class="o">.</span><span class="n">ContractEvents</span><span class="p">)</span>
+<span class="go">======= ========= =========</span>
+<span class="go"> value   name      text</span>
+<span class="go">------- --------- ---------</span>
+<span class="go"> 10      active    Active</span>
+<span class="go"> 20      started   Started</span>
+<span class="go"> 30      ended     Ended</span>
+<span class="go"> 40      decided   Decided</span>
+<span class="go"> 50      issued    Issued</span>
+<span class="go">======= ========= =========</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.isip.ClientHasContract">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.isip.</span></span><span class="sig-name descname"><span class="pre">ClientHasContract</span></span><a class="headerlink" href="#lino_welfare.modlib.isip.ClientHasContract" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether the client has at least one ISIP contact during the
+observed date range.</p>
+<p>A filter criteria added to
+<a class="reference external" href="https://dev.lino-framework.org/specs/clients.html#lino_xl.lib.clients.ClientEvents" title="(in Lino Developer Guide v20.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">lino_xl.lib.clients.ClientEvents</span></code></a>.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.isip.ContractsByClient">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.isip.</span></span><span class="sig-name descname"><span class="pre">ContractsByClient</span></span><a class="headerlink" href="#lino_welfare.modlib.isip.ContractsByClient" title="Permalink to this definition">¶</a></dt>
+<dd><p>To see this table you need either IntegrationAgent or
+SocialCoordinator.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.isip.ContractTypeBase">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.isip.</span></span><span class="sig-name descname"><span class="pre">ContractTypeBase</span></span><a class="headerlink" href="#lino_welfare.modlib.isip.ContractTypeBase" title="Permalink to this definition">¶</a></dt>
+<dd><p>Base class for all <cite>ContractType</cite> models.</p>
+<p>Used by <a class="reference internal" href="../api/lino_welfare.modlib.isip.html#module-lino_welfare.modlib.isip" title="lino_welfare.modlib.isip"><code class="xref py py-mod docutils literal notranslate"><span class="pre">lino_welfare.modlib.isip</span></code></a>, <a class="reference internal" href="../api/lino_welfare.modlib.jobs.html#module-lino_welfare.modlib.jobs" title="lino_welfare.modlib.jobs"><code class="xref py py-mod docutils literal notranslate"><span class="pre">lino_welfare.modlib.jobs</span></code></a>,
+<a class="reference internal" href="../api/lino_welfare.modlib.art61.html#module-lino_welfare.modlib.art61" title="lino_welfare.modlib.art61"><code class="xref py py-mod docutils literal notranslate"><span class="pre">lino_welfare.modlib.art61</span></code></a> and <a class="reference internal" href="../api/lino_welfare.modlib.immersion.html#module-lino_welfare.modlib.immersion" title="lino_welfare.modlib.immersion"><code class="xref py py-mod docutils literal notranslate"><span class="pre">lino_welfare.modlib.immersion</span></code></a>,</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.isip.ContractTypeBase.full_name">
+<span class="sig-name descname"><span class="pre">full_name</span></span><a class="headerlink" href="#lino_welfare.modlib.isip.ContractTypeBase.full_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The full description of this contract type as used in printed
+documents.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.isip.ContractTypeBase.exam_policy">
+<span class="sig-name descname"><span class="pre">exam_policy</span></span><a class="headerlink" href="#lino_welfare.modlib.isip.ContractTypeBase.exam_policy" title="Permalink to this definition">¶</a></dt>
+<dd><p>The default examination policy to be used for contracts of
+this type.</p>
+<p>This is a pointer to <code class="xref py py-class docutils literal notranslate"><span class="pre">ExamPolicy</span></code>. All contract
+types share the same set of examination policies.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.isip.ContractTypeBase.overlap_group">
+<span class="sig-name descname"><span class="pre">overlap_group</span></span><a class="headerlink" href="#lino_welfare.modlib.isip.ContractTypeBase.overlap_group" title="Permalink to this definition">¶</a></dt>
+<dd><p>The overlap group to use when checking whether two contracts are
+overlapping or not. If this field is empty, Lino does not check at all
+for overlapping contracts.</p>
+<p>See <a class="reference internal" href="#lino_welfare.modlib.isip.OverlappingContractsTest" title="lino_welfare.modlib.isip.OverlappingContractsTest"><code class="xref py py-class docutils literal notranslate"><span class="pre">OverlappingContractsTest</span></code></a>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.isip.ContractTypeBase.template">
+<span class="sig-name descname"><span class="pre">template</span></span><a class="headerlink" href="#lino_welfare.modlib.isip.ContractTypeBase.template" title="Permalink to this definition">¶</a></dt>
+<dd><p>The main template to use instead of the default template
+defined on the excerpt type.</p>
+<p>See
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">lino_xl.lib.excerpts.mixins.Certifiable.get_excerpt_templates()</span></code>.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="overlapping-contracts">
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Overlapping contracts</a><a class="headerlink" href="#overlapping-contracts" title="Permalink to this heading">¶</a></h2>
+<p>Lino Welfare helps social agents to avoid problems resulting from wrong dates
+concerning the beginning and ending of contracts.</p>
+<p>When entering several contracts for a client, Lino can check whether they
+overlap.  This check is not done for alle contracts. For example, a client can
+have an active job contract (these usually run for 18 months) and still have
+additional training contractrs in parallel.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.isip.OverlapGroups">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.isip.</span></span><span class="sig-name descname"><span class="pre">OverlapGroups</span></span><a class="headerlink" href="#lino_welfare.modlib.isip.OverlapGroups" title="Permalink to this definition">¶</a></dt>
+<dd><p>The list of all known overlap groups to be selected for the
+<a class="reference internal" href="#lino_welfare.modlib.isip.ContractTypeBase.overlap_group" title="lino_welfare.modlib.isip.ContractTypeBase.overlap_group"><code class="xref py py-attr docutils literal notranslate"><span class="pre">overlap_group</span></code></a>
+of a contract type.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">isip</span><span class="o">.</span><span class="n">OverlapGroups</span><span class="p">)</span>
+<span class="go">======= =========== =============</span>
+<span class="go"> value   name        text</span>
+<span class="go">------- ----------- -------------</span>
+<span class="go"> 10      contracts   Conventions</span>
+<span class="go"> 20      trainings   Trainings</span>
+<span class="go">======= =========== =============</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.isip.OverlappingContractsTest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.isip.</span></span><span class="sig-name descname"><span class="pre">OverlappingContractsTest</span></span><a class="headerlink" href="#lino_welfare.modlib.isip.OverlappingContractsTest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Volatile object used to test for overlapping contracts.  It is
+responsible for issuing the following error messages:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">Date</span> <span class="pre">range</span> <span class="pre">overlaps</span> <span class="pre">with</span> <span class="pre">X</span> <span class="pre">#Y</span></code> means that the date
+periods of two contracts of a same client overlap in time.</p>
+<p>This message is issued only when the two contracts are in the same
+overlap group (see <a class="reference internal" href="#lino_welfare.modlib.isip.OverlapGroups" title="lino_welfare.modlib.isip.OverlapGroups"><code class="xref py py-class docutils literal notranslate"><span class="pre">OverlapGroups</span></code></a>).</p>
+<p>The overlap group of a contract is defined by its contract type.</p>
+<p>No warning is issued if the contract type has no overlap group.</p>
+</li>
+<li><p>(Currently deactivated) Date range X lies outside of coached period (Y)</p></li>
+</ul>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.isip.OverlappingContractsChecker">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.isip.</span></span><span class="sig-name descname"><span class="pre">OverlappingContractsChecker</span></span><a class="headerlink" href="#lino_welfare.modlib.isip.OverlappingContractsChecker" title="Permalink to this definition">¶</a></dt>
+<dd><p>A given client cannot have two active contracts at the same time.</p>
+</dd></dl>
+
+</section>
+<section id="visibility">
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Visibility</a><a class="headerlink" href="#visibility" title="Permalink to this heading">¶</a></h2>
+<p>ISIP contracts are created and managed by Integration agents, but they
+are also available for consultation to social agents, newcomer
+consultants and reception clerks.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">p100</span> <span class="o">=</span> <span class="n">users</span><span class="o">.</span><span class="n">UserTypes</span><span class="o">.</span><span class="n">get_by_value</span><span class="p">(</span><span class="s1">&#39;100&#39;</span><span class="p">)</span> <span class="c1"># integ agents</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">p200</span> <span class="o">=</span> <span class="n">users</span><span class="o">.</span><span class="n">UserTypes</span><span class="o">.</span><span class="n">get_by_value</span><span class="p">(</span><span class="s1">&#39;200&#39;</span><span class="p">)</span> <span class="c1"># newcomer agents</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">p210</span> <span class="o">=</span> <span class="n">users</span><span class="o">.</span><span class="n">UserTypes</span><span class="o">.</span><span class="n">get_by_value</span><span class="p">(</span><span class="s1">&#39;210&#39;</span><span class="p">)</span> <span class="c1"># reception clerks</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">p400</span> <span class="o">=</span> <span class="n">users</span><span class="o">.</span><span class="n">UserTypes</span><span class="o">.</span><span class="n">get_by_value</span><span class="p">(</span><span class="s1">&#39;400&#39;</span><span class="p">)</span> <span class="c1"># social agents</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">isip</span><span class="o">.</span><span class="n">MyContracts</span><span class="o">.</span><span class="n">get_view_permission</span><span class="p">(</span><span class="n">p100</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">isip</span><span class="o">.</span><span class="n">MyContracts</span><span class="o">.</span><span class="n">get_view_permission</span><span class="p">(</span><span class="n">p200</span><span class="p">)</span>  
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">isip</span><span class="o">.</span><span class="n">MyContracts</span><span class="o">.</span><span class="n">get_view_permission</span><span class="p">(</span><span class="n">p210</span><span class="p">)</span>  
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">isip</span><span class="o">.</span><span class="n">MyContracts</span><span class="o">.</span><span class="n">get_view_permission</span><span class="p">(</span><span class="n">p400</span><span class="p">)</span>  
+<span class="go">False</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">isip</span><span class="o">.</span><span class="n">ContractsByClient</span><span class="o">.</span><span class="n">get_view_permission</span><span class="p">(</span><span class="n">p100</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">isip</span><span class="o">.</span><span class="n">ContractsByClient</span><span class="o">.</span><span class="n">get_view_permission</span><span class="p">(</span><span class="n">p200</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">isip</span><span class="o">.</span><span class="n">ContractsByClient</span><span class="o">.</span><span class="n">get_view_permission</span><span class="p">(</span><span class="n">p210</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">isip</span><span class="o">.</span><span class="n">ContractsByClient</span><span class="o">.</span><span class="n">get_view_permission</span><span class="p">(</span><span class="n">p400</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</section>
+<section id="configuration">
+<h2><a class="toc-backref" href="#id8" role="doc-backlink">Configuration</a><a class="headerlink" href="#configuration" title="Permalink to this heading">¶</a></h2>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">isip</span><span class="o">.</span><span class="n">ContractTypes</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">===================== =========== ==================== ==================</span>
+<span class="go"> Designation           Reference   Examination Policy   needs Study type</span>
+<span class="go">--------------------- ----------- -------------------- ------------------</span>
+<span class="go"> VSE Ausbildung        vsea        Every month          Yes</span>
+<span class="go"> VSE Arbeitssuche      vseb        Every month          No</span>
+<span class="go"> VSE Lehre             vsec        Every month          No</span>
+<span class="go"> VSE Vollzeitstudium   vsed        Every month          Yes</span>
+<span class="go"> VSE Sprachkurs        vsee        Every month          No</span>
+<span class="go">===================== =========== ==================== ==================</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">isip</span><span class="o">.</span><span class="n">Contracts</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">==== ============== ============ ========================== ================== =====================</span>
+<span class="go"> ID   applies from   date ended   Client                     Responsible (IS)   Contract Type</span>
+<span class="go">---- -------------- ------------ -------------------------- ------------------ ---------------------</span>
+<span class="go"> 2    08/08/2013     01/12/2014   AUSDEMWALD Alfons (116)    Mélanie Mélard     VSE Arbeitssuche</span>
+<span class="go"> 6    23/03/2014     29/01/2015   EVERS Eberhart (127)       Caroline Carnol    VSE Ausbildung</span>
+<span class="go"> 8    06/03/2014     12/01/2015   ENGELS Edgar (129)         Mélanie Mélard     VSE Lehre</span>
+<span class="go"> 12   31/10/2013     23/02/2015   KAIVERS Karl (141)         Caroline Carnol    VSE Arbeitssuche</span>
+<span class="go"> 14   14/11/2013     09/03/2015   LAZARUS Line (144)         Mélanie Mélard     VSE Vollzeitstudium</span>
+<span class="go"> 17   29/12/2013     23/04/2015   MEESSEN Melissa (147)      Mélanie Mélard     VSE Arbeitssuche</span>
+<span class="go"> 19   16/02/2013     11/06/2014   RADERMACHER Edgard (157)   Alicia Allmanns    VSE Vollzeitstudium</span>
+<span class="go"> 22   02/03/2013     25/06/2014   RADERMACHER Guido (159)    Caroline Carnol    VSE Arbeitssuche</span>
+<span class="go"> 24   16/03/2013     09/07/2014   DA VINCI David (165)       Alicia Allmanns    VSE Vollzeitstudium</span>
+<span class="go"> 27   30/03/2013     23/07/2014   ÖSTGES Otto (168)          Alicia Allmanns    VSE Arbeitssuche</span>
+<span class="go"> 29   13/04/2013     06/08/2014   BRECHT Bernd (177)         Alicia Allmanns    VSE Vollzeitstudium</span>
+<span class="go"> 32   06/03/2014     29/06/2015   DUBOIS Robin (179)         Mélanie Mélard     VSE Arbeitssuche</span>
+<span class="go"> 34   20/03/2014     13/07/2015   JEANÉMART Jérôme (181)     Hubert Huppertz    VSE Vollzeitstudium</span>
+<span class="go">==== ============== ============ ========================== ================== =====================</span>
+</pre></div>
+</div>
+</section>
+<section id="contracts-and-grantings">
+<h2><a class="toc-backref" href="#id9" role="doc-backlink">Contracts and Grantings</a><a class="headerlink" href="#contracts-and-grantings" title="Permalink to this heading">¶</a></h2>
+<p>(The following is not yet very useful:)</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">obj</span> <span class="ow">in</span> <span class="n">isip</span><span class="o">.</span><span class="n">Contracts</span><span class="o">.</span><span class="n">request</span><span class="p">():</span>
+<span class="gp">... </span>   <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> </span><span class="si">{}</span><span class="s2"> </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">obj</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="n">obj</span><span class="o">.</span><span class="n">applies_from</span><span class="p">,</span> <span class="nb">repr</span><span class="p">(</span><span class="n">obj</span><span class="o">.</span><span class="n">get_granting</span><span class="p">())))</span>
+<span class="go">2 2013-08-08 None</span>
+<span class="go">6 2014-03-23 None</span>
+<span class="go">8 2014-03-06 None</span>
+<span class="go">12 2013-10-31 None</span>
+<span class="go">14 2013-11-14 None</span>
+<span class="go">17 2013-12-29 None</span>
+<span class="go">19 2013-02-16 None</span>
+<span class="go">22 2013-03-02 None</span>
+<span class="go">24 2013-03-16 Granting #24 (&#39;Ausländerbeihilfe/16/03/2013/165&#39;)</span>
+<span class="go">27 2013-03-30 Granting #27 (&#39;EiEi/30/03/2013/168&#39;)</span>
+<span class="go">29 2013-04-13 Granting #29 (&#39;EiEi/13/04/2013/177&#39;)</span>
+<span class="go">32 2014-03-06 None</span>
+<span class="go">34 2014-03-20 None</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/logo_web3.png" alt="Logo"/>
+            </a></p>
+          <div class="sidebar-resize-handle"></div>
+<p align="center"><b>EN</b> | <a href="de/index.rst">DE</a> | <a href="fr/index.rst">FR</a></p>
+<h3><a href="../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../about/index.html">About Lino Welfare</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/index.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changes/index.html">Changes</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Specs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/index.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../copyright.html">Copyright &amp; legal notes</a></li>
+</ul>
+
+<hr class="docutils" />
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+<ul>
+  <li class="toctree-l1"><a class="reference internal" href="../py-modindex.html">Python Module Index</a></li>
+</ul><p align="center">
+</p>
+
+<div id="ethical-ad-placement"></div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+    <nav class="relbar">
+      <a class="previous" href="excerpts.html" aria-label="Previous topic" >
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg>
+        </div>
+        <div class="title">
+          <span class="text">
+            <span class="direction">previous</span>
+            Usage of database excerpts in Lino Welfare
+          </span>
+        </div>
+      </a>
+      <a class="next" href="jobs.html" aria-label="Next topic" >
+        <div class="title">
+          <span class="text">
+            <span class="direction">next</span>
+            The Jobs plugin
+          </span>
+        </div>
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+        </div>
+      </a>
+    </nav>
+
+    <footer role="contentinfo">
+      &#169; <a href="../copyright.html">Copyright</a> 2012-2022 Rumma &amp; Ko Ltd.
+      Last updated on 2022-11-08.
+      Created using <a class="reference external" href="https://www.sphinx-doc.org/">Sphinx</a> 5.1.1.
+      <a class="reference external" href="https://insipid-sphinx-theme.readthedocs.io/">Insipid Theme</a>.
+<a href="https://gitlab.com/lino-framework/welfare/-/blob/master/docs/specs/isip.rst?plain=1"
+  rel="nofollow">Source code</a>.
+<br>
+
+Online link: <a href="https://welfare.lino-framework.org/specs/isip.html">https://welfare.lino-framework.org/specs/isip.html</a>.
+
+
+    </footer>
+  </body>
+</html>

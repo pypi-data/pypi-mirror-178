@@ -1,0 +1,347 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>2019 &#8212; Lino Welfare</title>
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/insipid.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/atelier.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/insipid-cust.css" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script defer src="../_static/insipid.js"></script>
+    <script defer src="../_static/insipid-sidebar.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="copyright" title="Copyright" href="../copyright.html" />
+    <link rel="next" title="Specs" href="../specs/index.html" />
+    <link rel="prev" title="20200722" href="20200722.html" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+  </head><body>
+    <script type="text/javascript">
+        document.body.classList.add('js');
+    </script>
+    <input type="checkbox" id="sidebar-checkbox" style="display: none;">
+    <label id="overlay" for="sidebar-checkbox"></label>
+    <div class="sidebar-resize-handle"></div>
+    <script type="text/javascript">
+        try {
+            let sidebar = localStorage.getItem('sphinx-sidebar');
+            const sidebar_width = localStorage.getItem('sphinx-sidebar-width');
+            if (sidebar_width) {
+                document.documentElement.style.setProperty('--sidebar-width', sidebar_width);
+            }
+            // show sidebar on wide screen
+            if (!sidebar && window.matchMedia('(min-width: 100rem)').matches) {
+                sidebar = 'visible';
+                // NB: We don't store the value in localStorage!
+            }
+            if (sidebar === 'visible') {
+                document.getElementById('sidebar-checkbox').checked = true;
+            }
+        } catch(e) {
+            console.info(e);
+        }
+    </script>
+    <header id="topbar-placeholder">
+      <div id="topbar">
+        <div id="titlebar">
+          <div class="buttons">
+            <label for="sidebar-checkbox" id="sidebar-button" role="button" tabindex="0" aria-controls="sphinxsidebar" accesskey="M">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></svg>
+            </label><a href="../index.html" title="Lino Welfare">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
+</a>
+          </div>
+          <div class="title">
+            <a class="parent" href="index.html" accesskey="U">Changes</a>
+            <a class="top" href="#">2019</a>
+          </div>
+          <div class="buttons">
+            <button id="fullscreen-button" type="button" aria-hidden="true">
+              <span class="enable">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M212.686 315.314L120 408l32.922 31.029c15.12 15.12 4.412 40.971-16.97 40.971h-112C10.697 480 0 469.255 0 456V344c0-21.382 25.803-32.09 40.922-16.971L72 360l92.686-92.686c6.248-6.248 16.379-6.248 22.627 0l25.373 25.373c6.249 6.248 6.249 16.378 0 22.627zm22.628-118.628L328 104l-32.922-31.029C279.958 57.851 290.666 32 312.048 32h112C437.303 32 448 42.745 448 56v112c0 21.382-25.803 32.09-40.922 16.971L376 152l-92.686 92.686c-6.248 6.248-16.379 6.248-22.627 0l-25.373-25.373c-6.249-6.248-6.249-16.378 0-22.627z"/></svg>
+              </span>
+              <span class="disable">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M4.686 427.314L104 328l-32.922-31.029C55.958 281.851 66.666 256 88.048 256h112C213.303 256 224 266.745 224 280v112c0 21.382-25.803 32.09-40.922 16.971L152 376l-99.314 99.314c-6.248 6.248-16.379 6.248-22.627 0L4.686 449.941c-6.248-6.248-6.248-16.379 0-22.627zM443.314 84.686L344 184l32.922 31.029c15.12 15.12 4.412 40.971-16.97 40.971h-112C234.697 256 224 245.255 224 232V120c0-21.382 25.803-32.09 40.922-16.971L296 136l99.314-99.314c6.248-6.248 16.379-6.248 22.627 0l25.373 25.373c6.248 6.248 6.248 16.379 0 22.627z"/></svg>
+              </span>
+            </button><a href="https://www.facebook.com/sharer/sharer.php?u=https://welfare.lino-framework.org/changes/2019/" title="Share on Facebook" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+</a>
+
+<!---
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+---!>
+
+<a href="https://twitter.com/share?ref_src=https://welfare.lino-framework.org/changes/2019/" title="Share on Twitter" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <a href="20200722.html" class="nav-icon previous" title="previous:&#13;20200722" aria-label="Previous topic" accesskey="P" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"/></svg>
+      </a>
+      <a href="../specs/index.html" class="nav-icon next" title="next:&#13;Specs" aria-label="Next topic" accesskey="N" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg>
+      </a>
+    </nav>
+
+    <nav class="relbar">
+      <a class="previous" href="20200722.html" aria-label="Previous topic" >
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg>
+        </div>
+        <div class="title">
+          <span class="text">
+            <span class="direction">previous</span>
+            20200722
+          </span>
+        </div>
+      </a>
+      <a class="next" href="../specs/index.html" aria-label="Next topic" >
+        <div class="title">
+          <span class="text">
+            <span class="direction">next</span>
+            Specs
+          </span>
+        </div>
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+        </div>
+      </a>
+    </nav>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+<section id="welfare-changes-2019">
+<span id="weleup-changes-2019"></span><span id="welcht-changes-2019"></span><span id="id1"></span><h1>2019<a class="headerlink" href="#welfare-changes-2019" title="Permalink to this heading">¶</a></h1>
+<p>This is the <a class="reference external" href="https://dev.lino-framework.org/dev/changelogs.html#term-change-log" title="(in Lino Developer Guide v20.1)"><span class="xref std std-term">change log</span></a> 2019 for <a class="reference internal" href="../index.html#welfare"><span class="std std-ref">Lino Welfare</span></a>.
+You should also consult also the <a class="reference external" href="https://dev.lino-framework.org/dev/changelogs.html#term-change-log" title="(in Lino Developer Guide v20.1)"><span class="xref std std-term">change log</span></a> for <a class="reference external" href="https://dev.lino-framework.org/about/overview.html#book" title="(in Lino Developer Guide v20.1)"><span>Developer Guide</span></a>.
+General information about how to read and maintain this document in <a class="reference external" href="https://dev.lino-framework.org/dev/changelogs.html#dev-changes" title="(in Lino Developer Guide v20.1)"><span>Documenting changes</span></a>.</p>
+<nav class="contents local" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#id2" id="id14">2019-12-30</a></p></li>
+<li><p><a class="reference internal" href="#id3" id="id15">2019-11-07</a></p></li>
+<li><p><a class="reference internal" href="#id4" id="id16">2019-10-02</a></p></li>
+<li><p><a class="reference internal" href="#id5" id="id17">2019-09-24</a></p></li>
+<li><p><a class="reference internal" href="#id6" id="id18">2019-09-18</a></p></li>
+<li><p><a class="reference internal" href="#id7" id="id19">2019-09-13</a></p></li>
+<li><p><a class="reference internal" href="#id8" id="id20">2019-04-17</a></p></li>
+<li><p><a class="reference internal" href="#id9" id="id21">2019-04-16</a></p></li>
+<li><p><a class="reference internal" href="#v19-3-0" id="id22">2019-03-26 (v19.3.0)</a></p></li>
+<li><p><a class="reference internal" href="#id10" id="id23">2019-03-22</a></p></li>
+<li><p><a class="reference internal" href="#id11" id="id24">2019-03-04</a></p></li>
+<li><p><a class="reference internal" href="#id12" id="id25">2019-02-28</a></p></li>
+<li><p><a class="reference internal" href="#id13" id="id26">2019-02-27</a></p></li>
+</ul>
+</nav>
+<section id="id2">
+<h2><a class="toc-backref" href="#id14" role="doc-backlink">2019-12-30</a><a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<p>Released welfare and weleup 19.12.0 to PyPI.</p>
+</section>
+<section id="id3">
+<h2><a class="toc-backref" href="#id15" role="doc-backlink">2019-11-07</a><a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+<p>Fixed two bugs that caused server tracebacks in rare cases:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://dev.lino-framework.org/specs/addresses.html#lino_xl.lib.addresses.AddressOwner.get_primary_address" title="(in Lino Developer Guide v20.1)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">lino_xl.lib.addresses.AddressOwner.get_primary_address()</span></code></a> now returns None if
+MultipleObjectsReturned (instead of raising a server error).</p></li>
+<li><p>aids.ConfirmationsByGranting.get_data_rows() when confirmation_type of the aids type was empty.</p></li>
+</ul>
+</section>
+<section id="id4">
+<h2><a class="toc-backref" href="#id16" role="doc-backlink">2019-10-02</a><a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h2>
+<p>More changes in <a class="reference internal" href="../api/lino_welfare.modlib.cbss.html#module-lino_welfare.modlib.cbss" title="lino_welfare.modlib.cbss"><code class="xref py py-mod docutils literal notranslate"><span class="pre">lino_welfare.modlib.cbss</span></code></a>. The RetrieveTIGroups now works
+for the first time after their passing from v1 to v2! (The long delay is mostly
+due to administrative obstacles.)</p>
+</section>
+<section id="id5">
+<h2><a class="toc-backref" href="#id17" role="doc-backlink">2019-09-24</a><a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h2>
+<p>Released Welfare 19.9.1 and weleup 19.9.1.
+Site upgrade on the weleup preview site.</p>
+</section>
+<section id="id6">
+<h2><a class="toc-backref" href="#id18" role="doc-backlink">2019-09-18</a><a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h2>
+<p>Released Welfare 19.9.0 and weleup 19.9.0.</p>
+</section>
+<section id="id7">
+<h2><a class="toc-backref" href="#id19" role="doc-backlink">2019-09-13</a><a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h2>
+<p>New field <a class="reference external" href="https://dev.lino-framework.org/specs/cv.html#lino_xl.lib.cv.LanguageKnowledge.has_certificate" title="(in Lino Developer Guide v20.1)"><code class="xref py py-attr docutils literal notranslate"><span class="pre">lino_xl.lib.cv.LanguageKnowledge.has_certificate</span></code></a> is a side
+effect of a change in Avanti which might be useful for Welfare as well.</p>
+</section>
+<section id="id8">
+<h2><a class="toc-backref" href="#id20" role="doc-backlink">2019-04-17</a><a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>(<a class="reference external" href="https://jane.mylino.net/#/api/tickets/PublicTickets/2968">#2968</a>): Remove cal.MyOverdueAppointments from dashboard.</p></li>
+</ul>
+</section>
+<section id="id9">
+<h2><a class="toc-backref" href="#id21" role="doc-backlink">2019-04-16</a><a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h2>
+<p>Fixed <a class="reference external" href="https://jane.mylino.net/#/api/tickets/PublicTickets/2946">#2946</a> Wrong age display (leap year bug)</p>
+</section>
+<section id="v19-3-0">
+<h2><a class="toc-backref" href="#id22" role="doc-backlink">2019-03-26 (v19.3.0)</a><a class="headerlink" href="#v19-3-0" title="Permalink to this heading">¶</a></h2>
+<p>Moved <a class="reference internal" href="../index.html#welfare"><span class="std std-ref">Lino Welfare</span></a> out of <a class="reference external" href="https://dev.lino-framework.org/about/overview.html#book" title="(in Lino Developer Guide v20.1)"><span>Developer Guide</span></a>.
+Created a new repository <a class="reference internal" href="../api/index.html#weleup"><span class="std std-ref">The Eupen variant of Lino Welfare</span></a>
+and moved <code class="file docutils literal notranslate"><span class="pre">man/welfare_de</span></code> to <code class="file docutils literal notranslate"><span class="pre">weleup/dedocs</span></code>.
+The welfare repo is now a library repo, similar to xl.
+It contains demo projects, specs and api for both weleup
+and welcht (it makes no sense to explain welfare without also explaining weleup
+and welcht, and it makes no sense to write technical docs about weleup without
+also explaining general welfare plugins).
+The doctrees of welcht or weleup just contain a short description, installation
+instructions and links to the real docs.</p>
+<p>Fixed a bug (<a class="reference external" href="https://jane.mylino.net/#/api/tickets/PublicTickets/2917">#2917</a>) in
+<a class="reference internal" href="../specs/households.html#lino_welfare.modlib.households.RefundsByPerson" title="lino_welfare.modlib.households.RefundsByPerson"><code class="xref py py-class docutils literal notranslate"><span class="pre">lino_welfare.modlib.households.RefundsByPerson</span></code></a>.
+This table considered children as adult only one year after the age
+specified in <a class="reference external" href="https://dev.lino-framework.org/api/lino_xl.lib.households.html#lino_xl.lib.households.Plugin.adult_age" title="(in Lino Developer Guide v20.1)"><code class="xref py py-attr docutils literal notranslate"><span class="pre">lino_xl.lib.households.Plugin.adult_age</span></code></a>.
+Added a test case to cover this: <a class="reference internal" href="../specs/households.html#welfare-specs-households-20190326"><span class="std std-ref">Melba getting adult</span></a>.</p>
+<p>Released version 19.3.0</p>
+</section>
+<section id="id10">
+<h2><a class="toc-backref" href="#id23" role="doc-backlink">2019-03-22</a><a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../specs/isip.html#lino_welfare.modlib.isip.ContractTypeBase.overlap_group" title="lino_welfare.modlib.isip.ContractTypeBase.overlap_group"><code class="xref py py-attr docutils literal notranslate"><span class="pre">ContractTypeBase.overlap_group</span></code></a> was not yet
+visible in the following tables : <a class="reference internal" href="../specs/isip.html#lino_welfare.modlib.isip.ContractTypes" title="lino_welfare.modlib.isip.ContractTypes"><code class="xref py py-class docutils literal notranslate"><span class="pre">ContractTypes</span></code></a>,
+<code class="xref py py-class docutils literal notranslate"><span class="pre">lino_welfare.modlib.jobs.ContractTypes</span></code>,
+<code class="xref py py-class docutils literal notranslate"><span class="pre">lino_welfare.modlib.art61.ContractTypes</span></code>.</p></li>
+<li><p><a class="reference internal" href="../specs/isip.html#lino_welfare.modlib.isip.OverlappingContractsTest" title="lino_welfare.modlib.isip.OverlappingContractsTest"><code class="xref py py-class docutils literal notranslate"><span class="pre">OverlappingContractsTest</span></code></a> now ignores contracts
+whose types have an empty <code class="xref py py-attr docutils literal notranslate"><span class="pre">ContractBase.overlap_group</span></code>..</p></li>
+</ul>
+</section>
+<section id="id11">
+<h2><a class="toc-backref" href="#id24" role="doc-backlink">2019-03-04</a><a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>French translation of “Excluded from” is now  “Du” (no longer “Exclus depuis”)</p></li>
+</ul>
+</section>
+<section id="id12">
+<h2><a class="toc-backref" href="#id25" role="doc-backlink">2019-02-28</a><a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h2>
+<p>Moved the chatelet part from the <a class="reference internal" href="../api/index.html#module-lino_welfare" title="lino_welfare"><code class="xref py py-mod docutils literal notranslate"><span class="pre">lino_welfare</span></code></a> package into a new package
+<a class="reference internal" href="../api/index.html#module-lino_welcht" title="lino_welcht"><code class="xref py py-mod docutils literal notranslate"><span class="pre">lino_welcht</span></code></a>.  User code on production sites must replace
+<code class="docutils literal notranslate"><span class="pre">lino_welfare.chatelet</span></code> by <code class="docutils literal notranslate"><span class="pre">lino_welcht</span></code>.
+We plan to do the same operation for weleup soon.</p>
+<p>Released version 19.2.0</p>
+<p>(<a class="reference external" href="https://jane.mylino.net/#/api/tickets/PublicTickets/2851">#2851</a>) Remove the filter added 2019-02-27 on pcsw.PersonGroup so the
+choicelists show only the activated groups. This filter was asked by Chatelet.</p>
+<p>(<a class="reference external" href="https://jane.mylino.net/#/api/tickets/PublicTickets/2850">#2850</a>) add a filter on pcsw.PersonGroup so the choicelists show only
+the activated groups.</p>
+</section>
+<section id="id13">
+<h2><a class="toc-backref" href="#id26" role="doc-backlink">2019-02-27</a><a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h2>
+<p>(<a class="reference external" href="https://jane.mylino.net/#/api/tickets/PublicTickets/2853">#2853</a>) Missing dependency in ‘six’ in welfare. The
+<a class="reference external" href="https://dev.lino-framework.org/dev/setup.html#xfile-setup_info.py" title="(in Lino Developer Guide v20.1)"><code class="xref std std-xfile docutils literal notranslate"><span class="pre">setup_info.py</span></code></a> may of course not import any module which is installed
+only during <a class="reference external" href="https://dev.lino-framework.org/dev/setup.html#xfile-setup.py" title="(in Lino Developer Guide v20.1)"><code class="xref std std-xfile docutils literal notranslate"><span class="pre">setup.py</span></code></a>.</p>
+<p>(<a class="reference external" href="https://jane.mylino.net/#/api/tickets/PublicTickets/2851">#2851</a>) Added a filter on pcsw.PersonGroup so the choicelists show
+only the activated groups</p>
+<p>(<a class="reference external" href="https://jane.mylino.net/#/api/tickets/PublicTickets/2851">#2851</a>) Removed study_type from column_names of ContractsByClient,
+removed job_search from the main of pcsw.ClientDetail, moved ‘is_seeking
+unemployed_since seeking_since’ from history_left to history_right of the main
+of pcsw.ClientDetail.</p>
+</section>
+</section>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/logo_web3.png" alt="Logo"/>
+            </a></p>
+          <div class="sidebar-resize-handle"></div>
+<p align="center"><b>EN</b> | <a href="de/index.rst">DE</a> | <a href="fr/index.rst">FR</a></p>
+<h3><a href="../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../about/index.html">About Lino Welfare</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/index.html">Usage</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../specs/index.html">Specs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/index.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../copyright.html">Copyright &amp; legal notes</a></li>
+</ul>
+
+<hr class="docutils" />
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+<ul>
+  <li class="toctree-l1"><a class="reference internal" href="../py-modindex.html">Python Module Index</a></li>
+</ul><p align="center">
+</p>
+
+<div id="ethical-ad-placement"></div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+    <nav class="relbar">
+      <a class="previous" href="20200722.html" aria-label="Previous topic" >
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg>
+        </div>
+        <div class="title">
+          <span class="text">
+            <span class="direction">previous</span>
+            20200722
+          </span>
+        </div>
+      </a>
+      <a class="next" href="../specs/index.html" aria-label="Next topic" >
+        <div class="title">
+          <span class="text">
+            <span class="direction">next</span>
+            Specs
+          </span>
+        </div>
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+        </div>
+      </a>
+    </nav>
+
+    <footer role="contentinfo">
+      &#169; <a href="../copyright.html">Copyright</a> 2012-2022 Rumma &amp; Ko Ltd.
+      Last updated on 2022-11-08.
+      Created using <a class="reference external" href="https://www.sphinx-doc.org/">Sphinx</a> 5.1.1.
+      <a class="reference external" href="https://insipid-sphinx-theme.readthedocs.io/">Insipid Theme</a>.
+<a href="https://gitlab.com/lino-framework/welfare/-/blob/master/docs/changes/2019.rst?plain=1"
+  rel="nofollow">Source code</a>.
+<br>
+
+Online link: <a href="https://welfare.lino-framework.org/changes/2019.html">https://welfare.lino-framework.org/changes/2019.html</a>.
+
+
+    </footer>
+  </body>
+</html>

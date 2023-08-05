@@ -1,0 +1,1266 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>aids : Aid grantings &#8212; Lino Welfare</title>
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/insipid.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/atelier.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/insipid-cust.css" />
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script defer src="../../_static/insipid.js"></script>
+    <script defer src="../../_static/insipid-sidebar.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../copyright.html" />
+    <link rel="next" title="CBSS connection for Lino Welfare" href="../cbss.html" />
+    <link rel="prev" title="Checking for data problems in Lino Welfare" href="../checkdata.html" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+  </head><body>
+    <script type="text/javascript">
+        document.body.classList.add('js');
+    </script>
+    <input type="checkbox" id="sidebar-checkbox" style="display: none;">
+    <label id="overlay" for="sidebar-checkbox"></label>
+    <div class="sidebar-resize-handle"></div>
+    <script type="text/javascript">
+        try {
+            let sidebar = localStorage.getItem('sphinx-sidebar');
+            const sidebar_width = localStorage.getItem('sphinx-sidebar-width');
+            if (sidebar_width) {
+                document.documentElement.style.setProperty('--sidebar-width', sidebar_width);
+            }
+            // show sidebar on wide screen
+            if (!sidebar && window.matchMedia('(min-width: 100rem)').matches) {
+                sidebar = 'visible';
+                // NB: We don't store the value in localStorage!
+            }
+            if (sidebar === 'visible') {
+                document.getElementById('sidebar-checkbox').checked = true;
+            }
+        } catch(e) {
+            console.info(e);
+        }
+    </script>
+    <header id="topbar-placeholder">
+      <div id="topbar">
+        <div id="titlebar">
+          <div class="buttons">
+            <label for="sidebar-checkbox" id="sidebar-button" role="button" tabindex="0" aria-controls="sphinxsidebar" accesskey="M">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></svg>
+            </label><a href="../../index.html" title="Lino Welfare">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
+</a>
+          </div>
+          <div class="title">
+            <a class="parent" href="../plugins.html" accesskey="U">Plugins</a>
+            <a class="top" href="#"><code class="docutils literal notranslate"><span class="pre">aids</span></code> : Aid grantings</a>
+          </div>
+          <div class="buttons">
+            <button id="fullscreen-button" type="button" aria-hidden="true">
+              <span class="enable">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M212.686 315.314L120 408l32.922 31.029c15.12 15.12 4.412 40.971-16.97 40.971h-112C10.697 480 0 469.255 0 456V344c0-21.382 25.803-32.09 40.922-16.971L72 360l92.686-92.686c6.248-6.248 16.379-6.248 22.627 0l25.373 25.373c6.249 6.248 6.249 16.378 0 22.627zm22.628-118.628L328 104l-32.922-31.029C279.958 57.851 290.666 32 312.048 32h112C437.303 32 448 42.745 448 56v112c0 21.382-25.803 32.09-40.922 16.971L376 152l-92.686 92.686c-6.248 6.248-16.379 6.248-22.627 0l-25.373-25.373c-6.249-6.248-6.249-16.378 0-22.627z"/></svg>
+              </span>
+              <span class="disable">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M4.686 427.314L104 328l-32.922-31.029C55.958 281.851 66.666 256 88.048 256h112C213.303 256 224 266.745 224 280v112c0 21.382-25.803 32.09-40.922 16.971L152 376l-99.314 99.314c-6.248 6.248-16.379 6.248-22.627 0L4.686 449.941c-6.248-6.248-6.248-16.379 0-22.627zM443.314 84.686L344 184l32.922 31.029c15.12 15.12 4.412 40.971-16.97 40.971h-112C234.697 256 224 245.255 224 232V120c0-21.382 25.803-32.09 40.922-16.971L296 136l99.314-99.314c6.248-6.248 16.379-6.248 22.627 0l25.373 25.373c6.248 6.248 6.248 16.379 0 22.627z"/></svg>
+              </span>
+            </button><a href="https://www.facebook.com/sharer/sharer.php?u=https://welfare.lino-framework.org/specs/aids/" title="Share on Facebook" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+</a>
+
+<!---
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+---!>
+
+<a href="https://twitter.com/share?ref_src=https://welfare.lino-framework.org/specs/aids/" title="Share on Twitter" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <a href="../checkdata.html" class="nav-icon previous" title="previous:&#13;Checking for data problems in Lino Welfare" aria-label="Previous topic" accesskey="P" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"/></svg>
+      </a>
+      <a href="../cbss.html" class="nav-icon next" title="next:&#13;CBSS connection for Lino Welfare" aria-label="Next topic" accesskey="N" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg>
+      </a>
+    </nav>
+
+    <nav class="relbar">
+      <a class="previous" href="../checkdata.html" aria-label="Previous topic" >
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg>
+        </div>
+        <div class="title">
+          <span class="text">
+            <span class="direction">previous</span>
+            Checking for data problems in Lino Welfare
+          </span>
+        </div>
+      </a>
+      <a class="next" href="../cbss.html" aria-label="Next topic" >
+        <div class="title">
+          <span class="text">
+            <span class="direction">next</span>
+            CBSS connection for Lino Welfare
+          </span>
+        </div>
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+        </div>
+      </a>
+    </nav>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+<section id="aids-aid-grantings">
+<span id="weleup-specs-aids"></span><span id="welfare-specs-aids"></span><h1><code class="docutils literal notranslate"><span class="pre">aids</span></code> : Aid grantings<a class="headerlink" href="#aids-aid-grantings" title="Permalink to this heading">¶</a></h1>
+<p>The <a class="reference internal" href="../../api/lino_welfare.modlib.aids.html#module-lino_welfare.modlib.aids" title="lino_welfare.modlib.aids"><code class="xref py py-mod docutils literal notranslate"><span class="pre">lino_welfare.modlib.aids</span></code></a> plugin provides functionality for managing
+“social aid” or “aid grantings”.</p>
+<nav class="contents local" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#concepts" id="id1">Concepts</a></p></li>
+<li><p><a class="reference internal" href="#date-range-validation" id="id2">Date range validation</a></p></li>
+<li><p><a class="reference internal" href="#confirmation-types" id="id3">Confirmation types</a></p></li>
+<li><p><a class="reference internal" href="#aid-types" id="id4">Aid types</a></p></li>
+<li><p><a class="reference internal" href="#aid-grantings" id="id5">Aid grantings</a></p></li>
+<li><p><a class="reference internal" href="#aid-confirmations-hilfebestatigungen" id="id6">Aid confirmations (Hilfebestätigungen)</a></p></li>
+<li><p><a class="reference internal" href="#grantings-by-isip-contract" id="id7">Grantings by ISIP contract</a></p></li>
+<li><p><a class="reference internal" href="#permissions" id="id8">Permissions</a></p></li>
+<li><p><a class="reference internal" href="#the-pharmacy-of-a-refundconfirmation" id="id9">The pharmacy of a RefundConfirmation</a></p></li>
+<li><p><a class="reference internal" href="#refund-confirmations" id="id10">Refund confirmations</a></p></li>
+<li><p><a class="reference internal" href="#number-of-children-and-adults-in-household" id="id11">Number of children and adults in household</a></p></li>
+<li><p><a class="reference internal" href="#creating-a-doctor" id="id12">Creating a doctor</a></p></li>
+<li><p><a class="reference internal" href="#the-period-covered-by-a-confirmation" id="id13">The period covered by a confirmation</a></p></li>
+<li><p><a class="reference internal" href="#confirmationsbygranting" id="id14">ConfirmationsByGranting</a></p></li>
+<li><p><a class="reference internal" href="#categories" id="id15">Categories</a></p></li>
+<li><p><a class="reference internal" href="#inspecting-a-formlayout-and-its-javascript" id="id16">Inspecting a FormLayout and its JavaScript</a></p></li>
+<li><p><a class="reference internal" href="#the-confirmable-mixin" id="id17">The Confirmable mixin</a></p></li>
+<li><p><a class="reference internal" href="#templates" id="id18">Templates</a></p></li>
+</ul>
+</nav>
+<p>This is a <a class="reference external" href="https://dev.lino-framework.org/dev/doctests.html#tested-docs" title="(in Lino Developer Guide v20.1)"><span class="xref std std-ref">tested document</span></a>.  The following instructions are
+used for initialization:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino</span> <span class="kn">import</span> <span class="n">startup</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">startup</span><span class="p">(</span><span class="s1">&#39;lino_welfare.projects.gerd.settings.doctests&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino.api.doctest</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">translation</span><span class="o">.</span><span class="n">activate</span><span class="p">(</span><span class="s1">&#39;de&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<section id="concepts">
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">Concepts</a><a class="headerlink" href="#concepts" title="Permalink to this heading">¶</a></h2>
+<dl class="glossary">
+<dt id="term-aid-granting">aid granting<a class="headerlink" href="#term-aid-granting" title="Permalink to this term">¶</a></dt><dd><p>The decision that a given client gets a given aid during a given
+period.  See <a class="reference internal" href="#aid-grantings">Aid grantings</a>.</p>
+<p>German: Hilfebeschluss</p>
+</dd>
+<dt id="term-aid-type">aid type<a class="headerlink" href="#term-aid-type" title="Permalink to this term">¶</a></dt><dd><p>Every <a class="reference internal" href="#term-aid-granting"><span class="xref std std-term">aid granting</span></a> has a type, and the list of aid types is
+configurable. See <a class="reference internal" href="#aid-types">Aid types</a>.</p>
+<p>German: Hilfeart</p>
+</dd>
+</dl>
+</section>
+<section id="date-range-validation">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Date range validation</a><a class="headerlink" href="#date-range-validation" title="Permalink to this heading">¶</a></h2>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># print(dd.plugins.aids.no_date_range_veto_until)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">obj</span> <span class="o">=</span> <span class="n">rt</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">aids</span><span class="o">.</span><span class="n">Granting</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">gs</span><span class="p">,</span> <span class="n">ge</span><span class="p">,</span> <span class="n">cs</span><span class="p">,</span> <span class="n">ce</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="k">if</span> <span class="n">gs</span><span class="p">:</span> <span class="n">gs</span> <span class="o">=</span> <span class="n">i2d</span><span class="p">(</span><span class="n">gs</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="k">if</span> <span class="n">ge</span><span class="p">:</span> <span class="n">ge</span> <span class="o">=</span> <span class="n">i2d</span><span class="p">(</span><span class="n">ge</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="k">if</span> <span class="n">cs</span><span class="p">:</span> <span class="n">cs</span> <span class="o">=</span> <span class="n">i2d</span><span class="p">(</span><span class="n">cs</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="k">if</span> <span class="n">ce</span><span class="p">:</span> <span class="n">ce</span> <span class="o">=</span> <span class="n">i2d</span><span class="p">(</span><span class="n">ce</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="n">obj</span><span class="o">.</span><span class="n">start_date</span> <span class="o">=</span> <span class="n">gs</span>
+<span class="gp">... </span>    <span class="n">obj</span><span class="o">.</span><span class="n">end_date</span> <span class="o">=</span> <span class="n">ge</span>
+<span class="gp">... </span>    <span class="n">p</span> <span class="o">=</span> <span class="n">aids</span><span class="o">.</span><span class="n">IncomeConfirmation</span><span class="p">(</span><span class="n">start_date</span><span class="o">=</span><span class="n">cs</span><span class="p">,</span> <span class="n">end_date</span><span class="o">=</span><span class="n">ce</span><span class="p">,</span> <span class="n">granting</span><span class="o">=</span><span class="n">obj</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="k">return</span> <span class="n">p</span><span class="o">.</span><span class="n">get_date_range_veto</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dd</span><span class="o">.</span><span class="n">plugins</span><span class="o">.</span><span class="n">aids</span><span class="o">.</span><span class="n">no_date_range_veto_until</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">f</span><span class="p">(</span><span class="mi">20140522</span><span class="p">,</span> <span class="mi">20140522</span><span class="p">,</span> <span class="mi">20140522</span><span class="p">,</span> <span class="mi">20140522</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>A confirmation without an end date means only on the start date:
+&gt;&gt;&gt; f(20140522, 20140522, 20140522, None)</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">f</span><span class="p">(</span><span class="mi">20140522</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mi">20140522</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">f</span><span class="p">(</span><span class="mi">20140522</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mi">20140522</span><span class="p">,</span> <span class="mi">20150521</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">f</span><span class="p">(</span><span class="mi">20140522</span><span class="p">,</span> <span class="mi">20140522</span><span class="p">,</span> <span class="mi">20140522</span><span class="p">,</span> <span class="mi">20140523</span><span class="p">)</span>
+<span class="go">&#39;Datumsbereich 22.05.14...23.05.14 außerhalb der Laufzeit des Beschlusses 22.05.14...22.05.14.&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">f</span><span class="p">(</span><span class="mi">20140522</span><span class="p">,</span> <span class="mi">20140522</span><span class="p">,</span> <span class="mi">20140523</span><span class="p">,</span> <span class="mi">20140523</span><span class="p">)</span>
+<span class="go">&#39;Datumsbereich 23.05.14...23.05.14 außerhalb der Laufzeit des Beschlusses 22.05.14...22.05.14.&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">f</span><span class="p">(</span><span class="mi">20140522</span><span class="p">,</span> <span class="mi">20140522</span><span class="p">,</span> <span class="mi">20140523</span><span class="p">,</span> <span class="mi">20140523</span><span class="p">)</span>
+<span class="go">&#39;Datumsbereich 23.05.14...23.05.14 außerhalb der Laufzeit des Beschlusses 22.05.14...22.05.14.&#39;</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">f</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="mi">20140522</span><span class="p">,</span> <span class="mi">20140521</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">f</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="mi">20140522</span><span class="p">,</span> <span class="mi">20140522</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">f</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="mi">20140522</span><span class="p">,</span> <span class="mi">20140523</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+<span class="go">&#39;Datumsbereich 23.05.14...23.05.14 außerhalb der Laufzeit des Beschlusses ...22.05.14.&#39;</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dd</span><span class="o">.</span><span class="n">plugins</span><span class="o">.</span><span class="n">aids</span><span class="o">.</span><span class="n">no_date_range_veto_until</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">f</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="mi">20140522</span><span class="p">,</span> <span class="mi">20140523</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">obj</span><span class="o">.</span><span class="n">pk</span>
+<span class="go">10</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dd</span><span class="o">.</span><span class="n">plugins</span><span class="o">.</span><span class="n">aids</span><span class="o">.</span><span class="n">no_date_range_veto_until</span> <span class="o">=</span> <span class="mi">15</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">f</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="mi">20140522</span><span class="p">,</span> <span class="mi">20140523</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dd</span><span class="o">.</span><span class="n">plugins</span><span class="o">.</span><span class="n">aids</span><span class="o">.</span><span class="n">no_date_range_veto_until</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">f</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="mi">20140522</span><span class="p">,</span> <span class="mi">20140523</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+<span class="go">&#39;Datumsbereich 23.05.14...23.05.14 außerhalb der Laufzeit des Beschlusses ...22.05.14.&#39;</span>
+</pre></div>
+</div>
+</section>
+<section id="confirmation-types">
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Confirmation types</a><a class="headerlink" href="#confirmation-types" title="Permalink to this heading">¶</a></h2>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino_welfare.modlib.pcsw.roles</span> <span class="kn">import</span> <span class="n">SocialUser</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span> <span class="o">=</span> <span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;alicia&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span><span class="o">.</span><span class="n">user</span><span class="o">.</span><span class="n">user_type</span><span class="o">.</span><span class="n">has_required_roles</span><span class="p">([</span><span class="n">SocialUser</span><span class="p">])</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<p><code class="xref py py-class docutils literal notranslate"><span class="pre">ConfirmationTypes</span></code> is a
+choicelist where each subclass of <code class="xref py py-class docutils literal notranslate"><span class="pre">Confirmation</span></code>
+has been registered.</p>
+<p>Currently Lino Welfare knows three confirmation types.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">aids</span><span class="o">.</span><span class="n">ConfirmationTypes</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">====== ========================= =================================================== =============</span>
+<span class="go"> name   Wert                      Text                                                Vorlage</span>
+<span class="go">------ ------------------------- --------------------------------------------------- -------------</span>
+<span class="go">        aids.SimpleConfirmation   Einfache Bescheinigung (aids.SimpleConfirmation)    Default.odt</span>
+<span class="go">        aids.IncomeConfirmation   Einkommensbescheinigung (aids.IncomeConfirmation)   Default.odt</span>
+<span class="go">        aids.RefundConfirmation   Kostenübernahmeschein (aids.RefundConfirmation)     Default.odt</span>
+<span class="go">====== ========================= =================================================== =============</span>
+</pre></div>
+</div>
+</section>
+<section id="aid-types">
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Aid types</a><a class="headerlink" href="#aid-types" title="Permalink to this heading">¶</a></h2>
+<p>The list of <a class="reference internal" href="#term-aid-type"><span class="xref std std-term">aid type</span></a> can be modified by end users with the required
+permissions.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s2">&quot;robin&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">show_menu_path</span><span class="p">(</span><span class="n">aids</span><span class="o">.</span><span class="n">AidTypes</span><span class="p">)</span>
+<span class="go">Configure --&gt; PCSW --&gt; Aid Types</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s2">&quot;rolf&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">show_menu_path</span><span class="p">(</span><span class="n">aids</span><span class="o">.</span><span class="n">AidTypes</span><span class="p">)</span>
+<span class="go">Konfigurierung --&gt; ÖSHZ --&gt; Hilfearten</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">aids</span><span class="o">.</span><span class="n">AidTypes</span><span class="p">,</span> <span class="n">column_names</span><span class="o">=</span><span class="s2">&quot;name confirmed_by_primary_coach body_template id&quot;</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">================================================= =========================== =============================== ====</span>
+<span class="go"> Bezeichnung                                       Primärbegleiter bestätigt   Textkörper-Vorlage              ID</span>
+<span class="go">------------------------------------------------- --------------------------- ------------------------------- ----</span>
+<span class="go"> Ausländerbeihilfe                                 Ja                          foreigner_income.body.html      2</span>
+<span class="go"> Dringende Medizinische Hilfe                      Ja                          urgent_medical_care.body.html   7</span>
+<span class="go"> Eingliederungseinkommen                           Ja                          integ_income.body.html          1</span>
+<span class="go"> Erstattung                                        Ja                          certificate.body.html           4</span>
+<span class="go"> Feste Beihilfe                                    Ja                          fixed_income.body.html          3</span>
+<span class="go"> Heizkosten                                        Ja                          heating_refund.body.html        9</span>
+<span class="go"> Kleiderkammer                                     Ja                          clothing_bank.body.html         11</span>
+<span class="go"> Lebensmittelbank                                  Nein                        food_bank.body.html             10</span>
+<span class="go"> Möbellager                                        Ja                          furniture.body.html             8</span>
+<span class="go"> Übernahme von Arzt- und/oder Medikamentenkosten   Ja                          medical_refund.body.html        6</span>
+<span class="go"> Übernahmeschein                                   Ja                          certificate.body.html           5</span>
+<span class="go">================================================= =========================== =============================== ====</span>
+</pre></div>
+</div>
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.aids.AidType">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.aids.</span></span><span class="sig-name descname"><span class="pre">AidType</span></span><a class="headerlink" href="#lino_welfare.modlib.aids.AidType" title="Permalink to this definition">¶</a></dt>
+<dd><p>The Django model representing an <a class="reference internal" href="#term-aid-type"><span class="xref std std-term">aid type</span></a>.</p>
+<p>Database fields:</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.aids.AidType.short_name">
+<span class="sig-name descname"><span class="pre">short_name</span></span><a class="headerlink" href="#lino_welfare.modlib.aids.AidType.short_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The short name for internal use, e.g. when a user must select
+an aid type from a combobox.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.aids.AidType.confirmation_type">
+<span class="sig-name descname"><span class="pre">confirmation_type</span></span><a class="headerlink" href="#lino_welfare.modlib.aids.AidType.confirmation_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>The database model to use for issuing an aid confirmation of
+this type. This is a mandatory pointer to
+<code class="xref py py-class docutils literal notranslate"><span class="pre">ConfirmationTypes</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.aids.AidType.name">
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#lino_welfare.modlib.aids.AidType.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The designation of this aid type as seen by the user e.g. when
+selecting an aid type.</p>
+<p>One field for every <code class="xref py py-attr docutils literal notranslate"><span class="pre">language</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.aids.AidType.excerpt_title">
+<span class="sig-name descname"><span class="pre">excerpt_title</span></span><a class="headerlink" href="#lino_welfare.modlib.aids.AidType.excerpt_title" title="Permalink to this definition">¶</a></dt>
+<dd><p>The text to print as title in confirmations.
+See also
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">lino_xl.lib.excerpts.mixins.ExcerptTitle.excerpt_title</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.aids.AidType.body_template">
+<span class="sig-name descname"><span class="pre">body_template</span></span><a class="headerlink" href="#lino_welfare.modlib.aids.AidType.body_template" title="Permalink to this definition">¶</a></dt>
+<dd><p>The body template to use when printing a confirmation of this type.
+If this field is empty, Lino uses the excerpt type’s
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">body_template</span></code>.
+See also <a class="reference external" href="https://dev.lino-framework.org/dev/printing.html#lino-admin-printing" title="(in Lino Developer Guide v20.1)"><span>Developer intro to printing</span></a>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.aids.AidType.is_urgent">
+<span class="sig-name descname"><span class="pre">is_urgent</span></span><a class="headerlink" href="#lino_welfare.modlib.aids.AidType.is_urgent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether aid grantings of this type are considered as urgent.
+This is used by <code class="xref py py-meth docutils literal notranslate"><span class="pre">Confirmation.get_urgent_granting()</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.aids.AidType.is_integ_duty">
+<span class="sig-name descname"><span class="pre">is_integ_duty</span></span><a class="headerlink" href="#lino_welfare.modlib.aids.AidType.is_integ_duty" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.aids.AidType.board">
+<span class="sig-name descname"><span class="pre">board</span></span><a class="headerlink" href="#lino_welfare.modlib.aids.AidType.board" title="Permalink to this definition">¶</a></dt>
+<dd><p>Pointer to the default <a class="reference external" href="https://dev.lino-framework.org/api/lino_xl.lib.boards.models.html#lino_xl.lib.boards.models.Board" title="(in Lino Developer Guide v20.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">lino_xl.lib.boards.models.Board</span></code></a>
+for aid projects of this type.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.aids.AidType.confirmed_by_primary_coach">
+<span class="sig-name descname"><span class="pre">confirmed_by_primary_coach</span></span><a class="headerlink" href="#lino_welfare.modlib.aids.AidType.confirmed_by_primary_coach" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether grantings for this aid type are to be signed by the
+client’s primary coach (see <code class="xref py py-meth docutils literal notranslate"><span class="pre">Client.get_primary_coach</span></code>).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.aids.AidType.pharmacy_type">
+<span class="sig-name descname"><span class="pre">pharmacy_type</span></span><a class="headerlink" href="#lino_welfare.modlib.aids.AidType.pharmacy_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>A pointer to the <a class="reference external" href="https://dev.lino-framework.org/specs/clients.html#lino_xl.lib.clients.ClientContactType" title="(in Lino Developer Guide v20.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ClientContactType</span></code></a> to be used when
+selecting the pharmacy of a refund confirmation
+(<code class="xref py py-attr docutils literal notranslate"><span class="pre">RefundConfirmation.pharmacy</span></code>).</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="aid-grantings">
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Aid grantings</a><a class="headerlink" href="#aid-grantings" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.aids.Granting">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.aids.</span></span><span class="sig-name descname"><span class="pre">Granting</span></span><a class="headerlink" href="#lino_welfare.modlib.aids.Granting" title="Permalink to this definition">¶</a></dt>
+<dd><p>The Django model representing an <a class="reference internal" href="#term-aid-granting"><span class="xref std std-term">aid granting</span></a>.</p>
+<p>Database fields:</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.aids.Granting.client">
+<span class="sig-name descname"><span class="pre">client</span></span><a class="headerlink" href="#lino_welfare.modlib.aids.Granting.client" title="Permalink to this definition">¶</a></dt>
+<dd><p>Pointer to the <code class="xref py py-class docutils literal notranslate"><span class="pre">lino_welfare.modlib.pcsw.models.Client</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.aids.Granting.aid_type">
+<span class="sig-name descname"><span class="pre">aid_type</span></span><a class="headerlink" href="#lino_welfare.modlib.aids.Granting.aid_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>The type of aid being granted. Mandatory.
+Pointer to the <a class="reference internal" href="#lino_welfare.modlib.aids.AidType" title="lino_welfare.modlib.aids.AidType"><code class="xref py py-class docutils literal notranslate"><span class="pre">AidType</span></code></a>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.aids.Granting.signer">
+<span class="sig-name descname"><span class="pre">signer</span></span><a class="headerlink" href="#lino_welfare.modlib.aids.Granting.signer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Pointer to the user who is expected to “sign” this granting
+(i.e. to confirm that it is real).</p>
+<p>The default value is the client’s primary coach for grantings
+whose <a class="reference internal" href="#lino_welfare.modlib.aids.Granting.aid_type" title="lino_welfare.modlib.aids.Granting.aid_type"><code class="xref py py-attr docutils literal notranslate"><span class="pre">aid_type</span></code></a> has <a class="reference internal" href="#lino_welfare.modlib.aids.AidType.confirmed_by_primary_coach" title="lino_welfare.modlib.aids.AidType.confirmed_by_primary_coach"><code class="xref py py-attr docutils literal notranslate"><span class="pre">confirmed_by_primary_coach</span></code></a> checked.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.aids.Granting.board">
+<span class="sig-name descname"><span class="pre">board</span></span><a class="headerlink" href="#lino_welfare.modlib.aids.Granting.board" title="Permalink to this definition">¶</a></dt>
+<dd><p>Pointer to the <a class="reference external" href="https://dev.lino-framework.org/api/lino_xl.lib.boards.models.html#lino_xl.lib.boards.models.Board" title="(in Lino Developer Guide v20.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Board</span></code></a>
+which decided to allocate this aid project.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.aids.Granting.category">
+<span class="sig-name descname"><span class="pre">category</span></span><a class="headerlink" href="#lino_welfare.modlib.aids.Granting.category" title="Permalink to this definition">¶</a></dt>
+<dd><p>Currently only used for printing an <cite>isip.Contract</cite>.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.aids.Grantings">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.aids.</span></span><span class="sig-name descname"><span class="pre">Grantings</span></span><a class="headerlink" href="#lino_welfare.modlib.aids.Grantings" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.aids.AllGrantings">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.aids.</span></span><span class="sig-name descname"><span class="pre">AllGrantings</span></span><a class="headerlink" href="#lino_welfare.modlib.aids.AllGrantings" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.aids.MyPendingGrantings">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.aids.</span></span><span class="sig-name descname"><span class="pre">MyPendingGrantings</span></span><a class="headerlink" href="#lino_welfare.modlib.aids.MyPendingGrantings" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.aids.GrantingsByClient">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.aids.</span></span><span class="sig-name descname"><span class="pre">GrantingsByClient</span></span><a class="headerlink" href="#lino_welfare.modlib.aids.GrantingsByClient" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.aids.GrantingsByType">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.aids.</span></span><span class="sig-name descname"><span class="pre">GrantingsByType</span></span><a class="headerlink" href="#lino_welfare.modlib.aids.GrantingsByType" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>Alicia hat 2 Hilfebeschlüsse zu bestätigen. Dies kriegt sie als
+Willkommensmeldung gesagt:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span> <span class="o">=</span> <span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;alicia&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">translation</span><span class="o">.</span><span class="n">activate</span><span class="p">(</span><span class="s1">&#39;de&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">msg</span> <span class="ow">in</span> <span class="n">settings</span><span class="o">.</span><span class="n">SITE</span><span class="o">.</span><span class="n">get_welcome_messages</span><span class="p">(</span><span class="n">ses</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="n">tostring</span><span class="p">(</span><span class="n">msg</span><span class="p">))</span>
+<span class="gp">... </span>
+<span class="go">&lt;span&gt;Du bist beschäftigt in &lt;a href=&quot;Detail&quot;&gt;Beschwerde (22.05.2014) mit COLLARD Charlotte (118)&lt;/a&gt; (&lt;b&gt;☑&lt;/b&gt;). &lt;/span&gt;</span>
+<span class="go">&lt;b&gt;Du hast 2 offene Datenproblemmeldungen.&lt;/b&gt;</span>
+<span class="go">&lt;span&gt;Du hast &lt;b&gt;6 Einträge in Zu bestätigende Hilfebeschlüsse&lt;/b&gt;.&lt;/span&gt;</span>
+</pre></div>
+</div>
+<p>When she clicks the link “Zu bestätigende Hilfebeschlüsse”, then they show up:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">aids</span><span class="o">.</span><span class="n">MyPendingGrantings</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">======================== ========================= =========== ============== ========== ======= ==============================</span>
+<span class="go"> Klient                   Hilfeart                  Kategorie   Laufzeit von   bis        Autor   Workflow</span>
+<span class="go">------------------------ ------------------------- ----------- -------------- ---------- ------- ------------------------------</span>
+<span class="go"> DA VINCI David (165)     Ausländerbeihilfe                     10.08.14                          [Bestätigen] **Unbestätigt**</span>
+<span class="go"> DA VINCI David (165)     Eingliederungseinkommen               10.07.14                          [Bestätigen] **Unbestätigt**</span>
+<span class="go"> EMONTS-GAST Erna (152)   Heizkosten                            30.05.14       31.05.14           [Bestätigen] **Unbestätigt**</span>
+<span class="go"> DUBOIS Robin (179)       Ausländerbeihilfe                     06.03.14                          [Bestätigen] **Unbestätigt**</span>
+<span class="go"> DUBOIS Robin (179)       Eingliederungseinkommen               27.04.13                          [Bestätigen] **Unbestätigt**</span>
+<span class="go"> DA VINCI David (165)     Ausländerbeihilfe                     16.03.13                          [Bestätigen] **Unbestätigt**</span>
+<span class="go">======================== ========================= =========== ============== ========== ======= ==============================</span>
+</pre></div>
+</div>
+</section>
+<section id="aid-confirmations-hilfebestatigungen">
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Aid confirmations (Hilfebestätigungen)</a><a class="headerlink" href="#aid-confirmations-hilfebestatigungen" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.aids.Confirmation">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.aids.</span></span><span class="sig-name descname"><span class="pre">Confirmation</span></span><a class="headerlink" href="#lino_welfare.modlib.aids.Confirmation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Base class for all aid confirmations.</p>
+<p>Subclassed by <code class="xref py py-class docutils literal notranslate"><span class="pre">SimpleConfirmation</span></code>,
+<code class="xref py py-class docutils literal notranslate"><span class="pre">IncomeConfirmation</span></code> and
+<code class="xref py py-class docutils literal notranslate"><span class="pre">RefundConfirmation</span></code>.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="lino_welfare.modlib.aids.Confirmation.get_date_range_veto">
+<span class="sig-name descname"><span class="pre">get_date_range_veto</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lino_welfare.modlib.aids.Confirmation.get_date_range_veto" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return an error message if this confirmation lies outside of
+granted period.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">def</span> <span class="pre">get_urgent_granting(self):</span></span></dt>
+<dd><p>Return the one and only one urgent aid granting for the client and
+period defined for this confirmation.  Return None if there is
+no such granting, or if there is more than one such granting.</p>
+<p>Used in <a class="reference internal" href="#xfile-medical_refund.body.html"><code class="xref std std-xfile docutils literal notranslate"><span class="pre">medical_refund.body.html</span></code></a>.</p>
+</dd></dl>
+
+</dd></dl>
+
+<p>Number of issued confirmations by confirmation type:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">translation</span><span class="o">.</span><span class="n">activate</span><span class="p">(</span><span class="s1">&#39;de&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">at</span> <span class="ow">in</span> <span class="n">aids</span><span class="o">.</span><span class="n">AidType</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">exclude</span><span class="p">(</span><span class="n">confirmation_type</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">order_by</span><span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">):</span>
+<span class="gp">... </span>   <span class="n">M</span> <span class="o">=</span> <span class="n">at</span><span class="o">.</span><span class="n">confirmation_type</span><span class="o">.</span><span class="n">model</span>
+<span class="gp">... </span>   <span class="n">qs</span> <span class="o">=</span> <span class="n">M</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">granting__aid_type</span><span class="o">=</span><span class="n">at</span><span class="p">)</span>
+<span class="gp">... </span>   <span class="n">obj</span> <span class="o">=</span> <span class="n">qs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">... </span>   <span class="n">txt</span> <span class="o">=</span> <span class="n">obj</span><span class="o">.</span><span class="n">confirmation_text</span><span class="p">()</span>
+<span class="gp">... </span>   <span class="n">txt</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">txt</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
+<span class="gp">... </span>   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2"> : </span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">at</span><span class="p">),</span> <span class="n">qs</span><span class="o">.</span><span class="n">count</span><span class="p">()))</span>
+<span class="go">Eingliederungseinkommen : 20</span>
+<span class="go">Ausländerbeihilfe : 37</span>
+<span class="go">Feste Beihilfe : 3</span>
+<span class="go">Erstattung : 3</span>
+<span class="go">Übernahmeschein : 3</span>
+<span class="go">Übernahme von Arzt- und/oder Medikamentenkosten : 6</span>
+<span class="go">Dringende Medizinische Hilfe : 6</span>
+<span class="go">Möbellager : 3</span>
+<span class="go">Heizkosten : 3</span>
+<span class="go">Lebensmittelbank : 3</span>
+<span class="go">Kleiderkammer : 4</span>
+</pre></div>
+</div>
+</section>
+<section id="grantings-by-isip-contract">
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Grantings by ISIP contract</a><a class="headerlink" href="#grantings-by-isip-contract" title="Permalink to this heading">¶</a></h2>
+<p>The <code class="xref py py-meth docutils literal notranslate"><span class="pre">get_aid_type</span></code>
+method of a contract (called from the <cite>.odt</cite> document template when
+printing a <code class="xref py py-mod docutils literal notranslate"><span class="pre">welfare.isip.Contract</span></code> in Eupen) works only when
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">get_granting</span></code> returns
+exactly one granting.  Which is the normal situation.</p>
+<p>The demo fixtures generate some exceptions to this general rule.  Here
+we see that most contracts have indeed exactly 1 granting:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">isip</span><span class="o">.</span><span class="n">Contract</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">all</span><span class="p">()</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+<span class="go">34</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">l</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">con</span> <span class="ow">in</span> <span class="n">isip</span><span class="o">.</span><span class="n">Contract</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">all</span><span class="p">():</span>
+<span class="gp">... </span>    <span class="k">if</span> <span class="n">con</span><span class="o">.</span><span class="n">get_aid_type</span><span class="p">()</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+<span class="gp">... </span>        <span class="n">l</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">con</span><span class="o">.</span><span class="n">id</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
+<span class="go">[1, 3, 4, 7, 9, 10, 11, 13, 15, 18, 19, 22, 24, 27, 29, 31, 33]</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rr</span> <span class="o">=</span> <span class="n">aids</span><span class="o">.</span><span class="n">IncomeConfirmationsByGranting</span><span class="o">.</span><span class="n">insert_action</span><span class="o">.</span><span class="n">action</span><span class="o">.</span><span class="n">required_roles</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s2">&quot;rolf&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_user</span><span class="p">()</span><span class="o">.</span><span class="n">user_type</span><span class="o">.</span><span class="n">has_required_roles</span><span class="p">(</span><span class="n">rr</span><span class="p">))</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ct</span> <span class="o">=</span> <span class="n">contenttypes</span><span class="o">.</span><span class="n">ContentType</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get_for_model</span><span class="p">(</span><span class="n">aids</span><span class="o">.</span><span class="n">Granting</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mt</span> <span class="o">=</span> <span class="n">ct</span><span class="o">.</span><span class="n">pk</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mk</span> <span class="o">=</span> <span class="mi">3</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ct</span> <span class="o">=</span> <span class="n">contenttypes</span><span class="o">.</span><span class="n">ContentType</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="n">mt</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ct</span><span class="o">.</span><span class="n">model_class</span><span class="p">()</span>
+<span class="go">&lt;class &#39;lino_welfare.modlib.aids.models.Granting&#39;&gt;</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">obj</span> <span class="o">=</span> <span class="n">aids</span><span class="o">.</span><span class="n">Granting</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="n">mk</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">obj</span>
+<span class="go">Granting #3 (&#39;EiEi/13.10.12/124&#39;)</span>
+</pre></div>
+</div>
+<p>This granting has been confirmed once:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">aids</span><span class="o">.</span><span class="n">IncomeConfirmationsByGranting</span><span class="p">,</span> <span class="n">obj</span><span class="p">)</span>
+<span class="go">==== ============================ ================ ============ ============= =====</span>
+<span class="go"> ID   Klient                       Kategorie        Betrag       Periode vom   bis</span>
+<span class="go">---- ---------------------------- ---------------- ------------ ------------- -----</span>
+<span class="go"> 4    DOBBELSTEIN Dorothée (124)   Zusammenlebend   456,00       13.10.12</span>
+<span class="go">                                                    **456,00**</span>
+<span class="go">==== ============================ ================ ============ ============= =====</span>
+</pre></div>
+</div>
+</section>
+<section id="permissions">
+<h2><a class="toc-backref" href="#id8" role="doc-backlink">Permissions</a><a class="headerlink" href="#permissions" title="Permalink to this heading">¶</a></h2>
+<p>We test whether Theresia is allowed to create an income confirmation.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">theresia</span> <span class="o">=</span> <span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;theresia&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">user</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">headers</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">HTTP_X_REQUESTED_WITH</span><span class="o">=</span><span class="s1">&#39;XMLHttpRequest&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">headers</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">REMOTE_USER</span><span class="o">=</span><span class="s1">&#39;rolf&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;/api/aids/IncomeConfirmationsByGranting&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">url</span> <span class="o">+=</span> <span class="s2">&quot;?su=</span><span class="si">{2}</span><span class="s2">&amp;mt=</span><span class="si">{0}</span><span class="s2">&amp;mk=</span><span class="si">{1}</span><span class="s2">&amp;an=insert&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">mt</span><span class="p">,</span> <span class="n">mk</span><span class="p">,</span> <span class="n">theresia</span><span class="o">.</span><span class="n">pk</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">test_client</span><span class="o">.</span><span class="n">force_login</span><span class="p">(</span><span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;rolf&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">user</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">res</span> <span class="o">=</span> <span class="n">test_client</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="o">**</span><span class="n">headers</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">res</span><span class="o">.</span><span class="n">status_code</span><span class="p">)</span>
+<span class="go">200</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">res</span><span class="o">.</span><span class="n">content</span><span class="p">,</span> <span class="s1">&#39;lxml&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">scripts</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">head</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;script&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;text/javascript&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The page header includes a lot of scripts:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">len</span><span class="p">(</span><span class="n">scripts</span><span class="p">)</span>
+<span class="go">21</span>
+</pre></div>
+</div>
+<p>Here are the default values for their source URLs:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">scripts</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;src&#39;</span><span class="p">,</span> <span class="s1">&#39;(inline)&#39;</span><span class="p">))</span>  
+<span class="go">/static/ext-3.3.1/adapter/ext/ext-base-debug.js</span>
+<span class="go">/static/ext-3.3.1/ext-all-debug.js</span>
+<span class="go">/static/ext-3.3.1/src/locale/ext-lang-de.js</span>
+<span class="go">/static/ext-3.3.1/examples/ux/statusbar/StatusBar.js</span>
+<span class="go">/static/extjs/Ext.ux.form.DateTime.js</span>
+<span class="go">/static/extensible-1.0.1/extensible-all-debug.js</span>
+<span class="go">/static/extensible-1.0.1/src/locale/extensible-lang-de.js</span>
+<span class="go">/static/tinymce-3.5.11/tiny_mce.js</span>
+<span class="go">/static/byteforce/Ext.ux.TinyMCE.js</span>
+<span class="go">/static/ext-3.3.1/examples/ux/gridfilters/menu/RangeMenu.js</span>
+<span class="go">/static/ext-3.3.1/examples/ux/gridfilters/menu/ListMenu.js</span>
+<span class="go">/static/ext-3.3.1/examples/ux/gridfilters/GridFilters.js</span>
+<span class="go">/static/ext-3.3.1/examples/ux/gridfilters/filter/Filter.js</span>
+<span class="go">/static/ext-3.3.1/examples/ux/gridfilters/filter/StringFilter.js</span>
+<span class="go">/static/ext-3.3.1/examples/ux/gridfilters/filter/DateFilter.js</span>
+<span class="go">/static/ext-3.3.1/examples/ux/gridfilters/filter/ListFilter.js</span>
+<span class="go">/static/ext-3.3.1/examples/ux/gridfilters/filter/NumericFilter.js</span>
+<span class="go">/static/ext-3.3.1/examples/ux/gridfilters/filter/BooleanFilter.js</span>
+<span class="go">/static/ext-3.3.1/examples/ux/fileuploadfield/FileUploadField.js</span>
+<span class="go">/media/cache/js/lino_210_de.js</span>
+<span class="go">(inline)</span>
+</pre></div>
+</div>
+<p>We are interested in the last one, which defines the <cite>onReady</cite> function:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">on_ready</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">scripts</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">len</span><span class="p">(</span><span class="n">on_ready</span><span class="o">.</span><span class="n">splitlines</span><span class="p">())</span>
+<span class="go">16</span>
+</pre></div>
+</div>
+<p>And one of these lines calls the Javascript version of the insert
+action of <code class="xref py py-class docutils literal notranslate"><span class="pre">IncomeConfirmationsByGranting</span></code>:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="s2">&quot;Lino.aids.IncomeConfirmationsByGranting.insert.run&quot;</span> <span class="ow">in</span> <span class="n">on_ready</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</section>
+<section id="the-pharmacy-of-a-refundconfirmation">
+<h2><a class="toc-backref" href="#id9" role="doc-backlink">The pharmacy of a RefundConfirmation</a><a class="headerlink" href="#the-pharmacy-of-a-refundconfirmation" title="Permalink to this heading">¶</a></h2>
+<p>The demo database has exactly one AidType with a nonempty
+<cite>pharmacy_type</cite> field:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">at</span> <span class="o">=</span> <span class="n">aids</span><span class="o">.</span><span class="n">AidType</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pharmacy_type__isnull</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">at</span>
+<span class="go">AidType #6 (&#39;\xdcbernahme von Arzt- und/oder Medikamentenkosten&#39;)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">at</span><span class="o">.</span><span class="n">pharmacy_type</span>
+<span class="go">ClientContactType #1 (&#39;Apotheke&#39;)</span>
+</pre></div>
+</div>
+<p>There are 4 pharmacies altogether:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;robin&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="s1">&#39;clients.PartnersByClientContactType&#39;</span><span class="p">,</span> <span class="n">at</span><span class="o">.</span><span class="n">pharmacy_type</span><span class="p">)</span>
+<span class="go">=================================== ===== ==================================================================================</span>
+<span class="go"> Name                                ID    Ansicht als</span>
+<span class="go">----------------------------------- ----- ----------------------------------------------------------------------------------</span>
+<span class="go"> Apotheke Reul                       200   `Organisation &lt;Detail&gt;`__ [**❌**], **Partner**, Person [**➕**], Haushalt [**➕**]</span>
+<span class="go"> Apotheke Schunck                    201   `Organisation &lt;Detail&gt;`__ [**❌**], **Partner**, Person [**➕**], Haushalt [**➕**]</span>
+<span class="go"> Bosten-Bocken A                     203   `Organisation &lt;Detail&gt;`__ [**❌**], **Partner**, Person [**➕**], Haushalt [**➕**]</span>
+<span class="go"> Pharmacies Populaires de Verviers   202   `Organisation &lt;Detail&gt;`__ [**❌**], **Partner**, Person [**➕**], Haushalt [**➕**]</span>
+<span class="go">=================================== ===== ==================================================================================</span>
+</pre></div>
+</div>
+<p>There are two grantings with this aid type:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">aids</span><span class="o">.</span><span class="n">GrantingsByType</span><span class="p">,</span> <span class="n">at</span><span class="p">)</span>
+<span class="go">==================== ==================== ============== ========== ====</span>
+<span class="go"> Hilfebeschluss       Klient               Laufzeit von   bis        ID</span>
+<span class="go">-------------------- -------------------- -------------- ---------- ----</span>
+<span class="go"> *AMK/27.05.14/139*   JONAS Josef (139)    27.05.14       26.06.14   45</span>
+<span class="go"> *AMK/27.05.14/141*   KAIVERS Karl (141)   27.05.14       27.05.14   46</span>
+<span class="go">==================== ==================== ============== ========== ====</span>
+</pre></div>
+</div>
+<p>We will inspect the first granting from above table:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">granting</span> <span class="o">=</span> <span class="n">aids</span><span class="o">.</span><span class="n">Granting</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Usually there is at most one pharmacy among the client’s client contacts:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">clients</span><span class="o">.</span><span class="n">ContactsByClient</span><span class="p">,</span> <span class="n">granting</span><span class="o">.</span><span class="n">client</span><span class="p">)</span>
+<span class="go">==================== =============== =================== =============</span>
+<span class="go"> Klientenkontaktart   Organisation    Kontaktperson       Bemerkungen</span>
+<span class="go">-------------------- --------------- ------------------- -------------</span>
+<span class="go"> Apotheke             Apotheke Reul</span>
+<span class="go"> Arzt                                 Waltraud WALDMANN</span>
+<span class="go"> Hausarzt                             Werner WEHNICHT</span>
+<span class="go"> Zahnarzt                             Dr. Carmen CASTOU</span>
+<span class="go">==================== =============== =================== =============</span>
+</pre></div>
+</div>
+<p>There is only one pharmacy in above list, but in a confirmation I can manually
+choose any other pharmacy:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ContentType</span> <span class="o">=</span> <span class="n">rt</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">contenttypes</span><span class="o">.</span><span class="n">ContentType</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mt</span> <span class="o">=</span> <span class="n">ContentType</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get_for_model</span><span class="p">(</span><span class="n">rt</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">aids</span><span class="o">.</span><span class="n">Granting</span><span class="p">)</span><span class="o">.</span><span class="n">id</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;/choices/aids/RefundConfirmationsByGranting/pharmacy?mt=</span><span class="si">{0}</span><span class="s1">&amp;mk=</span><span class="si">{1}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">mt</span><span class="p">,</span> <span class="n">granting</span><span class="o">.</span><span class="n">id</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">response</span> <span class="o">=</span> <span class="n">test_client</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">REMOTE_USER</span><span class="o">=</span><span class="s2">&quot;rolf&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">result</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">content</span><span class="o">.</span><span class="n">decode</span><span class="p">())</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">result</span><span class="p">[</span><span class="s1">&#39;rows&#39;</span><span class="p">]:</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">])</span>
+<span class="go">&lt;br/&gt;</span>
+<span class="go">Apotheke Reul</span>
+<span class="go">Apotheke Schunck</span>
+<span class="go">Pharmacies Populaires de Verviers</span>
+<span class="go">Bosten-Bocken A</span>
+</pre></div>
+</div>
+</section>
+<section id="refund-confirmations">
+<h2><a class="toc-backref" href="#id10" role="doc-backlink">Refund confirmations</a><a class="headerlink" href="#refund-confirmations" title="Permalink to this heading">¶</a></h2>
+<p>Some example of how to view refund confirmations.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">cn</span> <span class="o">=</span> <span class="s2">&quot;id granting&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cn</span> <span class="o">+=</span> <span class="s2">&quot; granting__client granting__aid_type&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cn</span> <span class="o">+=</span> <span class="s2">&quot; start_date end_date&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1">#cn += &quot; pharmacy doctor&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">aids</span><span class="o">.</span><span class="n">RefundConfirmations</span><span class="p">,</span> <span class="n">column_names</span><span class="o">=</span><span class="n">cn</span><span class="p">)</span>
+<span class="go">==== ================== ====================== ================================================= ============= ==========</span>
+<span class="go"> ID   Hilfebeschluss     Klient                 Hilfeart                                          Periode vom   bis</span>
+<span class="go">---- ------------------ ---------------------- ------------------------------------------------- ------------- ----------</span>
+<span class="go"> 12   DMH/28.05.14/144   LAZARUS Line (144)     Dringende Medizinische Hilfe                      28.05.14      28.05.15</span>
+<span class="go"> 11   DMH/28.05.14/144   LAZARUS Line (144)     Dringende Medizinische Hilfe                      28.05.14      28.05.15</span>
+<span class="go"> 10   DMH/28.05.14/144   LAZARUS Line (144)     Dringende Medizinische Hilfe                      28.05.14      28.05.15</span>
+<span class="go"> 9    DMH/28.05.14/142   LAMBERTZ Guido (142)   Dringende Medizinische Hilfe                      28.05.14</span>
+<span class="go"> 8    DMH/28.05.14/142   LAMBERTZ Guido (142)   Dringende Medizinische Hilfe                      28.05.14</span>
+<span class="go"> 7    DMH/28.05.14/142   LAMBERTZ Guido (142)   Dringende Medizinische Hilfe                      28.05.14</span>
+<span class="go"> 6    AMK/27.05.14/141   KAIVERS Karl (141)     Übernahme von Arzt- und/oder Medikamentenkosten   27.05.14      27.05.14</span>
+<span class="go"> 5    AMK/27.05.14/141   KAIVERS Karl (141)     Übernahme von Arzt- und/oder Medikamentenkosten   27.05.14      27.05.14</span>
+<span class="go"> 4    AMK/27.05.14/141   KAIVERS Karl (141)     Übernahme von Arzt- und/oder Medikamentenkosten   27.05.14      27.05.14</span>
+<span class="go"> 3    AMK/27.05.14/139   JONAS Josef (139)      Übernahme von Arzt- und/oder Medikamentenkosten   27.05.14      26.06.14</span>
+<span class="go"> 2    AMK/27.05.14/139   JONAS Josef (139)      Übernahme von Arzt- und/oder Medikamentenkosten   27.05.14      26.06.14</span>
+<span class="go"> 1    AMK/27.05.14/139   JONAS Josef (139)      Übernahme von Arzt- und/oder Medikamentenkosten   27.05.14      26.06.14</span>
+<span class="go">==== ================== ====================== ================================================= ============= ==========</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">cn</span> <span class="o">=</span> <span class="s2">&quot;id client start_date end_date&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pv</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">client</span><span class="o">=</span><span class="n">pcsw</span><span class="o">.</span><span class="n">Client</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="mi">144</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">aids</span><span class="o">.</span><span class="n">RefundConfirmations</span><span class="p">,</span> <span class="n">column_names</span><span class="o">=</span><span class="n">cn</span><span class="p">,</span> <span class="n">param_values</span><span class="o">=</span><span class="n">pv</span><span class="p">)</span>
+<span class="go">==== ==================== ============= ==========</span>
+<span class="go"> ID   Klient               Periode vom   bis</span>
+<span class="go">---- -------------------- ------------- ----------</span>
+<span class="go"> 12   LAZARUS Line (144)   28.05.14      28.05.15</span>
+<span class="go"> 11   LAZARUS Line (144)   28.05.14      28.05.15</span>
+<span class="go"> 10   LAZARUS Line (144)   28.05.14      28.05.15</span>
+<span class="go">==== ==================== ============= ==========</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">cn</span> <span class="o">=</span> <span class="s2">&quot;id client start_date end_date&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pv</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">aid_type</span><span class="o">=</span><span class="n">aids</span><span class="o">.</span><span class="n">AidType</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="mi">7</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">aids</span><span class="o">.</span><span class="n">RefundConfirmations</span><span class="p">,</span> <span class="n">column_names</span><span class="o">=</span><span class="n">cn</span><span class="p">,</span> <span class="n">param_values</span><span class="o">=</span><span class="n">pv</span><span class="p">)</span>
+<span class="go">==== ====================== ============= ==========</span>
+<span class="go"> ID   Klient                 Periode vom   bis</span>
+<span class="go">---- ---------------------- ------------- ----------</span>
+<span class="go"> 12   LAZARUS Line (144)     28.05.14      28.05.15</span>
+<span class="go"> 11   LAZARUS Line (144)     28.05.14      28.05.15</span>
+<span class="go"> 10   LAZARUS Line (144)     28.05.14      28.05.15</span>
+<span class="go"> 9    LAMBERTZ Guido (142)   28.05.14</span>
+<span class="go"> 8    LAMBERTZ Guido (142)   28.05.14</span>
+<span class="go"> 7    LAMBERTZ Guido (142)   28.05.14</span>
+<span class="go">==== ====================== ============= ==========</span>
+</pre></div>
+</div>
+</section>
+<section id="number-of-children-and-adults-in-household">
+<h2><a class="toc-backref" href="#id11" role="doc-backlink">Number of children and adults in household</a><a class="headerlink" href="#number-of-children-and-adults-in-household" title="Permalink to this heading">¶</a></h2>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">cn</span> <span class="o">=</span> <span class="s2">&quot;id client start_date end_date num_adults num_children&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1">#rt.show(aids.RefundConfirmations, column_names=cn)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1">#rt.show(aids.SimpleConfirmations, column_names=cn)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1">#rt.show(aids.IncomeConfirmations, column_names=cn)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pv</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">client</span><span class="o">=</span><span class="n">pcsw</span><span class="o">.</span><span class="n">Client</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="mi">181</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">aids</span><span class="o">.</span><span class="n">IncomeConfirmations</span><span class="p">,</span> <span class="n">column_names</span><span class="o">=</span><span class="n">cn</span><span class="p">,</span> <span class="n">param_values</span><span class="o">=</span><span class="n">pv</span><span class="p">)</span>
+<span class="go">==== ======================== ============= ===== ============ ========</span>
+<span class="go"> ID   Klient                   Periode vom   bis   Erwachsene   Kinder</span>
+<span class="go">---- ------------------------ ------------- ----- ------------ --------</span>
+<span class="go"> 51   JEANÉMART Jérôme (181)   20.03.14            2            0</span>
+<span class="go"> 50   JEANÉMART Jérôme (181)   20.03.14            2            0</span>
+<span class="go"> 49   JEANÉMART Jérôme (181)   11.05.13            2            0</span>
+<span class="go">                                                   **6**        **0**</span>
+<span class="go">==== ======================== ============= ===== ============ ========</span>
+</pre></div>
+</div>
+</section>
+<section id="creating-a-doctor">
+<h2><a class="toc-backref" href="#id12" role="doc-backlink">Creating a doctor</a><a class="headerlink" href="#creating-a-doctor" title="Permalink to this heading">¶</a></h2>
+<p>Here we try to insert a <cite>RefundConfirmation</cite>, specifying a new doctor
+in the <cite>doctor</cite> combobox, and leaving the doctor_type empty.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;/api/aids/RefundConfirmationsByGranting&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="n">mt</span><span class="o">=</span><span class="mi">119</span><span class="p">,</span> <span class="n">mk</span><span class="o">=</span><span class="mi">38</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">rp</span><span class="o">=</span><span class="s2">&quot;ext-comp-3054&quot;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">an</span><span class="o">=</span><span class="s2">&quot;submit_insert&quot;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">start_date</span><span class="o">=</span><span class="s2">&quot;27.05.2014&quot;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">end_date</span><span class="o">=</span><span class="s2">&quot;27.05.2014&quot;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">doctor_typeHidden</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">doctor_type</span><span class="o">=</span><span class="s2">&quot;Select a Client Contact type...&quot;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">doctorHidden</span><span class="o">=</span><span class="s2">&quot;Dr. Bean&quot;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">doctor</span><span class="o">=</span><span class="s2">&quot;Dr. Bean&quot;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">pharmacyHidden</span><span class="o">=</span><span class="mi">209</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">pharmacy</span><span class="o">=</span><span class="s2">&quot;Apotheke Schunck (209)&quot;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">companyHidden</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">company</span><span class="o">=</span><span class="s2">&quot;Select a Organisation...&quot;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">contact_personHidden</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">contact_person</span><span class="o">=</span><span class="s2">&quot;Select a Person...&quot;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">languageHidden</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">language</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">remark</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">result</span> <span class="o">=</span> <span class="n">post_json_dict</span><span class="p">(</span><span class="s1">&#39;rolf&#39;</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">result</span><span class="o">.</span><span class="n">success</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">message</span><span class="p">)</span>
+<span class="go">Arzt : Kann keinen neuen Arzt erstellen, wenn Art des Arztes leer ist</span>
+</pre></div>
+</div>
+</section>
+<section id="the-period-covered-by-a-confirmation">
+<h2><a class="toc-backref" href="#id13" role="doc-backlink">The period covered by a confirmation</a><a class="headerlink" href="#the-period-covered-by-a-confirmation" title="Permalink to this heading">¶</a></h2>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino.utils.format_date</span> <span class="kn">import</span> <span class="n">fdl</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">dd</span><span class="o">.</span><span class="n">fdl</span><span class="p">(</span><span class="n">dd</span><span class="o">.</span><span class="n">today</span><span class="p">()))</span>
+<span class="go">22. Mai 2014</span>
+</pre></div>
+</div>
+<p>We define a utility function:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">start_date</span><span class="p">,</span> <span class="n">end_date</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="k">if</span> <span class="n">end_date</span><span class="p">:</span> <span class="n">end_date</span> <span class="o">=</span> <span class="n">i2d</span><span class="p">(</span><span class="n">end_date</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="k">if</span> <span class="n">start_date</span><span class="p">:</span> <span class="n">start_date</span> <span class="o">=</span> <span class="n">i2d</span><span class="p">(</span><span class="n">start_date</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="n">p</span> <span class="o">=</span> <span class="n">aids</span><span class="o">.</span><span class="n">IncomeConfirmation</span><span class="p">(</span>
+<span class="gp">... </span>        <span class="n">start_date</span><span class="o">=</span><span class="n">start_date</span><span class="p">,</span> <span class="n">end_date</span><span class="o">=</span><span class="n">end_date</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="k">for</span> <span class="n">lang</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;en&#39;</span><span class="p">,</span> <span class="s1">&#39;de&#39;</span><span class="p">,</span> <span class="s1">&#39;fr&#39;</span><span class="p">):</span>
+<span class="gp">... </span>        <span class="k">with</span> <span class="n">translation</span><span class="o">.</span><span class="n">override</span><span class="p">(</span><span class="n">lang</span><span class="p">):</span>
+<span class="gp">... </span>            <span class="nb">print</span><span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">get_period_text</span><span class="p">())</span>
+</pre></div>
+</div>
+<p>A <strong>single day</strong>:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">f</span><span class="p">(</span><span class="mi">20140522</span><span class="p">,</span> <span class="mi">20140522</span><span class="p">)</span>
+<span class="go">on 22 May 2014</span>
+<span class="go">am 22. Mai 2014</span>
+<span class="go">le 22 mai 2014</span>
+</pre></div>
+</div>
+<p>A <strong>fully defined</strong> date range:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">f</span><span class="p">(</span><span class="mi">20140522</span><span class="p">,</span> <span class="mi">20140621</span><span class="p">)</span>
+<span class="go">between 22 May 2014 and 21 June 2014</span>
+<span class="go">vom 22. Mai 2014 bis zum 21. Juni 2014</span>
+<span class="go">entre le 22 mai 2014 et le 21 juin 2014</span>
+</pre></div>
+</div>
+<p>The text of a date range <strong>with open end</strong> can differ depending on whether
+it is in the future or in the past.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">f</span><span class="p">(</span><span class="mi">20140522</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+<span class="go">from 22 May 2014</span>
+<span class="go">seit dem 22. Mai 2014</span>
+<span class="go">depuis le 22 mai 2014</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">f</span><span class="p">(</span><span class="mi">20140523</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+<span class="go">from 23 May 2014</span>
+<span class="go">ab dem 23. Mai 2014</span>
+<span class="go">à partir du 23 mai 2014</span>
+</pre></div>
+</div>
+<p>No start date:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">f</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="mi">20140501</span><span class="p">)</span>
+<span class="go">until 1 May 2014</span>
+<span class="go">bis zum 1. Mai 2014</span>
+<span class="go">jusqu&#39;au 1 mai 2014</span>
+</pre></div>
+</div>
+<p>Neither start nor end:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">f</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+
+
+</pre></div>
+</div>
+</section>
+<section id="confirmationsbygranting">
+<h2><a class="toc-backref" href="#id14" role="doc-backlink">ConfirmationsByGranting</a><a class="headerlink" href="#confirmationsbygranting" title="Permalink to this heading">¶</a></h2>
+<p>The detail of a Granting shows a list of the confirmations which have
+been issued for this granting.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">obj</span> <span class="o">=</span> <span class="n">aids</span><span class="o">.</span><span class="n">Granting</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="n">mk</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">aids</span><span class="o">.</span><span class="n">ConfirmationsByGranting</span><span class="p">,</span> <span class="n">obj</span><span class="p">,</span> <span class="n">column_names</span><span class="o">=</span><span class="s2">&quot;detail_link user signer printed&quot;</span><span class="p">)</span>
+<span class="go">======================= ================ ================ =============</span>
+<span class="go"> Bestätigung             Autor            Bestätiger       Ausgedruckt</span>
+<span class="go">----------------------- ---------------- ---------------- -------------</span>
+<span class="go"> *EiEi/13.10.12/124/4*   Judith Jousten   Mélanie Mélard</span>
+<span class="go">======================= ================ ================ =============</span>
+</pre></div>
+</div>
+<p>The above was written to reproduce <a class="reference external" href="https://jane.mylino.net/#/api/tickets/PublicTickets/685">#685</a>.</p>
+<p>The board field of a granting has a chooser which takes an argument of type
+date.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">show_choices</span><span class="p">(</span><span class="s1">&#39;rolf&#39;</span><span class="p">,</span> <span class="s1">&#39;/choices/aids/GrantingsByClient/board?decision_date=&#39;</span><span class="p">)</span>
+<span class="go">&lt;br/&gt;</span>
+<span class="go">Sozialhilferat (SHR)</span>
+<span class="go">Sozialhilfeausschuss (SAS)</span>
+<span class="go">Ständiges Präsidium (SP)</span>
+</pre></div>
+</div>
+</section>
+<section id="categories">
+<h2><a class="toc-backref" href="#id15" role="doc-backlink">Categories</a><a class="headerlink" href="#categories" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.aids.Category">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.aids.</span></span><span class="sig-name descname"><span class="pre">Category</span></span><a class="headerlink" href="#lino_welfare.modlib.aids.Category" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.aids.Categories">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.aids.</span></span><span class="sig-name descname"><span class="pre">Categories</span></span><a class="headerlink" href="#lino_welfare.modlib.aids.Categories" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="inspecting-a-formlayout-and-its-javascript">
+<span id="welfare-specs-20150219"></span><h2><a class="toc-backref" href="#id16" role="doc-backlink">Inspecting a FormLayout and its JavaScript</a><a class="headerlink" href="#inspecting-a-formlayout-and-its-javascript" title="Permalink to this heading">¶</a></h2>
+<p>On <a class="reference external" href="https://luc.lino-framework.org/blog/2015/0219.html">2015-02-19</a> I discovered a layout problem in the insert
+window of <code class="xref py py-class docutils literal notranslate"><span class="pre">aids.IncomeConfirmationsByGranting</span></code>: all
+form fields except <cite>remark</cite> were hidden.  The problem was a side
+effect of the new feature “hidden form fields” introduced some days
+earlier (<a class="reference external" href="https://luc.lino-framework.org/blog/2015/0217.html">2015-02-17</a>).</p>
+<p>This section helped me to understand the problem, it also verifies
+that the problem is now solved, and maybe it has some pedagogical
+value.</p>
+<p>Open the detail window (tab panel “Aids”) on Client 116.  We know that
+this client has four grantings:</p>
+<a class="reference internal image-reference" href="../../_images/0219a.png"><img alt="../../_images/0219a.png" src="../../_images/0219a.png" style="width: 536.5px; height: 351.0px;" /></a>
+<p>Clicking on the “Create confirmation” should show the window on the left,
+but currently it shows the window on the right:</p>
+<a class="reference internal image-reference" href="../../_images/0219b.png"><img alt="../../_images/0219b.png" src="../../_images/0219b.png" style="width: 321.9px; height: 210.6px;" /></a>
+<a class="reference internal image-reference" href="../../_images/0219c.png"><img alt="../../_images/0219c.png" src="../../_images/0219c.png" style="width: 321.9px; height: 210.6px;" /></a>
+<p>Some preliminary tests, just to see whether we are at the right place:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">obj</span> <span class="o">=</span> <span class="n">pcsw</span><span class="o">.</span><span class="n">Client</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">116</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">obj</span>
+<span class="go">Client #116 (&#39;AUSDEMWALD Alfons (116)&#39;)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;robin&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">aids</span><span class="o">.</span><span class="n">GrantingsByClient</span><span class="p">,</span> <span class="n">obj</span><span class="p">,</span> <span class="n">language</span><span class="o">=</span><span class="s2">&quot;en&quot;</span><span class="p">)</span>
+<span class="go">=============================================== ============== ======= ================= ======================== =================== =========================</span>
+<span class="go"> Aid granting                                    Applies from   until   Signer            Workflow                 Board               Actions</span>
+<span class="go">----------------------------------------------- -------------- ------- ----------------- ------------------------ ------------------- -------------------------</span>
+<span class="go"> `EiEi/22/05/2014/116 &lt;Detail&gt;`__                22/05/2014             Caroline Carnol   [Sign] **Unconfirmed**   Social Board (SB)   **Create confirmation**</span>
+<span class="go"> `Ausländerbeihilfe/08/08/2013/116 &lt;Detail&gt;`__   08/08/2013             Caroline Carnol   [Sign] **Unconfirmed**                       **Create confirmation**</span>
+<span class="go"> `EiEi/29/09/2012/116 &lt;Detail&gt;`__                29/09/2012             Caroline Carnol   [Sign] **Unconfirmed**                       **Create confirmation**</span>
+<span class="go">=============================================== ============== ======= ================= ======================== =================== =========================</span>
+</pre></div>
+</div>
+<p>Let’s have a closer look the <cite>insert_layout</cite> in question.</p>
+<p><code class="xref py py-attr docutils literal notranslate"><span class="pre">lino_welfare.modlib.aids.models.IncomeConfirmationsByGranting</span></code></p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">layout</span> <span class="o">=</span> <span class="n">aids</span><span class="o">.</span><span class="n">IncomeConfirmationsByGranting</span><span class="o">.</span><span class="n">insert_layout</span>
+</pre></div>
+</div>
+<p>Yes it is a <code class="xref py py-class docutils literal notranslate"><span class="pre">lino.core.layouts.InsertLayout</span></code>:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">layout</span><span class="o">.</span><span class="vm">__class__</span>
+<span class="go">&lt;class &#39;lino.core.layouts.InsertLayout&#39;&gt;</span>
+</pre></div>
+</div>
+<p>And its <cite>hidden_elements</cite> has only those fields which I actually want
+to be hidden:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="n">layout</span><span class="o">.</span><span class="n">hidden_elements</span><span class="p">)</span> 
+<span class="go">[&#39;granting&#39;, &#39;client&#39;]</span>
+</pre></div>
+</div>
+<p>The main panel is as we designed it:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">layout</span><span class="o">.</span><span class="n">main</span><span class="p">)</span>
+
+<span class="go">    client granting:25</span>
+<span class="go">    start_date end_date</span>
+<span class="go">    category amount</span>
+<span class="go">    company contact_person language</span>
+<span class="go">    remark</span>
+</pre></div>
+</div>
+<p>Let’s look at the LayoutHandle (i.e. version of the Layout which has
+been “compiled” for a given front end, in our case
+<a class="reference external" href="https://dev.lino-framework.org/api/lino.modlib.extjs.html#module-lino.modlib.extjs" title="(in Lino Developer Guide v20.1)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">lino.modlib.extjs</span></code></a>).</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">lh</span> <span class="o">=</span> <span class="n">layout</span><span class="o">.</span><span class="n">get_layout_handle</span><span class="p">(</span><span class="n">dd</span><span class="o">.</span><span class="n">plugins</span><span class="o">.</span><span class="n">extjs</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">lh</span><span class="p">)</span>
+<span class="go">LayoutHandle for lino.core.layouts.InsertLayout on lino_welfare.modlib.aids.models.IncomeConfirmationsByGranting</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">lh</span><span class="o">.</span><span class="n">main</span><span class="o">.</span><span class="vm">__class__</span>
+<span class="go">&lt;class &#39;lino.core.elems.DetailMainPanel&#39;&gt;</span>
+</pre></div>
+</div>
+<p>The <a class="reference external" href="https://dev.lino-framework.org/api/lino.core.elems.html#module-lino.core.elems" title="(in Lino Developer Guide v20.1)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">lino.core.elems</span></code></a> module contains “Layout Elements” or
+“Widgets”. The only purpose of these objects is to generate
+Javascript.  They are ExtJS (version 3) specific.</p>
+<p>They all inherit from <a class="reference external" href="https://dev.lino-framework.org/api/lino.utils.jsgen.html#lino.utils.jsgen.Component" title="(in Lino Developer Guide v20.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">lino.utils.jsgen.Component</span></code></a>, which is
+part of <a class="reference external" href="https://dev.lino-framework.org/api/lino.utils.jsgen.html#module-lino.utils.jsgen" title="(in Lino Developer Guide v20.1)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">lino.utils.jsgen</span></code></a>, which is a general framework for
+generating Javascript.</p>
+<p>It uses functions like
+<code class="xref py py-func docutils literal notranslate"><span class="pre">with_user_profile</span></code>,
+<a class="reference external" href="https://dev.lino-framework.org/api/lino.utils.jsgen.html#lino.utils.jsgen.declare_vars" title="(in Lino Developer Guide v20.1)"><code class="xref py py-func docutils literal notranslate"><span class="pre">declare_vars</span></code></a> and
+<a class="reference external" href="https://dev.lino-framework.org/api/lino.utils.jsgen.html#lino.utils.jsgen.py2js" title="(in Lino Developer Guide v20.1)"><code class="xref py py-func docutils literal notranslate"><span class="pre">py2js</span></code></a>.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino.utils.jsgen</span> <span class="kn">import</span> <span class="n">py2js</span><span class="p">,</span> <span class="n">declare_vars</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino.utils.jsgen</span> <span class="kn">import</span> <span class="n">with_user_profile</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span> <span class="o">=</span> <span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s2">&quot;robin&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>And we must activate a language:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">translation</span><span class="o">.</span><span class="n">activate</span><span class="p">(</span><span class="s1">&#39;en&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Now we can call <a class="reference external" href="https://dev.lino-framework.org/api/lino.utils.jsgen.html#lino.utils.jsgen.declare_vars" title="(in Lino Developer Guide v20.1)"><code class="xref py py-func docutils literal notranslate"><span class="pre">declare_vars</span></code></a>
+who will yield us a series of lines of javascript code.  These lines
+declare the variables used to define the main panel.</p>
+<p>When rendering any Javascript, Lino must know the user user_type for
+which we want it:</p>
+<p>Here is the Javascript generated <em>before</em> the change (the following
+snippet has <cite>+SKIP</cite> specified which means that it is <strong>not</strong> being
+tested:</p>
+<p>&gt;&gt; # lines = with_user_profile(ses.user.user_type, declare_vars, lh.main)
+&gt;&gt; js = ‘n’.join(lines)
+&gt;&gt; print(js)</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">ses</span><span class="o">.</span><span class="n">user</span><span class="o">.</span><span class="n">user_type</span><span class="o">.</span><span class="n">context</span><span class="p">():</span>
+<span class="gp">... </span>    <span class="k">for</span> <span class="n">ln</span> <span class="ow">in</span> <span class="n">declare_vars</span><span class="p">(</span><span class="n">lh</span><span class="o">.</span><span class="n">main</span><span class="p">):</span>
+<span class="gp">... </span>        <span class="nb">print</span><span class="p">(</span><span class="n">ln</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">var client91 = new Lino.TwinCombo({ &quot;preferred_width&quot;: 20, &quot;autoHeight&quot;: true, &quot;fieldLabel&quot;: &quot;Client&quot;, &quot;allowBlank&quot;: false, &quot;pageSize&quot;: 20, &quot;onTrigger2Click&quot;: function(e){ Lino.show_fk_detail(this,Lino.pcsw.Clients.detail,Lino.pcsw.Clients.insert)}, &quot;emptyText&quot;: &quot;Select a Client...&quot;, &quot;listeners&quot;: { &quot;render&quot;: Lino.quicktip_renderer(&quot;Client&quot;,&quot;(aids.IncomeConfirmationsByGranting.client) &quot;) }, &quot;selectOnFocus&quot;: true, &quot;hidden&quot;: true, &quot;hiddenName&quot;: &quot;clientHidden&quot;, &quot;anchor&quot;: &quot;-20&quot;, &quot;store&quot;: new Lino.ComplexRemoteComboStore({ &quot;proxy&quot;: new Ext.data.HttpProxy({ &quot;url&quot;: &quot;/choices/aids/IncomeConfirmationsByGranting/client&quot;, &quot;method&quot;: &quot;GET&quot; }) }), &quot;name&quot;: &quot;client&quot; });</span>
+<span class="go">var granting92 = new Lino.TwinCombo({ &quot;autoHeight&quot;: true, &quot;fieldLabel&quot;: &quot;Aid granting&quot;, &quot;name&quot;: &quot;granting&quot;, &quot;pageSize&quot;: 20, &quot;onTrigger2Click&quot;: function(e){ Lino.show_fk_detail(this,Lino.aids.GrantingsByX.detail,Lino.aids.GrantingsByX.insert)}, &quot;emptyText&quot;: &quot;Select a Aid granting...&quot;, &quot;listeners&quot;: { &quot;render&quot;: Lino.quicktip_renderer(&quot;Aid granting&quot;,&quot;(aids.IncomeConfirmationsByGranting.granting) &quot;) }, &quot;selectOnFocus&quot;: true, &quot;hidden&quot;: true, &quot;hiddenName&quot;: &quot;grantingHidden&quot;, &quot;anchor&quot;: &quot;-20&quot;, &quot;store&quot;: new Lino.ComplexRemoteComboStore({ &quot;proxy&quot;: new Ext.data.HttpProxy({ &quot;url&quot;: &quot;/choices/aids/IncomeConfirmationsByGranting/granting&quot;, &quot;method&quot;: &quot;GET&quot; }) }) });</span>
+<span class="go">var main_1_panel93 = new Ext.Panel({ &quot;autoScroll&quot;: false, &quot;autoHeight&quot;: true, &quot;border&quot;: false, &quot;layout&quot;: &quot;hbox&quot;, &quot;labelWidth&quot;: 117, &quot;hideCheckBoxLabels&quot;: true, &quot;items&quot;: [ { &quot;flex&quot;: 44, &quot;autoHeight&quot;: true, &quot;layout&quot;: &quot;form&quot;, &quot;xtype&quot;: &quot;panel&quot;, &quot;items&quot;: client91, &quot;labelAlign&quot;: &quot;top&quot; }, { &quot;flex&quot;: 55, &quot;autoHeight&quot;: true, &quot;layout&quot;: &quot;form&quot;, &quot;xtype&quot;: &quot;panel&quot;, &quot;items&quot;: granting92, &quot;labelAlign&quot;: &quot;top&quot; } ], &quot;frame&quot;: false, &quot;layoutConfig&quot;: { &quot;align&quot;: &quot;stretchmax&quot; }, &quot;labelAlign&quot;: &quot;top&quot; });</span>
+<span class="go">var start_date96 = new Lino.DateField({ &quot;autoHeight&quot;: true, &quot;fieldLabel&quot;: &quot;Period from&quot;, &quot;name&quot;: &quot;start_date&quot;, &quot;selectOnFocus&quot;: true, &quot;listeners&quot;: { &quot;render&quot;: Lino.quicktip_renderer(&quot;Period from&quot;,&quot;(aids.IncomeConfirmationsByGranting.start_date) &quot;) }, &quot;anchor&quot;: &quot;-20&quot; });</span>
+<span class="go">var end_date97 = new Lino.DateField({ &quot;autoHeight&quot;: true, &quot;fieldLabel&quot;: &quot;until&quot;, &quot;name&quot;: &quot;end_date&quot;, &quot;selectOnFocus&quot;: true, &quot;listeners&quot;: { &quot;render&quot;: Lino.quicktip_renderer(&quot;until&quot;,&quot;(aids.IncomeConfirmationsByGranting.end_date) &quot;) }, &quot;anchor&quot;: &quot;-20&quot; });</span>
+<span class="go">var main_2_panel98 = new Ext.Panel({ &quot;autoScroll&quot;: false, &quot;autoHeight&quot;: true, &quot;border&quot;: false, &quot;layout&quot;: &quot;hbox&quot;, &quot;labelWidth&quot;: 108, &quot;hideCheckBoxLabels&quot;: true, &quot;items&quot;: [ { &quot;flex&quot;: 50, &quot;autoHeight&quot;: true, &quot;layout&quot;: &quot;form&quot;, &quot;xtype&quot;: &quot;panel&quot;, &quot;items&quot;: start_date96, &quot;labelAlign&quot;: &quot;top&quot; }, { &quot;flex&quot;: 50, &quot;autoHeight&quot;: true, &quot;layout&quot;: &quot;form&quot;, &quot;xtype&quot;: &quot;panel&quot;, &quot;items&quot;: end_date97, &quot;labelAlign&quot;: &quot;top&quot; } ], &quot;frame&quot;: false, &quot;layoutConfig&quot;: { &quot;align&quot;: &quot;stretchmax&quot; }, &quot;labelAlign&quot;: &quot;top&quot; });</span>
+<span class="go">var category101 = new Lino.TwinCombo({ &quot;autoHeight&quot;: true, &quot;fieldLabel&quot;: &quot;Category&quot;, &quot;name&quot;: &quot;category&quot;, &quot;pageSize&quot;: 20, &quot;onTrigger2Click&quot;: function(e){ Lino.show_fk_detail(this,Lino.aids.Categories.detail,Lino.aids.Categories.insert)}, &quot;emptyText&quot;: &quot;Select a Category...&quot;, &quot;listeners&quot;: { &quot;render&quot;: Lino.quicktip_renderer(&quot;Category&quot;,&quot;(aids.IncomeConfirmationsByGranting.category) &quot;) }, &quot;selectOnFocus&quot;: true, &quot;hiddenName&quot;: &quot;categoryHidden&quot;, &quot;anchor&quot;: &quot;-20&quot;, &quot;store&quot;: new Lino.ComplexRemoteComboStore({ &quot;proxy&quot;: new Ext.data.HttpProxy({ &quot;url&quot;: &quot;/choices/aids/IncomeConfirmationsByGranting/category&quot;, &quot;method&quot;: &quot;GET&quot; }) }) });</span>
+<span class="go">var amount102 = new Ext.form.NumberField({ &quot;autoHeight&quot;: true, &quot;decimalPrecision&quot;: 2, &quot;fieldLabel&quot;: &quot;Amount&quot;, &quot;name&quot;: &quot;amount&quot;, &quot;decimalSeparator&quot;: &quot;,&quot;, &quot;listeners&quot;: { &quot;render&quot;: Lino.quicktip_renderer(&quot;Amount&quot;,&quot;(aids.IncomeConfirmationsByGranting.amount) &quot;) }, &quot;selectOnFocus&quot;: true, &quot;anchor&quot;: &quot;-20&quot;, &quot;allowBlank&quot;: true });</span>
+<span class="go">var main_3_panel103 = new Ext.Panel({ &quot;autoScroll&quot;: false, &quot;autoHeight&quot;: true, &quot;border&quot;: false, &quot;layout&quot;: &quot;hbox&quot;, &quot;labelWidth&quot;: 81, &quot;hideCheckBoxLabels&quot;: true, &quot;items&quot;: [ { &quot;flex&quot;: 62, &quot;autoHeight&quot;: true, &quot;layout&quot;: &quot;form&quot;, &quot;xtype&quot;: &quot;panel&quot;, &quot;items&quot;: category101, &quot;labelAlign&quot;: &quot;top&quot; }, { &quot;flex&quot;: 37, &quot;autoHeight&quot;: true, &quot;layout&quot;: &quot;form&quot;, &quot;xtype&quot;: &quot;panel&quot;, &quot;items&quot;: amount102, &quot;labelAlign&quot;: &quot;top&quot; } ], &quot;frame&quot;: false, &quot;layoutConfig&quot;: { &quot;align&quot;: &quot;stretchmax&quot; }, &quot;labelAlign&quot;: &quot;top&quot; });</span>
+<span class="go">var company106 = new Lino.TwinCombo({ &quot;preferred_width&quot;: 20, &quot;autoHeight&quot;: true, &quot;fieldLabel&quot;: &quot;Recipient (Organization)&quot;, &quot;name&quot;: &quot;company&quot;, &quot;pageSize&quot;: 20, &quot;onTrigger2Click&quot;: function(e){ Lino.show_fk_detail(this,Lino.contacts.Companies.detail,Lino.contacts.Companies.insert)}, &quot;hiddenName&quot;: &quot;companyHidden&quot;, &quot;listeners&quot;: { &quot;render&quot;: Lino.quicktip_renderer(&quot;Recipient (Organization)&quot;,&quot;(aids.IncomeConfirmationsByGranting.company) &quot;) }, &quot;selectOnFocus&quot;: true, &quot;emptyText&quot;: &quot;Select a Organisation...&quot;, &quot;anchor&quot;: &quot;-20&quot;, &quot;store&quot;: new Lino.ComplexRemoteComboStore({ &quot;proxy&quot;: new Ext.data.HttpProxy({ &quot;url&quot;: &quot;/choices/aids/IncomeConfirmationsByGranting/company&quot;, &quot;method&quot;: &quot;GET&quot; }) }) });</span>
+<span class="go">var contact_person107 = new Lino.TwinCombo({ &quot;preferred_width&quot;: 20, &quot;autoHeight&quot;: true, &quot;fieldLabel&quot;: &quot;Recipient (Person)&quot;, &quot;name&quot;: &quot;contact_person&quot;, &quot;pageSize&quot;: 20, &quot;onTrigger2Click&quot;: function(e){ Lino.show_fk_detail(this,Lino.contacts.Persons.detail,Lino.contacts.Persons.insert)}, &quot;hiddenName&quot;: &quot;contact_personHidden&quot;, &quot;listeners&quot;: { &quot;render&quot;: Lino.quicktip_renderer(&quot;Recipient (Person)&quot;,&quot;(aids.IncomeConfirmationsByGranting.contact_person) &quot;) }, &quot;selectOnFocus&quot;: true, &quot;emptyText&quot;: &quot;Select a Person...&quot;, &quot;anchor&quot;: &quot;-20&quot;, &quot;store&quot;: new Lino.ComplexRemoteComboStore({ &quot;proxy&quot;: new Ext.data.HttpProxy({ &quot;url&quot;: &quot;/choices/aids/IncomeConfirmationsByGranting/contact_person&quot;, &quot;method&quot;: &quot;GET&quot; }) }) });</span>
+<span class="go">var main_4_panel108 = new Ext.Panel({ &quot;autoScroll&quot;: false, &quot;autoHeight&quot;: true, &quot;border&quot;: false, &quot;layout&quot;: &quot;hbox&quot;, &quot;labelWidth&quot;: 225, &quot;hideCheckBoxLabels&quot;: true, &quot;items&quot;: [ { &quot;flex&quot;: 50, &quot;autoHeight&quot;: true, &quot;layout&quot;: &quot;form&quot;, &quot;xtype&quot;: &quot;panel&quot;, &quot;items&quot;: company106, &quot;labelAlign&quot;: &quot;top&quot; }, { &quot;flex&quot;: 50, &quot;autoHeight&quot;: true, &quot;layout&quot;: &quot;form&quot;, &quot;xtype&quot;: &quot;panel&quot;, &quot;items&quot;: contact_person107, &quot;labelAlign&quot;: &quot;top&quot; } ], &quot;frame&quot;: false, &quot;layoutConfig&quot;: { &quot;align&quot;: &quot;stretchmax&quot; }, &quot;labelAlign&quot;: &quot;top&quot; });</span>
+<span class="go">var remark111 = new Lino.RichTextPanel({ &quot;selectOnFocus&quot;: true, &quot;flex&quot;: 55, &quot;containing_panel&quot;: this, &quot;name&quot;: &quot;remark&quot;, &quot;title&quot;: &quot;Remark&quot; });</span>
+<span class="go">var main_panel112 = new Ext.Panel({ &quot;autoScroll&quot;: false, &quot;border&quot;: false, &quot;layout&quot;: &quot;vbox&quot;, &quot;labelWidth&quot;: 0, &quot;hideCheckBoxLabels&quot;: true, &quot;items&quot;: [ main_1_panel93, main_2_panel98, main_3_panel103, main_4_panel108, remark111 ], &quot;frame&quot;: true, &quot;layoutConfig&quot;: { &quot;align&quot;: &quot;stretch&quot; }, &quot;bodyBorder&quot;: false, &quot;labelAlign&quot;: &quot;top&quot; });</span>
+</pre></div>
+</div>
+<p>This structure caused the ExtJS layout manager to produce unexpected
+behaviour because the horizontal panel for the two fields <cite>client</cite> and
+<cite>granting</cite> is not hidden.  In that case the panel must also be hidden.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">ses</span><span class="o">.</span><span class="n">user</span><span class="o">.</span><span class="n">user_type</span><span class="o">.</span><span class="n">context</span><span class="p">():</span>
+<span class="gp">... </span>    <span class="k">for</span> <span class="n">ln</span> <span class="ow">in</span> <span class="n">declare_vars</span><span class="p">(</span><span class="n">lh</span><span class="o">.</span><span class="n">main</span><span class="p">):</span>
+<span class="gp">... </span>        <span class="nb">print</span><span class="p">(</span><span class="n">ln</span><span class="p">)</span>
+<span class="gp">... </span>
+<span class="go">var client228 = new Lino.TwinCombo({ &quot;preferred_width&quot;: 20, &quot;autoHeight&quot;: true, &quot;fieldLabel&quot;: &quot;Client&quot;, &quot;allowBlank&quot;: false, &quot;pageSize&quot;: 20, &quot;onTrigger2Click&quot;: function(e){ Lino.show_fk_detail(this,Lino.pcsw.Clients.detail,Lino.pcsw.Clients.insert)}, &quot;emptyText&quot;: &quot;Select a Client...&quot;, &quot;listeners&quot;: { &quot;render&quot;: Lino.quicktip_renderer(&quot;Client&quot;,&quot;(aids.IncomeConfirmationsByGranting.client) &quot;) }, &quot;selectOnFocus&quot;: true, &quot;hidden&quot;: true, &quot;hiddenName&quot;: &quot;clientHidden&quot;, &quot;anchor&quot;: &quot;-20&quot;, &quot;store&quot;: new Lino.ComplexRemoteComboStore({ &quot;proxy&quot;: new Ext.data.HttpProxy({ &quot;url&quot;: &quot;/choices/aids/IncomeConfirmationsByGranting/client&quot;, &quot;method&quot;: &quot;GET&quot; }) }), &quot;name&quot;: &quot;client&quot; });</span>
+<span class="go">var granting229 = new Lino.TwinCombo({ &quot;autoHeight&quot;: true, &quot;fieldLabel&quot;: &quot;Aid granting&quot;, &quot;name&quot;: &quot;granting&quot;, &quot;pageSize&quot;: 20, &quot;onTrigger2Click&quot;: function(e){ Lino.show_fk_detail(this,Lino.aids.GrantingsByX.detail,Lino.aids.GrantingsByX.insert)}, &quot;emptyText&quot;: &quot;Select a Aid granting...&quot;, &quot;listeners&quot;: { &quot;render&quot;: Lino.quicktip_renderer(&quot;Aid granting&quot;,&quot;(aids.IncomeConfirmationsByGranting.granting) &quot;) }, &quot;selectOnFocus&quot;: true, &quot;hidden&quot;: true, &quot;hiddenName&quot;: &quot;grantingHidden&quot;, &quot;anchor&quot;: &quot;-20&quot;, &quot;store&quot;: new Lino.ComplexRemoteComboStore({ &quot;proxy&quot;: new Ext.data.HttpProxy({ &quot;url&quot;: &quot;/choices/aids/IncomeConfirmationsByGranting/granting&quot;, &quot;method&quot;: &quot;GET&quot; }) }) });</span>
+<span class="go">var main_1_panel230 = new Ext.Panel({ &quot;autoHeight&quot;: true, &quot;layout&quot;: &quot;hbox&quot;, &quot;items&quot;: [ { &quot;flex&quot;: 44, &quot;autoHeight&quot;: true, &quot;layout&quot;: &quot;form&quot;, &quot;xtype&quot;: &quot;panel&quot;, &quot;items&quot;: client228, &quot;labelAlign&quot;: &quot;top&quot; }, { &quot;flex&quot;: 55, &quot;autoHeight&quot;: true, &quot;layout&quot;: &quot;form&quot;, &quot;xtype&quot;: &quot;panel&quot;, &quot;items&quot;: granting229, &quot;labelAlign&quot;: &quot;top&quot; } ], &quot;frame&quot;: false, &quot;layoutConfig&quot;: { &quot;align&quot;: &quot;stretchmax&quot; }, &quot;hideCheckBoxLabels&quot;: true, &quot;autoScroll&quot;: false, &quot;labelWidth&quot;: 117, &quot;hidden&quot;: true, &quot;border&quot;: false, &quot;labelAlign&quot;: &quot;top&quot; });</span>
+<span class="go">var start_date233 = new Lino.DateField({ &quot;autoHeight&quot;: true, &quot;fieldLabel&quot;: &quot;Period from&quot;, &quot;name&quot;: &quot;start_date&quot;, &quot;selectOnFocus&quot;: true, &quot;listeners&quot;: { &quot;render&quot;: Lino.quicktip_renderer(&quot;Period from&quot;,&quot;(aids.IncomeConfirmationsByGranting.start_date) &quot;) }, &quot;anchor&quot;: &quot;-20&quot; });</span>
+<span class="go">var end_date234 = new Lino.DateField({ &quot;autoHeight&quot;: true, &quot;fieldLabel&quot;: &quot;until&quot;, &quot;name&quot;: &quot;end_date&quot;, &quot;selectOnFocus&quot;: true, &quot;listeners&quot;: { &quot;render&quot;: Lino.quicktip_renderer(&quot;until&quot;,&quot;(aids.IncomeConfirmationsByGranting.end_date) &quot;) }, &quot;anchor&quot;: &quot;-20&quot; });</span>
+<span class="go">var main_2_panel235 = new Ext.Panel({ &quot;autoScroll&quot;: false, &quot;autoHeight&quot;: true, &quot;border&quot;: false, &quot;layout&quot;: &quot;hbox&quot;, &quot;labelWidth&quot;: 108, &quot;hideCheckBoxLabels&quot;: true, &quot;items&quot;: [ { &quot;flex&quot;: 50, &quot;autoHeight&quot;: true, &quot;layout&quot;: &quot;form&quot;, &quot;xtype&quot;: &quot;panel&quot;, &quot;items&quot;: start_date233, &quot;labelAlign&quot;: &quot;top&quot; }, { &quot;flex&quot;: 50, &quot;autoHeight&quot;: true, &quot;layout&quot;: &quot;form&quot;, &quot;xtype&quot;: &quot;panel&quot;, &quot;items&quot;: end_date234, &quot;labelAlign&quot;: &quot;top&quot; } ], &quot;frame&quot;: false, &quot;layoutConfig&quot;: { &quot;align&quot;: &quot;stretchmax&quot; }, &quot;labelAlign&quot;: &quot;top&quot; });</span>
+<span class="go">var category238 = new Lino.TwinCombo({ &quot;autoHeight&quot;: true, &quot;fieldLabel&quot;: &quot;Category&quot;, &quot;name&quot;: &quot;category&quot;, &quot;pageSize&quot;: 20, &quot;onTrigger2Click&quot;: function(e){ Lino.show_fk_detail(this,Lino.aids.Categories.detail,Lino.aids.Categories.insert)}, &quot;emptyText&quot;: &quot;Select a Category...&quot;, &quot;listeners&quot;: { &quot;render&quot;: Lino.quicktip_renderer(&quot;Category&quot;,&quot;(aids.IncomeConfirmationsByGranting.category) &quot;) }, &quot;selectOnFocus&quot;: true, &quot;hiddenName&quot;: &quot;categoryHidden&quot;, &quot;anchor&quot;: &quot;-20&quot;, &quot;store&quot;: new Lino.ComplexRemoteComboStore({ &quot;proxy&quot;: new Ext.data.HttpProxy({ &quot;url&quot;: &quot;/choices/aids/IncomeConfirmationsByGranting/category&quot;, &quot;method&quot;: &quot;GET&quot; }) }) });</span>
+<span class="go">var amount239 = new Ext.form.NumberField({ &quot;autoHeight&quot;: true, &quot;decimalPrecision&quot;: 2, &quot;fieldLabel&quot;: &quot;Amount&quot;, &quot;name&quot;: &quot;amount&quot;, &quot;decimalSeparator&quot;: &quot;,&quot;, &quot;listeners&quot;: { &quot;render&quot;: Lino.quicktip_renderer(&quot;Amount&quot;,&quot;(aids.IncomeConfirmationsByGranting.amount) &quot;) }, &quot;selectOnFocus&quot;: true, &quot;anchor&quot;: &quot;-20&quot;, &quot;allowBlank&quot;: true });</span>
+<span class="go">var main_3_panel240 = new Ext.Panel({ &quot;autoScroll&quot;: false, &quot;autoHeight&quot;: true, &quot;border&quot;: false, &quot;layout&quot;: &quot;hbox&quot;, &quot;labelWidth&quot;: 81, &quot;hideCheckBoxLabels&quot;: true, &quot;items&quot;: [ { &quot;flex&quot;: 62, &quot;autoHeight&quot;: true, &quot;layout&quot;: &quot;form&quot;, &quot;xtype&quot;: &quot;panel&quot;, &quot;items&quot;: category238, &quot;labelAlign&quot;: &quot;top&quot; }, { &quot;flex&quot;: 37, &quot;autoHeight&quot;: true, &quot;layout&quot;: &quot;form&quot;, &quot;xtype&quot;: &quot;panel&quot;, &quot;items&quot;: amount239, &quot;labelAlign&quot;: &quot;top&quot; } ], &quot;frame&quot;: false, &quot;layoutConfig&quot;: { &quot;align&quot;: &quot;stretchmax&quot; }, &quot;labelAlign&quot;: &quot;top&quot; });</span>
+<span class="go">var company243 = new Lino.TwinCombo({ &quot;preferred_width&quot;: 20, &quot;autoHeight&quot;: true, &quot;fieldLabel&quot;: &quot;Recipient (Organization)&quot;, &quot;name&quot;: &quot;company&quot;, &quot;pageSize&quot;: 20, &quot;onTrigger2Click&quot;: function(e){ Lino.show_fk_detail(this,Lino.contacts.Companies.detail,Lino.contacts.Companies.insert)}, &quot;hiddenName&quot;: &quot;companyHidden&quot;, &quot;listeners&quot;: { &quot;render&quot;: Lino.quicktip_renderer(&quot;Recipient (Organization)&quot;,&quot;(aids.IncomeConfirmationsByGranting.company) &quot;) }, &quot;selectOnFocus&quot;: true, &quot;emptyText&quot;: &quot;Select a Organisation...&quot;, &quot;anchor&quot;: &quot;-20&quot;, &quot;store&quot;: new Lino.ComplexRemoteComboStore({ &quot;proxy&quot;: new Ext.data.HttpProxy({ &quot;url&quot;: &quot;/choices/aids/IncomeConfirmationsByGranting/company&quot;, &quot;method&quot;: &quot;GET&quot; }) }) });</span>
+<span class="go">var contact_person244 = new Lino.TwinCombo({ &quot;preferred_width&quot;: 20, &quot;autoHeight&quot;: true, &quot;fieldLabel&quot;: &quot;Recipient (Person)&quot;, &quot;name&quot;: &quot;contact_person&quot;, &quot;pageSize&quot;: 20, &quot;onTrigger2Click&quot;: function(e){ Lino.show_fk_detail(this,Lino.contacts.Persons.detail,Lino.contacts.Persons.insert)}, &quot;hiddenName&quot;: &quot;contact_personHidden&quot;, &quot;listeners&quot;: { &quot;render&quot;: Lino.quicktip_renderer(&quot;Recipient (Person)&quot;,&quot;(aids.IncomeConfirmationsByGranting.contact_person) &quot;) }, &quot;selectOnFocus&quot;: true, &quot;emptyText&quot;: &quot;Select a Person...&quot;, &quot;anchor&quot;: &quot;-20&quot;, &quot;store&quot;: new Lino.ComplexRemoteComboStore({ &quot;proxy&quot;: new Ext.data.HttpProxy({ &quot;url&quot;: &quot;/choices/aids/IncomeConfirmationsByGranting/contact_person&quot;, &quot;method&quot;: &quot;GET&quot; }) }) });</span>
+<span class="go">var language245 = new Lino.ChoicesFieldElement({ &quot;autoHeight&quot;: true, &quot;fieldLabel&quot;: &quot;Language&quot;, &quot;name&quot;: &quot;language&quot;, &quot;hiddenName&quot;: &quot;languageHidden&quot;, &quot;listeners&quot;: { &quot;render&quot;: Lino.quicktip_renderer(&quot;Language&quot;,&quot;(aids.IncomeConfirmationsByGranting.language) &quot;) }, &quot;selectOnFocus&quot;: true, &quot;anchor&quot;: &quot;-20&quot;, &quot;store&quot;: [ [ &quot;en&quot;, &quot;English&quot; ], [ &quot;fr&quot;, &quot;French&quot; ], [ &quot;de&quot;, &quot;German&quot; ], [ &quot;nl&quot;, &quot;Dutch&quot; ] ] });</span>
+<span class="go">var main_4_panel246 = new Ext.Panel({ &quot;autoScroll&quot;: false, &quot;autoHeight&quot;: true, &quot;border&quot;: false, &quot;layout&quot;: &quot;hbox&quot;, &quot;labelWidth&quot;: 225, &quot;hideCheckBoxLabels&quot;: true, &quot;items&quot;: [ { &quot;flex&quot;: 33, &quot;autoHeight&quot;: true, &quot;layout&quot;: &quot;form&quot;, &quot;xtype&quot;: &quot;panel&quot;, &quot;items&quot;: company243, &quot;labelAlign&quot;: &quot;top&quot; }, { &quot;flex&quot;: 33, &quot;autoHeight&quot;: true, &quot;layout&quot;: &quot;form&quot;, &quot;xtype&quot;: &quot;panel&quot;, &quot;items&quot;: contact_person244, &quot;labelAlign&quot;: &quot;top&quot; }, { &quot;flex&quot;: 33, &quot;autoHeight&quot;: true, &quot;layout&quot;: &quot;form&quot;, &quot;xtype&quot;: &quot;panel&quot;, &quot;items&quot;: language245, &quot;labelAlign&quot;: &quot;top&quot; } ], &quot;frame&quot;: false, &quot;layoutConfig&quot;: { &quot;align&quot;: &quot;stretchmax&quot; }, &quot;labelAlign&quot;: &quot;top&quot; });</span>
+<span class="go">var remark250 = new Lino.RichTextPanel({ &quot;selectOnFocus&quot;: true, &quot;flex&quot;: 55, &quot;containing_panel&quot;: this, &quot;name&quot;: &quot;remark&quot;, &quot;title&quot;: &quot;Remark&quot; });</span>
+<span class="go">var main_panel251 = new Ext.Panel({ &quot;autoScroll&quot;: false, &quot;border&quot;: false, &quot;layout&quot;: &quot;vbox&quot;, &quot;labelWidth&quot;: 0, &quot;hideCheckBoxLabels&quot;: true, &quot;items&quot;: [ main_1_panel230, main_2_panel235, main_3_panel240, main_4_panel246, remark250 ], &quot;frame&quot;: true, &quot;layoutConfig&quot;: { &quot;align&quot;: &quot;stretch&quot; }, &quot;bodyBorder&quot;: false, &quot;labelAlign&quot;: &quot;top&quot; });</span>
+</pre></div>
+</div>
+<p>That’s a long string, but we can test whether it declares three
+components with an attribute “hidden”:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">ses</span><span class="o">.</span><span class="n">user</span><span class="o">.</span><span class="n">user_type</span><span class="o">.</span><span class="n">context</span><span class="p">():</span>
+<span class="gp">... </span>    <span class="n">js</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">declare_vars</span><span class="p">(</span><span class="n">lh</span><span class="o">.</span><span class="n">main</span><span class="p">))</span>
+<span class="gp">... </span>    <span class="n">js</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;&quot;hidden&quot;&#39;</span><span class="p">)</span>
+<span class="go">3</span>
+</pre></div>
+</div>
+<p>Which corresponds to what we want.</p>
+</section>
+<section id="the-confirmable-mixin">
+<h2><a class="toc-backref" href="#id17" role="doc-backlink">The Confirmable mixin</a><a class="headerlink" href="#the-confirmable-mixin" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="lino_welfare.modlib.aids.Confirmable">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lino_welfare.modlib.aids.</span></span><span class="sig-name descname"><span class="pre">Confirmable</span></span><a class="headerlink" href="#lino_welfare.modlib.aids.Confirmable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Base class for both <a class="reference internal" href="#lino_welfare.modlib.aids.Granting" title="lino_welfare.modlib.aids.Granting"><code class="xref py py-class docutils literal notranslate"><span class="pre">Granting</span></code></a> and <a class="reference internal" href="#lino_welfare.modlib.aids.Confirmation" title="lino_welfare.modlib.aids.Confirmation"><code class="xref py py-class docutils literal notranslate"><span class="pre">Confirmation</span></code></a>.</p>
+<p>A signed confirmation cannot be modified, even not by a privileged
+user.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.aids.Confirmable.signer">
+<span class="sig-name descname"><span class="pre">signer</span></span><a class="headerlink" href="#lino_welfare.modlib.aids.Confirmable.signer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>The agent who has signed or is expected to sign this item.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="lino_welfare.modlib.aids.Confirmable.state">
+<span class="sig-name descname"><span class="pre">state</span></span><a class="headerlink" href="#lino_welfare.modlib.aids.Confirmable.state" title="Permalink to this definition">¶</a></dt>
+<dd><p>The confirmation state of this object. Pointer to
+<code class="xref py py-class docutils literal notranslate"><span class="pre">ConfirmationStates</span></code>.</p>
+</dd></dl>
+
+<p>Actions:</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="lino_welfare.modlib.aids.Confirmable.sign">
+<span class="sig-name descname"><span class="pre">sign</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#lino_welfare.modlib.aids.Confirmable.sign" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sign this granting or confirmation, making most fields read-only.</p>
+<p>This is available if signer is either empty or equals the
+requesting user.  Except for system managers who can sign as
+somebody else by manually setting the signer field before running
+this action.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lino_welfare.modlib.aids.Confirmable.revoke">
+<span class="sig-name descname"><span class="pre">revoke</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#lino_welfare.modlib.aids.Confirmable.revoke" title="Permalink to this definition">¶</a></dt>
+<dd><p>Revoke your signature of this granting or confirmation.</p>
+</dd></dl>
+
+</dd></dl>
+
+<p>Just out of curiosity: the following help texts have been loaded using
+<a class="reference external" href="https://dev.lino-framework.org/api/lino.sphinxcontrib.help_texts_extractor.html#module-lino.sphinxcontrib.help_texts_extractor" title="(in Lino Developer Guide v20.1)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">lino.sphinxcontrib.help_texts_extractor</span></code></a> but aren’t yet translated:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">translation</span><span class="o">.</span><span class="n">override</span><span class="p">(</span><span class="s1">&#39;de&#39;</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="n">aids</span><span class="o">.</span><span class="n">Granting</span><span class="o">.</span><span class="n">sign</span><span class="o">.</span><span class="n">help_text</span><span class="p">)</span>
+<span class="go">Sign this granting or confirmation, making most fields read-only.</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">translation</span><span class="o">.</span><span class="n">override</span><span class="p">(</span><span class="s1">&#39;de&#39;</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="n">aids</span><span class="o">.</span><span class="n">Granting</span><span class="o">.</span><span class="n">revoke</span><span class="o">.</span><span class="n">help_text</span><span class="p">)</span>
+<span class="go">Revoke your signature of this granting or confirmation.</span>
+</pre></div>
+</div>
+</section>
+<section id="templates">
+<h2><a class="toc-backref" href="#id18" role="doc-backlink">Templates</a><a class="headerlink" href="#templates" title="Permalink to this heading">¶</a></h2>
+<p>Here is a list of the templates used by this plugin.</p>
+<dl class="std xfile">
+<dt class="sig sig-object std" id="xfile-certificate.body.html">
+<span class="sig-name descname"><span class="pre">certificate.body.html</span></span><a class="headerlink" href="#xfile-certificate.body.html" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>See the <a class="reference external" href="https://gitlab.com/lino-framework/welfare/blob/master/lino_welfare/modlib/aids/config/aids/Confirmation/certificate.body.html">source code</a></p>
+<dl class="std xfile">
+<dt class="sig sig-object std" id="xfile-clothing_bank.body.html">
+<span class="sig-name descname"><span class="pre">clothing_bank.body.html</span></span><a class="headerlink" href="#xfile-clothing_bank.body.html" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>See the <a class="reference external" href="https://gitlab.com/lino-framework/welfare/blob/master/lino_welfare/modlib/aids/config/aids/Confirmation/clothing_bank.body.html">source code</a></p>
+<dl class="std xfile">
+<dt class="sig sig-object std" id="xfile-fixed_income.body.html">
+<span class="sig-name descname"><span class="pre">fixed_income.body.html</span></span><a class="headerlink" href="#xfile-fixed_income.body.html" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>See the <a class="reference external" href="https://gitlab.com/lino-framework/welfare/blob/master/lino_welfare/modlib/aids/config/aids/Confirmation/fixed_income.body.html">source code</a></p>
+<dl class="std xfile">
+<dt class="sig sig-object std" id="xfile-food_bank.body.html">
+<span class="sig-name descname"><span class="pre">food_bank.body.html</span></span><a class="headerlink" href="#xfile-food_bank.body.html" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>See the <a class="reference external" href="https://gitlab.com/lino-framework/welfare/blob/master/lino_welfare/modlib/aids/config/aids/Confirmation/food_bank.body.html">source code</a></p>
+<dl class="std xfile">
+<dt class="sig sig-object std" id="xfile-foreigner_income.body.html">
+<span class="sig-name descname"><span class="pre">foreigner_income.body.html</span></span><a class="headerlink" href="#xfile-foreigner_income.body.html" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>See the <a class="reference external" href="https://gitlab.com/lino-framework/welfare/blob/master/lino_welfare/modlib/aids/config/aids/Confirmation/foreigner_income.body.html">source code</a></p>
+<dl class="std xfile">
+<dt class="sig sig-object std" id="xfile-furniture.body.html">
+<span class="sig-name descname"><span class="pre">furniture.body.html</span></span><a class="headerlink" href="#xfile-furniture.body.html" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>See the <a class="reference external" href="https://gitlab.com/lino-framework/welfare/blob/master/lino_welfare/modlib/aids/config/aids/Confirmation/furniture.body.html">source code</a></p>
+<dl class="std xfile">
+<dt class="sig sig-object std" id="xfile-heating_refund.body.html">
+<span class="sig-name descname"><span class="pre">heating_refund.body.html</span></span><a class="headerlink" href="#xfile-heating_refund.body.html" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>See the <a class="reference external" href="https://gitlab.com/lino-framework/welfare/blob/master/lino_welfare/modlib/aids/config/aids/Confirmation/heating_refund.body.html">source code</a></p>
+<dl class="std xfile">
+<dt class="sig sig-object std" id="xfile-integ_income.body.html">
+<span class="sig-name descname"><span class="pre">integ_income.body.html</span></span><a class="headerlink" href="#xfile-integ_income.body.html" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>See the <a class="reference external" href="https://gitlab.com/lino-framework/welfare/blob/master/lino_welfare/modlib/aids/config/aids/Confirmation/integ_income.body.html">source code</a></p>
+<dl class="std xfile">
+<dt class="sig sig-object std" id="xfile-medical_refund.body.html">
+<span class="sig-name descname"><span class="pre">medical_refund.body.html</span></span><a class="headerlink" href="#xfile-medical_refund.body.html" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>See the <a class="reference external" href="https://gitlab.com/lino-framework/welfare/blob/master/lino_welfare/modlib/aids/config/aids/Confirmation/medical_refund.body.html">source code</a></p>
+<dl class="std xfile">
+<dt class="sig sig-object std" id="xfile-urgent_medical_care.body.html">
+<span class="sig-name descname"><span class="pre">urgent_medical_care.body.html</span></span><a class="headerlink" href="#xfile-urgent_medical_care.body.html" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>See the <a class="reference external" href="https://gitlab.com/lino-framework/welfare/blob/master/lino_welfare/modlib/aids/config/aids/Confirmation/urgent_medical_care.body.html">source code</a></p>
+</section>
+</section>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+
+            <p class="logo"><a href="../../index.html">
+              <img class="logo" src="../../_static/logo_web3.png" alt="Logo"/>
+            </a></p>
+          <div class="sidebar-resize-handle"></div>
+<p align="center"><b>EN</b> | <a href="de/index.rst">DE</a> | <a href="fr/index.rst">FR</a></p>
+<h3><a href="../../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../about/index.html">About Lino Welfare</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../usage/index.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../changes/index.html">Changes</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Specs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../install/index.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../copyright.html">Copyright &amp; legal notes</a></li>
+</ul>
+
+<hr class="docutils" />
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+<ul>
+  <li class="toctree-l1"><a class="reference internal" href="../../py-modindex.html">Python Module Index</a></li>
+</ul><p align="center">
+</p>
+
+<div id="ethical-ad-placement"></div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+    <nav class="relbar">
+      <a class="previous" href="../checkdata.html" aria-label="Previous topic" >
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg>
+        </div>
+        <div class="title">
+          <span class="text">
+            <span class="direction">previous</span>
+            Checking for data problems in Lino Welfare
+          </span>
+        </div>
+      </a>
+      <a class="next" href="../cbss.html" aria-label="Next topic" >
+        <div class="title">
+          <span class="text">
+            <span class="direction">next</span>
+            CBSS connection for Lino Welfare
+          </span>
+        </div>
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+        </div>
+      </a>
+    </nav>
+
+    <footer role="contentinfo">
+      &#169; <a href="../../copyright.html">Copyright</a> 2012-2022 Rumma &amp; Ko Ltd.
+      Last updated on 2022-11-08.
+      Created using <a class="reference external" href="https://www.sphinx-doc.org/">Sphinx</a> 5.1.1.
+      <a class="reference external" href="https://insipid-sphinx-theme.readthedocs.io/">Insipid Theme</a>.
+<a href="https://gitlab.com/lino-framework/welfare/-/blob/master/docs/specs/aids/index.rst?plain=1"
+  rel="nofollow">Source code</a>.
+<br>
+
+Online link: <a href="https://welfare.lino-framework.org/specs/aids/index.html">https://welfare.lino-framework.org/specs/aids/index.html</a>.
+
+
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,786 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>About sorting (2) &#8212; Lino Welfare</title>
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/insipid.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/atelier.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/insipid-cust.css" />
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script defer src="../../_static/insipid.js"></script>
+    <script defer src="../../_static/insipid-sidebar.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../copyright.html" />
+    <link rel="next" title="Automatic calendar events" href="autoevents.html" />
+    <link rel="prev" title="About sorting" href="sorting.html" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+  </head><body>
+    <script type="text/javascript">
+        document.body.classList.add('js');
+    </script>
+    <input type="checkbox" id="sidebar-checkbox" style="display: none;">
+    <label id="overlay" for="sidebar-checkbox"></label>
+    <div class="sidebar-resize-handle"></div>
+    <script type="text/javascript">
+        try {
+            let sidebar = localStorage.getItem('sphinx-sidebar');
+            const sidebar_width = localStorage.getItem('sphinx-sidebar-width');
+            if (sidebar_width) {
+                document.documentElement.style.setProperty('--sidebar-width', sidebar_width);
+            }
+            // show sidebar on wide screen
+            if (!sidebar && window.matchMedia('(min-width: 100rem)').matches) {
+                sidebar = 'visible';
+                // NB: We don't store the value in localStorage!
+            }
+            if (sidebar === 'visible') {
+                document.getElementById('sidebar-checkbox').checked = true;
+            }
+        } catch(e) {
+            console.info(e);
+        }
+    </script>
+    <header id="topbar-placeholder">
+      <div id="topbar">
+        <div id="titlebar">
+          <div class="buttons">
+            <label for="sidebar-checkbox" id="sidebar-button" role="button" tabindex="0" aria-controls="sphinxsidebar" accesskey="M">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></svg>
+            </label><a href="../../index.html" title="Lino Welfare">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
+</a>
+          </div>
+          <div class="title">
+            <a class="parent" href="index.html" accesskey="U">Topics</a>
+            <a class="top" href="#">About sorting (2)</a>
+          </div>
+          <div class="buttons">
+            <button id="fullscreen-button" type="button" aria-hidden="true">
+              <span class="enable">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M212.686 315.314L120 408l32.922 31.029c15.12 15.12 4.412 40.971-16.97 40.971h-112C10.697 480 0 469.255 0 456V344c0-21.382 25.803-32.09 40.922-16.971L72 360l92.686-92.686c6.248-6.248 16.379-6.248 22.627 0l25.373 25.373c6.249 6.248 6.249 16.378 0 22.627zm22.628-118.628L328 104l-32.922-31.029C279.958 57.851 290.666 32 312.048 32h112C437.303 32 448 42.745 448 56v112c0 21.382-25.803 32.09-40.922 16.971L376 152l-92.686 92.686c-6.248 6.248-16.379 6.248-22.627 0l-25.373-25.373c-6.249-6.248-6.249-16.378 0-22.627z"/></svg>
+              </span>
+              <span class="disable">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M4.686 427.314L104 328l-32.922-31.029C55.958 281.851 66.666 256 88.048 256h112C213.303 256 224 266.745 224 280v112c0 21.382-25.803 32.09-40.922 16.971L152 376l-99.314 99.314c-6.248 6.248-16.379 6.248-22.627 0L4.686 449.941c-6.248-6.248-6.248-16.379 0-22.627zM443.314 84.686L344 184l32.922 31.029c15.12 15.12 4.412 40.971-16.97 40.971h-112C234.697 256 224 245.255 224 232V120c0-21.382 25.803-32.09 40.922-16.971L296 136l99.314-99.314c6.248-6.248 16.379-6.248 22.627 0l25.373 25.373c6.248 6.248 6.248 16.379 0 22.627z"/></svg>
+              </span>
+            </button><a href="https://www.facebook.com/sharer/sharer.php?u=https://welfare.lino-framework.org/specs/topics/sorting2/" title="Share on Facebook" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+</a>
+
+<!---
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+---!>
+
+<a href="https://twitter.com/share?ref_src=https://welfare.lino-framework.org/specs/topics/sorting2/" title="Share on Twitter" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <a href="sorting.html" class="nav-icon previous" title="previous:&#13;About sorting" aria-label="Previous topic" accesskey="P" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"/></svg>
+      </a>
+      <a href="autoevents.html" class="nav-icon next" title="next:&#13;Automatic calendar events" aria-label="Next topic" accesskey="N" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg>
+      </a>
+    </nav>
+
+    <nav class="relbar">
+      <a class="previous" href="sorting.html" aria-label="Previous topic" >
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg>
+        </div>
+        <div class="title">
+          <span class="text">
+            <span class="direction">previous</span>
+            About sorting
+          </span>
+        </div>
+      </a>
+      <a class="next" href="autoevents.html" aria-label="Next topic" >
+        <div class="title">
+          <span class="text">
+            <span class="direction">next</span>
+            Automatic calendar events
+          </span>
+        </div>
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+        </div>
+      </a>
+    </nav>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+<section id="about-sorting-2">
+<span id="welfare-specs-topics-sorting2"></span><h1>About sorting (2)<a class="headerlink" href="#about-sorting-2" title="Permalink to this heading">¶</a></h1>
+<p>This is a <a class="reference external" href="https://dev.lino-framework.org/dev/doctests.html#tested-docs" title="(in Lino Developer Guide v20.1)"><span class="xref std std-ref">tested document</span></a>.  The following instructions are
+used for initialization:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino</span> <span class="kn">import</span> <span class="n">startup</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">startup</span><span class="p">(</span><span class="s1">&#39;lino_welfare.projects.mathieu.settings.demo&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino.api.doctest</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+<p>This to verify whether sorting works as expected.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">o</span> <span class="ow">in</span> <span class="n">contacts</span><span class="o">.</span><span class="n">Company</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">all</span><span class="p">():</span>
+<span class="gp">... </span>   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{o.id}</span><span class="s2"> </span><span class="si">{o.name}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">o</span><span class="o">=</span><span class="n">o</span><span class="p">))</span>
+<span class="go">100 Belgisches Rotes Kreuz</span>
+<span class="go">101 Rumma &amp; Ko OÜ</span>
+<span class="go">102 Bäckerei Ausdemwald</span>
+<span class="go">103 Bäckerei Mießen</span>
+<span class="go">104 Bäckerei Schmitz</span>
+<span class="go">105 Garage Mergelsberg</span>
+<span class="go">106 Donderweer BV</span>
+<span class="go">107 Van Achter NV</span>
+<span class="go">108 Hans Flott &amp; Co</span>
+<span class="go">109 Bernd Brechts Bücherladen</span>
+<span class="go">110 Reinhards Baumschule</span>
+<span class="go">111 Moulin Rouge</span>
+<span class="go">112 Auto École Verte</span>
+<span class="go">187 ÖSHZ Kettenis</span>
+<span class="go">188 BISA</span>
+<span class="go">189 R-Cycle Sperrgutsortierzentrum</span>
+<span class="go">190 Die neue Alternative V.o.G.</span>
+<span class="go">191 Pro Aktiv V.o.G.</span>
+<span class="go">192 Werkstatt Cardijn V.o.G.</span>
+<span class="go">193 Behindertenstätten Eupen</span>
+<span class="go">194 Beschützende Werkstätte Eupen</span>
+<span class="go">195 Alliance Nationale des Mutualités Chrétiennes</span>
+<span class="go">196 Mutualité Chrétienne de Verviers - Eupen</span>
+<span class="go">197 Union Nationale des Mutualités Neutres</span>
+<span class="go">198 Mutualia - Mutualité Neutre</span>
+<span class="go">199 Solidaris - Mutualité socialiste et syndicale de la province de Liège</span>
+<span class="go">200 Apotheke Reul</span>
+<span class="go">201 Apotheke Schunck</span>
+<span class="go">202 Pharmacies Populaires de Verviers</span>
+<span class="go">203 Bosten-Bocken A</span>
+<span class="go">204 Brüll Christine</span>
+<span class="go">205 Brocal Catherine</span>
+<span class="go">206 Bourseaux Alexandre</span>
+<span class="go">207 Baguette Stéphanie</span>
+<span class="go">208 Demarteau Bernadette</span>
+<span class="go">209 Schmitz Marc</span>
+<span class="go">210 Cashback sprl</span>
+<span class="go">211 Money Wizard AS</span>
+<span class="go">214 Arbeitsamt der D.G.</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">o</span> <span class="ow">in</span> <span class="n">contacts</span><span class="o">.</span><span class="n">Person</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">all</span><span class="p">():</span>
+<span class="gp">... </span>   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{o.id}</span><span class="s2"> </span><span class="si">{o.last_name}</span><span class="s2">, </span><span class="si">{o.first_name}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">o</span><span class="o">=</span><span class="n">o</span><span class="p">))</span>
+<span class="go">246 Adam, Albert</span>
+<span class="go">250 Adam, Ilja</span>
+<span class="go">255 Adam, Noémie</span>
+<span class="go">256 Adam, Odette</span>
+<span class="go">257 Adam, Pascale</span>
+<span class="go">184 Allmanns, Alicia</span>
+<span class="go">115 Altenberg, Hans</span>
+<span class="go">113 Arens, Andreas</span>
+<span class="go">114 Arens, Annette</span>
+<span class="go">116 Ausdemwald, Alfons</span>
+<span class="go">117 Bastiaensen, Laurent</span>
+<span class="go">170 Bodard, Bernard</span>
+<span class="go">247 Braun, Bruno</span>
+<span class="go">251 Braun, Jan</span>
+<span class="go">252 Braun, Kevin</span>
+<span class="go">253 Braun, Lars</span>
+<span class="go">254 Braun, Monique</span>
+<span class="go">177 Brecht, Bernd</span>
+<span class="go">217 Castou, Carmen</span>
+<span class="go">120 Chantraine, Marc</span>
+<span class="go">119 Charlier, Ulrike</span>
+<span class="go">118 Collard, Charlotte</span>
+<span class="go">122 Demeulenaere, Dorothée</span>
+<span class="go">180 Denon, Denis</span>
+<span class="go">121 Dericum, Daniel</span>
+<span class="go">124 Dobbelstein, Dorothée</span>
+<span class="go">123 Dobbelstein-Demeulenaere, Dorothée</span>
+<span class="go">237 Drosson, Dora</span>
+<span class="go">179 Dubois, Robin</span>
+<span class="go">171 Dupont, Jean</span>
+<span class="go">175 Eierschal, Emil</span>
+<span class="go">232 Einzig, Paula</span>
+<span class="go">128 Emonts, Daniel</span>
+<span class="go">150 Emonts, Erich</span>
+<span class="go">152 Emonts-Gast, Erna</span>
+<span class="go">151 Emontspool, Erwin</span>
+<span class="go">129 Engels, Edgar</span>
+<span class="go">125 Ernst, Berta</span>
+<span class="go">127 Evers, Eberhart</span>
+<span class="go">126 Evertz, Bernd</span>
+<span class="go">248 Evrard, Eveline</span>
+<span class="go">130 Faymonville, Luc</span>
+<span class="go">249 Freisen, Françoise</span>
+<span class="go">230 Frisch, Alice</span>
+<span class="go">231 Frisch, Bernd</span>
+<span class="go">236 Frisch, Clara</span>
+<span class="go">238 Frisch, Dennis</span>
+<span class="go">226 Frisch, Hubert</span>
+<span class="go">241 Frisch, Irma</span>
+<span class="go">229 Frisch, Ludwig</span>
+<span class="go">240 Frisch, Melba</span>
+<span class="go">228 Frisch, Paul</span>
+<span class="go">233 Frisch, Peter</span>
+<span class="go">235 Frisch, Philippe</span>
+<span class="go">227 Frogemuth, Gaby</span>
+<span class="go">212 Gerkens, Gerd</span>
+<span class="go">131 Gernegroß, Germaine</span>
+<span class="go">132 Groteclaes, Gregory</span>
+<span class="go">134 Hilgers, Henri</span>
+<span class="go">133 Hilgers, Hildegard</span>
+<span class="go">183 Huppertz, Hubert</span>
+<span class="go">135 Ingels, Irene</span>
+<span class="go">137 Jacobs, Jacqueline</span>
+<span class="go">136 Jansen, Jérémy</span>
+<span class="go">181 Jeanémart, Jérôme</span>
+<span class="go">138 Johnen, Johann</span>
+<span class="go">139 Jonas, Josef</span>
+<span class="go">140 Jousten, Jan</span>
+<span class="go">186 Jousten, Judith</span>
+<span class="go">141 Kaivers, Karl</span>
+<span class="go">213 Kasennova, Tatjana</span>
+<span class="go">178 Keller, Karl</span>
+<span class="go">219 Kimmel, Killian</span>
+<span class="go">176 Lahm, Lisa</span>
+<span class="go">142 Lambertz, Guido</span>
+<span class="go">143 Laschet, Laura</span>
+<span class="go">144 Lazarus, Line</span>
+<span class="go">145 Leffin, Josefine</span>
+<span class="go">239 Loslever, Laura</span>
+<span class="go">146 Malmendier, Marc</span>
+<span class="go">172 Martelaer, Mark</span>
+<span class="go">147 Meessen, Melissa</span>
+<span class="go">149 Meier, Marie-Louise</span>
+<span class="go">148 Mießen, Michael</span>
+<span class="go">182 Mélard, Mélanie</span>
+<span class="go">153 Radermacher, Alfons</span>
+<span class="go">154 Radermacher, Berta</span>
+<span class="go">155 Radermacher, Christian</span>
+<span class="go">156 Radermacher, Daniela</span>
+<span class="go">157 Radermacher, Edgard</span>
+<span class="go">158 Radermacher, Fritz</span>
+<span class="go">159 Radermacher, Guido</span>
+<span class="go">160 Radermacher, Hans</span>
+<span class="go">161 Radermacher, Hedi</span>
+<span class="go">162 Radermacher, Inge</span>
+<span class="go">163 Radermacher, Jean</span>
+<span class="go">173 Radermecker, Rik</span>
+<span class="go">185 Thelen, Theresia</span>
+<span class="go">174 Vandenmeulenbos, Marie-Louise</span>
+<span class="go">218 Waldmann, Walter</span>
+<span class="go">215 Waldmann, Waltraud</span>
+<span class="go">216 Wehnicht, Werner</span>
+<span class="go">234 Zweith, Petra</span>
+<span class="go">165 da Vinci, David</span>
+<span class="go">164 di Rupo, Didier</span>
+<span class="go">166 van Veen, Vincent</span>
+<span class="go">169 Ärgerlich, Erna</span>
+<span class="go">167 Õunapuu, Õie</span>
+<span class="go">168 Östges, Otto</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">o</span> <span class="ow">in</span> <span class="n">pcsw</span><span class="o">.</span><span class="n">Client</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">all</span><span class="p">():</span>
+<span class="gp">... </span>   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{o.id}</span><span class="s2"> </span><span class="si">{o.last_name}</span><span class="s2">, </span><span class="si">{o.first_name}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">o</span><span class="o">=</span><span class="n">o</span><span class="p">))</span>
+<span class="go">116 Ausdemwald, Alfons</span>
+<span class="go">117 Bastiaensen, Laurent</span>
+<span class="go">118 Collard, Charlotte</span>
+<span class="go">120 Chantraine, Marc</span>
+<span class="go">121 Dericum, Daniel</span>
+<span class="go">122 Demeulenaere, Dorothée</span>
+<span class="go">123 Dobbelstein-Demeulenaere, Dorothée</span>
+<span class="go">124 Dobbelstein, Dorothée</span>
+<span class="go">125 Ernst, Berta</span>
+<span class="go">126 Evertz, Bernd</span>
+<span class="go">127 Evers, Eberhart</span>
+<span class="go">128 Emonts, Daniel</span>
+<span class="go">129 Engels, Edgar</span>
+<span class="go">130 Faymonville, Luc</span>
+<span class="go">131 Gernegroß, Germaine</span>
+<span class="go">132 Groteclaes, Gregory</span>
+<span class="go">133 Hilgers, Hildegard</span>
+<span class="go">134 Hilgers, Henri</span>
+<span class="go">135 Ingels, Irene</span>
+<span class="go">136 Jansen, Jérémy</span>
+<span class="go">137 Jacobs, Jacqueline</span>
+<span class="go">138 Johnen, Johann</span>
+<span class="go">139 Jonas, Josef</span>
+<span class="go">140 Jousten, Jan</span>
+<span class="go">141 Kaivers, Karl</span>
+<span class="go">142 Lambertz, Guido</span>
+<span class="go">143 Laschet, Laura</span>
+<span class="go">144 Lazarus, Line</span>
+<span class="go">145 Leffin, Josefine</span>
+<span class="go">146 Malmendier, Marc</span>
+<span class="go">147 Meessen, Melissa</span>
+<span class="go">149 Meier, Marie-Louise</span>
+<span class="go">150 Emonts, Erich</span>
+<span class="go">151 Emontspool, Erwin</span>
+<span class="go">152 Emonts-Gast, Erna</span>
+<span class="go">153 Radermacher, Alfons</span>
+<span class="go">154 Radermacher, Berta</span>
+<span class="go">155 Radermacher, Christian</span>
+<span class="go">156 Radermacher, Daniela</span>
+<span class="go">157 Radermacher, Edgard</span>
+<span class="go">158 Radermacher, Fritz</span>
+<span class="go">159 Radermacher, Guido</span>
+<span class="go">160 Radermacher, Hans</span>
+<span class="go">161 Radermacher, Hedi</span>
+<span class="go">162 Radermacher, Inge</span>
+<span class="go">164 di Rupo, Didier</span>
+<span class="go">165 da Vinci, David</span>
+<span class="go">166 van Veen, Vincent</span>
+<span class="go">167 Õunapuu, Õie</span>
+<span class="go">168 Östges, Otto</span>
+<span class="go">172 Martelaer, Mark</span>
+<span class="go">173 Radermecker, Rik</span>
+<span class="go">174 Vandenmeulenbos, Marie-Louise</span>
+<span class="go">175 Eierschal, Emil</span>
+<span class="go">176 Lahm, Lisa</span>
+<span class="go">177 Brecht, Bernd</span>
+<span class="go">178 Keller, Karl</span>
+<span class="go">179 Dubois, Robin</span>
+<span class="go">180 Denon, Denis</span>
+<span class="go">181 Jeanémart, Jérôme</span>
+<span class="go">213 Kasennova, Tatjana</span>
+<span class="go">228 Frisch, Paul</span>
+<span class="go">247 Braun, Bruno</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">o</span> <span class="ow">in</span> <span class="n">coachings</span><span class="o">.</span><span class="n">Coaching</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">all</span><span class="p">():</span>
+<span class="gp">... </span>   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{o.id}</span><span class="s2"> </span><span class="si">{o}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">o</span><span class="o">=</span><span class="n">o</span><span class="p">))</span>
+<span class="go">1 alicia / Ausdemwald A</span>
+<span class="go">2 hubert / Ausdemwald A</span>
+<span class="go">3 melanie / Ausdemwald A</span>
+<span class="go">4 caroline / Ausdemwald A</span>
+<span class="go">5 hubert / Collard C</span>
+<span class="go">6 melanie / Collard C</span>
+<span class="go">7 hubert / Dobbelstein-Demeulenaere D</span>
+<span class="go">8 melanie / Dobbelstein D</span>
+<span class="go">9 alicia / Evertz B</span>
+<span class="go">10 hubert / Evers E</span>
+<span class="go">11 melanie / Evers E</span>
+<span class="go">12 caroline / Evers E</span>
+<span class="go">13 hubert / Emonts D</span>
+<span class="go">14 melanie / Emonts D</span>
+<span class="go">15 hubert / Emonts D</span>
+<span class="go">16 melanie / Engels E</span>
+<span class="go">17 alicia / Engels E</span>
+<span class="go">18 hubert / Engels E</span>
+<span class="go">19 melanie / Engels E</span>
+<span class="go">20 caroline / Faymonville L</span>
+<span class="go">21 hubert / Faymonville L</span>
+<span class="go">22 melanie / Groteclaes G</span>
+<span class="go">23 hubert / Hilgers H</span>
+<span class="go">24 melanie / Hilgers H</span>
+<span class="go">25 alicia / Hilgers H</span>
+<span class="go">26 hubert / Jacobs J</span>
+<span class="go">27 melanie / Jacobs J</span>
+<span class="go">28 caroline / Jacobs J</span>
+<span class="go">29 hubert / Johnen J</span>
+<span class="go">30 melanie / Johnen J</span>
+<span class="go">31 hubert / Jonas J</span>
+<span class="go">32 melanie / Jonas J</span>
+<span class="go">33 alicia / Jonas J</span>
+<span class="go">34 hubert / Jonas J</span>
+<span class="go">35 melanie / Kaivers K</span>
+<span class="go">36 caroline / Kaivers K</span>
+<span class="go">37 hubert / Lambertz G</span>
+<span class="go">38 melanie / Lazarus L</span>
+<span class="go">39 hubert / Lazarus L</span>
+<span class="go">40 melanie / Lazarus L</span>
+<span class="go">41 alicia / Leffin J</span>
+<span class="go">42 hubert / Malmendier M</span>
+<span class="go">43 melanie / Malmendier M</span>
+<span class="go">44 caroline / Malmendier M</span>
+<span class="go">45 hubert / Meessen M</span>
+<span class="go">46 melanie / Meessen M</span>
+<span class="go">47 hubert / Meessen M</span>
+<span class="go">48 melanie / Meessen M</span>
+<span class="go">49 alicia / Emonts-Gast E</span>
+<span class="go">50 hubert / Emonts-Gast E</span>
+<span class="go">51 melanie / Radermacher A</span>
+<span class="go">52 caroline / Radermacher C</span>
+<span class="go">53 hubert / Radermacher C</span>
+<span class="go">54 melanie / Radermacher C</span>
+<span class="go">55 hubert / Radermacher E</span>
+<span class="go">56 melanie / Radermacher E</span>
+<span class="go">57 alicia / Radermacher E</span>
+<span class="go">58 hubert / Radermacher F</span>
+<span class="go">59 melanie / Radermacher G</span>
+<span class="go">60 caroline / Radermacher G</span>
+<span class="go">61 hubert / Radermacher G</span>
+<span class="go">62 melanie / Radermacher G</span>
+<span class="go">63 hubert / Radermacher H</span>
+<span class="go">64 melanie / Radermacher H</span>
+<span class="go">65 alicia / da Vinci D</span>
+<span class="go">66 hubert / van Veen V</span>
+<span class="go">67 melanie / van Veen V</span>
+<span class="go">68 caroline / van Veen V</span>
+<span class="go">69 hubert / Õunapuu Õ</span>
+<span class="go">70 melanie / Õunapuu Õ</span>
+<span class="go">71 hubert / Östges O</span>
+<span class="go">72 melanie / Östges O</span>
+<span class="go">73 alicia / Östges O</span>
+<span class="go">74 hubert / Radermecker R</span>
+<span class="go">75 melanie / Radermecker R</span>
+<span class="go">76 caroline / Radermecker R</span>
+<span class="go">77 hubert / Radermecker R</span>
+<span class="go">78 melanie / Brecht B</span>
+<span class="go">79 hubert / Brecht B</span>
+<span class="go">80 melanie / Keller K</span>
+<span class="go">81 alicia / Dubois R</span>
+<span class="go">82 hubert / Dubois R</span>
+<span class="go">83 melanie / Dubois R</span>
+<span class="go">84 caroline / Denon D</span>
+<span class="go">85 hubert / Denon D</span>
+<span class="go">86 melanie / Denon D</span>
+<span class="go">87 hubert / Jeanémart J</span>
+<span class="go">88 melanie / Jeanémart J</span>
+<span class="go">89 alicia / Jeanémart J</span>
+<span class="go">90 hubert / Jeanémart J</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">o</span> <span class="ow">in</span> <span class="n">cv</span><span class="o">.</span><span class="n">ObstacleType</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">all</span><span class="p">():</span>
+<span class="gp">... </span>   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{o.id}</span><span class="s2"> </span><span class="si">{o}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">o</span><span class="o">=</span><span class="n">o</span><span class="p">))</span>
+<span class="go">1 Alcohol</span>
+<span class="go">2 Santé</span>
+<span class="go">3 Dettes</span>
+<span class="go">4 Problèmes familiers</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">o</span> <span class="ow">in</span> <span class="n">cv</span><span class="o">.</span><span class="n">Obstacle</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">all</span><span class="p">():</span>
+<span class="gp">... </span>   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{o.id}</span><span class="s2"> </span><span class="si">{o.person}</span><span class="s2"> </span><span class="si">{o.type}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">o</span><span class="o">=</span><span class="n">o</span><span class="p">))</span>
+<span class="go">1 M. Josef JONAS Alcohol</span>
+<span class="go">2 M. Karl KAIVERS Santé</span>
+<span class="go">3 M. Guido LAMBERTZ Dettes</span>
+<span class="go">4 Mme Line LAZARUS Problèmes familiers</span>
+<span class="go">5 M. Marc MALMENDIER Alcohol</span>
+<span class="go">6 M. Josef JONAS Santé</span>
+<span class="go">7 M. Karl KAIVERS Dettes</span>
+<span class="go">8 M. Guido LAMBERTZ Problèmes familiers</span>
+<span class="go">9 Mme Line LAZARUS Alcohol</span>
+<span class="go">10 M. Marc MALMENDIER Santé</span>
+<span class="go">11 M. Josef JONAS Dettes</span>
+<span class="go">12 M. Karl KAIVERS Problèmes familiers</span>
+<span class="go">13 M. Guido LAMBERTZ Alcohol</span>
+<span class="go">14 Mme Line LAZARUS Santé</span>
+<span class="go">15 M. Marc MALMENDIER Dettes</span>
+<span class="go">16 M. Josef JONAS Problèmes familiers</span>
+<span class="go">17 M. Karl KAIVERS Alcohol</span>
+<span class="go">18 M. Guido LAMBERTZ Santé</span>
+<span class="go">19 Mme Line LAZARUS Dettes</span>
+<span class="go">20 M. Marc MALMENDIER Problèmes familiers</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">o</span> <span class="ow">in</span> <span class="n">courses</span><span class="o">.</span><span class="n">Course</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">all</span><span class="p">():</span>
+<span class="gp">... </span>   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{o.id}</span><span class="s2"> </span><span class="si">{o}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">o</span><span class="o">=</span><span class="n">o</span><span class="p">))</span>
+<span class="go">1 Cuisine (12/05/2014)</span>
+<span class="go">2 Créativité (12/05/2014)</span>
+<span class="go">3 Notre premier bébé (12/05/2014)</span>
+<span class="go">4 Mathématiques (12/05/2014)</span>
+<span class="go">5 Français (12/05/2014)</span>
+<span class="go">6 Activons-nous! (12/05/2014)</span>
+<span class="go">7 Intervention psycho-sociale (03/11/2013)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">o</span> <span class="ow">in</span> <span class="n">courses</span><span class="o">.</span><span class="n">Enrolment</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">all</span><span class="p">():</span>
+<span class="gp">... </span>   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{o.id}</span><span class="s2"> </span><span class="si">{o}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">o</span><span class="o">=</span><span class="n">o</span><span class="p">))</span>
+<span class="go">1 Cuisine (12/05/2014) / AUSDEMWALD Alfons (116)</span>
+<span class="go">2 Créativité (12/05/2014) / BASTIAENSEN Laurent (117)</span>
+<span class="go">3 Notre premier bébé (12/05/2014) / COLLARD Charlotte (118)</span>
+<span class="go">4 Mathématiques (12/05/2014) / CHANTRAINE Marc (120*)</span>
+<span class="go">5 Français (12/05/2014) / DERICUM Daniel (121)</span>
+<span class="go">6 Activons-nous! (12/05/2014) / DEMEULENAERE Dorothée (122)</span>
+<span class="go">7 Intervention psycho-sociale (03/11/2013) / DOBBELSTEIN-DEMEULENAERE Dorothée (123)</span>
+<span class="go">8 Cuisine (12/05/2014) / DOBBELSTEIN Dorothée (124)</span>
+<span class="go">9 Créativité (12/05/2014) / ERNST Berta (125)</span>
+<span class="go">10 Notre premier bébé (12/05/2014) / EVERTZ Bernd (126)</span>
+<span class="go">11 Mathématiques (12/05/2014) / EVERS Eberhart (127)</span>
+<span class="go">12 Français (12/05/2014) / EMONTS Daniel (128)</span>
+<span class="go">13 Activons-nous! (12/05/2014) / ENGELS Edgar (129)</span>
+<span class="go">14 Intervention psycho-sociale (03/11/2013) / FAYMONVILLE Luc (130*)</span>
+<span class="go">15 Cuisine (12/05/2014) / GERNEGROSS Germaine (131)</span>
+<span class="go">16 Créativité (12/05/2014) / GROTECLAES Gregory (132)</span>
+<span class="go">17 Notre premier bébé (12/05/2014) / HILGERS Hildegard (133)</span>
+<span class="go">18 Mathématiques (12/05/2014) / HILGERS Henri (134)</span>
+<span class="go">19 Français (12/05/2014) / INGELS Irene (135)</span>
+<span class="go">20 Activons-nous! (12/05/2014) / JANSEN Jérémy (136)</span>
+<span class="go">21 Cuisine (12/05/2014) / JACOBS Jacqueline (137)</span>
+<span class="go">22 Créativité (12/05/2014) / JOHNEN Johann (138)</span>
+<span class="go">23 Notre premier bébé (12/05/2014) / JONAS Josef (139)</span>
+<span class="go">24 Mathématiques (12/05/2014) / JOUSTEN Jan (140*)</span>
+<span class="go">25 Français (12/05/2014) / KAIVERS Karl (141)</span>
+<span class="go">26 Activons-nous! (12/05/2014) / LAMBERTZ Guido (142)</span>
+<span class="go">27 Cuisine (12/05/2014) / LASCHET Laura (143)</span>
+<span class="go">28 Créativité (12/05/2014) / LAZARUS Line (144)</span>
+<span class="go">29 Notre premier bébé (12/05/2014) / LEFFIN Josefine (145)</span>
+<span class="go">30 Mathématiques (12/05/2014) / MALMENDIER Marc (146)</span>
+<span class="go">31 Français (12/05/2014) / MEESSEN Melissa (147)</span>
+<span class="go">32 Activons-nous! (12/05/2014) / MEIER Marie-Louise (149)</span>
+<span class="go">33 Cuisine (12/05/2014) / EMONTS Erich (150*)</span>
+<span class="go">34 Créativité (12/05/2014) / EMONTSPOOL Erwin (151)</span>
+<span class="go">35 Notre premier bébé (12/05/2014) / EMONTS-GAST Erna (152)</span>
+<span class="go">36 Mathématiques (12/05/2014) / RADERMACHER Alfons (153)</span>
+<span class="go">37 Français (12/05/2014) / RADERMACHER Berta (154)</span>
+<span class="go">38 Cuisine (12/05/2014) / RADERMACHER Christian (155)</span>
+<span class="go">39 Créativité (12/05/2014) / RADERMACHER Daniela (156)</span>
+<span class="go">40 Notre premier bébé (12/05/2014) / RADERMACHER Edgard (157)</span>
+<span class="go">41 Mathématiques (12/05/2014) / RADERMACHER Fritz (158)</span>
+<span class="go">42 Français (12/05/2014) / RADERMACHER Guido (159)</span>
+<span class="go">43 Cuisine (12/05/2014) / RADERMACHER Hans (160*)</span>
+<span class="go">44 Créativité (12/05/2014) / RADERMACHER Hedi (161)</span>
+<span class="go">45 Notre premier bébé (12/05/2014) / RADERMACHER Inge (162)</span>
+<span class="go">46 Mathématiques (12/05/2014) / DI RUPO Didier (164)</span>
+<span class="go">47 Français (12/05/2014) / DA VINCI David (165)</span>
+<span class="go">48 Cuisine (12/05/2014) / VAN VEEN Vincent (166)</span>
+<span class="go">49 Créativité (12/05/2014) / ÕUNAPUU Õie (167)</span>
+<span class="go">50 Notre premier bébé (12/05/2014) / ÖSTGES Otto (168)</span>
+<span class="go">51 Mathématiques (12/05/2014) / MARTELAER Mark (172)</span>
+<span class="go">52 Français (12/05/2014) / RADERMECKER Rik (173)</span>
+<span class="go">53 Cuisine (12/05/2014) / VANDENMEULENBOS Marie-Louise (174)</span>
+<span class="go">54 Créativité (12/05/2014) / EIERSCHAL Emil (175)</span>
+<span class="go">55 Notre premier bébé (12/05/2014) / LAHM Lisa (176)</span>
+<span class="go">56 Mathématiques (12/05/2014) / BRECHT Bernd (177)</span>
+<span class="go">57 Français (12/05/2014) / KELLER Karl (178)</span>
+<span class="go">58 Cuisine (12/05/2014) / DUBOIS Robin (179)</span>
+<span class="go">59 Créativité (12/05/2014) / DENON Denis (180*)</span>
+<span class="go">60 Notre premier bébé (12/05/2014) / JEANÉMART Jérôme (181)</span>
+<span class="go">61 Mathématiques (12/05/2014) / KASENNOVA Tatjana (213)</span>
+<span class="go">62 Français (12/05/2014) / AUSDEMWALD Alfons (116)</span>
+<span class="go">63 Cuisine (12/05/2014) / BASTIAENSEN Laurent (117)</span>
+<span class="go">64 Créativité (12/05/2014) / COLLARD Charlotte (118)</span>
+<span class="go">65 Notre premier bébé (12/05/2014) / CHANTRAINE Marc (120*)</span>
+<span class="go">66 Mathématiques (12/05/2014) / DERICUM Daniel (121)</span>
+<span class="go">67 Français (12/05/2014) / DEMEULENAERE Dorothée (122)</span>
+<span class="go">68 Cuisine (12/05/2014) / DOBBELSTEIN-DEMEULENAERE Dorothée (123)</span>
+<span class="go">69 Créativité (12/05/2014) / DOBBELSTEIN Dorothée (124)</span>
+<span class="go">70 Notre premier bébé (12/05/2014) / ERNST Berta (125)</span>
+<span class="go">71 Mathématiques (12/05/2014) / EVERTZ Bernd (126)</span>
+<span class="go">72 Français (12/05/2014) / EVERS Eberhart (127)</span>
+<span class="go">73 Cuisine (12/05/2014) / EMONTS Daniel (128)</span>
+<span class="go">74 Créativité (12/05/2014) / ENGELS Edgar (129)</span>
+<span class="go">75 Notre premier bébé (12/05/2014) / FAYMONVILLE Luc (130*)</span>
+<span class="go">76 Mathématiques (12/05/2014) / GERNEGROSS Germaine (131)</span>
+<span class="go">77 Français (12/05/2014) / GROTECLAES Gregory (132)</span>
+<span class="go">78 Cuisine (12/05/2014) / HILGERS Hildegard (133)</span>
+<span class="go">79 Créativité (12/05/2014) / HILGERS Henri (134)</span>
+<span class="go">80 Notre premier bébé (12/05/2014) / INGELS Irene (135)</span>
+<span class="go">81 Mathématiques (12/05/2014) / JANSEN Jérémy (136)</span>
+<span class="go">82 Français (12/05/2014) / JACOBS Jacqueline (137)</span>
+<span class="go">83 Cuisine (12/05/2014) / JOHNEN Johann (138)</span>
+<span class="go">84 Créativité (12/05/2014) / JONAS Josef (139)</span>
+<span class="go">85 Notre premier bébé (12/05/2014) / JOUSTEN Jan (140*)</span>
+<span class="go">86 Mathématiques (12/05/2014) / KAIVERS Karl (141)</span>
+<span class="go">87 Français (12/05/2014) / LAMBERTZ Guido (142)</span>
+<span class="go">88 Créativité (12/05/2014) / LASCHET Laura (143)</span>
+<span class="go">89 Notre premier bébé (12/05/2014) / LAZARUS Line (144)</span>
+<span class="go">90 Mathématiques (12/05/2014) / LEFFIN Josefine (145)</span>
+<span class="go">91 Français (12/05/2014) / MALMENDIER Marc (146)</span>
+<span class="go">92 Cuisine (12/05/2014) / MEESSEN Melissa (147)</span>
+<span class="go">93 Créativité (12/05/2014) / MEIER Marie-Louise (149)</span>
+<span class="go">94 Notre premier bébé (12/05/2014) / EMONTS Erich (150*)</span>
+<span class="go">95 Mathématiques (12/05/2014) / EMONTSPOOL Erwin (151)</span>
+<span class="go">96 Français (12/05/2014) / EMONTS-GAST Erna (152)</span>
+<span class="go">97 Cuisine (12/05/2014) / RADERMACHER Alfons (153)</span>
+<span class="go">98 Créativité (12/05/2014) / RADERMACHER Berta (154)</span>
+<span class="go">99 Notre premier bébé (12/05/2014) / RADERMACHER Christian (155)</span>
+<span class="go">100 Mathématiques (12/05/2014) / RADERMACHER Daniela (156)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">o</span> <span class="ow">in</span> <span class="n">immersion</span><span class="o">.</span><span class="n">ContractType</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">all</span><span class="p">():</span>
+<span class="gp">... </span>   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{o.id}</span><span class="s2"> </span><span class="si">{o}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">o</span><span class="o">=</span><span class="n">o</span><span class="p">))</span>
+<span class="go">3 MISIP</span>
+<span class="go">1 Mise en situation interne</span>
+<span class="go">2 Stage d&#39;immersion</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">o</span> <span class="ow">in</span> <span class="n">immersion</span><span class="o">.</span><span class="n">Goal</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">all</span><span class="p">():</span>
+<span class="gp">... </span>   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{o.id}</span><span class="s2"> </span><span class="si">{o}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">o</span><span class="o">=</span><span class="n">o</span><span class="p">))</span>
+<span class="go">3 Avoir une expérience de travail</span>
+<span class="go">2 Confirmer un projet professionel</span>
+<span class="go">1 Découvrir un métier</span>
+<span class="go">4 Démontrer des compétences</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">o</span> <span class="ow">in</span> <span class="n">polls</span><span class="o">.</span><span class="n">Question</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">all</span><span class="p">():</span>
+<span class="gp">... </span>   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{o.id}</span><span class="s2"> </span><span class="si">{o}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">o</span><span class="o">=</span><span class="n">o</span><span class="p">))</span>
+<span class="go">1 Pour commencer ma recherche d&#39;emploi, je dois</span>
+<span class="go">31 1) Cherchez-vous du travail actuellement?</span>
+<span class="go">2 1) Avoir une farde de recherche d’emploi organisée</span>
+<span class="go">32 2) Avez-vous un CV à jour?</span>
+<span class="go">3 2) Réaliser mon curriculum vitae</span>
+<span class="go">33 3) Est-ce que vous vous présentez régulièrement au FOREM?</span>
+<span class="go">4 3) Savoir faire une lettre de motivation adaptée au poste de travail visé</span>
+<span class="go">34 4) Est-ce que vous consultez les petites annonces?</span>
+<span class="go">5 4) Respecter les modalités de candidature</span>
+<span class="go">35 5) Demande à l’entourage?</span>
+<span class="go">6 5) Me créer une boite e-mail appropriée à la recherche d’emploi</span>
+<span class="go">36 6) Candidature spontanée?</span>
+<span class="go">7 6) Créer mon compte sur le site de Forem</span>
+<span class="go">37 7) Antécédents judiciaires?</span>
+<span class="go">8 7) Mettre mon curriculum vitae sur le site du Forem</span>
+<span class="go">38 Temps de travail acceptés</span>
+<span class="go">9 8) Connaître les aides à l’embauche qui me concernent</span>
+<span class="go">10 9) Etre préparé à l’entretien d’embauche ou téléphonique</span>
+<span class="go">11 Est-ce que je sais...</span>
+<span class="go">12 1) Utiliser le site du Forem pour consulter les offres d’emploi</span>
+<span class="go">13 2) Décoder une offre d’emploi</span>
+<span class="go">14 3) Adapter mon curriculum vitae par rapport à une offre ou pour une candidature spontanée</span>
+<span class="go">15 4) Réaliser une lettre de motivation suite à une offre d’emploi</span>
+<span class="go">16 5) Adapter une lettre de motivation par rapport à l’offre d’emploi</span>
+<span class="go">17 6) Réaliser une lettre de motivation spontanée</span>
+<span class="go">18 7) Utiliser le fax pour envoyer mes candidatures</span>
+<span class="go">19 8) Utiliser ma boite e-mail pour envoyer mes candidatures</span>
+<span class="go">20 9) Mettre mon curriculum vitae en ligne sur des sites d’entreprise</span>
+<span class="go">21 10) Compléter en ligne les formulaires de candidature</span>
+<span class="go">22 11) M’inscrire aux agences intérim via Internet</span>
+<span class="go">23 12) M’inscrire auprès d’agence de recrutement via Internet</span>
+<span class="go">24 13) Utiliser Internet pour faire des recherches sur une entreprise</span>
+<span class="go">25 14) Préparer un entretien d’embauche (questions, argumentation du C.V.,…)</span>
+<span class="go">26 15) Utiliser Internet pour gérer ma mobilité (transport en commun ou itinéraire voiture)</span>
+<span class="go">27 16) Utiliser la photocopieuse (ex : copie de lettre de motivation que j’envoie par courrier)</span>
+<span class="go">28 17) Utiliser le téléphone pour poser ma candidature</span>
+<span class="go">29 18) Utiliser le téléphone pour relancer ma candidature</span>
+<span class="go">30 19) Trouver et imprimer les formulaires de demandes d’aides à l’embauche se trouvant sur le site de l’ONEm</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">o</span> <span class="ow">in</span> <span class="n">cal</span><span class="o">.</span><span class="n">GuestRole</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">all</span><span class="p">():</span>
+<span class="gp">... </span>   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{o.id}</span><span class="s2"> </span><span class="si">{o}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">o</span><span class="o">=</span><span class="n">o</span><span class="p">))</span>
+<span class="go">1 Collègue</span>
+<span class="go">2 Visiteur</span>
+<span class="go">3 Président</span>
+<span class="go">4 Greffier</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">o</span> <span class="ow">in</span> <span class="n">cal</span><span class="o">.</span><span class="n">EventType</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">all</span><span class="p">():</span>
+<span class="gp">... </span>   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{o.id}</span><span class="s2"> </span><span class="si">{o}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">o</span><span class="o">=</span><span class="n">o</span><span class="p">))</span>
+<span class="go">1 Absences</span>
+<span class="go">2 Jours fériés</span>
+<span class="go">3 Réunion</span>
+<span class="go">4 Interne</span>
+<span class="go">5 Internal meetings with client</span>
+<span class="go">6 Évaluation</span>
+<span class="go">7 Consultations avec le bénéficiaire</span>
+<span class="go">8 Réunions externes avec le bénéficiaire</span>
+<span class="go">9 Informational meetings</span>
+<span class="go">10 Réunions interne</span>
+<span class="go">11 Réunions externe</span>
+<span class="go">12 Privé</span>
+<span class="go">13 Atelier</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">o</span> <span class="ow">in</span> <span class="n">isip</span><span class="o">.</span><span class="n">ContractEnding</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">all</span><span class="p">():</span>
+<span class="gp">... </span>   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{o.id}</span><span class="s2"> </span><span class="si">{o}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">o</span><span class="o">=</span><span class="n">o</span><span class="p">))</span>
+<span class="go">1 Normal</span>
+<span class="go">2 Alcohol</span>
+<span class="go">3 Santé</span>
+<span class="go">4 Force majeure</span>
+</pre></div>
+</div>
+</section>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+
+            <p class="logo"><a href="../../index.html">
+              <img class="logo" src="../../_static/logo_web3.png" alt="Logo"/>
+            </a></p>
+          <div class="sidebar-resize-handle"></div>
+<p align="center"><b>EN</b> | <a href="de/index.rst">DE</a> | <a href="fr/index.rst">FR</a></p>
+<h3><a href="../../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../about/index.html">About Lino Welfare</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../usage/index.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../changes/index.html">Changes</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Specs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../install/index.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../copyright.html">Copyright &amp; legal notes</a></li>
+</ul>
+
+<hr class="docutils" />
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+<ul>
+  <li class="toctree-l1"><a class="reference internal" href="../../py-modindex.html">Python Module Index</a></li>
+</ul><p align="center">
+</p>
+
+<div id="ethical-ad-placement"></div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+    <nav class="relbar">
+      <a class="previous" href="sorting.html" aria-label="Previous topic" >
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg>
+        </div>
+        <div class="title">
+          <span class="text">
+            <span class="direction">previous</span>
+            About sorting
+          </span>
+        </div>
+      </a>
+      <a class="next" href="autoevents.html" aria-label="Next topic" >
+        <div class="title">
+          <span class="text">
+            <span class="direction">next</span>
+            Automatic calendar events
+          </span>
+        </div>
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+        </div>
+      </a>
+    </nav>
+
+    <footer role="contentinfo">
+      &#169; <a href="../../copyright.html">Copyright</a> 2012-2022 Rumma &amp; Ko Ltd.
+      Last updated on 2022-11-08.
+      Created using <a class="reference external" href="https://www.sphinx-doc.org/">Sphinx</a> 5.1.1.
+      <a class="reference external" href="https://insipid-sphinx-theme.readthedocs.io/">Insipid Theme</a>.
+<a href="https://gitlab.com/lino-framework/welfare/-/blob/master/docs/specs/topics/sorting2.rst?plain=1"
+  rel="nofollow">Source code</a>.
+<br>
+
+Online link: <a href="https://welfare.lino-framework.org/specs/topics/sorting2.html">https://welfare.lino-framework.org/specs/topics/sorting2.html</a>.
+
+
+    </footer>
+  </body>
+</html>

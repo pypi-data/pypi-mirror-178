@@ -1,0 +1,580 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Miscellaneous &#8212; Lino Welfare</title>
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/insipid.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/atelier.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/insipid-cust.css" />
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script defer src="../../_static/insipid.js"></script>
+    <script defer src="../../_static/insipid-sidebar.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../copyright.html" />
+    <link rel="next" title="Integration Service" href="integ.html" />
+    <link rel="prev" title="Polls in Lino Welfare" href="polls.html" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+  </head><body>
+    <script type="text/javascript">
+        document.body.classList.add('js');
+    </script>
+    <input type="checkbox" id="sidebar-checkbox" style="display: none;">
+    <label id="overlay" for="sidebar-checkbox"></label>
+    <div class="sidebar-resize-handle"></div>
+    <script type="text/javascript">
+        try {
+            let sidebar = localStorage.getItem('sphinx-sidebar');
+            const sidebar_width = localStorage.getItem('sphinx-sidebar-width');
+            if (sidebar_width) {
+                document.documentElement.style.setProperty('--sidebar-width', sidebar_width);
+            }
+            // show sidebar on wide screen
+            if (!sidebar && window.matchMedia('(min-width: 100rem)').matches) {
+                sidebar = 'visible';
+                // NB: We don't store the value in localStorage!
+            }
+            if (sidebar === 'visible') {
+                document.getElementById('sidebar-checkbox').checked = true;
+            }
+        } catch(e) {
+            console.info(e);
+        }
+    </script>
+    <header id="topbar-placeholder">
+      <div id="topbar">
+        <div id="titlebar">
+          <div class="buttons">
+            <label for="sidebar-checkbox" id="sidebar-button" role="button" tabindex="0" aria-controls="sphinxsidebar" accesskey="M">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></svg>
+            </label><a href="../../index.html" title="Lino Welfare">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg>
+</a>
+          </div>
+          <div class="title">
+            <a class="parent" href="index.html" accesskey="U">Lino Welfare Chatelet Specs</a>
+            <a class="top" href="#">Miscellaneous</a>
+          </div>
+          <div class="buttons">
+            <button id="fullscreen-button" type="button" aria-hidden="true">
+              <span class="enable">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M212.686 315.314L120 408l32.922 31.029c15.12 15.12 4.412 40.971-16.97 40.971h-112C10.697 480 0 469.255 0 456V344c0-21.382 25.803-32.09 40.922-16.971L72 360l92.686-92.686c6.248-6.248 16.379-6.248 22.627 0l25.373 25.373c6.249 6.248 6.249 16.378 0 22.627zm22.628-118.628L328 104l-32.922-31.029C279.958 57.851 290.666 32 312.048 32h112C437.303 32 448 42.745 448 56v112c0 21.382-25.803 32.09-40.922 16.971L376 152l-92.686 92.686c-6.248 6.248-16.379 6.248-22.627 0l-25.373-25.373c-6.249-6.248-6.249-16.378 0-22.627z"/></svg>
+              </span>
+              <span class="disable">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M4.686 427.314L104 328l-32.922-31.029C55.958 281.851 66.666 256 88.048 256h112C213.303 256 224 266.745 224 280v112c0 21.382-25.803 32.09-40.922 16.971L152 376l-99.314 99.314c-6.248 6.248-16.379 6.248-22.627 0L4.686 449.941c-6.248-6.248-6.248-16.379 0-22.627zM443.314 84.686L344 184l32.922 31.029c15.12 15.12 4.412 40.971-16.97 40.971h-112C234.697 256 224 245.255 224 232V120c0-21.382 25.803-32.09 40.922-16.971L296 136l99.314-99.314c6.248-6.248 16.379-6.248 22.627 0l25.373 25.373c6.248 6.248 6.248 16.379 0 22.627z"/></svg>
+              </span>
+            </button><a href="https://www.facebook.com/sharer/sharer.php?u=https://welfare.lino-framework.org/specs/welcht/misc/" title="Share on Facebook" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+</a>
+
+<!---
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+---!>
+
+<a href="https://twitter.com/share?ref_src=https://welfare.lino-framework.org/specs/welcht/misc/" title="Share on Twitter" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <a href="polls.html" class="nav-icon previous" title="previous:&#13;Polls in Lino Welfare" aria-label="Previous topic" accesskey="P" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"/></svg>
+      </a>
+      <a href="integ.html" class="nav-icon next" title="next:&#13;Integration Service" aria-label="Next topic" accesskey="N" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg>
+      </a>
+    </nav>
+
+    <nav class="relbar">
+      <a class="previous" href="polls.html" aria-label="Previous topic" >
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg>
+        </div>
+        <div class="title">
+          <span class="text">
+            <span class="direction">previous</span>
+            Polls in Lino Welfare
+          </span>
+        </div>
+      </a>
+      <a class="next" href="integ.html" aria-label="Next topic" >
+        <div class="title">
+          <span class="text">
+            <span class="direction">next</span>
+            Integration Service
+          </span>
+        </div>
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+        </div>
+      </a>
+    </nav>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+<section id="miscellaneous">
+<span id="welfare-specs-misc"></span><h1>Miscellaneous<a class="headerlink" href="#miscellaneous" title="Permalink to this heading">¶</a></h1>
+<nav class="contents local" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#build-all-excerpts" id="id1">Build all excerpts</a></p></li>
+<li><p><a class="reference internal" href="#default-template-for-excerpts" id="id2">Default template for excerpts</a></p></li>
+<li><p><a class="reference internal" href="#editing-the-print-template-of-an-excerpt" id="id3">Editing the print template of an excerpt</a></p></li>
+<li><p><a class="reference internal" href="#yet-another-series-of-get-requests" id="id4">Yet another series of GET requests</a></p></li>
+<li><p><a class="reference internal" href="#visibility-of-eid-reader-action" id="id5">Visibility of eID reader action</a></p></li>
+<li><p><a class="reference internal" href="#visibility-of-duplicate-action" id="id6">Visibility of duplicate action</a></p></li>
+<li><p><a class="reference internal" href="#permissions" id="id7">Permissions</a></p></li>
+<li><p><a class="reference internal" href="#miscellaneous-tests" id="id8">Miscellaneous tests</a></p></li>
+</ul>
+</nav>
+<p>This is a <a class="reference external" href="https://dev.lino-framework.org/dev/doctests.html#tested-docs" title="(in Lino Developer Guide v20.1)"><span class="xref std std-ref">tested document</span></a>.  The following instructions are
+used for initialization:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino</span> <span class="kn">import</span> <span class="n">startup</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">startup</span><span class="p">(</span><span class="s1">&#39;lino_welfare.projects.mathieu.settings.doctests&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino.api.doctest</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span> <span class="o">=</span> <span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;rolf&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<section id="build-all-excerpts">
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">Build all excerpts</a><a class="headerlink" href="#build-all-excerpts" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="default-template-for-excerpts">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Default template for excerpts</a><a class="headerlink" href="#default-template-for-excerpts" title="Permalink to this heading">¶</a></h2>
+<p>Check whether Lino returns the right default template for excerpts.</p>
+<p>In <a class="reference external" href="https://dev.lino-framework.org/api/lino_xl.lib.excerpts.html#module-lino_xl.lib.excerpts" title="(in Lino Developer Guide v20.1)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">lino_xl.lib.excerpts</span></code></a> we define a template
+<a class="reference internal" href="../excerpts.html#xfile-excerpts-Default.odt"><code class="xref std std-xfile docutils literal notranslate"><span class="pre">excerpts/Default.odt</span></code></a>, but <a class="reference internal" href="../../api/lino_welfare.modlib.welfare.html#module-lino_welfare.modlib.welfare" title="lino_welfare.modlib.welfare"><code class="xref py py-mod docutils literal notranslate"><span class="pre">lino_welfare.modlib.welfare</span></code></a>
+overrides this template.</p>
+<p>The rule is that <strong>the *last* plugin wins</strong> when Lino searches for
+templates.</p>
+<p>This means that if we want to see the welfare-specific version, our
+<a class="reference external" href="https://dev.lino-framework.org/dev/site.html#lino.core.site.Site.get_installed_apps" title="(in Lino Developer Guide v20.1)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_installed_apps</span></code></a> in
+<code class="xref py py-mod docutils literal notranslate"><span class="pre">lino_welare.projects.std.settings</span></code> must yield
+<a class="reference internal" href="../../api/lino_welfare.modlib.welfare.html#module-lino_welfare.modlib.welfare" title="lino_welfare.modlib.welfare"><code class="xref py py-mod docutils literal notranslate"><span class="pre">lino_welfare.modlib.welfare</span></code></a> <strong>after</strong>
+<a class="reference external" href="https://dev.lino-framework.org/api/lino_xl.lib.excerpts.html#module-lino_xl.lib.excerpts" title="(in Lino Developer Guide v20.1)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">lino_xl.lib.excerpts</span></code></a>.</p>
+<p>The following test verifies this rule:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">settings</span><span class="o">.</span><span class="n">SITE</span><span class="o">.</span><span class="n">find_config_file</span><span class="p">(</span><span class="s1">&#39;Default.odt&#39;</span><span class="p">,</span> <span class="s1">&#39;excerpts&#39;</span><span class="p">))</span>
+<span class="gp">... </span>
+<span class="go">/.../welfare/config/excerpts/Default.odt</span>
+</pre></div>
+</div>
+</section>
+<section id="editing-the-print-template-of-an-excerpt">
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Editing the print template of an excerpt</a><a class="headerlink" href="#editing-the-print-template-of-an-excerpt" title="Permalink to this heading">¶</a></h2>
+<p>Here we want to see what the <a class="reference external" href="https://dev.lino-framework.org/specs/printing.html#lino.modlib.printing.EditTemplate" title="(in Lino Developer Guide v20.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">EditTemplate</span></code></a> action says, especially
+when called on an excerpt where Lino has two possible locations.</p>
+<p>Note that we need a local config directory for the following test to work. On
+travis we use <span class="target" id="index-0"></span><a class="reference external" href="https://dev.lino-framework.org/dev/cache.html#envvar-LINO_CACHE_ROOT" title="(in Lino Developer Guide v20.1)"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">LINO_CACHE_ROOT</span></code></a>, so there is no local config dir. That’s
+why this doctest must create one.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">lcd</span> <span class="o">=</span> <span class="n">settings</span><span class="o">.</span><span class="n">SITE</span><span class="o">.</span><span class="n">site_dir</span> <span class="o">/</span> <span class="s1">&#39;config&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">rt</span><span class="o">.</span><span class="n">makedirs_if_missing</span><span class="p">(</span><span class="n">lcd</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>After having created the directory, we must tell Lino to scan the file
+system again:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">settings</span><span class="o">.</span><span class="n">SITE</span><span class="o">.</span><span class="n">confdirs</span><span class="o">.</span><span class="n">scan_config_dirs</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">settings</span><span class="o">.</span><span class="n">SITE</span><span class="o">.</span><span class="n">confdirs</span><span class="o">.</span><span class="n">LOCAL_CONFIG_DIR</span><span class="o">.</span><span class="n">writeable</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<p>Excerpts are printables with <em>two</em> template groups.
+A printable with several template groups will use the first one that exists, and will fail only if non of them exists.
+The first template group is
+given by the owner (e.g. <cite>“immersion/Contract”</cite>) and the second is just
+<cite>“excerpts”</cite>. For example the owner of Excerpt #2 is an immersion training,
+while the owner of Excerpt #4 is an aids confirmation:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">excerpts</span><span class="o">.</span><span class="n">Excerpt</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">get_template_groups</span><span class="p">()</span> 
+<span class="go">[&#39;immersion/Contract&#39;, &#39;excerpts&#39;]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">excerpts</span><span class="o">.</span><span class="n">Excerpt</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span><span class="o">.</span><span class="n">get_template_groups</span><span class="p">()</span> 
+<span class="go">[&#39;aids/Confirmation&#39;, &#39;excerpts&#39;]</span>
+</pre></div>
+</div>
+<p>When creating a local copy of the factory template, Lino copies the factory file
+to the directory given by the <em>first</em> group. Before doing so, it will ask for
+user confirmation.  The following code snippet partly tests this situation.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">obj</span> <span class="o">=</span> <span class="n">excerpts</span><span class="o">.</span><span class="n">Excerpt</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">obj</span><span class="o">.</span><span class="n">owner</span>
+<span class="go">Contract #2 (&quot;Stage d&#39;immersion#2 (Edgar ENGELS)&quot;)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span><span class="o">.</span><span class="n">set_confirm_answer</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">rv</span> <span class="o">=</span> <span class="n">ses</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">obj</span><span class="o">.</span><span class="n">edit_template</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">rv</span><span class="p">[</span><span class="s1">&#39;info_message&#39;</span><span class="p">])</span>
+<span class="gp">... </span>
+<span class="go">Gonna copy ...welfare/config/excerpts/Default.odt to .../config/immersion/Contract/Default.odt</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">rv</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">])</span>
+<span class="gp">... </span>    
+<span class="go">Before you can edit this template we must create a local copy on the server. This will exclude the template from future updates.</span>
+<span class="go">D&#39;accord?</span>
+</pre></div>
+</div>
+<p>Another thing is the location of the factory template.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">obj</span> <span class="o">=</span> <span class="n">excerpts</span><span class="o">.</span><span class="n">Excerpt</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ses</span><span class="o">.</span><span class="n">set_confirm_answer</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">rv</span> <span class="o">=</span> <span class="n">ses</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">obj</span><span class="o">.</span><span class="n">edit_template</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">rv</span><span class="p">[</span><span class="s1">&#39;info_message&#39;</span><span class="p">])</span>
+<span class="gp">... </span>
+<span class="go">Gonna copy .../lino_welfare/modlib/welfare/config/excerpts/Default.odt to .../config/immersion/Contract/Default.odt</span>
+</pre></div>
+</div>
+</section>
+<section id="yet-another-series-of-get-requests">
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Yet another series of GET requests</a><a class="headerlink" href="#yet-another-series-of-get-requests" title="Permalink to this heading">¶</a></h2>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ContentType</span> <span class="o">=</span> <span class="n">rt</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">contenttypes</span><span class="o">.</span><span class="n">ContentType</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">json_fields</span> <span class="o">=</span> <span class="s1">&#39;count rows title success no_data_text param_values&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">fmt</span><span class="o">=</span><span class="s1">&#39;json&#39;</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">demo_get</span><span class="p">(</span><span class="s1">&#39;rolf&#39;</span><span class="p">,</span> <span class="s1">&#39;api/contacts/Companies&#39;</span><span class="p">,</span> <span class="n">json_fields</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">demo_get</span><span class="p">(</span><span class="s1">&#39;rolf&#39;</span><span class="p">,</span> <span class="s1">&#39;api/households/Households&#39;</span><span class="p">,</span> <span class="n">json_fields</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">demo_get</span><span class="p">(</span><span class="s1">&#39;rolf&#39;</span><span class="p">,</span> <span class="s1">&#39;api/contacts/Partners&#39;</span><span class="p">,</span> <span class="n">json_fields</span><span class="p">,</span> <span class="mi">163</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">demo_get</span><span class="p">(</span><span class="s1">&#39;rolf&#39;</span><span class="p">,</span> <span class="s1">&#39;api/jobs/JobProviders&#39;</span><span class="p">,</span> <span class="n">json_fields</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">json_fields</span> <span class="o">=</span> <span class="s1">&#39;count rows title success no_data_text&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">demo_get</span><span class="p">(</span><span class="s1">&#39;rolf&#39;</span><span class="p">,</span> <span class="s1">&#39;api/countries/Countries&#39;</span><span class="p">,</span> <span class="n">json_fields</span><span class="p">,</span> <span class="mi">271</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">demo_get</span><span class="p">(</span><span class="s1">&#39;rolf&#39;</span><span class="p">,</span> <span class="s1">&#39;api/jobs/Jobs&#39;</span><span class="p">,</span> <span class="n">json_fields</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">json_fields</span> <span class="o">=</span> <span class="s1">&#39;count rows title success no_data_text param_values&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">demo_get</span><span class="p">(</span><span class="s1">&#39;rolf&#39;</span><span class="p">,</span> <span class="s1">&#39;api/contacts/Persons&#39;</span><span class="p">,</span> <span class="n">json_fields</span><span class="p">,</span> <span class="mi">103</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">demo_get</span><span class="p">(</span><span class="s1">&#39;rolf&#39;</span><span class="p">,</span> <span class="s1">&#39;api/pcsw/CoachedClients&#39;</span><span class="p">,</span> <span class="n">json_fields</span><span class="p">,</span> <span class="mi">29</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">demo_get</span><span class="p">(</span><span class="s1">&#39;rolf&#39;</span><span class="p">,</span> <span class="s1">&#39;api/debts/Clients&#39;</span><span class="p">,</span> <span class="n">json_fields</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">demo_get</span><span class="p">(</span><span class="s1">&#39;rolf&#39;</span><span class="p">,</span> <span class="s1">&#39;api/cal/MyEntries&#39;</span><span class="p">,</span> <span class="n">json_fields</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">demo_get</span><span class="p">(</span><span class="s1">&#39;rolf&#39;</span><span class="p">,</span> <span class="s1">&#39;api/newcomers/NewClients&#39;</span><span class="p">,</span> <span class="n">json_fields</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">demo_get</span><span class="p">(</span>
+<span class="gp">... </span>   <span class="s1">&#39;rolf&#39;</span><span class="p">,</span> <span class="s1">&#39;api/newcomers/AvailableCoachesByClient&#39;</span><span class="p">,</span> <span class="n">json_fields</span><span class="p">,</span>
+<span class="gp">... </span>   <span class="mi">2</span><span class="p">,</span> <span class="n">mt</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">mk</span><span class="o">=</span><span class="mi">120</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">demo_get</span><span class="p">(</span><span class="s1">&#39;alicia&#39;</span><span class="p">,</span> <span class="s1">&#39;api/integ/Clients&#39;</span><span class="p">,</span> <span class="n">json_fields</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">demo_get</span><span class="p">(</span><span class="s1">&#39;hubert&#39;</span><span class="p">,</span> <span class="s1">&#39;api/integ/Clients&#39;</span><span class="p">,</span> <span class="n">json_fields</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">alicia</span> <span class="o">=</span> <span class="n">settings</span><span class="o">.</span><span class="n">SITE</span><span class="o">.</span><span class="n">user_model</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">username</span><span class="o">=</span><span class="s1">&#39;alicia&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Rolf working as Alicia:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">fmt</span><span class="o">=</span><span class="s1">&#39;json&#39;</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">su</span><span class="o">=</span><span class="n">alicia</span><span class="o">.</span><span class="n">pk</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">demo_get</span><span class="p">(</span><span class="s1">&#39;rolf&#39;</span><span class="p">,</span> <span class="s1">&#39;api/integ/Clients&#39;</span><span class="p">,</span> <span class="n">json_fields</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Some choices lists:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fields</span> <span class="o">=</span> <span class="s1">&#39;count rows&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">demo_get</span><span class="p">(</span>
+<span class="gp">... </span>   <span class="s1">&#39;rolf&#39;</span><span class="p">,</span> <span class="s1">&#39;choices/clients/ContactsByClient/company?type=1&#39;</span><span class="p">,</span> <span class="n">fields</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">demo_get</span><span class="p">(</span>
+<span class="gp">... </span>   <span class="s1">&#39;rolf&#39;</span><span class="p">,</span> <span class="s1">&#39;choices/aids/IncomeConfirmations/aid_type&#39;</span><span class="p">,</span> <span class="n">fields</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">demo_get</span><span class="p">(</span>
+<span class="gp">... </span>   <span class="s1">&#39;rolf&#39;</span><span class="p">,</span> <span class="s1">&#39;choices/aids/RefundConfirmations/aid_type&#39;</span><span class="p">,</span> <span class="n">fields</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">demo_get</span><span class="p">(</span>
+<span class="gp">... </span>   <span class="s1">&#39;rolf&#39;</span><span class="p">,</span> <span class="s1">&#39;apchoices/pcsw/Clients/create_visit/user&#39;</span><span class="p">,</span> <span class="n">fields</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">demo_get</span><span class="p">(</span>
+<span class="gp">... </span>   <span class="s1">&#39;robin&#39;</span><span class="p">,</span> <span class="s1">&#39;choices/countries/Countries/actual_country&#39;</span><span class="p">,</span> <span class="n">fields</span><span class="p">,</span> <span class="mi">266</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="visibility-of-eid-reader-action">
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Visibility of eID reader action</a><a class="headerlink" href="#visibility-of-eid-reader-action" title="Permalink to this heading">¶</a></h2>
+<p>Here is a list of the tables that have the
+<code class="xref py py-class docutils literal notranslate"><span class="pre">lino.modlib.beid.mixins.FindByBeIdAction</span></code> and the user
+profiles that can see it.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino_xl.lib.beid.mixins</span> <span class="kn">import</span> <span class="n">FindByBeIdAction</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">analyzer</span><span class="o">.</span><span class="n">show_action_permissions</span><span class="p">(</span><span class="n">FindByBeIdAction</span><span class="p">))</span>
+<span class="gp">... </span>
+<span class="go">- debts.Clients.find_by_beid : visible for 120 300 420 admin 910</span>
+<span class="go">- integ.Clients.find_by_beid : visible for 100 110 120 420 admin 910</span>
+<span class="go">- newcomers.ClientsByFaculty.find_by_beid : visible for 100 110 120 200 210 220 300 400 410 420 800 admin 910</span>
+<span class="go">- newcomers.NewClients.find_by_beid : visible for 120 200 220 300 420 admin 910</span>
+<span class="go">- pcsw.AllClients.find_by_beid : visible for 110 120 410 420 admin 910</span>
+<span class="go">- pcsw.Clients.find_by_beid : visible for 100 110 120 200 210 220 300 400 410 420 800 admin 910</span>
+<span class="go">- pcsw.ClientsByNationality.find_by_beid : visible for 100 110 120 200 210 220 300 400 410 420 800 admin 910</span>
+<span class="go">- pcsw.CoachedClients.find_by_beid : visible for 100 110 120 200 300 400 410 420 admin 910</span>
+<span class="go">- reception.Clients.find_by_beid : visible for 100 110 120 200 210 220 300 400 410 420 800 admin 910</span>
+</pre></div>
+</div>
+</section>
+<section id="visibility-of-duplicate-action">
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Visibility of duplicate action</a><a class="headerlink" href="#visibility-of-duplicate-action" title="Permalink to this heading">¶</a></h2>
+<p>Here is a list of the tables that have the
+<a class="reference external" href="https://dev.lino-framework.org/api/lino.mixins.duplicable.html#lino.mixins.duplicable.Duplicate" title="(in Lino Developer Guide v20.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">lino.mixins.duplicable.Duplicate</span></code></a> and the user types that can
+see it.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">lino.mixins.duplicable</span> <span class="kn">import</span> <span class="n">Duplicate</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">analyzer</span><span class="o">.</span><span class="n">show_action_permissions</span><span class="p">(</span><span class="n">Duplicate</span><span class="p">))</span>
+<span class="gp">... </span>
+<span class="go">- cal.AllEntries.duplicate : visible for admin 910</span>
+<span class="go">- cal.ConflictingEvents.duplicate : visible for 110 120 410 420 admin 910</span>
+<span class="go">- cal.EntriesByClient.duplicate : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- cal.EntriesByController.duplicate : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- cal.EntriesByDay.duplicate : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- cal.EntriesByGuest.duplicate : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- cal.EntriesByProject.duplicate : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- cal.EntriesByRoom.duplicate : visible for 110 120 410 420 admin 910</span>
+<span class="go">- cal.EntriesByType.duplicate : visible for 110 120 410 420 admin 910</span>
+<span class="go">- cal.EventTypes.duplicate : visible for 110 120 410 420 admin 910</span>
+<span class="go">- cal.Events.duplicate : visible for 110 120 410 420 admin 910</span>
+<span class="go">- cal.MyAssignedEvents.duplicate : visible for 100 110 120 200 300 400 410 420 500 510 admin 910</span>
+<span class="go">- cal.MyEntries.duplicate : visible for 100 110 120 200 300 400 410 420 500 510 admin 910</span>
+<span class="go">- cal.MyEntriesToday.duplicate : visible for 100 110 120 200 300 400 410 420 500 510 admin 910</span>
+<span class="go">- cal.MyOverdueAppointments.duplicate : visible for 100 110 120 200 300 400 410 420 500 510 admin 910</span>
+<span class="go">- cal.MyUnconfirmedAppointments.duplicate : visible for 100 110 120 200 300 400 410 420 500 510 admin 910</span>
+<span class="go">- cal.OneEvent.duplicate : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- cal.OverdueAppointments.duplicate : visible for 110 120 410 420 admin 910</span>
+<span class="go">- cal.PublicEntries.duplicate : visible for nobody</span>
+<span class="go">- cal.RemoteCalendars.duplicate : visible for 110 120 410 420 admin 910</span>
+<span class="go">- calview.DailyPlanner.duplicate : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- calview.DailyPlannerRows.duplicate : visible for 110 120 410 420 admin 910</span>
+<span class="go">- calview.DailySlave.duplicate : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- calview.WeeklySlave.duplicate : visible for 110 120 410 420 admin 910</span>
+<span class="go">- cbss.AllIdentifyPersonRequests.duplicate : visible for admin 910</span>
+<span class="go">- cbss.AllManageAccessRequests.duplicate : visible for admin 910</span>
+<span class="go">- cbss.AllRetrieveTIGroupsRequests.duplicate : visible for admin 910</span>
+<span class="go">- cbss.IdentifyPersonRequests.duplicate : visible for 100 110 120 200 210 300 400 410 420 admin 910</span>
+<span class="go">- cbss.IdentifyRequestsByPerson.duplicate : visible for 100 110 120 200 210 300 400 410 420 admin 910</span>
+<span class="go">- cbss.ManageAccessRequests.duplicate : visible for 100 110 120 200 210 300 400 410 420 admin 910</span>
+<span class="go">- cbss.ManageAccessRequestsByPerson.duplicate : visible for 100 110 120 200 210 300 400 410 420 admin 910</span>
+<span class="go">- cbss.MyIdentifyPersonRequests.duplicate : visible for 100 110 120 200 210 300 400 410 420 admin 910</span>
+<span class="go">- cbss.MyManageAccessRequests.duplicate : visible for 100 110 120 200 210 300 400 410 420 admin 910</span>
+<span class="go">- cbss.MyRetrieveTIGroupsRequests.duplicate : visible for 100 110 120 200 210 300 400 410 420 admin 910</span>
+<span class="go">- cbss.RetrieveTIGroupsRequests.duplicate : visible for 100 110 120 200 210 300 400 410 420 admin 910</span>
+<span class="go">- cbss.RetrieveTIGroupsRequestsByPerson.duplicate : visible for 100 110 120 200 210 300 400 410 420 admin 910</span>
+<span class="go">- clients.PartnersByClientContactType.duplicate : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- coachings.CoachingEndings.duplicate : visible for 110 120 210 410 420 admin 910</span>
+<span class="go">- contacts.Companies.duplicate : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- contacts.Partners.duplicate : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- contacts.PartnersByCity.duplicate : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- contacts.PartnersByCountry.duplicate : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- contacts.Persons.duplicate : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- countries.Places.duplicate : visible for 110 120 210 410 420 800 admin 910</span>
+<span class="go">- countries.PlacesByCountry.duplicate : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- countries.PlacesByPlace.duplicate : visible for 110 120 210 410 420 800 admin 910</span>
+<span class="go">- courses.ActiveActivities.duplicate : visible for 100 110 120 200 210 300 400 410 420 800 admin 910</span>
+<span class="go">- courses.Activities.duplicate : visible for 100 110 120 200 210 300 400 410 420 800 admin 910</span>
+<span class="go">- courses.ActivitiesByLayout.duplicate : visible for 100 110 120 200 210 300 400 410 420 800 admin 910</span>
+<span class="go">- courses.ActivitiesByLine.duplicate : visible for 100 110 120 200 210 300 400 410 420 800 admin 910</span>
+<span class="go">- courses.ActivitiesBySlot.duplicate : visible for 100 110 120 200 210 300 400 410 420 800 admin 910</span>
+<span class="go">- courses.ActivitiesByTeacher.duplicate : visible for 100 110 120 200 210 300 400 410 420 800 admin 910</span>
+<span class="go">- courses.ActivitiesByTopic.duplicate : visible for 100 110 120 200 210 300 400 410 420 800 admin 910</span>
+<span class="go">- courses.AllActivities.duplicate : visible for admin 910</span>
+<span class="go">- courses.ClosedActivities.duplicate : visible for 100 110 120 200 210 300 400 410 420 800 admin 910</span>
+<span class="go">- courses.DraftActivities.duplicate : visible for 100 110 120 200 210 300 400 410 420 800 admin 910</span>
+<span class="go">- courses.EntriesByTeacher.duplicate : visible for 110 120 410 420 admin 910</span>
+<span class="go">- courses.InactiveActivities.duplicate : visible for 100 110 120 200 210 300 400 410 420 800 admin 910</span>
+<span class="go">- courses.JobCourses.duplicate : visible for 100 110 120 200 210 300 400 410 420 800 admin 910</span>
+<span class="go">- courses.Lines.duplicate : visible for 100 110 120 200 210 300 400 410 420 800 admin 910</span>
+<span class="go">- courses.LinesByTopic.duplicate : visible for 100 110 120 200 210 300 400 410 420 800 admin 910</span>
+<span class="go">- courses.MyActivities.duplicate : visible for 100 110 120 200 210 300 400 410 420 800 admin 910</span>
+<span class="go">- courses.MyCoursesGiven.duplicate : visible for 110 120 420 admin 910</span>
+<span class="go">- courses.Slots.duplicate : visible for admin 910</span>
+<span class="go">- courses.Topics.duplicate : visible for admin 910</span>
+<span class="go">- cv.EducationLevels.duplicate : visible for 110 120 420 admin 910</span>
+<span class="go">- dashboard.AllWidgets.duplicate : visible for admin 910</span>
+<span class="go">- dashboard.Widgets.duplicate : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- dashboard.WidgetsByUser.duplicate : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- debts.Accounts.duplicate : visible for admin 910</span>
+<span class="go">- debts.AccountsByGroup.duplicate : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- debts.Actors.duplicate : visible for admin 910</span>
+<span class="go">- debts.ActorsByBudget.duplicate : visible for 120 300 420 admin 910</span>
+<span class="go">- debts.ActorsByPartner.duplicate : visible for 120 300 420 admin 910</span>
+<span class="go">- debts.AssetsByBudget.duplicate : visible for 120 300 420 admin 910</span>
+<span class="go">- debts.Budgets.duplicate : visible for admin 910</span>
+<span class="go">- debts.BudgetsByPartner.duplicate : visible for 120 300 420 admin 910</span>
+<span class="go">- debts.Clients.duplicate : visible for 120 300 420 admin 910</span>
+<span class="go">- debts.DistByBudget.duplicate : visible for 120 300 420 admin 910</span>
+<span class="go">- debts.Entries.duplicate : visible for admin 910</span>
+<span class="go">- debts.EntriesByAccount.duplicate : visible for admin 910</span>
+<span class="go">- debts.EntriesByBudget.duplicate : visible for 120 300 420 admin 910</span>
+<span class="go">- debts.EntriesByType.duplicate : visible for 120 300 420 admin 910</span>
+<span class="go">- debts.ExpensesByBudget.duplicate : visible for 120 300 420 admin 910</span>
+<span class="go">- debts.IncomesByBudget.duplicate : visible for 120 300 420 admin 910</span>
+<span class="go">- debts.LiabilitiesByBudget.duplicate : visible for 120 300 420 admin 910</span>
+<span class="go">- debts.MyBudgets.duplicate : visible for 120 300 420 admin 910</span>
+<span class="go">- excerpts.AllExcerpts.duplicate : visible for admin 910</span>
+<span class="go">- excerpts.Excerpts.duplicate : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- excerpts.ExcerptsByOwner.duplicate : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- excerpts.ExcerptsByProject.duplicate : visible for 100 110 120 200 210 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- excerpts.ExcerptsByType.duplicate : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- excerpts.MyExcerpts.duplicate : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- extensible.PanelEvents.duplicate : visible for 100 110 120 200 300 400 410 420 500 510 admin 910</span>
+<span class="go">- households.Households.duplicate : visible for 100 110 120 200 210 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- households.HouseholdsByType.duplicate : visible for 100 110 120 200 210 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- integ.Clients.duplicate : visible for 100 110 120 420 admin 910</span>
+<span class="go">- integ.CoachingEndingsByType.duplicate : visible for 110 120 210 410 420 admin 910</span>
+<span class="go">- integ.CoachingEndingsByUser.duplicate : visible for 110 120 210 410 420 admin 910</span>
+<span class="go">- integ.CompaniesAndContracts.duplicate : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- integ.JobProvidersAndContracts.duplicate : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- isip.EntriesByContract.duplicate : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- jobs.Employers.duplicate : visible for 100 110 120 420 admin 910</span>
+<span class="go">- jobs.JobProviders.duplicate : visible for 100 110 120 420 admin 910</span>
+<span class="go">- jobs.JobTypes.duplicate : visible for 110 120 410 420 admin 910</span>
+<span class="go">- newcomers.ClientsByFaculty.duplicate : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- newcomers.Competences.duplicate : visible for 110 120 410 420 admin 910</span>
+<span class="go">- newcomers.CompetencesByFaculty.duplicate : visible for 110 120 410 420 admin 910</span>
+<span class="go">- newcomers.CompetencesByUser.duplicate : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- newcomers.MyCompetences.duplicate : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- newcomers.NewClients.duplicate : visible for 120 200 220 300 420 admin 910</span>
+<span class="go">- notes.AllNotes.duplicate : visible for 110 120 420 admin 910</span>
+<span class="go">- notes.MyNotes.duplicate : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- notes.Notes.duplicate : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- notes.NotesByCompany.duplicate : visible for 100 110 120 200 210 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- notes.NotesByEventType.duplicate : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- notes.NotesByOwner.duplicate : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- notes.NotesByPerson.duplicate : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- notes.NotesByProject.duplicate : visible for 100 110 120 200 210 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- notes.NotesByType.duplicate : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- pcsw.AllClients.duplicate : visible for 110 120 410 420 admin 910</span>
+<span class="go">- pcsw.Clients.duplicate : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- pcsw.ClientsByNationality.duplicate : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+<span class="go">- pcsw.CoachedClients.duplicate : visible for 100 110 120 200 300 400 410 420 admin 910</span>
+<span class="go">- pcsw.DispenseReasons.duplicate : visible for 110 120 410 420 admin 910</span>
+<span class="go">- polls.Choices.duplicate : visible for 110 120 410 420 admin 910</span>
+<span class="go">- polls.ChoicesBySet.duplicate : visible for 110 120 410 420 admin 910</span>
+<span class="go">- polls.PollResult.duplicate : visible for 110 120 410 420 admin 910</span>
+<span class="go">- polls.Questions.duplicate : visible for 110 120 410 420 admin 910</span>
+<span class="go">- polls.QuestionsByPoll.duplicate : visible for 100 110 120 200 300 400 410 420 admin 910</span>
+<span class="go">- reception.Clients.duplicate : visible for 100 110 120 200 210 220 300 400 410 420 500 510 800 admin 910</span>
+</pre></div>
+</div>
+</section>
+<section id="permissions">
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Permissions</a><a class="headerlink" href="#permissions" title="Permalink to this heading">¶</a></h2>
+<p>Test whether everybody can display the detail of a client:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">o</span> <span class="o">=</span> <span class="n">pcsw</span><span class="o">.</span><span class="n">Client</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">177</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">u</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;robin&#39;</span><span class="p">,</span> <span class="s1">&#39;alicia&#39;</span><span class="p">,</span> <span class="s1">&#39;theresia&#39;</span><span class="p">,</span> <span class="s1">&#39;caroline&#39;</span><span class="p">,</span> <span class="s1">&#39;kerstin&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="n">tostring</span><span class="p">(</span><span class="n">rt</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="n">u</span><span class="p">)</span><span class="o">.</span><span class="n">obj2html</span><span class="p">(</span><span class="n">o</span><span class="p">)))</span>
+<span class="gp">... </span>
+<span class="go">&lt;a href=&quot;Detail&quot;&gt;BRECHT Bernd (177)&lt;/a&gt;</span>
+<span class="go">&lt;a href=&quot;Detail&quot;&gt;BRECHT Bernd (177)&lt;/a&gt;</span>
+<span class="go">&lt;a href=&quot;Detail&quot;&gt;BRECHT Bernd (177)&lt;/a&gt;</span>
+<span class="go">&lt;a href=&quot;Detail&quot;&gt;BRECHT Bernd (177)&lt;/a&gt;</span>
+<span class="go">&lt;a href=&quot;Detail&quot;&gt;BRECHT Bernd (177)&lt;/a&gt;</span>
+<span class="go">&lt;em&gt;BRECHT Bernd (177)&lt;/em&gt;</span>
+</pre></div>
+</div>
+</section>
+<section id="miscellaneous-tests">
+<h2><a class="toc-backref" href="#id8" role="doc-backlink">Miscellaneous tests</a><a class="headerlink" href="#miscellaneous-tests" title="Permalink to this heading">¶</a></h2>
+<p>See <a class="reference external" href="https://luc.lino-framework.org/blog/2013/0508.html">2013-05-08</a>:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">model</span> <span class="ow">in</span> <span class="p">(</span><span class="n">debts</span><span class="o">.</span><span class="n">Entry</span><span class="p">,):</span>
+<span class="gp">... </span>    <span class="k">for</span> <span class="n">o</span> <span class="ow">in</span> <span class="n">model</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">all</span><span class="p">():</span>
+<span class="gp">... </span>        <span class="n">o</span><span class="o">.</span><span class="n">full_clean</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+
+            <p class="logo"><a href="../../index.html">
+              <img class="logo" src="../../_static/logo_web3.png" alt="Logo"/>
+            </a></p>
+          <div class="sidebar-resize-handle"></div>
+<p align="center"><b>EN</b> | <a href="de/index.rst">DE</a> | <a href="fr/index.rst">FR</a></p>
+<h3><a href="../../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../about/index.html">About Lino Welfare</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../usage/index.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../changes/index.html">Changes</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Specs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../install/index.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../copyright.html">Copyright &amp; legal notes</a></li>
+</ul>
+
+<hr class="docutils" />
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+<ul>
+  <li class="toctree-l1"><a class="reference internal" href="../../py-modindex.html">Python Module Index</a></li>
+</ul><p align="center">
+</p>
+
+<div id="ethical-ad-placement"></div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+    <nav class="relbar">
+      <a class="previous" href="polls.html" aria-label="Previous topic" >
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/></svg>
+        </div>
+        <div class="title">
+          <span class="text">
+            <span class="direction">previous</span>
+            Polls in Lino Welfare
+          </span>
+        </div>
+      </a>
+      <a class="next" href="integ.html" aria-label="Next topic" >
+        <div class="title">
+          <span class="text">
+            <span class="direction">next</span>
+            Integration Service
+          </span>
+        </div>
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+        </div>
+      </a>
+    </nav>
+
+    <footer role="contentinfo">
+      &#169; <a href="../../copyright.html">Copyright</a> 2012-2022 Rumma &amp; Ko Ltd.
+      Last updated on 2022-11-08.
+      Created using <a class="reference external" href="https://www.sphinx-doc.org/">Sphinx</a> 5.1.1.
+      <a class="reference external" href="https://insipid-sphinx-theme.readthedocs.io/">Insipid Theme</a>.
+<a href="https://gitlab.com/lino-framework/welfare/-/blob/master/docs/specs/welcht/misc.rst?plain=1"
+  rel="nofollow">Source code</a>.
+<br>
+
+Online link: <a href="https://welfare.lino-framework.org/specs/welcht/misc.html">https://welfare.lino-framework.org/specs/welcht/misc.html</a>.
+
+
+    </footer>
+  </body>
+</html>
