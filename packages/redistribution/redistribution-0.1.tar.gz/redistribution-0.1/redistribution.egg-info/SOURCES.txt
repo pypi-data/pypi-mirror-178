@@ -1,0 +1,10 @@
+setup.py
+redistribution/Binomialdistribution.py
+redistribution/Gaussiandistribution.py
+redistribution/Generaldistribution.py
+redistribution/__init__.py
+redistribution.egg-info/PKG-INFO
+redistribution.egg-info/SOURCES.txt
+redistribution.egg-info/dependency_links.txt
+redistribution.egg-info/not-zip-safe
+redistribution.egg-info/top_level.txt
