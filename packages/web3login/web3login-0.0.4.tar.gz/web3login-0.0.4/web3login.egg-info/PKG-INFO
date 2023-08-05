@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: web3login
+Version: 0.0.4
+Summary: Moonstream: Open source Web3 authorization library
+Home-page: https://github.com/bugout-dev/web3login
+Author: Moonstream
+Author-email: engineering@moonstream.to
+License: UNKNOWN
+Description: # web3login python
+        
+        Open source Web3 authorization Python library.
+        
+        ## CLI
+        
+        ### Generate the signature
+        
+        ```bash
+        web3login authorize \
+            --application "<your_application_name_or_any_string>" \
+            --deadline "<unix_timestamp_until_signature_will_be_active>" \
+            --signer .secrets/keyfile -p "${KEYFILE_PASSWORD}" | base64 -w 0
+        ```
+        
+        Output base64 string could be passed as `Authorization` header or verified with CLI.
+        
+        ### Verify the signature
+        
+        ```bash
+        web3login verify \
+            --application "<your_application_name_or_any_string>" \
+            --payload "${GENERATED_BASE64_SIGNATURE}"
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: distribute
+Provides-Extra: fastapi
