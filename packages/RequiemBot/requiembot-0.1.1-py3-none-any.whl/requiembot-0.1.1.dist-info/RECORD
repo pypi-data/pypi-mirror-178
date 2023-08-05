@@ -1,0 +1,9 @@
+requiembot/__init__.py,sha256=Zt1UMbfb6LUN6grMtjD7mTa5t-8DNFAk7QveZwiMvuk,843
+requiembot/__main__.py,sha256=6pJh7idU9WX0c_mtkwLhZI4cH2frjTwp-dd772B_3lU,5001
+requiembot/exprs.py,sha256=rxzPo9NidcGB_MC2BjTcdj5TrKGCgFUqgslYaK002E8,4142
+requiembot/lexer.py,sha256=KOdSSUuNgO8vMTdS9qjNjYFL4DqSqbTosFZ4IjnnA38,2201
+requiembot/parser.py,sha256=umUQiI-3un1uM_Zo10AFKNedf3f3OiXuShA8Qs1gPgo,3971
+requiembot-0.1.1.dist-info/METADATA,sha256=M6r64bpXVI271k7TKR0aNTcXHIdNStQwbRWYFl5DJJc,3497
+requiembot-0.1.1.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+requiembot-0.1.1.dist-info/licenses/COPYING.md,sha256=rYWNU8rgXu2VMezUxGdECAOs_-NMad57iOA6_8W2ob0,34283
+requiembot-0.1.1.dist-info/RECORD,,
