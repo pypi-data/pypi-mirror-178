@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+shanepdf.egg-info/PKG-INFO
+shanepdf.egg-info/SOURCES.txt
+shanepdf.egg-info/dependency_links.txt
+shanepdf.egg-info/top_level.txt
