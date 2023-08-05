@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: openfaas_lambda_utils
+Version: 0.1.0
+Summary: Python Library containing utility functions for use in OpenFaaS lambda implementations
+Home-page: UNKNOWN
+Author: Rafal Widziszewski
+License: MIT
+Description: openfaas-lambda-utils
+        ========================
+        Python Library containing utility functions for use in OpenFaaS lambda implementations
+        
+        ## Installation
+        
+        Installation:
+        ```bash
+           sudo python setup.py install
+        ```
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
