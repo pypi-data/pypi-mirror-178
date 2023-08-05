@@ -1,0 +1,10 @@
+django_separate_search/__init__.py,sha256=nSRwtu1US8IP_XIA7io5IkNB2p6aShYMKffvqIw6omc,78
+django_separate_search/admin.py,sha256=uy_iqe8QkUt9CCMgkE1im8wkYm1XVbCjBQ1dQ_y16EU,4739
+django_separate_search/apps.py,sha256=2MEp5e3XX7uJF9ysvGJFiiBM69ZoFBWSp1sXZxkS6B0,243
+django_separate_search/utils.py,sha256=Hc-6WceFU2BrjEnVy873OEq12PVtCTTF02G5R26Fw9k,659
+django_separate_search/templates/admin/custom_change_list.html,sha256=Vb0PItmNuWDOuys_zhu-lFpnnkzWWV1x4keg2gpsosY,2345
+django_better_search-0.1.6.dist-info/LICENSE.md,sha256=1_32oIdw6mO4SZCNuRn1dXJdW3gU7OGBCpnnpcCFmbA,1065
+django_better_search-0.1.6.dist-info/METADATA,sha256=Pt65nw4zPlchGFIaX_dPtbpLvVKFBSNEZiEIC9UaJao,3058
+django_better_search-0.1.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+django_better_search-0.1.6.dist-info/top_level.txt,sha256=YOYzi240i8a4bChyMbjhp5cN2hRZ-EZM5yCY3D-6K48,23
+django_better_search-0.1.6.dist-info/RECORD,,
