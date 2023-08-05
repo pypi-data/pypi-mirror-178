@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: tkmsg
+Version: 1.1.0
+Summary: This module has a more beautiful pop-up window
+Author: ice
+Author-email: bilibili_wulihb@outlook.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Install Command
+pip install tkmsg
+
+# Author Email
+bilibili_wulihb@outlook.com/ice-team@outlook.com
+
+# Use example
+First you should import this package:`import tkmsg`
+Then,You can copy the following code:
+`print(tkmsg.inputbox('Title','Enter you ID:',tips='hello world'))`
+`print(tkmsg.msgbox('Title','Hello World',tips='Tips'))`
+Finally,Run the data!
+
+# LICENSE
+MIT

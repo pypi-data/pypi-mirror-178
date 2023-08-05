@@ -1,0 +1,7 @@
+README.md
+setup.py
+tkmsg/__init__.py
+tkmsg.egg-info/PKG-INFO
+tkmsg.egg-info/SOURCES.txt
+tkmsg.egg-info/dependency_links.txt
+tkmsg.egg-info/top_level.txt
