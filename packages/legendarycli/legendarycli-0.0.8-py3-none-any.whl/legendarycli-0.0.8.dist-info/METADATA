@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: legendarycli
+Version: 0.0.8
+Summary: This is a simple CLI to show my CV and resume
+Home-page: https://github.com/AmirMGhanem/legendaryCLI
+Author: Amir M. Ghanem
+Author-email: amirghanem95@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE.txt
+Requires-Dist: Click
+Requires-Dist: termcolor
+Requires-Dist: pyfiglet
+Requires-Dist: requests
+Requires-Dist: tqdm
+
+# legendaryCLI
+
+A command-line interface for the Simple CLI project using :
+1- Click, Python, termcolor, pyfiglet, tqdm
+
+
+## Installation
+
+This is a simple CLI to show my CV and resume
+
+
+
+## Installation
+
+pip install legendarycli
+
+
+## Usage
+
+
+legendarycli --help [HELP]
+
+* * * * *
+
+legendarycli --gh [Navigate you to my Github Profile]
+
+* * * * *
+
+legendarycli --li [Navigate you to my Linkedin Profile]
+
+* * * * *
+
+legendarycli --cv --[Argument*/OS*/] [Specify which OS [Mac Or Win] you are using]
+
+* * * * *
+
+legendarycli --about [Sample Text about me :) ]
+
+
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
