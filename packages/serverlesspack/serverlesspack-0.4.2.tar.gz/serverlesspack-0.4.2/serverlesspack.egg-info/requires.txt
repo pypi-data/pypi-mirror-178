@@ -1,0 +1,8 @@
+click
+PyYAML
+pydantic
+boto3
+distlib
+importlib-metadata
+colorama
+asciitree
