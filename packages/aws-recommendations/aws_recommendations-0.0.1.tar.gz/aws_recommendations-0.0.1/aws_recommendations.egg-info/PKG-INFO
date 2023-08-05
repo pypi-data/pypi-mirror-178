@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: aws-recommendations
+Version: 0.0.1
+Summary: provides aws recommendations
+Author-email: "dheeraj.banodha" <dheerajmbanodha@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# aws_recommendations
+
+aws_recommendations package gives recommendation for you aws account
+
+Release Notes:
+# v0.0.1 - Initial Release
+

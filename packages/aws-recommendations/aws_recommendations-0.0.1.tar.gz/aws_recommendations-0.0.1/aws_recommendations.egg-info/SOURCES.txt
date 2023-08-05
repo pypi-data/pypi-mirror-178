@@ -1,0 +1,10 @@
+LICENCE
+README.md
+pyproject.toml
+aws_recommendations/__init__.py
+aws_recommendations/aws_client.py
+aws_recommendations/functions.py
+aws_recommendations.egg-info/PKG-INFO
+aws_recommendations.egg-info/SOURCES.txt
+aws_recommendations.egg-info/dependency_links.txt
+aws_recommendations.egg-info/top_level.txt
