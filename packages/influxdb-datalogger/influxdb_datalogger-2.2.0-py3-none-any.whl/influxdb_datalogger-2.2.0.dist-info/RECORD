@@ -1,0 +1,12 @@
+influxdb_datalogger/__init__.py,sha256=lwYOrNwR3nqcJAzBYhrprdIJwLUw9G-xlahz5MdtTqE,218
+influxdb_datalogger/datalogger.py,sha256=Sv9-zHwvHwtjdlQ6lhi9ResJEVOD5L6DxhDwC3YChs4,20686
+influxdb_datalogger/datalogger_map.py,sha256=rEdS2v5ULqaDDauxMGftam83zzGH8WMuYRtyQserM14,1350
+influxdb_datalogger/field.py,sha256=77RiRSlglHLi7rVUftb4hG_yR5hNHJTTs5gFfWB-IEc,1076
+influxdb_datalogger/measurement.py,sha256=mCFFo7VwRsZida5Qpaf44AmaSmIbIqk4m9Pp_u6upaM,2819
+influxdb_datalogger/tag.py,sha256=0XeuKUYYbPIxnbN3TSxkFzvtkgahFffl48VjpnlLLis,1613
+influxdb_datalogger/utils.py,sha256=TTbLT5_lvjdjRuLJLSnkm8Kd7MZzN2rwfyvE8JLB688,1772
+influxdb_datalogger-2.2.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+influxdb_datalogger-2.2.0.dist-info/METADATA,sha256=k9bo4oEQeIbzSyBqY3Ou41ldY_4a5SHCFrcY9RE56KQ,8713
+influxdb_datalogger-2.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+influxdb_datalogger-2.2.0.dist-info/top_level.txt,sha256=XR_KcNn0kea2bYUKtODAcHfhKXQLvrWoP9K04iHp51w,20
+influxdb_datalogger-2.2.0.dist-info/RECORD,,
