@@ -1,0 +1,4 @@
+type: data.int
+given_name: axiom/example/int_3
+axiom_name: __AXIOM__
+description: for test axiom utilities
