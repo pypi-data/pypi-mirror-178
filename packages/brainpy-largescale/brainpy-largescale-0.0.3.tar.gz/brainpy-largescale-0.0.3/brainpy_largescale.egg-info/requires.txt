@@ -1,0 +1,9 @@
+numpy>=1.15
+jax>=0.3.0
+tqdm
+brainpy
+brainpylib
+numba
+mpi4py
+mpi4jax
+jax[cpu]==0.3.24
