@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+datascale/__init__.py
+datascale/datascale.py
+datascale.egg-info/PKG-INFO
+datascale.egg-info/SOURCES.txt
+datascale.egg-info/dependency_links.txt
+datascale.egg-info/requires.txt
+datascale.egg-info/top_level.txt
+images/datascale_icon.png
+images/datascale_plotdatadpi_test.png
+images/datascale_plotdatasize_test.png
