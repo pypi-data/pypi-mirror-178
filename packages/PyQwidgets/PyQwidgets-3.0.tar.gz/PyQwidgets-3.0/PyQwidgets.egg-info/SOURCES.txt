@@ -1,0 +1,8 @@
+MANIFEST.in
+setup.cfg
+setup.py
+My Library/__init__.py
+PyQwidgets.egg-info/PKG-INFO
+PyQwidgets.egg-info/SOURCES.txt
+PyQwidgets.egg-info/dependency_links.txt
+PyQwidgets.egg-info/top_level.txt
