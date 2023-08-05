@@ -1,0 +1,17 @@
+cfbuild/__init__.py,sha256=8xPDT-1OZ-oqSsepQyoNojgmO3zKrg_VxJiSLTwuF80,217
+cfbuild/_attribute_values.py,sha256=R4K0TJ_5_Q__6TOYSKbAugXqFBziwFRETzVc8sjDtEg,33309
+cfbuild/_classes.py,sha256=FdyiuX8Ale7uPZfWT5t1bb9EJpmyAFyC6h1k6MsU6Mg,6362
+cfbuild/_constants.py,sha256=PE72HVUcR6spA2H72wN3AdzNQuKZ028bK_4gN7wOYz8,33393
+cfbuild/_create_dataset.py,sha256=2NKT4Fq1bd3FDxVe3u4d7yTo5aipwtAQUCYwqx0HHAY,2002
+cfbuild/_create_nc.py,sha256=jIdr9RmK-SRU-9dBZ9oOryVYMp4U3acOaOshomzURPw,7988
+cfbuild/_create_ncml.py,sha256=u-MFV8Fk-fNy0ptNozbm5QLF5EHBHC23iz6afHNYRfQ,9357
+cfbuild/_grid_mapping.py,sha256=tw0S5_W7gwdkbb4EmLKqtv1MVKyTVImNSSvDYtu4pHw,4781
+cfbuild/_ncml_comments.py,sha256=0OPHfJXt7uANEm7g7xsZnoCPyL3OX-SICQFFN7LlhM4,4486
+cfbuild/_refresh_ncml.py,sha256=6v4i5w9u764M-NedEm9XAiCZ-FmOSEH9sAntwfHerTE,88
+cfbuild/_variable_identification.py,sha256=DMCtlc8eXfXs-VxoRfhfMf3acmQPLWlTYhAgCsENU5I,8351
+cfbuild/cf-standard-name-table.xml,sha256=TCm1rXD2QWrSw1mByg-c3r-Kq5Ad5bfoJqlAzwb5uuQ,4047491
+cfbuild-0.0.10.dist-info/LICENSE,sha256=jvTvhqWGcunLAqzb4E_suzaulsTd6rel2UvzL7YUvgE,1072
+cfbuild-0.0.10.dist-info/METADATA,sha256=5sRGKqZkA6Fncz0w4or0kkJwk9tVsBwxpiK2JgtS4m8,6371
+cfbuild-0.0.10.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+cfbuild-0.0.10.dist-info/top_level.txt,sha256=6P20jNtMFNs_ew_PdiwQC4t-1Aonj5TAzEyDeLrIeAA,8
+cfbuild-0.0.10.dist-info/RECORD,,
