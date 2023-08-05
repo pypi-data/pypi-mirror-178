@@ -1,0 +1,15 @@
+LICENSE.txt
+pyproject.toml
+my_package_vajain/__init__.py
+my_package_vajain/example.py
+my_package_vajain.egg-info/PKG-INFO
+my_package_vajain.egg-info/SOURCES.txt
+my_package_vajain.egg-info/dependency_links.txt
+my_package_vajain.egg-info/requires.txt
+my_package_vajain.egg-info/top_level.txt
+my_package_vajain/first/__init__.py
+my_package_vajain/first/first_level.py
+my_package_vajain/second/__init__.py
+my_package_vajain/second/second_level.py
+my_package_vajain/third/__init__.py
+my_package_vajain/third/third_level.py
