@@ -1,0 +1,7 @@
+setup.py
+search_add/__init__.py
+search_add/add.py
+search_add.egg-info/PKG-INFO
+search_add.egg-info/SOURCES.txt
+search_add.egg-info/dependency_links.txt
+search_add.egg-info/top_level.txt
