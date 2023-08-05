@@ -1,0 +1,11 @@
+arraycontext
+boxtree>=2018.1
+loopy>=2021.1
+pymbolic>=2021.1
+pyrsistent>=0.16.0
+pytools>=2021.1.1
+pyvkfft>=2022.1
+sympy>=0.7.2
+
+[test]
+pytest>=2.3

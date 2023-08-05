@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: sumpy
+Version: 2022.1
+Summary: Fast summation in Python
+Home-page: UNKNOWN
+Author: Andreas Kloeckner
+Author-email: inform@tiker.net
+License: MIT
+Description: 
+              Code-generating FMM etc.
+              
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Other Audience
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Requires-Python: ~=3.8
+Provides-Extra: test
