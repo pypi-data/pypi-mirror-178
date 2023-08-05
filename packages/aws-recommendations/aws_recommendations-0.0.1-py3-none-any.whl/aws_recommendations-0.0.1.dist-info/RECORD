@@ -1,0 +1,8 @@
+aws_recommendations/__init__.py,sha256=vkAgg94ZxIu58Jm5sb3-uRcTuQwYlzPFyPSk-hw12Qs,61
+aws_recommendations/aws_client.py,sha256=3fWEaWYuG6fU_RJneIqiCrW84b2um4gdNaQG8n1UR5Y,462
+aws_recommendations/functions.py,sha256=EK2NxpqS9FXxpJzy1NM3eq8da-bxoLWO6OWMWNe4NiI,10357
+aws_recommendations-0.0.1.dist-info/LICENCE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aws_recommendations-0.0.1.dist-info/METADATA,sha256=u8W-Kn0YvYrkQ8nE4J84BTsyqEuSCKSraeaEZ2IsoSw,496
+aws_recommendations-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+aws_recommendations-0.0.1.dist-info/top_level.txt,sha256=mePysV9Jn9yCV_We1p7tHptGL5KZ97tAq-Fzf-aqyiM,20
+aws_recommendations-0.0.1.dist-info/RECORD,,
