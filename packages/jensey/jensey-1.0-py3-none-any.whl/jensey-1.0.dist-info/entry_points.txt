@@ -1,0 +1,3 @@
+[console_scripts]
+shakespeare = jensey:hello_shakespeare
+
