@@ -1,0 +1,14 @@
+SSG/main.py,sha256=XAIGSkdAXTnlUYG4fJAirunLW4sWsq_vNvcGSxwY4L0,84
+SSG/ssg.py,sha256=4vyw2z52-Kc-ByWDsnI2tw75bny84syrFef7ZIAHs7U,2570
+SSG/tests/ssgTests.py,sha256=XrE5W7Si7GN3NooCm7msaOz0o4WCDhma4wcdUsc_Zho,2430
+SSG/tests/testFiles/test1.txt,sha256=F4Ef7axW1hwG0Ow0JZC4CtKAMWcvPJFL2lTsqFtlnu0,23
+SSG/tests/testFiles/test2.md,sha256=oRhJuv7CfdrijhML5O6SIOsWsKzMQQOWKD9cc5Is8UY,25
+SSG/tests/testFiles/testEmp.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+SSG/utils/help.py,sha256=9GP8U4pPLuiTjj-4ZQ7TfET219380L6jIbh7GcTOE_o,582
+SSG/utils/input.py,sha256=UiHnvWzmaF7vLIILcX5ksHVPPF4tREcnQzfZRVEa6JI,7232
+SSG/utils/version.py,sha256=oS7ASEq0lAUujKxvL6XUR3vTxTnw06WChnRr3NOjxOA,122
+pdrozd_ssg-1.0.9.dist-info/entry_points.txt,sha256=zZ_cgxtxLrrXDSyP70IQGLTWkIdIE17RJqe9rzauYS8,40
+pdrozd_ssg-1.0.9.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+pdrozd_ssg-1.0.9.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+pdrozd_ssg-1.0.9.dist-info/METADATA,sha256=1JVbCvr6kPo5w4HKigcOzv7Hhb20uYAzpa5ZrF5ADgg,1947
+pdrozd_ssg-1.0.9.dist-info/RECORD,,
