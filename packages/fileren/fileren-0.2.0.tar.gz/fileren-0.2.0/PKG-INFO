@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: fileren
+Version: 0.2.0
+Summary: Simple tool for renaming files in a directory
+Author: Mikołaj Badyl
+Author-email: contact@hawier.dev
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: rich (>=12.6.0,<13.0.0)
+Description-Content-Type: text/markdown
+
+# Fileren
+
+[PROJECT WEBSITE](https://hawier.dev/projects/other/fileren.html)
+
+Simple tool for renaming files in a directory
+
+![How to use gif](assets/how_to_use.gif)
+
+## Installation
+
+```shell
+pip install fileren
+```
+
+## Usage
+
+To run the program, simply run the following command:
+
+```shell
+fileren
+```
+
+Or run command with arguments:
+
+```shell
+fileren --path {path_to_directory} --regex {regex} --new_string {new_string}
+```
+
+To insert the current index of the file, use the following syntax as new string:
+
+Example: 
+
+```shell
+fileren --path data --regex _text_[0-9]+ --new_string _{i}_
+```
+
+Input:
+
+```shell
+data
+├── file_text_1.txt
+├── file_text_2.txt
+├── file_text_3.txt
+└── file_text_4.txt
+```
+
+Output:
+
+```shell
+data
+├── file_0.txt
+├── file_1.txt
+├── file_2.txt
+└── file_3.txt
+```
+
+
