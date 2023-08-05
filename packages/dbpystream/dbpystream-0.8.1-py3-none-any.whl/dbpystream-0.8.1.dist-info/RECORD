@@ -1,0 +1,13 @@
+dbpystream/__init__.py,sha256=GguExVvPjZSzXo71lobgnF2p1asz6PxbdsAQ0WZOQfc,295
+dbpystream/api.py,sha256=f69nklI82eDU45S6Pcm2uWxoKsQg_eQ4iD03b4koH0Y,14335
+dbpystream/client.py,sha256=DGs3THyOtUoRaJX45hlv_3L-tRKXUXE9sCR9u77KbjM,5773
+dbpystream/utils.py,sha256=W8XHIjNB-3vA9Sw3iw65-hRXFZAllpVpE2iUmaoxbN8,9153
+dbpystream/version.py,sha256=4lVgXt6Chj3JULErzjgrjlw_79pIauPRGnf5ktXRXl4,435
+dbpystream/wwwwtest.py,sha256=zB_pHczbE4bgF8resS9NFppC5GJgVjADnjHwymuRkEQ,2018
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test.py,sha256=z35eY3h2wfGM5_8Bn0TpUjDfPp2UKQPwsuypeQGehAI,2013
+dbpystream-0.8.1.dist-info/LICENSE,sha256=iheYQ5uq9uena88CK8Ae9IM_EHp-3YNSRZErppsTfBU,1092
+dbpystream-0.8.1.dist-info/METADATA,sha256=I8mnGXWUV5RO7xjvE55DL1mzhje55yB29gH_8Ceojms,7848
+dbpystream-0.8.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+dbpystream-0.8.1.dist-info/top_level.txt,sha256=O_gev9xdIvDAuciqGv_jAHFCAiHxC7SAvgP8_5mweBY,16
+dbpystream-0.8.1.dist-info/RECORD,,
