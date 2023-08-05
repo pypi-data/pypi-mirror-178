@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+semantic_release_naas_test/__init__.py
+semantic_release_naas_test/main.py
+semantic_release_naas_test.egg-info/PKG-INFO
+semantic_release_naas_test.egg-info/SOURCES.txt
+semantic_release_naas_test.egg-info/dependency_links.txt
+semantic_release_naas_test.egg-info/requires.txt
+semantic_release_naas_test.egg-info/top_level.txt
