@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+MultiplyPipLib/__init__.py
+MultiplyPipLib/multiply.py
+MultiplyPipLib.egg-info/PKG-INFO
+MultiplyPipLib.egg-info/SOURCES.txt
+MultiplyPipLib.egg-info/dependency_links.txt
+MultiplyPipLib.egg-info/top_level.txt
