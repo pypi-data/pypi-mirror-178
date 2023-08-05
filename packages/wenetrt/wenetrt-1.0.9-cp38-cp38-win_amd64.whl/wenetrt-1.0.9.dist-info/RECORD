@@ -1,0 +1,9 @@
+_wenet.cp38-win_amd64.pyd,sha256=ufgMwShx0eEyTsEiJ-Qffli03PUgtm6X_qp73-a5JFI,121344
+wenet_api.dll,sha256=jTWYds3toQImZbWGUKvWGCxSiqvwpybCEX0gPkFramo,1655808
+wenetrt/__init__.py,sha256=z1DyMYCMf3TupMuL_GFdAF4dLb8UaywvF72padbOVAk,103
+wenetrt/decoder.py,sha256=ReaXHnVeuk6fK0JaATtfIPktTCZEeyHkMZCSwcG4cjI,3960
+wenetrt/hub.py,sha256=FeY0qoXDGRqTBAT1irZiXYlXqekxOCuuClVGeXxAGUQ,3355
+wenetrt-1.0.9.dist-info/METADATA,sha256=mS2LU7CI3Q4T2l87KRjiDV0tuv-6bbl_6gW3HfIdEBQ,3377
+wenetrt-1.0.9.dist-info/WHEEL,sha256=M2GQ3lde8oJhlQPj2wbRvnqE3cuovPJasri5X5aCmck,100
+wenetrt-1.0.9.dist-info/top_level.txt,sha256=d4L1_gHGoOd0SRJjx5RNNsn_ykPkCQ1twL7CdZgDmsQ,15
+wenetrt-1.0.9.dist-info/RECORD,,
