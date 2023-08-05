@@ -1,0 +1,12 @@
+cerebrium/__init__.py,sha256=QQUIwNlRhgeZFs5Itj5gL4VjePTAbxhqg3UoHwvdHsI,131
+cerebrium/core.py,sha256=JUFfeAHKMrpxgMcqNmQmA5qGJMJKw9SNJ51t352_OKg,8982
+cerebrium/errors.py,sha256=Pl4YAczyJ-73Rh63GSXmUHsiEnSY2uOxVsnUx4hWOhc,2157
+cerebrium/models/onnx.py,sha256=0gcokaSljl43a7UJ_eGgHmLkOXYW-fYn0QaCEg-ewxg,842
+cerebrium/models/pickle.py,sha256=haGaGGbWjkDcVgSmNyOfXpFq-oMuv6T2qG_60RJGF7w,1806
+cerebrium/models/torch.py,sha256=XMlXbi2oP45RCmQaGSyylmhElgb0cp1LCYsmUnLcszQ,1341
+cerebrium/models/xgboost.py,sha256=jbhR-KRN2WHOgVlZB-w10lDY3SWARVhjHAGcLgWlwL4,1287
+cerebrium/pipeline.py,sha256=Eu2x3pqZLiLWyiY4eWjMbaJ1uw2MGJG-kserBO8HVww,10584
+cerebrium-0.2.4.dist-info/LICENSE,sha256=QoCdyu_al_XTJCs6xphksUTo6SgGRe_y3AnD6oeKziw,34594
+cerebrium-0.2.4.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+cerebrium-0.2.4.dist-info/METADATA,sha256=4mJ3KwE3bZLZ-gTLYca4xWBsdO_TdEEWxvI9EYBoadM,2039
+cerebrium-0.2.4.dist-info/RECORD,,
