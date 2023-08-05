@@ -1,0 +1,14 @@
+korean_rule_helper/__init__.py,sha256=0HuMnqWE1Z5Yd6ATjTpu3BMVZZe-_aenTAY3I3GlG70,152
+korean_rule_helper/config.py,sha256=pmZR4-2Xh_VNrj5fD3JFcshifiERC2JeuMBEWLLfURA,13
+korean_rule_helper/josa_helper.py,sha256=N23Q8Wi6c2I4tvh8ayjvZ-AtZXqZeYotcbX6jrepO3Q,837
+korean_rule_helper/korean_rule_helper.py,sha256=RUU0-y2fOU78mHqW5vn_gAWq2wmmNaCEIQuWaM1KdU8,4914
+korean_rule_helper/korean_sentence.py,sha256=7bGYnRZ4IKLs8ILbju2sRlui1HbBO3U_vUkrm45NXYI,2112
+korean_rule_helper/rule.py,sha256=JPvfFgUE7YpEAWqXzqf_vIDQLjhj7pHO7mKSv67cmF0,6623
+korean_rule_helper/parser/__init__.py,sha256=qGn5U8Psr-tuJEhK6lw3qCPc_6-6lBuIwgB2DUW_KdM,47
+korean_rule_helper/parser/mecab.py,sha256=Hzv6GM7BIPWlv1wJ5_YdmPJRg-Zjf029TyJXfY2xg8A,1166
+korean_rule_helper/parser/parser.py,sha256=GSXa7yl53m_Jsjex0HP7qh6dIixyS1DI9hItMtBimQA,907
+korean_rule_helper/parser/tag.py,sha256=43UBtoIDC9kYRbfxAnWPOzLlQhlhqYsznry2HO4LZF4,958
+korean_rule_helper-0.0.8.dist-info/METADATA,sha256=sCgH5XWO-y4SDvDZPtvVC-RKASPTH6k-zCXMOfjA5FQ,7805
+korean_rule_helper-0.0.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+korean_rule_helper-0.0.8.dist-info/top_level.txt,sha256=cWZw8n4e5q4Kx4tpHBvckQe4UuPQPBNlklxIiNxyoe4,19
+korean_rule_helper-0.0.8.dist-info/RECORD,,
