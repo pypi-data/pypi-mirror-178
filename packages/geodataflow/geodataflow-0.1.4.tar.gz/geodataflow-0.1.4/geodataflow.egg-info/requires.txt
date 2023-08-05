@@ -1,0 +1,11 @@
+numpy
+requests
+pyproj
+shapely
+GDAL
+pandas
+geopandas
+matplotlib
+
+[eodag]
+eodag>=2.4.0
