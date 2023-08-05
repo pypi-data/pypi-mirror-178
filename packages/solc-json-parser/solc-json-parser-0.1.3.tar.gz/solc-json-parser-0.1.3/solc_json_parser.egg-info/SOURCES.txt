@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+solc_json_parser/__init__.py
+solc_json_parser/consts.py
+solc_json_parser/fields.py
+solc_json_parser/parser.py
+solc_json_parser/version_cfg.py
+solc_json_parser.egg-info/PKG-INFO
+solc_json_parser.egg-info/SOURCES.txt
+solc_json_parser.egg-info/dependency_links.txt
+solc_json_parser.egg-info/requires.txt
+solc_json_parser.egg-info/top_level.txt
