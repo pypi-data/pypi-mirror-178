@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: manim-data-structures
+Version: 0.1.0
+Summary: A Manim implementation for data structures
+Home-page: https://github.com/drageelr/manim-data-structures
+Author: Hammad Nasir
+Author-email: hammadn99@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Project-URL: Repository, https://github.com/drageelr/manim-data-structures
+Description-Content-Type: text/markdown
+
+
