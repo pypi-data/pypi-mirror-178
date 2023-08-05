@@ -1,0 +1,75 @@
+{% extends 'gui2/base.html' %}
+{% load dashboard_tags %}
+{% load crispy_forms_tags %}
+{% load humanize %}
+{% load fontawesome %}
+{% load control %}
+{% load static %}
+<!-- ============================= Address Bar Start =============================== -->
+{% block breadcrumbs %}
+<div id="address_content" style="display: none">
+    <ol class="breadcrumb" aria-label="breadcrumb">
+        <li class="breadcrumb-item"><a href="{% url 'dashboard:home' %}">Enrich</a></li>
+        <li class="breadcrumb-item"><a href="{% url 'dashboard:index' %}">Usecases</a></li>
+        <li class="breadcrumb-item"><a href="{% url 'dashboard:usecase_detail' usecase.org.name %}">{{usecase.org.name}}</a></li>
+	<li class="breadcrumb-item"><a href="{% url basenamespace|add:':index' %}">{{spec.name}}</a></li>
+	<li class="breadcrumb-item"><a href="{% url basenamespace|add:':policy_index' %}">Configurations</a></li>
+        <li class="breadcrumb-item active">Add</li>
+    </ol>
+</div>
+{% with knowledge="{{app.name}} policy" %}{{ block.super }}{% endwith %}
+{% endblock breadcrumbs %}
+<!-- ============================= Address Bar End =============================== -->
+{% block nav_index%}
+<!--Header tab name-->
+    {% with nav_data="usecases" %}{{ block.super }}{% endwith %}
+{% endblock %}
+<!--============================= Help Content =============================== -->
+{% block help %}
+<div id="page_help_content" style="visibility: hidden">
+  Add new policy
+</div>
+{{block.super}}
+{% endblock %}
+<!--============================= Help Content End =============================== -->
+{% block content %}
+<style>
+  .textarea {
+      height: auto ! important;
+  }
+</style>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-9">
+            <div class="tab-preview bg-white">
+                <div class="justify-content-center div-padding" >
+                  <div class="ptaa-box mb-30">
+		    <div class="ptaa-icon">{% fontawesome_icon 'bug' %}</div>
+                    <div class="ptaa-content"><h1>Add Configuration</h1></div>
+                  </div>
+                </div>
+                <form class="uniForm" method="POST">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        {{form.name|as_crispy_field}}
+                    </div>
+                    <div class="form-group">
+                        {{form.desc|as_crispy_field}}
+                    </div>
+                    <div class="form-group">
+                        {{form.notes|as_crispy_field}}
+                    </div>
+                    <div class="form-group">
+                        {{form.config|as_crispy_field}}
+                    </div>
+                    <div class="form-group d-flex">
+                        <button type="submit" class="btn btn-primary mb-30">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

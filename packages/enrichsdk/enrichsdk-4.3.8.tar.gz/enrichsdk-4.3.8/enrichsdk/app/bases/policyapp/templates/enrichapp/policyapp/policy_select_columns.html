@@ -1,0 +1,148 @@
+{% extends 'gui2/base.html' %}
+{% load dashboard_tags %}
+{% load crispy_forms_tags %}
+{% load humanize %}
+{% load fontawesome %}
+{% load control %}
+{% load static %}
+<!-- ============================= Address Bar Start =============================== -->
+{% block breadcrumbs %}
+<div id="address_content" style="display: none">
+    <ol class="breadcrumb" aria-label="breadcrumb">
+        <li class="breadcrumb-item"><a href="{% url 'dashboard:home' %}">Enrich</a></li>
+        <li class="breadcrumb-item"><a href="{% url 'dashboard:index' %}">Usecases</a></li>
+        <li class="breadcrumb-item"><a href="{% url 'dashboard:usecase_detail' usecase.org.name %}">{{usecase.org.name}}</a></li>
+        <li class="breadcrumb-item"><a href="{% url basenamespace|add:':index' %}">{{spec.name}}</a></li>
+	<li class="breadcrumb-item"><a href="{% url basenamespace|add:':policy_index' %}">Configurations</a></li>
+	<li class="breadcrumb-item active">Specify</li>
+    </ol>
+</div>
+
+{% with knowledge="{{app.name}} policy" %}{{ block.super }}{% endwith %}
+{% endblock breadcrumbs %}
+<!-- ============================= Address Bar End =============================== -->
+{% block nav_index%}
+<!--Header tab name-->
+    {% with nav_data="usecases" %}{{ block.super }}{% endwith %}
+{% endblock %}
+<!--============================= Help Content =============================== -->
+{% block help %}
+<div id="page_help_content" style="visibility: hidden">
+  Complete the configuration
+</div>
+{{block.super}}
+{% endblock %}
+
+{% block customhead %}
+<style>
+  .pvg-inner {width: calc(100% + 40px);}
+  .multiselect.custom-select { border: solid 1px #dcd9e3; background : white; }
+  .form-control { border: solid 1px #dcd9e3; background : white; }
+</style>
+{% endblock %}
+<!--============================= Help Content End =============================== -->
+{% block content %}
+
+<div class="container mb-30">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="ptaa-box">
+            <div class="ptaa-icon">{% fontawesome_icon 'icon' %}</div>
+            <div class="ptaa-content">
+              <h1>Complete configuration</h1>
+              <p>Specification: {{spec.name}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="d-flex justify-content-end">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <p>Define the configuration parameters for the selected dataset</p>
+  <form class="uniForm"
+	method="POST"
+	autocomplete="off"
+	>
+    {% csrf_token %}
+    <input type="hidden" name="source_id" value="{{source.id}}">
+    <input type="hidden" name="source_version" value="{{source.version}}">
+    <input type="hidden" name="dataset" value="{{source.name}}">
+    <div class="row">
+      <div class="ptaa-box">
+        <div class="ptaa-content">
+          <h1 style="font-size: 22px;">Datasets</h1>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="table-responsive">
+	<table class="table table-bordered">
+	  <tbody>
+	    <tr><td>Name</td><td> {{source.name}}</td></tr>
+	    <tr><td>Description</td><td>{{source.description}}</td></tr>
+	    <tr><td>Type</td><td>{{source.sourcetype}}</td></tr>
+	    <tr><td>URI</td><td>{{source.details.access.uri}}</td></tr>
+	    <tr><td>Features</td><td>{{source.num_features}}</td></tr>
+	    <tr><td>Sample</td><td>
+		<div style="max-width: 1000px; max-height: 400px; overflow: scroll">
+		  <pre>{{source.details.sample}}</pre>
+		</div>
+	    </td></tr>
+	  </tbody>
+	</table>
+      </div>
+    </div>
+    <hr>
+    {% include select_columns_helper with app=app spec=spec source=source features=features %}
+    <br>
+    <div class="form-group d-flex">
+      <button type="submit" class="btn btn-primary mb-30">Add</button>
+    </div>
+  </form>
+</div>
+
+<script>
+
+$(document).ready(function() {
+    $.fn.dataTable.ext.classes.sPageButton = 'paginate_link';
+    var table = $('#dataset_table').DataTable({
+        "searching": true,
+        "ordering": true,
+        "paging": false,
+        "info": false,
+        "bLengthChange": true,
+        "order": [
+            [2, "desc"]
+        ],
+        'processing': true,
+          "columnDefs": [],
+          "language": {
+             "paginate": {
+             "first": "<img src=\"{% static 'gui2/images/show-first-button.svg' %}\" alt=\"\" />",
+             "last": "<img src=\"{% static 'gui2/images/show-last-button.svg' %}\" alt=\"\" />",
+             "next": "<i class='fas fa-chevron-right'>",
+              "previous": "<i class='fas fa-chevron-left'>"
+             }
+          },
+        "dom": "<<t><\"table-bottom\"ilp>>",
+    });
+
+    $("#dataset_search").on('keyup', function () {
+        $('#dataset_table').dataTable().fnFilter(this.value);
+    });
+
+    $('.single-select').multiselect({
+        dropDown: true,
+        enableCaseInsensitiveFiltering: true,
+        maxHeight: 300
+    });
+
+});
+</script>
+{% endblock %}

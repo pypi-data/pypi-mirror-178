@@ -1,0 +1,70 @@
+{% extends 'gui2/base.html' %}
+{% load dashboard_tags %}
+{% load fontawesome %}
+{% load static %}
+
+<!-- ============================= Address Bar Start =============================== -->
+{% block breadcrumbs %}
+<div id="address_content" style="display: none">
+    <ol class="breadcrumb" aria-label="breadcrumb">
+        <li class="breadcrumb-item"><a href="{% url 'dashboard:home' %}">Enrich</a></li>
+        <li class="breadcrumb-item"><a href="{% url 'dashboard:index' %}">Usecases</a></li>
+        <li class="breadcrumb-item"><a href="{% url 'dashboard:usecase_detail' usecase.org.name %}">{{usecase.org.name}}</a></li>
+        <li class="breadcrumb-item"><a href="{% url basenamespace|add:':index' %}">{{spec.name}}</a></li>
+	<li class="breadcrumb-item active">Configurations</li>
+    </ol>
+</div>
+
+{% with knowledge="{{app.name}}" %}{{ block.super }}{% endwith %}
+{% endblock breadcrumbs %}
+<!-- ============================= Address Bar End =============================== -->
+{% block nav_index%}
+<!--Header tab name-->
+    {% with nav_data="usecases" %}{{ block.super }}{% endwith %}
+{% endblock %}
+<!--============================= Help Content =============================== -->
+{% block help %}
+<div id="page_help_content" style="visibility: hidden">
+  Show {{app.name}} configurations
+</div>
+{{block.super}}
+{% endblock %}
+
+{% block customhead %}
+<style>
+    .pvg-inner {width: calc(100% + 40px);}
+</style>
+{% endblock %}
+<!--============================= Help Content End =============================== -->
+{% block content %}
+
+<div class="container mb-30">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="ptaa-box">
+            <div class="ptaa-icon">{% fontawesome_icon app.icon %}</div>
+            <div class="ptaa-content">
+              <h1>{{app.verbose_name}} Results for {{policy.name}}</h1>
+              <p>For Specification: {{spec.name}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="d-flex justify-content-end">
+	    <a class="btn btn-xsm btn-primary"
+	       href="{% url basenamespace|add:':policy_index' %}">{% fontawesome_icon 'note' %} Configurations </a>
+            <a class="btn btn-sm btn-primary" href="{% url 'api-2.0:openapi-swagger' %}" data-toggle="tooltip" data-placement="bottom" title="API">{% fontawesome_icon 'code' %} APIv2</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <p>{{path}}</p>
+    <pre>{{data|prettify}}</pre>
+  </div>
+</div>
+{% endblock %}

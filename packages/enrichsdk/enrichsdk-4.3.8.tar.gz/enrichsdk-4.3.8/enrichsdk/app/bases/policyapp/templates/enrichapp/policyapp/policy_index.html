@@ -1,0 +1,177 @@
+{% extends 'gui2/base.html' %}
+{% load dashboard_tags %}
+{% load crispy_forms_tags %}
+{% load humanize %}
+{% load fontawesome %}
+{% load control %}
+{% load static %}
+
+<!-- ============================= Address Bar Start =============================== -->
+{% block breadcrumbs %}
+<div id="address_content" style="display: none">
+    <ol class="breadcrumb" aria-label="breadcrumb">
+        <li class="breadcrumb-item"><a href="{% url 'dashboard:home' %}">Enrich</a></li>
+        <li class="breadcrumb-item"><a href="{% url 'dashboard:index' %}">Usecases</a></li>
+        <li class="breadcrumb-item"><a href="{% url 'dashboard:usecase_detail' usecase.org.name %}">{{usecase.org.name}}</a></li>
+        <li class="breadcrumb-item"><a href="{% url basenamespace|add:':index' %}">{{spec.name}}</a></li>
+	<li class="breadcrumb-item active">Configurations</li>
+    </ol>
+</div>
+
+{% with knowledge="{{app.name}}" %}{{ block.super }}{% endwith %}
+{% endblock breadcrumbs %}
+<!-- ============================= Address Bar End =============================== -->
+{% block nav_index%}
+<!--Header tab name-->
+    {% with nav_data="usecases" %}{{ block.super }}{% endwith %}
+{% endblock %}
+<!--============================= Help Content =============================== -->
+{% block help %}
+<div id="page_help_content" style="visibility: hidden">
+  Show {{app.name}} configurations
+</div>
+{{block.super}}
+{% endblock %}
+
+{% block customhead %}
+<style>
+    .pvg-inner {width: calc(100% + 40px);}
+</style>
+{% endblock %}
+<!--============================= Help Content End =============================== -->
+{% block content %}
+
+<div class="container mb-30">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="ptaa-box">
+            <div class="ptaa-icon">{% fontawesome_icon app.icon %}</div>
+            <div class="ptaa-content">
+              <h1>{{app.verbose_name}} Configurations</h1>
+              <p>For Specification: {{spec.name}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="d-flex justify-content-end">
+	    <a class="btn btn-xsm btn-primary"
+	       href="{% url basenamespace|add:':policy_select_dataset' %}">{% fontawesome_icon 'plus' %} ADD</a>
+	    <a class="btn btn-xsm btn-primary"
+	       href="{% url basenamespace|add:':result_index' %}">{% fontawesome_icon 'chart-line' %} Results</a>
+            <a class="btn btn-sm btn-primary" href="{% url 'api-2.0:openapi-swagger' %}" data-toggle="tooltip" data-placement="bottom" title="API">{% fontawesome_icon 'code' %} APIv2</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="filter-container d-flex align-items-center ">
+    <div class="filter-box d-flex align-items-center">
+      <div class="search-box ml-0 mr-3">
+        <input type="text" class="search-input" id="policy_search" value="" placeholder="Search"/>
+      </div>
+    </div>
+  </div>
+  <div class="table-responsive">
+    <table class="table table-condensed" id="policies_table">
+      <thead>
+        <tr>
+          <th>ID</th>
+	  <th>NAMESPACE</th>
+          <th>NAME</th>
+          <th>DESCRIPTION</th>
+          <th>ACTIVE</th>
+          <th>UPDATED</th>
+          <th>(DE)ACTIVATE</th>
+          <th>SPECIFICATION</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for policy in policies %}
+        <tr>
+	  <td><strong class="mt-3">{{policy.id}}</strong></td>
+	  <td><strong class="mt-3">{{policy.appname}}:{{policy.namespace}}</strong></td>
+	  <td><strong class="mt-3">{{policy.name}}</strong></td>
+          <td width="15%">{{policy.desc}}</td>
+	  <td width="2%">{% if policy.active %}Yes{% else %}No{% endif %}</td>
+          <td width="15%">{{policy.modified_at}} by {{policy.modified_by.username}}</td>
+	  <td width="5%">
+	    <a style="font-size: 200%"
+	       {% if policy.active %}
+	       title="Deactivate this configuration"
+	       {% else %}
+	       title="Activate this configuration"
+	       {% endif %}
+	       href="{% url basenamespace|add:':policy_toggle' policy.pk %}">{% if policy.active %}{% fontawesome_icon 'hand-paper' %}{% else %}{% fontawesome_icon 'play' %} {% endif %}</a>
+	  </td>
+          <td style="width:5%;" class="details-control">
+            <input type="hidden" value="{{policy.config|prettify}}" id="policy-details-{{forloop.counter}}"/>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<script>
+    function format ( d ) {
+    return (`
+        <div class="slider toggle-detail-container">
+            <pre class="mb-4" style="max-height:25.25rem;">${$('#policy-details-'+d).val()}</pre>
+        </div>
+    `)
+}
+
+
+$(document).ready(function() {
+    $.fn.dataTable.ext.classes.sPageButton = 'paginate_link';
+    var table = $('#policies_table').DataTable({
+        "searching": true,
+        "ordering": true,
+        "paging": true,
+        "info": false,
+        "bLengthChange": true,
+        "order": [
+            [4, "desc"],
+            [0, "desc"]
+        ],
+        'processing': true,
+          "columnDefs": [],
+          "language": {
+             "paginate": {
+             "first": "<img src=\"{% static 'gui2/images/show-first-button.svg' %}\" alt=\"\" />",
+             "last": "<img src=\"{% static 'gui2/images/show-last-button.svg' %}\" alt=\"\" />",
+             "next": "<i class='fas fa-chevron-right'>",
+              "previous": "<i class='fas fa-chevron-left'>"
+             }
+          },
+        "dom": "<<t><\"table-bottom\"ilp>>",
+    });
+
+    $("#policy_search").on('keyup', function () {
+        $('#policies_table').dataTable().fnFilter(this.value);
+    });
+
+    $('#policies_table tbody').on('click', 'td.details-control', function(){
+
+        var tr = $(this).closest('tr');
+        var row = table.row( tr );
+        if(row.child.isShown()){
+            // This row is already open - close it
+            $('div.slider', row.child()).slideUp( function () {
+                row.child.hide();
+                tr.removeClass('shown');
+            });
+        } else {
+            // Open this row
+            row.child(format(row.index($(this))+1)).show();
+            tr.addClass('shown');
+            $('div.slider', row.child()).slideDown();
+        }
+    });
+});
+</script>
+{% endblock %}
