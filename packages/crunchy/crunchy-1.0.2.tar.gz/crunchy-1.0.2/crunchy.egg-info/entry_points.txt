@@ -1,0 +1,2 @@
+[console_scripts]
+crunchy = crunchy.__main__:base_command
