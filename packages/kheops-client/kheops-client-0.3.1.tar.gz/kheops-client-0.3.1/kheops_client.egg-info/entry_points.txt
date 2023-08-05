@@ -1,0 +1,2 @@
+[console_scripts]
+kheops-client = kheops_client.__main__:main
