@@ -1,0 +1,6 @@
+mss
+numpy
+opencv_python
+pandas
+pywin32
+win32gui
