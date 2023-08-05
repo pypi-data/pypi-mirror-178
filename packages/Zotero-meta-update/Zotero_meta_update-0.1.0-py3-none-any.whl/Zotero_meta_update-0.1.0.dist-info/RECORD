@@ -1,0 +1,17 @@
+Zotero_meta_update-0.1.0.data/scripts/update_zotero_meta,sha256=rJ6dHsp2kSZQvverxJxrfGACkJCheOQnq6IYyDoJTmI,6288
+work/__init__.py,sha256=ITavnEohP-sUvRqrRY8hDGdXC0RjPtc6aViGy5Rnkf4,178
+work/conference_paper.py,sha256=7AHD0aefKpVeG1kUjt4xLzEeGDFTFs58PLOMloPsvlI,3279
+work/journal_paper.py,sha256=eJZvpRqHaWsassLW7KRmTLDHEUsf1xTKCASkRkG20Fg,3232
+work/lookup.py,sha256=VoROVeShw-6vZuLiD-W8UV1CBUTOPZnr19BecDPiz_U,4660
+work/preprint.py,sha256=J33DIQ-x75tpovIBDPVNYpbGYLDDbHAWiWIBOFW-oVs,2333
+work/search_item.py,sha256=iJAJeuy7qxWfmH7MtypWELounzx_MVVROuBmprSEdd0,9575
+work/utils.py,sha256=5yb5U0c04Dj-4e-o59KyXO4tuPolfEPCgfHkvwyH_RM,784
+work/work.py,sha256=w5wXBXLJx16m0yz_IqbstFoE1aXkN0UeJSjlGcaoubg,8198
+zotero/__init__.py,sha256=9hueLTNs3E6rCFZxWsWqodawIcrsfE5CqBl_8AHzNAs,59
+zotero/metadata.py,sha256=4z9lNJeV2JaG26SE1PU1DFtc0aSqt-9jiAy0MnOukSA,2410
+zotero/request.py,sha256=kN8g5VL6K5iccsevzijdK2ICVXb8XOgmOFw4uop53Ls,3010
+Zotero_meta_update-0.1.0.dist-info/LICENSE,sha256=7_8ankYdn7vIwzmwux2Lo1dL2NM5S6tAmRjY7WAyFeA,1075
+Zotero_meta_update-0.1.0.dist-info/METADATA,sha256=6LXP1OHdZAlrHsVr7TVr8C-lXkyEaMdtAvnzqZho2jo,3589
+Zotero_meta_update-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+Zotero_meta_update-0.1.0.dist-info/top_level.txt,sha256=x29bBUKpN3YRp3UpkBLZ9brthh3EzGtdS9Id7wYLXe4,12
+Zotero_meta_update-0.1.0.dist-info/RECORD,,
