@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+tap_dz_dynamodb/__init__.py
+tap_dz_dynamodb/deserialize.py
+tap_dz_dynamodb/discover.py
+tap_dz_dynamodb/dynamodb.py
+tap_dz_dynamodb/sync.py
+tap_dz_dynamodb.egg-info/PKG-INFO
+tap_dz_dynamodb.egg-info/SOURCES.txt
+tap_dz_dynamodb.egg-info/dependency_links.txt
+tap_dz_dynamodb.egg-info/entry_points.txt
+tap_dz_dynamodb.egg-info/requires.txt
+tap_dz_dynamodb.egg-info/top_level.txt
+tap_dz_dynamodb/sync_strategies/__init__.py
+tap_dz_dynamodb/sync_strategies/full_table.py
+tap_dz_dynamodb/sync_strategies/log_based.py
