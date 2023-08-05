@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: hammit
+Version: 1.0.2
+Summary: Package to compute hamming distance between two strings.
+Home-page: https://github.com/michaelclement/hammit
+Author: Michael Clement
+Project-URL: repository, https://github.com/michaelclement/hammit
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Hammit
+
+Have you ever wanted to calculate the hamming distance between two strings? Well here's a library for that.
+
+## Usage
+
+```
+>>> from hammit.distance import distance
+>>> distance('123','122')
+1 
+```
+
+A return value of -1 indicates the hamming distance could not be computed.
