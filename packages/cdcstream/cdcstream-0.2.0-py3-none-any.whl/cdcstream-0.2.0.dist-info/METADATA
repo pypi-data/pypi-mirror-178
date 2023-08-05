@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: cdcstream
+Version: 0.2.0
+Summary: Implementation of Ienco's algorithm CDCStream
+Home-page: https://github.com/fzi-forschungszentrum-informatik/cdcstream
+License: GNU General Public License v3.0
+Author: Martin Trat
+Author-email: trat@fzi.de
+Requires-Python: >=3.7
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Dist: numpy
+Requires-Dist: packaging
+Requires-Dist: pandas
+Requires-Dist: python-javabridge
+Requires-Dist: python-weka-wrapper3 (>=0.2,<0.3)
+Project-URL: Repository, https://github.com/fzi-forschungszentrum-informatik/cdcstream
+Description-Content-Type: text/markdown
+
+Implementation of an augmented version of Dino Ienco's algorithm **CDCStream** (Change Detection in Categorical Evolving Data Streams) ([https://doi.org/10.1145/2554850.2554864](https://doi.org/10.1145/2554850.2554864)).
+
+Cite as TODO(Bibtex info).
+
+## Acknowledgements
+This software was developed at the FZI Research Center for Information Technology.
+The associated research was funded by the German Federal Ministry of Education and Research (grant number: 02K18D033) within the context of the project SEAMLESS.
+
