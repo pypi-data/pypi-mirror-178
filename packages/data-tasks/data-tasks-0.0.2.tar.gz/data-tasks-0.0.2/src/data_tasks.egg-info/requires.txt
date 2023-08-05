@@ -1,0 +1,8 @@
+importlib_resources
+jinja2
+SQLAlchemy
+sqlparse
+tabulate
+
+[:python_version < "3.8."]
+importlib_metadata
