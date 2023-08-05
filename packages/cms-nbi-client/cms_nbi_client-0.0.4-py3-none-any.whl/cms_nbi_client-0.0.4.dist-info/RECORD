@@ -1,0 +1,15 @@
+cmsnbiclient/__init__.py,sha256=sT4q-2m2vLcaQxVnO2ok3f2pBNO7q1i9dHWRm8WOYfM,609
+cmsnbiclient/__version__.py,sha256=Akb2ZRLdxWMe6cU4P0o2nwTAGzWWtqf8i0lkKddy9A4,566
+cmsnbiclient/client.py,sha256=QxNSe6i2sq_I5OqOKZ6uMlHFL64vopZPudqIWmfUdZk,15821
+cmsnbiclient/E7/__init__.py,sha256=CcnLK8wbeajOpVy6shpUhw3tL3IT_ADgOBMtG3YT4eE,176
+cmsnbiclient/E7/create.py,sha256=S3FCC1-hhzT3XHOKOoagmci5seziPh5JbPk8AeyZLs4,38953
+cmsnbiclient/E7/delete.py,sha256=HdlC5sXl65L2psK0nkiVVaDZ_44w6uE0V4e1YmYRwes,15144
+cmsnbiclient/E7/query.py,sha256=0aOjfy5x48zG6XX8TALaDogcnByD1oQ6p7FK-AjJfEQ,87469
+cmsnbiclient/E7/update.py,sha256=-tTL-bjkGjV8zqjDkQkWJ4ugKoScoBpP2mOdcXaullQ,15354
+cmsnbiclient/REST/__init__.py,sha256=VT3AWvXqYwLn5xvcnJe-QESO4fyeLj6XnWC135XK3fw,99
+cmsnbiclient/REST/query.py,sha256=qe29k5drtsnZJjljHBrCLai-RkQhOpt850z0Jaqi6mA,5297
+cms_nbi_client-0.0.4.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+cms_nbi_client-0.0.4.dist-info/METADATA,sha256=dq5ioRo6ixKn66nydLnvQ-7x-k8YWvjdo5Qlt15pNpA,2191
+cms_nbi_client-0.0.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+cms_nbi_client-0.0.4.dist-info/top_level.txt,sha256=V-FIoOMF7tAgE0H7CQrr83jfsY5zGVfavdsZXn3NM-g,13
+cms_nbi_client-0.0.4.dist-info/RECORD,,
