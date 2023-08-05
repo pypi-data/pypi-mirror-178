@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: pytrex
+Version: 0.9.1
+Summary: Python OO API package to manage TRex traffic generator stateless traffic generator
+Home-page: https://github.com/shmir/PyTRex
+Author: Yoram Shamir
+Author-email: yoram@ignissoft.com
+License: Apache Software License
+Keywords: cisco,trex,l2l3,tg,traffic generator,test automation,automation api
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Testing
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: scapy (==2.4.3)
+Requires-Dist: pyzmq
+Requires-Dist: pytrafficgen (<4.1.0,>=4.0.0)
+Requires-Dist: pyyaml
+
+## Python OO API for Cisco TRex.
+
+The package was tested with TRex version 2.61.
+
+### TRex Resources
+- https://trex-tgn.cisco.com/trex/doc/trex_manual.html
+- https://trex-tgn.cisco.com/trex/doc/trex_rpc_server_spec.html
