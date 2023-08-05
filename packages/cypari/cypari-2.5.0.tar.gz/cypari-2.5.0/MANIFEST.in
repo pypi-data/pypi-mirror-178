@@ -1,0 +1,14 @@
+include build_pari.sh
+include README.rst
+include cypari/*.h
+include cypari/*.c
+include macOS/mac_paricfg.patch
+include patches/paristio.patch
+recursive-include pari_src *
+prune pari_src/Olinux-x86_64 
+prune pari_src/Olinux-i386
+prune pari_src/Odarwin-x86_64
+prune pari_src/Odarwin-i386
+prune pari_src/Omingw-x86_64
+prune pari_src/Omingw-i386
+recursive-include gmp_src *
