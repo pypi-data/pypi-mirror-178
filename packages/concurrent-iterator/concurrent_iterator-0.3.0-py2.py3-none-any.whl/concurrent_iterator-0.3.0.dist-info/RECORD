@@ -1,0 +1,12 @@
+concurrent_iterator/__init__.py,sha256=-gaqPODyQcaH7EiE4k0fPf2wGUdcO_gKWl1lHS8C7w4,1738
+concurrent_iterator/connections.py,sha256=FKb0rVelcRV0mGnN-ynQdG-2Nil0YmBpahWT6poL1Q8,2285
+concurrent_iterator/dummy.py,sha256=1Y6L5NEjwHR1ZC7iguVrbR0EFaoK_CmDMlywRG-nuzU,1167
+concurrent_iterator/process.py,sha256=uhndCOCj3U1n6aPiV_CFL5h4Ld-F4coxOcKqrASJsHs,4099
+concurrent_iterator/thread.py,sha256=v3USAB-zX0pkCGbGZtDPDf0YAUwtja2zQksHaDDiJ90,4074
+concurrent_iterator/utils.py,sha256=NHtkntLyV0Pe-wfyhKpqUlTZU3GdzfhdkbB9eZwjzgs,246
+concurrent_iterator-0.3.0.dist-info/LICENSE,sha256=gQ0onXQnjXJoTSbNwqxcuw8B8tGCEvORxsRGc5mnrdU,7633
+concurrent_iterator-0.3.0.dist-info/METADATA,sha256=Gi0hhrMXuHw9tSo3pER2IBr4Dz4bwK_MTvrMkElY-Fc,1252
+concurrent_iterator-0.3.0.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+concurrent_iterator-0.3.0.dist-info/top_level.txt,sha256=q3S7TqzIg5Lm2EYh1_6t0Pl4Xz0v682EemUQaIcQY7c,20
+concurrent_iterator-0.3.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+concurrent_iterator-0.3.0.dist-info/RECORD,,
