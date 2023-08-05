@@ -1,0 +1,9 @@
+## Include
+include README.md LICENSE NOTICE requirements.txt
+recursive-include generate *.py *.tl *.tsv *.txt
+
+## Exclude
+prune fipper/api/errors/exceptions
+prune fipper/api/functions
+prune fipper/api/types
+exclude fipper/api/all.py
