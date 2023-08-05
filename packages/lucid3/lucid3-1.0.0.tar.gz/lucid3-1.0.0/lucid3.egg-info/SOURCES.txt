@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+lucid3/__init__.py
+lucid3/lucid3.py
+lucid3/lucid_core.py
+lucid3.egg-info/PKG-INFO
+lucid3.egg-info/SOURCES.txt
+lucid3.egg-info/dependency_links.txt
+lucid3.egg-info/entry_points.txt
+lucid3.egg-info/requires.txt
+lucid3.egg-info/top_level.txt

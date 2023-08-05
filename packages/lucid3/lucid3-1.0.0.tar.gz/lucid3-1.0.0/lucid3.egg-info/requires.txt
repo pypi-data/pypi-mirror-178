@@ -1,0 +1,11 @@
+imageio
+opencv-python>=2.4
+matplotlib
+
+[dev]
+black
+flake8
+pytest
+
+[test]
+pytest
