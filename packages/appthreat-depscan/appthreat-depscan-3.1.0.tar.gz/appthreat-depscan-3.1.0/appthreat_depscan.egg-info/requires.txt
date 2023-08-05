@@ -1,0 +1,5 @@
+appthreat-vulnerability-db
+defusedxml
+PyYAML
+rich
+packageurl-python
