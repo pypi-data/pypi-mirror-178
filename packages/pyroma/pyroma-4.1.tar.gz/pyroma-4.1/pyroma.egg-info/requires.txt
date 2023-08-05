@@ -1,0 +1,14 @@
+build
+docutils
+pep517
+pygments
+requests
+setuptools>=61.0.0
+trove-classifiers>=2022.6.26
+wheel
+
+[test]
+flit<4,>=3.4
+pytest
+pytest-cov
+setuptools>=60
