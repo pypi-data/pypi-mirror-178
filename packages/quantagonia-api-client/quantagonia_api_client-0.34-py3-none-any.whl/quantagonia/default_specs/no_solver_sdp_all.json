@@ -1,0 +1,26 @@
+{
+  "version" : 1,
+  "opt_sense" : "MAXIMIZE",
+  "branching_rule" : "OBJECTIVE",
+  "seed" : 36848232890347,
+  "presolve" : {
+    "enabled" : true,
+    "coeff_strengthening" : false,
+    "decompose" : false,
+    "maxiter" : 100
+  },
+  "enumerate":{
+    "enabled" : true,
+    "enumeration_algorithm" : "CPU_GRAY",
+    "enumeration_threshold" : 16
+  },
+  "primal_solver" : {
+    "type" : "NO_SOLVER",
+    "runs" : 1
+  },
+  "dual_solver": {
+      "runs": 1,
+      "type" : "SDP_SHIFT",
+      "dual_root_node_SDP": true
+  }
+}

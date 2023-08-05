@@ -1,0 +1,34 @@
+{
+  "version" : 1,
+  "opt_sense" : "MAXIMIZE",
+  "branching_rule" : "OBJECTIVE",
+  "seed" : 36848232890347,
+  "presolve" : {
+    "enabled" : true,
+    "coeff_strengthening" : false,
+    "decompose" : false,
+    "maxiter" : 100
+  },
+  "enumerate":{
+    "enabled" : true,
+    "enumeration_algorithm" : "CPU_GRAY",
+    "enumeration_threshold" : 16
+  },
+  "primal_solver" : {
+      "runs" : 1,
+      "type" : "FVSDP_CPU",
+      "forest_num_roots" : 8,
+      "deterministic" : false,
+      "max_iters" : 50,
+      "rel_stop_iters" : 5
+  },
+  "dual_solver": {
+      "runs" : 1,
+      "type" : "FVSDP_CPU",
+      "forest_num_roots" : 8,
+      "deterministic" : false,
+      "max_iters" : 50,
+      "rel_stop_iters" : 5,
+      "dual_root_node_SDP": false
+  }
+}
