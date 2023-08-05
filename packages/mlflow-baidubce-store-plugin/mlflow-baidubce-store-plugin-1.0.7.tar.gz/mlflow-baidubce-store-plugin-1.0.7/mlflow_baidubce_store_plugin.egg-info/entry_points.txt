@@ -1,0 +1,2 @@
+[mlflow.artifact_repository]
+bos = mlflow_baidubce_store_plugin.bce_bos_artifact_repo:BCEBOSArtifactRepository

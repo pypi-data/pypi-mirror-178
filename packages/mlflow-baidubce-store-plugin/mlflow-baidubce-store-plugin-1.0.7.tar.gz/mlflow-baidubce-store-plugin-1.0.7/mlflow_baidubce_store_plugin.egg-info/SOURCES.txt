@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+mlflow_baidubce_store_plugin/__init__.py
+mlflow_baidubce_store_plugin/bce_bos_artifact_repo.py
+mlflow_baidubce_store_plugin.egg-info/PKG-INFO
+mlflow_baidubce_store_plugin.egg-info/SOURCES.txt
+mlflow_baidubce_store_plugin.egg-info/dependency_links.txt
+mlflow_baidubce_store_plugin.egg-info/entry_points.txt
+mlflow_baidubce_store_plugin.egg-info/requires.txt
+mlflow_baidubce_store_plugin.egg-info/top_level.txt
