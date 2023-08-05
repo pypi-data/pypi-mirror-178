@@ -1,0 +1,24 @@
+source:
+  type: dagster
+  serviceName: dagster_source_loc
+  serviceConnection:
+    config:
+      type: Dagster
+      configSource:
+        # For Local Connection
+        hostPort: http://locahost:3000/
+        
+        # For Cloud Connection
+        # host: "https://yourorg.dagster.cloud/prod"
+        # token: token
+  sourceConfig:
+    config:
+      type: PipelineMetadata
+sink:
+  type: metadata-rest
+  config: {}
+workflowConfig:
+  openMetadataServerConfig:
+    hostPort: http://localhost:8585/api
+    authProvider: no-auth
+  
