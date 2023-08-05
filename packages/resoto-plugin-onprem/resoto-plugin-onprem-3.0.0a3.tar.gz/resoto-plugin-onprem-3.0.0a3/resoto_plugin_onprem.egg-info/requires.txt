@@ -1,0 +1,2 @@
+resotolib==3.0.0a3
+paramiko==2.12.0
