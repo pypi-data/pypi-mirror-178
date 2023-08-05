@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "pdrozd-ssg"
+version = "1.0.3"
+description = "P-DR0ZD-SSG"
+authors = ["P-DR0ZD <60482468+P-DR0ZD@users.noreply.github.com>"]
+license = "GNU"
+readme = "README.md"
+packages = [{include = "./SSG"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Markdown = "^3.4.1"
+black = "^22.10.0"
+flake8 = "^5.0.4"
+Poetry = "^1.2.2"
+
+[tool.poetry.scripts]
+pdrozd = "SSG:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
