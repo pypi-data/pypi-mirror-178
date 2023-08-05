@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: upgrade-knausj
+Version: 0.3.7
+Summary: 
+Author: Pokey Rule
+Author-email: 755842+pokey@users.noreply.github.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: gitpython (>=3.1.29,<4.0.0)
+Requires-Dist: pre-commit (>=2.20.0,<3.0.0)
+Requires-Dist: pyyaml (>=6.0,<7.0)
+Requires-Dist: rich (>=12.6.0,<13.0.0)
+Requires-Dist: typer[all] (>=0.7.0,<0.8.0)
+Description-Content-Type: text/markdown
+
+# Upgrade `knausj`
+
+Helper for performing `knausj` upgrades.
+
+## Assumptions
+
+- You have a fork of `knausj`
+- You haven't altered your pre-commit config. If you don't know what that means, then you are fine 😊
+
+## Installation
+
+1. Install [`pipx`](https://pypa.github.io/pipx/)
+2. Run `pipx install upgrade-knausj`
+
+## How to run
+
+1. Push your changes to your fork
+2. Run `upgrade-knausj`
+3. If necessary, resolve any merge conflicts, commit, then re-run `upgrade-knausj`
+4. Repeat steps 2-3 until it says you're done
+5. Do a pull from your main Talon user directory
+6. Restart Talon and look in the log file for errors
+
