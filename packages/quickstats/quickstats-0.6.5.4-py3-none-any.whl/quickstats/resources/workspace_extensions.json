@@ -1,0 +1,11 @@
+{
+  "required": [
+    "RooTwoSidedCBShape",
+    "FlexibleInterpVarMkII",
+    "ResponseFunction",
+    "ProcessNormalization",
+    "RooGaussStepBernstein",
+    "RooMultiPdf"
+  ],
+  "strict": false
+}
