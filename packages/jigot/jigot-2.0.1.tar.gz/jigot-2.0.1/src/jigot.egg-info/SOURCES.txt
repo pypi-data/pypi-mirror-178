@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/jgd/__init__.py
+src/jgd/jgd.py
+src/jigot.egg-info/PKG-INFO
+src/jigot.egg-info/SOURCES.txt
+src/jigot.egg-info/dependency_links.txt
+src/jigot.egg-info/entry_points.txt
+src/jigot.egg-info/top_level.txt
