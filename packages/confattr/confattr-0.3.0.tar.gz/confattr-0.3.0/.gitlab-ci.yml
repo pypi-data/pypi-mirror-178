@@ -1,0 +1,9 @@
+pages:
+  script:
+    - mkdir public
+    - cp -r docs/build/html/_sources public
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
