@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+dam_lev/__init__.py
+dam_lev/algorithm.py
+dam_lev.egg-info/PKG-INFO
+dam_lev.egg-info/SOURCES.txt
+dam_lev.egg-info/dependency_links.txt
+dam_lev.egg-info/requires.txt
+dam_lev.egg-info/top_level.txt
