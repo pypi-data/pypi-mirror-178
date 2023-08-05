@@ -1,0 +1,3 @@
+[console_scripts]
+latex2pdfa=latex2pdfa.latex2pdfa:main
+
