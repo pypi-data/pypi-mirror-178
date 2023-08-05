@@ -1,0 +1,11 @@
+README.md
+setup.py
+BitConvertAccesslib/__init__.py
+BitConvertAccesslib/data_manager.py
+BitConvertAccesslib/deep_data_manager.py
+DDBitConvertAccesslib.egg-info/PKG-INFO
+DDBitConvertAccesslib.egg-info/SOURCES.txt
+DDBitConvertAccesslib.egg-info/dependency_links.txt
+DDBitConvertAccesslib.egg-info/not-zip-safe
+DDBitConvertAccesslib.egg-info/requires.txt
+DDBitConvertAccesslib.egg-info/top_level.txt
