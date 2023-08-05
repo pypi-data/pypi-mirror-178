@@ -1,0 +1,13 @@
+MANIFEST.in
+setup.cfg
+setup.py
+TGConvertor/.gitignore
+TGConvertor/LICENSE
+TGConvertor/README.md
+TGConvertor/__init__.py
+TGConvertor/main.py
+TGConvertor/setup.py
+TGConvertor.egg-info/PKG-INFO
+TGConvertor.egg-info/SOURCES.txt
+TGConvertor.egg-info/dependency_links.txt
+TGConvertor.egg-info/top_level.txt
