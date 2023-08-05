@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: bmb-cron-private-keys
+Version: 0.0.2
+Summary: Refresh expiring private keys per a schedule.
+Home-page: https://dev.bmbix.com
+Author: Robin Abbi
+Author-email: robin.abbi@downley.net
+License: Proprietary.
+Keywords: bmb
+Platform: UNKNOWN
+
+Refresh expiring private keys per a schedule.
+
