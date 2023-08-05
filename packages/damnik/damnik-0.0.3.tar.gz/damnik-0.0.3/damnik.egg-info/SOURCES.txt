@@ -1,0 +1,7 @@
+setup.py
+damnik/__init__.py
+damnik/hello.py
+damnik.egg-info/PKG-INFO
+damnik.egg-info/SOURCES.txt
+damnik.egg-info/dependency_links.txt
+damnik.egg-info/top_level.txt
