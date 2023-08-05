@@ -1,0 +1,2 @@
+[console_scripts]
+kal = calendar_cli.cal:cli
