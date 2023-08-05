@@ -1,0 +1,9 @@
+README.md
+setup.py
+package_test_python_estevam/__init__.py
+package_test_python_estevam/file1_name.py
+package_test_python_estevam/file2_name.py
+package_test_python_estevam.egg-info/PKG-INFO
+package_test_python_estevam.egg-info/SOURCES.txt
+package_test_python_estevam.egg-info/dependency_links.txt
+package_test_python_estevam.egg-info/top_level.txt
