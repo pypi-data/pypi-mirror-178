@@ -1,0 +1,3 @@
+[console_scripts]
+djlink=dj_link.Main:cli
+
