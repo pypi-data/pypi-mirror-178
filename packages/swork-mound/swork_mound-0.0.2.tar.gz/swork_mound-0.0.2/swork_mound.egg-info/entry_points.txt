@@ -1,0 +1,2 @@
+[console_scripts]
+sm = swork_mound.converter:run
