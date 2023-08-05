@@ -1,0 +1,9 @@
+powderworld/160worlds.npz,sha256=SA5K3l-mqE2achfcKctIx96nt49JH1EgtKJmZkzMUgY,145900
+powderworld/__init__.py,sha256=PwacWdI97gIbzRDUGxiMmv8qdTFqZH1GZ9hAgmJEHgQ,191
+powderworld/dists.py,sha256=mi8cXATZbKRaPz3f_yLwnNYHebeMOkx5jwmc9MpLCK0,11430
+powderworld/envs.py,sha256=8SvOHw3bKodG5bYYSWaMg2-cFhaIHJc0CW1Q2KZpPRE,10432
+powderworld/sim.py,sha256=0-vBfEtGKdsjE566BX7qO8hwIENDFBpn55RsZ--Rz8c,31750
+powderworld-1.0.0.dist-info/METADATA,sha256=oDHU3BKdFBhy3kKz0SikD4z7MzaQMfpmYTmJCQxch8g,384
+powderworld-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+powderworld-1.0.0.dist-info/top_level.txt,sha256=wu0wqKsxRBBjtcRDj-RMs0aXV7wrbMad3v0i_zUWdUE,12
+powderworld-1.0.0.dist-info/RECORD,,

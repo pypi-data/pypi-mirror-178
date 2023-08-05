@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: powderworld
+Version: 1.0.0
+Summary: A example Python package
+Home-page: https://github.com/kvfrans/powderworld
+Author: Kevin Frans
+Author-email: kevinfrans2@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: torch
+Requires-Dist: numpy
+Requires-Dist: stable-baselines3
+Requires-Dist: gym
+Requires-Dist: matplotlib
+Requires-Dist: scikit-image
+
+UNKNOWN
+
