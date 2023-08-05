@@ -1,0 +1,15 @@
+latex2pdfa/__init__.py,sha256=4M77uH_ix09a1iTo9vOhQhSBe6fPWTukggZVgv4osms,151
+latex2pdfa/binaries/ghostscript/Licence,sha256=8s8JevjCX_1AazbBsMYwC1OgmG4Z9Z67mjLOo0FdnQI,5889
+latex2pdfa/binaries/ghostscript/gs-923-linux-x86_64,sha256=M4Q37HJT4_66MOdGaoJKlOcX1MNt9TMx3N8FVSMll4g,20774872
+latex2pdfa/latex2pdfa.py,sha256=GZOmHQVUeISxfXfkDa-vvEqoY60AE3rWx461AnlzDXY,28340
+latex2pdfa/resources/PDFA_def.ps,sha256=7Ku6sFi4pdHetIW-qt8AWpa6twIYVLottev2xRynrwE,1525
+latex2pdfa/resources/lib_PDFA_def.ps,sha256=t08JW2slZ6Iog12D46Rgcw6HHSXX4b_tuVu_lZzpzyA,3067
+latex2pdfa/resources/pdfa.config,sha256=iKfgPB09vod3Bl_N0EK170L0eTQ5k442ZTk9C-Q9_l8,2305
+latex2pdfa/resources/sRGB.icc,sha256=BJ4FtLn4Xitl1D4b7YnjAdFX8Uuo2t7-OpLhKBTXY9o,3268
+latex2pdfa/resources/sample.xmpdata,sha256=3rPLR49wjaVv3lkA9PxRi9AMqnh5_nA4ZIeqeSmpRzo,4250
+latex2pdfa/utils.py,sha256=LNHcNqS5c7HKimzeEpsJVJ44cmKJG4P8P8FNCKB1cZU,7911
+latex2pdfa-1.0.4.dist-info/entry_points.txt,sha256=zBSqF423r6Gf0_afBFa75bx7dgZ7AQ8rSSJ4ct0zlsk,57
+latex2pdfa-1.0.4.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+latex2pdfa-1.0.4.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+latex2pdfa-1.0.4.dist-info/METADATA,sha256=6bIj__Ua-1xorYt0Sq4uVOFX4JOOCPys21n-2TADZCk,9297
+latex2pdfa-1.0.4.dist-info/RECORD,,
