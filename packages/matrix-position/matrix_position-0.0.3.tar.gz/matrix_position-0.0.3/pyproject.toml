@@ -1,0 +1,19 @@
+[project]
+name = "matrix_position"
+version = "0.0.3"
+authors = [
+  { name="Jinghao", email="psymhmch@163.com" },
+  { name="LiuShuhua", email="492653598@qq.com" },
+]
+description = "A package that express the data structure of matrix, and combined with the matrix, it can obtain the position and value around any two-dimensional coordinates."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Zeaulo/matrix_position"
+"Bug Tracker" = "https://github.com/Zeaulo/matrix_position/issues"
