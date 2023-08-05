@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+Mycol.egg-info/PKG-INFO
+Mycol.egg-info/SOURCES.txt
+Mycol.egg-info/dependency_links.txt
+Mycol.egg-info/top_level.txt
+mycol/__init__.py
+mycol/numbers.py
