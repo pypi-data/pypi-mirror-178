@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+Pystyiles/__init__.py
+Pystyiles/colors.py
+Pystyiles.egg-info/PKG-INFO
+Pystyiles.egg-info/SOURCES.txt
+Pystyiles.egg-info/dependency_links.txt
+Pystyiles.egg-info/top_level.txt
