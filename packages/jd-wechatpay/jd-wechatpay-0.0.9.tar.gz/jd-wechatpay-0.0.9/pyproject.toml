@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jd-wechatpay"
+version = "0.0.9"
+authors = [
+  { name="wxg001", email="wxg001@21cn.com" },
+]
+description = "Wechat pay v3 python sdk, by JD"
+readme = "README.md"
+license = { text = "MIT" }
+dependencies = ["Cryptography", "requests"]
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://pypi.org/project/jd-wechatpay/"
+"Bug Tracker" = "https://pypi.org/project/jd-wechatpay/"
