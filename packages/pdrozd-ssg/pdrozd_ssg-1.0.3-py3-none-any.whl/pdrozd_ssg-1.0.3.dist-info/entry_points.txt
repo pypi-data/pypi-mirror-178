@@ -1,0 +1,3 @@
+[console_scripts]
+pdrozd=SSG:main
+
