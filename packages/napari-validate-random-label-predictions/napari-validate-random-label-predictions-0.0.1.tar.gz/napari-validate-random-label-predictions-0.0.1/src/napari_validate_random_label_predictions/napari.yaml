@@ -1,0 +1,10 @@
+name: napari-validate-random-label-predictions
+display_name: napari validate random label predictions
+contributions:
+  commands:
+    - id: napari-validate-random-label-predictions.make_qwidget
+      python_name: napari_validate_random_label_predictions._widget:ValidateLabelsWidget
+      title: Validate labels
+  widgets:
+    - command: napari-validate-random-label-predictions.make_qwidget
+      display_name: Validate Labels

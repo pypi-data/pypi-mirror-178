@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-validate-random-label-predictions = napari_validate_random_label_predictions:napari.yaml
