@@ -1,0 +1,11 @@
+adlfs/__init__.py,sha256=CvOptnjUe5rR4y5Zp4Rsb9eYtFrunfOKBl9QrtqGexI,361
+adlfs/_version.py,sha256=zwFFejNwfKRKw9buziAqF0VQ5AjDnVfJ71UhqebfJ_E,501
+adlfs/gen1.py,sha256=Hba6t15kTOH_27kU84pq5SDOueKa_0sWiQQYUsdMRmI,7336
+adlfs/spec.py,sha256=NkK6wRd55EZ4NwdrhQluWEQTKgAdZ1f5r39Ixzejyao,73060
+adlfs/utils.py,sha256=_VirrOEzzJ1X6kgY4kO9_jbaqjFlh_spLXAOEjaYxyo,2072
+adlfs-2022.11.1.dist-info/LICENSE.txt,sha256=f9wt57aZO0eDfqXLbnWPVqvS9K1lzESQBkjFHvvafec,1488
+adlfs-2022.11.1.dist-info/METADATA,sha256=9sfFmPLV3-AgPLhqr8NJ0EGShP5F2b-FZx8uFH5oucA,7015
+adlfs-2022.11.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+adlfs-2022.11.1.dist-info/entry_points.txt,sha256=fXTz52mzdXbrXonqyU_KMK5FsSpHneVIooEwePKGK6Q,49
+adlfs-2022.11.1.dist-info/top_level.txt,sha256=RzOBusmB48_VR41Zj4VBC2RC-QWTd995oL7C7wdXDOg,6
+adlfs-2022.11.1.dist-info/RECORD,,
