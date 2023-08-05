@@ -1,0 +1,12 @@
+anti_cursing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+anti_cursing/command.py,sha256=mWt2EOJIAIzySBBeijrsmWX6rwfbQA6roLtMhQyyvT4,1189
+anti_cursing/lib.py,sha256=W_6xnvyrs0vFB5XR_HypEi2SNpcRqeJMi5aMbJe91sQ,797
+anti_cursing/main.py,sha256=ThjDxpzSRwsQEeTy_ewGfcITXFwRj0lGC1efA6hmZ4E,622
+anti_cursing/utils.py,sha256=AAoOAyuxLxUSGv0ctTxfmt8v18IpRcmeuPHwP1gUfDU,7593
+anti_cursing/dataset/.DS_Store,sha256=1lFlJ5EFymdzGAUAaI30vcaaLHt3F1LwpG7xILf9jsM,6148
+anti_cursing/dataset/emoji_category.csv,sha256=Nswcl1wxrA33C0zhcJbAdyzOWYQV7kEDnOpTrKHIV2g,57823
+anti_cursing-0.0.1.dist-info/LICENSE,sha256=xxQGMNWUJwbidzUgso2IDpiHmGIPwACzkeOL2oD2O84,1062
+anti_cursing-0.0.1.dist-info/METADATA,sha256=_hUyJ4-1_au_NON9oSYB6IiIJhlq039d4serTWEbN5c,302
+anti_cursing-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+anti_cursing-0.0.1.dist-info/top_level.txt,sha256=ECAfBUYbCnwT3-jTDbj0tmBXb-UdemcEMDzt2uX5-SU,13
+anti_cursing-0.0.1.dist-info/RECORD,,

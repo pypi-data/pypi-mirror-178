@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: anti-cursing
+Version: 0.0.1
+Summary: The package that detect & switch the curse word in the sentence by using deep learning
+Home-page: https://github.com/sabin5105/anti-cursing
+Author: 24_bean
+Author-email: sabin5105@gmail.com
+Requires-Python: >= 3.8
+License-File: LICENSE
+
