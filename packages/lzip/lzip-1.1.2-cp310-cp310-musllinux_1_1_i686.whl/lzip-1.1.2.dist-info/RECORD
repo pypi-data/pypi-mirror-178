@@ -1,0 +1,9 @@
+lzip_extension.cpython-310-i386-linux-gnu.so,sha256=IAsUQULxsz9ywuTkkZnWFkkXUPuTiMgaO_mYHant4cE,756256
+lzip.py,sha256=uhIwxYd9n1veQRLTlGyHVrf381hPF663zLBzGtunt_c,6544
+lzip.libs/libgcc_s-8b50eaaa.so.1,sha256=aEf1qbEV-lDljbUGr6ql8FAfnxyJlKTeEsHNdrBlAHM,101648
+lzip.libs/libstdc++-8baf04f9.so.6.0.28,sha256=7dHa2sV5CgWXjdC4QqxbCNsm-pN9kkmNNqxtn5AaAvs,2428960
+lzip-1.1.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+lzip-1.1.2.dist-info/top_level.txt,sha256=Kz1kY3I-5q9cR0tYFnKL3uFVOLS-szDfnd9iNgJV2So,20
+lzip-1.1.2.dist-info/WHEEL,sha256=_i-QVQ3Dn0MLcEV4jXxMbN6ObyGGbM79E9LUcR-AAI8,111
+lzip-1.1.2.dist-info/RECORD,,
+lzip-1.1.2.dist-info/METADATA,sha256=RlS9B2UNcR53MRaF1q_mfRSbCrgLCWfMblu228fB0ks,18469
