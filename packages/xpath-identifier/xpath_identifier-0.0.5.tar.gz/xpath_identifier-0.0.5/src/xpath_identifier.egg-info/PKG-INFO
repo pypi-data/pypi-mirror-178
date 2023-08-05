@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: xpath-identifier
+Version: 0.0.5
+Summary: Identify Xpath expressions in a given document
+Home-page: https://github.com/devtanna/xpath-identifier
+Author-email: Dev Tanna <dev.tanna@gmail.com>
+Project-URL: Homepage, https://github.com/devtanna/xpath-identifier
+Project-URL: Bug Tracker, https://github.com/devtanna/xpath-identifier/issues
+Keywords: xpath,identifier,parser
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# xpath-identifier
+Given an html or similar input xpath-identifier returns the xpath of it's location in the input 
