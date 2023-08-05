@@ -1,0 +1,10 @@
+lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lib/module.py,sha256=2XxlLolscbJSJhjhZtjZV8iALQQNL_IPnveb94I8HBg,924
+powerxrd/__init__.py,sha256=TOibEEMvFYE4qT8IVPyLWYAg7NocyQ7NGdk1xEv7Qmg,28
+powerxrd/main.py,sha256=6NtV8YWrfU7roLhm-BPs-DfIN8tHH_w9gZenQT4bE3U,11513
+powerxrd/module.py,sha256=2XxlLolscbJSJhjhZtjZV8iALQQNL_IPnveb94I8HBg,924
+powerxrd-2.1.6.dist-info/LICENSE,sha256=cGKRk_ghwdLU_ZtpMwilFpNRtGEI8Z8eK8p98vgJrp8,1077
+powerxrd-2.1.6.dist-info/METADATA,sha256=mP24IFqae_3ZPexrbV_fEYubYv0adKZ84R0ewhC7auY,1756
+powerxrd-2.1.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+powerxrd-2.1.6.dist-info/top_level.txt,sha256=00PicBCpVgn39PbTnNzH4cw6Q1d81CUig9LYhZf_BNs,9
+powerxrd-2.1.6.dist-info/RECORD,,
