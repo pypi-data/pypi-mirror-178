@@ -1,0 +1,2 @@
+[console_scripts]
+cfx-brownie = cfx_brownie._cli:main
