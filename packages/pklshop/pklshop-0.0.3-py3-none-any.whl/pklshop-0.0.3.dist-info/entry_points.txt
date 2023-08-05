@@ -1,0 +1,2 @@
+[nbdev]
+pklshop = pklshop._modidx:d
