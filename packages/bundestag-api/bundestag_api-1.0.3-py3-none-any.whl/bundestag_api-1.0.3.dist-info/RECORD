@@ -1,0 +1,10 @@
+bundestag_api/__init__.py,sha256=wj1sGal0_4RbHsMFw0Jvn-x6b39LABmvfsqrIyYN9Wk,213
+bundestag_api/bta_utils.py,sha256=SSsarJFLDJjSPArLipPvGq6B6bwXBWfzZX7geaHl2W0,29553
+bundestag_api/bta_wrapper.py,sha256=PXb6dAiiotxcHPR-iJ47TzoKDMYLFKoSUH4QGJ_JhKE,48541
+bundestag_api/functions.py,sha256=YT1iyS6ChbK2ivTgVbgUuPdG2Tcp-AuR8Uzpexq4VKY,14980
+bundestag_api-1.0.3.dist-info/LICENSE,sha256=NrqZW0pV23hnKIU5HmbxFIaFiShLlwYIErxPH1tzYZc,1096
+bundestag_api-1.0.3.dist-info/LICENSE.bak,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bundestag_api-1.0.3.dist-info/METADATA,sha256=zAjxRFvnu7VVmvqUP0fb-DmvgwE0l_24VUlSa72kCeU,4980
+bundestag_api-1.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+bundestag_api-1.0.3.dist-info/top_level.txt,sha256=D4wJ_y4iQcPTq0AUiuCVZq2gzTsQ62-hoU6GtCIDvAk,14
+bundestag_api-1.0.3.dist-info/RECORD,,
