@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: convertpath
+Version: 0.2.5
+Summary: Simple Path Convertor
+Home-page: https://github.com/ShinyaAkagiI/convertpath
+Author: Shinya Akagi
+License: PSF
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: pathlib
+
+# convertpath Module
+
+Simply Path Convertor for converting from windows path ('C:\\hoge') to linux path ('/C/hoge').  
+
+
+# PYPI
+
+https://pypi.org/project/convertpath/  
+
+
+# Setup
+
+```
+pip install convertpath
+```
+
+# Usage 
+
+```
+from convertpath import convertpath_win2linux
+convertpath_win2linux('C:\\hoge')
+# /C/hoge
+```
+
+
