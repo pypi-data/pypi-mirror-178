@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+powderworld/160worlds.npz
+powderworld/__init__.py
+powderworld/dists.py
+powderworld/envs.py
+powderworld/sim.py
+powderworld.egg-info/PKG-INFO
+powderworld.egg-info/SOURCES.txt
+powderworld.egg-info/dependency_links.txt
+powderworld.egg-info/not-zip-safe
+powderworld.egg-info/requires.txt
+powderworld.egg-info/top_level.txt
