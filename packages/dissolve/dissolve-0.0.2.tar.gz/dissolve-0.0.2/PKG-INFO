@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: dissolve
+Version: 0.0.2
+Summary: Automatically replace use of deprecated APIs
+Home-page: https://github.com/jelmer/dissolve/
+Author: Jelmer Vernooĳ
+Author-email: jelmer@jelmer.uk
+License: Apachev2 or later
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Operating System :: POSIX
+Requires-Python: >=3.9
+License-File: COPYING
+
+dissolve
+========
+
+The dissolve library helps users replaces calls to deprecated library APIs.
+
+Example
+=======
+
+E.g. if you had a function "inc" that has been renamed to "increment" in version 0.1.0
+of your library:
+
+.. code-block:: python
+
+   from dissolve import replace_me
+
+   @replace_me("increment({x})", since="0.1.0")
+   def inc(x):
+      return x + 1
+
+
+Running this code will yield a warning:
+
+.. code-block:: console
+
+   ...
+   >>> inc(x=3)
+   <stdin>:1: DeprecationWarning: <function inc at 0x7feaf5ead5a0> has been deprecated since 0.1.0; use 'increment(4)' instead
+   4
