@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+colossalai/__init__.py
+colossalai.egg-info/PKG-INFO
+colossalai.egg-info/SOURCES.txt
+colossalai.egg-info/dependency_links.txt
+colossalai.egg-info/requires.txt
+colossalai.egg-info/top_level.txt
