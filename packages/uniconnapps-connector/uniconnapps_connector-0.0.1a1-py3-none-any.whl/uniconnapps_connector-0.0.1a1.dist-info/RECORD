@@ -1,0 +1,11 @@
+uniconnapps/connector/__init__.py,sha256=Zdj1n6v8pISwrWU7RuQrgfQ3AcQ836eaiY4dJMmoFts,356
+uniconnapps/connector/actions.py,sha256=6YfcLamu_3_v2jIKL7aGU0N4nO5Jri6CSfoaKz_3NrM,9745
+uniconnapps/connector/core.py,sha256=9IYvIaxhetz-O8fgN6DcvRG43mHJaDV7LKdnzLRrgD0,3622
+uniconnapps/connector/events.py,sha256=1YM_LMlQY0ojcbdE-kDNjQzrlvpmpTgz-HRqa4UNlp4,3551
+uniconnapps/connector/utils.py,sha256=dZlerO71UCnJA2Xmu-mYzyBgXVNx3JDPuASJ31eLW5c,10194
+uniconnapps_connector-0.0.1a1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+uniconnapps_connector-0.0.1a1.dist-info/METADATA,sha256=zQshH2AY3mPX95IN1tgE60Z0Yf0Cm8kako-fD4i0xxA,1183
+uniconnapps_connector-0.0.1a1.dist-info/NOTICE,sha256=o6y0WVgU-BwD9SlotxcWGd4a7mBuxTbJX0LLT8VDesY,107
+uniconnapps_connector-0.0.1a1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+uniconnapps_connector-0.0.1a1.dist-info/top_level.txt,sha256=DGU1JFVpL4bWhYxBpbYP02zWYVHbTZwdl6l_JUXGIoY,12
+uniconnapps_connector-0.0.1a1.dist-info/RECORD,,
