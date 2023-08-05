@@ -1,0 +1,3 @@
+PyJWT
+SQLAlchemy
+python-dotenv
