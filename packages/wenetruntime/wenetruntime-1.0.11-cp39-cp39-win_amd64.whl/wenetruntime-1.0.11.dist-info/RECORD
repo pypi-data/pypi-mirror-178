@@ -1,0 +1,9 @@
+_wenet.cp39-win_amd64.pyd,sha256=1jeZXhlS3bzBn-X5BwW-yo7QdIr7SDyF5uPZnksKKKI,121856
+wenet_api.dll,sha256=VGRiRNTYVrXQy4zuvbUMHKUIgIIJfj6QXFPJ45yeV70,1655808
+wenetruntime/__init__.py,sha256=z1DyMYCMf3TupMuL_GFdAF4dLb8UaywvF72padbOVAk,103
+wenetruntime/decoder.py,sha256=ReaXHnVeuk6fK0JaATtfIPktTCZEeyHkMZCSwcG4cjI,3960
+wenetruntime/hub.py,sha256=FeY0qoXDGRqTBAT1irZiXYlXqekxOCuuClVGeXxAGUQ,3355
+wenetruntime-1.0.11.dist-info/METADATA,sha256=DkrhtKtowWxJTAZwkXRnuUfMCXY44Xyng7ua0x5_rjs,3517
+wenetruntime-1.0.11.dist-info/WHEEL,sha256=fVcVlLzi8CGi_Ul8vjMdn8gER25dn5GBg9E6k9z41-Y,100
+wenetruntime-1.0.11.dist-info/top_level.txt,sha256=CPpyAd_UVWAX6_Noia8XuzCkXvrw97ReQF07u1UCES0,20
+wenetruntime-1.0.11.dist-info/RECORD,,
