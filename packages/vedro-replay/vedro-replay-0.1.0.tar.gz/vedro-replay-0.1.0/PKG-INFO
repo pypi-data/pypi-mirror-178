@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: vedro-replay
+Version: 0.1.0
+Summary: vedro-replay package
+Home-page: https://github.com/2gis-test-labs/vedro-replay
+Author: 2GIS Test Labs
+Author-email: test-labs@2gis.ru
+License: Apache-2.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# vedro-replay
+Python package for working with replay tests on vedro framework
