@@ -1,0 +1,9 @@
+README.md
+setup.py
+antonpdf/__init__.py
+antonpdf/pdf2imat.py
+antonpdf/pif2text.py
+antonpdf.egg-info/PKG-INFO
+antonpdf.egg-info/SOURCES.txt
+antonpdf.egg-info/dependency_links.txt
+antonpdf.egg-info/top_level.txt
