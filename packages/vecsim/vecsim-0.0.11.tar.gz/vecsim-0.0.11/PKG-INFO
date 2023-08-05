@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: vecsim
+Version: 0.0.11
+Home-page: https://github.com/argmaxml/vecsim
+Author: ArgmaxML
+Author-email: ugoren@argmax.ml
+Keywords: vector-similarity,faiss,hnsw,redis,matching,ranking
+Description-Content-Type: text/markdown
+Provides-Extra: faiss
+Provides-Extra: hnsw
+Provides-Extra: redis
+Provides-Extra: s3
+Provides-Extra: postgres
+License-File: LICENSE
+
+https://github.com/argmaxml/vecsim/blob/master/README.md
