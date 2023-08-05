@@ -1,0 +1,11 @@
+LICENSE,sha256=rxuuyD4xqdUcoNYTWzNcmfoxV-HdL_x3bWETc5iBchk,692
+README.md,sha256=mQNtGBYCsjvWCefsZnlZo6l6edTCg8I_qvpNBDFojQA,5595
+siftlog/__init__.py,sha256=IOar9lnhgr2x0978CRyamSo-YvV8sDAg8nWFAdSHgIA,9919
+siftlog/tests/__init__.py,sha256=QBOCsnp53Fnc2yr0zLnHihJfOjE6r_el_2HKY00aB2g,183
+siftlog/tests/test_json_color.py,sha256=E2bJb0fe_Hx0Gwo5sXkS2vB978Oj4wlEjpDUmh4OW6c,3081
+siftlog/tests/test_log.py,sha256=6UtVM2-C_-E-VSJ5cTYxmFomW-xZKuT3TLipsXV_W8E,3139
+siftlog/tests/test_plain_color.py,sha256=L3e3vNxO7oTQDOHYoYkvqFDLCoS_a4y9vJ16GT7qW74,3111
+siftlog_py-0.9.4.dist-info/LICENSE,sha256=rxuuyD4xqdUcoNYTWzNcmfoxV-HdL_x3bWETc5iBchk,692
+siftlog_py-0.9.4.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+siftlog_py-0.9.4.dist-info/METADATA,sha256=9HU4VTQTX6tJzzXkT5VC4n3vj-aYG_fxXsme3fkkTfc,6187
+siftlog_py-0.9.4.dist-info/RECORD,,
