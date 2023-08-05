@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: irucapy
+Version: 0.1.4
+Summary: API Gateway for iruca, an attendance management service.
+Home-page: https://github.com/Mya-Mya/irucapy
+Author: Mya-Mya
+Author-email: 
+License: MIT
+Keywords: iruca,API,Attendance,Management,Office,AttendanceManagement
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Office/Business :: Office Suites
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# irucapy
