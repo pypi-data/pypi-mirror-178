@@ -1,0 +1,13 @@
+requests
+numpy
+transformers
+tqdm
+tritonclient[http]
+whale-ai-schema
+pandas
+datasets
+click
+torch
+accelerate
+onnx
+jsonpath_ng
