@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: aioelasticsearch_fork
+Version: 0.0.1
+Summary: elasticsearch-py wrapper for asyncio
+Home-page: https://github.com/aio-libs/aioelasticsearch
+Author: wikibusiness
+Author-email: osf@wikibusiness.org
+Keywords: elasticsearch,asyncio,aiohttp
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.5.3
+License-File: LICENSE
+
+fork aioelasticsearch and support python3.10 later
+
+and you can install it by pip
+
+pip install aioelasticsearch-fork

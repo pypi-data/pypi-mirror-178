@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+aioelasticsearch_fork/__init__.py
+aioelasticsearch_fork/connection.py
+aioelasticsearch_fork/exceptions.py
+aioelasticsearch_fork/helpers.py
+aioelasticsearch_fork/pool.py
+aioelasticsearch_fork/transport.py
+aioelasticsearch_fork.egg-info/PKG-INFO
+aioelasticsearch_fork.egg-info/SOURCES.txt
+aioelasticsearch_fork.egg-info/dependency_links.txt
+aioelasticsearch_fork.egg-info/not-zip-safe
+aioelasticsearch_fork.egg-info/requires.txt
+aioelasticsearch_fork.egg-info/top_level.txt
