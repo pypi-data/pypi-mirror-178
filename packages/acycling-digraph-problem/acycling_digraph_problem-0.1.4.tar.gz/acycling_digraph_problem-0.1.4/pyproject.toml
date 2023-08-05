@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "acycling-digraph-problem"
+version = "0.1.4"
+description = ""
+authors = ["ada0l <andreika.varfolomeev@yandex.ru>"]
+readme = "README.md"
+packages = [{ include = "acycling_digraph_problem" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+networkx = "^2.8.8"
+matplotlib = "^3.6.2"
+
+[tool.poetry.scripts]
+acycling-digraph-problem = "acycling_digraph_problem:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
