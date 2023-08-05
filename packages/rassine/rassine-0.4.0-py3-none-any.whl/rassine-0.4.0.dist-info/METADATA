@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: rassine
+Version: 0.4.0
+Summary: RASSINE astronomy tool
+Home-page: https://github.com/pegasilab/rassine.git
+License: BSD-3-Clause
+Author: Michael Cretignier
+Author-email: michael.cretignier@gmail.com
+Requires-Python: >=3.8,<3.11
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Provides-Extra: docs
+Requires-Dist: astropy (>=5.0.4,<6.0.0)
+Requires-Dist: configpile[parsy,rich] (>=10.1.0,<11.0.0)
+Requires-Dist: filelock (>=3.6.0,<4.0.0)
+Requires-Dist: furo (==2022.09.29); extra == "docs"
+Requires-Dist: matplotlib (>=3.3.4,<4.0.0)
+Requires-Dist: myst-nb (>=0.17.1,<0.18.0); extra == "docs"
+Requires-Dist: nptyping (>=1.4.4,<2.0.0)
+Requires-Dist: numpy (>=1.23.0,<2.0.0)
+Requires-Dist: pandas (>=1.4.2,<2.0.0)
+Requires-Dist: parsy (>=1.4.0,<2.0.0)
+Requires-Dist: recursive-diff (>=1.1.0,<2.0.0)
+Requires-Dist: rich (>=11.2.0,<12.0.0)
+Requires-Dist: scipy (>=1.8.1,<2.0.0)
+Requires-Dist: sphinx (>=5.3.0,<6.0.0); extra == "docs"
+Requires-Dist: sphinx-argparse (>=0.4.0,<0.5.0); extra == "docs"
+Requires-Dist: sphinx-autodoc-typehints (>=1.19.5,<2.0.0); extra == "docs"
+Requires-Dist: sphinxcontrib-bibtex (>=2.5.0,<3.0.0); extra == "docs"
+Requires-Dist: sphinxcontrib-programoutput (>=0.17,<0.18); extra == "docs"
+Requires-Dist: tybles (>=0.3.2,<0.4.0)
+Requires-Dist: typeguard (>=2.13.3,<3.0.0)
+Requires-Dist: typing-extensions (>=4.1.1,<5.0.0)
+Project-URL: Repository, https://github.com/pegasilab/rassine.git
+Description-Content-Type: text/markdown
+
+# RASSINE
+![RASSINE logo](docs/source/_static/logo.png)
+
+[See the RASSINE website.](https://pegasilab.github.io/rassine/)
