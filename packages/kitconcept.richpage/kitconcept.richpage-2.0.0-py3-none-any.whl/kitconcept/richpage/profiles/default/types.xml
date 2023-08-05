@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object meta_type="Plone Types Tool"
+        name="portal_types"
+>
+  <object meta_type="Dexterity FTI"
+          name="RichPageText"
+  />
+  <object meta_type="Dexterity FTI"
+          name="RichPageImage"
+  />
+  <object meta_type="Dexterity FTI"
+          name="RichPageFile"
+  />
+  <object meta_type="Dexterity FTI"
+          name="Audio"
+  />
+  <object meta_type="Dexterity FTI"
+          name="Video"
+  />
+  <object meta_type="Dexterity FTI"
+          name="GoogleMap"
+  />
+  <object meta_type="Dexterity FTI"
+          name="Slideshow"
+  />
+  <object meta_type="Dexterity FTI"
+          name="RichPage"
+  />
+</object>

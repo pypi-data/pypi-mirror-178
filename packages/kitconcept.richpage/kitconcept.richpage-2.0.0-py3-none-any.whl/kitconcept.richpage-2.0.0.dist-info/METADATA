@@ -1,0 +1,151 @@
+Metadata-Version: 2.1
+Name: kitconcept.richpage
+Version: 2.0.0
+Summary: Folderish page with rich content
+Home-page: https://github.com/kitconcept/kitconcept.richpage
+Author: kitconcept GmbH
+Author-email: info@kitconcept.com
+License: GPL version 2
+Project-URL: PyPI, https://pypi.python.org/pypi/kitconcept.richpage
+Project-URL: Source, https://github.com/kitconcept/kitconcept.richpage
+Project-URL: Tracker, https://github.com/kitconcept/kitconcept.richpage/issues
+Keywords: Python Plone
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Plone :: 5.2
+Classifier: Framework :: Plone :: 6.0
+Classifier: Framework :: Plone
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: Plone
+Requires-Dist: setuptools (>=36.2)
+Requires-Dist: z3c.jbot
+Requires-Dist: collective.dexteritytextindexer
+Provides-Extra: test
+Requires-Dist: plone.app.testing ; extra == 'test'
+Requires-Dist: plone.app.contenttypes ; extra == 'test'
+Requires-Dist: plone.app.robotframework ; extra == 'test'
+
+
+<div align="center"><img alt="logo" src="https://raw.githubusercontent.com/kitconcept/kitconcept.richpage/main/docs/kitconcept.png" width="70" /></div>
+
+<h1 align="center">kitconcept.richtext</h1>
+
+<div align="center">
+
+[![PyPI](https://img.shields.io/pypi/v/kitconcept.richpage)](https://pypi.org/project/kitconcept.richpage/)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/kitconcept.richpage)](https://pypi.org/project/kitconcept.richpage/)
+[![PyPI - Wheel](https://img.shields.io/pypi/wheel/kitconcept.richpage)](https://pypi.org/project/kitconcept.richpage/)
+[![PyPI - License](https://img.shields.io/pypi/l/kitconcept.richpage)](https://pypi.org/project/kitconcept.richpage/)
+[![PyPI - Status](https://img.shields.io/pypi/status/kitconcept.richpage)](https://pypi.org/project/kitconcept.richpage/)
+
+
+[![PyPI - Plone Versions](https://img.shields.io/pypi/frameworkversions/plone/kitconcept.richpage)](https://pypi.org/project/kitconcept.richpage/)
+
+[![Code analysis checks](https://github.com/kitconcept/kitconcept.richpage/actions/workflows/code-analysis.yml/badge.svg)](https://github.com/kitconcept/kitconcept.richpage/actions/workflows/code-analysis.yml)
+[![Tests](https://github.com/kitconcept/kitconcept.richpage/actions/workflows/tests.yaml/badge.svg)](https://github.com/kitconcept/kitconcept.richpage/actions/workflows/tests.yaml)
+![Code Style](https://img.shields.io/badge/Code%20Style-Black-000000)
+
+[![GitHub contributors](https://img.shields.io/github/contributors/kitconcept/kitconcept.richpage)](https://github.com/kitconcept/kitconcept.richpage)
+[![GitHub Repo stars](https://img.shields.io/github/stars/kitconcept/kitconcept.richpage?style=social)](https://github.com/kitconcept/kitconcept.richpage)
+
+</div>
+
+Installation
+------------
+
+Add **kitconcept.richpage** to the Plone installation using `pip`:
+
+```bash
+pip install kitconcept.richpage
+```
+or add it as a dependency on your package's `setup.py`
+
+```python
+    install_requires = [
+        "kitconcept.richpage",
+        "Products.CMFPlone",
+        "plone.restapi",
+        "setuptools",
+    ],
+```
+
+Start Plone and activate the plugin in the addons control-panel.
+
+
+Source Code and Contributions
+-----------------------------
+
+If you want to help with the development (improvement, update, bug-fixing, ...) of `kitconcept.richpage` this is a great idea!
+
+- [Issue Tracker](https://github.com/kitconcept/kitconcept.richpage/issues)
+- [Source Code](https://github.com/kitconcept/kitconcept.richpage/)
+
+
+Please do larger changes on a branch and submit a Pull Request.
+
+We appreciate any contribution and if a release is needed to be done on PyPI, please just contact one of us.
+
+Development
+-----------
+
+You need a working `python` environment (system, virtualenv, pyenv, etc) version 3.7 or superior.
+
+Then install the dependencies and a development instance using:
+
+```bash
+make build
+```
+
+To run tests for this package:
+
+```bash
+make test
+```
+
+By default we use the latest Plone version in the 6.x series.
+
+License
+-------
+
+The project is licensed under the GPLv2.
+
+
+# Changelog
+
+## 2.0.0 (2022-11-23)
+
+- Support Python 3.8, 3.9, 3.10 and 3.11 for Plone 6. @ericof
+- Support Python 3.7 and 3.8 for Plone 5.2. @ericof
+- Drop support for Python 2.7, Plone 5 and Plone 5.1 @ericof
+- Use short names in behavior names instead of interface names @sneridagh
+
+
+## 1.1.0 (2020-02-20)
+
+- Python 3 compatibility. @rodfersou
+
+- Plone 5.2 compatibility. @rodfersou
+
+
+## 1.0.0 (2018-06-05)
+
+- Initial release. @tisto
+
+
+## Contributors
+
+- Timo Stollenwerk, @tisto
+- Victor Fernandez de Alba, @sneridagh
+- Rodrigo Ferreira de Souza, @rodfersou
+- Érico Andrei, @ericof
+
+
