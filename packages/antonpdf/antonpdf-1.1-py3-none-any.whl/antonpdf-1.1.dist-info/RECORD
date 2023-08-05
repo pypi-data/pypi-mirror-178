@@ -1,0 +1,10 @@
+antonpdf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+antonpdf/pdf2imat.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+antonpdf/pdf2img.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+antonpdf/pdf2text.py,sha256=jeA4Bp9ZaG39BMo4kBRCt6TLk3p-HtGrhKu0T8dl42U,41
+antonpdf/pif2text.py,sha256=jeA4Bp9ZaG39BMo4kBRCt6TLk3p-HtGrhKu0T8dl42U,41
+antonpdf-1.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+antonpdf-1.1.dist-info/METADATA,sha256=-HzujuFUQCwDnfHCQfrKcCaZ-yZ6YM4vSGH3f6Ia60c,199
+antonpdf-1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+antonpdf-1.1.dist-info/top_level.txt,sha256=yYEvyP1BkYVB1nOTDi7iA_2dWHD2DiKJzXWrlZpz2Fs,9
+antonpdf-1.1.dist-info/RECORD,,
