@@ -1,0 +1,7 @@
+README.md
+ebsynth.py
+pyproject.toml
+ebsynth.egg-info/PKG-INFO
+ebsynth.egg-info/SOURCES.txt
+ebsynth.egg-info/dependency_links.txt
+ebsynth.egg-info/top_level.txt

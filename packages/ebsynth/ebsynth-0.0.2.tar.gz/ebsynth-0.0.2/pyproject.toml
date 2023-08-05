@@ -1,0 +1,20 @@
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ebsynth"
+version = "0.0.2"
+description = "EbSynth for Python"
+readme = "README.md"
+keywords = [ "ebsynth" ]
+authors = [
+  {email = "team@scrtwpns.com"},
+  {name = "Secret Weapons"}
+]
+
+[project.urls]
+homepage = "https://ebsynth.com"
+
+[tool.distutils.bdist_wheel]
+universal = true
