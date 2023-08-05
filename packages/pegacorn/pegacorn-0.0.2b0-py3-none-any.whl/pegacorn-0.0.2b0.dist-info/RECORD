@@ -1,0 +1,9 @@
+pegacorn/__init__.py,sha256=4zGOqVu4OTe1bQlUHppyT8EgTNg-3DKEbQKTndoshrY,23
+pegacorn/main.py,sha256=Lk4jQRwa6WQIo7SaPfOk0WgbrshJnRbHWWQ7qUeEkPk,49
+pegacorn/command/__init__.py,sha256=10_w7o2juYBrGMh32_KbveULW9jk2tejpyUAD-uC6PE,4
+pegacorn/core/__init__.py,sha256=10_w7o2juYBrGMh32_KbveULW9jk2tejpyUAD-uC6PE,4
+pegacorn-0.0.2b0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pegacorn-0.0.2b0.dist-info/METADATA,sha256=w3pd8xKg1wdn6f7LJuWxR5-1wqAWTZVGn54idBg60C0,568
+pegacorn-0.0.2b0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pegacorn-0.0.2b0.dist-info/top_level.txt,sha256=JzW4D7pjwYSfgvKhbytWa_cmoAx4_B0JQEm6reu3Hls,9
+pegacorn-0.0.2b0.dist-info/RECORD,,
