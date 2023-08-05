@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: saltext.sap-pse
+Version: 1.0.0
+Summary: SaltStack extension for SAP PSE
+Home-page: https://github.com/SAPUCC/saltext-sap_pse
+Author: 'Benjamin Wegener, Alexander Wilke'
+License: GPLv3
+Project-URL: Source, https://github.com/SAPUCC/saltext-sap_pse
+Project-URL: Tracker, https://github.com/SAPUCC/saltext-sap_pse/issues
+Keywords: salt-extension
+Platform: any
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: salt (>=3003)
+Requires-Dist: PyYAML
+Provides-Extra: dev
+Requires-Dist: nox (==2021.6.12) ; extra == 'dev'
+Requires-Dist: pre-commit (==2.13.0) ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: six ; extra == 'dev'
+Requires-Dist: SaltPyLint ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: furo ; extra == 'docs'
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinx-copybutton ; extra == 'docs'
+Requires-Dist: sphinx-prompt ; extra == 'docs'
+Requires-Dist: sphinxcontrib-spelling ; extra == 'docs'
+Requires-Dist: importlib-metadata ; (python_version < "3.8") and extra == 'docs'
+Provides-Extra: docsauto
+Requires-Dist: sphinx-autobuild ; extra == 'docsauto'
+Provides-Extra: tests
+Requires-Dist: pytest (==6.2.4) ; extra == 'tests'
+Requires-Dist: pytest-salt-factories (==0.906.0) ; extra == 'tests'
+
+# SaltStack SAP PSE extension
+This SaltStack extensions allows managing SAP Personal Security Environment (PSE) files.
+
+**THIS PROJECT IS NOT ASSOCIATED WITH SAP IN ANY WAY**
+
+## Installation
+Run the following to install the SaltStack SAP PSE extension:
+```bash
+salt-call pip.install saltext.sap-pse
+```
+Keep in mind that this package must be installed on every minion that should utilize the states and execution modules.
+
+Alternatively, you can add this repository directly over gitfs
+```yaml
+gitfs_remotes:
+  - https://github.com/SAPUCC/saltext-sap_pse.git:
+    - root: src/saltext/sap_pse
+```
+In order to enable this, logical links under `src/saltext/sap_pse/` from `_<dir_type>` (where the code lives) to `<dir_type>` have been placed, e.g. `_modules` -> `modules`. This will double the source data during build, but:
+ * `_modules` is required for integrating the repo over gitfs
+ * `modules` is required for the salt loader to find the modules / states
+
+## Usage
+A state using the SAP PSE extension looks like this:
+```jinja
+SAP Host Agent SAPSSLS PSE file is managed:
+  sap_pse.managed:
+    - name: /usr/sap/hostctrl/exe/sec/SAPSSLS.pse
+    - user: sapadm
+    - group: sapsys
+    - seclogons:
+      - sapadm
+    - priv_key: /etc/pki/{{ grains["id"] }}.key
+    - pub_key: /etc/pki/{{ grains["id"] }}.crt
+```
+
+## Docs
+See https://saltext-sap-pse.readthedocs.io/ for the documentation.
+
+## Contributing
+We would love to see your contribution to this project. Please refer to `CONTRIBUTING.md` for further details.
+
+## License
+This project is licensed under GPLv3. See `LICENSE.md` for the license text and `COPYRIGHT.md` for the general copyright notice.
+
+

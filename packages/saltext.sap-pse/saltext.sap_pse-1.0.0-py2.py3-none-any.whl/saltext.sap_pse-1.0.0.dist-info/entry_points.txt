@@ -1,0 +1,3 @@
+[salt.loader]
+saltext.sap_pse = saltext.sap_pse
+
