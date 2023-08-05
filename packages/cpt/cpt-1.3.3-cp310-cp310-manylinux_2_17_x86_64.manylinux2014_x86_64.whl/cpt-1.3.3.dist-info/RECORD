@@ -1,0 +1,8 @@
+cpt.libs/libgomp-a34b3233.so.1.0.0,sha256=1GXGWfRf6XU3wOEAn66x6m5ApWQt3_3un8G3PAcyQh4,168192
+cpt-1.3.3.dist-info/LICENSE,sha256=ta6EcmloERebDppBAoH9TgK1HD02FkFxCsZBcygHyyU,1071
+cpt-1.3.3.dist-info/top_level.txt,sha256=N8KSukrWFHrr_nf8HRG4lY7jqoV3zPvu1RzyBptL9Qw,4
+cpt-1.3.3.dist-info/WHEEL,sha256=AENPUwuTc6qB95Mrn5JB5boXegWw6oDhuwuuX0q_ONg,152
+cpt-1.3.3.dist-info/RECORD,,
+cpt-1.3.3.dist-info/METADATA,sha256=aPjn4Y5JIqtbbLHzPyqqaqeq13E1GuT5lmea5tkVUQE,4290
+cpt/alphabet.cpython-310-x86_64-linux-gnu.so,sha256=yWJT7Thtm1LwLT24HaZgknfOy_6wcHQ3FWfJJ1dokl0,342528
+cpt/cpt.cpython-310-x86_64-linux-gnu.so,sha256=bh_LSY_-2_2vpKew1j6m8RjKK9BB8ZD03dsJdGrx8RI,2755408
