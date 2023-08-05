@@ -1,0 +1,9 @@
+Plone
+setuptools>=36.2
+z3c.jbot
+collective.dexteritytextindexer
+
+[test]
+plone.app.testing
+plone.app.contenttypes
+plone.app.robotframework
