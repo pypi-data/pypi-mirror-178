@@ -1,0 +1,15 @@
+summer/inversion_of_control/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+summer/inversion_of_control/constants.py,sha256=ECJsWD-bOkVGT_YbCRBx731H05WRdRU6X3MV9C03A2Q,158
+summer/inversion_of_control/dependencies.py,sha256=U8DOPw9L2BfpHendE2UbTsI138vavkYjFI9NjcYps0Y,1204
+summer/inversion_of_control/service_locator.py,sha256=0bvF531lj7gJH4TxdPoq2o7WC9Phg7-NQe8Dr4cljQU,1131
+summer/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+summer/models/camel/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+summer/models/camel/camel_model.py,sha256=Jfjsi_ZIvf1xcznivwNJhUnXgffsUIxsO159pCkFHOg,317
+summer/models/camel/str_to_camel_case.py,sha256=To7gnMljysRn6GvQ1NoMVad9AuopqGGv22SM1mlHarc,589
+summer/patterns/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+summer/patterns/singleton_meta.py,sha256=1cU99I0f9tjuMQLMJyLsK1oK3fZJMsO5-TbRHAMXqds,627
+python_summer_boot-1.0.10.dist-info/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+python_summer_boot-1.0.10.dist-info/METADATA,sha256=kgUakkPqiWKm_SieL9wNmg7qmjf56xwXb5EMw2GOjes,2852
+python_summer_boot-1.0.10.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+python_summer_boot-1.0.10.dist-info/top_level.txt,sha256=R6IEdbJgWTkG9kt_buH6ssDvGzinYgj_duEnXrmyH8E,7
+python_summer_boot-1.0.10.dist-info/RECORD,,
