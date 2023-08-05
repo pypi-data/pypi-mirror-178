@@ -1,0 +1,9 @@
+setup.py
+jensey/__init__.py
+jensey/__main__.py
+jensey.egg-info/PKG-INFO
+jensey.egg-info/SOURCES.txt
+jensey.egg-info/dependency_links.txt
+jensey.egg-info/entry_points.txt
+jensey.egg-info/requires.txt
+jensey.egg-info/top_level.txt
