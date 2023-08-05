@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: gitfive
+Version: 1.1.0
+Summary: Track down GitHub users.
+Home-page: https://github.com/mxrch/gitfive
+Author: mxrch
+Author-email: mxrch.dev@pm.me
+License: MPL-2.0
+Keywords: osint,pentest,cybersecurity,investigation,hideandsec,malfrats
+Description-Content-Type: text/x-rst
+
+GitFive is an OSINT tool designed to retrieve a maximum informations on a GitHub target.
