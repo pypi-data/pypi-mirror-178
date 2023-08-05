@@ -1,0 +1,11 @@
+LICENSE
+NOTICE
+README.md
+setup.cfg
+setup.py
+uniconnapps.egg-info/PKG-INFO
+uniconnapps.egg-info/SOURCES.txt
+uniconnapps.egg-info/dependency_links.txt
+uniconnapps.egg-info/not-zip-safe
+uniconnapps.egg-info/requires.txt
+uniconnapps.egg-info/top_level.txt
