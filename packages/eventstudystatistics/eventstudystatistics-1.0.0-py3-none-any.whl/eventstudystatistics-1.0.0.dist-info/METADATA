@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: eventstudystatistics
+Version: 1.0.0
+Summary: statistics for event studies
+Home-page: https://github.com/Tommel71/event-study-statistics
+Author: Tommel
+License: MIT
+License-File: LICENSE.txt
+Requires-Dist: numpy (==1.22.3)
+Requires-Dist: scipy (==1.8.1)
+Requires-Dist: matplotlib (==3.5.2)
+
