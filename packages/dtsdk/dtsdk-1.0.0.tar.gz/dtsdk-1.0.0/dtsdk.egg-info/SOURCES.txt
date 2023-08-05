@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+dtsdk/__init__.py
+dtsdk/sdk.py
+dtsdk.egg-info/PKG-INFO
+dtsdk.egg-info/SOURCES.txt
+dtsdk.egg-info/dependency_links.txt
+dtsdk.egg-info/requires.txt
+dtsdk.egg-info/top_level.txt
