@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: releash
+Version: 0.5.1
+Summary: Release with relish to PyPi and conda-forge, version bumping, pure bliss!
+Home-page: https://github.com/maartenbreddels/releash
+Author: Maarten A. Breddels
+Author-email: maartenbreddels@gmail.com
+License: MIT
+License-File: LICENSE
+License-File: LICENSE.txt
