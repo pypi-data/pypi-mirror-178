@@ -1,0 +1,12 @@
+README.md
+setup.py
+molgenis/api_support.py
+molgenis/client.py
+molgenis/errors.py
+molgenis/query_utils.py
+molgenis/utils.py
+molgenis_py_client.egg-info/PKG-INFO
+molgenis_py_client.egg-info/SOURCES.txt
+molgenis_py_client.egg-info/dependency_links.txt
+molgenis_py_client.egg-info/requires.txt
+molgenis_py_client.egg-info/top_level.txt
