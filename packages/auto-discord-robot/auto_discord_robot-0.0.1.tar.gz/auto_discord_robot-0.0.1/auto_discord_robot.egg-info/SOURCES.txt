@@ -1,0 +1,9 @@
+README.md
+setup.py
+auto_discord_robot.egg-info/PKG-INFO
+auto_discord_robot.egg-info/SOURCES.txt
+auto_discord_robot.egg-info/dependency_links.txt
+auto_discord_robot.egg-info/top_level.txt
+discord_bot/__init__.py
+discord_bot/discord_bot.py
+discord_bot/local_corpus.py

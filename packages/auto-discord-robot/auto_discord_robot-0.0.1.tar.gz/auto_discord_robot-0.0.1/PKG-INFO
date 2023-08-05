@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: auto_discord_robot
+Version: 0.0.1
+Summary: A small example package for discord
+Home-page: https://github.com/Web3-Base-Installation/auto-discord-robot.git
+Author: Xsu
+Author-email: bbworktime@gmail.com
+License: UNKNOWN
+Description: # auto-discord-robot
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
