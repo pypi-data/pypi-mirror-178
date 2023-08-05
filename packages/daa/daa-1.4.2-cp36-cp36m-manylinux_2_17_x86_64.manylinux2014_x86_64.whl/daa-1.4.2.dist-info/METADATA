@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: daa
+Version: 1.4.2
+Summary: python bindings for the daa library
+Home-page: https://github.com/Tomcat-42/daa
+Author: Pablo Alessandro Santos Hugen
+Author-email: pablohuggem@gmail.com
+License: Public Domain
+Keywords: daa algorithms data structures sorting searching c++ c++11 c++ module
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.5, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE-3RD-PARTY
+
+UNKNOWN
+
