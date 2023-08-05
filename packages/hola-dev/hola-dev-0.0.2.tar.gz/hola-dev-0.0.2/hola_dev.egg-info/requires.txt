@@ -1,0 +1,6 @@
+requests
+selenium
+inquirerpy
+fake-useragent
+webdriver-manager
+python-dotenv
