@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: edds-process
+Version: 0.9.1
+Summary: Package to process data from the EGOS Data Dissemination System (EDDS) of ESA
+Home-page: https://gitlab.obspm.fr/ROC_PUBLIC/edds_process
+License: CECILL-C
+Author: Xavier Bonnin
+Author-email: xavier.bonnin@obspm.fr
+Requires-Python: >=3.8,<4
+Classifier: License :: CeCILL-C Free Software License Agreement (CECILL-C)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: xmltodict (>=0.13,<0.14)
+Project-URL: Repository, https://gitlab.obspm.fr/ROC_PUBLIC/edds_process
+Description-Content-Type: text/markdown
+
+edds_process
+============
+
+[![pipeline status](https://gitlab.obspm.fr/rpw/edds_process/badges/develop/pipeline.svg)](https://gitlab.obspm.fr/rpw/edds_process/pipelines)
+
+Python Package to handle EGOS Data Dissemination System (EDDS) Data.
+
+## Quickstart
+
+To install package using [pip](https://pypi.org/project/pip-tools/):
+
+```
+pip install edds_process --extra-index-url https://__token__:<your_personal_token>@gitlab.obspm.fr/api/v4/projects/2052/packages/pypi/simple --trusted-host gitlab.obspm.fr
+```
+
+To install package from source files:
+
+```
+git clone https://gitlab.obspm.fr/rpw/edds_process.git
+```
+
+Then install using [pip](https://pypi.org/project/pip-tools/):
+
+```
+cd edds_proces
+pip install .
+```
+
+or using [poetry](https://python-poetry.org/):
+
+```
+cd edds_process
+pip install poetry
+poetry install
+```
+
+## User guide
+
+Package modules can be then imported into codes with line `import edds_process`.
+
+Especially, `edds_process.response` module contains methods to parse/create TmRaw/TcReport EDDS XML files.
+
+## Authors
+
+- xavier dot bonnin at obspm dot fr
+
