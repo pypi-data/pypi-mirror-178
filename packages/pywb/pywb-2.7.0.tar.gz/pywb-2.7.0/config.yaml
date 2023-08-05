@@ -1,0 +1,39 @@
+# pywb config file
+# ========================================
+#
+debug: true
+
+# Uncomment to set banner colors and logo
+# ui:
+  # logo: path/relative/from/static/logo.png
+  # navbar_background_hex: 0c49b0
+  # navbar_color_hex: fff
+  # navbar_light_buttons: true
+
+collections:
+    all: $all
+    pywb:
+        index_paths: ./sample_archive/cdx/
+        archive_paths: ./sample_archive/warcs/
+
+    ukwa: cdx+https://www.webarchive.org.uk/wayback/archive/cdx
+    is: cdx+http://beta.vefsafn.is/is/cdx
+
+# Settings for each collection
+use_js_obj_proxy: true
+
+# Eanable Memento support
+enable_memento: true
+
+# Replay content in an iframe
+framed_replay: true
+
+redirect_to_exact: true
+
+# Uncomment and change to set default locale
+# default_locale: en
+
+# Uncomment to set available locales
+# locales:
+#   - en
+#   - ru
