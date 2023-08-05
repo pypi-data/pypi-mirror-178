@@ -1,0 +1,11 @@
+LICENSE
+NOTICE
+README.md
+setup.cfg
+setup.py
+uca.egg-info/PKG-INFO
+uca.egg-info/SOURCES.txt
+uca.egg-info/dependency_links.txt
+uca.egg-info/not-zip-safe
+uca.egg-info/requires.txt
+uca.egg-info/top_level.txt
