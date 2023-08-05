@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: korax
+Version: 0.1
+Summary: Useful tools which work with telegram bot mostly and provide veriety of service
+Home-page: https://github.com/Kora-Inc/Kora
+Author: Kittu
+Author-email: kushal.vstart@gmail.com
+License: MIT
+Keywords: chatbot,telegram,kora,python3
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: requests
+
