@@ -1,0 +1,2 @@
+[console_scripts]
+gparms = gparms.gparms:main
