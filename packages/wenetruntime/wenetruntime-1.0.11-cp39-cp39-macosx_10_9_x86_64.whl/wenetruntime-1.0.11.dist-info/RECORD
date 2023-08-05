@@ -1,0 +1,14 @@
+_wenet.cpython-39-darwin.so,sha256=V0AKk4MqvtZxKNfXru_Wf2j4Bg05rmXbYjJzmEmdPSw,152816
+libwenet_api.dylib,sha256=u_nmm_kHvoLCn14eEbpV3cJTEZsvNZ6_c94uMXelv2Y,4319888
+wenetruntime-1.0.11.dist-info/RECORD,,
+wenetruntime-1.0.11.dist-info/WHEEL,sha256=pfjXB0CCNW4PSSqQc2t4Up6p3o0jxBnHy_2o38FQkyE,109
+wenetruntime-1.0.11.dist-info/top_level.txt,sha256=CPpyAd_UVWAX6_Noia8XuzCkXvrw97ReQF07u1UCES0,20
+wenetruntime-1.0.11.dist-info/METADATA,sha256=DkrhtKtowWxJTAZwkXRnuUfMCXY44Xyng7ua0x5_rjs,3517
+wenetruntime/decoder.py,sha256=JbxJKKo4ifKnxXeMYaWV2QU2z2CnHRmWdwWOyHUHuQ8,3846
+wenetruntime/__init__.py,sha256=oF7dIOTRnj3jlxqeAvhoEnLMYvnt8xQoy48BxWj1lHs,101
+wenetruntime/hub.py,sha256=76e_ED3nvjJurtFr6qytOYJ_TTfDISa4ZwMHNNvBQRs,3252
+wenetruntime/.dylibs/libtorch.dylib,sha256=gkW1ytUrVYUS7YhMEr7ENzP1qczbbo46Ijm9-TC6hKQ,35152
+wenetruntime/.dylibs/libiomp5.dylib,sha256=wfm9oCq9yinBgYB-4ZCkEGURcgY-O-8Ki7yQclckrGY,3086288
+wenetruntime/.dylibs/libtorch_cpu.dylib,sha256=6C_qh9yEjbbLUD_h7xeuOgwaE1JW5FWSSztLh76XS-Y,374112416
+wenetruntime/.dylibs/libc10.dylib,sha256=MqNvetFsKogE8_3JglivIa-rxgVTild-NyphtdAGj8A,401008
+wenetruntime/.dylibs/libwenet_api.dylib,sha256=A5kem5JvWTOX453x4gv8lk-Jri3hL_nMaBYb-xsla20,4319888
