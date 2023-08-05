@@ -1,0 +1,15 @@
+oscar_python/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oscar_python/_utils.py,sha256=JSrF2sWR3l91PxVVzAzddv7xlkWV0_iD0XzoaB-kTo4,1756
+oscar_python/client.py,sha256=Kb0NLJ5ofhUxlFn-c4dPO4AXlsQxF2vBMpAChXz8AtE,5584
+oscar_python/local_test.py,sha256=va8tKGa_BlyfdcDmuTpEnvVeURC3mayd4FPt8-v1BHk,250
+oscar_python/storage.py,sha256=1YIOqJcOjnrFe9IEFfYa3GFbrW2w49UQoFQv_NcJlDI,3287
+oscar_python/_providers/_minio.py,sha256=Jj5U_CRws9T-HcASjdTVpBrCNqFQqsBlDzbIxyQhKag,1269
+oscar_python/_providers/_onedata.py,sha256=7GG5sFfWLMzc-lG3oVvWmUtanHXvHbhzVS4iJCazAwY,3462
+oscar_python/_providers/_providers_base.py,sha256=QtqfzO89XEp-dhJcYBDIsyBQfhuDLXovOLS96ajyAUI,1205
+oscar_python/_providers/_s3.py,sha256=d9G8euzP3jhKQ_7uIMrAbNM08rNw2VURmWiBEr6-FJ4,3212
+oscar_python/_providers/_webdav.py,sha256=jFVQdZjbFBh43JuZq8ooNr86ajXjbHuIkobxVZJ9548,2328
+oscar_python-1.0.3.dist-info/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+oscar_python-1.0.3.dist-info/METADATA,sha256=muyfeyOHKq5mEIM0qRaIyYgC-ErTQKJ37l9LTbq7tp4,5515
+oscar_python-1.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+oscar_python-1.0.3.dist-info/top_level.txt,sha256=yhSnHtdSY0ujAhK4YcjnAjdAEgNpmryRhRhPGaOi1Mc,29
+oscar_python-1.0.3.dist-info/RECORD,,
