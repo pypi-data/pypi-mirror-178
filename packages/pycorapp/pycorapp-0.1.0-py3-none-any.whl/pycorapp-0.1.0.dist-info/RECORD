@@ -1,0 +1,14 @@
+RUNNER.py,sha256=AvUa8air1adZ6B8IVKi1u_YvNOLqYChAjdOz2LTXEVQ,920
+deploymentenv.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fork-pycor.py,sha256=8uFU7mZ3JeGV8NiN_n4V-m291I7VkUBlqeSH9sqJMVU,24940
+pycor.py,sha256=svGYwrV2DYBkSl9JBsQN8OZEdyIxfd69uedrQ-JR3Nc,33108
+pycor2.py,sha256=Ul68MPpKH2Rq0C-8TKYkJYuPDkiZHaC1I3fblgVpiHY,947
+snake-game.py,sha256=pyXCW2TlhdiSlNFgknY5eEja5uv1fKJcaCL-1U6tHf0,4211
+other/filecreate.py,sha256=QWu4c-0zk1ftiBvT0fnkZOZZj0LZlFwYUzZOW7SrWik,314281
+src/pycor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/pycor/pycor.py,sha256=svGYwrV2DYBkSl9JBsQN8OZEdyIxfd69uedrQ-JR3Nc,33108
+templates/turtletemp.py,sha256=pyXCW2TlhdiSlNFgknY5eEja5uv1fKJcaCL-1U6tHf0,4211
+pycorapp-0.1.0.dist-info/METADATA,sha256=yNuxJ335DhGAr9Ab8xIbRfPz0plFXSRyb8KPeD0WziA,4739
+pycorapp-0.1.0.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+pycorapp-0.1.0.dist-info/licenses/LICENSE,sha256=-ZdFAitcvwwBA3VsHwXmGtd2e9dJ5cJmvg5ZS11RDGM,1073
+pycorapp-0.1.0.dist-info/RECORD,,
