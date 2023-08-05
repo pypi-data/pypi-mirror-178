@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+windmill_tritonv2_python_client.egg-info/PKG-INFO
+windmill_tritonv2_python_client.egg-info/SOURCES.txt
+windmill_tritonv2_python_client.egg-info/dependency_links.txt
+windmill_tritonv2_python_client.egg-info/not-zip-safe
+windmill_tritonv2_python_client.egg-info/requires.txt
+windmill_tritonv2_python_client.egg-info/top_level.txt
