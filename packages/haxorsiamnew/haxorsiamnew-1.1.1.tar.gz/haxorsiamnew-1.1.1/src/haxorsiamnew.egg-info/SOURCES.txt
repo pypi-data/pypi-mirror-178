@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/bomber/__init__.py
+src/bomber/bomber.py
+src/haxorsiamnew.egg-info/PKG-INFO
+src/haxorsiamnew.egg-info/SOURCES.txt
+src/haxorsiamnew.egg-info/dependency_links.txt
+src/haxorsiamnew.egg-info/top_level.txt
