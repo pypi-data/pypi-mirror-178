@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: muller-eot
+Version: 0.0.1
+Summary: A Python package for M. Müller implementation of the Equation of Time
+Home-page: https://github.com/cyschneck/Muller-EOT
+Download-URL: https://github.com/cyschneck/Muller-EOT/archive/refs/tags/v0.0.1.tar.gz
+Author: cyschneck (C. Y. Schneck)
+License: MIT
+Keywords: astronomy,python,eot,equation of time,eccentricity,obliquity
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib (>=3.1.0)
+
+# Muller-EOT
+![PyPi](https://img.shields.io/pypi/v/muller-eot)
+![license](https://img.shields.io/github/license/cyschneck/Muller-EOT)
+
+A Python package for [M. Müller implementation of the "Equation of Time - Problem in Astronomy"](http://info.ifpan.edu.pl/firststep/aw-works/fsII/mul/mueller.pdf)
+
+## Overview
+## Documentation
+## Dependencies
+## Install
+PyPi pip install at [pypi.org/project/muller-eot/](https://pypi.org/project/muller-eot/)
+
+```
+pip install muller-eot
+```
+## Examples
+## Tests
+## TODO:
