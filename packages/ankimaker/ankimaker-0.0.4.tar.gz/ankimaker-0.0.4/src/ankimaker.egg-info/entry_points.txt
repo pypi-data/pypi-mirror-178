@@ -1,0 +1,2 @@
+[console_scripts]
+ankimaker = ankimaker.cli:main

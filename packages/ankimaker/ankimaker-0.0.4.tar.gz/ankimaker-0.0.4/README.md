@@ -1,0 +1,23 @@
+# Ankimaker
+
+WIP
+
+A CLI app to generate anki decks.
+
+From csv file, with configurable parameters, filters and media.
+
+From epub, finding difficult* words in the book and getting their translations.
+
+*I still don't know what 'difficult' will mean. Probably difficult words will be less frequent words that are more frequent in the text than in some corpus, cut above a grade threshold. The grades will map percentiles of frequency.
+
+| Language Level	| Number of Base Words Needed |
+| ----- | ------ |
+| A1 |	500|
+| A2 |	1000|
+| B1 |	2000|
+| B2 |	4000|
+| C1 | 8000|
+| C2 |	16000|
+
+
+This project is only possible because of the awesome work of genanki team.
