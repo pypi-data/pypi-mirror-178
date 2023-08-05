@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+korax/__init__.py
+korax/chatbot.py
+korax.egg-info/PKG-INFO
+korax.egg-info/SOURCES.txt
+korax.egg-info/dependency_links.txt
+korax.egg-info/requires.txt
+korax.egg-info/top_level.txt
