@@ -1,0 +1,15 @@
+chb/__init__.py,sha256=9CsSoBj2esujwPjYaAU9634p1hKvtJhLZ0vuvw3h7ng,3823
+chb/_dao.py,sha256=LzpCm_4wC4N5qllgU8nkHL18QBIfl4t-qKFyplPEpJU,6774
+chb/_importable.py,sha256=0Z3aMCd2wb8TSmJgz7dQYSVQ0fkpxlGgORE4PDHALmw,3424
+chb/_importable_bak.py,sha256=RoNoavk415-FfGKVDuDaYIwEkUN6-08PE0LfQy5JBwM,3499
+chb/_imports.py,sha256=l302uz9-Wfj47OIlYZhmRZYDhlX-k0PPvhQZAFjGZas,2105
+chb/_log.py,sha256=tmQZXZsxUSvTIcAJXJU5Sk_tDxWRuLa2P1IZ9eCEnA8,3898
+chb/_utils.py,sha256=tSbOetM_RXqCp0J2mNoKbUAxJuJ5tRm6hanaWkFOlWo,8734
+chb/dao.py,sha256=gPzAGIpcecvG8ki8NajOjjBt37DRvcFU64QlCx3wJ1U,4613
+chb/log.py,sha256=7pDH6zlyVETKMIZDGMjD2OajWOPNHW9bPoa42gbxYmI,1575
+chb/utils.py,sha256=G4LpPMVY7l22mOUmkH1PlvT5F9m_EWPvpdq_C3R69TY,8651
+chb-1.7.9.dist-info/LICENSE.txt,sha256=eTAMrQxkyw6ApSsWH9vJdyVXchbASCr9kEPFfwQzv-c,1091
+chb-1.7.9.dist-info/METADATA,sha256=oZor4CS-C-6rwJyR6HuGuVmX8REokKciCKfvp4BMKH4,637
+chb-1.7.9.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+chb-1.7.9.dist-info/top_level.txt,sha256=4uKzANAWgp7Ns2WXG9_Ayu8VWRpiA2nGl7cn2D1nCb8,4
+chb-1.7.9.dist-info/RECORD,,
