@@ -1,0 +1,10 @@
+
+[tests]
+mypy==0.991
+pylint
+pytest-cov
+pytest-timeout
+pytest-asyncio
+uvloop
+types-pkg-resources
+types-setuptools
