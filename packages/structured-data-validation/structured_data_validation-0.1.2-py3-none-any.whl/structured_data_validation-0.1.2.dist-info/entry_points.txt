@@ -1,0 +1,3 @@
+[console_scripts]
+validate=structured_data_validation.scripts.validate_file:main
+
