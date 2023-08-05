@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: sparta-rabbit
+Version: 0.0.6
+Summary: Sparta rabbit library
+Home-page: https://github.com/Spartan-Approach/sparta-rabbit
+Author: Spartan Approach
+Author-email: sparta@spartanapproach.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: test
+License-File: LICENSE
+
+# sparta-rabbit
+
+Sparta rabbit library.
+
+## Usage
+
+```python
+import sparta.rabbit
+
+conn_provider = sparta.rabbit.RabbitMQConnectionProvider(
+    host="localhost",
+    username="guest",
+    password="guest",
+    connection_name="some-identifier",  # this allows to identify the connection in RabbitMQ dashboard
+)
+
+client = sparta.rabbit.RabbitMQClient(conn_provider)
+await client.create_queue("hello")
+await client.publish_to_queue("hello", "hi there")
+await client.listen_to_queue("hello", lambda message: print(f"Received {message}"), timeout=10)
+```
