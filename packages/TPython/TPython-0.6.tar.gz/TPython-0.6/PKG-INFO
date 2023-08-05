@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: TPython
+Version: 0.6
+Summary: A better python REPL
+Home-page: https://github.com/Techlord210/TPython
+Author: Techlord210
+Author-email: techlord210@gmail.com
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Other Audience
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# TPython
+TPython a better python REPL.
+
+## Features
+- Built-in TimeIt, clear/cls
+- Colors
+- Update Notifier 
+
+## Future Updates
+- Tab Completion
+- Custom Colors
+- Break Points
+
+## Installation
+```
+$ pip install TPython
+```
+
+## Usage
+### run
+```
+$ tpy
+```
+### built-in commands
+| Command | Function |
+| :-------: | :--------: |
+| version | tells version |
+| exit/quit/close | exits the REPL |
+| cls/clear | clears the terminal |
+| timeit | tells execution time of code |
