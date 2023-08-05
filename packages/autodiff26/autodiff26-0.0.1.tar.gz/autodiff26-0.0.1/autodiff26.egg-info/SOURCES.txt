@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+autodiff26/__init__.py
+autodiff26.egg-info/PKG-INFO
+autodiff26.egg-info/SOURCES.txt
+autodiff26.egg-info/dependency_links.txt
+autodiff26.egg-info/top_level.txt
+autodiff26/forward_mode/__init__.py
+autodiff26/forward_mode/ad_calculator.py
+autodiff26/forward_mode/functions.py
+autodiff26/reverse_mode/__init__.py
