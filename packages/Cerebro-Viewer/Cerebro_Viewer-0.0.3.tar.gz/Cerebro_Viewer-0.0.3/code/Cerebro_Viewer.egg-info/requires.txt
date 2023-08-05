@@ -1,0 +1,6 @@
+matplotlib
+numpy
+scipy
+nibabel
+trimesh
+Panda3D
