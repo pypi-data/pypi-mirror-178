@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+pegacorn/__init__.py
+pegacorn/main.py
+pegacorn.egg-info/PKG-INFO
+pegacorn.egg-info/SOURCES.txt
+pegacorn.egg-info/dependency_links.txt
+pegacorn.egg-info/requires.txt
+pegacorn.egg-info/top_level.txt
+pegacorn/command/__init__.py
+pegacorn/core/__init__.py
