@@ -1,0 +1,14 @@
+numpy
+scipy
+pandas
+matplotlib
+SALib
+hypothesis
+GPyOpt
+GPy
+autograd
+numdifftools
+tensorflow
+pathos
+pytest
+hypothesis
