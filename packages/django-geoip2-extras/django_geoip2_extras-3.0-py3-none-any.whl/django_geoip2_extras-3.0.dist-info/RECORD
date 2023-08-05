@@ -1,0 +1,8 @@
+geoip2_extras/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geoip2_extras/apps.py,sha256=2KhG5JpyvKebmlEc_5vfx3GGtBJ2iF-vDcxiYv21EEY,139
+geoip2_extras/middleware.py,sha256=Pk8gSZk6dxfCD_Ka9Y-3H4X_CAOhiIxwwe0swvYgLyA,5737
+geoip2_extras/settings.py,sha256=1AzUaknalDVNsuvmOm4FNSbckfVU5COK2ecKOtJ9-Bs,410
+django_geoip2_extras-3.0.dist-info/LICENSE,sha256=sYGH5kcM-twiTPmXBuiN8rWxGHZ5pfdYJstdChjzdt4,1075
+django_geoip2_extras-3.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+django_geoip2_extras-3.0.dist-info/METADATA,sha256=Faxv_4IRidFy2nizS-M_4KFDjuVzUnhmP8s-4pOGy7k,5502
+django_geoip2_extras-3.0.dist-info/RECORD,,
