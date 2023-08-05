@@ -1,0 +1,12 @@
+varst/__init__.py,sha256=uPSDQtR2PgSGIG_9olLA6ubgcu0qaQKATVj_yukDVm4,73
+varst/application.py,sha256=ow2KQH5HvnDKxntzMCa7PxEMHfFAIW1Pgza3ebQJDgY,795
+varst/cli.py,sha256=CMCI9qJ6lJeqwmQT9Y4Zb03LP36CMYysvejRh2z498w,290
+varst/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+varst/utils/parser.py,sha256=n1s4gYcagRRtDI29dknooEZ-rdfJ3Q4uBmM52bLOtLg,2552
+varst/utils/rst_file.py,sha256=0SPprTEB3R9RgSQcBaoCh5U6n6rS7PNIWTxPNclGSfU,623
+varst/utils/substitution.py,sha256=YUgAVNcqi54ykiuS9k8sDHmE7hZTcb4pTzmMrgJdZh4,1445
+varst-1.1.0.dist-info/entry_points.txt,sha256=S6RzeJpdeXfyu9h8rqubTkIOnh-61Jd4XI6DUnCgqDo,40
+varst-1.1.0.dist-info/LICENSE,sha256=L-qpK-Ts6XkgLadKNW_W2Ka3JAWgMUz6RQmtvGBFFV4,1069
+varst-1.1.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+varst-1.1.0.dist-info/METADATA,sha256=3aCCX4miJt5p9fSGNTXevxj7Pdp3B6Iz_2qwP4n-YzY,2020
+varst-1.1.0.dist-info/RECORD,,
