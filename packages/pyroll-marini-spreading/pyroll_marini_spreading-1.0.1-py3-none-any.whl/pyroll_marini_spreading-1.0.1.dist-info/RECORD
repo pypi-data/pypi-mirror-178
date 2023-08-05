@@ -1,0 +1,7 @@
+pyroll/marini_spreading/__init__.py,sha256=MpDuK_D8Sog2E1HM-Z415j3ditID0DcsAOjqlyhnO-Y,195
+pyroll/marini_spreading/rollpass_hookimpls.py,sha256=PktRuIjCl6ZAiVZOaFzo8bJPy5M6JqbYQKC_mPRCQFE,2079
+pyroll/marini_spreading/rollpass_hookspecs.py,sha256=2eAuYQsJoD2seenG3xSbENn6bTeqCdGiRRjZpjyH6Rc,463
+pyroll_marini_spreading-1.0.1.dist-info/LICENSE,sha256=mQS6_2AyAaw_l14-CkU1u6u-2UuxjoD0jPxqh2J4Fik,1462
+pyroll_marini_spreading-1.0.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+pyroll_marini_spreading-1.0.1.dist-info/METADATA,sha256=Y2gbDIPuZMAWJSsyvTppegQ4ZALo0Y0J-0JegSDvRAg,743
+pyroll_marini_spreading-1.0.1.dist-info/RECORD,,

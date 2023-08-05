@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pyroll-marini-spreading
+Version: 1.0.1
+Summary: Plugin for PyRoll providing the Marini spreading model.
+Home-page: https://pyroll-project.github.io/
+License: BSD-3-Clause
+Author: Christoph Renzing
+Author-email: christoph.renzing@imf.tu-freiberg.de
+Requires-Python: >=3.9,<3.11
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: pyroll-basic (>=1.0.1,<2.0.0)
+Project-URL: Documentation, https://github.com/pyroll-project/pyroll-marini-spreading/blob/main/docs/docs.pdf
+Project-URL: Repository, https://github.com/pyroll-project/pyroll-marini-spreading
