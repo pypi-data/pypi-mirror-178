@@ -1,0 +1,13 @@
+PyShbak/Normalization.py,sha256=mhI2eZZkwOhTU2qhATi4SIObmRjKCQ30-BMI5Gz3q1w,1018
+PyShbak/Processor.py,sha256=eSSyuHx1apEtDlP53RcR3HrEdjUaugdV8TvzmA1nA8M,18101
+PyShbak/TweetsCleaner.py,sha256=zwMRB0Hfh4rhjZZJD5nEfavPMPpXOgPdljxeq1mN6RI,1274
+PyShbak/__init__.py,sha256=_1mlitQMQzVniVXal86HwoOCIZPrE7zu90QCwPMqNyU,48
+PyShbak/ar.py,sha256=IAqof1oW2rVXU3kakLNaUsA2MY1e46WUADaYA5RhnTQ,9969
+PyShbak/cleaningtext.py,sha256=pT7fkfVyv3raK1GePzfxOoA49Jrmjy5zC9slZsqZw0c,3813
+PyShbak/en.py,sha256=8XZ3uHOGgdZwFMbgWJkqu36g8uW_TSpmw1QbkkfTWkQ,1703
+PyShbak/general.py,sha256=T8NQhDhHVU2DreqodBfXTAvcc82jXCd2Ej6Gzfr6U6w,9013
+PyShbak-0.2.dist-info/LICENSE.txt,sha256=digXxIG4GuyyyUZiXffIWA5O_UX7cGo9yLhot5PdBsw,1059
+PyShbak-0.2.dist-info/METADATA,sha256=KYOvljThHS2VlWFja9ARo2GHiGIZKgKq0deYumdBccM,3122
+PyShbak-0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+PyShbak-0.2.dist-info/top_level.txt,sha256=26g0YtUf5SG0hrNGjPbcvBzVhWlfL3VqC1yYWYJPRio,8
+PyShbak-0.2.dist-info/RECORD,,
