@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: serverlesspack
+Version: 0.4.5
+Summary: A bundler for Python serverless applications on AWS Lambda, with tree shaking, code packaging, dependencies resolution as Lambda layers and expressive bundling configurations.
+Home-page: https://github.com/Robinson04/serverlesspack
+Author: Inoft
+Author-email: robinson@inoft.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
