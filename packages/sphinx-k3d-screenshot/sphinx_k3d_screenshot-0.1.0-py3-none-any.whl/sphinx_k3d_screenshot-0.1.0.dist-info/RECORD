@@ -1,0 +1,9 @@
+sphinx_k3d_screenshot/__init__.py,sha256=M3vkv8A5cu-0JMA7rN2WJG4v0UOhYv1CJE1ep09hcXU,144
+sphinx_k3d_screenshot/_version.py,sha256=Pru0BlFBASFCFo7McHdohtKkUtgMPDwbGfyUZlE2_Vw,21
+sphinx_k3d_screenshot/plot_directive.py,sha256=YTLimbbbAaVHWGdf5Eu5lVc7piQqZ54yTkwFMr1FzgU,33753
+sphinx_k3d_screenshot/utils.py,sha256=smqWahz3_zDqF8VAspMxPV1rNW_iSKUXvUNvjZLW4r4,3259
+sphinx_k3d_screenshot-0.1.0.dist-info/LICENSE,sha256=fw_ewNgpzQ44eEiNA5Aysnoh4gJWp8NwB8M0bHzKX_A,1072
+sphinx_k3d_screenshot-0.1.0.dist-info/METADATA,sha256=kbRjxUmU8CKEM1obzGVNCqQ68tSHaLSaa224rwJzvb4,2545
+sphinx_k3d_screenshot-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+sphinx_k3d_screenshot-0.1.0.dist-info/top_level.txt,sha256=OQyzZ54cf16KFB8Ua7qUs_SwCZoOh4dPnJdvFVnT_sY,22
+sphinx_k3d_screenshot-0.1.0.dist-info/RECORD,,
