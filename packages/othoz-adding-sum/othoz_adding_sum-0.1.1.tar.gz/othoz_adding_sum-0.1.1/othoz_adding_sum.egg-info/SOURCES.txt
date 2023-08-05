@@ -1,0 +1,17 @@
+setup.cfg
+setup.py
+othoz_adding_sum/__init__.py
+othoz_adding_sum.egg-info/PKG-INFO
+othoz_adding_sum.egg-info/SOURCES.txt
+othoz_adding_sum.egg-info/dependency_links.txt
+othoz_adding_sum.egg-info/requires.txt
+othoz_adding_sum.egg-info/top_level.txt
+othoz_adding_sum/src/__init__.py
+othoz_adding_sum/src/create_dataset.py
+othoz_adding_sum/src/custom_exception.py
+othoz_adding_sum/src/inference.py
+othoz_adding_sum/src/main.py
+othoz_adding_sum/src/model_rnn_tanh.py
+tutorial/__init__.py
+tutorial/inference.py
+tutorial/train_model.py
