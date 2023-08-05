@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: er-evaluation
+Version: 1.0.0
+Summary: An end-to-end evaluation framework for entity resolution systems.
+Home-page: https://github.com/OlivierBinette/er-evaluation
+Author: Olivier Binette
+Author-email: olivier.binette@gmail.com
+License-File: LICENSE.txt
