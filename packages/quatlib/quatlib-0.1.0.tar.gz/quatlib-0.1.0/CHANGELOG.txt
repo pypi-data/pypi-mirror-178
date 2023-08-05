@@ -1,0 +1,10 @@
+Change Log
+==========
+
+0.0.1 (23/11/2022)
+-------------------
+- First Release
+
+0.1.0 (23/11/2022)
+-------------------
+- Second release: fixing some known bug with a stable release 
