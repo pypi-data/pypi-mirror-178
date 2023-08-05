@@ -1,0 +1,32 @@
+{
+  "identification": {
+    "project": "ROC-SGSE",
+    "identifier": "roc.rpl",
+    "name": "RPW Packet parsing Library",
+    "description": "Module for the RPW TM/TC packet analysis"
+  },
+  "release": {
+    "version": "1.4.3",
+    "date": "2022-11-23",
+    "author": "Xavier Bonnin <xavier.bonnin@obspm.fr>, ROC Team <roc.support@sympa.obspm.fr>",
+    "institute": "LESIA",
+    "modification": "Deps update",
+    "url": "https://gitlab.obspm.fr/ROC/Pipelines/Plugins/RPL"
+  },
+  "tasks": [
+    {
+      "name": "parse_packets",
+      "category": "Parsing packets",
+      "description": "Parse RPW TM/TC packets",
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "name": "identify_packets",
+      "category": "Parsing packets",
+      "description": "Identify RPW TM/TC packets (i.e., return the name and header info)",
+      "inputs": {},
+      "outputs": {}
+    }
+  ]
+}
