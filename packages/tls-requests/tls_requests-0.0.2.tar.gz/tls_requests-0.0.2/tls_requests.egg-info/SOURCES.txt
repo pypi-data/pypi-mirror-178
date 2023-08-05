@@ -1,0 +1,7 @@
+setup.py
+tls_requests/__init__.py
+tls_requests.egg-info/PKG-INFO
+tls_requests.egg-info/SOURCES.txt
+tls_requests.egg-info/dependency_links.txt
+tls_requests.egg-info/requires.txt
+tls_requests.egg-info/top_level.txt
