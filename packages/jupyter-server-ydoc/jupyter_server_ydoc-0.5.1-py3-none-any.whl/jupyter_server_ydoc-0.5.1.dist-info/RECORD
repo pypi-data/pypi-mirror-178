@@ -1,0 +1,9 @@
+jupyter_server_ydoc/__init__.py,sha256=6_tmpjzGriVjNa56KsHFgGKwQ7s8zE_uED0dhNSX5nM,225
+jupyter_server_ydoc/app.py,sha256=vETgbX_VN15hEVqMgmtsq2iBIu92jQb2bTssG4Ikdls,2340
+jupyter_server_ydoc/handlers.py,sha256=T7Q122S6tbn1z3tCsW2vQV-rSatrGdBE2WCJ-Z-aZ8I,15790
+jupyter_server_ydoc-0.5.1.data/data/etc/jupyter/jupyter_notebook_config.d/jupyter_server_ydoc.json,sha256=4qPuiC8170SEnyyk2uJu51BgQb-0Zl9VwlY0D0zSLCo,96
+jupyter_server_ydoc-0.5.1.data/data/etc/jupyter/jupyter_server_config.d/jupyter_server_ydoc.json,sha256=0thh2hJUxAKkZSmneJMG0U6QJRjdM6zGlwrTedEt-Jk,94
+jupyter_server_ydoc-0.5.1.dist-info/METADATA,sha256=qehUBY7aycsySstnhlkdYJUyLW8hG7DQltOSbum4x4A,5321
+jupyter_server_ydoc-0.5.1.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+jupyter_server_ydoc-0.5.1.dist-info/licenses/LICENSE,sha256=mhO0ZW9EiWOPg0dUgB-lNbJ0CGwRmTdbeAg_se1SOnY,2833
+jupyter_server_ydoc-0.5.1.dist-info/RECORD,,
