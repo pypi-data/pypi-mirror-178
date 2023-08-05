@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+phot/__init__.py
+phot.egg-info/PKG-INFO
+phot.egg-info/SOURCES.txt
+phot.egg-info/dependency_links.txt
+phot.egg-info/requires.txt
+phot.egg-info/top_level.txt
+test/test.py
