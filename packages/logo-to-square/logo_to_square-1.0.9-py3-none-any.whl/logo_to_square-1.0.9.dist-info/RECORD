@@ -1,0 +1,13 @@
+logo_to_square/.DS_Store,sha256=3ZRtMmcwSiYFXmY_9RJ1sT5JodHm2_PVMJj_7NsTWJU,6148
+logo_to_square/__init__.py,sha256=w-0kNgSlJl0pMvcSEzBKYcvFklJIJr3ZIErXCJUZHTE,585
+logo_to_square/square_img_using_PIL.py,sha256=0-JlDSNOde7_TCzXAklceK2dBCIZtXpD1aCVqEAdA3I,2707
+logo_to_square/img_processing_methods/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logo_to_square/img_processing_methods/common_ops.py,sha256=4y9hIFJqUkOXhYPG91qkR6v_XsLdc5px5phYmPNz5yM,604
+logo_to_square/img_processing_methods/getdominantcolor.py,sha256=1Faqiz5UT0D8Qa3_hW3OR7eayyYZ99J4-vyf_UogiRU,13296
+logo_to_square/img_processing_methods/opaque_ops.py,sha256=KCLJT73woBOkaSsvaUrvJwgQXwNC8w7y8UrY6JidBTw,1133
+logo_to_square/img_processing_methods/transparent_ops.py,sha256=ZeO_3G7N7g3RV6XcZ6vJd5vtze3iOE5ZhXph91Rlqfg,1143
+logo_to_square-1.0.9.dist-info/LICENSE.txt,sha256=cNKGIZ1sI_dvfnV2dVHxCdh5rCUJBO8mOqSfXxjBD6g,1078
+logo_to_square-1.0.9.dist-info/METADATA,sha256=WayP6ha6pZRqj3l5QTLnmt2F2JRYQuCPgeW6hF8HxGs,2397
+logo_to_square-1.0.9.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+logo_to_square-1.0.9.dist-info/top_level.txt,sha256=W9U4ykG9AvJOzAahosYmL6gKksiMmewGjkpEAouib6k,15
+logo_to_square-1.0.9.dist-info/RECORD,,
