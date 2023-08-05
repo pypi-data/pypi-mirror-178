@@ -1,0 +1,3 @@
+[console_scripts]
+external_github_contributors=external_github_contributors:main
+
