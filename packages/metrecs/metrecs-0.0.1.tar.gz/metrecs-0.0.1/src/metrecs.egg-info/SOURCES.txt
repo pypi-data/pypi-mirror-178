@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+src/metrecs.egg-info/PKG-INFO
+src/metrecs.egg-info/SOURCES.txt
+src/metrecs.egg-info/dependency_links.txt
+src/metrecs.egg-info/requires.txt
+src/metrecs.egg-info/top_level.txt
