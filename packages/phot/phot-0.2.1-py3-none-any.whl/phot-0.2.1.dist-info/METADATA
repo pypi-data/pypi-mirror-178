@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: phot
+Version: 0.2.1
+Home-page: https://github.com/phot-lab/pyphot
+Author: Chunyu Li
+Author-email: cyli0212@gmail.com
+Keywords: example documentation tutorial
+Requires-Python: >=3.7
+Requires-Dist: matplotlib (>=3.5.2)
+Requires-Dist: numba (>=0.55.2)
+Requires-Dist: numpy (>=1.22.4)
+Requires-Dist: scikit-commpy (>=0.7.0)
+Requires-Dist: scipy (>=1.8.1)
+
