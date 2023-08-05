@@ -1,0 +1,2 @@
+[console_scripts]
+jgdcmd = jgd.jgd:template
