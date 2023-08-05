@@ -1,0 +1,15 @@
+cutils.cpython-311-i386-linux-musl.so,sha256=IypMKj-7ssoLzoCIhOfrsf0QXBlynpCwQNynCieNWf8,1072156
+KDEpy/TreeKDE.py,sha256=aBCekVdsTshPJe_m_NtOFsQYLBfZv0NtptHSY--gMYY,6883
+KDEpy/FFTKDE.py,sha256=WWGfDWKMz2fVvQln9kvfdB8ABV5W0t9R71X3TgEv39w,8257
+KDEpy/binning.py,sha256=hJlhnVLKyxrrZxnrmeMoIU3R6X-SU2IhIGhuzytT0ro,16132
+KDEpy/bw_selection.py,sha256=RFk1gp7K1XDnH2YsGUKD8xDu7e8Mru83D4WKC4V5s0c,10043
+KDEpy/kernel_funcs.py,sha256=w6bQEu_k33h4a5pTbDYvyLLRYlGh556852dRRoXvk88,9816
+KDEpy/utils.py,sha256=2ZAi3uNmQUEJ27xVVUIonnUWJnmyc1Xf0f_o9jwbiGA,3812
+KDEpy/NaiveKDE.py,sha256=NI8lU69yjdtOIdznI6XkfPG_DkLtkLsSqwLVXC2f3t4,5034
+KDEpy/BaseKDE.py,sha256=PVMqWsl8k3WS7UsClG0g3Gh6DhfXU2fCbgucmF77_ws,8716
+KDEpy/__init__.py,sha256=PYl4Ps6eplsusCoo_9VdUjf8JGyekLzHP7xW-GqXuUk,252
+KDEpy-1.1.0.dist-info/LICENSE,sha256=CuBIWlvTemPmNgNZZBfk6w5lMzT6bH-TLKOg6F1K8ic,35148
+KDEpy-1.1.0.dist-info/top_level.txt,sha256=fdiSxzDw2t14fbc3jVq8WIMxLzHE9-dSzruc-w6D1Ik,13
+KDEpy-1.1.0.dist-info/WHEEL,sha256=HwWQK0WnprYUMCH9j1Gy9C1hWED1gzbGQk51O1WpaGM,111
+KDEpy-1.1.0.dist-info/RECORD,,
+KDEpy-1.1.0.dist-info/METADATA,sha256=V9lVigYdDX_P2udgGM2CFJ5WiB3U63wJ_7v6p06SKu8,5080
