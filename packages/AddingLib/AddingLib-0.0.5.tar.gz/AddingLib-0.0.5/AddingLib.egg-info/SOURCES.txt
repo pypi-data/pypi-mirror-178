@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+AddLibriary/__init__.py
+AddLibriary/add.py
+AddLibriary/customization.py
+AddLibriary/resources_collector.py
+AddingLib.egg-info/PKG-INFO
+AddingLib.egg-info/SOURCES.txt
+AddingLib.egg-info/dependency_links.txt
+AddingLib.egg-info/top_level.txt
