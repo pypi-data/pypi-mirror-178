@@ -1,0 +1,15 @@
+# 这个里面的依赖项必须安装，否则无法正常编译文档
+sphinx_rtd_theme
+recommonmark
+sphinxcontrib-mermaid
+ipython
+hypernets
+tensorflow==2.4.0
+statsmodels==0.12.1
+numpy
+pandas
+scikit-learn
+scipy<1.8.0
+woodwork==0.11.2
+sktime==0.8.1
+prophet
