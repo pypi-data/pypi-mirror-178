@@ -1,0 +1,9 @@
+click
+httpx
+pandas
+prettytable
+tenacity
+tqdm
+pyyaml
+tdxpy
+py_mini_racer
