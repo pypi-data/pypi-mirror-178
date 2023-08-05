@@ -1,0 +1,6 @@
+README.md
+setup.py
+auto_email_parse.egg-info/PKG-INFO
+auto_email_parse.egg-info/SOURCES.txt
+auto_email_parse.egg-info/dependency_links.txt
+auto_email_parse.egg-info/top_level.txt
