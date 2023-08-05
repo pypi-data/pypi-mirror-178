@@ -1,0 +1,9 @@
+datalad>=0.17.0
+fsspec[fuse,http]!=2022.10.0,>=2022.1.0
+methodtools~=0.4.5
+
+[test]
+coverage~=6.0
+linesep~=0.2
+pytest
+requests~=2.20
