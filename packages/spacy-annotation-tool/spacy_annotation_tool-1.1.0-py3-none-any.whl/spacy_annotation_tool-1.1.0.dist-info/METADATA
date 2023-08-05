@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: spacy-annotation-tool
+Version: 1.1.0
+Summary: spacy annotation tool which help datascientist to label NER
+Author-email: Yousafxai <ayazpk6630@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyqt5
+Requires-Dist: pandas
+
+# Annotati Tool
+
+if you are using spacy NER for research or production and you did not found any labeling tool then this tool help you to label your data set easily.
