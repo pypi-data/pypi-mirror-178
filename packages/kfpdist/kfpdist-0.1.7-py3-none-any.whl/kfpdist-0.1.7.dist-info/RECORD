@@ -1,0 +1,7 @@
+kfpdist/__init__.py,sha256=WSw9pe5kqdso82zBYw1DdzNpDjdYk_SgP3mjLKbbTgo,49
+kfpdist/kfp_dist_step.py,sha256=v8T9_HMle6B4WV_n3XkILn-R0ZX1L0nTJ3S49TMNxWk,1540
+kfpdist/set_tf_config.py,sha256=IAs55HXGr6Sq5Ne-hipix6IdR8qkouUO5zHNjj2deYY,3101
+kfpdist-0.1.7.dist-info/METADATA,sha256=2EQdHs-3Vs3P40OCDQRH40D2cmJMwQ-vK8srZIcrl-g,1426
+kfpdist-0.1.7.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+kfpdist-0.1.7.dist-info/top_level.txt,sha256=IPnuvJdje7GEFC1tM4S5ywF49eDfBPgK_JCJ5OVN8NA,8
+kfpdist-0.1.7.dist-info/RECORD,,
