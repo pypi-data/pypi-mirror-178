@@ -1,0 +1,11 @@
+ncas_amof_netcdf_template/__init__.py,sha256=G3e0lvzhbIEM60XcJUVhJ5niZlOEYe-pmxuVERcbwuU,190
+ncas_amof_netcdf_template/create_netcdf.py,sha256=TrFTsQIXVOqzwR-eA8-M8nsv7K6_pD9MppA5dmkwa4s,16470
+ncas_amof_netcdf_template/remove_empty_variables.py,sha256=mkp3qrMwLRWdIBxd4Q8PxMer-LrY5jf5Dj2RAZMq0W4,4787
+ncas_amof_netcdf_template/tsv2dict.py,sha256=bDHUL8vl2pXnNMyncjTO8Slx2Vpso4ZkgWCssfOMOuU,8639
+ncas_amof_netcdf_template/util.py,sha256=DLzO-RDdLpEpMvMLqoAj1klnlHLLQq9ae1XM5rvLSrs,4758
+ncas_amof_netcdf_template/values.py,sha256=6LVKbHzBBgELmKKwovzO0xDa7juja-TFxFMAZvtM-cg,1601
+ncas_amof_netcdf_template-2.0a0.dist-info/LICENSE,sha256=jfTOWA0McvPQAH3eirsf0PCfVJOI_tzPJbYbUqDAXAw,1071
+ncas_amof_netcdf_template-2.0a0.dist-info/METADATA,sha256=CranNETk3-gOlVZ_kJSJAuOnv0J7tgzb2Gwt3RfJ5Rg,3383
+ncas_amof_netcdf_template-2.0a0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ncas_amof_netcdf_template-2.0a0.dist-info/top_level.txt,sha256=zi784yvajtF-iYQAUNCTch6OimyrrZoHLlEOtjmmcdk,26
+ncas_amof_netcdf_template-2.0a0.dist-info/RECORD,,
