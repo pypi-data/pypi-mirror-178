@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: gadm-connector
+Version: 0.0.1
+Summary: GADM Connector to get country border data
+Home-page: https://github.com/Repsay/gadm-connector
+Author: Jasper Delahaije
+Author-email: jdelahaije@gmail.com
+License: MIT
+Download-URL: https://github.com/Repsay/gadm-connector/releases
+Description: # Gadm-connector
+        
+        ![Supported Versions](https://img.shields.io/pypi/pyversions/gadm-connector)
+        ![Version](https://img.shields.io/pypi/v/gadm-connector?label=package%20version)
+        ![Downloads](https://img.shields.io/pypi/dm/gadm-connector)
+        ![Status](https://img.shields.io/pypi/status/gadm-connector)
+        
+        Simple donwloader for gadm border data.
+        
+        ```python
+        
+        import gadm
+        
+        Netherlands = gadm.Country("NLD", 0, "4.1")
+        
+        ```
+        
+        ## Installing
+        
+        Gadm-connector is available on PyPI:
+        
+        ```console
+        python -m pip install gadm-connector
+        ```
+        
+        Gadm-connector is build for python 3.8+.
+        
+        ## Features
+        
+        * get geopandas dataframe of country borders
+        * get list of coordinates of country borders
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Natural Language :: English
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown

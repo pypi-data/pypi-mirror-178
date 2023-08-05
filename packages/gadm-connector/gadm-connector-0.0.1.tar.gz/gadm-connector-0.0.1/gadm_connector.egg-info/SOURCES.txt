@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+gadm/__init__.py
+gadm_connector.egg-info/PKG-INFO
+gadm_connector.egg-info/SOURCES.txt
+gadm_connector.egg-info/dependency_links.txt
+gadm_connector.egg-info/requires.txt
+gadm_connector.egg-info/top_level.txt
