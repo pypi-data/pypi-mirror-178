@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: cebsyldec
+Version: 0.0.2
+Summary: Decodes a Cebuano word into syllables
+Project-URL: Homepage, https://github.com/eemberda/Cebuano-Syllable-Decoder
+Project-URL: Bug Tracker, https://github.com/eemberda/Cebuano-Syllable-Decoder/issues
+Author-email: Eric John Emberda <eric.emberda@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Cebuano-Syllable-Decoder
+Cebuano Syllable Decoder
+
+## Installation
+* `pip install cebsyldec` or
+* inside the folder run `python setup.py install`
+
+## Requirements
+* `python>=3.7`
+
+## Functions
+* get_syllables(word)
+   - Accepts a Cebuano word and returns the syllables of the word, and the sequence of Consonants and Vowels
+   - Default Output: List of syllables and Sequence of Consonants and Vowels
+   - Ex. 
+      ``` 
+         syllabledecoder.get_syllables("tinabangay")   
+         [['ti', 'na', 'ba', 'ngay'], ['CV', 'CV', 'CV', 'CVC']]
+      ```
+      ```
+         syllabledecoder.get_syllables("mag-tinabangay") 
+         [['mag', 'ti', 'na', 'ba', 'ngay'], ['CVC', 'CV', 'CV', 'CV', 'CVC']]      
+      ```
+## How to Use
+```
+from cebsyldec import syllabledecoder
+
+syllabledecoder.get_syllables("mangaon")        
+
+```
+
+Output: 
+   [['ma', 'nga', 'on'], ['CV', 'CV', 'VC']]
+
+
+## References
+
+* https://www.youtube.com/watch?v=ZULS0evRLHg
