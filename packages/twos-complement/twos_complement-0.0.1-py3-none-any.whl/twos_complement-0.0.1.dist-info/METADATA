@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: twos-complement
+Version: 0.0.1
+Summary: converts binary to twos complements binary. 
+Home-page: https://github.com/micfun123/twos-complement
+Author: Michael Parker
+Author-email: michaelrbparker@protonmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# twos-complement
+A python pip package to implement twos-complement
+
+
+#Example
+
+```py
+from two_complement import twos_complement
+
+print(two_complemts('00000100'))
+```
+
