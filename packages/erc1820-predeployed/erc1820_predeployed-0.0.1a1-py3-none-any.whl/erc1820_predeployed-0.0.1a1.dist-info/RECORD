@@ -1,0 +1,11 @@
+erc1820_predeployed/__init__.py,sha256=Rc_Xtv0NV38vp4cc2wXGtaEzYmaC_E5jWGMqV6pLMW0,231
+erc1820_predeployed/address.py,sha256=V5wT41bX2x6NUMjyFJirLpwR822YlCdBt1N9dD5JtAQ,120
+erc1820_predeployed/erc1820_registry_generator.py,sha256=LpL6yCxFBsJG90FNOoQIiQ81SrV-8LASAw7SHdJfI3A,980
+erc1820_predeployed/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+erc1820_predeployed/artifacts/.keep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+erc1820_predeployed/artifacts/ERC1820Registry.json,sha256=1jNs-8mMLbSJabUMkhFkzrqIistpw3DS8gu3EFVkPWg,14323
+erc1820_predeployed/artifacts/ERC1820Registry.meta.json,sha256=ySO5XDSHffsebW48vOPq5bFQDL-P_bOH7D6CHGWVmyw,15763
+erc1820_predeployed-0.0.1a1.dist-info/METADATA,sha256=sUNEbgHK_5I6a4jSRcnnMdghyKl48nYG9Qn954U3vQo,1076
+erc1820_predeployed-0.0.1a1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+erc1820_predeployed-0.0.1a1.dist-info/top_level.txt,sha256=Rqx4qw3xcO8haSxtr69jmbnNhessjKLOT3HlRidFNIs,20
+erc1820_predeployed-0.0.1a1.dist-info/RECORD,,
