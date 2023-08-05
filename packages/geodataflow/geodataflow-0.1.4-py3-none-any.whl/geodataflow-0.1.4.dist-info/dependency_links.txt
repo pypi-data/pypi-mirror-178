@@ -1,0 +1,8 @@
+numpy
+requests
+pyproj
+shapely
+GDAL
+pandas
+geopandas
+matplotlib
