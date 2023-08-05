@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: saltext.sap_hostctrl
+Version: 1.0.0
+Summary: SaltStack extension for the SAP Host Agent
+Home-page: https://github.com/SAPUCC/saltext-sap_hostctrl
+Author: 'Benjamin Wegener, Alexander Wilke'
+License: GPLv3
+Project-URL: Source, https://github.com/SAPUCC/saltext-sap_hostctrl
+Project-URL: Tracker, https://github.com/SAPUCC/saltext-sap_hostctrl/issues
+Keywords: salt-extension
+Platform: any
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: tests
+Provides-Extra: dev
+Provides-Extra: docs
+Provides-Extra: docsauto
+License-File: LICENSE
+
+# SaltStack SAP Host Agent extension
+This SaltStack extensions allows interfaces SAP Host Agents running on minions.
+
+**THIS PROJECT IS NOT ASSOCIATED WITH SAP IN ANY WAY**
+
+## Installation
+Run the following to install the SaltStack SAPCAR extension:
+```bash
+salt-call pip.install saltext.sap-hostctrl
+```
+Keep in mind that this package must be installed on every minion that should utilize the states and execution modules.
+
+Alternatively, you can add this repository directly over gitfs
+```yaml
+gitfs_remotes:
+  - https://github.com/SAPUCC/saltext-sap_hostctrl.git:
+    - root: src/saltext/sap_hostctrl
+```
+In order to enable this, logical links under `src/saltext/sap_hostctrl/` from `_<dir_type>` (where the code lives) to `<dir_type>` have been placed, e.g. `_modules` -> `modules`. This will double the source data during build, but:
+ * `_modules` is required for integrating the repo over gitfs
+ * `modules` is required for the salt loader to find the modules / states
+
+## Usage
+A state using the SAP Host Agent extension looks like this:
+```jinja
+Outside Discovery is executed:
+  sap_hostctrl.outside_discovery_executed:
+    - name: sol.my.domain
+    - sld_port: 50000
+    - sld_username: SLD_DS_USER
+    - sld_password: __slot__:salt:vault.read_secret(path="SAP", key="SLD_DS_USER")
+    - username: sapadm
+    - password: __slot__:salt:vault.read_secret(path="os", key="sapadm")
+```
+
+## Docs
+See https://saltext-sap-hostctrl.readthedocs.io/ for the documentation.
+
+## Contributing
+We would love to see your contribution to this project. Please refer to `CONTRIBUTING.md` for further details.
+
+## License
+This project is licensed under GPLv3. See `LICENSE.md` for the license text and `COPYRIGHT.md` for the general copyright notice.
+
+

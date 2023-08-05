@@ -1,0 +1,4 @@
+[salt.loader]
+module_dirs = saltext.sap_hostctrl.loader:get_module_dirs
+states_dirs = saltext.sap_hostctrl.loader:get_states_dirs
+
