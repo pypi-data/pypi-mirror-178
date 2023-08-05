@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: Cerebro-Viewer
+Version: 0.0.4
+Summary: Cerebro Viewer - A pythonic 3D viewer to visualize and plot brains
+Author-email: "Sina Mansour L." <sina.mansour.lakouraj@gmail.com>
+Project-URL: Homepage, https://github.com/sina-mansour/Cerebro_Viewer
+Project-URL: Bug Tracker, https://github.com/sina-mansour/Cerebro_Viewer/issues
+Keywords: 3D,Brain Viewer
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Cerebro_Viewer
+A pythonic 3D viewer to visualize and plot brains and neuroimaging data
+
+![alt text](https://github.com/sina-mansour/Cerebro_Viewer/blob/main/static/images/screen.png?raw=true)
