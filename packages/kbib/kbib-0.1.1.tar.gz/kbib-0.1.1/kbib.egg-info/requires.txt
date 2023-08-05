@@ -1,0 +1,5 @@
+bibtexparser
+tqdm
+
+[pdf]
+pdf2doi
