@@ -1,0 +1,3 @@
+[console_scripts]
+dbinstall = bugfinder:dbinstall
+syncfile = bugfinder:syncfile
