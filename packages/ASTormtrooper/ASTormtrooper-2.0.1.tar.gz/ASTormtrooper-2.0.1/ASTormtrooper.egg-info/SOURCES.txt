@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+ASTormtrooper.egg-info/PKG-INFO
+ASTormtrooper.egg-info/SOURCES.txt
+ASTormtrooper.egg-info/dependency_links.txt
+ASTormtrooper.egg-info/top_level.txt
