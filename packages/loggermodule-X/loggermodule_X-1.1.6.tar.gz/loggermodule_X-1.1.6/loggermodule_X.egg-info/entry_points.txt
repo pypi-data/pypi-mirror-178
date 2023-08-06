@@ -1,0 +1,3 @@
+[console_scripts]
+mcs = samplepackage.__main__:main
+
