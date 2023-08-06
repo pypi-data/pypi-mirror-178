@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: timedelta-isoformat
+Version: 0.0.1
+Summary: Supplemental ISO8601 duration format support for datetime.timedelta
+Author-email: James Addison <jay@jp-hosting.net>
+License: AGPL-3.0-or-later
+Project-URL: Homepage, https://pypi.org/project/timedelta-isoformat/
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+License-File: LICENSE
+
