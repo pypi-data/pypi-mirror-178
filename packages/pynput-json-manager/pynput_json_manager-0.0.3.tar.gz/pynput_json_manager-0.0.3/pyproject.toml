@@ -1,0 +1,21 @@
+[project]
+name = "pynput_json_manager"
+version = "0.0.3"
+description = "handles jsons creation and management"
+authors = [
+    {name = "Edouard Yvinec", email="edouardyvinec@hotmail.fr"}
+]
+license = {file = "LICENSE"}
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3"
+]
+
+[project.urls]
+"Homepage" = "https://gitlab.com/ey_datakalab/json_manager"
+
+
+[build-system]
+requires = ["setuptools>=42", "pynput>=1.7.0"]
+build-backend = "setuptools.build_meta"
