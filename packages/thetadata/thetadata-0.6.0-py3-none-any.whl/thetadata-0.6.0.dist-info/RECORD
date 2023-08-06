@@ -1,0 +1,11 @@
+thetadata/__init__.py,sha256=p8mdObBL6BR-ddkZopUciNKLwDZfHnti5Gu6qrylrnA,102
+thetadata/client.py,sha256=AKab3WuMvV2X4YUPyz7UYCEYdAmX0WLIB7whGoYiFc0,19469
+thetadata/enums.py,sha256=wpnu1k2FgRAEnAPfUxdKjQIfjEJyhoN_YXJWeREDAZc,5834
+thetadata/exceptions.py,sha256=9IvYJ0QlqFgLr6i-T4MG65k2zwCY2GKFNr4pTWuMEa8,1034
+thetadata/parsing.py,sha256=0hWC4o18WwjygXaN7FI-wkvHDUMY_H3e2XxhpPwLQKk,8803
+thetadata/py.typed,sha256=y6ARoGfTDlsXOfaq7TVR9t6NIdTNhmGRDVrNNj0Hs64,27
+thetadata/terminal.py,sha256=sk14lww76YCjGUhIlh7VYEG1NLaqG72_ty-_jh_DqsE,1813
+thetadata-0.6.0.dist-info/METADATA,sha256=AmP6hnpswQeYCII0A7wSt-jTMzFlLGLMPUM0_t4RFrY,3002
+thetadata-0.6.0.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+thetadata-0.6.0.dist-info/licenses/LICENSE,sha256=UnGiikl9yhz69XB8SHmd5j62WQ7MKEXuk1GzuMGiho0,1067
+thetadata-0.6.0.dist-info/RECORD,,
