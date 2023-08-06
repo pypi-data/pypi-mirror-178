@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+src/teocomp.egg-info/PKG-INFO
+src/teocomp.egg-info/SOURCES.txt
+src/teocomp.egg-info/dependency_links.txt
+src/teocomp.egg-info/requires.txt
+src/teocomp.egg-info/top_level.txt
