@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: kck-data-source
+Version: 1.1
+Summary: This is a collection of tools to ease the use of postgreSQL in Python projects with psycopg2.
+Home-page: https://github.com/Korckyjals-CODE/kck_data_source
+Author: Jorge López
+Author-email: jorge.lopez@korckyjals-code.com
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+This is a collection of tools to ease the use of postgreSQL in Python projects with psycopg2.
+
+Usage:
+
+Import the class DataSource with:
+
+from data_source import DataSource
+
+Then create an instance of the DataSource class, providing a local or external database url:
+
+dataSource = DataSource(DATABASE_URL)
+
+A local DATABASE_URL might look like this:
+
+postgres://<database_user_name>:<database_user_password>@localhost:<port>/<database_name>
+
+Methods: To be defined.
