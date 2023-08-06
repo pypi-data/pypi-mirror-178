@@ -1,0 +1,8 @@
+edc==0.4.57
+edc-microscopy
+edc-rx
+intecomm-form-validators
+intecomm-eligibility
+intecomm-rando
+beautifulsoup4
+canned-views
