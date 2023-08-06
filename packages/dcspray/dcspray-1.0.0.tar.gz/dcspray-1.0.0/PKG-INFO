@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: dcspray
+Version: 1.0.0
+Summary: DRACOON Sprayer - Branding utility for DRACOON
+License: MIT
+Author: Octavio Simone
+Author-email: 70800577+unbekanntes-pferd@users.noreply.github.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: Pillow (>=9.2.0,<10.0.0)
+Requires-Dist: dracoon (>=1.8.0,<2.0.0)
+Requires-Dist: pydantic (>=1.10.2,<2.0.0)
+Requires-Dist: python-resize-image (>=1.1.20,<2.0.0)
+Requires-Dist: typer (>=0.6.1,<0.7.0)
