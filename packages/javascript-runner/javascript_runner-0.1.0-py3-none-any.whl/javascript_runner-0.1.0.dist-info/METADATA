@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: javascript-runner
+Version: 0.1.0
+Summary: Run Nodejs from Python
+Author: micziz
+Author-email: miczicontent@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# Node.py
+
+Run nodejs from python
+
+## Features
+
+- Runs: .js, .ts, .mjs and .cjs files.
+- Supports all npm libraries
+- Automatically compiles .ts files and runs them with NO tsconfig (uses tsc)
+- No dependencies
+- Uses modern api
+
+## Installation
+
+

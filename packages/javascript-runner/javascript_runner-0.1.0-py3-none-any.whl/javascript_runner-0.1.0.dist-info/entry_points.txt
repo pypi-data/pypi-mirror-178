@@ -1,0 +1,3 @@
+[console_scripts]
+jsRunner=javascript-runner.javascript-runner:cli
+
