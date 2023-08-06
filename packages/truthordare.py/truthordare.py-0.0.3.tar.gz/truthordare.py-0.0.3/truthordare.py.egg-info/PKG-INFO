@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: truthordare.py
+Version: 0.0.3
+Summary: A Python Package that enables you to fetch data from Truth or Dare API
+Author: d4rkpoison
+Author-email: ashutoshdas2004@gmail.com
+Keywords: python,truth,dare,truthordare
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Please visit https://github.com/iamd4rk/truthordare.py#readme for docs
