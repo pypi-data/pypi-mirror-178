@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: marrow.package
+Version: 2.1.0
+Summary: Plugin discovery and management, dependency graphing, and object import path canonicalization.
+Home-page: https://github.com/marrow/package
+Author: Alice Bevan-McGregor
+Author-email: alice@gothcandy.com
+License: MIT
+Project-URL: Source code, https://github.com/marrow/package
+Project-URL: Issue tracker, https://github.com/marrow/package/issues
+Keywords: entry point,plugin,extensions,plugin manager,plugin system,canonicalization,reference parsing,import resolver
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: development
+License-File: LICENSE.txt
