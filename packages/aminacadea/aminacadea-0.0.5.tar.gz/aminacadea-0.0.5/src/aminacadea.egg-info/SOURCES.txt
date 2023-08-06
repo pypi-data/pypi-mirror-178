@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/aminacadea/__init__.py
+src/aminacadea/amina.py
+src/aminacadea.egg-info/PKG-INFO
+src/aminacadea.egg-info/SOURCES.txt
+src/aminacadea.egg-info/dependency_links.txt
+src/aminacadea.egg-info/requires.txt
+src/aminacadea.egg-info/top_level.txt
