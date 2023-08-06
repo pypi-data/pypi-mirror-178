@@ -1,0 +1,36 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trentubuddy"
+version = "1.0.0"
+authors = [ 
+    {name="Zachary Bricknell", linkedin="https://www.linkedin.com/in/zachary-bricknell/"}
+]
+description = "A small discord bot framework and web scraper. Without getting sensitive information the web scraper will update a file with a list of CS Specializations and requirements based on the given patten. See README for more"
+readme = "README.md"
+dependencies = [
+    "discord >= 2.0.0",
+    "python-dotenv >= 0.21.0",
+    "selenium >= 4.5.0",
+    "bs4 >= 0.0.1",
+    "webdriver_manager >=3.8.4",
+    "PyPDF2 >= 2.11.1",
+    "lxml >= 4.9.1"
+]
+requires-python = ">=3.10.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Zachary-Bricknell/TrentUBuddy"
+
+[project.scripts]
+trentubuddy = "trentubuddy.bot:main"
