@@ -1,0 +1,72 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "fietsboek"
+description = "GPX file sharing website"
+version = "0.4.0"
+license = "AGPL-3.0-or-later"
+readme = "README.md"
+authors = [
+    "Daniel Schadt <fietsboek@kingdread.de>",
+]
+classifiers = [
+    'Development Status :: 3 - Alpha',
+    'Framework :: Pyramid',
+    'Operating System :: POSIX :: Linux',
+    'Topic :: Internet :: WWW/HTTP',
+    'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
+    'Topic :: Internet :: WWW/HTTP :: WSGI :: Application',
+]
+documentation = "https://kingdread.de/fietsboek/"
+repository = "https://gitlab.com/dunj3/fietsboek"
+keywords = ["web", "gpx"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+pyramid = "^2"
+pyramid_jinja2 = "^2.10"
+pyramid_debugtoolbar = "^4.9"
+pyramid_retry = "^2.1"
+pyramid_tm = "^2.5"
+waitress = "^2.1"
+
+SQLAlchemy = "^1.4"
+alembic = "^1.8"
+transaction = "^3"
+"zope.sqlalchemy" = "^1.6"
+redis = "^4.3.4"
+
+# Compatibility with old Python versions
+importlib_resources = "^5.10"
+importlib_metadata = "^5.0.0"
+
+Babel = "^2.11"
+cryptography = "^38"
+gpxpy = "^1.5"
+markdown = "^3.4"
+bleach = "^5"
+Click = "^8.1"
+requests = "^2.28.1"
+
+WebTest = {version = "^3", optional = true}
+pytest = {version = "^7.2", optional = true}
+pytest-cov = {version = "*", optional = true}
+
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+Sphinx = "^5.3"
+
+[tool.poetry.extras]
+testing = ["WebTest", "pytest", "pytest-cov"]
+
+[tool.poetry.scripts]
+fietsctl = "fietsboek.scripts.fietsctl:main"
+fietsupdate = "fietsboek.updater.cli:cli"
+
+[tool.poetry.plugins."paste.app_factory"]
+main = "fietsboek:main"
