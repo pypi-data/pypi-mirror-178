@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: bolt-raycast
+Version: 0.1.0
+Summary: Easily generate raycasting functions for your datapack using bolt
+Home-page: https://github.com/vdvman1/bolt-raycast
+License: MIT
+Keywords: beet,bolt,minecraft,minecraft-commands,mcfunction
+Author: Stefan van der Velden
+Author-email: vdvman1@users.noreply.github.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: beet (>=0.80.1,<0.81.0)
+Requires-Dist: bolt (>=0.21.0,<0.22.0)
+Requires-Dist: mecha (>=0.61.0,<0.62.0)
+Description-Content-Type: text/markdown
+
+# bolt-raycast
+
+[![GitHub Actions](https://github.com/vdvman1/bolt-raycast/workflows/CI/badge.svg)](https://github.com/vdvman1/bolt-raycast/actions)
+
+> Easily generate raycasting functions for your datapack using bolt
+
+## Installation
+
+The package can be installed with `pip`. Note, you must have `beet`, `mecha` and `bolt` installed to use this package.
+
+```bash
+pip install bolt_raycast
+```
+
+---
+
+License - [MIT](https://github.com/vdvman1/bolt-raycast/blob/main/LICENSE)
+
+
