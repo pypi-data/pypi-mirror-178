@@ -1,0 +1,7 @@
+setup.py
+killprocess_cli/__init__.py
+killprocess_cli.egg-info/PKG-INFO
+killprocess_cli.egg-info/SOURCES.txt
+killprocess_cli.egg-info/dependency_links.txt
+killprocess_cli.egg-info/entry_points.txt
+killprocess_cli.egg-info/top_level.txt
