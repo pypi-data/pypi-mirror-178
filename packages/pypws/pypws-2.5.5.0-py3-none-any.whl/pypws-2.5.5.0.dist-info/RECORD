@@ -1,0 +1,10 @@
+pypws/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypws/calculations.py,sha256=psmND-dHtuatE-4JIpfcNm7XW5XxQGKZ7i8F_ZS-PBU,361368
+pypws/constants.py,sha256=4gg7_zWIeuo7fc5cgc-0NiMyKEo67_Vwxy_lNkUcg7Q,7572
+pypws/entities.py,sha256=rufLzsN02785Gigor7MlVwvPTxANCL5aG3gD7EwYVAo,110854
+pypws/enums.py,sha256=T_z1phycWa8ecfztdcq1KfUPIshePTlJ54aiGG_uj-U,10511
+pypws/utilities.py,sha256=VLaboLamw0YHIW3Q7RqzkWdhVvi2Hew7h01uC18nhTs,4141
+pypws-2.5.5.0.dist-info/METADATA,sha256=kcYuc6LedZVhU9CJCmJaOOayIQHd_w9vuOM8Vfs_FjE,1737
+pypws-2.5.5.0.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+pypws-2.5.5.0.dist-info/licenses/LICENSE,sha256=_vIt4_1k54L9mHewYEqJDfYA-JaKpx7v-Tu6WDQVFq4,17543
+pypws-2.5.5.0.dist-info/RECORD,,
