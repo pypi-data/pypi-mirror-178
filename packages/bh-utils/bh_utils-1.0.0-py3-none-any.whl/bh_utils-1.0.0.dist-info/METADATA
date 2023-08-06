@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: bh-utils
+Version: 1.0.0
+Summary: BeHai Utility Library
+Author: Van Be Hai Nguyen
+Author-email: behai_nguyen@hotmail.com
+Requires-Python: >=3.10
+Requires-Dist: PyYAML
+Requires-Dist: pytest
+Requires-Dist: coverage
+
