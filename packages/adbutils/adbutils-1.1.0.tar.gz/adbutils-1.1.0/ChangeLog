@@ -1,0 +1,17 @@
+CHANGES
+=======
+
+1.1.0
+-----
+
+* add logcat command, fix shell2(rstrip) not working bug
+* fix apk install when version\_name has cn name
+* remove redundant import
+* read screenshot from stream rather than temp file
+* Bugfix: Fix utf-8 encoding command sending
+* add examples of adb-reset
+* update typing
+* update doc
+* fix wheel platform tag
+* change to adb push on windows
+* fix #48
