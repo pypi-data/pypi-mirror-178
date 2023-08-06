@@ -1,0 +1,3 @@
+[console_scripts]
+serverlesspack = serverlesspack:package_cli
+
