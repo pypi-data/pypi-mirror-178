@@ -1,0 +1,6 @@
+click>=8
+cuda-python>=11
+numba>=0.56
+numpy>=1
+pandas>=1.5
+pytest>=7
