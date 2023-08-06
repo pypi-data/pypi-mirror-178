@@ -1,0 +1,2 @@
+[console_scripts]
+pressure_pipe = dashhtmlgrid.pressure_pipe
