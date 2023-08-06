@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/SWTK-LAD/SWTK-LAD.py
+src/SWTK-LAD/__init__.py
+src/SWTK_LAD.egg-info/PKG-INFO
+src/SWTK_LAD.egg-info/SOURCES.txt
+src/SWTK_LAD.egg-info/dependency_links.txt
+src/SWTK_LAD.egg-info/top_level.txt

@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: SWTK
+Version: 1.0.0
+Summary: An experimental Unsupervised Learning Log Anomaly Detection toolkit. YOU ARE BEAUTIFUL!
+Project-URL: Homepage, https://github.com/nileshkhetrapal/SWTK
+Project-URL: Bug Tracker, https://github.com/nileshkhetrapal/SWTK/issues
+Author-email: Nilesh Khetrapal <nilesh.khetrapal@mymail.champlain.edu>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
