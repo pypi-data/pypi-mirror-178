@@ -1,0 +1,10 @@
+LICENSE.txt
+setup.cfg
+setup.py
+jani/__init__.py
+jani/jani.py
+jani.egg-info/PKG-INFO
+jani.egg-info/SOURCES.txt
+jani.egg-info/dependency_links.txt
+jani.egg-info/requires.txt
+jani.egg-info/top_level.txt
