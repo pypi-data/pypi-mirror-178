@@ -1,0 +1,7 @@
+LICENSE
+pyproject.toml
+src/8q/8q.py
+src/8qe.egg-info/PKG-INFO
+src/8qe.egg-info/SOURCES.txt
+src/8qe.egg-info/dependency_links.txt
+src/8qe.egg-info/top_level.txt
