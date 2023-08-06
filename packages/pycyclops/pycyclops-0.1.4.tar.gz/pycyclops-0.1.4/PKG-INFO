@@ -1,0 +1,100 @@
+Metadata-Version: 2.1
+Name: pycyclops
+Version: 0.1.4
+Summary: Framework for healthcare ML implementation
+Home-page: https://github.com/VectorInstitute/cyclops
+License: Apache-2.0
+Author: Vector AI Engineering
+Author-email: cyclops@vectorinstitute.ai
+Requires-Python: ==3.9.7
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: SQLAlchemy (>=1.4.32,<2.0.0)
+Requires-Dist: alibi (>=0.6.5,<0.7.0)
+Requires-Dist: alibi-detect (>=0.9.1,<0.10.0)
+Requires-Dist: colorama (>=0.4.4,<0.5.0)
+Requires-Dist: dask[dataframe] (>=2022.9.1,<2023.0.0)
+Requires-Dist: hydra-core (>=1.2.0,<2.0.0)
+Requires-Dist: llvmlite (==0.38.0)
+Requires-Dist: matplotlib (>=3.5.1,<4.0.0)
+Requires-Dist: pandas (>=1.4.1,<2.0.0)
+Requires-Dist: plotly (==5.7.0)
+Requires-Dist: prefect (==2.0b6)
+Requires-Dist: psycopg2-binary (>=2.9.3,<3.0.0)
+Requires-Dist: pyarrow (>=7.0.0,<8.0.0)
+Requires-Dist: pyparsing (==3.0.8)
+Requires-Dist: python-dotenv (>=0.19.2,<0.20.0)
+Requires-Dist: seaborn (>=0.11.2,<0.12.0)
+Requires-Dist: shap (>=0.40.0,<0.41.0)
+Requires-Dist: tables (>=3.7.0,<4.0.0)
+Requires-Dist: torch (>=1.11.0,<2.0.0)
+Requires-Dist: torchxrayvision (>=0.0.37,<0.0.38)
+Requires-Dist: xgboost (>=1.5.2,<2.0.0)
+Project-URL: Documentation, https://vectorinstitute.github.io/cyclops/
+Project-URL: Repository, https://github.com/VectorInstitute/cyclops
+Description-Content-Type: text/markdown
+
+![cyclops Logo](https://github.com/VectorInstitute/cyclops/blob/main/docs/source/theme/static/cyclops_logo-dark.png?raw=true)
+
+--------------------------------------------------------------------------------
+
+[![PyPI](https://img.shields.io/pypi/v/pycyclops)](https://pypi.org/project/pycyclops)
+[![code checks](https://github.com/VectorInstitute/cyclops/actions/workflows/code_checks.yml/badge.svg)](https://github.com/VectorInstitute/cyclops/actions/workflows/code_checks.yml)
+[![integration tests](https://github.com/VectorInstitute/cyclops/actions/workflows/integration_tests.yml/badge.svg)](https://github.com/VectorInstitute/cyclops/actions/workflows/integration_tests.yml)
+[![docs](https://github.com/VectorInstitute/cyclops/actions/workflows/docs_deploy.yml/badge.svg)](https://github.com/VectorInstitute/cyclops/actions/workflows/docs_deploy.yml)
+[![codecov](https://codecov.io/gh/VectorInstitute/cyclops/branch/main/graph/badge.svg)](https://codecov.io/gh/VectorInstitute/cyclops)
+[![license](https://img.shields.io/github/license/VectorInstitute/cyclops.svg)](https://github.com/VectorInstitute/cyclops/blob/main/LICENSE)
+
+``cyclops`` is a framework for facilitating research and deployment of ML models
+in the health (or clinical) setting. It provides a few high-level APIs namely:
+
+
+* query API - Querying EHR databases (such as MIMIC-IV)
+* process API - Process static and temporal EHR data
+* evaluate API - Evaluate models on clinical prediction tasks
+* monitor API - Detect data drift relevant for clinical use cases
+
+``cyclops`` also provides a library of use-cases on clinical datasets. The implemented
+use cases include:
+
+* Mortality decompensation prediction
+
+
+## 🐣 Getting Started
+
+### Installing the core cyclops package using pip
+
+```bash
+pip install pycyclops
+```
+
+### Setup Python virtual environment and install dependencies for development
+
+The development environment has been tested on ``python = 3.9.7``.
+
+The python virtual environment can be setup using
+[poetry](https://python-poetry.org/docs/#installation). Hence, make sure it is
+installed and then run:
+
+```bash
+poetry install
+source $(poetry env info --path)/bin/activate
+```
+
+## 📚 [Documentation](https://vectorinstitute.github.io/cyclops/)
+
+## 🎓 Notebooks
+
+To use jupyter notebooks, the python virtual environment can be installed and
+used inside an Ipython kernel. After activating the virtual environment, run:
+
+```bash
+python3 -m ipykernel install --user --name <name_of_kernel>
+```
+
+Now, you can navigate to the notebook's ``Kernel`` tab and set it as
+``<name_of_kernel>``.
+
+Tutorial notebooks in ``tutorials`` can be useful to view the
+functionality of the framework.
+
