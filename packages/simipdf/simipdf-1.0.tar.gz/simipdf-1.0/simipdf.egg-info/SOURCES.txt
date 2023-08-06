@@ -1,0 +1,5 @@
+setup.py
+simipdf.egg-info/PKG-INFO
+simipdf.egg-info/SOURCES.txt
+simipdf.egg-info/dependency_links.txt
+simipdf.egg-info/top_level.txt
