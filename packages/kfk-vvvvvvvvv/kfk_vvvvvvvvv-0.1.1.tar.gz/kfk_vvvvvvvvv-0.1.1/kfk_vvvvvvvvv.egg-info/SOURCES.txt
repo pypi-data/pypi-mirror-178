@@ -1,0 +1,13 @@
+README.md
+setup.py
+kfk/__init__.py
+kfk/client.py
+kfk/consumer.py
+kfk/main.py
+kfk/producer.py
+kfk_vvvvvvvvv.egg-info/PKG-INFO
+kfk_vvvvvvvvv.egg-info/SOURCES.txt
+kfk_vvvvvvvvv.egg-info/dependency_links.txt
+kfk_vvvvvvvvv.egg-info/entry_points.txt
+kfk_vvvvvvvvv.egg-info/requires.txt
+kfk_vvvvvvvvv.egg-info/top_level.txt
