@@ -1,0 +1,4 @@
+include sendevent_getevent_keyboard/requirements.txt
+include sendevent_getevent_keyboard/thirdparty.json
+include sendevent_getevent_keyboard/README.MD
+include sendevent_getevent_keyboard/LICENSE

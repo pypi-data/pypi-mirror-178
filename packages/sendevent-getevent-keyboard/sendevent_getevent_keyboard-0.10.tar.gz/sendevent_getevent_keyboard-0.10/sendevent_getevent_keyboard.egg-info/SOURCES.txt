@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+sendevent_getevent_keyboard/LICENSE
+sendevent_getevent_keyboard/README.MD
+sendevent_getevent_keyboard/__init__.py
+sendevent_getevent_keyboard/requirements.txt
+sendevent_getevent_keyboard/thirdparty.json
+sendevent_getevent_keyboard.egg-info/PKG-INFO
+sendevent_getevent_keyboard.egg-info/SOURCES.txt
+sendevent_getevent_keyboard.egg-info/dependency_links.txt
+sendevent_getevent_keyboard.egg-info/requires.txt
+sendevent_getevent_keyboard.egg-info/top_level.txt
