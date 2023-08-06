@@ -1,0 +1,6 @@
+include third_party/lzlib/*.h
+include third_party/lzlib/*.c
+include third_party/lzlib/lzlib.cpp
+include source/lzip_extension.cpp
+include source/lzip.py
+include source/version.py
