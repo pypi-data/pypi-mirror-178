@@ -1,0 +1,8 @@
+README.md
+pyzed.py
+setup.py
+pyzed.egg-info/PKG-INFO
+pyzed.egg-info/SOURCES.txt
+pyzed.egg-info/dependency_links.txt
+pyzed.egg-info/requires.txt
+pyzed.egg-info/top_level.txt

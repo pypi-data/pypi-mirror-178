@@ -1,0 +1,3 @@
+durationpy
+python-dateutil
+requests
