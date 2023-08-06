@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+getevent_sendevent/LICENSE
+getevent_sendevent/README.MD
+getevent_sendevent/__init__.py
+getevent_sendevent/requirements.txt
+getevent_sendevent/thirdparty.json
+getevent_sendevent.egg-info/PKG-INFO
+getevent_sendevent.egg-info/SOURCES.txt
+getevent_sendevent.egg-info/dependency_links.txt
+getevent_sendevent.egg-info/requires.txt
+getevent_sendevent.egg-info/top_level.txt

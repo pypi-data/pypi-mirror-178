@@ -1,0 +1,4 @@
+include getevent_sendevent/requirements.txt
+include getevent_sendevent/thirdparty.json
+include getevent_sendevent/README.MD
+include getevent_sendevent/LICENSE
