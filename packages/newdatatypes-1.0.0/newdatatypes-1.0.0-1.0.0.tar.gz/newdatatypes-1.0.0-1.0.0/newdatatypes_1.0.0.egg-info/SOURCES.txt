@@ -1,0 +1,6 @@
+setup.py
+newdatatypes/__init__.py
+newdatatypes_1.0.0.egg-info/PKG-INFO
+newdatatypes_1.0.0.egg-info/SOURCES.txt
+newdatatypes_1.0.0.egg-info/dependency_links.txt
+newdatatypes_1.0.0.egg-info/top_level.txt

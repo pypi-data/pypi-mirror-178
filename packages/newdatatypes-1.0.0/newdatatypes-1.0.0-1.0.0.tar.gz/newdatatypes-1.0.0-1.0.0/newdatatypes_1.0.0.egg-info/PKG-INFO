@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: newdatatypes-1.0.0
+Version: 1.0.0
+Summary: Adds new data types to your python project
+Home-page: UNKNOWN
+Author: Technology Power (Bhargav Raj)
+Author-email: technologypower24@gmail.com
+License: UNKNOWN
+Keywords: python,newdatatypes
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+Create new data types using this module, adds 6 new data types in your project, create questions, calculator and much more using this module
+
