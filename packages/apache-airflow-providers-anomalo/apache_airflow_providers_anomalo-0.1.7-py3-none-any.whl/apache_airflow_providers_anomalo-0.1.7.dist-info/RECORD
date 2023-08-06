@@ -1,0 +1,14 @@
+airflow/providers/anomalo/__init__.py,sha256=RMUUpjAVwfR2XknUH0Hdh0YBE3KP2WYXLMsczHNXNXM,442
+airflow/providers/anomalo/example_dags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airflow/providers/anomalo/example_dags/example_anomalo.py,sha256=ZKStIEvBTKyFj0itp1JLHhVMcGQRb3D2JvYRXb7-xD8,1512
+airflow/providers/anomalo/hooks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airflow/providers/anomalo/hooks/anomalo.py,sha256=wHZm-ozJOls0jJ_zJv0k3b2k45gMimiP9NStu_z8PuY,1535
+airflow/providers/anomalo/operators/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airflow/providers/anomalo/operators/anomalo.py,sha256=PF9UCHohoawqmGQ19mU3grj3G_yADhRSmbci6vvzp1I,2791
+airflow/providers/anomalo/sensors/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airflow/providers/anomalo/sensors/anomalo.py,sha256=pVhO0mLLo8PHiCbu-pO6YK9pM5QnLlW0cbBM_8fXWCI,1951
+apache_airflow_providers_anomalo-0.1.7.dist-info/entry_points.txt,sha256=duhPscaqom6W-QZiPBXCJqohOaaO_QMtxS12aM1yWuE,94
+apache_airflow_providers_anomalo-0.1.7.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+apache_airflow_providers_anomalo-0.1.7.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+apache_airflow_providers_anomalo-0.1.7.dist-info/METADATA,sha256=kTLBJqL9uWXuok0jUVaeTp43MQVq1vJX2ziNQgYljJc,2499
+apache_airflow_providers_anomalo-0.1.7.dist-info/RECORD,,
