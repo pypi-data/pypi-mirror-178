@@ -1,0 +1,2 @@
+[console_scripts]
+niagara = niagara.__main__:run
