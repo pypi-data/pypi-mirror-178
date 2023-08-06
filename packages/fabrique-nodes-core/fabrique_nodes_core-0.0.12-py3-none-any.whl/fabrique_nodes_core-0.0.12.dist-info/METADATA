@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: fabrique-nodes-core
+Version: 0.0.12
+Summary: Fabrique nodes SDK
+Home-page: http://www.fabrique.ai
+Author: Sergey Kuzmin
+Author-email: sergey.kuzmin@fabrique.ai
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: datamodel-code-generator[http] (==0.13.1)
+Requires-Dist: pydantic
+
+fabrique-nodes-core
+===================
+
+fabrique nodes sdk
+
+Install this lib
+----------------
+
+``pip3 install fabrique-nodes-core``
