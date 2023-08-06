@@ -1,0 +1,14 @@
+junkie/__init__.py,sha256=Vnla1e7_wTOld-Kde8GEbYKmoVrmHW6vz0j_kcGP0qk,86
+junkie/_junkie.py,sha256=2CdjFYKGkRcLhIhhGg1zQptTKo19TrKD036_FHiaeMM,9844
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_bugfix.py,sha256=G6wpPac3CvA-b4xVX3TZGpSidjElJq3keGHpA0lBGwQ,695
+test/test_dict.py,sha256=NNBRnWlW-NsXu_PV4wZ3Zq6qXWejFRYb34xtgeA9_ZE,1902
+test/test_error.py,sha256=bVrg5bUlpnDbrrctAyF5Y1HbEB_KMm31OwIkTiQ2g70,4269
+test/test_junkie.py,sha256=hx-ChnxStA53a-5pQ_UxA6tDdr3vVlbsNDzGAL7ZXDA,14669
+test/test_parameter.py,sha256=SGI1mpIAmIDKTZ1nxXu3huSGwc7vX3FoT_KVxTyrzWw,4572
+test/test_readme.py,sha256=oRJi3FoGt59cnfocSvGQ9uxqRukxfAYir-mBbAnDOOk,446
+junkie-3.0.0.dist-info/LICENSE,sha256=syJj2zU4gIv64f6frGQhM3CFaLRmSS56F2MEfCd8Jt8,1071
+junkie-3.0.0.dist-info/METADATA,sha256=jLU1A_UVrH6BSYbWo3glSHLVXlTJr8ui8k_ckfwKbko,8776
+junkie-3.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+junkie-3.0.0.dist-info/top_level.txt,sha256=oErB8dmNWOS9Lbrb_XGayDEq1fQUhTg72eTISe1MdPw,12
+junkie-3.0.0.dist-info/RECORD,,
