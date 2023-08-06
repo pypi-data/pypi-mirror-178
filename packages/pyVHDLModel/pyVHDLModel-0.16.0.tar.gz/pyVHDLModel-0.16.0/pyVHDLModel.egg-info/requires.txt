@@ -1,0 +1,17 @@
+pyTooling>=2.1.0
+
+[all]
+pyTooling>=2.1.0
+pyTooling>=2.7.0
+autoapi>=2.0.1
+sphinx_fontawesome>=0.0.6
+sphinx>=5.3.0
+sphinx_autodoc_typehints>=1.19.5
+
+[doc]
+pyTooling>=2.1.0
+pyTooling>=2.7.0
+autoapi>=2.0.1
+sphinx_fontawesome>=0.0.6
+sphinx>=5.3.0
+sphinx_autodoc_typehints>=1.19.5
