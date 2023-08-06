@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+src/geodummy/__init__.py
+src/geodummy/helloworld.py
+src/geodummy.egg-info/PKG-INFO
+src/geodummy.egg-info/SOURCES.txt
+src/geodummy.egg-info/dependency_links.txt
+src/geodummy.egg-info/entry_points.txt
+src/geodummy.egg-info/requires.txt
+src/geodummy.egg-info/top_level.txt
