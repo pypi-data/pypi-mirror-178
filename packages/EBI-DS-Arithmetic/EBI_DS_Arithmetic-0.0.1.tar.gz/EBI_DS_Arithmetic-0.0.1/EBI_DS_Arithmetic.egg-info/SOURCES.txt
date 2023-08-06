@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+EBI_DS_Arithmetic/__init__.py
+EBI_DS_Arithmetic/functions.py
+EBI_DS_Arithmetic.egg-info/PKG-INFO
+EBI_DS_Arithmetic.egg-info/SOURCES.txt
+EBI_DS_Arithmetic.egg-info/dependency_links.txt
+EBI_DS_Arithmetic.egg-info/top_level.txt

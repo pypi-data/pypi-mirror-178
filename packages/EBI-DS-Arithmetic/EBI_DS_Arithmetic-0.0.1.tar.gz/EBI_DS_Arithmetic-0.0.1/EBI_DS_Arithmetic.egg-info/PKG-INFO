@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: EBI-DS-Arithmetic
+Version: 0.0.1
+Summary: My first Python package
+Author: Abhilash Maspalli Srinivas
+Author-email: <abhilash_maspallisrinivas@comcast.com>
+License: UNKNOWN
+Keywords: python,first package
+Platform: UNKNOWN
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+My first Python package with a slightly longer description
+
