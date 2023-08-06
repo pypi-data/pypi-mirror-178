@@ -1,0 +1,3 @@
+[console_scripts]
+elfragmentador=elfragmentador.cli:main_cli
+
