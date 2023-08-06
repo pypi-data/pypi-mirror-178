@@ -1,0 +1,14 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+api_jama/src/__init__.py
+api_jama/src/compactPyjama.py
+api_jama/src/generateTcs.py
+api_jama/src/ifx.py
+inf_api_jama.egg-info/PKG-INFO
+inf_api_jama.egg-info/SOURCES.txt
+inf_api_jama.egg-info/dependency_links.txt
+inf_api_jama.egg-info/requires.txt
+inf_api_jama.egg-info/top_level.txt
