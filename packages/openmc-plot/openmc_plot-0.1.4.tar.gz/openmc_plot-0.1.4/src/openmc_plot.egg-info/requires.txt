@@ -1,0 +1,6 @@
+streamlit==1.14.1
+openmc_source_plotter
+
+[tests]
+pytest
+requests
