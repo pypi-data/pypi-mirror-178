@@ -1,0 +1,10 @@
+upgrade_knausj/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+upgrade_knausj/git.py,sha256=pwGPq2bew1lK1OKcIWYxdbaroJvRFpCBtzbxSRp6eog,625
+upgrade_knausj/handle_challenging_commit.py,sha256=RPk5oeVZMJJAAzsmula9VyfN-SLjQi4IfOBvlmvfu70,4587
+upgrade_knausj/main.py,sha256=AVKkT5mAoR-4fnc0Y07zs1ai-4d2D6XP86U_b4i5X0w,2272
+upgrade_knausj/setup.py,sha256=ymOLgqLm4ljSkYj7RVGq0KoMYcRJmnCzwl4FHLZeqpU,3284
+upgrade_knausj/util.py,sha256=wpGIOH5J_4VAU-Jdmn4ktYcIg7X2YvdkWUS1AFvU7-Q,798
+upgrade_knausj-0.3.10.dist-info/entry_points.txt,sha256=fdMW7kR3MWsEhJZ6y7BTU8etTXLkSVIFMP9GU8vIDOc,58
+upgrade_knausj-0.3.10.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+upgrade_knausj-0.3.10.dist-info/METADATA,sha256=M5C6oT20ZQqaRQKjxrIuqigvHC2JRoP5qNYy2FsDH-Y,1220
+upgrade_knausj-0.3.10.dist-info/RECORD,,
