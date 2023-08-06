@@ -1,0 +1,8 @@
+README.txt
+mycalcpkg
+setup.py
+mycalcpkg/__init__.py
+mycalcpkg.egg-info/PKG-INFO
+mycalcpkg.egg-info/SOURCES.txt
+mycalcpkg.egg-info/dependency_links.txt
+mycalcpkg.egg-info/top_level.txt
