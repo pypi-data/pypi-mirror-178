@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+kvrocks_scan.py
+setup.py
+test.py
+kvrocks_scan.egg-info/PKG-INFO
+kvrocks_scan.egg-info/SOURCES.txt
+kvrocks_scan.egg-info/dependency_links.txt
+kvrocks_scan.egg-info/requires.txt
+kvrocks_scan.egg-info/top_level.txt
