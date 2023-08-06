@@ -1,0 +1,9 @@
+psql-to-models/__init__.py,sha256=B52yIdjCKYx6_wC5cyUekuqW4O-JVn4QDVWOa3-ZqQg,52
+psql-to-models/__main__.py,sha256=G1psTEDVr8pL2aICe5tK1lsz2pw5Gw-I1Yzrb-mVCPU,3262
+psql-to-models/column.py,sha256=tBdAACIfUtC7ufRqWHvfOfxkjm0LezsV0gijA47h3UQ,1785
+psql-to-models/table.py,sha256=KUEiLcGAF47_XLXOCoKyqnHqAkIoKtX3PHK6FgBnE6M,2527
+psql-to-models/types.py,sha256=qQTW3kpclklmJ-rXnzaUUDyViFCt_dd00QyEd5riTQ8,448
+psql_to_models-0.1.2.dist-info/LICENSE,sha256=hvej4PEqxQh4D9hbPep_6UQWQJPaySIPTccUnEtSS8Q,1066
+psql_to_models-0.1.2.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+psql_to_models-0.1.2.dist-info/METADATA,sha256=VtlHCrrSarsVJDT5mD07Wm4usScqI9uhsUuE-6-wgGs,5447
+psql_to_models-0.1.2.dist-info/RECORD,,
