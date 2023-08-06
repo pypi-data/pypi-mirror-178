@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+curvipy/__init__.py
+curvipy/_curve.py
+curvipy/_interval.py
+curvipy/_plotter.py
+curvipy/_screen.py
+curvipy/_vector.py
+curvipy.egg-info/PKG-INFO
+curvipy.egg-info/SOURCES.txt
+curvipy.egg-info/dependency_links.txt
+curvipy.egg-info/requires.txt
+curvipy.egg-info/top_level.txt
