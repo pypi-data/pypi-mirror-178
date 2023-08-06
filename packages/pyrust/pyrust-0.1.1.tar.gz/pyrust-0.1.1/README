@@ -1,0 +1,9 @@
+This code implements a small bioinformatics function in Rust, which is invoked from the test Python script.
+
+Dependencies: you should have Rust installed.
+Install with: `pip install pyrust`
+
+
+
+
+

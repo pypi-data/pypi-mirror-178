@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pyrust
+Version: 0.1.1
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Description-Content-Type: text/plain; charset=UTF-8
+
+This code implements a small bioinformatics function in Rust, which is invoked from the test Python script.
+
+Dependencies: you should have Rust installed.
+Install with: `pip install pyrust`
+
+
+
+
+
+
