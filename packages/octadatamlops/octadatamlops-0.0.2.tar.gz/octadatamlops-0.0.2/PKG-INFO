@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: octadatamlops
+Version: 0.0.2
+Summary: A controller to model pipeline
+Home-page: 
+Author: Diego Marcello
+Author-email: diego.marcello.sp@gmail.com
+License: MIT
+Keywords: mlops
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Unix
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+Library to use inside octadata platform
+
+
+Change Log
+==============
+
+0.0.1 (28/11/2022)
+----------------------
+- First release
+
+0.0.2 (28/11/2022)
+----------------------
+- Changing return test

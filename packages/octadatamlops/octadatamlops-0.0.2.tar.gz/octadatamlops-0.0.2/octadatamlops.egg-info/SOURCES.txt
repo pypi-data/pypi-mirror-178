@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+octadatamlops/__init__.py
+octadatamlops/main.py
+octadatamlops.egg-info/PKG-INFO
+octadatamlops.egg-info/SOURCES.txt
+octadatamlops.egg-info/dependency_links.txt
+octadatamlops.egg-info/top_level.txt
