@@ -1,0 +1,11 @@
+earthengine-api
+
+[dev]
+black
+isort
+pytest
+ipykernel
+pytest-cov
+jupyterlab
+twine
+bumpversion
