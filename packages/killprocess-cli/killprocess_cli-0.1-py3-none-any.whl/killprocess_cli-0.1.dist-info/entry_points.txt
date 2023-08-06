@@ -1,0 +1,3 @@
+[console_scripts]
+killprocess = killprocess.__init__:main
+
