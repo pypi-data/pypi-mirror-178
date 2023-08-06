@@ -1,0 +1,6 @@
+setup.py
+superpyscolortex/__init__.py
+superpyscolortext.egg-info/PKG-INFO
+superpyscolortext.egg-info/SOURCES.txt
+superpyscolortext.egg-info/dependency_links.txt
+superpyscolortext.egg-info/top_level.txt
