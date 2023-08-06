@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: simple_dependency_resolver
+Version: 0.1.2
+Summary: Simple text based dependency resolution algorithm
+Home-page: https://gitlab.com/paul_armstrong/simple_dependency_resolver
+Author: Paul Armstrong
+Author-email: parmstrong@gitlab.com
+License: MIT license
+Keywords: simple_dependency_resolver
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Provides-Extra: ci-checks
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+==========================
+Simple Dependency Resolver
+==========================
+
+
+
+
+.. image:: https://gitlab.com/paul_armstrong/simple-dependency-resolver/badges/main/pipeline.svg
+        :target: https://gitlab.com/paul_armstrong/simple-dependency-resolver/-/commits/main
+        :alt: Pipeline Status
+
+.. image:: https://gitlab.com/paul_armstrong/simple-dependency-resolver/badges/main/coverage.svg
+        :target: https://gitlab.com/paul_armstrong/simple-dependency-resolver/-/commits/main
+        :alt: Coverage report
+
+.. image:: https://gitlab.com/paul_armstrong/simple-dependency-resolver/-/badges/release.svg
+        :target: https://gitlab.com/paul_armstrong/simple-dependency-resolver/-/releases
+        :alt: Latest Release
+
+.. image:: https://gitlab.com/paul_armstrong/simple-dependency-resolver/-/badges/main/pipeline.svg
+        :target: https://paul_armstrong.gitlab.io/simple-dependency-resolver
+        :alt: Documentation
+
+
+
+Simple text based dependency resolution algorithm
+
+
+* Free software: MIT license
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `gitlab-data/cookiecutter-pypackage`_, which was forked from the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://gitlab.com/audreyr/cookiecutter
+.. _gitlab-data/cookiecutter-pypackage: https://gitlab.com/gitlab-data/cookiecutter-pypackage
+.. _`audreyr/cookiecutter-pypackage`: https://gitlab.com/audreyr/cookiecutter-pypackage
+
+
+
+=======
+History
+=======
+
+0.1.0 (2022-10-10)
+------------------
+
+* First release on PyPI.
+
+
