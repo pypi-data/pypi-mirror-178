@@ -1,0 +1,14 @@
+pysh/__init__.py,sha256=Fp1lkUm7_Euc_-r6y8HTcULLvO6gZbS3XB3rTH_11H8,369
+pysh/__main__.py,sha256=FCWYWEYo_iKiPs4D7-v8dkX003lPxCcBxCmxWhs8cj8,607
+pysh/command.py,sha256=HBMLYp_A-4JXLUNA8SCyrCq7SsTieQihZyWXLejJLZs,685
+pysh/file.py,sha256=qYiD58HxjBAlK2fLrqYkktb6YP8yU4ZFOrZ2i15ZF7U,1620
+pysh/interpreter.py,sha256=IFbIeDZCPjDL_3eS8LwWSpKO7wDnOI0DNSo2GbWBxJk,512
+pysh/path.py,sha256=bUIcgHGw39sgMsfyjCAnoJkaHCV8ov69JXkTiIAfwWc,5930
+pysh/query.py,sha256=n9WN6DbYXyFgXS8rYPIkufva5bY3FX6BOBUS6Za5FvA,2111
+pysh/utils.py,sha256=515O38CUggvRwcsR8ckcjnp55rMa6VH6vSp-mDBaOpo,8453
+pysh/zipper.py,sha256=ad6ZJwOUsYixZvt8GkR1zceaJUiqg7mdPE6eeTNJUzo,2758
+tc_pysh-0.4.1.dist-info/METADATA,sha256=I7BNoiAjXaniBct92nSQ8nCy1B-oN52e28e1HuKacMw,1964
+tc_pysh-0.4.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+tc_pysh-0.4.1.dist-info/entry_points.txt,sha256=lpvLA_0f-dTihygB2zTUUlCpS3v61Anjo-w3wF3wDnc,44
+tc_pysh-0.4.1.dist-info/top_level.txt,sha256=i4meo5tRHLLP183SQpyTSkQ8e8xndHs0udpkiRpVyxY,5
+tc_pysh-0.4.1.dist-info/RECORD,,
