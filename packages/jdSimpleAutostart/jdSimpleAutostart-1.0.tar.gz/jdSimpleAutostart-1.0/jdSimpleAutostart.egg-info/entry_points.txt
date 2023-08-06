@@ -1,0 +1,2 @@
+[console_scripts]
+jdsimpleautostart = jdSimpleAutostart:main

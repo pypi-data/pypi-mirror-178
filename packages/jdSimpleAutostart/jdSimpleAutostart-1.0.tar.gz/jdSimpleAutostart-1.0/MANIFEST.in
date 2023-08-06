@@ -1,0 +1,3 @@
+include jdSimpleAutostart/translations/*.qm
+include jdSimpleAutostart/Icon.svg
+include jdSimpleAutostart/*.ui
