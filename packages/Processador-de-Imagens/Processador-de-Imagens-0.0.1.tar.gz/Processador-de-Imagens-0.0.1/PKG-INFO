@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: Processador-de-Imagens
+Version: 0.0.1
+Summary: Pacote de processamento de imagem usando Skimage
+Home-page: https://github.com/leoalvessantana/BootCamp-Dio-Geracao-Tech-Unimed-BH-ciencia-de-dados/tree/main/1.Python%20para%20Cientista%20de%20Dados
+Author: Leonardo Santana
+Author-email: leonardoalvs12@gmail.com
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# PROCESSADOR DE IMAGEM
+
+Description. 
+The package package_name is used to:
+Processing:
+	- Histogram  matching
+	- Structural similarity
+	- Resize image
+
+Utils: 
+	- Read image
+	- Save image
+	- Plot image
+	- Plot result
+	- Plot histogram
+	-
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package_name
+
+```bash
+pip install package_name
+```
+
+## Usage
+
+```python
+from package_name.module1_name import file1_name
+file1_name.my_function()
+```
+
+## Author
+Leonardo Santana
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
