@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: xkcdrandom
+Version: 0.0.2
+Project-URL: Documentation, https://github.com/patrickarmengol/xkcdrandom#readme
+Project-URL: Issues, https://github.com/patrickarmengol/xkcdrandom/issues
+Project-URL: Source, https://github.com/patrickarmengol/xkcdrandom
+Author-email: Patrick Armengol <patrickarmengol@protonmail.com>
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# xkcdrandom
+
+[![PyPI - Version](https://img.shields.io/pypi/v/xkcdrandom.svg)](https://pypi.org/project/xkcdrandom)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/xkcdrandom.svg)](https://pypi.org/project/xkcdrandom)
+
+-----
+
+**Table of Contents**
+
+- [About](#about)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+
+## About
+
+A random number generator made in accordance with https://xkcd.com/221/.
+
+This is really just a test project to help me understand Python packaging and distribution with [Hatch](https://hatch.pypa.io/latest/)
+
+## Installation
+
+```console
+pip install xkcdrandom
+```
+
+## Usage
+
+```
+import xkcdrandom
+
+num = xkcdrandom.get_random_number()
+```
+
+
+## License
+
+`xkcdrandom` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
