@@ -1,0 +1,198 @@
+1) Components of time series:
+
+->arrangement of data according to its time of occurence is called time series
+->a time series depicts the relationship between 2 variables where one variable is time and the other is any quantifiable data. the relationship can either be incremementing or decrementing.
+
+a. Trend:
+-> Trends show the general tendency of data to increase or decrease over a period of time, usually over a yeaar.
+-> it is a smooth, general, longterm, averagae tendency
+->although the tendencies may increase, decrease, or remain stable during different parts of the trend period, the overall trend either upwards or downwards or stable.
+-> eg. Trends of social media from FB to Insta to Tiktok
+
+b. Seasonality:
+-> Rhythmic forces that operate in a periodic manner over a span of less than a year.
+->these variations occur due to natural or man-made forces.
+-> eg. increase in sales of umbrellas during monsoon
+
+c. Cyclic:
+-> variations in time series which operate themselves over a span of more than one year.
+->one complete period is a cycle
+-> eg.inflation cycle
+
+d. Randomness:
+->random fluctuations that are unpredictable and erratic like earthquakes, wars, floods, etc
+-> termed as white noise
+
+################
+
+2) Time series analysis and its assumptions:
+
+Time series analysis is a specific way of analyzing a sequence of data points collected over an interval of time. In time series analysis, analysts record data points at consistent intervals over a set period of time rather than just recording the data points intermittently or randomly. However, this type of analysis is not merely the act of collecting data over time. 
+
+What sets time series data apart from other data is that the analysis can show how variables change over time. In other words, time is a crucial variable because it shows how the data adjusts over the course of the data points as well as the final results. It provides an additional source of information and a set order of dependencies between the data. 
+
+Time series analysis typically requires a large number of data points to ensure consistency and reliability. An extensive data set ensures you have a representative sample size and that analysis can cut through noisy data. It also ensures that any trends or patterns discovered are not outliers and can account for seasonal variance. Additionally, time series data can be used for forecasting—predicting future data based on historical data.
+
+Time series analysis helps organizations understand the underlying causes of trends or systemic patterns over time. Using data visualizations, business users can see seasonal trends and dig deeper into why these trends occur. When organizations analyze data over consistent intervals, they can also use time series forecasting to predict the likelihood of future events. 
+
+-> Assumptions:
+
+- linearity: follows linearity of equation, parameters must be linera
+-mean is 0 and variance is constant
+-non-collinearity: variable should not be collinearly related
+-homoscedasticity: variance of error should be constant
+-no serial correlation
+-data should be random
+-exogeneity: to test the independency of X variable (is it actually independent?) and dependency of y variable
+
+###############
+
+3. Stationarity:
+
+A time series has stationarity if a shift in time doesn’t cause a change in the shape of the distribution. Basic properties of the distribution like the mean , variance and covariance are constant over time. 
+
+In the most intuitive sense, stationarity means that the statistical properties of a process generating a time series do not change over time. It does not mean that the series does not change over time, just that the way it changes does not itself change over time.
+
+Stationarity is necessary because stationary data is simple to analyze. Most forecasting methods assume that a distribution has stationarity. For example, autocovariance and autocorrelations rely on the assumption of stationarity. An absence of stationarity can cause unexpected or bizarre behaviors, like t-ratios not following a t-distribution or high r-squared values assigned to variables that aren’t correlated at all.
+
+                    Xt-1, Xt, Xt+1: time changes, variable remains same
+
+-> Strong stationarity: probabilty distribution and joint distribution remain same throughout the series. 
+              time series: Xt= Xt1, Xt2,.. Xtn
+		lag time series: Xt-k = Xt1-k, Xt2-k... Xtn-k. prob dist of Xt and Xt-k is same
+
+-> weak stationarity: constant man and variance through time. covariance depends on lag factor (k)
+		xt -> Xt+k
+		present time has moved by lag factor k
+
+
+
+#######
+
+4. Gaussian markov theorem
+
+The Gauss-Markov theorem states that if your linear regression model satisfies the first six classical assumptions, then ordinary least squares (OLS) regression produces unbiased estimates that have the smallest variance of all possible linear estimators.
+
+ the critical point is that when you satisfy the classical assumptions, you can be confident that you are obtaining the best possible coefficient estimates. The Gauss-Markov theorem does not state that these are just the best possible estimates for the OLS procedure, but the best possible estimates for any  linear model estimator.
+
+it states that OLS is BLUE: Best Linear Unbiased Estimator
+
+In this context, the definition of “best” refers to the minimum variance or the narrowest sampling distribution. More specifically, when your model satisfies the assumptions, OLS coefficient estimates follow the tightest possible sampling distribution of unbiased estimates compared to other linear estimation methods.
+
+There are five Gauss Markov assumptions (also called conditions):
+
+Linearity: the parameters we are estimating using the OLS method must be themselves linear.
+Random: our data must have been randomly sampled from the population.
+Non-Collinearity: the regressors being calculated aren’t perfectly correlated with each other.
+Exogeneity: the regressors aren’t correlated with the error term.
+Homoscedasticity: no matter what the values of our regressors might be, the error of the variance is constant.
+
+#############
+
+5. Homoscedasticity vs Heteroscedasticity:
+
+Homoscedasticity essentially means ‘same variance' and is an important concept in linear regression.
+
+Homoscedasticity describes how the error term (the noise or disturbance between independent and dependent variables) is the same across the values of the independent variables. So, in homoscedasticity, the residual term is constant across observations, i.e., the variance is constant. In simple terms, as the value of the dependent variable changes, the error term does not vary much.
+
+In contrast, heteroscedasticity occurs when the size of the error term differs across the independent variable’s value. Heteroscedasticity may lead to inaccurate inferences and occurs when the standard deviations of a predicted variable, monitored across different values of an independent variable, are non-constant. 
+
+Heteroscedasticity is an issue for linear regression because ordinary least squares (OLS) regression assumes that residuals have constant variance (homoscedasticity).
+
+Heteroscedasticity doesn’t create bias, but it means the results of a regression analysis become hard to trust. More specifically, while heteroscedasticity increases the variance of the regression coefficient estimates, the regression model itself fails to pick up on this. Homoscedasticity and heteroscedasticity form a scale; as one increases, the other decreases. 
+
+########### 
+
+6. Exogeneous and endogeneous variables:
+
+An exogenous variable is a variable that is not affected by other variables in the system. For example, take a simple causal system like farming. Variables like weather, farmer skill, pests, and availability of seed are all exogenous to crop production. The term “Exogenous variable” is almost exclusively used in econometrics. However, it is sometimes used in linear regression to describe the independent variable x in the model. In other words, an exogenous variable is one that isn’t affected by any other variables in the model 
+
+An endogenous variable is a variable in a statistical model that's changed or determined by its relationship with other variables within the model. In other words, an endogenous variable is synonymous with a dependent variable, meaning it correlates with other factors within the system being studied. Therefore, its values may be determined by other variables.
+
+Endogenous variables are the opposite of exogenous variables, which are independent variables or outside forces. Exogenous variables can have an impact on endogenous factors, however.
+Endogenous variables are important in econometrics and economic modeling because they show whether a variable causes a particular effect. Economists employ causal modeling to explain outcomes by analyzing dependent variables based on a variety of factors. For example, in a model studying supply and demand, the price of a good is an endogenous factor because the price can be changed by the producer (supplier) in response to consumer demand.
+
+In contrast to endogenous variables, exogenous variables are considered independent. In other words, one variable within the formula doesn't dictate or directly correlate to a change in another. Exogenous variables have no direct or formulaic relationship. For example, personal income and color preference, rainfall and gas prices, education obtained and favorite flower would all be considered exogenous factors.
+
+
+########################
+
+7. Steps for time series modelling:
+
+1. Plotting data and identifying unusual patterns
+2. remove any trends by differencing
+3. Check for stationarity: ADF/DF/KPSS
+4.Repeat differencing and checking for stationarity till data is stationary
+5.Plot PACF and ACF graphs. Givs order of MA and AR, that is, Q and P respectively
+6.Try different combinations of orders, then select a model. Apart from this, choose model with lowest AIC.
+7. Check residuals: should be white noise(non-correlated, mean 0, variance constant)
+8.Observe and calculate the forecast
+
+############
+
+8.Choose values of p,d,q in arma model:
+
+->perform test for stationarity
+->if ts is stationary (d=0)  try to find arma model
+->if ts is not stationary, perform next order of differencing and note value of d
+-> plot ACF( q: MA) / PACF (r: AR) model
+
+###########3
+
+9. White noise:
+
+ time series may be white noise.
+
+A time series is white noise if the variables are independent and identically distributed with a mean of zero.
+
+This means that all variables have the same variance (sigma^2) and each value has a zero correlation with all other values in the series.
+
+If the variables in the series are drawn from a Gaussian distribution, the series is called Gaussian white noise
+
+The concept of white noise is essential for time series analysis and forecasting. In the most simple words, white noise tells you if you should further optimize the model or not.
+
+White noise is a series that’s not predictable, as it’s a sequence of random numbers. If you build a model and its residuals (the difference between predicted and actual) values look like white noise, then you know you did everything to make the model as good as possible. On the opposite side, there’s a better model for your dataset if there are visible patterns in the residuals.
+
+The following conditions must be satisfied for a time series to be classified as white noise:
+
+The average value (mean) is zero
+Standard deviation is constant — it doesn’t change over time
+The correlation between time series and its lagged version is not significant
+
+###################
+
+10. Random walk
+
+A time series said to follow a random walk if the first differences (difference from one observation to the next observation) are random.
+
+Note that in a random walk model, the time series itself is not random, however, the first differences of time series are random (the differences changes from one period to the next).
+
+A random walk model for a time series Xt can be written as XT = Xt-1 + et
+
+The transformed time series:
+
+Forecast the future trends to aid in decision making
+If time series follows random walk, the original series offers little or no insights
+May need to analyze first differenced time series
+
+###################
+
+11. Linear Regression/AR MODEL:
+
+-> Linear regression is a statistical model that allows to explain a dependent variable y based on variation in one or multiple independent variables (denoted x). It does this based on linear relationships between the independent and dependent variables.
+
+An autoregressive (AR) model forecasts future behavior based on past behavior data. This type of analysis is used when there is a correlation between the time series values and their preceding and succeeding values.
+
+Autoregressive modeling uses only past data to predict future behavior. Linear regression is carried out on the data from the current series based on one or more past values of the same series.
+
+AR models are linear regression models where the outcome variable (Y) at some point of time is directly related to the predictor variable (X). In AR models, Y depends on X and previous values for Y, which is different from simple linear regression
+
+
+
+
+
+
+
+
+
+

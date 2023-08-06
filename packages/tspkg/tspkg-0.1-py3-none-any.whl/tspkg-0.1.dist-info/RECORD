@@ -1,0 +1,11 @@
+tspkg/ARCH_AIC.txt,sha256=3UlPktau7seyRN0RIBVR9oPgBVSrfPmqBXL86J1LVuA,5956
+tspkg/Intro.txt,sha256=ZU4ejdSScwEgxyApPdCxAoAnQRQuMIGzO9VOfkDzX2Y,13513
+tspkg/TS_code.txt,sha256=hAzmwP72I5cI9E_8Q1hhYcAclXMtDFmg55GB5ttSH7U,3319
+tspkg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tspkg/codepack.py,sha256=HnkScF6MBEQ7gzlct0g4hisAYnTj3-uDkJH7KZn-6xU,1112
+tspkg/models.txt,sha256=rqYR87hsvFg-milT1JV2CbvONCNI0S2G9t2bPGO4C44,5719
+tspkg/tests_plots.txt,sha256=BzB-XmeQUr8Yu6G5FiqSJPj18xs9i0IGfTCV4bw8ECw,6205
+tspkg-0.1.dist-info/METADATA,sha256=jkBQ5oLrv6HLMH-ugW09wTgXq3idia0If1gay49smis,520
+tspkg-0.1.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+tspkg-0.1.dist-info/licenses/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+tspkg-0.1.dist-info/RECORD,,

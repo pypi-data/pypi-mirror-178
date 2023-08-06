@@ -1,0 +1,173 @@
+1) Autoregressive Conditional Heteroscedasticity Model (ARCH)
+
+-> a variance model applicable in financial modelling
+-> it is used to analyse volatility to forecast future volatilities in data
+->shows periods/clusters of high volatility followed by low vol OR low volatility followed by low vol
+-> dynamic in nature, i.e, respond to changes in dataset
+-> ARCH is used due to the failure of AR/ARIMA/SARIMA to incorporate heteroscedasticity or volatility with respect to time.
+-> Error term is homoscedastic
+
+->Application: useful when considering risk of holding an asset over different time periods
+
+->Components of ARCH model:
+
+i. autoregressive: current value can be expressed as function of past values. current values are correlated with past values.
+
+ii. conditional: variance depends on past values
+
+iii. Heteroscedasticity: non-constant volatility at different time periods
+
+-> Volatility:
+- numeric measure of uncertainty and depends on volume of changes
+-volatility cannot be observed directly (unlike trend, which can be viewed as a graph)
+-volatility keeps evolving continuously
+
+-> less dispersed data makes it easier to capture variance
+
+-> relationship b/w variance and volatility: (draw diagram)
+- variance: spread of data around the mean
+-volatility: bounding the variance by a soecific period of time
+
+->Equations: combines equations of mean and variance
+
+i. variance:
+ 
+ Var (Yt/Yt-1) = alpha0 + alpha1(Et^2-1) (variance of Yt given that Yt-1 has occured)
+Thus, sigma^2 = alpha0 + alpha1(Et^2-1)
+
+where sigma t = conditional variance (dependent on past values of error terms)
+alpha0 and alpha1 are parameters
+alpha0= constant
+alpha1= coeffecient of error of previous term.
+Et^2-1= squared value of error of previous term
+
+ii. Mean: 
+
+Xt = Mt + Et
+
+where Xt= independent variables
+	Et= error term
+	Mt= mean,i.e, function of past values of error terms. This function is time dependent
+
+- Mt is not stationory
+-Et has no autocorrelation
+
+-> Thus, apply ARMA-ARCH model when mean is dependent on time and volatility exists in model
+
+->Steps:
+-model variables using ARMA model
+-apply ARCH model to the variance that is caused by unexpected shocks
+
+
+-> ARCH Model 3 equation 2 equation setup:
+
+-> 3 equation:
+
+Xt = Mt + Et
+
+MT = c + phi1(Mt-1)
+
+sigma^2 t = alpha0 + alpha1(Et^2-1)
+
+
+-> 2- equation:
+
+Xt= C0 + phi1(MT-1) + Et
+
+sigma^2 t = alpha0 + alpha1(Et^2-1)
+
+
+#####################################
+
+2. Generalized Autoregressive Conditional Heteroscedasticity Model (GARCH)
+
+-> GARCH is an extension of ARCH that includes MA component along with AR component
+
+-> statistical model for time series where variance of error term is serially correlated
+
+-> GARCH assumes that variance of error term follows ARMA process
+
+-> GARCH model is used when variance of error term is not constant, i.e, it is heteroscedastic
+
+-> whenever there is heteroscedasticity, observations do not conform to a linear pattern. instead, they tend to cluster.
+
+-> Garch model has conditional heteroscedasticity and the reason for this is because Error term follows ARMA process pattern,i.e, it is a function of average of its own past values
+
+-> GARCH model sinclude lag variance terms and lag residual error from a mean process
+
+-> GARCH (p,q)
+p : AR process or ARCH term. gives lag variance (Yt-1, Yt-2)
+q: MA process or GARCH term. gives past Et^2 values
+
+-> Incorporation of MA model allows GARCH to model both conditional change in variance over time, changes in time dependent variance
+
+-> Equations: 
+
+Xt = Mt + Et
+
+MT = c + phi1(Mt-1).. Phin(Mt-n)
+
+variance is not constant, i.e follows heteroscedasticity.
+
+Thus, 
+
+
+sigma^2 t = alpha0+ summation from i=1 to p alphai(Et^2-i)+ summation from j=1 to q betaj(sigma t^2-j)
+
+where 0 <= variance <= 1
+
+-> ARCH model usually fails for higher models, hence use GARCH
+
+-> In GARCH (p,q) model for conditional variance, forecast depends on : weighted sum of past square residuals, past variance forecasts
+
+########################
+
+
+3. Akaike information Criteria
+
+-> Statistical criteria used to compare the quality of statistical models (AR,MA,ARIMA,SARIMA)
+
+-> For example, you might be interested in what variables contribute to low socioeconomic status and how the variables contribute to that status. Let’s say you create several regression models for various factors like education, family size, or disability status; The AIC will take each model and rank them from best to worst. The “best” model will be the one that neither under-fits nor over-fits.
+
+Although the AIC will choose the best model from a set, it won’t say anything about absolute quality. In other words, if all of your models are poor, it will choose the best of a bad bunch. 
+
+-> Assumptions:
+
+-Same data to be used between models
+-Measure same outcome variable between models
+-Sample size should be infinite
+
+-> Formula:
+
+AIC = -2ln(L) + 2K
+
+L -> likelihood of data, K-> no. of parameters.
+
+-> High MLE gives low AIC
+-> Low MLE gives high AIC
+-> observations with lowest value of AIC is chosen
+
+-> AIC is used when we have to decide between multiple models, or between seasonalities of SARIMA models
+
+->Advantages:
+-If AIC conditions are fulfilled then model will not be nested
+-AIC helps compare vast number of different models
+
+->Disadvantages:
+-AIC become inaccurate for small data
+-AIC does not give absolute best quality
+
+-> Condition when AIC fails/ becomes inaccurate:
+
+( No. of datapoints n ) /( No of parameters K) < 40
+
+-> to cover disadvantage of AIC, we add correction term to AIC
+
+-> Correction term AICC:
+AICc should be used instead AIC when sample size is small in comparison to the number of estimated parameters
+
+AICC = AIC + [2K(k+1)]/(n-k-1)
+
+-> Simplified AICC after using residual sum of squares:
+
+AICC = 2k+n .ln(RSS/n) + 2k(k+1)/(n-k-1)

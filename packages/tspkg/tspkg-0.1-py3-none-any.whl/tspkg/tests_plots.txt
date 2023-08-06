@@ -1,0 +1,126 @@
+Test for stationarity:
+
+1) Dickey Fuller test : also called unit root test
+
+-> DF test, or a unit root test tests whether a time series is not stationary and consists of a unit root in time series analysis. The presence of a unit root in time series defines the null hypothesis, and the alternative hypothesis defines time series as stationary.
+
+-> Assumptions:
+- heteroscedastic: systematic change in variance of error terms across independent variables X
+-AR models should have parameters (lags affecting time series)
+-no autocorrelation in white noise
+
+-> Hypthesis:
+
+- Null: either rho = 1 or delta = 0
+	unit root exists, TS is not stationary
+
+-Alternate: rho < 1 and delta < 0
+		unit root does not exist, TS is stationary
+
+-> Advantage: useful for test of stationarity
+
+-> Disadvantage: Test is not very powerful and introducing lags may fail the test
+
+-> Rejection Criteria:
+
+- if Tcalc > Tcritical, Reject null hypo, accept alternate hypo. TS is stationary
+- if Tcalc < Tcritical, accept null hypo, Ts is non stationary and unit root exists
+
+-> Equation : Xt  = rho Xt-1 + Et where Et is iid N(0,sigma)
+		subtract Xt-1 on both sides
+		final equation: change in Xt = (delta).(Xt-1) +Et where delta = Rho-1
+		delta is the only time dependednt variable and thus determines stationarity
+
+########
+
+2. ADF:
+
+-> ADF is a test for stationarity
+->The Augmented Dickey-Fuller test can be used with serial correlation. The ADF test can handle more complex models than the Dickey-Fuller test, and it is also more powerful. That said, it should be used with caution because—like most unit root tests—it has a relatively high Type I error rate.
+
+
+-> Assumptions:
+- heteroscedastic: systematic change in variance of error terms across independent variables X
+-AR models should have parameters (lags affecting time series)
+-no autocorrelation in white noise
+
+-> Hypthesis:
+
+- Null: either rho = 1 or delta = 0
+	unit root exists, TS is not stationary
+
+-Alternate: rho < 1 and delta < 0
+		unit root does not exist, TS is stationary
+
+
+-> Equation : Yt  = rho Yt-1 + Et where Et is iid N(0,sigma)
+		subtract tt-1 on both sides
+		final equation: change in Yt = (delta).(Yt-1) +Et where delta = Rho-1
+		delta is the only time dependednt variable and thus determines stationarity
+		add constant alpha to the equation
+
+-> Decision making criteria: p-value<0.05
+
+-> Advantages: can be used with serial correlation. can handle more complex models, more powerful than DF.
+
+-> Disadvantages: low statistical power in distinguishing between unit root and near unit root
+
+################
+
+3. Diff bw ADF/DF
+
+-> ADF is an extension of DF
+-> it removes autocorrelation from time series and then tests similar to DF. Hence, ADF can be used on autocorrelated data, unlike DF. 
+-> ADF is used on more complex data. it uses a negative t-statistic. More complex data, higher possibility of stationarity
+
+###########
+
+4. Autocorrelation Function (for MA)
+
+Autocorrelation is the correlation between two values in a time series. In other words, the time series data correlate with themselves—hence, the name. We talk about these correlations using the term lags. Analysts record time-series data by measuring a characteristic at evenly spaced intervals—such as daily, monthly, or yearly. The number of intervals between the two observations is the lag. For example, the lag between the current and previous observation is one. If you go back one more interval, the lag is two, and so on. The autocorrelation function (ACF) assesses the correlation between observations in a time series for a set of lags.
+
+-> At lag 0, Autocorrelation coefficient is always 1 because of absence of any past values.
+
+-> for non-stationary time series, the autocorrelation is high for small lags and gradually decreases with increase in lags.
+
+-> High spikes at every small lag interval. the further you move away from lag 0, the smaller the spikes get, but never touches X-axis.
+
+->ACF plotting will not show any significant ACF coefficient for white noise, it will be random.
+
+-> ACF plot can be used to estimate order q of MA model.
+
+-> MA model of order 1: Yt = C + Et + phi1(Et-1) (draw ACF graph for order 1)
+
+-> MA model of order 2: Yt = C + Et + phi1(Et-1)+ phi2(Et-2) (draw ACF graph for order 1)
+
+-> Thus, for order q, there are q number of significant lags
+
+
+##############
+
+4. PACF (for AR)
+
+The partial autocorrelation function is similar to the ACF except that it displays only the correlation between two observations that the shorter lags between those observations do not explain. For example, the partial autocorrelation for lag 3 is only the correlation that lags 1 and 2 do not explain. In other words, the partial correlation for each lag is the unique correlation between those two observations after partialling out the intervening correlations.
+
+ the autocorrelation function helps assess the properties of a time series. In contrast, the partial autocorrelation function (PACF) is more useful during the specification process for an autoregressive model. Analysts use partial autocorrelation plots to specify regression models with time series data and Auto Regressive Integrated Moving Average (ARIMA) models.
+
+-> Plotting PACF for MA model will give too many significant values which is useless for decision making
+
+-> AR model of order 1: Yt = C + Et + phi1(Yt-1) (draw PACF graph for order 1)
+
+-> AR model of order 2: Yt = C + Et + phi1(Yt-1)+ phi2(Yt-2) (draw PACF graph for order 1)
+
+-> PACF gives correlation between present value of time series and residual value of previous lag
+
+-> first plot ACF, then PACF graphs. if neither gives signiicant values, it is most likely ARMA
+
+-> For ARMA, choose the model of combinations with lowest AIC
+
+		AR(q)                            MA(q)                        ARMA(p,q)
+
+ACF: model has geometric drop                  sudden drop (q)                geometric drop
+
+PACF: sudden drop gives valueof order P         geometric drop                  geometric drop
+
+-> p and q are the significant features, parameters that affect our time series
+
