@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "calnexus"
+version = "0.1.0"
+description = ""
+authors = ["krushna Panchvishe <krushnap@cdac.in>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^1.5.1"
+numpy = "^1.23.4"
+streamlit = "^1.14.1"
+abydos = "^0.5.0"
+
+
+[[tool.poetry.source]]
+name = "nexus_pypi"
+url = "http://192.168.181.139:8081/repository/pypi-all/simple"
+default = false
+secondary = false
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
