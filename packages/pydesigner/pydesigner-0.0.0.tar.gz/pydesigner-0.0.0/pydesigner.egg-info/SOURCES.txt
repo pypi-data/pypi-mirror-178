@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+pydesigner/__init__.py
+pydesigner/__main__.py
+pydesigner.egg-info/PKG-INFO
+pydesigner.egg-info/SOURCES.txt
+pydesigner.egg-info/dependency_links.txt
+pydesigner.egg-info/requires.txt
+pydesigner.egg-info/top_level.txt

@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pydesigner
+Version: 0.0.0
+Summary: opened,freed,designer
+Home-page: https://github.com/liuzimin/pydesigner
+Author: liuzimin
+Author-email: 737210395@qq.com
+License: MIT
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Description-Content-Type: text/markdown
+License-File: LICENSE
