@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+shell2http.py
+shell2http.egg-info/PKG-INFO
+shell2http.egg-info/SOURCES.txt
+shell2http.egg-info/dependency_links.txt
+shell2http.egg-info/entry_points.txt
+shell2http.egg-info/top_level.txt
