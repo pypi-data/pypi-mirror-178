@@ -1,0 +1,7 @@
+README.md
+k4sproff.py
+setup.py
+k4sproff.egg-info/PKG-INFO
+k4sproff.egg-info/SOURCES.txt
+k4sproff.egg-info/dependency_links.txt
+k4sproff.egg-info/top_level.txt
