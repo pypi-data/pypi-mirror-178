@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: airthings-exporter
+Version: 0.0.1
+Summary: Prometheus exporter for Airthings devices
+Requires-Dist: prometheus-client (==0.15.0)
+Requires-Dist: requests (==2.28.1)
+
