@@ -1,0 +1,6 @@
+README.md
+setup.py
+excelParse.egg-info/PKG-INFO
+excelParse.egg-info/SOURCES.txt
+excelParse.egg-info/dependency_links.txt
+excelParse.egg-info/top_level.txt
