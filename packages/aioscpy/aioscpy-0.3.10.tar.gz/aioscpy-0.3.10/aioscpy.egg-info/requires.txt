@@ -1,0 +1,8 @@
+aiohttp
+httpx
+anti-header
+w3lib
+parsel
+PyDispatcher
+redis
+anyio
