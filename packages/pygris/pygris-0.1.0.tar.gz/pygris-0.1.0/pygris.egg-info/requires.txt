@@ -1,0 +1,14 @@
+geopandas>=0.9
+fiona
+pandas
+shapely
+requests
+appdirs
+pip
+numpy
+rtree
+
+[explore]
+mapclassify
+ipyleaflet
+folium
