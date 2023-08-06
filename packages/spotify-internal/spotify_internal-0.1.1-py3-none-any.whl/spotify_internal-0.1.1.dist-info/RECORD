@@ -1,0 +1,9 @@
+spotify_internal/__init__.py,sha256=iYmthnP0iHO0Xn7ks9YiZ90yi-5NiVpuBaRSCzG8S3c,178
+spotify_internal/get_colors.py,sha256=K7t9mORN9ICu2BnIgmWI8PDQo7AjMtEwyUZahOK3jdk,1921
+spotify_internal/internal.py,sha256=4zWb216IPgPXP86lh61aKUWE2ub-L3QbqLWb0s7r6fk,6504
+spotify_internal/login.py,sha256=GN8A2K-noQQt1O1WgH52dNSmh7tklfeZ5N40Wn0myI0,1841
+spotify_internal/utils.py,sha256=ErSqesB2zGFyHA5S9BCvlXoTPCLeBchryKLljGvCxPQ,2433
+spotify_internal-0.1.1.dist-info/LICENSE.txt,sha256=T6k81_aakTmkUAz16KpDLYqokmAv7hQNBRBRnaiD4fA,1052
+spotify_internal-0.1.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+spotify_internal-0.1.1.dist-info/METADATA,sha256=6fFQX5PSTTfsfE6H_tr-cmptJU1vIY-8XdhGj_q3eKs,818
+spotify_internal-0.1.1.dist-info/RECORD,,
