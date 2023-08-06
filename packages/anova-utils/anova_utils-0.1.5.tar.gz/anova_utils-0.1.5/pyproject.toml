@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "anova-utils"
+version = "0.1.5"
+description = "Custom utility functions for conducting ANOVAs (or ANCOVAs)."
+authors = ["Marcel Wiechmann <mail@mwiechmann.com>"]
+license = "GNU GENERAL PUBLIC LICENSE v3"
+readme = "README.md"
+packages = [{include = "anova_utils"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^1.5.2"
+scipy = "^1.9.3"
+matplotlib = "^3.6.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
