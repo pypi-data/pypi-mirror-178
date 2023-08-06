@@ -1,0 +1,13 @@
+LICENSE
+README.md
+main.py
+setup.py
+app/__init__.py
+app/asciiclip.py
+app/moby.ttf
+bin/asciiclip.egg-info/PKG-INFO
+bin/asciiclip.egg-info/SOURCES.txt
+bin/asciiclip.egg-info/dependency_links.txt
+bin/asciiclip.egg-info/entry_points.txt
+bin/asciiclip.egg-info/requires.txt
+bin/asciiclip.egg-info/top_level.txt
