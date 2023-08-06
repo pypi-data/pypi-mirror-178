@@ -1,0 +1,16 @@
+asyncpg
+build
+eepackages
+factory-boy
+httpx
+pytest
+pytest-cov
+python-dateutil
+fastapi
+GeoAlchemy2
+psycopg2
+shapely
+SQLAlchemy
+uvicorn
+geojson-pydantic
+geojson

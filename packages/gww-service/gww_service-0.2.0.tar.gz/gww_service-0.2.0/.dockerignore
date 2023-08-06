@@ -1,0 +1,16 @@
+.env
+.vscode
+.pytest_cache
+**/build/*
+gcloud_dist
+junit
+htmlcov
+*.egg-info
+helm
+.gitignore
+.python-version
+*.yaml
+Dockerfile
+Makefile
+README.md
+

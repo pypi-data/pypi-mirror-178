@@ -1,0 +1,35 @@
+# Use postgres/example user/password credentials
+version: '3.1'
+
+services:
+
+  db:
+    # image: postgis/postgis:14-3.2-alpine
+    image: timescale/timescaledb-ha:pg14.2-ts2.6-latest
+    restart: always
+    environment:
+      POSTGRES_USER: testuser
+      POSTGRES_PASSWORD: testpassword
+      POSTGRES_DB: testdb
+      TS_TUNE_MEMORY: 4GB
+      TS_TUNE_NUM_CPUS: 2
+    ports:
+      - 5432:5432
+  
+  api:
+    image: gww-api:0.2.0
+    depends_on:
+      - db
+    environment:
+      PSQL_USER: testuser
+      PSQL_PASSWORD: testpassword
+      PSQL_DB: testdb
+      PSQL_HOST: db
+      EE_SA: dagster-workloads@global-water-watch.iam.gserviceaccount.com
+      EE_PK: /gcloud_dist/privatekey.json
+    volumes:
+      - ./gcloud_dist:/gcloud_dist
+      - ./junit:/code/junit
+      - ./htmlcov:/code/htmlcov
+    ports:
+      - "8080:80"
