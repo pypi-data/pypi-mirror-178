@@ -1,0 +1,7 @@
+include README.rst
+include LICENSE.rst
+include CHANGELOG.rst
+include test_get_chromedriver.py
+
+recursive-include documentation *
+prune documentation/_build

@@ -1,0 +1,2 @@
+[console_scripts]
+get-chromedriver = get_chromedriver:run_cli
