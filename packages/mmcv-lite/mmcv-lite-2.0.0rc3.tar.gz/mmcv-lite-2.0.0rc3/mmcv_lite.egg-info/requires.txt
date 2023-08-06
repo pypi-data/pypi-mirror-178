@@ -1,0 +1,67 @@
+addict
+mmengine
+numpy
+packaging
+Pillow
+pyyaml
+yapf
+opencv-python>=3
+
+[:sys_platform == "win32"]
+regex
+
+[all]
+pytest-runner
+ninja
+psutil
+addict
+mmengine
+numpy
+packaging
+Pillow
+pyyaml
+yapf
+coverage
+lmdb
+onnxruntime>=1.8.0
+protobuf~=3.19.0
+pytest
+PyTurboJPEG
+scipy
+tifffile
+
+[all:python_version < "3.7"]
+onnx<1.12.0
+onnxoptimizer<0.3.0
+
+[all:python_version >= "3.7"]
+onnx>=1.12.0
+onnxoptimizer>=0.3.0
+
+[all:sys_platform == "win32"]
+regex
+
+[build]
+pytest-runner
+
+[optional]
+ninja
+psutil
+
+[tests]
+coverage
+lmdb
+onnxruntime>=1.8.0
+protobuf~=3.19.0
+pytest
+PyTurboJPEG
+scipy
+tifffile
+
+[tests:python_version < "3.7"]
+onnx<1.12.0
+onnxoptimizer<0.3.0
+
+[tests:python_version >= "3.7"]
+onnx>=1.12.0
+onnxoptimizer>=0.3.0
