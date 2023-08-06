@@ -1,0 +1,18 @@
+Metadata-Version: 1.2
+Name: weibo-scraper
+Version: 1.0.7rc1.dev3
+Summary: UNKNOWN
+Home-page: https://github.com/Xarrow/weibo-scraper
+Author: helixcs
+Author-email: zhangjian12424@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+Description: UNKNOWN
+Keywords: weibo scraper crawl
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6
