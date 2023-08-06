@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "hubspot_etl_pipeline_webserver"
+version = "0.0.5"
+authors = [
+    { name = "Wesley Barros", email = "wesleybarros950@gmail.com" }
+]
+description = "Hubspot ETL webserver."
+readme = "readme.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+dependencies = [
+    "python-dotenv",
+    "flask",
+    "selenium",
+    "pandas",
+    "google-cloud-bigquery",
+    "super-eureka"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/wesley950/glowing-octo-sniffle"
+"Bug Tracker" = "https://github.com/wesley950/glowing-octo-sniffle/issues"
