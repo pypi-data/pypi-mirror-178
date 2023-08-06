@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: sophia-doc
+Version: 0.1.0
+Summary: A python package to automatically generate API documents for Python modules.
+License: MIT
+Author: st1020
+Author-email: stone_1020@qq.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: docstring-parser (>=0.15,<0.16)
