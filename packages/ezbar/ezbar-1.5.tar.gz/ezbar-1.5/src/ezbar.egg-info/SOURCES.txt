@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/ezbar.py
+src/ezbar.egg-info/PKG-INFO
+src/ezbar.egg-info/SOURCES.txt
+src/ezbar.egg-info/dependency_links.txt
+src/ezbar.egg-info/top_level.txt
