@@ -1,0 +1,83 @@
+[tool.poetry]
+name = "fs.dropboxfs"
+version = "0.3.0"
+description = "Pyfilesystem2 implementation for Dropbox"
+authors = ["Rehan Khwaja <rehan@khwaja.name>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "fs"}]
+homepage = "https://github.com/rkhwaja/fs.dropboxfs"
+keywords = ["filesystem", "Pyfilesystem2", "dropbox"]
+classifiers = [
+	"License :: OSI Approved :: MIT License",
+	"Development Status :: 5 - Production/Stable",
+	"Intended Audience :: Developers",
+	"Programming Language :: Python :: 3.8",
+	"Programming Language :: Python :: 3.9",
+	"Programming Language :: Python :: 3.10",
+	"Programming Language :: Python :: 3.11"
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+fs = ">=2.0.10"
+dropbox = ">=11.36.0"
+
+[tool.poetry.dev-dependencies]
+pylint = ">=2.15.6"
+pylint-quotes = ">=0.2.3"
+pytest = ">=7.2.0"
+pyperclip = ">=1.8.2"
+poethepoet = ">=0.16.4"
+
+[tool.poetry.plugins] # Optional super table
+
+[tool.poetry.plugins."fs.opener"]
+"dropbox" = "fs.dropboxfs.opener:DropboxOpener"
+
+[tool.poe.tasks]
+lint = "pylint fs/dropboxfs/ tests/"
+
+[tool.poe.tasks.test]
+shell = """
+pytest || exit 1
+"""
+
+[tool.pylint.master]
+load-plugins = [
+	"pylint_quotes",
+	"pylint.extensions.code_style",
+	"pylint.extensions.confusing_elif",
+	"pylint.extensions.bad_builtin",
+	"pylint.extensions.bad_builtin",
+	# "pylint.extensions.mccabe",
+	"pylint.extensions.check_elif",
+	"pylint.extensions.redefined_variable_type",
+	"pylint.extensions.overlapping_exceptions",
+	"pylint.extensions.empty_comment",
+	"pylint.extensions.set_membership",
+	# "pylint.extensions.while_used",
+	]
+enable="useless-suppression"
+
+[tool.pylint.format]
+indent-string = "\t"
+max-line-length = "200"
+string-quote = "single-avoid-escape"
+
+[tool.pylint.messages_control]
+disable = [
+	"consider-using-assignment-expr",
+	"duplicate-code",
+	"fixme",
+	"invalid-name",
+	"missing-docstring",
+	"too-many-locals",
+	"line-too-long",
+	"logging-fstring-interpolation",
+	"no-name-in-module" # currently has a bunch of false positives on python 3.11
+]
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
