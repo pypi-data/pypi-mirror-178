@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: shell2http
+Version: 2.2
+Summary: Executing shell commands via HTTP server
+Home-page: https://github.com/GitHub30/shell2http
+Author: Tomofumi Inoue
+Author-email: funaox@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/GitHub30/shell2http/issues
+Keywords: shell2http subprocess python
+Platform: any
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Utilities
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+[![Python](https://img.shields.io/pypi/pyversions/shell2http.svg)](https://badge.fury.io/py/shell2http)
+[![PyPI](https://badge.fury.io/py/shell2http.svg)](https://badge.fury.io/py/shell2http)
+
+# shell2http
+HTTP-server to execute shell commands. Designed for development, prototyping or remote control. Settings through two command line arguments, path and shell command. By default bind to :8080. with [shell2udp](https://github.com/GitHub30/shell2udp) it runs with minimal latency.
+
+# Usage
+
+```bash
+shell2http [options] ["shell command" for /] /path "shell command" /path2 "shell command2" ...
+options:
+    -p, --port NNNN : port for http server ( default 8080 )
+```
+
+# Install
+
+```bash
+pip install shell2http
+```
+
+# Examples
+
+## Windows
+
+```powershell
+shell2http 'shutdown -s -t 0'
+```
+
+```powershell
+shell2http 'shutdown -s -t 0' /beep 'echo ^G'
+```
+
+```powershell
+shell2http --port 3306 /beep 'powershell -command [Console]::Beep(440,2000)'
+```
+
+## Linux
+
+```bash
+shell2http 'notify-send Hello root'
+```
+
+
+```bash
+shell2http -p3000 'notify-send Hello root' /path 'canberra-gtk-play -i desktop-login'
+```
+
+```bash
+shell2http -p3000 /path 'canberra-gtk-play -i desktop-login'
+```
+
+```bash
+shell2http /info 'uname -a'
+```
+
+# Acknowledgements
+
+https://github.com/msoap/shell2http
+
+https://github.com/eshaan7/Flask-Shell2HTTP
