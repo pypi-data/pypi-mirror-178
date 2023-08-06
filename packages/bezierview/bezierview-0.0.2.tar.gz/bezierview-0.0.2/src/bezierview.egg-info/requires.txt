@@ -1,0 +1,6 @@
+
+[build]
+tox==3.24.3
+build
+twine
+pylint

@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: bezierview
+Version: 0.0.2
+Summary: bezier curve visualization
+Home-page: https://github.com/MorvanZhou/bezierview
+Author: MorvanZhou
+Author-email: morvanzhou@hotmail.com
+Project-URL: Bug Tracker, https://github.com/MorvanZhou/bezierview/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: build
+License-File: LICENSE
+
+# BezierView
+
+View Bezier Curve transformation by Python.
+
+## Install
+
+```shell
+pip install bezierview
+```
+
+# Play animation
+
+
+```python
+import bezierview
+
+points = [[50, 350], [250, 100], [330, 350], [450, 100]]
+bezierview.animate(points)
+```
+
+![animation](https://github.com/MorvanZhou/bezierview/raw/main/curve.gif)
+
+# View static curve
+
+```python
+import bezierview
+
+points = [[50, 350], [250, 100], [330, 350], [450, 100]]
+bezierview.show(points)
+```
+
+![pic](https://github.com/MorvanZhou/bezierview/raw/main/curve.png)
