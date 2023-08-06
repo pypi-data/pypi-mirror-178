@@ -1,0 +1,3 @@
+[console_scripts]
+callAndAnswer = USRVoiceModem.callAndAnswer:mainspeechToText = USRVoiceModem.speechToText:main
+
