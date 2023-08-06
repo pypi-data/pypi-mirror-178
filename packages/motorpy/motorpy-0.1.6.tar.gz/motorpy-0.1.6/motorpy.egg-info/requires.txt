@@ -1,0 +1,16 @@
+pydantic~=1.9.2
+aiohttp~=3.8.1
+
+[test]
+pytest
+coverage
+flake8
+black
+isort
+pytest-cov
+codecov
+mypy
+gitchangelog
+mkdocs
+pydantic~=1.9.1
+aiohttp~=3.8.1

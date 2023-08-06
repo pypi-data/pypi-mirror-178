@@ -1,0 +1,2 @@
+[console_scripts]
+motorpy = motorpy.__main__:main
