@@ -1,0 +1,1 @@
+This program will get the live price of a stock from yahoo finance. Pass the stock symbol as a parameter in the funciton in all caps.
