@@ -1,0 +1,17 @@
+lovely_numpy/__init__.py,sha256=6paUov6Mdmsl7EJMIi78kS1VBAJeg45LwwRch-A17nw,157
+lovely_numpy/_modidx.py,sha256=GMfhO_-NJJO0CjJVCM982drNhP9NNGeZUHMvAAlNIp8,5974
+lovely_numpy/patch.py,sha256=COxTvYFFGTalhiomAgfEEhIdZAFCB95hwJLhg36wMds,445
+lovely_numpy/repr_chans.py,sha256=JKd7mbztOwc_8hPV87kvdO6DxYtPGhZ5VrkXWNt1Ck8,1393
+lovely_numpy/repr_rgb.py,sha256=ZCQuAJlmFsekCiO3MzIEE9r7nUqewu2Mo4DuAfnSzXA,1582
+lovely_numpy/repr_str.py,sha256=Qc9mvcDmkge3D0cwUeJNOKBD4A3d1kEctemdYCRf1F8,2971
+lovely_numpy/utils/__init__.py,sha256=8DW-_zcw7FkucKa41YHc8d2VGzqmgY4EVQfuwRea8eU,21
+lovely_numpy/utils/colormap.py,sha256=P4nGubL4WBzdewZVgXE1S2FBxQwel5jY4lQOgGLD0Go,2582
+lovely_numpy/utils/pad.py,sha256=zy-ZCGyy-xGyDF7C3tWPdtPsmn0UIDHazQdpqZ--CLg,1452
+lovely_numpy/utils/tile2d.py,sha256=omMJhZBspej2aQX1l0n8JsmySa6Imk_YVFGJXX1weMs,3805
+lovely_numpy/utils/utils.py,sha256=G3rKdZkf4iwu8d-TzsJ6XZF7XwnNrUfkWz_nF-se12Y,4520
+lovely_numpy-0.1.3.dist-info/LICENSE,sha256=FON5-BYqBFZlHYHBW5mOG7Zd8jUu8KZgrpccvv8279g,1071
+lovely_numpy-0.1.3.dist-info/METADATA,sha256=p90xWTkHMveNyyIdTZzrsKs9MqRnEAsdA2bqinl_wdQ,7422
+lovely_numpy-0.1.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+lovely_numpy-0.1.3.dist-info/entry_points.txt,sha256=oCVgmNvP0d9AlHQ1Yf-5W1pQxBXANwtZHGZSWTf1waU,46
+lovely_numpy-0.1.3.dist-info/top_level.txt,sha256=dCCZW65n_QKUHJprPLgt3OtR2zQPvH5e13b-FhChJ00,13
+lovely_numpy-0.1.3.dist-info/RECORD,,
