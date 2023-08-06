@@ -1,0 +1,9 @@
+appstream_python/Collection.py,sha256=JCuxiIVaQRmQMBudBg7CF_40xtPyQT0CtSaAILRZaAE,2631
+appstream_python/Component.py,sha256=3_hKBrvUJnj1GNKpPWd4z0EtzNXpt6j9zV_P7GKU1aU,25878
+appstream_python/StandardConstants.py,sha256=KdHOAMK4M8tZZHYmkUSopUpdJyR1C1m097V9e2sRlzY,1312
+appstream_python/__init__.py,sha256=7EtGXidag724Jx7DNnxoGeq8aHWkV78cvSNgN1lXYyg,85
+appstream_python/version.txt,sha256=w2_bz1ftM0jlnaN77rxcNpaz5FG3_-FvLrtsm17lkWs,4
+appstream_python-0.4.dist-info/METADATA,sha256=j5E6XjuG_DmukSRwG-PKRQ2TFvi7brQlfF0M2Agkrmw,1284
+appstream_python-0.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+appstream_python-0.4.dist-info/top_level.txt,sha256=TEnvfaZcEAhAofLtB0lquKH1fwr9C-9dxpGN405dZiQ,17
+appstream_python-0.4.dist-info/RECORD,,
