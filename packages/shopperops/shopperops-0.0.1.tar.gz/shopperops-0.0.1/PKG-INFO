@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: shopperops
+Version: 0.0.1
+Summary: Package with functions used by Shopper Ops Projects team.
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Author-email: Franz Bernedo <bernedo@uber.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
