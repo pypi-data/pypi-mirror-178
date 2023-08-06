@@ -1,0 +1,2 @@
+[console_scripts]
+pedar = pedar.cli:main

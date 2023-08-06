@@ -1,0 +1,7 @@
+setup.py
+pedar/cli.py
+pedar.egg-info/PKG-INFO
+pedar.egg-info/SOURCES.txt
+pedar.egg-info/dependency_links.txt
+pedar.egg-info/entry_points.txt
+pedar.egg-info/top_level.txt
