@@ -1,0 +1,31 @@
+terkin-micropython-libraries==0.14.0
+esp32-machine-emulator<2
+psutil<6
+requests<3
+click<8
+pyserial==3.5
+gps<4
+Adafruit-Blinka<6,>=5.4.0
+adafruit-circuitpython-busdevice<5
+adafruit-circuitpython-bme280<2.6
+adafruit-circuitpython-ads1x15<2.3
+adafruit-circuitpython-si7021<3.3
+adafruit-circuitpython-bmp280<3.3
+adafruit-circuitpython-ina219<3.5
+
+[lorawan]
+
+[lorawan:python_version <= "3.10"]
+pycrypto<3
+
+[lorawan:python_version >= "3.11"]
+pycryptodome<4
+
+[sbc]
+smbus==1.1.post2
+spidev<4
+rpi-piusv==0.1.0
+gpiozero<2
+
+[vedirect]
+vedirect==2.0.0
