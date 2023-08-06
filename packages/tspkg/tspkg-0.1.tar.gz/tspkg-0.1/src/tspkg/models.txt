@@ -1,0 +1,103 @@
+1. MA MODEL
+
+-> The time period at t is impacted by the unexpected external factors at various slots t-1, t-2, t-3, .., t-k. These unexpected impacts are known as Errors or Residuals. The impact of previous time spots is decided by the coefficient factor phi at that particular period of time. 
+
+-> For example: The price of a share of any particular company X may depend on some company merger that happened overnight or maybe the company resulted in shutdown due to bankruptcy. This kind of model calculates the residuals or errors of past time series and calculates the present or future values in the series in know as Moving Average (MA) model
+
+-> Thus, MA model uses past forecast errors to predict the next point. Works with error terms to make future predictions.
+
+ -> Et-1 is used to predict Yt
+
+-> Yt = Et + summation(j=1, q) of (phi j ). (Et-j)
+
+-> for eg. second order = Yt = Et + phi1(Et-1) + phi2(Et-2)
+
+#######################
+
+2. AR Model
+
+-> The time period at t is impacted by the observation at various slots t-1, t-2, t-3,.., t-k. The impact of previous time spots is decided by the coefficient factor at that particular period of time. 
+-> Example: The price of a share of any particular company X may depend on all the previous share prices in the time series. This kind of model calculates the regression of past time series and calculates the present or future values in the series in know as Auto Regression (AR) model.
+
+-> Thus, AR model uses the previous steps ovservation to predict the next time-stamp value.
+
+		Yt-1 <- Yt <- Yt+1
+
+value of Yt+1 is dependent on Yt
+value of Yt is dependent on Yt-1
+all the terms are correlated with each other
+
+
+-> Yt = C + summation(i=1, p) of (phi j ). (Yt-i) +Et
+
+##############################
+
+3. ARMA Model:
+
+-> This is a model that is combined from the AR and MA models. In this model, the impact of previous lags along with the residuals is considered for forecasting the future values of the time series. Here Phi i represents the coefficients of the AR model and phi j represents the coefficients of the MA model.
+
+-> One of the key features of the ARMA model is that it is parsimonious and redundant in its parameters. That is, an ARMA model will often require fewer parameters than an AR(p) or MA(q) model alone.
+
+
+-> Yt = C + summation(i=1, p) of (phi j ). (Yt-i)  + summation(j=1, q) of (phi j ).(Et-j) + Et
+
+-> ARMA explains relationship of time series with both , the random noise (MA) and past values of itself(AR)
+
+-> p and q are its parameters
+
+####################################
+
+4. ARIMA:
+
+ARIMA is a form of regression analysis that indicates the strength of a dependent variable relative to other changing variables.
+
+The final objective of the model is to predict future time series movement by examining the differences between values in the series instead of through actual values
+
+We know that in order to apply the various models we must in the beginning convert the series into Stationary Time Series. In order to achieve the same, we apply the differencing or Integrated method where we subtract the t-1 value from t values of time series. After applying the first differencing if we are still unable to get the Stationary time series then we again apply the second-order differencing.
+
+The ARIMA model is quite similar to the ARMA model other than the fact that it includes one more factor known as Integrated( I ) i.e. differencing which stands for I in the ARIMA model. So in short ARIMA model is a combination of a number of differences already applied on the model in order to make it stationary, the number of previous lags along with residuals errors in order to forecast future values.
+
+-> disadvantage of differencing: loses out on one datapoint
+
+Yt' = C + summation(i=1, p) of (phi j ). (Yt'-i)  + summation(j=1, q) of (phi j ).(Et-j) + Et
+
+where Yt' is the differenced term
+
+##########################
+
+5. SARIMA:
+
+Autoregressive Integrated Moving Average, or ARIMA, is a forecasting method for univariate time series data.
+
+As its name suggests, it supports both an autoregressive and moving average elements. The integrated element refers to differencing allowing the method to support time series data with a trend.
+
+A problem with ARIMA is that it does not support seasonal data. That is a time series with a repeating cycle.
+
+ARIMA expects data that is either not seasonal or has the seasonal component removed, e.g. seasonally adjusted via methods such as seasonal differencing.
+
+An alternative is to use SARIMA.
+
+Seasonal Autoregressive Integrated Moving Average, SARIMA or Seasonal ARIMA, is an extension of ARIMA that explicitly supports univariate time series data with a seasonal component.
+
+It adds three new hyperparameters to specify the autoregression (AR), differencing (I) and moving average (MA) for the seasonal component of the series, as well as an additional parameter for the period of the seasonality.
+
+Configuring a SARIMA requires selecting hyperparameters for both the trend and seasonal elements of the series.
+
+Trend Elements
+There are three trend elements that require configuration.
+
+They are the same as the ARIMA model; specifically:
+
+p: Trend autoregression order.
+d: Trend difference order.
+q: Trend moving average order.
+
+Seasonal Elements
+There are four seasonal elements that are not part of ARIMA that must be configured; they are:
+
+P: Seasonal autoregressive order.
+D: Seasonal difference order.
+Q: Seasonal moving average order.
+m: The number of time steps for a single seasonal period.
+
+Together, the notation for an SARIMA model is specified as: SARIMA(p,d,q)(P,D,Q)m
