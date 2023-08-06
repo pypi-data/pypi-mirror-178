@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "more-polars"
+version = "0.3.0"
+description = ""
+authors = ["Todd Iverson <Tiverson@winona.edu>"]
+readme = "README.md"
+packages = [{include = "more_polars"}]
+
+[tool.poetry.dependencies]
+python = ">=3.7"
+polars = ">=0.14.26"
+composable = ">=0.5.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
