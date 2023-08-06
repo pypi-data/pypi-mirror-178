@@ -1,0 +1,11 @@
+atwavpy/__init__.py,sha256=krkr-_7f-a25-W6SixOG4UmPVoKn-CqBoFK10mbbCTM,14804
+atwavpy/field.py,sha256=e3r7IW-FtWoaP8nAkMGMj-4ss13_hR-TCwohhoxlb54,3268
+atwavpy/optics.py,sha256=yq4nzKvyofy5cjlGYMbYUzudfVnRHtA35SGZgZllQvQ,894
+atwavpy/plotting.py,sha256=EyLS95skNQu9xNS84z95O_tGJBd0VEpctrWIu86yGGU,1367
+atwavpy/prop.py,sha256=MfvoWi_xNE748x_2pzssdrcTevyCZt2khiEPqI3jCF8,7180
+atwavpy/utilities.py,sha256=OkbBrpksid_Qu4-bgiyAOYc1OP3B1YMATsgxDkDNEm8,577
+atwavpy-0.0.1.dist-info/LICENSE.txt,sha256=2bgcevUR_3nJ_AgrrwxUGGZ8SgIEKkg-na5SbGvedmQ,16893
+atwavpy-0.0.1.dist-info/METADATA,sha256=k5Ws41DFMWdIjwuLWkF18vINgOf_OJXXysMg3CEg2Fo,316
+atwavpy-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+atwavpy-0.0.1.dist-info/top_level.txt,sha256=Z417SS5TtwisqDjzrdIHHzQiMrBpitrRdK6wbD8xfSk,8
+atwavpy-0.0.1.dist-info/RECORD,,
