@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: PowerSchoolPy
+Version: 0.0.5
+Summary: An async library for Powerschool
+Home-page: https://github.com/brianlich/PowerSchoolPy
+Author: Brian Lich
+Author-email: blich29@hotmail.com
+License: MIT license
+Keywords: powerschool,grades,async,client
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PowerSchoolPy
+This is a python wrapper for the PowerSchool API.
