@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "prismlog"
+version = "2.0.0"
+description = "parse logs and make pretty colors"
+authors = ["Tyler F. Carr <tcarwash@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+ansi2html = "^1.8.0"
+
+[tool.poetry.scripts]
+prism = 'prismlog.prismlog:cli'
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
