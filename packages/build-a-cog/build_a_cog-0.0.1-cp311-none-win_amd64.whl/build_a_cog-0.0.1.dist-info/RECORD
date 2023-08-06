@@ -1,0 +1,7 @@
+build_a_cog-0.0.1.dist-info/METADATA,sha256=q5GCbtwAfD2ojSzqC4MJIhWO5p2gCdqZSMqvLt_fvX4,4047
+build_a_cog-0.0.1.dist-info/WHEEL,sha256=WVB15Xyl3IQnLPz8D_-NdntfomoQ45N_GqrYz4gEIMI,96
+build_a_cog-0.0.1.dist-info/license_files/LICENSE,sha256=MU8rCeOCk4TXEN_N3N8uC9WAr8Bx5Tsar-rxJVrsM8Q,1088
+build_a_cog/builder.py,sha256=s1cEi4dugHvKNLjp-DL5oU1H_cN5Pti_KWwOB4uyjVo,1353
+build_a_cog/__init__.py,sha256=KbDXEoHZGaaf14ODF3nP_pju5bnapBcUPn0CbPIR7Vw,51
+build_a_cog/rustycog.cp311-win_amd64.pyd,sha256=32Meje9IghgKs9Opbpo9IB7UD0tpqkSsebqKLQnaI60,369152
+build_a_cog-0.0.1.dist-info/RECORD,,
