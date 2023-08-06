@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: skyant-tools
+Version: 0.0.1
+Summary: Tools for a working with GCP.
+Home-page: https://skyant.dev/projects/tools
+Author: Iurii Tarasenko
+Author-email: info@skyant.dev
+License: MIT
+Project-URL: Source & issues, https://gitlab.com/skyant/python/tools
+Project-URL: Donation, https://buymeacoffee.com/skyantdev
+Project-URL: Project news, https://www.linkedin.com/company/skyantdev
+Project-URL: Talk to us, https://groups.google.com/a/skyant.dev/g/community?label=tools
+Keywords: pydantic,api,rest,GCP
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: google-auth
+Requires-Dist: pyyaml
+Requires-Dist: flask
+Requires-Dist: python-jose
+Requires-Dist: requests
+Requires-Dist: duty
+
+
+# <p align="center" style="text-align:center" >please found the details documentation on the homepage</p>
+
