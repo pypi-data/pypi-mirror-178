@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: videpy
+Version: 0.0.8
+Summary: Tools to handle samples posteriori from Stan (pystan)
+Home-page: https://github.com/rodolpho-progmatica/videpy
+Author: Rodolpho Macedo dos Santos
+Author-email: rodolpho.ime@gmail.com
+License: MIT License
+Keywords: videpy,vide,bayesian,stan,pystan,rethinking
+Description-Content-Type: text/markdown
+
+Useful Bayesian tools to analysis and visualization of the samples. 
