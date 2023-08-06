@@ -1,0 +1,14 @@
+website:
+  sidebar:
+    contents:
+      - index.ipynb
+      - section: 🔎 Tensor representations
+        contents:
+          - 00_repr_str.ipynb
+          - 01_repr_rgb.ipynb
+          - 02_repr_plt.ipynb
+          - 05_repr_chans.ipynb
+      - section: ✨ Misc
+        contents:
+          - 10_patch.ipynb
+          - history.ipynb

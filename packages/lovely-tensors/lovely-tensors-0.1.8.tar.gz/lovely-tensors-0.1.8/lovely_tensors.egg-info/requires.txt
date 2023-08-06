@@ -1,0 +1,10 @@
+pillow
+fastcore
+numpy
+ipython
+lovely-numpy>=0.1.2
+torch
+matplotlib
+
+[dev]
+scipy
