@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+testMarko.egg-info/PKG-INFO
+testMarko.egg-info/SOURCES.txt
+testMarko.egg-info/dependency_links.txt
+testMarko.egg-info/requires.txt
+testMarko.egg-info/top_level.txt
