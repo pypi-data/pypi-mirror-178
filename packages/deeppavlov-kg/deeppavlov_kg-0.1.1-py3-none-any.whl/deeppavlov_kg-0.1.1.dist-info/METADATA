@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: deeppavlov-kg
+Version: 0.1.1
+Author: Daniel Kornev <daniel@kornevs.org>, Rami Mahskouk <rami.n.mashkouk@gmail.com>, Maxim Talimanchuk <mtalimanchuk@gmail.com>
+License-File: LICENSE
+Requires-Dist: neomodel (==4.0.8)
+Requires-Dist: pydantic[dotenv] (==1.9.0)
+Requires-Dist: fabulist (==1.2.0)
+Requires-Dist: mimesis (==5.3.0)
+Requires-Dist: pylint (==2.13.8)
+Requires-Dist: treelib (==1.6.1)
+Requires-Dist: terminusdb-client (==10.2.0)
+
