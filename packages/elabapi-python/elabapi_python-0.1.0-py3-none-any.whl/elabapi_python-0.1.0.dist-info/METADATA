@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: elabapi-python
+Version: 0.1.0
+Summary: eLabFTW REST API v2 Documentation
+Home-page: https://github.com/elabftw/elabapi-python
+Author-email: 
+Keywords: Swagger,eLabFTW REST API v2 Documentation
+Requires-Dist: urllib3 (>=1.15)
+Requires-Dist: six (>=1.10)
+Requires-Dist: certifi
+Requires-Dist: python-dateutil
+
+    Some description of the api.  # noqa: E501
+    
