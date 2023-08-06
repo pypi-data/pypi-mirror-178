@@ -1,0 +1,9 @@
+haxo/__init__.py,sha256=37KgAvZ0OJWSAUU8ZGia3bzji1rzvhFE22LzwXD-3Jg,67
+haxo/completer.py,sha256=iFnBgdGF6oHDOLuOlLBomWCqnGxyeixNQTeYFw6Zqqo,3978
+haxo/console.py,sha256=aWjVvRmtjIGnLcTKDhro9hJz0w9sd7QGAceuBQJCs2I,523
+haxo/repl.py,sha256=asfymlab4fD2R4x5lfmMV2UMzdUjOGLVShn4QmSFdXQ,4766
+haxo-0.1.0.dist-info/entry_points.txt,sha256=T8GeHKl39mnVmi4jNuZEgctJRnim04qHHKb1thEwtzo,41
+haxo-0.1.0.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+haxo-0.1.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+haxo-0.1.0.dist-info/METADATA,sha256=Xmew7hCfHn0zSJtjBI73hIqvQuj3tI1NOKBHKONyipc,769
+haxo-0.1.0.dist-info/RECORD,,
