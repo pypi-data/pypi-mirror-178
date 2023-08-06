@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: chunkdup
+Version: 0.4.0
+Summary: Find (partial content) duplicate files.
+Home-page: https://github.com/xyb/chunkdup
+License: MIT
+Author: Xie Yanbo
+Author-email: xieyanbo@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Desktop Environment :: File Managers
+Classifier: Topic :: Terminals
+Classifier: Topic :: Utilities
+Requires-Dist: chunksum
+Project-URL: Bug Tracker, https://github.com/xyb/chunkdup/issues
+Project-URL: Repository, https://github.com/xyb/chunkdup
+Description-Content-Type: text/markdown
+
+# chunkdup
+
+Find (partial content) duplicate files using [chunksum](https://github.com/xyb/chunksum) outputs.
+
+[![test](https://github.com/xyb/chunkdup/actions/workflows/test.yml/badge.svg)](https://github.com/xyb/chunkdup/actions/workflows/test.yml)
+[![codecov](https://codecov.io/gh/xyb/chunkdup/branch/main/graph/badge.svg?token=TVFUKMLFMX)](https://codecov.io/gh/xyb/chunkdup)
+[![Maintainability](https://api.codeclimate.com/v1/badges/0935f557916da1fdcddb/maintainability)](https://codeclimate.com/github/xyb/chunkdup/maintainability)
+[![Latest version](https://img.shields.io/pypi/v/chunkdup.svg)](https://pypi.org/project/chunkdup/)
+[![Support python versions](https://img.shields.io/pypi/pyversions/chunkdup)](https://pypi.org/project/chunkdup/)
+
+```
+usage: chunkdup [-h] [chunksums1] [chunksums2]
+
+Find (partial content) duplicate files.
+
+positional arguments:
+  chunksums1  path to chunksums
+  chunksums2  path to chunksums
+
+optional arguments:
+  -h, --help  show this help message and exit
+
+Examples:
+
+  $ chunksum dir1/ -f chunksums.dir1
+  $ chunksum dir2/ -f chunksums.dir2
+  $ chunkdup chunksums.dir1 chunksums.dir2
+```
+
+```
+usage: chunkdiff [-h] [-b BAR] [-w BARWIDTH] [-n] [-s CHUNKSUMS]
+                 [file1] [file2]
+
+Show the difference of two files.
+
+positional arguments:
+  file1                 path to file
+  file2                 path to file
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -b BAR, --bar BAR     the style of bar. default: oneline
+  -w BARWIDTH, --barwidth BARWIDTH
+                        the width of bar. default: 40
+  -n, --nocolor         do not colorize output. default: False
+  -s CHUNKSUMS, --chunksums CHUNKSUMS
+                        path to chunksums file
+
+Examples:
+
+  $ chunksum dir1/ -f chunksums.dir1
+  $ chunksum dir2/ -f chunksums.dir2
+
+  $ chunkdiff chunksums.dir1 chunksums.dir2 dir1/file1 dir2/file2
+
+  $ chunkdiff chunksums chunksums ./file1 ./file2
+```
+
