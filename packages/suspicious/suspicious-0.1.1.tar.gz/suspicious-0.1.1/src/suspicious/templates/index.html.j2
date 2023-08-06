@@ -1,0 +1,57 @@
+{# templates/index.html.j2 #}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.4/dist/flowbite.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>sus : {{ file_name }}</title>
+</head>
+
+<body class="bg-zinc-900 text-orange-200 text-xs flex justify-center">
+  <div class="flex flex-col m-4 w-2/3">
+    <div class="">
+      <h1 class="text-lg">wtf am i looking at?</h1>
+      <ul class="list-disc ml-4">
+        <li><span class="font-mono text-stone-500">grey</span> means prediction is the same as the original</li>
+        <li><span class="font-mono text-stone-300">brighter grey</span> means the model had a different prediction but
+          with super low confidence</li>
+        <li><span class="font-mono text-red-300">light red</span> means things are looking a little sus</li>
+        <li><span class="font-mono text-red-500">red</span> means there was a different prediction <b>and</b> confidence
+          was higher</li>
+        <li>in all cases, the model is hallucinating tokens, so obviously, use your judgement</li>
+      </ul>
+    </div>
+    <code id="tokens" class="overflow-auto text-stone-500 text-sm border border-stone-600 rounded-sm p-4 my-4">
+  <div>
+    {%- for token in tokens -%}
+      {%- if token.original == '\n' -%}
+        <br>
+      {%- else -%}
+        <span 
+          data-tooltip-target="tooltip-{{ loop.index }}"
+          class="hover:border-stone-700 border-transparent border cursor-pointer {{ token.text_color }}"
+          >{{- token.original.replace('\t', '&nbsp;&nbsp;').replace(' ', '&nbsp;')  -}}</span><div 
+          id="tooltip-{{ loop.index }}" 
+          role="tooltip" 
+          class="flex flex-col absolute invisible z-10 py-2 px-3 text-sm font-medium font-mono text-white bg-stone-700 rounded-lg shadow-sm opacity-0 transition-opacity duration-100 tooltip">
+            <span class="text-xs text-stone-500">
+              {{- token.probability|round(2) -}}<br>
+            </span>
+            <span style="white-space: pre">
+              {{- token.predicted -}}
+            </span>
+            <div class="tooltip-arrow" data-popper-arrow></div>
+        </div>
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+  </code>
+  </div>
+  <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
+</body>
+
+</html>

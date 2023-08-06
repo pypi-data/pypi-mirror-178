@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/suspicious/__init__.py
+src/suspicious/cli.py
+src/suspicious/render.py
+src/suspicious/sus.py
+src/suspicious.egg-info/PKG-INFO
+src/suspicious.egg-info/SOURCES.txt
+src/suspicious.egg-info/dependency_links.txt
+src/suspicious.egg-info/entry_points.txt
+src/suspicious.egg-info/requires.txt
+src/suspicious.egg-info/top_level.txt
+src/suspicious/templates/index.html.j2
