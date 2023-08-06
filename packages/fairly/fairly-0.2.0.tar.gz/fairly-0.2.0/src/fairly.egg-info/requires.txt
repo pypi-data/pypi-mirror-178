@@ -1,0 +1,10 @@
+ruamel.yaml
+requests_toolbelt
+python-dateutil
+
+[dev]
+pytest
+vcrpy
+pytest-recording
+pytest-cov
+python-dotenv
