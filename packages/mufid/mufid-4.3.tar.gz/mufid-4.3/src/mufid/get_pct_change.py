@@ -1,0 +1,1 @@
+f = lambda a: [100.0 * a1 / a2 - 100 for a1, a2 in zip(a[1:], a)]
