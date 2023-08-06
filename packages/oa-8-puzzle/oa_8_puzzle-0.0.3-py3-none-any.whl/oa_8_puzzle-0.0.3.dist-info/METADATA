@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: oa-8-puzzle
+Version: 0.0.3
+Summary: 8 Puzzle Problem using heuristic and non-heuristic algorithm
+Author: The OA
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Missionaries and Cannibals using BFS and State Space Search
