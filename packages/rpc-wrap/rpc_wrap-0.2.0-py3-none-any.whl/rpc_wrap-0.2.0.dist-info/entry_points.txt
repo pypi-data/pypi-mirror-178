@@ -1,0 +1,6 @@
+[console_scripts]
+rpc-wrap=rpc_wrap.cli:main
+
+[rpc_wrap]
+sample=rpc_wrap.sample:app
+
