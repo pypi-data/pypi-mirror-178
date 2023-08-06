@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools", "wheel", "poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "rcplus_alloy_common"
+version = "0.1.2"
+description = "RC+/Alloy helpers functions for Python"
+readme = "README.md"
+authors = [
+    "Ringier AG <info@rcplus.io>",
+]
+license = "Proprietary"
+repository = "https://github.com/ringier-data/rcplus-alloy-lib-py-common"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+    "Intended Audience :: Developers",
+]
+keywords = ["rcplus", "alloy", "logging", "metrics", "utilities"]
+
+[tool.poetry.dependencies]
+python = ">= 3.8, < 4"
+requests = ">=2.6.1"
+jsonschema = ">=3.0.0"
+python-json-logger = ">=2.0.4"
+logzio-python-handler = ">=4.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = ">=7.2.0"
+bumpsemver = "*"
+
+[tool.pylint]
+max-line-length = 120

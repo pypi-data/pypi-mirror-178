@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: rcplus-alloy-common
+Version: 0.1.2
+Summary: RC+/Alloy helpers functions for Python
+Home-page: https://github.com/ringier-data/rcplus-alloy-lib-py-common
+License: Proprietary
+Keywords: rcplus,alloy,logging,metrics,utilities
+Author: Ringier AG
+Author-email: info@rcplus.io
+Requires-Python: >=3.8,<4
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: Other/Proprietary License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Dist: jsonschema (>=3.0.0)
+Requires-Dist: logzio-python-handler (>=4.0.0)
+Requires-Dist: python-json-logger (>=2.0.4)
+Requires-Dist: requests (>=2.6.1)
+Project-URL: Repository, https://github.com/ringier-data/rcplus-alloy-lib-py-common
+Description-Content-Type: text/markdown
+
+# rcplus-alloy-lib-py-common
+
+![PyPI](https://img.shields.io/pypi/v/rcplus-alloy-common)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/rcplus-alloy-common)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/c215bf6e2fbc4c9fb8230b7c7d237686)](https://www.codacy.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ringier-data/rcplus-alloy-lib-py-common&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Coverage/c215bf6e2fbc4c9fb8230b7c7d237686)](https://www.codacy.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ringier-data/rcplus-alloy-lib-py-common&amp;utm_campaign=Badge_Coverage)
+
+Current version: **v0.1.2**
+
+---
+
+Python utilities for RC+/Alloy. _**NOTE**_: This Python package is published to PyPI.org as publicly available package.
+
+## Install
+
+```bash
+pip install -U rcplus-alloy-common
+```
+
+## Usage
+
+### Structured logging
+
+TODO
+
+### Application metrics
+
+TODO
+
