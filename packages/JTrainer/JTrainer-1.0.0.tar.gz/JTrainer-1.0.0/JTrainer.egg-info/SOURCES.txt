@@ -1,0 +1,9 @@
+license.txt
+setup.py
+JTrainer/Trainer.py
+JTrainer/__init__.py
+JTrainer.egg-info/PKG-INFO
+JTrainer.egg-info/SOURCES.txt
+JTrainer.egg-info/dependency_links.txt
+JTrainer.egg-info/requires.txt
+JTrainer.egg-info/top_level.txt
