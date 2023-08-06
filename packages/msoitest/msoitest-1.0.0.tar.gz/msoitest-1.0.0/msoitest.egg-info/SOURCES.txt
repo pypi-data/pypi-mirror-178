@@ -1,0 +1,8 @@
+README.rst
+setup.py
+msoitest.egg-info/PKG-INFO
+msoitest.egg-info/SOURCES.txt
+msoitest.egg-info/dependency_links.txt
+msoitest.egg-info/top_level.txt
+package_mikezhou_talk/__init__.py
+package_mikezhou_talk/main.py
