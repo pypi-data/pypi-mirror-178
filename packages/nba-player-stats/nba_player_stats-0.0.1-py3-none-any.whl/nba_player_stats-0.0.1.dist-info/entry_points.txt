@@ -1,0 +1,2 @@
+[console_scripts]
+nba = src.get_player_stats:main
