@@ -1,0 +1,3 @@
+[console_scripts]
+main = sort_pack:main
+sort_list = sort_pack.sort_counting:sort_list
