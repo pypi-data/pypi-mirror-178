@@ -1,0 +1,10 @@
+b52/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+b52/app.py,sha256=1ieZ71MAivr194cUTjul4ekX8iXRoN2mBb_nF5mW8Ic,620
+b52/src/config/configLoader.py,sha256=3TRXY6AbO6Bv6VWuuQwDc4rytf2zYTYYkS38PyX_J7g,9354
+b52/src/creator/create.py,sha256=cGfHdySWX2uE1-Di-nGMSJlrkz13GFeTQXcIumCjBqY,1018
+b52/src/parsearg/argparse.py,sha256=7xPp5w9h9UF3rm134z7xmwuLEwkZs738X-TDQkoka3I,372
+b52-0.0.1.dist-info/METADATA,sha256=RBjCo9KiIIa5RI28nYLfe8nB5hrVQ8Vp0bbcHQ3Vzho,52
+b52-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+b52-0.0.1.dist-info/entry_points.txt,sha256=Tr8SJ_1mhFcqJjvXjd3If38FilqLxiIqrqgf7NLzvlg,37
+b52-0.0.1.dist-info/top_level.txt,sha256=M-dsevZ2_QHJ6n_BWTeNSlL5KpgOdzBljLRcSBkDKBM,4
+b52-0.0.1.dist-info/RECORD,,
