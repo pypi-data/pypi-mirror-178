@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: pcomp
+Version: 1.2
+Summary: Possible permutations with repetition - Python Library
+Home-page: https://github.com/For1nator/pcomp
+Author: Antonis Piloridis
+Author-email: antonispiloridis@gmail.com
+License: MIT
+Keywords: combinations
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+A simple library that calculates all possible permutations (with repetition) from an iterator and a length.
+
+Example(hex to binnary)
+
+import pcomp
+
+print (pcomp.area(range(2),4)
+
+#it returns: 16
+
+print (pcomp.pc(range(2),4)
+
+#it returns: [[0, 0, 0, 0], [0, 0, 0, 1], [0, 0, 1, 0], [0, 0, 1, 1], [0, 1, 0, 0], [0, 1, 0, 1], [0, 1, 1, 0], [0, 1, 1, 1], [1, 0, 0, 0], [1, 0, 0, 1], [1, 0, 1, 0], [1, 0, 1, 1], [1, 1, 0, 0], [1, 1, 0, 1], [1, 1, 1, 0], [1, 1, 1, 1]]
+
+#[0]=0,[1]=1 .... [15]=f
+
+Change Log
+==========
+
+1.2 (28/11/2022)
+-----------------
+- Added error exception for invaide arguments
+
+1.1.1 (22/8/2022)
+-----------------
+- combinations --> permutations with repetition (word replacement due to typo) 
+(I might add combinations in the future + repetition True-False) (The package name will remain the same)
+
+- Version 1.0.2 in the changelog was 2 times (typo)
+
+1.1.0 (19/8/2022)
+-----------------
+- New return form
+- The all function has been renamed to pc
+- Better file organization and function syntax
+
+1.0.2 (10/7/2022)
+-----------------
+- Added github
+
+1.0.1 (10/7/2022)
+-----------------
+- Fixed a problem
+
+1.0.0 (10/7/2022)
+-----------------
+- First Release
+
