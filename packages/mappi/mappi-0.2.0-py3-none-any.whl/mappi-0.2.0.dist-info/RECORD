@@ -1,0 +1,15 @@
+mappi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mappi/__main__.py,sha256=Grc3L-VMQTY8k3szsR5hlRgZIP2euHSbF2VZoMZyc0A,64
+mappi/cli.py,sha256=FFMHOqNEQ4LH40og0j0otow-lDYlI28kjupsXPoxhTU,1496
+mappi/config.py,sha256=TeTb_SjyAKHO2Q_YUvUg4P4VgfqOGu4wvVEwmO9E8hE,434
+mappi/data/config-basic.yml,sha256=8ubWd65SAmbgnwyWnJtLhxD3gEN2j2bn7faxm7J7hIA,47
+mappi/data/config-default.yml,sha256=YTYDxfMbXeFIB5vh4m9QfrooPK8_-Urs-YK-cI3x6IQ,44
+mappi/data/config-full.yml,sha256=WhC1mRydrj-hFOHamrE73hZnSQ3PwW-VW1JxuhUvUC4,187
+mappi/handlers.py,sha256=ER0KlNfpuKjbVp27tZZ4gXmDZVXijxGM0f-SQ2ccZAU,2369
+mappi/schema.py,sha256=TRhK-U03wbyx1D9NgIEydrcPgyf6GoAfMx19KhxlHj0,1248
+mappi/server.py,sha256=wIJhFtw4we2-GM2jR8Cztl8xkErnsx4YtPJMRsfAjH8,883
+mappi/utils.py,sha256=SmFYxKFowA-KE-TtbvyzNrWe0CaglgtvWWcOOanpmXo,445
+mappi-0.2.0.dist-info/entry_points.txt,sha256=jK6T06Jrk0NrRNRa2ULntEtCEPisHoProANXUMM9O1s,39
+mappi-0.2.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+mappi-0.2.0.dist-info/METADATA,sha256=parp6O9ECvE_pzqZZVi82JR7mg7GEzqQcN9ZPjCjKuY,1560
+mappi-0.2.0.dist-info/RECORD,,
