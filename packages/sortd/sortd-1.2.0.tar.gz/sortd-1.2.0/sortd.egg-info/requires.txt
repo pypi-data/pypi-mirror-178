@@ -1,0 +1,8 @@
+
+[dev]
+mypy
+types-PyYAML
+types-toml
+
+[dist]
+wheel
