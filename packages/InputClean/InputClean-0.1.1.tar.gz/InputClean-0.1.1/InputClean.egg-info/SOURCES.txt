@@ -1,0 +1,7 @@
+setup.py
+InputClean/InputClean.py
+InputClean/__init__.py
+InputClean.egg-info/PKG-INFO
+InputClean.egg-info/SOURCES.txt
+InputClean.egg-info/dependency_links.txt
+InputClean.egg-info/top_level.txt
