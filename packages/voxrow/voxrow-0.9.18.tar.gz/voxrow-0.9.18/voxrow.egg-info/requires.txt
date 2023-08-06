@@ -1,0 +1,9 @@
+flask
+flask-jwt-extended
+Flask-SQLAlchemy
+Flask-WTF
+cryptography>=3.2.1
+sshtunnel
+
+[postgres]
+psycopg2-binary
