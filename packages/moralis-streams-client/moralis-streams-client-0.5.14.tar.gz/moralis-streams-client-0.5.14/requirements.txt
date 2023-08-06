@@ -1,0 +1,13 @@
+asgi-logger
+click
+pycryptodome
+eth-utils
+FastAPI
+orjson
+psutil
+pydantic
+pyngrok
+requests
+starlette
+toml
+uvicorn
