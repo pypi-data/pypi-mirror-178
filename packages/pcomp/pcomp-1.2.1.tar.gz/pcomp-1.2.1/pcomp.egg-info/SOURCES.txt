@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+pcomp/__init__.py
+pcomp/functions.py
+pcomp.egg-info/PKG-INFO
+pcomp.egg-info/SOURCES.txt
+pcomp.egg-info/dependency_links.txt
+pcomp.egg-info/top_level.txt
