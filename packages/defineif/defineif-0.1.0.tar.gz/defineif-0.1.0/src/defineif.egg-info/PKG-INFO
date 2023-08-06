@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: defineif
+Version: 0.1.0
+Summary: attr: defineif.__description__
+Home-page: https://defineif.hakancelik.dev/
+Author: Hakan Çelik
+Author-email: hakancelikdev@gmail.com
+License: GPL-3.0
+Project-URL: Documentation, https://defineif.hakancelik.dev/
+Project-URL: Issues, https://github.com/hakancelikdev/defineif/issues/
+Project-URL: Changelog, https://defineif.hakancelik.dev/changelog
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: tests
+Provides-Extra: docs
+License-File: LICENSE
+
+# Define If
+
+**If the condition is true, define the method.**
+
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/hakancelikdev/defineif/main.svg)](https://results.pre-commit.ci/latest/github/hakancelikdev/defineif/main)
+[![test](https://github.com/hakancelikdev/defineif/actions/workflows/tests.yml/badge.svg)](https://github.com/hakancelikdev/defineif/actions/workflows/tests.yml)
+[![build-docs](https://github.com/hakancelikdev/defineif/actions/workflows/docs.yml/badge.svg)](https://github.com/hakancelikdev/defineif/actions/workflows/docs.yml)
+[![publish-package-on-pypi](https://github.com/hakancelikdev/defineif/actions/workflows/pypi.yml/badge.svg)](https://github.com/hakancelikdev/defineif/actions/workflows/pypi.yml)
+
+[![Pypi](https://img.shields.io/pypi/v/defineif)](https://pypi.org/project/defineif/)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/defineif)
+[![Downloads](https://static.pepy.tech/personalized-badge/defineif?period=total&units=international_system&left_color=grey&right_color=red&left_text=downloads)](https://pepy.tech/project/defineif)
+[![License](https://img.shields.io/github/license/hakancelikdev/defineif.svg)](https://github.com/hakancelikdev/defineif/blob/main/LICENSE)
+
+[![Forks](https://img.shields.io/github/forks/hakancelikdev/defineif)](https://github.com/hakancelikdev/defineif/fork)
+[![Issues](https://img.shields.io/github/issues/hakancelikdev/defineif)](https://github.com/hakancelikdev/defineif/issues)
+[![Stars](https://img.shields.io/github/stars/hakancelikdev/defineif)](https://github.com/hakancelikdev/defineif/stargazers)
+
+[![Codecov](https://codecov.io/gh/hakancelikdev/defineif/branch/main/graph/badge.svg)](https://codecov.io/gh/hakancelikdev/defineif)
+[![Contributors](https://img.shields.io/github/contributors/hakancelikdev/defineif)](https://github.com/hakancelikdev/defineif/graphs/contributors)
+[![Last Commit](https://img.shields.io/github/last-commit/hakancelikdev/defineif.svg)](https://github.com/hakancelikdev/defineif/commits/main)
+
+For more information see: https://defineif.hakancelik.dev/
+
+## How to install ?
+
+```
+pip install defineif
+```
+
+## How to use it ?
+
+```python
+import os
+
+from defineif import DefineIf
+
+
+class Klass(DefineIf):
+
+    @staticmethod
+    @DefineIf(os.name == 'nt')
+    def get_platform():
+        return 'Windows'
+
+    @staticmethod
+    @DefineIf(os.name == 'posix')
+    def get_platform():
+        return 'Linux'
+
+platform = Klass.get_platform()
+
+print(platform)
+```
