@@ -1,0 +1,15 @@
+scitq/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scitq/client.py,sha256=aWxX2ZM40AGavUdBARliZmTh8GFSZc6fOOhXhtPDJxU,23873
+scitq/default_settings.py,sha256=tnldEm9b2IRjeySm8SVBSR_S9nKXkKhcXqZF79BwYBw,322
+scitq/fetch.py,sha256=5lcqWlYM-WPwky3AHxXez5AevMDLl4DDtfWmJdqDoGU,15830
+scitq/launch.py,sha256=B-Za6_Fy-rB-aW1e02W4TQ7j2IcGUAhAcUd0UvnGXDY,10933
+scitq/lib.py,sha256=GFw7-fRyU8IIp-yzpHNXgHBeT-LPzUKXjvD8NOC086I,21275
+scitq/manage.py,sha256=iKaAgum2keuv1urmQzPxVCrDSY-XTZsaAEyBC_G9HEQ,16772
+scitq/server.py,sha256=mtnTaJd0lnyEATwDRjl0y7YaY8Z-nrmTOevsOJdtTBA,64021
+scitq/util.py,sha256=_K-22lmVGPHECFt1m56PflCyox_RtmfQPkuoeyOex4w,994
+scitq-1.0b2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+scitq-1.0b2.dist-info/METADATA,sha256=zM7XJ2p38i_t6rtfAIO8Oqgpp_nR-bylGf4JanhTecU,11072
+scitq-1.0b2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+scitq-1.0b2.dist-info/entry_points.txt,sha256=S46qBogfikTGhUVESA5t0bfG3TlJQ_Uv034KyYcDm8c,117
+scitq-1.0b2.dist-info/top_level.txt,sha256=V9-Dh5i6eQjy278PAr0FGIlsUOuhMudgL--BtihJDmE,6
+scitq-1.0b2.dist-info/RECORD,,
