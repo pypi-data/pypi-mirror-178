@@ -1,0 +1,15 @@
+python
+pre-commit
+additional dependencies
+update
+utility
+tool
+command
+
+
+- adup
+- cupad
+- cwupad
+- padup
+- upup
+- upadup
