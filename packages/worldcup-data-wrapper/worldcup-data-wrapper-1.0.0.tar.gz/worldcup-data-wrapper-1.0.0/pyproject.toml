@@ -1,0 +1,23 @@
+# pyproject.toml
+
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "worldcup-data-wrapper"
+version = "1.0.0"
+description = "Fetch world cup data"
+readme = "README.md"
+authors = [{ name = "Thiago Lobo", email = "thiagocostalobo@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["world", "cup", "wrapper"]
+dependencies = [
+    "requests >= 2.0.0"
+]
+requires-python = ">=3.9"

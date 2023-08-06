@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+src/worldcup_data/__init__.py
+src/worldcup_data/__main__.py
+src/worldcup_data/client/__init__.py
+src/worldcup_data/client/matches.py
+src/worldcup_data/constants/__init__.py
+src/worldcup_data/constants/constants.py
+src/worldcup_data/domain/__init__.py
+src/worldcup_data/domain/match.py
+src/worldcup_data_wrapper.egg-info/PKG-INFO
+src/worldcup_data_wrapper.egg-info/SOURCES.txt
+src/worldcup_data_wrapper.egg-info/dependency_links.txt
+src/worldcup_data_wrapper.egg-info/requires.txt
+src/worldcup_data_wrapper.egg-info/top_level.txt
