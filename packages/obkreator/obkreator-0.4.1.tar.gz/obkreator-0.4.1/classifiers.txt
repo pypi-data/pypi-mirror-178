@@ -1,0 +1,6 @@
+Programming Language :: Python :: 3
+Development Status :: 3 - Alpha
+Operating System :: OS Independent
+Intended Audience :: Science/Research
+Topic :: Scientific/Engineering :: Astronomy
+License :: Public Domain

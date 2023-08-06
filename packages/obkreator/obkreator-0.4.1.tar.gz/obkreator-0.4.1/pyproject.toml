@@ -1,0 +1,27 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools>=45"]
+
+[project]
+name = "obkreator"
+description = "Observing block creator for ESO/2.2m telescope"
+readme = "README.md"
+requires-python = ">= 3.9"
+authors = [
+    {name = "Régis Lachaume", email = "regis.lachaume@gmail.com"}
+]
+license = {file = "LICENSE.txt"} 
+dynamic = ["version", "dependencies", "classifiers"]
+
+[project.scripts]
+mkfrsob = "obkreator.feros:mkfrsobs"
+mkwfob = "obkreator.wfi:mkwfobs"
+mkgrndob = "obkreator.grond:mkgrndobs"
+
+[project.urls]
+Source = "https://github.com/loqueelvientoajuarez/obkreator"
+
+[tool.setuptools.dynamic]
+version = {attr = "obkreator.__version__"}
+dependencies = {file = ["requirements.txt"]}
+classifiers = {file = ["classifiers.txt"]}
