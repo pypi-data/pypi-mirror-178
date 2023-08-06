@@ -1,0 +1,11 @@
+numpy
+pandas
+pyqtgraph
+pyyaml
+torch
+torchvision
+qtextras
+scikit-learn
+
+[train]
+pytorch-lightning>=1.4
