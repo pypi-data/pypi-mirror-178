@@ -1,0 +1,12 @@
+lda_over_time/__about__.py,sha256=irNxfAqdTermGq8Xh6Ylrc3nxC6R5744EtmbyG9GDLU,136
+lda_over_time/__init__.py,sha256=rgAJoD2G5xsSXH-03f1GVDGOvBwhfwC4Jm8rg9NXirI,114
+lda_over_time/lda_over_time.py,sha256=D8O6sIyjdIJ9perf5fpAQxqJjXRSax_O7P10ymn2orE,10364
+lda_over_time/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lda_over_time/models/dtm_model_interface.py,sha256=hB3OBcBbgWWff6KzXv6wkYQsjwfp_x-Up8urHgydIwo,3271
+lda_over_time/models/lda_seq_model.py,sha256=fs3HctVVjcd0u85fH44JsxfPJWblZVPCmQY05mMttb8,9584
+lda_over_time/models/temporal_lda_model.py,sha256=miuTnroh6bsR9vRQGlQzSkHeT7ohZLTSzXQqW7Z4Nkw,16663
+lda_over_time-0.2.0.dist-info/METADATA,sha256=9xPOryRmKjHlgKUsquqlga06EuP5R-5z8L6W0qbHD0w,2245
+lda_over_time-0.2.0.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+lda_over_time-0.2.0.dist-info/licenses/COPYING,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+lda_over_time-0.2.0.dist-info/licenses/COPYING.LESSER,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+lda_over_time-0.2.0.dist-info/RECORD,,
