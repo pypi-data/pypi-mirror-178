@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: palign
+Version: 1.0.0b1
+Summary: Pillow text alignment helper
+Home-page: https://github.com/cariad/palign
+Author: Cariad Eccleston
+Author-email: cariad@cariad.earth
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: nvalues (==1.0.0b6)
+Requires-Dist: pillow (~=9.3)
+
+# Palign
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=568773253)
+
+![Demonstration](https://github.com/cariad/palign/blob/main/demo.png)
+
+## Installation
+
+Palign requires Python 3.9 or later.
+
+```console
+pip install palign
+```
+
+## Licenses
+
+**Palign** is &copy; 2022 Cariad Eccleston and released under the [MIT License](https://github.com/cariad/palign/blob/main/LICENSE).
+
+**Chelsea Market** is copyright &copy; 2011 Font Diner and redistributed under the [SIL Open Font License 1.1](https://github.com/cariad/palign/blob/main/tests/font/OFL.txt).
