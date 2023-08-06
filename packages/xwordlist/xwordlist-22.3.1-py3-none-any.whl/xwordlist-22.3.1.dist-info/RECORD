@@ -1,0 +1,11 @@
+xwordlist/__init__.py,sha256=FOaQebT0S4_Uw0g8xn75k-XmX1ux_prd_z1w_fcGwi0,80
+xwordlist/sites/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xwordlist/sites/songlyrics.py,sha256=xtiKKUBxXZpouF55TNAij90txenE4rtIYC0JzaiPNd0,213
+xwordlist/xwl.py,sha256=Zz5f6g9nXjb47QwOd8oIPK7fPMTgPQvZbgFKq46yYA0,8089
+xwordlist/xwlconfig.py,sha256=BDjMnZ-uqrvlsQ9ZCTbP_ncBwvKE3WS6rH551YgY7Nk,1955
+xwordlist/xwordlist.py,sha256=D0X5mcpMr02DL-UJ6zuBbVtEjwuPP_MbQ1flun56fiU,14077
+xwordlist-22.3.1.dist-info/entry_points.txt,sha256=f6_A9ct-8Ng4ptnAyW5YDXgMo_4qv9wtYhUE9utf36E,83
+xwordlist-22.3.1.dist-info/LICENSE,sha256=Lj72QfAX4w5hz1lFKttlBxEDwvlGHJ4a5h8OodXvt4w,1069
+xwordlist-22.3.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+xwordlist-22.3.1.dist-info/METADATA,sha256=Xu2xkk6UMFsyAFhlQK4tTDsUdNay25LkkCddj2lMED4,6882
+xwordlist-22.3.1.dist-info/RECORD,,
