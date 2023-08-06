@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/pynimate/__init__.py
+src/pynimate/bar.py
+src/pynimate/datafier.py
+src/pynimate/utils.py
+src/pynimate.egg-info/PKG-INFO
+src/pynimate.egg-info/SOURCES.txt
+src/pynimate.egg-info/dependency_links.txt
+src/pynimate.egg-info/requires.txt
+src/pynimate.egg-info/top_level.txt
