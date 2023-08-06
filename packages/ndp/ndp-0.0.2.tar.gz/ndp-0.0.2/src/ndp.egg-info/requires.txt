@@ -1,0 +1,14 @@
+numpy
+matplotlib
+jupyterlab
+
+[build]
+build
+twine
+
+[test]
+black
+mypy
+flake8
+pytest
+coverage

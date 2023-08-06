@@ -1,0 +1,75 @@
+[project]
+name = "ndp"
+version = "0.0.2"
+description = "A python tool for reducing neutron depth profiling measurements"
+authors = [
+    {name = "Jamie Weaver", email="jamie.weaver@nist.gov"},
+    {name = "Ronald Jones", email="ronald.jones@nist.gov"},
+    {name = "Tyler Martin", email="tyler.martin@nist.gov"},
+]
+license = {file = "LICENSE"}
+readme = "README.md"
+requires-python = ">=3.9" #3.9 needed for importlib.resources
+
+keywords = ["materials science", "neutron", "physics", "measurement"]
+
+classifiers = [
+		'Development Status :: 4 - Beta',
+		'Intended Audience :: Science/Research',
+		'License :: Freely Distributable',
+		'License :: Freeware',
+		'License :: Public Domain',
+		'Natural Language :: English',
+		'Operating System :: MacOS',
+		'Operating System :: Microsoft',
+		'Operating System :: Unix',
+		'Programming Language :: Python',
+		'Programming Language :: Python :: 3.9',
+		'Programming Language :: Python :: 3.10',
+		'Programming Language :: Python :: 3.11',
+		'Topic :: Scientific/Engineering',
+		'Topic :: Scientific/Engineering :: Chemistry',
+		'Topic :: Scientific/Engineering :: Physics',
+]
+
+# Requirements: This is done differently by poetry!
+dependencies = [
+    "numpy",
+    "matplotlib",
+    "jupyterlab",
+]
+
+[project.optional-dependencies]
+test = [
+  "black",
+  "mypy",
+  "flake8",
+  "pytest",
+  "coverage",
+  ]
+
+build = [
+  "build",
+  "twine",
+  ]
+
+[project.urls]
+homepage = "https://github.com/martintb/ndp"
+repository = "https://github.com/martintb/ndp"
+
+[build-system]
+requires =[
+    "setuptools",
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+# By default, include-package-data is true in pyproject.toml, so you do
+# NOT have to specify this line.
+include-package-data = true
+
+[tool.setuptools.packages.find]
+# scanning for namespace packages is true by default in pyproject.toml, so
+# you need NOT include the following line.
+namespaces = true
+where = ["src"]
