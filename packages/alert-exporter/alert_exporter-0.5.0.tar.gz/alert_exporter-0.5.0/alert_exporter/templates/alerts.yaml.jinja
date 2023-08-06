@@ -1,0 +1,44 @@
+---
+{% if alerts.cloudwatch -%}
+cloudwatch:
+{%- for alert in alerts.cloudwatch %}
+    - name: {{ alert.name }}
+      description: {{ alert.description }}
+      type: {{ alert.type }}
+      region: {{ alert.region }}
+      rule: {{ alert.rule }}
+{%- endfor %}
+{%- endif -%}
+{% if alerts.pingdom -%}
+pingdom:
+{%- for check in alerts.pingdom %}
+    - url: {{ check.url }}
+      threshold: {{ check.responsetime_threshold }}
+      paused: {{ check.paused }}
+      name: {{ check.name }}
+      type: {{ check.type.keys()|first }}
+      tags:
+        {%- for tag in check.tags %}
+        - {{ tag }}
+        {%- endfor %}
+{%- endfor %}
+{%- endif -%}
+{% if alerts.prometheus -%}
+prometheus:
+{%- for alert in alerts.prometheus %}
+    - name: {{ alert.name }}
+      promRuleName: {{ alert.promRuleName }}
+      summary: "{{ alert.summary|replace('"', '\\"') }}"
+      description: "{{ alert.description|replace("\n", " ")|replace('"', '\\"') }}"
+      for: {{ alert.for }}
+      expr: "{{ alert.expr|replace("\n", " ")|replace('"', '\\"') }}"
+      severity: {{ alert.severity }}
+      runbook: {{ alert.runbook }}
+{%- endfor %}
+{%- endif -%}
+{% if alerts['Blackbox Exporter'] %}
+blackbox_exporter:
+{%- for url in alerts['Blackbox Exporter'] %}
+    - url: {{ url }}
+{%- endfor %}
+{% endif %}
