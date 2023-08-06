@@ -1,0 +1,7 @@
+traces
+numexpr
+loguru
+scipy
+
+[dev]
+pytest
