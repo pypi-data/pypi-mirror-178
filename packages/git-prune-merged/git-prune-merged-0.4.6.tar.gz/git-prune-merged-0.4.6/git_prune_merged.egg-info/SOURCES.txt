@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+git_prune_merged.egg-info/PKG-INFO
+git_prune_merged.egg-info/SOURCES.txt
+git_prune_merged.egg-info/dependency_links.txt
+git_prune_merged.egg-info/entry_points.txt
+git_prune_merged.egg-info/requires.txt
+git_prune_merged.egg-info/top_level.txt
+src/__init__.py
+src/__main__.py
+src/config.py
+src/exceptions.py
+src/list.py
+src/main.py
+src/prune.py
