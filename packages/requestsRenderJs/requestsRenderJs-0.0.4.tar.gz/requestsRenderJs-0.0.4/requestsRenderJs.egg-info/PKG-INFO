@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: requestsRenderJs
+Version: 0.0.4
+Summary: Render JS for dynamic Websites for Web Scraping
+Home-page: UNKNOWN
+Author: Ghulam Mustafa
+Author-email: ghulammustafapy@gmail.com
+License: UNKNOWN
+Keywords: python,web scraping,requests_HTML,python render js,selenium,webdriver
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
