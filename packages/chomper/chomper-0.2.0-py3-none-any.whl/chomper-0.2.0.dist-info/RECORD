@@ -1,0 +1,15 @@
+chomper/__init__.py,sha256=gq1FdEegBEG4UJMF5yoV-5Z8d0Xulx50j274mTuF7HE,49
+chomper/arch.py,sha256=f30PjT4kL0xfdRba31c3pHmb9ffiOVePVNNnUlUftzs,1643
+chomper/const.py,sha256=0aagw0ya0g9vCW8C6w_bQVdKm94BAxHTRG_TlN9AZRM,668
+chomper/core.py,sha256=rwyZC8hg0UODcANMuoZOjUg_NU0v4kSlLQuY1HaR7Tw,22431
+chomper/exceptions.py,sha256=z2N1gZyHpN4OIf1cFEhPG-S_EknAGVzGWlxSnkC9C2A,183
+chomper/hooks.py,sha256=GKj8g-bDJNXEEomqOgAPP_-Qel9RoIz_96oaFiJK5Yc,2332
+chomper/log.py,sha256=hEwp4bVAggKr-RfBD2f_YXJU_X98muf1KlZqhoFjObs,437
+chomper/memory.py,sha256=aFY3cvhKER-C6GDyDToq7NJJPDdWsvsaPIHo1Fms8b0,2725
+chomper/structs.py,sha256=MIHb-4Zq7eusNjAx7i0P9_Cgo7xVGBpY7RWJwWMQRyM,1083
+chomper/utils.py,sha256=GSXqzEyr0OzMQ4LR53OHeV62EOepLX0lxMRk2fVk2GQ,108
+chomper-0.2.0.dist-info/LICENSE,sha256=uaPr8Vrs46AE_dD7sgp8OceqnwdFczT6qfL1iLWuv74,1061
+chomper-0.2.0.dist-info/METADATA,sha256=hLFkJRhwxoHVW6hoLDnEhE_j_iFavQLqpO79bLa42Yk,3099
+chomper-0.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+chomper-0.2.0.dist-info/top_level.txt,sha256=9Oj49TkcuLDgaADidJ3mGWJ4fcWFszXKk7J2zl5FLug,8
+chomper-0.2.0.dist-info/RECORD,,
