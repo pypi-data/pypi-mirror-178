@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+src/remanage.egg-info/PKG-INFO
+src/remanage.egg-info/SOURCES.txt
+src/remanage.egg-info/dependency_links.txt
+src/remanage.egg-info/requires.txt
+src/remanage.egg-info/top_level.txt
