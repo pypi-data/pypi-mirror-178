@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+proclean/__init__.py
+proclean/update.py
+proclean.egg-info/PKG-INFO
+proclean.egg-info/SOURCES.txt
+proclean.egg-info/dependency_links.txt
+proclean.egg-info/top_level.txt
