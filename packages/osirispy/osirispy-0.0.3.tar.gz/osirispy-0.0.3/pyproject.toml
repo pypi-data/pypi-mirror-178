@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "osirispy"
+version = "0.0.3"
+authors = [
+  { name="Miguel Pardal", email="pardalmiguel@hotmail.com" },
+]
+description = "A small package to read OSIRIS HDF5 Data in python"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies=["numpy>=1.23.2","h5py>=3.7.0"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/pardallio/plots"
+"Bug Tracker" = "https://github.com/pardallio/plots/issues"
