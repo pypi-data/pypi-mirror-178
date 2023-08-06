@@ -1,0 +1,8 @@
+orsvm/__init__.py,sha256=jLBDT2OTgajnFL8uV8lgw4lmwaTnbEvVslw-nk3pTEI,102
+orsvm/kernels.py,sha256=Oec6z41Vqcr7L1vFbNRKQqQhhFoCqumuhxZNl6lsRwU,16815
+orsvm/orsvm.py,sha256=swNKWVToxgktRnRga2Uqp30BeZroiIg0hse-XMD2zs0,45885
+orsvm-1.0.5.dist-info/LICENSE.txt,sha256=zIrK-KHovwZ0EN_Hzubgi8S45Qr35c-A8NA0vFNeGAI,1068
+orsvm-1.0.5.dist-info/METADATA,sha256=4M-YbrSHbomRWg7lhZmkHsji3XcqEeD2Q2iV55vweRc,2873
+orsvm-1.0.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+orsvm-1.0.5.dist-info/top_level.txt,sha256=mKr98uDNvN9_B4w7gLafIZOAu-rDiR2ekTFdsPtLY-U,6
+orsvm-1.0.5.dist-info/RECORD,,
