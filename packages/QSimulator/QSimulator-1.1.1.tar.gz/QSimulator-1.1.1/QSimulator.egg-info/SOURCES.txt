@@ -1,0 +1,11 @@
+README.md
+setup.py
+QSimulator/Functions.py
+QSimulator/Polarizer.py
+QSimulator/Qubit.py
+QSimulator/__init__.py
+QSimulator.egg-info/PKG-INFO
+QSimulator.egg-info/SOURCES.txt
+QSimulator.egg-info/dependency_links.txt
+QSimulator.egg-info/requires.txt
+QSimulator.egg-info/top_level.txt
