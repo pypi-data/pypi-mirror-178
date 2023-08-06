@@ -1,0 +1,11 @@
+stevedore
+sh
+clickactions
+filelock
+pyyaml
+docker
+GitPython
+
+[build]
+build
+twine
