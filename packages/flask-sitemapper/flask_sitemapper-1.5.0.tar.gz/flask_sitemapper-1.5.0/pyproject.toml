@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "flask-sitemapper"
+version = "1.5.0"
+description = "Flask extension for generating XML sitemaps"
+authors = ["h-janes <dev@hjanes.com>"]
+license = "MIT"
+readme = "README.md"
+keywords = ["python3", "flask", "sitemap", "xml"]
+classifiers=[
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Framework :: Flask",
+    "Operating System :: OS Independent",
+]
+packages = [{include = "flask_sitemapper"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+flask = "^2.2.2"
+jinja2 = "^3.1.2"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.10.0"
+isort = "^5.10.1"
+pytest = "^7.2.0"
+
+[tool.black]
+line-length = 99
+
+[tool.isort]
+profile = "black"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
