@@ -1,0 +1,15 @@
+{
+  "editor.formatOnSave": true,
+  "python.formatting.provider": "black",
+  "python.linting.pylintArgs": [
+    "--load-plugins",
+    "--enable=W0614",
+    "--enable= W0611"
+  ],
+  "python.linting.flake8Enabled": true,
+  "files.exclude": {
+    ".venv": true,
+    "**/__pycache__": true
+  },
+  "editor.tabSize": 4
+}
