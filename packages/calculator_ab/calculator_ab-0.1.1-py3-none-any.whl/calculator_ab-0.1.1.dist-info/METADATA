@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: calculator_ab
+Version: 0.1.1
+Summary: A calculator.
+Author-email: Andrius_B <andrius@b.org>
+Requires-Python: >=3.7
