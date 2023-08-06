@@ -1,0 +1,14 @@
+wspyserial/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wspyserial/__main__.py,sha256=A1oqJxX_D88SW41YbsaV39GGpN-2vnwQ-67uEwwZwcs,1487
+wspyserial/client.py,sha256=et95dU_5Scpp-rSIklLhi8-OKArT_XOJUlG1gu0P3_g,5120
+wspyserial/config.toml,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wspyserial/device.py,sha256=SIu8aB-Hc_pvU_JOEWuQCoBGrSFbJEtXwVKL7UsXFtg,3314
+wspyserial/gcode.py,sha256=OcMAvgrDk99bh8YKLF_W7dXaTO0vZnAbITpH2y-ZAtg,348
+wspyserial/protocol.py,sha256=tHS_SyiOZMPGffqryFztoC8rmK_UfsmbJb6yr2Uz-J8,3526
+wspyserial/server.py,sha256=aD1nAhlTfiJqWIHXwOKaK5b6GsFLebm2OzCdCPp_xqw,2722
+wspyserial-1.1.0.dist-info/LICENSE,sha256=uzosPqjiztrdCW7H8YmcCJ7Za-KjX6wtXDZvls9OYqE,1086
+wspyserial-1.1.0.dist-info/METADATA,sha256=0tEApGSQwp5-4uYfiKC2bdqsOVkz0DGuJzCmm9hTDBM,4493
+wspyserial-1.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+wspyserial-1.1.0.dist-info/entry_points.txt,sha256=KAIUDK6Zy9wJxBdMqau5weSvbW-AXWey8Vn9iKmoa1M,56
+wspyserial-1.1.0.dist-info/top_level.txt,sha256=gpS7HEEx9eKpPVgGKCDNVWlhATWKx3I69ylwAuPny1U,11
+wspyserial-1.1.0.dist-info/RECORD,,
