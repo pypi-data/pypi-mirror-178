@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: vis-package
+Version: 1.0.16
+Summary: method of VIS 2022, update 12h38 9/11/2022
+Author: Hieu_black
+Author-email: tranxuanhieuhust@gmail.com
+Keywords: vis
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+
