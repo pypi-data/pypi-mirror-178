@@ -1,0 +1,7 @@
+more_polars/__init__.py,sha256=UCA6gPNf6_Wze7J66b4fdcpdcn6i5weCqP-I9eqayFw,79
+more_polars/column_expr.py,sha256=N0TSIze04yZQexMhXGuq7f8Twf7iucfVf14uHHJvYxk,7412
+more_polars/column_helpers.py,sha256=ggxdK5pEtIzjooM2ChwMzi_PG8OlQdd7IV81laKF11w,9774
+more_polars/more_polars.py,sha256=id4x5JrzwT2x78xMEU8z_5cAKUyQCtr1gewlkTJBJQw,1449
+more_polars-0.3.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+more_polars-0.3.0.dist-info/METADATA,sha256=9a7F77NjQ0C6t3xAscyua2MyzS0pQhnMQO6pt_xqjXw,555
+more_polars-0.3.0.dist-info/RECORD,,
