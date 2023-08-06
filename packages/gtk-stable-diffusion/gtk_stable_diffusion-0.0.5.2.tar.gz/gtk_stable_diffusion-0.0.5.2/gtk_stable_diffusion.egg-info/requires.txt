@@ -1,0 +1,8 @@
+pycairo
+PyGObject
+torch
+diffusers
+numpy
+xformers
+libtorrent
+omegaconf
