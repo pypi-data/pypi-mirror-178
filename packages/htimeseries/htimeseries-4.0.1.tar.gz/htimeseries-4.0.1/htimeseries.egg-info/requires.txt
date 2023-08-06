@@ -1,0 +1,7 @@
+pandas<2,>=0.20
+iso8601
+textbisect
+tzdata
+
+[:python_version < "3.9"]
+backports.zoneinfo
