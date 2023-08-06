@@ -1,0 +1,10 @@
+aiomigrator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aiomigrator/commands.py,sha256=9XyOsTmuu6Prye9TDdlCusmhFkRO9qMl6Tpj6Y8F7Ew,126
+aiomigrator/main.py,sha256=mVNZUIbmOKa4VyOQpNYOJT6D7AvAh9x-X9VpUfMa80o,7504
+aiomigrator/queries.py,sha256=-28D2tlG0bdSK9hF2TvFqTBTLRi3Fw8VSa7owzl2Ark,812
+aiomigrator/templates.py,sha256=7fxIfhFp9MiqsdlQyXAV0Hbp4xD5ANOzYHN9Mk0DLJ0,314
+aiomigrator-0.1.0.dist-info/LICENSE,sha256=cpv2aE0vAntkgQtVGjVvpkAfgOjmCJk6QhiQt5AerBY,1057
+aiomigrator-0.1.0.dist-info/METADATA,sha256=sGnM7G6kQHl1JrWYrgy7Da3aF_Qhz0t_SWkYJXMWM8s,624
+aiomigrator-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+aiomigrator-0.1.0.dist-info/top_level.txt,sha256=DX3VTSoO1lsvzRj8nwToZhdoa63C145KK8KRDQoQnAs,12
+aiomigrator-0.1.0.dist-info/RECORD,,
