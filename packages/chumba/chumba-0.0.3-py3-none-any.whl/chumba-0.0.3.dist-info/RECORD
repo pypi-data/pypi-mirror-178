@@ -1,0 +1,11 @@
+src/__init__.py,sha256=208TZmY4DjDqV48HfDSKDu7Ut2x5LxPNf5UqM-cwoEo,95
+src/parss.py,sha256=paRoSXbqQM_HcQpswr_Rk4pHJXtSvjr4VOPVWg_YT8Q,301
+src/statistic.py,sha256=RJLET8DSaK_ECGxOqlnI92Pt8pEl3IHvbjG0chyc6WY,3892
+src/utils.py,sha256=bgcst7H9VzdxzlwsRDRrUavE-QzL1ncQc70q5_lKuFs,1910
+src/word.py,sha256=J5AjQFIFOrypZpUby3yv_ZEazQ33e0GTOtT-H2_dlnA,5439
+src/words.py,sha256=8xOakDuOUOwra3x87SxXtMUgDAjXbZSSALdqHQk81Jk,1636
+chumba-0.0.3.dist-info/LICENSE,sha256=qkQgb2ZLCKJD-lOoLi4aGBPlgNPbh3917l6bvYu804Q,1085
+chumba-0.0.3.dist-info/METADATA,sha256=zoN6LoxGP-WLNuUW0KPT2ZSzIRh59VDCEigm-PaVLeo,650
+chumba-0.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+chumba-0.0.3.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+chumba-0.0.3.dist-info/RECORD,,
