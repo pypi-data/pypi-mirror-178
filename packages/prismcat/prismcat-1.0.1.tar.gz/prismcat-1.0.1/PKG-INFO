@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: prismcat
+Version: 1.0.1
+Summary: parse logs and make pretty colors
+License: MIT
+Author: Tyler F. Carr
+Author-email: tcarwash@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: ansi2html (>=1.8.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+# PrismCat
+
+## Explanation
+PrismCat reads a file (or stdin) and highlights lines based on regex supplied in arguments. 
+
+Colors follow the rainbow in priority e.g. (Error)>Red>Yellow>Green>Blue>Purple and are specified as arguments with their initial letter: -e -r -y -g -b -p, each taking a quoted regular expression as input. 
+
+PrismCat can output to stdin, or to an html file (using the -o option) for future reference retaining the coloring. 
+
+the -a flag eliminates all lines that aren't currently highlighted, filtering output to only the important lines. 
+
+## Future
+Eventually, PrismCat should be a full drop-in replacement for cat with the additional features provided in the current version
