@@ -1,0 +1,10 @@
+PyQuantimClient/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+PyQuantimClient/api.py,sha256=wjG_2qUJD_TFBmtKEqGcR8qBHDXhqX7ButIC_QKs-6o,2400
+PyQuantimClient/data.py,sha256=ojhjrcXv39yhlh7vqKqG7RPVBuoi8mTpc2r24bro24Y,677
+PyQuantimClient/energy.py,sha256=hNI2zwOWnIDqasD-r1Keq7mN-L_l9c-VFZ3zv4ktS2A,1820
+PyQuantimClient/portfolios.py,sha256=7O90ffjGmtJGKLFFIRstWLNEZ85eOd2hRFl8oHX3ZEk,1320
+PyQuantimClient/risk.py,sha256=vg4n7xJUgV8NImc8LBbqa0ntUaK-jfwTvWkoTtK6hOU,2146
+PyQuantimClient-1.0.1.dist-info/METADATA,sha256=PAlMFP5zk4Ai1jcN-WTRdC5rqs_aWWKl0o8KVl00K-A,347
+PyQuantimClient-1.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+PyQuantimClient-1.0.1.dist-info/top_level.txt,sha256=WbmxYSegJ1EfH-TJOqtF0mzYevWDeaMoJ4ZAzQaOTDE,16
+PyQuantimClient-1.0.1.dist-info/RECORD,,
