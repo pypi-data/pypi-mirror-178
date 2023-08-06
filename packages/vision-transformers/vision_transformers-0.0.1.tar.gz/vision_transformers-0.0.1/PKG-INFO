@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: vision_transformers
+Version: 0.0.1
+Summary: Vision Transformers (ViT)
+Home-page: https://github.com/sovit-123/vision_transformers
+Author: Sovit Rath
+Author-email: sovitrath5@gmail.com
+License: MIT
+Keywords: vision,neural attention,deep learning
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown

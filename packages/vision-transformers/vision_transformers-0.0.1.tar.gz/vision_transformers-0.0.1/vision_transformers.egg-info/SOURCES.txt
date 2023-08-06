@@ -1,0 +1,9 @@
+README.md
+setup.py
+vision_transformers/__init__.py
+vision_transformers/vit.py
+vision_transformers.egg-info/PKG-INFO
+vision_transformers.egg-info/SOURCES.txt
+vision_transformers.egg-info/dependency_links.txt
+vision_transformers.egg-info/requires.txt
+vision_transformers.egg-info/top_level.txt
