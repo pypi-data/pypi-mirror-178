@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+test.py
+/home/jayvdb/jayvdb/nose3/functional_tests/support/issue191/test.py
+issue191.egg-info/PKG-INFO
+issue191.egg-info/SOURCES.txt
+issue191.egg-info/dependency_links.txt
+issue191.egg-info/top_level.txt
