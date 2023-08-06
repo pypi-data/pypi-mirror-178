@@ -1,0 +1,15 @@
+rokit_vai_package/__init__.py,sha256=h0jlwkgwDZ6X-YZxxzDeynG2h2SPYcfLE7W-N6L_VwY,213
+rokit_vai_package/global_variable.py,sha256=yNPuUNS-DwrGNd209H-2yEq0dBRSoROWU96Rl8OlC1Q,4807
+rokit_vai_package/augment_mgmt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rokit_vai_package/augment_mgmt/augment_mgmt.py,sha256=FuLpA3Z6-NvMDkOV65MqdIGKPB9dk_X5ZAT1-HYEBxg,1486
+rokit_vai_package/augment_mgmt/augmentation.py,sha256=ryzSKB9uE9o8TiqE0hUdvHqqoilfFsiaz2rzFEb6--E,218
+rokit_vai_package/augment_mgmt/flip.py,sha256=nFED1Rakn55q4r7qy3bwQBEG5HSMcr0X4OHQGKWyNHM,453
+rokit_vai_package/dataset_mgmt/__init__.py,sha256=e5pqwCHfFhW1hHTReElpx0JWfDOME3Q3UJ3ZIVNJMrE,128
+rokit_vai_package/dataset_mgmt/aws_dataset_mgmt.py,sha256=COaANCmw-cdyqcjtAMQjxiUaov7HpCPeTJl-edly0zo,1875
+rokit_vai_package/dataset_mgmt/dataset_mgmt.py,sha256=cAhj7TDYuJPKRs54oaAAPlOqsWClGKynERdKQSVJnQE,4744
+rokit_vai_package/dataset_mgmt/gcp_dataset_mgmt.py,sha256=uyErf-xchlVLs-6fxraC4elr0oZ0qu5wjj4avWXoz4Y,9777
+rokit_vai_package/dataset_mgmt/storage_mgmt.py,sha256=Y9-VVX_O_NdvC0KoHl-fhsr7sjI-Mu5GORJB2X81X7o,4015
+rokit_vai_package-0.0.0.10.dist-info/METADATA,sha256=7DMNTkqa2aD8VzcEUh2KVPBCTo2nvkylLrseZfSRojc,319
+rokit_vai_package-0.0.0.10.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+rokit_vai_package-0.0.0.10.dist-info/top_level.txt,sha256=D518oTV9eRMQn455vw444iucB5gUyj1Hq7h0-mFSIlY,18
+rokit_vai_package-0.0.0.10.dist-info/RECORD,,
