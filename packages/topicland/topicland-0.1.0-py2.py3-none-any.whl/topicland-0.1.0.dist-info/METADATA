@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: topicland
+Version: 0.1.0
+Summary: The tool to manage and explore topics with knowledge graphs and so on.
+Home-page: https://github.com/topicland/TopicLand
+Author: tobe
+Author-email: tobeg3oogle@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests
+
+UNKNOWN
+

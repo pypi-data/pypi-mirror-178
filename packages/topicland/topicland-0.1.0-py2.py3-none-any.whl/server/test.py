@@ -1,0 +1,8 @@
+
+
+def main():
+  println("main")
+
+if __name__ == "__main__":
+  main()
+
