@@ -1,0 +1,23 @@
+﻿If the design of Arabic words, or the creation of words in the beginning to be circulated later by generations, was done through derivation, that is, deriving a word from the original word or the base word, based on values ​​assigned to the letters, then this means that there is a series of words in the Arabic language, which derive from each other and which belong to one base word, thus forming a complex hierarchical design, so that words is the result of this derivation process and was not born arbitrarily, this means that the word carries the meaning of its base word at least in a hidden way.
+
+I write this algorithm wich attempts to decrypt the Arabic words and find the words associated with them as a result of the derivation process. This version is the first experiment and is not 100% accurate, but it gave us some words related to the input word , for example :  
+
+input word: adam (in arabic)  
+
+results:  
+
+Nations (in arabic)  
+
+blood (in arabic)  
+
+
+
+you install and try it using python :  
+
+pip install letter_algo  
+
+
+from letter_algo import test  
+
+
+test()
