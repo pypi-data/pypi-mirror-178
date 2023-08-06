@@ -1,0 +1,10 @@
+ftThanos/ft_connector.py,sha256=RvdEFYmdfOiX4ZLFo2ISycv8sdTzh22Xs0MA1UWrjjM,10004
+ftThanos/google_connector.py,sha256=N-pf8o9krSLm6wRxBmlVMMkD1rOnZU-PaZOjQJVE0Ps,3192
+ftThanos/log.py,sha256=MwYiSL-BgZ2OOH_AHeXvQjoJrX2MMtWJJLkz4HxSlL8,18
+ftThanos/notion_connector.py,sha256=g_B0t20lZ-ZJF_0Q8Fwz7Q0Dv1_a3Y_5k__KbcKZwoc,8824
+ftThanos/notion_get_properties.py,sha256=0Od_qNrKrww9CisXvDN5zCgZP4LSLsgQ8dnZBG7tHg4,3239
+ftThanos/notion_update_properties.py,sha256=gz-OKIvQef4CXLU4zKws_a78c2W_QFzEu2unG5SRcCU,4876
+ftThanos-0.0.84.dist-info/METADATA,sha256=CBG10nbon9DzGETbxVAOV2J4DCcLD0_EKuI_7FtbT4k,249
+ftThanos-0.0.84.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ftThanos-0.0.84.dist-info/top_level.txt,sha256=GmBeLkm2vA9lKeeC_YVSsHHSNHGSdhuIUf1Adpih8Vk,9
+ftThanos-0.0.84.dist-info/RECORD,,
