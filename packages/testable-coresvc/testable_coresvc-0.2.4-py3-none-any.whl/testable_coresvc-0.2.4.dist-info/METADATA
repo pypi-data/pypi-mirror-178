@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: testable-coresvc
+Version: 0.2.4
+Summary: Core Testable Service Modules
+Author: Ryan de Marigny
+Author-email: testableproject@gmail.com
+Keywords: python,first package
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: pydantic (>=1.10.2)
+Requires-Dist: typing-extensions (>=4.4.0)
+Requires-Dist: fastapi (>=0.87.0)
+Requires-Dist: pymongo (>=4.3.3)
+
+Core service modules that provide access to shared functionality across Testable services.
