@@ -1,0 +1,6 @@
+recursive-include AddLibriary/*.txt
+recursive-include AddLibriary/*.cpp
+recursive-include AddLibriary/*.h
+recursive-include AddLibriary/*.qrc
+recursive-include AddLibriary/*.ttf
+recursive-include AddLibriary/*.png
