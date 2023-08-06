@@ -1,0 +1,14 @@
+geniusbot/__init__.py,sha256=-tNVMNFSWD2Ka-Q35ruRWT7h4049sEg-sxQ2d421Two,313
+geniusbot/geniusbot.py,sha256=Gb9rNYc51LUNMK8zugVVjdc3ksg0JZU0OlEueLGxi3M,73826
+geniusbot/geniusbot_chat.py,sha256=a3QxcMG-cjGE3WOKm4L_zUwb9KsEdT5LxkD-3tzozms,4150
+geniusbot/logger.py,sha256=fjYSTx7WxRPum0Jt8sbFbqSyvWq7SR5RumGzGR7xuYo,3150
+geniusbot/version.py,sha256=9usyE8BDfQiNJlrIM4PJUmVh4lTm-UAZJwu1i7VZO_I,116
+geniusbot/img/geniusbot.ico,sha256=lPHlX5iI6-xUF-Ewr40Kg7ZOIX3_WvHaFX_Yl6tlY5g,67646
+geniusbot/img/geniusbot.png,sha256=1KYCHopRoNqMHwHRBgkcLF_xqC8hSKlhkTKqsIbhZRQ,43416
+geniusbot-3.1.0.data/data/geniusbot/geniusbot.ico,sha256=lPHlX5iI6-xUF-Ewr40Kg7ZOIX3_WvHaFX_Yl6tlY5g,67646
+geniusbot-3.1.0.data/data/geniusbot/geniusbot.png,sha256=1KYCHopRoNqMHwHRBgkcLF_xqC8hSKlhkTKqsIbhZRQ,43416
+geniusbot-3.1.0.dist-info/METADATA,sha256=qVqeWqnMK1WxfhzbDVcJXRDl9AhH9cOuAFXeEZwskH0,6471
+geniusbot-3.1.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+geniusbot-3.1.0.dist-info/entry_points.txt,sha256=up_Yx2Mw3sjfCvz8FQBEfvcViJrpoT_gMXdV_lU5Zak,56
+geniusbot-3.1.0.dist-info/top_level.txt,sha256=x1L29i9WrbOlWSxPuBTKVXU3VQReT8NnSNW3xjB4PfE,10
+geniusbot-3.1.0.dist-info/RECORD,,
