@@ -1,0 +1,121 @@
+# coding: utf-8
+
+# flake8: noqa
+
+# import all models into this package
+# if you have many models here with many references from one model to another this may
+# raise a RecursionError
+# to avoid this, import only the models that you directly need like:
+# from from ispyb_client.model.pet import Pet
+# or import this package, but before doing it, use:
+# import sys
+# sys.setrecursionlimit(n)
+
+from ispyb_client.model.action_type import ActionType
+from ispyb_client.model.admin_activity import AdminActivity
+from ispyb_client.model.auth_config import AuthConfig
+from ispyb_client.model.beam_line_group import BeamLineGroup
+from ispyb_client.model.beam_line_group_beam_line import BeamLineGroupBeamLine
+from ispyb_client.model.beam_line_setup import BeamLineSetup
+from ispyb_client.model.component import Component
+from ispyb_client.model.composition import Composition
+from ispyb_client.model.current_user import CurrentUser
+from ispyb_client.model.data_collection import DataCollection
+from ispyb_client.model.data_collection_file_attachment import DataCollectionFileAttachment
+from ispyb_client.model.data_collection_file_attachment_meta_data import DataCollectionFileAttachmentMetaData
+from ispyb_client.model.data_collection_group import DataCollectionGroup
+from ispyb_client.model.data_collection_meta_data import DataCollectionMetaData
+from ispyb_client.model.detector import Detector
+from ispyb_client.model.energy_scan import EnergyScan
+from ispyb_client.model.event import Event
+from ispyb_client.model.event_chain_create import EventChainCreate
+from ispyb_client.model.event_chain_response import EventChainResponse
+from ispyb_client.model.event_create import EventCreate
+from ispyb_client.model.event_response import EventResponse
+from ispyb_client.model.event_status import EventStatus
+from ispyb_client.model.grid_info import GridInfo
+from ispyb_client.model.http_validation_error import HTTPValidationError
+from ispyb_client.model.histogram import Histogram
+from ispyb_client.model.lab_contact import LabContact
+from ispyb_client.model.lab_contact_create import LabContactCreate
+from ispyb_client.model.lab_contact_create_optional import LabContactCreateOptional
+from ispyb_client.model.laboratory import Laboratory
+from ispyb_client.model.laboratory_create import LaboratoryCreate
+from ispyb_client.model.laboratory_create_optional import LaboratoryCreateOptional
+from ispyb_client.model.login import Login
+from ispyb_client.model.message import Message
+from ispyb_client.model.options import Options
+from ispyb_client.model.order import Order
+from ispyb_client.model.paginated_admin_activity import PaginatedAdminActivity
+from ispyb_client.model.paginated_data_collection_file_attachment import PaginatedDataCollectionFileAttachment
+from ispyb_client.model.paginated_event import PaginatedEvent
+from ispyb_client.model.paginated_event_type import PaginatedEventType
+from ispyb_client.model.paginated_lab_contact import PaginatedLabContact
+from ispyb_client.model.paginated_per_image_analysis import PaginatedPerImageAnalysis
+from ispyb_client.model.paginated_proposal import PaginatedProposal
+from ispyb_client.model.paginated_protein import PaginatedProtein
+from ispyb_client.model.paginated_sample import PaginatedSample
+from ispyb_client.model.paginated_sample_image import PaginatedSampleImage
+from ispyb_client.model.paginated_session import PaginatedSession
+from ispyb_client.model.paginated_sub_sample import PaginatedSubSample
+from ispyb_client.model.paginated_workflow_step import PaginatedWorkflowStep
+from ispyb_client.model.per_image_analysis import PerImageAnalysis
+from ispyb_client.model.person import Person
+from ispyb_client.model.person_create import PersonCreate
+from ispyb_client.model.person_create_optional import PersonCreateOptional
+from ispyb_client.model.person_proposal_laboratory import PersonProposalLaboratory
+from ispyb_client.model.person_session_laboratory import PersonSessionLaboratory
+from ispyb_client.model.person_session_options import PersonSessionOptions
+from ispyb_client.model.plugin_config import PluginConfig
+from ispyb_client.model.position import Position
+from ispyb_client.model.proposal import Proposal
+from ispyb_client.model.proposal_meta_data import ProposalMetaData
+from ispyb_client.model.proposal_state import ProposalState
+from ispyb_client.model.protein import Protein
+from ispyb_client.model.protein_meta_data import ProteinMetaData
+from ispyb_client.model.protein_order import ProteinOrder
+from ispyb_client.model.pydantic_main_event_type import PydanticMainEventType
+from ispyb_client.model.pyispyb_core_schemas_events_event_type import PyispybCoreSchemasEventsEventType
+from ispyb_client.model.pyispyb_core_schemas_protein_component_type import PyispybCoreSchemasProteinComponentType
+from ispyb_client.model.pyispyb_core_schemas_samples_component_type import PyispybCoreSchemasSamplesComponentType
+from ispyb_client.model.robot_action import RobotAction
+from ispyb_client.model.ssx_crystal_create import SSXCrystalCreate
+from ispyb_client.model.ssx_data_collection import SSXDataCollection
+from ispyb_client.model.ssx_data_collection_create import SSXDataCollectionCreate
+from ispyb_client.model.ssx_data_collection_group_create import SSXDataCollectionGroupCreate
+from ispyb_client.model.ssx_data_collection_processing_cells import SSXDataCollectionProcessingCells
+from ispyb_client.model.ssx_data_collection_processing_cells_histogram import SSXDataCollectionProcessingCellsHistogram
+from ispyb_client.model.ssx_data_collection_processing_create import SSXDataCollectionProcessingCreate
+from ispyb_client.model.ssx_data_collection_processing_stats import SSXDataCollectionProcessingStats
+from ispyb_client.model.ssx_protein_create import SSXProteinCreate
+from ispyb_client.model.ssx_sample_component_create import SSXSampleComponentCreate
+from ispyb_client.model.ssx_sample_create import SSXSampleCreate
+from ispyb_client.model.sample import Sample
+from ispyb_client.model.sample_container import SampleContainer
+from ispyb_client.model.sample_crystal import SampleCrystal
+from ispyb_client.model.sample_image import SampleImage
+from ispyb_client.model.sample_image_meta_data import SampleImageMetaData
+from ispyb_client.model.sample_meta_data import SampleMetaData
+from ispyb_client.model.sample_order import SampleOrder
+from ispyb_client.model.sample_protein import SampleProtein
+from ispyb_client.model.sample_status import SampleStatus
+from ispyb_client.model.session import Session
+from ispyb_client.model.session_meta_data import SessionMetaData
+from ispyb_client.model.session_response import SessionResponse
+from ispyb_client.model.sub_sample import SubSample
+from ispyb_client.model.sub_sample_meta_data import SubSampleMetaData
+from ispyb_client.model.sub_sample_order import SubSampleOrder
+from ispyb_client.model.sub_sample_sample import SubSampleSample
+from ispyb_client.model.token_response import TokenResponse
+from ispyb_client.model.ui_options import UIOptions
+from ispyb_client.model.up_lab_contact import UPLabContact
+from ispyb_client.model.up_proposal import UPProposal
+from ispyb_client.model.up_protein import UPProtein
+from ispyb_client.model.up_session import UPSession
+from ispyb_client.model.user_portal_proposal_sync import UserPortalProposalSync
+from ispyb_client.model.validation_error import ValidationError
+from ispyb_client.model.workflow import Workflow
+from ispyb_client.model.workflow_step import WorkflowStep
+from ispyb_client.model.workflow_step_attachment import WorkflowStepAttachment
+from ispyb_client.model.workflow_step_meta_data import WorkflowStepMetaData
+from ispyb_client.model.xfe_fluorescence_spectrum import XFEFluorescenceSpectrum
