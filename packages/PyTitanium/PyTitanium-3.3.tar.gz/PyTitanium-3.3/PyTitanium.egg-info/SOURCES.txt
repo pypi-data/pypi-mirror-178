@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+PyTitanium/__init__.py
+PyTitanium/locators.py
+PyTitanium/titanium_core.py
+PyTitanium.egg-info/PKG-INFO
+PyTitanium.egg-info/SOURCES.txt
+PyTitanium.egg-info/dependency_links.txt
+PyTitanium.egg-info/top_level.txt
