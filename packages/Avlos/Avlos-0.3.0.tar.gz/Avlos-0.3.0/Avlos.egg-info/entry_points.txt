@@ -1,0 +1,3 @@
+[console_scripts]
+avlos = avlos.cli:run_cli
+
