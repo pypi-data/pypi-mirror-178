@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>Cell / a.UnselectedBadge</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-16.000000, -113.000000)">
+            <g id="ToolBox-/-MonUser-Copy">
+                <g id="Cell-/-a.DefaultBadge" transform="translate(16.000000, 113.000000)">
+                    <g id="Group" transform="translate(8.000000, 8.000000)">
+                        <circle id="Oval" fill="#5AE4AA" cx="12" cy="12" r="12"></circle>
+                        <polygon id="Path-4" fill="#000000" points="7.70710678 11 6.29289322 12.4142136 10.5 16.6213203 17.7071068 9.41421356 16.2928932 8 10.5 13.7928932"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
