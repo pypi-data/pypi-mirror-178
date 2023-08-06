@@ -1,0 +1,14 @@
+requests
+pandas
+fastavro
+google-cloud-core
+google-cloud-pubsub
+
+[BigQuery]
+google-cloud-bigquery
+
+[Elasticsearch]
+elasticsearch
+
+[MongoDB]
+pymongo
