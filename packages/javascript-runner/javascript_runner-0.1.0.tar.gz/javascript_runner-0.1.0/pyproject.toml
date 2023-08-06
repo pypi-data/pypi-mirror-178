@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "javascript-runner"
+version = "0.1.0"
+description = "Run Nodejs from Python"
+authors = ["micziz <miczicontent@gmail.com>"]
+readme = "README.md"
+packages = [
+    { include = "javascript-runner" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+jsRunner = "javascript-runner.javascript-runner:cli"
