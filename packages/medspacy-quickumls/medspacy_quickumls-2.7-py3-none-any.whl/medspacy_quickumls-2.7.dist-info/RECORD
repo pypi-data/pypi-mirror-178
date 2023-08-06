@@ -1,0 +1,16 @@
+quickumls/__init__.py,sha256=MIXvoQtDVT7H_VHmb3ihlKYBuGrkVr-ay-tQpm71Jpc,93
+quickumls/about.py,sha256=A2WXTouf3rmOlytGcXo7qBzhPJVmDmPvo1k4CbKCqZQ,616
+quickumls/client.py,sha256=XI2BCF9Mk_CRgcJkh9CsODg4XgjMhFSf963nx39YoeU,296
+quickumls/constants.py,sha256=qvJBNxkTMS1PX8fp0wKaJVCb08khzvri0BAo_6a5ETQ,13804
+quickumls/core.py,sha256=1sEBxG_hE94S8vRjtCrMRzxArS66sS1lIxe4euJKKbE,18659
+quickumls/install.py,sha256=12FzOew1g7GVQoEWDlcIGLQLgxXV7JNdkbiQknP-htg,7231
+quickumls/network.py,sha256=ae0RAZdFRecaNXoH-QGfMc0ECMmDjqblOZ2IewsYQ1w,7558
+quickumls/server.py,sha256=W5TOu-y8wEpOim3I_kcmdeBsOH8UXVVXLeHhUJTn6vo,2731
+quickumls/spacy_component.py,sha256=_2u8C-Rk5vIBVkZ5Ai4cu7MFwzVeKFE6izAjgS2XIao,11134
+quickumls/toolbox.py,sha256=ptaRz5AR1WfwSX7qYZJMt6_AzG52iQIh73aSGxg7qFU,8573
+quickumls/umls_match.py,sha256=DC8G9uGSpTff0AISXgln5UUqraBtYIZEmq_l_HZG7AI,1185
+medspacy_quickumls-2.7.dist-info/LICENSE.txt,sha256=DGfX9dbsByHAEBKqaswzhpUVtAUYHc42wkbLYVd4MMY,1124
+medspacy_quickumls-2.7.dist-info/METADATA,sha256=1RZFlJvJdMC3hB8Kc84eiQIEd6Yn6Fslxi5NAs1MB8Q,9706
+medspacy_quickumls-2.7.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+medspacy_quickumls-2.7.dist-info/top_level.txt,sha256=iPLga4Z_VlQe6xKOLcb_pQBU7zEZR28mj8xI0f4nUTU,10
+medspacy_quickumls-2.7.dist-info/RECORD,,
