@@ -1,0 +1,7 @@
+setup.py
+szl_gui/__init__.py
+szl_gui/say_hello.py
+szl_gui.egg-info/PKG-INFO
+szl_gui.egg-info/SOURCES.txt
+szl_gui.egg-info/dependency_links.txt
+szl_gui.egg-info/top_level.txt
