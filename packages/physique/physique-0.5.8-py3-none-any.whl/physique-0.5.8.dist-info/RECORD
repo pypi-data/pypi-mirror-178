@@ -1,0 +1,10 @@
+physique/__init__.py,sha256=chlZctgwJLmOajqlUeEH8zGGgy8U7JgJIkMxVJtvG90,2570
+physique/csv.py,sha256=WH2YajPlkOzgBJp07SeG-h9w5fiTTeiargnErD3lseU,6576
+physique/fonctions.py,sha256=jAEbe98gEYeNQjBS5ESOmdgVEsWQlRrhUlPm9Yb-71s,9821
+physique/modelisation.py,sha256=-D8RmDrf2TDtszWbOZW1QSzFwWMTdnSSD8Vv4G9aNfU,38411
+physique/signal.py,sha256=IrmaSiszdQ6JwwNNg9h7JylSYRn7LjLBvZ9YW7nrboc,10641
+physique-0.5.8.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+physique-0.5.8.dist-info/METADATA,sha256=DTm3EXTDSpIu87Gy8gQJHnFJmi8YWo4_cZHtaIpm_Jo,3948
+physique-0.5.8.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+physique-0.5.8.dist-info/top_level.txt,sha256=7dF4_kRU9ZVD_3_Ow_gBufh3CcH0848LsFcUO0XCmAE,9
+physique-0.5.8.dist-info/RECORD,,
