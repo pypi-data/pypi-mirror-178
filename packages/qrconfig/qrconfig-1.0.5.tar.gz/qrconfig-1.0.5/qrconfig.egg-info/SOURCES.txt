@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+qrconfig/__init__.py
+qrconfig/config.py
+qrconfig.egg-info/PKG-INFO
+qrconfig.egg-info/SOURCES.txt
+qrconfig.egg-info/dependency_links.txt
+qrconfig.egg-info/requires.txt
+qrconfig.egg-info/top_level.txt
