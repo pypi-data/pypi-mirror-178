@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: general_functions
+Version: 0.0.1
+Summary: A small package providing general functionalities for your application.
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Author-email: Marcel Greubel <marcel.greubel@googlemail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# general-functions
+This repository serves to provide general functions
