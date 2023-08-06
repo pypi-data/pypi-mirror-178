@@ -1,0 +1,15 @@
+918b68e980b7f21c7581__mypyc.cpython-310-i386-linux-gnu.so,sha256=lwsFpLZnP2lneDVHAaM1D3kQmAzaFB6jvt10nUiEsYI,268084
+pycooldown/sliding_window.py,sha256=-aE0_GSh__6sb-IkZQF1E4vNJC3KUsQ9C3yW-9eOil0,3504
+pycooldown/__main__.py,sha256=dJEd3uTgvfB9MNrZ1SlF9RKKWo8vshemZO8a-J7KbLo,74
+pycooldown/fixed_mapping.cpython-310-i386-linux-gnu.so,sha256=ITQ6a2K9xmyq8xuPWhUF-gdYtutGS7oJqTmBfJDFP40,16256
+pycooldown/fixed_mapping.py,sha256=74rD_UvQC5Q4egbdRspaz6kRR_OsEp3E7VxEyO3rpqI,2345
+pycooldown/flexible_mapping.cpython-310-i386-linux-gnu.so,sha256=nGTQt98O5XnVMhu0TO5QCCfwodAilbLSoVnc-hpKrGo,16272
+pycooldown/__init__.py,sha256=NzoYrk_-agB1IWpKduAgJ9ss8YNy_NuxitWjRdACFD4,320
+pycooldown/__init__.cpython-310-i386-linux-gnu.so,sha256=e5Bu2KnRgSvQlEo4zeCqsCUNh3jrAZRMnYzDyqz9XAU,16220
+pycooldown/sliding_window.cpython-310-i386-linux-gnu.so,sha256=6X7U3iyMJjK_iZqZA8-O0f-I0xpCiPCszet-7V3ePZA,16260
+pycooldown/flexible_mapping.py,sha256=N4QPrushFE4oMzEJ5XJs3G5107JZVV_qz5aCyIjcCco,3343
+pycooldown/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycooldown-0.1.0b11.dist-info/METADATA,sha256=mo50E8IkBgv9jNT8cA1Bcgfjf3a_iwWFU05SXBlcBAU,1399
+pycooldown-0.1.0b11.dist-info/LICENSE,sha256=zDy93sInUjVYAPHrBBXovLCXs2WLm2zrkd4TPHWbFAg,1077
+pycooldown-0.1.0b11.dist-info/RECORD,,
+pycooldown-0.1.0b11.dist-info/WHEEL,sha256=DHnngOZZ-cVZqVcNPkhvLLAHAVOTD6uiFtexEPmdmGo,214
