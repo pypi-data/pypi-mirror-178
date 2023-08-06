@@ -1,0 +1,116 @@
+Metadata-Version: 2.1
+Name: willspeak
+Version: 0.4.0
+Summary: Python Text to Speach using Microsoft Sapi5 with a server/client model
+Home-page: https://github.com/willforde/willspeek.git
+License: GPL-2.0-only
+Keywords: tts,sapi5,speech,voice
+Author: willforde
+Author-email: willforde@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: No Input/Output (Daemon)
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Natural Language :: English
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Multimedia :: Sound/Audio :: Sound Synthesis
+Requires-Dist: appdirs (>=1.4.4,<2.0.0)
+Requires-Dist: colorama (>=0.4.6,<0.5.0)
+Requires-Dist: comtypes (>=1.1.14,<2.0.0) ; sys_platform == "win32"
+Requires-Dist: nltk (>=3.7,<4.0)
+Requires-Dist: pyaudio (>=0.2.12,<0.3.0)
+Requires-Dist: pyclip (>=0.7.0,<0.8.0)
+Requires-Dist: pydantic (>=1.10.2,<2.0.0)
+Requires-Dist: pywin32 (>=305,<306) ; sys_platform == "win32"
+Requires-Dist: requests (>=2.28.1,<3.0.0)
+Requires-Dist: starlette (>=0.22.0,<0.23.0)
+Requires-Dist: uvicorn (>=0.20.0,<0.21.0)
+Project-URL: Bug Tracker, https://github.com/willforde/willspeek/issues
+Project-URL: Repository, https://github.com/willforde/willspeek.git
+Description-Content-Type: text/markdown
+
+# WillSpeak - Work in Progress
+Python Text to Speach using Microsoft Sapi5 with a server/client model.
+
+# Progress update
+The core functionality is now working, and is ready for testing.
+Some cleanup is still required, but it works.
+Only supports SAPI5 for now. More to come in the future.
+
+# Info
+I created this project as a way to have good TTS on linux, because TTS on linux at the moment is dreadful.
+For a long time I wanted to switch to linux, but I needed a good linux TTS software but could not find one.
+So I decided to create this project to interface with the windows SAPI5 TTS engine.
+
+How it works is by running this software in server mode on a Windows machine. 
+Then configure the linux client to communicate with that Windows TTS server.
+The client will monitor for text that was copied to the clipboard and converts the text into speech.
+
+# Usage
+This software has 2 different operational modes, "Local" & "Server/Client". If the TTS engine that you have selected 
+works natively on your operating system, Then you can use Local mode. e.g. SAPI5 is native to windows, so you can use
+Local mode on Windows when using SAPI5. You should use Server/Client if you want to use SAPI5 on linux.
+It requires python 3.10 or grater.
+
+Install using pip
+```shell
+python3 -m pip install willspeak
+```
+
+Run locally on Windows
+```shell
+willspeak local
+```
+
+To run in server mode do.
+```shell
+willspeak server
+```
+
+And on the client machine run. "--addr" is the address of the server running the server component.
+```shell
+# 192.168.1.60 is just an example
+willspeak client --addr=192.168.1.60
+```
+
+There is one last command that is used to stop any current speech.
+```shell
+willspeak stop
+```
+
+# TODO
+* Setup prometheus metrics to track usage. This is useful if you wish to use a paid for TTS Service.
+* Add support for other text to speech engines, like eSpeak.
+* Add support for running the server component as a Windows service.
+* Change the way things are configured from CLI args to web interface.
+* Document how to enable more SAPI5 voices.
+* See if there is a way to hide the useless stderr output from pyaudio on linux.
+
+# Enable Extra SAPI5 Voices
+Extra SAPI5 voices can be installed by going to Settings -> Time & Language -> Speech.
+Click the plus icon next to add voices in the Manage voices section. Here you will see a full
+list of available voices for a given language. Select language voice you want and click add.
+This will download and install the new voices. They will be available for preview when you close and
+re-open the settings app.
+
+You can even use the Cortana voice (Eva) for SAPI5, but this requires a registry tweak to be able to enable it.
+And also requires you to have the English (US) language pack installed. This is the best female voice in my opinion.
+But if you are looking for a male voice then Richard is the best, available in the English (Canada) voice package.
+
+
+
+
+# Links
+https://winaero.com/unlock-extra-voices-windows-10/
+
+## Version
+0.3.0
+
