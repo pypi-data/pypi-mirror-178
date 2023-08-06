@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "aisci"
+version = "0.1.0"
+description = ""
+authors = ["Freeman Long <goldyard@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+toml = "^0.10.2"
+python-dotenv = "^0.19.0"
+numpy = "^1.23.5"
+pandas = "^1.5.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = "^21.9b0"
+pre-commit = "^2.15.0"
+isort = "^5.9.3"
+autoflake = "^1.4"
+mkdocs-material = "^7.3.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start = "aisci.main:app"
+test = "aisci.main:test"
+
+[app]
+# all your app configuration go here
+APP_NAME="AI-SCI"
+APP_STR_HELLO="Hello World!"
