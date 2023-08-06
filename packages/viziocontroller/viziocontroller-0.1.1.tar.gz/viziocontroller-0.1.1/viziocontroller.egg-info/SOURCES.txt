@@ -1,0 +1,12 @@
+README.md
+setup.py
+viziocontroller/__init__.py
+viziocontroller/api.py
+viziocontroller/constants.py
+viziocontroller/discover.py
+viziocontroller/settings.py
+viziocontroller.egg-info/PKG-INFO
+viziocontroller.egg-info/SOURCES.txt
+viziocontroller.egg-info/dependency_links.txt
+viziocontroller.egg-info/requires.txt
+viziocontroller.egg-info/top_level.txt
