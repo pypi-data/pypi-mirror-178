@@ -1,0 +1,8 @@
+logrouter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logrouter/default_logging_conf.yaml,sha256=UzhlWtps2TOl-59F0tIUdoCCvHI40XPd739ZSIjVdzg,602
+logrouter/logrouter.py,sha256=QXz-qZMkZDeKwYkz5Q2XMiGIBRVfIDob7OwZiU_tENI,2617
+logrouter/setup_logging.py,sha256=WpKNPSA3Iw3Ncx0brxWkFemaLWSk2fvwuVDOhh3jCS4,1475
+logrouter-0.0.1.dist-info/METADATA,sha256=hRcUZIK66Tj6ZjSwHkwCLE5JzLI9QZWdM1I5Fb6aM0U,1392
+logrouter-0.0.1.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+logrouter-0.0.1.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+logrouter-0.0.1.dist-info/RECORD,,
