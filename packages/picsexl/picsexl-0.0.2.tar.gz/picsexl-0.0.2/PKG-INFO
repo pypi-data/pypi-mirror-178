@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: picsexl
+Version: 0.0.2
+Summary: Converter from ics format to xls
+Home-page: https://github.com/pog7x/picsexl
+Author: pog7x
+Author-email: poluningm@gmail.com
+License: MIT
+Description: # picsexl
+        
+        <p align="center">
+        <a href="https://github.com/psf/black/blob/main/LICENSE"><img alt="License: MIT" src="https://black.readthedocs.io/en/stable/_static/license.svg"></a>
+        <a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a>
+        </p>
+        
+        ## Converter from ics format to xls
+        
+        ### Installation
+        [PYPI](https://pypi.org/project/picsexl/)
+        ```shell script
+        pip install picsexl
+        ```
+        
+        ### Example
+        ```python
+        from datetime import datetime, timezone
+        from picsexl import PIcsExl
+        
+        start = datetime.today()
+        
+        p = PIcsExl(
+            file_path="/path/to/your/file.ics",
+            mail_to="some.email@gmail.com",
+            start_date=datetime(start.year, start.month, start.day, 0, 0, 0, tzinfo=timezone.utc),
+            end_date=datetime(start.year, start.month, start.day + 15, 23, 59, 59, tzinfo=timezone.utc),
+        )
+        p.run_sniff_and_write_ics_lines()
+        ```
+Keywords: python calendar ics excel recurring
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
