@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: discord-ext-hybrid-menus
+Version: 1.0.3
+Summary: An extension module to make reaction based menus with discord.py
+Home-page: https://github.com/regulad/discord-ext-hybrid-menus
+Author: Rapptz
+License: MIT
+Requires-Python: >=3.8.0
+License-File: LICENSE
+
