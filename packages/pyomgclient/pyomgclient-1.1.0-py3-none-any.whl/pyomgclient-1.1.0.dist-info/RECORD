@@ -1,0 +1,9 @@
+pyomgclient/__init__.py,sha256=ACVcnExhFW_NwyZJrzIOJoisD7vWheD6V3j0pVmCbpA,53
+pyomgclient/omgclient.py,sha256=VRZNelAWMP6eapSdX6RpBg6dzeXntC0OCDb4KJmGovU,2971
+pyomgclient/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyomgclient/utils/config.py,sha256=nbSPTG4BWG5ctuOudxRjJkf2naHWKBurxO7v4gUxn3E,332
+pyomgclient/utils/generators.py,sha256=oOxPqqF3UzRa-39GAIYM-pTQEHUL_AsDHZecicbrwrU,1079
+pyomgclient-1.1.0.dist-info/METADATA,sha256=gZIrl3-9dwhdLJUejHR0otY2unxTwmrNKZu0n9uWYcc,1877
+pyomgclient-1.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pyomgclient-1.1.0.dist-info/top_level.txt,sha256=bBPAzYQTA7ykoxXH290ujXg_1MZ_gFm4aDH2XEE6QLE,12
+pyomgclient-1.1.0.dist-info/RECORD,,
