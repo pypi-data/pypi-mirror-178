@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pyradiate/__init__.py
+pyradiate.egg-info/PKG-INFO
+pyradiate.egg-info/SOURCES.txt
+pyradiate.egg-info/dependency_links.txt
+pyradiate.egg-info/requires.txt
+pyradiate.egg-info/top_level.txt
