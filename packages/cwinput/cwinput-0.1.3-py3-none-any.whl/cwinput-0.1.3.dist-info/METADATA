@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: cwinput
+Version: 0.1.3
+Summary: Listen to raw console input
+Author: Zhilkaidarov Damir
+Author-email: Zhilkaidarov Damir <rustam030201@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2022 Zhilkaidarov Damir
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Homepage, https://github.com/mitaraaa/cwinput
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# CWInput
+
+Simple Windows-oriented library to read raw input from console using multithreading.
+
+## Installation
+
+You can get this package from [PyPi](https://pypi.org/project/cwinput/)
+
+
+```sh
+pip install cwinput
+```
+
+## Example
+
+```py
+def listener(key: Key):
+    print(f"Got {key} from keyboard")
+
+keyboard = CWInput()
+keyboard.subscribe(listener) # Add new listener
+
+keyboard.run() # Run CWInput in a new thread
+keyboard.join() # Joins CWInput thread to parent thread, inherited from Thread class
+```
