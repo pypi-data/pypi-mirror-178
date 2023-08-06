@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ftThanos
+Version: 0.0.70
+Summary: A client for 70 API
+Home-page: UNKNOWN
+Author: Thanos 70
+Author-email: thanos@70paris.fr
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: python-dotenv
+Requires-Dist: requests
+
+UNKNOWN
+
