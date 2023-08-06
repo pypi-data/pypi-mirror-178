@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+PyDirtyLineDetection.egg-info/PKG-INFO
+PyDirtyLineDetection.egg-info/SOURCES.txt
+PyDirtyLineDetection.egg-info/dependency_links.txt
+PyDirtyLineDetection.egg-info/requires.txt
+PyDirtyLineDetection.egg-info/top_level.txt
+dirty_line_detection/__init__.py
+dirty_line_detection/edge_finder.py
