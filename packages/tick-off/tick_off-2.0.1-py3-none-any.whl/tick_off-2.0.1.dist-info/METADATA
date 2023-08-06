@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: tick-off
+Version: 2.0.1
+Author: he-dev
+Project-URL: GitHub, https://github.com/he-dev/tick-off-py
+Requires-Python: >=3.10.5
+Description-Content-Type: text/plain
+License-File: LICENSE
+
+Tick-off token for results that expire.
