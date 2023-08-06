@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: aminacadea
+Version: 0.0.1
+Summary: The Aminacadea library is a helper for tflite-model-maker for use in Google Colab.
+Author-email: the3megaguy <mmm111@hotmail.com>
+Project-URL: Homepage, https://github.com/mmmwembe/aminacadea
+Project-URL: Bug Tracker, https://github.com/mmmwembe/aminacadea/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Pillow (==7.1.*)
+Requires-Dist: matplotlib (==3.2.*)
+
+# Project description
+## Aminacadea
+### Overview
+The Aminacadea library is a dummy helper for tflite-model-maker for use in Google Colab. In Planning phase.
+
+### Requirements
+Refer to requirements.txt for dependent libraries that're needed to use the library and run the demo code.
+Note that you might also need to install sndfile for Audio tasks. On Debian/Ubuntu, you can do so by sudo apt-get install libsndfile1
+
+### Installation
+
+```python
+pip install aminacadea
+```
+
+Aminacadea depends on tflite-model-maker >=0.4.2, Pillow >=9.3.0
+
+
+https://packaging.python.org/en/latest/tutorials/packaging-projects/
+
+
+#### Generating distribution archives
+Generate distribution packages for the package. These are archives that are uploaded to the Python Package Index and can be installed by pip.
+NOTE: Run as Adminstrator
+1) Make sure you have the latest version of PyPA’s build installed:
+```python
+python -m pip install --upgrade build
+```
+2) Now run this command from the same directory where pyproject.toml is located:
+```python
+python -m build
+```
+This command should output a lot of text and once completed should generate two files in the dist directory:
+
+
+#### Uploading the distribution archives
+
+3) To securely upload your project, you’ll need a PyPI API token. 
+Create one at https://test.pypi.org/manage/account/#api-tokens, setting the “Scope” to “Entire account”.
+
+4) Now that you are registered, you can use twine to upload the distribution packages. You’ll need to install Twine:
+```python
+python -m pip install --upgrade twine
+```
+CREATE .pypirc file in place it in %USERPROFILE%
+5) Once installed, run Twine to upload all of the archives under dist:
+```python
+python -m twine upload --repository testpypi dist/*
+```
+
+6) Once installed, run Twine to upload all of the archives under dist:
+```python
+python -m twine upload --repository pypi dist/*
+```
+
+
+6) Dependencies - TODO
+
+dependencies = [
+    "tflite-model-maker>=0.1.*",
+    "tflite-support>=0.1.*",
+    "Pillow==7.1.*",
+    "matplotlib==3.2.*",
+]
+
