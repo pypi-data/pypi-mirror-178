@@ -1,0 +1,4 @@
+[console_scripts]
+ddd = ddsc.azure.__main__:main
+ddsclient = ddsc.__main__:main
+
