@@ -1,0 +1,136 @@
+Metadata-Version: 2.1
+Name: jsonwhatever
+Version: 0.0.2
+Summary: A simple JSON string creator that takes whatever you have and transform it into a String
+Home-page: UNKNOWN
+Author: dazjuancarlos
+Author-email: dazjuancarlos@gmail.com
+License: dazjuancarlos
+Keywords: python,json,simple
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+# jsonwhatever
+
+jsonwhatever is a library that creates a string, just putting a name and the object as arguments.
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+
+```bash
+pip install jsonwhatever
+```
+
+## Usage
+
+```python
+
+from jsonwhatever import jsonwhatever as  jw
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+class Dog:
+  def __init__(self) -> None:
+    self.id = 0
+    self.name = 'perro'
+    self.size = 5.3
+
+class Person:
+  def __init__(self, id, name, dog) -> None:
+    self.id = id
+    self.name = name
+    self.dog = dog
+
+dog_a = Dog()
+
+complex_number = 5+9j
+list_b = [4,5,6,8]
+list_a = [2,3,'hello',7,list_b]
+list_c = [4,5,thisdict,8,complex_number]
+empty_list = []
+none_var = None
+bool_var = True
+set_example_empty = set()
+set_example = {1,2,3,4}
+class_example = Person(9,'juan',dog_a)
+bytes_example = bytes(4)
+bytearray_example = bytearray(4)
+
+#prints {"list_example":[4,5,6,8]}
+print(jw.jsonwhatever('list_example',list_b))
+
+#prints {"name":"john"}
+print(jw.jsonwhatever('name','john'))
+
+#prints {"size":1.7}
+print(jw.jsonwhatever('size',1.7))
+
+#prints {"empty_list":[]}
+print(jw.jsonwhatever('empty_list',empty_list))
+
+#prints {"none_example":null}
+print(jw.jsonwhatever('none_example',none_var))
+
+#prints {"boolean":True}
+print(jw.jsonwhatever('boolean',bool_var))
+
+#prints {"empty_set":[]}
+print(jw.jsonwhatever('empty_set',set_example_empty))
+
+#prints {"set_example":[1,2,3,4]}
+print(jw.jsonwhatever('set_example',set_example))
+
+#prints {"brand":"Ford","model":"Mustang","year":1964}
+print(jw.jsonwhatever('thisdict',thisdict))
+
+#prints {"id":9,"name":"juan",{"id":0,"name":"perro","size":5.3}}
+print(jw.jsonwhatever('person_class',class_example))
+
+#prints {"bytes_example":"b'\x00\x00\x00\x00'"}
+print(jw.jsonwhatever('bytes_example',bytes_example))
+
+#prints {"bytearray_example":"b'\x00\x00\x00\x00'"}
+print(jw.jsonwhatever('bytearray_example',bytearray_example))
+
+#prints {"crazy_list":[4,5,{"brand":"Ford","model":"Mustang","year":1964},8,"(5+9j)"]}
+print(jw.jsonwhatever('crazy_list',list_c))
+
+```
+
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## Things to know about
+1) You always have to put some name on the first argument of the jsonwhatever function, otherwise the function will return a string that does not match the json standard.
+2) The jsonwhatever function can allow recursivity on a list until the level 985, after that, it will rise the RecursionError exception.
+
+3) The jsonwhatever function allows you to recieve a json without the curly braces at the beginning and in the end of the phrase. By default it will be in True.
+
+```python
+
+#prints "name":"john"
+print(jw.jsonwhatever('name','john',False))
+
+#prints {"name":"john"}
+print(jw.jsonwhatever('name','john',True))
+print(jw.jsonwhatever('name','john'))
+
+
+```
+
