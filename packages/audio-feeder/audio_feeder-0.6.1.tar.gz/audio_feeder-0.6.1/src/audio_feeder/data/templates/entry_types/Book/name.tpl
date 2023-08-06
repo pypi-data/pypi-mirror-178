@@ -1,0 +1,1 @@
+<span class="book_author">{{ author_ }}</span> - <span class="book_title">{{ title }}</span>

@@ -1,0 +1,234 @@
+data:
+- author_ids:
+  - 401412
+  author_roles:
+  - 0
+  authors:
+  - Thomas de Quincey
+  cover_images:
+    google_books:
+      smallThumbnail: http://books.google.com/books/content?id=wZksAr1cyVYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+      thumbnail: http://books.google.com/books/content?id=wZksAr1cyVYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+  description: <p>Confessions of an English Opium-Eater, Suspiria de Profundis, and
+    'The English Mail-Coach' are De Quincey's finest essays in autobiography, published
+    here with three appendices containing a wealth of related manuscript material
+    and a comprehensive introduction and notes.</p>
+  descriptions:
+    google_books: Confessions of an English Opium-Eater, Suspiria de Profundis, and
+      'The English Mail-Coach' are De Quincey's finest essays in autobiography, published
+      here with three appendices containing a wealth of related manuscript material
+      and a comprehensive introduction and notes.
+  google_id: wZksAr1cyVYC
+  id: 296217
+  isbn13: 0199600619
+  language: en
+  metadata_sources:
+  - google_books
+  pages: 385
+  pub_date: '2013-02-14'
+  publisher: Oxford University Press
+  tags: []
+  title: Confessions of an English Opium Eater
+- author_ids:
+  - 716757
+  author_roles:
+  - 0
+  authors:
+  - Mary Shelley
+  cover_images:
+    google_books:
+      smallThumbnail: http://books.google.com/books/content?id=KGSODQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+      thumbnail: http://books.google.com/books/content?id=KGSODQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+  description: "<p>Working from the earliest surviving draft of Frankenstein, Charles\
+    \ E. Robinson presents two versions of the classic novel\u2014as Mary Shelley\
+    \ originally wrote it and a subsequent version clearly indicating Percy Shelley\u2019\
+    s amendments and contributions. For the first time we can hear Mary\u2019s sole\
+    \ voice, which is colloquial, fast-paced, and sounds more modern to a contemporary\
+    \ reader. We can also see for the first time the extent of Percy Shelley\u2019\
+    s contribution\u2014some 5,000 words out of 72,000\u2014and his stylistic and\
+    \ thematic changes. His occasionally florid prose is in marked contrast to the\
+    \ directness of Mary\u2019s writing. Interesting, too, are Percy\u2019s suggestions,\
+    \ which humanize the monster, thus shaping many of the major themes of the novel\
+    \ as we read it today. In these two versions of Frankenstein we have an exciting\
+    \ new view of one of literature\u2019 s greatest works.</p>"
+  descriptions:
+    google_books: "Working from the earliest surviving draft of Frankenstein, Charles\
+      \ E. Robinson presents two versions of the classic novel\u2014as Mary Shelley\
+      \ originally wrote it and a subsequent version clearly indicating Percy Shelley\u2019\
+      s amendments and contributions. For the first time we can hear Mary\u2019s sole\
+      \ voice, which is colloquial, fast-paced, and sounds more modern to a contemporary\
+      \ reader. We can also see for the first time the extent of Percy Shelley\u2019\
+      s contribution\u2014some 5,000 words out of 72,000\u2014and his stylistic and\
+      \ thematic changes. His occasionally florid prose is in marked contrast to the\
+      \ directness of Mary\u2019s writing. Interesting, too, are Percy\u2019s suggestions,\
+      \ which humanize the monster, thus shaping many of the major themes of the novel\
+      \ as we read it today. In these two versions of Frankenstein we have an exciting\
+      \ new view of one of literature\u2019 s greatest works."
+  google_id: KGSODQAAQBAJ
+  id: 569645
+  isbn13: 0307474429
+  language: en
+  metadata_sources:
+  - google_books
+  pages: 466
+  pub_date: '2009-09-08'
+  publisher: Vintage
+  tags: []
+  title: Frankenstein
+- author_ids:
+  - 28374
+  author_roles:
+  - 0
+  authors:
+  - Bram Stoker
+  cover_images:
+    google_books:
+      smallThumbnail: http://books.google.com/books/content?id=C1bepwAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+      thumbnail: http://books.google.com/books/content?id=C1bepwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+  description: ''
+  descriptions:
+    google_books: null
+  google_id: C1bepwAACAAJ
+  id: 610670
+  isbn13: '9783458362159'
+  language: de
+  metadata_sources:
+  - google_books
+  pages: 540
+  pub_date: '2011'
+  title: Dracula
+- author_ids:
+  - 520775
+  author_roles:
+  - 0
+  authors:
+  - Louisa May Alcott
+  cover_images:
+    google_books:
+      smallThumbnail: http://books.google.com/books/content?id=ykswhj_TPEIC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+      thumbnail: http://books.google.com/books/content?id=ykswhj_TPEIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+    local: !Path 'media/audiobooks/Fiction/Louisa May Alcott - [Little Women 02] -
+      Little Men/Little Men-Cover.jpg'
+  description: <p>Jo March, the heroine of "Little Women," is back in a charming sequel
+    to that beloved book. She and her husband open their hearts to a host of endearing
+    little mischief-makers in an effort to teach them "how to help themselves and
+    be useful men." A heartwarming classic.</p>
+  descriptions:
+    google_books: Jo March, the heroine of "Little Women," is back in a charming sequel
+      to that beloved book. She and her husband open their hearts to a host of endearing
+      little mischief-makers in an effort to teach them "how to help themselves and
+      be useful men." A heartwarming classic.
+  google_id: ykswhj_TPEIC
+  id: 635705
+  language: en
+  metadata_sources:
+  - google_books
+  pages: 412
+  pub_date: '1899'
+  series_name: Little Women
+  series_number: 2
+  tags: []
+  title: Little Men
+- author_ids:
+  - 882047
+  author_roles:
+  - 0
+  authors:
+  - Edith Wharton
+  cover_images:
+    google_books:
+      smallThumbnail: http://books.google.com/books/content?id=bNhZAAAAMAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+      thumbnail: http://books.google.com/books/content?id=bNhZAAAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+  description: ''
+  descriptions:
+    google_books: null
+  google_id: bNhZAAAAMAAJ
+  id: 648614
+  language: en
+  metadata_sources:
+  - google_books
+  pages: 176
+  pub_date: '1925'
+  publisher: 'New York ; London : C. Scribner''s Sons'
+  tags: []
+  title: The Writing of Fiction
+- author_ids:
+  - 942026
+  author_roles:
+  - 0
+  authors:
+  - H G Wells
+  cover_images:
+    google_books:
+      smallThumbnail: http://books.google.com/books/content?id=O3JcNritSSoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+      thumbnail: http://books.google.com/books/content?id=O3JcNritSSoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+    local: !Path 'media/audiobooks/Fiction/H G Wells - The Invisible Man/Cover.jpg'
+  description: '<p>It''s one of the most famous novels of the 19th century, and probably
+    the one that''s least actually read. *The Invisible Man,* first published in 1897,
+    became the basis for the classic 1933 film starring Claude Rains-as well as its
+    many spinoffs-but the novel is quite different: it''s an early example of science
+    fantasy that was as much about character as it was about concept. One of the most
+    enduringly popular writers of modern literature, Wells here assured his position
+    as one of the fathers of imaginative literature with his psychologically complex
+    tale of a scientist who renders himself invisible and eventually goes mad because
+    of it. And because it focuses more on people than on technology, it remains a
+    compelling tale even more than a century after it was written. British author
+    HERBERT GEORGE WELLS (1866-1946) is best known for his groundbreaking science
+    fiction novels *The Time Machine* (1895), *The Invisible Man* (1897), and *The
+    War of the Worlds* (1898).</p>'
+  descriptions:
+    google_books: 'It''s one of the most famous novels of the 19th century, and probably
+      the one that''s least actually read. *The Invisible Man,* first published in
+      1897, became the basis for the classic 1933 film starring Claude Rains-as well
+      as its many spinoffs-but the novel is quite different: it''s an early example
+      of science fantasy that was as much about character as it was about concept.
+      One of the most enduringly popular writers of modern literature, Wells here
+      assured his position as one of the fathers of imaginative literature with his
+      psychologically complex tale of a scientist who renders himself invisible and
+      eventually goes mad because of it. And because it focuses more on people than
+      on technology, it remains a compelling tale even more than a century after it
+      was written. British author HERBERT GEORGE WELLS (1866-1946) is best known for
+      his groundbreaking science fiction novels *The Time Machine* (1895), *The Invisible
+      Man* (1897), and *The War of the Worlds* (1898).'
+  google_id: O3JcNritSSoC
+  id: 753272
+  isbn13: '1605206288'
+  language: en
+  metadata_sources:
+  - google_books
+  pages: 118
+  pub_date: '2009-01-01'
+  publisher: Cosimo, Inc.
+  tags: []
+  title: The Invisible Man
+- author_ids:
+  - 352375
+  author_roles:
+  - 0
+  authors:
+  - Louisa May Alcott
+  cover_images:
+    google_books:
+      smallThumbnail: http://books.google.com/books/content?id=cXrrAj1cP3QC&printsec=frontcover&img=1&zoom=5&source=gbs_api
+      thumbnail: http://books.google.com/books/content?id=cXrrAj1cP3QC&printsec=frontcover&img=1&zoom=1&source=gbs_api
+    local: !Path 'media/audiobooks/Fiction/Louisa May Alcott - [Little Women 01] -
+      Little Women/Cover.jpg'
+  description: <p>Chronicles the joys and sorrows of the four March sisters as they
+    grow into young women in nineteenth-century New England.</p>
+  descriptions:
+    google_books: Chronicles the joys and sorrows of the four March sisters as they
+      grow into young women in nineteenth-century New England.
+  google_id: cXrrAj1cP3QC
+  id: 989352
+  isbn13: 0099572966
+  language: en
+  metadata_sources:
+  - google_books
+  pages: 436
+  pub_date: '2012'
+  publisher: Random House
+  series_name: Little Women
+  series_number: 1
+  tags: []
+  title: Little Women
+db_version: 0
