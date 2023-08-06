@@ -1,0 +1,10 @@
+upadup/__init__.py,sha256=4GZKi13lDTD25YBkGakhZyEQZWTER_OWQMNPoH_UM2c,22
+upadup/config.py,sha256=lg7bvUUdupoYFUUMZLvpiEXTMUCdIdA0qc-d52zB3l8,4075
+upadup/main.py,sha256=sq2vZwQGZXko3dvkutLzKTe0SAFNLs2vGZZh0XBLQw4,4972
+upadup/package_utils.py,sha256=eqLtGcQkhnvszmDoLwlN0580A5kQCUGBLvAT2tdAjDs,330
+upadup/yaml.py,sha256=Mc-D6F7VwwJqhB8i_vbvH8dEBXRTUmb3Pwbww6bwKWU,2051
+upadup-0.0.3.dist-info/METADATA,sha256=a0p0AaGjmmq7guXqBd8UGatkXcaSD_3r1H0MWdK1z3s,4149
+upadup-0.0.3.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+upadup-0.0.3.dist-info/entry_points.txt,sha256=kZoREAlf_6HtFAbV68Q5Z7bWayTa1Z9cRT78kr4iV7M,44
+upadup-0.0.3.dist-info/licenses/LICENSE,sha256=_MeJwSp1jEPr2jb6-PKt26sOLeouRRoR0TGHsPF1I6g,583
+upadup-0.0.3.dist-info/RECORD,,
