@@ -1,0 +1,9 @@
+.ipynb_checkpoints/
+.DS_Store
+MANIFEST
+dist/
+build/
+octave-workspace
+*.egg-info/
+*.pyc
+jupyter-data
