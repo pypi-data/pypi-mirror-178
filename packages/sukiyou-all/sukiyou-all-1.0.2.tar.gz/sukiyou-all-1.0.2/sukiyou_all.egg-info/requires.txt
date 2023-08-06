@@ -1,0 +1,7 @@
+flask
+flask-cors
+pymysql
+requests
+sqlalchemy
+sukiyou-sql
+pyzwt==2.5.0

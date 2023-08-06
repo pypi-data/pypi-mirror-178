@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: sukiyou-all
+Version: 1.0.2
+Summary: sukiyou-all
+Home-page: UNKNOWN
+Author: sukiyou
+Author-email: s844562300@163.com
+License: UNKNOWN
+Description: 自定义修改了原sqlacodegen包代码
+        仅自用
+        
+        Custom modified the original sqlacodegen package code
+        
+        For personal use only
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
