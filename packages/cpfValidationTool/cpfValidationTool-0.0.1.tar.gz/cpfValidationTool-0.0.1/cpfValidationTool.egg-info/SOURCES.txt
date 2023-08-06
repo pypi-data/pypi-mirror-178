@@ -1,0 +1,9 @@
+README.md
+setup.py
+cpfValidationTool/__init__.py
+cpfValidationTool.egg-info/PKG-INFO
+cpfValidationTool.egg-info/SOURCES.txt
+cpfValidationTool.egg-info/dependency_links.txt
+cpfValidationTool.egg-info/top_level.txt
+cpfValidationTool/cpfValidation/__init__.py
+cpfValidationTool/cpfValidation/cpf.py
