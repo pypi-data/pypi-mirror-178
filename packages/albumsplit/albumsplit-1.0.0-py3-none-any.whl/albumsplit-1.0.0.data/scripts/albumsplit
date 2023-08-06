@@ -1,0 +1,62 @@
+#!python
+import subprocess
+from sys import argv
+
+if len(argv) < 3:
+    helpstr='usage: {} <an album.mp3> <a tracks file, ' + \
+    'listing start time and title for each track>'.format(argv[0])
+    print(helpstr)
+    exit()
+
+cmd_string1 = 'ffmpeg -i "{album}" -acodec copy -ss "{start}" -to "{end}" "{title}.mp3"'
+cmd_string2 = 'ffmpeg -i "{album}" -acodec copy -ss "{start}" "{title}.mp3"'
+album = argv[1]
+tracks_file = argv[2]
+
+f = open(tracks_file)
+lines = f.read()
+f.close()
+#remove various invisible unicode characters that some ppl put in the track list
+lines = lines.replace('\u200b', '')
+lines = lines.replace('\u200c', '')
+lines = lines.replace('\u200d', '')
+lines = lines.replace('\u200e', '')
+lines = lines.replace('\u202a', '')
+lines = lines.replace('\u202c', '')
+lines = lines.replace('\u202d', '')
+lines = lines.replace('\u2062', '')
+lines = lines.replace('\u2063', '')
+lines = lines.replace('\ufeff', '')
+lines = lines.replace('\u0009', '') #remove tabs
+lines = lines.replace('/', '\u2044') #replace forward slash with division symbol
+tracks = [s for s in lines.split('\n') if s != '']
+trackcount=len(tracks)
+
+i=0
+for s in range(trackcount):
+    i+=1
+    sp=' '
+    track_num=str(i).rjust(2,'0')
+    info=tracks[s].split(sp)
+    start=info[0]
+    if len(start.split(':')) == 2:
+        start = '00:' + start
+
+    title=sp.join(info[1:])
+
+    if i < trackcount:
+        info2=tracks[i].split(' ')
+        end=info2[0]
+    else:
+        end="fin"
+
+    title = track_num + ' - ' + title
+
+    if end == "fin":
+        command = cmd_string2.format(album=album, start=start, title=title)
+    else:
+        command = cmd_string1.format(album=album, start=start, end=end,
+                                     title=title)
+    #print(command)
+    subprocess.call(command, shell=True)
+
