@@ -1,0 +1,44 @@
+[package]
+name = "hifitime"
+version = "3.7.0"
+authors = ["Christopher Rabotin <christopher.rabotin@gmail.com>"]
+description = "Ultra-precise date and time handling in Rust for scientific applications with leap second support"
+homepage = "https://nyxspace.com/"
+documentation = "https://docs.rs/hifitime/"
+repository = "https://github.com/nyx-space/hifitime"
+keywords = ["date", "time", "science", "leap-second", "no-std"]
+categories = ["date-and-time"]
+readme = "README.md"
+license = "Apache-2.0"
+exclude = ["*.tar.gz"]
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+name = "hifitime"
+
+[dependencies]
+serde = {version = "1.0.145", optional = true}
+serde_derive = {version = "1.0.145", optional = true}
+der = {version = "0.6.0", features = ["derive", "real"], optional = true}
+pyo3 = { version = "0.17.2", features = ["extension-module"], optional = true}
+num-traits = {version = "0.2.15", default-features = false, features = ["libm"]}
+lexical-core = {version = "0.8.5", default-features = false, features = ["parse-integers", "parse-floats"]}
+
+[dev-dependencies]
+serde_json = "1"
+criterion = "0.4.0"
+
+[features]
+default = ["std"]
+std = ["serde", "serde_derive"]
+asn1der = ["der"]
+python = ["std", "asn1der", "pyo3"]
+
+[[bench]]
+name = "bench_epoch"
+harness = false 
+
+[[bench]]
+name = "bench_duration"
+harness = false
