@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: opensesame-plugin-experiment_manager
+Version: 2.2.0
+Summary: An OpenSesame Plug-in for managing/executing multiple OpenSesame experiments.
+Home-page: https://github.com/dev-jam/opensesame-plugin-experiment_manager
+Author: Bob Rosbag
+Author-email: debian@bobrosbag.nl
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Environment :: MacOS X
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Environment :: X11 Applications
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.md
+License-File: COPYING
+
+An OpenSesame Plug-in for managing/executing multiple OpenSesame experiments.
