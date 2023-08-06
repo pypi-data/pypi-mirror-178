@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: semantic-tree
+Version: 1.1.1
+Summary: Creates a visualization of the semantic neighborhood of a word in a Gensim's Word2Vec vector space model using the Gource visualizer
+Home-page: https://github.com/fccoelho/SemanticTree
+License: MIT
+Author: Flávio Codeço Coelho
+Author-email: fccoelho@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: gensim (>=4.2.0,<5.0.0)
+Requires-Dist: matplotlib (>=3.6.2,<4.0.0)
+Requires-Dist: networkx (>=2.8.8,<3.0.0)
+Project-URL: Changelog, https://github.com/fccoelho/SemanticTree/releases
+Project-URL: Repository, https://github.com/fccoelho/SemanticTree
+Description-Content-Type: text/markdown
+
+
+# Semantic Tree
+
+
+
+This package provide a semanticTree command, which generates a visualization of the semantic neighborhood of a work in a Gensim Word2vec vector space.
+
+
+## Installation
+
+
+This package requires that [Gource](https://gource.io/) is installed locally. On Ubuntu, it can be apt installed.
+
+```bash
+$ apt install gource
+```
+
+SemanticTree itself can be installed from PyPI with `pip`.
+
+ ```
+ pip install -U semantic_tree
+ ```
+
+![Screenshot](screen.png)
+## Note
+
+
+This project has been set up using PyScaffold 3.2.3. For details and usage
+information on PyScaffold see https://pyscaffold.org/.
+
