@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/fore_cloudreach/__init__.py
+src/fore_cloudreach/auth.py
+src/fore_cloudreach/errors.py
+src/fore_cloudreach/ingester.py
+src/fore_cloudreach/rereader.py
+src/fore_cloudreach/template.py
+src/fore_cloudreach.egg-info/PKG-INFO
+src/fore_cloudreach.egg-info/SOURCES.txt
+src/fore_cloudreach.egg-info/dependency_links.txt
+src/fore_cloudreach.egg-info/requires.txt
+src/fore_cloudreach.egg-info/top_level.txt
