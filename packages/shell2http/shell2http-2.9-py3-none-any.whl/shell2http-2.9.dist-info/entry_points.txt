@@ -1,0 +1,2 @@
+[console_scripts]
+shell2http = shell2http:serve
