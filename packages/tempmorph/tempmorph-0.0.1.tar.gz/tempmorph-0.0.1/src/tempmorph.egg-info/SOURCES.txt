@@ -1,0 +1,10 @@
+LICENCE
+README.md
+pyproject.toml
+setup.cfg
+src/tempmorph/__init__.py
+src/tempmorph/conv.py
+src/tempmorph.egg-info/PKG-INFO
+src/tempmorph.egg-info/SOURCES.txt
+src/tempmorph.egg-info/dependency_links.txt
+src/tempmorph.egg-info/top_level.txt
