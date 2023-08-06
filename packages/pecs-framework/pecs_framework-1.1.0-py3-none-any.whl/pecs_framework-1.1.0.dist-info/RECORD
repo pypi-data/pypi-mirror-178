@@ -1,0 +1,16 @@
+LICENSE.txt,sha256=UxV3SRjJuHOPYp1rlEiZSFpGlXheCBEgegH-AsgQI7U,1085
+pecs_framework/__init__.py,sha256=x7txbbSCCZqAPstKIiIx-yXUgMc6yv2KVlxzxzkLmQU,181
+pecs_framework/_types.py,sha256=K3jc90n_K9p16PnF4wdjYSqC42o3p--PvcBngMu9lLQ,460
+pecs_framework/base_system.py,sha256=tFDVbDH8oge5U3FR3968BX0AOVvvaxpAEdKEl-lfTNI,1962
+pecs_framework/component.py,sha256=teAFe3wvp1oea-EWREG_RNlas5-qY8AXAv5Yq-B39b0,1409
+pecs_framework/domain.py,sha256=iRouVu_aY6XbgPHDxKPm_jVpzJiaN4zETGoB8BMF2Q4,4297
+pecs_framework/engine.py,sha256=Sgil1UuZWOMvLSExMRrJ5S90_MNUgIpAecVdNdM0Ado,4630
+pecs_framework/entity.py,sha256=d5SAU8sSVLmlHNbXt2vDIT6z5Oe9QpIPnM0XtRaw6qE,5160
+pecs_framework/events.py,sha256=vqGDqFZz6ppT90xyIGcPYroIgDbAdKpePfzWdyzgOeY,1668
+pecs_framework/query.py,sha256=rFlxwdZN-oyDwNJEzKodxrN11PDZGMQPU3NjLQainOQ,2190
+pecs_framework/utils.py,sha256=NOT8JrPlNAzue1aHJRWHL-IYpK9bi7pAXssTUNq3HDY,304
+README.md,sha256=1JMHowR670dehxWwDRGelN66FzyOQNgTRc0_upU7byA,5766
+pecs_framework-1.1.0.dist-info/LICENSE.txt,sha256=UxV3SRjJuHOPYp1rlEiZSFpGlXheCBEgegH-AsgQI7U,1085
+pecs_framework-1.1.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+pecs_framework-1.1.0.dist-info/METADATA,sha256=cExJWFLL_7FkkwnrVVjTTFDbsQVl0Ho3FWr48XPiVt4,6977
+pecs_framework-1.1.0.dist-info/RECORD,,
