@@ -1,0 +1,12 @@
+bambird/__init__.py,sha256=toOCybh6dmq-GP3gYBvl2iqI7ILUerz9FD9VinePAJ4,2189
+bambird/cluster.py,sha256=oXaV-MYepUrdSWXeeh62O22uyXCq-Jb_OTBFwh6LzyY,32844
+bambird/config.py,sha256=4FfqCr3Xwmn5n8BAxUS6z82P2ZmD3TlV2lCFzY8C650,4266
+bambird/dataset.py,sha256=kUcB7KEMFdAIzK42gSUEX1rgCliA-ObX39TQo77-eLs,12693
+bambird/features.py,sha256=faxgEoXxbWsLTgjWM7R_f6OMkGLakIF3BsA0c8_X380,19405
+bambird/segmentation.py,sha256=FwULY87iNCeeKlymf7DjwWI-5a4p8UieK0YlQAINLQM,46254
+bambird/version.py,sha256=_uWJpa6VepOWryjR1v0aiAZ46C7FJGQSILjs2QrjJGY,88
+bambird-0.1.0.dist-info/LICENSE,sha256=zU3SAlKOEnu5WdaO0CIWpM4f2i-oIzxRXYIyh2ai-HQ,1516
+bambird-0.1.0.dist-info/METADATA,sha256=LvntWH9Tc5u9YX_ZKD_PNhcGp6q9kRa9KM9q_gHE-4I,5738
+bambird-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+bambird-0.1.0.dist-info/top_level.txt,sha256=YY1jXE6wtOfTbSlIDWspPEf0-pR_rKwN5U32qdy7iD0,8
+bambird-0.1.0.dist-info/RECORD,,
