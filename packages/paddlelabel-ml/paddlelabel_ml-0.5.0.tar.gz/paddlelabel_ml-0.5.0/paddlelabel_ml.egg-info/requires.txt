@@ -1,0 +1,7 @@
+flask[async]
+connexion[swagger-ui]
+Pillow
+opencv-python
+numpy
+tqdm
+flask_cors
