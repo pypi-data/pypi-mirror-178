@@ -1,0 +1,14 @@
+outlook_calendar_sync/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+outlook_calendar_sync/__main__.py,sha256=i-TjOCZYHH9Dg2b1LUz4ectbpUiZlj6AIzugMTkNmks,389
+outlook_calendar_sync/application.py,sha256=wMA4G0sCf3kQZWWod_f2fBw5N5R_91XYw6vflKvcXUk,2693
+outlook_calendar_sync/cli.py,sha256=gLnLStTXS-c0R9QFtfl-kg2qZ6floa_Nnv7NE-W8zQc,2095
+outlook_calendar_sync/gcal.py,sha256=qyBzdtOfOALdtyfQaKhnEKWNFeharpsDz611YGbCoGw,2753
+outlook_calendar_sync/outlook.py,sha256=YqKpUEb93ZFEnTjYfTjQvt3gSMZISKT_hmp0azmfKuw,2244
+outlook_calendar_sync/utils.py,sha256=BaBc8OeptB_nJSY6mZykawe345rygQx7AcL0kNufgRo,2715
+outlook_calendar_sync-0.0.1.dist-info/AUTHORS.rst,sha256=9k30PyYhAlcYk5SnQHSsWu08TudX22GY5fJpONk30d4,59
+outlook_calendar_sync-0.0.1.dist-info/LICENSE,sha256=YD3p5rkvx5qe2awWx0O8hAiTA2ELRh_z1dBlQxJIz-M,1321
+outlook_calendar_sync-0.0.1.dist-info/METADATA,sha256=9RjS-vJ-O_AhWs5-ln5miNGgmLhqft9dPEEd2KX9i9E,3307
+outlook_calendar_sync-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+outlook_calendar_sync-0.0.1.dist-info/entry_points.txt,sha256=IlpCQZhZu7u1dBveklgiFSjjwnb5GSvte1kv15wpGgQ,73
+outlook_calendar_sync-0.0.1.dist-info/top_level.txt,sha256=-i38QwyZ8Ld4Mg7-Gr7rxe1_uxFInKDihv-CgZXQunA,22
+outlook_calendar_sync-0.0.1.dist-info/RECORD,,
