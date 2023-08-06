@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: python-packaging-at
+Version: 0.3.0
+Summary: Example of how to package Python projects
+Author-email: Adam Tyson <code@adamltyson.com>
+License: BSD-3-Clause
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+### python-packaging-at
+
+Python code packaging demo
+
