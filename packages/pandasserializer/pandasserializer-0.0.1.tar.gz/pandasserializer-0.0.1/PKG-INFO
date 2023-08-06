@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: pandasserializer
+Version: 0.0.1
+Summary: Pandas Serializer is a powerful and flexible toolkit for building JSON structures based on data represented in a two-dimensional data structure.
+Home-page: https://github.com/dot-tostring/pandas_serializer
+Author: Eduardo Ventura Izquierdo Nuñez
+Author-email: in.eduardo.v@outlook.com
+License: MIT
+Description: UNKNOWN
+Keywords: pandas,serializer
+Platform: UNKNOWN
