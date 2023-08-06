@@ -1,0 +1,9 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+bin/trackcalc
+trackcalc.egg-info/PKG-INFO
+trackcalc.egg-info/SOURCES.txt
+trackcalc.egg-info/dependency_links.txt
+trackcalc.egg-info/top_level.txt
