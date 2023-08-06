@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: timeseriestools
+Version: 0.0.1
+Summary: Timeseres Tools
+Project-URL: Homepage, https://timeseries.tools
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: pandas
+Requires-Dist: requests
+Description-Content-Type: text/markdown
+
+timeseriestools

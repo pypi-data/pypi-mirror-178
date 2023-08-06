@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "timeseriestools"
+version = "0.0.1"
+authors = []
+description = "Timeseres Tools"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "requests",
+    "pandas"
+]
+
+[project.urls]
+"Homepage" = "https://timeseries.tools"
