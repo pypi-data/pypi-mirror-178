@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+src/nogdal/__init__.py
+src/nogdal.egg-info/PKG-INFO
+src/nogdal.egg-info/SOURCES.txt
+src/nogdal.egg-info/dependency_links.txt
+src/nogdal.egg-info/entry_points.txt
+src/nogdal.egg-info/requires.txt
+src/nogdal.egg-info/top_level.txt

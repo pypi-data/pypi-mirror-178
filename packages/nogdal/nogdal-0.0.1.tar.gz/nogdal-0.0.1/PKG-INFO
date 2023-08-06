@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: nogdal
+Version: 0.0.1
+Summary: A geospatial tool package for processing geospatial data without using GDAL
+Home-page: UNKNOWN
+Author: Weixing Zhang
+Author-email: weixing.zhang365@gmail.com
+License: UNKNOWN
+Description: Under Construction.
+Keywords: python,geospatial,gis,remote sensing
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
