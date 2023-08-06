@@ -1,0 +1,8 @@
+nx/main.py,sha256=fPOKvf8rEf1OVXwgZrc6iCNW5CkviNTrkSKmaPU9TIc,745
+nx/nixos.py,sha256=IfNdDUIs6OeeAHuh6o3zoUH26TUaNsVJ1gXI1Wr6GJk,3148
+nx/profile.py,sha256=xnod2zD4mW_ghgKIA2P08R1LIH8_75jqLH1ARVbzzxQ,5997
+nx/utils.py,sha256=rOE_gb6Hcp73ou233edm4lnn4_U44XIhq-HIZAbsQD4,2078
+nx_nix-1.0.0.dist-info/entry_points.txt,sha256=cvoGIWj2LZTAyENq_83bh76VsE0ReZrXOC4J1AXoHp8,34
+nx_nix-1.0.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+nx_nix-1.0.0.dist-info/METADATA,sha256=zCduTRwzI7y9lhRXKvZHnZMh-FoRQiOaiaFhcAqRrZs,1013
+nx_nix-1.0.0.dist-info/RECORD,,
