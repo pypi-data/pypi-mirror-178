@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <title>Roulette Demo</title>
+
+    <!-- <link rel="icon" type="image/png" href="favicon.png" /> -->
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <link rel="stylesheet" href="./assets/css/examples.css" />
+    <link rel="stylesheet" href="./assets/prism/prism.css" />
+    <script defer src="./assets/prism/prism.js"></script>
+  </head>
+
+  <body>
+  <nav class="navbar" style="background-color: #000000;">
+      <div class="app-header">
+        <!-- <a href="/">
+          <img src="./logo.png" class="logo">
+        </a> -->
+        <a class="title" href="" style="color: #f0ab3c;">Roulette</a>
+      </div>
+    </nav>
+    <section class="pyscript">
+    <div class="font-mono">Simulating 100 Games for 1000 Players: <label id="outputDiv"></label></div>
+    <center>
+    <div id="outputDiv2" class="font-mono"></div>
+    </center>
+    <br>
+    <div id="outputDiv3" class="font-mono"></div>
+    <br>
+    <py-config>
+    packages = [
+        "pyroulette",
+        "matplotlib"
+      ]
+    </py-config>
+    <py-script output="outputDiv2">
+import pyroulette as pr
+
+# seed(59)
+from random import randint
+players = []
+for _ in range(1, 20):
+    c = randint(0, 3)
+    if c == 0:
+        min_games = randint(1, 100)
+    elif c == 1:
+        min_games = randint(1, 25)
+    else:
+        min_games = randint(1, 2)
+
+    players.extend(pr.generate_players(num_players=50, min_num_games=min_games, total_budget=100))
+
+players = pr.play_roulette(players, games=100)
+
+# get the wallet values for all players as a list
+wallets = [player.wallet for player in players]
+# calculate some statistics
+avg_wallet = sum(wallets) / len(wallets)
+median_wallet = sorted(wallets)[len(wallets) // 2]
+
+# calculate winnings
+winnings = [p.wallet - p.budget for p in players]
+
+num_losers = len([w for w in winnings if w <= 0])
+num_winners = len([w for w in winnings if w > 0])
+num_bankrupt = len([l for l in wallets if l == 0])
+
+# print the results
+print(f"Average wallet value: {avg_wallet}\n")
+print(f"Median wallet value: {median_wallet}\n")
+print(f"Number of players who lost money: {num_losers}, proportion: {num_losers / len(players):.2f}")
+print(f"Number of players who went bankrupt: {num_bankrupt}, proportion: {num_bankrupt / len(players):.2f}")
+print()
+print(f"Number of players who won more than they started with: {num_winners}, proportion: {num_winners / len(players):.2f}")
+    </py-script>
+
+    <py-script output="outputDiv3">
+    for p in sorted(players, reverse=True):
+        print("\n<br>", p)
+    </py-script>
+    </section>
+ 
+  </body>
+
+</html>
