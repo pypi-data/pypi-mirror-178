@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: redis-file-transfer
+Version: 0.0.1
+Summary: A command line tool for transfer files via Redis
+Author-email: Fredrik Haglund <fr3h4g@gmail.com>
+License: LICENSE
+Project-URL: Homepage, https://github.com/fr3h4g/redis-file-transfer-python
+Classifier: Development Status :: 1 - Planning
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: invoke ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+
+# file-transfer-python
