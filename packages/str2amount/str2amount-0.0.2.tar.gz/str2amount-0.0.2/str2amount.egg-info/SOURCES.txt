@@ -1,0 +1,8 @@
+README.md
+setup.py
+libfolder/__init__.py
+libfolder/str2amount.py
+str2amount.egg-info/PKG-INFO
+str2amount.egg-info/SOURCES.txt
+str2amount.egg-info/dependency_links.txt
+str2amount.egg-info/top_level.txt
