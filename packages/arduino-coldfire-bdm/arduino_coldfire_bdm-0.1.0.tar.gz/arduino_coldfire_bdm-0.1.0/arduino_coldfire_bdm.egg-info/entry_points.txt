@@ -1,0 +1,2 @@
+[console_scripts]
+arduino-coldfire-bdm = arduino_coldfire_bdm.command_line:main
