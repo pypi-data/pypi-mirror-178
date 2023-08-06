@@ -1,0 +1,10 @@
+py_libget/__init__.py,sha256=KOSyMCILUD8Gxi9Vrtg5tI58PSwdvkj5ugtugrVCSLw,1417
+py_libget/package_manager.py,sha256=-rXCANICV3xHhuJkvXJcKCz3Z3herjDLyEUmrd16vLw,12066
+py_libget/parser.py,sha256=ngrYbv_vYPHo3zu28FX2k6vHLTgOU27EZWPz6UyNqgw,2963
+py_libget/version.py,sha256=2ucHTRNwbLz3lipYT7Elk9SdQMNek4xCCwycYRKai_c,31
+py_libget/webhandler.py,sha256=G21kpPLX4DnNDfqT-ZvHK7XqS_b1nZ6x4BjEYAkQsCc,5927
+py_libget-0.0.0.dist-info/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+py_libget-0.0.0.dist-info/METADATA,sha256=ne78fxPMsFWwHiXCMHaGBGQ8-RaIDbqVCnXs8QYCwkE,10080
+py_libget-0.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+py_libget-0.0.0.dist-info/top_level.txt,sha256=WvIBhXK9Of8sfWXGgFroFuBpz3dBSfDbS2_8rNHDW9s,10
+py_libget-0.0.0.dist-info/RECORD,,
