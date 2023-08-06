@@ -1,0 +1,2 @@
+[console_scripts]
+racksdb = racksdb.exec:RacksDBExec.run
