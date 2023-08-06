@@ -1,0 +1,13 @@
+rebelbase/VERSION,sha256=AenaELWTGI1sRzTLSXUhGM9eVEZ_jM3fw0ZRlN1Yzsc,8
+rebelbase/__init__.py,sha256=o62keP1I8rwqBQ2H0CRil7u-oAPZKTPK5aNPKjmVi10,607
+rebelbase/base2.py,sha256=zBeN9gHAPOAIISVEeDGdfVst1fCccdbqas94pA0CzTc,272
+rebelbase/base26_continuous.py,sha256=cuxiEZRyVF03zVQFJwp--dEhwD00x0PJio7U1AZB6o8,1041
+rebelbase/log.py,sha256=uGagHsAUr6cSqh4F06uk6dH-qXmLqG3mz5AJq82x5iE,60
+rebelbase/number.py,sha256=TcfE5vAgFnExbDXawuC2uYyeYyBGghrRUuuXdnEHbz0,4455
+rebelbase/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rebelbase/value.py,sha256=ZtTbTm1Br1B_TgxGhvjLXBIWWP-dQTKK5LbAAf570-Q,3180
+rebelbase-1.0.0a1.dist-info/LICENSE,sha256=CS5aRwpnfY-tgdAPpg1pqOxHyzAJOKDdZG-V76v_ZNM,1073
+rebelbase-1.0.0a1.dist-info/METADATA,sha256=lc9zVOZawwnngp-DnQEuZX__rOx-2yLSAEwho-d9v6s,727
+rebelbase-1.0.0a1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+rebelbase-1.0.0a1.dist-info/top_level.txt,sha256=AodVzwbR19YoSDMWXr4xz-K_lmBw5e2JjimuXRryIlg,10
+rebelbase-1.0.0a1.dist-info/RECORD,,
