@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: protarrow
+Version: 0.0.3rc1
+Summary: Convert from protobuf to arrow and back
+Home-page: https://github.com/tradewelltech/protarrow
+License: Apache-2.0
+Author: 0x26res
+Author-email: 0x26res@gmail.com
+Requires-Python: >=3.8,<3.11
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: googleapis-common-protos (>=1.53.0,<2.0.0)
+Requires-Dist: protobuf (>=3.20.1,<4.0.0)
+Requires-Dist: pyarrow (>=8.0.0)
+Project-URL: Documentation, https://protarrow.readthedocs.io/en/latest/
+Project-URL: Repository, https://github.com/tradewelltech/protarrow
+Description-Content-Type: text/markdown
+
+[![PyPI Version][pypi-image]][pypi-url]
+[![][versions-image]][versions-url]
+[![][stars-image]][stars-url]
+[![codecov](https://codecov.io/gh/0x26res/protarrow/branch/master/graph/badge.svg?token=XMFH27IL70)](https://codecov.io/gh/0x26res/protarrow)
+[![Build Status][build-image]][build-url]
+[![Documentation][doc-image]][doc-url]
+
+
+# Protarrow
+
+A python library for converting from protobuf to arrow and back 
+
+# Installation
+
+```shell
+pip install protarrow
+```
+
+# Usage
+
+See the [documentation](https://protarrow.readthedocs.io/en/latest/)
+
+
+<!-- Badges: -->
+
+[pypi-image]: https://img.shields.io/pypi/v/protarrow
+[pypi-url]: https://pypi.org/project/protarrow/
+[build-image]: https://github.com/tradewelltech/protarrow/actions/workflows/build.yaml/badge.svg
+[build-url]: https://github.com/tradewelltech/protarrow/actions/workflows/build.yaml
+[stars-image]: https://img.shields.io/github/stars/tradewelltech/protarrow
+[stars-url]: https://github.com/tradewelltech/protarrow
+[versions-image]: https://img.shields.io/pypi/pyversions/protarrow
+[versions-url]: https://pypi.org/project/protarrow/
+[doc-image]: https://readthedocs.org/projects/protarrow/badge/?version=latest
+[doc-url]: https://protarrow.readthedocs.io/en/latest/?badge=latest
+
