@@ -1,0 +1,12 @@
+LICENSE
+README.rst
+setup.py
+tests/__init__.py
+tests/test_file_utils.py
+zswiss/__init__.py
+zswiss.egg-info/PKG-INFO
+zswiss.egg-info/SOURCES.txt
+zswiss.egg-info/dependency_links.txt
+zswiss.egg-info/top_level.txt
+zswiss/utils/__init__.py
+zswiss/utils/file_utils.py
