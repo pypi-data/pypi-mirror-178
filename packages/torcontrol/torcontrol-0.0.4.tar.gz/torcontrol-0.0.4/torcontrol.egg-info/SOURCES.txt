@@ -1,0 +1,10 @@
+LICENSE
+setup.py
+torcontrol/__init__.py
+torcontrol/commands.py
+torcontrol/connection.py
+torcontrol/parsers.py
+torcontrol.egg-info/PKG-INFO
+torcontrol.egg-info/SOURCES.txt
+torcontrol.egg-info/dependency_links.txt
+torcontrol.egg-info/top_level.txt
