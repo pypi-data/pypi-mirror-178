@@ -1,0 +1,3 @@
+[console_scripts]
+clusterq-manage = clusterq.configure:manage_packages
+
