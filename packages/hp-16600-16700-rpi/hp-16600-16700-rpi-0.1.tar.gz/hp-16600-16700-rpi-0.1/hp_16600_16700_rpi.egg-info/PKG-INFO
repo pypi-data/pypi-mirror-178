@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: hp-16600-16700-rpi
+Version: 0.1
+Summary: Interface with HP / Agilent 16600A and 16700 logic analyzers
+Home-page: https://github.com/number42net/hp-16600-16700-rpi
+Author: Martin Miedema
+Author-email: git@number42.net
+Project-URL: Documentation, https://hp-16600-16700-rpi.readthedocs.io
+Project-URL: Source, https://github.com/number42net/hp-16600-16700-rpi
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# HP-16600-16700-RPI
+
+This is a Python 3 library for interacting with HP / Agilent 16600A and 16700 logic analyzer main frames.
+
+It allows for automatic configuration and data acquisition through the RPI interface.
+The collected data is presented in easy to use Panda dataframes for further analyses.
+
+## Requirements:
+
+- Python => 3.6
+- Python Pandas
+- A compatible HP / Agilent logic analyzer with a network connection
