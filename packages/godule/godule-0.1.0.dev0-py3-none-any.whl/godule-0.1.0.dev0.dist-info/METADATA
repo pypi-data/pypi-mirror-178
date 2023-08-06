@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: godule
+Version: 0.1.0.dev0
+Summary: __god__ule
+Home-page: https://github.com/carlosejimenez/godule
+Author: Carlos E. Jimenez
+Description-Content-Type: text/markdown
+Requires-Dist: more-itertools
+Requires-Dist: matplotlib (!=3.6.1,>=3.1)
+

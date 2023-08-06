@@ -1,0 +1,10 @@
+godule/__init__.py,sha256=_3zgyt79qXR3OJ7WWgqV2-2EcbHT3cVhcMpzYZChp8w,130
+godule/data_readers/__init__.py,sha256=jr8daBIz8jGIhK2ewZkNGygq4KmO4cGgDtiRfH7Blw8,208
+godule/data_saving/__init__.py,sha256=M1HCixYpJ8OcSIZewp9WhLg0Qky0XVyQHXHubcN7QUo,566
+godule/latex/__init__.py,sha256=U7VyYtopGajfLIJE2EeDDGNAenfUAjBqFu-PdNGppFI,2442
+godule/stats/__init__.py,sha256=2bSYxfIPeza6ippl6EsTLvOMRgA-pzzCzchx80Qln6I,182
+godule/visualization/__init__.py,sha256=xiIvoJNJ2nee5uV84eHivtf9GY4c1rDK4qMFkPTD8Lo,379
+godule-0.1.0.dev0.dist-info/METADATA,sha256=0Jd_3JdJHr9CmYHqKwQsOSCjRqBEBFFrQXERpzKdLI8,266
+godule-0.1.0.dev0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+godule-0.1.0.dev0.dist-info/top_level.txt,sha256=asYcJFvj6gvdCvoz71mK28wwO7wJdyQiw93eOntAwv0,7
+godule-0.1.0.dev0.dist-info/RECORD,,
