@@ -1,0 +1,10 @@
+kurbopy-0.8.32.dist-info/METADATA,sha256=LkGWLWk6g6gD4avfGSd5caQh94V7mhNSk7GicHXxshY,1346
+kurbopy-0.8.32.dist-info/WHEEL,sha256=AN0fXaursyc3poRiukXPBG8Do7WKWPg4Exj4X-FSo0k,105
+kurbopy/magic.py,sha256=vy2He8sfXEVIZkog-dqe0YJJbRMtbqHwdgZeEIdMR7c,1414
+kurbopy/__init__.py,sha256=Z-KElXmUTwR49Fsl006ay_N_P0jl8pJ2jntxpsHumtQ,4178
+kurbopy/__pycache__/magic.cpython-39.pyc,sha256=ZvK_3NvrBXjlUFldoRg8hhzSDmxsHnBKTn26AKS0b1g,1437
+kurbopy/__pycache__/__init__.cpython-39.pyc,sha256=ZxZ194WLlMctVYz5p7oySFSjw4QBRj0e3Z5yV2MY2jw,2226
+kurbopy/__pycache__/magic.cpython-310.pyc,sha256=bglI68-HLsp2BdzYZV4GFpB2gfp21ovUZ69WTxy_R2o,1221
+kurbopy/__pycache__/__init__.cpython-310.pyc,sha256=ZzFQWO99yUMES3LBJqyVQlHz5VEiAtWEZtciO3S1fZE,4315
+kurbopy/kurbopy.cpython-310-darwin.so,sha256=VpRuuGhwXERxts5zi_3M5IMxVZJIzqNRrG3ffooQSwM,1155962
+kurbopy-0.8.32.dist-info/RECORD,,
