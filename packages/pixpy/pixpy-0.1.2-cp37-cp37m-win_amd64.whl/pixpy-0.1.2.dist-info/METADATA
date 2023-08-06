@@ -1,0 +1,145 @@
+Metadata-Version: 2.1
+Name: pixpy
+Version: 0.1.2
+Summary: Graphics library
+Home-page: https://github.com/sasq64/pix
+Author: Jonas Minnberg
+Author-email: Jonas Minnberg <sasq64@gmail.com>
+License: Copyright 2022 Jonas Minnberg
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Project-URL: repository, https://github.com/sasq64/pix
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+## PIX (pixpy)
+
+A graphics library with a python interface.
+Designed for learning and 2D game development.
+
+### Install
+
+```sh
+pip install pixpy
+```
+
+For Linux pip builds from source so you need a few dependecies;
+
+```sh
+sudo apt install libxinerama-dev libxi-dev libxrandr-dev libxcursor-dev
+```
+
+### The Basics
+
+The following is a full program that opens a window and draws a circle;
+
+```python
+import pixpy as pix
+screen = pix.open_display(width=1280, height=720)
+screen.circle(center=(640,360), radius=300)
+```
+
+**NOTE:** This simple example works because if you try to exit before doing anything besides drawing, pix will "swap" the screen automatically to display what you drawn, and then leave the window open until you try to quit.
+
+Normally you create your own main loop and do this yourself;
+
+```python
+import pixpy as pix
+
+screen = pix.open_display(width=1280, height=720)
+
+x = 0
+while pix.run_loop():
+    screen.clear()
+    screen.circle(center=(x,360), radius=x/4)
+    x += 1
+    screen.swap()
+```
+
+To read the keyboard and/or mouse, you can use _is_pressed()_ or _was_pressed()_
+
+```python
+import pixpy as pix
+
+screen = pix.open_display(width=1280, height=720)
+
+x = 0
+moving = True
+while pix.run_loop():
+    if pix.was_pressed(' '):
+        moving = not moving
+    if moving:
+        x += 1
+    screen.clear()
+    screen.circle(center=(x,360), radius=100)
+    screen.swap()
+```
+
+For more advanced needs you use events
+
+```python
+import pixpy as pix
+
+screen = pix.open_display(width=1280, height=720)
+
+while pix.run_loop():
+    for e in pix.all_events():
+        if type(e) == pix.events.Click:
+            screen.filled_circle(center=e.pos, radius=15)
+    screen.swap()
+```
+
+**NOTE:** This will not produce the desired effect; since we are double
+buffering, the circles will be randomly drawn to either of the two buffers and
+appear to blink.
+
+### The Console
+
+A major part of pix is the _Console_
+
+In its simplest form, it can be used for text output
+
+The console needs to be drawn to be visible, just like everything else.
+
+```python
+con = pix.Console(cols=80, rows=50)
+con.write('Hello\n')
+con.render(screen)
+```
+
+`console.read_line()` can be used to read lines of text. The result will be posted
+as a TextEvent.
+
+
+```python
+import pixpy as pix
+
+screen = pix.open_display(width=1280, height=720)
+con = pix.Console(cols=40, rows=25)
+con.write('What is your name?\n')
+con.read_line()
+while pix.run_loop():
+    match pix.get_event():
+        case pix.event.Text(text):
+            con.write("Hello " + text)
+            con.read_line()
+
+    con.render(screen)
+    screen.swap()
+```
+
+### The Core Objects
+
+* A _Vec2_ is a 2D dimensional vector with an _x_ and _y_ field that are used
+to represent 2D coordinates and sizes.
+
+* An _Image_ is a reference to a rectangular array of pixels on the GPU, or in other words, a set of 4 UV coordinates (known to form a rectangle) and a texture reference.
+
+* The _Screen_ represents the window or display.
+
+* A _Context_ ties together rendering _state_ with a rendering _target_. The Screen, and all Images, can be treated as context and can be drawn to.
