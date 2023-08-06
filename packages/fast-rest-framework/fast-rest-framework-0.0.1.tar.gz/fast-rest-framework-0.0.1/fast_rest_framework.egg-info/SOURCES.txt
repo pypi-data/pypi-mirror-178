@@ -1,0 +1,15 @@
+.gitignore
+LICENSE
+README
+setup.py
+fast_rest_framework.egg-info/PKG-INFO
+fast_rest_framework.egg-info/SOURCES.txt
+fast_rest_framework.egg-info/dependency_links.txt
+fast_rest_framework.egg-info/top_level.txt
+fastframework/__init__.py
+fastframework/authentication.py
+fastframework/decorators.py
+fastframework/resources.py
+fastframework/settings.py
+fastframework/utils/__init__.py
+fastframework/utils/cache.py
