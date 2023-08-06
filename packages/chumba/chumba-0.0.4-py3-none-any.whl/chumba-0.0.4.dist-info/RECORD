@@ -1,0 +1,13 @@
+chumba/__init__.py,sha256=208TZmY4DjDqV48HfDSKDu7Ut2x5LxPNf5UqM-cwoEo,95
+chumba/statistic.py,sha256=RqdGpqME7wN3mE2xULigbCP9C0r5w5wwzxCzYkewGaE,3889
+chumba/utils.py,sha256=bgcst7H9VzdxzlwsRDRrUavE-QzL1ncQc70q5_lKuFs,1910
+chumba/word.py,sha256=Lx-KzeF5Ehkk7GvHgVbZUS0geJeBd7kAWVFBbAugd-o,5436
+chumba/data/encodings.txt,sha256=XmCi1WexHTzEl-lfE7BdRps8EphwvaL1OYN7matWPdg,527
+chumba/data/ojegov.txt,sha256=Dt2AfnLqLoiTEseyWTInUTHLFn40vyp541KXUNqhcM4,13477447
+chumba/data/words_en.txt,sha256=q-mpEN081WblIyEZvw2SiJK8gDDVL3wPqGchcHp996Q,27232
+chumba/data/words_ru.txt,sha256=9iu6TCSoyRCDxsjAo4SqM1rnsEbWTwRDTfAQFVov7ck,724264
+chumba-0.0.4.dist-info/LICENSE,sha256=qkQgb2ZLCKJD-lOoLi4aGBPlgNPbh3917l6bvYu804Q,1085
+chumba-0.0.4.dist-info/METADATA,sha256=n-LMeZ9xRxN_LIDbH7jSudsGBL9hQuWIEmIaIp1F15g,608
+chumba-0.0.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+chumba-0.0.4.dist-info/top_level.txt,sha256=tvoA8JHZso2-JZ-G6DS3Kx4yN7U21aQFyFU6CmEKlLM,7
+chumba-0.0.4.dist-info/RECORD,,
