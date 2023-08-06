@@ -1,0 +1,10 @@
+Django
+channels
+ASGIMiddlewareStaticFile
+rich
+daphne
+pillow
+numpy
+pyscreenshot
+pyserial
+requests
