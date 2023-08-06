@@ -1,0 +1,8 @@
+card_service_clients/__init__.py,sha256=NhhuL_EoRAKIIhlfYKLSfG5XtvDvuLKS5zpV9XWzE4c,404
+card_service_clients/models.py,sha256=d7LPIpTBUjP2tfKvqOlKFiohJdn6NQiaASHLQI2jdUQ,708
+card_service_clients/patient_card_client.py,sha256=YRBIy5JqsjR4UJI0vDY7ZKZzFmEt9QCGXwg9TfHxZvE,967
+card_service_clients-0.0.4.dist-info/LICENSE.txt,sha256=S9X_6Wphp7hv_2oZKR6dUNq-bUvewqXeEBiDQ8CVJMY,575
+card_service_clients-0.0.4.dist-info/METADATA,sha256=suLm6CHk7aUaxWpY6gVz-KfMuJU9al2Gdxouda45bpw,957
+card_service_clients-0.0.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+card_service_clients-0.0.4.dist-info/top_level.txt,sha256=R9I9XeAUMJtYl1hEc2w5Z1qYfGYgNP1VZj9asZWbtvs,21
+card_service_clients-0.0.4.dist-info/RECORD,,
