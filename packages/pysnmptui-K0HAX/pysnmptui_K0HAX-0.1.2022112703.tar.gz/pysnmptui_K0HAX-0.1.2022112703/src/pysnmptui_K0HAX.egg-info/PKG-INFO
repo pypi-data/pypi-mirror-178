@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pysnmptui-K0HAX
+Version: 0.1.2022112703
+Summary: Python SNMP TUI (Terminal User Interface)
+Author-email: Michael Englehorn <michael+pypi@englehorn.com>
+Project-URL: Homepage, https://github.com/K0HAX/pysnmptui
+Project-URL: Bug Tracker, https://github.com/K0HAX/pysnmptui/issues
+Keywords: snmp,tui
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pysnmptui
+
+Python SNMP TUI (Terminal User Interface)
+
