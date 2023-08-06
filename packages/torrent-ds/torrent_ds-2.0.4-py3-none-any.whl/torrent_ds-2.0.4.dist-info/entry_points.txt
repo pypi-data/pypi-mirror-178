@@ -1,0 +1,4 @@
+[console_scripts]
+torrent-ds=torrent_ds.torrent_ds:main
+torrent-ds-data=torrent_ds_tools.read_data:main
+

@@ -1,0 +1,15 @@
+torrent_ds/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+torrent_ds/config.py,sha256=xr9GcleR1s6Z51G7cfxK-29TT-bhbcmgtne3B5S9Ryw,1994
+torrent_ds/creds.py,sha256=hjRW38i_itEedT3ecllj7GTNyGAta5STBm914VIKY-c,2597
+torrent_ds/data.py,sha256=fstg4Q0nCxC0EXrn2jD88PdQ2P6CwWKDBwenaReyjls,1198
+torrent_ds/download.py,sha256=FIE7cKsokskQw6fJN9Hz2w7hmQuN35iPMapfzzaHXS0,10337
+torrent_ds/error.py,sha256=bRsfskvVyrcrDb7nLacNXWQvG-FmKlmMbRzaAmd8ABM,133
+torrent_ds/logger.py,sha256=HkRNxi7z5PKDpLuPvyuIOSZpqm8drlcn2BM_WolUKXU,360
+torrent_ds/torrent_ds.py,sha256=iuN8VgJC1M0lKOA0M7D95YK4LusJC3v_XUv_12zhwBc,2500
+torrent_ds/util.py,sha256=p_ndLYNi0VDlQwA458J93hrhRvmjdRdxjC5ZTo8WazU,541
+torrent_ds_tools/read_data.py,sha256=3d8evG1VYIvqx_fPWkc191cMPHQChOWvliWnKrHHuvc,2354
+torrent_ds-2.0.4.dist-info/entry_points.txt,sha256=R7gmPyaQT9NiwjyaSbD759a0JMX9ocaxchLL1CEO0wM,105
+torrent_ds-2.0.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+torrent_ds-2.0.4.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+torrent_ds-2.0.4.dist-info/METADATA,sha256=DT1o2O6UUSznep6dlr-XRoS0zXDmrJSli3kf-DcN-jw,7349
+torrent_ds-2.0.4.dist-info/RECORD,,
