@@ -1,0 +1,2 @@
+[console_scripts]
+s-rna-tools = s_rna_tools.__main__:run_s_rna_tools
