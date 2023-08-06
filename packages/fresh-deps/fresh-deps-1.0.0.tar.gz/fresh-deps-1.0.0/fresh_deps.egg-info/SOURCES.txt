@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+fresh_deps/__init__.py
+fresh_deps/__main__.py
+fresh_deps/_dependency_updater.py
+fresh_deps/_gitlab_api.py
+fresh_deps/_service_api.py
+fresh_deps/_update_dependencies.py
+fresh_deps/py.typed
+fresh_deps.egg-info/PKG-INFO
+fresh_deps.egg-info/SOURCES.txt
+fresh_deps.egg-info/dependency_links.txt
+fresh_deps.egg-info/entry_points.txt
+fresh_deps.egg-info/requires.txt
+fresh_deps.egg-info/top_level.txt
