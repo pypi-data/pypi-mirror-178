@@ -1,0 +1,3 @@
+[console_scripts]
+acycling-digraph-problem=acycling_digraph_problem.main:main
+
