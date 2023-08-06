@@ -1,0 +1,74 @@
+syntax = "proto3";
+
+import "common.proto";
+import "server.proto";
+
+package controller;
+
+service IsolateController {
+    // Run the given function on the specified environment. Streams logs
+    // and the result originating from that function.
+    rpc Run (HostedRun) returns (stream HostedRunResult) {}
+}
+
+message HostedRun {
+    // Environment definitions.
+    repeated EnvironmentDefinition environments = 1;
+    // Machine requirements
+    optionalpip MachineRequirements machine_requirements = 2;
+    // Function to run.
+    SerializedObject function = 3;
+}
+
+message HostedRunCron {
+    // Environment definitions.
+    repeated EnvironmentDefinition environments = 1;
+    // Machine requirements
+    optional MachineRequirements machine_requirements = 2;
+    // Function to run.
+    SerializedObject function = 3;
+    // cron string to represent the run schedule 
+    string cron = 4;
+}
+
+message HostedRunResult {
+    // Unique run id / token.
+    string run_id = 1;
+
+    // Optionally the status of the current run (in terms of
+    // fal cloud).
+    optional HostedRunStatus status = 2;
+
+    // The most recent logs from the run.
+    repeated Log logs = 3;
+
+    // The result of the run, if it is complete (indicated by
+    // status.is_complete).
+    optional SerializedObject return_value = 4;
+}
+
+message HostedRunStatus {
+    enum State {
+        // The run is in progress.
+        IN_PROGRESS = 0;
+        // The run has completed successfully.
+        SUCCESS = 1;
+        // The run has failed because of isolate.
+        INTERNAL_FAILURE = 2;
+        // TODO: probably QUEUED, etc.
+    }
+
+    // The state of the run.
+    State state = 1;
+
+    // TODO: probably a free form struct for more detailed
+    // information (how it crashed, position in queue, etc).
+}
+
+message MachineRequirements {
+    // Machine type. It is not an enum because we want to be able
+    // to dynamically add new machine types without regenerating
+    // both the client and the server. Validation is done at the
+    // server side.
+    string machine_type = 1;
+}
