@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: turtler
+Version: 0.0.3
+Summary: A fun way to get started with graphics and data science in python
+Home-page: https://github.com/dehadeaaryan/turtler
+Author: Aaryan Dehade
+Author-email: dehadeaaryan@gmail.com
+Project-URL: Bug Tracker, https://github.com/dehadeaaryan/turtler/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## Introduction
+
+Start your Data Science journey with Turtler. Written to make learning fun!
+
+### Getting Started
+
+Turtler is built on top of [turtle](https://docs.python.org/3/library/turtle.html) but makes drawing easy.
+
+#### Import
+
+`from turtler import Turtler`
+
+
+
+#### Initialize
+
+`myTurtler = Turtler()`
+
+
+
+#### Move and Draw
+
+```
+myTurtler.go(DIRECTIONS)
+myTurtler.draw(DIRECTIONS)
+```
+
+
+
+DIRECTIONS is a string consisting of:-
+| Character | Direction |
+| --------- | --------- |
+| u         | UP        |
+| d         | DOWN      |
+| l         | LEFT      |
+| r         | RIGHT     |
+
+EXAMPLE:-
+```
+directions = "uldr"
+myTurtler.go(directions)
+```
+
+
+
+#### End Drawing
+
+`myTurtler.done()`
+
+
+---
+
+### Other Methods
+
+**Set Animation Speed**
+
+`myTurtler.setSpeed(YOUR_SPEED)`
+
+Options:
+- fastest
+- fast
+- normal
+- slow
+- slowest
+
+**Set Step Size**
+
+`myTurtler.setSpeed(YOUR_SIZE)`
+
+YOUR_SIZE is an int object
