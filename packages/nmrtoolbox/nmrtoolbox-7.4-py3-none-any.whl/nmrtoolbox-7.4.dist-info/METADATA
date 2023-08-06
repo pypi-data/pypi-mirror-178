@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: nmrtoolbox
+Version: 7.4
+Project-URL: Homepage, https://nmrbox.nmrhub.org/
+Author-email: Adam Schuyler <schuyler@uchc.edu>, D Levi Craft <darcraft@uchc.edu>
+License: nmrtoolbox: A simple utility for parsing and working with NMR peak tables
+        
+        Copyright: 2022 Adam Schuyler <schuyler@uchc.edu>
+        
+        License: GPL-3+
+         This program is free software: you can redistribute it and/or modify
+         it under the terms of the GNU General Public License as published by
+         the Free Software Foundation, either version 3 of the License, or
+         (at your option) any later version.
+         .
+         This program is distributed in the hope that it will be useful,
+         but WITHOUT ANY WARRANTY; without even the implied warranty of
+         MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+         GNU General Public License for more details.
+         .
+         You should have received a copy of the GNU General Public License
+         along with this program.  If not, see <http://www.gnu.org/licenses/>.
+         .
+         On Debian systems, the complete text of the GNU General
+         Public License version 3 can be found in "/usr/share/common-licenses/GPL-3".
+License-File: LICENSE
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: matplotlib>=3.6
+Requires-Dist: numpy>=1.23
+Requires-Dist: scipy>=1.9
+Description-Content-Type: text/markdown
+
+# nmrtoolbox
+
+## Introduction
+This is a simple utility that provides modules for working with NMRPipe peak tables and performing a receiver operator characteristic (ROC) analysis to quantify the quality of the "recovered" peaks relative to a control set of "injected" peaks.  The modules in this package are as follows:
+- `nmrtoolbox.peak`: classes for reading in peak tables (currently supports both synthetically generated and recovered peak tables from NMRPipe)
+- `nmrtoolbox.roc`: perform receiver operator characteristic (ROC) analysis of a recovered peak table relative to an injected peak table
+- `nmrtoolbox.mask`: define regions of a spectrum that contain signal or are empty
+- `nmrtoolbox.util`: various supporting utilities used by other modules
+
+## Applications
+
+### Example #1 - Formal Workflow
+The tools in this package are utilized by the [NUScon](https://nuscon.org/home) software package.  You can access NUScon on the NMRbox platform (free for academic, government, and non-profit users).  Running `nuscon -h` will provide instructions on how to run the NUScon evaluation workflow, which directly utilizes the tools presented here in the `nmrtoolbox` package.
+
+### Example #2 - Kick the Tires
+
+```commandline
+from nmrtoolbox.roc import roc
+
+# perform ROC analysis and specify filtering criteria for 
+# cluster_type and chi2prob
+my_roc = roc(
+    recovered_table=<file-recovered.tab>,
+    injected_table=<file-injected.tab>,
+    cluster_type=1,
+    chi2prob=.75,
+)
+
+# show and plot results
+my_roc.print_stats()
+my_roc.plot_roc()
+my_roc.plot_peaks()
+my_roc.plot_outliers()
+```
+
+The roc function supports the following filter criteria:
+- `number`
+- `height` 
+- `abs_height` 
+- `roi_list` 
+- `index`
+- `cluster_type`
+- `mask_file`
+- `chi2prob`
+
+Note: Filtering by `mask` requires the external use of NMRPipe to generate a mask file indicating where the spectrum is empty.  This binary data is converted by [Connjur Spectrum Translator](https://nmrbox.nmrhub.org/software/spectrum-translator) into a "tabular" format file (i.e. plain text) which is then read in by `nmrtoolbox.mask`.
+
+
+## Changelog
+
+v7
+- addition of `roc` module
+- addition of `mask` module
+
+v6
+- rename package as `nmrtoolbox`
+- use subclasses to handle NMRPipe peak tables coming from genSimTab or from the peak picker
+
+v5
+- new Axis class for containing metadata from peak table header
