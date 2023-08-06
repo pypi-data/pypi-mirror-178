@@ -1,0 +1,9 @@
+gaussCLI/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+gaussCLI/gauss.py,sha256=UhOYkI8IYbTGq6yM-8S7Jh6KKTEBCzOq-Lj4KrDUr-s,2116
+gaussCLI/gaussCli.py,sha256=JaxIXvAmraqeNqFoMDhAuLAe4MG1vqp02owsgVkbnEk,1293
+gaussCLI/matrixOperations.py,sha256=8Hynr4yWbP4vg9gtQBaoEq-w7M4LLRnyTfPm41OqP44,1047
+gaussCLI/printer.py,sha256=VFmDa5Vkjm7vjhfKORrkCvKp2ZtGHwokFCx6QkoUaOo,1936
+gauss_cli-1.0.1.dist-info/METADATA,sha256=UqK-eivcHPnb8t6sNowoaWMSahOzL64b_wYmhQ42V74,1167
+gauss_cli-1.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+gauss_cli-1.0.1.dist-info/top_level.txt,sha256=JgkJ0AuJ9QYVWZDLeYy2Qt14tVij5zVUiyClmQcVVaA,9
+gauss_cli-1.0.1.dist-info/RECORD,,
