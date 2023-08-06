@@ -1,0 +1,13 @@
+fastedit/Composing.py,sha256=w0Z_yt-w-BiydxpgMoN-zB4UZRZI0ilJ3c8FpQqSQS0,3586
+fastedit/Errors.py,sha256=KNWf4lYfxdzJM5aaLkn556wSMXuOBx3F9ByXPXGYrsI,172
+fastedit/Medias.py,sha256=G7O_p-tvDTGJxsZY8_lilu9zxBK0QCRwrtvlR3ZhLFQ,18502
+fastedit/Overlays.py,sha256=ovKbFFdSVlUaToTMhf64Qv2uqK6tRc9a3lSmB1_BvJs,2753
+fastedit/__init__.py,sha256=pVYhOkVS5PHJd_cIEx6PTaY6VggXFTC3pqWdf0I8zao,21
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_Composing.py,sha256=fhYhRjGcXj9_bzuFKD8bpLkznpewv_3kX55-ZdWsiPY,981
+tests/test_Medias.py,sha256=vPPAdFK3z5j8_IbYpSh8saIlGA5hHkiSEsXLfprcXnE,7201
+fastedit-0.5.0.dist-info/LICENSE,sha256=TxlUy4V4UT6yeYadQPgaUz_q0KxhDBvxlRNBAaPMz0g,11344
+fastedit-0.5.0.dist-info/METADATA,sha256=yeYajOzP3vTLbSfoNkZOvKPitOcxNncTYTmzu38erjI,2605
+fastedit-0.5.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+fastedit-0.5.0.dist-info/top_level.txt,sha256=dvFZdfwKRyDDhzt4WUtVSPTGtWnYlRmCsjuQeSSqoNk,15
+fastedit-0.5.0.dist-info/RECORD,,
