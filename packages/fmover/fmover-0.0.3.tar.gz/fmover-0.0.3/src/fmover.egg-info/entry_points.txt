@@ -1,0 +1,2 @@
+[console_scripts]
+fmover = fmover.__main__:main
