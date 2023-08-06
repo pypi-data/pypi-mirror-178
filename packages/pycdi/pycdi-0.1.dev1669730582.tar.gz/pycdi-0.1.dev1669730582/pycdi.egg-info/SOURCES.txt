@@ -1,0 +1,15 @@
+LICENSE
+README.rst
+setup.py
+pycdi/__init__.py
+pycdi/core.py
+pycdi/shortcuts.py
+pycdi/utils.py
+pycdi.egg-info/PKG-INFO
+pycdi.egg-info/SOURCES.txt
+pycdi.egg-info/dependency_links.txt
+pycdi.egg-info/top_level.txt
+tests/boot/__init__.py
+tests/boot/load_me_cdi.py
+tests/boot/deep/__init__.py
+tests/boot/deep/me_too_cdi.py
