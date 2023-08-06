@@ -1,0 +1,6 @@
+LICENSE
+setup.py
+oa_8_puzzle/oa_8_puzzle.egg-info/PKG-INFO
+oa_8_puzzle/oa_8_puzzle.egg-info/SOURCES.txt
+oa_8_puzzle/oa_8_puzzle.egg-info/dependency_links.txt
+oa_8_puzzle/oa_8_puzzle.egg-info/top_level.txt
