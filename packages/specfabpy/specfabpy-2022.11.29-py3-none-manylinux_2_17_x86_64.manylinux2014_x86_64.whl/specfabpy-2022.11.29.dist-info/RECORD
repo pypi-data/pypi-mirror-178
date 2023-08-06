@@ -1,0 +1,12 @@
+specfabpy.cpython-36m-x86_64-linux-gnu.so,sha256=qc9-64Gp7wQOii0hdpbntN3iatGMNgkkLjOkJNQSGkc,2619328
+specfabpy.cpython-38-x86_64-linux-gnu.so,sha256=cmosZVpT6vQ1jytpeZt2vwf17qNOaz393J_bjAG45rQ,2701448
+specfabpy.cpython-310-x86_64-linux-gnu.so,sha256=Sa7cKk_U2-oEx7DY7gZJ3zIi1WYW_DToa0cmGfetG9g,2668688
+specfabpy.cpython-39-x86_64-linux-gnu.so,sha256=12kN0712tB8frEuCEG3-xmxS8wxUwGTgqX2PZBMJ54A,2664592
+specfabpy.cpython-37m-x86_64-linux-gnu.so,sha256=j9_fYyXHMdYzx4dapBGNrsxI5EDhovVXGSc7UY2pBTc,2627680
+specfabpy.cpython-311-x86_64-linux-gnu.so,sha256=4oTk4jh5QcLPDHSpklcNAwygk4E_Yzja4l7aOdrgwT0,2672784
+specfabpy-2022.11.29.dist-info/WHEEL,sha256=Ndc4zXPhdqNgJqi8psfswmMKifuLB08jYiyzI5g2sJY,168
+specfabpy-2022.11.29.dist-info/RECORD,,
+specfabpy-2022.11.29.dist-info/METADATA,sha256=vCaRMvGH56SxDZJhT5JZgvkGu9-I9vOQwVQ75BbhvWg,221
+specfabpy-2022.11.29.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+specfabpy.libs/libquadmath-96973f99.so.0.0.0,sha256=l82oXdtRY-Labh7bTh1rVXgzqZpA7aB5rjflA5Rltl0,247608
+specfabpy.libs/libgfortran-040039e1.so.5.0.0,sha256=R6s7aClbCjzomQpEjef6sRq928Fg-IlZcsqapxLPhtA,2686064
