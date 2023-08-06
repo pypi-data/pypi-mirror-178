@@ -1,0 +1,14 @@
+filterify/__init__.py,sha256=21jn3RwRNmuy0rIWNfi0WkREF4cCaKLi9jHth-AGq-A,213
+filterify/base.py,sha256=go4Rj5XYACE9dH4-Xrf6EGEH-seyWx23cSoAC7m5tw8,1594
+filterify/dependency.py,sha256=OBJL4lZeWJrDwCeES7wpHWSBM_1BPk8nMbsTauKf6KI,514
+filterify/exceptions.py,sha256=poybU3ZYEAi-kdkV4uLBgAWfZ_YB30WyCRVnqKUheO0,540
+filterify/main.py,sha256=RaQTLhmzoL13Too25THIjjwIfQeS9uy2Lt7f9iVbEKQ,2115
+filterify/parser.py,sha256=ykOKYu6MES1RwGnJ_pxNFm7mUVO4m6V90-ptUlpPFJc,2098
+filterify/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+filterify/validation.py,sha256=FPXnGW3P81i2zFQqgiL7JSFMw5i6DwUYz55qq96xaz8,3869
+filterify/filters/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+filterify/filters/base.py,sha256=mQypSEYd3ki1x-OaE39BQEtV0vu9qfHsKl_dmAWwsqc,2089
+filterify-0.0.1.dist-info/LICENSE,sha256=GIX4LRb-Es6AgjPXpjkqnWSggCd0qf6SZhZ8AQRX-cw,1077
+filterify-0.0.1.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+filterify-0.0.1.dist-info/METADATA,sha256=CLA2n2GAF0tgAXUQIy53vO1i-dTJY7T7iEP_5yk7YHE,9548
+filterify-0.0.1.dist-info/RECORD,,
