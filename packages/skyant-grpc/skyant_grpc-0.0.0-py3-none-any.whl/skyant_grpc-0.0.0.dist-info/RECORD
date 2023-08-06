@@ -1,0 +1,8 @@
+skyant/grpc/__init__.py,sha256=FkPJ_M0Cuwr_Qjt2csnhUYWN0dLoPugWmjrMquft-ak,65
+skyant/grpc/_client.py,sha256=4OfqCLTZ01WLLNUHbE6-qPCA1hpgJd7nz5XoQMYPN0A,643
+skyant/grpc/_server.py,sha256=ePpNYPA30NaFEN4-gx86xb5mAvVUdJSDOixtrIZqcT0,1618
+skyant_grpc-0.0.0.dist-info/LICENSE,sha256=Y4GVxcDgPVKO_CvgROI1pQ0pkKIR6QAl31qelzbsyVI,1062
+skyant_grpc-0.0.0.dist-info/METADATA,sha256=YhtqKhhsTahNrR_ACjQMrsSKo2JorNGwMpcajQEjELI,1040
+skyant_grpc-0.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+skyant_grpc-0.0.0.dist-info/top_level.txt,sha256=pem25Foh-nZaRE_yNl7trWUcfnGgLJbWphpx6Qn5l1U,7
+skyant_grpc-0.0.0.dist-info/RECORD,,
