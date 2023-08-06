@@ -1,0 +1,8 @@
+README.md
+setup.py
+./tdb.py
+tdb_py.egg-info/PKG-INFO
+tdb_py.egg-info/SOURCES.txt
+tdb_py.egg-info/dependency_links.txt
+tdb_py.egg-info/requires.txt
+tdb_py.egg-info/top_level.txt
