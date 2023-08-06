@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: lstcn
+Version: 0.1.0
+Summary: Long Short-term Cognitive Networks
+Home-page: https://github.com/gnapoles/lstcn
+Author: Gonzalo Nápoles
+Author-email: g.r.napoles@uvt.nl
+License: Apache License 2.0
+Description: The Long Short-term Cognitive Network (LSTCN) model is an efficient recurrent neural network for time series forecasting. It supports both one-step-ahead and multiple-step-ahead forecasting of univariate and multivariate time series. The LSTCN model is competitive compared to state-of-the-art recurrent neural networks such as LSTM and GRU in terms of forecasting error while being much faster.
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python :: 3.8
