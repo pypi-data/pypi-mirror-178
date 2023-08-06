@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+googledrive/__init__.py
+googledrive/_files.py
+googledrive/_service.py
+googledrive_files.egg-info/PKG-INFO
+googledrive_files.egg-info/SOURCES.txt
+googledrive_files.egg-info/dependency_links.txt
+googledrive_files.egg-info/requires.txt
+googledrive_files.egg-info/top_level.txt
