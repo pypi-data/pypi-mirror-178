@@ -1,0 +1,24 @@
+[build-system]
+requires = ["maturin>=0.13,<0.14"]
+build-backend = "maturin"
+
+[project]
+name = "pyinferno"
+version = "0.2.6"
+author = "Mike Roberts"
+author_email = "mike.roberts.2k10@googlemail.com"
+url = "https://github.com/mrob95/pyinferno"
+description = "Simple python flame graph generator"
+long_description = "file: README.md"
+long_description_content_type = "text/markdown"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+]
+dependencies = [
+    "pyinstrument"
+]
+
+[project.scripts]
+pyinferno = "pyinferno.cli:main"
