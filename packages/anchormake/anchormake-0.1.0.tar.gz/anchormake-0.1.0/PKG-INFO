@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: anchormake
+Version: 0.1.0
+Summary: Library for working with AnkerMake M5 FDM 3D Printers
+Home-page: https://github.com/entropi/anchormake
+Author: Chad Fawcett
+Author-email: chad@useless.net
+License: MIT
+Requires-Python: >=3.6
+License-File: LICENSE

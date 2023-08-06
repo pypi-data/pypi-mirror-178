@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+anchormake/__init__.py
+anchormake/ankermake.py
+anchormake.egg-info/PKG-INFO
+anchormake.egg-info/SOURCES.txt
+anchormake.egg-info/dependency_links.txt
+anchormake.egg-info/requires.txt
+anchormake.egg-info/top_level.txt
