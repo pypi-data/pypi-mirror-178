@@ -1,0 +1,187 @@
+#!python
+# This file is placed in the Public Domain.
+# pylint: disable=C0115,C0116,W0221,W0201,E0611,C0413, W0613,R0801
+
+
+"write your own commands"
+
+
+__version__ = "108"
+
+
+import atexit
+import importlib
+import importlib.util
+import os
+import readline
+import rlcompleter
+import sys
+import termios
+import time
+import traceback
+
+
+sys.path.insert(0, os.getcwd())
+
+
+from opr.handler import Cfg, Command, Event, Handler
+from opr.handler import command, parse, scan, scandir
+from opr.object import Wd, printable, update
+from opr.thread import name
+
+
+from operbot import cmds, irc, rss
+
+
+Wd.workdir = os.path.expanduser("~/.operbot")
+
+
+errors = []
+
+
+starttime = time.time()
+
+
+scan(cmds)
+scan(irc)
+scan(rss)
+
+
+class CLI(Handler):
+
+    def annouce(self, txt):
+        pass
+
+    def raw(self, txt):
+        print(txt)
+
+
+class Console(CLI):
+
+    def handle(self, event):
+        Command.handle(event)
+        event.wait()
+
+    def poll(self):
+        event = Event()
+        event.txt = input("> ")
+        event.orig = repr(self)
+        return event
+
+
+class Completer(rlcompleter.Completer):
+
+    def __init__(self, options):
+        super().__init__()
+        self.options = options
+
+    def complete(self, text, state):
+        if state == 0:
+            if text:
+                self.matches = [s for s in self.options if s and s.startswith(text)]
+            else:
+                self.matches = self.options[:]
+        try:
+            return self.matches[state]
+        except IndexError:
+            return None
+
+def setcompleter(optionlist):
+    completer = Completer(optionlist)
+    readline.set_completer(completer.complete)
+    readline.parse_and_bind("tab: complete")
+    atexit.register(lambda: readline.set_completer(None))
+
+
+def banner(cfg):
+    print(
+          "OPERBOT started at %s %s" % (
+                                      time.ctime(time.time()).replace("  ", " "),
+                                      printable(cfg, "debug,verbose")
+                                     )
+         )
+
+
+def from_exception(exc, txt="", sep=" "):
+    result = []
+    for frm in traceback.extract_tb(exc.__traceback__):
+        fnm = os.sep.join(frm.filename.split(os.sep)[-2:])
+        result.append(f"{fnm}:{frm.lineno}")
+    nme = name(exc)
+    res = sep.join(result)
+    return f"{txt} {res} {nme}: {exc}".strip()
+
+
+def print_exc(ex):
+    traceback.print_exception(type(ex), ex, ex.__traceback__)
+
+
+def importer(pname, mname, path):
+    mod = None
+    spec = importlib.util.spec_from_file_location(mname, path)
+    if spec:
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        scan(mod)
+    return mod
+
+
+def init(pname, mname, path=None):
+    mod = importer(pname, mname, path)
+    if "init" in dir(mod):
+        mod.init()
+
+
+def wrap(func):
+    fds = sys.stdin.fileno()
+    gotterm = True
+    try:
+        old = termios.tcgetattr(fds)
+    except termios.error:
+        gotterm = False
+    readline.redisplay()
+    try:
+        func()
+    except (EOFError, KeyboardInterrupt):
+        print("")
+    finally:
+        if gotterm:
+            termios.tcsetattr(fds, termios.TCSADRAIN, old)
+        for evt in Command.errors:
+            print_exc(evt.__exc__)
+
+
+def ver(event):
+    event.reply("OPERBOT %s" % __version__)
+
+
+def main():
+    Command.add(ver)
+    cfg = parse(' '.join(sys.argv[1:]))
+    update(Cfg, cfg)
+    scandir("mod", importer)
+    setcompleter(Command.cmd)
+    if Cfg.txt:
+        cli = CLI()
+        return command(cli, Cfg.otxt)
+    if Cfg.console:
+        banner(Cfg)
+        csl = Console()
+        csl.start()
+        csl.wait()
+        return None
+    if not Cfg.exec:
+        banner(Cfg)
+        scandir("mod", init)
+        bot = irc.init()
+        print(printable(bot.cfg, "nick,channel,server,port,sasl"))
+        rss.init()
+        csl = Console()
+        csl.start()
+        csl.wait()
+        return None
+    return None
+
+
+wrap(main)
+ 
