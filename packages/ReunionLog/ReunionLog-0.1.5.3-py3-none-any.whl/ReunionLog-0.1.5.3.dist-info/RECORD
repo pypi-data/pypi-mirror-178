@@ -1,0 +1,15 @@
+ReunionLog/__init__.py,sha256=exMDmXO7izAbCiZPz2vWDK4CbKGEF7bqX3omxZR3Uwg,656
+ReunionLog/OAuth/Authentication.py,sha256=qfRwxOIde1o_NGYYK6fJTnFtflxm-DBN3WkEaEKBBj0,2750
+ReunionLog/OAuth/EndConnection.py,sha256=IO5FPXcb8P_GsuyQpG1SjAYwa0s8sJ517Os6Npc5OTg,231
+ReunionLog/OAuth/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ReunionLog/Report/ReportAbilities.py,sha256=sdOqtBsCoahBCqELVikSHzCGqzo1enbdY6_DATJX2D4,1235
+ReunionLog/Report/ReportEventsDamageDone.py,sha256=V6x1t49e31_w7sCGHVpCLz3I2FCYaVwhSn5-YHbGE-Q,814
+ReunionLog/Report/ReportEventsDeath.py,sha256=nEYApUAxTU-IUspS6rz-aHHy4grC1OemCzupFtwgyvM,1686
+ReunionLog/Report/ReportEventsInterrupts.py,sha256=HM0KVREHWZijkgz21BoJtQKyKDMBITkPWFXTakLdMEI,814
+ReunionLog/Report/ReportNames.py,sha256=HgiZlTSvIWqCqlTVoFtGpuAm1QGeRVSSXMPyQrWNf64,1206
+ReunionLog/Report/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ReunionLog-0.1.5.3.dist-info/LICENCE,sha256=bHzoTpy-i6jUWvG4VW88t3Q-fa1YzjPTfJ9kyndM_NI,1070
+ReunionLog-0.1.5.3.dist-info/METADATA,sha256=1X49wq_ZlNfjgkjbeAH9OZ4uW5u7Bx0bgRUCyyPsjjA,699
+ReunionLog-0.1.5.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ReunionLog-0.1.5.3.dist-info/top_level.txt,sha256=rZMLubBwrmEqnWA5YMRk0MnMpZBkL6-7ada9aPNg6bo,11
+ReunionLog-0.1.5.3.dist-info/RECORD,,
