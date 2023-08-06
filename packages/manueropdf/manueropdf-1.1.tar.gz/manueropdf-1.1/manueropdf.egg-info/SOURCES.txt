@@ -1,0 +1,9 @@
+README.md
+setup.py
+manueropdf/__init__.py
+manueropdf/pdf2image.py
+manueropdf/pdf2text.py
+manueropdf.egg-info/PKG-INFO
+manueropdf.egg-info/SOURCES.txt
+manueropdf.egg-info/dependency_links.txt
+manueropdf.egg-info/top_level.txt
