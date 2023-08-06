@@ -1,0 +1,12 @@
+eml2md/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+eml2md/__main__.py,sha256=vGzGvqVpROEuEuBYj-QlZPWFiZp9I92l6i1lGcuYy0E,69
+eml2md/_main.py,sha256=XxNKI2dPbtw60O2ugz2IQihS1gS2eZw1sJnO-znoPUw,925
+eml2md/_version.py,sha256=rnObPjuBcEStqSO0S6gsdS_ot8ITOQjVj_-P1LUUYpg,22
+eml2md/eml.py,sha256=XXTkiBq9mu0X5e6Vx2zEsH5qQ4w4GcVtjHmFfaGttVE,4038
+eml2md/markdown.py,sha256=dPx59ppoR2R_Hr1b1LMyniBFFDzNnlgBjxoxbn3lr10,5580
+eml2md/misc.py,sha256=H_0GOgoyH39pTQcyZa-JIu8qwBiqUHgyyfQsrH1DV3s,757
+eml2md-0.1.1.dist-info/entry_points.txt,sha256=PiglcnpNR_39m_WQHCk5iRXm6cjA6L7onjL8KSmha7A,39
+eml2md-0.1.1.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+eml2md-0.1.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+eml2md-0.1.1.dist-info/METADATA,sha256=dDbgCic4XS1YaNthB0sE07DHVPQ9sqbfeVMtUG7qRE0,2063
+eml2md-0.1.1.dist-info/RECORD,,

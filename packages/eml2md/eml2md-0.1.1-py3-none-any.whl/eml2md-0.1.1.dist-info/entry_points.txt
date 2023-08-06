@@ -1,0 +1,3 @@
+[console_scripts]
+eml2md=src/_main.py
+
