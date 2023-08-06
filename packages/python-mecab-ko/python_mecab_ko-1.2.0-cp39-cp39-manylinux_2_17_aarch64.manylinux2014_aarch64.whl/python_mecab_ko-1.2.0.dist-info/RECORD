@@ -1,0 +1,10 @@
+_mecab.cpython-39-aarch64-linux-gnu.so,sha256=iUQWjnQ8H5Nd6VnWBGpDou8-pI5mNXAdIcaa0MMMvR4,1327288
+python_mecab_ko-1.2.0.dist-info/top_level.txt,sha256=Lf8XT2zNJYT5il6pTUd9pbfHEiuUp-0mQUBnr3UIFec,13
+python_mecab_ko-1.2.0.dist-info/METADATA,sha256=14hDmW90UJ9wKggVUEzKY_UlVjhEOlxjnFA879ylnL0,2718
+python_mecab_ko-1.2.0.dist-info/LICENSE,sha256=2nSpg-6mORA7XxTcEp1DzHM4vtjYHfcDUHMCGQr8qlE,1476
+python_mecab_ko-1.2.0.dist-info/RECORD,,
+python_mecab_ko-1.2.0.dist-info/WHEEL,sha256=SIpKeEMEn5d6wEWNi6guiW3hSiu5nA1wuuKXWVovQCE,150
+python_mecab_ko-1.2.0.data/data/scripts/build-mecab-ko.py,sha256=dDL0VNKJz59hYHBh-dV-TjfpdcIV8bEC-g6UPllTJys,2811
+mecab/mecabrc,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mecab/__init__.py,sha256=CFMBb98bRmy9aR_Zv1fI8TXi3HCL9J_HuJuWB3BJAlw,54
+mecab/mecab.py,sha256=ljmYOhgKVwMYCEOK5x8siznhvOWtv3Pv_CJo8iwaYSY,2578
