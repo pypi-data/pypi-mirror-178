@@ -1,0 +1,12 @@
+{
+  "test_numpy_only.py::test_all_np_funcs[norm]": true,
+  "test_numpy_only.py::test_all_np_funcs[means]": true,
+  "test_numpy_only.py::test_all_np_funcs[inv]": true,
+  "test_numpy_only.py::test_all_np_funcs[logical_andlogical_or]": true,
+  "test_numpy_only.py::test_all_np_funcs[safe_arccos]": true,
+  "test_numpy_only.py::test_all_np_funcs[safe_arcsin]": true,
+  "test_numpy_only.py::test_all_np_funcs[zero_like]": true,
+  "test_numpy_only.py::test_all_np_funcs[nothing]": true,
+  "test_numpy_only.py::test_safe_func[safe_norm-norm-args2]": true,
+  "test_numpy_only.py::test_custom_np_func[cond-kwargs5-6]": true
+}
