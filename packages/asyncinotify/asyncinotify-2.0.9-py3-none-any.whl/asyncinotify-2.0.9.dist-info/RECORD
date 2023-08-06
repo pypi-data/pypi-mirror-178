@@ -1,0 +1,9 @@
+asyncinotify/__init__.py,sha256=j5ALDTJJgEfc7PvxI-FEfhtsMP_2dyo2HT7Kj5Ju1rY,21093
+asyncinotify/_ffi.py,sha256=IHZqPup550wKvAiwasiEwlCRxJoKPJN-AazCJtuZxxE,1463
+asyncinotify/_meta.py,sha256=HeFupFe3Zdrhmo6gbkEzVdCEYO13aB4hp4UK0IN7RR8,1060
+asyncinotify/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+asyncinotify-2.0.9.dist-info/LICENSE,sha256=vFi5UlJMs5ai9zkwNQbfXsiEyuHf7ZJSm_9c3mGXRHg,1077
+asyncinotify-2.0.9.dist-info/METADATA,sha256=VQBT12ar-wHFeNtwop_mb3N02lBbNYr9aAbRFIZLWeE,1807
+asyncinotify-2.0.9.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+asyncinotify-2.0.9.dist-info/top_level.txt,sha256=4P6LMITOSSENrkoB-h3_D1tdIx3lXkuIkpCwZ-NJF_U,13
+asyncinotify-2.0.9.dist-info/RECORD,,
