@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: sphinx-table
+Version: 1.2.0
+Summary: an extension for sphinx to display excel table in sphinx documents
+Home-page: https://github.com/zqmillet/sphinx-table
+Author: kinopico
+Author-email: zqmillet@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: docutils (==0.17.1)
+Requires-Dist: openpyxl (==3.0.10)
+
+UNKNOWN
+
