@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: modulo-data-source
+Version: 1.0
+Summary: Paquete con el fin de crear la base de datos del bot de KCK_DS_SV
+Home-page: https://github.com/xDarthSides/Modulo-Data-Source
+Author: Gerardo Loucel
+Author-email: louceldeveloper@gmail.com
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
