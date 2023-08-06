@@ -1,0 +1,17 @@
+axiom/__data.py,sha256=ezLwztKjD-N_M2ckzjJn2ucwsUeBup0cz1gLGFkbOf4,363
+axiom/__import.py,sha256=_PXHj1ZElmsV95Ar3FYa47L0dBmHUCR7idufAyL31_c,4340
+axiom/__init__.py,sha256=T9KmARW-wzC4Gvf4LlUBQQK69maPeL5y7UzjY5A6zwU,662
+axiom/__main__.py,sha256=iWGUbzug4CscK9_LLll46lOYUva3PJUsWSDjh_vImLg,8532
+axiom/__type.py,sha256=zeBCm6VHgIlBm4o2eX90CJVUkUYjxzIFTgTdbrLkmv0,21
+axiom/common.py,sha256=x8kw4qfgs0p3bxGk8fnuRjx_9NnHL5f7mVCib7SzOjM,16308
+axiom/data_reader.py,sha256=SxhpPEhMwzq5JRB_XP5lPoQdCCUzQOs8MFRLf_VucZg,750
+axiom/info.py,sha256=lTQGfuPd1UAnEGH6JUjYM7OmFZk6lNbsZudD87cgiCk,82
+axiom/settings.py,sha256=Fzzlr0vCZJ8cpfdSnjp_b6Muhj8mYwprDABFCdA5tpo,393
+axiom/example/simple_add/add_func.py,sha256=CTgIRYceCtAf2_eo7Vb0jfpxoRRu8jc2hhoePVsc7MY,1161
+axiom/example/simple_add/add_one_and_two.py,sha256=GNsNn9iSGZ7QmTlQnUMK1Wtl2Haugale61fGYhh7eH4,1098
+axiom/example/simple_add/add_one_func.py,sha256=PM262jVoEuC1CDitd29pdgTQTyhcm2VFhJu40QJ04TY,1006
+axiom/example/simple_add/just_test.py,sha256=NICb-muQaP5ToSgoK4ZMKrWLQ0XvVehU1C-L-FN8xG8,374
+reaxiom-0.0.7.dist-info/METADATA,sha256=-V6bGkpCDQSWHLlqxdyl8-p2oNfns-s8B5fHR8e9KnI,439
+reaxiom-0.0.7.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+reaxiom-0.0.7.dist-info/licenses/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+reaxiom-0.0.7.dist-info/RECORD,,
