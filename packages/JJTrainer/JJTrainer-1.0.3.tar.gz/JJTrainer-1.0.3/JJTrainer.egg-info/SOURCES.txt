@@ -1,0 +1,9 @@
+license.txt
+setup.py
+JJTrainer/Trainer.py
+JJTrainer/__init__.py
+JJTrainer.egg-info/PKG-INFO
+JJTrainer.egg-info/SOURCES.txt
+JJTrainer.egg-info/dependency_links.txt
+JJTrainer.egg-info/requires.txt
+JJTrainer.egg-info/top_level.txt
