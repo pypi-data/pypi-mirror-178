@@ -1,0 +1,16 @@
+README.md
+setup.cfg
+setup.py
+LatInt.egg-info/PKG-INFO
+LatInt.egg-info/SOURCES.txt
+LatInt.egg-info/dependency_links.txt
+LatInt.egg-info/requires.txt
+LatInt.egg-info/top_level.txt
+latint/__init__.py
+latint/clustering.py
+latint/input_feature_variance.py
+latint/interact_functions.py
+latint/load.py
+latint/plotCorrelation.py
+latint/plotLatentDistributions.py
+latint/sampling.py
