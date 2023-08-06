@@ -1,0 +1,7 @@
+LICENSE.txt
+setup.py
+sidewalkdemo/__init__.py
+sidewalkdemo.egg-info/PKG-INFO
+sidewalkdemo.egg-info/SOURCES.txt
+sidewalkdemo.egg-info/dependency_links.txt
+sidewalkdemo.egg-info/top_level.txt
