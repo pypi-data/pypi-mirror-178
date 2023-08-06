@@ -1,0 +1,7 @@
+csvs_convert-0.7.0.dist-info/METADATA,sha256=waASzXpsrW42BGNaDSVUcItYX09fAzd2sHMm450IMDY,3550
+csvs_convert-0.7.0.dist-info/WHEEL,sha256=ZuvpPWwEOVrEldy4L3-FGbS3WkVxsSnUtTTSl7c_rg8,145
+csvs_convert-0.7.0.dist-info/license_files/LICENSE,sha256=pl3n_8Y6sskj1SvVh0GPFcedVH468QAw3-pxGo3tkFo,1080
+csvs_convert/__init__.py,sha256=lXSjtSHgmZoI7FI0bJnRatHiPOANylAVLjOcbT6TORc,27
+csvs_convert/tests.py,sha256=ryNDAPkS1RMEbjVULRBncmjllBwXRTgibRLfvIxR5Qo,4742
+csvs_convert/csvs_convert.cpython-38-darwin.so,sha256=QJuXdgu-qE7WhZwDFXh3s-xqcO0QyfzC0AZDTovc-gA,25943714
+csvs_convert-0.7.0.dist-info/RECORD,,
