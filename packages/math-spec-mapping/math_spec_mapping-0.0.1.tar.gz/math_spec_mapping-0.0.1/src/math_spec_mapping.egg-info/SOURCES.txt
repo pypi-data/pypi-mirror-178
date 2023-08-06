@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/math_spec_mapping/__init__.py
+src/math_spec_mapping/classes.py
+src/math_spec_mapping/functions.py
+src/math_spec_mapping.egg-info/PKG-INFO
+src/math_spec_mapping.egg-info/SOURCES.txt
+src/math_spec_mapping.egg-info/dependency_links.txt
+src/math_spec_mapping.egg-info/requires.txt
+src/math_spec_mapping.egg-info/top_level.txt
