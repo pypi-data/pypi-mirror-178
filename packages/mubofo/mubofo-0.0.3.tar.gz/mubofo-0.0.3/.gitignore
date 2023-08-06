@@ -1,0 +1,6 @@
+c-version
+data
+dist
+examples
+*.pyc
+.vscode
