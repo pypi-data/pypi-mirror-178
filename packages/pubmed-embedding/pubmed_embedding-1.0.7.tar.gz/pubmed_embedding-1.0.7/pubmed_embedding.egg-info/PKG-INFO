@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: pubmed-embedding
+Version: 1.0.7
+Summary: A tool to work with pre-computed large pubmed embedding.
+Home-page: https://github.com/LucaCappelletti94/pubmed_graph
+Author: Luca Cappelletti
+License: BSD3
+Description: Pubmed graph and embedding
+        ===================================
+        Building a pubmed graph, automatically.
+        
+Keywords: SciBERT,PubMed,BM25
+Platform: UNKNOWN
+Requires-Python: >=3.6.0
