@@ -1,0 +1,10 @@
+chunkdup/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chunkdup/chunkdiff.py,sha256=j5PL_hRzr_On6NZdCxFghXgq7tHQ2XvMJOL2oCt133U,8637
+chunkdup/chunkdup.py,sha256=DpDD4XJ9QG4HnWkxGHACEOxl_rf6sFTZtI5qKAtZkf0,6403
+chunkdup/diff.py,sha256=fdSaA4Ng9AhkJhwSw56jLHSKbUf8L6-LF_QjYJZ8CJM,1243
+chunkdup/sums.py,sha256=hcZcVHKRsZ64F1CdnRdEN4sbNRoRG-_VKo8XpLGLsQs,4462
+chunkdup-0.4.0.dist-info/entry_points.txt,sha256=D876d3XEAoPlJ2Wk6NQl16zTNCyMyl-UcgUSJflMPN0,85
+chunkdup-0.4.0.dist-info/LICENSE,sha256=mAtRveZ1NYzyo4AXHlKaJ6EAsXJpWwGDi8wXfxFZ4NY,1066
+chunkdup-0.4.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+chunkdup-0.4.0.dist-info/METADATA,sha256=4wjEPNoiUtnG3Mf_fsCtOx4rZXcQxbsO_g2EPfs-39U,2922
+chunkdup-0.4.0.dist-info/RECORD,,
