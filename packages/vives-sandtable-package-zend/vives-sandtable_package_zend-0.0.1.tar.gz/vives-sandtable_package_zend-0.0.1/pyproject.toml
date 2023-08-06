@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vives-sandtable_package_zend"
+version = "0.0.1"
+authors = [
+  { name="Bart Crul", email="bart.crul@student.vives.be" },
+  { name="Michiel Depraetere", email="michiel.depraetere@student.vives.be" },
+  { name="Gert De Craemere", email="gert.decreamere@student.vives.be" },
+  { name="Sirine Rajhi", email="sirine.rajhi@student.vives.be" },
+]
+description = "A package to drive the sand table." # moet nog aangevuld worden
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/vives-project-xp/Zend"

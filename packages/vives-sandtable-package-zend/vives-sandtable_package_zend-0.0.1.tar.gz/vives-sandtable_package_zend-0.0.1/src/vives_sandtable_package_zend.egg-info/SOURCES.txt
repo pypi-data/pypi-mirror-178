@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/sandtable_package_zend/__init__.py
+src/sandtable_package_zend/functions.py
+src/sandtable_package_zend/main.py
+src/sandtable_package_zend/sender.py
+src/vives_sandtable_package_zend.egg-info/PKG-INFO
+src/vives_sandtable_package_zend.egg-info/SOURCES.txt
+src/vives_sandtable_package_zend.egg-info/dependency_links.txt
+src/vives_sandtable_package_zend.egg-info/top_level.txt
