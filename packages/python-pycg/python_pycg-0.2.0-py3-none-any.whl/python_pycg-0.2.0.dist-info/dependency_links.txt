@@ -1,0 +1,1 @@
+http://eagle.huangjh.tech:8080/simple/open3d
