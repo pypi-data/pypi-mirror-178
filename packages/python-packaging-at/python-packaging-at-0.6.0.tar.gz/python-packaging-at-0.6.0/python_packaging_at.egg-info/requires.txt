@@ -1,0 +1,14 @@
+numpy
+pandas
+
+[dev]
+pytest
+pytest-cov
+coverage
+tox
+black
+isort
+mypy
+pre-commit
+flake8
+setuptools_scm
