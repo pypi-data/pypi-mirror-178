@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: python-ims
+Version: 1.0
+Summary: Israel Meteorological Service unofficial python api wrapper
+Home-page: https://github.com/t0mer/python-ims
+Author: Tomer Klein
+Author-email: tomer.klein@gmail.com
+License: MIT
+Download-URL: https://pypi.org/project/python-ims/
+Keywords: ims,py-ims,Israel Meteorological Service,Meteorological Service,weather
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+UNKNOWN
+
