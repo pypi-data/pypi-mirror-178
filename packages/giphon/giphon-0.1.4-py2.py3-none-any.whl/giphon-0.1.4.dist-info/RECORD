@@ -1,0 +1,11 @@
+giphon/__init__.py,sha256=eAnKzpyztGC_ZlIMCJEDUuncWSVTKJvNKoWJmQoGPFo,429
+giphon/__main__.py,sha256=qJgTmopOYb7suXKKgqIFrvF7ppVmUshjstAyp2fnoKo,234
+giphon/git.py,sha256=KUwjoSXR-Rw34AXhfnGxKak3c6_BhXfJhOtSQYTSDx8,1303
+giphon/gitlab.py,sha256=_p691fq9LDG9E2-NTH9j-3_E_MBJQAYiCPph3RUXUBM,5046
+giphon/siphon.py,sha256=K2hk-gSxwFEt39GxF5jMB-tdwD6XWW4v9_k3Nv3q4vc,5449
+giphon-0.1.4.dist-info/LICENSE,sha256=DAase19gM-hVYbJZXoxkG9IbHtdKyI1ewY2nAn8a6tU,10933
+giphon-0.1.4.dist-info/METADATA,sha256=FEPvkZeKDU-_V4-DSpMVkOeff1QHd5JzkCMOS16GJGA,1389
+giphon-0.1.4.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+giphon-0.1.4.dist-info/entry_points.txt,sha256=Zmx583hmI41PrFYcAIt9C8WughbHlAry-RLvC6HOMEM,36
+giphon-0.1.4.dist-info/top_level.txt,sha256=n4Mnu1jHt4IomZJQvSDdQTl8mcRYSjYsEg8wpV7QqFk,7
+giphon-0.1.4.dist-info/RECORD,,
