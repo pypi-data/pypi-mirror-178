@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: quokkas
+Version: 0.0.3
+Summary: Data analysis tool that you didn't know you needed
+Author: Ivan Pashkevich, Roman Sorokin
+Author-email: ivan.ig.pashkevich@gmail.com, sorokin.r.v.97@gmail.com
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: pandas (>=1.3.5)
+Requires-Dist: numpy (>=1.19)
+Requires-Dist: scikit-learn (>=1.0.1)
+Requires-Dist: seaborn (>=0.11.2)
+Requires-Dist: scipy (>=1.7.0)
+Requires-Dist: joblib (>=1.1.0)
+
