@@ -1,0 +1,57 @@
+#!python
+# This file is placed in the Public Domain.
+# pylint: disable=C0115,C0116,C0413,C0209
+
+
+"command"
+
+
+import importlib
+import os
+import sys
+import time
+
+
+from op import Event, Handler, Wd, scan, scandir
+from opm import cmds, irc
+
+
+Wd.workdir = os.path.expanduser("~/.op")
+
+
+class CLI(Handler):
+
+    def raw(self, txt):
+        print(txt)
+
+
+def importer(pname, mname):
+    name = "%s.%s" % (pname, mname)
+    try:
+        mod = importlib.import_module(name, pname)
+        scan(mod)
+    except ModuleNotFoundError:
+        pass
+
+
+cli = CLI()
+
+
+scan(cmds)
+scan(irc)
+
+
+starttime = time.time()
+
+
+def main():
+    scandir("mod", importer)
+    evt = Event()
+    evt.parse(" ".join(sys.argv[1:]))
+    evt.orig = repr(cli)
+    cli.handle(evt)
+    evt.wait()
+
+
+if __name__ == "__main__":
+    main()

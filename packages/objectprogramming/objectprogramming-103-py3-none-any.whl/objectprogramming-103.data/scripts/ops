@@ -1,0 +1,106 @@
+#!python
+# This file is placed in the Public Domain.
+# pylint: disable=C0115,C0116,C0413,C0209
+
+
+"object programming shell"
+
+
+NAME = "ops"
+
+
+import importlib
+import os
+import readline
+import sys
+import termios
+import time
+
+
+from op import Command, Event, Handler, Wd, launch, printable, scan, scandir
+
+
+from opm import cmds
+
+
+Wd.workdir = os.path.expanduser("~/.%s" % NAME)
+
+
+starttime = time.time()
+
+
+class CLI(Handler):
+
+    def raw(self, txt):
+        print(txt)
+
+
+class Shell(Handler):
+
+
+    def poll(self):
+        event = Event()
+        event.bot = self
+        event.txt = input("> ")
+        event.orig = repr(self)
+        return event
+
+    def raw(self, txt):
+        print(txt)
+
+    def start(self):
+        launch(self.loop)
+
+
+def banner(cfg):
+    print(
+          "%s started at %s %s" % (
+                                   NAME.upper(),
+                                   time.ctime(time.time()).replace("  ", " "),
+                                   printable(cfg, "debug,verbose")
+                                  )
+         )
+
+
+def importer(packagename, modulename):
+    name = "%s.%s" % (packagename, modulename)
+    try:
+        mod = importlib.import_module(name, packagename)
+        scan(mod)
+    except ModuleNotFoundError:
+        pass
+
+
+def wrap(func):
+    fds = sys.stdin.fileno()
+    gotterm = True
+    try:
+        old = termios.tcgetattr(fds)
+    except termios.error:
+        gotterm = False
+    readline.redisplay()
+    try:
+        func()
+    except (EOFError, KeyboardInterrupt):
+        print("")
+    finally:
+        if gotterm:
+            termios.tcsetattr(fds, termios.TCSADRAIN, old)
+        for evt in Command.errors:
+             print_exc(evt.__exc__)
+
+
+cli = CLI()
+shl = Shell()
+
+
+def main():
+    banner(NAME)
+    scandir("mod", importer)
+    scan(cmds)
+    shl.start()
+    shl.wait()
+
+
+if __name__ == "__main__":
+    wrap(main)
