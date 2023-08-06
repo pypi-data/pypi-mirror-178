@@ -1,0 +1,35 @@
+[build-system]
+requires = [
+    "setuptools >= 35.0.2",
+    "setuptools_scm >= 2.0.0, <3"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "desmos2python"
+dynamic = ["readme", "version"]
+authors = [
+  { name="Robert Ahlroth Capps", email="rcapps@teladochealth.com" },
+]
+description = "seamless conversion between Desmos LaTeX equations &amp; executable Python code."
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/rocapp/desmos2python"
+"Bug Tracker" = "https://github.com/rocapp/desmos2python/issues"
+
+[tool.setuptools_scm]
+# ! enables dynamic version using Git
+
+[tool.setuptools.dynamic]
+readme = {file = ["README.md"]}
+
+[tool.setuptools.packages.find]
+where = [".", "desmos2python", "resources"]
+include = ["desmos2python*", "resources*"]
+exclude = ["tests", ]
