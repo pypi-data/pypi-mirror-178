@@ -1,0 +1,5 @@
+include mobile_dropdown/mobile_dropdown.min.js
+include mobile_dropdown/mobile_dropdown.dev.js
+include mobile_dropdown/metadata.json
+include mobile_dropdown/package.json
+include README.md
