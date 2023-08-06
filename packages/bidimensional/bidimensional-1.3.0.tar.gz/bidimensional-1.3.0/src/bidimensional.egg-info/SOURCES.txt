@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/circumcenter.py
+src/coordinate.py
+src/bidimensional.egg-info/PKG-INFO
+src/bidimensional.egg-info/SOURCES.txt
+src/bidimensional.egg-info/dependency_links.txt
+src/bidimensional.egg-info/top_level.txt
