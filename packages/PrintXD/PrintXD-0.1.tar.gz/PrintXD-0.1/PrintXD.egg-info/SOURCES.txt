@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+PrintXD/PrintXD.py
+PrintXD/__init__.py
+PrintXD.egg-info/PKG-INFO
+PrintXD.egg-info/SOURCES.txt
+PrintXD.egg-info/dependency_links.txt
+PrintXD.egg-info/top_level.txt
