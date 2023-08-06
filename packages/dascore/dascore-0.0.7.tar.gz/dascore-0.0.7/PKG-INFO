@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: dascore
+Version: 0.0.7
+Summary: A python library distributed fiber optic sensing
+Author-email: Derrick Chambers <chambers.ja.derrick@gmail.com>
+Project-URL: Bug Tracker, https://github.com/DASDAE/dascore/issues
+Project-URL: Documentation, https://dascore.org
+Project-URL: Homepage, https://dascore.org
+Keywords: geophysics,distributed-acoustic-sensing
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: docs
+Provides-Extra: test
+Provides-Extra: dev
