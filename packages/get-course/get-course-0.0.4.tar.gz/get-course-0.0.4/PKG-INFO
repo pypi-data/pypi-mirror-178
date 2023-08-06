@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: get-course
+Version: 0.0.4
+Summary: exchange rate package
+Home-page: https://github.com/andrei-229/get_course
+Author: Belyak Andrei
+Author-email: yyfrsss@gmail.com
+License: UNKNOWN
+Description: This is the package used to get the exchange rate. It works with https://currate.ru/
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows :: Windows 11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
