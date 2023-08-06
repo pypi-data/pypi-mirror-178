@@ -1,0 +1,1313 @@
+2022-11-26 00:20:08, INFO, np_logging:np_logging.py, test8
+2022-11-26 00:26:50, INFO, np_logging:np_logging.py, test8
+2022-11-26 00:26:50, INFO, np_logging:np_logging.py, exited normally.
+
+2022-11-26 00:27:31, INFO, np_logging:np_logging.py, test8
+2022-11-26 00:27:31, INFO, np_logging:np_logging.py, exited normally.
+
+2022-11-26 00:30:13, ERROR, np_logging:np_logging.py, exited by exception
+
+Traceback (most recent call last):
+  File "c:\Users\ben.hardcastle\github\np_logging\np_logging.py", line 105, in <module>
+    main()
+  File "c:\Users\ben.hardcastle\github\np_logging\np_logging.py", line 102, in main
+    raise Exception('test')
+Exception: test
+2022-11-26 00:33:53, INFO, np_logging:np_logging.py, exited normally
+2022-11-26 00:36:14, DEBUG, np_logging:np_logging.py, test
+2022-11-26 00:36:14, INFO, np_logging:np_logging.py, exited normally
+2022-11-26 01:03:35, DEBUG, np_logging:np_logging.py, test
+2022-11-26 01:03:35, INFO, np_logging:np_logging.py, exited normally
+2022-11-26 01:10:32, DEBUG, np_logging:np_logging.py, test
+2022-11-26 01:10:32, INFO, np_logging:np_logging.py, exited normally
+2022-11-26 01:10:55, DEBUG, np_logging:np_logging.py, test
+2022-11-26 01:10:55, INFO, np_logging:np_logging.py, exited normally
+2022-11-26 01:14:38, DEBUG, np_logging:np_logging.py, test
+2022-11-26 01:14:38, INFO, np_logging:np_logging.py, exited normally
+2022-11-26 01:26:38, DEBUG, np_logging:np_logging.py, test
+2022-11-26 01:26:38, INFO, np_logging:np_logging.py, exited normally0 s
+2022-11-26 01:27:33, DEBUG, np_logging:np_logging.py, test
+2022-11-26 01:27:34, INFO, np_logging:np_logging.py, exited normallyafter 0 s
+2022-11-26 01:31:10, DEBUG, np_logging:np_logging.py, test
+2022-11-26 01:31:10, INFO, np_logging:np_logging.py, exited normallyafter 0 s
+2022-11-26 01:31:51, DEBUG, np_logging:np_logging.py, test
+2022-11-26 01:31:52, INFO, np_logging:np_logging.py, exited normally after 0 s 
+2022-11-26 01:36:57, DEBUG, np_logging:np_logging.py, test
+2022-11-26 01:36:57, INFO, np_logging:np_logging.py, exited normally after 0 s 
+2022-11-26 01:38:34, DEBUG, np_logging:np_logging.py, test
+2022-11-26 01:38:34, INFO, np_logging:np_logging.py, exited normally after 7 s 
+2022-11-26 01:42:22, DEBUG, np_logging:np_logging.py, test
+2022-11-26 01:42:22, INFO, np_logging:np_logging.py, exited normally after 0:00:00.071999 s 
+2022-11-26 01:49:39, DEBUG, np_logging:np_logging.py, test
+2022-11-26 01:50:01, DEBUG, np_logging:np_logging.py, test
+2022-11-26 01:50:02, INFO, np_logging:np_logging.py, exited normally after 0:00:00.680318 (hh:mm:ss) 
+2022-11-26 01:50:18, DEBUG, np_logging:np_logging.py, test
+2022-11-26 01:50:18, INFO, np_logging:np_logging.py, exited normally after 0:00:00.818562 (hh:mm:ss) 
+2022-11-26 01:50:44, DEBUG, __init__:__init__.py, matplotlib data path: C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\site-packages\matplotlib\mpl-data
+2022-11-26 01:50:44, DEBUG, __init__:__init__.py, CONFIGDIR=C:\Users\ben.hardcastle\.matplotlib
+2022-11-26 01:50:44, DEBUG, __init__:__init__.py, interactive is False
+2022-11-26 01:50:44, DEBUG, __init__:__init__.py, platform is win32
+2022-11-26 01:50:44, DEBUG, __init__:__init__.py, CACHEDIR=C:\Users\ben.hardcastle\.matplotlib
+2022-11-26 01:50:44, DEBUG, font_manager:font_manager.py, Using fontManager instance from C:\Users\ben.hardcastle\.matplotlib\fontlist-v330.json
+2022-11-26 01:55:19, DEBUG, np_logging:np_logging.py, test
+2022-11-26 01:55:20, INFO, np_logging:np_logging.py, exited normally after 0:00:09.015229 (hh:mm:ss.) 
+2022-11-26 01:58:41, INFO, np_logging:np_logging.py, exited via sys.exit(99) after 0:00:00.004999 (h:m:s.) 
+2022-11-26 02:00:42 INFO np_logging:np_logging.py exited via sys.exit(99) after 0:00:00.007001 [h:m:s.] 
+2022-11-26 02:03:46 INFO np_logging:np_logging.py - exited via sys.exit(99) after 0:00:00.007001 [h:m:s.] 
+2022-11-26 02:09:36 INFO np_logging:np_logging.py - exited via sys.exit(99) after 0:00:00.007977 [h:m:s.μs] 
+2022-11-26 11:01:06 INFO np_logging:np_logging.py - test8
+2022-11-26 11:01:06 INFO np_logging:np_logging.py - exited normally after 0:00:00.044723 [h:m:s.μs] 
+2022-11-26 11:01:26 INFO np_logging:np_logging.py - test8
+2022-11-26 11:01:26 INFO np_logging:np_logging.py - exited via sys.exit(2) after 0:00:00.044523 [h:m:s.μs] 
+2022-11-26 11:02:13 INFO np_logging:np_logging.py - test8
+2022-11-26 11:02:13 CRITICAL np_logging:np_logging.py - exited via Exception after 0:00:00.040651 [h:m:s.μs] 
+
+Traceback (most recent call last):
+  File "c:\Users\ben.hardcastle\github\np_logging\np_logging.py", line 119, in <module>
+    raise KeyError('test')
+KeyError: 'test'
+2022-11-26 11:02:58 INFO np_logging:np_logging.py - test8
+2022-11-26 11:02:58 CRITICAL np_logging:np_logging.py - exited via Exception after 0:00:00.050718 [h:m:s.μs] 
+
+Traceback (most recent call last):
+  File "c:\Users\ben.hardcastle\github\np_logging\np_logging.py", line 119, in <module>
+    raise KeyError('test')
+KeyError: 'test'
+2022-11-26 11:03:43 INFO np_logging:np_logging.py - test8
+2022-11-26 11:04:04 INFO np_logging:np_logging.py - test8
+2022-11-26 11:04:06 CRITICAL np_logging:np_logging.py - exited via Exception after 0:00:02.671882 [h:m:s.μs] 
+
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "c:\Users\ben.hardcastle\.vscode\extensions\ms-python.python-2022.17.13051012\pythonFiles\lib\python\debugpy\__main__.py", line 39, in <module>
+    cli.main()
+  File "c:\Users\ben.hardcastle\.vscode\extensions\ms-python.python-2022.17.13051012\pythonFiles\lib\python\debugpy/..\debugpy\server\cli.py", line 430, in main
+    run()
+  File "c:\Users\ben.hardcastle\.vscode\extensions\ms-python.python-2022.17.13051012\pythonFiles\lib\python\debugpy/..\debugpy\server\cli.py", line 284, in run_file
+    runpy.run_path(target, run_name="__main__")
+  File "c:\Users\ben.hardcastle\.vscode\extensions\ms-python.python-2022.17.13051012\pythonFiles\lib\python\debugpy\_vendored\pydevd\_pydevd_bundle\pydevd_runpy.py", line 321, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "c:\Users\ben.hardcastle\.vscode\extensions\ms-python.python-2022.17.13051012\pythonFiles\lib\python\debugpy\_vendored\pydevd\_pydevd_bundle\pydevd_runpy.py", line 135, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "c:\Users\ben.hardcastle\.vscode\extensions\ms-python.python-2022.17.13051012\pythonFiles\lib\python\debugpy\_vendored\pydevd\_pydevd_bundle\pydevd_runpy.py", line 124, in _run_code
+    exec(code, run_globals)
+  File "c:\Users\ben.hardcastle\github\np_logging\np_logging.py", line 119, in <module>
+    raise KeyError('test')
+KeyError: 'test'
+2022-11-26 11:04:44 CRITICAL np_logging:np_logging.py - exited via Exception after 0:00:00.007999 [h:m:s.μs] 
+
+Traceback (most recent call last):
+  File "c:\Users\ben.hardcastle\github\np_logging\np_logging.py", line 119, in <module>
+    raise KeyError('test')
+KeyError: 'test'
+2022-11-26 11:05:37 CRITICAL np_logging:np_logging.py - exited via Exception after 0:00:00.007003 [h:m:s.μs] 
+
+Traceback (most recent call last):
+  File "c:\Users\ben.hardcastle\github\np_logging\np_logging.py", line 119, in <module>
+    raise KeyError('test')
+KeyError: 'test'
+2022-11-26 11:18:39 CRITICAL np_logging:np_logging.py - exited via Exception after 0:00:00.010002 [h:m:s.μs] 
+Traceback (most recent call last):
+  File "c:\Users\ben.hardcastle\github\np_logging\np_logging.py", line 119, in <module>
+    raise KeyError('test')
+KeyError: 'test'
+2022-11-26 11:19:38 CRITICAL np_logging:np_logging.py - exited via Exception after 0:00:00.008999 [h:m:s.μs] 
+Traceback (most recent call last):
+  File "c:\Users\ben.hardcastle\github\np_logging\np_logging.py", line 119, in <module>
+    raise KeyError('test')
+KeyError: 'test'
+2022-11-26 11:21:14 CRITICAL np_logging:np_logging.py - exited via Exception after 0:00:00.007826 [h:m:s.μs] 
+Traceback (most recent call last):
+  File "c:\Users\ben.hardcastle\github\np_logging\np_logging.py", line 119, in <module>
+    raise KeyError('test')
+KeyError: 'test'
+2022-11-26 11:22:02 CRITICAL np_logging:np_logging.py - exited via Exception after 0:00:00.012239 [h:m:s.μs] 
+Traceback (most recent call last):
+  File "c:\Users\ben.hardcastle\github\np_logging\np_logging.py", line 119, in <module>
+    raise KeyError('test')
+KeyError: 'test'
+2022-11-26 11:22:15 CRITICAL np_logging:np_logging.py - exited via Exception after 0:00:00.011000 [h:m:s.μs] 
+Traceback (most recent call last):
+  File "c:\Users\ben.hardcastle\github\np_logging\np_logging.py", line 119, in <module>
+    raise KeyError('test')
+KeyError: 'test'
+2022-11-26 11:22:54 CRITICAL np_logging:np_logging.py - exited via Exception after 0:00:00.010999 [h:m:s.μs] 
+Traceback (most recent call last):
+  File "c:\Users\ben.hardcastle\github\np_logging\np_logging.py", line 119, in <module>
+    raise KeyError('test')
+KeyError: 'test'
+2022-11-26 11:23:32 CRITICAL np_logging:np_logging.py - exited via Exception after 0:00:00.009998 [h:m:s.μs] 
+Traceback (most recent call last):
+  File "c:\Users\ben.hardcastle\github\np_logging\np_logging.py", line 119, in <module>
+    raise KeyError('test')
+KeyError: 'test'
+2022-11-26 11:23:50 CRITICAL np_logging:np_logging.py - exited via Exception after 0:00:00.009002 [h:m:s.μs] 
+Traceback (most recent call last):
+  File "c:\Users\ben.hardcastle\github\np_logging\np_logging.py", line 119, in <module>
+    raise KeyError('test')
+KeyError: 'test'
+2022-11-26 11:32:37 INFO np_logging:np_logging.py - elapsed time: 0:00:00.009002
+2022-11-26 11:40:41 INFO np_logging:np_logging.py - elapsed time: 0:00:00.006001 [h:m:s.μs]
+2022-11-26 12:43:11 DEBUG __init__:__init__.py - matplotlib data path: C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\site-packages\matplotlib\mpl-data
+2022-11-26 12:43:11 DEBUG __init__:__init__.py - CONFIGDIR=C:\Users\ben.hardcastle\.matplotlib
+2022-11-26 12:43:11 DEBUG __init__:__init__.py - interactive is False
+2022-11-26 12:43:11 DEBUG __init__:__init__.py - platform is win32
+2022-11-26 12:43:12 DEBUG __init__:__init__.py - CACHEDIR=C:\Users\ben.hardcastle\.matplotlib
+2022-11-26 12:43:12 DEBUG font_manager:font_manager.py - Using fontManager instance from C:\Users\ben.hardcastle\.matplotlib\fontlist-v330.json
+2022-11-26 12:43:15 DEBUG pyplot:pyplot.py - Loaded backend tkagg version unknown.
+2022-11-26 13:08:13 INFO np_logging:np_logging.py - elapsed time: 0:00:00.066000 [h:m:s.μs]
+2022-11-26 13:08:19 INFO np_logging:np_logging.py - elapsed time: 0:00:00.064943 [h:m:s.μs]
+2022-11-26 13:08:30 INFO np_logging:np_logging.py - elapsed time: 0:00:00.106994 [h:m:s.μs]
+2022-11-26 13:08:30 INFO np_logging:np_logging.py - exited normally after 0:00:00.182653 [h:m:s.μs] 
+2022-11-26 13:09:36 INFO np_logging:np_logging.py - elapsed time: 0:00:00.069144 [h:m:s.μs]
+2022-11-26 13:09:36 INFO np_logging:np_logging.py - exited normally after 0:00:00.115518 [h:m:s.μs] 
+2022-11-26 13:14:13 INFO np_logging:np_logging.py - elapsed time: 0:00:00.064619 [h:m:s.μs]
+2022-11-26 13:14:13 INFO np_logging:np_logging.py - exited normally after 0:00:00.100476 [h:m:s.μs] 
+2022-11-26 13:15:47 INFO np_logging:np_logging.py - elapsed time: 0:00:10.175222 [h:m:s.μs]
+2022-11-26 13:15:47 INFO np_logging:np_logging.py - exited normally after 0:00:10.176226 [h:m:s.μs] 
+2022-11-26 13:16:04 INFO np_logging:np_logging.py - elapsed time: 0:00:08.071284 [h:m:s.μs]
+2022-11-26 13:16:04 INFO np_logging:np_logging.py - exited normally after 0:00:08.073286 [h:m:s.μs] 
+2022-11-26 13:20:33 INFO np_logging:np_logging.py - elapsed time: 0:00:00.068003 [h:m:s.μs]
+2022-11-26 13:20:33 INFO np_logging:np_logging.py - exited normally after 0:00:00.104000 [h:m:s.μs] 
+2022-11-26 13:21:21 INFO np_logging:np_logging.py - elapsed time: 0:00:00.282628 [h:m:s.μs]
+2022-11-26 13:21:21 INFO np_logging:np_logging.py - exited normally after 0:00:00.326629 [h:m:s.μs] 
+2022-11-26 13:21:33 INFO np_logging:np_logging.py - elapsed time: 0:00:00.069003 [h:m:s.μs]
+2022-11-26 13:21:33 INFO np_logging:np_logging.py - exited normally after 0:00:00.107524 [h:m:s.μs] 
+2022-11-26 13:21:50 INFO np_logging:np_logging.py - exited normally after 0:00:00.053999 [h:m:s.μs] 
+2022-11-26 13:22:22 INFO np_logging:np_logging.py - exited normally after 0:00:13.152811 [h:m:s.μs] 
+2022-11-26 13:22:54 INFO np_logging:np_logging.py - exited normally after 0:00:00.884761 [h:m:s.μs] 
+2022-11-26 13:36:58 INFO np_logging:np_logging.py - exited normally after 0:00:00.100079 [h:m:s.μs] 
+2022-11-26 13:40:40 CRITICAL np_logging:np_logging.py - exited via TypeError after 0:00:00.209086 [h:m:s.μs] 
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1319, in invoke_excepthook
+    hook(args)
+TypeError: ExitHooks.excepthook() missing 1 required positional argument: 'exc'
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1319, in invoke_excepthook
+    hook(args)
+TypeError: ExitHooks.excepthook() missing 1 required positional argument: 'exc'
+2022-11-26 13:45:28 CRITICAL np_logging:np_logging.py - exited via TypeError after 0:00:00.094613 [h:m:s.μs] 
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1319, in invoke_excepthook
+    hook(args)
+TypeError: ExitHooks.excepthook() missing 1 required positional argument: 'exc'
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1319, in invoke_excepthook
+    hook(args)
+TypeError: ExitHooks.excepthook() missing 1 required positional argument: 'exc'
+2022-11-26 13:45:54 CRITICAL np_logging:np_logging.py - exited via TypeError after 0:00:00.055001 [h:m:s.μs] 
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1319, in invoke_excepthook
+    hook(args)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 95, in excepthook
+    self._orig_excepthook(exc_type, exc, *args)
+TypeError: excepthook expected 3 arguments, got 4
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1319, in invoke_excepthook
+    hook(args)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 95, in excepthook
+    self._orig_excepthook(exc_type, exc, *args)
+TypeError: excepthook expected 3 arguments, got 4
+2022-11-26 13:46:29 CRITICAL np_logging:np_logging.py - exited via TypeError after 0:00:00.068003 [h:m:s.μs] 
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1319, in invoke_excepthook
+    hook(args)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 95, in excepthook
+    self._orig_excepthook(exc_type, exc, *args)
+TypeError: excepthook expected 3 arguments, got 4
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1319, in invoke_excepthook
+    hook(args)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 95, in excepthook
+    self._orig_excepthook(exc_type, exc, *args)
+TypeError: excepthook expected 3 arguments, got 4
+2022-11-26 13:56:44 CRITICAL np_logging:np_logging.py - exited via TypeError after 0:00:10.684900 [h:m:s.μs] 
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1319, in invoke_excepthook
+    hook(args)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 92, in threading_excepthook
+    self.excepthook(exc_type, exc, *extra) # from threading.excepthook
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 97, in excepthook
+    self._orig_excepthook(exc_type, exc, *args)
+TypeError: excepthook expected 3 arguments, got 4
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1319, in invoke_excepthook
+    hook(args)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 92, in threading_excepthook
+    self.excepthook(exc_type, exc, *extra) # from threading.excepthook
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 97, in excepthook
+    self._orig_excepthook(exc_type, exc, *args)
+TypeError: excepthook expected 3 arguments, got 4
+2022-11-26 13:56:52 CRITICAL np_logging:np_logging.py - exited via TypeError after 0:00:00.118056 [h:m:s.μs] 
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1319, in invoke_excepthook
+    hook(args)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 92, in threading_excepthook
+    self.excepthook(exc_type, exc, *extra) # from threading.excepthook
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 97, in excepthook
+    self._orig_excepthook(exc_type, exc, *args)
+TypeError: excepthook expected 3 arguments, got 4
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1319, in invoke_excepthook
+    hook(args)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 92, in threading_excepthook
+    self.excepthook(exc_type, exc, *extra) # from threading.excepthook
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 97, in excepthook
+    self._orig_excepthook(exc_type, exc, *args)
+TypeError: excepthook expected 3 arguments, got 4
+2022-11-26 14:00:14 CRITICAL np_logging:np_logging.py - exited via ZeroDivisionError after 0:00:00.077355 [h:m:s.μs] 
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 155, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 155, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 14:01:25 CRITICAL np_logging:np_logging.py - exited via ZeroDivisionError after 0:00:00.092916 [h:m:s.μs]
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 155, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 14:06:40 CRITICAL np_logging:np_logging.py - exited via ZeroDivisionError after 0:00:00.937321 [h:m:s.μs]
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 153, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 14:06:49 CRITICAL np_logging:np_logging.py - exited via ZeroDivisionError after 0:00:01.063543 [h:m:s.μs]
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 153, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 14:12:41 ERROR np_logging:np_logging.py - exited via ZeroDivisionError after 0:00:00.075471 [h:m:s.μs]
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 153, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 14:13:49 ERROR np_logging:np_logging.py - exited via AttributeError after 0:00:00.063679 [h:m:s.μs]
+Traceback (most recent call last):
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 156, in <module>
+    threading.join()
+AttributeError: module 'threading' has no attribute 'join'
+2022-11-26 14:13:59 ERROR np_logging:np_logging.py - exited via TypeError after 0:00:00.070523 [h:m:s.μs]
+Traceback (most recent call last):
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 156, in <module>
+    threading.Thread.join()
+TypeError: Thread.join() missing 1 required positional argument: 'self'
+2022-11-26 14:14:07 ERROR np_logging:np_logging.py - exited via RuntimeError after 0:00:00.114001 [h:m:s.μs]
+Traceback (most recent call last):
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 156, in <module>
+    threading.Thread().join()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1084, in join
+    raise RuntimeError("cannot join thread before it is started")
+RuntimeError: cannot join thread before it is started
+2022-11-26 14:15:47 ERROR np_logging:np_logging.py - exited via ZeroDivisionError after 0:00:00.098671 [h:m:s.μs]
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 153, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 14:16:09 ERROR np_logging:np_logging.py - exited via ZeroDivisionError after 0:00:00.335521 [h:m:s.μs]
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 153, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 14:18:27 INFO np_logging:np_logging.py - exited normally after 0:00:00.125989 [h:m:s.μs]
+2022-11-26 14:24:02 INFO np_logging:np_logging.py - exited normally after 0:00:05.278852 [h:m:s.μs]
+2022-11-26 14:26:05 INFO np_logging:np_logging.py thread:38384 line:93 - exited normally after 0:00:00.069450 [h:m:s.μs]
+2022-11-26 14:26:59 DEBUG __init__:__init__.py thread:44228 line:281 - matplotlib data path: C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\site-packages\matplotlib\mpl-data
+2022-11-26 14:26:59 DEBUG __init__:__init__.py thread:44228 line:281 - CONFIGDIR=C:\Users\ben.hardcastle\.matplotlib
+2022-11-26 14:26:59 DEBUG __init__:__init__.py thread:44228 line:1456 - interactive is False
+2022-11-26 14:26:59 DEBUG __init__:__init__.py thread:44228 line:1457 - platform is win32
+2022-11-26 14:27:00 DEBUG __init__:__init__.py thread:44228 line:281 - CACHEDIR=C:\Users\ben.hardcastle\.matplotlib
+2022-11-26 14:27:00 DEBUG font_manager:font_manager.py thread:44228 line:1620 - Using fontManager instance from C:\Users\ben.hardcastle\.matplotlib\fontlist-v330.json
+2022-11-26 14:27:14 INFO <string>:<string> thread:44228 line:1 - test
+2022-11-26 14:50:33 INFO np_logging:np_logging.py line:128 thread:Thread-5 (foo) - test
+2022-11-26 14:50:33 INFO np_logging:np_logging.py line:128 thread:Thread-6 (foo) - test
+2022-11-26 14:50:33 INFO np_logging:np_logging.py line:128 thread:Thread-4 (foo) - test
+2022-11-26 14:50:33 INFO np_logging:np_logging.py line:93 thread:MainThread - exited normally after 0:00:00.089527 [h:m:s.μs]
+2022-11-26 14:53:11 INFO np_logging.py Line-128 Thread-6 (foo) - test
+2022-11-26 14:53:11 INFO np_logging.py Line-128 Thread-5 (foo) - test
+2022-11-26 14:53:11 INFO np_logging.py Line-128 Thread-4 (foo) - test
+2022-11-26 14:53:11 INFO np_logging.py Line-93 MainThread - exited normally after 0:00:00.097420 [h:m:s.μs]
+2022-11-26 14:56:48 INFO np_logging.py Line-128 Thread-10 (foo) | test
+2022-11-26 14:56:48 INFO np_logging.py Line-128 Thread-11 (foo) | test
+2022-11-26 14:59:11 INFO np_logging.py Line-128 Thread-10 (foo) | test
+2022-11-26 14:59:11 INFO np_logging.py Line-128 Thread-12 (foo) | test
+2022-11-26 14:59:11 INFO np_logging.py Line-128 Thread-11 (foo) | test
+2022-11-26 15:01:31 INFO np_logging.py Line-126 MainThread | test
+2022-11-26 15:01:32 INFO np_logging.py Line-93 MainThread | exited normally after 0:00:00.989128 [h:m:s.μs]
+2022-11-26 15:02:26 INFO np_logging.py Line-126 MainThread | test
+2022-11-26 15:11:58 INFO np_logging.py Line-128 MainThread | test
+2022-11-26 15:12:20 INFO np_logging.py Line-127 MainThread | test
+2022-11-26 15:12:20 INFO np_logging.py Line-93 MainThread | exited normally after 0:00:00.122009 [h:m:s.μs]
+2022-11-26 15:14:26 INFO np_logging.py Line-127 MainThread | test
+2022-11-26 15:14:26 INFO np_logging.py Line-93 MainThread | exited normally after 0:00:00.070004 [h:m:s.μs]
+2022-11-26 15:14:26 INFO np_logging.py Line-93 MainThread | exited normally after 0:00:00.262408 [h:m:s.μs]
+2022-11-26 15:14:38 INFO np_logging.py Line-127 MainThread | test
+2022-11-26 15:14:38 INFO np_logging.py Line-93 MainThread | exited normally after 0:00:00.185054 [h:m:s.μs]
+2022-11-26 15:14:38 INFO np_logging.py Line-93 MainThread | exited normally after 0:00:00.411098 [h:m:s.μs]
+2022-11-26 15:15:06 INFO np_logging.py Line-127 MainThread | test
+2022-11-26 15:15:06 INFO np_logging.py Line-93 MainThread | exited normally after 0:00:00.092001 [h:m:s.μs]
+2022-11-26 15:15:06 INFO np_logging.py Line-93 MainThread | exited normally after 0:00:00.283058 [h:m:s.μs]
+2022-11-26 15:15:54 INFO np_logging.py Line-95 MainThread | exited normally after 0:00:00.135794 [h:m:s.μs]
+2022-11-26 15:15:54 INFO np_logging.py Line-95 MainThread | exited normally after 0:00:00.401625 [h:m:s.μs]
+2022-11-26 15:16:29 INFO np_logging.py Line-95 MainThread | exited normally after 0:00:00.120049 [h:m:s.μs]
+2022-11-26 15:16:29 INFO np_logging.py Line-95 MainThread | exited normally after 0:00:00.416115 [h:m:s.μs]
+2022-11-26 15:17:17 INFO np_logging.py Line-95 MainThread | exited normally after 0:00:00.069004 [h:m:s.μs]
+2022-11-26 15:17:17 INFO np_logging.py Line-95 MainThread | exited normally after 0:00:00.291083 [h:m:s.μs]
+2022-11-26 15:17:37 INFO np_logging.py Line-95 MainThread | exited normally after 0:00:01.120524 [h:m:s.μs]
+2022-11-26 15:17:37 INFO np_logging.py Line-95 MainThread | exited normally after 0:00:01.291158 [h:m:s.μs]
+2022-11-26 15:20:15 INFO np_logging.py Line-94 MainThread | exited normally after 0:00:00.061467 [h:m:s.μs]
+2022-11-26 15:20:15 INFO np_logging.py Line-94 MainThread | exited normally after 0:00:00.284710 [h:m:s.μs]
+2022-11-26 15:21:51 INFO np_logging.py Line-94 MainThread | exited normally after 0:00:00.111989 [h:m:s.μs]
+2022-11-26 15:21:51 INFO np_logging.py Line-94 MainThread | exited normally after 0:00:00.426042 [h:m:s.μs]
+2022-11-26 15:22:18 INFO np_logging.py Line-94 MainThread | exited normally after 0:00:00.055000 [h:m:s.μs]
+2022-11-26 15:25:17 INFO np_logging.py Line-96 MainThread | exited normally23after 0:00:00.122201 [h:m:s.μs]
+2022-11-26 15:25:17 INFO np_logging.py Line-96 MainThread | exited normally23after 0:00:00.209788 [h:m:s.μs]
+2022-11-26 15:25:26 INFO np_logging.py Line-93 MainThread | exited normally after 0:00:00.122525 [h:m:s.μs]
+2022-11-26 15:29:00 INFO np_logging.py Line-93 MainThread | exited normally after 0:00:00.118397 [h:m:s.μs]
+2022-11-26 15:29:31 INFO np_logging.py Line-96 MainThread | exited normally23after 0:00:00.060999 [h:m:s.μs]
+2022-11-26 15:30:38 INFO np_logging.py Line-96 MainThread | exited normally23after 0:00:00.074307 [h:m:s.μs]
+2022-11-26 15:30:38 INFO np_logging.py Line-96 MainThread | exited normally23after 0:00:00.113915 [h:m:s.μs]
+2022-11-26 15:31:00 INFO np_logging.py Line-96 MainThread | exited normally23after 0:00:00.146055 [h:m:s.μs]
+2022-11-26 15:33:38 INFO np_logging.py Line-96 MainThread | exited normally23after 0:00:00.078000 [h:m:s.μs]
+2022-11-26 15:34:09 INFO np_logging.py Line-96 MainThread | exited normally23after 0:00:00.085000 [h:m:s.μs]
+2022-11-26 15:36:57 INFO np_logging.py Line-97 MainThread | exited normally23after 0:00:00.048408 [h:m:s.μs]
+2022-11-26 15:37:07 INFO np_logging.py Line-97 MainThread | exited normally23after 0:00:00.061998 [h:m:s.μs]
+2022-11-26 15:37:07 INFO np_logging.py Line-97 MainThread | exited normally23after 0:00:00.098471 [h:m:s.μs]
+2022-11-26 15:50:40 INFO np_logging.py Line-93 MainThread | exited normally23after 0:00:00.091434 [h:m:s.μs]
+2022-11-26 15:52:36 DEBUG __init__.py Line-281 MainThread | matplotlib data path: C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\site-packages\matplotlib\mpl-data
+2022-11-26 15:52:36 DEBUG __init__.py Line-281 MainThread | CONFIGDIR=C:\Users\ben.hardcastle\.matplotlib
+2022-11-26 15:52:36 DEBUG __init__.py Line-1456 MainThread | interactive is False
+2022-11-26 15:52:36 DEBUG __init__.py Line-1457 MainThread | platform is win32
+2022-11-26 15:52:36 DEBUG __init__.py Line-281 MainThread | CACHEDIR=C:\Users\ben.hardcastle\.matplotlib
+2022-11-26 15:52:36 DEBUG font_manager.py Line-1620 MainThread | Using fontManager instance from C:\Users\ben.hardcastle\.matplotlib\fontlist-v330.json
+2022-11-26 15:52:58 DEBUG pyplot.py Line-314 MainThread | Loaded backend tkagg version unknown.
+2022-11-26 15:54:23 ERROR np_logging.py Line-90 MainThread | exited via KeyError after 0:00:00.066227 [h:m:s.μs]
+Traceback (most recent call last):
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 127, in <module>
+    raise KeyError('test')
+KeyError: 'test'
+2022-11-26 16:02:56 ERROR np_logging.py Line-90 MainThread | exited via KeyError after 0:00:00.071406 [h:m:s.μs]
+Traceback (most recent call last):
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 127, in <module>
+    raise KeyError('test')
+KeyError: 'test'
+2022-11-26 16:03:14 ERROR np_logging.py Line-90 MainThread | exited via KeyError after 0:00:00.081526 [h:m:s.μs]
+Traceback (most recent call last):
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 127, in <module>
+    raise KeyError('test')
+KeyError: 'test'
+2022-11-26 16:05:03 ERROR np_logging.py Line-90 MainThread | exited via KeyError after 0:00:00.087365 [h:m:s.μs]
+Traceback (most recent call last):
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 127, in <module>
+    raise KeyError('test')
+KeyError: 'test'
+2022-11-26 16:05:26 ERROR np_logging.py Line-93 MainThread | elapsed time: after 0:00:00.055998 [h:m:s.μs]
+Traceback (most recent call last):
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 127, in <module>
+    raise KeyError('test')
+KeyError: 'test'
+2022-11-26 16:11:23 ERROR np_logging.py Line-96 MainThread | elapsed time: 0:00:00.077457 [h:m:s.μs]
+Traceback (most recent call last):
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 130, in <module>
+    raise KeyError('test')
+KeyError: 'test'
+2022-11-26 16:11:40 ERROR np_logging.py Line-96 MainThread | elapsed time: 0:00:00.067519 [h:m:s.μs]
+2022-11-26 16:14:20 ERROR np_logging.py Line-97 MainThread | elapsed time: 0:00:00.113486 [h:m:s.μs]
+2022-11-26 16:14:28 ERROR np_logging.py Line-97 MainThread | elapsed time: 0:00:00.061002 [h:m:s.μs]
+2022-11-26 16:19:06 ERROR np_logging.py Line-97 MainThread | elapsed time: 0:00:00.250882 [h:m:s.μs]
+2022-11-26 16:19:21 ERROR np_logging.py Line-97 MainThread | elapsed time: 0:00:00.103999 [h:m:s.μs]
+2022-11-26 16:21:08 ERROR np_logging.py Line-74 MainThread | <traceback object at 0x00000215EBA04200>
+Traceback (most recent call last):
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 131, in <module>
+    raise KeyError('test')
+KeyError: 'test'
+2022-11-26 16:21:08 ERROR np_logging.py Line-97 MainThread | elapsed time: 0:00:00.131272 [h:m:s.μs]
+2022-11-26 16:24:31 ERROR np_logging.py Line-97 MainThread | elapsed time: 0:00:00.061171 [h:m:s.μs]
+2022-11-26 16:25:34 INFO np_logging.py Line-135 Thread-4 (foo) | test
+2022-11-26 16:25:34 ERROR np_logging.py Line-74 Thread-4 (foo) | <traceback object at 0x000001CA9EBC3D00>
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 136, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:25:34 INFO np_logging.py Line-135 Thread-5 (foo) | test
+2022-11-26 16:25:34 ERROR np_logging.py Line-74 Thread-5 (foo) | <traceback object at 0x000001CA9E6D2B80>
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 136, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:25:34 INFO np_logging.py Line-135 Thread-6 (foo) | test
+2022-11-26 16:25:34 ERROR np_logging.py Line-74 Thread-6 (foo) | <traceback object at 0x000001CAA05155C0>
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 136, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:25:34 ERROR np_logging.py Line-97 MainThread | elapsed time: 0:00:00.210406 [h:m:s.μs]
+2022-11-26 16:27:12 INFO np_logging.py Line-135 Thread-4 (foo) | test
+2022-11-26 16:27:12 ERROR np_logging.py Line-74 Thread-4 (foo) | <traceback object at 0x000002014560FA40>
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 136, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:27:12 INFO np_logging.py Line-135 Thread-6 (foo) | test
+2022-11-26 16:27:12 INFO np_logging.py Line-135 Thread-5 (foo) | test
+2022-11-26 16:27:12 ERROR np_logging.py Line-74 Thread-6 (foo) | <traceback object at 0x00000201478771C0>
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 136, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:27:12 ERROR np_logging.py Line-74 Thread-5 (foo) | <traceback object at 0x0000020147875FC0>
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 136, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:27:12 INFO np_logging.py Line-97 MainThread | Exit: elapsed time: 0:00:00.157339 [h:m:s.μs]
+2022-11-26 16:27:30 INFO np_logging.py Line-135 Thread-6 (foo) | test
+2022-11-26 16:27:30 ERROR np_logging.py Line-74 Thread-6 (foo) | <traceback object at 0x000001DE69637640>
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 136, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:27:30 INFO np_logging.py Line-135 Thread-4 (foo) | test
+2022-11-26 16:27:30 INFO np_logging.py Line-135 Thread-5 (foo) | test
+2022-11-26 16:27:30 ERROR np_logging.py Line-74 Thread-4 (foo) | <traceback object at 0x000001DE695D2000>
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 136, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:27:30 ERROR np_logging.py Line-74 Thread-5 (foo) | <traceback object at 0x000001DE696887C0>
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 136, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:27:30 INFO np_logging.py Line-97 MainThread | Elapsed time: 0:00:00.118817 [h:m:s.μs]
+2022-11-26 16:29:24 INFO np_logging.py Line-135 Thread-6 (foo) | test
+2022-11-26 16:29:24 INFO np_logging.py Line-135 Thread-5 (foo) | test
+2022-11-26 16:29:24 INFO np_logging.py Line-135 Thread-4 (foo) | test
+2022-11-26 16:29:24 ERROR np_logging.py Line-74 Thread-6 (foo) | ['  File "C:\\Users\\ben.hardcastle\\Anaconda3\\envs\\dv_new\\lib\\threading.py", line 1009, in _bootstrap_inner\n    self.run()\n', '  File "C:\\Users\\ben.hardcastle\\Anaconda3\\envs\\dv_new\\lib\\threading.py", line 946, in run\n    self._target(*self._args, **self._kwargs)\n', '  File "c:\\Users\\ben.hardcastle\\github\\np_logging\\src\\np_logging.py", line 136, in foo\n    return 1/0\n']
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 136, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:29:24 ERROR np_logging.py Line-74 Thread-5 (foo) | ['  File "C:\\Users\\ben.hardcastle\\Anaconda3\\envs\\dv_new\\lib\\threading.py", line 1009, in _bootstrap_inner\n    self.run()\n', '  File "C:\\Users\\ben.hardcastle\\Anaconda3\\envs\\dv_new\\lib\\threading.py", line 946, in run\n    self._target(*self._args, **self._kwargs)\n', '  File "c:\\Users\\ben.hardcastle\\github\\np_logging\\src\\np_logging.py", line 136, in foo\n    return 1/0\n']
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 136, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:29:24 ERROR np_logging.py Line-74 Thread-4 (foo) | ['  File "C:\\Users\\ben.hardcastle\\Anaconda3\\envs\\dv_new\\lib\\threading.py", line 1009, in _bootstrap_inner\n    self.run()\n', '  File "C:\\Users\\ben.hardcastle\\Anaconda3\\envs\\dv_new\\lib\\threading.py", line 946, in run\n    self._target(*self._args, **self._kwargs)\n', '  File "c:\\Users\\ben.hardcastle\\github\\np_logging\\src\\np_logging.py", line 136, in foo\n    return 1/0\n']
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 136, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:29:24 INFO np_logging.py Line-97 MainThread | Elapsed time: 0:00:00.127301 [h:m:s.μs]
+2022-11-26 16:30:42 INFO np_logging.py Line-135 Thread-4 (foo) | test
+2022-11-26 16:30:42 ERROR np_logging.py Line-74 Thread-4 (foo) | [<FrameSummary file C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py, line 1009 in _bootstrap_inner>, <FrameSummary file C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py, line 946 in run>, <FrameSummary file c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py, line 136 in foo>]
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 136, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:30:42 INFO np_logging.py Line-135 Thread-5 (foo) | test
+2022-11-26 16:30:42 ERROR np_logging.py Line-74 Thread-5 (foo) | [<FrameSummary file C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py, line 1009 in _bootstrap_inner>, <FrameSummary file C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py, line 946 in run>, <FrameSummary file c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py, line 136 in foo>]
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 136, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:30:42 INFO np_logging.py Line-135 Thread-6 (foo) | test
+2022-11-26 16:30:42 ERROR np_logging.py Line-74 Thread-6 (foo) | [<FrameSummary file C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py, line 1009 in _bootstrap_inner>, <FrameSummary file C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py, line 946 in run>, <FrameSummary file c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py, line 136 in foo>]
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 136, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:30:42 INFO np_logging.py Line-97 MainThread | Elapsed time: 0:00:00.269668 [h:m:s.μs]
+2022-11-26 16:30:54 INFO np_logging.py Line-135 Thread-4 (foo) | test
+2022-11-26 16:30:54 INFO np_logging.py Line-135 Thread-6 (foo) | test
+2022-11-26 16:30:54 INFO np_logging.py Line-135 Thread-5 (foo) | test
+2022-11-26 16:30:54 ERROR np_logging.py Line-74 Thread-6 (foo) | None
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 136, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:30:54 ERROR np_logging.py Line-74 Thread-5 (foo) | None
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 136, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:30:54 ERROR np_logging.py Line-74 Thread-4 (foo) | None
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 136, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:30:54 INFO np_logging.py Line-97 MainThread | Elapsed time: 0:00:00.195997 [h:m:s.μs]
+2022-11-26 16:33:22 INFO np_logging.py Line-135 Thread-4 (foo) | test
+2022-11-26 16:33:23 ERROR np_logging.py Line-74 Thread-4 (foo) | <traceback object at 0x00000174EF102000>
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 136, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:33:22 INFO np_logging.py Line-135 Thread-6 (foo) | test
+2022-11-26 16:33:22 INFO np_logging.py Line-135 Thread-5 (foo) | test
+2022-11-26 16:33:23 ERROR np_logging.py Line-74 Thread-6 (foo) | <traceback object at 0x00000174EF1B9300>
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 136, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:33:23 ERROR np_logging.py Line-74 Thread-5 (foo) | <traceback object at 0x00000174EF1B8B40>
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 136, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:33:23 INFO np_logging.py Line-97 MainThread | Elapsed time: 0:00:00.098155 [h:m:s.μs]
+2022-11-26 16:36:53 INFO np_logging.py Line-135 Thread-6 (foo) | test
+2022-11-26 16:36:53 INFO np_logging.py Line-135 Thread-5 (foo) | test
+2022-11-26 16:36:53 INFO np_logging.py Line-135 Thread-4 (foo) | test
+2022-11-26 16:36:53 ERROR np_logging.py Line-74 Thread-6 (foo) | <traceback object at 0x0000022FC01132C0>
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 136, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:36:53 ERROR np_logging.py Line-74 Thread-5 (foo) | <traceback object at 0x0000022FC01B9A80>
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 136, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:36:53 ERROR np_logging.py Line-74 Thread-4 (foo) | <traceback object at 0x0000022FC01B8EC0>
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 136, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:36:54 INFO np_logging.py Line-97 MainThread | Elapsed time: 0:00:00.122661 [h:m:s.μs]
+2022-11-26 16:40:47 INFO np_logging.py Line-135 Thread-5 (foo) | test
+2022-11-26 16:40:47 INFO np_logging.py Line-135 Thread-4 (foo) | test
+2022-11-26 16:40:47 INFO np_logging.py Line-135 Thread-6 (foo) | test
+2022-11-26 16:40:47 INFO np_logging.py Line-97 MainThread | Elapsed time: 0:00:00.124407 [h:m:s.μs]
+2022-11-26 16:41:00 INFO np_logging.py Line-135 Thread-4 (foo) | test
+2022-11-26 16:41:00 INFO np_logging.py Line-135 Thread-5 (foo) | test
+2022-11-26 16:41:00 INFO np_logging.py Line-135 Thread-6 (foo) | test
+2022-11-26 16:41:00 INFO np_logging.py Line-97 MainThread | Elapsed time: 0:00:00.237059 [h:m:s.μs]
+2022-11-26 16:41:12 INFO np_logging.py Line-135 Thread-5 (foo) | test
+2022-11-26 16:41:12 ERROR np_logging.py Line-74 Thread-5 (foo) | 
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 136, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:41:12 INFO np_logging.py Line-135 Thread-4 (foo) | test
+2022-11-26 16:41:12 ERROR np_logging.py Line-74 Thread-4 (foo) | 
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 136, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:41:12 INFO np_logging.py Line-135 Thread-6 (foo) | test
+2022-11-26 16:41:12 ERROR np_logging.py Line-74 Thread-6 (foo) | 
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 136, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:41:12 INFO np_logging.py Line-97 MainThread | Elapsed time: 0:00:00.249570 [h:m:s.μs]
+2022-11-26 16:41:51 INFO np_logging.py Line-135 Thread-6 (foo) | test
+2022-11-26 16:41:52 ERROR np_logging.py Line-74 Thread-6 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 136, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:41:51 INFO np_logging.py Line-135 Thread-4 (foo) | test
+2022-11-26 16:41:51 INFO np_logging.py Line-135 Thread-5 (foo) | test
+2022-11-26 16:41:52 ERROR np_logging.py Line-74 Thread-4 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 136, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:41:52 ERROR np_logging.py Line-74 Thread-5 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 136, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:41:52 INFO np_logging.py Line-97 MainThread | Elapsed time: 0:00:00.101002 [h:m:s.μs]
+2022-11-26 16:44:16 INFO np_logging.py Line-134 Thread-6 (foo) | test
+2022-11-26 16:44:16 INFO np_logging.py Line-134 Thread-5 (foo) | test
+2022-11-26 16:44:16 ERROR np_logging.py Line-74 Thread-6 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 135, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:44:16 ERROR np_logging.py Line-74 Thread-5 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 135, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:44:16 INFO np_logging.py Line-134 Thread-4 (foo) | test
+2022-11-26 16:44:16 ERROR np_logging.py Line-74 Thread-4 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 135, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:44:16 ERROR np_logging.py Line-96 MainThread | Elapsed time: 0:00:00.117644 [h:m:s.μs]
+2022-11-26 16:52:23 INFO np_logging.py Line-136 Thread-4 (foo) | test
+2022-11-26 16:52:23 INFO np_logging.py Line-136 Thread-6 (foo) | test
+2022-11-26 16:52:23 INFO np_logging.py Line-136 Thread-5 (foo) | test
+2022-11-26 16:52:23 ERROR np_logging.py Line-77 Thread-4 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 137, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:52:23 ERROR np_logging.py Line-77 Thread-6 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 137, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:52:23 ERROR np_logging.py Line-77 Thread-5 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 137, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:52:24 INFO np_logging.py Line-98 MainThread | Elapsed time: 0:00:00.158731 [h:m:s.μs]
+2022-11-26 16:52:45 INFO np_logging.py Line-136 Thread-5 (foo) | test
+2022-11-26 16:52:45 ERROR np_logging.py Line-77 Thread-5 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 137, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:52:45 INFO np_logging.py Line-136 Thread-4 (foo) | test
+2022-11-26 16:52:45 ERROR np_logging.py Line-77 Thread-4 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 137, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:52:45 INFO np_logging.py Line-136 Thread-6 (foo) | test
+2022-11-26 16:52:45 ERROR np_logging.py Line-77 Thread-6 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 137, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:52:45 INFO np_logging.py Line-98 MainThread | Elapsed time: 0:00:00.115001 [h:m:s.μs]
+2022-11-26 16:54:35 INFO np_logging.py Line-138 Thread-4 (foo) | test
+2022-11-26 16:54:35 ERROR np_logging.py Line-79 Thread-4 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 139, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:54:35 ERROR np_logging.py Line-79 Thread-4 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 139, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:54:35 INFO np_logging.py Line-138 Thread-5 (foo) | test
+2022-11-26 16:54:35 ERROR np_logging.py Line-79 Thread-5 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 139, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:54:35 ERROR np_logging.py Line-79 Thread-5 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 139, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:54:35 INFO np_logging.py Line-138 Thread-6 (foo) | test
+2022-11-26 16:54:35 ERROR np_logging.py Line-79 Thread-6 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 139, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:54:35 ERROR np_logging.py Line-79 Thread-6 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 139, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:54:35 INFO np_logging.py Line-100 MainThread | Elapsed time: 0:00:00.209288 [h:m:s.μs]
+2022-11-26 16:54:55 INFO np_logging.py Line-138 Thread-6 (foo) | test
+2022-11-26 16:54:55 ERROR np_logging.py Line-79 Thread-6 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 139, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:54:55 INFO np_logging.py Line-138 Thread-5 (foo) | test
+2022-11-26 16:54:55 INFO np_logging.py Line-138 Thread-4 (foo) | test
+2022-11-26 16:54:55 ERROR np_logging.py Line-79 Thread-5 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 139, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:54:55 ERROR np_logging.py Line-79 Thread-4 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 139, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:54:56 INFO np_logging.py Line-100 MainThread | Elapsed time: 0:00:00.205000 [h:m:s.μs]
+2022-11-26 16:55:07 INFO np_logging.py Line-138 Thread-4 (foo) | test
+2022-11-26 16:55:07 ERROR np_logging.py Line-79 Thread-4 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 139, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:55:07 INFO np_logging.py Line-138 Thread-6 (foo) | test
+2022-11-26 16:55:07 INFO np_logging.py Line-138 Thread-5 (foo) | test
+2022-11-26 16:55:07 ERROR np_logging.py Line-79 Thread-6 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 139, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:55:07 ERROR np_logging.py Line-79 Thread-5 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 139, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:55:08 INFO np_logging.py Line-100 MainThread | Elapsed time: 0:00:00.098002 [h:m:s.μs]
+2022-11-26 16:55:26 INFO np_logging.py Line-138 Thread-6 (foo) | test
+2022-11-26 16:55:26 INFO np_logging.py Line-138 Thread-5 (foo) | test
+2022-11-26 16:55:26 INFO np_logging.py Line-138 Thread-4 (foo) | test
+2022-11-26 16:55:27 ERROR np_logging.py Line-79 Thread-6 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 139, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:55:27 ERROR np_logging.py Line-79 Thread-5 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 139, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:55:27 ERROR np_logging.py Line-79 Thread-4 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 139, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:55:27 INFO np_logging.py Line-100 MainThread | Elapsed time: 0:00:00.101002 [h:m:s.μs]
+2022-11-26 16:55:42 INFO np_logging.py Line-138 Thread-5 (foo) | test
+2022-11-26 16:55:42 ERROR np_logging.py Line-79 Thread-5 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 139, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:55:42 INFO np_logging.py Line-138 Thread-4 (foo) | test
+2022-11-26 16:55:42 INFO np_logging.py Line-138 Thread-6 (foo) | test
+2022-11-26 16:55:42 ERROR np_logging.py Line-79 Thread-4 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 139, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:55:42 ERROR np_logging.py Line-79 Thread-6 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 139, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:55:42 INFO np_logging.py Line-100 MainThread | Elapsed time: 0:00:00.129048 [h:m:s.μs]
+2022-11-26 16:55:57 INFO np_logging.py Line-138 Thread-4 (foo) | test
+2022-11-26 16:55:57 ERROR np_logging.py Line-79 Thread-4 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 139, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:55:57 INFO np_logging.py Line-138 Thread-5 (foo) | test
+2022-11-26 16:55:57 INFO np_logging.py Line-138 Thread-6 (foo) | test
+2022-11-26 16:55:57 ERROR np_logging.py Line-79 Thread-5 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 139, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:55:57 ERROR np_logging.py Line-79 Thread-6 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 139, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:55:57 INFO np_logging.py Line-100 MainThread | Elapsed time: 0:00:00.124998 [h:m:s.μs]
+2022-11-26 16:57:07 INFO np_logging.py Line-138 Thread-5 (foo) | test
+2022-11-26 16:57:07 INFO np_logging.py Line-138 Thread-4 (foo) | test
+2022-11-26 16:57:07 ERROR np_logging.py Line-79 Thread-5 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 139, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:57:07 INFO np_logging.py Line-138 Thread-6 (foo) | test
+2022-11-26 16:57:07 ERROR np_logging.py Line-79 Thread-4 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 139, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:57:07 ERROR np_logging.py Line-79 Thread-6 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 139, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:57:07 INFO np_logging.py Line-100 MainThread | Elapsed time: 0:00:00.097668 [h:m:s.μs]
+2022-11-26 16:59:09 INFO np_logging.py Line-138 Thread-5 (foo) | test
+2022-11-26 16:59:09 INFO np_logging.py Line-138 Thread-6 (foo) | test
+2022-11-26 16:59:09 ERROR np_logging.py Line-79 Thread-5 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 139, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:59:09 INFO np_logging.py Line-138 Thread-4 (foo) | test
+2022-11-26 16:59:09 ERROR np_logging.py Line-79 Thread-6 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 139, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:59:09 ERROR np_logging.py Line-79 Thread-4 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 139, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:59:09 INFO np_logging.py Line-100 MainThread | exited normally after 0:00:00.105643 [h:m:s.μs]
+2022-11-26 16:59:36 INFO np_logging.py Line-137 Thread-5 (foo) | test
+2022-11-26 16:59:36 INFO np_logging.py Line-137 Thread-4 (foo) | test
+2022-11-26 16:59:36 ERROR np_logging.py Line-79 Thread-5 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 138, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:59:36 ERROR np_logging.py Line-79 MainThread | Exception:
+Traceback (most recent call last):
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 144, in <module>
+    print(1/0)
+ZeroDivisionError: division by zero
+2022-11-26 16:59:36 ERROR np_logging.py Line-79 Thread-4 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 138, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:59:36 INFO np_logging.py Line-137 Thread-6 (foo) | test
+2022-11-26 16:59:36 ERROR np_logging.py Line-79 Thread-6 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 138, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 16:59:36 ERROR np_logging.py Line-100 MainThread | exited via ZeroDivisionError after 0:00:00.118005 [h:m:s.μs]
+2022-11-26 17:00:55 INFO np_logging.py Line-137 Thread-6 (foo) | test
+2022-11-26 17:00:55 ERROR np_logging.py Line-79 Thread-6 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 138, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 17:00:55 ERROR np_logging.py Line-79 MainThread | Exception:
+Traceback (most recent call last):
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 144, in <module>
+    print(1/0)
+ZeroDivisionError: division by zero
+2022-11-26 17:00:55 INFO np_logging.py Line-137 Thread-4 (foo) | test
+2022-11-26 17:00:55 ERROR np_logging.py Line-79 Thread-4 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 138, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 17:00:55 INFO np_logging.py Line-137 Thread-5 (foo) | test
+2022-11-26 17:00:55 ERROR np_logging.py Line-79 Thread-5 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 138, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 17:00:55 ERROR np_logging.py Line-100 MainThread | Exited via ZeroDivisionError after 0:00:00.265969 [h:m:s.μs]
+2022-11-26 17:01:14 INFO np_logging.py Line-137 Thread-4 (foo) | test
+2022-11-26 17:01:14 INFO np_logging.py Line-137 Thread-5 (foo) | test
+2022-11-26 17:01:14 ERROR np_logging.py Line-79 Thread-4 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 138, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 17:01:14 ERROR np_logging.py Line-79 Thread-5 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 138, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 17:01:14 INFO np_logging.py Line-137 Thread-6 (foo) | test
+2022-11-26 17:01:14 ERROR np_logging.py Line-79 Thread-6 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 138, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 17:01:14 INFO np_logging.py Line-100 MainThread | Exited normally after 0:00:00.118287 [h:m:s.μs]
+2022-11-26 17:03:47 INFO np_logging.py Line-137 Thread-4 (foo) | test
+2022-11-26 17:03:47 ERROR np_logging.py Line-79 Thread-4 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 138, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 17:03:47 INFO np_logging.py Line-137 Thread-5 (foo) | test
+2022-11-26 17:03:47 ERROR np_logging.py Line-79 Thread-5 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 138, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 17:03:47 INFO np_logging.py Line-137 Thread-6 (foo) | test
+2022-11-26 17:03:47 ERROR np_logging.py Line-79 Thread-6 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 138, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 17:03:47 INFO np_logging.py Line-100 MainThread | Exited normally after 0:00:00.151941 [h:m:s.μs]
+2022-11-26 17:08:38 INFO np_logging.py Line-138 Thread-5 (foo) | test
+2022-11-26 17:08:38 ERROR np_logging.py Line-79 Thread-5 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 139, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 17:08:38 INFO np_logging.py Line-138 Thread-4 (foo) | test
+2022-11-26 17:08:38 INFO np_logging.py Line-138 Thread-6 (foo) | test
+2022-11-26 17:08:38 ERROR np_logging.py Line-79 Thread-4 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 139, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 17:08:38 ERROR np_logging.py Line-79 Thread-6 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 139, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 17:08:38 INFO np_logging.py Line-101 MainThread | Exited normally after 0:00:00.100914 [h:m:s.μs]

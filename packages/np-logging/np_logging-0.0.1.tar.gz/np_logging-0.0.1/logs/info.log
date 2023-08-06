@@ -1,0 +1,31 @@
+2022-11-26 17:08:38 INFO np_logging.py Line-138 Thread-5 (foo) | test
+2022-11-26 17:08:38 ERROR np_logging.py Line-79 Thread-5 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 139, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 17:08:38 INFO np_logging.py Line-138 Thread-4 (foo) | test
+2022-11-26 17:08:38 INFO np_logging.py Line-138 Thread-6 (foo) | test
+2022-11-26 17:08:38 ERROR np_logging.py Line-79 Thread-4 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 139, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 17:08:38 ERROR np_logging.py Line-79 Thread-6 (foo) | Exception:
+Traceback (most recent call last):
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 1009, in _bootstrap_inner
+    self.run()
+  File "C:\Users\ben.hardcastle\Anaconda3\envs\dv_new\lib\threading.py", line 946, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\ben.hardcastle\github\np_logging\src\np_logging.py", line 139, in foo
+    return 1/0
+ZeroDivisionError: division by zero
+2022-11-26 17:08:38 INFO np_logging.py Line-101 MainThread | Exited normally after 0:00:00.100914 [h:m:s.μs]
