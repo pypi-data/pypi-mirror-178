@@ -1,0 +1,9 @@
+dqfit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dqfit/query.py,sha256=aqu9Q0bzyQubFqUodweKs83Ztppwj8zWUhlhNV0Cvw0,2220
+dqfit/model/dqi_model.py,sha256=OZJCfcmprFC0Ez7aasQDaMdH54k6CDF22xSrOfpJpUg,6259
+dqfit/preprocessing/ResourceFeatures.py,sha256=UcSNWkQaJy6k6Ed0J1rI_MiYT5YYuHYLsCpjiELykxo,2816
+dqfit/preprocessing/resource_helpers/r401.py,sha256=_sfHFpL_xYZ5Z25XhGLszDnMYmwIVJCaJL_lu5sk7UA,3868
+dqfit-0.0.6.dist-info/METADATA,sha256=7Cf06fDNpT8TWI005hqRt91roRISA7T40N1F2j2yh7E,210
+dqfit-0.0.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+dqfit-0.0.6.dist-info/top_level.txt,sha256=00lhMsV0Ajvj_Bn_9DS9yhDLFqkDaYEafLm43FfTkpM,6
+dqfit-0.0.6.dist-info/RECORD,,
