@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+smaksimovich/__init__.py
+smaksimovich/torch_utils.py
+smaksimovich/utils.py
+smaksimovich.egg-info/PKG-INFO
+smaksimovich.egg-info/SOURCES.txt
+smaksimovich.egg-info/dependency_links.txt
+smaksimovich.egg-info/requires.txt
+smaksimovich.egg-info/top_level.txt
