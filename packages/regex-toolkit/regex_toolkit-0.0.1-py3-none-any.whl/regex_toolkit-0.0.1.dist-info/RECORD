@@ -1,0 +1,15 @@
+regex_toolkit/__init__.py,sha256=ZvWnI5FJ7nx-6eTSprtTQon1smkB1SZd6vDkPJ8u4Rs,69
+regex_toolkit/__version__.py,sha256=RreiPI0q8CW3PU2YfGrgCs_1-ihv-8bJuL_u1UaJVQk,322
+regex_toolkit/base.py,sha256=mUNiq8AwFmC7OKcpVpUI0oZWQRU5OJlog1oEJ8vsMqo,8003
+regex_toolkit/base_BAK_2022-11-18.py,sha256=nflNaerV5n1uEwhb9qSYPM-Kyo5z5SOCgxOowb6OWf0,10103
+regex_toolkit/confusables/__init__.py,sha256=87g0-WoK_VYKwd4HP2D5eG7-7s2VDZha3v-NB0t1sRM,181
+regex_toolkit/confusables/confusables.py,sha256=H07TB7emHe5UHF2xYwzHcRbFDxwfjN1JTLDCOosncwE,6643
+regex_toolkit/confusables/prepare.py,sha256=rvCA7bzIavD3uj04h4C8xGTYGrbwLEtQKfxlJVy-Uw8,2982
+regex_toolkit/emojis/__init__.py,sha256=aZ_F_Nd3P6eClH4eyhTA2jtKkmlsVvmvk1Himm4zWLg,149
+regex_toolkit/emojis/prepare.py,sha256=DV4hHONFPMev_yNxl_6p9DONDPAnpwcGfY-DKNPriOc,2930
+regex_toolkit-0.0.1.dist-info/LICENSE,sha256=yIWKWnZEC7ykhOE0z330Y4XQkN0YssWOZQ-TkliALls,10141
+regex_toolkit-0.0.1.dist-info/METADATA,sha256=9LoqWrndIHBTr9o_i3EaY6SR-hQkW1DyIpdNuIcZb9s,11730
+regex_toolkit-0.0.1.dist-info/NOTICE,sha256=FIp_p2oj6RXd61dp_L59GKcFFJmzUI-3iD8aM0hqGZU,558
+regex_toolkit-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+regex_toolkit-0.0.1.dist-info/top_level.txt,sha256=kssG5O6IW75bPwq-pqPHm7TCeBC0jmq4ELuHX9Z7NDs,14
+regex_toolkit-0.0.1.dist-info/RECORD,,
