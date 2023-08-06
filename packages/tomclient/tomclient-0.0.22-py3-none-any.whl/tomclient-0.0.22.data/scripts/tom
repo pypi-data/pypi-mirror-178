@@ -1,0 +1,48 @@
+#!python
+import typer
+import sched, time
+import netifaces as ni
+from netifaces import AF_INET
+from loguru import logger
+from tomclient.client import TOMClient
+from tomclient.utility import parse_servable_config
+from tomclient.gpuml.gpu_profiler import gpu_measure
+from tomclient.clock import clock_watch
+
+tom = typer.Typer(help="Research Computer Worker Daemon")
+
+@tom.command()
+def join(host: str='localhost',
+         nic_name: str ='access',
+         report_interval: int=10, 
+         working_dir: str = "."
+        ):
+    ip_addr = ni.ifaddresses(nic_name)[AF_INET][0]['addr']
+    gpu_stats = gpu_measure()
+    if gpu_stats is not None:
+        gpu_stats = gpu_stats['gpu']
+        total_gpus = len(gpu_stats)
+        s = sched.scheduler(time.time, time.sleep)
+        for idx, gpu_stat in enumerate(gpu_stats):
+            tom_client = TOMClient(host_url=host)
+            gpu_name = gpu_stat['product_name']
+            tom_client.join(ip_addr=ip_addr, gpu_id=idx, gpu_spec=gpu_name, gpu_memory=gpu_stat['fb_memory_usage']['total'], working_dir=working_dir, total_gpus=total_gpus)
+            s.enter(report_interval, 1, clock_watch, (s, tom_client, ip_addr, str(idx)))
+        s.run(blocking=True)
+
+@tom.command()
+def config(working_dir:str=typer.Argument("./"), mode:str=typer.Argument("inference")):
+    # check if file exists
+    tom_config = parse_servable_config(working_dir)
+    mode_found = False
+    for mode_entry in tom_config['mode']:
+        if mode_entry['name'] == mode:
+            mode_found = True
+            # podmanager.run(f"cd {working_dir} && /bin/bash {entrypoint_script}", name=pod_name, check=True)
+            break
+    if not mode_found:
+        logger.error(f"Mode {mode} not found in TOM configuration file {working_dir}/tom.yaml")
+        return
+
+if __name__ == "__main__":
+    tom()
