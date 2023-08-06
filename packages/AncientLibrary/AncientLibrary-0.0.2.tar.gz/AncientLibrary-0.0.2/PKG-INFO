@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: AncientLibrary
+Version: 0.0.2
+Summary: Complete Data Science Package from Scratch
+Home-page: https://github.com/cranialplating/AncientLibrary
+Author: Ryan Holmes
+Author-email: holmesforlan@gmail.com
+License: UNKNOWN
+Description: ==================================================
+        Attempt to Build Data Science Package from Scratch
+        ==================================================
+        
+        For self notes:
+        py setup.py sdist bdist_wheel
+        twine upload --skip-existing dist/*
+        https://stackoverflow.com/questions/52700692/a-guide-for-updating-packages-on-pypi
+        
+        
+        
+        Help from:
+        https://www.freecodecamp.org/news/build-your-first-python-package/
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
