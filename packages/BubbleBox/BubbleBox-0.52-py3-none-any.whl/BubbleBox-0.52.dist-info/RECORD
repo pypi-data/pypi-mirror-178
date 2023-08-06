@@ -1,0 +1,15 @@
+bubblebox/__init__.py,sha256=E9NykGv2XfaFmwqHCRfPXkAmZHRlOekQohHGym6WLmI,135
+bubblebox/binding_models.py,sha256=15_plyGFQ30G0Tv1EpHqriI_ZfngmDLG4Nq0lP9HQJ0,6025
+bubblebox/bubblebox.py,sha256=qvh5OCZDu1Gxl-EXD9K8pTsO7OR_INb_mIZFMW25ayY,640
+bubblebox/elements.py,sha256=FClqJyZ4xdflsAvlcZPmRobybS_uZFbPngO_TbUPI28,9405
+bubblebox/flowbox.py,sha256=WFTzXzKhp1E2SxiD_VNNbJIVUuQv9OmaERsMkFcXm7k,3742
+bubblebox/ising.py,sha256=LYbmaW3oaTiJR-iE0QNtZSQUYmbrGoZ1e9NUiLv4g_0,7184
+bubblebox/lattice_models.py,sha256=qtXt-aO0B8VbPW3QuX93M24SUaX89QXepNXohyBkEu4,32590
+bubblebox/mdbox.py,sha256=c092H3Y7M9TPGJFvRjrNUsX__bJmnIpKJBzSLLX9TlU,50043
+bubblebox/showcase.py,sha256=lasnHCm9eCUu2klDyQFeJprgtaZxxQS_jQUMjHRQ06g,26611
+bubblebox/wavebox.py,sha256=iCwsnuy06FLJchNyphddqLCvp1vWTp1WwutcPuZjGBA,3885
+BubbleBox-0.52.dist-info/LICENCE,sha256=rL2MyWlHrJBYwOeBrdOqenMamQfzqfxnDSDl9rg2W7M,1059
+BubbleBox-0.52.dist-info/METADATA,sha256=d4owuHCNpdMqMRZA_xlIZkO2jB6suM7zqgzB9Y1h73U,1806
+BubbleBox-0.52.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+BubbleBox-0.52.dist-info/top_level.txt,sha256=F8AmXLD26SOHtJJyUDSIaTawcbBptul8Kpd7z5APAks,10
+BubbleBox-0.52.dist-info/RECORD,,
