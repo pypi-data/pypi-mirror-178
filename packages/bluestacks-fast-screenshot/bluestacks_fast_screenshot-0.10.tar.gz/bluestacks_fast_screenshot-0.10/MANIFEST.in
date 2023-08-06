@@ -1,0 +1,4 @@
+include bluestacks_fast_screenshot/requirements.txt
+include bluestacks_fast_screenshot/thirdparty.json
+include bluestacks_fast_screenshot/README.MD
+include bluestacks_fast_screenshot/LICENSE
