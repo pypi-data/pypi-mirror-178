@@ -1,0 +1,15 @@
+mb_pandas/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mb_pandas/src/aio.py,sha256=cXeSQ0wMw_yNPe33dJu-RyVA1q3DkwGzUxG-uh3cPI0,1627
+mb_pandas/src/csv.py,sha256=jvn34qCgtCXZGo4jxriJ72UtBUU8X-BNt01gTG7s6KA,6291
+mb_pandas/src/dfload.py,sha256=IrEt3oVTrpjsZor8l1EN3UKRGpMbrn7Dq-w6bwlJghg,1662
+mb_pandas/src/profiler.py,sha256=m7-S0es-GhoUqKUMw1Avcox3DG0evfLTXv-5A1K4tXc,2458
+mb_pandas/src/threading.py,sha256=579f5558jJDAblpabH6aqmbujxryIlkNWPjPAOF20EA,4107
+mb_pandas/src/transform.py,sha256=fYz9-XmOHS8yQxK2eUpv0Fw-qPae5y6FrTHKf8PeBLc,5826
+mb_pandas/src/version.py,sha256=8EetBVkSqWepksjrX6tk6jYr_Q4MHEjSVpc2yCJh0N8,396
+mb_pandas-1.0.202211280400.data/scripts/df_convert_csv_parquet,sha256=OI2MdIFC6p5uetm90OjH01LhH_65Oqmt4qX0A1s5N6o,904
+mb_pandas-1.0.202211280400.data/scripts/df_profile,sha256=88CDssc7vlCLZo0f_6qNjjvHl5rVlUDNzaZ1T23jwoM,1657
+mb_pandas-1.0.202211280400.data/scripts/df_view,sha256=BbS_rNgrPl7Raz_zVmTBqw_dvyAhc3-KqS4W2LV0_yo,3683
+mb_pandas-1.0.202211280400.dist-info/METADATA,sha256=xv0pBNzTWd3Vtjg-xr5hKqD2Snn7tcDS2buYYdQq3i0,288
+mb_pandas-1.0.202211280400.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+mb_pandas-1.0.202211280400.dist-info/top_level.txt,sha256=5JkDz2-6yNAp6GiwpeR4FpxqXVysaksS5MD1iAvfMgo,10
+mb_pandas-1.0.202211280400.dist-info/RECORD,,
