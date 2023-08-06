@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: Deustest2022
+Version: 1.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: Django (==3.0.5)
+Requires-Dist: pytest (==5.4.1)
+Requires-Dist: pytest-django (==3.9.0)
+Requires-Dist: drf-yasg (==1.17.1)
+Requires-Dist: djangorestframework (==3.11.0)
+Requires-Dist: psycopg2 (==2.8.5)
+Requires-Dist: wheel (==0.34.2)
+
+UNKNOWN
+
