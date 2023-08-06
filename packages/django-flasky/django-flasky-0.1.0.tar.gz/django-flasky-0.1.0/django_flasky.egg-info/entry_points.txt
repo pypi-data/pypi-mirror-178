@@ -1,0 +1,2 @@
+[console_scripts]
+django-flasky = django_flasky.commands:invoke
