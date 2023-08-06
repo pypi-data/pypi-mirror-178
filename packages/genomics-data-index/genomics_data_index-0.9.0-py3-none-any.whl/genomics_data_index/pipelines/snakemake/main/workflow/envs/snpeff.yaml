@@ -1,0 +1,12 @@
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - snpeff
+  - biopython
+  - htslib
+  - "python<3.10"
+  - pip
+  - pip:
+    - genomics-data-index==0.8.0

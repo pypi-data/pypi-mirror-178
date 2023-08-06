@@ -1,0 +1,2 @@
+[console_scripts]
+gdi = genomics_data_index.cli.gdi:main
