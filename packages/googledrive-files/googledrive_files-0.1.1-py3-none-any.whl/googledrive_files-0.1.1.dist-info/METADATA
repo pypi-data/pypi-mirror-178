@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: googledrive-files
+Version: 0.1.1
+Summary: Simple Google Drive API wrapper
+Author-email: skitschy <s1kitschy@gmail.com>
+Project-URL: Homepage, https://github.com/skitschy/pyGoogleDriveFiles
+Project-URL: Documentation, https://googledrive-files.readthedocs.io/
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: google-api-python-client
+
+# pyGoogleDriveFiles
+
+Python module 'googledrive-files' is
+a simple wrapper for the files Resource of Google Drive API.
+
+Features:
+* List files and folders.
+* Create, read, write, and delete files.
+
+
+## Requirement
+
+* Python 3.5 or above
+
+
+## Installation
+
+```sh
+pip install googledrive-files
+```
+
+
+## Basic Usage
+
+```python
+>>> from googledrive import Service
+>>> with Service(credentials).files() as gdrive:
+...   file_content = gdrive.read(['dirA', 'subdir1'], 'filename')
+...   gdrive.write(['dirB', 'subdir2'], 'filename.txt',
+...                file_content, 'text/plain')
+```
+
+
+## Documentation
+
+Documentation is
+[available online](https://googledrive-files.readthedocs.io/).
