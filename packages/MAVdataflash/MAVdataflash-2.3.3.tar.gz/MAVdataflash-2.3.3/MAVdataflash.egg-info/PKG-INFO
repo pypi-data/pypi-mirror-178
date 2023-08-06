@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: MAVdataflash
+Version: 2.3.3
+Summary: Read, analyze and visualize *.bin flight data logs recorded by ArduPilot
+Home-page: https://github.com/generalaeronautics/MAVdataflash
+Author: General Aeronautics
+Requires-Python: >=3.6
+License-File: LICENSE
