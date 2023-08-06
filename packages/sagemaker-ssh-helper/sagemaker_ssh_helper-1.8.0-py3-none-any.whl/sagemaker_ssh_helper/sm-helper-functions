@@ -1,0 +1,46 @@
+#!/bin/bash
+
+function _silent_install() {
+  dir=$(dirname "$0")
+  script=$1
+
+  cp "$dir"/"$script" /usr/local/bin/
+  chmod +x /usr/local/bin/"$script"
+}
+
+function _install_helper_scripts() {
+  dir=$(dirname "$0")
+
+  # Scripts may not be available in PATH during bootstrap, so we manually copy scripts into /usr/local/bin/.
+  _silent_install sm-helper-functions
+  _silent_install sm-connect-ssh-proxy
+  _silent_install sm-wait
+  _silent_install sm-start-ssh
+  _silent_install sm-save-env
+  _silent_install sm-init-ssm
+  _silent_install sm-ssh-ide
+  _silent_install sm-local-start-ssh
+  _silent_install sm-local-ssh-ide
+  _silent_install sm-local-ssh-training
+}
+
+function _is_centos() {
+  command -v yum >/dev/null 2>&1
+}
+
+function _install_aws_cli() {
+  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "/tmp/awscliv2.zip"
+  unzip -o -q -d /tmp/ /tmp/awscliv2.zip
+  /tmp/aws/install --update
+}
+
+function _install_ssm_agent_ubuntu() {
+  CURRENT_REGION=$(aws configure get region || echo "$AWS_REGION")
+  curl -o /tmp/amazon-ssm-agent.deb "https://s3.$CURRENT_REGION.amazonaws.com/amazon-ssm-$CURRENT_REGION/latest/debian_amd64/amazon-ssm-agent.deb"
+  dpkg -i /tmp/amazon-ssm-agent.deb
+}
+
+function _install_ssm_agent_centos() {
+  CURRENT_REGION=$(aws configure get region || echo "$AWS_REGION")
+  yum install -y "https://s3.$CURRENT_REGION.amazonaws.com/amazon-ssm-$CURRENT_REGION/latest/linux_amd64/amazon-ssm-agent.rpm"
+}
