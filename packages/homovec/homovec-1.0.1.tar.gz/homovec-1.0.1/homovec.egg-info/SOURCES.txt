@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+homovec.egg-info/PKG-INFO
+homovec.egg-info/SOURCES.txt
+homovec.egg-info/dependency_links.txt
+homovec.egg-info/top_level.txt

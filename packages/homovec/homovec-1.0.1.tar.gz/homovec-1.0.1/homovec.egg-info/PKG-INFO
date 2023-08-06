@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: homovec
+Version: 1.0.1
+Summary: Python Homomorphic Encryption Library for Vectors. Supports common mathematical operations such as additions of ciphertexts and multiplication by constants
+Home-page: https://github.com/JayDew/homovec
+Author: Andrei Geadau
+Author-email: andreigeadau@tudelft.nl
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
