@@ -1,0 +1,13 @@
+MANIFEST.in
+setup.py
+loyalcat/__init__.py
+loyalcat/cli.py
+loyalcat/http.py
+loyalcat/utils.py
+loyalcat.egg-info/PKG-INFO
+loyalcat.egg-info/SOURCES.txt
+loyalcat.egg-info/dependency_links.txt
+loyalcat.egg-info/entry_points.txt
+loyalcat.egg-info/requires.txt
+loyalcat.egg-info/top_level.txt
+loyalcat/types/endpoints.py
