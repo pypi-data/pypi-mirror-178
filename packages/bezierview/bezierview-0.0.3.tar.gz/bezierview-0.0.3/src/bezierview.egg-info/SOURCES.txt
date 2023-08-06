@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/bezierview/__init__.py
+src/bezierview/bezier.py
+src/bezierview/view.py
+src/bezierview.egg-info/PKG-INFO
+src/bezierview.egg-info/SOURCES.txt
+src/bezierview.egg-info/dependency_links.txt
+src/bezierview.egg-info/requires.txt
+src/bezierview.egg-info/top_level.txt
