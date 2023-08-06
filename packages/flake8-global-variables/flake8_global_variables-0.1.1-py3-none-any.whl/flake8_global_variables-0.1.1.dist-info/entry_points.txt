@@ -1,0 +1,3 @@
+[flake8.extension]
+GV4=flake8_global_variables:GlobalVariablesChecker
+
