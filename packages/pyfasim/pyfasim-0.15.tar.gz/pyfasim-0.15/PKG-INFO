@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pyfasim
+Version: 0.15
+Summary: Python Finite Automata Simulator
+Home-page: UNKNOWN
+Author: Samy Zafrany
+Author-email: sz@samyzaf.com
+License: MIT
+Keywords: deterministic non-determistic finite automata pushdown turing
+Platform: UNKNOWN
+
+UNKNOWN
+
