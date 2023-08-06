@@ -1,0 +1,9 @@
+py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyproject.toml,sha256=JTif7DTotsQmnDqL4juSpnyvXreKkpFHd_Ys2X3TA0o,1957
+torchsilk/__init__.py,sha256=iUuNqJU1DFI34EmWPbkMHX5_9-enSdIk8WjA4yuegy0,317
+torchsilk/modules.py,sha256=C9339GNxBWL684W_4DrF3bMu7VKgj3BRcOsQTmIKl24,21363
+torchsilk/type_defs.py,sha256=jsjgErhMqNSNrE3N3v8NAmBnp0aB2UjomMP2sYu4Cyk,492
+torchsilk-0.3.0.dist-info/LICENSE,sha256=aoqggX5UEqgule0IAyqj38djgHh9-8zTzHA6WlAkKX4,1066
+torchsilk-0.3.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+torchsilk-0.3.0.dist-info/METADATA,sha256=-akIfgHDQ9rGPBsTp6vI9Stfc9CxOalFwRFLU9EY0zU,1521
+torchsilk-0.3.0.dist-info/RECORD,,
