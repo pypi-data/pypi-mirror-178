@@ -1,0 +1,11 @@
+lzip_extension.cpython-37m-s390x-linux-gnu.so,sha256=hj6jM9Eot5hvawk5cvBRrFDaSdaPXWG9z8gIlEJGV4A,1030928
+lzip.libs/libstdc++-abeb3405.so.6.0.28,sha256=aLIIi8AuOZF9KRcuCQahq8CpFjiSKq4FpNDrTmBUtLM,2822408
+lzip.libs/libgcc_s-26206cc5.so.1,sha256=ZP9Xx35ZnhZLrGhaTuUF0RPLUj4yQbsqx0qIZx4OVKk,64256
+lzip-1.2.0.dist-info/top_level.txt,sha256=Kz1kY3I-5q9cR0tYFnKL3uFVOLS-szDfnd9iNgJV2So,20
+lzip-1.2.0.dist-info/METADATA,sha256=XwZsco7VFBEjmmrmamoV1QlMWy0VW0TErYOc7lwTERY,18469
+lzip-1.2.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+lzip-1.2.0.dist-info/RECORD,,
+lzip-1.2.0.dist-info/WHEEL,sha256=plPVaz8aCX8fbjukgXyro9u4T3VsR8oJu3WFNSSHk94,111
+lzip/version.py,sha256=iEgTRWv0Nfdkvd6jHzn8s_crUlsvtBQXjAd1zynVql4,49
+lzip/__init__.py,sha256=25l8kcZlwvzjx7I9kfHd_Len_BdH-5tw-Tiy-60mtvU,971
+lzip/lzip.py,sha256=i-Q-rS234ud_EJQ6BL09wmmQhcl6iQYLKxbVB7NBTF0,6582
