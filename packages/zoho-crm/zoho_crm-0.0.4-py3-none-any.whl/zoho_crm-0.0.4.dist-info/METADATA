@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: zoho_crm
+Version: 0.0.4
+Summary: Unofficial Zoho CRM API client in Python
+Project-URL: Homepage, https://github.com/mrmilu/zoho_client
+License-File: LICENCE
+Requires-Python: >=3.10
+Requires-Dist: requests>=2.28.1
+Description-Content-Type: text/markdown
+
+# zoho_client
