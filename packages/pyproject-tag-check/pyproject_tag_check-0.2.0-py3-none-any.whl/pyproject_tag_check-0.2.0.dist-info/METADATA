@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: pyproject-tag-check
+Version: 0.2.0
+Summary: Verify version in pyproject.toml is not already used
+License: MIT
+Author: rafsaf
+Author-email: rafal.safin12@gmail.com
+Requires-Python: >=3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: requests (>=2.10.0)
+Requires-Dist: toml (>=0.9.0)
+Description-Content-Type: text/markdown
+
+## pyproject-tag-check
+
+I always forget to bump poetry version in pyproject.toml files. That's why I build this simple package. It is pre-commit hook which check that version in pyproject.toml is not used as a tag for given repo URL.
+
+## Usage:
+
+
+Put it in `.pre-commit.config.yaml` repos and argument must be URL to repo on GH (for example this repo itself https://github.com/rafsaf/pyproject-tag-check).
+
+```yml
+repos:
+  - repo: https://github.com/rafsaf/pyproject-tag-check
+    rev: "0.2.0"
+    hooks:
+      - id: pyproject-tag-check
+        args:
+          - https://github.com/rafsaf/pyproject-tag-check
+
+```
+
+If tag 0.2.0 already exists like it does for https://github.com/rafsaf/pyproject-tag-check, the check will not pass.
