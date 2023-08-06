@@ -1,0 +1,65 @@
+# https://circleci.com/docs/configuration-reference
+version: 2.1
+
+jobs:
+  run-tests-latest-version:
+    docker:
+      - image: cimg/python:3.11
+    steps: &run-tests
+      - checkout
+      - run:
+          command: pip install --upgrade pip; pip install .[tests]
+      - run:
+          name: Run unittests
+          command: pytest
+
+  run-tests-min-version:
+    docker:
+      - image: cimg/python:3.8
+    steps: *run-tests
+
+  run-examples-latest-version:
+    docker:
+      - image: cimg/python:3.11
+    steps: &run-examples
+      - checkout
+      - run:
+          command: pip install --upgrade pip; pip install .[doc]
+      - run:
+          name: Install CI doc test files
+          command: set -o xtrace; cp .circleci/test_doc_examples/ci_test_*.py doc/examples/
+      - run:
+          name: Generate report tex-file
+          command: python doc/examples/ci_test_sample_report.py
+      - persist_to_workspace:
+          root: .
+          paths:
+            - myreport
+
+  run-examples-min-version:
+    docker:
+      - image: cimg/python:3.8
+    steps: *run-examples
+
+  compile-report-latest-version:
+    docker:
+      - image: texlive/texlive:latest
+    steps:
+      - attach_workspace:
+          at: .
+      - run:
+          name: Compile report tex-file
+          command: cd myreport; set -o xtrace; ls -laR; cat -n report.tex; latexmk --pdflatex report.tex
+
+workflows:
+  python-latest-version:
+    jobs:
+      - run-tests-latest-version
+      - run-examples-latest-version
+      - compile-report-latest-version:
+          requires:
+            - run-examples-latest-version
+  python-min-version:
+    jobs:
+      - run-tests-min-version
+      - run-examples-min-version

@@ -1,0 +1,68 @@
+#########################################
+# Editor temporary/working/backup files #
+.#*
+[#]*#
+*~
+*$
+*.bak
+*.kdev4
+.project
+.pydevproject
+.idea
+*.swp
+
+# Compiled source #
+###################
+*.a
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.py[ocd]
+*.so
+
+# EXAMPLE FILES #
+##################
+myreport/
+
+# OS generated files #
+######################
+.directory
+.gdb_history
+.DS_Store?
+ehthumbs.db
+Icon?
+Thumbs.db
+
+
+# Python files #
+################
+# setup.py dist directory
+build
+dist
+MANIFEST
+.settings
+*.egg-info
+doc/_build
+# Coverage info
+.coverage
+cover
+.ipynb_checkpoints
+#setuptools_csm version
+emva1288/_version.py
+
+
+# log folder #
+###################
+tests/logs/*
+
+
+# pytest artifacts #
+###################
+/.pytest_cache/*
+tests/reports/*
+
+# CI doc examples tests #
+#########################
+/doc/examples/ci_test_*.py
