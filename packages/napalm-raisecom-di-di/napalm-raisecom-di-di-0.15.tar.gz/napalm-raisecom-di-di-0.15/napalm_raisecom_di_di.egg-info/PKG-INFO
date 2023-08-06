@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: napalm-raisecom-di-di
+Version: 0.15
+Summary: driver napalm functionality for raisecom devices, via netmiko connection
+Home-page: UNKNOWN
+Author: Ilya Gulin
+License: Apache 2.0
+Platform: UNKNOWN
+
+UNKNOWN
+
