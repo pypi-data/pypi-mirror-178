@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+modelChooserTransfer/__init__.py
+modelChooserTransfer/transferKeras.py
+modelChooserTransfer.egg-info/PKG-INFO
+modelChooserTransfer.egg-info/SOURCES.txt
+modelChooserTransfer.egg-info/dependency_links.txt
+modelChooserTransfer.egg-info/requires.txt
+modelChooserTransfer.egg-info/top_level.txt
