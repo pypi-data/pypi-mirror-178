@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ftThanos
+Version: 0.0.59
+Summary: A client for 59 API
+Home-page: UNKNOWN
+Author: Thanos 59
+Author-email: thanos@59paris.fr
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: python-dotenv
+Requires-Dist: requests
+
+UNKNOWN
+
