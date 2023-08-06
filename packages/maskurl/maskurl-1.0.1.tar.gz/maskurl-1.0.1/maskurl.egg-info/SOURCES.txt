@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+maskurl/__init__.py
+maskurl/maskurl.py
+maskurl.egg-info/PKG-INFO
+maskurl.egg-info/SOURCES.txt
+maskurl.egg-info/dependency_links.txt
+maskurl.egg-info/entry_points.txt
+maskurl.egg-info/requires.txt
+maskurl.egg-info/top_level.txt
