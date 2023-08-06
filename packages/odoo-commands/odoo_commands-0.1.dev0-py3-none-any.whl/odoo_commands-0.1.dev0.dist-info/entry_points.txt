@@ -1,0 +1,3 @@
+[console_scripts]
+oc=ocli.main:app
+
