@@ -1,0 +1,8 @@
+pip
+setuptools-scm
+
+[dev]
+coveralls
+pytest
+pytest-cov
+setuptools-scm
