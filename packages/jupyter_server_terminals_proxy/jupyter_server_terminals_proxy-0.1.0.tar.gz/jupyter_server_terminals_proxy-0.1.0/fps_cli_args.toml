@@ -1,0 +1,2 @@
+[uvicorn]
+open_browser = "False"
