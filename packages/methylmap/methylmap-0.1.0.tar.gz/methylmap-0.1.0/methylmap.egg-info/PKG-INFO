@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: methylmap
+Version: 0.1.0
+Summary: Plotting tool for population scale long read sequencing methylation
+Home-page: https://github.com/EliseCoopman/methylmap
+Author: Elise Coopman
+Author-email: elisecoopman@yahoo.com
+License: MIT
+Keywords: methylation plot
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## methylmap
+
+
