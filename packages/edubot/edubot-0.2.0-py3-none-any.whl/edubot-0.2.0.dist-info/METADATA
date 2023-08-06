@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: edubot
+Version: 0.2.0
+Summary: 
+License: GPLv3
+Author: exciteabletom
+Author-email: tom@digitalnook.net
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: openai (>=0.25.0,<0.26.0)
+Requires-Dist: sqlalchemy[mypy] (>=1.4.44,<1.5.0)
+Description-Content-Type: text/markdown
+
+# Edubot
+
+## Dev environment quickstart
+1. Install [Poetry](https://python-poetry.org/docs/)
+1. Initialise the env: `poetry install`
+1. Activate the env: `poetry shell`
+1. Install pre-commit hooks: `pre-commit install`
+
