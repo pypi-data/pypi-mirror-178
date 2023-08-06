@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: delfino-core
+Version: 1.0.0
+Summary: Delfino core plugin
+Home-page: https://github.com/radeklat/delfino-core
+License: MIT
+Author: Radek Lát
+Author-email: radek.lat@gmail.com
+Requires-Python: >=3.7.2,<4.0.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Requires-Dist: delfino[verify-all] (>=0.20.3,<0.21.0)
+Description-Content-Type: text/markdown
+
+<h1 align="center" style="border-bottom: none;"> 🔌&nbsp;&nbsp;Delfino Core&nbsp;&nbsp; 🔌</h1>
+<h3 align="center">A [Delfino](https://github.com/radeklat/delfino) plugin with core functionality.</h3>
+
+<p align="center">
+    <a href="https://app.circleci.com/pipelines/github/radeklat/delfino-core?branch=main">
+        <img alt="CircleCI" src="https://img.shields.io/circleci/build/github/radeklat/delfino-core">
+    </a>
+    <a href="https://app.codecov.io/gh/radeklat/delfino-core/">
+        <img alt="Codecov" src="https://img.shields.io/codecov/c/github/radeklat/delfino-core">
+    </a>
+    <a href="https://github.com/radeklat/delfino-core/tags">
+        <img alt="GitHub tag (latest SemVer)" src="https://img.shields.io/github/tag/radeklat/delfino-core">
+    </a>
+    <img alt="Maintenance" src="https://img.shields.io/maintenance/yes/2022">
+    <a href="https://github.com/radeklat/delfino-core/commits/main">
+        <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/radeklat/delfino-core">
+    </a>
+    <a href="https://www.python.org/doc/versions/">
+        <img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/delfino-core">
+    </a>
+    <a href="https://pypistats.org/packages/delfino-core">
+        <img alt="Downloads" src="https://img.shields.io/pypi/dm/delfino-core">
+    </a>
+</p>
+
+# Installation
+
+- pip: `pip install delfino-core`
+- Poetry: `poetry add -D delfino-core`
+- Pipenv: `pipenv install -d delfino-core`
+
+## Configuration
+
+Delfino doesn't load any plugins by default. To enable this plugin, add the following config into `pyproject.toml`:
+
+```toml
+[tool.delfino.plugins.delfino-core]
+
+```
+
+# Usage
+
+Run `delfino --help`.
+
