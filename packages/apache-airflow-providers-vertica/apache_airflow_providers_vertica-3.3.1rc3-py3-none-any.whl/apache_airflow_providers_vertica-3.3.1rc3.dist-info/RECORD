@@ -1,0 +1,13 @@
+airflow/providers/vertica/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/vertica/get_provider_info.py,sha256=pgml9tZVuzUF5Xr8WWLT3kK9K_9Q33T9i2GzTndDO0g,2484
+airflow/providers/vertica/hooks/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/vertica/hooks/vertica.py,sha256=fU2xcKP4jX8T2Q3T04ik28C5CE8A6yJz7WRcOnXdHwE,1690
+airflow/providers/vertica/operators/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/vertica/operators/vertica.py,sha256=vSiUkDU_pYkrzzYI5JyrqpF2JwAvOMPUBKjzeQavkfg,1896
+apache_airflow_providers_vertica-3.3.1rc3.dist-info/LICENSE,sha256=gXPVwptPlW1TJ4HSuG5OMPg-a3h43OGMkZRR1rpwfJA,10850
+apache_airflow_providers_vertica-3.3.1rc3.dist-info/METADATA,sha256=b2ae_a8IwoKiGzh3Z8mb02LzvjZ4iAXDOW0_5egoIeQ,11125
+apache_airflow_providers_vertica-3.3.1rc3.dist-info/NOTICE,sha256=m-6s2XynUxVSUIxO4rVablAZCvFq-wmLrqV91DotRBw,240
+apache_airflow_providers_vertica-3.3.1rc3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+apache_airflow_providers_vertica-3.3.1rc3.dist-info/entry_points.txt,sha256=RqqtXAa3p9e6zQhUIOzIo90zDv_LRsZoWWWVRrw3kd0,105
+apache_airflow_providers_vertica-3.3.1rc3.dist-info/top_level.txt,sha256=OeMVH5md7fr2QQWpnZoOWWxWO-0WH1IP70lpTVwopPg,8
+apache_airflow_providers_vertica-3.3.1rc3.dist-info/RECORD,,
