@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: quokkas
+Version: 0.0.3
+Summary: Data analysis tool that you didn't know you needed
+Author: Ivan Pashkevich, Roman Sorokin
+Author-email: ivan.ig.pashkevich@gmail.com, sorokin.r.v.97@gmail.com
+Requires-Python: >=3.7
+License-File: LICENSE
