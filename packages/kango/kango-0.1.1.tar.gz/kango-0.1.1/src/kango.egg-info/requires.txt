@@ -1,0 +1,5 @@
+flask
+slugify
+arrow
+ulid
+python-arango
