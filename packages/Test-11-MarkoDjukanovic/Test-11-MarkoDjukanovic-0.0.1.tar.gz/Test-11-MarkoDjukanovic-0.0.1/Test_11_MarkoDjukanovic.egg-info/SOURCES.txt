@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+Test_11_MarkoDjukanovic.egg-info/PKG-INFO
+Test_11_MarkoDjukanovic.egg-info/SOURCES.txt
+Test_11_MarkoDjukanovic.egg-info/dependency_links.txt
+Test_11_MarkoDjukanovic.egg-info/requires.txt
+Test_11_MarkoDjukanovic.egg-info/top_level.txt
+test-27-11/Test.py
+test-27-11/__init__.py
+test-27-11/solution.py
