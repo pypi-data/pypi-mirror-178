@@ -1,0 +1,4 @@
+[console_scripts]
+node-launch = zuper_nodes_wrapper.launcher:launcher_main
+zuper-node-identify = zuper_nodes_wrapper.identify:identify_main
+

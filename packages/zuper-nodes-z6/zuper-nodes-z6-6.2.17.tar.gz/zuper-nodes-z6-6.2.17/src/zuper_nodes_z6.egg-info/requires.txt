@@ -1,0 +1,13 @@
+pyparsing
+networkx<3,>=2
+termcolor
+zuper-ipce-z6
+base58<2.0,>=1.0.2
+cbor2
+PyYAML
+zuper-commons-z6
+zuper-typing-z6
+
+[test]
+compmake-z6
+pydot
