@@ -1,0 +1,8 @@
+numpy>=1.11.0
+scipy
+pillow
+lxml
+matplotlib
+h5py
+smart_open[http]
+pytest
