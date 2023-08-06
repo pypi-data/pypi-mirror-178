@@ -1,0 +1,2 @@
+[console_scripts]
+pestuary = pestuary_cli:main
