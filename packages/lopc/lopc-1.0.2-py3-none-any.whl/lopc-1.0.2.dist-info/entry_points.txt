@@ -1,0 +1,2 @@
+[console_scripts]
+lopc = lopc.lopc:main
