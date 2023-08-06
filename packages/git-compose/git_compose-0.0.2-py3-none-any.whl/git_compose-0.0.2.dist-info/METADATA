@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: git-compose
+Version: 0.0.2
+Summary: A tool to manage multiple git repositories
+Home-page: https://github.com/Parsa2820/git-compose
+Author: Parsa Mohammadian
+Author-email: parsa2820@gmail.com
+License: GNU General Public License v3 (GPLv3)
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: typer
+
+# git-compose
+Manage multiple git repositories in one place
+
+## Contributing
+### Building
+To build and install the project, run the following commands in the root of the project:
+```bash
+$ python -m build
+$ pip install dist/*.whl
+```
