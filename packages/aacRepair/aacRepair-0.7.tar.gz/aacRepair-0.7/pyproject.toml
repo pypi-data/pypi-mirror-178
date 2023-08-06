@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools >= 42.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aacRepair"
+version = "0.7"
+description = "repair aac files"
+keywords = ['aac repair', 'aacp repair','aac file repair', 'aacp file repair',]
+license = {file = "LICENSE.rst"}
+readme = "README.md"
+requires-python = ">=3.6"
+dynamic = ['authors',]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: OS Independent",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: Android",
+    "Development Status :: 5 - Production/Stable",
+    "Topic :: Multimedia :: Sound/Audio :: Capture/Recording",
+]
+dependencies = [
+]
+
+[project.scripts]
+aacrepair = "aacrepair.cmd:main"
+
+[project.urls]
+homepage = "https://github.com/44xtc44"
+documentation = "https://aacRepair.readthedocs.io/"
+repository = "https://github.com/44xtc44/aacRepair"
+
+[tool.pytest.ini_options]
+addopts = "--cov=."
+testpaths = "."

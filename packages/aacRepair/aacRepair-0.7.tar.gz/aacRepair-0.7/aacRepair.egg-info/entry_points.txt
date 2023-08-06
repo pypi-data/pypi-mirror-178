@@ -1,0 +1,2 @@
+[console_scripts]
+aacrepair = aacrepair.cmd:main
