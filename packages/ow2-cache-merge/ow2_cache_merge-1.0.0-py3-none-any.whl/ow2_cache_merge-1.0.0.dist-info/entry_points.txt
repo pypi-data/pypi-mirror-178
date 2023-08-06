@@ -1,0 +1,2 @@
+[console_scripts]
+ow2-cache-merge = ow2_cache_merge.main:main
