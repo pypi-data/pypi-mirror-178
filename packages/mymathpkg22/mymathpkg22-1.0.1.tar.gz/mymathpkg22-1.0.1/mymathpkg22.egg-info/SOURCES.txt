@@ -1,0 +1,10 @@
+LICENCE
+README.md
+pyproject.toml
+mymathpkg22/__init__.py
+mymathpkg22/calculator.py
+mymathpkg22.egg-info/PKG-INFO
+mymathpkg22.egg-info/SOURCES.txt
+mymathpkg22.egg-info/dependency_links.txt
+mymathpkg22.egg-info/requires.txt
+mymathpkg22.egg-info/top_level.txt
