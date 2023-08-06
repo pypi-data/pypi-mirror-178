@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.cfg
+setup.py
+norfair_tracker/__init__.py
+norfair_tracker/norfair.py
+norfair_tracker.egg-info/PKG-INFO
+norfair_tracker.egg-info/SOURCES.txt
+norfair_tracker.egg-info/dependency_links.txt
+norfair_tracker.egg-info/requires.txt
+norfair_tracker.egg-info/top_level.txt
