@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+find_palindroms/__about__.py
+find_palindroms/__init__.py
+find_palindroms/__main__.py
+find_palindroms/__test__.py
+find_palindroms/find_palindrom.py
+find_palindroms.egg-info/PKG-INFO
+find_palindroms.egg-info/SOURCES.txt
+find_palindroms.egg-info/dependency_links.txt
+find_palindroms.egg-info/entry_points.txt
+find_palindroms.egg-info/top_level.txt
