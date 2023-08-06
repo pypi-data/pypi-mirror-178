@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: layrageu
+Version: 0.2
+Summary: Send Mastodon threads from Flat OpenDocument files.
+Author: Étienne Nadji
+Author-email: etnadji@eml.cc
+License: GNU Affero General Public License v3 or later (AGPLv3+)
+Project-URL: Source Code, https://framagit.org/etnadji/layrageu
+Project-URL: Issue tracker, https://framagit.org/etnadji/layrageu/-/issues
+Project-URL: Documentation, https://etnadji.fr/rsc/layrageu/doc
+Keywords: Mastodon,LibreOffice,OpenDocument
+Platform: any
+Classifier: Topic :: Communications
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: Markup :: XML
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Requires-Python: >=3.8
+License-File: LICENSE
+
+========
+Layrageu
+========
+
+**Layrageu allows you to send Mastodon threads prepared inside LibreOffice.**
+
+`GNU/Linux`_ — `MacOS`_
+
+.. _MacOS: https://framagit.org/etnadji/layrageu/-/raw/master/releases/Layrageu.app
+.. _GNU/Linux: https://framagit.org/etnadji/layrageu/-/raw/master/releases/Layrageu-0_2-x86_64
+
