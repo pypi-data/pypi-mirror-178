@@ -1,0 +1,8 @@
+filelock
+filetype
+patool
+requests
+setuptools
+
+[plugins]
+hashget-kernel_org
