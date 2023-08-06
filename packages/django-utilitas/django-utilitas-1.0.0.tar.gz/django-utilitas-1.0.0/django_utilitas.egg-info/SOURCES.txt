@@ -1,0 +1,16 @@
+README.md
+setup.cfg
+setup.py
+django_utilitas.egg-info/PKG-INFO
+django_utilitas.egg-info/SOURCES.txt
+django_utilitas.egg-info/dependency_links.txt
+django_utilitas.egg-info/requires.txt
+django_utilitas.egg-info/top_level.txt
+utilitas/__init__.py
+utilitas/admin.py
+utilitas/apps.py
+utilitas/models.py
+utilitas/tests.py
+utilitas/urls.py
+utilitas/views.py
+utilitas/migrations/__init__.py

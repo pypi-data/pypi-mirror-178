@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: django-utilitas
+Version: 1.0.0
+Summary: django project with useful utility classes
+Home-page: https://github.com/ninnroot
+Requires-Python: >=3.9
