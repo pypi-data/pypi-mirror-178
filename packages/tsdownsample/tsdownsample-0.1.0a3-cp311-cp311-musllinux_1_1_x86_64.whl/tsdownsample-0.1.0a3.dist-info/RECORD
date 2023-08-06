@@ -1,0 +1,10 @@
+tsdownsample-0.1.0a3.dist-info/METADATA,sha256=S3cXGNMVL9InrQQjTBfNQwqo_CoSbaUnn3bI7L-cIqE,4333
+tsdownsample-0.1.0a3.dist-info/WHEEL,sha256=zNh-btr9IqoXEF5tOZn0f7GTU64F7qAcAoRjomx793I,108
+tsdownsample-0.1.0a3.dist-info/license_files/LICENSE,sha256=I_AmVQOrML7KNWhYEdPm2MZChf-_8hxuRX9j899jz3I,1078
+tsdownsample.libs/libgcc_s-2ba33186.so.1,sha256=ijCLwq3ecflLClPskvBPI2eUPsLC9CqOvqfzXCsMAT4,433441
+tsdownsample/_rust/__init__.py,sha256=L2sIq9cl4Ix4oRmZoNcM8o7xw2XuC-ld60Z4ledN_50,58
+tsdownsample/__init__.py,sha256=-B4TcWF7EEWNloyZRgwvWqaizAI_DeC0PFBy6Zjhxo4,90
+tsdownsample/downsamplers.py,sha256=Jnl2hp6r5i4dwK7TqmQXt8eD00kPQf0h_L1vAVTV6IA,1262
+tsdownsample/downsampling_interface.py,sha256=XNz_QexpvphP_KobJLl2mfFAX_ZD86H4DBqrjlrf2iQ,10129
+tsdownsample/_rust/_tsdownsample_rs.cpython-311-x86_64-linux-gnu.so,sha256=QtwTasVc4uFSVBfXtgGFdU1x491vHJnj_v06oTLz6Hk,5683841
+tsdownsample-0.1.0a3.dist-info/RECORD,,
