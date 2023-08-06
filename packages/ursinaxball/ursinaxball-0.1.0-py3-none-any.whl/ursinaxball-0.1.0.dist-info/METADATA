@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: ursinaxball
+Version: 0.1.0
+Summary: 
+Author: Wazarr
+Author-email: jeje_04@live.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: msgpack (>=1.0.4,<2.0.0)
+Requires-Dist: numpy (>=1.23.5,<2.0.0)
+Requires-Dist: ursina (==5.0.0)
+Description-Content-Type: text/markdown
+
+# Ursinaxball
+
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+Ursinaxball is a Python clone of the game [HaxBall](https://www.haxball.com) developed with the ursina game engine.
+
+## Requirements
+
+- Python >= 3.10
+
+## Installation
+
+Install the library via pip:
+
+```bash
+pip install ursinaxball
+```
+
