@@ -1,0 +1,156 @@
+Metadata-Version: 2.1
+Name: DateTimePersian
+Version: 1.0.2
+Summary: Date Time Persian
+Home-page: UNKNOWN
+Author: Erfan Mahigir (Sarzamin Danesh Pishro)
+Author-email: <info@Lssc.ir>
+License: UNKNOWN
+Keywords: python,Date,Persian,Time,Gregorian,Convert,Iranian
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+## Date Time Persian
+
+This library helps you to convert the Gregorian date to Iranian date and the Iranian date to Gregorian date.  
+You can also get the current time along with the date.
+
+This library is supported by [Sarzemin Danesh](https://lssc.ir) team.
+
+You can contact us by sending an email or following our official page on Instagram:
+
+Email : [info@Lssc.ir](mailto:info@Lssc.ir)
+
+Instagram : [@sarzamin.danesh](https://instagram.com/sarzamin.danesh)
+
+---
+
+## How it works?
+
+Use the following command to install this library
+
+```python
+pip install DateTimePersian
+```
+
+## Use :
+
+**Display the current date and time.**  
+The output is a string.
+
+```python
+import DateTimePersian
+get_date = DateTimePersian()
+print(get_date)
+
+_________ output _________
+1401/9/5  15:09:48
+```
+
+**Only show the current date.**  
+The output is a string.
+
+```python
+import DateTimePersian
+get_date = DateTimePersian(TIME=False)
+print(get_date)
+
+_________ output _________
+1401/9/5
+```
+
+**Only show the current time.**  
+The output is a string.
+
+```python
+import DateTimePersian
+get_date = DateTimePersian(DATE=False)
+print(get_date)
+
+_________ output _________
+15:09:48
+```
+
+**Command today() :**
+
+The desired function displays the current date in numeric and text formats. Two settings named date and type are defined for it.
+
+Date = “fa” / “en”
+
+Type = int / str
+
+**Ex : Default**
+
+```python
+import DateTimePersian
+get_date = DateTimePersian()
+print(get_date.today())
+
+_________ output _________
+1401/9/5
+```
+
+**Ex : Type = str**
+
+```python
+import DateTimePersian
+get_date = DateTimePersian()
+print(get_date.today(Type = str))
+
+_________ output _________
+1401 آذر 5
+```
+
+**Ex : Date = “en”**
+
+```python
+import DateTimePersian
+get_date = DateTimePersian()
+print(get_date.today(Date = "en"))
+
+_________ output _________
+2022/11/26
+```
+
+**Ex: Date = “en” and Type = str**
+
+```python
+import DateTimePersian
+get_date = DateTimePersian()
+print(get_date.today(Date = "en", Type = str))
+
+_________ output _________
+2022 Nov 26
+```
+
+**Other commands:**
+
+| value | command | type | output |
+| --- | --- | --- | --- |
+| Year | getYear() | object | int |
+| Month | getMonth() | object | int |
+| Day | getDay() | object | int |
+| Hour | getHour() | object | str |
+| Minutes | getMin() | object | str |
+| Seconds | getSec() | object | str |
+| leap year | lYear(year) | static | int |
+
+**Example Leap Year :** 
+
+```python
+import DateTimePersian
+
+print(DateTimePersian.today(1401))
+
+_________ output _________
+350
+```
+
