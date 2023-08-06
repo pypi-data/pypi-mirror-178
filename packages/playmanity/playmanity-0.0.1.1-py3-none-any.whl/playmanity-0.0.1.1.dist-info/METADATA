@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: playmanity
+Version: 0.0.1.1
+Summary: Playmanity.py is a Python library for using and creating api scripts & programs with integration of playmanity services. We use official playmanity api
+Author-email: TheLite <thelitestudio0@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+Playmanity.py
+=======================================
+Playmanity.py is a Python library for using and creating api scripts & programs with integration of playmanity services. We use official playmanity api
