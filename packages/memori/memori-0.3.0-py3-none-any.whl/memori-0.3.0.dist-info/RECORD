@@ -1,0 +1,15 @@
+memori/__init__.py,sha256=nm_yF2j0ZI3lJH9Ix7UzVEmcYRNomjxqip1xHjQJLJs,140
+memori/helpers.py,sha256=XUO9Si52S1V_lyN9X-A8kkfTGQHlgoRvO6b5H5zcp48,13615
+memori/logging.py,sha256=dJH7VVPLPDrBo_SzV4DmRcyNzWPbKxgAxp6nicCKIjw,914
+memori/pathman.py,sha256=Ra2o2Z8i5sDtqkt-NoIXa0_SN6GqbryMjLdZuyduwks,6535
+memori/pipeline.py,sha256=N73kCwL8zBGamXOAuQ7oh8mV--FOokUN4bQ57UgwhAE,5950
+memori/stage.py,sha256=0tu3aLPWpW0cf0XeLz5EqGYwB6moJeb1vIYkbQ4TZtQ,32352
+memori/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+memori/scripts/memori.py,sha256=KZ_I_sRtig-sQ_64B8RaOi02e-jeU3BmDZQK9fCMAh4,2602
+memori-0.3.0.dist-info/LICENSE,sha256=jynZE8tkm5UIdxqL6yUUf83mWHowLzawcNTtBuB8eqk,1067
+memori-0.3.0.dist-info/METADATA,sha256=eY04TyfXnvO5rayc2IJNOrNvm1JodAzcrMrwS8W0BCk,18321
+memori-0.3.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+memori-0.3.0.dist-info/entry_points.txt,sha256=tAWaE1he7zvdMxDcJxg18ZKYchFnANasDV0DZxfSe3Y,54
+memori-0.3.0.dist-info/top_level.txt,sha256=Nm3ad0isbJYBzTEce-O_gmkAEiTbAbyilgAhRt8IoGA,7
+memori-0.3.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+memori-0.3.0.dist-info/RECORD,,
