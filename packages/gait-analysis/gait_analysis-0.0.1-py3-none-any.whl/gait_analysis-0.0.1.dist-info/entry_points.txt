@@ -1,0 +1,2 @@
+[nbdev]
+gait_analysis = gait_analysis._modidx:d
