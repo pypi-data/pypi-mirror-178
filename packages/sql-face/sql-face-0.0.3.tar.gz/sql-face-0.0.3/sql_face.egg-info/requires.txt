@@ -1,0 +1,8 @@
+sqlalchemy
+pandas
+tqdm
+deepface
+scikit-learn
+scikit-image
+
+[dev]
