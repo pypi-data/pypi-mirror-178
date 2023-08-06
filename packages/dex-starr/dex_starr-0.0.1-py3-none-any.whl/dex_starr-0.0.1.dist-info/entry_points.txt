@@ -1,0 +1,2 @@
+[console_scripts]
+Dex-Starr = dex_starr.__main__:main
