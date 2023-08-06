@@ -1,0 +1,9 @@
+LICENSE
+setup.py
+myPackagesQJ1204/__init__.py
+myPackagesQJ1204/aaa.py
+myPackagesQJ1204.egg-info/PKG-INFO
+myPackagesQJ1204.egg-info/SOURCES.txt
+myPackagesQJ1204.egg-info/dependency_links.txt
+myPackagesQJ1204.egg-info/requires.txt
+myPackagesQJ1204.egg-info/top_level.txt
