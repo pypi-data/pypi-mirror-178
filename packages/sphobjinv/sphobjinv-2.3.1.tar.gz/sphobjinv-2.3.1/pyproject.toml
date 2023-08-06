@@ -1,0 +1,31 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = [
+  "setuptools",
+  "wheel",
+]
+
+[tool.black]
+line-length = 88
+include = '''
+(
+    ^/tests/.*[.]py$
+  | ^/src/sphobjinv/.*[.]py$
+  | ^/setup[.]py
+  | ^/conftest[.]py
+)
+'''
+exclude = '''
+(
+    __pycache__
+  | ^/[.]
+  | ^/doc
+  | ^/env
+  | ^/src/sphobjinv/_vendored
+)
+'''
+
+[tool.interrogate]
+exclude = ["src/sphobjinv/_vendored"]
+fail-under = 100
+verbose = 1
