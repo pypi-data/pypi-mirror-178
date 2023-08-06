@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: adslab
+Version: 0.0.2
+Summary: Package for learning ads experiements
+Author-email: Vettai mannan <vettaimanan07@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This package involves the code for ads lab experiements
+Meant to be used for legal purposes
