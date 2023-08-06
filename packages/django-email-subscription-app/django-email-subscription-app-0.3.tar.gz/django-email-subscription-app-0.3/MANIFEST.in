@@ -1,0 +1,6 @@
+include LICENSE
+include README.rst
+recursive-include email_app/static *
+recursive-include email_app/templates *
+recursive-include docs *
+exclude .env
