@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: patterns-finder
+Version: 1.0.1
+Summary: Simple, Fast, Powerful and Easily extensible python package
+Home-page: https://github.com/benouinirachid/patterns-finder
+Author: Rachid Benouini
+Author-email: benouini.rachid@gmail.com
+License: Apache Software License 2.0
+Keywords: patterns extraction,Regex,visualization annotations,regular-expression,information-extraction
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: regex
+
+Simple, Fast, Powerful and Easily extensible python package
+ for extracting patterns from text, with over than 60 predefined Regular
+ Expressions.
