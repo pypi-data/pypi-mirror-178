@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: popgym
+Version: 0.0.1
+Summary: A collection of partially-observable procedural gym environments
+Author: Steven Morad
+License: MIT
+Keywords: gym,pomdp,partially observable,reinforcement learning,rl
+License-File: LICENSE.md
+Requires-Dist: numpy
+Requires-Dist: gym (==0.24.0)
+Requires-Dist: mazelib
+Provides-Extra: baselines
+Requires-Dist: torch ; extra == 'baselines'
+Requires-Dist: opt-einsum ; extra == 'baselines'
+Requires-Dist: wandb ; extra == 'baselines'
+Requires-Dist: dnc ; extra == 'baselines'
+Requires-Dist: einops ; extra == 'baselines'
+Requires-Dist: ray[rllib] (==2.0.0) ; extra == 'baselines'
+
