@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+simpleOutlierRemoval/__init__.py
+simpleOutlierRemoval/main.py
+simpleOutlierRemoval.egg-info/PKG-INFO
+simpleOutlierRemoval.egg-info/SOURCES.txt
+simpleOutlierRemoval.egg-info/dependency_links.txt
+simpleOutlierRemoval.egg-info/top_level.txt
