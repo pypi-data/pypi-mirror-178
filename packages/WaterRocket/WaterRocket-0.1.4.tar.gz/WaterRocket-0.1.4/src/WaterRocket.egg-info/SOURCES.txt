@@ -1,0 +1,11 @@
+LICENSE.rst
+README.md
+setup.cfg
+setup.py
+src/WaterRocket/__init__.py
+src/WaterRocket/waterRocket.py
+src/WaterRocket.egg-info/PKG-INFO
+src/WaterRocket.egg-info/SOURCES.txt
+src/WaterRocket.egg-info/dependency_links.txt
+src/WaterRocket.egg-info/requires.txt
+src/WaterRocket.egg-info/top_level.txt
