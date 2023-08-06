@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+Zelden.egg-info/PKG-INFO
+Zelden.egg-info/SOURCES.txt
+Zelden.egg-info/dependency_links.txt
+Zelden.egg-info/requires.txt
+Zelden.egg-info/top_level.txt
+zelden/__init__.py
+zelden/mechanics_test.py
+zelden/src/__init__.py
+zelden/src/consts.py
+zelden/src/credentials.py
+zelden/src/exceptions.py
+zelden/src/randomizer.py
+zelden/src/set_json.py

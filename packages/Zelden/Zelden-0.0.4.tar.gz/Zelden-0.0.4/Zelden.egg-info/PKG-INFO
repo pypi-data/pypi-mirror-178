@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: Zelden
+Version: 0.0.4
+Summary: A True Random Generator Package
+Author-email: Victor Kolis <victorkolis@protonmail.com>
+Maintainer-email: Victor Kolis <victorkolis@protonmail.com>
+Project-URL: Homepage, https://github.com/Pynosaur/zelden
+Project-URL: Bug Tracker, https://github.com/Pynosaur/zelden/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Zelden
+A true random library
+
+## Resource
+[Random.org](https://api.random.org)
+
+## Name origins
+Zelden is Dutch for Seldom, which is also to say, Random.
+
+
+## STATUS
+BETA VERSION 0.0.4
+
+
+# Code snippet
+
+```python
+from zelden import credentials
+from zelden import randrange
+
+credentials(apikey='<YOUR_API_KEY_GOES_HERE>')
+rand = randrange(start=1, end=10, amount=10)
+```
