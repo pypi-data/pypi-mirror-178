@@ -1,0 +1,2 @@
+[console_scripts]
+pyinferno=pyinferno.cli:main
