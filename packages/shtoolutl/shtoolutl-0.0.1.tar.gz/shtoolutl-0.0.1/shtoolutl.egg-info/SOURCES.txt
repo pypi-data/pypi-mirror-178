@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+shtools/__init__.py
+shtools/shtools.py
+shtoolutl.egg-info/PKG-INFO
+shtoolutl.egg-info/SOURCES.txt
+shtoolutl.egg-info/dependency_links.txt
+shtoolutl.egg-info/requires.txt
+shtoolutl.egg-info/top_level.txt

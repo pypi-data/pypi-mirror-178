@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: shtoolutl
+Version: 0.0.1
+Summary: Tools for SecretHeberg
+Home-page: UNKNOWN
+Author: Noamane AIT ABDELLAH OUALI
+Author-email: noamane.fr@gmail.com
+License: MIT
+Keywords: tools
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+
+<_io.TextIOWrapper name='README.md' mode='r' encoding='cp1252'>
+
