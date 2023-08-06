@@ -1,0 +1,3 @@
+[console_scripts]
+cbdiff=chamber_backup_diff:cli
+
