@@ -1,0 +1,2 @@
+[console_scripts]
+base114514 = base114514:main
