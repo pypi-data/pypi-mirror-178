@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: patchbay
+Version: 0.0.6
+Summary: High level automation and device communication.
+Project-URL: Homepage, https://github.com/anderson-pa/patchbay
+Author-email: Phillip Anderson <python.patchbay@gmail.com>
+License-File: LICENSE
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.6
+Requires-Dist: click
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pint
+Description-Content-Type: text/markdown
+
+# Patchbay
+
+[![Hatch project](https://img.shields.io/badge/%F0%9F%A5%9A-Hatch-4051b5.svg)](https://github.com/pypa/hatch)
