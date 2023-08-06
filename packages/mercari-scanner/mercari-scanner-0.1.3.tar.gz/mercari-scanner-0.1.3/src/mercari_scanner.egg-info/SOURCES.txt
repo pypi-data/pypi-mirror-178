@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/mercari_scanner.egg-info/PKG-INFO
+src/mercari_scanner.egg-info/SOURCES.txt
+src/mercari_scanner.egg-info/dependency_links.txt
+src/mercari_scanner.egg-info/requires.txt
+src/mercari_scanner.egg-info/top_level.txt
+src/mercariscanner/__init__.py
+src/mercariscanner/__main__.py
+src/mercariscanner/mercari_scanner.py
+src/mercariscanner/mercari_spider.py
+src/mercariscanner/alerters/alerter.py
+src/mercariscanner/alerters/slack.py
