@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+fastupdate/__init__.py
+fastupdate.egg-info/PKG-INFO
+fastupdate.egg-info/SOURCES.txt
+fastupdate.egg-info/dependency_links.txt
+fastupdate.egg-info/top_level.txt
