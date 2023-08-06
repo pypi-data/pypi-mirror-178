@@ -1,0 +1,62 @@
+.code-tabs {
+	position: relative;
+	border-radius: 6px;
+	background-color: rgb(15, 15, 16);
+}
+
+.code-tabs-menu {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	overflow: hidden;
+  border: none;
+	border-radius: 6px;
+	background: rgb(58, 58, 58);
+	color: #c2c3c4;
+	width: 100%;
+	padding: 4px;
+	text-indent: 4px;
+}
+
+.code-tabs-menu-controls {
+	margin-right: 12px;
+}
+
+.code-tabs-menu-button {
+	margin: 0 5px 0 0;
+	padding: 0px 10px;
+	display: block;
+	cursor: pointer;
+	font-weight: bold;
+  transition: 0.3s;
+}
+
+.code-tabs .code-tab > div {
+	margin-top: 0;
+}
+
+div.hidden {
+  display: none;
+}
+
+.code-tabs-outer-button:hover {
+  background: rgba(255, 255, 255, 0.1) radial-gradient(circle, transparent 1%, rgba(255, 255, 255, 0.1) 1%) center/15000%;
+}
+
+.code-tabs-outer-button:active {
+  background-color: rgba(255, 255, 255, 0.3);
+  background-size: 100%;
+  transition: background 0s;
+}
+
+.code-tabs-outer-button.selected {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.code-tabs-outer-button {
+	border-radius: 4px;
+	padding: 4px;
+  background-position: center;
+  transition: background 0.8s;
+	margin-right: 4px;
+}
