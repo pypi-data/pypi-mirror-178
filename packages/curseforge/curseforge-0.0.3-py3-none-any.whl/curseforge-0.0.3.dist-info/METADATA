@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: curseforge
+Version: 0.0.3
+Summary: A no-compromises wrapper for the CurseForge API
+Home-page: https://github.com/Advik-B/curseforge-api
+Author: Advik
+Author-email: <advik.b@gmail.com>
+Keywords: CMPDL,Minecraft,Curseforge,API,Wrapper
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: requests
+
+
+# Curseforge API
+[cfapi]: https://wow.curseforge.com/api
+[cfapi-docs]: https://wow.curseforge.com/api/docs
+[not-working-cfapi]: https://github.com/Owen-Cochell/cursepy
+[cmpdl]: https://github.com/Advik-B/CMPDL
+
+This is a no-compromise CurseForge API wrapper for python. It is a re-write of [cursepy][not-working-cfapi] which is maintained but not actively developed.
+This project is a complete re-write of the original project, with a focus on simplicity and ease of use.
