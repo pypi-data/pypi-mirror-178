@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+hy_sqlite/src/hy_sqlite.egg-info/PKG-INFO
+hy_sqlite/src/hy_sqlite.egg-info/SOURCES.txt
+hy_sqlite/src/hy_sqlite.egg-info/dependency_links.txt
+hy_sqlite/src/hy_sqlite.egg-info/top_level.txt
+hy_sqlite/src/hy_sqlite.py
+hy_sqlite/src/hy_sqlite.egg-info/PKG-INFO
+hy_sqlite/src/hy_sqlite.egg-info/SOURCES.txt
+hy_sqlite/src/hy_sqlite.egg-info/dependency_links.txt
+hy_sqlite/src/hy_sqlite.egg-info/top_level.txt
