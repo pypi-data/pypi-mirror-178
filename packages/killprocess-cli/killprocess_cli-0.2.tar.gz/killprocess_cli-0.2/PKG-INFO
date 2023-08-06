@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: killprocess_cli
+Version: 0.2
+Summary: Kills Process using grep
+Home-page: http://github.com/tushark39
+Author: Tushar Pandey
+Author-email: tushark39@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
