@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: king-paint
+Version: 1.2
+Summary: Interactive paint aim to learn geometry
+Home-page: https://gitee.com/cai-jinhang/king-paint
+Author: KingAirC
+Author-email: 1904192877@qq.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://gitee.com/cai-jinhang/king-paint/issues
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Framework :: Matplotlib
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
