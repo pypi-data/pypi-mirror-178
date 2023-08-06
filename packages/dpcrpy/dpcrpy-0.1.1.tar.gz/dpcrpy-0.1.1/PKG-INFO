@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: dpcrpy
+Version: 0.1.1
+Summary: A package for differential privacy continuous data release (DPCR)
+Home-page: https://github.com/imcjp/Opacus-DPCR
+Author: Cai Jianping
+Author-email: jpingcai@163.com
+License: MIT Licence
+Keywords: dpcr,optimization
+Platform: any
+License-File: LICENSE
+
+A package for differential privacy continuous data release (DPCR)
+
