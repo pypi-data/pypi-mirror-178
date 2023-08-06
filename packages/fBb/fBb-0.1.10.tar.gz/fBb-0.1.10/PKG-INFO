@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: fBb
+Version: 0.1.10
+Summary: Python Package for Stochastic Interpolation via multipoint fractional Brownian bridges
+Home-page: https://github.com/fiddir/fBb
+Maintainer: Jan Friedrich
+License: MIT
+Keywords: complex systems,stochastic interpolation,fractional Brownian motion
+Platform: any
+License-File: LICENSE

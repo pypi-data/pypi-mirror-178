@@ -1,0 +1,6 @@
+requests
+scipy
+numpy
+h5py
+matplotlib
+stochastic
