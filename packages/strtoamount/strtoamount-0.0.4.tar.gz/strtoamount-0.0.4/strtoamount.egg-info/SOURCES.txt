@@ -1,0 +1,8 @@
+README.md
+setup.py
+libfolder/__init__.py
+libfolder/strtoamount.py
+strtoamount.egg-info/PKG-INFO
+strtoamount.egg-info/SOURCES.txt
+strtoamount.egg-info/dependency_links.txt
+strtoamount.egg-info/top_level.txt
