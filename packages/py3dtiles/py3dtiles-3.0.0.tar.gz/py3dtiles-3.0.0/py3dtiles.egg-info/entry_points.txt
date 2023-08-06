@@ -1,0 +1,3 @@
+[console_scripts]
+py3dtiles = py3dtiles.command_line:main
+
