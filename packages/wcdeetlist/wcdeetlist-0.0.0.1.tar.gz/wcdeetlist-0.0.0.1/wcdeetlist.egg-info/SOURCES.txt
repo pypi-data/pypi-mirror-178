@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+wcdeetlist/__init__.py
+wcdeetlist/config.py
+wcdeetlist.egg-info/PKG-INFO
+wcdeetlist.egg-info/SOURCES.txt
+wcdeetlist.egg-info/dependency_links.txt
+wcdeetlist.egg-info/requires.txt
+wcdeetlist.egg-info/top_level.txt
