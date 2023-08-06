@@ -1,0 +1,7 @@
+[console_scripts]
+fietsctl=fietsboek.scripts.fietsctl:main
+fietsupdate=fietsboek.updater.cli:cli
+
+[paste.app_factory]
+main=fietsboek:main
+
