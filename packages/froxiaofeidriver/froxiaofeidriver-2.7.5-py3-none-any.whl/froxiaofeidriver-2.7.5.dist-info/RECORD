@@ -1,0 +1,14 @@
+froxiaofeidriver/__init__.py,sha256=DLmk-33M4tjZa9274hxD1XhqtzMGaAh7EzAxKylvpdw,289
+froxiaofeidriver/mycarmotor.py,sha256=rSfPhaOjEJ7szaHugGHNx2Cry-D84LAFDwiQTXr_B3Q,6180
+froxiaofeidriver/mycolor.py,sha256=wRGWCkHqxEoPAFaKC64A9TWHuXaBzKs8Q8wigf6mx6o,6482
+froxiaofeidriver/myfacecollect.py,sha256=hlnyQy5v8qbGnIrBJWdnm0ACwJoj3DMoCFKeg6K7wMc,4440
+froxiaofeidriver/mypygame.py,sha256=jYZKFX7FuSHG2x10-HnvEsyDlwSvNX6NaRBTgEuHrak,2060
+froxiaofeidriver/myrecognizeLBP.py,sha256=x-nBBgWQCdt7RzTfGVDW6pP_4C-BEpI2H8P4psvxYkM,3932
+froxiaofeidriver/myserial.py,sha256=2fse9ej3g0AMZ3w5GcshTNFpWjbf7w2bdimgDCzeqsM,8043
+froxiaofeidriver/myservo.py,sha256=D1flD2uadjYSAUiy9fSh05YD7bnnhVs2PtZslhaYT3s,906
+froxiaofeidriver/mysound.py,sha256=M3XAIG-Ier4iTwB4d9IFT9X23QRf_mDF_B-ph-Jc_sE,5043
+froxiaofeidriver/mytts.py,sha256=QQ5eB1EkeEjbwDZ8N6nTw1DXLJ6VnuLaZ6igV7PtIM0,442
+froxiaofeidriver-2.7.5.dist-info/METADATA,sha256=FLQLOWczLIhZYI2U3oR2U8X-H0jXWSBptE0FDf-7_Co,76
+froxiaofeidriver-2.7.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+froxiaofeidriver-2.7.5.dist-info/top_level.txt,sha256=hZYTd9PFYMThogBOEz3WPFmVFju4DH_nzNg2TgJQp0Q,17
+froxiaofeidriver-2.7.5.dist-info/RECORD,,
