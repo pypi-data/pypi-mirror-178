@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+psychopy_crs/__init__.py
+psychopy_crs/bits.py
+psychopy_crs/colorcal.py
+psychopy_crs/optical.py
+psychopy_crs/shaders.py
+psychopy_crs.egg-info/PKG-INFO
+psychopy_crs.egg-info/SOURCES.txt
+psychopy_crs.egg-info/dependency_links.txt
+psychopy_crs.egg-info/requires.txt
+psychopy_crs.egg-info/top_level.txt
