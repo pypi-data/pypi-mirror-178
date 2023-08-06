@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: PSF-Ruairi
+Version: 0.0.1
+Summary: Circular Aperture PSF Model
+Home-page: 
+Author: Ruairi Brady
+Author-email: ruairi.brady@ucdconnect.ie
+License: MIT
+Keywords: PSF
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+This script models the PSF of a system with a circular aperture.
+
+Change Log
+==========
+
+0.0.1 (26/11/2020)
+------------------
+-First release

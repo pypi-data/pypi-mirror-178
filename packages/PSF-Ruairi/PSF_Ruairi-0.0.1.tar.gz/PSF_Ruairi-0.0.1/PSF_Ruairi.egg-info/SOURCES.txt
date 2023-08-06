@@ -1,0 +1,8 @@
+LICENCE.txt
+README.txt
+setup.py
+PSF_Ruairi.egg-info/PKG-INFO
+PSF_Ruairi.egg-info/SOURCES.txt
+PSF_Ruairi.egg-info/dependency_links.txt
+PSF_Ruairi.egg-info/requires.txt
+PSF_Ruairi.egg-info/top_level.txt
