@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "treco"
+version = "0.0.1"
+description = "TradingEconomics data scraper"
+authors = ["miodine"]
+readme = "README.rst"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
