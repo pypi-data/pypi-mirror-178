@@ -1,0 +1,4 @@
+netifaces>=0.10.9
+requests>=2.24.0
+tqdm>=4.48.2
+wakeonlan>=2.1.0
