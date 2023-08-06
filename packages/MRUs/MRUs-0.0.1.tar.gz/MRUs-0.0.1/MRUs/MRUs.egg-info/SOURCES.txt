@@ -1,0 +1,5 @@
+setup.py
+MRUs/MRUs.egg-info/PKG-INFO
+MRUs/MRUs.egg-info/SOURCES.txt
+MRUs/MRUs.egg-info/dependency_links.txt
+MRUs/MRUs.egg-info/top_level.txt
