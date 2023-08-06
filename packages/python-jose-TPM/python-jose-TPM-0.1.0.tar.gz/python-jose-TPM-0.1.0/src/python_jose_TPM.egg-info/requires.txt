@@ -1,0 +1,4 @@
+tpm2-pytss==1.2.0
+ecdsa==0.18.0
+pyasn1==0.4.8
+rsa==4.9

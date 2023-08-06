@@ -1,0 +1,28 @@
+# pyproject.toml
+
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-jose-TPM"
+version = "0.1.0"
+description = "TPM based python JOSE implementation"
+readme = "README.md"
+authors = [{ name = "Henry Gadacz" }]
+license = {text = "MIT License"}
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+]
+keywords = ["TPM", "TSS", "JSON", "JOSE", "JWE", "JWS", "JWT", "pytss"]
+dependencies = [
+    "tpm2-pytss == 1.2.0",
+    "ecdsa == 0.18.0",
+    "pyasn1 == 0.4.8",
+    "rsa == 4.9",
+]
+requires-python = ">=3.10"
+
