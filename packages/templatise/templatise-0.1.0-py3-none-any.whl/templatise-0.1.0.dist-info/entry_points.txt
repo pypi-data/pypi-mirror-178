@@ -1,0 +1,3 @@
+[console_scripts]
+initialise=template_py.initialise:main
+
