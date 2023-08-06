@@ -1,0 +1,3 @@
+[salt.loader]
+saltext.sap_xsa = saltext.sap_xsa
+
