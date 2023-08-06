@@ -1,0 +1,10 @@
+cambd/__init__.py,sha256=J-j-u0itpEFT6irdmWmixQqYMadNl1X91TxUmoiLHMI,22
+cambd/__main__.py,sha256=jH6kvRPSqMMwVykQdt7ZJKfVU1nPgUb6wxhNTr283O8,96
+cambd/cache.py,sha256=qmuF4Kc_au5Xy6JZArDJHbFb4Rcg_RGW0cH_0qTnqyk,816
+cambd/cambd.py,sha256=eAlh7NC9i_kEBk5XxsXIIRvOeRZch6zFOcO5xz2c2_g,7237
+cambd-1.0.0.dist-info/LICENSE,sha256=__rvVfNwmSDzqmCS6_ycgoIBDjn1WqHmCtPj4FSaneA,1071
+cambd-1.0.0.dist-info/METADATA,sha256=iHEwjb6_GbxHTolqLGjeOIMrMdQ0EsQjW2qiqBDGE44,2400
+cambd-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+cambd-1.0.0.dist-info/entry_points.txt,sha256=kCl8xHxcLCPeM0lq3pxsIP96A7RrcWyS8v2QDh39QzI,43
+cambd-1.0.0.dist-info/top_level.txt,sha256=sXuaEEuSv7zoNOt1oQCosUvriA6H3MEij49BiTnVf0s,6
+cambd-1.0.0.dist-info/RECORD,,
