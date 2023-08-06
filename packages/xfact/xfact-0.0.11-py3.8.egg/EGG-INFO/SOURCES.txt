@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+src/xfact/__init__.py
+src/xfact/train.py
+src/xfact.egg-info/PKG-INFO
+src/xfact.egg-info/SOURCES.txt
+src/xfact.egg-info/dependency_links.txt
+src/xfact.egg-info/requires.txt
+src/xfact.egg-info/top_level.txt
