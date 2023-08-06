@@ -1,0 +1,244 @@
+"""Module with functions for modelling a stress-strain curve."""
+import os
+from typing import List
+
+import numpy as np
+import pandas as pd
+
+from paramaterial.plug import DataItem, DataSet
+
+
+def determine_proportional_limits_and_elastic_modulus(
+        di: DataItem, strain_key: str = 'Strain', stress_key: str = 'Stress_MPa',
+        preload: float = 0, preload_key: str = 'Stress_MPa', max_strain: float = 0.02,
+        suppress_numpy_warnings: bool = False) -> DataItem:
+    """Determine the upper proportional limit (UPL) and lower proportional limit (LPL) of a stress-strain curve.
+    The UPL is the point that minimizes the residuals of the slope fit between that point and the specified preload.
+    The LPL is the point that minimizes the residuals of the slope fit between that point and the UPL.
+    The elastic modulus is the slope between the UPL and LPL.
+
+    Args:
+        di: DataItem with stress-strain curve
+        strain_key: key for strain data
+        stress_key: key for stress data
+        preload: preload value
+        preload_key: key for preload data
+        max_strain: maximum strain to consider
+        suppress_numpy_warnings: suppress numpy warnings
+
+    Returns:
+        DataItem with UPL, LPL, and E added to info.
+    """
+    if suppress_numpy_warnings:
+        np.seterr(all="ignore")
+
+    data = di.data[di.data[strain_key] <= max_strain]
+
+    UPL = (0, 0)
+    LPL = (0, 0)
+
+    def fit_line(_x, _y):
+        n = len(_x)  # number of points
+        m = (n*np.sum(_x*_y) - np.sum(_x)*np.sum(_y))/(n*np.sum(np.square(_x)) - np.square(np.sum(_x)))  # slope
+        c = (np.sum(_y) - m*np.sum(_x))/n  # intercept
+        S_xy = (n*np.sum(_x*_y) - np.sum(_x)*np.sum(_y))/(n - 1)  # empirical covariance
+        S_x = np.sqrt((n*np.sum(np.square(_x)) - np.square(np.sum(_x)))/(n - 1))  # x standard deviation
+        S_y = np.sqrt((n*np.sum(np.square(_y)) - np.square(np.sum(_y)))/(n - 1))  # y standard deviation
+        r = S_xy/(S_x*S_y)  # correlation coefficient
+        S_m = np.sqrt((1 - r**2)/(n - 2))*S_y/S_x  # slope standard deviation
+        S_rel = S_m/m  # relative deviation of slope
+        return S_rel
+
+    x = data[strain_key].values
+    y = data[stress_key].values
+
+    x_upl = x[data[preload_key] >= preload]
+    y_upl = y[data[preload_key] >= preload]
+
+    S_min = np.inf
+    for i in range(3, len(x)):
+        S_rel = fit_line(x_upl[:i], y_upl[:i])  # fit a line to the first i points after the preload
+        if S_rel < S_min:
+            S_min = S_rel
+            UPL = (x_upl[i], y_upl[i])
+
+    x_lpl = x[x <= UPL[0]]
+    y_lpl = y[x <= UPL[0]]
+
+    S_min = np.inf
+    for j in range(len(x), 3, -1):
+        S_rel = fit_line(x_lpl[j:], y_lpl[j:])  # fit a line to the last i points before the UPL
+        if S_rel < S_min:
+            S_min = S_rel
+            LPL = (x_lpl[j], y_lpl[j])
+
+    di.info['UPL_0'] = UPL[0]
+    di.info['UPL_1'] = UPL[1]
+    di.info['LPL_0'] = LPL[0]
+    di.info['LPL_1'] = LPL[1]
+    di.info['E'] = (UPL[1] - LPL[1])/(UPL[0] - LPL[0])
+    return di
+
+
+def determine_proof_stress(di: DataItem, proof_strain: float = 0.002, strain_key: str = 'Strain',
+                           stress_key: str = 'Stress_MPa') -> DataItem:
+    """Find the proof stress of a stress-strain curve.
+
+    Args:
+        di: DataItem with stress-strain curve
+        proof_strain: Strain at which to find the proof stress
+        strain_key: Key for strain data
+        stress_key: Key for stress data
+
+    Returns: DataItem with proof stress added to info.
+    """
+    E = di.info['E']
+    x_data = di.data[strain_key].values
+    y_data = di.data[stress_key].values
+    x_shift = proof_strain
+    y_line = E*(x_data - x_shift)
+    cut = np.where(np.diff(np.sign(y_line - y_data)) != 0)[0][-1]
+    m = (y_data[cut + 1] - y_data[cut])/(x_data[cut + 1] - x_data[cut])
+    xl = x_data[cut]
+    yl = y_line[cut]
+    xd = x_data[cut]
+    yd = y_data[cut]
+    K = np.array(
+        [[1, -E],
+         [1, -m]]
+    )
+    f = np.array(
+        [[yl - E*xl],
+         [yd - m*xd]]
+    )
+    d = np.linalg.solve(K, f).flatten()
+    di.info[f'YP_{proof_strain}_0'] = d[1]
+    di.info[f'YP_{proof_strain}_1'] = d[0]
+    return di
+
+
+def determine_ultimate_strength(di: DataItem, force_key: str = 'Force_kN', strain_key: str = 'Strain',
+                                stress_key: str = 'Stress_MPa') -> DataItem:
+    """Find the ultimate strength of a stress-strain curve, defined as the strain and stress at the maximum force.
+
+    Args:
+        di: DataItem with stress-strain curve
+        force_key: Key for force data
+        strain_key: Key for strain data
+        stress_key: Key for stress data
+
+    Returns: DataItem with ultimate strength added to info.
+    """
+    idx_max = di.data[force_key].idxmax()
+    di.info['Ultimate_Strength_0'] = di.data[strain_key][idx_max]
+    di.info['Ultimate_Strength_1'] = di.data[stress_key][idx_max]
+    return di
+
+
+def determine_fracture_point(di: DataItem, strain_key: str = 'Strain', stress_key: str = 'Stress_MPa') -> DataItem:
+    """Find the fracture point of a stress-strain curve, defined as the point at which the strain is maximum.
+
+    Args:
+        di: DataItem with stress-strain curve
+        strain_key: Key for strain data
+        stress_key: Key for stress data
+
+    Returns: DataItem with fracture point added to info.
+    """
+    idx_max = di.data[strain_key].idxmax()
+    di.info['Fracture_Point_0'] = di.data[strain_key][idx_max]
+    di.info['Fracture_Point_1'] = di.data[stress_key][idx_max]
+    return di
+
+
+def determine_flow_stress(di: DataItem, strain_key: str = 'Strain', stress_key: str = 'Stress_MPa',
+                          flow_strain: float|None = None) -> DataItem:
+    """Find the flow stress of a stress-strain curve, defined as the point at which the stress is maximum,
+    or as the point at a specified strain.
+
+    Args:
+        di: DataItem with stress-strain curve
+        strain_key: Key for strain data
+        stress_key: Key for stress data
+        flow_strain: Strain at which to find the flow stress. If None, the maximum stress is used.
+
+    Returns: DataItem with flow stress added to info.
+    """
+    if flow_strain is None:
+        idx_max = di.data[stress_key].idxmax()
+        di.info['Flow_Stress_0'] = di.data[strain_key][idx_max]
+        di.info['Flow_Stress_1'] = di.data[stress_key][idx_max]
+    else:
+        di.info['Flow_Stress_0'] = flow_strain
+        di.info['Flow_Stress_1'] = di.data[stress_key][di.data[strain_key] <= flow_strain].max()
+    return di
+
+
+def correct_uniaxial_compression_friction(di: DataItem, mu_key: str = 'mu', h0_key: str = 'h_0', D0_key: str = 'D_0',
+                                          disp_key: str = 'Disp(mm)', force_key: str = 'Force(kN)') -> DataItem:
+    """
+    Calculate the pressure and corrected stress for a uniaxial compression test with friction.
+
+    Args:
+        di: DataItem with uniaxial compression test data
+        mu_key: Key for friction coefficient in info
+        h0_key: Key for initial height in info
+        D0_key: Key for initial diameter in info
+        disp_key: Key for displacement data
+        force_key: Key for force data
+
+    Returns: DataItem with corrected stress and pressure added to data.
+    """
+    mu = di.info[mu_key]  # friction coefficient
+    h_0 = di.info[h0_key]  # initial height in axial direction
+    D_0 = di.info[D0_key]  # initial diameter
+    h = h_0 - di.data[disp_key]  # instantaneous height
+    d = D_0*np.sqrt(h_0/h)  # instantaneous diameter
+    P = di.data[force_key]*1000*4/(np.pi*d**2)  # pressure (MPa)
+    di.data['Pressure(MPa)'] = P
+    di.data['Corrected_Stress(MPa)'] = P/(1 + (mu*d)/(3*h))  # correct stress
+    return di
+
+
+def correct_plane_strain_compression_friction(di: DataItem, mu_key: str = 'mu', h0_key: str = 'h_0',
+                                              hf_key: str = 'h_f', b0_key: str = 'b_0', bf_key: str = 'b_f',
+                                              w0_key: str = 'w_0', spread_exponent_key: str = 'spread_exponent',
+                                              disp_key: str = 'Disp(mm)', force_key: str = 'Force(kN)') -> DataItem:
+    mu = di.info[mu_key]  # friction coefficient
+    h_0 = di.info[h0_key]  # initial height in normal direction
+    h_f = di.info[hf_key]  # final height in normal direction
+    b_0 = di.info[b0_key]  # initial width in transverse direction
+    b_f = di.info[bf_key]  # final width in transverse direction
+    n = di.info[spread_exponent_key]  # spread exponent
+    C = (b_f/b_0 - 1)/(1 - (h_f/h_0)**n)  # breadth spread coefficient
+    h = h_0 - di.data[disp_key]  # instantaneous height
+    b = b_0*(1 + C*(1 - (h/h_0)**n))  # instantaneous breadth
+    w0 = di.info[w0_key]  # initial width in rolling direction
+    P = di.data[force_key]*1000/(b*w0)  # pressure (MPa)
+    di.data['Pressure(MPa)'] = P
+    z_0 = (h/(2*mu))*np.log(1/(2*mu))  # sticking-sliding transition distance from centre (mm)
+
+
+
+def smooth_load_cell_ringing():
+    pass
+
+
+def correct_compliance():
+    pass
+
+
+def correct_thermal_expansion():
+    pass
+
+
+def correct_foot():
+    pass
+
+
+def trim_leading_data():
+    pass
+
+
+def trim_trailing_data():
+    pass
