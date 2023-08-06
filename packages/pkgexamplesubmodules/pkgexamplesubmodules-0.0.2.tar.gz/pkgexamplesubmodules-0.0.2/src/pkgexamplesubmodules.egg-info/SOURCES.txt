@@ -1,0 +1,15 @@
+LICENCE
+README.md
+pyproject.toml
+setup.py
+src/pkgexamplesubmodules/__init__.py
+src/pkgexamplesubmodules/my_submoduleexample_module.py
+src/pkgexamplesubmodules.egg-info/PKG-INFO
+src/pkgexamplesubmodules.egg-info/SOURCES.txt
+src/pkgexamplesubmodules.egg-info/dependency_links.txt
+src/pkgexamplesubmodules.egg-info/entry_points.txt
+src/pkgexamplesubmodules.egg-info/top_level.txt
+src/pkgexamplesubmodules/rexsubmodule2/src/rexsubmodule2/__init__.py
+src/pkgexamplesubmodules/rexsubmodule2/src/rexsubmodule2/sayhello.py
+src/rexsubmodule1/src/rexsubmodule1/__init__.py
+src/rexsubmodule1/src/rexsubmodule1/sayhello.py
