@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: morley
+Version: 0.0.2
+Summary: GUI software for plant morphometry
+Home-page: UNKNOWN
+Author: Daria Emekeeva & Lev Levitsky
+Author-email: dashabezik65@gmail.com
+License: License :: OSI Approved :: Apache Software License
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Intended Audience :: End Users/Desktop
+Requires-Dist: pyteomics
+Requires-Dist: seaborn
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: opencv-python
+Requires-Dist: imutils
+
+UNKNOWN
+
+
