@@ -1,0 +1,13 @@
+pydata_master/__init__.py,sha256=vdwySOPCJwF7_7eNjhPURGJUgagTHC3NfCrJ62oQQ1A,299
+pydata_master/ads_platform.py,sha256=dqbDY8o3mANQR6WV9fGHWWZkeG_1AJnIT-It_mzCKqg,3172
+pydata_master/crm_system.py,sha256=at8oXGlilNB4yQvpToZBdOirLN_iFrRA9fx69kr3JJA,4453
+pydata_master/database_connect.py,sha256=fiFOduMEYlcJ6j8TKiAX_zmURohfu8XR5jCSSpU-iWI,1228
+pydata_master/google_service.py,sha256=2JhgJXdSkNBjMtl_xxfdgjpjAnG4C27pLCk87bnpILI,6435
+pydata_master/measurement_platform.py,sha256=1dTnEYv49DR_9Pk5GtVg_ttpnijj3_WpJweIhRZu7F8,1774
+pydata_master/messaging_api.py,sha256=gNqtQC0wLCEwTuZ3PUgcuCgeSV1-LYzzkx5zJowLP7A,3268
+pydata_master/visualization.py,sha256=zKDvnYwjhKvWJCjvZQTl2e7OjPBsYugOG5Y_VNgFXd8,1328
+pydata_master-0.0.7.dist-info/LICENSE,sha256=-2UQqc5IWOt1EpIWGqb3v9mywFCjHV5LDw5CDsccvmo,1065
+pydata_master-0.0.7.dist-info/METADATA,sha256=AqJszqt5-10lsqEWTp5IZAXy7gZZWbEjhETu0SfWoEw,3405
+pydata_master-0.0.7.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pydata_master-0.0.7.dist-info/top_level.txt,sha256=bmoGOh2M31VgcAFB3DvXlLCtFys5RXTUXLHOTx4DWSE,14
+pydata_master-0.0.7.dist-info/RECORD,,
