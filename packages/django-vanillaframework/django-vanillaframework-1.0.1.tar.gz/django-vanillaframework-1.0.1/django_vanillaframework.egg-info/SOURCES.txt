@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+django_vanillaframework.egg-info/PKG-INFO
+django_vanillaframework.egg-info/SOURCES.txt
+django_vanillaframework.egg-info/dependency_links.txt
+django_vanillaframework.egg-info/requires.txt
+django_vanillaframework.egg-info/top_level.txt
+vanillaframework/__init__.py
+vanillaframework/config.py
+vanillaframework/util.py
+vanillaframework/management/__init__.py
+vanillaframework/management/commands/__init__.py
+vanillaframework/management/commands/vanillaframework.py
