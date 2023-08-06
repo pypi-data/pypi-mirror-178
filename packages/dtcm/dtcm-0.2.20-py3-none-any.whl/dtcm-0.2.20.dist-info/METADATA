@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: dtcm
+Version: 0.2.20
+Summary: Declassed Tor Circuits Manager
+Home-page: https://declassed.art/repository/dtcm
+Author: AXY
+Author-email: axy@declassed.art
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Internet :: WWW/HTTP
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: stem
+
+
+==============================
+Declassed Tor Circuits Manager
+==============================
+
+Maintain the specified number of circuits and attach streams to them in a round-robin manner.
+
+How to use:
+
+.. code:: python
+
+    import dtcm
+
+    config = {
+        'tor': {
+            'address': '127.0.0.1',
+            'socks_port': 9100,
+            'control_port': 9051,
+            'password': '12345'
+        },
+        'circuits': {
+        'hops': 2,  # Although this can be 1, exit-only circuits
+                    # do not work, need a guard relay.
+                    # So 2 is the minimum.
+        'count': 100
+            stable_only: False  # only use relays with Stable flag
+            fast_only: False    # only use relays with Fast flag
+        }
+    }
+
+    dtcm.init(config)
+    # dtcm.logger.setLevel(logging.DEBUG)
+    # your code here, a crawler, right?
+    # or just a sleep call if this is a standalone process
+    dtcm.fini()
+
+:copyright: Copyright 2022 AXY axy@declassed.art
+:license: BSD, see LICENSE for details.
+
+
