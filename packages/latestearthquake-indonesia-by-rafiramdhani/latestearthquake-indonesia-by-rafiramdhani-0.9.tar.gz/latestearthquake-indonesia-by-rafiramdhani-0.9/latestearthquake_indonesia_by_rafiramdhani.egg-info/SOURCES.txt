@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+DeteksiGempaReal/__init__.py
+latestearthquake_indonesia_by_rafiramdhani.egg-info/PKG-INFO
+latestearthquake_indonesia_by_rafiramdhani.egg-info/SOURCES.txt
+latestearthquake_indonesia_by_rafiramdhani.egg-info/dependency_links.txt
+latestearthquake_indonesia_by_rafiramdhani.egg-info/top_level.txt
