@@ -1,0 +1,10 @@
+windows_adb_screen_capture/LICENSE,sha256=q5AZUyTwx8nlW-2D2bxuQd36rLJ9EDulKh76xA09pj8,1069
+windows_adb_screen_capture/README.MD,sha256=u3xh70HfZyfipLF7667u-rf1rHwgIgrs77X-x8toeQk,3080
+windows_adb_screen_capture/__init__.py,sha256=vsTFsntZBmKMwiKrvpLJ0SnEXf9ORmQUBhu4eqG-Op0,12843
+windows_adb_screen_capture/requirements.txt,sha256=9dWtWryD7YwPQo3aGd1wyVKq36eo2BulcJX0sgpxDzQ,42
+windows_adb_screen_capture/thirdparty.json,sha256=T1PNoYwrqgwDVLtfmj7L5e0Sq02OEbqHPC8RFhICuUU,2
+windows_adb_screen_capture-0.17.dist-info/LICENSE.rst,sha256=mUm-wCZOuzvKLxt9Gac_Zo5cah8QOM0gqn2Z-AluELM,1148
+windows_adb_screen_capture-0.17.dist-info/METADATA,sha256=rrBX7ld5NeBjJHR0xw_eOIIXsKk3oVxZSeuR0HBeFts,4130
+windows_adb_screen_capture-0.17.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+windows_adb_screen_capture-0.17.dist-info/top_level.txt,sha256=W-q3uMO8IACnqkuIo7FxPrjMJs-5_I3uR72wGNAK5n0,27
+windows_adb_screen_capture-0.17.dist-info/RECORD,,
