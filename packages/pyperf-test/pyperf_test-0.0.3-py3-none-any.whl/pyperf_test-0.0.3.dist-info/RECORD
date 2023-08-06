@@ -1,0 +1,11 @@
+pyperf/__init__.py,sha256=gthkkuWgsideW224chzg949_RuZVERHSyLkQGE4VbRY,27
+pyperf/base.py,sha256=kkMHBdVRpoSKeNBWWYKQeMf3gxyJ89wosE1JN6NNSxU,1316
+pyperf/main.py,sha256=Hn2limhOHjX1XswjcAEFQQuC0MiUMq3FEEGABAPSho4,327
+pyperf/classes/__init__.py,sha256=980G6qwpEYSySNyOEOqx0bv97XK57IuRDxD4Wn2Pfo0,28
+pyperf/classes/classes_slots.py,sha256=fjq5R-QeEbfIv0JDjLKC_qxPYoUK8t7ynuq92FrGn-U,535
+pyperf/lists/__init__.py,sha256=R7Wfz1F27H2bCWzN3HyNVHZMZTww_MtawVVT6MucGSw,20
+pyperf/lists/lists.py,sha256=m1isv4YRByg8y9voWHtF45ZgSYXkS1fQLnXsLmagpXI,698
+pyperf_test-0.0.3.dist-info/METADATA,sha256=pYbT41dkBOGd5_vLV4FDiYZqi8IuGaNxlUuV8i4-xNE,423
+pyperf_test-0.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pyperf_test-0.0.3.dist-info/top_level.txt,sha256=f4jZ491KVkYfITs8wfVm6es4Ut0OX6VIhPWD3LM73C8,7
+pyperf_test-0.0.3.dist-info/RECORD,,
