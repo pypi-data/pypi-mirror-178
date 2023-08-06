@@ -1,0 +1,126 @@
+[build-system]
+requires = [
+  "setuptools >= 40.9.0",
+  "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "audio_feeder"
+authors = [{name = "Paul Ganssle"}]
+description = """
+audio-feeder provides a server that serves your audiobooks and other audio
+content as RSS feeds, with rich metadata, and provides a web frontent for navigation."""
+license = {text = "Apache 2.0"}
+requires-python = ">= 3.9"
+dependencies = [
+    "Flask>=0.11.1",
+    "pyyaml>=6.0",
+    "qrcode>=5.3",
+    "Pillow>=3.4.2",
+    "requests>=2.12.4",
+    "jinja2",
+    "click>=6.0",
+    "progressbar2",
+    "lxml>=2.0",
+    "SQLAlchemy>=1.4",
+    "attrs>=22.0",
+    "backports.strenum>=1.1.1;python_version<'3.11'",
+    "typing_extensions>=4.0.0;python_version<'3.11'",
+]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Intended Audience :: Developers",
+    "Framework :: Flask",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+dynamic = ["version", "readme"]
+
+[project.scripts]
+audio-feeder = "audio_feeder.cli:cli"
+
+[tool.setuptools]
+packages = {find = {where = ["src"]}}
+package-data = { audio_feeder=["data/**/*"] }
+license-files = ["LICENSE"]
+
+[tool.setuptools.dynamic]
+version = {attr = "audio_feeder.__version__.VERSION"}
+
+## Isort
+[tool.isort]
+atomic=true
+force_grid_wrap=0
+include_trailing_comma=true
+known_first_party = ["audio_feeder"]
+known_third_party=[
+    "click",
+    "flask",
+    "hypothesis",
+    "jinja2",
+    "lxml",
+    "ruamel",
+    "PIL",
+    "progressbar2",
+    "pytest",
+    "qrcode",
+    "requests"
+]
+multi_line_output=3
+use_parentheses=true
+
+## Coverage
+[tool.coverage.paths]
+source = ["src", ".tox/*/site-packages"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+
+## Mypy
+[tool.mypy]
+exclude = ["data/"]
+show_error_codes = true
+
+[[tool.mypy.overrides]]
+module = "qrcode.*"
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = "progressbar.*"
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = "dotenv.*"
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = "werkzeug.*"
+ignore_missing_imports = true
+
+
+## Pytest
+[tool.pytest.ini_options]
+log_level="DEBUG"
+
+
+## Pylint
+[tool.pylint.'MESSAGES CONTROL']
+disable="all"
+enable="""
+    unused-import,
+    unused-variable,
+    unpacking-non-sequence,
+    invalid-all-object,
+    used-before-assignment,
+    no-else-raise,
+    bad-format-character,
+    bad-format-string,
+    bare-except,
+"""

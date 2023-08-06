@@ -1,0 +1,123 @@
+CHANGELOG.rst
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.py
+tox.ini
+.github/workflows/publish.yml
+.github/workflows/test.yml
+docs/images/screenshots/list_entry_p0.jpg
+docs/images/screenshots/list_mobile.jpg
+docs/images/screenshots/list_p0_qr.jpg
+docs/images/screenshots/settings_pulldown.jpg
+src/audio_feeder/__init__.py
+src/audio_feeder/__version__.py
+src/audio_feeder/_compat.py
+src/audio_feeder/_db_types.py
+src/audio_feeder/_object_types.py
+src/audio_feeder/_useful_types.py
+src/audio_feeder/app.py
+src/audio_feeder/cache_utils.py
+src/audio_feeder/cli.py
+src/audio_feeder/config.py
+src/audio_feeder/database_handler.py
+src/audio_feeder/directory_parser.py
+src/audio_feeder/file_location.py
+src/audio_feeder/file_probe.py
+src/audio_feeder/hash_utils.py
+src/audio_feeder/html_utils.py
+src/audio_feeder/m4btools.py
+src/audio_feeder/media_renderer.py
+src/audio_feeder/metadata_loader.py
+src/audio_feeder/object_handler.py
+src/audio_feeder/page_generator.py
+src/audio_feeder/pages.py
+src/audio_feeder/resolver.py
+src/audio_feeder/resources.py
+src/audio_feeder/rss_feeds.py
+src/audio_feeder/segmenter.py
+src/audio_feeder/sql_database_handler.py
+src/audio_feeder/updater.py
+src/audio_feeder/yaml_database_handler.py
+src/audio_feeder.egg-info/PKG-INFO
+src/audio_feeder.egg-info/SOURCES.txt
+src/audio_feeder.egg-info/dependency_links.txt
+src/audio_feeder.egg-info/entry_points.txt
+src/audio_feeder.egg-info/requires.txt
+src/audio_feeder.egg-info/top_level.txt
+src/audio_feeder/data/__init__.py
+src/audio_feeder/data/css/__init__.py
+src/audio_feeder/data/css/fontawesome-subset.css
+src/audio_feeder/data/css/main.css
+src/audio_feeder/data/site/__init__.py
+src/audio_feeder/data/site/fonts/fontawesome-subset.woff
+src/audio_feeder/data/site/fonts/fontawesome-subset.woff2
+src/audio_feeder/data/site/site-images/__init__.py
+src/audio_feeder/data/site/site-images/default_cover.svg
+src/audio_feeder/data/templates/__init__.py
+src/audio_feeder/data/templates/entry_types/__init__.py
+src/audio_feeder/data/templates/entry_types/Book/__init__.py
+src/audio_feeder/data/templates/entry_types/Book/author.tpl
+src/audio_feeder/data/templates/entry_types/Book/description.tpl
+src/audio_feeder/data/templates/entry_types/Book/name.tpl
+src/audio_feeder/data/templates/pages/__init__.py
+src/audio_feeder/data/templates/pages/list.tpl
+src/audio_feeder/data/templates/rss/__init__.py
+src/audio_feeder/data/templates/rss/rss_feed.tpl
+src/audio_feeder/data/templates/rss/entry_types/__init__.py
+src/audio_feeder/data/templates/rss/entry_types/Book/__init__.py
+src/audio_feeder/data/templates/rss/entry_types/Book/author.tpl
+src/audio_feeder/data/templates/rss/entry_types/Book/description.tpl
+src/audio_feeder/data/templates/rss/entry_types/Book/name.tpl
+tests/__init__.py
+tests/conftest.py
+tests/test_config.py
+tests/test_database_handlers.py
+tests/test_directory_parser.py
+tests/test_file_location.py
+tests/test_file_probe.py
+tests/test_html_utils.py
+tests/test_m4btools.py
+tests/test_resolver.py
+tests/test_resources.py
+tests/test_rss_feeds.py
+tests/test_segmenter.py
+tests/test_updater.py
+tests/utils.py
+tests/data/config.yml
+tests/data/db.sqlite
+tests/data/example_google_books_responses.json
+tests/data/db_versions/db_v0.sqlite
+tests/data/example_media/audiobooks/Fiction/Bram Stoker - Dracula/Chapter 01.mp3.xz
+tests/data/example_media/audiobooks/Fiction/Bram Stoker - Dracula/Chapter 02.mp3.xz
+tests/data/example_media/audiobooks/Fiction/H G Wells - The Invisible Man/Cover.jpg.xz
+tests/data/example_media/audiobooks/Fiction/H G Wells - The Invisible Man/invisibleman_01_wells_64kb.mp3.xz
+tests/data/example_media/audiobooks/Fiction/H G Wells - The Invisible Man/invisibleman_02_wells_64kb.mp3.xz
+tests/data/example_media/audiobooks/Fiction/H G Wells - The Invisible Man/invisibleman_03_wells_64kb.mp3.xz
+tests/data/example_media/audiobooks/Fiction/H G Wells - The Invisible Man/invisibleman_04_wells_64kb.mp3.xz
+tests/data/example_media/audiobooks/Fiction/H G Wells - The Invisible Man/invisibleman_05_wells_64kb.mp3.xz
+tests/data/example_media/audiobooks/Fiction/H G Wells - The Invisible Man/invisibleman_06_wells_64kb.mp3.xz
+tests/data/example_media/audiobooks/Fiction/H G Wells - The Invisible Man/invisibleman_07_wells_64kb.mp3.xz
+tests/data/example_media/audiobooks/Fiction/H G Wells - The Invisible Man/invisibleman_08_wells_64kb.mp3.xz
+tests/data/example_media/audiobooks/Fiction/H G Wells - The Invisible Man/invisibleman_09_wells_64kb.mp3.xz
+tests/data/example_media/audiobooks/Fiction/H G Wells - The Invisible Man/invisibleman_10_wells_64kb.mp3.xz
+tests/data/example_media/audiobooks/Fiction/H G Wells - The Invisible Man/invisibleman_11_wells_64kb.mp3.xz
+tests/data/example_media/audiobooks/Fiction/Louisa May Alcott - [Little Women 01] - Little Women/Cover.jpg
+tests/data/example_media/audiobooks/Fiction/Louisa May Alcott - [Little Women 01] - Little Women/Little Women-Part00.mp3.xz
+tests/data/example_media/audiobooks/Fiction/Louisa May Alcott - [Little Women 01] - Little Women/Little Women-Part01.mp3.xz
+tests/data/example_media/audiobooks/Fiction/Louisa May Alcott - [Little Women 01] - Little Women/Little Women-Part02.mp3.xz
+tests/data/example_media/audiobooks/Fiction/Louisa May Alcott - [Little Women 01] - Little Women/Little Women-Part03.mp3.xz
+tests/data/example_media/audiobooks/Fiction/Louisa May Alcott - [Little Women 01] - Little Women/Little Women-Part04.mp3.xz
+tests/data/example_media/audiobooks/Fiction/Louisa May Alcott - [Little Women 02] - Little Men/Little Men-Cover.jpg
+tests/data/example_media/audiobooks/Fiction/Louisa May Alcott - [Little Women 02] - Little Men/Little Men-Part00.mp3.xz
+tests/data/example_media/audiobooks/Fiction/Louisa May Alcott - [Little Women 02] - Little Men/Little Men-Part01.mp3.xz
+tests/data/example_media/audiobooks/Fiction/Louisa May Alcott - [Little Women 02] - Little Men/Little Men-Part02.mp3.xz
+tests/data/example_media/audiobooks/Fiction/Mary Shelley - Frankenstein/Mary Shelley's Frankenstein.m4b.xz
+tests/data/example_media/audiobooks/Fiction/Mary Shelley - Frankenstein/frankenstein_ffmetadata.txt
+tests/data/example_media/audiobooks/Nonfiction/Edith Wharton - The Writing of Fiction/The Writing of Fiction.mp3.xz
+tests/data/example_media/audiobooks/Nonfiction/Thomas de Quincey - Confessions of an English Opium Eater/ConfessionsOfAnEnglishOpiumEater_librivox.m4b.xz
+tests/data/yaml_db/authors.yml
+tests/data/yaml_db/books.yml
+tests/data/yaml_db/entries.yml
+tests/data/yaml_db/series.yml
