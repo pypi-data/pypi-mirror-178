@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+exeustr/__init__.py
+exeustr/core.py
+exeustr.egg-info/PKG-INFO
+exeustr.egg-info/SOURCES.txt
+exeustr.egg-info/dependency_links.txt
+exeustr.egg-info/top_level.txt
