@@ -1,0 +1,11 @@
+email_to_soup/__init__.py,sha256=KIqtwFBq17j-GsbeozAJwUQzDL_EU_GivQkS92TcTlM,33
+email_to_soup/main.py,sha256=1Oz-r2t00BNg_S9Z-3RGcWHtWOfPx4QmWroT0Ei1Od8,1295
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_email_to_soup.py,sha256=0WcDyvxwVGXHlruACVzwrpGeesyi7Ck7PVtx7Zv7wxI,458
+tests/fixtures/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/fixtures/test_email.eml,sha256=gKhW0-XWj85JP0q_NVDR9OKCu3RpCvCUB4BGWuVsQcQ,27609
+email_to_soup-0.0.1.dist-info/LICENSE,sha256=xnd1tzKHFI8Y6hYpfSJ6DK0-xYUnE51Vm33DRtgeDMw,1066
+email_to_soup-0.0.1.dist-info/METADATA,sha256=8crklG8AzBbSHq7Zt_YWZ5nVTEPuogBxG2dRoOL50VU,726
+email_to_soup-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+email_to_soup-0.0.1.dist-info/top_level.txt,sha256=F88yC2g5QlZeyAsF2Zs535JXIlQGtMjof-42miAnfhU,20
+email_to_soup-0.0.1.dist-info/RECORD,,
