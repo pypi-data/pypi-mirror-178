@@ -1,0 +1,10 @@
+main.py,sha256=PSDCSBER3KyidQvHajIa-gCze0Ks5KPAxS04moL3P4Q,3820
+app/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+app/asciiclip.py,sha256=16uevF55RmMRyYVR6n-nBvCBBEVjpVzqtDW8m0wyBzw,13275
+app/moby.ttf,sha256=tM3IrsyYCPpcVrxsEzlmDtpM3PDx7BE_A6iR3tqZtYg,61392
+asciiclip-1.0.0.dist-info/LICENSE,sha256=VOy77EwpkztSIVwmtO488hYnaGEY3qe-VCTZ4N92w6w,1105
+asciiclip-1.0.0.dist-info/METADATA,sha256=mpzpVCaFQDHw5_RjAq-15XNfYkTswTPhHu1x2SSuKqI,4583
+asciiclip-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+asciiclip-1.0.0.dist-info/entry_points.txt,sha256=zMPfHWnbNQ9vcj24JuYOErcQWisyBJMTr5WhZfjwZlI,44
+asciiclip-1.0.0.dist-info/top_level.txt,sha256=9oQ_FNT16Rd5oaH2RO5M65pchAl0SNtg9LysL2pfNFk,9
+asciiclip-1.0.0.dist-info/RECORD,,
