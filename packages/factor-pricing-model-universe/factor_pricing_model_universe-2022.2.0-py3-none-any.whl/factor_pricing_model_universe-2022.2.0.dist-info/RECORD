@@ -1,0 +1,12 @@
+fpm_universe/__init__.py,sha256=LH2Cv7RUUM2sCVy9imUa4ZMpIhSmpA0fM-qn81UZDu0,25
+fpm_universe/cli.py,sha256=EntS4G1XXbDpY7_CWs_wZ7wrQMNpXUgIZ44Ii_8YKBI,2653
+fpm_universe/config.py,sha256=HI3jZYGSHtb4dcQKDuhfsx5faWh7_r_l9YrbaIubLok,12356
+fpm_universe/data.py,sha256=dnaAaSR_TCliLqCcxqltK9ib1x_dW935TZ3pofkacpE,6739
+fpm_universe/pipeline.py,sha256=Hq2hP_G4xRg7UzFhZDHkIyFasG4ox39Xpx6eH4jYK8A,7664
+fpm_universe/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fpm_universe/utils.py,sha256=LFfe0P0GZHiiD46lwl54zVjHxGKYU8t6ypO0KFmk39k,633
+factor_pricing_model_universe-2022.2.0.dist-info/entry_points.txt,sha256=IcfYEgKpSoXaIfOCQWCdPLqmYOdcpiQDu101hJun_GA,71
+factor_pricing_model_universe-2022.2.0.dist-info/LICENSE,sha256=aaz3EGOTws_5mwdZfMNZDugZ_Vv928xZkCVWJkLUhU8,1078
+factor_pricing_model_universe-2022.2.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+factor_pricing_model_universe-2022.2.0.dist-info/METADATA,sha256=m6qUzIDsMgyr085pd347y3Lz1Ep_Ia3hLSg1xSsPlHk,9958
+factor_pricing_model_universe-2022.2.0.dist-info/RECORD,,
