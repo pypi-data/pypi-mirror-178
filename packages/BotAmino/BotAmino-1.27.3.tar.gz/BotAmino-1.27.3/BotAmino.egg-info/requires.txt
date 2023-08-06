@@ -1,0 +1,4 @@
+requests
+websocket-client
+pathlib
+easy-events>=1.8.0
