@@ -1,0 +1,3 @@
+
+[:platform_version == "Windows"]
+pyreadline3>=3.4.1
