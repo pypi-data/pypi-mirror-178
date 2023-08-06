@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "maxlog"
+version = "0.2.0"
+description = "Helper module for logging using Loguru sinks."
+authors = ["maxludden <dev@maxludden.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+rich = {extras = ["all"], version = "^12.6.0"}
+maxconsole = "^0.4.0"
+maxcolor = "^1.0.0"
+myaml = "^1.0.1"
+maxprogress = "^0.4.0"
+loguru = "^0.6.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
