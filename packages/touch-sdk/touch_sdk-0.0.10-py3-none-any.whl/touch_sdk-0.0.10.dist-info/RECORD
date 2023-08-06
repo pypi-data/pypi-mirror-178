@@ -1,0 +1,6 @@
+examples/basic.py,sha256=je4Ue4VrG9cTJQStKH9roV_oBOaPW2mlZ1iJNfwo39A,826
+examples/touch_sdk/__init__.py,sha256=1czE3bPdO0xjQUU-EiNnKrhkbzAQKz6SpMpmZV8ThO4,5134
+touch_sdk-0.0.10.dist-info/METADATA,sha256=KNNSY8Qg8kUQC8FWDKQRtdiPTxh4ZO8CaR1C2owCOH4,2447
+touch_sdk-0.0.10.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+touch_sdk-0.0.10.dist-info/licenses/LICENSE,sha256=dITx6S5gw76D-NYCY41fQdXbS3GMYAmbXWM69sY1Zlc,740
+touch_sdk-0.0.10.dist-info/RECORD,,
