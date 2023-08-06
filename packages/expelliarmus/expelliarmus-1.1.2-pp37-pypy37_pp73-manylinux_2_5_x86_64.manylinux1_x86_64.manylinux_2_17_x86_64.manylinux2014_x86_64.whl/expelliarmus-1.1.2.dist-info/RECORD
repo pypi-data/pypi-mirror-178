@@ -1,0 +1,12 @@
+expelliarmus.pypy37-pp73-x86_64-linux-gnu.so,sha256=A1E_uiL1thvKYtRI_vdnbRGcpeQanK6DnNQcVLwk3pA,20744
+expelliarmus/__init__.py,sha256=GaU-SpdnXviicW8e5VLhz3G2QVh-Jg2uDI0pMP_G0MQ,34
+expelliarmus/utils.py,sha256=VdV2sVLs2PDhukNpT1SBAYIrfZh324usG5X-vLy6F4k,3761
+expelliarmus/wizard/clib.py,sha256=cN7KRbDPonrEkN2ZX7QwcXFqpnbkK4_clYfaPPUow6I,2707
+expelliarmus/wizard/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+expelliarmus/wizard/wizard.py,sha256=fmt4hIjGVpBLVRnPU-JG3POwWxWqoVkDdEv3YFsNikQ,7433
+expelliarmus/wizard/wizard_wrapper.py,sha256=6f6cm_9O6Zrw99Z-gxaEa6PhhuNhu58EgSc_o8kWYac,5576
+expelliarmus-1.1.2.dist-info/top_level.txt,sha256=W5Ux57ruAY9nFWYnbEdY5DcbfRxxU1ESO8_d70M4Tg8,13
+expelliarmus-1.1.2.dist-info/METADATA,sha256=ipjspmsCC4vnd7UAiOqaRCAbWlu5kO9aiLNbEwBiZ-4,7006
+expelliarmus-1.1.2.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+expelliarmus-1.1.2.dist-info/RECORD,,
+expelliarmus-1.1.2.dist-info/WHEEL,sha256=A3icTRG3Pitw4LTLQaUO-nfbONcUd5uHbu7WFeET7hA,245
