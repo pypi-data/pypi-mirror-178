@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/pyCRT/__init__.py
+src/pyCRT/arrayOperations.py
+src/pyCRT/arrayPlotting.py
+src/pyCRT/curveFitting.py
+src/pyCRT/frameOperations.py
+src/pyCRT/simpleUI.py
+src/pyCRT/test.py
+src/pyCRT/videoReading.py
+src/pyCRT.egg-info/PKG-INFO
+src/pyCRT.egg-info/SOURCES.txt
+src/pyCRT.egg-info/dependency_links.txt
+src/pyCRT.egg-info/requires.txt
+src/pyCRT.egg-info/top_level.txt
