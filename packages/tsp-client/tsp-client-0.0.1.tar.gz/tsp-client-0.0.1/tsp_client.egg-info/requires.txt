@@ -1,0 +1,9 @@
+asn1crypto>=0.24.0
+urllib3>=1.22
+
+[tests]
+flake8
+coverage
+build
+wheel
+mypy
