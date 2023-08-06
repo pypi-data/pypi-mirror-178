@@ -1,0 +1,10 @@
+aws_cdk/aws_frauddetector/__init__.py,sha256=-gxmfamylYghxZrfWzniGKY1tvJjyjAvEkVb3ur6Ss4,237388
+aws_cdk/aws_frauddetector/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_frauddetector/_jsii/__init__.py,sha256=vw6cqABzUDkuJ7KPiNr-_A1o-aAwwAR31xiyewWMt9o,408
+aws_cdk/aws_frauddetector/_jsii/aws-frauddetector@1.181.1.jsii.tgz,sha256=kwIvAKZj8CWIseptxzBoynFkzRFRfS-Ch_jQuQgpkvM,81101
+aws_cdk.aws_frauddetector-1.181.1.dist-info/LICENSE,sha256=wX3LqRrxZ97zcDpw0dQ58Zb9AQalEDmXs6nP39muv7o,11391
+aws_cdk.aws_frauddetector-1.181.1.dist-info/METADATA,sha256=xVCQeAelLKaGBTdVRQOhA29pfmuESn6dArW5KSoLWzs,3186
+aws_cdk.aws_frauddetector-1.181.1.dist-info/NOTICE,sha256=piksgoXop22-zO1J9i3rVrv57wUN9siPK1pqGzZ7-AE,113
+aws_cdk.aws_frauddetector-1.181.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aws_cdk.aws_frauddetector-1.181.1.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_frauddetector-1.181.1.dist-info/RECORD,,
