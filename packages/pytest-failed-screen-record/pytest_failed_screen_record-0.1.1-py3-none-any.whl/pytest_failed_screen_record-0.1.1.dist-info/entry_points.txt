@@ -1,0 +1,3 @@
+[pytest11]
+failed_screen_record=pytest_failed_screen_record
+
