@@ -1,0 +1,14 @@
+tksbrokerapi/TKSBrokerAPI.py,sha256=cDOo1vBgP2mkJ42hHWdIJAGrWxXQ_zMxclvZqx_Rok4,303169
+tksbrokerapi/TKSEnums.py,sha256=P-nTnZnD0M7dLDsfDvqvUVJMAbzFB0RQtIP51B1iAp8,13477
+tksbrokerapi/Templates.py,sha256=Mwwtbca_Eu3YEdXTmkqDkjU8Gn8k6LlJZ5vbBTO_OJ0,7657
+tksbrokerapi/TradeRoutines.py,sha256=rg440IJk3uLKN8L2Py-RztTPBST-PVevoZHiOOW0lzo,6903
+tksbrokerapi/UniLogger.py,sha256=BXmWW3H5a2xctOVIlQUKNGqlUWAGBmRo5OcXFcPLLAo,3805
+tksbrokerapi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tksbrokerapi/__main__.py,sha256=8EWfc4jfhwtrc3GjKL0_P1KDAfgG62B6BhPzRPZb95E,82
+tksbrokerapi-1.6.dev127.dist-info/LICENSE,sha256=WYmcYJG1QFgu1hfo7qrEkZ3Jhcz8NUWe6XUraZvlIFs,10172
+tksbrokerapi-1.6.dev127.dist-info/METADATA,sha256=BL1HmICvMUQ3qrtoduTKta9A8feepzs9wkUuKP0aB1g,1855
+tksbrokerapi-1.6.dev127.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tksbrokerapi-1.6.dev127.dist-info/entry_points.txt,sha256=KSvCtnOLfl10fXOq9Dhxhrmg2fDeM_6fbqc3YrsPeuk,65
+tksbrokerapi-1.6.dev127.dist-info/top_level.txt,sha256=DG9nAS-BIN7-yqtCbCEMHnVM6yIzbBXFdpbIHgs_vCU,13
+tksbrokerapi-1.6.dev127.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+tksbrokerapi-1.6.dev127.dist-info/RECORD,,
