@@ -1,0 +1,4 @@
+PyJWT<2
+cachecontrol<1
+cryptography<3
+eve<2
