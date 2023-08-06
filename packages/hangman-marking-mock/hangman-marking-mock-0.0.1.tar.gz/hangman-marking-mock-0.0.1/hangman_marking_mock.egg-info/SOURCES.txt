@@ -1,0 +1,8 @@
+setup.py
+hangman_marking_mock.egg-info/PKG-INFO
+hangman_marking_mock.egg-info/SOURCES.txt
+hangman_marking_mock.egg-info/dependency_links.txt
+hangman_marking_mock.egg-info/requires.txt
+hangman_marking_mock.egg-info/top_level.txt
+test_hangman/__init__.py
+test_hangman/test_mocks.py

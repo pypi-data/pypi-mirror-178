@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: hangman-marking-mock
+Version: 0.0.1
+Summary: An automated marking system for the hangman project (test)
+Home-page: UNKNOWN
+Author: Ivan Ying
+Author-email: ivan@theaicore.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
