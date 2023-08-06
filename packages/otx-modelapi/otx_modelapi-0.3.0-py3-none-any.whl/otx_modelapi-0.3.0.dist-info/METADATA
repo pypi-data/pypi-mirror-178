@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: otx-modelapi
+Version: 0.3.0
+Summary: Model API: model wrappers and pipelines from Open Model Zoo
+Home-page: https://github.com/openvinotoolkit/open_model_zoo/tree/develop/demos/common/python/openvino
+Author: Intel® Corporation
+Maintainer: Songki Choi
+Maintainer-email: songkich.choi@intel.com
+License: OSI Approved :: Apache Software License
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: opencv-python (==4.5.*)
+Requires-Dist: scipy (~=1.5.4)
+Requires-Dist: numpy (<1.20,>=1.16.6) ; python_version <= "3.6"
+Requires-Dist: numpy (<=1.21,>=1.16.6) ; python_version > "3.6"
+Provides-Extra: ovms
+Requires-Dist: ovmsclient ; extra == 'ovms'
+
+Temporary PyPI package based on releases/2022/SCv1.1 branch
