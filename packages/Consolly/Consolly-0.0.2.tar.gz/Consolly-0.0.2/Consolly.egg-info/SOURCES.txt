@@ -1,0 +1,7 @@
+setup.py
+Consolly/__init__.py
+Consolly.egg-info/PKG-INFO
+Consolly.egg-info/SOURCES.txt
+Consolly.egg-info/dependency_links.txt
+Consolly.egg-info/requires.txt
+Consolly.egg-info/top_level.txt
