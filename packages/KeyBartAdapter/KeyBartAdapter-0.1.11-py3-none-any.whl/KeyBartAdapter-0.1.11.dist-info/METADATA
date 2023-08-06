@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: KeyBartAdapter
+Version: 0.1.11
+Summary: A package for KeyBartAdapter
+Home-page: https://github.com/leoxiang66/KeyBartAdapter
+Author: Tao Xiang
+Author-email: tao.xiang@tum.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: torch
+Requires-Dist: transformers
+Requires-Dist: datasets
+
+# KeyBartAdapter
+A neural model that extends KeyBart with adapter layers.
+
+
