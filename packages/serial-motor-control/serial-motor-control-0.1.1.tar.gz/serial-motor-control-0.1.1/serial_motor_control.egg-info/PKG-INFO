@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: serial-motor-control
+Version: 0.1.1
+Summary: Motion control used old Api for STM32 firmware
+Home-page: https://github.com/Adam-Software/Serial-motor-control
+Author: vertigra
+Author-email: a@nesterof.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Serial-motor-control [![old api](https://img.shields.io/badge/old-api-blue?style=for-the-badge&logoColor=white)](https://github.com/Adam-Software) [![Platforms](https://img.shields.io/badge/Raspberry%20Pi-A22846?style=for-the-badge&logo=Raspberry%20Pi&logoColor=white)](https://img.shields.io/badge/Raspberry%20Pi-A22846?style=for-the-badge&logo=Raspberry%20Pi&logoColor=white) [![Language](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) [![adam package](https://img.shields.io/badge/adam_package-red?style=for-the-badge&logo=python&logoColor=white)](https://github.com/Adam-Software)
+
+Motion control used old Api for STM32 firmware
+
+

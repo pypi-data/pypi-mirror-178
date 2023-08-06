@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+serial_motor_control/MotorControl.py
+serial_motor_control/__init__.py
+serial_motor_control.egg-info/PKG-INFO
+serial_motor_control.egg-info/SOURCES.txt
+serial_motor_control.egg-info/dependency_links.txt
+serial_motor_control.egg-info/requires.txt
+serial_motor_control.egg-info/top_level.txt
