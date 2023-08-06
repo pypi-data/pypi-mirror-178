@@ -1,0 +1,8 @@
+xor_cipher/__init__.py,sha256=isd9O5_JMdoeQJVWld_hbvZjac4_wgmZk1evJuWZtqQ,702
+xor_cipher/core.py,sha256=t0IwlLvOwab5BuEtkM5dFp4lePLiLfSAhW_XTgpDe1U,5357
+xor_cipher/extension.cpython-37m-darwin.so,sha256=6TDuDe7wdFyGNtA792AfoPgfe3dAvqlEDZdLHNFK62A,77776
+xor_cipher/extension.pyx,sha256=RCa_WNtdgBUeE0malKAWnYB1wdzdW4LaB9rGo1Uh5I0,2551
+xor_cipher-2.2.0.dist-info/LICENSE,sha256=xP524dz1Ja59B5qRrjy_Ho04TWOC2ZAiEV0-Y59kkmo,1106
+xor_cipher-2.2.0.dist-info/WHEEL,sha256=IMzBRk-2AT-YC6kXh3f64_eNRGYxsY_FHOEQ67jGZgI,107
+xor_cipher-2.2.0.dist-info/METADATA,sha256=clBEm2xBPJycjGVlPzoDtqJOAE8_SHMPiqfUBAaX0S4,4974
+xor_cipher-2.2.0.dist-info/RECORD,,
