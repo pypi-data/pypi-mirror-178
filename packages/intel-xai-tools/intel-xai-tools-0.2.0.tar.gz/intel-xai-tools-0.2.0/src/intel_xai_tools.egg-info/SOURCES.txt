@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+data/data_file
+src/intel_xai_tools.egg-info/PKG-INFO
+src/intel_xai_tools.egg-info/SOURCES.txt
+src/intel_xai_tools.egg-info/dependency_links.txt
+src/intel_xai_tools.egg-info/entry_points.txt
+src/intel_xai_tools.egg-info/requires.txt
+src/intel_xai_tools.egg-info/top_level.txt
