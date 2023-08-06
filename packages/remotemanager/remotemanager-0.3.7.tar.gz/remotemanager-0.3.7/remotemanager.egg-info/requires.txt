@@ -1,0 +1,17 @@
+pyyaml
+numpy
+
+[all]
+dill
+
+[dev]
+dill
+sphinx
+nbsphinx
+sphinx-rtd-theme
+pytest
+pytest-cov
+nbval
+
+[dill]
+dill
