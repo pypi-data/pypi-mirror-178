@@ -1,0 +1,8 @@
+setup.py
+YAWeP/YAWeP.py
+YAWeP/__init__.py
+YAWeP.egg-info/PKG-INFO
+YAWeP.egg-info/SOURCES.txt
+YAWeP.egg-info/dependency_links.txt
+YAWeP.egg-info/requires.txt
+YAWeP.egg-info/top_level.txt
