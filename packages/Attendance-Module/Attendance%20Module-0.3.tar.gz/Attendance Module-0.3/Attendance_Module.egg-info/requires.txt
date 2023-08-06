@@ -1,0 +1,10 @@
+flask
+pydantic
+flask_cors
+gitpython
+pyyaml
+requests
+
+[test]
+coverage
+pytest
