@@ -1,0 +1,16 @@
+philip_pal2/__init__.py,sha256=l6ZeoF8dnAHWbeK_ykWTSVmx4ewx2pJkLn6bXmH_8V4,653
+philip_pal2/__main__.py,sha256=x6CbcSPmVT1p2xamSmQcx21qILaa-S-SJ79jWgK-awY,1893
+philip_pal2/philip_cli.py,sha256=VLcUboxnnXY0bKhOLX_nA8HXjbyJ91N6WL6sIEZ5p1M,12727
+philip_pal2/philip_if.py,sha256=No98SNvibZ4xJwmHSCwyiv0cQGIfDiQZQ7snyaMqG4U,10692
+philip_pal2/mem_map/mm_PHiLIP_philip_map_2_0_0.csv,sha256=qUULoS4WYNtwhjDaryT8DISzumLdRLsTaNW049au7Sc,19416
+philip_pal2/mem_map/mm_PHiLIP_philip_map_2_0_1.csv,sha256=iK7G8shRkl44FIMwFUTYRy9ab585WC-8zkiW5BfzP6g,19466
+philip_pal2/mem_map/mm_PHiLIP_philip_map_5ea942551b11de32981e5fe84c0ad1b2.csv,sha256=PkaOO1d-pdVEdVkCidBmnwpq8MQgJJRp31UZij77Znw,232063
+philip_pal2/mem_map/mm_PHiLIP_philip_map_aa9f3eb5aa01fd55e4fc3badb08d6468.csv,sha256=wk2RfhcvYFbh5XsmWyNR_vx-rDfr-P4bmPvoonFhcPs,232199
+philip_pal2/mem_map/mm_PHiLIP_philip_map_compressed_2_0_0.csv,sha256=Q_mGi8p93GpMlBqS67vLBsggDJuB9_N51jTGmkpdZT0,38625
+philip_pal2/mem_map/mm_PHiLIP_philip_map_compressed_2_0_1.csv,sha256=hx9wpJkCp7f4q6eGiEOqNPnmYEfiSvelfATzfbviAjA,38761
+philip_pal2-0.0.2.dist-info/LICENSE.txt,sha256=jmmN3B_KoXa3xrtgoqqPf7jghizqSnEeaKIlrQh39Hk,1078
+philip_pal2-0.0.2.dist-info/METADATA,sha256=kjyQz9zy5Md7Q7oP2JAr-1OtlALOHas_t1MCYpF1nV0,3429
+philip_pal2-0.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+philip_pal2-0.0.2.dist-info/entry_points.txt,sha256=Ntq6UkSOrEupyBPBefLqBFb3yMxN5_K5-zTYb45RqWI,59
+philip_pal2-0.0.2.dist-info/top_level.txt,sha256=Dx9fcbVeLugT3FUPnkfpn8-KGiZKjBwJPIV2iM43lPY,12
+philip_pal2-0.0.2.dist-info/RECORD,,
