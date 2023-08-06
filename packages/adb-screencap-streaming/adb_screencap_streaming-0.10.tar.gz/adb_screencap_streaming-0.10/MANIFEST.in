@@ -1,0 +1,4 @@
+include adb_screencap_streaming/requirements.txt
+include adb_screencap_streaming/thirdparty.json
+include adb_screencap_streaming/README.MD
+include adb_screencap_streaming/LICENSE

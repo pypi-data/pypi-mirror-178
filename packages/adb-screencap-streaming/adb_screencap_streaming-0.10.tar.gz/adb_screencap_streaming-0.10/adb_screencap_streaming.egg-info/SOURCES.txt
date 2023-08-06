@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+adb_screencap_streaming/LICENSE
+adb_screencap_streaming/README.MD
+adb_screencap_streaming/__init__.py
+adb_screencap_streaming/requirements.txt
+adb_screencap_streaming/thirdparty.json
+adb_screencap_streaming.egg-info/PKG-INFO
+adb_screencap_streaming.egg-info/SOURCES.txt
+adb_screencap_streaming.egg-info/dependency_links.txt
+adb_screencap_streaming.egg-info/requires.txt
+adb_screencap_streaming.egg-info/top_level.txt
