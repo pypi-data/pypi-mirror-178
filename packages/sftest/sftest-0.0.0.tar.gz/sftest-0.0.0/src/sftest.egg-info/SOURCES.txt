@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+requirements.txt
+setup.cfg
+src/sftest/__init__.py
+src/sftest/sftest.py
+src/sftest.egg-info/PKG-INFO
+src/sftest.egg-info/SOURCES.txt
+src/sftest.egg-info/dependency_links.txt
+src/sftest.egg-info/requires.txt
+src/sftest.egg-info/top_level.txt
