@@ -1,0 +1,1 @@
+read me [Here](https://github.com/gwubc/MergeGoogleDocWithIpynb/blob/master/README.ipynb)
