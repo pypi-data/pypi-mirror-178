@@ -1,0 +1,5 @@
+selenium
+boto3
+configparser
+webdriver_manager
+argparse
