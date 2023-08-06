@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+Requerir.txt
+setup.py
+test_1.py
+Mensajes_eduparra09.egg-info/PKG-INFO
+Mensajes_eduparra09.egg-info/SOURCES.txt
+Mensajes_eduparra09.egg-info/dependency_links.txt
+Mensajes_eduparra09.egg-info/requires.txt
+Mensajes_eduparra09.egg-info/top_level.txt
+test/__init__.py
+test/test_hola.py
