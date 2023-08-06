@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+fantable/__init__.py
+fantable/fandatab.py
+fantable.egg-info/PKG-INFO
+fantable.egg-info/SOURCES.txt
+fantable.egg-info/dependency_links.txt
+fantable.egg-info/top_level.txt
