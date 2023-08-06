@@ -1,0 +1,3 @@
+[console_scripts]
+mfdtool=mfdtool.tool:cli
+
