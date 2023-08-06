@@ -1,0 +1,9 @@
+ashford/__init__.py,sha256=gbBKrqrmQsKPjfVD1WtHJj7j4utNtFBkOQ6ArEiK4rA,2388
+ashford/core.py,sha256=qxR9NKoKEQuhuQ2xdYXBwflBYTTvL6Wvnc06vmhrpHk,10904
+ashford/foundry.py,sha256=moX-cDTdmgu2plu8PhGu6nB0btGzTIr3o8r2pk4RQnU,17783
+ashford/registry.py,sha256=DUgWWn0SUoYSLna5PndbSIM4LIfuc1KhR7NkvkUpW9o,6320
+ashford/validate.py,sha256=y2pIng83yuWiYrbaH8MfZlkn3OE7EGw1CReTtEjKFAQ,2258
+ashford-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ashford-0.1.1.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+ashford-0.1.1.dist-info/METADATA,sha256=SZAagI60HI-z2YvNy41xKXQMYFdo-cJRCOUSx9JANoc,4135
+ashford-0.1.1.dist-info/RECORD,,
