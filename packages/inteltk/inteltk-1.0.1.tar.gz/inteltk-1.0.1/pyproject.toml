@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "inteltk"
+version = "1.0.1"
+authors = [
+  { name="Martin Kovács", email="martin.k.kovacs@gmail.com" },
+]
+description = "A toolkit for creating interactive shells"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pyreadline3 >= 3.4.1; platform_version == 'Windows'"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/martinkovacs/inteltk"
