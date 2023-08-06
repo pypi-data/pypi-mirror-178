@@ -1,0 +1,10 @@
+aws_cdk/integ_tests/__init__.py,sha256=pIRRHFakhnkDryQqezN7Tcn4WvytGfJ2cIdDL_fgYC4,158301
+aws_cdk/integ_tests/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/integ_tests/_jsii/__init__.py,sha256=PSJBZ2URfvcVxG-mMB_Kxk2RQygwC-rq7euWzm0ovLM,450
+aws_cdk/integ_tests/_jsii/integ-tests@1.181.1.jsii.tgz,sha256=Y5ttHYhhU4MHZdW73iSCgsjT-fNh0XFycqUcP0kegfU,104564
+aws_cdk.integ_tests-1.181.1.dist-info/LICENSE,sha256=wX3LqRrxZ97zcDpw0dQ58Zb9AQalEDmXs6nP39muv7o,11391
+aws_cdk.integ_tests-1.181.1.dist-info/METADATA,sha256=c951UC_i8fI9mgya0D-RSJNK3E0CxbZ7rTeLQt6X7f0,12500
+aws_cdk.integ_tests-1.181.1.dist-info/NOTICE,sha256=piksgoXop22-zO1J9i3rVrv57wUN9siPK1pqGzZ7-AE,113
+aws_cdk.integ_tests-1.181.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aws_cdk.integ_tests-1.181.1.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.integ_tests-1.181.1.dist-info/RECORD,,
