@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+bluestacks_fast_screenshot/LICENSE
+bluestacks_fast_screenshot/README.MD
+bluestacks_fast_screenshot/__init__.py
+bluestacks_fast_screenshot/requirements.txt
+bluestacks_fast_screenshot/thirdparty.json
+bluestacks_fast_screenshot.egg-info/PKG-INFO
+bluestacks_fast_screenshot.egg-info/SOURCES.txt
+bluestacks_fast_screenshot.egg-info/dependency_links.txt
+bluestacks_fast_screenshot.egg-info/requires.txt
+bluestacks_fast_screenshot.egg-info/top_level.txt
