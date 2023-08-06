@@ -1,0 +1,8 @@
+[console_scripts]
+csv-remove-column = source.utilities.csv.remove_column:run
+csv-remove-nulls = source.utilities.csv.remove_nulls:run
+csv-shift-column = source.utilities.csv.shift_column:run
+csv-split = source.utilities.csv.split:run
+csv-validate = source.utilities.csv.validate:run
+ndjson-remove-key = source.utilities.ndjson.remove_key:run
+ndjson-validate = source.utilities.ndjson.validate:run
