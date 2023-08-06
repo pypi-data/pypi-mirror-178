@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/streamlit_3d/__init__.py
+src/streamlit_3d.egg-info/PKG-INFO
+src/streamlit_3d.egg-info/SOURCES.txt
+src/streamlit_3d.egg-info/dependency_links.txt
+src/streamlit_3d.egg-info/requires.txt
+src/streamlit_3d.egg-info/top_level.txt
+src/streamlit_3d/frontend/index.html
+src/streamlit_3d/frontend/main.js
+src/streamlit_3d/frontend/streamlit-component-lib.js
+src/streamlit_3d/frontend/style.css
