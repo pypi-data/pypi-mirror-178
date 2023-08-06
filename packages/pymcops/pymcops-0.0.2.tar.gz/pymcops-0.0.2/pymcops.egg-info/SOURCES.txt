@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+pymcops/__init__.py
+pymcops/pymc.py
+pymcops/test_pymc.py
+pymcops.egg-info/PKG-INFO
+pymcops.egg-info/SOURCES.txt
+pymcops.egg-info/dependency_links.txt
+pymcops.egg-info/top_level.txt
