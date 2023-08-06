@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: dott-ng-runtime
+Version: 1.1.0
+Summary: Runtime Environment for Debugger-based on Target Testing (DOTT)
+Home-page: https://github.com/twinkler-ams-osram/dott
+Author: Thomas Winkler
+Author-email: thomas.winkler@ams.com
+Platform: Linux
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: dott-ng-runtime (==1.1.0)
+Requires-Dist: pygdbmi (==0.10.0.1)
+Requires-Dist: pylink-square (==0.11.1)
+Requires-Dist: pytest
+Requires-Dist: pytest-cov
+Requires-Dist: pytest-instafail
+Requires-Dist: pytest-repeat
+Requires-Dist: pyserial
+Requires-Dist: pigpio
+Requires-Dist: matplotlib
+
