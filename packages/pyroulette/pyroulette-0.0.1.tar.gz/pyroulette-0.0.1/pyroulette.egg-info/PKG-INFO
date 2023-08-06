@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: pyroulette
+Version: 0.0.1
+Summary: A package for exploring roulette strategies.
+Home-page: https://github.com/mathematicalmichael/pyroulette
+Author: Mathematical Michael
+Author-email: consistentbayes@gmail.com
+License: MIT
+Description: # pyroulette
+        
+        ## Explanation
+        
+        - A `Player` has a `Strategy` which is comprised of a list of `Placements`, which represent a collective `Bet`.
+        - The player will stick to their strategy.
+        - Winnings are re-invested (todo: allow specifying player's pyschology, e.g. pocket winnings of certain proportion)
+        - A player's placement cannot be too complicated (max is 10)
+        - A `Strategy` is formed at random based on exhausting the strategy budget, which is determined by considering the player's total budget and the minimum number of games they desire to play.
+          - It is possible to have some money left over (either due to reaching the maximum number of placements or not having enough money to place a bet with the remaining available chips), meaning the strategy budget is less than the cost to play the strategy.
+          - When players cannot play their strategy anymore, they leave the game, meaning they can end the simulation with some remaining money (e.g. $100 to play a $40 strategy that you lose twice in a row will leave you with $20 remaining).
+        
+        - When using `generate_players`, all players will have the same number of minimum games and budget.
+        
+        
+        # how to use
+        
+        ```
+        pip install pyroulette
+        ```
+        
+        ```python
+        from pyroulette import generate_players, play_roulette
+        
+        players = generate_players(
+            number_of_players=10,
+            minimum_number_of_games=10,
+            budget=100,
+        )
+        
+        for player in results:
+            print(player)
+        
+        results = play_roulette(
+            players=players,
+            number_of_games=1000,
+        )
+        
+        
+        ```
+        
+        
+        # uploading to pypi
+        
+        ```
+        pip install build
+        python -m build --sdist --wheel -n
+        twine upload dist/*
+        ```
+        
+Platform: UNKNOWN
+Requires-Python: >=3.6, <4.0
+Description-Content-Type: text/markdown

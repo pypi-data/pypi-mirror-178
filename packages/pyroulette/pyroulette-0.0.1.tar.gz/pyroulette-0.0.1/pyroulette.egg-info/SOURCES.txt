@@ -1,0 +1,9 @@
+README.md
+setup.py
+pyroulette/__init__.py
+pyroulette/roulette.py
+pyroulette.egg-info/PKG-INFO
+pyroulette.egg-info/SOURCES.txt
+pyroulette.egg-info/dependency_links.txt
+pyroulette.egg-info/requires.txt
+pyroulette.egg-info/top_level.txt
