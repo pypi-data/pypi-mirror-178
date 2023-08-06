@@ -1,0 +1,12 @@
+aiohttp<4,>=3.6
+aionotify<0.3,>=0.2
+aioredis<3,>=2
+babel<3,>=2.8
+pyjwt<3,>=2
+python-dateutil<3,>=2.8
+pytz
+ujson<6,>=5
+unidecode<2,>=1.0
+uvloop<1,>=0.14
+sentry-sdk<2,>=1
+facepy<1.1,>=1.0.10
