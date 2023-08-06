@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "zoho_crm"
+description = "Unofficial Zoho CRM API client in Python"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+
+dependencies = [
+    "requests>=2.28.1"
+]
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://github.com/mrmilu/zoho_client"
+
+[tool.hatch.version]
+path = "zoho_crm/__init__.py"

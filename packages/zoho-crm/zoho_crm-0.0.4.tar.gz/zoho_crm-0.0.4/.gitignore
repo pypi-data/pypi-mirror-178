@@ -1,0 +1,19 @@
+# virtual environment
+venv/
+
+# IDE local config
+.vscode/
+
+# test coverage
+.coverage
+coverage.*
+
+# cache
+.pytest_cache/
+__pycache__/
+
+# package
+/build/
+/dist/
+/*.egg-info/
+MANIFEST
