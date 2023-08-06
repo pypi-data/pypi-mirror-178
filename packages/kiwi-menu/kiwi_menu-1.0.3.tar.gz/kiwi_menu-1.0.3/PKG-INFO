@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: kiwi_menu
+Version: 1.0.3
+Summary: A simple terminal menu for python
+Home-page: UNKNOWN
+Author: mi66mc
+Author-email: miguelmalgarezi@gmail.com
+License: MIT
+Keywords: menu
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+# kiwi menu
+'kiwi menu' is a python library that you can use to create simple menus in the terminal screen.
+
+## Install
+`pip install kiwi_menu`
+
+## Example
+```py
+from kiwi_menu import Menu
+
+fruits = ["apple", "banana", "kiwi"]
+menu = Menu(
+    "Choose a fruit",
+    fruits
+)
+selected = menu.show_menu()
+print("You choosed", fruits[selected])
+```
+Result:
+
+```
+> apple
+  banana
+  kiwi
+
+You choosed apple
+```
+
+Observation: You optionaly can define the `color`, `symbol`, and the `pre-selected number`. And you can put some 'texts' for center, like a description with the argument `centered_texts`, with the texts inside a list.
+
