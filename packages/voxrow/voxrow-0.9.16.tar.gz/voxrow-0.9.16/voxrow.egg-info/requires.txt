@@ -1,0 +1,15 @@
+flake8
+flask
+flask-jwt-extended
+Flask-SQLAlchemy
+Flask-WTF
+cryptography==3.2.1
+sshtunnel
+
+[postgres]
+
+[postgres:sys_platform != "darwin" or platform_machine != "arm64"]
+psycopg2
+
+[postgres:sys_platform == "darwin" and platform_machine == "arm64"]
+psycopg2-binary
