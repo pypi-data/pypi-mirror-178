@@ -1,0 +1,9 @@
+setup.py
+ciqreviews.egg-info/PKG-INFO
+ciqreviews.egg-info/SOURCES.txt
+ciqreviews.egg-info/dependency_links.txt
+ciqreviews.egg-info/top_level.txt
+ciqreviewspkg/__init__.py
+ciqreviewspkg/connect_iq_operations.py
+ciqreviewspkg/main.py
+ciqreviewspkg/test.py
