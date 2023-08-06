@@ -1,0 +1,31 @@
+NAMESPACE: skyant.grpc
+MODULES:
+    -   skyant.grpc
+
+VERSION: 0.0
+MINOR: 0
+
+DESCR: Base objects to make gRPC client-server application
+KEYWORDS: pydantic, api, grpc, GCP
+
+HOME: https://skyant.dev/projects/grpc
+DONATE: https://buymeacoffee.com/skyantdev
+NEWS: https://www.linkedin.com/company/skyantdev
+TALK: https://groups.google.com/a/skyant.dev/g/community?label=grpc
+
+AUTHOR: Iurii Tarasenko
+EMAIL: info@skyant.dev
+
+LICENSE: MIT
+
+PYTHON_REQ: '>=3.10'
+REQUIREMENTS:
+    -   grpcio
+    -   grpcio-reflection
+    -   pydantic
+
+CLASSIFIERS:
+    -   'Programming Language :: Python :: 3.10'
+    -   'Intended Audience :: Developers'
+    -   'Intended Audience :: Information Technology'
+    -   'Topic :: Software Development :: Libraries :: Python Modules'
