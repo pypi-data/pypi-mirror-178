@@ -1,0 +1,4 @@
+requests
+webthing>=0.15.0
+msmart==0.2.5
+importlib-metadata
