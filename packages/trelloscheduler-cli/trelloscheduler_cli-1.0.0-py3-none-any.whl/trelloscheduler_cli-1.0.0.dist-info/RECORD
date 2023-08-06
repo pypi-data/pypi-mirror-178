@@ -1,0 +1,14 @@
+trellocli/__init__.py,sha256=0BkJGgUiFlY1GkODlAO6Aw92Vq5SJ06UwxV131cl9BE,80
+trellocli/__main__.py,sha256=GG2mbF5mOIalAXsouGUhxv30aA3hpo1wo8X1Y-XZBhE,2099
+trellocli/trellobot.py,sha256=Gtzviz7_HvxqcG7_dKAR73s5-9tXo1qDxoI35zxdRhI,3111
+trellocli/exceptions/environmentvarsnotsetexception.py,sha256=LduV04RS47SIOZgsM-mQ8ds5VOXl4cJa_L_hZfZLUrE,496
+trellocli/fparser/daystringutils.py,sha256=93Fgcnct2G31N3sU8ICV8DpB_IekR67WkA_XiCXbpuo,1307
+trellocli/system/environment.py,sha256=a6VhXvI3y5dDPyZNQ1aub1Px7ZUl1_FgHuu0HA2is14,1553
+trellocli/system/jsonloader.py,sha256=NVyZAoOEPKH5IArBpYtSVG3oeoBJ3FgBlGTOTec_DFw,484
+trellocli/system/terminal.py,sha256=ShsWnE-WadqqDgGVGggcBHSE2q7PSeGNr6gm-guNIPY,3834
+trelloscheduler_cli-1.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+trelloscheduler_cli-1.0.0.dist-info/METADATA,sha256=zgSv382cNATFcWGyAjF3hgTaj0WqDIgosLHQE_Hskek,16379
+trelloscheduler_cli-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+trelloscheduler_cli-1.0.0.dist-info/entry_points.txt,sha256=-8L5NX_JYQGNB_072qgDCFNS_iRVbweRxcxpnDF8IsA,63
+trelloscheduler_cli-1.0.0.dist-info/top_level.txt,sha256=2-ERufFOyp3rkO1XDoxBGfvspOHYunwmCgo8IUsJaBA,10
+trelloscheduler_cli-1.0.0.dist-info/RECORD,,
