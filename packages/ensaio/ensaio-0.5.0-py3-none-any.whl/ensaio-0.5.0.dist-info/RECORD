@@ -1,0 +1,12 @@
+ensaio/__init__.py,sha256=9IOMDlrtFzHpMNQrKxoWpv-qE7pWISameNIDDtVVOTQ,739
+ensaio/_fetchers.py,sha256=oc1hBlejsz2ywgd2XinvjYmjV5vnc8a92Eyc-WDoE-c,28852
+ensaio/_version.py,sha256=hcrSZpm32-S6qUPArfumwytdGcUZS6H47iETmJLTQGc,524
+ensaio/_version_generated.py,sha256=__jehE2N3yEZ0MBrM7RPcBaKT7VwxdDERJIORr2pzso,176
+ensaio/tests/__init__.py,sha256=b1PmpQSYo_kL6Oqmvq6Ekgb781n-neMYDy7wjMpLDb8,226
+ensaio/tests/test_fetchers.py,sha256=BRTAyldx8oHb1wOsbEwSoCworxK-cjQ-gyzveX3zhu8,2344
+ensaio-0.5.0.dist-info/LICENSE.txt,sha256=y5oBOhE0BJHhwR4Xa0eDBBsajAKvNpvALqcMITCPfYY,1496
+ensaio-0.5.0.dist-info/METADATA,sha256=2GrujryDaL2qOKO0cqbxi9gDUMtFMY87kaIVt0b-tls,5844
+ensaio-0.5.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ensaio-0.5.0.dist-info/top_level.txt,sha256=rsIGB5Zf8EEB1LmMUCJceJMNIN8spmsVoi79zgtN0BM,7
+ensaio-0.5.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+ensaio-0.5.0.dist-info/RECORD,,
