@@ -1,0 +1,35 @@
+torch
+
+[all]
+black==22.10.0
+identify>=1.4.20
+myst-parser
+pre-commit
+pypandoc>=1.6.3
+sphinx-autobuild
+sphinx>=3.5.4
+sphinx_book_theme
+
+[all:python_version < "3.6"]
+watchdog<1.0.0
+
+[all:python_version >= "3.6"]
+readthedocs-sphinx-search
+
+[dev]
+black==22.10.0
+identify>=1.4.20
+pre-commit
+
+[docs]
+myst-parser
+pypandoc>=1.6.3
+sphinx>=3.5.4
+sphinx-autobuild
+sphinx_book_theme
+
+[docs:python_version < "3.6"]
+watchdog<1.0.0
+
+[docs:python_version >= "3.6"]
+readthedocs-sphinx-search

@@ -1,0 +1,17 @@
+CHANGELOG.rst
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+requirements-dev.txt
+requirements-docs.txt
+requirements.txt
+setup.py
+pytorch_logit_logic/__init__.py
+pytorch_logit_logic/__meta__.py
+pytorch_logit_logic/actfuns.py
+pytorch_logit_logic.egg-info/PKG-INFO
+pytorch_logit_logic.egg-info/SOURCES.txt
+pytorch_logit_logic.egg-info/dependency_links.txt
+pytorch_logit_logic.egg-info/requires.txt
+pytorch_logit_logic.egg-info/top_level.txt
