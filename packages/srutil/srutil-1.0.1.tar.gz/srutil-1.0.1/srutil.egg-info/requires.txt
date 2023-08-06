@@ -1,0 +1,6 @@
+urllib3
+requests
+pyperclip
+wikipedia
+speedtest-cli
+beautifulsoup4
