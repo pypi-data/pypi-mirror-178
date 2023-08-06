@@ -1,0 +1,11 @@
+lzip_extension.cpython-311-x86_64-linux-musl.so,sha256=hu71C8fsSj27zkKZzIZb9EqN3Ksk_SJTxTVNCTJa0tw,932632
+lzip.libs/libgcc_s-a04fdf82.so.1,sha256=E2_sw1FhiQZsCQiywTDdBDMlSUsazp7QUYpklMz_w_s,81256
+lzip.libs/libstdc++-a9383cce.so.6.0.28,sha256=AQF8xpA7y538aY2feICyHGJkLWgDpwHYribC_iWn8Bw,2447392
+lzip-1.2.0.dist-info/top_level.txt,sha256=Kz1kY3I-5q9cR0tYFnKL3uFVOLS-szDfnd9iNgJV2So,20
+lzip-1.2.0.dist-info/METADATA,sha256=XwZsco7VFBEjmmrmamoV1QlMWy0VW0TErYOc7lwTERY,18469
+lzip-1.2.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+lzip-1.2.0.dist-info/RECORD,,
+lzip-1.2.0.dist-info/WHEEL,sha256=wKqQduDN3J2lDuna9fuGj3PU-hJ5aK25LIfW8f_9J88,113
+lzip/version.py,sha256=iEgTRWv0Nfdkvd6jHzn8s_crUlsvtBQXjAd1zynVql4,49
+lzip/__init__.py,sha256=25l8kcZlwvzjx7I9kfHd_Len_BdH-5tw-Tiy-60mtvU,971
+lzip/lzip.py,sha256=i-Q-rS234ud_EJQ6BL09wmmQhcl6iQYLKxbVB7NBTF0,6582
