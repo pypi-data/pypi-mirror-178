@@ -1,0 +1,17 @@
+.gitignore
+README.md
+setup.cfg
+setup.py
+plover_german_syllatype/__init__.py
+plover_german_syllatype/dictionary.py
+plover_german_syllatype/system.py
+plover_german_syllatype.egg-info/PKG-INFO
+plover_german_syllatype.egg-info/SOURCES.txt
+plover_german_syllatype.egg-info/dependency_links.txt
+plover_german_syllatype.egg-info/entry_points.txt
+plover_german_syllatype.egg-info/requires.txt
+plover_german_syllatype.egg-info/top_level.txt
+plover_german_syllatype.egg-info/zip-safe
+plover_german_syllatype/Dictionaries/syllatype_characters.syl
+plover_german_syllatype/Dictionaries/syllatype_commands.syl
+plover_german_syllatype/Dictionaries/syllatype_main.syl
