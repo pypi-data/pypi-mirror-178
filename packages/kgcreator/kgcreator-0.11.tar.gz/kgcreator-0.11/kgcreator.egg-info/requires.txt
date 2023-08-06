@@ -1,0 +1,5 @@
+click
+spacy
+
+[test]
+pytest

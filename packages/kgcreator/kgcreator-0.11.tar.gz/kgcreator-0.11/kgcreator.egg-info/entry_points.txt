@@ -1,0 +1,2 @@
+[console_scripts]
+kgcreator = kgcreator.cli:cli
