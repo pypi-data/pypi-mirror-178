@@ -1,0 +1,12 @@
+LICENSE
+LICENSE.md
+MANIFEST.in
+README.md
+README.pypi.md
+setup.py
+tripcode.py
+tripcode3.egg-info/PKG-INFO
+tripcode3.egg-info/SOURCES.txt
+tripcode3.egg-info/dependency_links.txt
+tripcode3.egg-info/requires.txt
+tripcode3.egg-info/top_level.txt
