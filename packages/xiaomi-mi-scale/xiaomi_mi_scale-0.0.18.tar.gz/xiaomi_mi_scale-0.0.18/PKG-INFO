@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: xiaomi-mi-scale
+Version: 0.0.18
+Summary: Libraries to read weight measurements from Mi Body Composition Scales and Mi Body Fat Scales
+Project-URL: Homepage, https://github.com/lolouk44/xiaomi_mi_scale
+Author-email: Laurent Mahé <laurent.mahe@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# Xiaomi Mi Scale
+
+Libraries to read weight measurements from Mi Body Composition Scales and Mi Body Fat Scales
