@@ -1,0 +1,6 @@
+global-exclude *.env
+global-exclude *.bak
+global-exclude *_test.py
+
+include *.md
+recursive-include example*
