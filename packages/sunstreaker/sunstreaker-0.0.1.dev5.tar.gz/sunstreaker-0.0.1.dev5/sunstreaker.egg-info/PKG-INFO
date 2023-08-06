@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: sunstreaker
+Version: 0.0.1.dev5
+Summary: 源码清晰明了，使用简单好搞
+Home-page: https://github.com/duyongan/sunstreaker
+Author: duyongan (杜永安)【公众号：无数据不智能】
+Author-email: 13261051171@163.com
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+License-File: LICENSE
