@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+GeoNLPlify.egg-info/PKG-INFO
+GeoNLPlify.egg-info/SOURCES.txt
+GeoNLPlify.egg-info/dependency_links.txt
+GeoNLPlify.egg-info/requires.txt
+GeoNLPlify.egg-info/top_level.txt
+geonlplify/__init__.py
+geonlplify/geonlplify.py
+test/__init__.py
+test/manipulate_package.py
