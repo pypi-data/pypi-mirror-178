@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+ankit_db/__init__.py
+ankit_db/deserialize.py
+ankit_db/discover.py
+ankit_db/dynamodb.py
+ankit_db/sync.py
+ankit_db.egg-info/PKG-INFO
+ankit_db.egg-info/SOURCES.txt
+ankit_db.egg-info/dependency_links.txt
+ankit_db.egg-info/entry_points.txt
+ankit_db.egg-info/requires.txt
+ankit_db.egg-info/top_level.txt
+ankit_db/sync_strategies/__init__.py
+ankit_db/sync_strategies/full_table.py
+ankit_db/sync_strategies/log_based.py
