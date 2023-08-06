@@ -1,0 +1,60 @@
+# nudisxs
+
+[![PyPI - Version](https://img.shields.io/pypi/v/nudisxs.svg)](https://pypi.org/project/nudisxs)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/nudisxs.svg)](https://pypi.org/project/nudisxs)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [Use](#use)
+- [License](#license)
+
+
+## Installation
+### Requirements
+- [LHAPDF](https://lhapdf.hepforge.org/). Install it with python support
+
+### from PyPi
+```console
+pip install nudisxs
+```
+### from git:
+```console
+git clone git@git.jinr.ru:dnaumov/nudisxs.git
+cd nudisxs
+python setup.py bdist_wheel
+pip install dist/*
+```
+
+## Use
+- python class ```disxs.py``` provides all necessay interface to Fortran code behind it.
+- initializations:
+  * most used:
+    - init_neutrino()
+    - init_pdf()
+    - init_target()
+
+  * for experts:
+    - init_masses()
+    - init_bend_factor()
+    - init_q2_min()
+    - init_abc()
+    - init_structure_functions()
+    - init_r_function()
+    - init_final_hadron_mass()
+    - init_fl_function()
+    - init_qc()
+- double differential cross-sections
+```math
+\frac{d^2\sigma}{dxdy}
+```
+   are available as  
+  `disxs.xs_cc(e,x,y)` for charged current exchange and
+  `disxs.xs_nc(e,x,y)` for neutral current exchange.
+- an example can be found in `nudisxs/tests/test_dis.py`
+
+## License
+
+`nudisxs` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
