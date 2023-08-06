@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/gaussCLI/__init__.py
+src/gaussCLI/gauss.py
+src/gaussCLI/gaussCli.py
+src/gaussCLI/matrixOperations.py
+src/gaussCLI/printer.py
+src/gauss_cli.egg-info/PKG-INFO
+src/gauss_cli.egg-info/SOURCES.txt
+src/gauss_cli.egg-info/dependency_links.txt
+src/gauss_cli.egg-info/requires.txt
+src/gauss_cli.egg-info/top_level.txt

@@ -1,0 +1,4 @@
+commonmark
+numpy
+rich
+Pygments
