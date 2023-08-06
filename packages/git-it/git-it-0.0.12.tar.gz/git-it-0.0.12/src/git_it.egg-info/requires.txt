@@ -1,0 +1,3 @@
+beetools
+gitpython
+pydantic
