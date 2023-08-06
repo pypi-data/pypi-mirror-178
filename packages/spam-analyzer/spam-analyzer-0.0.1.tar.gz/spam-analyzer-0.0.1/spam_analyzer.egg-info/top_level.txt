@@ -1,0 +1,8 @@
+conf
+dataset
+dist
+docs
+examples
+spamanalyzer
+tests
+venv
