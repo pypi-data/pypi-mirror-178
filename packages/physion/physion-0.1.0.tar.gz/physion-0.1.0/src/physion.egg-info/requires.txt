@@ -1,0 +1,6 @@
+numpy
+scipy
+pynwb
+pyqt5
+pyqtgraph
+pyqtdarktheme
