@@ -1,0 +1,79 @@
+from contextlib import contextmanager
+from abc import ABC, abstractmethod
+from bolt import Runtime
+from bolt.contrib.defer import Defer
+from bolt_raycast.enums import BranchStatus
+
+runtime = ctx.inject(Runtime)
+defer = ctx.inject(Defer)
+
+class BranchMixin(ABC):
+    def __init__(self, inverted = False, branch_status = BranchStatus.Constructed, opposite = None, **kwargs):
+        super().__init__(**kwargs)
+        self._inverted = inverted
+        self._branch_status = branch_status
+        self._opposite = opposite
+    
+    @property
+    def inverted(self):
+        return self._inverted
+    
+    @property
+    def branch_status(self):
+        return self._branch_status
+    
+    @property
+    def opposite(self):
+        return self._opposite
+    
+    @abstractmethod
+    def _create_opposite(self, **kwargs):
+        pass
+
+    def __not__(self):
+        if self._branch_status == BranchStatus.LoneBranch:
+            self._branch_status = BranchStatus.DoubleBranch
+        
+        if self._opposite is None:
+            self._opposite = self._create_opposite(inverted = not self._inverted, branch_status = self._branch_status, opposite = self)
+        else:
+            self._opposite._branch_status = self._branch_status
+        
+        return self._opposite
+
+    @abstractmethod
+    def _lone_branch(self, cmds):
+        pass
+    
+    @abstractmethod
+    def _init_double_branch(self):
+        pass
+    
+    @abstractmethod
+    def _double_branch(self, cmds):
+        pass
+
+    @contextmanager
+    def __branch__(self):
+        # Collecting the body of the branch must be done after checking/updating the status so the body can detect the status of the branch it is contained in
+
+        if self._branch_status == BranchStatus.Constructed:
+            self._branch_status = BranchStatus.LoneBranch
+            with runtime.scope() as cmds:
+                yield True
+
+            @defer
+            def emit_check():
+                if self._branch_status == BranchStatus.LoneBranch:
+                    self._lone_branch(cmds)
+                elif self._branch_status == BranchStatus.DoubleBranch:
+                    self._init_double_branch()
+                    self._double_branch(cmds)
+                else:
+                    raise AssertionError(f"Incorrect branch status: {self._branch_status}, expected {BranchStatus.LoneBranch} or {BranchStatus.DoubleBranch}")
+        elif self._branch_status == BranchStatus.DoubleBranch:
+            with runtime.scope() as cmds:
+                yield True
+            self._double_branch(cmds)
+        else:
+            raise AssertionError(f"Incorrect branch status: {self._branch_status}, expected {BranchStatus.Constructed} or {BranchStatus.DoubleBranch}")
