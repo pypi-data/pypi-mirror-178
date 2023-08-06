@@ -1,0 +1,4 @@
+include window_capture_streaming/requirements.txt
+include window_capture_streaming/thirdparty.json
+include window_capture_streaming/README.MD
+include window_capture_streaming/LICENSE
