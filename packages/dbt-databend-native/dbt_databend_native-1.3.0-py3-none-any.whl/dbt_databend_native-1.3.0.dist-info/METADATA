@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: dbt-databend-native
+Version: 1.3.0
+Summary: The Databend adapter plugin for dbt
+Home-page: https://github.com/databendcloud/dbt-databend.git
+Author: zhihanz
+Author-email: zhangzhihan@datafuselabs.com
+License-File: LICENSE
+Requires-Dist: dbt-core (~=1.3.0)
+
+The Databend adapter plugin for dbt
