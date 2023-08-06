@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ftThanos
+Version: 0.0.81
+Summary: A client for 81 API
+Home-page: UNKNOWN
+Author: Thanos 81
+Author-email: thanos@81paris.fr
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: python-dotenv
+Requires-Dist: requests
+
+UNKNOWN
+
