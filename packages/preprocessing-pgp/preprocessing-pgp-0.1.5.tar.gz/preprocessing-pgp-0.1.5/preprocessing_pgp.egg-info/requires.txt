@@ -1,0 +1,17 @@
+Unidecode
+tqdm
+pandas
+numpy
+regex
+pyarrow
+tensorflow>=2.8
+
+[dev]
+black
+bumpver
+isort
+pip-tools
+pytest
+build
+twine
+autopep8
