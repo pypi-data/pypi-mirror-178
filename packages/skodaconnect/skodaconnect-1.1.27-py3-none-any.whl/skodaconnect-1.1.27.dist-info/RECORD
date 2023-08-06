@@ -1,0 +1,13 @@
+skodaconnect/__init__.py,sha256=afQMLa3va_oOuFPHhkktsyJPhaq73QWIO2HfNqJeHmI,290
+skodaconnect/__version__.py,sha256=FGJTXVsfJV7OvW06XcbTUjCIWYaxcCrzpLGC7d0z4SA,227
+skodaconnect/connection.py,sha256=jVGIyKn37Dim4S2gMqt_2wd6y8NCsrwfPjCFQJ9qIrI,88552
+skodaconnect/const.py,sha256=WuXTotvrNa4ZA5bcxbg6h-HDN6ix_H0VaFdPVnJhVDQ,9092
+skodaconnect/dashboard.py,sha256=0Ox2ILDpCj4yqQPy5d2ZqWSfcH2npuO1H_7-H5YVOSE,40698
+skodaconnect/exceptions.py,sha256=dBCRnuVI7iakwOlgSOuNdT6x824h8SqtEln-UYLLbVc,2940
+skodaconnect/utilities.py,sha256=ewCbsbUIB13FAREK41e6aT_tFw50Gz-BBWApdCpkyBc,2565
+skodaconnect/vehicle.py,sha256=RYwula2SZs7W6_9-EREcV0nJoVKyzg76LuqbvPe8V4M,145240
+skodaconnect-1.1.27.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+skodaconnect-1.1.27.dist-info/METADATA,sha256=Y8NKRI8ySvtrW5qJXiiQ9uzWegCSAE_ytR3LonFHoEA,6927
+skodaconnect-1.1.27.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+skodaconnect-1.1.27.dist-info/top_level.txt,sha256=qQ_sgWbEhz33fv9Iw63pO8RBFL8GeM3ejXdr5wxpWKE,13
+skodaconnect-1.1.27.dist-info/RECORD,,
