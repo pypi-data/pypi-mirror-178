@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: pgOperations
+Version: 0.0.3
+Summary: Simple tool to perform the most common operations in PostgreSQL and PostGIS with Psycopg2. Builds the SQL queries from Pyhton dictionaries.
+Project-URL: Repository, https://github.com/joamona/pgOperations
+Project-URL: Documentation, https://joamona.github.io/pgOperations/
+Author-email: Gaspar Mora-Navarro <joamona@cgf.upv.es>
+License-File: LICENSE
+Keywords: PostGIS,PostgreSQL,Psycopg2,Utilities
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Database
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3
+Requires-Dist: psycopg2
+Description-Content-Type: text/markdown
+
+# Welcome to the pgOperations Python module
+
+It is a simple lightweight Python module to perform the most 
+common operations in `PostgreSQL` and `PostgGIS`, avoiding most of the SQL syntax.
+
+This module class methods allow insert, delete, update, select, create 
+and delete tables and databases. Also, you will be able to know is a table exists, get the field names 
+of a table, and manage counters for your applications. 
+
+The  class methods use Python dictionaries to insert and update data. **This library supposes all python dictionary keys match with the table field names**.
+
+This module requires Python 3 and [Psycopg2](https://pypi.org/project/psycopg2/).
+
+Read the [documentation](https://joamona.github.io/pgOperations/) to know how to use `pgOperations`. In the tutorial you will find
+how to install, and use the class methods. The reference contains the classes and methods
+description.
+
+
+
