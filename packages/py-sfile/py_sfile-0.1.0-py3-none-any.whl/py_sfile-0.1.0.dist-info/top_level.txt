@@ -1,0 +1,3 @@
+libsfile
+plugins
+sfile
