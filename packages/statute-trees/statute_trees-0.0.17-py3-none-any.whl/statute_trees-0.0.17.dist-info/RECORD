@@ -1,0 +1,13 @@
+statute_trees/__init__.py,sha256=41cN6Bbxss7W2rX14CoveBX8__ERArhADSyFowpUPLk,417
+statute_trees/nodes_codification.py,sha256=_vO33I1XEIGaeY7uk3RGuyiDaEwQDeTP0nXBEqXcPNE,3886
+statute_trees/nodes_document.py,sha256=T8fWqhzFzNwJu81rp_9wx-QUz1MMo-uc2BM6If0kLq0,3284
+statute_trees/nodes_statute.py,sha256=0eHxEZdBEaFCyzWoqnxiyJwVeeuyu5M-ztREzOXl9k8,3051
+statute_trees/resources.py,sha256=3CxzIo4rkFTkpmYsrZuJdxAendatZYjVRjjrWXBKWfE,13149
+statute_trees/utils/__init__.py,sha256=6a4R4RMYNDLeFrRG8ScZZhe2hD5mb47H-vIGQROYSlI,125
+statute_trees/utils/get.py,sha256=NnuZWSv9zqKLOFXiav4jZtwq4XpZQkqHFqFoQYwA_50,635
+statute_trees/utils/layer.py,sha256=HtKHto4eWWFC_52tAtrigbGfk840zWwqRzqHmKWbS_I,3826
+statute_trees/utils/set.py,sha256=afpKUmTEXDZruwjq9HX0ZMt-B8GojKuC0Ip5X0Ubp6M,1419
+statute_trees/utils/walk.py,sha256=rMm3ENvdOtbByDcrEX_gcefGkV13Ort2-UUfyGroFEI,1290
+statute_trees-0.0.17.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+statute_trees-0.0.17.dist-info/METADATA,sha256=Bibp8qFp7Wnb7b27Jk_8Qg43ZNszowinjdQA11iDInU,4562
+statute_trees-0.0.17.dist-info/RECORD,,
