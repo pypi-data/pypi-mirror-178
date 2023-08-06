@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: aibotweb
+Version: 1.0
+Summary: 用tcp命令驱动ai-bot，控制浏览器
+Author: chenyuegui
+Author-email: lnj0@foxmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+基于ai-bot控制浏览器
