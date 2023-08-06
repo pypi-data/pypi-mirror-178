@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+BanglaAI.egg-info/PKG-INFO
+BanglaAI.egg-info/SOURCES.txt
+BanglaAI.egg-info/dependency_links.txt
+BanglaAI.egg-info/top_level.txt
+banglaai/__init__.py
+banglaai/pipelines.py
