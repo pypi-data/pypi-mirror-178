@@ -1,0 +1,6 @@
+explicit<2,>=1.0.0
+django
+djangorestframework
+drf-oidc-auth<3.0.0,>=2.0.0.2
+pydantic
+jwcrypto
