@@ -1,0 +1,5 @@
+certifi
+requests
+mutagen
+setuptools
+tqdm
