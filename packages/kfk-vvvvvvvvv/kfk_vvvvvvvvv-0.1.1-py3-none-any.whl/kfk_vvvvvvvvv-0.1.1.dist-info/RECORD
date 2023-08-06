@@ -1,0 +1,10 @@
+kfk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kfk/client.py,sha256=iwNfgG_3DPapPKoD7a5AkiMWF3LJOcJTp-FUDoUsWYA,1318
+kfk/consumer.py,sha256=iCIENtr5nVYayPxb3-Un7P2HsNvt4_chqDfwaFlOkzQ,1128
+kfk/main.py,sha256=73dmIHyrvtDR0fbDyH_ZZGqWfWdu5JMSHFDMZDgShRk,1673
+kfk/producer.py,sha256=pHkOJqE0spBLDEfmsnoiL6a3Wr6TIphs5eiSt-eGQcQ,987
+kfk_vvvvvvvvv-0.1.1.dist-info/METADATA,sha256=PxULWpRz80k7iCaaGUBQbXsQGwHRkO3DwKvkpiw3ixc,119
+kfk_vvvvvvvvv-0.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+kfk_vvvvvvvvv-0.1.1.dist-info/entry_points.txt,sha256=8i4xecFAQn3ZWzGaI5LrO8UTsPKXo66l-4NyX-97iKk,38
+kfk_vvvvvvvvv-0.1.1.dist-info/top_level.txt,sha256=qTCFbXF3QupIS44C87cVCv-JCccKRmsncri_UCJA1-M,4
+kfk_vvvvvvvvv-0.1.1.dist-info/RECORD,,
