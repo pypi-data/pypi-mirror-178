@@ -1,0 +1,10 @@
+flowchem_test/__init__.py,sha256=fqsBgXXdhBey5zZ1Bzot_ZgwOX8NysrSzuc2WZsUJAU,27
+flowchem_test/fakedevice.py,sha256=DdU-j9cHyfCjfiw1TGacuSCfmqgKj60jpGIevemTJyU,959
+flowchem_test/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flowchem_test/test_component.py,sha256=5K-kA0GSv5mc7RZGFxrD-4m5BE3tyaZ_nXFaDN0kGdY,365
+flowchem_test-0.1a3.dist-info/LICENSE,sha256=mK6XJOc_0EwHTfejSnEjvrN-9mNHOWEwbNWrl6l6OqE,1039
+flowchem_test-0.1a3.dist-info/METADATA,sha256=c8mxaZ85Gn5ThtanywPGyoohj6O8ForXrh_KG7rl5HI,982
+flowchem_test-0.1a3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+flowchem_test-0.1a3.dist-info/entry_points.txt,sha256=xT1KNYPs4KE62lKUYat0-KvdLxK0_GQyx_Z_WEd9nhc,58
+flowchem_test-0.1a3.dist-info/top_level.txt,sha256=p81_zO48pkmv97u6x0amd-4lxvGOm3ScSGeeI7Lr0GQ,14
+flowchem_test-0.1a3.dist-info/RECORD,,
