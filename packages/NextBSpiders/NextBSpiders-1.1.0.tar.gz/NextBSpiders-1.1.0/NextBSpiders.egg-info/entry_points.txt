@@ -1,0 +1,10 @@
+[console_scripts]
+nextb-generate-user-message-csv = NextBSpiders.cli.generate_user_message_csv:run
+nextb-statics-db = NextBSpiders.cli.statics_db:run
+nextb-telegram-clear-dialog = NextBSpiders.cli.telegram_clear_dialog:run
+nextb-telegram-create-table = NextBSpiders.cli.telegram_create_table:run
+nextb-telegram-get-dialog = NextBSpiders.cli.telegram_get_dialog:run
+nextb-telegram-get-message = NextBSpiders.cli.telegram_get_message:run
+nextb-telegram-get-user-photo = NextBSpiders.cli.telegram_get_user_photo:run
+nextb-telegram-run-spider = NextBSpiders.cli.telegram_run_spider:run
+
