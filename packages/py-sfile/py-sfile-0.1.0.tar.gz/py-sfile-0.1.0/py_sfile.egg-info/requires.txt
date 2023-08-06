@@ -1,0 +1,7 @@
+importlib_resources
+python-docx
+Pillow
+python-ffmpeg
+pikepdf
+openpyxl
+pefile
