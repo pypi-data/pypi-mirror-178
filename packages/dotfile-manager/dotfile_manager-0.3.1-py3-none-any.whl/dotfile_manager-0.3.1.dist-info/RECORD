@@ -1,0 +1,12 @@
+dotfile_manager/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dotfile_manager/config.py,sha256=nNv0z-lysJf3NEFoAknCUNj92RJg25mfRnPKIvA6Qbg,155
+dotfile_manager/dotfile_manager.py,sha256=5gqtZfHrBAQzs0U_BUQPnds2kxriQONZzmNVakXTDAo,1664
+dotfile_manager/project.py,sha256=uqYXz2dmeAB9fUJ75YhtrGw7TJG_EdeWLPI0unLCUcM,3399
+dotfile_manager/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dotfile_manager/repo.py,sha256=7p5Cpwkk18F_gbc_a2r1dF05OrfrrfKacq3a8wfYfAk,2459
+dotfile_manager/version.py,sha256=TZkGuMIRSRmUY3XCIs5owt2o60vXyqYMHWIkhx65uYE,22
+dotfile_manager-0.3.1.data/scripts/dotfile_manager,sha256=o7roI4c0ph5Lu1q4lJOxTB09scc0rPwdMzfMM8w-gyA,98
+dotfile_manager-0.3.1.dist-info/METADATA,sha256=nDR0EutYCA8l8jxrut9VQPOrME8W3s1hQoYRv3bS9Mw,3690
+dotfile_manager-0.3.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dotfile_manager-0.3.1.dist-info/top_level.txt,sha256=D-W0dViH7L0d9EuaYttZxu1Wsf9OSuv5HbsBWAuJSBA,16
+dotfile_manager-0.3.1.dist-info/RECORD,,
