@@ -1,0 +1,9 @@
+README.md
+setup.py
+multireplace/__init__.py
+multireplace/multireplace.py
+multireplace/test_multiplace.py
+multireplace.egg-info/PKG-INFO
+multireplace.egg-info/SOURCES.txt
+multireplace.egg-info/dependency_links.txt
+multireplace.egg-info/top_level.txt
