@@ -1,0 +1,7 @@
+pyproject.toml
+src/CleanInput/__init__.py
+src/CleanInput/clean_input.py
+src/InputClean.egg-info/PKG-INFO
+src/InputClean.egg-info/SOURCES.txt
+src/InputClean.egg-info/dependency_links.txt
+src/InputClean.egg-info/top_level.txt
