@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: AoiPy
+Version: 0.6.20
+Summary: Pycord made simple for learning
+Home-page: UNKNOWN
+Author: Jade
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: License.txt
+Requires-Dist: Py-cord
+
+# AoiPy - Pycord made simple (By being very specific) for learning
+Latest Update: 11/26/22
+#### Version: 0.6.20
+### Using AoiPy
+1 - `pip install AoiPy`
+
+2 -
+```python
+from aoipy.BotUser import client
+from aoipy.Users import Users
+```
+
+3 -  Example:
+
+```python
+from aoipy.BotUser import client
+from aoipy.Messages import messageable as ms
+# ---------------Imports--------------------
+act = client.activity("tv", "watching")
+bot = client.Bot(prefix="!", case_insensitive=False, intents=("all",), activity=act)
+
+
+@bot.command()
+async def cool(ctx):
+    lol = await ms.sendChannelMessage(ctx, f"This command invoked in...")
+    await ms.sendChannelMessage(ctx, ms.getMessageChannelName(lol))
+
+
+client.run(bot, "*******<<TOKEN>>***********", f"Started on {bot.user}")
+```
+
+## New and still a work in progress
+
