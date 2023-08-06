@@ -1,0 +1,6 @@
+[console_scripts]
+
+
+[nbdev]
+kaggle_blocks = kaggle_blocks._modidx:d
+

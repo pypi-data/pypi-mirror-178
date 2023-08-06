@@ -1,0 +1,7 @@
+website:
+  navbar:
+    left:
+      - text: "API"
+        menu: 
+          - text: "utils"
+            href: utils/utils.ipynb

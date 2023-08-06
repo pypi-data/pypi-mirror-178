@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "Kaggle Blocks"
+  site-url: "https://JaumeAmores.github.io/kaggle-blocks"
+  description: "Reusable and modular blocks for kaggle competitions"
+  repo-branch: main
+  repo-url: "https://github.com/JaumeAmores/kaggle-blocks"

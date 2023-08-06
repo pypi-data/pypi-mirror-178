@@ -1,0 +1,8 @@
+dsblocks
+kaggle
+datasets
+transformers
+sentencepiece
+torch
+
+[dev]
