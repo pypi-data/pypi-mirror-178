@@ -1,0 +1,14 @@
+CHANGELOG.rst
+LICENSE.rst
+MANIFEST.in
+README.rst
+get_chromedriver.py
+pyproject.toml
+setup.cfg
+setup.py
+test_get_chromedriver.py
+get_chromedriver_py.egg-info/PKG-INFO
+get_chromedriver_py.egg-info/SOURCES.txt
+get_chromedriver_py.egg-info/dependency_links.txt
+get_chromedriver_py.egg-info/entry_points.txt
+get_chromedriver_py.egg-info/top_level.txt
