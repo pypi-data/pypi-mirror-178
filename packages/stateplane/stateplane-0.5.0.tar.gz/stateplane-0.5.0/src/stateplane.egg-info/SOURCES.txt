@@ -1,0 +1,17 @@
+LICENSE
+README.md
+README.rst
+pyproject.toml
+src/stateplane/__init__.py
+src/stateplane/__main__.py
+src/stateplane/countyfp.csv
+src/stateplane/dicts.py
+src/stateplane/stateplane.geojson
+src/stateplane/stateplane.py
+src/stateplane.egg-info/PKG-INFO
+src/stateplane.egg-info/SOURCES.txt
+src/stateplane.egg-info/dependency_links.txt
+src/stateplane.egg-info/entry_points.txt
+src/stateplane.egg-info/requires.txt
+src/stateplane.egg-info/top_level.txt
+src/stateplane.egg-info/zip-safe

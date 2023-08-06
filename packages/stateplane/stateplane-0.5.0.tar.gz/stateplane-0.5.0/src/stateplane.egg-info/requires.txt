@@ -1,0 +1,9 @@
+shapely
+pyproj>=3.2.0
+
+[:python_version < "3.9"]
+importlib_resources
+
+[testing]
+coverage[toml]>=6
+pylint>=2.12.2

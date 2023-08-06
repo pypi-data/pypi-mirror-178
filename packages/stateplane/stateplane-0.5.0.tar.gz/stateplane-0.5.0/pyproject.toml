@@ -1,0 +1,82 @@
+[project]
+name = "stateplane"
+version = "0.5.0"
+description = "Find the state plane projection for a point or locale"
+readme = "README.md"
+authors = [
+    {name = "Neil Freeman", email = "contact@fakeisthenewreal.org"}
+    ]
+keywords = ["gis", "usa", "projection"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)"
+    ]
+license = {file = "LICENSE"}
+requires-python = ">=3.7"
+dependencies = [
+    "shapely",
+    "pyproj >= 3.2.0",
+    "importlib_resources; python_version < '3.9'",
+    ]
+
+[project.urls]
+Homepage = "https://github.com/fitnr/stateplane"
+
+[project.optional-dependencies]
+testing = [
+    "coverage[toml]>=6",
+    "pylint>=2.12.2"
+]
+
+[build-system]
+requires = ["setuptools>=61.1.1", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+zip-safe = true
+package-dir = {"" = "src"}
+packages = ["stateplane"]
+include-package-data = true
+package-data = {stateplane = ["*.zip", "*.csv", "*.geojson"]}
+
+[project.scripts]
+stateplane = "stateplane.__main__:main"
+
+[tool.black]
+line-length = 120
+target-version = ["py39"]
+include = "py$"
+
+[tool.pylint.master]
+fail-under = "8.77"
+
+[tool.pylint.messages_control]
+disable = [
+    "invalid-name",
+    "duplicate-code"
+]
+
+[tool.pylint.format]
+max-line-length = 120
+
+[tool.isort]
+line_length = 120
+
+[tool.coverage.run]
+omit = ["tests"]
+branch = true
+source = ["stateplane"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+    "except ImportError:",
+]
