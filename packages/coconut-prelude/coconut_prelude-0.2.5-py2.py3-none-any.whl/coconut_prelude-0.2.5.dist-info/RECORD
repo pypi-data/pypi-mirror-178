@@ -1,0 +1,12 @@
+prelude/__coconut__.py,sha256=f247MulNhvqymuWvMMuH1jDdN2XmgFlHafxcflaByH8,67351
+prelude/__init__.py,sha256=eyPRJoBxIoig7raVFj5781PZ3EisAFuff7sYZncK3Us,2906
+prelude/main.py,sha256=hIb5CVNS0gqeCIE_L_fIf1xhxmpVpEBOfN2lL1X7afA,153092
+prelude/main_test.py,sha256=TpOyIno6lKGJClcJba2VuPuP-dyPRYYbT7V3MVszoKg,36657
+prelude/typevars.py,sha256=TJh24-F5n2HABWFjm4n7U5oLViFnUnQDjezgksPc1h8,3179
+prelude/util.py,sha256=yJbOunIylbj78EqlZoVQGws46J70-RsMtG1YltAZrtM,17481
+prelude/util_test.py,sha256=1p-NNPQY2FbART6eHGajQqNNQ-v5yTyrrnsfqspVPzQ,11785
+coconut_prelude-0.2.5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+coconut_prelude-0.2.5.dist-info/METADATA,sha256=QU3KFaaGDInoRPJtbBzr2zcpj-3wQeFL9EZ6Tvv0MOQ,459
+coconut_prelude-0.2.5.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+coconut_prelude-0.2.5.dist-info/top_level.txt,sha256=lr87FqC_zfdhrQbCUJojQ44V_LMqYtCFgjh3Qk_OFSg,8
+coconut_prelude-0.2.5.dist-info/RECORD,,
