@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "pubhelper"
+version = "0.0.2"
+description = ""
+authors = ["iulmt"]
+license = "GPL"
+readme = "README.md"
+
+[[tool.poetry.source]]
+name = 'tsinghua'
+url = 'https://pypi.tuna.tsinghua.edu.cn/simple/'
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.28.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
