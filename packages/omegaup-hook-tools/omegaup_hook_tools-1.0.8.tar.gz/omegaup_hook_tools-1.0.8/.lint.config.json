@@ -1,0 +1,11 @@
+{
+	"lint": {
+		"python": {
+			"pycodestyle_config": "pyproject.toml",
+			"mypy": true,
+			"allowlist": [
+				".*\\.py$"
+			]
+		}
+	}
+}
