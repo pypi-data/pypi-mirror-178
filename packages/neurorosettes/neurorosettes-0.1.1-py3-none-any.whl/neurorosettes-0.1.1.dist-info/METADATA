@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: neurorosettes
+Version: 0.1.1
+Summary: A computational modelling framework designed to simulate the formation of rosette patterns in tissues of the nervous system.
+License: BSD-3-Clause
+Author: Inês G Gonçalves
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=8.0.4,<9.0.0)
+Requires-Dist: pydantic (>=1.9.0,<2.0.0)
+Requires-Dist: vedo (>=2022.0.1,<2023.0.0)
+Description-Content-Type: text/markdown
+
+# neurorosettes
+> An agent-based framework to model the formation of rosette patterns in tissues of the nervous system
+
+`neurorosettes` is a Python package that implements agent-based modelling to study the formation of rosette patterns in tissues
+during neuronal development. It is built on top of the `vedo` package (version 2022.1.0), which provides an interface
+to plot 3D objects using VTK, to prioritize the visualization of the simulations in real time, without requiring additional processing.
+
+## Installation
+
+The package can be downloaded through pip using `pip install neurorosettes`.
+
+## Usage
+
+`neurorosettes` offers multiple modules to simulate and test new biological hypothesis, such as:
+- Cell cycle and death;
+- Creation and extension of neuronal processes;
+- Physical interactions between cell bodies and neuronal processes;

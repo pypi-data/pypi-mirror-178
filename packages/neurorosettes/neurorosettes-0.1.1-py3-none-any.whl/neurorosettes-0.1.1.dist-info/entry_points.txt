@@ -1,0 +1,7 @@
+[console_scripts]
+cell_cell=examples.mechanics.test_sphere_sphere:main
+neurite_cell=examples.mechanics.test_sphere_neurite:main
+neurite_neurite=examples.mechanics.test_neurite_neurite:main
+rosette_formation=examples.rosette_formation:main
+sweep_mechanics=examples.sweep_mechanics:main
+
