@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: mergegoogledocwithipynb
+Version: 0.1.1
+Summary: merge google doc with ipynb
+Home-page: https://github.com/gwubc/MergeGoogleDocWithIpynb/blob/master/README.ipynb
+Author: gw
+Author-email: 
+License: MIT
+License-File: LICENSE
+Requires-Dist: nbformat
+Requires-Dist: requests
+Requires-Dist: markdownify
+
