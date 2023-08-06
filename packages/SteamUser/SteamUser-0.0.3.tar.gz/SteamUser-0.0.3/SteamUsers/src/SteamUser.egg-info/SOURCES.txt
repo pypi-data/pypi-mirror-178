@@ -1,0 +1,8 @@
+README.md
+setup.py
+SteamUsers/src/Main.py
+SteamUsers/src/SteamUser.egg-info/PKG-INFO
+SteamUsers/src/SteamUser.egg-info/SOURCES.txt
+SteamUsers/src/SteamUser.egg-info/dependency_links.txt
+SteamUsers/src/SteamUser.egg-info/requires.txt
+SteamUsers/src/SteamUser.egg-info/top_level.txt
