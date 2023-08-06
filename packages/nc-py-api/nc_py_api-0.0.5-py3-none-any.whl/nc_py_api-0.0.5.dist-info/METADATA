@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: nc-py-api
+Version: 0.0.5
+Summary: Python 3.9+ API for backend to work with Nextcloud
+Home-page: https://github.com/bigcat88/nc_py_api
+Author: Alexander Piskun
+Author-email: bigcat88@users.noreply.github.com
+License: Apache License 2.0
+Project-URL: Source, https://github.com/bigcat88/nc_py_api
+Keywords: nextcloud,api
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: License :: OSI Approved :: Apple Public Source License
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pg8000
+Requires-Dist: pymysql
+
+# nc_py_api
+
+This is temporary repo and release. If the test is successful, it will be submitted to cpa org and filled.
