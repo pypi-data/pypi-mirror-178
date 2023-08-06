@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pyHASSClever
+Version: 0.0.0
+Summary: Unofficial Clever Chargepoints API library
+Home-page: https://github.com/mtrab/pyHASSClever
+Author: Malene Trab
+Author-email: malene@trab.dk
+License: MIT
+Project-URL: Bug Tracker, https://github.com/mtrab/pyHASSClever/issues
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests (>=2.26.0)
+
+![Buy Me A Coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)
+
+## pyClever
+
+This is an unofficial PyPI module for accessing the Clever chargepoints API, primarily developed for use with [Home Assistant](https://home-assistant.io), but I try to keep it as widely usable as possible.
+
+
+
+As this is an unofficial connector module, using a non-public and undocumented API, this will be prone to breaking without notice - USE AT OWN RISK!
+
+## Documentation
+
+In the making
