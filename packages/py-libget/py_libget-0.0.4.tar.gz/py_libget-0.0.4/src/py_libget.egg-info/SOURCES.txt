@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/py_libget/__init__.py
+src/py_libget/package_manager.py
+src/py_libget/parser.py
+src/py_libget/version.py
+src/py_libget/webhandler.py
+src/py_libget.egg-info/PKG-INFO
+src/py_libget.egg-info/SOURCES.txt
+src/py_libget.egg-info/dependency_links.txt
+src/py_libget.egg-info/top_level.txt
