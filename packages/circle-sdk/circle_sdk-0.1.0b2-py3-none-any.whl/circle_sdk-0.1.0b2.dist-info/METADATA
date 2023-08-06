@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: circle-sdk
+Version: 0.1.0b2
+Summary: Python SDK for Circle APIs
+Home-page: 
+Author: Circle SDK Developers
+Author-email: sdk-developers+pypi@circle.com
+Keywords: circle,circle.com,usdc,euroc,stablecoins
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: certifi (>=14.5.14)
+Requires-Dist: frozendict (~=2.3.4)
+Requires-Dist: python-dateutil (~=2.7.0)
+Requires-Dist: setuptools (>=21.0.0)
+Requires-Dist: typing-extensions (~=4.3.0)
+Requires-Dist: urllib3 (~=1.26.7)
+
+    Circle's General, Core Functionality, Payments, Payouts, Accounts, and Crypto Payments APIs bundled into one OpenAPI Specification.
+    
