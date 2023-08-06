@@ -1,0 +1,13 @@
+sphinx_sqlite3fts/__init__.py,sha256=vYEQUGgXLejWXgmn74VlCfKuTR1kccG7jnyF4RyYN9U,736
+sphinx_sqlite3fts/builders.py,sha256=TFpQz8vyMxA-bRTUGH2rjBBU7IhN3Dj3HAB0K2ZX7r0,1039
+sphinx_sqlite3fts/cli.py,sha256=4nM0kD4xpFuiA1VJWWtH2DrgjtzJKQIsTeGVQPmy1Ws,980
+sphinx_sqlite3fts/events.py,sha256=5eDYBuqd3HentWZSgsb7pkluit3bEQQxzFRCYFWxb1o,1830
+sphinx_sqlite3fts/models.py,sha256=4oY1d4DjJJT5mEiKjxl3zdVtDGyidG_ESR74ANTe-Cg,2140
+sphinx_sqlite3fts/services.py,sha256=47UB0-LGuSFgZ7fD6KLsS2d7sLD-xKwZNXmUWEHJV3Y,1428
+sphinx_sqlite3fts/utils.py,sha256=pRmIi9l_sg2ZRpUAEwvJ3eK5t2OeaT8EvqK-sZjsjBU,219
+sphinx_sqlite3fts/static/searchtools.js,sha256=Vv6tsClK2EmNI90hbjf6dv4KFtCrx6S3B0FqShHsJ5c,4279
+sphinx_sqlite3fts-0.1.1.dist-info/entry_points.txt,sha256=KkPb_jgxq7lvIuCKklzG5ob4t0jMfLC03LhW7hZOMDE,64
+sphinx_sqlite3fts-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+sphinx_sqlite3fts-0.1.1.dist-info/WHEEL,sha256=kdeDBNPvBI0w3meLKPoGgAnEr54n1jzrZWUoaLmGzVY,99
+sphinx_sqlite3fts-0.1.1.dist-info/METADATA,sha256=xkpwjkGQ1l51d4jmva9RR8xYb8solaeAW_DAbczd_zg,3498
+sphinx_sqlite3fts-0.1.1.dist-info/RECORD,,
