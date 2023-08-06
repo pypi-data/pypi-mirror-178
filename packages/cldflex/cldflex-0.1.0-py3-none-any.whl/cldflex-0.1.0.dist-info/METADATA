@@ -1,0 +1,117 @@
+Metadata-Version: 2.1
+Name: cldflex
+Version: 0.1.0
+Summary: Convert FLEx data to CLDF-ready CSV.
+Home-page: https://github.com/fmatter/cldflex
+Author: Florian Matter
+Author-email: florianmatter@gmail.com
+Project-URL: Documentation, https://cldflex.readthedocs.io/
+Project-URL: Bug Tracker, https://github.com/fmatter/cldflex/issues
+Keywords: cldf,fieldworks
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: colorlog (>=6.0.0)
+Requires-Dist: pandas (>=1.3.5)
+Requires-Dist: click (>=8.1.3)
+Requires-Dist: python-slugify (>=6.1.2)
+Requires-Dist: beautifulsoup4 (>=4.11.1)
+Requires-Dist: lxml (>=4.9.1)
+Requires-Dist: cldfbench (>=1.13.0)
+Requires-Dist: pycldf (>=1.28.0)
+Provides-Extra: dev
+Requires-Dist: clld-morphology-plugin (>=0.0.6) ; extra == 'dev'
+Requires-Dist: clld-corpus-plugin (>=0.0.6) ; extra == 'dev'
+Requires-Dist: bump2version ; extra == 'dev'
+Requires-Dist: coverage[toml] ; extra == 'dev'
+Requires-Dist: prospector[with_pyroma] (==1.7.7) ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+Requires-Dist: sphinx-autoapi ; extra == 'dev'
+Requires-Dist: sphinxcontrib-napoleon ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Requires-Dist: myst-parser ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: jinja2 ; extra == 'dev'
+Requires-Dist: keepachangelog ; extra == 'dev'
+Provides-Extra: extras
+Requires-Dist: clld-morphology-plugin (>=0.0.7) ; extra == 'extras'
+Requires-Dist: clld-corpus-plugin (>=0.0.6) ; extra == 'extras'
+Requires-Dist: pyglottolog (>=3.10.0) ; extra == 'extras'
+Provides-Extra: publishing
+Requires-Dist: twine ; extra == 'publishing'
+Requires-Dist: wheel ; extra == 'publishing'
+
+# cldflex
+
+Convert FLEx data to CLDF-ready CSV.
+
+![License](https://img.shields.io/github/license/fmatter/cldflex)
+[![Tests](https://img.shields.io/github/workflow/status/fmatter/cldflex/tests?label=tests)](https://github.com/fmatter/cldflex/actions/workflows/tests.yml)
+[![Linting](https://img.shields.io/github/workflow/status/fmatter/cldflex/lint?label=linting)](https://github.com/fmatter/cldflex/actions/workflows/lint.yml)
+[![Codecov](https://img.shields.io/codecov/c/github/fmatter/cldflex)](https://app.codecov.io/gh/fmatter/cldflex/)
+[![PyPI](https://img.shields.io/pypi/v/cldflex.svg)](https://pypi.org/project/cldflex)
+![Versions](https://img.shields.io/pypi/pyversions/cldflex)
+
+Many descriptive linguists have annotated language data in a FLEx ([SIL's Fieldworks Lexical Explorer](https://software.sil.org/fieldworks/)) database, perhaps the most popular and accessible assisted segmentation and annotation workflow.
+However, a reasonably complete data export is only available in XML, which is not human-friendly, and is not readily converted to other data.
+A data format growing in popularity is the [CLDF standard](https://cldf.clld.org/), a table-based approach with human-readable datasets, designed to be used in [CLLD](https://clld.org/) apps and easily processable by any software that can read [CSV](https://en.wikipedia.org/wiki/Comma-separated_values) files, including  [R](https://www.r-project.org/), [pandas](https://pandas.pydata.org/) or spreadsheet applications.
+The goal of ``cldflex`` is to convert lexicon and corpus data stored in FLEx to CSV tables, primarily for use in CLDF datasets.
+
+## Installation
+
+`cldflex` is available on [PyPI](https://pypi.org/project/cldflex):
+```shell
+pip install cldflex
+```
+## Usage
+At the moment, there are two commands: ``cldflex flex2csv`` processes `.flextext` (corpora), and ``cldflex lift2csv`` processes `.lift` (lexica) files.
+Both commands create a number of CSV files.
+One can either use [cldfbench](https://github.com/cldf/cldfbench) to create one's own CLDF datasets from these files, or add the `--cldf` argument to create (simple) datasets.
+
+Project-specific configuration can be passed via `--conf your/config.yaml`
+
+### `flex2csv`
+Basic usage:
+
+```shell
+cldflex flex2csv texts.flextext
+```
+
+Connect the corpus with the lexicon:
+
+```shell
+cldflex flex2csv texts.flextext --lexicon lexicon.lift
+```
+
+Create a CLDF dataset:
+
+```shell
+cldflex flex2csv texts.flextext --lexicon lexicon.lift --cldf
+```
+
+### `lift2csv`
+
+Extract morphemes, morphs, and entries from `lexicon.lift`:
+
+```shell
+cldflex lift2csv lexicon.lift
+```
+
+Create a CLDF dataset with a  [`Dictionary`](https://github.com/cldf/cldf/tree/master/modules/Dictionary) module:
+
+```shell
+cldflex lift2csv lexicon.lift --cldf
+```
