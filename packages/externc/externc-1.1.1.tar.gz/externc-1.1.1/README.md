@@ -1,0 +1,92 @@
+# ExternC - Embedding C code in python
+
+## Example
+
+```py
+import externc
+
+# ExternC modifies builtins, so no `externc.` necessary
+fn = c("""
+  // remember to properly escape backslashes!
+  printf("Hello from C\\n");
+  Py_RETURN_NONE;
+""")
+
+fn() # "Hello from C"
+```
+
+## Benchmark
+
+`c.py`:
+```c
+import externc
+c(r"""
+for(int i = 0; i < 1000000000; i++) {
+  if(i % (2 << 16) == 0) {
+    printf("%d\n", i);
+  }
+}
+Py_RETURN_NONE;
+""")()
+```
+`python.py`:
+```py
+for i in range(1000000000):
+  if(i % (2 << 16) == 0):
+    print(i)
+```
+
+```sh
+$ time python c.py
+...
+
+real    0m2.615s
+user    0m1.593s
+sys     0m0.518s
+```
+
+```sh
+$ time python python.py
+...
+
+real    3m25.695s
+user    3m25.423s
+sys     0m0.194s
+```
+
+The difference is quite obvious
+
+## Use cases
+
+Use ExternC
+* for interfacing with C APIs
+* for working with raw pointers
+* for working with capsules
+* when speed is more important than stability
+
+**Do not** use ExternC
+* when your code must be version independent
+* when your code must be stable (exception: you have used C a lot before)
+* when your code must be distributable
+* when your code must run anywhere but the PC you wrote and tested it on
+* in production
+
+## Technicalities
+
+The C function is registered as `METH_VARARGS | METH_KEYWORDS`.
+It is of signature `PyObject* (PyObject*, PyObject*, PyObject)`,
+which is known in the Python extension environment as `PyCFunctionWithKeywords`.
+The arguments have the names `self`, `args` and `kwargs`, while
+the function is named `func` and the generated module `externc_#` where
+`#` is a hexadecimal number that is incremented by one with
+every call to `c` without an explicit module name.
+The function name and the module name
+can be modified by passing the `funcname` and `name`
+keyword arguments to `c`, respectively. `funcname` is also used as the
+name of the function to be exported from the module.
+
+The default compiler used is `clang` with a few default
+options. The `compilers` submodule can be used to configure `clang`
+with feature flags, linked files and additional include directories or
+define another compiler, which can be passed to `c` via the `compiler`
+argument.
