@@ -1,0 +1,330 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US">
+<head>
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.svg">
+	<link rel="apple-touch-icon" href="kenzy_touch.png" />
+
+	<title>Control Panel &raquo; KENZY.Ai [__APP_VERSION__]</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<style type="text/css">
+body, html { 
+    font-family: Arial, Helvetica, Sans-Serif; 
+    font-size: 16px; 
+    min-height: 100%; 
+    width: 100%; 
+    padding: 0;
+    margin: 0; 
+
+    background-color: #d8d8d8;
+    /*
+    background-image: linear-gradient(to right, #aaa, #f7f7f7); 
+    background-size: calc(100% - 1000px), 100%; 
+    background-position: 1366px top; 
+    background-repeat: no-repeat; 
+    */
+}
+
+.page_header { 
+    position: fixed; 
+    top: 0;
+    height: 42px; 
+    background: #fff; 
+    line-height: 42px; 
+    width: 100%;
+
+    /*max-width: 1366px; */
+    z-index: 200;
+}
+
+.page_header > a#home-link { 
+    display: block;
+    float: left;
+    height: 42px; 
+    line-height: 42px; 
+    background-image: url(./favicon.svg); 
+    background-repeat: no-repeat; 
+    background-position: 20px 12px; 
+    background-size: 18px 18px; 
+    padding-left: 40px;
+    padding-right: 20px;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.page_header > a#home-link:hover {
+    color: #666;
+}
+
+.page_menu { 
+    position: fixed; 
+    left: 0;
+    background-color: #313131; 
+    width: 240px; 
+    top: 42px; 
+    min-height: calc(100% - 42px); 
+    overflow-y: auto; 
+    z-index: 100;
+}
+
+.page_menu > ul { margin: 0; padding: 15px 0 1px 0; list-style: none; }
+.page_menu > ul > li > a { 
+    display: block;
+    line-height: 48px;
+    height: 48px;
+    font-size: 1rem;
+    background-color: #313131;
+    border-top: 1px solid #353535;
+    padding-left: 20px;
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 1px 1px 2px #222;
+}
+.page_menu > ul > li:last-child > a { border-bottom: 1px solid #353535; }
+.page_menu > ul > li > a:hover { background-color: #272727; }
+.page_menu > ul > li > a.active { background-color: #272727; color: #f17d42; text-shadow: 1px 1px 2px #111; }
+.page_menu > ul > li > a > span.icon {
+    display: block; float: left;
+    height: 100%;
+    width: 1.25rem;
+    padding-right: 10px;
+    background-repeat: no-repeat;
+    background-size: 1.25rem 1.25rem;
+    background-position: center left;
+    filter: invert(86%) sepia(0%) saturate(0%) hue-rotate(74deg) brightness(90%) contrast(86%) drop-shadow(1px 1px 2px rgb(0 0 0 / 0.8));
+}
+
+.page_menu > ul > li > a:hover > span.icon {
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(137deg) brightness(108%) contrast(101%) drop-shadow(1px 1px 2px rgb(0 0 0 / 0.8));
+}
+.page_menu > ul > li > a.active > span.icon {
+    filter: invert(77%) sepia(56%) saturate(5004%) hue-rotate(333deg) brightness(99%) contrast(91%) drop-shadow(1px 1px 2px rgb(0 0 0 / 0.8));
+}
+
+.page_menu > ol { 
+    margin: 0; 
+    padding: 0;
+    list-style: none; 
+    color: #999;
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+.page_menu > ol > li > a {
+    display: block;
+    line-height: 32px;
+    padding-right: 15px;
+    font-style: italic;
+    text-align: right;
+    color: #999;
+    text-decoration: none;
+}
+
+.page_menu > ol > li > a:hover { color: #f17d42; }
+
+#btnDashboard > span.icon { background-image: url(tachometer-alt.svg); }
+#btnDevices > span.icon { background-image: url(server-solid.svg); }
+#btnSkills > span.icon { background-image: url(lightbulb-solid.svg); }
+#btnActions > span.icon { background-image: url(bolt-solid.svg); }
+#btnLogs > span.icon { background-image: url(hdd-solid.svg); }
+#btnUpdates > span.icon { background-image: url(tools-solid.svg); }
+#btnAbout > span.icon { background-image: url(question-circle-solid.svg); }
+
+
+.page_content { 
+    position: relative;
+    margin-top: 42px;
+    margin-left: 240px;
+    width: calc(100% - 240px);
+    min-height: 100px;
+    background: linear-gradient(rgba(0,0,0,.1), rgba(100,100,100,0));
+    background-repeat: no-repeat;
+    background-size: 100% 30px;
+    /* max-width: 1126px; */
+}
+
+.content_container { padding: 0; margin: 0; }
+.content_container > h1 { /* margin: 0; */ margin: 0 auto; font-size: 2rem; padding: 20px 20px 0 20px; max-width: 1086px; }
+.content_section { /* margin: 0; */ margin: 0 auto; max-width: 1086px; padding: 20px; }
+
+.flx-row {
+    display: flex;
+}
+
+.flx-column {
+    flex: 1;
+}
+
+
+.flx-column.flx-1 { flex: 1; }
+.flx-column.flx-2 { flex: 2; }
+.flx-column.flx-3 { flex: 3; }
+.flx-column.flx-4 { flex: 4; }
+
+.flx-table { min-width: 500px; background-color: #888; border-radius: 4px; box-shadow: 0px 0px 10px rgba(0,0,0,.5); }
+
+.flx-table ul { list-style:none; padding:0; margin:0;}
+
+.flx-row:first-child { padding-top: 1px; }
+.flx-row { padding-left: 1px;  }
+.flx-row .flx-column { margin-right: 1px; margin-bottom: 1px; padding: 15px 10px; background-color: #fff; }
+.flx-row:nth-child(odd) .flx-column { background-color: #ddd; }
+.flx-row:last-child .flx-column:first-child { border-bottom-left-radius: 4px; }
+.flx-row:last-child .flx-column:last-child { border-bottom-right-radius: 4px; }
+.flx-row:hover .flx-column { background-color: #a5d3e8; cursor: pointer; }
+.flx-row.header .flx-column { color: #fff; padding: 20px 10px; background-color: #013249; }
+.flx-row.header .flx-column:hover { background: none; background-color: #002131; }
+.flx-row.header .flx-column:first-child { border-top-left-radius: 4px; }
+.flx-row.header .flx-column:last-child { border-top-right-radius: 4px; }
+</style>
+</head>
+<body>
+    <div class="page_header">
+        <a href="#" id="home-link">
+            <div>
+                <span>KENZY.Ai&nbsp;</span>
+                <small>Command Center</small>
+            </div>
+        </a>
+    </div>
+    <div class="page_menu">
+        <ul>
+            <li><a class="active" href="#" id="btnDashboard"><span class="icon"></span><span>Dashboard</span></a></li>
+            <li><a href="#" id="btnDevices"><span class="icon"></span><span>Devices</span></a></li>
+            <li><a href="#" id="btnSkills"><span class="icon"></span><span>Skills</span></a></li>
+            <li><a href="#" id="btnActions"><span class="icon"></span><span>Actions</span></a></li>
+            <li><a href="#" id="btnLogs"><span class="icon"></span><span>Logs</span></a></li>
+            <li><a href="#" id="btnUpdates"><span class="icon"></span><span>Updates</span></a></li>
+            <li><a href="#" id="btnAbout"><span class="icon"></span><span>About</span></a></li>
+            
+        </ul>
+        <ol>
+            <li><a href="#">Version 0.9.2</a></li>
+        </ol>
+    </div>
+    <div class="page_content">
+
+            <div class="content_container">
+                <h1>Devices</h1>
+                <div class="content_section">
+                    <div class="flx-table" id="device-list">
+                        <div class="flx-row header">
+                            <div class="flx-column flx-3">
+                                Type / Container
+                            </div>
+                            <div class="flx-column flx-2">
+                                Nickname / Group
+                            </div>
+                            <div class="flx-column">
+                                Version
+                            </div>
+                            <div class="flx-column flx-2">
+                                Accepts
+                            </div>
+                            <div class="flx-column">
+                                Actions
+                            </div>
+                        </div>
+                        <div class="flx-row data">
+                            <div class="flx-column flx-3">
+                                <div title="193091-9aidofj0-2390jafdf-1930911">kenzy.devices.Listener</div>
+                                <div>http://localhost:8080</div>
+                            </div>
+                            <div class="flx-column flx-2">
+                                <div>My Microphone</div>
+                                <div>Living Room</div>
+                            </div>
+                            <div class="flx-column">
+                                <div>0.9.2</div>
+                            </div>
+                            <div class="flx-column flx-2">
+                                <ul>
+                                    <li>start</li>
+                                    <li>stop</li>
+                                    <li>audioOutStart</li>
+                                    <li>audioOutEnd</li>
+                                </ul>
+                            </div>
+                            <div class="flx-column">
+                                <div>
+                                    <button>Start</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flx-row data">
+                            <div class="flx-column flx-3">
+                                <div title="193091-9aidofj0-2390jafdf-1930911">kenzy.devices.Listener</div>
+                                <div>http://localhost:8080</div>
+                            </div>
+                            <div class="flx-column flx-2">
+                                <div>My Microphone</div>
+                                <div>Living Room</div>
+                            </div>
+                            <div class="flx-column">
+                                <div>0.9.2</div>
+                            </div>
+                            <div class="flx-column flx-2">
+                                <ul>
+                                    <li>start</li>
+                                    <li>stop</li>
+                                </ul>
+                            </div>
+                            <div class="flx-column">
+                                <div>
+                                    <button>Start</button>
+                                    <button>Stop</button>
+                                    <button>Snap</button>
+                                    <button>Stream</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h1>Devices</h1>
+                <div class="content_section">
+                    <div class="flx-table">
+                        <div class="flx-row header">
+                            <div class="flx-column">
+                                Column 1
+                            </div>
+                            <div class="flx-column">
+                                Column 2
+                            </div>
+                        </div>
+                        <div class="flx-row">
+                            <div class="flx-column">
+                                Column 1
+                            </div>
+                            <div class="flx-column">
+                                Column 2
+                            </div>
+                        </div>
+                        <div class="flx-row">
+                            <div class="flx-column">
+                                Column 1
+                            </div>
+                            <div class="flx-column">
+                                Column 2
+                            </div>
+                        </div>
+                        <div class="flx-row">
+                            <div class="flx-column">
+                                Column 1
+                            </div>
+                            <div class="flx-column">
+                                Column 2
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </div> <!-- content_container -->
+
+    </div>
+
+</body>
+</html>
