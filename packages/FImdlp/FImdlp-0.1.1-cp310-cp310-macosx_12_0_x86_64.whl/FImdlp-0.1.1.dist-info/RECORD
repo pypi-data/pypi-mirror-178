@@ -1,0 +1,11 @@
+fimdlp.cpython-310-darwin.so,sha256=CdJHlT05VICZctXG_sxxhWTnEUkx7h4vZG86LPZ3bGk,84568
+fimdlp/FImdlp.cpp,sha256=z_ues3u1s3z9UoC0HyV8SGaRWg02I7inYV67AB_eF8g,519
+fimdlp/FImdlp.h,sha256=T_jh7lcPlOWjDct3Eh3bPUZGARlI5hYpJ8jgFA95IPU,256
+fimdlp/__init__.py,sha256=WjDmvecyDIyJLYp4rCV9vsSYbQDc4L1EpYqORvEXliI,33
+fimdlp/_version.py,sha256=jZ5uWOiyV1Hb9rhNyo3bAgfWmHx8_xkueUWpcUrkz_w,21
+fimdlp/cfimdlp.pyx,sha256=5MM41FjiTfRbJFGP6CaIq4RVYP1JDofMsbclHfskEdg,488
+FImdlp-0.1.1.dist-info/LICENSE,sha256=TJX7Fh3hrWXMneMHYxi577_iE2NqVS9z5_74vuTfMtk,1069
+FImdlp-0.1.1.dist-info/METADATA,sha256=mMOPQGz4KyhPPIjdOmHAnyHXc-qi7w_ukVDu5BcfEGs,1027
+FImdlp-0.1.1.dist-info/WHEEL,sha256=1ndTQhSZAcQa4ISX34mlNa7Jf0IJT7KpTINxpmOjwV0,111
+FImdlp-0.1.1.dist-info/top_level.txt,sha256=J3SOyB0X4ssuXeinGG6Xpee72Fl0cfAehnlxPQ2MkfI,7
+FImdlp-0.1.1.dist-info/RECORD,,
