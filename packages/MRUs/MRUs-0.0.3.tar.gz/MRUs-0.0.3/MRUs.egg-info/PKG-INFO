@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: MRUs
+Version: 0.0.3
+Summary: Matrix Reduction Utils
+Author: MingjunXu
+Requires: numpy
