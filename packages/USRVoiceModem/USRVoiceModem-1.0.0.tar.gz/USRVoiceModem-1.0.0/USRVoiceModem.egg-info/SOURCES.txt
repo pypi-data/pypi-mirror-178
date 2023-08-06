@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+USRVoiceModem/__init__.py
+USRVoiceModem/callAndAnswer.py
+USRVoiceModem/speechToText.py
+USRVoiceModem.egg-info/PKG-INFO
+USRVoiceModem.egg-info/SOURCES.txt
+USRVoiceModem.egg-info/dependency_links.txt
+USRVoiceModem.egg-info/entry_points.txt
+USRVoiceModem.egg-info/not-zip-safe
+USRVoiceModem.egg-info/top_level.txt
