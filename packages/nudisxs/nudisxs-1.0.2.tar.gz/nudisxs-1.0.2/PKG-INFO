@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: nudisxs
+Version: 1.0.2
+Summary: A python interface to fortran code developed by K.Kuzmin, calculating neutrino-nucleon deep inelastic charged/neutral current cross-sections.
+Home-page: https://git.jinr.ru/dnaumov/nudisxs
+Author: K.Kuzmin
+Maintainer: Dmitry V.Naumov
+Maintainer-email: dmitryvnaumov@gmail.com
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+README.md
