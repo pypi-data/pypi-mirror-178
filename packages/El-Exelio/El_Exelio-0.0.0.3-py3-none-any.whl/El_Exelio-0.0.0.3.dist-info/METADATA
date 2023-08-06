@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: El-Exelio
+Version: 0.0.0.3
+Summary: A simple module will allow you to create Excel spreadsheets.
+Home-page: https://github.com/TheYoungEngineers/SulfTaper
+Author: Nikita_Khalitov
+Author-email: nik1020031.nik@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+A simple module will allow you to create Excel spreadsheets simply and without unnecessary fuss
+
