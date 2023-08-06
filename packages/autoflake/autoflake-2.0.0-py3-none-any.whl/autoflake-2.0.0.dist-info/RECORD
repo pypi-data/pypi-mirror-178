@@ -1,0 +1,10 @@
+LICENSE,sha256=5bSWn9VokaqpjIGDuRIg0IaDFTm1ZXLXVT5akBnGMgE,1061
+README.md,sha256=Ivx8poxv49_mfMM1ZbmMWf4vbxkxCmaw-XU7eccskkg,6544
+autoflake.py,sha256=oTPrbc52bdcmlGL7qUhUKgIAh30ytwFnrrCFZtaEx08,46872
+test_autoflake.py,sha256=i8wxI-in77oO0sTs07brAGMe7nbcWScx4S1uxon2YXg,90490
+autoflake-2.0.0.dist-info/METADATA,sha256=MwEiYCGCEliOLVxkmzz_k-bJFMQi1q8UjOfkjU65XpQ,7262
+autoflake-2.0.0.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+autoflake-2.0.0.dist-info/entry_points.txt,sha256=j3-h_5qN3V9jqizoSMCEF5HSRvsS9dWOMIYc0yyS2JM,45
+autoflake-2.0.0.dist-info/licenses/AUTHORS.rst,sha256=jAYkeRpk3uri1RVRuAsKEN-La80xLPGNPDuKZ-KwXGE,604
+autoflake-2.0.0.dist-info/licenses/LICENSE,sha256=5bSWn9VokaqpjIGDuRIg0IaDFTm1ZXLXVT5akBnGMgE,1061
+autoflake-2.0.0.dist-info/RECORD,,
