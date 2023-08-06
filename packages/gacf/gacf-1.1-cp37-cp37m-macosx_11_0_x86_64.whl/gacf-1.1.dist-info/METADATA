@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: gacf
+Version: 1.1
+Summary: A generalisation of the autocorrelation function, for non-uniformly sampled timeseries data
+Author: Joshua Briegal
+Author-email: jtb34@cam.ac.uk
+License-File: LICENSE
+
