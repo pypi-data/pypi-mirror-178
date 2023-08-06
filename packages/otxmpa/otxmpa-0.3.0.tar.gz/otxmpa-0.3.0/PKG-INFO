@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: otxmpa
+Version: 0.3.0
+Summary: Model Preperation Algorithms
+Home-page: https://github.com/openvinotoolkit/model_preparation_algorithm
+License-File: LICENSE
+
+Temporary PyPI packaging. Project to be merged into OpenVINO Training Extension
