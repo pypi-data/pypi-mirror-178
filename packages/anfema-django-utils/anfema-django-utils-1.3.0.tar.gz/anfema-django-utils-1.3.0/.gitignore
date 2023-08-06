@@ -1,0 +1,16 @@
+.idea/
+.vscode/
+
+*.pyc
+__pycache__
+
+/static/
+/media/
+*.sqlite3
+/example_proj/settings_local.py
+
+*.egg-info/
+.mypy_cache/
+.tox/
+.venv/
+dist/
