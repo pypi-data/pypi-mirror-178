@@ -1,0 +1,11 @@
+afasi/__init__.py,sha256=SW7ofOGfBlGv7qx99VS0jwdQtMQ729TcAKdaadEZEU8,2182
+afasi/__main__.py,sha256=buc1Qzjb1nVdzUN-6cg5L8-yF0TUFRe0I7To-pID3f4,183
+afasi/afasi.py,sha256=6HiSrP5NqeE8HTw4z4DfN4sV9ZWM5kkN_cCtLeOFWqE,6045
+afasi/cli.py,sha256=lBWdfZnGUbtCYWktcwGGWkfYohcgeCTDlmCFy41csms,5213
+afasi/tabel.py,sha256=nH25Dn7gQseM4ZA6BY4ipdzX6ofiRSDynb_iyADpT0I,3288
+afasi-2022.11.26.dist-info/LICENSE,sha256=7xgn1qW4kKTaB163LiE9nqy5u7ddEv-GDesuxK-SW58,1069
+afasi-2022.11.26.dist-info/METADATA,sha256=J9WesDywGtqUZWPdef1Hg64zsf-svD5WUBDu9BPNIjE,2843
+afasi-2022.11.26.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+afasi-2022.11.26.dist-info/entry_points.txt,sha256=hD9JFlMprBISYRnkoCEDd1I9bMvkUe71d9BxVKUL484,45
+afasi-2022.11.26.dist-info/top_level.txt,sha256=8uSE8sK_1znAfaaHsbrYiJX_4oVOrcKppD5BglK94ik,6
+afasi-2022.11.26.dist-info/RECORD,,
