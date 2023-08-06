@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: gridinfo
+Version: 0.1.0
+Summary: A tool for getting information about the Second Life grid.
+Home-page: https://github.com/davep/gridinfo
+Author: Dave Pearson
+Author-email: davep@davep.org
+Maintainer: Dave Pearson
+Maintainer-email: davep@davep.org
+License: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Keywords: terminal textual secondlife mapping metaverse virtual-worlds
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Environment :: Console
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Utilities
+Classifier: Topic :: Terminals
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: textual
+Requires-Dist: rich-pixels
+Requires-Dist: httpx
+
+# gridinfo
+
+**CAUTION:** Work in progress.
+
+A simple terminal-based application, written in Python and with
+[Textual](https://textual.textualize.io/), that provides access to headline
+information about [Linden Lab's](https://www.lindenlab.com/) virtual world
+[Second Life](https://secondlife.com/).
+
+Written as a wrapper around parts of both the Second Life API, and the
+[GridSurvey](http://www.gridsurvey.com/)
+[API](http://www.gridsurvey.com/api.php) by [Tyche
+Shepherd](https://toot.community/@tyche_shepherd).
+
+[//]: # (README.md ends here)

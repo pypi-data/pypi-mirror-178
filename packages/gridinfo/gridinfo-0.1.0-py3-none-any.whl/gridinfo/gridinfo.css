@@ -1,0 +1,102 @@
+Card {
+    padding-top: 1;
+    height: auto;
+}
+
+Card .caption {
+    margin: 0 1 0 1;
+    padding: 0 1 0 1;
+    background: $secondary-background;
+    width: auto;
+    border: hkey $secondary;
+}
+
+Card .data {
+    margin: 0 1 0 1;
+    layout: grid;
+    grid-size: 2;
+    border: vkey $secondary;
+    background: $secondary-background;
+}
+
+.title {
+    text-style: bold;
+    text-align: right;
+    margin: 0 1 0 0;
+}
+
+#grid-data .data {
+    height: 5;
+}
+
+#grid-data .title {
+    width: 30;
+}
+
+#grid-concurrency .data {
+    height: 5;
+}
+
+#grid-concurrency .title {
+    width: 30;
+}
+
+#grid-size .data {
+    height: 6;
+}
+
+#grid-size .title {
+    width: 30;
+}
+
+#region-input {
+    margin: 0 1 0 1;
+    height: auto;
+    color: $primary;
+    background: $primary-background;
+}
+
+#region-input Input {
+    width: 5fr;
+}
+
+Input.bad-region {
+    border: tall red;
+}
+
+#region-input Button {
+    width: 1fr;
+}
+
+#region-info .data {
+    height: 8;
+}
+
+#region-info .title {
+    width: 15;
+}
+
+#map-wrap {
+    height: 1fr;
+    padding-top: 1;
+    padding-bottom: 1;
+}
+
+#map-wrap .data {
+    height: 1fr;
+    width: 1fr;
+    layout: horizontal;
+    overflow: scroll scroll;
+}
+
+#map {
+    width: 160;
+    height: 80;
+}
+
+.data:focus {
+    background: $secondary-background-lighten-1;
+    border: hkey $secondary-lighten-1;
+}
+
+/* gridinfo.css ends here */
