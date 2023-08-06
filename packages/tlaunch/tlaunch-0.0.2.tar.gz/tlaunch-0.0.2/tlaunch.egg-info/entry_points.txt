@@ -1,0 +1,2 @@
+[console_scripts]
+tlaunchrun = tlaunch.lp_k8s.runner.run:main
