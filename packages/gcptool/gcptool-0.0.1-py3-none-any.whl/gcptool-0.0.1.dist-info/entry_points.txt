@@ -1,0 +1,2 @@
+[console_scripts]
+gcptool = gcptool.__main__:main
