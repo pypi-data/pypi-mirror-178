@@ -1,0 +1,8 @@
+README.md
+setup.py
+csvtickerlist/__init__.py
+csvtickerlist.egg-info/PKG-INFO
+csvtickerlist.egg-info/SOURCES.txt
+csvtickerlist.egg-info/dependency_links.txt
+csvtickerlist.egg-info/requires.txt
+csvtickerlist.egg-info/top_level.txt
