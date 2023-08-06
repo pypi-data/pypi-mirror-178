@@ -1,0 +1,11 @@
+data/readmetoo.json,sha256=Q1m5jZhb6WHrpMzKtzPW_JboZSxSw9-ZQp5Tprn7A4k,199
+pkgexampledatafiles/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pkgexampledatafiles/my_datafiles_module.py,sha256=US2yDT65kxc_cpNfC4ly6sWiEZYKAIAJ-3tM6GTwCus,5515
+pkgexampledatafiles/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pkgexampledatafiles/data/readme.json,sha256=r3dX6bVcMZniDzLio-DSkl1mzM5hNQv-axT6xoUOTZ8,191
+pkgexampledatafiles-0.0.3.dist-info/LICENCE,sha256=dTNxTPS62CMrgKWxz9KxtM5L8TWf7zuvn1ZFq-7r__M,1066
+pkgexampledatafiles-0.0.3.dist-info/METADATA,sha256=KeCcJw44k4ahDM_6JS2AsDb4ip4mGk9sV6qdbXSB6EU,666
+pkgexampledatafiles-0.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pkgexampledatafiles-0.0.3.dist-info/entry_points.txt,sha256=ceuAMutfzf1YjD8K3qReUrJ5GJJzbmbcjky27pqZl2k,82
+pkgexampledatafiles-0.0.3.dist-info/top_level.txt,sha256=ZQJW1LzbAj_hih_5xm9Ug46aq7YSrCv2jAFYT076bUM,25
+pkgexampledatafiles-0.0.3.dist-info/RECORD,,
