@@ -1,0 +1,2 @@
+[console_scripts]
+rexsubmodule = pkgexamplesubmodules:my_submoduleexample_module.my_submodule
