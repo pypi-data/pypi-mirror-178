@@ -1,0 +1,6 @@
+setup.py
+xyqsister/__init__.py
+xyqsister.egg-info/PKG-INFO
+xyqsister.egg-info/SOURCES.txt
+xyqsister.egg-info/dependency_links.txt
+xyqsister.egg-info/top_level.txt
