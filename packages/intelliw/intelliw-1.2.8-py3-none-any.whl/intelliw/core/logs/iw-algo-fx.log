@@ -1,0 +1,32 @@
+[Framework Log] 2022-11-04 13:45:02.535 INFO recorder.py:107: {
+	"data":true,
+	"detail":null,
+	"detailTitle":"",
+	"errorStack":null,
+	"msg":"SUCCESS",
+	"status":1
+}
+[Framework Log] 2022-11-04 13:45:27.187 INFO recorder.py:107: {
+	"data":true,
+	"detail":null,
+	"detailTitle":"",
+	"errorStack":null,
+	"msg":"SUCCESS",
+	"status":1
+}
+[Framework Log] 2022-11-04 13:46:19.058 INFO recorder.py:111: {
+	"data":null,
+	"detail":null,
+	"detailTitle":"",
+	"errorStack":null,
+	"msg":"JSON parse error: syntax error,expect start with { or [,but actually start with string; nested exception is com.alibaba.fastjson.JSONException: syntax error,expect start with { or [,but actually start with string",
+	"status":0
+}
+[Framework Log] 2022-11-04 13:49:21.564 INFO recorder.py:103: {
+	"data":true,
+	"detail":null,
+	"detailTitle":"",
+	"errorStack":null,
+	"msg":"SUCCESS",
+	"status":1
+}
