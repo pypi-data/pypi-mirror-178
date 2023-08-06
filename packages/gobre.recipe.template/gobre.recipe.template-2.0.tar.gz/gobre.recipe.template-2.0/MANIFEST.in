@@ -1,0 +1,8 @@
+include *.yaml
+include AUTHORS
+include CHANGELOG
+include LICENSE
+include README.rst
+include tox.ini
+
+prune tests
