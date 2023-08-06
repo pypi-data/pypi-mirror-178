@@ -1,0 +1,15 @@
+snyk_tags/__init__.py,sha256=vI6L_OOgl7NYyNuMJV7bEv60rcXEbXNfAY1QmP_8NAU,206
+snyk_tags/__main__.py,sha256=GKiemo7wjDeH4SF_HTgTd5Jl3m5D5vWCP2JaGZNYnPc,157
+snyk_tags/attribute.py,sha256=LnRAT_rQoyyFS87pABxL89NCJNPOizWyKbfiz96GnsE,4382
+snyk_tags/collection.py,sha256=EnkFCh2l63XFYfM_KqEyyE3JrOwpGVKCLogJpciPVEA,5664
+snyk_tags/files.py,sha256=cBHHePp_Z72Hwzr16wzxGrIaiIRkqxiI9uDmbO5ZYxw,9916
+snyk_tags/github.py,sha256=kX_MHGeBmkwEO5YvJVQlU_UEGuJdsy65XBOEMGgboqI,7803
+snyk_tags/list.py,sha256=-1hKvOAetMhjf9-P6_bH4h4KGyWTFW1skQ_hhGdOVEQ,4197
+snyk_tags/remove.py,sha256=WZRtUGUE73RRqtNlCLPuor0v8VtZNEprRLZxziDpayk,7185
+snyk_tags/tag.py,sha256=fin27AS3z8C8hfk5PR3_WMZ3OJXxiVwOxxie6kpZd4Y,15301
+snyk_tags/tags.py,sha256=KoWhFEb5uWjtQUSKWXQZ6ggYG7iOFXBnc8AR66vA-uk,1948
+snyk_tags-2.0.1.dist-info/entry_points.txt,sha256=HzeLORk4rJGYgAupCx3ttBD63m_MzSDRm5Cws3W4egI,48
+snyk_tags-2.0.1.dist-info/LICENSE.md,sha256=Xho_UwsQw0KMao_7pKeoRPQMNnGTh3-XYaQe02jAEOQ,2156
+snyk_tags-2.0.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+snyk_tags-2.0.1.dist-info/METADATA,sha256=JdGpZc6buNI7CqZX5-Xq27tNxG2ujN9rQixHxsof8Uc,9501
+snyk_tags-2.0.1.dist-info/RECORD,,
