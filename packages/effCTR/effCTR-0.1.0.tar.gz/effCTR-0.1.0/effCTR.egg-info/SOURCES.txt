@@ -1,0 +1,8 @@
+README.md
+setup.py
+effCTR/__init__.py
+effCTR.egg-info/PKG-INFO
+effCTR.egg-info/SOURCES.txt
+effCTR.egg-info/dependency_links.txt
+effCTR.egg-info/requires.txt
+effCTR.egg-info/top_level.txt
