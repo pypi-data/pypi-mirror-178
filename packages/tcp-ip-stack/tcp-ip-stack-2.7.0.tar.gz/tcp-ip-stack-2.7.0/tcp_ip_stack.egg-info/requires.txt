@@ -1,0 +1,12 @@
+
+[dev]
+click
+testslide
+black
+mypy
+flake8
+codespell
+isort
+pylint
+build
+twine
