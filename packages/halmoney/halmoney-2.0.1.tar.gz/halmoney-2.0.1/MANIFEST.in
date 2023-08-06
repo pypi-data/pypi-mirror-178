@@ -1,0 +1,16 @@
+include anydb.py
+include basic_data.py
+include example_data.py
+include jfinder.py
+include mail.py
+include pcell.py
+include pcell_event.py
+include pynal.py
+include scolor.py
+include word.py
+include youtil.py
+
+include README.md
+include requirements.txt
+
+include src/halmoney/history/*.*

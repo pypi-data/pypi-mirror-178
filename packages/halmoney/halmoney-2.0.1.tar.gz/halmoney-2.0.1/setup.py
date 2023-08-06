@@ -1,0 +1,42 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup, find_packages
+with open("README.md", "r", encoding='utf-8') as fh:
+    long_description = fh.read()
+setup(
+    name='halmoney',
+    version='2.0.1',
+    url='https://github.com/sjpark/halmoney',
+    download_url='https://github.com/sjpark/halmoney/archive/v2.0.1.tar.gz',
+    author='sjpark',
+    author_email='sjpkorea@yahoo.com',
+    description='Easy Read / Write for Excel, Word, Color, Etc using Python',
+    packages=find_packages("src"),
+    package_dir={"": "src"},
+    include_package_data=True,
+    package_data={
+        "halmoney": ["history/*.*"],
+        #"halmoney": ["photo/*.*"],
+        #"halmoney": ["py_files/*.*"],
+        #"halmoney": ["vba_files/*.*"],
+        #"halmoney": ["user_code/*.*"],
+        #"halmoney": ["user_menu/*.*"],
+        "halmoney": ["anydb.py"],
+        "halmoney": ["basic_data.py"],
+        #"halmoney": ["example_data.py"],
+        #"halmoney": ["graph.py"],
+        "halmoney": ["jfinder.py"],
+        "halmoney": ["mail.py"],
+        #"halmoney": ["mqtt.py"],
+        "halmoney": ["pcell.py"],
+        "halmoney": ["pcell_event.py"],
+        "halmoney": ["pynal.py"],
+        "halmoney": ["scolor.py"],
+        "halmoney": ["word.py"],
+        "halmoney": ["youtil.py"],
+        },
+    long_description=open('README.md').read(),
+    install_requires=[''],
+    python_requires='>=3.5',
+    zip_safe=False,
+    classifiers=['License :: OSI Approved :: MIT License'],
+    )
