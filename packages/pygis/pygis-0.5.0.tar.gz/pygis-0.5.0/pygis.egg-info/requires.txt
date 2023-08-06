@@ -1,0 +1,17 @@
+bokeh
+geedim>=1.6.1
+geemap>=0.18.1
+geopandas
+ipynb-py-convert
+leafmap>=0.14.0
+localtileserver>=0.6.1
+mapclassify>=2.4.0
+mss
+netcdf4
+osmnx
+owslib
+palettable
+plotly
+retry
+rio-cogeo
+rioxarray
