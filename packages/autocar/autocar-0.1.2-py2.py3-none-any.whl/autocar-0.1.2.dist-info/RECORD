@@ -1,0 +1,11 @@
+autocar/__init__.py,sha256=HyB-zmufpkedadEBNPuASzvmkLJ4GY5pyoZ-yhWWmjg,44
+autocar/automate_po_process.py,sha256=RukSXgT_zZk_N-rrVr44FYa8TA8Z994Q0KfL92qq8Ak,28575
+autocar/ava.py,sha256=ulcstkbRXOmFEmYGuGsR4QgN8aG4J5T6QRDl4aCrB1Y,35210
+autocar/merge_pdf.py,sha256=LPzzs2qDJd2m5PVmTBnb3kqzr-t3uW3FfdAFNefAOzQ,1475
+autocar/print_pdf.py,sha256=j0TTjCIicSQ68RQ1QUngX8uC-oMeQlsZ_fFDvXRNRQM,16680
+autocar/print_po.py,sha256=w204vlsOGqvMlbPwvMnIlQge2A_2U4ButI9aBovM0Do,2216
+autocar/qad_keyboard_automation.py,sha256=e1CRScNqISzBvF83M2NDrxDaHr2pR7fL_GW4vz3VPqs,8258
+autocar-0.1.2.dist-info/LICENSE,sha256=s75uyNweSL1xD8OKwuojsIlxPJskFJZGgSdVIGYIXNg,1077
+autocar-0.1.2.dist-info/WHEEL,sha256=kdeDBNPvBI0w3meLKPoGgAnEr54n1jzrZWUoaLmGzVY,99
+autocar-0.1.2.dist-info/METADATA,sha256=JYrWnpSczKp0RmGCnyOd0zi-Dylop4gK0epvpvZ7NbE,526
+autocar-0.1.2.dist-info/RECORD,,
