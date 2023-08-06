@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+manupdf/__init__.py
+manupdf/pdf2image.py
+manupdf/pdf2text.py
+manupdf.egg-info/PKG-INFO
+manupdf.egg-info/SOURCES.txt
+manupdf.egg-info/dependency_links.txt
+manupdf.egg-info/top_level.txt
