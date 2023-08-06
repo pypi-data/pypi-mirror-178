@@ -1,0 +1,3 @@
+[console_scripts]
+sandbox=hntpy.sandbox:sandbox
+
