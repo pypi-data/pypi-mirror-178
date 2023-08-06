@@ -1,0 +1,6 @@
+selenium
+requests
+undetected-chromedriver
+
+[dev]
+check-manifest
