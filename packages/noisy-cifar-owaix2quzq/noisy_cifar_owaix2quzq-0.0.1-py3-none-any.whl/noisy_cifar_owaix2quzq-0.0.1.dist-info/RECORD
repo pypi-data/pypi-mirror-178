@@ -1,0 +1,9 @@
+noisy_cifar/CIFAR-N.zip,sha256=e88GB5t6gvHQ2S9eNFJpSjAMkqrTwU3yI04icw8a6Og,438874
+noisy_cifar/__init__.py,sha256=W6UFj0puCVQQJhKnW0F51wLls1QVx5KB1yeaoO1xASY,50
+noisy_cifar/datasets.py,sha256=WL_HzayaT5--xblypkIMEtarlEsHMiwX8k16ea673zc,2675
+noisy_cifar/utils.py,sha256=h5Jv8WBw9On0fWTk0IavCQt1V6HzkwXbmIhfGVJigd8,2267
+noisy_cifar_owaix2quzq-0.0.1.dist-info/LICENSE,sha256=3no1G6mhZTuk2r_1yvGWMzYkNpV5va0TE4GAs7rKm9E,1066
+noisy_cifar_owaix2quzq-0.0.1.dist-info/METADATA,sha256=gM2j0qXHMs5zHROzyormxJISv3zMUUoyNVtb3d9Pb1E,1253
+noisy_cifar_owaix2quzq-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+noisy_cifar_owaix2quzq-0.0.1.dist-info/top_level.txt,sha256=jtqU-U8qFX8C0fKxNIFb0Zoy-oomrVqHqAvJMimvwoY,12
+noisy_cifar_owaix2quzq-0.0.1.dist-info/RECORD,,
