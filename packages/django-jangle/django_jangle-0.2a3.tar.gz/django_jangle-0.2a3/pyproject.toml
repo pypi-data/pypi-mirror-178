@@ -1,0 +1,51 @@
+[build-system]
+requires = ["hatchling>=1.11.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "django-jangle"
+description = "IETF BCP 47 / RFC 5646 language tags in Django"
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "Hannah Einstein", email = "hannah.a.einstein@gmail.com" }]
+keywords = ["rfc5646", "rfc 5646", "iso 639", "django", "language tags"]
+classifiers = [
+    "Framework :: Django :: 4.1",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3 :: Only",
+]
+dependencies = ["Django>=4.1", "requests>=2.28.0"]
+requires-python = ">=3.10"
+dynamic = ["version"]
+
+[project.optional-dependencies]
+dev = ["hatch", "wheel", "ipython", "black", "isort", "django-stubs", "sphinx"]
+
+[project.urls]
+Homepage = "https://github.com/egginabucket/jangle"
+Documentation = "https://jangle.readthedocs.io/en/latest/"
+
+[tool.hatch.version]
+path = "src/jangle/__about__.py"
+
+[tool.hatch.build.targets.sdist]
+exclude = ["/.vscode", "/docs", ".readthedocs.yaml"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/jangle"]
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line_length = 79
+
+[tool.isort]
+line_length = 79
