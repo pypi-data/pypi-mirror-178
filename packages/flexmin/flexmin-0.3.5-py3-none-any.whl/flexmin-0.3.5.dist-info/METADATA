@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: flexmin
+Version: 0.3.5
+Summary: A flexible system admin web portal
+Home-page: https://creativeedgedigital.co.uk/flexmin
+Author: Richard Cooke
+Author-email: contact_flexmin_pypi@creativeedgedigital.co.uk
+Maintainer: Richard Cooke
+Maintainer-email: contact_flexmin_pypi@creativeedgedigital.co.uk
+License: BSD
+Platform: linux
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: System :: Systems Administration
+License-File: LICENSE
+Requires-Dist: py4web
+Requires-Dist: click
+Requires-Dist: pyyaml
+
+
+    Flexmin is a web administration interface for system administartors.
+    
+    It includes a service that runs in the background as root, and a 
+    web application (based on PY4WEB) that provides a user friendly
+    interface for common administration tasks.
+    
+    This can be useful for developers to manage a web development server
+    or those managing a small network.
+    
