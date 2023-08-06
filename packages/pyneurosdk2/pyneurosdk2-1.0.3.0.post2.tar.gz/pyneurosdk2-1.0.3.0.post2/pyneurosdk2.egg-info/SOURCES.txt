@@ -1,0 +1,15 @@
+README.md
+setup.py
+neurosdk/__cmn_types.py
+neurosdk/__init__.py
+neurosdk/__utils.py
+neurosdk/cmn_types.py
+neurosdk/sample.py
+neurosdk/scanner.py
+neurosdk/sensor.py
+neurosdk/libs/neurosdk2-x32.dll
+neurosdk/libs/neurosdk2-x64.dll
+pyneurosdk2.egg-info/PKG-INFO
+pyneurosdk2.egg-info/SOURCES.txt
+pyneurosdk2.egg-info/dependency_links.txt
+pyneurosdk2.egg-info/top_level.txt
