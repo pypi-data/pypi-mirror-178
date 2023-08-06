@@ -1,0 +1,6 @@
+click
+cuda-python
+numba
+numpy
+pandas
+pytest
