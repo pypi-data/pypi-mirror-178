@@ -1,0 +1,11 @@
+color_ls-1.0.3.data/data/colorls/config/colorls.ini,sha256=XxAyPdhLtFg748mbWILLJeQvGfmCMTK6oMIGw01Z5t8,2463
+colorls/__init__.py,sha256=HsNg7WylcRROzGQeaoi_Ca5Iz2e7jDqe6UiUkIEGfAE,78
+colorls/__main__.py,sha256=2CevkmOqlLMoRX2SqG8Mfv_qHNlekS52oOY2w5suVkU,34
+colorls/colorls.py,sha256=_V79ho7vJ2-S3g2pSNmoBybX3G-HOZKs-F9yskWk5p8,10214
+colorls/config/colorls.ini,sha256=XxAyPdhLtFg748mbWILLJeQvGfmCMTK6oMIGw01Z5t8,2463
+color_ls-1.0.3.dist-info/LICENSE,sha256=UZcXMAokMcie9QVLpziTjMzoWfKg2ZlpAIWVhZllkmA,1071
+color_ls-1.0.3.dist-info/METADATA,sha256=9rHc3aLZVxfiajXpFPnCzo4CbnaW67qG2dMRLmqUpsQ,2503
+color_ls-1.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+color_ls-1.0.3.dist-info/entry_points.txt,sha256=3JHHZZ587gGu-vwhEL4BvUEawKaR3apBwIh93YtESX8,45
+color_ls-1.0.3.dist-info/top_level.txt,sha256=pCdE6LZQkj-jiMS7eslmkp9QqhUQrh1wv8-TfQ0w4bQ,8
+color_ls-1.0.3.dist-info/RECORD,,
