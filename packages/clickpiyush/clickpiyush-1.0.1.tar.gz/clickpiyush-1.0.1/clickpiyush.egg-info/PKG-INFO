@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: clickpiyush
+Version: 1.0.1
+Summary: CLI tool to describe Piyush Goyani's resume aka Resume Explainer.
+Home-page: https://github.com/piyush-multiplexer/click-piyush
+Author: Piyush Goyani
+Author-email: thesourcepedia@gmail.com
+License: MIT
+Keywords: cli piyush goyani thesourcepedia resume cv
+License-File: LICENSE
+
+CLI tool to describe Piyush Goyani's resume aka Resume Explainer made with Click.
