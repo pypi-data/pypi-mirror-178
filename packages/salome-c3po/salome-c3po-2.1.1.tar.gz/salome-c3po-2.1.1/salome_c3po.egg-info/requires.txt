@@ -1,0 +1,6 @@
+
+[pytest]
+pytest
+pytest-cov
+pytest-easyMPI
+pytest-html
