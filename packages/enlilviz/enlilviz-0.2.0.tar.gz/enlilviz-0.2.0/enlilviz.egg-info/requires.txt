@@ -1,0 +1,7 @@
+numpy
+matplotlib
+xarray
+netcdf4
+
+[test]
+pytest>=3
