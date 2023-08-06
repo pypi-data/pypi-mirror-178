@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+peekStock/__init__.py
+peekStock/app.py
+peekStock/crawlerHelper.py
+peekStock.egg-info/PKG-INFO
+peekStock.egg-info/SOURCES.txt
+peekStock.egg-info/dependency_links.txt
+peekStock.egg-info/top_level.txt
