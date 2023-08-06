@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+nonblocking_stream_queue/__init__.py
+nonblocking_stream_queue/reader.py
+nonblocking_stream_queue.egg-info/PKG-INFO
+nonblocking_stream_queue.egg-info/SOURCES.txt
+nonblocking_stream_queue.egg-info/dependency_links.txt
+nonblocking_stream_queue.egg-info/top_level.txt
