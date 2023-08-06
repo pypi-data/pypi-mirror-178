@@ -1,0 +1,6 @@
+six<2.0,>=1.9
+unidecode
+
+[develop]
+pylama
+tox

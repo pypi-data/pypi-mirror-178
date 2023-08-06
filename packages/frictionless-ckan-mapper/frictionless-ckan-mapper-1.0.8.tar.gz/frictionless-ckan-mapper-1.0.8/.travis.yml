@@ -1,0 +1,25 @@
+sudo: required
+dist: trusty
+language: python
+python:
+- 2.7
+- 3.6
+env:
+  global:
+  - TOXENV="py${PYTHON_VERSION//./}"
+install:
+- make install
+- pip install coveralls
+script:
+- make test
+after_success:
+- coveralls
+deploy:
+  provider: pypi
+  user: "__token__"
+  distributions: sdist bdist_wheel
+  skip_cleanup: true
+  on:
+    tags: true
+  password:
+    secure: i5+61ZmR8Fv3a31IwnhgM3hEOCcyWCHezR+vVt2J1iEZnyCP1ldh2rpRtk4SOW8tgR9VJ/amhrYnUoDP2WP7KAfA6nX8Y5I8apVL/iNAJssqPiSlPLNeOgzjgqEEE1tSXFmriyieVrDsf+z98XX6LjHDUoQFdop9R1WgXlnXrn967/rBl4a0BA30xi5gLyab6KWkNNAtMriZEHP058rrkWxGMLn/0P+9eu2GHZTkUdmotPMHPAvEB+Ts6BOs4i74A4MnTyxDG8nlEqBP9CjkqiUyX5rGmSggW5wOJltrWjZEZymB0Q3b8uffrfzdwhpVkNlqXEBhnSnJKpRhmKmIWp8Ip7rEfeQQz/VQpSKLLdFF5fhiXUCsLpn1BJ02Y0h9VZuZig2Y2I7Rbo0w1udcGrnPZ5hstjbTQglVTcqMq4BmAJYHIiF5qRe+EF4D5oY42FI2YoinMuC5kljGl0iLbYYRo06Ei8ZSSj3cf+A8m+LePJCuDFaKaoafCUO0WFFcNTaUfwuHBF0Nx2TEuF1v7lVbcTqGMTYH+k89rlRRKOLyn9sYlaloKdW/4bYE+7aI7vCSxw5zl1qVgg+CXoqOEMq/fpkEAjheFngij+eCGcvkHjeEntIOKsAkLm/u8Gs/sd9bGyj7/JWF92JGJ6K4LKm3Mu/JmKiRqbUhc0jEbDw=
