@@ -1,0 +1,11 @@
+pyramid_localize/__init__.py,sha256=x577HTIGtGAXxprMQwAdZ6mrSws0m2B4pYUOmz9gXFM,3556
+pyramid_localize/models.py,sha256=iCTLoF-14ReRz77IyPAJuuRrSgpRGv076lsRXLmnYtk,2107
+pyramid_localize/negotiator.py,sha256=Y14x5NEvroTqSo1NWqWRXV7swDqQbE8QQTXJ5MGffkk,1747
+pyramid_localize/request.py,sha256=kAj6pqXuIoYCLOTNXcQNg-ls6vhcJNSuv_X39jEMwj0,2804
+pyramid_localize/tools.py,sha256=P7yBh8KWSBfO79fyLkz5Omy9-FF6DWrSOxR_KxGu8t4,3166
+pyramid_localize-1.0.3.dist-info/AUTHORS.rst,sha256=dIIHvUFo64MXFP7LTWAh9wq8IsK1RQg4iuUU30cknsw,162
+pyramid_localize-1.0.3.dist-info/LICENSE,sha256=aGo0vqs-hVuu1s_Y5BhuVlBSkblB9a565eON2k18-qw,1183
+pyramid_localize-1.0.3.dist-info/METADATA,sha256=Zq4FCHkQmINOo8HYkgKxd-caPVEhHyuWbretWVP2Ykk,6079
+pyramid_localize-1.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pyramid_localize-1.0.3.dist-info/top_level.txt,sha256=DQzHDGnAJD4y9SIHGJj8TkCdWD_RLX5yYxlD5u2XJYk,17
+pyramid_localize-1.0.3.dist-info/RECORD,,
