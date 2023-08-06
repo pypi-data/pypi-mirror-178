@@ -1,0 +1,10 @@
+README.md
+licence.txt
+setup.cfg
+setup.py
+data_source/__init__.py
+data_source/data_source.py
+modulo_data_bot.egg-info/PKG-INFO
+modulo_data_bot.egg-info/SOURCES.txt
+modulo_data_bot.egg-info/dependency_links.txt
+modulo_data_bot.egg-info/top_level.txt
