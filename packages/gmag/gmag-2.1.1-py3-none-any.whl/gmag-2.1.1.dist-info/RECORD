@@ -1,0 +1,9 @@
+gmag/__init__.py,sha256=Aht2295j8FswZ-nPYofCYr3fBZ6Uyf0thTfl5Oc2mWA,22
+gmag/_print_util.py,sha256=QBkcP8NxT0oB9LLOnAnv_AHY5k6JR4_6TcLCwo70FMs,781
+gmag/galaxy.py,sha256=rDn7q3zwsdm1ECqkcTrHppSFWbtFt5BEx5tXOYa0MjY,3343
+gmag/sdss.py,sha256=rQYZRI_7KFil3EnBZYZcCD-M_Csp3maE_kBTM5cNqIc,15904
+gmag-2.1.1.dist-info/LICENSE.txt,sha256=FtQa2eFIPY1BbjhrGpdaKFOsJragt96Izcqt7_US4O0,1066
+gmag-2.1.1.dist-info/METADATA,sha256=t44L0lApRWvdQRCjMHSwNf0SlbmOOmTCXiNJC-S-ZAI,6449
+gmag-2.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+gmag-2.1.1.dist-info/top_level.txt,sha256=F5NUhyd0gEiQNPc8FFMliaN8zzfKgwszUe-PFrTsszY,5
+gmag-2.1.1.dist-info/RECORD,,
