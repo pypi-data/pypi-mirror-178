@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+cmdcheatsheet/cmdcheatsheet.py
+cmdcheatsheet.egg-info/PKG-INFO
+cmdcheatsheet.egg-info/SOURCES.txt
+cmdcheatsheet.egg-info/dependency_links.txt
+cmdcheatsheet.egg-info/entry_points.txt
+cmdcheatsheet.egg-info/requires.txt
+cmdcheatsheet.egg-info/top_level.txt
