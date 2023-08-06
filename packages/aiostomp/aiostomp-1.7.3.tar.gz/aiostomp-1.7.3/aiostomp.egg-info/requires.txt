@@ -1,0 +1,11 @@
+six
+async-timeout
+
+[tests]
+mock
+coverage
+asynctest
+pytest
+pytest-cov
+flake8
+bumpversion
