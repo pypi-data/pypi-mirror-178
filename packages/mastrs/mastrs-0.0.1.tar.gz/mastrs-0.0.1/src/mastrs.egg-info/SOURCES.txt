@@ -1,0 +1,7 @@
+LICENSE
+pyproject.toml
+src/mastars/mastar.py
+src/mastrs.egg-info/PKG-INFO
+src/mastrs.egg-info/SOURCES.txt
+src/mastrs.egg-info/dependency_links.txt
+src/mastrs.egg-info/top_level.txt
