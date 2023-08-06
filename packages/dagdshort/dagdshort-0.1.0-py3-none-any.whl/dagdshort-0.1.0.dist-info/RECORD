@@ -1,0 +1,9 @@
+dagdshort/__init__.py,sha256=Ny8d3dXZ1CRknnf9BcTMyM9vpd48d3XBKMgm9xFwwTA,63
+dagdshort/config.py,sha256=eNnNqZ-Hugi6GvobgInc1iE3IAx6q_Sr-Tq6k5NVwGg,1211
+dagdshort/exc.py,sha256=1sztUsXRw7tJQQrW5OdO0emEhthcOzMm8gOisG7OESo,600
+dagdshort/shortener.py,sha256=4WrFVtBq2AuvLz76TrhdlZRfsbHF1qs8tbHY2c3KotQ,9124
+dagdshort-0.1.0.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+dagdshort-0.1.0.dist-info/METADATA,sha256=ZlTD_KaQcXG89W-oF1Dxeu1pAn6YPt2_uhsxM3ZnvKs,2795
+dagdshort-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+dagdshort-0.1.0.dist-info/top_level.txt,sha256=WzqCxIoFKWKzAnBwfWkVBaqIpXGle4ANwNCQRg-gvcc,10
+dagdshort-0.1.0.dist-info/RECORD,,
