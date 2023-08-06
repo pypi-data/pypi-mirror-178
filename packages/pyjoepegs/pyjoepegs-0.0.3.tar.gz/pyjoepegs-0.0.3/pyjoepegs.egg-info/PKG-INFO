@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: pyjoepegs
+Version: 0.0.3
+Summary: client library for joepegs api
+Home-page: https://github.com/ishtos/pyjoepegs
+Author: ishtos
+License: APACHE LICENSE, VERSION 2.0
+Keywords: pyjoepegs,joepegs
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pyjoepegs
+
+python api client for [joepegs](https://joepegs.dev/api)
+
+## Install
+
+```bash
+pip install pyjoepegs
+```
+
+## Quick start
+
+```python
+from pyjoepegs import JoepegsAPI
+api = JoepegsAPI(api_key=<API_KEY>)
+
+actvities_client = api.activities()
+collections_client = api.collections()
+items_client = api.items()
+maker_orders_client = api.maker_orders()
+owners_client = api.owners()
+sales_client = api.sales()
+search_client = api.search()
+users_client = api.users()
+```
