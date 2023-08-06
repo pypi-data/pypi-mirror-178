@@ -1,0 +1,9 @@
+cryptography
+requests
+safe-netrc
+
+[test]
+pytest
+pytest-freezegun
+pytest-httpserver
+pytest-socket
