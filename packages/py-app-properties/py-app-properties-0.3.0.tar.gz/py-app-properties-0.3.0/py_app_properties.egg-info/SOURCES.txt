@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+app_properties/__init__.py
+app_properties/config_handler.py
+app_properties/main.py
+app_properties/type_converter.py
+py_app_properties.egg-info/PKG-INFO
+py_app_properties.egg-info/SOURCES.txt
+py_app_properties.egg-info/dependency_links.txt
+py_app_properties.egg-info/requires.txt
+py_app_properties.egg-info/top_level.txt
