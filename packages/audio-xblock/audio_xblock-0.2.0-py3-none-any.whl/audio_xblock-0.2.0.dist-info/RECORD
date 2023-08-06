@@ -1,0 +1,13 @@
+audio/__init__.py,sha256=mgLd44oYfVYTwpcSDQ1kKSFyi0qEC2EbcNmKzE2fFUs,31
+audio/audio.py,sha256=C_IPCevly_UaMf-fMppAB-grx9vthFHu5csjaTqRFBY,2369
+audio/static/css/audio.css,sha256=VvQYj5Cp-KyXT5vsHbiAzOBRXIt91E6qvJkzibKhTB8,114
+audio/static/html/audio.html,sha256=VdvsJutBf6b0-Ze9iN8TqhMHEcz1E0t8dgZW0XWRhKc,137
+audio/static/html/audio_edit.html,sha256=Ym0e2r5fHqumC6FJTR5z5fZzM0h91DJ_a_n5xe0U7SI,632
+audio/static/js/src/audio.js,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+audio/static/js/src/audio_edit.js,sha256=lRdFjiWVexhduhRvvupgQO7HfQB7jAIG7A3ZicIdnpA,481
+audio_xblock-0.2.0.dist-info/LICENSE,sha256=YMZtFw1tnvZVwfBy9c1oHJ2PXOy8oSV70UX5XJdAlWU,34500
+audio_xblock-0.2.0.dist-info/METADATA,sha256=QJOJc2aTtLLCyLvuon8nyUgW1V5woLmHWOJvl7i_Mfw,186
+audio_xblock-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+audio_xblock-0.2.0.dist-info/entry_points.txt,sha256=O848DKFqKCbkKp5aAvQSjX2--5xvE-YlcjENx3oVMIk,39
+audio_xblock-0.2.0.dist-info/top_level.txt,sha256=8Ik4xsiI2CnZCyScmxsiXOxMVzAvCEOk_WWMwLU9URA,6
+audio_xblock-0.2.0.dist-info/RECORD,,
