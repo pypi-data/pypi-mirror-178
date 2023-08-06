@@ -1,0 +1,14 @@
+cirun/__about__.py,sha256=hCgG3K9CUl9K0CQOad9upeHgw1HSqerfOdevBJ5ymhk,125
+cirun/__init__.py,sha256=4A5fusDb57xfXKjgI9Q931c-wlYu-WlLcYyPuBf6h6c,131
+cirun/client.py,sha256=tUMUcoEEZFIcnvwgbQcw9_rlbMZ0YSMeHL8OPZeC3Qk,2942
+cirun/cloud.py,sha256=4OMO4IFkkEgfliRRivELOEOADgrQm5ltpW2ptHYjti0,3311
+cirun/main.py,sha256=3Is8dDk5yrFv_lab4iWaiIYi1vTtSZ5gfkGJ_Nzk8IY,360
+cirun/repo.py,sha256=RqWyOjZis5TWuWw-ItWi5ossKRp4VO8-bUto-3NPXTM,1479
+cirun/utils.py,sha256=s9bH5RG_PXqMU5hq6Twzcddz9-KTsd0iGfnYvwASkJg,233
+cirun/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cirun/tests/test_client.py,sha256=YQUMq68vNl2pLujuANhzmKR9PFyg6afOdLv5Yzs3I6A,218
+cirun-0.21.dist-info/METADATA,sha256=muTjprrBue3bXa07qeIEnobzKSbltQNzZbF35MDxAis,5106
+cirun-0.21.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+cirun-0.21.dist-info/entry_points.txt,sha256=jIpVk5c-wAta_OoHmHPWfAoAq8NJxjiJY3vcLXTf1Ac,41
+cirun-0.21.dist-info/licenses/LICENSE.txt,sha256=EPCoxPfiTFvSc_O6upYUYts3URbD_APqVgSYRpBCHFQ,1096
+cirun-0.21.dist-info/RECORD,,
