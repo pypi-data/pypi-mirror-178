@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+bytespace/__init__.py
+bytespace/_interface.py
+bytespace/exceptions.py
+bytespace/interfaces.py
+bytespace.egg-info/PKG-INFO
+bytespace.egg-info/SOURCES.txt
+bytespace.egg-info/dependency_links.txt
+bytespace.egg-info/requires.txt
+bytespace.egg-info/top_level.txt
