@@ -1,0 +1,3 @@
+1.1.2
+
+['C:\\Users\\circleci\\AppData\\Local\\Temp\\cibw-run-lr31h0k2\\cp37-win_amd64\\build\\venv\\Scripts\\delvewheel', 'repair', '-w', 'C:\\Users\\circleci\\AppData\\Local\\Temp\\cibw-run-lr31h0k2\\cp37-win_amd64\\repaired_wheel', 'C:\\Users\\circleci\\AppData\\Local\\Temp\\cibw-run-lr31h0k2\\cp37-win_amd64\\built_wheel\\dwave_samplers-1.0.0-cp37-cp37m-win_amd64.whl']
