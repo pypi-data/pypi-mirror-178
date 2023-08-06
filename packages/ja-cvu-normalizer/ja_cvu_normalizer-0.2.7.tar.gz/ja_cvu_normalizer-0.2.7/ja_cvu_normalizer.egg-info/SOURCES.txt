@@ -1,0 +1,14 @@
+MANIFEST.in
+setup.cfg
+setup.py
+ja_cvu_normalizer/__init__.py
+ja_cvu_normalizer/ja_cvu_normalizer.py
+ja_cvu_normalizer/reader.py
+ja_cvu_normalizer.egg-info/PKG-INFO
+ja_cvu_normalizer.egg-info/SOURCES.txt
+ja_cvu_normalizer.egg-info/dependency_links.txt
+ja_cvu_normalizer.egg-info/top_level.txt
+ja_cvu_normalizer/resource/ISO-2022-JP.txt
+ja_cvu_normalizer/resource/__init__.py
+test/test_normalizer.py
+test/test_reader.py
