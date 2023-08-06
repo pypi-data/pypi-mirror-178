@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: mynotiontools
+Version: 0.0.3
+Summary: Some tools for notion, Just for fun.
+Home-page: https://github.com/suyelu/mynotion
+Author: Vincent Su
+Author-email: suyelu@hotmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+
+# My Notion Tools
+
+随手写的Notion小工具，只是个小玩意。
+
+## Usage
+
+Do this first.
+
+```bash
+export NOTION_SECRETS='xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+```
+
+
+
