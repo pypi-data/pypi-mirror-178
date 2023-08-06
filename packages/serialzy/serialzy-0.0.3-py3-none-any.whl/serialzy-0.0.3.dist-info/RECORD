@@ -1,0 +1,16 @@
+serialzy/__init__.py,sha256=Jzb_RfgvXCrm_SQ4AfeGVi1N36YybxnM5mpyxrnihgI,33
+serialzy/api.py,sha256=Lf4QhWm3_Tppu3Rn_Ee1Vckq4IYGKlehY1ghLFNOGY8,4401
+serialzy/base.py,sha256=m0vaab2Rsrn1ZZJcVAOZNboca-b7YBygMTE_sI6ai_Y,2745
+serialzy/registry.py,sha256=gq125GOEA_qJGfj_46FuwzSgY3TdmYd6pwiOfoRIoVY,5530
+serialzy/utils.py,sha256=TTtpsEu5DysXIfUU9wHXe7u18IJ7UFCrxQ-34Fba2Zs,349
+serialzy/version.py,sha256=wLt4q4nTy4w6gmpovIfh_U5gvylfUhLeTxlYWAm_aeA,129
+serialzy/serializers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+serialzy/serializers/catboost.py,sha256=ZGsJeE49EW1OO9DR6R__fPVvAFtBbK3GfnOA05m4rOI,2501
+serialzy/serializers/cloudpickle.py,sha256=nLJ02EH3CO0YGqappu3SSqaSZV8yKQtQyrxsW7TLtvA,1926
+serialzy/serializers/primitive.py,sha256=MeroBCWCRrtSUVwL9NHIkCAsXEfChXoPpQN38Z6hnNM,2426
+serialzy/serializers/proto.py,sha256=zvvV1KPYBUNsI-YnjINm1nMF6OFi44JyYYmCfZn5A08,2024
+serialzy/version/version,sha256=TKwna27F1Mcc2Wyi57di6xJUOa28hyHeVhMQbRNF_i0,6
+serialzy-0.0.3.dist-info/METADATA,sha256=drOiSOHGcK5VcbqLc9j4tJnoYY__nWpsa6zsjrioqh4,214
+serialzy-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+serialzy-0.0.3.dist-info/top_level.txt,sha256=4WNxaaCeHIpom8hQbgI2PeTcIYyabyBgI6J6l62vVjY,30
+serialzy-0.0.3.dist-info/RECORD,,
