@@ -1,0 +1,14 @@
+PyHotKey/__init__.py,sha256=FwhC2z07_lB16Yia-GuRf_tJ9LvrG0u1LatG1JfOxg0,987
+PyHotKey/_info.py,sha256=Jv469Wu42hWUnODqnQmSFIugZB8howYpkTvlqkqPDB4,821
+PyHotKey/_key.py,sha256=Vo6s12lnPyhCAi9UHM9lhJBlHhCkpahzAVA7-SGUDTM,4311
+PyHotKey/_manager.py,sha256=GzdwiArzBBODFZ7YsMycZCmpP7w_Q2-by-tS94QNjFY,13808
+PyHotKey/_platform_stuff/__init__.py,sha256=LPhdfe8uUwJ_nmHqmA5s9Kf3_oPPBQaj1Rvv1jDjmr4,1242
+PyHotKey/_platform_stuff/darwin.py,sha256=8auUbZ6p9u-v01IwhGa1zB5UwzH8EYJDV8D5YYlv-CI,1079
+PyHotKey/_platform_stuff/uinput.py,sha256=eHf3u8pr6Stgc4P2LLoCnLlljZqq6ZFteUQ8i0IjZ8Q,845
+PyHotKey/_platform_stuff/win32.py,sha256=VmCkBbPReMV10uypATTSJtVr0m9xaDZXDVs65kbilYk,1214
+PyHotKey/_platform_stuff/xorg.py,sha256=h493nIFs1bRy_Qg_8C22eHzKrq5Wv6_Q-Eb9N8XVM_U,1016
+PyHotKey-1.4.0.dist-info/COPYING.LGPL,sha256=jv0YpdBxNtpa2cxFxWZdeEjZu5GKkqo-maEMiMphEE4,7656
+PyHotKey-1.4.0.dist-info/METADATA,sha256=-M1X6KLJUjGfTf_TrgitjtI15wrgLvEg2XiJUEJYfCI,5550
+PyHotKey-1.4.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+PyHotKey-1.4.0.dist-info/top_level.txt,sha256=2CGwtLtFQApKQMo03qVGGyXzN81CTvN4zEZJoRmmCnw,9
+PyHotKey-1.4.0.dist-info/RECORD,,
