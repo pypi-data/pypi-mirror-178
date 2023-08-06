@@ -1,0 +1,11 @@
+min_diffusion/__init__.py,sha256=4GZKi13lDTD25YBkGakhZyEQZWTER_OWQMNPoH_UM2c,22
+min_diffusion/_modidx.py,sha256=kOpg3JzcnDnClkTsqMhVY7FCwCSJYfPcSXoySWGph2o,10046
+min_diffusion/core.py,sha256=era5R4NJngoRdOCYcaXdlixJkTwaFdyBGhyzD6DJlE0,11014
+min_diffusion/kdiff.py,sha256=bRDPtMBLjLNh0gSW177A6epky5vfdxrAGwqCNrNgFuc,10978
+min_diffusion/utils.py,sha256=fb3s6xRGChfQ7zG51mkZFz_bx8KU8RttzR4Augzg-s8,3825
+min_diffusion-0.0.3.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+min_diffusion-0.0.3.dist-info/METADATA,sha256=UjmG2WDy896kMn-TfKmPpP5ZaT2vPRYXlnJ9PazgggI,3297
+min_diffusion-0.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+min_diffusion-0.0.3.dist-info/entry_points.txt,sha256=rBmof4yV2aKv7kfURIbj5DGtxewGUhxYmbAEvpPsjO0,48
+min_diffusion-0.0.3.dist-info/top_level.txt,sha256=QzhI0p9-bOViDltB7wz6cICBT2RlXPvoUxlcDARYaHM,14
+min_diffusion-0.0.3.dist-info/RECORD,,
