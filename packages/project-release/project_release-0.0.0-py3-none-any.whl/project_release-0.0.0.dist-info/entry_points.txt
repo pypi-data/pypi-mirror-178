@@ -1,0 +1,2 @@
+[console_scripts]
+project-release = project_release.cli:project_release_cli
