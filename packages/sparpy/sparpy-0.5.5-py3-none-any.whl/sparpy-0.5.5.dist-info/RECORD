@@ -1,0 +1,15 @@
+sparpy/__init__.py,sha256=78mfpLewKVki6c9UONSUdlVme_JsN9ZwIfp4Hf4jmG0,22
+sparpy/cli.py,sha256=_6iYMbl5kDG1sAZogZncpcPVKPrBgAmljomSVBsR1oA,11970
+sparpy/cli_options.py,sha256=2R95fSgXg2DMxFEr6bcfXsZKWsXY1NMGyYm7PPL4DUg,8898
+sparpy/config.py,sha256=d2aujfnvHZqH51lGfgeGtn0dC8v10z-brJPhsGBTFt0,1408
+sparpy/logger.py,sha256=yqpNpeffgeju7cni03NLAXyH3MdwcTj8NGpo6YvLbRY,542
+sparpy/plugins.py,sha256=VwGAb0gNB2uaQ7B7dz0eyjVnfLszAaC5ji9czYoT1HE,8448
+sparpy/processor.py,sha256=Va3zTtYLC-OZXy1DJCsDZhRqOWmCSErEufNg2D_-AZM,3257
+sparpy/run.py,sha256=1ATDZWJ1QmHeOIWKE5vRmzBgfAtWUgYjnW2QbapVH9s,117
+sparpy/spark.py,sha256=Q-md_Pgp3hTMzvASmGO8NbUZ_c6vAqIVcoLeI_hJGTc,7850
+sparpy-0.5.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+sparpy-0.5.5.dist-info/METADATA,sha256=KZ_r-2hRL-g_HuS2ShFvKpbbwhF4_8RNK2yjP6oURyo,6276
+sparpy-0.5.5.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+sparpy-0.5.5.dist-info/entry_points.txt,sha256=ruLHKoZJtdG-0sXdfBK96C9hZE45cxXNuCJEegLMk70,222
+sparpy-0.5.5.dist-info/top_level.txt,sha256=NsSV5gF6XYWIKZQ-YeYtwXBs6_DsnwB7kfFlUeDhISg,7
+sparpy-0.5.5.dist-info/RECORD,,
