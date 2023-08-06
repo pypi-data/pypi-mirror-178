@@ -1,0 +1,2 @@
+[console_scripts]
+zbd-check = check:cli_arguments
