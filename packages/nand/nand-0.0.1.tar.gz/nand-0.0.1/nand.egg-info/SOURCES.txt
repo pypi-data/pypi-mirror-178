@@ -1,0 +1,10 @@
+MANIFEST.in
+Readme.txt
+__init__.py
+changelog.txt
+license.txt
+setup.py
+nand.egg-info/PKG-INFO
+nand.egg-info/SOURCES.txt
+nand.egg-info/dependency_links.txt
+nand.egg-info/top_level.txt
