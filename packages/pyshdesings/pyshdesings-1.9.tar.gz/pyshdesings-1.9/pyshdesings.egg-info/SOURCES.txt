@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pyshdesings/__init__.py
+pyshdesings.egg-info/PKG-INFO
+pyshdesings.egg-info/SOURCES.txt
+pyshdesings.egg-info/dependency_links.txt
+pyshdesings.egg-info/top_level.txt
