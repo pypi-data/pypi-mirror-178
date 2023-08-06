@@ -1,0 +1,27 @@
+from setuptools import setup
+
+with open("README.md", "r", encoding="utf-8") as fh:
+	long_description = fh.read()
+
+setup(
+	name="ode_problem_estimaton",
+	version="1.0",
+	author="Jacob Hilbert",
+	author_email="jacob.hilbert.tree@gmail.com",
+	description="General ODE system parameter estimator",
+	long_description=long_description,
+	long_description_content_type="text/markdown",
+	url="https://github.com/JacobHilbert/ode-parameter-estimator",
+	packages=["ode_problem_estimator"],
+	install_requires=[
+		"numpy",
+		"scipy"
+	],
+	classifiers=[
+		"Programming Language :: Python :: 3",
+		"License :: OSI Approved :: MIT License",
+		"Operating System :: OS Independent",
+	],
+	license="LICENSE",
+	zip_safe=True
+)
