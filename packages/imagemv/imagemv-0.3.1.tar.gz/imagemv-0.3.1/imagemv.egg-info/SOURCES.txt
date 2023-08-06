@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+imagemv/__init__.py
+imagemv/cli.py
+imagemv/datefunctions.py
+imagemv/fileinfo.py
+imagemv/metadata.py
+imagemv/processstats.py
+imagemv.egg-info/PKG-INFO
+imagemv.egg-info/SOURCES.txt
+imagemv.egg-info/dependency_links.txt
+imagemv.egg-info/entry_points.txt
+imagemv.egg-info/top_level.txt
