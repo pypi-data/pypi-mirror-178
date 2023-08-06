@@ -1,0 +1,12 @@
+dressuplite/__init__.py,sha256=w-xXFbKgSXl4DGFnXigL4M0-L5Ir7-_2c9ADMKLtlrk,420
+dressuplite/converter.py,sha256=8am6E8_8f4yYmCEJlXc52T8Bzinsd0StpxmUWTC0Qn0,8951
+dressuplite/exceptions.py,sha256=2oVNqJqedO6vHKPxnR_InRd6JdOShJ0StE2WBwSG6y8,483
+tests/__init__.py,sha256=o-tU8Lat0P86lBFaLQxEs5nOVq5JvzMnEiCPUzKi4qg,42
+tests/conftest.py,sha256=qm2JSirVYj5TecUp5fke9RUsXX6tc4sXBa5OKLSJN1g,739
+tests/test_converter.py,sha256=y2oCvxqc7di4SU2B_HFrnmaoLzDD1J285ZhS9-5JId4,9473
+tests/test_exceptions.py,sha256=VV_1ikfmuGJNfC_zOPWSKqDh7MyfUU82th9Ff3cMBUU,410
+dressuplite-0.1.1.dist-info/LICENSE,sha256=PufEtkm3g2iPEYbJqg2lDjMQJ1FMm_oUPyeYPiN4PHE,1056
+dressuplite-0.1.1.dist-info/METADATA,sha256=0XoVtiUY7APc33JHf3OC_2di2wcCuq9-p3u6SwWpmHI,3252
+dressuplite-0.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+dressuplite-0.1.1.dist-info/top_level.txt,sha256=Vtf4NuXsQ_TgXwEgw3XhVkSZJ-YUhJmZfB3q7DIp6A8,18
+dressuplite-0.1.1.dist-info/RECORD,,
