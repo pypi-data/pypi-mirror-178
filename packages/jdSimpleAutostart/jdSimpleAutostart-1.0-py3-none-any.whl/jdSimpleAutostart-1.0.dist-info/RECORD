@@ -1,0 +1,15 @@
+jdSimpleAutostart/AddEditDialog.py,sha256=c_XPE-If5jv6JkduyMbyN1K63Lz8mf3mt-MsY3DFbJs,2556
+jdSimpleAutostart/AddEditDialog.ui,sha256=nQsxpvGBtJCB-Kx5Y8CIbjM-20iBoP3MNaD8CZ4YmEo,2409
+jdSimpleAutostart/Functions.py,sha256=hNcwpsK-QrfvA3K0wz1RhMzURgxeAzSbvxEdZR7M8lA,864
+jdSimpleAutostart/Icon.svg,sha256=WtNqbiFraQ8slcp7SILpjGgLzh9HMVpttYkZyGvEB7E,4582
+jdSimpleAutostart/MainWindow.py,sha256=iv4XuwU-R8zRtDH54mrwDlMl7UVizRxFgCnjpPAFprI,2983
+jdSimpleAutostart/MainWindow.ui,sha256=EzQHlv1iAv0ZplQ-DUlwfRBCNT_kMUJcBwrSggeWNbI,1813
+jdSimpleAutostart/__init__.py,sha256=_zylJGyWaD7N-eXwyByTxdwxAz0WR8qHgyHWXeNbvVM,1383
+jdSimpleAutostart/__main__.py,sha256=IvTjTYhvVO6h9Jpa45i-FfzjcKcJy1jwkAZY_CkgibQ,26
+jdSimpleAutostart/translations/jdSimpleAutostart_de.qm,sha256=HDbw6ipySgcQmXUoodtppMJS70dzvyemhPFY8YbR1u8,1723
+jdSimpleAutostart-1.0.dist-info/LICENSE,sha256=F5SWI-TEHaN579Mjuhtf80fQBD27YGZb_d5m3svBmmE,35075
+jdSimpleAutostart-1.0.dist-info/METADATA,sha256=70g9pr8WqSRiVgpvjxc4mEPgvN4j321_7NVF1SShV40,1797
+jdSimpleAutostart-1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+jdSimpleAutostart-1.0.dist-info/entry_points.txt,sha256=rDS6PvY7kqgxqet7LUzBrGuK091qQZ9gMHyFiDlHNCY,61
+jdSimpleAutostart-1.0.dist-info/top_level.txt,sha256=SQtX7q6kHhQ-f4pLsZPmin5dp-6LzaOLN1255tBE6QE,18
+jdSimpleAutostart-1.0.dist-info/RECORD,,
