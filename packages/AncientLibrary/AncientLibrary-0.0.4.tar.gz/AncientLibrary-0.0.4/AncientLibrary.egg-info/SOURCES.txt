@@ -1,0 +1,13 @@
+README.md
+setup.py
+AncientLibrary/__init__.py
+AncientLibrary/algebra.py
+AncientLibrary/machine.py
+AncientLibrary/solver.py
+AncientLibrary/stats.py
+AncientLibrary/visuals.py
+AncientLibrary.egg-info/PKG-INFO
+AncientLibrary.egg-info/SOURCES.txt
+AncientLibrary.egg-info/dependency_links.txt
+AncientLibrary.egg-info/requires.txt
+AncientLibrary.egg-info/top_level.txt
