@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: sorting-array-package
+Version: 0.3
+Summary: selection sort
+Author: Quirrel
+Author-email: symmlux@gmail.com
+License: MIT License
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Практическая работа №6 – Модульные программы
+
+**Савельев Александр**,
+**КИ22-16/1Б**,
+**Вариант 28**
+
+`$python package --help` — инфо о пакете
+
+`$ python package --test` — вызов тестов
+
+`$ python --list 9 8 7 6 0 ` — сортировка списка [9, 8, 7, 6, 0]
+
+`$ pythot --random 5 -100 100` — сортировка списка размером 5 заполненного случайными числами в диапозоне от -100 до 100
+
