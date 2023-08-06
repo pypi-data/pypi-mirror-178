@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pyradiate
+Version: 0.1
+Summary: Gamma spectroscopy and (equivalent) dose calculations for radioctive sources (and samples) in Python
+Home-page: https://github.com/leloup314/pyradiate
+Author: Pascal Wolf
+Author-email: pascal.wolf@posteo.de
+Maintainer: Pascal Wolf
+Maintainer-email: pascal.wolf@posteo.de
+License: MIT License
+Keywords: spectroscopy,gamma,dose,sievert,radioactive,source,radiation,safety
+Platform: any
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+
