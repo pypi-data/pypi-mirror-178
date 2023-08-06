@@ -1,0 +1,2 @@
+[nbdev]
+dev_test = dev_test._modidx:d
