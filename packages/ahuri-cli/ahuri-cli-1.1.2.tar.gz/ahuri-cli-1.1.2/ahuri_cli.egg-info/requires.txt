@@ -1,0 +1,7 @@
+maskpass
+requests
+websockets
+yarl
+
+[windows]
+pyreadline3
