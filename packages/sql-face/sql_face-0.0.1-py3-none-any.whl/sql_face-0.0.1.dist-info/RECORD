@@ -1,0 +1,15 @@
+sql_face/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sql_face/_modidx.py,sha256=V1GRzmF2DOZCiixCn6Ok3H1WSpnoJc3Cm2Z1iI9FClU,25888
+sql_face/alchemy.py,sha256=ZVteXxghxqlsaH1z34VHeSyCx7__C5z-a5vjGH5O4aA,15755
+sql_face/core.py,sha256=2U6q4lN7VXtls8ffxwAH0bdmnpLLnBUmizQWn6AvC0Y,224
+sql_face/databases.py,sha256=wAGzgFqD5Fur-teNiL1cZxYNVVILvpcE_pjAMHZV37c,22205
+sql_face/serfiq.py,sha256=pnuOnw5qGTxZzfsBTKVgDhyi_tXlr7QC47fXI9ta4ek,36660
+sql_face/sqldb.py,sha256=czDb3cys6_vw7txT6D3t-JuUj9bGobCZRUtCeLQjuxw,2790
+sql_face/tables.py,sha256=c1VwVe620-tfXHW_8I13slhPl5AtwbxRltSWBmhb5DQ,9243
+sql_face/tface.py,sha256=eRQiJ2gkAc9w1F8KylISA0GQ7t_P5vcaZ9T6fmJNlD4,7873
+sql_face-0.0.1.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+sql_face-0.0.1.dist-info/METADATA,sha256=_N4Qr_hmuxJ5dNbHrBibTFPivZrT5b1TrW-X8_i_WD8,1101
+sql_face-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sql_face-0.0.1.dist-info/entry_points.txt,sha256=_92NHG59uU6f80wKOhk6C7IgkW30w0auEtcb1RHF4xw,38
+sql_face-0.0.1.dist-info/top_level.txt,sha256=R7JhBb32ANqhkSyLHREzuaFyAjWVghvvb-1pRhXjads,9
+sql_face-0.0.1.dist-info/RECORD,,
