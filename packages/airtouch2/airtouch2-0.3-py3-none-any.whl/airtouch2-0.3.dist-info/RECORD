@@ -1,0 +1,14 @@
+airtouch2/AT2Aircon.py,sha256=OhjQftltxahlxHeU9aDh56DQbO0S1vMJgEsMzUNOUCM,6869
+airtouch2/AT2Client.py,sha256=LunWen8nZwEwX3cvofSUt5-ZGq-rN27y8b8XGtXLLb8,9599
+airtouch2/__init__.py,sha256=wrySnWDvxYD8q-GSj4S0Y_e9vqV_OralnsBnSXsSB6g,148
+airtouch2/diff_bytes.py,sha256=9xJwh5FXRS38Dcz7XNndEtSzXSyyYdkk-wsOEFs03s0,541
+airtouch2/protocol/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airtouch2/protocol/constants.py,sha256=2RF4bmeXvEd6adEbUFoGQIkIM3vg9ODw7fjgPvWDP8Y,2228
+airtouch2/protocol/enums.py,sha256=cz80IBwA-wMrQiYnt41CdyxWR6bWyvIHl3E5I--AbSE,647
+airtouch2/protocol/lookups.py,sha256=Kd1XCvgyu9V90LK_rMzQgzoiwhDt1Tk-AHffDbutAEY,861
+airtouch2/protocol/messages.py,sha256=d_ixQ_YcdpIoop98_VpJeazmSs3tRloCy4smqlzKUyE,6054
+airtouch2-0.3.dist-info/LICENSE,sha256=SXVcnmidn062mfMyQGfCK4o6uiP8ehNX8KssD3eQbFU,1076
+airtouch2-0.3.dist-info/METADATA,sha256=V836AYmO9aM6QcnDmCZmWCRV8hmYjO4wdlfreQQPJ2s,2377
+airtouch2-0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+airtouch2-0.3.dist-info/top_level.txt,sha256=uwLUe-4QIWxp9YHq8qOVwskC7DAi6uHGuYz3YOp-g2s,10
+airtouch2-0.3.dist-info/RECORD,,
