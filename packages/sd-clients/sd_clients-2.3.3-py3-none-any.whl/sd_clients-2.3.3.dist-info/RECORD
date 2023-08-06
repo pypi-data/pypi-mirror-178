@@ -1,0 +1,10 @@
+sd_clients/__init__.py,sha256=TG8_hMhqRcRKBjGqnnVPH5j_nJ254FHlQKKHkH_LsjA,248
+sd_clients/api_gateway_client.py,sha256=7rfY9o1gURZF_kjmQKAy8nO2UrFCeVRjwzKRvY5Tsuk,4975
+sd_clients/client_store.py,sha256=OP1O8sQtoeACR3VhLOJilQoOzsnMj0RmFEUtrpv7LsY,8114
+sd_clients/service_directory_client.py,sha256=HmanI5ORsT0bhZZRxykr45HTyBWvkCVbLrxEnu6Miks,1350
+sd_clients/settings.py,sha256=4rEMJOlUjVSotESD_R5nCS_OUyeMzItMyaZeFEuLdI4,2144
+sd_clients-2.3.3.dist-info/LICENSE.txt,sha256=I7qhxQ9AQQRmqxoonhxW1b4hE1pOxxnyWE9WbrX5E4A,575
+sd_clients-2.3.3.dist-info/METADATA,sha256=NumXyO4pFR5PhIuLK-2rKrI2A5HRdzmdL-bYgwZFK8I,894
+sd_clients-2.3.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+sd_clients-2.3.3.dist-info/top_level.txt,sha256=l-mSItKwzL0S3kdRGj1R1VC9lPO0JfRY0P5cHC2qKzI,11
+sd_clients-2.3.3.dist-info/RECORD,,
