@@ -1,0 +1,50 @@
+CHANGES
+=======
+
+0.2.0
+-----
+
+* Removed build isolation
+* fix spelling in README
+* Develop (#6)
+* Create dependabot.yml
+* set version for pypi publishing action
+* Remove PyPI reference
+
+0.1.0
+-----
+
+* increment version 0.1.0
+* add PyPI deployment
+* add coveralls and TestPyPI deployment
+* Update python-test.yml
+* move from travis to github actions
+* docstring adaptations and new examples
+* photonai v2.1 compatibility
+* small modifications
+* minor changes
+* advanced atlas-splitting
+* reduced memory consumption for AtlasTests
+* split BrainAtlas tests
+* travis adaptations
+* add .travis.yml
+* add space\_net with example, add comments/tests
+* decrease time for ROI extraction and extract\_mode=mean for BrainAtlas
+* split atlas-mask, brain, library
+* minor changes and some questions
+* incorporate minor changes
+* add tests, parameters and comments
+* reactivate tests for all atlases
+* currently disable AtlasStacker
+* AtlasStacker overview
+* new load for atlas\_mapper, add tests, reimplement RoiFilter
+* add scikit-image to setup
+* add manifest
+* AtlasLibrary add class variable LIBRARY, reactivate PatchImages, get\_data -> get\_fdata
+* test restructure
+* adapt neuro\_tests and NeuroBranch to photonai.base.ParallelBranch
+* added registration
+* added test
+* adapt tests and add requirements
+* initial commit
+* Initial commit

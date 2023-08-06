@@ -1,0 +1,59 @@
+# This workflow will install Python dependencies, run tests and lint with a single version of Python
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
+
+name: PHOTONAI_neuro tests + TestPyPI deployment @master
+
+on:
+  push:
+    branches: [ master, develop ]
+  pull_request:
+    branches: [ master, develop ]
+
+jobs:
+  pytest:
+    name: Run PHOTONAI_neuro tests
+    runs-on: ubuntu-22.04
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.9
+      - name: Install dependencies
+        run: |
+          pip install wheel flake8
+          pip install pytest pytest-cov coveralls -r requirements.txt
+      - name: Test with pytest
+        run: |
+          PYTHONPATH=./ pytest ./test --cov-report lcov:./coverage/lcov.info --cov=./photonai_neuro --tb=long
+      - name: Coveralls
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+  deploy:
+    name: Build and publish to TestPyPI
+    runs-on: ubuntu-22.04
+    needs: pytest
+    if: github.ref == 'refs/heads/master'
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.9
+      - name: Replace version number with commit hash
+        run: |
+          dt=$(date '+%Y.%m.%d.%H.%M.%S')
+          sed -i "s/^__version__.*/__version__ = '$dt'/g" setup.py
+      - name: Install pypa/build
+        run: pip install build
+      - name: Build a binary wheel and a source tarball
+        run: python -m build --sdist --wheel --outdir dist/ .
+      - name: Publish distribution to Test PyPI
+        uses: pypa/gh-action-pypi-publish@master
+        with:
+          user: __token__
+          password: ${{ secrets.TEST_PYPI_API_TOKEN }}
+          repository_url: https://test.pypi.org/legacy/
