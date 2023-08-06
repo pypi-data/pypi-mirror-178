@@ -1,0 +1,30 @@
+include README.md
+include MANIFEST.in
+include CHANGES
+include LICENSE
+include setup.py
+include tox.ini
+include *.py
+
+exclude .bumpversion.cfg
+exclude .editorconfig
+exclude manage.py
+exclude Makefile
+exclude mypy.ini
+exclude pytest.ini
+exclude .*
+
+recursive-include docs *
+recursive-include src *.css
+recursive-include src *.js
+recursive-include src *.pip
+recursive-include src *.po
+recursive-include src *.txt
+recursive-include src/adminactions *.py
+recursive-include src/adminactions *.html
+recursive-include tests *
+recursive-include src *.html
+
+global-exclude *.pyc
+global-exclude __pycache__
+global-exclude *~

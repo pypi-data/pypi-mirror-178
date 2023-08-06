@@ -1,0 +1,15 @@
+Release 0.3.0
+=============
+* add DEFAULT_POLICY (FORBID/ALLOW) configuration settings
+
+
+Release 0.2.0
+=============
+* bug fixing
+* added new internal rules: `cookie_value` and `cookie_exists`
+* change configuration handling DiangoConstance now fallback to DjangoSettings
+
+
+Release 0.1.0
+=============
+* first release

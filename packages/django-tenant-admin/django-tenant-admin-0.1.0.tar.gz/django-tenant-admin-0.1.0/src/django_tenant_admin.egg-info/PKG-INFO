@@ -1,0 +1,104 @@
+Metadata-Version: 2.1
+Name: django-tenant-admin
+Version: 0.1.0
+Home-page: https://gitlab.com/os4d/django-tenant-admin
+Download-URL: https://gitlab.com/os4d/django-tenant-admin
+Author: os4d
+Author-email: dev@os4d.org
+License: MIT
+Platform: any
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Operating System :: OS Independent
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.0
+Classifier: Framework :: Django :: 4.1
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Intended Audience :: Developers
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: dev
+Provides-Extra: docs
+License-File: LICENSE
+
+django-tenant-admin
+===================
+
+
+Quick Start
+===========
+
+In the settings.py:
+1. Add "tenant_admin.apps.Config" to your INSTALLED_APPS
+2. Add TENANT_TENANT_MODEL and TENANT_STRATEGY
+
+#### settings.py
+    INSTALLED_APPS = [
+        "demoapp.apps.Config",
+        ...
+        # 'django.contrib.admin',
+        ...
+        "django.contrib.staticfiles",
+        "smart_admin.apps.SmartTemplateConfig",
+        "smart_admin.apps.SmartConfig",
+        "admin_extra_buttons",
+        "tenant_admin.apps.Config",
+    ]
+
+    TENANT_TENANT_MODEL = "<app_label>.<model_name>"
+    TENANT_STRATEGY = "<app_label>.YourStrategy"
+
+
+#### urls.py
+    import tenant_admin.sites
+
+
+    urlpatterns = (
+        path("manage/", tenant_admin.sites.site.urls),
+        ...
+    )
+
+
+Some clarification:
+
+    `Strategy` is about visibility
+    `Permission` is about authorization
+
+
+### Contributing
+    
+    git checkout https://gitlab.com/os4d/django-tenant-admin.git
+    cd django-tenant-admin
+    python -m venv .venv
+    . .venv/bin/activate
+    pip install -e .[dev]
+    pre-commit install
+
+### Create sample data
+
+This will create the DB ./django_tenant_admin.sqlite and populate with some example data.
+
+    ./manage.py demo
+
+This will create:
+- 4 `Country` records: 'Afghanistan', 'Ukraine', 'Somalia', 'Sudan'
+- 4 `Office` records: 'Afghanistan Office', 'Ukraine Office', 'Somalia Office', 'Sudan Office'
+- 10 `Employee` records: 'Employee 0' to 'Employee 9'
+- An 'admin-ukr' user assigned to 'Ukraine Office'
+- An 'admin-afg' user and 8 additional users (_username3_ to _username12_) assigned to 'Afghanistan Office'
+- An 'admin' user not assigned to any office
+
+
+Try it with:
+
+    ./manage.py runserver
+
+Connect to http://localhost:8000
+
+NB:
+- No need to create users as for demo purposes there is a backend that will create the user on the fly using any
+password
+
+
+
