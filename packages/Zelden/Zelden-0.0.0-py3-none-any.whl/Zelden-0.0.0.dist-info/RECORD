@@ -1,0 +1,15 @@
+zelden/__init__.py,sha256=IxOBZj832zKJzq8FfT3yMOoOuTLPA5sUkSWKhSJG9Lo,47
+zelden/connection.py,sha256=c5OtL000WcgHohYU7kWVywdIe4rH1l_FhzzGHSEKnVs,585
+zelden/consts.py,sha256=u_s08ydVhWGLA3ruhFbyDi3Ap3oa8REmks_QYeq-zFg,136
+zelden/credentials.py,sha256=oqsOE_FYAdeZkgKOLclIRoNxd3rl37kxDNHrvapD338,49
+zelden/mechanics_test.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zelden/params.py,sha256=d-4Jq_IXoUOELpI9vjI2DKe34zcm0f_rBjlnSTjrZO4,476
+zelden/randomizer.py,sha256=OTIHjTwcdLDv-j_UBGL9tBKgOUxwNI1COEKhCKd7o84,91
+zelden/rest_connection.py,sha256=Xk06nmVYMuGxvNXQyou0Ikxhlmco9GaCYFhON1Y6ZW8,1240
+zelden/service.py,sha256=s2qBZTGDbOROQB6i-mYrXbhw_-CUZgWX5uzaAHjwjF4,342
+zelden/structures.py,sha256=_ua9bp6SSOzUuzUwxeJdcEvtlFDXQ9fYPhLzi1ffqvg,33
+Zelden-0.0.0.dist-info/LICENSE,sha256=3OXwLevoArLVa0jJemhT2ydZUYJv5btqjpWIjV2Olmg,1065
+Zelden-0.0.0.dist-info/METADATA,sha256=FpYiPxeDPUk4QfxWsH8fYdthPKqGRti015Y06N9WG0E,788
+Zelden-0.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+Zelden-0.0.0.dist-info/top_level.txt,sha256=HMqhXJD8MsvWWWTJS32aZ2e9-qeW6ZC0hbbJ6C-Njws,7
+Zelden-0.0.0.dist-info/RECORD,,
