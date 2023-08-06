@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+democalculator/__init__.py
+democalculator.egg-info/PKG-INFO
+democalculator.egg-info/SOURCES.txt
+democalculator.egg-info/dependency_links.txt
+democalculator.egg-info/top_level.txt
