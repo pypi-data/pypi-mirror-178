@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "csc3730TaxisProjectZhou"
+version = "0.0.1"
+authors = [
+  { name="Author" },
+]
+description = "NYC taxi dataset analysis"
+readme = "README.txt"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
