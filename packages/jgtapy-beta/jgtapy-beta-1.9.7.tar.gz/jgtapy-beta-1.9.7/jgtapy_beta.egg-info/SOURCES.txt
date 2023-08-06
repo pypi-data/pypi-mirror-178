@@ -1,0 +1,15 @@
+AUTHORS
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+jgtapy/__init__.py
+jgtapy/indicators.py
+jgtapy/utils.py
+jgtapy_beta.egg-info/PKG-INFO
+jgtapy_beta.egg-info/SOURCES.txt
+jgtapy_beta.egg-info/dependency_links.txt
+jgtapy_beta.egg-info/requires.txt
+jgtapy_beta.egg-info/top_level.txt
