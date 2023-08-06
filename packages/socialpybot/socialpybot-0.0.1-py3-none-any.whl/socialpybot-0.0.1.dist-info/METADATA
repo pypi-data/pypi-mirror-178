@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: socialpybot
+Version: 0.0.1
+Summary: Python library helps you to create Telegram bots more easily
+Home-page: UNKNOWN
+Author: Omar Elkhadragy
+License: MIT
+Platform: UNKNOWN
+License-File: LICENCE
+Requires-Dist: flask
+
+UNKNOWN
+
