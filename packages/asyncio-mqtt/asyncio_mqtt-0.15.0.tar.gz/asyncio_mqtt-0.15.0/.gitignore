@@ -1,0 +1,10 @@
+__pycache__
+build
+dist
+*.egg-info
+local_test.py
+.venv
+.idea/
+.coverage
+coverage.xml
+asyncio_mqtt/_version.py

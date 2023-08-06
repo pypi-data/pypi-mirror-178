@@ -1,0 +1,112 @@
+[build-system]
+requires = ["setuptools >= 65", "setuptools-scm >= 7"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "asyncio_mqtt"
+description = "Idomatic asyncio wrapper around paho-mqtt"
+readme = "README.md"
+authors = [{ name = "Frederik Aalund", email = "fpa@sbtinstruments.com" }]
+maintainers = [
+    { name = "Jonathan Plasse", email = "jonathan.plasse@live.fr" },
+    { name = "Felix Böhm", email = "felix@felixboehm.dev" },
+]
+keywords = ["mqtt", "async", "asyncio", "paho-mqtt", "wrapper"]
+license = { text = "BSD 3-Clause License" }
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: MacOS",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+requires-python = ">= 3.7"
+dependencies = [
+    "paho-mqtt>=1.6.0",
+    "typing_extensions>=4.4.0; python_version<'3.10'",
+]
+dynamic = ["version"]
+
+[project.urls]
+"Source code" = "https://github.com/sbtinstruments/asyncio-mqtt"
+"Issue tracker" = "https://github.com/sbtinstruments/asyncio-mqtt/issues"
+
+[project.optional-dependencies]
+lint = ["mypy>=0.982", "ruff>=0.0.124", "types-paho-mqtt>=1.6.0.1"]
+format = ["black>=22.10.0", "isort>=5.10.1"]
+tests = ["pytest>=7.2.0", "pytest-cov>=4.0.0", "anyio>=3.6.2"]
+
+[tool.setuptools]
+packages = ["asyncio_mqtt"]
+
+[tool.setuptools_scm]
+write_to = "asyncio_mqtt/_version.py"
+
+[tool.isort]
+profile = "black"
+
+[tool.ruff]
+select = [
+    "A",   # builtins
+    "B",   # bugbear
+    "C4",  # comprehensions
+    "C90", # mccabe
+    "D",   # docstring
+    "E",   # style errors
+    "F",   # flakes
+    "I",   # import sorting
+    "M",   # meta
+    "N",   # naming
+    "Q",   # quotes
+    "RUF", # ruff
+    "S",   # bandit
+    "T",   # print
+    "U",   # upgrade
+    "W",   # style warnings
+    "YTT", # sys.version
+]
+ignore = [
+    "D10",  # Missing docstring
+    "D203", # PEP8 docstring convention
+    "D212",
+    "D213",
+    "D214",
+    "D215",
+    "D404",
+    "D405",
+    "D406",
+    "D407",
+    "D408",
+    "D409",
+    "D410",
+    "D411",
+    "D413",
+    "D415",
+    "D416",
+    "D417",
+    "E501", # Line too long
+    "S101", # Use of `assert` detected
+]
+
+[tool.mypy]
+strict = true
+show_error_codes = true
+no_strict_concatenate = true # TODO: remove when dropping python 3.7
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    "error",
+    "ignore:ssl.PROTOCOL_TLS is deprecated:DeprecationWarning",
+]
+
+[tool.coverage.run]
+branch = true
