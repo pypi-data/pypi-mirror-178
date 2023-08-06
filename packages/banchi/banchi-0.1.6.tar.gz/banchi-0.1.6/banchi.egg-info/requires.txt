@@ -1,0 +1,14 @@
+protobuf<4.0,>=3.0
+
+[dev]
+matplotlib
+jupyterlab
+numpy
+pytest
+build
+twine
+
+[reports]
+matplotlib
+jupyterlab
+numpy

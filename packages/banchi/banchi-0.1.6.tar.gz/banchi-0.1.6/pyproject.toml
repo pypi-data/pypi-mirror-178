@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "banchi"
+version = "0.1.6"
+description = "Financial securities valuation library."
+readme = "README.md"
+keywords = ["convertible", "bond", "SPAC", "warrant", "securities", "quant"]
+dependencies = [ "protobuf>=3.0,<4.0" ]
+
+[project.optional-dependencies]
+reports =   ["matplotlib", "jupyterlab", "numpy"]
+dev =       ["matplotlib", "jupyterlab", "numpy", "pytest", "build", "twine"]
