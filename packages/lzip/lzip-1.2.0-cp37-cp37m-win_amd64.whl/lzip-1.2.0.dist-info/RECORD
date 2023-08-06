@@ -1,0 +1,9 @@
+lzip_extension.cp37-win_amd64.pyd,sha256=YkR-macXlobI9FDRo1i7KqqvTYLDvMjG0spxW29Tao4,73728
+lzip/__init__.py,sha256=mkWkPPshGyRp-UM4Kt4UBKLqyH1uUgiWfwow_q3kyNc,993
+lzip/lzip.py,sha256=_UOeqFrZ_1xKGTVnvO0qrj7zKk-iXK2Y3o3mCxuxPiI,6803
+lzip/version.py,sha256=RDQEqDRxSto1JNguomGYtsGLKEW5hxOGDddz-kE3deA,51
+lzip-1.2.0.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+lzip-1.2.0.dist-info/METADATA,sha256=U6_9OFhrxMURujH2REmyhQ6jLatBzSUEAeiwipBUZn0,18986
+lzip-1.2.0.dist-info/WHEEL,sha256=eaY3ejwL19QEEyHRYuTgC3FZQgNYBpzCION1l_gJUb8,101
+lzip-1.2.0.dist-info/top_level.txt,sha256=Kz1kY3I-5q9cR0tYFnKL3uFVOLS-szDfnd9iNgJV2So,20
+lzip-1.2.0.dist-info/RECORD,,
