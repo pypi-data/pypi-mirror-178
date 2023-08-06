@@ -1,0 +1,13 @@
+include requirements.txt
+include LICENSE
+
+exclude mkdocs.yml
+exclude pytest.ini
+exclude Makefile
+exclude Pipfile
+
+recursive-exclude tests *
+recursive-exclude docs *
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+recursive-exclude * .*
