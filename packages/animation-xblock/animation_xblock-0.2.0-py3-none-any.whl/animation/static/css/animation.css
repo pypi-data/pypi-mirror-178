@@ -1,0 +1,79 @@
+/* CSS for AnimationXBlock */
+/*div {
+    border-width:1px;
+    border-style:solid;
+    border-color:rgba(0,0,0,0.1);
+}
+Above is useful for debugging
+*/ 
+
+.animation_header {
+    border-width:1px;
+    border-style:solid;
+    border-color:rgba(0,0,0,0.1);
+    border-radius: 16px 16px 16px 16px;
+    background:rgba(255,255,255,1);
+    display:flex;
+}
+
+.animation_wrapper {  // Whole XBlock. Gray background
+    display:block; 
+    background:rgba(0,0,0,0.01);
+    /*background:rgb(200, 200, 200); // TODO: edX gray*/
+    border-width:1px; 
+    border-style:solid; 
+    border-color:rgba(0,0,0,0.1);
+    border-radius: 16px 16px 16px 16px;
+    width:100%;
+}
+
+.animation_slider_wrapper { // Div around slider. Give a bit of a border
+    display:block; 
+    width:100%; 
+    padding:10px;
+    
+}
+
+.ui-slider-labels {
+    top:-2px !important;
+}
+
+.ui-slider-labels-ticks {
+    height:14px !important;
+}
+
+.ui-widget-content .ui-state-default,
+.animation_slider
+.ui-widget-header .ui-state-default, .animation_slider {
+	border: 1px solid #222222; 
+	background: #e6e6e6 linear-gradient(rgb(109, 204, 241), rgb(56, 168, 229));
+	font-weight: normal;
+	color: #555555;
+}
+
+.ui-widget-content, .animation_slider  {
+	border: 1px solid #222222; 
+	background: #23c400 linear-gradient(90deg, rgb(109, 204, 241), rgb(202, 232, 202));
+	color: #222222;
+}
+
+.animation_flex_column {
+    display:flex; 
+    flex-direction: column;
+}
+
+.animation_flex_row {
+    display:flex; 
+    flex-direction: column;
+}
+
+.animation_text {
+    border-width:1px; 
+    border-style:solid; 
+    border-color:rgba(0,0,0,0.05);
+    border-radius:8px;
+    padding:10px;
+    text-align:center;
+    margin:10px;
+    background:rgba(255,255,255,1);
+}

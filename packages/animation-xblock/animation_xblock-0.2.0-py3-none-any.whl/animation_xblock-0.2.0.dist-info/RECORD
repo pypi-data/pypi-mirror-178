@@ -1,0 +1,17 @@
+animation/__init__.py,sha256=HZflXXyZk2hXbmZLj8fxjxF2sJvKcz1DGHXpR8K3C0I,38
+animation/animation.py,sha256=4auMZzo6kNZ7ENwlzxW5Fa2qpYvRQ7teAyMW0IDyUkg,6839
+animation/static/css/animation.css,sha256=oyolqfrOATv1GaFw3JJnXfEIlkpEoRuKU7xQHXGjEGY,1702
+animation/static/css/jquery.ui.labeledslider.css,sha256=AgJ5g96Nv_KJAzLXTk97NvmyIgVsdzNPv98X7xkQ514,2237
+animation/static/html/animation.html,sha256=xypV49SJUGyetPmYbNOdoXQve_L4A-raH6ImNB8CCcQ,1335
+animation/static/images/Pin_tumbler_bad_key.svg,sha256=DIez4GEp7kxEGAwWSPuzoaccBYY308gSgtrgi1_zLDk,203559
+animation/static/images/Pin_tumbler_no_key.svg,sha256=uXAOHMOTNKYMOtQtsZpMdZrybs5bZp6o63tRSHa4VBs,197493
+animation/static/images/Pin_tumbler_unlocked.svg,sha256=yZ5ItntKcjN67r5QnG_bT5cx514r75VHiBi1gFFWO9o,205730
+animation/static/images/Pin_tumbler_with_key.svg,sha256=2OTvPQWgQAvi6AW0ZW95LyAqJxSxAR1unWHy3NBTaPk,208089
+animation/static/js/src/animation.js,sha256=x9IjynvfQvo81JZWI48VISRDCskP1bNBMlnlSRTKDOQ,2375
+animation/static/js/src/jquery.ui.labeledslider.js,sha256=-CEu58jOMpnIPZFVJN16q06UWUrfPpng0eQ9vweBUdc,4648
+animation_xblock-0.2.0.dist-info/LICENSE,sha256=566LXaF3CUdLolMWRBvAZBSIQc8QHn7vMYw8PuWggns,34499
+animation_xblock-0.2.0.dist-info/METADATA,sha256=FaDtFUwux_b7VaJVMrkbxUzdAQGP36zAqFginyVsxIE,194
+animation_xblock-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+animation_xblock-0.2.0.dist-info/entry_points.txt,sha256=qSxGJYBHOpyJjoSWOJSxXqs_HXoFsrDgt8hD6ONWuAI,51
+animation_xblock-0.2.0.dist-info/top_level.txt,sha256=Zf2JL2ZXIvTHDbu_9ec9X3mfK2caQ_SDTRw-JFbOb2A,10
+animation_xblock-0.2.0.dist-info/RECORD,,
