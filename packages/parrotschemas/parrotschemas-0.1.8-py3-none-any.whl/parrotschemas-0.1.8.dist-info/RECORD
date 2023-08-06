@@ -1,0 +1,9 @@
+parrotschemas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+parrotschemas/events_monitoring/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+parrotschemas/events_monitoring/v1/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+parrotschemas/events_monitoring/v1/events_pb2.py,sha256=9jkXNapRMsGkSBJf0_h0fqXsUCqbKpv9s3t-a51ud5E,2069
+parrotschemas/events_monitoring/v1/expectations_pb2.py,sha256=4dz4qmsavSMYSuW_p01gotGqiWwK8t3B6AZIghfyJjc,4206
+parrotschemas-0.1.8.dist-info/METADATA,sha256=h-ZD_l3XIbSyR2127raTQQAfgdL-sNow73k_TC3Ur68,645
+parrotschemas-0.1.8.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+parrotschemas-0.1.8.dist-info/top_level.txt,sha256=jZ_jaXI73o9Py7lA6_cYqt1xx1fhS3YAY7RekHaRSVk,14
+parrotschemas-0.1.8.dist-info/RECORD,,
