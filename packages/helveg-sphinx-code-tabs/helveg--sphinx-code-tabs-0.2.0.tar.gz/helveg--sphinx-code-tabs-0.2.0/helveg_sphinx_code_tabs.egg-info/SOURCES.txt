@@ -1,0 +1,14 @@
+MANIFEST.in
+README.rst
+UNLICENSE
+setup.cfg
+setup.py
+helveg_sphinx_code_tabs.egg-info/PKG-INFO
+helveg_sphinx_code_tabs.egg-info/SOURCES.txt
+helveg_sphinx_code_tabs.egg-info/dependency_links.txt
+helveg_sphinx_code_tabs.egg-info/not-zip-safe
+helveg_sphinx_code_tabs.egg-info/requires.txt
+helveg_sphinx_code_tabs.egg-info/top_level.txt
+sphinx_code_tabs/__init__.py
+sphinx_code_tabs/code-tabs.css
+sphinx_code_tabs/code-tabs.js
