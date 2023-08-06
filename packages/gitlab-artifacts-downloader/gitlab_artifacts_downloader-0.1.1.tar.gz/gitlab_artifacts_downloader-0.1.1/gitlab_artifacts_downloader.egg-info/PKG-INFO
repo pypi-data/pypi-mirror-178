@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: gitlab-artifacts-downloader
+Version: 0.1.1
+Summary: Small class for downloading artifacts in a GitLab CI MR branch
+Home-page: https://gitlab.com/paul_armstrong/gitlab_artifacts_downloader
+Author: Paul Armstrong
+Author-email: parmstrong@gitlab.com
+License: MIT license
+Keywords: gitlab_artifacts_downloader
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Provides-Extra: ci-checks
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+===========================
+gitlab_artifacts_downloader
+===========================
+
+
+
+
+Small class for downloading artifacts in a GitLab CI MR branch
+
+
+* Free software: MIT license
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `gitlab-data/cookiecutter-pypackage`_, which was forked from the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://gitlab.com/audreyr/cookiecutter
+.. _gitlab-data/cookiecutter-pypackage: https://gitlab.com/gitlab-data/cookiecutter-pypackage
+.. _`audreyr/cookiecutter-pypackage`: https://gitlab.com/audreyr/cookiecutter-pypackage
+
+
+
+=======
+History
+=======
+
+0.1.0 (2022-11-29)
+------------------
+
+* First release on PyPI.
+
+
