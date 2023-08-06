@@ -1,0 +1,46 @@
+NAMESPACE: skyant.data
+MODULES:
+    -   skyant.data
+    -   skyant.data.entity
+    -   skyant.data.entity.local
+    -   skyant.data.entity.config
+    -   skyant.data.entity.google
+    -   skyant.data.entity.grpc
+    -   skyant.data.entity.rest
+    -   skyant.data.entity.fields
+    -   skyant.data.tools
+    -   skyant.data.dataset
+
+VERSION: 0.0
+MINOR: 1
+
+DESCR: Extensions of pydantic model/config classes for working with Google Cloud Platform.
+KEYWORDS: pydantic, api, rest, GCP
+
+HOME: https://skyant.dev/projects/data
+DONATE: https://buymeacoffee.com/skyantdev
+NEWS: https://www.linkedin.com/company/skyantdev
+TALK: https://groups.google.com/a/skyant.dev/g/community?label=data
+
+AUTHOR: Iurii Tarasenko
+EMAIL: info@skyant.dev
+
+LICENSE: MIT
+
+PYTHON_REQ: '>=3.10'
+REQUIREMENTS:
+    -   pydantic
+    -   PyYaml
+    -   requests
+    -   jsonschema
+    -   google-auth
+    -   google-cloud-storage
+    -   google-cloud-firestore
+    -   google-cloud-tasks
+    -   google-cloud-pubsub
+
+CLASSIFIERS:
+    -   'Programming Language :: Python :: 3.10'
+    -   'Intended Audience :: Developers'
+    -   'Intended Audience :: Information Technology'
+    -   'Topic :: Software Development :: Libraries :: Python Modules'
