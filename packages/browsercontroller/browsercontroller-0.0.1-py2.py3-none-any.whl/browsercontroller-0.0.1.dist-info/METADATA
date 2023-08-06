@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: browsercontroller
+Version: 0.0.1
+Summary: Selenium browser controller for apt Firefox on Ubuntu 22.10
+Home-page: https://github.com/Hiveminds/browsercontroller
+Author: a-t-0
+Author-email: no-email@no-email.org
+Maintainer: a-t-0
+Maintainer-email: no-email@no-email.org
+License: AGPLv3
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Internet :: WWW/HTTP :: Browsers
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: pyannotate (>=1.2.0)
+Requires-Dist: pytest-cov (>=4.0.0)
+Requires-Dist: typeguard (>=2.13.3)
+
