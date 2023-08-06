@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/versioninfo/__init__.py
+src/versioninfo/parser.py
+src/versioninfo.egg-info/PKG-INFO
+src/versioninfo.egg-info/SOURCES.txt
+src/versioninfo.egg-info/dependency_links.txt
+src/versioninfo.egg-info/top_level.txt
+src/versioninfo.egg-info/zip-safe
