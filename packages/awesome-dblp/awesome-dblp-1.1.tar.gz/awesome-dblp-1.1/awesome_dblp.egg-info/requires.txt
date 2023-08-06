@@ -1,0 +1,5 @@
+tqdm
+lxml
+requests
+thefuzz
+fake_useragent

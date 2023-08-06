@@ -1,0 +1,9 @@
+LICENSE
+README.md
+dblp.py
+setup.py
+awesome_dblp.egg-info/PKG-INFO
+awesome_dblp.egg-info/SOURCES.txt
+awesome_dblp.egg-info/dependency_links.txt
+awesome_dblp.egg-info/requires.txt
+awesome_dblp.egg-info/top_level.txt
