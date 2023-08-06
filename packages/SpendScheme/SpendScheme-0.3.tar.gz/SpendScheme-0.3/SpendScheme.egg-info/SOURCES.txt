@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+SpendScheme/__init__.py
+SpendScheme/formatting.py
+SpendScheme/table.py
+SpendScheme/textStyle.py
+SpendScheme.egg-info/PKG-INFO
+SpendScheme.egg-info/SOURCES.txt
+SpendScheme.egg-info/dependency_links.txt
+SpendScheme.egg-info/not-zip-safe
+SpendScheme.egg-info/top_level.txt

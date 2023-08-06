@@ -1,0 +1,138 @@
+Metadata-Version: 2.1
+Name: SpendScheme
+Version: 0.3
+Summary: SpendScheme is a microframework for text formatting in Python 3
+Home-page: https://github.com/Jupiter404E/SpendScheme
+Author: Jupiter404E
+License: MIT
+Project-URL: Documentation (GitHub), https://github.com/Jupiter404E/SpendScheme/blob/main/README.md
+Project-URL: Source (GitHub), https://github.com/Jupiter404E/SpendScheme
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Communications :: Chat
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+<p align="center">
+  <b>
+    Convenient text formatting
+  </b>
+</p>
+
+<hr>
+
+<h2 align="center">
+This library is currently under development.
+</h2>
+
+## About
+<strong>SpendScheme</strong> is a microframework for text formatting in Python 3
+
+An optimized library that simplifies writing code and helps with the tasks provided.
+
+---
+## Install SpendScheme
+
+### Installing from PyPi:
+```commandline
+pip install SpendScheme
+```
+### Installing from Git:
+```commandline
+pip install git+https://github.com/Jupiter404E/SpendScheme
+```
+
+---
+
+## List of possible events
+
+```python
+import SpendScheme
+
+formatingText = SpendScheme.Formatting(text = "** Your text **")
+```
+
+Changing the color and type of text in your console:
+
+```python
+import SpendScheme
+
+## Color
+
+print (
+    SpendScheme.Color.red,
+    "Red! ",
+    SpendScheme.Color.blue,
+    "Blue! ",
+    SpendScheme.Color.green,
+    "Green! ",
+    SpendScheme.Color.end
+)
+
+## Format type
+
+print (
+    SpendScheme.Style.italic,
+    "Italic! "
+)
+```
+
+Or you can do something like this:
+
+```python
+import SpendScheme
+
+formatingText = SpendScheme.Formatting(text = "** Your text **")
+formatingText.lowerTranslit()
+
+print (
+    formatingText.answer()
+)
+```
+
+## Making tables:
+
+```python
+import SpendScheme
+
+data = [
+    [
+        "Product", "Cost"
+    ],
+    {
+        "Strawberry": "2$",
+        "Blueberry":  "2,71$",
+        "Banana":     "1,63$",
+        "Apple":      "30¢", 
+        "Limon":      "2$",
+    }
+]
+
+tableCreate = SpendScheme.Table()
+
+print (
+    tableCreate.createTable(data = data)
+)
+```
+
+---
+### If a feature doesn't work, check if your console supports it.
+---
+
+## Do you have any questions?
+
+Сontact [me](https://discord.gg/). For help with SpendScheme.
