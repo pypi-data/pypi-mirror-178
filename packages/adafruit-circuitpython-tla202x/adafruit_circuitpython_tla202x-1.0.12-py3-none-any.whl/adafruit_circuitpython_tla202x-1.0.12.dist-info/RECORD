@@ -1,0 +1,8 @@
+adafruit_tla202x/__init__.py,sha256=ckI8YbWJ3pFbXp-LH6UqO9nxlffaqGrQxhq4fkO33V8,13164
+adafruit_tla202x/analog_in.py,sha256=uFcNiznh6CK7XSYAhAACNXwST7tg4XIh9U5_QMqRVdU,2965
+adafruit_tla202x/tla2024.py,sha256=9P3rLy82swViPvgSyPMk5Xrv4a7w4StIB8qDA5by2gM,1595
+adafruit_circuitpython_tla202x-1.0.12.dist-info/LICENSE,sha256=lL6CpRSFW8FPg_7Uk25HW3Ie6YBGNLf4Ja6oU0sYvg0,1104
+adafruit_circuitpython_tla202x-1.0.12.dist-info/METADATA,sha256=0KKCp7wlXeYh6csYJANLC1mrAMDZZd2Af_1Xu95qh08,3772
+adafruit_circuitpython_tla202x-1.0.12.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+adafruit_circuitpython_tla202x-1.0.12.dist-info/top_level.txt,sha256=1tnMJeas0YL10DWfTToAHkAdgAKpw3Q_PPxf1ztScPM,17
+adafruit_circuitpython_tla202x-1.0.12.dist-info/RECORD,,
