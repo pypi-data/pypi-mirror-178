@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: gense
+Version: 0.1
+Summary: A sentence embedding tool based on GenSE
+Home-page: https://github.com/MatthewCYM/GenSE
+Author: Yiming Chen, Yan Zhang, Bin Wang, Zuozhu Liu, Haizhou Li
+Author-email: yiming.chen@u.nus.edu
+License: MIT
+Keywords: sentence,embedding,gense,nlp
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+

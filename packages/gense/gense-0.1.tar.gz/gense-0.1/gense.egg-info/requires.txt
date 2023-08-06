@@ -1,0 +1,10 @@
+tqdm
+scikit-learn
+scipy<1.6,>=1.5.4
+transformers==4.15.0
+torch==1.10.1
+numpy<1.20,>=1.19.5
+setuptools
+datasets
+pandas
+prettytable
