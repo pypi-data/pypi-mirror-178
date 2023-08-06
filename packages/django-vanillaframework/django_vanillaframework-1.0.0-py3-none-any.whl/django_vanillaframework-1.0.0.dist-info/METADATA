@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: django-vanillaframework
+Version: 1.0.0
+Summary: Vanilla Framework frontend for Django
+Home-page: https://github.com/lvoytek/django-vanillaframework
+Author: Lena Voytek
+Author-email: lena@voytek.dev
+License: LGPL v3
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.0
+Classifier: Framework :: Django :: 4.1
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries
+License-File: LICENSE
+Requires-Dist: django (>=3.2)
+
