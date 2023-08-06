@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+MercyIdeas.egg-info/PKG-INFO
+MercyIdeas.egg-info/SOURCES.txt
+MercyIdeas.egg-info/dependency_links.txt
+MercyIdeas.egg-info/top_level.txt
+MercyStudy/__init__.py
+MercyStudy/code_convert.py
+MercyStudy/dec_convert.py
+MercyStudy/get_num.py
+MercyStudy/mercy_decorators.py
+MercyStudy/mercy_math.py
