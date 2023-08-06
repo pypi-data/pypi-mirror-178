@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: bitcoinshamir
+Version: 0.0.5
+Summary: A python implementation of the Shamir Secret Sharing scheme for BIP39 mnemonic phrases.
+Project-URL: Homepage, https://github.com/TylerPantuso/bitcoin-shamir
+Author-email: Tyler Pantuso <tylerpantuso@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >3.10
+Description-Content-Type: text/markdown
+
+This project is currently under construction.
