@@ -1,0 +1,13 @@
+wavescapes/__init__.py,sha256=dBcU1_MLG7dBTkMBZZB0Y4LY_FGCXg4LG9pks9papyg,364
+wavescapes/color.py,sha256=iOiNNkQw1Z1uq577Wx2fAD5Akx2l-E2ayY5NwQ4n0WY,8682
+wavescapes/dft.py,sha256=WT4XnIkb6PE-jylkK5bN1A7HGkqvn9VvrA3FTbZz7Ww,13201
+wavescapes/draw.py,sha256=vr3z8IXgon7ERh5d0cibt9LgGIy9g3Of8LVvNn4y7kQ,26920
+wavescapes/general.py,sha256=YGKuGAk-4n7qryP9vsSnxrJu5ZXzoNFp2CPRwdJtsAI,27158
+wavescapes/pcv.py,sha256=v_BYB-56gFY1RwExNOnuz46fDC0pKGCpO5QYsj2GB60,16724
+wavescapes/test_color.py,sha256=c1mKNDc6hPtXOWnidTD5NCZEKeQbbOqrc07H-mbJxl0,21031
+wavescapes-1.2.0.data/data/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+wavescapes-1.2.0.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+wavescapes-1.2.0.dist-info/METADATA,sha256=yYN_rN7jg33P-xZmtZdqRqr5-94outkufaOM3rR_Xbo,5747
+wavescapes-1.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+wavescapes-1.2.0.dist-info/top_level.txt,sha256=JbYpk2iGyJFr2jf0XZ8VjLKM6SKLfzzvo-4y2KUoOAE,11
+wavescapes-1.2.0.dist-info/RECORD,,
