@@ -1,0 +1,12 @@
+LICENSE
+setup.py
+tsastats/__init__.py
+tsastats/arch.py
+tsastats/content.py
+tsastats/model.py
+tsastats/number.py
+tsastats/syntax.py
+tsastats.egg-info/PKG-INFO
+tsastats.egg-info/SOURCES.txt
+tsastats.egg-info/dependency_links.txt
+tsastats.egg-info/top_level.txt
