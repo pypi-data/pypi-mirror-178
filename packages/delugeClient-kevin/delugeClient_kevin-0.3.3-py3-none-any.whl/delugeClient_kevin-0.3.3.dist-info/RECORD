@@ -1,0 +1,14 @@
+delugeClient/__init__.py,sha256=mTbE1qCJHsm1kwFJBsySZK96xzxjzT5cEvgcvucJoOs,495
+delugeClient/__main__.py,sha256=iyXWDEyXtAVfDRrvlfcAJgdYOmawImoBB2PivWkCkag,4432
+delugeClient/__version__.py,sha256=8UUH9fhPivNySJT4AePDiavsZ_cFVdNNMf9UAGWfot8,71
+delugeClient/default_config.ini,sha256=PoB9AU_qH6dRSOaUk81KIAEZUKp6aeBOXEt5jxEJEhA,77
+delugeClient/deluge.py,sha256=59j92cAl_UeS0mD7fXGmCD7VqEZP960zTO6_EO45BLg,7584
+delugeClient/deluge_socket.py,sha256=ARHxycXk4WYwmukzRZ1wepQ-to5C_YvpbL9Kxf4HyuE,689
+delugeClient/torrent.py,sha256=onUTMz4C_G7KO6P6pTVw66dsrvhwk98y_ZXrlNnxtCg,1617
+delugeClient/utils.py,sha256=WAl64M2821DVUOWLFHASUYvHdOd5KS5tGLUV9hAVnCA,2881
+delugeClient_kevin-0.3.3.dist-info/LICENSE,sha256=FuBmF6eHIz5fQFt86rH3XqoFWGGPVSSONAbQiwsFbBo,1062
+delugeClient_kevin-0.3.3.dist-info/METADATA,sha256=Y8K4d9JVx31_8Iu8QoK_SSXcSx5kZpXzr5NATlp9pvA,7901
+delugeClient_kevin-0.3.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+delugeClient_kevin-0.3.3.dist-info/entry_points.txt,sha256=loWSC9y1GIKRy1fEE9UMiCANYep3FG7dqUshQMKrJzA,60
+delugeClient_kevin-0.3.3.dist-info/top_level.txt,sha256=Wb1kBcdFow_XJUyxYkQHqqoCtqSjYSE9jtzEcWWfsa0,13
+delugeClient_kevin-0.3.3.dist-info/RECORD,,
