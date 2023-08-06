@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "minud"
+version = "1.0.3"
+description = "MINuD: a tool for the analysis of Mitochondrial Nucleoids Distribution"
+readme = "README.md"
+requires-python = ">=3"
+license = {file = "LICENSE"}
+keywords = ["flapjack", "data", "experimental", "analysis", "synthetic biology"]
+authors = [
+  { name="Gonzalo Vidal", email="g.a.vidal-pena2@ncl.ac.uk" }
+]
+maintainers = [
+  {name = "Gonzalo Vidal", email = "g.a.vidal-pena2@ncl.ac.uk"}
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    'numpy', 
+    'scipy',
+    'pandas',
+    'matplotlib',
+    'seaborn',
+    'scikit-image',
+    'openpyxl'
+]
+
+[project.optional-dependencies]
+test = [
+  "pytest < 5.0.0",
+  "pytest-cov[all]"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/RudgeLab/PUDU"
+"Bug Tracker" = "https://github.com/RudgeLab/PUDU/issues"

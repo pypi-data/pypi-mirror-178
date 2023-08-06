@@ -1,0 +1,11 @@
+numpy
+scipy
+pandas
+matplotlib
+seaborn
+scikit-image
+openpyxl
+
+[test]
+pytest<5.0.0
+pytest-cov[all]
