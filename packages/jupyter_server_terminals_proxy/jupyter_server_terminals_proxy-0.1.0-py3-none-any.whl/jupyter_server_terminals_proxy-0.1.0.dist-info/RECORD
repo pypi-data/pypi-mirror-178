@@ -1,0 +1,10 @@
+jupyter_server_terminals_proxy/__init__.py,sha256=YmGNBSbt2-3UhWnbmQlYAOW-8LA1n_UXeEAaKWA1VbE,277
+jupyter_server_terminals_proxy/api_handlers.py,sha256=dDH9XGft6HfTtyWDsJ1GOHwlwBr41GVpbvK3_sAOxoA,1840
+jupyter_server_terminals_proxy/app.py,sha256=JBh91TpiRsV5Qqufj8v8QW5ZbwRWNhGNwxb-wCtBEA0,1068
+jupyter_server_terminals_proxy/handlers.py,sha256=JUSBRmnnH7G-5dD4Z2AA2FZpzAw6I5c5J2fnSAZDJys,1893
+jupyter_server_terminals_proxy/.ipynb_checkpoints/handlers-checkpoint.py,sha256=JUSBRmnnH7G-5dD4Z2AA2FZpzAw6I5c5J2fnSAZDJys,1893
+jupyter_server_terminals_proxy-0.1.0.data/data/etc/jupyter/jupyter_server_config.d/jupyter_server_terminals_proxy.json,sha256=gv-abg9W9nBJ2AJei_G3R_ICL5gBeRdul1fe_8lDOZ4,146
+jupyter_server_terminals_proxy-0.1.0.dist-info/METADATA,sha256=QifQb2QyRlXDJaSjGcnlj5E_jruMRMZsicFfAJA8tAk,2816
+jupyter_server_terminals_proxy-0.1.0.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+jupyter_server_terminals_proxy-0.1.0.dist-info/licenses/LICENSE,sha256=JJ42vFiQqVKW-yrJgx3HG6OqOEeQxRRkYde6rZkMm6U,1071
+jupyter_server_terminals_proxy-0.1.0.dist-info/RECORD,,
