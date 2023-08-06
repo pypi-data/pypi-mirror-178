@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: django-ledger
+Version: 0.5.2.5
+Summary: Bookkeeping & Financial analysis backend for Django. Balance Sheet, Income Statements, Chart of Accounts, Entities
+Home-page: https://www.djangoledger.com
+Author: Miguel Sanda
+Author-email: msanda@arrobalytics.com
+License: GPLv3 License
+Project-URL: Bug Tracker, https://github.com/arrobalytics/django-ledger/issues
+Project-URL: Documentation, https://docs.djangoledger.com
+Project-URL: Source Code, https://github.com/arrobalytics/django-ledger
+Keywords: django,finance,bookkeeping,accounting,balance sheet,income statement,general ledger,money,engine
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Office/Business :: Financial :: Accounting
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Django :: 3.0
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+License-File: LICENSE
+License-File: AUTHORS.md
+Requires-Dist: django (==4.1.3)
+Requires-Dist: django-treebeard (==4.5.1)
+Requires-Dist: faker (==15.3.3)
+Requires-Dist: markdown (==3.4.1)
+Requires-Dist: ofxtools (==0.9.5)
+Requires-Dist: pillow (==9.3.0)
+Requires-Dist: text-unidecode (==1.3)
+Requires-Dist: python-dateutil (==2.8.2) ; python_version >= "2.7" and python_version not in "3.0, 3.1, 3.2, 3.3"
+Requires-Dist: six (==1.16.0) ; python_version >= "2.7" and python_version not in "3.0, 3.1, 3.2, 3.3"
+Requires-Dist: sqlparse (==0.4.3) ; python_version >= "3.5"
+Requires-Dist: asgiref (==3.5.2) ; python_version >= "3.7"
+Requires-Dist: tzdata (==2022.2) ; sys_platform == "win32"
+Provides-Extra: dev
+Requires-Dist: sphinx (~=4.5.0) ; extra == 'dev'
+Requires-Dist: behave (~=1.2.6) ; extra == 'dev'
+Requires-Dist: pipenv-setup ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: furo ; extra == 'dev'
+
