@@ -1,0 +1,3 @@
+pex==2.1.1
+cloudpickle==1.0.0
+cluster-pack==0.2.2
