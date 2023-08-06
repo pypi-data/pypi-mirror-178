@@ -1,0 +1,5 @@
+[console_scripts]
+corigami-edit = corigami.inference.editing:main
+corigami-predict = corigami.inference.prediction:main
+corigami-screen = corigami.inference.screening:main
+corigami-train = corigami.training.main:main
