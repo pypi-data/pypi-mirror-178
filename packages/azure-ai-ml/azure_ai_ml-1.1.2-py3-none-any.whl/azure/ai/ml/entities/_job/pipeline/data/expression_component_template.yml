@@ -1,0 +1,16 @@
+$schema: https://azuremlschemas.azureedge.net/latest/commandComponent.schema.json
+type: command
+
+name: expression_component
+version: 1
+
+outputs:
+  output:
+    is_control: true
+
+code: ./src
+
+environment: azureml:AzureML-MLDesigner@latest
+
+command: >-
+  mldesigner execute --source expression_component.py --name expression_func --inputs {inputs_placeholder} --outputs output="DatasetOutputConfig:output"
