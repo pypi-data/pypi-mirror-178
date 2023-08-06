@@ -1,0 +1,2 @@
+[tox]
+tox_runtime_env = tox_runtime_env.plugin
