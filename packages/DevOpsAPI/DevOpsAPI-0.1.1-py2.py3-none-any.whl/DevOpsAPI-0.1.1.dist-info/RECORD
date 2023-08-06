@@ -1,0 +1,12 @@
+DevOpsAPI/__init__.py,sha256=PDcsG1Di5bp0UGBF8ExAaEO6lq59Gb3j9XlmGapK5yU,106
+DevOpsAPI/api.py,sha256=9QVmdhoB03uBlzy7T5JLxy5LgCq97KuW65P6-3y2UqQ,1125
+DevOpsAPI/base.py,sha256=DmciwNJiO4RyEofA3EnSbnjwFpmemiJhXX9HUqdZ1fE,1397
+DevOpsAPI/connection.py,sha256=lFiuCuCiijIcPsHFjGEucBS24iRqbdTkbl1zcFwp_AU,1446
+DevOpsAPI/projects.py,sha256=EUnjABXVgVKQ2GTlC9155uK3iMY7k0Zev8-E5X4TKms,631
+DevOpsAPI/testing.py,sha256=i6ERl10SVemHhMYHdwIfU1dYEv5KMi2ppeuwxQUS1qs,3644
+DevOpsAPI/wi.py,sha256=OqaglATTrIiNJPwYX-WoCJUx9i2QQZUbIZf1d2A9F2M,5262
+DevOpsAPI-0.1.1.dist-info/LICENSE,sha256=5MsSgDTkzHRS805OhH8fKSUQ6Ozk0POF0DVjCAgsH38,1065
+DevOpsAPI-0.1.1.dist-info/METADATA,sha256=ljm9LZue5vqx8-MtAtC5FIRq2Wxe7KuPtmejuqtnDso,1738
+DevOpsAPI-0.1.1.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+DevOpsAPI-0.1.1.dist-info/top_level.txt,sha256=96pDJJ5niccvNirWFp1OG4RO4Qop6NEhmsRlA1-T9Nk,10
+DevOpsAPI-0.1.1.dist-info/RECORD,,
