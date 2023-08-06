@@ -1,0 +1,2 @@
+[console_scripts]
+shell2udp = shell2udp:serve
