@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+dc_logging/__init__.py
+dc_logging/main.py
+dc_logging.egg-info/PKG-INFO
+dc_logging.egg-info/SOURCES.txt
+dc_logging.egg-info/dependency_links.txt
+dc_logging.egg-info/requires.txt
+dc_logging.egg-info/top_level.txt

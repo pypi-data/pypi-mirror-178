@@ -1,0 +1,30 @@
+[project]
+name = "dc-logging"
+description = "Easy logging setup for small projects."
+readme = "README.md"
+authors = [
+    {name = "Daniel Caballero", email = "danielcaballero88@gmail.com"}
+]
+license = {file = "LICENSE"}
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["logging"]
+requires-python = ">=3.6"
+dynamic = ["dependencies", "version"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+version = {attr = "dc_logging.__version__"}
+
+[project.optional-dependencies]
+dev = ["black", "isort", "pylint", "mypy"]
+
+[project.urls]
+Homepage = "https://github.com/danielcaballero88/dc-logging"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
