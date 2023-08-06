@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: new-pymigration
+Version: 0.1
+Summary: pymicration whl test
+Author: haneul.park
+Author-email: haneul.park@aurostech.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
+
