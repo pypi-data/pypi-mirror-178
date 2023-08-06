@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "soupwidget"
+version = "0.0.1"
+description = "soupwidget"
+authors = ["Thiago César <thiago.cesarmn@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+beautifulsoup4 = "^4.11.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
