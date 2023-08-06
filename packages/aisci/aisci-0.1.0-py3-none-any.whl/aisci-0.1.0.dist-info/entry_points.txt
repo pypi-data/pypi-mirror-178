@@ -1,0 +1,4 @@
+[console_scripts]
+start=aisci.main:app
+test=aisci.main:test
+
