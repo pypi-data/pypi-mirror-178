@@ -1,0 +1,11 @@
+planetext_table/__init__.py,sha256=liIUJZlUXw3MBa3Nvqx4i2NzUi9Y17IOwY27DlxGKNY,107
+planetext_table/gen.py,sha256=n_UaDJPAoyudlRY7QBUbOtKrx0-RTNxVu6sfFhpfsRg,5432
+planetext_table/normalized_list.py,sha256=QxftubglCuV6Qbh1nmUs1rrnON-jVYrLzFY0ojcKHe4,6869
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_gen.py,sha256=-M7x82zMN5pIbCWrdm_OrTsuwFq7oMUlr50Wj7fHY0w,4732
+tests/test_normalized_list.py,sha256=1eqo56ZU_VMozjpKqXS-ow6DHPUG6VqZ6UF5SbTyYJc,2694
+planetext_table-0.1.0.dist-info/LICENSE,sha256=bzbzt9m-5UoxSZVBj_RvWx-K05SzxzIKKoDtoh04sFs,1066
+planetext_table-0.1.0.dist-info/METADATA,sha256=pGi6P3VjA8W2tIoESDjyVTlQBTOt6XkGkL5Cw5C0fgE,5344
+planetext_table-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+planetext_table-0.1.0.dist-info/top_level.txt,sha256=rRocnyrwp095cEAdtTfd9CK9eRuknQuR142ZcZmvZFs,22
+planetext_table-0.1.0.dist-info/RECORD,,
