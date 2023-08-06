@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "netease-cloud-music-dl-tddschn"
+version = "0.2.0"
+description = "Netease cloud music song downloader, with full ID3 metadata!"
+authors = [
+    "codezjx <code.zjx@gmail.com>",
+    "Teddy Xinyuan Chen <45612704+tddschn@users.noreply.github.com>",
+]
+readme = "README.md"
+packages = [{ include = "ncm" }]
+license = "MIT"
+homepage = "https://github.com/tddschn/netease-cloud-music-dl"
+repository = "https://github.com/tddschn/netease-cloud-music-dl"
+classifiers = ["Topic :: Utilities"]
+keywords = [
+    "netease-music",
+    "netease-cloud-music",
+    "ncm",
+    "music",
+    "downloader",
+    "cli",
+]
+
+[tool.poetry.scripts]
+ncm = "ncm.start:main"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/tddschn/netease-cloud-music-dl/issues"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = ">=2.17.3"
+pycryptodomex = "^3.16.0"
+mutagen = ">=1.38.0"
+Pillow = ">=4.3.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
