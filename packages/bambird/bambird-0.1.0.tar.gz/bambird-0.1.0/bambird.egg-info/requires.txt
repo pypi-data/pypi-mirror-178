@@ -1,0 +1,8 @@
+scikit-maad>=1.3.12
+librosa>=0.8.0
+scikit-learn>=1.0
+hdbscan
+matplotlib
+tqdm
+kneed
+pyyaml
