@@ -1,0 +1,2 @@
+[console_scripts]
+bkmk = bkmk.__main__:main
