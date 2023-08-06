@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: planetmapper
+Version: 0.12.4
+Summary: A Python module for navigating and mapping Solar System observations
+Home-page: https://github.com/ortk95/planetmapper
+Download-URL: https://pypi.org/project/planetmapper/
+Author: Oliver King
+Author-email: oliver.king95@gmail.com
+Project-URL: Documentation, https://planetmapper.readthedocs.io/
+Project-URL: GitHub, https://github.com/ortk95/planetmapper
+Requires-Python: >=3.10.0
+Description-Content-Type: text/markdown
+
+# Planet Mapper
+
+[![PyPI](https://img.shields.io/pypi/v/planetmapper?logo=python&logoColor=silver)](https://pypi.org/project/planetmapper/)
+[![Documentation Status](https://readthedocs.org/projects/planetmapper/badge/?version=latest)](https://planetmapper.readthedocs.io/en/latest/?badge=latest)
+[![Upload Python Package](https://github.com/ortk95/planetmapper/actions/workflows/python-publish.yml/badge.svg)](https://github.com/ortk95/planetmapper/actions/workflows/python-publish.yml)
+
+## Installation
+```
+pip install planetmapper
+```
