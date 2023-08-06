@@ -1,0 +1,2 @@
+New "RegControl.creg1a" transformer=reg1a winding=2 vreg=122 band=2 ptratio=40 CTprim=350 R=-0.201 X=3.348 tapwinding=2 RemotePTRatio=40 TapNum=16 
+New "RegControl.creg1c" transformer=reg1c winding=2 vreg=122 band=2 ptratio=40 CTprim=350 R=2.799 X=1.848 tapwinding=2 RemotePTRatio=40 TapNum=14 

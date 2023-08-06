@@ -1,0 +1,20 @@
+Clear
+
+New Circuit.37BusIEEE
+
+Redirect LineCode_37BusIEEE.dss
+Redirect LoadShape_37BusIEEE.dss
+Redirect GrowthShape_37BusIEEE.dss
+Redirect TCC_Curve_37BusIEEE.dss
+Redirect Spectrum_37BusIEEE.dss
+Redirect Line_37BusIEEE.dss
+Redirect Vsource_37BusIEEE.dss
+Redirect Load_37BusIEEE.dss
+Redirect Transformer_37BusIEEE.dss
+Redirect RegControl_37BusIEEE.dss
+
+Redirect Voltagebases_37BusIEEE.dss
+
+Buscoords Buscoords_37BusIEEE.dss
+
+solve
