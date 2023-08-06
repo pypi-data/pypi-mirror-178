@@ -1,0 +1,6 @@
+testpypiABC/__init__.py,sha256=0dFkjS-9vD6mga-56xe0W102jXD1w3JKvu-dQcOn6fE,11
+testpypiABC/test.py,sha256=l3PjXOO5kqSUo3IUgSr3ppIYZF4i8CZ3Ojc2a9VgM3o,98
+testpypiABC-0.0.1.dist-info/METADATA,sha256=81qbGsM9L52u5Jomknw0pgb_H8IZoOCeqa5Py4rh5ng,523
+testpypiABC-0.0.1.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+testpypiABC-0.0.1.dist-info/top_level.txt,sha256=LbWwHObqx6T8oTT8Td9JHgGP3bPtMIKKZQIVWnVt25g,12
+testpypiABC-0.0.1.dist-info/RECORD,,
