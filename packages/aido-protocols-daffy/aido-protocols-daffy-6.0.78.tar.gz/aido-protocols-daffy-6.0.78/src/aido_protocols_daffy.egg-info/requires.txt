@@ -1,0 +1,8 @@
+termcolor
+zuper-nodes-z6>=6.2.8
+zuper-typing-z6
+zuper-commons-z6
+numpy
+
+[test]
+pydot
