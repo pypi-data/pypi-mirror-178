@@ -1,0 +1,37 @@
+services:
+  app-service:
+    image: registry.gitlab.com/empaia/services/app-service:0.7.11
+  annotation-service:
+    image: registry.gitlab.com/empaia/services/annotation-service:0.16.2
+  job-service:
+    image: registry.gitlab.com/empaia/services/job-service:0.7.1
+  examination-service:
+    image: registry.gitlab.com/empaia/services/examination-service:0.7.10
+  clinical-data-service:
+    image: registry.gitlab.com/empaia/services/clinical-data-service:0.3.2
+  storage-mapper-service:
+    image: registry.gitlab.com/empaia/services/storage-mapper-service:0.2.1
+  wsi-service:
+    image: registry.gitlab.com/empaia/services/wsi-service-plugin-integration:0.8.38
+  medical-data-service:
+    image: registry.gitlab.com/empaia/services/medical-data-service:0.6.11
+  marketplace-service-mock:
+    image: registry.gitlab.com/empaia/service-mocks/marketplace-service-mock:0.1.49
+  aaa-service-mock:
+    image: registry.gitlab.com/empaia/service-mocks/aaa-service-mock:0.1.32
+  job-execution-service:
+    image: registry.gitlab.com/empaia/services/job-execution-service:0.5.7
+  workbench-daemon:
+    image: registry.gitlab.com/empaia/services/workbench-service:0.7.5
+  workbench-service:
+    image: registry.gitlab.com/empaia/services/workbench-service:0.7.5
+  workbench-client-v3:
+    image: registry.gitlab.com/empaia/integration/frontend-workspace/workbench-client-v3:0.2.6
+  workbench-client-v3-sample-ui:
+    image: registry.gitlab.com/empaia/integration/frontend-workspace/sample-app-v3:0.0.1
+  workbench-client-v3-generic-ui:
+    image: registry.gitlab.com/empaia/integration/frontend-workspace/generic-app-ui-v3:0.1.0
+  eats-postgres-db:
+    image: registry.gitlab.com/empaia/integration/ci-docker-images/custom-postgres:0.1.45
+  eats-mongo-db:
+    image: mongo:5.0.14@sha256:1934f776b9c138803943451a9f11893aa2fd7acd09521abbf40cb91179ba7481
