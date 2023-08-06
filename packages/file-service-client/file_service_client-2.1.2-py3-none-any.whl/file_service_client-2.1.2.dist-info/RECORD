@@ -1,0 +1,10 @@
+file_service_client/__init__.py,sha256=uv_fzpPfjROE55Gc_CXSHlYl_6RDvqw4wujS9JxS3JA,309
+file_service_client/file_service_client.py,sha256=y7Z6dE_M4ncWtcFIz-Mb5i8HUgltLgsWiMJVNkiDo28,4507
+file_service_client/file_store_client.py,sha256=LhZb5b2UPmFQNtdBwyR5Xav90lLJkhYRSR0majDO41g,3835
+file_service_client/models.py,sha256=K2EgHPEewZAWaGbpzt9f-yu8DF0Zr0jrY3I6P8i0QrU,2007
+file_service_client/utils.py,sha256=pRuUdsDBnCM17FcsmYPcYIdCZecN4oNKynMCZ8EFxhw,282
+file_service_client-2.1.2.dist-info/LICENSE.txt,sha256=S9X_6Wphp7hv_2oZKR6dUNq-bUvewqXeEBiDQ8CVJMY,575
+file_service_client-2.1.2.dist-info/METADATA,sha256=9siWQPBIKlM1y3jZ2dOZzRVOSv3z86fZEShmj_675sc,923
+file_service_client-2.1.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+file_service_client-2.1.2.dist-info/top_level.txt,sha256=xMJ4t2DkLBBGaFgJY_D3FcIm-rdbO50rrU7-LyPnXNI,20
+file_service_client-2.1.2.dist-info/RECORD,,
