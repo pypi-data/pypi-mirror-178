@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "isolate-cloud"
+version = "0.1.0"
+description = "SDK and cli for the fal isolate Cloud service"
+authors = ["Features & Labels <hello@fal.ai>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+typer = "^0.7.0"
+auth0-python = "^3.24.0"
+requests = "^2.28.1"
+isolate = "^0.5.0"
+grpcio = "^1.50.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
