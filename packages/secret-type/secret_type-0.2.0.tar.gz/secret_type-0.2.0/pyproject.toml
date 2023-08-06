@@ -1,0 +1,73 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "secret-type"
+description = 'A Rune-style secret type for sensitive values in Python.'
+readme = "README.md"
+requires-python = ">=3.7"
+license = "MIT"
+keywords = [
+  "security",
+  "secrets",
+  "sensitive",
+  "sensitive-data",
+  "sensitive-information",
+  "sensitive-values",
+  "secrets",
+  "type-hints",
+  "types",
+  "typing",
+]
+authors = [{ name = "Yasyf Mohamedali", email = "yasyfm@gmail.com" }]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = ["cryptography", "typing-extensions"]
+dynamic = ["version"]
+
+[project.urls]
+Documentation = "https://python-secret-type.readthedocs.io"
+Issues = "https://github.com/yasyf/secret-type/issues"
+Source = "https://github.com/yasyf/secret-type"
+
+[tool.hatch.version]
+path = "secret_type/__about__.py"
+
+[tool.hatch.envs.default]
+dependencies = [
+  "pytest",
+  "pytest-cov",
+  "mkdocs~=1.4.2",
+  "mkdocstrings[python]~=0.19.0",
+  "mkdocs-material~=8.5.10",
+  "mkdocs-git-committers-plugin-2",
+  "lxml",
+  "Pygments~=2.13.0",
+]
+[tool.hatch.envs.default.scripts]
+cov = "pytest --cov-report=term-missing --cov-config=pyproject.toml --cov=secret_type --cov=tests {args}"
+no-cov = "cov --no-cov {args}"
+
+[[tool.hatch.envs.test.matrix]]
+python = ["37", "38", "39", "310", "311"]
+
+[tool.coverage.run]
+branch = true
+parallel = true
+omit = ["secret_type/__about__.py"]
+
+[tool.coverage.report]
+exclude_lines = ["no cov", "if __name__ == .__main__.:", "if TYPE_CHECKING:"]
+
+[tool.isort]
+profile = "black"
