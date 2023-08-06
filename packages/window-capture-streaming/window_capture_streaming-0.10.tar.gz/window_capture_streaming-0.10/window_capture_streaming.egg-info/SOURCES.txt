@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+window_capture_streaming/LICENSE
+window_capture_streaming/README.MD
+window_capture_streaming/__init__.py
+window_capture_streaming/requirements.txt
+window_capture_streaming/thirdparty.json
+window_capture_streaming.egg-info/PKG-INFO
+window_capture_streaming.egg-info/SOURCES.txt
+window_capture_streaming.egg-info/dependency_links.txt
+window_capture_streaming.egg-info/requires.txt
+window_capture_streaming.egg-info/top_level.txt

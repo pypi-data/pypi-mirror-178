@@ -1,0 +1,7 @@
+a_cv2_easy_resize
+keyboard
+numpy
+opencv_python
+pandas
+pywin32
+win32gui
