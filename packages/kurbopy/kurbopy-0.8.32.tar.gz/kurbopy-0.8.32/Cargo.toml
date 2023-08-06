@@ -1,0 +1,18 @@
+[package]
+name = "kurbopy"
+version = "0.8.32"
+authors = ["Simon Cozens <simon@simon-cozens.org>"]
+edition = "2018"
+
+[dependencies]
+kurbo = { version = "0.8.3" }
+pyo3 = { version = "^0.16", features = ["extension-module"] }
+itertools = "0.10.3"
+
+[lib]
+crate-type = ["cdylib"]
+
+[package.metadata.maturin]
+classifier = [
+  "Programming Language :: Rust",
+]
