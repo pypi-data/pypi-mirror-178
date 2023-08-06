@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+shell2udp.py
+shell2udp.egg-info/PKG-INFO
+shell2udp.egg-info/SOURCES.txt
+shell2udp.egg-info/dependency_links.txt
+shell2udp.egg-info/entry_points.txt
+shell2udp.egg-info/top_level.txt
