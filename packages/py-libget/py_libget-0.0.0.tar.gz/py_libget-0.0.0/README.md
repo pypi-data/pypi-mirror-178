@@ -1,0 +1,171 @@
+# py_libget 0.0.0<a name="mark0"></a>
+
+- [About](#mark1)
+- [Requirements](#mark2)
+- [Objects](#mark3)
+	- [repository](#mark4)
+	- [package_manager](#mark5)
+	- [parser](#mark6)
+	- [webhandler](#mark7)
+- [Changelog](#mark8)
+	- [0.0.0](#mark9)
+
+---
+
+# About<a name="mark1"></a>[^](#mark0)
+
+Module for handling libget packages.
+
+# Requirements<a name="mark2"></a>[^](#mark0)
+
+['py_simple_ttk']
+
+# Objects<a name="mark3"></a>[^](#mark0)
+
+### repository<a name="mark4"></a>[^](#mark3)
+**An object for interaction with all parts of a libget repository.**
+
+```py
+class repository(package_manager, parser, webhandler):
+	def __init__(self, name: str, domain: str, defer_load: bool = True, force_cached: bool = False):
+		...
+	def check_if_get_init(self) -> bool:
+		"""Check if the libget packages folder has been inited at target location.         `Returns True if libget dir exists."""
+	def clean_version(self, ver: str, name: str) -> str:
+		"""Clean a version. `Returns a String`"""
+	def clear(self) -> dict:
+		"""Alias for parser.init `Returns a Dict mapping package names as Strings to package entries as Dicts`"""
+	def download(self, url: str, file: str) -> str:
+		"""Downloads a file at a given url to a given location.
+        `Returns the file name as a String`"""
+	def edit_info(self, name: str, key: str, value) -> None:
+		"""Edit a value in an installed package's info values. `Returns None`"""
+	def get_cached_json(self, name: str):
+		...
+	def get_icon(self, name: str, force: bool = False) -> str:
+		"""Downloads icon for a given package if needed.         The force keyword argument forces a redownload of the file.
+        `Returns the icon file's path as a String`"""
+	def get_json(self, name: str, url: str):
+		...
+	def get_package(self, name: str) -> str:
+		"""Downloads the current zip for a given package.         `Returns the downloaded file's path as a String`"""
+	def get_package_dict(self, name: str) -> dict:
+		"""Get entry for a given package name. `Returns a Dict, empty on failure.`"""
+	def get_package_entry(self, name: str) -> dict:
+		"""Get the contents of a package's info file. `Returns a Dict, empty on failure.`"""
+	def get_package_manifest(self, name: str) -> list:
+		"""Returns a package's manifest. `Returns a List of the real file paths as Strings`"""
+	def get_package_value(self, name: str, key: str) -> str | None:
+		"""Get a package's json file value. `Returns the value (usually a String) or None on failure."""
+	def get_package_version(self, name: str) -> str:
+		"""Get the currently installed version of a package. `Returns a String`"""
+	def get_packages(self) -> list:
+		"""Get a list of currently installed packages. `Returns a List`"""
+	def get_screenshot(self, name: str, force: bool = False) -> str:
+		"""Downloads screenshot for a given package if needed.         The force keyword argument forces a redownload of the file.
+        `Returns the screenshot file's path as a String`"""
+	def init(self) -> None:
+		"""Reinitialize parser. `Returns a Dict mapping package names as Strings to package entries as Dicts`"""
+	def init_get(self) -> None:
+		"""Initializes the libget dir at the current install path. `Returns None.`"""
+	def install_package(self, package: dict, handler: Callable = None):
+		"""Installs a libget package, supply a callable handler to take a tuple         containing a status and a message. A negative status is an error. Status is         in the form of an integer from 0 to 100 during normal install progression."""
+	def load_cached_repo(self) -> list:
+		"""Loads / reloads repo from cached file. `Returns the loaded repo as a List.`"""
+	def load_repo(self) -> str:
+		"""Loads / reloads repo from file. `Returns the loaded repo as a List.`"""
+	def load_repo_file(self, repo_file: str) -> list:
+		"""Loads appstore json. `Returns a List of Dicts`"""
+	def reload(self) -> list:
+		"""Reloads the list of installed packages. `Returns a List of packages installed.`"""
+	def remove_store_entry(self, name: str):
+		"""THIS DOES NOT REMOVE THE PACKAGE FILES         Removes a package entry by deleting the package         folder containing the manifest and info.json"""
+	def set_path(self, path: str) -> list:
+		"""Set this to a root of an sd card if building an application or in a dir to         test. `Returns a List of packages installed at the given path.`"""
+	def uninstall_package(self, package: dict, handler: Callable = None):
+		"""Uninstalls a libget package, supply a callable handler to take a tuple         containing a status and a message. A negative status is an error. Status is         in the form of an integer from 0 to 100 during normal install progression."""
+```
+### package_manager<a name="mark5"></a>[^](#mark3)
+**Object for managing package libget package installation**
+
+```py
+class package_manager(object):
+	def __init__(self, webhandler, libget_dir: str = '.libget'):
+		...
+	def check_if_get_init(self) -> bool:
+		"""Check if the libget packages folder has been inited at target location.         `Returns True if libget dir exists."""
+	def edit_info(self, name: str, key: str, value) -> None:
+		"""Edit a value in an installed package's info values. `Returns None`"""
+	def get_package_entry(self, name: str) -> dict:
+		"""Get the contents of a package's info file. `Returns a Dict, empty on failure.`"""
+	def get_package_manifest(self, name: str) -> list:
+		"""Returns a package's manifest. `Returns a List of the real file paths as Strings`"""
+	def get_package_value(self, name: str, key: str) -> str | None:
+		"""Get a package's json file value. `Returns the value (usually a String) or None on failure."""
+	def get_package_version(self, name: str) -> str:
+		"""Get the currently installed version of a package. `Returns a String`"""
+	def get_packages(self) -> list:
+		"""Get a list of currently installed packages. `Returns a List`"""
+	def init_get(self) -> None:
+		"""Initializes the libget dir at the current install path. `Returns None.`"""
+	def install_package(self, package: dict, handler: Callable = None):
+		"""Installs a libget package, supply a callable handler to take a tuple         containing a status and a message. A negative status is an error. Status is         in the form of an integer from 0 to 100 during normal install progression."""
+	def reload(self) -> list:
+		"""Reloads the list of installed packages. `Returns a List of packages installed.`"""
+	def remove_store_entry(self, name: str):
+		"""THIS DOES NOT REMOVE THE PACKAGE FILES         Removes a package entry by deleting the package         folder containing the manifest and info.json"""
+	def set_path(self, path: str) -> list:
+		"""Set this to a root of an sd card if building an application or in a dir to         test. `Returns a List of packages installed at the given path.`"""
+	def uninstall_package(self, package: dict, handler: Callable = None):
+		"""Uninstalls a libget package, supply a callable handler to take a tuple         containing a status and a message. A negative status is an error. Status is         in the form of an integer from 0 to 100 during normal install progression."""
+```
+### parser<a name="mark6"></a>[^](#mark3)
+**Object to hold and parse ligbet repo**
+
+```py
+class parser(object):
+	def __init__(self, ):
+		...
+	def clean_version(self, ver: str, name: str) -> str:
+		"""Clean a version. `Returns a String`"""
+	def clear(self) -> dict:
+		"""Alias for parser.init `Returns a Dict mapping package names as Strings to package entries as Dicts`"""
+	def get_package_dict(self, name: str) -> dict:
+		"""Get entry for a given package name. `Returns a Dict, empty on failure.`"""
+	def init(self) -> None:
+		"""Reinitialize parser. `Returns a Dict mapping package names as Strings to package entries as Dicts`"""
+	def load_repo_file(self, repo_file: str) -> list:
+		"""Loads appstore json. `Returns a List of Dicts`"""
+```
+### webhandler<a name="mark7"></a>[^](#mark3)
+**Object to handle libget icon, screenshot, and package downloads.**
+
+```py
+class webhandler(object):
+	def __init__(self, domain: str):
+		...
+	def download(self, url: str, file: str) -> str:
+		"""Downloads a file at a given url to a given location.
+        `Returns the file name as a String`"""
+	def get_cached_json(self, name: str):
+		...
+	def get_icon(self, name: str, force: bool = False) -> str:
+		"""Downloads icon for a given package if needed.         The force keyword argument forces a redownload of the file.
+        `Returns the icon file's path as a String`"""
+	def get_json(self, name: str, url: str):
+		...
+	def get_package(self, name: str) -> str:
+		"""Downloads the current zip for a given package.         `Returns the downloaded file's path as a String`"""
+	def get_screenshot(self, name: str, force: bool = False) -> str:
+		"""Downloads screenshot for a given package if needed.         The force keyword argument forces a redownload of the file.
+        `Returns the screenshot file's path as a String`"""
+```
+# Changelog<a name="mark8"></a>[^](#mark0)
+
+## 0.0.0<a name="mark9"></a>[^](#mark8)
+
+Create Project
+
+
+
+Generated with [py_simple_readme](https://github.com/AndrewSpangler/py_simple_readme)
