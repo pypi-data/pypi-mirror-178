@@ -1,0 +1,10 @@
+setup.py
+lagoons_distributions/Binomialdistribution.py
+lagoons_distributions/Gaussiandistribution.py
+lagoons_distributions/Generaldistribution.py
+lagoons_distributions/__init__.py
+lagoons_distributions.egg-info/PKG-INFO
+lagoons_distributions.egg-info/SOURCES.txt
+lagoons_distributions.egg-info/dependency_links.txt
+lagoons_distributions.egg-info/not-zip-safe
+lagoons_distributions.egg-info/top_level.txt
