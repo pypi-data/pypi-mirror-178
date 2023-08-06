@@ -1,0 +1,53 @@
+[project]
+name = "tisa"
+version = "0.1.0a1"
+description = ""
+readme = "README.md"
+authors = [
+    { name = "Jorge Morgado Vega", email = "jorge.morgadov@gmail.com" },
+]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = []
+dependencies = []
+requires-python = ">=3.8"
+
+[project.optional-dependencies]
+dev = ["black", "pylint", "bumpver", "isort", "pytest"]
+
+[project.urls]
+Homepage = "https://github.com/jmorgadov/tisa"
+
+[tool.isort]
+profile = "black"
+known_first_party = ["tisa"]
+
+[tool.black]
+target-version = ["py38"]
+
+[tool.pylint."MESSAGES CONTROL"]
+max-line-length = 88
+
+[tool.bumpver]
+current_version = "0.1.0a1"
+version_pattern = "MAJOR.MINOR.PATCH[PYTAGNUM]"
+commit = false
+tag = false
+push = false
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = [
+    'current_version = "{version}"',
+    'version = "{version}"',
+]
+"tisa/__init__.py" = [
+    '__version__ = "{version}"',
+]
+
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"

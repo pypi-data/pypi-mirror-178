@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+tisa/__init__.py
+tisa.egg-info/PKG-INFO
+tisa.egg-info/SOURCES.txt
+tisa.egg-info/dependency_links.txt
+tisa.egg-info/requires.txt
+tisa.egg-info/top_level.txt
