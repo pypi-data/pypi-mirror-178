@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "prismcat"
+version = "2.0.0"
+description = "parse logs and make pretty colors"
+authors = ["Tyler F. Carr <tcarwash@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+ansi2html = "^1.8.0"
+
+[tool.poetry.scripts]
+prism = 'prismcat.prismcat:cli'
+
+
+[tool.poetry.group.dev.dependencies]
+sphinx = "^5.3.0"
+black = "^22.10.0"
+myst-parser = "^0.18.1"
+sphinx-bootstrap-theme = "^0.8.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
