@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: csv2mne
+Version: 0.0.0
+Summary: Data formater
+Home-page: UNKNOWN
+Author: Rohit Kumar Mishra
+Author-email: <rohitm487@gmail.com>
+License: UNKNOWN
+Keywords: python,stream,preprocessing,eeg,data processing
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+EEG data and marker stiching
+, interpolation and clipping
+, export in raw mne array
+,export Epoched data
+
