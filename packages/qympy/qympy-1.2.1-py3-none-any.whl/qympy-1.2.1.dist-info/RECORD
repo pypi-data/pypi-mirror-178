@@ -1,0 +1,14 @@
+qympy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qympy/example/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qympy/machine_learning/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qympy/machine_learning/classical.py,sha256=hKqiOikH9uXp--AdPKNSzbmUJfwRtNZ3p4M5EYQsSHw,574
+qympy/machine_learning/quantum.py,sha256=kz3C_o2p3vFjT7ZDvtyTiRFZ26Ev5DMjoKhYPS1uR6Y,1112
+qympy/quantum_circuit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qympy/quantum_circuit/sp_circuit.py,sha256=KfaUcOqc9Vk5oJrguYMcnAf9c3pq4RU_q_76YoCm-fQ,9711
+qympy/quantum_circuit/sp_gate.py,sha256=c7g4fqq1_VKvV04_9CZ4tN9RKZ3m2Nmanw7p1A1AxFA,5196
+qympy/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qympy-1.2.1.dist-info/LICENSE,sha256=Ek11bybhec1IzqgIGgn3SrXK2Yinf-gR_91_lJ9A1Y8,1066
+qympy-1.2.1.dist-info/METADATA,sha256=aO3iPVGXdhBE66DU0hu0jqx_IO_EXB4o2K1XU8h_9b0,7978
+qympy-1.2.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+qympy-1.2.1.dist-info/top_level.txt,sha256=CFd9WktxC8i3A3A1itOsSxLXmdq0VURQy35i9OrP_v0,6
+qympy-1.2.1.dist-info/RECORD,,
