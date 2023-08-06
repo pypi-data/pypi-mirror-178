@@ -1,0 +1,13 @@
+nographs/__init__.py,sha256=hIFGrDAHylKtrp7dvbxdYp3DMGw2Ukymv5QaFDlVCnQ,6438
+nographs/edge_gadgets.py,sha256=W0yv01eTN-_UKPKmr7sI6oINM0xVeBJG2kIntu7MNOc,8123
+nographs/gear_collections.py,sha256=-PH6dHbm9CeT3qW5S9paKQx5_5_ZxrsSQAX_b31wzcA,42020
+nographs/gears.py,sha256=sxFE_95qu1TWndaKHeE7n344WoDBGf6tfvuURifkdKk,33330
+nographs/matrix_gadgets.py,sha256=w0m5Enpk0y5d31ourakk5KsG_-O3CtYooYr_XUayl7o,12274
+nographs/paths.py,sha256=Fzp6vjQnIGyrPWS-hZ2IZzyIhZ4up7rD0gMyDy0woqs,19400
+nographs/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nographs/strategies.py,sha256=7R7dWsN-GxepdecD_HMQ0VfLf1R3SZ8WLEwoDCFADBk,154826
+nographs/types.py,sha256=7RQLNgEM62xeqfGXd3dpb7sSm3pDFKcgRstL1-UJnyw,4101
+nographs-3.0.0.dist-info/METADATA,sha256=7dNG3MI3_el23TLi01fCvChiR8-Ofen5PQNiR9yH_h8,8675
+nographs-3.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+nographs-3.0.0.dist-info/top_level.txt,sha256=smA4apNjLOoPaV263K8fuQqJYrtg1IdJhy6v4wnJtY8,9
+nographs-3.0.0.dist-info/RECORD,,
