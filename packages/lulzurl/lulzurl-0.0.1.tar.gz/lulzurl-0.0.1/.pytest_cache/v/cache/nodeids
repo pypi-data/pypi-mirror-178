@@ -1,0 +1,9 @@
+[
+  "tests/test_easyurl.py::test_address_deeper_dive",
+  "tests/test_easyurl.py::test_address_deeper_dive_attr",
+  "tests/test_easyurl.py::test_address_deeper_dive_index",
+  "tests/test_easyurl.py::test_address_no_changes",
+  "tests/test_easyurl.py::test_address_trailing_add",
+  "tests/test_easyurl.py::test_address_trailing_slash",
+  "tests/test_easyurl.py::test_answer"
+]
