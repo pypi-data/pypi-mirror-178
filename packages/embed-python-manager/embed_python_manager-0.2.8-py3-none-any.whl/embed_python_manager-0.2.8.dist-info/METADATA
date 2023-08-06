@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: embed-python-manager
+Version: 0.2.8
+Summary: Download and manage embedded python versions.
+Home-page: https://github.com/likianta/embed-python-manager
+License: MIT
+Author: Likianta
+Author-email: likianta@foxmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: lk-logger (>=5.4.7,<6.0.0)
+Requires-Dist: lk-utils (>=2.4.1,<2.5.0)
+Requires-Dist: pyyaml
+Description-Content-Type: text/markdown
+
+# Install
+
+```
+pip install embed-python-manager
+```
+
+# Basic Usages
+
+```python
+from embed_python_manager import EmbedPythonManager
+
+manager = EmbedPythonManager('python39')
+
+# Internet connection required.
+manager.deploy(add_pip_suits=True, add_tk_suits=False)
+#   Now the embedded Python folder is ready to call, copy, move and more.
+
+manager.copy_to(input('Target venv folder: '))
+# manager.move_to(input('Target venv folder: '))
+
+```
+
+# Advanced Usages
+
+*TODO*
+

@@ -1,0 +1,14 @@
+embed_python_manager/__init__.py,sha256=48d3wrs58xicwY3tfXpJDXE7Kt_YyjHkq8skX18stnw,147
+embed_python_manager/downloader.py,sha256=5KSg987AFXFvS6SnEE7_V5i1Y_e_1V6avIsYOTY3-K0,4828
+embed_python_manager/env.py,sha256=zJ00mPl3oFmGEgsNj2Uhuw2JxOcMJMeNZHXeL7ju5JI,423
+embed_python_manager/manager.py,sha256=qe8lw_FB4ToO3jkHQR7JV_F_rDcZyw7FIrC91RaNLLw,5543
+embed_python_manager/path_model.py,sha256=CagQU6gXdp1f5j-DvIKPCtr4r0O3YEw8mYIcQOwIcbM,2966
+embed_python_manager/pip_suits.py,sha256=zbSle-qDOiMYCAo-LqMGHArvdWH130lpw58CiOQXhDw,7254
+embed_python_manager/pyversion.py,sha256=_0aCmbDDlvbcArDSY5dMxvXzv1JWx1y4ELdrPwQbrg4,1421
+embed_python_manager/source_list/npm_taobao_org.yml,sha256=U8NfoA-EW67CNmkpGkyFuhg773eI090xHr5NVLp-iNU,579
+embed_python_manager/source_list/www_python_org.yml,sha256=Le6Pq-xx9QUre2Rqln_2wvzy-GFC-uBLA9YhoUBXiHk,1141
+embed_python_manager/tk_suits.py,sha256=PVvijioq8ib6cdGWgsTP9vPpYvhyx7LMjIZmoS7AVHw,1051
+embed_python_manager-0.2.8.dist-info/LICENSE,sha256=L0CoxqiaTnKsvSBnfyi7AtCQbKEA6lnnZOsxQxMNTdY,1065
+embed_python_manager-0.2.8.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+embed_python_manager-0.2.8.dist-info/METADATA,sha256=rtKu9v-2IZ6jQbTP0A5qCQ3iivz3UuMzx2eiB70xK9s,1184
+embed_python_manager-0.2.8.dist-info/RECORD,,
