@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: job-shop-cp-env
+Version: 1.0.0
+Summary: An optimized RL approach to learn and simulate the Job-Shop Scheduling problem using Constraint Programming
+Home-page: https://github.com/ingambe
+Author: Pierre Tassel
+Author-email: Pierre Tassel <pierre.tassel@outlook.fr>
+Project-URL: Homepage, https://github.com/ingambe/JobShopCPEnv
+Project-URL: Bug Tracker, https://github.com/ingambe/JobShopCPEnv/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: mypy
+Requires-Dist: gym
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: docplex
+Requires-Dist: cloudpickle
+
+# A Constraint Programming Based Job-Shop Scheduling Environment
+
+This is a Constraint Programming (CP) based Job-Shop Scheduling (JSS) Environment that can be combined with Reinforcement-Learning (RL) to train an agent to solve a scheduling problem.
+Compared to other environments, this CP based one is made to be fast and scalable.
+If you install it using `setup.py`, it will automatically compile using MyPyC. 
+Also, this environment has been developed for an end-to-end approach, there is no pre-defined reward function and the observation are simply the raw `IntervalVariable` representation.
+We recommend the reader to check the paper for more information.
+
+If you need to define a reward function or a different observation, you can do so by forking the environment and modifying the `step` function.
+
+# Installation
+
+```bash
+pip install jss_cp
+```
