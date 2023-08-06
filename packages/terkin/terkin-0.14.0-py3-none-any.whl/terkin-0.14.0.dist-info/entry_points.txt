@@ -1,0 +1,2 @@
+[console_scripts]
+terkin = terkin_cpython.main:cli
