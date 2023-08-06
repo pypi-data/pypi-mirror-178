@@ -1,0 +1,13 @@
+blabber/__init__.py,sha256=NL8rrsCcqyMbgXg2DDGPCBrJ49T8L8LrSFvivuS3U0M,1096
+blabber/data/mult.txt,sha256=iZEtlef1MLT7feMvHL1xiO0x8y28nAC5SxDOa7DJV34,193
+blabber/data/open.txt,sha256=oT5_LNa1fRD8bzJ90JXb6_tBljwvThI63A77-PSOamY,2207
+blabber/data/rather.txt,sha256=fA-Pt3sg854mKSC5rBXOoXCvaHtPEgdN0vLJS6nHzRI,221
+blabber/data/yesno.txt,sha256=H-3N0eM-lr9b92r-y3occNNe9qtCg1i9p31kdHP1HdM,168
+blabber-0.1.1.data/data/mult.txt,sha256=iZEtlef1MLT7feMvHL1xiO0x8y28nAC5SxDOa7DJV34,193
+blabber-0.1.1.data/data/open.txt,sha256=oT5_LNa1fRD8bzJ90JXb6_tBljwvThI63A77-PSOamY,2207
+blabber-0.1.1.data/data/rather.txt,sha256=fA-Pt3sg854mKSC5rBXOoXCvaHtPEgdN0vLJS6nHzRI,221
+blabber-0.1.1.data/data/yesno.txt,sha256=H-3N0eM-lr9b92r-y3occNNe9qtCg1i9p31kdHP1HdM,168
+blabber-0.1.1.dist-info/LICENSE,sha256=_5E0Nyt35vdi3RfJfsTW4tUhviG66f_-Lpuawl7M-VA,1351
+blabber-0.1.1.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+blabber-0.1.1.dist-info/METADATA,sha256=i5p3xTAFLDYCa74jC8FKv527pDrlp7hlYdsoHR6hv4c,1998
+blabber-0.1.1.dist-info/RECORD,,
