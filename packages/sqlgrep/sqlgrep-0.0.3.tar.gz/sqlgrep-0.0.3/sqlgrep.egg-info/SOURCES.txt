@@ -1,0 +1,8 @@
+README.md
+setup.py
+bin/sqlgrep
+sqlgrep.egg-info/PKG-INFO
+sqlgrep.egg-info/SOURCES.txt
+sqlgrep.egg-info/dependency_links.txt
+sqlgrep.egg-info/requires.txt
+sqlgrep.egg-info/top_level.txt
