@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+wcatapi/__init__.py
+wcatapi.egg-info/PKG-INFO
+wcatapi.egg-info/SOURCES.txt
+wcatapi.egg-info/dependency_links.txt
+wcatapi.egg-info/top_level.txt
