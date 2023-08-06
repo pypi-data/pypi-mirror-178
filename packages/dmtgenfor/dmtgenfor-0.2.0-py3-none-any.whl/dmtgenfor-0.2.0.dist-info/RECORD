@@ -1,0 +1,15 @@
+dmtgenfor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dmtgenfor/generator.py,sha256=UKsSxa0LkPKPgzrM7D5UhpzarP7PjjUM0hYK7PslfWE,748
+dmtgenfor/generators/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dmtgenfor/generators/basic_template_generator.py,sha256=qfrcQBg59-L5b2KJJJuInffbUx1ce_Qq1JiJWD7SHi4,5908
+dmtgenfor/generators/graph.py,sha256=rC2A0rajqw99A0OxktUY-gyFwzIodEpBYdB0Jvk0l_Y,1934
+dmtgenfor/generators/runtime_generator.py,sha256=rso9e_241Db8R7ElYIguEYohZNo4SQQhz9U_31WjuB0,1247
+dmtgenfor/templates/cmake-project.jsonc.jinja,sha256=Yu4HJJxE_42onSqlVThW6h5tCM51LjV8sO9N0WssLR8,496
+dmtgenfor/templates/fpm.toml.jinja,sha256=F2UfNfIR_0PsfIb5reR2o6OObAJ9e0sGK-uncdRmEsw,441
+dmtgenfor/templates/src/json_io.f90.jinja,sha256=wbLunl8mus484r2_dya0ujQUuBCDHQiaeuTzwczh_tw,7594
+dmtgenfor/templates/src/types_mod.f90.jinja,sha256=KShTmzf3Rf3vSQtjCVVhQSZBoivEWl_pRynV8D6IkM4,419
+dmtgenfor-0.2.0.dist-info/LICENSE,sha256=pb9IoCOGnJWiqlY3q0PvdDeQU6wTDhkdmNxVErwFd7s,1093
+dmtgenfor-0.2.0.dist-info/METADATA,sha256=SDwlATD8ZR8xv7miPmGzzKDuR_1wfg9f8xGqt7Cxymw,928
+dmtgenfor-0.2.0.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+dmtgenfor-0.2.0.dist-info/top_level.txt,sha256=QT1BYXi0U6zFO8QqGgj7WsDTg6VkfCaDiOSSvf5NMX4,10
+dmtgenfor-0.2.0.dist-info/RECORD,,
