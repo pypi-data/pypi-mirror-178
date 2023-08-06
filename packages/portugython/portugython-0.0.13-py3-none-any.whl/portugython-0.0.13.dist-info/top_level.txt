@@ -1,0 +1,6 @@
+__init__
+aleatorio
+matematica
+mechanics_test
+pegasenha
+portugython
