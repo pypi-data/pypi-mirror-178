@@ -1,0 +1,12 @@
+niagara/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+niagara/__main__.py,sha256=w0ccdxHfaHxg7PXLc8S_8fwkAXSoru6uGwMSCs2j8-s,1007
+niagara/config.py,sha256=M7aDxtb_tDfZ3jwnxgJHA91LivbWUvvYlLNBAKGS_ys,2956
+niagara/generic.py,sha256=x33mkW2hR-wvDatHEfeyW4dvx-iol7O812g00fnAUs0,1237
+niagara/packages.py,sha256=8ECQQ1fXPI2hYpwWNyi-2xl83itANrCbmmf2uEKRy3s,7862
+niagara/template.py,sha256=6p3vcdwLdkNCCJ9i48ua1x9xvFo0bJmI1NU9EsyiYbY,6090
+niagara-0.0.0.8.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+niagara-0.0.0.8.dist-info/METADATA,sha256=f7nf4zw24_b2n0q2uuoYpclWcmGVtAG_pCmTZ3e9EF4,3299
+niagara-0.0.0.8.dist-info/WHEEL,sha256=ZL1lC_LiPDNRgDnOl2taCMc83aPEUZgHHv2h-LDgdiM,92
+niagara-0.0.0.8.dist-info/entry_points.txt,sha256=HJ1ZyfZx5mt8L17D-tZ0GiinLKGS2W10djHsB8A7IkE,49
+niagara-0.0.0.8.dist-info/top_level.txt,sha256=LWNT57qlmdorNYQVOjwwmFV8pteZbSSwXZ_jwW1kn7U,8
+niagara-0.0.0.8.dist-info/RECORD,,
