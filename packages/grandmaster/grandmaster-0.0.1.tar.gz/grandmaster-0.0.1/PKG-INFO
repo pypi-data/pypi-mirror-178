@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: grandmaster
+Version: 0.0.1
+Summary: Grandmaster
+Home-page: https://github.com/grandmasterai
+Author: Jonathan Besomi
+License: UNKNOWN
+Project-URL: Documentation, https://grandmaster.ai
+Project-URL: Source Code, https://grandmaster.ai
+Project-URL: Bug Tracker, https://grandmaster.ai
+Keywords: machine learning
+Platform: UNKNOWN
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.6.1
+Description-Content-Type: text/markdown
+
+# Grandmaster
+

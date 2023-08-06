@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+grandmaster/__init__.py
+grandmaster.egg-info/PKG-INFO
+grandmaster.egg-info/SOURCES.txt
+grandmaster.egg-info/dependency_links.txt
+grandmaster.egg-info/top_level.txt
