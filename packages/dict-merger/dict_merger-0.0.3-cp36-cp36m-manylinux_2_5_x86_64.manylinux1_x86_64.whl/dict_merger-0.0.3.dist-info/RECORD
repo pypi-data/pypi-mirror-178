@@ -1,0 +1,10 @@
+dict_merger/dynamic_merger.py,sha256=qOVzNHywywcgxDrln6JOoOHiCwSThOO06fxj-RltJc0,2624
+dict_merger/dynamic_merger.cpython-36m-x86_64-linux-gnu.so,sha256=CyMZmKoDA2wCTm-2lFcUpA0vldaqSZS6uXORTV34BFM,336648
+dict_merger/static_merger.cpython-36m-x86_64-linux-gnu.so,sha256=K3Rc9AvD12QQ1ELJozjcQBD6fILyurNkOpKJupMhf5E,191304
+dict_merger/__init__.cpython-36m-x86_64-linux-gnu.so,sha256=7WUl-9WUs0i0E4S81Tr-Chi8LzXgBt7Py85KsGi7eJY,74312
+dict_merger/__init__.py,sha256=FujiFJrhE1TWBixvyD-ctt_OgYP7b4oUnwksUCPZFkc,91
+dict_merger-0.0.3.dist-info/RECORD,,
+dict_merger-0.0.3.dist-info/top_level.txt,sha256=K_rTNnX5vFDhQBU-4Qy4yv0x8gdCxIvc4mzRYHL4JCc,12
+dict_merger-0.0.3.dist-info/METADATA,sha256=sRbLX2X7rhFWHDs5MEtAXeoR6dPrgpb4r3KRWpJt5hQ,3901
+dict_merger-0.0.3.dist-info/WHEEL,sha256=SKEY4UDStneVpOOOp3mE80vXpYhBPITxTM2XY5jjISA,146
+dict_merger-0.0.3.dist-info/LICENSE,sha256=LgORJdhj2dyiV4gxw2sxTprAt8-UQZ8jsgG_dbySDUY,1062
