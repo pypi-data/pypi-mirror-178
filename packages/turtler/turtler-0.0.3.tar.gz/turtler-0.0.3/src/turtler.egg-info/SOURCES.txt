@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/turtler/__init__.py
+src/turtler/main.py
+src/turtler.egg-info/PKG-INFO
+src/turtler.egg-info/SOURCES.txt
+src/turtler.egg-info/dependency_links.txt
+src/turtler.egg-info/top_level.txt
