@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+setup.yml
+skyant/stub.py
+skyant.egg-info/PKG-INFO
+skyant.egg-info/SOURCES.txt
+skyant.egg-info/dependency_links.txt
+skyant.egg-info/top_level.txt

@@ -1,0 +1,29 @@
+NAMESPACE: skyant
+MODULES:
+    -   skyant
+
+VERSION: 0.0
+MINOR: 1
+
+DESCR: Metapackage. Micro-Application Framework.
+KEYWORDS: grpc, rest, api, dash, micro-application
+
+LICENSE: MIT
+
+HOME: https://skyant.dev/projects/shell
+DONATE: https://buymeacoffee.com/skyantdev
+NEWS: https://www.linkedin.com/company/skyantdev
+TALK: https://groups.google.com/a/skyant.dev/g/community
+
+
+AUTHOR: Iurii Tarasenko
+EMAIL: info@skyant.dev
+
+PYTHON_REQ: '>=3.10'
+REQUIREMENTS:
+
+CLASSIFIERS:
+    -   'Programming Language :: Python :: 3.10'
+    -   'Intended Audience :: Developers'
+    -   'Intended Audience :: Information Technology'
+    -   'Topic :: Software Development :: Libraries :: Python Modules'

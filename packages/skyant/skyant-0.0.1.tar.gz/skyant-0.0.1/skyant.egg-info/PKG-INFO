@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: skyant
+Version: 0.0.1
+Summary: Metapackage. Micro-Application Framework.
+Home-page: https://skyant.dev/projects/shell
+Author: Iurii Tarasenko
+Author-email: info@skyant.dev
+License: MIT
+Project-URL: Source & issues, https://gitlab.com/skyant/python/shell
+Project-URL: Donation, https://buymeacoffee.com/skyantdev
+Project-URL: Project news, https://www.linkedin.com/company/skyantdev
+Project-URL: Talk to us, https://groups.google.com/a/skyant.dev/g/community
+Keywords: grpc,rest,api,dash,micro-application
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# <p align="center" style="text-align:center" >please found the details documentation on the homepage</p>
+
