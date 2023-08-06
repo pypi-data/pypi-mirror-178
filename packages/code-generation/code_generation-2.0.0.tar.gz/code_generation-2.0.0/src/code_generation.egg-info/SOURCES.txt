@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/code_generation.egg-info/PKG-INFO
+src/code_generation.egg-info/SOURCES.txt
+src/code_generation.egg-info/dependency_links.txt
+src/code_generation.egg-info/requires.txt
+src/code_generation.egg-info/top_level.txt
+src/py_codegen/__init__.py
+src/py_codegen/code_generator.py
+src/py_codegen/cpp_generator.py
+src/py_codegen/version.py
