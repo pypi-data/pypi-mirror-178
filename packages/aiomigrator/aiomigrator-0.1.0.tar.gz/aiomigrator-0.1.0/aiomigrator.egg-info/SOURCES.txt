@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+aiomigrator/__init__.py
+aiomigrator/commands.py
+aiomigrator/main.py
+aiomigrator/queries.py
+aiomigrator/templates.py
+aiomigrator.egg-info/PKG-INFO
+aiomigrator.egg-info/SOURCES.txt
+aiomigrator.egg-info/dependency_links.txt
+aiomigrator.egg-info/top_level.txt
