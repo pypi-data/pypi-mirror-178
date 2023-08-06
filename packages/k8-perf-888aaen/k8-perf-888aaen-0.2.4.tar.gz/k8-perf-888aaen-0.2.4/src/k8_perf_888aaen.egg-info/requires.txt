@@ -1,0 +1,5 @@
+typer
+kubernetes
+rich
+InquirerPy
+uplink
