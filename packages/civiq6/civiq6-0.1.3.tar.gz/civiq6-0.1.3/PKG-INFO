@@ -1,0 +1,97 @@
+Metadata-Version: 2.1
+Name: civiq6
+Version: 0.1.3
+Summary: Package for integrating VimbaPython and Qt6
+Home-page: https://github.com/JSS95/civiq6
+Author: Jisoo Song
+Author-email: jeesoo9595@snu.ac.kr
+Maintainer: Jisoo Song
+Maintainer-email: jeesoo9595@snu.ac.kr
+License: BSD 2-Clause
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: User Interfaces
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: doc
+Provides-Extra: full
+Provides-Extra: pyside6
+Provides-Extra: pyqt6
+License-File: LICENSE
+
+# CIViQ6
+
+Python package for camera integration of [VimbaPython](https://github.com/alliedvision/VimbaPython) and Qt6.
+
+CIViQ is designed to be used with either [PySide6](https://pypi.org/project/PySide6/) or [PyQt6](https://pypi.org/project/PyQt6/).
+However, PyQt6 is not available until the dependent package, [qimage2ndarray](https://pypi.org/project/qimage2ndarray/), supports it.
+
+This package is tested with Vimba 6.0, VimbaPython 1.2.1, and Mako U-130B camera device connected to Window 11.
+
+# Installation
+
+Before you install, be careful for other Qt-dependent packages installed in your environment.
+For example, non-headless `OpenCV-Python` modifies the Qt dependency thus can make other Qt bindings unavailable.
+
+To install CIViQ6, you first need to install VimbaPython package which is not distributed by PyPI.
+Go to its repository and follow the instructions.
+
+After VimbaPython is installed, `civiq6` can be installed using `pip`.
+
+```
+$ pip install civiq6
+```
+
+# How to use
+
+`VimbaRunner` must be run first in `QThread` to start Vimba instance.
+
+After Vimba is started, you can access the vimba camera APIs and acquire frames.
+
+CIViQ is designed to be similar to Qt6's QtMultimedia framework:
+
+|       Qt class       |  CIViQ counterpart  |
+| -------------------- | ------------------- |
+|     QMediaDevices    |     VimbaDevices    |
+|     QCameraDevice    |  VimbaCameraDevice  |
+|       QCamera        |     VimbaCamera     |
+| QMediaCaptureSession | VimbaCaptureSession |
+|      QVideoSink      |      ArraySink      |
+|     QImageCapture    |  VimbaImageCapture  |
+|    QMediaRecorder    |  VimbaVideoRecorder |
+
+For more information, refer to the documentation and examples.
+
+# Examples
+
+Use cases with multithreading are provided in [examples](https://github.com/JSS95/civiq6/tree/master/civiq6/examples) directory.
+They can be found in documentation as well.
+
+# Documentation
+
+Documentation can be found on Read the Docs:
+
+> https://civiq6.readthedocs.io/
+
+If you want to build the document yourself, clone the source code and install with `[doc]` option.
+Go to `doc` directory and build.
+
+```
+$ pip install civiq6[doc]
+$ cd doc
+$ make html
+```
