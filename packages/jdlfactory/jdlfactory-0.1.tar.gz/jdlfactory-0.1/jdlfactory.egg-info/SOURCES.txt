@@ -1,0 +1,13 @@
+MANIFEST.in
+setup.py
+jdlfactory/__init__.py
+jdlfactory/plugins.py
+jdlfactory.egg-info/PKG-INFO
+jdlfactory.egg-info/SOURCES.txt
+jdlfactory.egg-info/dependency_links.txt
+jdlfactory.egg-info/not-zip-safe
+jdlfactory.egg-info/top_level.txt
+jdlfactory/include/VERSION
+test/test_basic_job.py
+test/test_helloworld.py
+test/test_server.py
