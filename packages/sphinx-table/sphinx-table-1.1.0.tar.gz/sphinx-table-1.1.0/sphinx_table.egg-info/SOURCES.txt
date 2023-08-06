@@ -1,0 +1,14 @@
+LICENSE
+setup.py
+sphinx_table.egg-info/PKG-INFO
+sphinx_table.egg-info/SOURCES.txt
+sphinx_table.egg-info/dependency_links.txt
+sphinx_table.egg-info/namespace_packages.txt
+sphinx_table.egg-info/requires.txt
+sphinx_table.egg-info/top_level.txt
+sphinxcontrib/table/__init__.py
+sphinxcontrib/table/cell.py
+sphinxcontrib/table/coordinate.py
+sphinxcontrib/table/excel.py
+sphinxcontrib/table/span.py
+sphinxcontrib/table/table.py
