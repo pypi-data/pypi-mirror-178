@@ -1,0 +1,45 @@
+<div class="row mb0 text-small">
+    <div class="col s4 left-align">
+        <pre class="my0 white-text">User:&nbsp;{{ current_user.username }}</pre>
+    </div>
+    <div class="col s4 center-align">
+        <pre class="my0 white-text" id="date"></pre>
+    </div>
+    <div class="col s4 right-align">
+        <pre class="my0 white-text" id="time"></pre>
+    </div>
+</div>
+<nav class="nav-wrapper blue accent-4">
+    <a href="{{ url_for('pos.index') }}" class="brand-logo center">{{ company_name() }}</a>
+    <ul class="left left-align">
+        {% if (title !="POS") and (title !="Active Orders") %}
+            <li class="waves-effect waves-light">
+                <a onclick="go_back()"><i class="material-icons">arrow_back</i></a>
+            </li>
+        {% endif %}
+        {% if current_user.is_admin() %}
+            <li class="waves-effect waves-light">
+                <a href="{{ url_for('admin.index') }}">
+                    <i class="material-icons">admin_panel_settings</i>
+                </a>
+            </li>
+        {% endif %}
+        <li class="waves-effect waves-light">
+            <a href="">
+                <i class="material-icons">settings</i>
+            </a>
+        </li>
+        <li class="waves-effect waves-light">
+            <a onclick="refresh()">
+                <i class="material-icons">refresh</i>
+            </a>
+        </li>
+    </ul>
+    <ul class="right right-align">
+        <li class="red accent-3 waves-effect waves-light corner-btn">
+            <a href="{{ url_for('user.logout') }}">
+                <i class="material-icons">close</i>
+            </a>
+        </li>
+    </ul>
+</nav>

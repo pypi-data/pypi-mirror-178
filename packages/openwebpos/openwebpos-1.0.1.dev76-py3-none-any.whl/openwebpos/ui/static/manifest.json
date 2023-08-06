@@ -1,0 +1,28 @@
+{
+  "name": "OpenWebPOS",
+  "short_name": "OWPOS",
+  "icons": [
+    {
+      "src": "/img/icons/vector.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/img/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "description": "OpenWebPOS is a Web-based point of sale system",
+  "lang": "en-US",
+  "start_url": "/?source=pwa",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "scope": "/",
+  "prefer_related_applications": false
+}

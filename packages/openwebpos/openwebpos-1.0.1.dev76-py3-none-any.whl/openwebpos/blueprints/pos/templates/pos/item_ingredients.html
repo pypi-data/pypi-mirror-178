@@ -1,0 +1,29 @@
+{% extends 'layouts/grid.html' %}
+
+{% from 'macros/user_interface.html' import clickableCard %}
+
+{% block content %}
+
+    <div class="row">
+        {% for ingredient in ingredients %}
+            <div class="col s12 m3">
+                {{ clickableCard('#itemIngredient'+ingredient.ingredient.id|string+'Modal', ingredient.ingredient.name, True) }}
+            </div>
+            <div id="itemIngredient{{ ingredient.ingredient.id }}Modal" class="modal rounded">
+                <div class="modal-content">
+                    <h4 class="center-align">ADD/Remove <br>{{ ingredient.ingredient.name }}</h4>
+                    <div class="row mb0">
+                        <div class="col s12 m6">
+                            {{ clickableCard('', 'Add', color='green') }}
+                        </div>
+                        <div class="col s12 m6">
+                            {{ clickableCard('', 'Remove', color='red') }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+
+    </div>
+
+{% endblock %}

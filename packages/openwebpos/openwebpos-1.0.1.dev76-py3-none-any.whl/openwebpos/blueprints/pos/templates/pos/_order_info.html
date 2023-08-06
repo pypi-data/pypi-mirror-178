@@ -1,0 +1,24 @@
+<div class="order-info grey lighten-2">
+    <ul class="my0">
+        <li>
+            <pre class="my0">Sub-Total:
+                <span class="right">{{ format_currency(order.order_subtotal()) }}</span>
+            </pre>
+        </li>
+        <li>
+            <pre class="my0">Discount:
+                <span class="right">0.00</span>
+            </pre>
+        </li>
+        <li>
+            <pre class="my0">Tax(8.25%):
+                <span class="right">{{ format_currency(order.order_tax_total()) }}</span>
+            </pre>
+        </li>
+        <li>
+            <pre class="my0">Total:
+                <span class="right">{{ format_currency(order.order_total()) }}</span>
+            </pre>
+        </li>
+    </ul>
+</div>
