@@ -1,0 +1,2 @@
+climetlab>=0.9.9
+zarr>=2.13.3
