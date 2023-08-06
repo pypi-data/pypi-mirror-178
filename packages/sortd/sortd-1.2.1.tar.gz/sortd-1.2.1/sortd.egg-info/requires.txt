@@ -1,0 +1,10 @@
+PyYAML==6.0
+toml==0.10.2
+
+[dev]
+mypy
+types-PyYAML
+types-toml
+
+[dist]
+wheel

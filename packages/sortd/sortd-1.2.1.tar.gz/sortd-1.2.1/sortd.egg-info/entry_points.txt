@@ -1,0 +1,2 @@
+[console_scripts]
+sortd = sortd.__main__:main
