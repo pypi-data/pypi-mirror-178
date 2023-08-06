@@ -1,0 +1,14 @@
+speechmatics/__init__.py,sha256=dZExEVssrZPAkIaTSqWycSugNCI2B1kzhpLCeIUHi00,130
+speechmatics/adapters.py,sha256=OwwBOoHxjXF_NE4pttoIRWkG8B5E-kug5QxrVVuOkGI,5509
+speechmatics/batch_client.py,sha256=UY0CMPIzQAzkujHNOnTdemcZMY8CVF4Z8daA3CEyyDQ,12491
+speechmatics/cli.py,sha256=xn15LrY2_1rj6t99yXKz1UL9AWabNrjSOpbzxXkELzU,30887
+speechmatics/client.py,sha256=8iSGNwIjPp6gZyIlgWnAAoocR6K3nzMx5s_Smfc69w4,18980
+speechmatics/exceptions.py,sha256=jIxWp5z31kmwoyLXWnSQ2SzkeUfaHqm_zVig8frGiMA,577
+speechmatics/helpers.py,sha256=aIxWkH9v9NGbb_QEfRtFRR55coKOfYZ7t1tm4nkv0X8,1694
+speechmatics/models.py,sha256=jwzVwWkcrq4je70K4lophoESlwibAZmJPOjOLiZ2F2E,9750
+speechmatics_python-1.4.3.dist-info/LICENSE.txt,sha256=IIy-euUIALRHdT78C06FPjOtQxMODBnStAodidReuLc,1078
+speechmatics_python-1.4.3.dist-info/METADATA,sha256=4l9flg6tRcV_O4zG69melMQ1cEaHszv-CN6gtMxREYI,6574
+speechmatics_python-1.4.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+speechmatics_python-1.4.3.dist-info/entry_points.txt,sha256=AuiX0rsSi-AEdXEu0XD0QAidOwFW_2IQm2Hi1Tv9GCM,55
+speechmatics_python-1.4.3.dist-info/top_level.txt,sha256=ZS3Qz-FwYvfrJJHlVLJCKAavrNZSp9Z708A1YtmJvaM,13
+speechmatics_python-1.4.3.dist-info/RECORD,,
