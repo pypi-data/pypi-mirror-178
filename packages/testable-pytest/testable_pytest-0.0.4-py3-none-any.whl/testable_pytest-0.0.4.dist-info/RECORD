@@ -1,0 +1,11 @@
+testable_pytest/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+testable_pytest/client.py,sha256=XOtbaS78BdkKy-Bsgwy2ttSzjEWpAY35YRFR4me87Mc,310
+testable_pytest/interface.py,sha256=Ixz8csRe8Nd2MvutOD85-AhYd1fJJmlzWu9Uw6sG0eg,631
+testable_pytest/models.py,sha256=v6u_MOVXYBXer3sErRSWbCwwWgh71ozV6aEjyQhQ2JU,162
+testable_pytest/plugin.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+testable_pytest/settings.py,sha256=dIIvRCXlDjZhw-ah2SU7yebZ6XnCR8RDTxYv-eGw3Q8,174
+testable_pytest-0.0.4.dist-info/METADATA,sha256=RVPCd87Kkp9IUvfVKsRcLpmHlC-X-pGsRTN9OtWUigg,544
+testable_pytest-0.0.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+testable_pytest-0.0.4.dist-info/entry_points.txt,sha256=FdcdTbrZzl7t4nLZN9gWISlN1J3Yp_WZogv6rdLqSss,51
+testable_pytest-0.0.4.dist-info/top_level.txt,sha256=zgZ5W4ZCUKAHxJR2ZL_nsGQBJbKwUauzvy_B1DLBmw4,16
+testable_pytest-0.0.4.dist-info/RECORD,,

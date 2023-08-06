@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: testable-pytest
+Version: 0.0.4
+Summary: Testable PyTest Wrapper
+Author: Ryan de Marigny
+Author-email: testableproject@gmail.com
+Keywords: python,pytest,testable
+Classifier: Framework :: Pytest
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: pydantic (>=1.10.2)
+Requires-Dist: pytest (>=7.2.0)
+Requires-Dist: requests (>=2.28.1)
+Requires-Dist: python-dotenv (>=0.21.0)
+
+Testable interface for PyTest
