@@ -1,0 +1,4 @@
+df2gspread
+nltk
+google-auth-httplib2
+ur_gadget
