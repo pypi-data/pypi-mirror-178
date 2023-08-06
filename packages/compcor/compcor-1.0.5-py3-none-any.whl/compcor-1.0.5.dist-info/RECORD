@@ -1,0 +1,11 @@
+compcor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+compcor/corpus_metrics.py,sha256=6ZXYlnbBik6zctl5PjdxhYLcMIFKLESAj7QxoXkiDHA,7131
+compcor/example.py,sha256=WxDRalabU1bYTIxdj7A2xhQqqAUgWVf-kA-o8QeiuYM,3365
+compcor/text_embedder.py,sha256=0qSd4u2ZP5dpIADUNbHQdh9q1GEOzvCVKBpuvqvz3cY,289
+compcor/text_tokenizer_embedder.py,sha256=rNrkKO910VUloyzOfCN6y8_bfh6KREdD1CCcNGHIKdU,1102
+compcor/utils.py,sha256=yGgzs_0TvAzyj5NoZZaQtBS9uNX8ccargg1YX2oWL9k,1844
+compcor-1.0.5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+compcor-1.0.5.dist-info/METADATA,sha256=8wn-33LFuF88hvk-KSxZITxI3W6Yf9A8ZSe6YWs6YRA,4493
+compcor-1.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+compcor-1.0.5.dist-info/top_level.txt,sha256=MmbIjzZo7PLlUhZw9D2dvPe2F-rNURkVsxCVbhfl_1s,8
+compcor-1.0.5.dist-info/RECORD,,
