@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+nonebot_plugin_MirlKoi/__init__.py
+nonebot_plugin_MirlKoi.egg-info/PKG-INFO
+nonebot_plugin_MirlKoi.egg-info/SOURCES.txt
+nonebot_plugin_MirlKoi.egg-info/dependency_links.txt
+nonebot_plugin_MirlKoi.egg-info/requires.txt
+nonebot_plugin_MirlKoi.egg-info/top_level.txt
