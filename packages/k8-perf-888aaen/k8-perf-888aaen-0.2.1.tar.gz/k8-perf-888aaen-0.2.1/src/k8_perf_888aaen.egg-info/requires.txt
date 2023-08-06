@@ -1,0 +1,4 @@
+typer
+kubernetes
+rich
+InquirerPy
