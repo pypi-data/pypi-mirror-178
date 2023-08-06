@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -flto -shared  -o _magma_debug.cpython-39-x86_64-linux-gnu.so CMakeFiles/_magma_debug.dir/debug.cc.o 

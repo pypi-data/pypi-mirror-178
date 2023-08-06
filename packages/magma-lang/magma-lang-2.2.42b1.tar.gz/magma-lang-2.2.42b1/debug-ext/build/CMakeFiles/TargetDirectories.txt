@@ -1,0 +1,5 @@
+/home/lenny/repos/magma/debug-ext/build/CMakeFiles/_magma_debug.dir
+/home/lenny/repos/magma/debug-ext/build/CMakeFiles/edit_cache.dir
+/home/lenny/repos/magma/debug-ext/build/CMakeFiles/rebuild_cache.dir
+/home/lenny/repos/magma/debug-ext/build/pybind11/CMakeFiles/edit_cache.dir
+/home/lenny/repos/magma/debug-ext/build/pybind11/CMakeFiles/rebuild_cache.dir
