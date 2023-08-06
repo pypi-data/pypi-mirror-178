@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: random_caps
+Version: 0.0.5
+Summary: A package that randomly puts uppercase letters in a string
+Project-URL: HomePage, https://github.com/devdeveloper1/random_caps
+Project-URL: Bug Tracker, https://github.com/devdeveloper1/random_caps/issues
+Author-email: M_ocha <venomouscat02@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
+
+# random_caps
+a library for randomly applying uppercase letters in a string
+
+## installation
+Windows:
+```
+$ py -m pip install random_caps
+```
+
+Linux:
+```
+$ python3 -m pip install random_caps
+```
+
+## example
+
+```python
+>>> from random_caps import *
+>>> print(random_cap("random", 2))
+"RanDOm"
+```
