@@ -1,0 +1,8 @@
+README.md
+setup.py
+insert_mongodb/__init__.py
+insert_mongodb.egg-info/PKG-INFO
+insert_mongodb.egg-info/SOURCES.txt
+insert_mongodb.egg-info/dependency_links.txt
+insert_mongodb.egg-info/requires.txt
+insert_mongodb.egg-info/top_level.txt
