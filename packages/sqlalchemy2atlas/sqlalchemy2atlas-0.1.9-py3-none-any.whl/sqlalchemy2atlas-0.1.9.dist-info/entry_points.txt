@@ -1,0 +1,3 @@
+[console_scripts]
+sqlalchemy2atlas=sqlalchemy2atlas.sqlalchemy2atlas:main
+
