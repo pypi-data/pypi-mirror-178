@@ -1,0 +1,14 @@
+jericho/__init__.py,sha256=B0cYW0Uo59Kb-f7FqOaxCGH-2wQjl4xyECjXAoYe4lc,56
+jericho/clubfloyd_verb_counts.json,sha256=cDYJi7L0aZ3SAWwmk2I9DFsNdtTPzehvYbFYde9fDnY,60508
+jericho/defines.py,sha256=yF3uyaPZrxgsdEB4Eg3fnPfppWUvnrlfzOKaGuQWqJg,7002
+jericho/game_info.py,sha256=cKuxnnXp85DSEJ1ddyKF0HrRAqM7KYuWuRHuh7-J3Os,417373
+jericho/jericho.py,sha256=d_8WwAw2RKE8U4wpLX1uSReLd4A_ITnSsrN2hPs6jcI,38740
+jericho/libfrotz.so,sha256=qSa1jfeLL72IS_Mn3GCiuV6AP1ok09llsMHUZcpDpEI,485800
+jericho/template_action_generator.py,sha256=qhKIr9cktwLuwOVrYetKUF7kB3GDssDAgCPi0fB38DQ,6102
+jericho/util.py,sha256=e_Sea8qQLbjpqUFyEbs-vRUAGlvgwsGyyZDywyKNxDI,6738
+jericho/version.py,sha256=lmDIxaFmSp0AjpogkMZtaIakitn7fHM4TDvV5XVgm9k,22
+jericho-3.1.1.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+jericho-3.1.1.dist-info/METADATA,sha256=I829wE3pRavNV9wQFyfTZQGzpXxeeLQh7TTjfOhaNiM,394
+jericho-3.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+jericho-3.1.1.dist-info/top_level.txt,sha256=NhJB5gVKFP-jKgYiA2uYK5gkb8eDwepDk9qFwNkARks,8
+jericho-3.1.1.dist-info/RECORD,,
