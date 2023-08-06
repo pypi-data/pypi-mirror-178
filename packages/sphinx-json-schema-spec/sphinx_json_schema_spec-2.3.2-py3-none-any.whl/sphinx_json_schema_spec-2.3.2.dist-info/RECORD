@@ -1,0 +1,7 @@
+sphinx_json_schema_spec/__init__.py,sha256=DcWqASmzjB0DeHlsxS5h0IYrgl-FciMy4f2N-lvQf2M,5063
+sphinx_json_schema_spec/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sphinx_json_schema_spec/tests/test_sphinx.py,sha256=gsiZZu-8W_Q1V6qVO3mLDf8w3qwzxd6GELwj6Ui2SrU,30
+sphinx_json_schema_spec-2.3.2.dist-info/METADATA,sha256=u55hzZnlu3xH-DQ4-lUB92222zo2MbklsfPE3mhsryM,2454
+sphinx_json_schema_spec-2.3.2.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+sphinx_json_schema_spec-2.3.2.dist-info/licenses/COPYING,sha256=T5KgFaE8TRoEC-8BiqE0MLTxvHO0Gxa7hGw0Z2bedDk,1057
+sphinx_json_schema_spec-2.3.2.dist-info/RECORD,,
