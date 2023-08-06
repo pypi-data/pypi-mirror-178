@@ -1,0 +1,12 @@
+LICENSE.txt
+README.rst
+setup.cfg
+setup.py
+chain_pymysql/__init__.py
+chain_pymysql/dqlparse.py
+chain_pymysql/exceptions.py
+chain_pymysql.egg-info/PKG-INFO
+chain_pymysql.egg-info/SOURCES.txt
+chain_pymysql.egg-info/dependency_links.txt
+chain_pymysql.egg-info/requires.txt
+chain_pymysql.egg-info/top_level.txt

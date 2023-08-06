@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: chain-pymysql
+Version: 1.0.5
+Summary: Easy to use PyMySQL.
+Home-page: https://github.com/Tiacx/chain-pymysql
+Author: Taic
+License: UNKNOWN
+Project-URL: Documentation, https://github.com/Tiacx/chain-pymysql
+Keywords: ChainPyMySql
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Database
+License-File: LICENSE.txt
+
+Chain-PyMySQL
+-------------
+
+Easy to use PyMySQL.
+
+| 对 PyMySQL 进行封装，增加链式操作，方便快捷进行 CURD 操作
+| > 注：支持断线自动重连
+
+说明文档
+--------
+
+https://github.com/Tiacx/chain-pymysql/
+
+
