@@ -1,0 +1,9 @@
+LICENSE
+pyproject.toml
+setup.py
+src/detadantic/__init__.py
+src/detadantic.egg-info/PKG-INFO
+src/detadantic.egg-info/SOURCES.txt
+src/detadantic.egg-info/dependency_links.txt
+src/detadantic.egg-info/requires.txt
+src/detadantic.egg-info/top_level.txt
