@@ -1,0 +1,3 @@
+[console_scripts]
+do_iterations = find_palindroms.find_palindrom:do_iterations
+main = find_palindroms:main
