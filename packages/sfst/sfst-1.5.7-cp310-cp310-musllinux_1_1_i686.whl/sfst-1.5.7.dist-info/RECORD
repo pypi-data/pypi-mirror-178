@@ -1,0 +1,9 @@
+libsfst.so,sha256=ejWXHFO3X38B12ImEAmIJRNjPNHwnl6e61IKJ6gOwiM,479904
+sfst.cpython-310-i386-linux-gnu.so,sha256=vQ3zBiu_lVGMq5hdczdWyb5QqnXZMzThdpglTtTDtBk,528908
+sfst.libs/libgcc_s-8b50eaaa.so.1,sha256=aEf1qbEV-lDljbUGr6ql8FAfnxyJlKTeEsHNdrBlAHM,101648
+sfst.libs/libstdc++-8baf04f9.so.6.0.28,sha256=7dHa2sV5CgWXjdC4QqxbCNsm-pN9kkmNNqxtn5AaAvs,2428960
+sfst-1.5.7.dist-info/METADATA,sha256=31cfuxYP0aQQr9HrIpn1w8cbHRU9PcCt15oISAs_tnY,1246
+sfst-1.5.7.dist-info/top_level.txt,sha256=B4nZ1RkaIiZDWPbegAuOycpC347cOu3gx06yD0lkxpE,5
+sfst-1.5.7.dist-info/RECORD,,
+sfst-1.5.7.dist-info/WHEEL,sha256=_i-QVQ3Dn0MLcEV4jXxMbN6ObyGGbM79E9LUcR-AAI8,111
+sfst-1.5.7.dist-info/COPYING,sha256=pFkyx5MX0VEW6tvxycb8WRF-w8RiHbOodgZt76cjljs,15127
