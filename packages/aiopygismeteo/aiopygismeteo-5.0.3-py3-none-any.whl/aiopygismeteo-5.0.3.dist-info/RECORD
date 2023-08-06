@@ -1,0 +1,11 @@
+aiopygismeteo/__init__.py,sha256=U_LvwCvmPbv2jiqzAy6IThp_l-sU7d362iJmWrDrBNo,158
+aiopygismeteo/_abc.py,sha256=ACCQsDOydD--P3l9dvARBQDVWLWZYB3iFUqq7Vxk5Fs,2240
+aiopygismeteo/_gismeteo.py,sha256=5yL8fUhu0AEbBmbXYARHYBYlbGytSWobUBzU_dzjqpY,2838
+aiopygismeteo/_http.py,sha256=CwzLRNYw1zfAzMqw8xUqkPq5t_A14J4GQDWg49qGjmw,1488
+aiopygismeteo/_periods.py,sha256=grpoUo-h2QGaRbkYlt299DWKJmEa_JgVXfV5PVZj81U,1910
+aiopygismeteo/_search.py,sha256=yJNgiQY0TAz4AdkOHOTgz3-Cak31yL4BE1xMoNvj-rg,1985
+aiopygismeteo/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aiopygismeteo-5.0.3.dist-info/LICENSE,sha256=1x8a8JvB6Tm-oi0Knf_OySff8jjCZa2Uhw591k6oUDg,1065
+aiopygismeteo-5.0.3.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+aiopygismeteo-5.0.3.dist-info/METADATA,sha256=ZfNjAdqD_3KEUiRcXRXbyTsgPOY44zHtLyeM0UMBIzE,2462
+aiopygismeteo-5.0.3.dist-info/RECORD,,
