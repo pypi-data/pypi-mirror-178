@@ -1,0 +1,59 @@
+\documentclass[UTF8]{ctexart}
+\usepackage[final]{pdfpages}
+
+\usepackage{hyperref}
+\usepackage[nocheck]{fancyhdr}
+\usepackage{geometry}
+
+% 修改目录样式
+\usepackage{tocloft}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+
+% 设置页边距
+\geometry{
+    paper=a4paper,
+    hmargin=1in,
+    vmargin=1in,
+    scale=1,
+}
+
+% 设置超链接
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    anchorcolor=black,
+    citecolor=black
+}
+
+% #1:file name 2:section name 3:landscape 4:scale 5:frame
+\newcommand{\addpdf}[5]{
+    \includepdfset{pagecommand={\thispagestyle{fancy}}}
+    \includepdf[pages={1}, frame=#5, scale=#4,landscape=#3,pagecommand=\section{#2}]{#1}
+    \includepdf[pages={2-}, frame=#5, scale=#4,landscape=#3]{#1}
+}
+
+\newcommand{\addonepdf}[5]{
+    \includepdfset{pagecommand={\thispagestyle{fancy}}}
+    \includepdf[pages={1}, frame=#5, scale=#4,landscape=#3,pagecommand=\section{#2}]{#1}
+}
+
+\begin{document}
+
+\heiti
+\large
+\tableofcontents
+\thispagestyle{empty}
+\newpage
+
+
+% 正文
+
+\pagestyle{fancy}
+\fancyhead[L]{\kaishu{AAANAMEAAA} }
+% 设置中间页码格式
+\cfoot{附件：第 \thepage 页}
+\pagenumbering{arabic}
+
+AAACONTENTAAA
+
+\end{document}
