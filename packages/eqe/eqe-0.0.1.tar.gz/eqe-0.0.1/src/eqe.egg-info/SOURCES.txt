@@ -1,0 +1,7 @@
+LICENSE
+pyproject.toml
+src/eq/eq.py
+src/eqe.egg-info/PKG-INFO
+src/eqe.egg-info/SOURCES.txt
+src/eqe.egg-info/dependency_links.txt
+src/eqe.egg-info/top_level.txt
