@@ -1,0 +1,13 @@
+pointercratecli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pointercratecli/demonlistSearch.py,sha256=9vOQ1WleHqZxLIPWECTJ9zdQ1px3pP8OiP0NX4q7cfw,6041
+pointercratecli/demonlistSearchNoRich.py,sha256=09olLuvD0aaaAYLO8gautwY-cC97I0y5V-b5WnZA2p0,5158
+pointercratecli/getListSize.py,sha256=t-PXjbpQOYjnV5yk6DbOieGYIuXzoKdhtnmVEjiBPGU,657
+pointercratecli/getTopPlayers.py,sha256=t5MFnOjKEf3QlWei1n4H9FwU5Lep_eap8bmxJqT7PME,3996
+pointercratecli/getTopXDemons.py,sha256=iJKtbowKxAiUMK0PPHE6lGXw7W5l7jY0Rv66oRRU1qs,749
+pointercratecli/main.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pointercratecli/roulette.py,sha256=he2CsZoAOnA492LVxX52FCcSsLqUFr3BCeKn2aypHaA,1011
+pointercratecli-0.0.3.dist-info/LICENSE,sha256=eb7U3nvOrz--Z_dcEdihKAoGsI40luZkpqZFLsDXuYs,1093
+pointercratecli-0.0.3.dist-info/METADATA,sha256=2Xou7Wx0kcAtirkZTOj46BShQvs0Mkba6fgpR6D38Mk,778
+pointercratecli-0.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pointercratecli-0.0.3.dist-info/top_level.txt,sha256=dXYephdWU4a87eXs-KbIALDf8jjDUcH9huHe-2QeiRE,16
+pointercratecli-0.0.3.dist-info/RECORD,,
