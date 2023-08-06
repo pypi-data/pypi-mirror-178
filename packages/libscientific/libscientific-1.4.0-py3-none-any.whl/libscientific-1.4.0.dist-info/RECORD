@@ -1,0 +1,17 @@
+libscientific/__init__.py,sha256=x9C2dGWPpX2R3Fy7vI8LpgKb3Z1wXU7o98m1zth2jFc,205
+libscientific/cpca.py,sha256=5vSavVMqkRA_hyJWQ6siMnm_3UDlJb-Fc2QfyYPOYYU,6533
+libscientific/info.py,sha256=YLeCPdcXT4uvTLTBorLni6jDbMkVE2R_ulBxf4vjWJU,1399
+libscientific/interpolate.py,sha256=HCtGR2cEWK3wevWXr7RARoz7BiNvmNdpo1oi9rWhJAY,2979
+libscientific/loadlibrary.py,sha256=bygaql-ruZK4SH6ogkhooj5tmZvnNisG4ITHpXDPzaM,1286
+libscientific/matrix.py,sha256=mitfWVF2iL7DuEUPNegb1PtaESjaFrk-6bpvUEuBETI,22841
+libscientific/misc.py,sha256=zEyB9-G7oaxKdSz71fy1wnHjNRtuDUnDNEaCiyvYCog,1088
+libscientific/pca.py,sha256=YKJh-eMbdUlbHdyhQhf_HeKNoZuNa1-y6NV09KhJlL0,6544
+libscientific/pls.py,sha256=5jkIbGyxedb4_Qa-_JFvyLMlZ5y0pjit-4WlvjJ1c3U,11191
+libscientific/tensor.py,sha256=CyosOlT5NcczBb3514tSsupEmtPAOecAPnBcTVrPSbo,6534
+libscientific/vectlist.py,sha256=julB_wG2q8UpZ_gvn4no0xArCLbbyG_CRiSpi-EBD28,4904
+libscientific/vector.py,sha256=NGrFcTv_of_BZaOA32d22QN62DE3H_f7rAp1bMRJz44,8617
+libscientific-1.4.0.dist-info/LICENSE,sha256=vvH-9YjXVo9uaqFuPqcMQ5MAEJNdVqcMGFgvSKyprsg,34554
+libscientific-1.4.0.dist-info/METADATA,sha256=OfawwQD4882HjxXXY_GhRRqtx4v2GcMh9uI2hJYz4LQ,1677
+libscientific-1.4.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+libscientific-1.4.0.dist-info/top_level.txt,sha256=gzYiHeiJNr8g7uBNkkWhUwUWQefh60uF8ET0UHkA7Ck,14
+libscientific-1.4.0.dist-info/RECORD,,
