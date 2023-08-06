@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: hardeneks
+Version: 0.1.1
+Summary: 
+Author: Doruk Ozturk
+Author-email: dozturk@amazon.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: boto3 (>=1.26.2,<2.0.0)
+Requires-Dist: kubernetes (>=25.3.0,<26.0.0)
+Requires-Dist: pre-commit (>=2.20.0,<3.0.0)
+Requires-Dist: typer[all] (>=0.6.1,<0.7.0)
+Description-Content-Type: text/markdown
+
+# Hardeneks
+
+[![PyPI version](https://badge.fury.io/py/hardeneks.svg)](https://badge.fury.io/py/hardeneks)
+[![PyPI Supported Python Versions](https://img.shields.io/pypi/pyversions/hardeneks.svg)](https://pypi.python.org/pypi/hardeneks/)
+[![Python package](https://github.com/dorukozturk/hardeneks/actions/workflows/ci.yaml/badge.svg)](https://github.com/dorukozturk/hardeneks/actions/workflows/ci.yaml)
+
