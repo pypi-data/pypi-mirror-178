@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: pycap2low
+Version: 2.0.0
+Summary: Convert all file and directory names to lower case
+Home-page: https://github.com/alexisdevsol89/pycap2low
+Author: Alexis Torres Valdes
+Author-email: alexisdevsol@gmail.com
+License: LGPL
+Keywords: python
+Platform: Linux
+Platform: Windows
+Platform: MacOS
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pycap2low
+Convertir todos los nombres de archivos y directorios a minusculas
+
+
