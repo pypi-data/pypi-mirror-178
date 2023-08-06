@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+tk_inter_fr/src/tk_inter_fr.egg-info/PKG-INFO
+tk_inter_fr/src/tk_inter_fr.egg-info/SOURCES.txt
+tk_inter_fr/src/tk_inter_fr.egg-info/dependency_links.txt
+tk_inter_fr/src/tk_inter_fr.egg-info/top_level.txt
+tk_inter_fr/src/tk_inter_fr.py
+tk_inter_fr/src/tk_inter_fr.egg-info/PKG-INFO
+tk_inter_fr/src/tk_inter_fr.egg-info/SOURCES.txt
+tk_inter_fr/src/tk_inter_fr.egg-info/dependency_links.txt
+tk_inter_fr/src/tk_inter_fr.egg-info/top_level.txt
