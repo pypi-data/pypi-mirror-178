@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: tamos
+Version: 0.1.0
+Summary: Thermal Architectures Modelling and Optimization Software
+License: Apache-2.0
+Author: BNerot
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: docplex (>=2.24.0)
+Requires-Dist: matplotlib (>3.0.0)
+Requires-Dist: networkx (>=2.8)
+Requires-Dist: numpy (>=1.0.0)
+Requires-Dist: pandas (>=1)
+Requires-Dist: scipy
+Requires-Dist: sympy
+Description-Content-Type: text/markdown
+
+# tamos
+
+## What does "tamos" stand for?
+"tamos" stands for Thermal Architectures Modelling and Optimization Software.
+
+## What is it?
+`tamos` is a non-GUI tool that aims at facilitating the study of thermal architectures.
+A thermal architecture is a set of energy production, storage and distribution components that operate together in order to meet some energy demands.
+
+## How does it work? 
+`tamos` performs the optimal sizing and operation of various energy components gathered in energy hubs.
+It relies on the description of these components using the Mixed-Integer Linear Programming formalism (MILP), i.e. mathematical programming.
+
+## What are the main software components?
+`tamos` heavily relies on the `docplex` api, that eases the formulation of MILP problems.
+Once declared, the problems are solved using the Cplex solver. It can also be exported to `.LP` and `.MPS` formats and be solved using non-proprietary solvers. 
+
+##  Installation notes
+The packaged version of `tamos`is available on PyPi. Please run:
+`pip install tamos`
+
+
+## Where is project hosted?
+Sources are managed on GitHub: https://github.com/BNerot/tamos/tree/main/src/tamos 
+The file `Batch analysis.ipynb` is only on GitHub. It provides the user with an easy way to analyse large volumes of results.
+
+## Is it difficult to use?
+Please follow one of the two examples in `examples` as a quick start guide. 
+You can also find a web version of the documentation in `docs/build/html`. Once this directory is downloaded, please open 'index.html'. 
+
+## Copyright
+The code is distributed under an Apache-2.0 license. 
+Most of the development work was done in the context of a PhD thesis. 
+This thesis was funded by two French institutions:
+- Commissariat à l'Energie Atomique: https://www.cea.fr/english
+- Agence de la transition écologique: https://www.ademe.fr/en/frontpage/
+
