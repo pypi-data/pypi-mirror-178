@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+hccpdf/__init__.py
+hccpdf/dpf2text.py
+hccpdf/pdf2image.py
+hccpdf.egg-info/PKG-INFO
+hccpdf.egg-info/SOURCES.txt
+hccpdf.egg-info/dependency_links.txt
+hccpdf.egg-info/top_level.txt
