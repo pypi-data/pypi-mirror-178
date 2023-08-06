@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+bam/__init__.py
+bam/cluster.py
+bam/config.py
+bam/dataset.py
+bam/features.py
+bam/segmentation.py
+bam/version.py
+bamxc.egg-info/PKG-INFO
+bamxc.egg-info/SOURCES.txt
+bamxc.egg-info/dependency_links.txt
+bamxc.egg-info/requires.txt
+bamxc.egg-info/top_level.txt
