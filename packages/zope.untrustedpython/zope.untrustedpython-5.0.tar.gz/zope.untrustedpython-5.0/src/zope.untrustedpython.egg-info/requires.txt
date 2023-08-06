@@ -1,0 +1,7 @@
+RestrictedPython>=4
+setuptools
+six
+zope.security
+
+[docs]
+Sphinx
