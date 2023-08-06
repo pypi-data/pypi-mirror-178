@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: zetane
+Version: 0.1.1
+Summary: CLI version of Zetane API
+Home-page: https://zetane.com
+Author: Zetane Systems
+Author-email: info@zetane.com
+License: LICENSE.md
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+Long description
