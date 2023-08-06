@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: test_proj_1560
+Version: 0.1.3
+Summary: This package does nothing
+Project-URL: Homepage, https://github.com/TylerPantuso/test-proj-1560
+Author-email: Tyler Pantuso <tylerpantuso@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >3.10
+Description-Content-Type: text/markdown
+
+This is just a test project. Nothing to see here.
