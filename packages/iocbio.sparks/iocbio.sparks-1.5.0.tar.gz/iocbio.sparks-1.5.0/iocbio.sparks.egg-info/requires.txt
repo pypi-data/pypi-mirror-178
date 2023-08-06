@@ -1,0 +1,10 @@
+iocbio.db
+tifffile
+PySide6
+scipy
+numpy
+scikit-image
+pyqtgraph
+XlsxWriter
+Pillow
+wheel
