@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: pal_create_app
+Version: 0.1.0
+Summary: A tool to create application controller skeletons for interactive robots
+Home-page: UNKNOWN
+Author: Séverin Lemaignan
+Author-email: severin.lemaignan@pal-robotics.com
+License: Proprietary
+Description: pal_create_app
+        ==============
+        
+        A tool to generate skeletons of robot application controller.
+        
+        Relies on ROS and the ROS `Intents` interface.
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires: jinja2

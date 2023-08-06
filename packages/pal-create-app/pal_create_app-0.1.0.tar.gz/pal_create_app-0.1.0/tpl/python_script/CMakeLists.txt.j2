@@ -1,0 +1,20 @@
+cmake_minimum_required(VERSION 3.2.0)
+project({{ id }})
+
+find_package(catkin REQUIRED
+            rospy
+            actionlib
+            hri_actions_msgs
+            )
+
+catkin_python_setup()
+catkin_package()
+
+catkin_install_python(PROGRAMS
+   scripts/run_app
+   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
+
+add_custom_target(pkg COMMAND
+    ${CMAKE_COMMAND} -E tar "cfv" "{{ id }}.rpk" --format=zip
+       "${CMAKE_CURRENT_SOURCE_DIR}")
