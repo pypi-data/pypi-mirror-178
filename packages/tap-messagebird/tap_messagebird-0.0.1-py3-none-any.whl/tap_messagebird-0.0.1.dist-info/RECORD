@@ -1,0 +1,13 @@
+tap_messagebird/__init__.py,sha256=kfhw1kCj5TahP7CF02nAxNQaOW9Nps6iW-qd4XeHcEc,28
+tap_messagebird/client.py,sha256=z0EZTuo0nMnysbtIBblMyRbSR2WDLOJQlX_F9KwgGkQ,3247
+tap_messagebird/schemas/conversation.json,sha256=2OFzTgt9xrBYhccKTHNqf8HueAq9jCbS_SZZMd1jxxY,3044
+tap_messagebird/schemas/message.json,sha256=nbzkJALoBYGPyfCrQdoDBME2lLWmGbpMDLcz577g0vs,4240
+tap_messagebird/streams.py,sha256=Emm5cGOjcTG8UYhNBZxOSVIx1M1RdvfEh2iM6fez9nU,2004
+tap_messagebird/tap.py,sha256=Z3BPOIGFaQwwMzuvgkCPGxWbDl43rECm_C1SiNqL4Mk,1502
+tap_messagebird/tests/__init__.py,sha256=UI1oFw2-Ed22Q9IDunXECQNpKMU9NNO_zpNq6n3jT28,38
+tap_messagebird/tests/test_core.py,sha256=dhYFJtotGUBIZ_YsuzS8sgNQmN9oCw1p2pfgOLxFsFE,600
+tap_messagebird-0.0.1.dist-info/entry_points.txt,sha256=quuUEO4Fi06Mq0yzuwcVPwMJ71I2g42MltThkohS3H0,74
+tap_messagebird-0.0.1.dist-info/LICENSE,sha256=BWSmt3mGqe-rJ4YHZR7tTR2ed_yAYlMxZ0XVH2UviuU,1069
+tap_messagebird-0.0.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+tap_messagebird-0.0.1.dist-info/METADATA,sha256=aCub4KYOjt-YuFdEC8RlpbN_lJ_jylu1VDWdc9juz8U,656
+tap_messagebird-0.0.1.dist-info/RECORD,,
