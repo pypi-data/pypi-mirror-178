@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/jupy5/__init__.py
+src/jupy5/sketch.py
+src/jupy5/turtle.py
+src/jupy5.egg-info/PKG-INFO
+src/jupy5.egg-info/SOURCES.txt
+src/jupy5.egg-info/dependency_links.txt
+src/jupy5.egg-info/requires.txt
+src/jupy5.egg-info/top_level.txt
