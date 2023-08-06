@@ -1,0 +1,5 @@
+[console_scripts]
+dbinstall = bugfinder:dbinstall
+esyncfile = bugfinder:esyncfile
+osssync = bugfinder:osssync
+syncfile = bugfinder:syncfile
