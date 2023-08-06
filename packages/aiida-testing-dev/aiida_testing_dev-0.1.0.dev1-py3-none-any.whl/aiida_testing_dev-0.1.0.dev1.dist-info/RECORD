@@ -1,0 +1,14 @@
+aiida_testing/__init__.py,sha256=Fdt-xEQdnmgIyvbNLNslXvrTEIZrbV7fVik2mipqk_8,101
+aiida_testing/_config.py,sha256=6pBmScRZY2F2BxT89nAiwQQ8HyReKEeGRVCAnp9Yr_M,2471
+aiida_testing/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aiida_testing/export_cache/__init__.py,sha256=petE6bDpGs1f-AUbLHnAfE8RoJuNIDbUZyf7CdgnznE,194
+aiida_testing/mock_code/__init__.py,sha256=9f5XneRO-ENUHTVrzaNLdROZfsSFkdWfpu6Wu_tZUgU,558
+aiida_testing/mock_code/_cli.py,sha256=nhhXqeWinvLPPUUuyFSuGAJJ8P2p5vRSkslLb0x9YdU,4479
+aiida_testing/mock_code/_env_keys.py,sha256=Q0KsvXZtCxwSRr0eYr90gybwFmpAxICl-Uybuq6L1Jo,3598
+aiida_testing/mock_code/_fixtures.py,sha256=FA98n-oFKmpb6MO0IbgDULVsGjOTaEJwr1QWXeB568g,9476
+aiida_testing/mock_code/_hasher.py,sha256=Upji-AEnjPeCB6o-AO-R175-ZENpZwdT6zUCAh0jp7s,3264
+aiida_testing_dev-0.1.0.dev1.dist-info/entry_points.txt,sha256=hrIlAFtLHGau_cfe8jmcfLN54GQxd4hEDW-G_YMZ58w,166
+aiida_testing_dev-0.1.0.dev1.dist-info/LICENSE.txt,sha256=FnY-RzJdESXiudD-mkVpLRiLIYAwGGigyJHt7CWp5Q0,1089
+aiida_testing_dev-0.1.0.dev1.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+aiida_testing_dev-0.1.0.dev1.dist-info/METADATA,sha256=aZk7PkgUpBpG8nh46-IODNpdCJZMnVsCQg6XyqJPWMw,3030
+aiida_testing_dev-0.1.0.dev1.dist-info/RECORD,,

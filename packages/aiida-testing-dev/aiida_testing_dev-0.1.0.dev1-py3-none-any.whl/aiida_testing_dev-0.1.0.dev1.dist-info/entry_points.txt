@@ -1,0 +1,7 @@
+[console_scripts]
+aiida-mock-code=aiida_testing.mock_code._cli:run
+
+[pytest11]
+aiida_export_cache=aiida_testing.export_cache
+aiida_mock_code=aiida_testing.mock_code
+
