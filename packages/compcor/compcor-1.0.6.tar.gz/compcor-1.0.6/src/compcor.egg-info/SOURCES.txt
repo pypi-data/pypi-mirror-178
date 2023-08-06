@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+src/compcor/__init__.py
+src/compcor/corpus_metrics.py
+src/compcor/example.py
+src/compcor/text_embedder.py
+src/compcor/text_tokenizer_embedder.py
+src/compcor/utils.py
+src/compcor.egg-info/PKG-INFO
+src/compcor.egg-info/SOURCES.txt
+src/compcor.egg-info/dependency_links.txt
+src/compcor.egg-info/not-zip-safe
+src/compcor.egg-info/requires.txt
+src/compcor.egg-info/top_level.txt
