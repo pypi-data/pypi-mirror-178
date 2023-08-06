@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: splotch
+Version: 0.6.2.1
+Summary: Simple PLOTs, Contours and Histograms is a small package with wrapper functions designed to simplify plotting calls from matplotlib.
+Home-page: https://github.com/MBravoS/splot
+Author: Matías A. Bravo Santa Cruz
+Author-email: matias.bravo@icrar.org
+License: BSD-3-Clause
+Platform: UNKNOWN
+Requires-Python: >=3.3
+Provides-Extra: astro
+License-File: LICENSE
+
+UNKNOWN
+
