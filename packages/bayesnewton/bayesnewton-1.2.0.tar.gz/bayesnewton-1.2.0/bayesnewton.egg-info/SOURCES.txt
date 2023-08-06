@@ -1,0 +1,15 @@
+README.md
+setup.py
+bayesnewton/__init__.py
+bayesnewton/basemodels.py
+bayesnewton/cubature.py
+bayesnewton/inference.py
+bayesnewton/kernels.py
+bayesnewton/likelihoods.py
+bayesnewton/models.py
+bayesnewton/ops.py
+bayesnewton/utils.py
+bayesnewton.egg-info/PKG-INFO
+bayesnewton.egg-info/SOURCES.txt
+bayesnewton.egg-info/dependency_links.txt
+bayesnewton.egg-info/top_level.txt
