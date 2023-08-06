@@ -1,0 +1,12 @@
+nudisxs/__about__.py,sha256=tcTE7G1_tGq5vqrGkFTYv986sz3ebNRnnkAmNlkF0rE,122
+nudisxs/__init__.py,sha256=rRpdD8ZbQZiaaUJpr9Z3k_JLpjnCIHIRcM5cpB9FUB0,100
+nudisxs/_nudisxs.cpython-310-darwin.so,sha256=6t9_tkHrTq7VoXM5CqxxpL31vgIFJU1_rpbOfevYGB8,146552
+nudisxs/disxs.py,sha256=qgOskPN89TNAedVxc8q9D80_1NU1rTonbujyG1vt3uY,3718
+nudisxs/libDISxs.dylib,sha256=Jz9lfrI-LPQi9i5GkBeQpkd8M6-lwEG0iYc_fUNxSFw,104952
+nudisxs/tests/__init__.py,sha256=rRpdD8ZbQZiaaUJpr9Z3k_JLpjnCIHIRcM5cpB9FUB0,100
+nudisxs/tests/test_dis.py,sha256=FT8y0x25h0G5SqCwKfL3x56D4htkVCGgW3nY5r20RXc,2512
+nudisxs-1.0.3.dist-info/LICENSE.txt,sha256=cI-CCvousts_YJOiVktippLAMG-32JCBbuwWTONTA9k,1092
+nudisxs-1.0.3.dist-info/METADATA,sha256=HUA6ZHOo1lbuZV_w9C3DReB4dBe5utsFUE7s2ry7tb0,2297
+nudisxs-1.0.3.dist-info/WHEEL,sha256=5KDqCDFRQbXPpf0hXo7vEV1XUwc06NdxhFznNOmKbmc,105
+nudisxs-1.0.3.dist-info/top_level.txt,sha256=t9wxLIUvYafWk324BQGDG9-dfvLlKXdDuPo7SwHj3yo,22
+nudisxs-1.0.3.dist-info/RECORD,,
