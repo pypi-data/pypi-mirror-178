@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "napolipy"
+version = "1.0.1"
+authors = [
+  { name="Adriano Oliviero", email="adrianoliviero23@gmail.com" },
+]
+description = "Napoli Unicode Logo generator (not affiliated with Società Sportiva Calcio Napoli)"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+
+[project.urls]
+"Homepage" = "https://github.com/TheDarkBug/napolipy"
+"Bug Tracker" = "https://github.com/TheDarkBug/napolipy/issues"
