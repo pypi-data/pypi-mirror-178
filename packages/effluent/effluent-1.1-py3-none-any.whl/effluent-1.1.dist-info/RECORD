@@ -1,0 +1,14 @@
+effluent/__init__.py,sha256=JF9Ulx1cUJUGRBc42yyb_fQLYw869QSXagPl3wlPb0Y,45
+effluent/__main__.py,sha256=eevRUztGGNBNEB6G9mhXSJVb1z5j6TXTW-RpN1q6YwU,48
+effluent/io.py,sha256=DPl09E7pEabFzA8WoF155lqhWZUJpxUFbubxMkR5Hg0,12346
+effluent/jet.py,sha256=VipqfdyM7LLV2DbsNbQnqBPaYCJzfQWPsFjHofDi4yQ,3940
+effluent/model.py,sha256=sAwqG0TqqGNVrr7soF6xuXCQ0Ru8kMbEcpcE9_c_KXY,1055
+effluent/modeldata.py,sha256=9oSqsQM4ZQUzV3VhyT4SAdvKs2gD7m_LjKAYAzJpcr4,9187
+effluent/script.py,sha256=4QQ7Lmancwtle7BN3EAAj8XWZ1QhRgAW1Hasi-X0Ht0,639
+effluent/solver.py,sha256=ZAi66SWO-zpsABUH_xHzRGTZYz2gJiHjxjk6hZ9ZWVc,4754
+effluent/utils.py,sha256=kDI8N1a0Oqy1Onu80KUrdZpfL2JXrfV8jQ8k_63M_YM,2289
+effluent-1.1.dist-info/LICENSE,sha256=Npe17XP6RQVz5ccaaswxXOu2RSt28lvhdlx-LgQdDmY,1078
+effluent-1.1.dist-info/METADATA,sha256=ud7IVG9tDYsaetoXMO3ZxZRmWULv3pPhQ7kiJPcNx8k,2028
+effluent-1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+effluent-1.1.dist-info/top_level.txt,sha256=dZeVGj_TxMERJsR3V6x5UQ7HjMZM5-hoP_HEqsbuxr8,9
+effluent-1.1.dist-info/RECORD,,
