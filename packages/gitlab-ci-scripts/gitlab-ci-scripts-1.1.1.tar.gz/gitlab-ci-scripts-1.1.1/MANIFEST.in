@@ -1,0 +1,8 @@
+include LICENSE
+include README.md
+include pyproject.toml
+include requirements*.txt
+include setup.*
+recursive-include pycov_convert_relative_filenames *py
+prune docs
+prune tests
