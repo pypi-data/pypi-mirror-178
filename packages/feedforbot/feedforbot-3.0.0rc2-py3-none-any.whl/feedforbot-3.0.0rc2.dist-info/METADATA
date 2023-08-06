@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: feedforbot
+Version: 3.0.0rc2
+Summary: Forward links from RSS/Atom feeds to messengers
+Home-page: https://github.com/shpaker/feedforbot
+Author: Aleksandr Shpak
+Author-email: shpaker@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: aiocron (>=1.8,<2.0)
+Requires-Dist: aiofiles (>=22.1.0,<23.0.0)
+Requires-Dist: beautifulsoup4 (>=4.11.1,<5.0.0)
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: feedparser (>=6.0.10,<7.0.0)
+Requires-Dist: httpx (>=0.23.1,<0.24.0)
+Requires-Dist: jinja2 (>=3.1.2,<4.0.0)
+Requires-Dist: orjson (>=3.8.2,<4.0.0)
+Requires-Dist: pydantic (>=1.10.2,<2.0.0)
+Requires-Dist: pyyaml (>=6.0,<7.0)
+Project-URL: Repository, https://github.com/shpaker/feedforbot
+Description-Content-Type: text/markdown
+
+FeedForBot
+==========
+
+[![PyPI](https://img.shields.io/pypi/v/feedforbot.svg)](https://pypi.python.org/pypi/feedforbot)
+[![PyPI](https://img.shields.io/pypi/dm/feedforbot.svg)](https://pypi.python.org/pypi/feedforbot)
+
+Forward links from RSS/Atom feeds to messengers
+
