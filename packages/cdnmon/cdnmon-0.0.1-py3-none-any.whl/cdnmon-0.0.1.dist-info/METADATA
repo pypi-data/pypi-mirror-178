@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: cdnmon
+Version: 0.0.1
+Summary: python SDK for CDN Infrastructure Monitoring Project from NISL-THU
+Home-page: https://github.com/WangYihang/CDN-Infrastructure-Monitoring
+Author: Yihang Wang
+Author-email: wangyihanger@gmail.com
+Project-URL: Bug Reports, https://github.com/WangYihang/CDN-Infrastructure-Monitoring/issues
+Project-URL: Funding, https://github.com/WangYihang/CDN-Infrastructure-Monitoring
+Project-URL: Say Thanks!, https://github.com/WangYihang/CDN-Infrastructure-Monitoring
+Project-URL: Source, https://github.com/WangYihang/CDN-Infrastructure-Monitoring
+Keywords: CDN,measurement
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.7, <4
+Description-Content-Type: text/markdown
+Requires-Dist: requests (~=2.28.1)
+Requires-Dist: IPy (~=1.1)
+Requires-Dist: verboselogs (~=1.7)
+Requires-Dist: coloredlogs (~=15.0.1)
+Requires-Dist: seaborn (~=0.12.1)
+Requires-Dist: pandas (~=1.5.1)
+Requires-Dist: dnspython (~=2.2.1)
+Requires-Dist: tranco (~=0.6)
+Requires-Dist: pymongo (~=4.3.3)
+Requires-Dist: minio (~=7.1.12)
+
+## 项目简介
+
+目前，CDN 服务已经承载了互联网 30% 以上的 Web 流量，不同的 CDN 厂商纷纷通过在全球不同位置部署节点来提供服务、扩大市场。
+设计大规模网络测量实验，测量分析不同的 CDN 厂商的部署策略、节点分布和服务配置等均可能存在差异，并分析其中可能存在的安全问题。
+
+## Usage
+
+```bash
+pip install cdnmon
+```
+
+```python
+from cdnmon.utils.ip_ranges import alicloud
+
+ipv4_networks, ipv6_networks = alicloud.IPRange.parse()
+print(ipv4_networks, ipv6_networks)
+```
+
+## Quick Start on Local Machine
+
+```bash
+# Step 1: modify database configuration
+vim .secrets.example
+# Step 2: run scripts
+python scripts/get_ip_ranges.py
+python scripts/generate_scanning_tasks.py
+python scripts/get_top_domains.py
+python scripts/detect_cdn_by_cname.py
+```
+
+## Setup Development Environment
+
+```bash
+# Install python
+sudo apt install python3 python3-pip
+pip install -r requirements.txt
+
+# Install act (optional, just for testing GitHub Actions)
+curl https://raw.githubusercontent.com/nektos/act/master/install.sh | sudo bash
+
+# Install pre-commit
+pip install pre-commit
+pre-commit install
+
+# Run pre-commit before commit
+pre-commit run --all
+```
+
+## Verify GitHub Actions
+
+```bash
+act -j build --artifact-server-path artifacts --secret-file .secrets
+```
+
+## Play with PyPi
+
+```
+pip install build wheel twine
+python -m build --wheel
+twine upload --repository testpypi dist/*
+twine upload --repository pypi dist/*
+pip install -i https://test.pypi.org/simple/ cdnmon
+```
