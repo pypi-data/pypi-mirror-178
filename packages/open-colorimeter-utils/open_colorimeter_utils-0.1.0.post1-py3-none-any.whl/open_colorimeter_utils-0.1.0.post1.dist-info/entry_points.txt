@@ -1,0 +1,3 @@
+[console_scripts]
+oc-cal=open_colorimeter_utils.calibration_cli_app:app_main
+
