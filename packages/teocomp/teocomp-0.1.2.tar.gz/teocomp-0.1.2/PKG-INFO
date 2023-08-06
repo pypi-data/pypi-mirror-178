@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: teocomp
+Version: 0.1.2
+Summary: TeoComp is a library for teaching `Automato Theory, Languages and Theory of Computing`.
+Home-page: https://github.com/daviromero/teocomp
+Author: Davi Romero de Vasconcelos
+Author-email: daviromero@ufc.br
+License: MIT
+Keywords: Theory of Computing,Automata Theory,Languages,Lambda-Calculus,Recursive Function (Kleene),Teaching Theory of Computing,Educational Software
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# TeoComp 
+TeoComp is a library for teaching `Automato Theory, Languages and Theory of Computing`.
+
