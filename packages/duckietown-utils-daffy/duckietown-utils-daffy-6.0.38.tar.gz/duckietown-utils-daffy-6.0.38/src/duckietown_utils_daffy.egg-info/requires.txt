@@ -1,0 +1,14 @@
+PyGeometry-z6
+procgraph-z6
+QuickApp-z6
+opencv-python
+ruamel.yaml
+Pillow
+frozendict
+numpy
+decorator
+matplotlib
+PyContracts3
+scipy
+jpeg4py
+PyYAML
