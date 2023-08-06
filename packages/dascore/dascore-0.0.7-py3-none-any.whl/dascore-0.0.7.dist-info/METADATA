@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: dascore
+Version: 0.0.7
+Summary: A python library distributed fiber optic sensing
+Author-email: Derrick Chambers <chambers.ja.derrick@gmail.com>
+Project-URL: Bug Tracker, https://github.com/DASDAE/dascore/issues
+Project-URL: Documentation, https://dascore.org
+Project-URL: Homepage, https://dascore.org
+Keywords: geophysics,distributed-acoustic-sensing
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: findiff
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: packaging
+Requires-Dist: pandas
+Requires-Dist: pooch (>=1.2)
+Requires-Dist: pydantic (>=1.9.0)
+Requires-Dist: rich
+Requires-Dist: scipy
+Requires-Dist: tables
+Requires-Dist: typing-extensions
+Requires-Dist: xarray
+Provides-Extra: dev
+Requires-Dist: dascore[test] ; extra == 'dev'
+Requires-Dist: dascore[docs] ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: typer ; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: coverage ; extra == 'test'
+Requires-Dist: coveralls ; extra == 'test'
+Requires-Dist: pre-commit ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-codeblocks ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: twine ; extra == 'test'
+
