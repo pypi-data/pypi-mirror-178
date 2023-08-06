@@ -1,0 +1,2 @@
+[console_scripts]
+sx126xtool = sx126x.__main__:main

@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+sx126x/SX126X.py
+sx126x/__init__.py
+sx126x.egg-info/PKG-INFO
+sx126x.egg-info/SOURCES.txt
+sx126x.egg-info/dependency_links.txt
+sx126x.egg-info/entry_points.txt
+sx126x.egg-info/requires.txt
+sx126x.egg-info/top_level.txt
