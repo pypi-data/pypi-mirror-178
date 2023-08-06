@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: muninn-cams
+Version: 1.2.1
+Summary: Muninn extension for CAMS GRIB products from the ECMWF mars archive
+Home-page: https://github.com/stcorp/muninn-cams
+Author: S[&]T
+License: BSD
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Classifier: Environment :: Plugins
+License-File: LICENSE
+Requires-Dist: muninn
+Requires-Dist: muninn-ecmwfmars
+
