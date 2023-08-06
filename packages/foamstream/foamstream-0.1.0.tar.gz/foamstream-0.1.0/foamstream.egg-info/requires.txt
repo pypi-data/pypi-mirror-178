@@ -1,0 +1,13 @@
+h5py
+numpy
+pyzmq
+
+[euxfel]
+foamgraph
+extra-data
+karabo-bridge
+
+[test]
+pytest
+pytest-cov
+foamclient
