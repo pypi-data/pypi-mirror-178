@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+ur_gadget/__init__.py
+ur_gadget/datetime_intel.py
+ur_gadget/gadget.py
+ur_gadget.egg-info/PKG-INFO
+ur_gadget.egg-info/SOURCES.txt
+ur_gadget.egg-info/dependency_links.txt
+ur_gadget.egg-info/requires.txt
+ur_gadget.egg-info/top_level.txt
