@@ -1,0 +1,18 @@
+[project]
+name = "Camerons_Python"
+version = "0.0.1"
+authors = [
+  { name="Cameron Devine", email="cdevine@stmartin.edu" },
+]
+description = "A set of classes and functions I have found useful across multiple projects."
+readme = "README.md"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Science/Research",
+    "Topic :: Software Development :: Libraries",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/CameronDevine/camerons-python"
+"Bug Tracker" = "https://github.com/CameronDevine/camerons-python/issues"

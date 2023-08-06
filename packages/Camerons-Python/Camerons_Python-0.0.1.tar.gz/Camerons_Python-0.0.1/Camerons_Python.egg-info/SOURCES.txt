@@ -1,0 +1,11 @@
+LICENSE.md
+README.md
+pyproject.toml
+Camerons_Python.egg-info/PKG-INFO
+Camerons_Python.egg-info/SOURCES.txt
+Camerons_Python.egg-info/dependency_links.txt
+Camerons_Python.egg-info/top_level.txt
+cameron/__init__.py
+cameron/control.py
+cameron/data_types.py
+cameron/matplotlib.py
