@@ -1,0 +1,12 @@
+README.md
+setup.py
+pyomgclient/__init__.py
+pyomgclient/omgclient.py
+pyomgclient.egg-info/PKG-INFO
+pyomgclient.egg-info/SOURCES.txt
+pyomgclient.egg-info/dependency_links.txt
+pyomgclient.egg-info/requires.txt
+pyomgclient.egg-info/top_level.txt
+pyomgclient/utils/__init__.py
+pyomgclient/utils/config.py
+pyomgclient/utils/generators.py
