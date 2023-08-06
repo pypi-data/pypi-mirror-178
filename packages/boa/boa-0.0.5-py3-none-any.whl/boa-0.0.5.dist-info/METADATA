@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: boa
+Version: 0.0.5
+Summary: Integrated suite for beam optics and analysis
+Home-page: https://github.com/beamopticsanalysis/boa
+Download-URL: https://pypi.python.org/pypi/boa
+Author: R. De Maria, F. Soubelet et al.
+License: Apache 2.0
+Project-URL: Bug Tracker, https://github.com/beamopticsanalysis/boa/issues
+Project-URL: Documentation, https://github.com/beamopticsanalysis/boa/
+Project-URL: Source Code, https://github.com/beamopticsanalysis/boa/
+License-File: LICENSE
+Requires-Dist: numpy (>=1.0)
+Requires-Dist: cpymadtools (>=1.0.0)
+
+Integrated suite for particle accelerator beam optics and analysis
