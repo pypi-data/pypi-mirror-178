@@ -1,0 +1,10 @@
+psychopy_crs/__init__.py,sha256=x9ldncZvgZJ9gvDs5ClBIs0MwxFcDZTW2_gq2gTpr4w,381
+psychopy_crs/bits.py,sha256=XWM2OmWl0KImSs-fdQY9w4aXstTU8criJMVS14400xA,227433
+psychopy_crs/colorcal.py,sha256=GwB2JgWxajm-aYS4jpi4TbyjpZSahqd05ILIpRF-GqA,12125
+psychopy_crs/optical.py,sha256=TgVjIFvB_xYTjAr7FUSosbTRonQU_lusjrUeykPLDnY,14173
+psychopy_crs/shaders.py,sha256=RWz3Mh0UkPDd8H_723QtnKCHaWiYo-iVZ2TKaiWOO0I,1887
+psychopy_crs-0.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+psychopy_crs-0.0.1.dist-info/METADATA,sha256=dbd8HPbfLvwRwre43_ltlPygvIM9mnmbPSXn-QhJQEw,42292
+psychopy_crs-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+psychopy_crs-0.0.1.dist-info/top_level.txt,sha256=gQwcgDl7Jzn1wMgvWS9c79VfSuCv78_l56MzdKqEXCI,13
+psychopy_crs-0.0.1.dist-info/RECORD,,
