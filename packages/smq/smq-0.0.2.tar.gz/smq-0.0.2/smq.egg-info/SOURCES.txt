@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+smq.egg-info/PKG-INFO
+smq.egg-info/SOURCES.txt
+smq.egg-info/dependency_links.txt
+smq.egg-info/top_level.txt
