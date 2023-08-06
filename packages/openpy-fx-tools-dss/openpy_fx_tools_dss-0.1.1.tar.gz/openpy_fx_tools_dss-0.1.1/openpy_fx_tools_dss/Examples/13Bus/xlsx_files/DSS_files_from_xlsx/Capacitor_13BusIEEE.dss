@@ -1,0 +1,2 @@
+New "Capacitor.cap1" bus1=675.1.2.3.0 bus2=675.0.0.0 phases=3 kvar=[600.0] kv=4.16 conn=wye cmatrix=[0 |1.87639338887875E-310 2.25607960651843E-308 |9.2591692861569E-306 0 9.25904161323045E-306] cuf=[91.9673] normamps=112.416759145095 emergamps=149.889012193461 
+New "Capacitor.cap2" bus1=611.3 bus2=611.0.0.0 phases=1 kvar=[100.0] kv=2.4 conn=wye cuf=[46.0518] normamps=56.25 emergamps=75.0 

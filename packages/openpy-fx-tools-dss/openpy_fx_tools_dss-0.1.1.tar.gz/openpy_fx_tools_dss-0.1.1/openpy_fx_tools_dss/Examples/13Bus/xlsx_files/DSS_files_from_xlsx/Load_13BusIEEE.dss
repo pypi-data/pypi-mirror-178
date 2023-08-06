@@ -1,0 +1,15 @@
+New "Load.671" phases=3 bus1=671.1.2.3 kV=4.16 kW=1155 kvar=660 model=1 conn=wye 
+New "Load.634a" phases=1 bus1=634.1 kV=0.277 kW=160 kvar=110 model=1 conn=wye 
+New "Load.634b" phases=1 bus1=634.2 kV=0.277 kW=120 kvar=90 model=1 conn=wye 
+New "Load.634c" phases=1 bus1=634.3 kV=0.277 kW=120 kvar=90 model=1 conn=wye 
+New "Load.645" phases=1 bus1=645.2 kV=2.4 kW=170 kvar=125 model=1 conn=wye 
+New "Load.646" phases=1 bus1=646.2.3 kV=4.16 kW=230 kvar=132 model=2 conn=delta 
+New "Load.692" phases=1 bus1=692.3.1 kV=4.16 kW=170 kvar=151 model=5 conn=delta 
+New "Load.675a" phases=1 bus1=675.1 kV=2.4 kW=485 kvar=190 model=1 conn=wye 
+New "Load.675b" phases=1 bus1=675.2 kV=2.4 kW=68 kvar=60 model=1 conn=wye 
+New "Load.675c" phases=1 bus1=675.3 kV=2.4 kW=290 kvar=212 model=1 conn=wye 
+New "Load.611" phases=1 bus1=611.3 kV=2.4 kW=170 kvar=80 model=5 conn=wye 
+New "Load.652" phases=1 bus1=652.1 kV=2.4 kW=128 kvar=86 model=2 conn=wye 
+New "Load.670a" phases=1 bus1=670.1 kV=2.4 kW=17 kvar=10 model=1 conn=wye 
+New "Load.670b" phases=1 bus1=670.2 kV=2.4 kW=66 kvar=38 model=1 conn=wye 
+New "Load.670c" phases=1 bus1=670.3 kV=2.4 kW=117 kvar=68 model=1 conn=wye 
