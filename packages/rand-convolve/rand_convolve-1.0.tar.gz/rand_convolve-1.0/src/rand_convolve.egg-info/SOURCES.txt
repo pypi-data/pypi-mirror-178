@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+src/rand_convolve.egg-info/PKG-INFO
+src/rand_convolve.egg-info/SOURCES.txt
+src/rand_convolve.egg-info/dependency_links.txt
+src/rand_convolve.egg-info/requires.txt
+src/rand_convolve.egg-info/top_level.txt
+src/random-convolution/__init__.py
+src/random-convolution/__main__.py
