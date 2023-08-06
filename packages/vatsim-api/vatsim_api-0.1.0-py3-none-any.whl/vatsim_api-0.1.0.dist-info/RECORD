@@ -1,0 +1,7 @@
+examples/example.py,sha256=XpaXeSBbTv6DieKhacY5lBinxcOGBvCvXy_SSn_O0H8,1153
+src/vatsim/__init__.py,sha256=1CN9soSYpWDnxp8KA_DgqBfRExvhCyjNrp9LNNf-kKk,168
+src/vatsim/liveapi.py,sha256=HHsU_PKbwD9srMZtmrCsTCvFh54nM7eCnfY2nOMwvsw,18562
+vatsim_api-0.1.0.dist-info/METADATA,sha256=_dKBeu5ACQV9FMGlAbxPcHG1n4_8eSyTqf8E7w-zfG4,6435
+vatsim_api-0.1.0.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+vatsim_api-0.1.0.dist-info/licenses/LICENSE,sha256=lL4xB5N8T18P6VfE3Ka5LiFNUqR5hK_TqrOTkXeM2ow,1065
+vatsim_api-0.1.0.dist-info/RECORD,,
