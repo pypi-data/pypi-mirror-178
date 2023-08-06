@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/bidimensional/circumcircle.py
+src/bidimensional/coordinate.py
+src/bidimensional/operations.py
+src/bidimensional/polygons.py
+src/bidimensional.egg-info/PKG-INFO
+src/bidimensional.egg-info/SOURCES.txt
+src/bidimensional.egg-info/dependency_links.txt
+src/bidimensional.egg-info/top_level.txt
