@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rand_convolve"
+version = "1.0.1"
+description = "Runs a convolution on an image with random kernels."
+dependencies = [
+    "PIL",
+    "scipy",
+    "numpy"
+]
+readme = "README.md"
+authors = [{ name = "aceynk" }]
