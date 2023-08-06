@@ -1,0 +1,15 @@
+build_django/__init__.py,sha256=uz8JPbXyqS_Lqmhbf59Xn5m7G3CqtiFKK5y-uyHQzv8,2011
+build_django/__main__.py,sha256=HhmnSKD7XtJVRu9MHUD7IwJTZXMUZOYRiEM_xdYFMGE,2999
+build_django/const.py,sha256=8mcNdAV6x9_wODVmlqmftthAFzb9ZiOSC6hUMUkQe0A,634
+build_django/utils/__init__.py,sha256=-VW69lf6ezilOcr4bqMDtK9h0L0rdf1NE9pB-8Ub4QE,2499
+build_django/utils/files.py,sha256=gzeCSh91udanbSMcFxssdphcKUyKP5ccRhEjTdWTK-A,196
+build_django/utils/git.py,sha256=mK1Do2L-lh7kRDfnbEN11pDfiz0gQO-mPctLESNtMaM,2155
+build_django/utils/process.py,sha256=VQgrywrfXWFxlAVJeNqOhBZccPxW5SFttGa_U-Wyut4,818
+build_django/utils/shell.py,sha256=mMrjQwbeXz4vq-84fujMcr-xQu-NtzahQj4_L90-vK4,1025
+build_django/utils/system.py,sha256=i2oNiJq4B_lbKGNxD2iM_mIZAkmdYt0qb5wPJVZXnoY,136
+build_django-3.3.0.dist-info/LICENSE,sha256=1ZXB9D6GyKA28oAmOIwi4Aae97DExW7-_Mo1Nof1X0E,689
+build_django-3.3.0.dist-info/METADATA,sha256=eeQwvGzi--UcVCKJQStr-OMfB14PPenMnLolRVIEPqI,2317
+build_django-3.3.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+build_django-3.3.0.dist-info/entry_points.txt,sha256=1VeZqvZDPmu7FNYZq9dmtzxbtdXDZ9akxwDnXedGOW0,60
+build_django-3.3.0.dist-info/top_level.txt,sha256=CaHCh5fVdVHHf-YE1BnT3Hhx16stedtgNF1OE7aVzl4,13
+build_django-3.3.0.dist-info/RECORD,,
