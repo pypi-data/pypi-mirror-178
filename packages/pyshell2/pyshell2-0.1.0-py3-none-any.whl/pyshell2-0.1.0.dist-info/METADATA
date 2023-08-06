@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: pyshell2
+Version: 0.1.0
+Summary: Python library for running shell commands.
+Home-page: https://github.com/Olindholm/pyshell2
+Requires-Python: >=3.8
+License-File: LICENSE.md
+Provides-Extra: dev
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: types-setuptools ; extra == 'dev'
+Requires-Dist: pytest (>=7) ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pytest-asyncio ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: flake8-pyproject (>=1.2.0) ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: pytest (>=7) ; extra == 'test'
+Requires-Dist: pytest-asyncio ; extra == 'test'
+Provides-Extra: typing
+Requires-Dist: pytest-cov ; extra == 'typing'
+Requires-Dist: pytest (>=7) ; extra == 'typing'
+Requires-Dist: mypy ; extra == 'typing'
+Requires-Dist: pytest-asyncio ; extra == 'typing'
+Requires-Dist: types-setuptools ; extra == 'typing'
+
