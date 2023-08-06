@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+cwinput/__init__.py
+cwinput/binds.py
+cwinput/main.py
+cwinput.egg-info/PKG-INFO
+cwinput.egg-info/SOURCES.txt
+cwinput.egg-info/dependency_links.txt
+cwinput.egg-info/top_level.txt
