@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: delfino-demo
+Version: 1.0.0
+Summary: Delfino demo plugin
+Home-page: https://github.com/radeklat/delfino-demo
+License: MIT
+Author: Radek Lát
+Author-email: radek.lat@gmail.com
+Requires-Python: >=3.7.2,<4.0.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Requires-Dist: delfino[verify-all] (>=0.20.3,<0.21.0)
+Description-Content-Type: text/markdown
+
+<h1 align="center" style="border-bottom: none;"> 🔌&nbsp;&nbsp;Delfino Demo Plugin&nbsp;&nbsp; 🔌</h1>
+<h3 align="center">A minimal plugin example for [Delfino](https://github.com/radeklat/delfino).</h3>
+
+<p align="center">
+    <a href="https://app.circleci.com/pipelines/github/radeklat/delfino-demo?branch=main">
+        <img alt="CircleCI" src="https://img.shields.io/circleci/build/github/radeklat/delfino-demo">
+    </a>
+    <a href="https://app.codecov.io/gh/radeklat/delfino-demo/">
+        <img alt="Codecov" src="https://img.shields.io/codecov/c/github/radeklat/delfino-demo">
+    </a>
+    <a href="https://github.com/radeklat/delfino-demo/tags">
+        <img alt="GitHub tag (latest SemVer)" src="https://img.shields.io/github/tag/radeklat/delfino-demo">
+    </a>
+    <img alt="Maintenance" src="https://img.shields.io/maintenance/yes/2022">
+    <a href="https://github.com/radeklat/delfino-demo/commits/main">
+        <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/radeklat/delfino-demo">
+    </a>
+    <a href="https://www.python.org/doc/versions/">
+        <img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/delfino-demo">
+    </a>
+    <a href="https://pypistats.org/packages/delfino-demo">
+        <img alt="Downloads" src="https://img.shields.io/pypi/dm/delfino-demo">
+    </a>
+</p>
+
+# Installation
+
+- pip: `pip install delfino-demo`
+- Poetry: `poetry add -D delfino-demo`
+- Pipenv: `pipenv install -d delfino-demo`
+
+## Configuration
+
+Delfino doesn't load any plugins by default. To enable this plugin, add the following config into `pyproject.toml`:
+
+```toml
+[tool.delfino.plugins.delfino-demo]
+
+```
+
+# Usage
+
+Run `delfino demo`.
+

@@ -1,0 +1,3 @@
+[delfino.plugin]
+delfino-demo=delfino_demo
+
