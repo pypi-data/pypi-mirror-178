@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: keyframed
+Version: 0.0.1
+Author: David Marx
+License: MIT
+Provides-Extra: dev
+
+# Keyframed
+
+Data structures and convenience functions to facilitate working with keyframed parameters and interpolations
