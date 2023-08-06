@@ -1,0 +1,2 @@
+[console_scripts]
+pysnmptui = pysnmptui_K0HAX.console_main:console_main

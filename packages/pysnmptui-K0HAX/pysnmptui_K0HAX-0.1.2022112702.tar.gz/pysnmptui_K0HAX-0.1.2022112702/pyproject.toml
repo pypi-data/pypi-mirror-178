@@ -1,0 +1,35 @@
+[build-system]
+requires = [ 'setuptools' ]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pysnmptui_K0HAX"
+authors = [
+    { name="Michael Englehorn", email="michael+pypi@englehorn.com" },
+]
+description = "Python SNMP TUI (Terminal User Interface)"
+readme = "README.md"
+requires-python = ">=3.9"
+keywords = ["snmp", "tui"]
+license = {file = "LICENSE"}
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "py-cui==0.1.6",
+    "snimpy",
+    "argparse",
+]
+dynamic = ["version"]
+
+[project.urls]
+"Homepage" = "https://github.com/K0HAX/pysnmptui"
+"Bug Tracker" = "https://github.com/K0HAX/pysnmptui/issues"
+
+[project.scripts]
+pysnmptui = "pysnmptui_K0HAX.console_main:console_main"
+
+[tool.setuptools.dynamic]
+version = {file = "VERSION"}
+
