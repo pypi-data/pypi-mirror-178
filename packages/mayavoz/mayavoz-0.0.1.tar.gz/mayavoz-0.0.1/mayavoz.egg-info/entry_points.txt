@@ -1,0 +1,2 @@
+[console_scripts]
+mayavoz-train = mayavoz.cli.train:train
