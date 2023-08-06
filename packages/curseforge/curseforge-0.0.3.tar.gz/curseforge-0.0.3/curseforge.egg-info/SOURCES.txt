@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+curseforge/__init__.py
+curseforge/base_test.py
+curseforge.egg-info/PKG-INFO
+curseforge.egg-info/SOURCES.txt
+curseforge.egg-info/dependency_links.txt
+curseforge.egg-info/requires.txt
+curseforge.egg-info/top_level.txt
