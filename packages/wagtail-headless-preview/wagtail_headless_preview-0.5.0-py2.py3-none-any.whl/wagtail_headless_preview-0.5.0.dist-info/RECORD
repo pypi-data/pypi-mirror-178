@@ -1,0 +1,16 @@
+wagtail_headless_preview/__init__.py,sha256=Uguv6hTplIVX7HlWpv1lPAU-C2srJHzfwVrThi4A_TM,240
+wagtail_headless_preview/apps.py,sha256=-53Mn45y4JN7oGsuSkYFuf3XuJEKwCmRaJqc_eSlAWU,175
+wagtail_headless_preview/deprecation.py,sha256=v-rCEJpkX3nfgAIv43hcjndcxiJO5ea6RmEEdBX3t3s,315
+wagtail_headless_preview/models.py,sha256=8BjwjSwiRyYkeQoxAWPdWeBdrXLuZs1QsVyovzvxXcg,4848
+wagtail_headless_preview/settings.py,sha256=bLu_mvAlATVMKCuy463DIuMXrYQiSk6o4-UQgwTCHn4,4163
+wagtail_headless_preview/signals.py,sha256=4507HaC2rErpj_9nEBhwgvQx3Ni-QDXN_ofmZOVRfEI,63
+wagtail_headless_preview/__pycache__/__init__.cpython-38.pyc,sha256=3_V2adVd11J5yfW0KB7EG8FEINOomID9e_d07ziwIEU,520
+wagtail_headless_preview/__pycache__/deprecation.cpython-38.pyc,sha256=12Nr-etODPVpuF7LeRCx-vZFC-WdvSJeBDGyiUsWNVI,665
+wagtail_headless_preview/migrations/0001_initial.py,sha256=jat6qyAq3PWXmTW3EByttXbPPKOd7-hZPdhtoPAUB1k,1141
+wagtail_headless_preview/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wagtail_headless_preview/templates/wagtail_headless_preview/preview.html,sha256=guJATnHSxHLYWB6SqizDIyzdC9mGCryBPbH0ccBE_fk,194
+wagtail_headless_preview-0.5.0.dist-info/LICENSE,sha256=eE-K5KRcq0kZAfASWTIg6jTPSrufDUGPw9JEX0Yal0U,1545
+wagtail_headless_preview-0.5.0.dist-info/METADATA,sha256=ew1N3jL8C2NZfYLgVON8Co77Iirij0PQJ-xq1_MdCRw,11621
+wagtail_headless_preview-0.5.0.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+wagtail_headless_preview-0.5.0.dist-info/top_level.txt,sha256=Ixs1URchRq-fimhe83Yy2xFh7pPwve8ISXPr823ssOM,25
+wagtail_headless_preview-0.5.0.dist-info/RECORD,,
