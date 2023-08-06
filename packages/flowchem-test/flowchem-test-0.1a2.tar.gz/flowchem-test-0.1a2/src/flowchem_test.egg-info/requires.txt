@@ -1,0 +1,9 @@
+flowchem
+
+[dev]
+mypy
+flake8
+black
+pylint
+tox
+pre-commit
