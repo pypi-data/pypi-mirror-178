@@ -1,0 +1,2 @@
+[console_scripts]
+sense_hat_matrix = sense_hat_matrix.app:entry_point
