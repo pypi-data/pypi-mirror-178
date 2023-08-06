@@ -1,0 +1,11 @@
+LICENSE
+setup.py
+TvShaBot/__init__.py
+TvShaBot/tv_bot.py
+TvShaBot/tv_models.py
+TvShaBot/tv_program.py
+TvShaBot.egg-info/PKG-INFO
+TvShaBot.egg-info/SOURCES.txt
+TvShaBot.egg-info/dependency_links.txt
+TvShaBot.egg-info/requires.txt
+TvShaBot.egg-info/top_level.txt
