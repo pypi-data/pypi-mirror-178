@@ -1,0 +1,12 @@
+{
+    "supersecretdata": [
+        {
+            "name": "src_data1",
+            "datapoint": "A"
+        },
+        {
+            "name": "src_data2",
+            "datapoint": "B"
+        }
+    ]
+}
