@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: 2dutils
+Version: 0.0.1
+Summary: TODO: Add description
+Author-email: Paulo Sanchez <dev.szblzpaulo@gmail.com>
+Project-URL: Homepage, https://github.com/erlete/2d-utils
+Project-URL: Bug Tracker, https://github.com/erlete/2d-utils/issues
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# 2D Utils
+
+This is an empty package used for pre-deployment tests. Sorry for the inconvenience.
+
+Further updates can be found [here](https://github.com/erlete/2d-utils).
