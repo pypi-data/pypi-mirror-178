@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+Test_27_11a.egg-info/PKG-INFO
+Test_27_11a.egg-info/SOURCES.txt
+Test_27_11a.egg-info/dependency_links.txt
+Test_27_11a.egg-info/requires.txt
+Test_27_11a.egg-info/top_level.txt
+test_27_11/Test.py
+test_27_11/__init__.py
+test_27_11/solution.py
