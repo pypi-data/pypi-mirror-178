@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: window_capture_streaming
+Version: 0.14
+Summary: Grab screenshots from a specific window and process them right away (for bots or video streaming)
+Home-page: https://github.com/hansalemaos/window_capture_streaming
+Author: Johannes Fischer
+Author-email: <aulasparticularesdealemaosp@gmail.com>
+License: MIT
+Keywords: openCV,win32,screenshots,windows,bot,video,streaming
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Editors :: Text Processing
+Classifier: Topic :: Text Processing :: General
+Classifier: Topic :: Text Processing :: Indexing
+Classifier: Topic :: Text Processing :: Filters
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENSE.rst
+
+
+### Grab screenshots from a specific window and process them right away
+
+```python
+pip install window-capture-streaming
+
+
+from window_capture_streaming import WindowIterCapture
+import re
+import cv2
+capt = WindowIterCapture(
+    hwnd=None,
+    window_text=re.compile(r".*bluestacks.*", flags=re.IGNORECASE),
+    show_capture_keys="ctrl+alt+z",  # starts cv2.imshow() - can be enabled/disabled by pressing ctrl+alt+z
+    show_fps_keys="ctrl+alt+f",  # show the fps rate - can be enabled/disabled by pressing ctrl+alt+f
+    kill_screencap_keys="ctrl+alt+x",  # kills the capture process
+)
+
+for screen_shot in capt.get_screenshot(
+    sleeptime=None,
+    resize_width=None,
+    resize_height=None,
+    resize_percent=None,
+    interpolation=cv2.INTER_AREA,
+):
+    pass
+    # print('do some stuff here')
+    break #if you break out of the loop, stop capturing 
+capt.kill_screencap()
+
+```
+
