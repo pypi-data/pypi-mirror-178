@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: dnf-humbug
+Version: 0.0.2
+License: GPL-2.0-or-later
+Requires-Dist: textual
+
