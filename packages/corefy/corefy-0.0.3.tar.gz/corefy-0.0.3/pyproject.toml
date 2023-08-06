@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "corefy"
+version = "0.0.3"
+authors = [
+  { name="陈飞园", email="jiakevin@yeah.net" },
+]
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/cfy/sampleproject"
+"Bug Tracker" = "https://github.com/cfy/sampleproject/issues"

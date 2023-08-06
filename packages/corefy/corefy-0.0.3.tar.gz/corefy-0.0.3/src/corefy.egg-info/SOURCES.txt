@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/corefy.py
+src/corefy.egg-info/PKG-INFO
+src/corefy.egg-info/SOURCES.txt
+src/corefy.egg-info/dependency_links.txt
+src/corefy.egg-info/top_level.txt
