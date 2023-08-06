@@ -1,0 +1,8 @@
+protarrow/__init__.py,sha256=yaZ1t09JSfw5MGQl-myzNBpB_01jrgsBuvLzJ6uJWSE,455
+protarrow/arrow_to_proto.py,sha256=LUvwLNxG72MdrRhP5Il0ri0uBVWcb6We6cvTUu37ToI,17059
+protarrow/common.py,sha256=RMLUFPtexaUt_2nUpyMg2sS4CHvEtw7qc1y-8oolBiw,850
+protarrow/proto_to_arrow.py,sha256=HWd_tnIHh69Rsyzi30mpazqwcjo23xqsC-4ELQk4jB0,14989
+protarrow-0.0.3rc4.dist-info/LICENSE,sha256=qK0xscP0DcpahBGTUbj6jdyGjt13-tio6_bY8tFvpK4,11324
+protarrow-0.0.3rc4.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+protarrow-0.0.3rc4.dist-info/METADATA,sha256=MoLlBhA19tpbqe7-qXD6n3oZsWsyrbempE-hjUFteIg,2307
+protarrow-0.0.3rc4.dist-info/RECORD,,
