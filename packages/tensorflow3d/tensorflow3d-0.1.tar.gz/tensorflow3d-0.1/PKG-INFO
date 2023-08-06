@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: tensorflow3d
+Version: 0.1
+Summary: An extension to tensorflow framework for 3D applications
+Home-page: https://github.com/mohammadasim98/tensorflow3d.git
+Download-URL: https://github.com/user/reponame/archive/v_01.tar.gz
+Author: Mohammad Asim
+Author-email: asim.98.12.26@gmail.com
+License: MIT
+Keywords: tensorflow3d,3D Deep Learning
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+License-File: LICENSE.txt
+
+UNKNOWN
+
