@@ -1,0 +1,6 @@
+redis_rs-0.3.0.dist-info/METADATA,sha256=sTVnZM1j2-3vw8ajCzVSjXCc4UO2ieo18xR8j9jpD08,1676
+redis_rs-0.3.0.dist-info/WHEEL,sha256=cvDtsWLNx0v9mESFJ_gpsGtMJcocO1d1WbYA6ld1ku4,95
+redis_rs-0.3.0.dist-info/license_files/LICENSE,sha256=pb4Miy67-VqnL5TEGiQe81F4Ahu0J06MwjDHTYUdBjk,1093
+redis_rs/__init__.py,sha256=est_lOGUUhQqc_HQVYQgSKTJ2hNrwSszwqNYmezypTM,115
+redis_rs/redis_rs.cp39-win_amd64.pyd,sha256=NcszNLB3vqekPHr26rGfLulFu6G5stKIpry8LM80m7k,2039296
+redis_rs-0.3.0.dist-info/RECORD,,
