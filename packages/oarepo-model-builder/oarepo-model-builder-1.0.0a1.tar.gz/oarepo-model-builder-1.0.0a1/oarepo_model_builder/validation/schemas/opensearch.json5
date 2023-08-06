@@ -1,0 +1,26 @@
+{
+  "settings-opensearch": {
+    "type": "object",
+    "properties": {
+      "version": {
+        "type": "string",
+        "enum": [
+          "v2"
+        ]
+      },
+      "keyword-ignore-above": {
+        "type": "number"
+      },
+      "templates": {
+        "type": "object",
+        "properties": {
+          "v2": {
+            "type": "object",
+            "additionalProperties": true
+            // ES mapping section, no schema for it yet
+          }
+        }
+      }
+    }
+  }
+}
