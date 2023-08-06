@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: mocx
+Version: 0.0.1a1
+Home-page: https://codeberg.org/Fresh2dev/mocx
+Author: donald
+Author-email: hello@fresh2.dev
+Project-URL: Repository, https://codeberg.org/Fresh2dev/mocx
+Project-URL: Issues, https://codeberg.org/Fresh2dev/mocx/issues
+Project-URL: Documentation, https://www.Fresh2.dev/code/r/mocx/i/docs
+Project-URL: Changelog, https://www.Fresh2.dev/code/r/mocx/i/docs/changelog
+Project-URL: Funding, https://www.Fresh2.dev/tip
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests (==2.*)
+Requires-Dist: httpx (==0.*)
+Requires-Dist: typing-extensions ; python_version < "3.10"
+Provides-Extra: build
+Requires-Dist: build ; extra == 'build'
+Requires-Dist: setuptools ; extra == 'build'
+Requires-Dist: twine ; extra == 'build'
+Requires-Dist: wheel ; extra == 'build'
+Requires-Dist: myke[io] (==0.0.1a7) ; extra == 'build'
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: flake8-bugbear ; extra == 'dev'
+Requires-Dist: flake8-comprehensions ; extra == 'dev'
+Requires-Dist: flake8-pytest-style ; extra == 'dev'
+Requires-Dist: flake8-simplify ; extra == 'dev'
+Requires-Dist: importlib-metadata (<5.0) ; extra == 'dev'
+Requires-Dist: autoflake ; extra == 'dev'
+Requires-Dist: pyupgrade ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: mypy[reports] ; extra == 'dev'
+Requires-Dist: pydantic (==1.*,>=1.10.2) ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: pylint-pytest ; extra == 'dev'
+Requires-Dist: rope ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Requires-Dist: myke[io] (==0.0.1a7) ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: mkdocs (==1.*) ; extra == 'docs'
+Requires-Dist: mkdocstrings[python] (==0.19.0) ; extra == 'docs'
+Requires-Dist: mkdocs-autorefs ; extra == 'docs'
+Provides-Extra: fastapi
+Requires-Dist: fastapi (==0.*) ; extra == 'fastapi'
+Requires-Dist: starlette (==0.*) ; extra == 'fastapi'
+Provides-Extra: tests
+Requires-Dist: pytest (==7.*) ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+Requires-Dist: pytest-html ; extra == 'tests'
+Requires-Dist: pytest-sugar ; extra == 'tests'
+Requires-Dist: hypothesis (==6.*) ; extra == 'tests'
+Requires-Dist: packaging ; extra == 'tests'
+Requires-Dist: pydantic (==1.*,>=1.10.2) ; extra == 'tests'
+
+# mocx
+
+1. `myke set-version`
