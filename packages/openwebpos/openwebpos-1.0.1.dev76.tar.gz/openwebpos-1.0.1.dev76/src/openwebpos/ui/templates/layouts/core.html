@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if title %}<title>{{ title }} - OWPOS</title>{% else %}<title>OpenWebPOS</title>{% endif %}
+    {% include 'includes/pwa.html' %}
+    <link rel="application/javascript" href="{{ url_for('static', filename='js/htmx.min.js') }}">
+    {% include 'includes/css_links.html' %}
+    {% block css %}
+    {% endblock %}
+</head>
+<body class="black">
+<header>
+    {% block header %}
+    {% endblock %}
+</header>
+<main class="blue-grey lighten-5">
+    {% block main %}
+    {% endblock %}
+</main>
+<footer>
+    {% block footer %}
+    {% endblock %}
+</footer>
+{% with messages = get_flashed_messages(with_categories=True) %}
+    {% if messages %}
+        {% for category, message in messages %}
+            <div id="message" class="message center-align {{ category }}">
+                <p>{{ message }}</p>
+            </div>
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+{% include 'includes/js_links.html' %}
+{% block js %}
+{% endblock %}
+</body>
+</html>

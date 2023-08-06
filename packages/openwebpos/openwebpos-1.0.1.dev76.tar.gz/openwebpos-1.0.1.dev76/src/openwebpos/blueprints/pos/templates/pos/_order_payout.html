@@ -1,0 +1,27 @@
+<div class="order-payout center blue-grey lighten-2">
+    {% if order.order_type.name == 'Phone' %}
+
+        <div class="row mb0 h100">
+            <div class="col s12 m4 p0">
+                <a href="{{ url_for('pos.print_receipt', order_id=order.id, receipt_type='kitchen') }}"
+                   class="btn rbl blue waves-effect waves-light modal-trigger">
+                    <i class="material-icons">print</i>
+                </a>
+            </div>
+            <div class="col s12 m8 p0">
+                <a href="{{ url_for('pos.invoice_order', order_id=order.id) }}"
+                   class="btn green waves-effect waves-light modal-trigger">
+                    <i class="material-icons left">payment</i>{{ format_currency(order.order_total()) }}
+                </a>
+            </div>
+        </div>
+
+    {% else %}
+
+        <a href="{{ url_for('pos.invoice_order', order_id=order.id) }}"
+           class="btn rbl green waves-effect waves-light modal-trigger">
+            <i class="material-icons left">payment</i>Pay:{{ format_currency(order.order_total()) }}
+        </a>
+
+    {% endif %}
+</div>

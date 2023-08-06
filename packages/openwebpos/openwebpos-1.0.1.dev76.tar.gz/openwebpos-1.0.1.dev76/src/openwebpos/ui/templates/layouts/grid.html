@@ -1,0 +1,24 @@
+{#{% extends 'layouts/base.html' %}#}
+
+{% extends 'layouts/core.html' %}
+
+{% block header %}
+    {% include 'includes/_header.html' %}
+{% endblock %}
+
+
+{% block main %}
+
+    <div class="grid-wrapper">
+        <div class="view">
+            {% block content %}
+
+            {% endblock %}
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block footer %}
+    {% include 'includes/_footer.html' %}
+{% endblock %}

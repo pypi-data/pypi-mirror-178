@@ -1,0 +1,35 @@
+{% extends 'layouts/base.html' %}
+
+{% from 'macros/user_interface.html' import clickableCard %}
+
+{% block main %}
+
+    <div class="row">
+        {% for order_type in order_types|sort(attribute='name') %}
+            <div class="col s12 m4">
+                {% if order_type.name == 'Dine In' %}
+                    {% if pagers %}
+                        {{ clickableCard('#pagerModal', order_type.name, True) }}
+                        <div id="pagerModal" class="modal rounded grey lighten-2">
+                            <div class="modal-content">
+                                <div class="row">
+                                    {% for pager in pagers %}
+                                        <div class="col s6 m3">
+                                            {{ clickableCard(url_for('pos.create_order_with_pager', order_type_id=order_type.id, order_pager_id=pager.id), pager.short_name) }}
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    {% else %}
+                        {{ clickableCard(url_for('pos.create_order', order_type_id=order_type.id), order_type.name) }}
+                    {% endif %}
+                {% else %}
+                    {{ clickableCard(url_for('pos.create_order', order_type_id=order_type.id), order_type.name) }}
+                {% endif %}
+            </div>
+        {% endfor %}
+
+    </div>
+
+{% endblock %}

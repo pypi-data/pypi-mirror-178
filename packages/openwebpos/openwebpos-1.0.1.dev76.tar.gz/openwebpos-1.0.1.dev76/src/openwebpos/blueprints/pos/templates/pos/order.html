@@ -1,0 +1,30 @@
+{% extends 'layouts/base.html' %}
+
+{% from 'macros/user_interface.html' import clickableCard, actionModal %}
+
+{% block main %}
+
+    <div class="grid-container">
+        <div class="order-section">
+            {% include 'pos/_order_view.html' %}
+            {% include 'pos/_order_settings.html' %}
+            {% include 'pos/_order_info.html' %}
+            {% include 'pos/_order_payout.html' %}
+        </div>
+        <div class="menu-section">
+            <div class="menu-view">
+                <div class="row my0">
+                    {% for menu_type in menu_types|sort(attribute='name') %}
+                        {% if menu_type.has_categories() %}
+                            <div class="col s12 m4">
+                                {{ clickableCard(url_for('pos.order_menu_type', order_id=order.id, menu_type_id=menu_type.id), menu_type.name) }}
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
