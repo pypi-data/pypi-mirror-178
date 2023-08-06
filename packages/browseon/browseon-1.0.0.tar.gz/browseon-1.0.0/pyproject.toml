@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "browseon"
+version = "1.0.0"
+description = "To browse web."
+readme = "README.md"
+requires-python = ">=3.6"
+license = { text = "Apache License, Version 2.0" }
+authors = [
+    { name = "srg", email = "srg.code@pm.me" },
+]
+dependencies = [
+    "srutil"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+keywords = [
+    "browseon",
+    "web search"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/codesrg/browseon"
+"Bug Tracker" = "https://github.com/codesrg/browseon/issues"
+
+[project.scripts]
+browseon = "browseon.__main__:main"

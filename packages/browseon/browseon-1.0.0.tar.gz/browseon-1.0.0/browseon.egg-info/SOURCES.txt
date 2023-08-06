@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+browseon/__init__.py
+browseon/__main__.py
+browseon/search.py
+browseon/util.py
+browseon.egg-info/PKG-INFO
+browseon.egg-info/SOURCES.txt
+browseon.egg-info/dependency_links.txt
+browseon.egg-info/entry_points.txt
+browseon.egg-info/requires.txt
+browseon.egg-info/top_level.txt
