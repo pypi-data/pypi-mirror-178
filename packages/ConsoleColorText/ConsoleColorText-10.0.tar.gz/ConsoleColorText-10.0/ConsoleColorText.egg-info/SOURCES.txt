@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+Color_Console/Color_Console.py
+Color_Console/__init__.py
+Color_Console/setup.py
+ConsoleColorText.egg-info/PKG-INFO
+ConsoleColorText.egg-info/SOURCES.txt
+ConsoleColorText.egg-info/dependency_links.txt
+ConsoleColorText.egg-info/top_level.txt
