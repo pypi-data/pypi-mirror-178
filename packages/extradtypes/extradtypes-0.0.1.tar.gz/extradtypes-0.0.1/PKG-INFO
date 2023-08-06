@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: extradtypes
+Version: 0.0.1
+Summary: Contains extra data types / containers
+Home-page: https://github.com/StephenMal/ExtraDtypes
+Author: Stephen Maldonado
+Author-email: Maldonado527@knights.ucf.edu
+License: MIT
+Keywords: datatypes,containers,tools,utilities
