@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+USRVoiceConverter/VoiceConverter.py
+USRVoiceConverter/__init__.py
+USRVoiceConverter.egg-info/PKG-INFO
+USRVoiceConverter.egg-info/SOURCES.txt
+USRVoiceConverter.egg-info/dependency_links.txt
+USRVoiceConverter.egg-info/entry_points.txt
+USRVoiceConverter.egg-info/not-zip-safe
+USRVoiceConverter.egg-info/top_level.txt
