@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+bsea.egg-info/PKG-INFO
+bsea.egg-info/SOURCES.txt
+bsea.egg-info/dependency_links.txt
+bsea.egg-info/top_level.txt
+package/__init__.py
+package/__main__.py

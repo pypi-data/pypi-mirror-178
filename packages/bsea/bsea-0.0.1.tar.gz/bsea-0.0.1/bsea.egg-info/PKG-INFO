@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: bsea
+Version: 0.0.1
+Summary: binary search
+Author: Averyanova_Margarita
+Author-email: margaritaaveryanova2004@gmail.com
+Description-Content-Type: text/markdown
+
+Если мы в папке Destop, то вызвать команду "python -m project.package". Если мы уже в папке project, то вызвать команду "python -m package".
