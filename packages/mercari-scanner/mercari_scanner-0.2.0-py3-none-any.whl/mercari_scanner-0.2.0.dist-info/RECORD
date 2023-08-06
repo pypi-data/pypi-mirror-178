@@ -1,0 +1,11 @@
+mercariscanner/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mercariscanner/__main__.py,sha256=Odiay0g_IFBHsVp6F-FfSFPe4bqx7IzO4K0Vqvj9ce0,4728
+mercariscanner/mercari_scanner.py,sha256=2m_jh92_-v2FKOebqeUUsnrB8cR18FENCMBAJpUFbO4,1522
+mercariscanner/mercari_spider.py,sha256=ro8vjaBDFKO2jv9UgMjiisRgMCtoVw24zkxqESIvmCQ,3778
+mercariscanner/alerters/alerter.py,sha256=HFq1E9a3lXUUd3slCv98gX03ZJGVT3WgsAZBcHLXhHw,1880
+mercariscanner/alerters/slack.py,sha256=9o_qDpNMVFpGx1e-8HvQaRgtn_PpC5CuVRPNYVb_tzE,1802
+mercari_scanner-0.2.0.dist-info/LICENSE,sha256=umIS9g_As_4o6YEaXnwDuTPu3T8uLPp_BXp2vLNAF_k,1078
+mercari_scanner-0.2.0.dist-info/METADATA,sha256=aLH-7xcoYWRlmFdwRATl8sSDtsYk4PjHcLgXt79e9GU,2791
+mercari_scanner-0.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+mercari_scanner-0.2.0.dist-info/top_level.txt,sha256=m0kHayiU1MlTOlCnEAUSeg5Ms8HknG6qYJmz7E6643c,15
+mercari_scanner-0.2.0.dist-info/RECORD,,
