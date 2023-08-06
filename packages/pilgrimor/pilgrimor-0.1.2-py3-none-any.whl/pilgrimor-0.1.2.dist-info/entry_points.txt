@@ -1,0 +1,3 @@
+[console_scripts]
+pilgrimor=pilgrimor.__main__:main
+
