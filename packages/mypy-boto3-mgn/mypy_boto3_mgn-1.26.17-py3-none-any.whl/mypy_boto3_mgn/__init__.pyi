@@ -1,0 +1,67 @@
+"""
+Main interface for mgn service.
+
+Usage::
+
+    ```python
+    from boto3.session import Session
+    from mypy_boto3_mgn import (
+        Client,
+        DescribeJobLogItemsPaginator,
+        DescribeJobsPaginator,
+        DescribeLaunchConfigurationTemplatesPaginator,
+        DescribeReplicationConfigurationTemplatesPaginator,
+        DescribeSourceServersPaginator,
+        DescribeVcenterClientsPaginator,
+        ListApplicationsPaginator,
+        ListSourceServerActionsPaginator,
+        ListTemplateActionsPaginator,
+        ListWavesPaginator,
+        mgnClient,
+    )
+
+    session = Session()
+    client: mgnClient = session.client("mgn")
+
+    describe_job_log_items_paginator: DescribeJobLogItemsPaginator = client.get_paginator("describe_job_log_items")
+    describe_jobs_paginator: DescribeJobsPaginator = client.get_paginator("describe_jobs")
+    describe_launch_configuration_templates_paginator: DescribeLaunchConfigurationTemplatesPaginator = client.get_paginator("describe_launch_configuration_templates")
+    describe_replication_configuration_templates_paginator: DescribeReplicationConfigurationTemplatesPaginator = client.get_paginator("describe_replication_configuration_templates")
+    describe_source_servers_paginator: DescribeSourceServersPaginator = client.get_paginator("describe_source_servers")
+    describe_vcenter_clients_paginator: DescribeVcenterClientsPaginator = client.get_paginator("describe_vcenter_clients")
+    list_applications_paginator: ListApplicationsPaginator = client.get_paginator("list_applications")
+    list_source_server_actions_paginator: ListSourceServerActionsPaginator = client.get_paginator("list_source_server_actions")
+    list_template_actions_paginator: ListTemplateActionsPaginator = client.get_paginator("list_template_actions")
+    list_waves_paginator: ListWavesPaginator = client.get_paginator("list_waves")
+    ```
+"""
+from .client import mgnClient
+from .paginator import (
+    DescribeJobLogItemsPaginator,
+    DescribeJobsPaginator,
+    DescribeLaunchConfigurationTemplatesPaginator,
+    DescribeReplicationConfigurationTemplatesPaginator,
+    DescribeSourceServersPaginator,
+    DescribeVcenterClientsPaginator,
+    ListApplicationsPaginator,
+    ListSourceServerActionsPaginator,
+    ListTemplateActionsPaginator,
+    ListWavesPaginator,
+)
+
+Client = mgnClient
+
+__all__ = (
+    "Client",
+    "DescribeJobLogItemsPaginator",
+    "DescribeJobsPaginator",
+    "DescribeLaunchConfigurationTemplatesPaginator",
+    "DescribeReplicationConfigurationTemplatesPaginator",
+    "DescribeSourceServersPaginator",
+    "DescribeVcenterClientsPaginator",
+    "ListApplicationsPaginator",
+    "ListSourceServerActionsPaginator",
+    "ListTemplateActionsPaginator",
+    "ListWavesPaginator",
+    "mgnClient",
+)
