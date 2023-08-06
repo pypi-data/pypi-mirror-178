@@ -1,0 +1,3 @@
+[console_scripts]
+pypole=pypole.__main__:app
+

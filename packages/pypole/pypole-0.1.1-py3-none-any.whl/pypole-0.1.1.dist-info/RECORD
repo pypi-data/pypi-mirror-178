@@ -1,0 +1,13 @@
+pypole/__init__.py,sha256=XcpRBhwOUgO8lw-yxVBRneBgGMUSwk--OEXfug-6Iyg,286
+pypole/compute.py,sha256=5p1VzcDZsLx0rUET5yBqHML-6xXIm1s5EtqMMkp6kZg,3437
+pypole/convert.py,sha256=alYI4EikMgaQ6u1PAUjIJNdHBd-vx4i4gFxmsT8NTmM,2792
+pypole/dipole.py,sha256=asSxQdKNIR3r_ISHFKU-24U4yhCNs2jhXNAafZLx5TU,3463
+pypole/example.py,sha256=m80Z9xlCdvY6EGTL6DFHqZUZiCv-qAF17Eylh6ZJC1o,313
+pypole/fit.py,sha256=kmPWw6kFoCFmyOKLmuwBFuU3m3VxNYqeKCXZWXlqoMA,3284
+pypole/maps.py,sha256=bUhfXxjKt4m9gUzEu_-OG_jJjp83_0fyYUOhypuDkb4,4880
+pypole/plotting.py,sha256=oZ3mmIy2xrpsMMhFrw2blI-2qArcU9PKjJsj-S5VM4I,1436
+pypole-0.1.1.dist-info/entry_points.txt,sha256=3LuULf_1tJQQgK9AIsPskYMqheJgtwA3laEt95ihVHo,46
+pypole-0.1.1.dist-info/LICENSE,sha256=WkLZ1eUqTEnAxRhDZjC0yFrcp_lQcq-G6r2EbcfqrKE,1071
+pypole-0.1.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+pypole-0.1.1.dist-info/METADATA,sha256=x-9GN7baqBQOerjT3cjTAeLNb-i9bnuCVDiHp_iNnj8,9109
+pypole-0.1.1.dist-info/RECORD,,
