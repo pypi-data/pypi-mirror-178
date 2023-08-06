@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: muzne
+Version: 0.0.0.1
+Summary: Just a simple web server
+Home-page: UNKNOWN
+Author: sherekhan at pypi.org
+Author-email: sherekhan@jungle.tes
+License: GNU GPL3+
+Description: # Muzne
+        
+        Muzne - примитивный веб-браузер, хранящий веб-страницы
+        в формате Markdown, но отдающий их как HTML.
+        
+        ## Конфигурация
+        
+            [Setup]
+            Dir = /полный/путь/к/директории/сайта
+            Port = порт (по умолчанию 8080)
+            404 = 404.md
+            ; страница ошибки 404
+            
+        ## Запуск
+        
+            muzne
+            
+        ## История
+        
+        ### Muzne 0.0.0.1
+        
+        - Первый выпуск
+        - Поддержка конфигурационного файла ~/.config/muzne.cfg
+        - Возможность выбора каталога с файлами, порта и страницы 404.
+        - Кодировка по умолчанию - UTF-8
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Description-Content-Type: text/markdown
