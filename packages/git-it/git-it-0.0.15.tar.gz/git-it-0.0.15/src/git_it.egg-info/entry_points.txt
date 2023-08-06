@@ -1,0 +1,2 @@
+[console_scripts]
+gitit = gitit.__main__:main
