@@ -1,0 +1,37 @@
+NAMESPACE: skyant.tools
+MODULES:
+    -   skyant.tools
+    -   skyant.tools.auth
+    -   skyant.tools.crypto
+    -   skyant.tools.duty
+
+VERSION: 0.0
+MINOR: 1
+
+DESCR: Tools for a working with GCP.
+KEYWORDS: pydantic, api, rest, GCP
+
+HOME: https://skyant.dev/projects/tools
+DONATE: https://buymeacoffee.com/skyantdev
+NEWS: https://www.linkedin.com/company/skyantdev
+TALK: https://groups.google.com/a/skyant.dev/g/community?label=tools
+
+AUTHOR: Iurii Tarasenko
+EMAIL: info@skyant.dev
+
+LICENSE: MIT
+
+PYTHON_REQ: '>=3.10'
+REQUIREMENTS:
+    -   google-auth
+    -   pyyaml
+    -   flask
+    -   python-jose
+    -   requests
+    -   duty
+
+CLASSIFIERS:
+    -   'Programming Language :: Python :: 3.10'
+    -   'Intended Audience :: Developers'
+    -   'Intended Audience :: Information Technology'
+    -   'Topic :: Software Development :: Libraries :: Python Modules'

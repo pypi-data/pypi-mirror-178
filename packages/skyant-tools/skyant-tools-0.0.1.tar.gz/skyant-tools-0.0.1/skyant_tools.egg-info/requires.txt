@@ -1,0 +1,6 @@
+google-auth
+pyyaml
+flask
+python-jose
+requests
+duty
