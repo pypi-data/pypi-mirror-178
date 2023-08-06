@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+truthordare/__init__.py
+truthordare/funtions.py
+truthordare.py.egg-info/PKG-INFO
+truthordare.py.egg-info/SOURCES.txt
+truthordare.py.egg-info/dependency_links.txt
+truthordare.py.egg-info/requires.txt
+truthordare.py.egg-info/top_level.txt
