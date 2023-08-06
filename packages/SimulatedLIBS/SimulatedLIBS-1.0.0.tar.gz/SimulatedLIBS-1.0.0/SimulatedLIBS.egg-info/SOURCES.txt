@@ -1,0 +1,15 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+SimulatedLIBS/__init__.py
+SimulatedLIBS/animation.py
+SimulatedLIBS/py.typed
+SimulatedLIBS/simulation.py
+SimulatedLIBS.egg-info/PKG-INFO
+SimulatedLIBS.egg-info/SOURCES.txt
+SimulatedLIBS.egg-info/dependency_links.txt
+SimulatedLIBS.egg-info/requires.txt
+SimulatedLIBS.egg-info/top_level.txt
+tests/__init__.py
