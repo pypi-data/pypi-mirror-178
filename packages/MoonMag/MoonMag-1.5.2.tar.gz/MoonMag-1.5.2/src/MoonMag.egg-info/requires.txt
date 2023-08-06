@@ -1,0 +1,5 @@
+numpy>=1.20.3
+scipy>=1.7.3
+mpmath>=1.2.1
+matplotlib>=3.5.2
+spiceypy>=5.1.1
