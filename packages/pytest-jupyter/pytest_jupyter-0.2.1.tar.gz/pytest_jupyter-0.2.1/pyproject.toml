@@ -1,0 +1,145 @@
+[build-system]
+requires = [
+    "hatchling>=1.10.0",
+]
+build-backend = "hatchling.build"
+
+[project]
+name = "pytest-jupyter"
+dynamic = [
+    "version",
+]
+description = "A pytest plugin for testing Jupyter libraries and extensions."
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Jupyter Development Team", email = "jupyter@googlegroups.com" },
+]
+keywords = [
+    "Jupyter",
+    "pytest",
+]
+classifiers = [
+    "Framework :: Pytest",
+]
+dependencies = [
+    "pytest",
+    "pytest-asyncio",
+    "jupyter_core"
+]
+requires-python = ">=3.8"
+
+
+[project.optional-dependencies]
+docs = [
+    "myst_parser",
+    "pydata_sphinx_theme",
+    "Sphinx",
+]
+client = [
+    "jupyter_client>=7.4.0",
+    "ipykernel>=6.14",
+]
+server = [
+    "jupyter_server>=1.21",
+    "nbformat>=5.3",
+    "pytest-jupyter[client]",
+    "pytest-tornasync>=0.6"
+]
+test = [
+    "pytest-timeout"
+]
+
+[project.urls]
+Homepage = "http://jupyter.org"
+
+[tool.hatch.version]
+path = "pytest_jupyter/_version.py"
+validate-bump = false
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/pytest_jupyter",
+    "/tests",
+]
+
+[tool.hatch.envs.docs]
+features = ["docs"]
+[tool.hatch.envs.docs.scripts]
+build = "make -C docs html SPHINXOPTS='-W'"
+
+[tool.hatch.envs.test]
+features = ["test", "server", "client"]
+[tool.hatch.envs.test.scripts]
+test = "python -m pytest -vv {args}"
+nowarn = "test -W default {args}"
+
+[tool.hatch.envs.cov]
+features = ["test", "server", "client"]
+dependencies = ["coverage[toml]"]
+[tool.hatch.envs.cov.scripts]
+test = "coverage run -m pytest {args}"
+nowarn = "test -W default {args}"
+
+[tool.jupyter-releaser.options]
+post-version-spec = "dev"
+
+[tool.pytest.ini_options]
+addopts = "-raXs --durations 10 --color=yes --doctest-modules"
+testpaths = [
+    "tests"
+]
+asyncio_mode = "auto"
+timeout = 10
+# Restore this setting to debug failures
+timeout_method = "thread"
+filterwarnings= [
+  # Fail on warnings
+  "error",
+  # TODO: from jupyter_server
+  "always:unclosed <socket.socket:ResourceWarning"
+]
+
+[tool.coverage.report]
+exclude_lines = [
+  "pragma: no cover",
+  "def __repr__",
+  "if self.debug:",
+  "if settings.DEBUG",
+  "raise AssertionError",
+  "raise NotImplementedError",
+  "if 0:",
+  "if __name__ == .__main__.:",
+  "class .*\bProtocol\\):",
+  "@(abc\\.)?abstractmethod",
+]
+
+[tool.mypy]
+check_untyped_defs = true
+disallow_incomplete_defs = true
+no_implicit_optional = true
+pretty = true
+show_error_context = true
+show_error_codes = true
+strict_equality = true
+warn_unused_configs = true
+warn_unused_ignores = true
+warn_redundant_casts = true
+explicit_package_bases = true
+namespace_packages = true
+
+[tool.flake8]
+ignore = "E501, W503, E402"
+builtins = "c, get_config"
+exclude = [
+    ".cache",
+    ".github",
+    "docs",
+    "setup.py",
+]
+enable-extensions = "G"
+extend-ignore = [
+    "G001", "G002", "G004", "G200", "G201", "G202",
+    # black adds spaces around ':'
+    "E203",
+]
