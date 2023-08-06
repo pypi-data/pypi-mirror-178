@@ -1,0 +1,67 @@
+[build-system]
+# Setuptools 64 and pip 21.3 are needed for editable installs, but a modern version of setuptools never hurts
+requires = ["setuptools>64", "wheel", "pip>=22"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+flowchem_test = ["py.typed"]
+
+[project]
+name = "flowchem-test"
+version = "0.1a3"
+description = "Add support for test devices in flowchem."
+readme = "README.md"
+requires-python = ">=3.10"
+license =  { text = "MIT" }
+keywords = ["chemistry", "automation", "laboratory", "testing"]
+authors = [
+    { name = "Dario Cambié", email = "2422614+dcambie@users.noreply.github.com" },
+]
+maintainers = [
+  { name = "Dario Cambié", email = "2422614+dcambie@users.noreply.github.com" }
+]
+classifiers = ["License :: OSI Approved :: MIT License"]
+dependencies = [
+    "flowchem",
+]
+
+[project.optional-dependencies]
+dev = [
+    "mypy",
+    "flake8",
+    "black",
+    "pylint",
+    "tox",
+    "pre-commit"
+]
+
+[project.urls]
+repository = "https://github.com/cambiegroup/flowchem-test"
+
+[project.entry-points."flowchem.devices"]
+test-device = "flowchem_test:fakedevice"
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+envlist = py310,pep8,mypy,black
+isolated_build = true
+minversion = 3.11
+
+[testenv:{flake8,mypy}]
+envdir = {toxworkdir}/.tox
+changedir = {envtmpdir}
+extras = dev,test
+description =
+    flake8: Run flake8
+    mypy: Run mypy
+commands =
+    flake8: flake8 --count --select=E9,F63,F7,F82 --show-source --statistics
+    mypy: mypy --python-version 3.10 --ignore-missing-imports {toxinidir}/src
+"""
