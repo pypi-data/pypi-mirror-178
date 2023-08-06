@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: skyant-rest
+Version: 0.0.1
+Summary: Preconfigured FastAPI
+Home-page: https://skyant.dev/projects/rest
+Author: Iurii Tarasenko
+Author-email: info@skyant.dev
+License: MIT
+Project-URL: Source & issues, https://gitlab.com/skyant/python/rest
+Project-URL: Donation, https://buymeacoffee.com/skyantdev
+Project-URL: Project news, https://www.linkedin.com/company/skyantdev
+Project-URL: Talk to us, https://groups.google.com/a/skyant.dev/g/community?label=rest
+Keywords: fastapi,api,rest
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: fastapi
+Requires-Dist: email-validator
+Requires-Dist: pydantic
+Requires-Dist: google.auth
+Requires-Dist: hypercorn
+Requires-Dist: pyyaml
+Requires-Dist: uvicorn
+
+
+The package provide additional features for [FastAPI](https://fastapi.tiangolo.com/) and use
+it as a part of Micro-Application Framework[^1]
+
+
+The `skyant.rest.app.*` inheritance the class `fastapi.FastAPI` so all their features are available.
+
+For fast & easy run API in Google Cloud Platform you can use [SkyANT Runner](https://skyant.dev/projects/cloudrun/).
+
+
+[^1]: Micro-Application Framework is a fleet of tools for building, integrating and deployment to cloud application (ui and api) base on philosophy "one task = one app = one container". Please read more at [https://skyant.dev/framework/](https://skyant.dev/framework/).
