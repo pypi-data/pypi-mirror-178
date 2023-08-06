@@ -1,0 +1,15 @@
+rules:
+  - id: cmd-overwrite
+    languages:
+      - python
+    message: Standard pip command overwritten in setup.py
+    patterns:
+      - pattern-either:
+          - pattern: |
+              setuptools.setup(..., cmdclass = { ..., "$COMMAND": $SCRIPT, ... }, ...)
+          - pattern: |
+              setup(..., cmdclass = { ..., "$COMMAND": $SCRIPT, ... }, ...)
+      - metavariable-regex:
+          metavariable: $COMMAND
+          regex: install|develop|egg_info
+    severity: WARNING
