@@ -1,0 +1,68 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "upadup"
+description = 'utility for python additional_dependencies updates in pre-commit'
+readme = "README.md"
+requires-python = ">=3.7"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "Stephen Rosen", email = "sirosen0@gmail.com" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+    "ruamel.yaml<0.18"
+]
+dynamic = ["version"]
+
+[project.urls]
+Documentation = "https://github.com/sirosen/upadup#readme"
+Issues = "https://github.com/sirosen/upadup/issues"
+Source = "https://github.com/sirosen/upadup"
+
+[project.scripts]
+upadup = "upadup.main:main"
+
+[tool.hatch.version]
+path = "src/upadup/__init__.py"
+
+[tool.hatch.envs.test]
+dependencies = [
+  "pytest",
+  "coverage",
+]
+[tool.hatch.envs.test.scripts]
+run = "coverage run pytest {args}"
+
+[[tool.hatch.envs.test.matrix]]
+python = ["37", "38", "39", "310", "311"]
+
+[tool.hatch.envs.mypy]
+description = "Lint with mypy"
+skip-install = true
+dependencies = ["mypy"]
+
+[tool.hatch.envs.mypy.scripts]
+src = "mypy --show-error-codes src/"
+
+[tool.coverage.run]
+branch = true
+
+[tool.coverage.report]
+exclude_lines = [
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
