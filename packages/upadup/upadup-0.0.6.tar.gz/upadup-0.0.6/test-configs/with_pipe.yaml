@@ -1,0 +1,11 @@
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks.git
+  rev: v4.4.0
+  hooks:
+    # test parsing of a string with `|`-style
+    - id: pretty-format-json
+      exclude: |
+        (?x)(
+          package(-lock)?\.json|
+          foo-bar.*\.json
+        )$
