@@ -1,0 +1,17 @@
+jwst_backgrounds/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jwst_backgrounds/cli.py,sha256=wK8WTZIdkwy5sHbiCeoMySnVTGy_-DB5XfVyyJULOyU,1269
+jwst_backgrounds/docopt.py,sha256=Hp10Tr7fcxAF1h9hmN1gzG1P9B24lN8muIMFpOY51K0,21285
+jwst_backgrounds/jbt.py,sha256=azdt9JskeFo0et50k32161b7-eGTPXu3UpIJE9VK2TU,18829
+jwst_backgrounds/version.py,sha256=MpAT5hgNoHnTtG1XRD_GV_A7QrHVU6vJjGSw_8qMGA4,22
+jwst_backgrounds/agreement/NASA_Open_Source_Agreement_1.3 GSC-17919.pdf,sha256=rRIexw-GREIJjhHutE5ix4ZqMtmCHPPdniMspiXBEZM,97238
+jwst_backgrounds/refdata/std_spectrum_wavelengths.txt,sha256=BQBFKsknS_Ne4bKWrsB62tnvufE01H9blOTONlMr9Ks,478
+jwst_backgrounds/refdata/thermal_curve_jwst_jrigby_1.0.csv,sha256=T7_N07fhkIGemx61n0B_7TnIsXZe3XkJqZq6DrzPH_o,7095
+jwst_backgrounds/refdata/thermal_curve_jwst_jrigby_cchen_1.1a.csv,sha256=n-P3Xg2DFTgGSvVCHgcpnQFO-4fRRN96YRPWRc2_Q7I,8612
+jwst_backgrounds/refdata/thermal_curve_jwst_jrigby_v2.2.csv,sha256=t9HWYXFnET-IzL_bil-SDDtQ_bmoTHIn7G9B8Rmc9V8,8331
+jwst_backgrounds/refdata/thermal_curve_jwst_jrigby_v3.0.csv,sha256=Y3lS5JPeMzJpCtIR1o7kdHdcJvdZH9uWgllouM7Vjcw,8408
+jwst_backgrounds-1.2.0.dist-info/LICENSE.rst,sha256=AsIHG5VG6l-YV7z3PHV0v-jexddMhY6r_xnIgPrXae4,2641
+jwst_backgrounds-1.2.0.dist-info/METADATA,sha256=ijG31KJQgXxI9s7C-fvSE8cRPpDX5VYkHNDbXv3Sjvw,3753
+jwst_backgrounds-1.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+jwst_backgrounds-1.2.0.dist-info/entry_points.txt,sha256=6yaeSynew8Jvmc4p-CXxzWzvEM8NkjHXXkFIoMRJnGU,63
+jwst_backgrounds-1.2.0.dist-info/top_level.txt,sha256=itXz3HXvYGd_Agx8SJHEF9fdX4KIBFKCGRtH2D3-q-M,17
+jwst_backgrounds-1.2.0.dist-info/RECORD,,
