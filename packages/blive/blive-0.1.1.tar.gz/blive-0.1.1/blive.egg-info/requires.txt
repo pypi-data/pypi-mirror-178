@@ -1,0 +1,5 @@
+aiohttp
+requests
+APScheduler==3.9.1
+brotli
+pyee
