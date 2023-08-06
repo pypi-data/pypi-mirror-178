@@ -1,0 +1,12 @@
+lirc/__init__.py,sha256=A6-h3cf--dYC1QgxCHrjuP-J1k8JCq6_htGolNWghkc,156
+lirc/client.py,sha256=1L1moqvZG3yGQcTg1mSn9Ws3Bhb4OzAO1pU2FugFuAM,8170
+lirc/connection/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lirc/connection/abstract_connection.py,sha256=ZZanHRTnx5uPfrUnHzwxJNTD_FYt8_6fbxU1Z-8glVI,701
+lirc/connection/default_connection.py,sha256=Xz36V_7nrWRnF_RsJ54g0fOB5QJCtAQcL_lW-d7bHyc,2085
+lirc/connection/lircd_connection.py,sha256=YsjQ6zAsMbfQjNmOOQtBDaVadQhx-RKU_JU-8NETvOI,5009
+lirc/exceptions.py,sha256=aVHgAaOZi_eZKiqE0R1KJbCa8wiHNlDJDwnNxEIa7GY,825
+lirc/reply_packet_parser.py,sha256=iLt4gacc1UqFMu8e3saWUciI2qabtSg1tiHQZtSR7NA,9426
+lirc-2.0.2.dist-info/LICENSE.rst,sha256=27odXGjkYklWp4uCqC7l57ZZt2W2Z_6dFr1vuG1jAmw,1083
+lirc-2.0.2.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+lirc-2.0.2.dist-info/METADATA,sha256=3Jxc2I5-mL45w3odBrPGP-NtMJv6RB2Xuz73y3uZNOM,6579
+lirc-2.0.2.dist-info/RECORD,,
