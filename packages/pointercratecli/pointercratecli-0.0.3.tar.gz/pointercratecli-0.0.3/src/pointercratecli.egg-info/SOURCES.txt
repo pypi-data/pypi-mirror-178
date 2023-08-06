@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pointercratecli/__init__.py
+src/pointercratecli/demonlistSearch.py
+src/pointercratecli/demonlistSearchNoRich.py
+src/pointercratecli/getListSize.py
+src/pointercratecli/getTopPlayers.py
+src/pointercratecli/getTopXDemons.py
+src/pointercratecli/main.py
+src/pointercratecli/roulette.py
+src/pointercratecli.egg-info/PKG-INFO
+src/pointercratecli.egg-info/SOURCES.txt
+src/pointercratecli.egg-info/dependency_links.txt
+src/pointercratecli.egg-info/top_level.txt

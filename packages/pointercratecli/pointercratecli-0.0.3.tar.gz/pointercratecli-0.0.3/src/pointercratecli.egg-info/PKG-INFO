@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pointercratecli
+Version: 0.0.3
+Summary: A collection of Python scripts to interface with the Pointercrate API and desplay data in an easy to use format.
+Home-page: https://github.com/RCNOverwatcher/PointercrateCLI
+Author: Jacob Wiltshire
+Author-email: jacobjameswiltshire@protonmail.com
+Project-URL: Bug Tracker, https://github.com/RCNOverwatcher/PointercrateCLI/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PointercrateCLI
+A collection of Python scripts to interface with the Pointercrate API and desplay data in an easy to use format.
