@@ -1,0 +1,9 @@
+README.rst
+setup.py
+PyWinRegistry/__init__.py
+PyWinRegistry/processor.py
+pywinregistry.egg-info/PKG-INFO
+pywinregistry.egg-info/SOURCES.txt
+pywinregistry.egg-info/dependency_links.txt
+pywinregistry.egg-info/not-zip-safe
+pywinregistry.egg-info/top_level.txt
