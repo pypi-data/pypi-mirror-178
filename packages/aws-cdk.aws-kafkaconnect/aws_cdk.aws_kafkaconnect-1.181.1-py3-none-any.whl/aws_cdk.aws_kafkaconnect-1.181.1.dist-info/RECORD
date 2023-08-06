@@ -1,0 +1,10 @@
+aws_cdk/aws_kafkaconnect/__init__.py,sha256=ABxN7Qv5Kp-x0KV7Jk5qExn_MsxzTqkB51gG4MV7F4c,120814
+aws_cdk/aws_kafkaconnect/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_kafkaconnect/_jsii/__init__.py,sha256=aEf7SqUO3VtPPhqOEwHPspq_VOjU-snO9EUfJj-vVow,406
+aws_cdk/aws_kafkaconnect/_jsii/aws-kafkaconnect@1.181.1.jsii.tgz,sha256=4_pqbC-UJpYkGqo4qLz8lz79NAnNMXAfGIjmEqNfiGE,56366
+aws_cdk.aws_kafkaconnect-1.181.1.dist-info/LICENSE,sha256=wX3LqRrxZ97zcDpw0dQ58Zb9AQalEDmXs6nP39muv7o,11391
+aws_cdk.aws_kafkaconnect-1.181.1.dist-info/METADATA,sha256=wkQfVsmqdOTohRqnzqBHCCZN0RB97wsHXIk7UCZmFm4,3163
+aws_cdk.aws_kafkaconnect-1.181.1.dist-info/NOTICE,sha256=piksgoXop22-zO1J9i3rVrv57wUN9siPK1pqGzZ7-AE,113
+aws_cdk.aws_kafkaconnect-1.181.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aws_cdk.aws_kafkaconnect-1.181.1.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_kafkaconnect-1.181.1.dist-info/RECORD,,
