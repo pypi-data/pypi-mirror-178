@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pytest-failed-screen-record
+Version: 0.1.0
+Summary: 
+Author: Keisuke Shima
+Author-email: 19993104+KeisukeShima@users.noreply.github.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: PyAutoGUI (>=0.9.53,<0.10.0)
+Requires-Dist: numpy (>=1.23.5,<2.0.0)
+Requires-Dist: opencv-python (>=4.6.0,<5.0.0)
+Requires-Dist: pytest (>=7.2.0,<8.0.0)
