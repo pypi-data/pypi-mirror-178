@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: ivextendedjson
+Version: 0.1.0
+Summary: 
+Author: Isaac Vidas
+Author-email: 422739+kazuar@users.noreply.github.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
