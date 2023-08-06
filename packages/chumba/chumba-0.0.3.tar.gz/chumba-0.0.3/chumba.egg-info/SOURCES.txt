@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+chumba.egg-info/PKG-INFO
+chumba.egg-info/SOURCES.txt
+chumba.egg-info/dependency_links.txt
+chumba.egg-info/top_level.txt
+src/__init__.py
+src/parss.py
+src/statistic.py
+src/utils.py
+src/word.py
+src/words.py
