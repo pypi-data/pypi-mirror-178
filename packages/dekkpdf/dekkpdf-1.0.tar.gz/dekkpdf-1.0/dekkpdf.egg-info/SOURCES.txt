@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+dekkpdf/__init__.py
+dekkpdf/pdf2text.py
+dekkpdf.egg-info/PKG-INFO
+dekkpdf.egg-info/SOURCES.txt
+dekkpdf.egg-info/dependency_links.txt
+dekkpdf.egg-info/top_level.txt
