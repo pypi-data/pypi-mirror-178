@@ -1,0 +1,13 @@
+SSG/ssg.py,sha256=fEaPcNNCa7E4FUu4RYG6R9zGN8uLVjAgQ4tIqVE5YfE,2540
+SSG/tests/ssgTests.py,sha256=M_e_J2b4MaRxdeq83JRYCIoZ1V6VsO7YhIKEZpEIxPU,2356
+SSG/tests/testFiles/test1.txt,sha256=TmMW2QtlwRtVWcrmZ0YDxpqhTAZD4sIaNLOXZ8RdaLo,21
+SSG/tests/testFiles/test2.md,sha256=0xaQ_xr_z5miZG6SnmxmrJ7TZaGOq_vzi3Hqt3oYIVs,23
+SSG/tests/testFiles/testEmp.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+SSG/utils/help.py,sha256=V4W7f9JT6D05VR5p9mvxeJe4C6LFocg4C8f_CcZSIyg,565
+SSG/utils/input.py,sha256=-Op2QsuPdlY-SmhXk5niJ-LFwChKFBNVwyBAbQjpXxU,7023
+SSG/utils/version.py,sha256=MWTrCzcZPDIQ0B9lTUb79PsGqanQnR5McCCOUlJYscE,118
+pdrozd_ssg-1.0.14.dist-info/entry_points.txt,sha256=LUOl3DMQy8WOCsbGLlMf8xvkE4TP62Tsbvg6dlIxpPo,38
+pdrozd_ssg-1.0.14.dist-info/METADATA,sha256=fyoOrgsJIkP4s8xmd-DeEaXf8X6z1P3s6FIYvQiCXWg,1961
+pdrozd_ssg-1.0.14.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pdrozd_ssg-1.0.14.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+pdrozd_ssg-1.0.14.dist-info/RECORD,,
