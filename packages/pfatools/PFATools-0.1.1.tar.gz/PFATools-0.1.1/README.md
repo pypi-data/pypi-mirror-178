@@ -1,0 +1,45 @@
+# PFATools
+PFATools is a collection of tools used for teaching python through API requests and data exploration. It is written in Python and is available under the MIT license.
+
+You need Python 3.8 or higher to run PFATools.
+### Contents
+- [PFATools](#pfatools)
+    - [Contents](#contents)
+    - [Installation](#installation)
+    - [API Tools](#api-tools)
+      - [Name Predictions](#name-predictions)
+      - [Random Person](#random-person)
+
+
+
+
+### Installation
+Use pip to pull from the PyPi repository:
+```bash
+pip install pfatools
+```
+### API Tools
+#### Name Predictions
+Can predict various things through a single name. Returns the raw JSON response from the API.
+```python
+from pfatools import *
+name = "John"
+age_response = age_predictor(name)
+gender_response = gender_predictor(name)
+nationality_response = nationality_predictor(name)
+```
+The only argument for these functions are ```name```
+
+#### Random Person
+Returns random person data. Returns the raw JSON response from the API.
+```python
+from pfatools import *
+person = randomPerson()
+data = person.data
+```
+*Arguments:*
+| Argument | Type | Description |
+| --- | --- | --- |
+| amount | int | amount of people to generate. default: 1 (>= 1) |
+| defer | bool | whether to defer the request or not. default: False |
+
