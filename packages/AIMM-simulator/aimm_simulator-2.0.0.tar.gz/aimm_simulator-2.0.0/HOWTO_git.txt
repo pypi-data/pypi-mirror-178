@@ -1,0 +1,9 @@
+# Keith Briggs 2022-11-14
+# https://githubtraining.github.io/training-manual/#/06_working_locally
+
+vi README.md 
+git add README.md 
+git commit -m 'Image in README.md'
+git push origin main
+Username for 'https://github.com': keithbriggs
+Password for 'https://keithbriggs@github.com': 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
