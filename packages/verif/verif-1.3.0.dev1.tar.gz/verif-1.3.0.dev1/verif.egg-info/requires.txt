@@ -1,0 +1,14 @@
+numpy>=1.7
+matplotlib
+scipy
+netCDF4
+six
+future
+
+[cartopy]
+cartopy
+
+[test]
+coverage
+pep8
+pylint
