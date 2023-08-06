@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: otxmpa
+Version: 0.3.0
+Summary: Model Preperation Algorithms
+Home-page: https://github.com/openvinotoolkit/model_preparation_algorithm
+License-File: LICENSE
+Requires-Dist: mmcv-full (>=1.3.1)
+Requires-Dist: mmcls (==0.15.0)
+Requires-Dist: scipy (>=1.5.4)
+Requires-Dist: pandas (>=1.1.5)
+Requires-Dist: pillow (>=9.0.1)
+Requires-Dist: networkx (<=2.8.0,>=2.7.1)
+Requires-Dist: defusedxml (>=0.7.1)
+Requires-Dist: tensorboard (>=2.4.1)
+Requires-Dist: scikit-image (>=0.17.2)
+Requires-Dist: torch (<=1.9.1,>=1.8.1)
+Requires-Dist: torchvision (<=0.10.1,>=0.8.1)
+
+Temporary PyPI packaging. Project to be merged into OpenVINO Training Extension
