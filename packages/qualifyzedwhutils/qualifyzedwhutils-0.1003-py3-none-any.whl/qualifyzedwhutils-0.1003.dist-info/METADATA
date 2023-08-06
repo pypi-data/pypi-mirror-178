@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: qualifyzedwhutils
+Version: 0.1003
+Summary: Library containing the personalized utils for the DWH of Qualifyze
+Home-page: http://qualifyze.com
+Author: Moise O. Romaniuc Demeter
+Author-email: moise.romaniuc@qualifyze.com
+License: MIT
+Keywords: Library containing the personalized utils for the DWH of Qualifyze
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: BSD License
+License-File: LICENSE.txt
+
+UNKNOWN
+
