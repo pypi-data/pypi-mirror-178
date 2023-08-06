@@ -1,0 +1,3 @@
+[console_scripts]
+asvc=asvc.cli:cli
+
