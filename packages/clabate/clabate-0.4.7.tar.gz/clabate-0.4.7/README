@@ -1,0 +1,153 @@
+=======================================================
+Clabate: minimalistic class-based templates for Python.
+=======================================================
+
+Clabate is a minimalistic template system for Python language.
+
+Clabate does not offer yet another mini-language for templates.
+It is based on class hierarchy and PEP 3101 string formatting.
+Everything is declared in Python, natively.
+In the very basic layer Clabate implements bare textual templates which can be used,
+for example, to generate configuration files.
+And that basic layer is extended by MarkupTemplate, which escapes everything by default,
+trying to minimize chances to overlook unescaped substitutions.
+
+Example:
+
+.. code:: python
+
+    from clabate import MarkupTemplate, Markup
+    from datetime import datetime
+
+    class HtmlPage(MarkupTemplate):
+        html = Markup('''
+            <html>
+            <head>
+                <title>{title}</title>
+            </head>
+            <body>
+                <header>
+                    {header}
+                </header>
+                <main>
+                    {main}
+                </main>
+                <footer>
+                    {footer}
+                </footer>
+            </body>
+            </html>
+        ''')
+
+    class MyPage(HtmlPage):
+        title = 'My web page'
+        header = 'Today is {now:%Y-%m-%d}'
+        main = '<<<Hello, world!>>>'
+        footer = Markup('<span style="color:grey">Here we go!</span>')
+
+        @property
+        def now(self, context):
+            return datetime.now()
+
+    my_page = MyPage()
+    context = my_page.render()
+    print(context.html)
+
+Output:
+
+.. code:: html
+
+    <html>
+    <head>
+        <title>My web page</title>
+    </head>
+    <body>
+        <header>
+            Today is 2022-06-29
+        </header>
+        <main>
+            &lt;&lt;&lt;Hello, world!&gt;&gt;&gt;
+        </main>
+        <footer>
+            <span style="color:grey">Here we go!</span>
+        </footer>
+    </body>
+    </html>
+
+Plain text example:
+
+.. code:: python
+
+    from clabate import Template
+    import time
+    from types import SimpleNamespace
+
+    class ZoneFileBoilerplate(Template):
+
+        zone_config = '''
+            $TTL    3600
+            @   IN  SOA (
+                        {primary_ns.hostname}.{idna_domain}.  ; MNAME
+                        {rname}  ; RNAME
+                        {timestamp}  ; SERIAL
+                        3600  ; REFRESH
+                        60    ; RETRY
+                        1W    ; EXPIRY
+                        60    ; MINIMUM Negative Cache TTL
+                        )
+            {nameservers}
+            {resource_records}
+        '''
+
+        @property
+        def timestamp(self, context):
+            return int(time.time())
+
+        @property
+        def nameservers(self, context):
+            ns_template = self.dedent('''
+                @  IN  NS  {ns.hostname}.{idna_domain}.
+                {ns.hostname}  IN  A  {ns.ipv4_addr}
+            ''')
+            result = []
+            for ns in [self.primary_ns, self.secondary_ns]:
+                result.append(self.render_str(context, ns_template, ns=ns))
+            return ''.join(result)
+
+        resource_records = '''
+            @  IN  A   {main_server_ipv4}
+            *  IN  A   {main_server_ipv4}
+        '''
+
+    class DeclassedZone(ZoneFileBoilerplate):
+
+        primary_ns = SimpleNamespace(hostname='ns1', ipv4_addr='1.2.3.4')
+        secondary_ns = SimpleNamespace(hostname='ns2', ipv4_addr='5.6.7.8')
+
+
+    my_zone = DeclassedZone(idna_domain='declassed.art', rname='axy.{idna_domain}.')
+    context = my_zone.render(main_server_ipv4='9.10.11.12')
+    print(context.zone_config)
+
+Output:
+
+.. code::
+
+    $TTL    3600
+    @   IN  SOA (
+                ns1.declassed.art.  ; MNAME
+                axy.declassed.art.  ; RNAME
+                1656230266  ; SERIAL
+                3600  ; REFRESH
+                60    ; RETRY
+                1W    ; EXPIRY
+                60    ; MINIMUM Negative Cache TTL
+                )
+    @  IN  NS  ns1.declassed.art.
+    ns1  IN  A  1.2.3.4
+    @  IN  NS  ns2.declassed.art.
+    ns2  IN  A  5.6.7.8
+    @  IN  A   9.10.11.12
+    *  IN  A   9.10.11.12
+
+Read more: https://declassed.art/en/blog/2022/06/29/clabate-class-based-templates
