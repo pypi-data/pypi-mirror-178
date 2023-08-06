@@ -1,0 +1,5 @@
+transcription_factor_prediction-0.1.0.dist-info/METADATA,sha256=k_kdbrO9ub6rKBw42AnU2y8DoyDQ8ZN855Mmwwm55b0,280
+transcription_factor_prediction-0.1.0.dist-info/WHEEL,sha256=SdY3KUoXCjhboIdoD9WgILQPam7PpiIwtANKHgDJlLM,95
+tfp/__init__.py,sha256=FZGjzroNVHSZBUUmhOl9H5auhcaGJtGxVYoKtD7rIWU,95
+tfp/tfp.cp38-win_amd64.pyd,sha256=WeGBLvLOFIiZRqxLDYwZOxscCIQ6vn0MZMU6aRPtsyM,730112
+transcription_factor_prediction-0.1.0.dist-info/RECORD,,
