@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+instareset/__init__.py
+instareset/client.py
+instareset/exceptions.py
+instareset.egg-info/PKG-INFO
+instareset.egg-info/SOURCES.txt
+instareset.egg-info/dependency_links.txt
+instareset.egg-info/requires.txt
+instareset.egg-info/top_level.txt
