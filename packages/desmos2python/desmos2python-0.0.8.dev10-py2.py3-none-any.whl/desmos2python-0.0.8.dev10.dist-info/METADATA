@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: desmos2python
+Version: 0.0.8.dev10
+Summary: seamless conversion between Desmos LaTeX equations &amp; executable Python code.
+Author-email: Robert Ahlroth Capps <rcapps@teladochealth.com>
+Project-URL: Homepage, https://github.com/rocapp/desmos2python
+Project-URL: Bug Tracker, https://github.com/rocapp/desmos2python/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: setuptools (>=35.0.2)
+Requires-Dist: setuptools-scm (<3,>=2.0.0)
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: jinja2
+Requires-Dist: sympy
+Requires-Dist: antlr4-python3-runtime (==4.10)
+Requires-Dist: selenium
+
+# desmos2python
+seamless conversion between Desmos LaTeX equations &amp; executable Python code.
