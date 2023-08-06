@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: datapackutils
+Version: 0.0.1
+Summary: Utility functions for creating Minecraft datapacks.
+Home-page: https://github.com/legopitstop/datapackutils
+Author: Legopitstop
+Author-email: officiallegopitstop@gmail.com
+License: MIT
+Keywords: minecraft,datapack,util
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# datapackutils - 1.0.0
+
+
+## What is this?
+
+Utility functions for creating Minecraft datapacks.
+
+## Install
+
+`pip install datapackutils`
+
+## License
+
+MIT License

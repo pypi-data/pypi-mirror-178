@@ -1,0 +1,13 @@
+LICENSE.md
+README.md
+setup.cfg
+setup.py
+datapackutils/__init__.py
+datapackutils/commands.py
+datapackutils/constants.py
+datapackutils/nbt.py
+datapackutils/tools.py
+datapackutils.egg-info/PKG-INFO
+datapackutils.egg-info/SOURCES.txt
+datapackutils.egg-info/dependency_links.txt
+datapackutils.egg-info/top_level.txt
