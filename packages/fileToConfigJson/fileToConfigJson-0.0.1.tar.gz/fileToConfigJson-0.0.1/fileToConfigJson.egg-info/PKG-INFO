@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: fileToConfigJson
+Version: 0.0.1
+Summary: Convert any file into config file and return as dictionary/json
+Author: shashi_as_redpanda (Shashi Bhagat)
+Author-email: <skujur871@gmail.com>
+Keywords: python,dotenv,.env,convert file to env,env,env to dict,env to json,envToJson
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# fileToConfig
+Use any file as a config file. 

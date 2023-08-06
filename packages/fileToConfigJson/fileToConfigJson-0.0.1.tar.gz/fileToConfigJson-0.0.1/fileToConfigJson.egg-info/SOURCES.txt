@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+fileToConfig/__init__.py
+fileToConfig/convert.py
+fileToConfigJson.egg-info/PKG-INFO
+fileToConfigJson.egg-info/SOURCES.txt
+fileToConfigJson.egg-info/dependency_links.txt
+fileToConfigJson.egg-info/top_level.txt
