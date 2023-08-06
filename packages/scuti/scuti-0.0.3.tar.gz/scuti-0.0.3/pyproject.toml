@@ -1,0 +1,44 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "scuti"
+version = "0.0.3"
+authors = [
+    { name = "Joan Valduvieco", email = "jvalduvieco@gmail.com" },
+]
+description = "A simple backend framework for building complex web applications. Inspired in CQS and DDD"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "injector ==0.20.1",
+    "plum-dispatch==1.7.4",
+    "uuid==1.30"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Environment :: Web Environment",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Topic :: Software Development :: Libraries :: Application Frameworks"
+]
+[tool.hatch.build.targets.sdist]
+exclude = [
+    "/.github",
+    "/examples",
+    "/docs",
+    "/test",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["scuti"]
+
+[publish.index.repos.private]
+url = "https://test.pypi.org/legacy/"
+
+[project.urls]
+"Homepage" = "https://github.com/jvalduvieco/scuti"
+"Bug Tracker" = "https://github.com/jvalduvieco/scuti/issues"
