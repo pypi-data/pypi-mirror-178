@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: eip712-clearsign
+Version: 1.1.1
+Summary: Parse eip712 clear sign descriptors
+Home-page: https://github.com/LedgerHQ/python-eip712
+Author: Ledger
+Author-email: hello@ledger.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# python-eip712
+
+Parse eip712 clear sign descriptors.
