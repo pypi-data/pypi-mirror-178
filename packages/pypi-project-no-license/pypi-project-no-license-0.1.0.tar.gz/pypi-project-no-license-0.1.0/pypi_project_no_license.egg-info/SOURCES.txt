@@ -1,0 +1,7 @@
+setup.py
+./src/pypi_project_no_license/__init__.py
+pypi_project_no_license.egg-info/PKG-INFO
+pypi_project_no_license.egg-info/SOURCES.txt
+pypi_project_no_license.egg-info/dependency_links.txt
+pypi_project_no_license.egg-info/not-zip-safe
+pypi_project_no_license.egg-info/top_level.txt
