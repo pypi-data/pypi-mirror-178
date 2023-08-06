@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+pynhanes.egg-info/PKG-INFO
+pynhanes.egg-info/SOURCES.txt
+pynhanes.egg-info/dependency_links.txt
+pynhanes.egg-info/entry_points.txt
+pynhanes.egg-info/requires.txt
+pynhanes.egg-info/top_level.txt
