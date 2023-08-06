@@ -1,0 +1,16 @@
+cmif/__init__.py,sha256=dnVdTy9_u5jwfPE_S-wFZWpxCymAFYH4U_TL82PMcp4,436
+cmif/__main__.py,sha256=gbUXYeGrcrqcOc70BjFtxHtBnwSqor-SlWYgZjypEOA,47
+cmif/build.py,sha256=fVahqxUt0wkO46UZIoWcSskYTCCCEkSJBSSz8U3kboE,14188
+cmif/demo.py,sha256=BxVTnln4r9k73ukLcjSr-Nz1oDsjPNvOB1y396e3XUg,552
+cmif/extract.py,sha256=_M-iS5x3bvklzR2eUxn0H3RiBmxz0Bj5orvibb7bEA8,8090
+cmif/local.py,sha256=uFTYNYTEeI6YiqQtJ9VMuPESBaUOQ36StMSYwpyGpqs,711
+cmif/model.py,sha256=yrbXBb1GECco-9hinmAb6s8jmAkWJn7GjTRrXJIJ-lY,881
+cmif/retrieve.py,sha256=yNZzlWTy-creMwGMZDkarO25ytjCo0iPyuhZvlRkyzo,1379
+cmif/service.py,sha256=bAhXFxinks9wsHj-HQrPXWvVip8sgKLRTxDDi01trF8,3780
+cmif/authority/__init__.py,sha256=_qRYjM--juYXNMMo5b3d4HQqz-QFGR2Ru7MvGUtRXrw,71
+cmif/authority/geonames.py,sha256=1ObrmEBmqTFC2jY1pigpj27l2a5K4TgNjWp_iE1qV_g,3845
+cmif-2022.11.27.dist-info/LICENSE,sha256=WCH8oT-zi2hA4pbPorAlhOlZOgVqrkIQ3tWadI7cV1k,1080
+cmif-2022.11.27.dist-info/METADATA,sha256=MNcEDCjANrrgWvv1VxnO8b81CbGjrCud895lVOrRVAg,2058
+cmif-2022.11.27.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+cmif-2022.11.27.dist-info/top_level.txt,sha256=-g-aRpjuXpiojZoILcdK9XGLFr_fzj7KgqxE9EiBrVQ,5
+cmif-2022.11.27.dist-info/RECORD,,
