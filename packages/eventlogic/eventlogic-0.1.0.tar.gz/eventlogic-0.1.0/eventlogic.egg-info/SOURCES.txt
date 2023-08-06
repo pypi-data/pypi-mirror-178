@@ -1,0 +1,9 @@
+README.md
+setup.py
+eventlogic.egg-info/PKG-INFO
+eventlogic.egg-info/SOURCES.txt
+eventlogic.egg-info/dependency_links.txt
+eventlogic.egg-info/requires.txt
+eventlogic.egg-info/top_level.txt
+tests/__init__.py
+tests/test_EventLogic.py
