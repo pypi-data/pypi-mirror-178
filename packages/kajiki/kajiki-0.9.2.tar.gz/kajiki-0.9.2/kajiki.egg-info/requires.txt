@@ -1,0 +1,8 @@
+linetable
+
+[docs]
+sphinx
+
+[testing]
+babel
+pytest
