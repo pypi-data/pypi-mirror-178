@@ -1,0 +1,11 @@
+LICENSE.md
+README.md
+setup.py
+lopc/__init__.py
+lopc/__main__.py
+lopc/lopc.py
+lopc.egg-info/PKG-INFO
+lopc.egg-info/SOURCES.txt
+lopc.egg-info/dependency_links.txt
+lopc.egg-info/entry_points.txt
+lopc.egg-info/top_level.txt
