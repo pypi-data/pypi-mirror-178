@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/lamineml_root/__init__.py
+src/lamineml_root/lamine.py
+src/pykivy.egg-info/PKG-INFO
+src/pykivy.egg-info/SOURCES.txt
+src/pykivy.egg-info/dependency_links.txt
+src/pykivy.egg-info/top_level.txt
