@@ -1,0 +1,3 @@
+node: duckietown_simulator_gym.GymDuckiebotSimulator
+protocol: aido_schemas.protocol_simulator_DB20_timestamps
+config: {}
