@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: excelParse
+Version: 1.0.1
+Summary: Used for KCmetadata.xls Parsing
+Home-page: https://gitee.com/ganjun87/excel-parse.git
+Author: ganjun
+Author-email: ganjun@alumni.hust.edu.cn
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: pip,excelParse
+Platform: UNKNOWN
