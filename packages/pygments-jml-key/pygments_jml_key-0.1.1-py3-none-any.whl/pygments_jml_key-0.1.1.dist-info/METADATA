@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pygments-jml-key
+Version: 0.1.1
+Summary: Pygments lexer for the Java Modeling Language and KeY Theorem Prover files
+Author-email: Alexander Weigl <weigl@kit.edu>
+Project-URL: Homepage, https://github.com/wadoon/pygments-jml-key
+Project-URL: Bug Tracker, https://github.com/wadoon/pygments-jml-key/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Pygments
+Requires-Dist: antlr4-python3-runtime
+
+# Pygments lexer for the Java Modeling Language and KeY Theorem Prover files
