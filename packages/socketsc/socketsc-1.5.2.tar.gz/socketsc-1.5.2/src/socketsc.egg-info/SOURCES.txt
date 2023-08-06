@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+src/socketsc/__init__.py
+src/socketsc/client.py
+src/socketsc/constants.py
+src/socketsc/logger.py
+src/socketsc/server.py
+src/socketsc/utils.py
+src/socketsc/version.py
+src/socketsc.egg-info/PKG-INFO
+src/socketsc.egg-info/SOURCES.txt
+src/socketsc.egg-info/dependency_links.txt
+src/socketsc.egg-info/top_level.txt
