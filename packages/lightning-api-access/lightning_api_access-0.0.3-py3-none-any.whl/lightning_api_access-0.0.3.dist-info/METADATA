@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: lightning-api-access
+Version: 0.0.3
+Summary: ⚡ API Access UI ⚡
+Home-page: https://github.com/Lightning-AI/LAI-API-Access-UI-Component
+Author: Lightning et al.
+Author-email: ethan@lightning.ai
+Keywords: lightning
+Requires-Python: >=3.7
+License-File: LICENSE
+
+⚡ Lightning Frontend Showing how a given API can be accessed ⚡
