@@ -1,0 +1,9 @@
+numpy
+scipy
+matplotlib
+natsort
+pynwb
+pyqt5
+pyqt5.sip
+pyqtgraph
+pyqtdarktheme
