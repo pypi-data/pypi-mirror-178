@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: smq
+Version: 0.0.6
+Summary: A package for smq server and client.
+Home-page: https://gitee.com
+Author: ZQX
+Author-email: 262293446@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+python3 -m pip install --user --upgrade setuptools wheel twine
+
+python3 setup.py sdist bdist_wheel
+
+python3 -m twine upload dist/*
+
+pip install tencentcloud-manager -U -i https://pypi.org/simple
