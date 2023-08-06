@@ -1,0 +1,10 @@
+litelearn/__init__.py,sha256=kU4zF4RteEhH90Jf3M7CpX5l7HGzPBjZ9f1N2vQJk5I,126
+litelearn/api.py,sha256=9eRoR-l2luQwsjoZ4tHk_6dokby3dspdN5xW6J4cwt4,3279
+litelearn/expo_ds.py,sha256=wD9Hz1UAlGC-neR4vx37ltrtUSzga5qW6H8qENSn2PI,3410
+litelearn/model_frame.py,sha256=v9zNbiV-UxEHctfm4Y8sd_536-NFFl7nB7mgE44_f-c,14936
+litelearn/residuals.py,sha256=JftFXDwIxM0ACDCNVX17EGuXKq7lTFa_FGqvACLAwbk,2911
+litelearn/train_frame.py,sha256=G-Goc48NiDtVEYgCoHQv4rtO02VAwO6F88WV847A19s,7406
+litelearn-0.1.1.dist-info/LICENSE,sha256=yKhsv-1hcc6HG76Zd1zXuNnG2xyssVmVQftYQmRQRv8,1091
+litelearn-0.1.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+litelearn-0.1.1.dist-info/METADATA,sha256=7ImgmI7yHxjzUwXrEHO0Dr8C9KxQFP_JbxyU9j6rZ_Q,1250
+litelearn-0.1.1.dist-info/RECORD,,
