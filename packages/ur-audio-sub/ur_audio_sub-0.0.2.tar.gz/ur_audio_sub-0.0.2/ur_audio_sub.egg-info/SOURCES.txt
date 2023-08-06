@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+ur_audio_sub/__init__.py
+ur_audio_sub/caption_generator.py
+ur_audio_sub.egg-info/PKG-INFO
+ur_audio_sub.egg-info/SOURCES.txt
+ur_audio_sub.egg-info/dependency_links.txt
+ur_audio_sub.egg-info/requires.txt
+ur_audio_sub.egg-info/top_level.txt
