@@ -1,0 +1,4 @@
+include README.md
+include LICENSE
+recursive-include vanillaframework *.py *.html
+recursive-include tests *
