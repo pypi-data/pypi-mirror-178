@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+src/pictureTextCrop.py
+src/model/Exif.py
+src/model/Installation.py
+src/model/__init__.py
+src/pictureTextCrop.egg-info/PKG-INFO
+src/pictureTextCrop.egg-info/SOURCES.txt
+src/pictureTextCrop.egg-info/dependency_links.txt
+src/pictureTextCrop.egg-info/requires.txt
+src/pictureTextCrop.egg-info/top_level.txt
+src/view/Images.py
+src/view/__init__.py

@@ -1,0 +1,24 @@
+[project]
+name    = "pictureTextCrop"
+version = "0.5.0"
+description     = "Interactive extraction of selected text from images and batch processing of stored image files."
+readme =  "README.md"
+requires-python   = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3.6",
+    "License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)",
+    "Operating System :: POSIX :: Linux",
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Legal Industry",
+    "Natural Language :: English",
+    "Topic :: Multimedia :: Graphics :: Graphics Conversion",
+    "Topic :: Office/Business" ]
+dependencies = ["Pillow", "PySide6", "exif", "exifread"]
+
+[metadata]
+author  = "George Keith Watson"
+author_email    = "keith.michael.collins@gmx.com"
+
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
