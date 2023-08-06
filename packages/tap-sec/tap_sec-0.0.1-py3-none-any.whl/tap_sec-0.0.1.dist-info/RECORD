@@ -1,0 +1,12 @@
+tap_sec/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tap_sec/client.py,sha256=MLPid8ezYsQiaCkkRP-TxyhOZYJOPiYqPrMNobh5Rh0,4036
+tap_sec/core_scraper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tap_sec/core_scraper/scraper.py,sha256=2hLBlICEACk3VfIyteer-VhoOe18d9SO_CkzRK2NRx8,1631
+tap_sec/streams.py,sha256=SeoTPBmZ3ep9-XD0fB1D698FywvGMe6kdokbOG4DH24,1002
+tap_sec/tap.py,sha256=JNvuUZN2Yk42Yer-bo7i7EetFSezfaVYV21qpniFzFc,804
+tap_sec/tests/__init__.py,sha256=pzWK8cUZJ09W5ZhMhkbhgsKrvvYGsvJ9F06CMhiJM1M,30
+tap_sec/tests/test_core.py,sha256=YQ2CvPg8Ds4nTjZXKejkBTGkoF3CXgf89f-rd6sw6sU,647
+tap_sec-0.0.1.dist-info/entry_points.txt,sha256=XA3YvCDmX2ZNbwunEEn7ypfmOr8PjAl4lkn5k_4yySw,50
+tap_sec-0.0.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+tap_sec-0.0.1.dist-info/METADATA,sha256=GFJDzLKqbCTcEY_UN6hZJgc4dg_3zTxsWPoCm_bvsLM,791
+tap_sec-0.0.1.dist-info/RECORD,,
