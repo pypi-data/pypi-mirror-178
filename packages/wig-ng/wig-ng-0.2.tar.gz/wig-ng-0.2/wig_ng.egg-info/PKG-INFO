@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: wig-ng
+Version: 0.2
+Summary: WIG-ng is a free and open source utility for WiFi device fingerprinting.
+Home-page: https://github.com/6e726d/wig-ng
+Download-URL: https://github.com/6e726d/wig-ng/archive/refs/tags/0.2.tar.gz
+Author: Andres Blanco
+Author-email: 6e726d@gmail.com
+License: GPLv2
+Platform: Unix
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
