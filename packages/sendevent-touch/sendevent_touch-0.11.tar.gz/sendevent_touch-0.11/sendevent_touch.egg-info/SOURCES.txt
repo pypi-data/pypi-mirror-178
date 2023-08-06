@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+sendevent_touch/LICENSE
+sendevent_touch/README.MD
+sendevent_touch/__init__.py
+sendevent_touch/requirements.txt
+sendevent_touch/thirdparty.json
+sendevent_touch.egg-info/PKG-INFO
+sendevent_touch.egg-info/SOURCES.txt
+sendevent_touch.egg-info/dependency_links.txt
+sendevent_touch.egg-info/requires.txt
+sendevent_touch.egg-info/top_level.txt
