@@ -1,0 +1,9 @@
+toml
+pymongo<4.0,>=3.10.0
+dnspython>=2.0.0
+mongoengine
+mongomock
+web3>=5.28.0
+pydantic>=1.8.0
+python-dotenv
+requests
