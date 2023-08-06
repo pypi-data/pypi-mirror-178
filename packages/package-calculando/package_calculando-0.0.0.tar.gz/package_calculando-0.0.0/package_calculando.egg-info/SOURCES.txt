@@ -1,0 +1,8 @@
+README.md
+setup.py
+package_calculando/__init__.py
+package_calculando/calculos_basicos.py
+package_calculando.egg-info/PKG-INFO
+package_calculando.egg-info/SOURCES.txt
+package_calculando.egg-info/dependency_links.txt
+package_calculando.egg-info/top_level.txt
