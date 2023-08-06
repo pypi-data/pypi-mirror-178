@@ -1,0 +1,7 @@
+sys>=1.0
+pyranges>=0.0.117
+csv>=1.0
+pyfaidx>=0.7.1
+pandas>=1.3.5
+copy>=1.0
+easyterm>=1.0
