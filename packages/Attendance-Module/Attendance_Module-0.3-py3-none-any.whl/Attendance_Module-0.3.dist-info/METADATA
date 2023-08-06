@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: Attendance-Module
+Version: 0.3
+Summary: An Attendance webapp component created for the CSCN73030 at Conestoga College, Ontario, Canada
+Home-page: https://github.com/CSCN73030-projectv-group9/Attendance
+Author: Emil Harvey
+Author-email: eharvey3704@conestogac.on.ca
+Project-URL: Bug Reports, https://github.com/CSCN73030-projectv-group9/Attendance/issues
+Project-URL: Source, https://github.com/CSCN73030-projectv-group9/Attendance
+Requires-Python: >=3.7, <4
+Description-Content-Type: text/markdown
+Requires-Dist: flask
+Requires-Dist: pydantic
+Requires-Dist: flask-cors
+Requires-Dist: gitpython
+Requires-Dist: pyyaml
+Requires-Dist: requests
+Provides-Extra: test
+Requires-Dist: coverage ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+
+[![Python application](https://github.com/CSCN73030-projectv-group9/Attendance/actions/workflows/pytest.yml/badge.svg?branch=main)](https://github.com/CSCN73030-projectv-group9/Attendance/actions/workflows/pytest.yml)
+
+# Introduction 
+TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
