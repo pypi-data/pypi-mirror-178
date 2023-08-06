@@ -1,0 +1,78 @@
+# dressuplite
+**dressuplite** is a Python 3.11 package to convert strings to use Unicode formatting. It can for instance replace "words" into "𝔴𝔬𝔯𝔡𝔰", "🆆🅾🆁🅳🆂", and "𝔀𝓸𝓻𝓭𝓼". It is a lightweight fork of the original package [`dressup`](https://github.com/paw-lu/dressup/) without any third-party runtime dependencies.
+
+As a disclaimer, this package has no association with `dressup`.
+
+[![cicd badge](https://github.com/impredicative/dressuplite/workflows/cicd/badge.svg?branch=master)](https://github.com/impredicative/dressuplite/actions?query=workflow%3Acicd+branch%3Amaster)
+
+
+## Links
+| Caption   | Link                                                  |
+|-----------|-------------------------------------------------------|
+| Repo      | https://github.com/impredicative/dressuplite/         |
+| Changelog | https://github.com/impredicative/dressuplite/releases |
+| Package   | https://pypi.org/project/dressuplite/                 |
+
+
+## Development
+For software development purposes only, the project can be set up on Ubuntu as below.
+```bash
+make setup-ppa
+make install-py
+make setup-venv
+source ./venv/bin/activate
+make install
+make test
+```
+
+## Installation
+Python ≥3.11 is required due to the use of [`tomllib`](https://docs.python.org/3/library/tomllib.html). This is due ot the use of TOML in the original package.
+
+To install, run:
+
+    $ pip install dressuplite
+
+## Usage
+To convert characters:
+```python
+>>> import dressuplite
+
+>>> dressuplite.convert("Hello", unicode_type="negative circle")
+'🅗🅔🅛🅛🅞'
+```
+
+To show all possible conversions:
+```python
+>>> import dressuplite
+
+>>> for unicode_type, text in dressuplite.show_all("Hello").items():
+...     print(f'{unicode_type.lower()}: {text}')
+... 
+circle: Ⓗⓔⓛⓛⓞ
+negative circle: 🅗🅔🅛🅛🅞
+monospace: Ｈｅｌｌｏ
+math bold: 𝐇𝐞𝐥𝐥𝐨
+math bold fraktur: 𝕳𝖊𝖑𝖑𝖔
+math bold italic: 𝑯𝒆𝒍𝒍𝒐
+math bold script: 𝓗𝓮𝓵𝓵𝓸
+math double struck: ℍ𝕖𝕝𝕝𝕠
+math monospace: 𝙷𝚎𝚕𝚕𝚘
+math sans: 𝖧𝖾𝗅𝗅𝗈
+math sans bold: 𝗛𝗲𝗹𝗹𝗼
+math sans bold italic: 𝙃𝙚𝙡𝙡𝙤
+math sans italic: 𝘏𝘦𝘭𝘭𝘰
+parenthesized: ⒣⒠⒧⒧⒪
+square: 🄷🄴🄻🄻🄾
+negative square: 🅷🅴🅻🅻🅾
+cute: Héĺĺő
+math fraktur: ℌ𝔢𝔩𝔩𝔬
+rock dots: Ḧëḷḷö
+small caps: ʜᴇʟʟᴏ
+stroked: Ħɇłłø
+subscript: ₕₑₗₗₒ
+superscript: ᴴᵉˡˡᵒ
+inverted: ɥǝןןo
+reversed: Hɘ⅃⅃o
+```
+
+Character mappings are precomputed and defined in [`translator.toml`](dressuplite/translator.toml).
