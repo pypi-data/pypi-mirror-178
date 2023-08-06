@@ -1,0 +1,6 @@
+numpy
+xarray
+netcdf4
+holoviews
+scipy
+tomli
