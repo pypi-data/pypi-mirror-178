@@ -1,0 +1,14 @@
+uniport/__init__.py,sha256=BBmIcBDv8jqxCvUu3PYftkRjhipL2NBqkmHudkRKauw,275
+uniport/data_loader.py,sha256=RhTmeF3yP-QmK94NTRPM2spItJJ_6KbyQ9Tgy3smHVw,8293
+uniport/function.py,sha256=M7DrgA3OEBWtzlKszt2_ezuz8__62w65FE1o29P7a9w,20794
+uniport/logger.py,sha256=1EIygsVTLEAVeCImdgeREvWmypSZxQs46kkkdAb4zbc,652
+uniport/metrics.py,sha256=7wLuGE_wShskr6CMPt7wsZXvlAiw3IR5T0WfcbXunQI,4186
+uniport/model/__init__.py,sha256=sO0e3M-Kwr8Dl2qQ2sA5ib8raRiqFxfuex9fMQcS1ec,39
+uniport/model/layer.py,sha256=UpnCcQyq6jCTLwOvSszrHiJbb91Mp03nzSM8fDlbdGU,6705
+uniport/model/loss.py,sha256=e0_QCmEuHfHwQ3l_54P9-dB8XAziVX5i7xpFhoQDi-8,4933
+uniport/model/utils.py,sha256=FfOcE6tCOzLtNexmy7FQnVuULJ4lvoH9rX330NV1L6w,2214
+uniport/model/vae.py,sha256=WL5rE1x3Dz-Gp8DMydmOjAxBgh9Ob4M-cEmRbLKfeoc,22500
+uniport-1.1.2.dist-info/METADATA,sha256=tRUt3UtgQtbmmaRjbNtHdtOjn9Bqs2BQAkcA9p8tK4w,615
+uniport-1.1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+uniport-1.1.2.dist-info/top_level.txt,sha256=OqYp-kVxKOsrFO4kFvSCX9jXo8T5Xax16017LXnNmYE,8
+uniport-1.1.2.dist-info/RECORD,,
