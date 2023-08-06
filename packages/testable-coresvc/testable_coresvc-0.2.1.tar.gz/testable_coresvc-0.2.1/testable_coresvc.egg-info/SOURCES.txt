@@ -1,0 +1,9 @@
+setup.py
+testable_coresvc/__init__.py
+testable_coresvc/app.py
+testable_coresvc/settings.py
+testable_coresvc.egg-info/PKG-INFO
+testable_coresvc.egg-info/SOURCES.txt
+testable_coresvc.egg-info/dependency_links.txt
+testable_coresvc.egg-info/requires.txt
+testable_coresvc.egg-info/top_level.txt
