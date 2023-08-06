@@ -1,0 +1,26 @@
+class RangeCompress(th.nn.Module):
+    ...
+
+    def __init__(self, Na, Nr, Tp, Fsr, Kr, Fc, trainable=True, dtype=th.float32):
+        ...
+
+    def forward(self, X):
+        ...
+
+class AzimuthCompress(th.nn.Module):
+    ...
+
+    def __init__(self, Na, Nr, Tp, Fsa, Ka, Fc, trainable=True, dtype=th.float32):
+        ...
+
+    def forward(self, X):
+        ...
+
+class AzimuthCompressLinearFit(th.nn.Module):
+    ...
+
+    def __init__(self, Na, Nr, Tp, Fsa, Ka, Fc, trainable=True, dtype=th.float32):
+        ...
+
+    def forward(self, X):
+

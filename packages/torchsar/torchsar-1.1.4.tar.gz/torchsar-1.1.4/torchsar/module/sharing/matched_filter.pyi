@@ -1,0 +1,26 @@
+class RangeMatchedFilter(th.nn.Module):
+    ...
+
+    def __init__(self, Na, Tp, Fsr, Kr, Fc, trainable=True, dtype=th.float64):
+        ...
+
+    def forward(self):
+        ...
+
+class AzimuthMatchedFilter(th.nn.Module):
+    ...
+
+    def __init__(self, Nr, Tp, Fsa, Ka, Fc, trainable=True, dtype=th.float32):
+        ...
+
+    def forward(self):
+        ...
+
+class AzimuthMatchedFilterLinearFit(th.nn.Module):
+    ...
+
+    def __init__(self, Nr, Tp, Fsa, Ka, Fc, trainable=True, dtype=th.float32):
+        ...
+
+    def forward(self):
+
