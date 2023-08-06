@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: emva1288
+Version: 1.0.0
+Summary: EMVA1288 reference implementation
+Home-page: https://github.com/EMVA1288/emva1288
+Author: Federico Ariza
+Author-email: ariza.federico@gmail.com
+License: GNU General Public License v3.0
+Keywords: sensors,cameras,industrial,standard
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pillow
+Requires-Dist: lxml
+Requires-Dist: scipy
+Requires-Dist: jinja2
+Provides-Extra: doc
+Requires-Dist: sphinx ; extra == 'doc'
+Requires-Dist: sphinx-rtd-theme ; extra == 'doc'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-flake8 ; extra == 'tests'
+
+EMVA1288
+========
+
+The EMVA1288 module is a Python package to process and print results of an
+EMVA1288 tests.
+
+This is the reference implementation for the EMVA1288 Standard for
+Measurement and Presentation of Specifications for Machine Vision
+Sensors and Cameras.
+
++------------------+------------------+
+| Software version | Standard version |
++==================+==================+
+| Master           | 4.0              |
++------------------+------------------+
+| 1.*.*            | 4.0              |
++------------------+------------------+
+| 0.6.*            | 3.1              |
++------------------+------------------+
+| 0.5.*            | 3.1              |
++------------------+------------------+
+
+Please visit `Emva1288
+Website <http://www.emva.org/standards-technology/emva-1288/>`__ for information
+and latest releases of the standard.
+
+.. end_of_package_description
+
+Documentation
+-------------
+For more information visit `the documentation page
+<http://emva1288.readthedocs.io/en/latest/>`__.
