@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: Vstore
+Version: 0.1.0
+Summary: variable save/load package by Point from Symbs Studios
+Author-email: Point Symbs <point.symbs@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Description
+
+Variable-Store is a simple Package intended to be used to store dictionaries of 
+either single or multiple variables, these being either int, str or bytes,
+it stores these as encoded binary within a files with both a custom filename and encoding
+
+# usage examples:
+   saving:
+
+       var_write_normalized("yes.txt", save_data)
+   loading:
+
+       save_data = var_read_normalized("yes.txt")
+
+# data format example:
+  
+    varables_to_save = {
+    "var1": "7X4554",
+    "var2": 765,
+    "var3": b"8|=5235jda2"
+    }
+
+    variables_loaded = {
+    "var1": "7X4554",
+    "var2": 765,
+    "var3": b"8|=5235jda2"
+    }
