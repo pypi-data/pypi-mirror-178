@@ -1,0 +1,11 @@
+biopython
+python-igraph
+networkx
+scipy
+numpy
+pandas
+tqdm
+click
+pysam
+more-itertools
+gurobipy
