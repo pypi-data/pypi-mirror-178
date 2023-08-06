@@ -1,0 +1,12 @@
+udger/__init__.py,sha256=zcYjhSRieSLFfIWr0BZ0B9ySnLxUY_ViYhZz2UKffu8,130
+udger/base.py,sha256=WrgCAtRw2m12skiDzSSIsDtS-HN2fjCJlejTDIaaTfU,8284
+udger/downloader.py,sha256=Scjpl8yKClL997HM4zZDwzbF6hVumwoXLzzqHA3pm24,1017
+udger/parser.py,sha256=nCKuX9vTRlMMbDZ6ytMIZMUvSUoUGbm40yl4v88DwWA,12996
+udger/queries.py,sha256=r4OMq-kmrr-CmCefHtxvTLATXwrPGNLZzTR0IEMbcA0,13307
+udger/wdetector.py,sha256=PWu1GK1_qh61CNyF91C5gmZ75QzeglgS4Yzan_aDJ5w,578
+udger_v4-5.0.1.dist-info/LICENSE,sha256=FTImi9L0Anz64b9C9A0D8X143IgQUxqSA6aM12vnn-M,1069
+udger_v4-5.0.1.dist-info/METADATA,sha256=J0C0P9bETfeKkfyncbYY2eeJfklMZfgsnqco8L8MejQ,9823
+udger_v4-5.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+udger_v4-5.0.1.dist-info/top_level.txt,sha256=30dArnl6yu4X8v222voYQHbhyYH0nGqkkROR9Ijh3d8,6
+udger_v4-5.0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+udger_v4-5.0.1.dist-info/RECORD,,
