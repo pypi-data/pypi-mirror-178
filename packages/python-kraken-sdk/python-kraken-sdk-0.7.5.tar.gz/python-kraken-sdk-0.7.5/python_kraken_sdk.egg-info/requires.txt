@@ -1,0 +1,7 @@
+requests
+websockets
+asyncio>=3.4
+
+[testing]
+pytest
+tqdm
