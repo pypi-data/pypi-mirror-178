@@ -1,0 +1,4 @@
+[console_scripts]
+statify = statify.statify:main
+statify_webserver = statify.webserver.webserver:main
+

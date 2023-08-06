@@ -1,0 +1,34 @@
+/* Autocomplete */
+
+.ac-row {
+	display: flex;
+	font-family: Arial, sans-serif;
+	font-size: 13px;
+}
+
+.ac-cover-container {
+	margin-right: 5px;
+}
+
+.ac-cover {
+	width: 40px;
+}
+
+.ac-name {
+	font-weight: bold;
+}
+
+@media (max-width: 900px) {
+
+	#autocomplete {
+		width: 17rem;
+		height: 2rem;
+		padding: 0 2rem 0 2.5rem;
+
+		background-size: 1rem;
+		background-position: left 1rem top .5rem;
+
+		font-size: revert;
+	}
+
+}
