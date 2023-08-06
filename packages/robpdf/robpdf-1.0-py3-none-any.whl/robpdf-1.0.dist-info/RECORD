@@ -1,0 +1,8 @@
+robpdf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+robpdf/pdf2image.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+robpdf/pdf2text.py,sha256=5--64-OYoPnJr369BowREbCyMU2VZrAXDrr2AB1VAx4,39
+robpdf-1.0.dist-info/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+robpdf-1.0.dist-info/METADATA,sha256=HCCRTXZL0LFavrLskKgw-VA4PhtDueB22sJP7CHUwDg,141
+robpdf-1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+robpdf-1.0.dist-info/top_level.txt,sha256=XwLi21Nn8A11KYAfq_4nc5S7S5MRV59_JjO02oM1-yU,7
+robpdf-1.0.dist-info/RECORD,,
