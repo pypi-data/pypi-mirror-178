@@ -1,0 +1,6 @@
+zenodo_client/__init__.py,sha256=pWuRanDLEF0_GpNFjyUIvR1k6tmQgNKx20eIVimCBrU,5803
+zenodo_client/model.py,sha256=Nfq68PDwX-DJ3lAMjow6Z3YSLxNDNSxOEA_jkVvm51s,6007
+zenodo_api_client-0.0.0.dist-info/METADATA,sha256=JKZAes4Ra42_IdbydmvmrpF5sGAl-UH2bqgeshuvbt4,86
+zenodo_api_client-0.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+zenodo_api_client-0.0.0.dist-info/top_level.txt,sha256=ZiFLRZCNwDHcB9RvK0h9BVXvDlHUs7sy-cLV3zNhSjE,14
+zenodo_api_client-0.0.0.dist-info/RECORD,,
