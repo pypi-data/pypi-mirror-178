@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+ClosedPhotogrammetry/ClosedPhotogrammetry.pyd
+ClosedPhotogrammetry/__init__.py
+ClosedPhotogrammetry.egg-info/PKG-INFO
+ClosedPhotogrammetry.egg-info/SOURCES.txt
+ClosedPhotogrammetry.egg-info/dependency_links.txt
+ClosedPhotogrammetry.egg-info/requires.txt
+ClosedPhotogrammetry.egg-info/top_level.txt

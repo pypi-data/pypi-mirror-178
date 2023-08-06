@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ClosedPhotogrammetry
+Version: 1.1
+Summary: Given the external elements, focal length, and spatial point coordinates, pixel coordinates are generated, which we call reverse forward intersection.the least_square functon for similarity transformation, the Inv_Resection for computing pixel coordinates.
+Home-page: UNKNOWN
+Author: Zhang
+Author-email: 
+License: MIT
+Keywords: resection,transformation
+Platform: UNKNOWN
+Requires-Python: >=3.4
+License-File: LICENSE
+
+UNKNOWN
+
