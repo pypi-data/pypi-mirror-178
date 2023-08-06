@@ -1,0 +1,2 @@
+[console_scripts]
+vcpizza = vcpizza.__main__:main
