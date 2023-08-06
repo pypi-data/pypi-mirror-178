@@ -1,0 +1,14 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/project_release/__init__.py
+src/project_release/__main__.py
+src/project_release/cli.py
+src/project_release/py.typed
+src/project_release.egg-info/PKG-INFO
+src/project_release.egg-info/SOURCES.txt
+src/project_release.egg-info/dependency_links.txt
+src/project_release.egg-info/entry_points.txt
+src/project_release.egg-info/top_level.txt
