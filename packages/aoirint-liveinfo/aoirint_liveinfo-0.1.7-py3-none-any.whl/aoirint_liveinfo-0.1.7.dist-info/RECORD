@@ -1,0 +1,9 @@
+liveinfo/__init__.py,sha256=040eiBavINfcS1NgbCNnXp4qa2ixxnzsW8Kq7iMjNW0,104
+liveinfo/cli.py,sha256=MpQummFBZlL2zroUiD_85idK24cqYPz2Jsm--uVkq2M,443
+liveinfo/liveinfo.py,sha256=XfCQJb1ojM2Bmc2vjnGK9t3IBrohJTjZjRIfHKCm31k,1631
+liveinfo/nicolive.py,sha256=uzRti8uWBE-COg0aGZXROb_xwFNJ4QnzRHpLz8nNW6o,9835
+aoirint_liveinfo-0.1.7.dist-info/METADATA,sha256=0vmf294XZi98emN5Fg5244jeAZZclhwY5F9mCD6mvbs,4612
+aoirint_liveinfo-0.1.7.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+aoirint_liveinfo-0.1.7.dist-info/entry_points.txt,sha256=redq8QFC_3CFPNfdEqPtX4eBUoTJXqpCXLJ541YAen0,47
+aoirint_liveinfo-0.1.7.dist-info/top_level.txt,sha256=BJWQdkDEA9BsCbS39rQgO-7BU5z0xwgM7JdGpezNcVY,9
+aoirint_liveinfo-0.1.7.dist-info/RECORD,,
