@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: jsonwhatever
+Version: 0.0.1
+Summary: A simple JSON string creator that takes whatever you have and transform it into an String
+Home-page: UNKNOWN
+Author: dazjuancarlos
+Author-email: dazjuancarlos@gmail.com
+License: dazjuancarlos
+Description: UNKNOWN
+Keywords: python,json,simple
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
