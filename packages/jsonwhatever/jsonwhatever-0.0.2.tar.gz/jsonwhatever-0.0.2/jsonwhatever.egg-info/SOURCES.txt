@@ -1,0 +1,8 @@
+setup.py
+jsonwhatever/__init__.py
+jsonwhatever/jsonwhatever.py
+jsonwhatever/test.py
+jsonwhatever.egg-info/PKG-INFO
+jsonwhatever.egg-info/SOURCES.txt
+jsonwhatever.egg-info/dependency_links.txt
+jsonwhatever.egg-info/top_level.txt
