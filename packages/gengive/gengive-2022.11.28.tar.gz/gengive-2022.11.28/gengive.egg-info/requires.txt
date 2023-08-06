@@ -1,0 +1,13 @@
+markdown>=3.4.1
+pandoc>=2.3
+pydantic>=1.10.2
+typer>=0.7.0
+
+[dev]
+black
+coverage
+flake8
+mypy
+pytest
+pytest-cov
+pytest-flake8
