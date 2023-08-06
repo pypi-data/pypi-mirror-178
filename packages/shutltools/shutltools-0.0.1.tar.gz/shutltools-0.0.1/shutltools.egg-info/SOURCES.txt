@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+shtools/__init__.py
+shutltools.egg-info/PKG-INFO
+shutltools.egg-info/SOURCES.txt
+shutltools.egg-info/dependency_links.txt
+shutltools.egg-info/requires.txt
+shutltools.egg-info/top_level.txt
