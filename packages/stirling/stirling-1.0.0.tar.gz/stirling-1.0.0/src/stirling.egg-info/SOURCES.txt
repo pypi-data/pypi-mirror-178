@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/stirling/__init__.py
+src/stirling/stirling.py
+src/stirling/version.py
+src/stirling.egg-info/PKG-INFO
+src/stirling.egg-info/SOURCES.txt
+src/stirling.egg-info/dependency_links.txt
+src/stirling.egg-info/requires.txt
+src/stirling.egg-info/top_level.txt
+src/stirling.egg-info/zip-safe
