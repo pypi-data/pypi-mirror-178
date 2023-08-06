@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: multiproof
+Version: 0.1.1
+Summary: A Python library to generate merkle trees and merkle proofs.
+Home-page: https://github.com/stakewise/multiproof
+License: MIT
+Keywords: merkle-tree,multiproof
+Author: StakeWise Labs
+Author-email: info@stakewise.io
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: eth-abi (>=3.0.1,<4.0.0)
+Requires-Dist: web3 (>=6.0.0b7,<7.0.0)
+Project-URL: Repository, https://github.com/stakewise/multiproof
+Description-Content-Type: text/markdown
+
+# Stakewise python realization of `@openzeppelin/merkle-tree`
+
+## NB! Library is not well tested and not ready for the production use
+
+**A Python library to generate merkle trees and merkle proofs.**
+Well suited for airdrops and similar mechanisms in combination with OpenZeppelin Contracts [`MerkleProof`] utilities.
+
+[`MerkleProof`]: https://docs.openzeppelin.com/contracts/4.x/api/utils#MerkleProof
+
+## Quick Start
+
+``` shell
+poetry install
+```
+
+### Building a Tree
+
+```python
+from multiproof import StandardMerkleTree
+
+values = [
+    ["0x1111111111111111111111111111111111111111", 5000000000000000000],
+    ["0x2222222222222222222222222222222222222222", 2500000000000000000]
+]
+
+tree = StandardMerkleTree.of(values, ["address", "uint256"])
+
+print('Merkle Root:', tree.root)
+```
+
+# todos
+- extend tests
+- add docs
+
