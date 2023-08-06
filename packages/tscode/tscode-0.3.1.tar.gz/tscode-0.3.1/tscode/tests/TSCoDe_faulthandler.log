@@ -1,0 +1,169 @@
+
+             ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+            ╱───────────────────────────────────╲
+           ╱▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒╲
+       ▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒
+    ▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒ 
+   ▒░████████╗░██████╗░█████╗░░█████╗░██████╗░███████╗░░░▒
+   ▒░╚══██╔══╝██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔════╝░░░▒ 
+   ▒░░░░██║░░░╚█████╗░██║░░╚═╝██║░░██║██║░░██║█████╗░░░░░▒  
+   ▒░░░░██║░░░░╚═══██╗██║░░██╗██║░░██║██║░░██║██╔══╝░░░░░▒   
+    ▒░░░██║░░░██████╔╝╚█████╔╝╚█████╔╝██████╔╝███████╗░░░▒    
+   ╱ ▒░░╚═╝░░░╚═════╝░░╚════╝░░╚════╝░╚═════╝░╚══════╝░░▒ ╲
+  ╱   ▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒   ╲
+ ╱    ▒░░╔══════════════════════════════════════════╗░░▒    ╲
+ ╲╲    ▒░║  Transition State Conformational Docker  ║░▒    ╱╱   
+  ╲╲   ▒░║        nicolo.tampellini@yale.edu        ║░▒   ╱╱    
+   ╲╲  ▒░║                                          ║░▒  ╱╱         
+    ╲╲ ▒░║     Version    >          0.3.0          ║░▒ ╱╱                                     
+     ╲╲▒░║      User      >           Nik           ║░▒╱╱                                       
+      ╲▒░║      Host      >       Nicolò-ASUS       ║░▒╱                                                     
+       ▒░║      Time      >    Fri Sep  2 09:05     ║░▒                 
+       ▒░╚══════════════════════════════════════════╝░▒                     
+        ▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒                             
+          ╲╲ ▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒ ╱╱
+           ╲╲▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁╱╱                                        
+           
+--> Parsed keywords are:
+    DIST(A=2.5,X=2,Y=2.5) SHRINK NCI
+
+--> Setup performed correctly. 12000 candidates will be generated.
+
+--> Input structures & reactive indexes data:
+
+    1. CH3Cl.xyz -> 5 atoms, 1 conformer, 3 pivots, sp3_sigmastar
+        0  -> C(sp3 type, 2.813 A, 3 centers)
+        4  -> Cl(Single Bond type, 2.357 A, 3 centers)
+
+    2. HCOOH.xyz -> 5 atoms, 1 conformer, 2 pivots
+        1  -> O(Ketone type, 2.812 A, 2 centers)
+        4  -> H(Single Bond type, 2.25 A, 1 center)
+
+    3. HCOOH.xyz -> 5 atoms, 1 conformer, 2 pivots
+        1  -> O(Ketone type, 2.25 A, 2 centers)
+        4  -> H(Single Bond type, 2.813 A, 1 center)
+
+--> Atom pairings imposed are 3: [[0, 6], [9, 11], [4, 14]] (Cumulative index numbering)
+
+    1. a - Constraint - constrained to 2.5 A (to be shrinked to 1.667 A)
+       Index 0 (carbon) on CH3Cl
+       Index 1 (oxygen) on HCOOH
+
+    2. x - Interaction - embedded at 2.0 A - will relax (to be shrinked to 1.333 A)
+       Index 4 (hydrogen) on HCOOH
+       Index 1 (oxygen) on HCOOH
+
+    3. y - Interaction - embedded at 2.5 A - will relax (to be shrinked to 1.667 A)
+       Index 4 (chlorine) on CH3Cl
+       Index 4 (hydrogen) on HCOOH
+
+--> Calculation options used were:
+    - calculator                : XTB
+    - clash_thresh              : 1.5
+    - csearch_aug               : True
+    - double_bond_protection    : False
+    - ff_calc                   : XTB
+    - ff_level                  : GFN-FF
+    - ff_opt                    : True
+    - fix_angles_in_deformation : False
+    - kcal_thresh               : 20
+    - max_clashes               : 0
+    - max_confs                 : 1000
+    - max_newbonds              : 0
+    - nci                       : True
+    - only_refined              : True
+    - optimization              : True
+    - rigid                     : False
+    - rmsd                      : 0.3
+    - rotation_range            : 90
+    - rotation_steps            : 9
+    - shrink                    : True
+    - shrink_multiplier         : 1.5
+    - suprafacial               : False
+    - theory_level              : GFN2-xTB
+    - tscode_procs              : 4
+
+--> Performing cyclical embed (12.0 k candidates)
+Generated 6000 transition state candidates (14.443 s)
+
+--> Similarity Processing
+ERROR:root:Failed in nopython mode pipeline (step: nopython frontend)
+[1m[1m[1m[1mFailed in nopython mode pipeline (step: nopython frontend)
+[1m[1mfailed to unpack float64
+[1m
+File "..\python_functions.py", line 356:[0m
+[1mdef get_torsion_fingerprint(coords, quadruplets):
+    <source elided>
+    for i, q in enumerate(quadruplets):
+[1m        i1, i2, i3, i4 = q
+[0m        [1m^[0m[0m
+[0m
+[0m[1mDuring: typing of exhaust iter at c:\users\nik\desktop\coding\tscode\tscode\python_functions.py (356)[0m
+[1m
+File "..\python_functions.py", line 356:[0m
+[1mdef get_torsion_fingerprint(coords, quadruplets):
+    <source elided>
+    for i, q in enumerate(quadruplets):
+[1m        i1, i2, i3, i4 = q
+[0m        [1m^[0m[0m
+
+[0m[1mDuring: resolving callee type: type(CPUDispatcher(<function get_torsion_fingerprint at 0x00000170C09A4790>))[0m
+[0m[1mDuring: typing of call at c:\users\nik\desktop\coding\tscode\tscode\python_functions.py (331)
+[0m
+[0m[1mDuring: resolving callee type: type(CPUDispatcher(<function get_torsion_fingerprint at 0x00000170C09A4790>))[0m
+[0m[1mDuring: typing of call at c:\users\nik\desktop\coding\tscode\tscode\python_functions.py (331)
+[0m
+[1m
+File "..\python_functions.py", line 331:[0m
+[1mdef _get_tf_mat(structures, quadruplets):
+    <source elided>
+    for i in prange(len(structures)):
+[1m        tf_mat[i] = get_torsion_fingerprint(structures[i], quadruplets)
+[0m        [1m^[0m[0m
+Traceback (most recent call last):
+  File "c:\users\nik\desktop\coding\tscode\tscode\embedder.py", line 811, in run
+    RunEmbedding(self).run()
+  File "c:\users\nik\desktop\coding\tscode\tscode\run.py", line 1266, in run
+    self.similarity_refining(verbose=True)
+  File "c:\users\nik\desktop\coding\tscode\tscode\run.py", line 248, in similarity_refining
+    self.structures, mask = prune_conformers_tfd(self.structures, _get_quadruplets(self.embed_graph), verbose=verbose)
+  File "c:\users\nik\desktop\coding\tscode\tscode\python_functions.py", line 249, in prune_conformers_tfd
+    tf_mat = _get_tf_mat(structures, quadruplets)
+  File "C:\Users\Nik\anaconda3\envs\tscode\lib\site-packages\numba\core\dispatcher.py", line 482, in _compile_for_args
+    error_rewrite(e, 'typing')
+  File "C:\Users\Nik\anaconda3\envs\tscode\lib\site-packages\numba\core\dispatcher.py", line 423, in error_rewrite
+    raise e.with_traceback(None)
+numba.core.errors.TypingError: Failed in nopython mode pipeline (step: nopython frontend)
+[1m[1m[1m[1mFailed in nopython mode pipeline (step: nopython frontend)
+[1m[1mfailed to unpack float64
+[1m
+File "..\python_functions.py", line 356:[0m
+[1mdef get_torsion_fingerprint(coords, quadruplets):
+    <source elided>
+    for i, q in enumerate(quadruplets):
+[1m        i1, i2, i3, i4 = q
+[0m        [1m^[0m[0m
+[0m
+[0m[1mDuring: typing of exhaust iter at c:\users\nik\desktop\coding\tscode\tscode\python_functions.py (356)[0m
+[1m
+File "..\python_functions.py", line 356:[0m
+[1mdef get_torsion_fingerprint(coords, quadruplets):
+    <source elided>
+    for i, q in enumerate(quadruplets):
+[1m        i1, i2, i3, i4 = q
+[0m        [1m^[0m[0m
+
+[0m[1mDuring: resolving callee type: type(CPUDispatcher(<function get_torsion_fingerprint at 0x00000170C09A4790>))[0m
+[0m[1mDuring: typing of call at c:\users\nik\desktop\coding\tscode\tscode\python_functions.py (331)
+[0m
+[0m[1mDuring: resolving callee type: type(CPUDispatcher(<function get_torsion_fingerprint at 0x00000170C09A4790>))[0m
+[0m[1mDuring: typing of call at c:\users\nik\desktop\coding\tscode\tscode\python_functions.py (331)
+[0m
+[1m
+File "..\python_functions.py", line 331:[0m
+[1mdef _get_tf_mat(structures, quadruplets):
+    <source elided>
+    for i in prange(len(structures)):
+[1m        tf_mat[i] = get_torsion_fingerprint(structures[i], quadruplets)
+[0m        [1m^[0m[0m
+
