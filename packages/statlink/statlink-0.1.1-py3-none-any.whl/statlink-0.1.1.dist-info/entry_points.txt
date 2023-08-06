@@ -1,0 +1,3 @@
+[console_scripts]
+statlink=statlink.command:main
+
