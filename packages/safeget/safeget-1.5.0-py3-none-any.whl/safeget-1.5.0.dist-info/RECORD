@@ -1,0 +1,12 @@
+safeget/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+safeget/safeget.asc,sha256=aPUjvfgDR2fjet678zwAHIjiReCeIi7UciWd4NyMVDQ,862
+safeget/safeget.py,sha256=rhPNeHgYMr6bX9cqGauO_O0XTLwv224TFNHNfKbhvZo,44880
+safeget/version.py,sha256=716l-SrpxJ9IZN_pW6AbIiaO58UtXRo2zhj9c8uemX4,289
+safeget/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+safeget/tests/test_safeget.py,sha256=eXvzATmR2Yxn1GY1GTswDf_ou14FWwFD4F92NhrClfA,9323
+safeget-1.5.0.data/scripts/safeget,sha256=2hIktOy1wImGElK2QwKojVjyD-kZVx7_56t56i36fho,45006
+safeget-1.5.0.dist-info/LICENSE,sha256=G5G4_OL2PDHVNLeyNtCdwifraKoELJUVpMrjSNokodA,594
+safeget-1.5.0.dist-info/METADATA,sha256=PmGV1exffNB2sTGupSGO48QkgRSfDSfPm4vYlu9iEoc,3868
+safeget-1.5.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+safeget-1.5.0.dist-info/top_level.txt,sha256=iW6-y6g-ISCDPLHYbmHstOerFE1TihNTIOLoBeUCew8,8
+safeget-1.5.0.dist-info/RECORD,,
