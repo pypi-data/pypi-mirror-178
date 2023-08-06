@@ -1,0 +1,28 @@
+{
+  "install_requires": [
+    "PyYAML",
+    "docker",
+    "duckietown-docker-utils-daffy",
+    "packaging",
+    "pip",
+    "requests",
+    "requirements-parser",
+    "setuptools",
+    "zuper-commons-z6"
+  ],
+  "tests_require": [],
+  "srcdir": "src",
+  "package_name": "duckietown-build-utils-daffy",
+  "entry_points": {
+    "console_scripts": []
+  },
+  "zip_safe": true,
+  "include_package_data": true,
+  "modules": [
+    "duckietown_build_utils"
+  ],
+  "version": "6.2.30",
+  "author": "",
+  "author_email": "",
+  "url": ""
+}
