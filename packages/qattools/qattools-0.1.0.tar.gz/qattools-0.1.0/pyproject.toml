@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "qattools"
+version = "0.1.0"
+description = ""
+authors = ["Richard Hajek <richard.m.hajek@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^1.5.2"
+torch = "^1.13.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
