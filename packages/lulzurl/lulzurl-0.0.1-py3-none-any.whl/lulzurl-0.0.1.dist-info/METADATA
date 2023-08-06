@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: lulzurl
+Version: 0.0.1
+Summary: Fancy util for building URLs in Python syntax and treating them as Python objects and functions
+Project-URL: Homepage, https://github.com/Epromee/lulzurl
+Project-URL: Bug Tracker, https://github.com/Epromee/lulzurl/issues
+Author-email: Egor Promyshlennikov <eprom1234@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# lulzurl
+
+## easyurl
+
+Contains class EasyUrl which allows you to do somthing like this:
+
+```
+e = EasyUrl("https://exampleurl.com", lambda url: url)
+print(e()) # outputs "https://exampleurl.com"
+print(e.main.other.coolthing()) # outputs "https://exampleurl.com/main/other/coolthing"
+```
+
+You can substitute any handler you wish.
