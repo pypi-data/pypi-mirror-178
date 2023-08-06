@@ -1,0 +1,6 @@
+packinfo_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+packinfo_cli/entrypoint.py,sha256=d_jt5r_L93XKCF9xRVZcKEeKBN0YomewVft6Pp0D41M,6329
+packinfo_cli-0.1.0.dist-info/entry_points.txt,sha256=XnOGCiGjpZoL_KJgmFWcNBipTQtT0Q86V2MlY0pP9uc,57
+packinfo_cli-0.1.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+packinfo_cli-0.1.0.dist-info/METADATA,sha256=mkUaWRagCch08cBfkTIrp8eaR1zponQ53h23-w7_ymU,426
+packinfo_cli-0.1.0.dist-info/RECORD,,

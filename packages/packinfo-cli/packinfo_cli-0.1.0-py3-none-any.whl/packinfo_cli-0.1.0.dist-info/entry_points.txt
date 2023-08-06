@@ -1,0 +1,3 @@
+[console_scripts]
+packinfo=packinfo_cli.entrypoint:main
+
