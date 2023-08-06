@@ -1,0 +1,17 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+my_helper.py
+pyproject.toml
+setup.py
+cli_assistant.egg-info/PKG-INFO
+cli_assistant.egg-info/SOURCES.txt
+cli_assistant.egg-info/dependency_links.txt
+cli_assistant.egg-info/entry_points.txt
+cli_assistant.egg-info/requires.txt
+cli_assistant.egg-info/top_level.txt
+helper/__init__.py
+helper/examples.txt
+helper/main.py
+tests/__init__.py
+tests/test_main.py
