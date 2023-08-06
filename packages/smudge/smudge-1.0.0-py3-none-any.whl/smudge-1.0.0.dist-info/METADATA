@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: smudge
+Version: 1.0.0
+Summary: Passive OS detection with dynamic signatures.
+Home-page: https://github.com/activecm/smudge
+Author: Dave Quartarolo
+Author-email: david@activecountermeasures.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: System :: Networking :: Monitoring
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Requires-Dist: scapy (~=2.4.5)
+Provides-Extra: dev
+Requires-Dist: pylint (>=2.15.0) ; extra == 'dev'
+
+UNKNOWN
+
+
