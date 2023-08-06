@@ -1,0 +1,3 @@
+[salt.loader]
+saltext.sap_nwabap = saltext.sap_nwabap
+
