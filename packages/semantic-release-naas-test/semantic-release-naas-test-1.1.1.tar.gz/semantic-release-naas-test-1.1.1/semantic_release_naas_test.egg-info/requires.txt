@@ -1,0 +1,4 @@
+naas-proxy-manager==1.3.0
+
+[deploy]
+twine~=4.0
