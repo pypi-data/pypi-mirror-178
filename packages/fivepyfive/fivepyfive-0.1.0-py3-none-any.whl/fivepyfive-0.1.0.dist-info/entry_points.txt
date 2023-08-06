@@ -1,0 +1,2 @@
+[console_scripts]
+fivepyfive = fivepyfive.app:run
