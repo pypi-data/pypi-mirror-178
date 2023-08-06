@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: scanorama
+Version: 1.7.3
+Summary: Panoramic stitching of heterogeneous single cell transcriptomic data
+Home-page: https://github.com/brianhie/scanorama
+Author: Brian Hie
+Author-email: brianhie@stanford.edu
+License: MIT
+License-File: LICENSE
