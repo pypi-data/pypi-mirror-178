@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: oarepo-model-builder-requests
+Version: 1.0.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: oarepo-model-builder-tests (>=1.0.3)
+Provides-Extra: tests
+Requires-Dist: pytest-invenio (>=1.4.11) ; extra == 'tests'
+
+# OARepo model builder requests
+Plugin ("wrapper") for oarepo-model-builder to allow specifying requests tied to the model. <br>
+See model_requested_document.yaml in tests for usage example. What is done with the record has to be specified manually in the requests/actions.py file.
