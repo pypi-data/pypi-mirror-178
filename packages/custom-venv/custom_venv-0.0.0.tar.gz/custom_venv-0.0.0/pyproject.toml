@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "custom_venv"
+version = "0.0.0"
+authors = [
+  { name="CEA", email="roland.lenain@cea.fr" },
+]
+maintainers = [
+  { name="Lenain Roland", email="roland.lenain@cea.fr" },
+]
+description = "To customize Python venv with extra-Python considerations."
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: BSD License",
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Natural Language :: English",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Unix Shell",
+]
+
+[project.urls]
+"Homepage" = "https://codev-tuleap.intra.cea.fr/plugins/git/mp-lpec/custom_python_env"
+"Bug Tracker" = "https://codev-tuleap.intra.cea.fr/plugins/tracker/?group_id=1037"
