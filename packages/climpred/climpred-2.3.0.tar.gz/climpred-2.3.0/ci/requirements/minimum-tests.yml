@@ -1,0 +1,21 @@
+name: climpred-minimum-tests
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python>=3.8
+  - cftime>=1.5.0
+  - coveralls
+  - dask-core
+  - netcdf4
+  - pip
+  - pytest
+  - pytest-cov
+  - pytest-xdist
+  - scipy
+  - xarray<=2022.10.0
+  - xskillscore>=0.0.18
+  - tqdm
+  - pip:
+    - pytest-lazy-fixture
+    - -e ../..
