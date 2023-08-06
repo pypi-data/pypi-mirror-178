@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "erkr-semver-test"
+version = "2.0.0"
+description = "This is the decription"
+authors = ["Eran Kricheli <eran.kricheli@frontegg.com>"]
+readme = "README.md"
+packages = [{include = "erkr_semver_test"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+Flask = "^2.2.2"
+fastapi = "^0.85.1"
+
+
+[tool.semantic_release]
+version_source= "tag_only"
+branch="main"
+upload_to_pypi = true
+upload_to_release = true
+prerelease_tag="alpha"
+build_command = "pip install poetry && poetry build"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
