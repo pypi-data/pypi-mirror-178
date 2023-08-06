@@ -1,0 +1,1 @@
+class GetUserAgentsError(Exception):    pass# common aliasUserAgentError = GetUserAgentsError
