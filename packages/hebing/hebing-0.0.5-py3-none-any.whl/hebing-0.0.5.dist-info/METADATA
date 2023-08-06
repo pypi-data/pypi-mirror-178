@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: hebing
+Version: 0.0.5
+Summary: merge multiple python files into one python file
+Home-page: UNKNOWN
+Author: WangXueJie
+Author-email: hajiew@163.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: chardet (~=5.0.0)
+Requires-Dist: gmssl (~=3.2.1)
+
+UNKNOWN
+
