@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: gtk-stable-diffusion
+Version: 0.0.5.5
+Summary: A simple GTK UI for Stable Diffusion.
+Home-page: https://github.com/nazodane/gtk_stable_diffusion
+Author: Toshimitsu Kimura
+Author-email: lovesyao@gmail.com
+License: Apache
+Keywords: stable_diffusion diffusers
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Artistic Software
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Environment :: GPU :: NVIDIA CUDA :: 11.7
+Classifier: Intended Audience :: End Users/Desktop
+Requires-Python: >=3.10.0
+License-File: LICENSE
+
+The GTK Stable Diffusion is a very simple text-to-image tool. The tool is based on [GTK](https://en.wikipedia.org/wiki/GTK) UI framework and [Diffusers](https://github.com/huggingface/diffusers)' [Stable Diffusion](https://en.wikipedia.org/wiki/Stable_Diffusion) text-to-image pipeline.
+
+GTK Stable Diffusion aims just for fun. This means the tool is more focusing on ~~spells~~ prompts than many small adjustments and random generations.
+
+Installation
+============
+GTK Stable Diffusion is easily installable via pip command:
+```bash
+pip install gtk_stable_diffusion
+```
+or
+```bash
+pip install git+https://github.com/nazodane/gtk_stable_diffusion.git
+```
+
+The installed tool is in ~/.local/bin/ directory:
+```bash
+~/.local/bin/gtk-stable-diffusion
+```
+
+Note that the model weights are automatically downloaded via [BitTorrent magnet link](https://en.wikipedia.org/wiki/Magnet_URI_scheme) using [libtorrent](https://en.wikipedia.org/wiki/Libtorrent) and the model weights are automatically converted from original Stable Diffusion format to Diffusers format in the first launch of the tool.
+
+Requirements
+============
+* Ubuntu 22.04 or later
+* Python 3.10 or later
+* CUDA 11.7 or later
+* higher VRAM and DRAM
+
+Recommendations
+===============
+* RTX 3060 12GB or higher
+* DRAM 32GB
+* Faster non-restricted internet connection
+
+License
+=======
+GTK Stable Diffusion codes are under Apache License 2.0. This is because we almost depend on Diffusers.
+
+GTK and [its Python bindings are LGPL](https://www.gtk.org/docs/language-bindings/python) so we should carefully treat GTK-related codes.
+
+Screenshot
+==========
+![Screenshot Image](screenshot.png)
+
+
