@@ -1,0 +1,2 @@
+[console_scripts]
+browseon = browseon.__main__:main
