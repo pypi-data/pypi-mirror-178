@@ -1,0 +1,11 @@
+uapp/__init__.py,sha256=XddelbrwSsOz7UpbqB7eV_3owCfExEhyWP95StUxVzo,93
+uapp/main.py,sha256=Op6a4DiNobJ7ofa1N7P2z0mqa2NEOatzliBh0aPd8Wc,372
+uapp/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uapp/lib/args.py,sha256=hZ8ErpYF_nCwLzpkVvMaiLOIq4nK7XeWxPaIttsK4T8,1583
+uapp/lib/utils.py,sha256=JvHCpmgfUtT8hngsxb2TFhDvzgZO7kWDfZcMqZGZHHg,3057
+uapp-1.0.data/scripts/uapp,sha256=4jNA9PawTagLh1Wn8e2u5O4m3jGAAsDX3kQgacKnr8E,101
+uapp-1.0.dist-info/LICENSE,sha256=2cLmQ6B3ZynXAmj3H2xt7cG2Rdkn4H81OkuYquP14-Q,1069
+uapp-1.0.dist-info/METADATA,sha256=o6IYP7mj-7Tz5_86YU_ZtfxbO3nASaqPk0TP-HM5Q1g,1444
+uapp-1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+uapp-1.0.dist-info/top_level.txt,sha256=Z7DeHbm0pnHSguFw47cT5uhQOEQy4O6-tcIG8xocYCQ,5
+uapp-1.0.dist-info/RECORD,,
