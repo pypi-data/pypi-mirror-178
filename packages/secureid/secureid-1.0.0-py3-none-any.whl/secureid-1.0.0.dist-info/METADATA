@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: secureid
+Version: 1.0.0
+Summary: Generate unique ID
+Author: lolo859
+License: UNKNOWN
+Keywords: id,secure,secure_id,secure id,secure-id,sid
+Platform: UNKNOWN
+Classifier: Natural Language :: French
+Classifier: Topic :: Security :: Cryptography
+Classifier: Topic :: Software Development :: Code Generators
+Requires-Dist: docutils (>=0.3)
+
+UNKNOWN
+
