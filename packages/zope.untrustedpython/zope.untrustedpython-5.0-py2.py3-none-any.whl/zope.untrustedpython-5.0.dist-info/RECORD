@@ -1,0 +1,13 @@
+zope.untrustedpython-5.0-py3.9-nspkg.pth,sha256=SWEVH-jEWsKYrL0qoC6GBJaStx_iKxGoAY9PQycFVC4,529
+zope/untrustedpython/__init__.py,sha256=MsSFjiLMLJZ7QhUPpVBWKiyDnCzryquRyr329NoCACI,2
+zope/untrustedpython/builtins.py,sha256=jalUez1Vz-ki2_n8fhqRpiiMFsDhUghU868Hr7NEePw,4926
+zope/untrustedpython/interpreter.py,sha256=t7JrRBL3kW5veKs1Q8GMXtGi_LbDKtJ_QMU1YLhUoNg,2204
+zope/untrustedpython/rcompile.py,sha256=BrLzULik80oCGTqDD6sdqm5ilhkNftkvSUUgi3F0A0c,981
+zope/untrustedpython/tests.py,sha256=d_Ieg8zxxV7lyMlwtnSsK7Y6deitwW-YNWT8xzEUKXM,6961
+zope/untrustedpython/transformer.py,sha256=uJjQU9Mm_Ci3wl6CzSvRDjUyzwwmjj8ONNHKY6YuQ2U,1623
+zope.untrustedpython-5.0.dist-info/METADATA,sha256=0qbMhikJYY9AbVfeAh8A6c2h5GxXcw-jLaHUI55h4K8,2713
+zope.untrustedpython-5.0.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+zope.untrustedpython-5.0.dist-info/namespace_packages.txt,sha256=QpUHvpO4wIuZDeEgKY8qZCtD-tAukB0fn_f6utzlb98,5
+zope.untrustedpython-5.0.dist-info/top_level.txt,sha256=QpUHvpO4wIuZDeEgKY8qZCtD-tAukB0fn_f6utzlb98,5
+zope.untrustedpython-5.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+zope.untrustedpython-5.0.dist-info/RECORD,,
