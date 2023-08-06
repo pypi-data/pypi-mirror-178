@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: aladhan-api
+Version: 2.2.0
+Summary: A Python package to calculate Islamic prayer times for any location in the world.
+Home-page: https://www.github.com/Kh4lidMD/AlAdhan
+Author: Khaled Mahmoud
+Author-email: KhalidYBel@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Natural Language :: Arabic
+Classifier: Natural Language :: English
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+See [GitHub home page](https://www.github.com/Kh4lidMD/AlAdhan) for more Information
