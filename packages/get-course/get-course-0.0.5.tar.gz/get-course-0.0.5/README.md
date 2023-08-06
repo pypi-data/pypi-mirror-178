@@ -1,0 +1,1 @@
+This is the package used to get the exchange rate. It works with https://currate.ru/

@@ -1,0 +1,7 @@
+README.md
+setup.py
+get_course/__init__.py
+get_course.egg-info/PKG-INFO
+get_course.egg-info/SOURCES.txt
+get_course.egg-info/dependency_links.txt
+get_course.egg-info/top_level.txt
