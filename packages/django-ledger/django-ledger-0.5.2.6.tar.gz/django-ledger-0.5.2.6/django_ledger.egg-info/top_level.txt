@@ -1,0 +1,4 @@
+assets
+dist
+django_ledger
+docs
