@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: simplesheetsapi
+Version: 0.0.3
+Summary: Simple lib to work with google sheets api
+Home-page: UNKNOWN
+Author: Sheets Try
+Author-email: sheetsapitry@gmail.com
+License: MIT
+Keywords: spreadsheets
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+
+Can read, write and find in spreadsheets
+
