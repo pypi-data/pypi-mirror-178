@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "wasmsockets"
+version = "0.1.4"
+description = "Async interface to Pyodide WebSockets"
+authors = ["dek <dek@substructure.one>"]
+readme = "README.md"
+license = "Apache-2.0"
+repository = "https://github.com/SubstructureOne/wasmsockets"
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Environment :: Web Environment",
+    "Framework :: AsyncIO",
+    "Topic :: Communications",
+    "Topic :: Internet :: WWW/HTTP :: Browsers",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+# don't attempt to install websockets library in a WASM environment (no pure
+# python wheel exists, so it would fail)
+websockets = { version="^10.4", markers="sys_platform != 'emscripten'" }
+
+
+[tool.poetry.group.debug.dependencies]
+ipython = "^8.6.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
