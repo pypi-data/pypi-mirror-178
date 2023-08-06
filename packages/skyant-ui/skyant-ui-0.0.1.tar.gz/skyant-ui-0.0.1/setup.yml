@@ -1,0 +1,37 @@
+NAMESPACE: skyant.ui
+MODULES:
+    -   skyant.ui
+    -   skyant.ui.app
+
+VERSION: 0.0
+MINOR: 1
+
+DESCR: Preconfigured Plotly Dash & some tools
+KEYWORDS: visualization, data, web, dash, react
+
+LICENSE: MIT
+
+HOME: https://skyant.dev/projects/ui
+DONATE: https://buymeacoffee.com/skyantdev
+NEWS: https://www.linkedin.com/company/skyantdev
+TALK: https://groups.google.com/a/skyant.dev/g/community?label=ui
+
+AUTHOR: Iurii Tarasenko
+EMAIL: info@skyant.dev
+
+PYTHON_REQ: '>=3.10'
+REQUIREMENTS:
+    -   dash[compress]>=2.5
+    -   dash-bootstrap-components
+    -   python-jose
+    -   asgiref
+    -   hypercorn
+    -   jupyter-dash
+    -   python-dotenv
+
+
+CLASSIFIERS:
+    -   'Programming Language :: Python :: 3.10'
+    -   'Intended Audience :: Developers'
+    -   'Intended Audience :: Information Technology'
+    -   'Topic :: Software Development :: Libraries :: Python Modules'
