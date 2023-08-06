@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: crypti
+Version: 1.0.0
+Summary: Library to decrypt/encrypt messages or text
+Home-page: https://codeberg.org/pinguin/crypti
+Author: Pinguin
+Author-email: pinguin@lagerfeuerhacker.de
+License: EUPL 1.2
+Keywords: crypt,crypti,crypto
+License-File: LICENSE

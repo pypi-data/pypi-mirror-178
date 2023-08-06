@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+crypti/__init__.py
+crypti/__main__.py
+crypti.egg-info/PKG-INFO
+crypti.egg-info/SOURCES.txt
+crypti.egg-info/dependency_links.txt
+crypti.egg-info/top_level.txt
