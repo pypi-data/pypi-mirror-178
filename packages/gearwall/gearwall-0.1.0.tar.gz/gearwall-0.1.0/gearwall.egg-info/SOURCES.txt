@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+gearwall.egg-info/PKG-INFO
+gearwall.egg-info/SOURCES.txt
+gearwall.egg-info/dependency_links.txt
+gearwall.egg-info/top_level.txt
