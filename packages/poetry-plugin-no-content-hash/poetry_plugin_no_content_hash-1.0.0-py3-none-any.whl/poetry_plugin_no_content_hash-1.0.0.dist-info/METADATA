@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: poetry-plugin-no-content-hash
+Version: 1.0.0
+Summary: Poetry plugin to remove the content hash
+License: MIT
+Author: Marcel Jackwerth
+Author-email: marceljackwerth@gmail.com
+Requires-Python: >=3.7.1,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: poetry (>=1.2,<2.0)
+Description-Content-Type: text/markdown
+
+# Poetry Plugin: No Content Hash
+
+This package is a plugin that removes the content hash mechanism of Poetry.
+
+## Rationale
+
+- The hash causes conflicts all the time (https://github.com/python-poetry/poetry/issues/496)
+- Rust's Cargo had the same problem for a while (https://github.com/rust-lang/cargo/pull/7070)
+
