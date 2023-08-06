@@ -1,0 +1,106 @@
+Metadata-Version: 2.1
+Name: shell2udp
+Version: 1.4
+Summary: Executing shell commands via UDP server
+Home-page: https://github.com/GitHub30/shell2udp
+Author: Tomofumi Inoue
+Author-email: funaox@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/GitHub30/shell2udp/issues
+Keywords: shell2http shell2udp subprocess python
+Platform: any
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Utilities
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+[![Python](https://img.shields.io/pypi/pyversions/shell2udp.svg)](https://badge.fury.io/py/shell2udp)
+[![PyPI](https://badge.fury.io/py/shell2udp.svg)](https://badge.fury.io/py/shell2udp)
+
+# shell2udp
+UDP-server to execute shell commands. Designed for development, prototyping or remote control. Settings through two command line arguments, path and shell command. By default bind to :8080.
+
+# Usage
+
+```bash
+shell2udp [options] ["shell command" for /] /path "shell command" /path2 "shell command2" ...
+options:
+    -p, --port NNNN : port for udp server ( default 8080 )
+```
+
+# Install
+
+```bash
+pip install shell2udp
+```
+
+# Examples
+
+## Windows
+
+```powershell
+shell2udp 'shutdown -s -t 0'
+```
+
+```powershell
+shell2udp 'shutdown -s -t 0' /beep 'echo ^G'
+```
+
+```powershell
+shell2udp --port 3306 /beep 'powershell -command [Console]::Beep(440,2000)'
+```
+
+### Dispatch
+
+```powershell
+[System.Net.Sockets.UdpClient]::New().Send("", 0, "localhost", 8080)
+```
+
+```powershell
+[System.Net.Sockets.UdpClient]::New().Send([System.Text.Encoding]::UTF8.GetBytes("/beep"), 5, "localhost", 8080)
+# [System.Text.Encoding]::UTF8.GetBytes("/beep").Length
+```
+
+## Linux
+
+```bash
+shell2udp 'notify-send Hello root'
+```
+
+
+```bash
+shell2udp -p3000 'notify-send Hello root' /path 'canberra-gtk-play -i desktop-login'
+```
+
+```bash
+shell2udp -p3000 /path 'canberra-gtk-play -i desktop-login'
+```
+
+### Dispatch
+
+```bash
+echo > /dev/udp/localhost/8080
+```
+
+```bash
+echo /path > /dev/udp/localhost/8080
+```
+
+# Acknowledgements
+
+https://github.com/msoap/shell2http
+
+https://github.com/eshaan7/Flask-Shell2HTTP
