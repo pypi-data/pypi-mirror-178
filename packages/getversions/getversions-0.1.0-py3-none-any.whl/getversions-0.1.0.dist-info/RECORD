@@ -1,0 +1,11 @@
+getversions/__init__.py,sha256=hhskfiGIR8iD4ThAn8C2Z3Oio76XJRlSuvwhzse5wOM,344
+getversions/__main__.py,sha256=BUE0vJ1EjsKeZajrIoq3ti1HkHwe8OekuWtZ2oA932c,327
+getversions/getversions.py,sha256=HynU4eSTuoZO6gsJtCkHwsHH4NLHOYXxYsyEpG873To,7054
+getversions/main.py,sha256=6b-KCMTqtaFRlyFSFUMWNX34jEitTS5_dmEIg7FzUvg,3006
+getversions/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+getversions-0.1.0.dist-info/LICENSE,sha256=guo76hyhttVucP5dkXZ0CMEFauuXlTa93FihuU1f6TU,1087
+getversions-0.1.0.dist-info/METADATA,sha256=77zosQKdFy7Qwcv0uC8IEDeGbLdxmT_kblFWGhZE6EA,5281
+getversions-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+getversions-0.1.0.dist-info/entry_points.txt,sha256=1Y_XVDciTc4kzvxSw8Tbnf8EbX72uLkol45-sz0fxwU,56
+getversions-0.1.0.dist-info/top_level.txt,sha256=-VzQxGCZrCSGbUkOwAr23SVURVmWjPszTm2DBte03HU,12
+getversions-0.1.0.dist-info/RECORD,,
