@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "pypassrs"
+version = "0.5.5"
+description = "Python wrapper for passrs"
+authors = ["Casey Burklow <zevaryx@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+
+[tool.poetry.group.dev.dependencies]
+setuptools-rust = "^1.5.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
