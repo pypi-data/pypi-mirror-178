@@ -1,0 +1,12 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+.github/workflows/pypi-upload.yml
+src/seba/__init__.py
+src/seba/py.typed
+src/seba/version.py
+src/seba.egg-info/PKG-INFO
+src/seba.egg-info/SOURCES.txt
+src/seba.egg-info/dependency_links.txt
+src/seba.egg-info/top_level.txt
