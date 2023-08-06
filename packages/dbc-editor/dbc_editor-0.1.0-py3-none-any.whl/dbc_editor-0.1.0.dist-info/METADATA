@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: dbc-editor
+Version: 0.1.0
+Summary: An editor for CAN bus database files like dbc or sym, based on cantools and urwid
+Author-email: erzo <erzo@posteo.de>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: BSD License
+Requires-Dist: urwid
+Requires-Dist: cantools >= 37.0.2
+Project-URL: Home, https://gitlab.com/erzo/dbc-editor
+
+# dbc-editor
+
+An editor for CAN bus database files like dbc or sym,
+based on [cantools](https://github.com/cantools/cantools) and [urwid](http://urwid.org/).
+
+
+# Usage
+
+This application is not mature yet but it is already possible to open existing files and create new ones.
+
+Pass the file that you want to open as command line argument.
+You can also pass the name of a not existing file in order to create a new file.
+
+When you open the program a list of all messages defined in the passed file is displayed.
+If it is a new file this list is empty.
+
+How to navigate in the list view:
+- 'arrow up' / 'arrow down' to select a message
+- 'arrow right' to display the signals of the currently selected message
+- 'arrow left' to return from the list of signals to the list of messages
+- 'e' to edit the selected message (if you are in the list of messages) / signal (if you are in the list of signals)
+- '+' to create a new message/signal
+- '-' to delete the selected message/signal
+- 'w' to write/save
+- 'q' to quit
+
+How to navigate in the edit view:
+- 'arrow up' / 'arrow down' to select the entry field
+- 'arrow left' / 'arrow right' to select a radio button.
+  Be careful to not press these buttons too often:
+
+  - If you are on the left most position, pressing 'arrow left' returns to the list view. If you have made changes it will ask you whether you want to save the changes. You can press 'escape' in this dialog to return to the edit view.
+  - If you are on the right most position, pressing 'arrow right' saves the changes and returns to the list view. (Same like 'enter')
+
+  Maybe I will change this in the future but this does not have a priority.
+
+- 'enter' to save changes and return to the list of messages/signals
+- 'escape' to discard changes and return to the list of messages/signals
+
+
+# Installation
+
+```
+$ pipx install dbc-editor
+```
+
+# TODO
+
+Most important TODO flags:
+- user input is not checked yet in message edit (only in signal edit), e.g. not entering a Frame ID causes a crash
+- check that database object is ok (for the time being: write, close, open file again. I recommend you version your database files in git, then you can always easily go back if a file gets corrupted.)
+
+Missing message attributes:
+- senders
+- send_type
+- cycle_time
+
+Missing signal attributes:
+- multiplexing
+- initial
+- offset
+- minimum
+- maximum
+
