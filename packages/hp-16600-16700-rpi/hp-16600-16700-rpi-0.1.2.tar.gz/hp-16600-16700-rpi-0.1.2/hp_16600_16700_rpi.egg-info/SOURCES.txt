@@ -1,0 +1,8 @@
+README.md
+setup.py
+hp_16600_16700_rpi.egg-info/PKG-INFO
+hp_16600_16700_rpi.egg-info/SOURCES.txt
+hp_16600_16700_rpi.egg-info/dependency_links.txt
+hp_16600_16700_rpi.egg-info/requires.txt
+hp_16600_16700_rpi.egg-info/top_level.txt
+rpi/__init__.py
