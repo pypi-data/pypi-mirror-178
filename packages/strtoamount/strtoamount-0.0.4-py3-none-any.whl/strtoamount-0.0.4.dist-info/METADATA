@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: strtoamount
+Version: 0.0.4
+Summary: Convert String to Amount
+Author: Nazmus Sakib
+Author-email: <sakibkuet16@neuralnine.com>
+Keywords: python,currency,amount
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+Will udpate later
