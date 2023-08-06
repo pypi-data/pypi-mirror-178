@@ -1,0 +1,77 @@
+[tool.poetry]
+name = "async-essentials"
+version = "0.1.0"
+description = "An asynchronous python client for the proof point essentials API"
+authors = ["symonk"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+httpx = "^0.23.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "7.2.0"
+tox = "3.27.1"
+pre-commit = "2.20.0"
+codecov = "2.1.12"
+coverage = "6.5.0"
+towncrier = "22.8.0"
+poetryup = "0.12.3"
+mkdocs = "1.4.2"
+mkdocs-material = "8.5.10"
+mkdocstrings= {extras = ["python"], version = "^0.19.0"}
+respx = "0.20.1"
+pytest-asyncio = "0.20.2"
+pydantic = "1.10.2"
+beautifulsoup4 = "4.11.1"
+lxml = "4.9.1"
+mkdocs-gen-files = "0.4.0"
+mkdocs-literate-nav = "0.5.0"
+mkdocs-section-index = "0.3.4"
+vcrpy = "4.2.1"
+pytest-httpserver = "1.0.6"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    "ignore:RequestsDependencyWarning:"
+]
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = 'True'
+force_grid_wrap = 0
+use_parentheses = 'True'
+ensure_newline_before_comments = 'True'
+line_length = 120
+force_single_line = 'True'
+known_first_party = 'async_essentials'
+default_section = 'THIRDPARTY'
+forced_separate = 'tests'
+skip = '.tox,.eggs,ci/templates'
+
+[tool.mypy]
+mypy_path = '/async_essentials'
+check_untyped_defs = 'True'
+disallow_any_generics = 'True'
+ignore_missing_imports = 'False'
+show_error_codes = 'True'
+strict_equality = 'True'
+warn_redundant_casts = 'True'
+warn_return_any = 'False'
+warn_unreachable = 'True'
+warn_unused_configs = 'True'
+no_implicit_reexport = 'False'
+ignore_errors = 'False'
+
+[tool.black]
+target-version = ['py310']
+line-length = 120
+
+[tool.flake8]
+# flake8 does not currently support pyproject.toml (handle via pre-commit directly).
+
+[tool.pydocstyle]
+# ignored by pre-commit for now, we will enforce later.
