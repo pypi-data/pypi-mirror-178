@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: QuCoPy
+Version: 0.0.1
+Summary: Quantum Computing Python Package
+Project-URL: Homepage, https://https://github.com/luisblank/QuCoPy
+Project-URL: Bug Tracker, https://https://github.com/luisblank/QuCoPy/issues
+Author-email: Luis Blank <Luis.Blank@outlook.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# QuCoPy
