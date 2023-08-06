@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "python_9_42_poetry_app_v2"
+version = "0.1.0"
+description = ""
+authors = ["Krzysztof <programowanie.krzysiek@gmail.com>"]
+readme = "README.md"
+packages = [{include = "python_9_42_poetry_app"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pendulum = "^2.1.2"
+
+# Tutaj jest okreslone narzedzie, ktore pod spodem na podstawie
+# dostarczonej konfiguracji pozwala nam budowac projekt i nim
+# zarzadzac. Jest to szczegolnie, ze to narzedzie masz na pokladzie,
+# kiedy przyjdzie nam zbudowac projekt i wyslac go do zdalnego repo.
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
