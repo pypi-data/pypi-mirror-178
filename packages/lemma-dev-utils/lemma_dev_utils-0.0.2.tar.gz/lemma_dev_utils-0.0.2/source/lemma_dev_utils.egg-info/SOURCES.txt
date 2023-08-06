@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+source/lemma_dev_utils/__init__.py
+source/lemma_dev_utils/zip_downloader.py
+source/lemma_dev_utils.egg-info/PKG-INFO
+source/lemma_dev_utils.egg-info/SOURCES.txt
+source/lemma_dev_utils.egg-info/dependency_links.txt
+source/lemma_dev_utils.egg-info/requires.txt
+source/lemma_dev_utils.egg-info/top_level.txt
