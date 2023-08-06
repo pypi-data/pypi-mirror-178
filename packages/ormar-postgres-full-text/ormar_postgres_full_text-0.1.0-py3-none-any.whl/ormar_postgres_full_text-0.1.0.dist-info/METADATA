@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: ormar-postgres-full-text
+Version: 0.1.0
+Summary: Extension to use full text search from postgresql in ormar ORM.
+License: MIT
+Author: Jegor Kitskerkin
+Author-email: jegor.kitskerkin@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: ormar[postgresql] (==0.11.3)
+Description-Content-Type: text/markdown
+
+# ormar-postgres-full-text
+Extension to use full text search from postgresql in ormar ORM.
+
+## Install
+
+```shell
+pip install ormar-postgres-full-text
+```
+
+## Usage
+
+For usage example refer to `examples/basic_example/main.py`
+
+## Caveat
+
+TSVector is not a textual data type.
+Although you pass a string as the value, postgres would transform it internally and represent it as bag of words, so when retrieving a model containing TSVector, the value will be different than the one you provided initially.
+```
+>>> await FulltextModel.objects.create(text="hello world")
+>>> (await FulltextModel.objects.filter(text__match="hello").first()).text
+"'hello' 'world'"
+```
+
