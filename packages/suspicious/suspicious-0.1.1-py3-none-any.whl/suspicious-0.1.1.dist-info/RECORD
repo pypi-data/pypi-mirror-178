@@ -1,0 +1,11 @@
+suspicious/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+suspicious/cli.py,sha256=hlvCtYMLVbg_d9goBR3LA9BvyA7MZGgh9tSEz-2pV_U,505
+suspicious/render.py,sha256=7dMJ5BhVb9ylS1AFU8ATfp2vqhQgZmLyG-xNsYG_6hY,1169
+suspicious/sus.py,sha256=WQsRo1_lYRMF84IBwUH4EqYvFOGgeSKOSGC6U2XDCLw,4024
+suspicious/templates/index.html.j2,sha256=ThvJylJ_Fw8KIf7DwcBptzX9igMAhqNOcOr4U4jZ320,2452
+suspicious-0.1.1.dist-info/LICENSE.txt,sha256=ILBn-G3jdarm2w8oOrLmXeJNU3czuJvVhDLBASWdhM8,34522
+suspicious-0.1.1.dist-info/METADATA,sha256=lBc3aDddwaWKUDZHV1QT0HtiY3aPyhAwb5vp8dXzVQc,7701
+suspicious-0.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+suspicious-0.1.1.dist-info/entry_points.txt,sha256=rZ6_QWJmXxIpa82IXkmuLB_l7SHx0CB9DtacXrUkjZU,44
+suspicious-0.1.1.dist-info/top_level.txt,sha256=24JGQnmeVAgOq4jocpZPijQzshgXwl848YOoHrVW1xw,11
+suspicious-0.1.1.dist-info/RECORD,,

@@ -1,0 +1,2 @@
+[console_scripts]
+sus = suspicious.cli:main
