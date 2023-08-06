@@ -1,0 +1,16 @@
+confget/__init__.py,sha256=1FcwVaZC_f080wf8aFzT_qv6C8HwIhSP5lE-rLfW_EY,5501
+confget/__main__.py,sha256=gV0xRXHpzPRxw8_r6QRcIIdmxoGOKkosgwhnLAScAZY,9852
+confget/defs.py,sha256=Fz32IRAvaTdP5bBRydrwEaO_Gs03Yd-adUPAjthRvcg,2078
+confget/format.py,sha256=0kk1C42VKSbvQwL52udk_QUzS1WAkxd7BkNWSqxaZVo,5843
+confget/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+confget/backend/__init__.py,sha256=KXnTZGBdAymeMAt9EnOt130-s8MRqmS85n5_2nu6vJw,1685
+confget/backend/abstract.py,sha256=OTQ8V-T8OLU4H2i7pg1YgzwQVIc-2BFVV5YAvTzHVys,2265
+confget/backend/ini_base.py,sha256=XAz2L0xeCCQThG665sU4a_sDudztTh6hzKUsYvMMUnM,2506
+confget/backend/ini_pyp.py,sha256=bj0ZHNr7e5BRqW8cP0RoCCSPlP6s2p7W1rXNWOmNn2Q,7288
+confget/backend/ini_re.py,sha256=nUxnw7LDOEGCuQ2xUKWqxWUbZsZGuShr6prRZXvrWwM,5366
+confget-5.0.1.dist-info/METADATA,sha256=3xHMIeU23dDv62nmuAdlphNcZoOhOCcTGjYyEDLJztc,4622
+confget-5.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+confget-5.0.1.dist-info/entry_points.txt,sha256=gnRDeTILIxo1jfqjdNtVUM_zh1q593q2R-PM7vj31us,50
+confget-5.0.1.dist-info/top_level.txt,sha256=qhRztpUIc51peVJDR7oqhqChPaa1PSxeMxQtWwz2nSQ,8
+confget-5.0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+confget-5.0.1.dist-info/RECORD,,
