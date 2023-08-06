@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: webbote
+Version: 1.7.3
+Summary: 用tcp命令驱动ai-bot，控制浏览器
+Author: chenyuegui
+Author-email: lnj0@foxmail.com
+Keywords: webbote
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+基于ai-bot控制浏览器
