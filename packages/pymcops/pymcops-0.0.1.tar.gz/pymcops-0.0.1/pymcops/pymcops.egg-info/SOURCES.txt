@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+pymcops/pymc.py
+pymcops/pymcops.egg-info/PKG-INFO
+pymcops/pymcops.egg-info/SOURCES.txt
+pymcops/pymcops.egg-info/dependency_links.txt
+pymcops/pymcops.egg-info/top_level.txt
