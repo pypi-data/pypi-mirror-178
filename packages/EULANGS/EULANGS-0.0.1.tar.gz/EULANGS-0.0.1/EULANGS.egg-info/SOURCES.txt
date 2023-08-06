@@ -1,0 +1,7 @@
+LICENSE.txt
+README.md
+setup.py
+EULANGS.egg-info/PKG-INFO
+EULANGS.egg-info/SOURCES.txt
+EULANGS.egg-info/dependency_links.txt
+EULANGS.egg-info/top_level.txt
