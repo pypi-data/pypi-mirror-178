@@ -1,0 +1,8 @@
+License.txt
+README.md
+setup.py
+streamsync/__init__.py
+streamsync.egg-info/PKG-INFO
+streamsync.egg-info/SOURCES.txt
+streamsync.egg-info/dependency_links.txt
+streamsync.egg-info/top_level.txt
