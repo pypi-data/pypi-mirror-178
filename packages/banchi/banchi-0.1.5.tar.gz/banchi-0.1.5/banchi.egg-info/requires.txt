@@ -1,0 +1,14 @@
+protobuf
+
+[dev]
+matplotlib
+jupyterlab
+numpy
+pytest
+build
+twine
+
+[reports]
+matplotlib
+jupyterlab
+numpy
