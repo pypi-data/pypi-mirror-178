@@ -1,0 +1,13 @@
+mkdocs_spellcheck/__init__.py,sha256=3p5d4at4GVmlUCkTdODcCxUdHqYPPzYW28bTU4Vj6Qg,71
+mkdocs_spellcheck/backends/__init__.py,sha256=NYpa7ti46_O0LmG9S-oJi-SfQei87fPEG7zIpwKsDbs,871
+mkdocs_spellcheck/backends/codespell.py,sha256=z2FOzRBdJdYHepEPEvyzY3f-cT3imS0KaPconOJVTh4,1838
+mkdocs_spellcheck/backends/symspellpy.py,sha256=mMBiBdfnCD1bqAoLVjv5jYemafugXYVVNdUMZwedVR8,1547
+mkdocs_spellcheck/loggers.py,sha256=qVzYxaEOoxLxcpr-XEQz0OYsjPCL4C8CzyydXnrXZyM,1219
+mkdocs_spellcheck/plugin.py,sha256=HqKwwEbLklnabjQnMWMDnDwI4e1LrY8uECZFOHnQIsk,4158
+mkdocs_spellcheck/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mkdocs_spellcheck/words.py,sha256=buPEmlNqm92XXtuhYvLM1CwTt1e6QKzKEj_wTkzBNPU,2715
+mkdocs_spellcheck-1.0.0.dist-info/entry_points.txt,sha256=GP7wJpp2ylbpwrofCwZcTVaPw57Z8o8XdRZFSDPB7YI,71
+mkdocs_spellcheck-1.0.0.dist-info/WHEEL,sha256=_LDBqpgIVFNHZvvFOGbg2pvJOENq6RHAyT5px-HeX0U,87
+mkdocs_spellcheck-1.0.0.dist-info/METADATA,sha256=DB1FGxgFK776iPjlE_IFxZ0Ul1G52TrON9qJSIAIFJo,4200
+mkdocs_spellcheck-1.0.0.dist-info/licenses/LICENSE,sha256=eZQBcJKqlN0QepmOi0u09hlqKMPFdzWjY6NUWYeJGZs,754
+mkdocs_spellcheck-1.0.0.dist-info/RECORD,,
