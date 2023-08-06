@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: JTrainer
+Version: 1.0.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: RenjieYu
+Author-email: 770819952@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: license.txt
+Requires-Dist: numpy
+Requires-Dist: torch
+Requires-Dist: tqdm
+Requires-Dist: sklearn
+Requires-Dist: json
+
+UNKNOWN
+
