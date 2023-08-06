@@ -1,0 +1,23 @@
+PyL3dMD/PyL3dMD - Copy.py,sha256=UMv63ne484VxryQQlkkBtwqGAv70F42DFhOKqIWYZn4,9747
+PyL3dMD/PyL3dMD.py,sha256=ESf5gyKQ5ExPiC7nt52HUl5P6lvwfOQMxuxBKitu9QU,8951
+PyL3dMD/__init__.py,sha256=KlSVwZnBH-db3clH1aV8-yaSVu9pN6yFjIY5JdMmaCU,903
+PyL3dMD/cpsa.py,sha256=D-KPsNSPbMZiDEuYTtNciDFAivzHplNI1pZ5EJD_eCI,7544
+PyL3dMD/distancedistancematrixdescriptors.py,sha256=LGpqEb80BKwTZCGJGvXn_xUWdOu--4zRJI0lguZMpDg,2146
+PyL3dMD/geary.py,sha256=qoWqxLv-qhNWzQeNIGpRlS6qCsw0N7RP0GE0CvIjMv4,1753
+PyL3dMD/geometricdescriptors.py,sha256=BEHgXGnN9eR8qRBf8E2xLHjv2RMfBKinvz00SCMfpUY,24668
+PyL3dMD/getadjacencyanddistancematrices.py,sha256=QNgaBUsCVFRdKEMrvv6Yz5y_SPhsWFAyk30UkJKQX3c,3309
+PyL3dMD/getatomicproperties.py,sha256=s8-cE2aJNLAG2juT1VSv5gMez4YamBKJrjsv6msEt6o,9067
+PyL3dMD/getaway.py,sha256=1NLNDPDEc5gUkRIzzbuyLJu4qLVXhF0jX-4WIZL7LNw,12339
+PyL3dMD/getinfofromlammpsdatafile.py,sha256=GKh3F8eNMizrb117NNo9L6BOCfkk1c49RusqB9EY_FM,10753
+PyL3dMD/getinfofromlammpstrajfile.py,sha256=Pd3_HoDxICH83zqZgMnw-xkhoO4zaOl4i7Q5E7OL5Ic,9560
+PyL3dMD/moran.py,sha256=jkAdAuvCv_ZTrK0gOzE8wf25Ouk8fSqsrHgEjr4UKno,1787
+PyL3dMD/moreaubroto.py,sha256=4HF0_A5DA9baHQQ6cvWttonmkmOtrJNre4cmks3AeaE,1463
+PyL3dMD/morse.py,sha256=xP0PWkc4rXIzsEOhvMbO34nSfy7mEjZ1W9QafVx3KYg,1593
+PyL3dMD/rdf.py,sha256=-AcX34GUGUBD_c2EX2VJw7tSO6HjnRxtmxKCmEpI49c,1618
+PyL3dMD/removehydrogenfrommolecule.py,sha256=vxY663J2ivV29NfUUy0xhpc8Z3zuOS9mI7G5kbx47rs,2447
+PyL3dMD/topologyconnectivity3Ddescriptors.py,sha256=2SfMwWEsHaY3bqUx3x4yxh9L8I7yVpywO3glCZMZEbw,15782
+PyL3dMD/whim.py,sha256=mBKSn-21jym4c0WteZSgidozjGkwOzoWojrZuju0sB0,2436
+PyL3dMDTest-0.0.15.dist-info/METADATA,sha256=Gy2EN3_iuYNibuTuJLe8NQhVB6fuLyqvdBbQc4G-O0g,768
+PyL3dMDTest-0.0.15.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+PyL3dMDTest-0.0.15.dist-info/top_level.txt,sha256=wHPvkWreqWaoLF0d7dQ7C9hrgx7Uz3ll3l8XD3kFx9U,8
+PyL3dMDTest-0.0.15.dist-info/RECORD,,
