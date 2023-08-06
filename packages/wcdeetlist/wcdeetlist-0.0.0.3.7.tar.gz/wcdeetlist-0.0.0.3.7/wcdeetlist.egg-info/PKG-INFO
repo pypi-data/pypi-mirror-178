@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: wcdeetlist
+Version: 0.0.0.3.7
+Summary: Web Crawler for https://deetlist.com
+Author: Marcuth
+Author-email: marcuth2006@gmail.com
+License: MIT License
+Keywords: scrapper scraper crawler deetlist
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Biblioteca para fazer raspagem e parse de dados no site 'https://deetlist.com/dragoncity/'
+
+pip install wcdeetlist
