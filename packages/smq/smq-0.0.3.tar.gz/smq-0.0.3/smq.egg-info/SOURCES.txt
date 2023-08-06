@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+smq/__init__.py
+smq/client_factory.py
+smq/smq_server.py
+smq.egg-info/PKG-INFO
+smq.egg-info/SOURCES.txt
+smq.egg-info/dependency_links.txt
+smq.egg-info/top_level.txt
