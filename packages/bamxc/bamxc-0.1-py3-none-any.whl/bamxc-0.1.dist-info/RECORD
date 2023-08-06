@@ -1,0 +1,12 @@
+bam/__init__.py,sha256=MHY7b8G9o0TDHd8Zq7B33SPD3AKivsfHb_kTEI3LBgc,2185
+bam/cluster.py,sha256=pSkfWxj68rYtNYkRGV4g-zHP6VVPXyaYCayMWz3Py74,32840
+bam/config.py,sha256=kFf0OJuqGcT_YOHqoELuVgYbUTYqWdbcqbsqqYNSZKU,4368
+bam/dataset.py,sha256=_OGG4_mUrsoUDOWC7Lfal-H-9u0kZM1IqPl5ZNvrhag,12689
+bam/features.py,sha256=KFh7FrwKVrKkSJGYJUbK9BLPcTio8pwzjpWZRuNiOwo,19385
+bam/segmentation.py,sha256=tdWzQFVsQPI-5Jr-EpvlEdPYqw0WyZ6Bh6IwIzrmK3A,46236
+bam/version.py,sha256=0wnZRIjk6ehv3xGDSopD_jMG8p7YlW2pVHfi5-uJsCU,86
+bamxc-0.1.dist-info/LICENSE,sha256=zU3SAlKOEnu5WdaO0CIWpM4f2i-oIzxRXYIyh2ai-HQ,1516
+bamxc-0.1.dist-info/METADATA,sha256=jIUckwaTGV0OGK6Afrw5Nllrp9S9RqgJ0T-u-Xrknt0,5690
+bamxc-0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+bamxc-0.1.dist-info/top_level.txt,sha256=3Jh27QbVRbZ8nvfhcKPiJaOO3iyjKw8SSS5dabqINcw,4
+bamxc-0.1.dist-info/RECORD,,
