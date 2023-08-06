@@ -1,0 +1,1 @@
+This is a API to create a delete TC for everey Requirement in a component (Jama)
