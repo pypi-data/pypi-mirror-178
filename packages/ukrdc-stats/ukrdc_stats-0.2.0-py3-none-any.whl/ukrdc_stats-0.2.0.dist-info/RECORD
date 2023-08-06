@@ -1,0 +1,17 @@
+ukrdc_stats/__init__.py,sha256=JsiBp4Ygn-UocJplsd4b8mbCVVMBlM_3ityIm3Oy0uM,349
+ukrdc_stats/biomarkers.py,sha256=JQDPe3Hl1QcVCV13UWBtvHVbHd42TGCbcXU0fJJZznw,7238
+ukrdc_stats/calculators/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ukrdc_stats/calculators/abc.py,sha256=wa53L__n_oIepWyta34EoT7aQLK6Ttt9OlyFVJ8tuiw,1469
+ukrdc_stats/calculators/demographics.py,sha256=VJC9u8UbQv9DTuFp1N461INzmE6dAaUsc5PKRPxsjSU,6825
+ukrdc_stats/calculators/dialysis.py,sha256=8BmVMBBWmUJNOhTZnY2PR-9CC0oVwOCr5rhUNlSqTxI,15654
+ukrdc_stats/code_groupings.py,sha256=kcThMTBAvRxGfmNahYbIl-pqtRd6RpGAfEoyZ2Ye7C4,588
+ukrdc_stats/exceptions.py,sha256=cCfD3t-pOnlPHMx_ps0WDgDSTkFahwtXt7RzszqJ7tM,135
+ukrdc_stats/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ukrdc_stats/models/generic_2d.py,sha256=aqBIye6VC2iqD7RuOovbrbKlQdLjaVMcb_a1VbUWpa0,2293
+ukrdc_stats/models/maps.py,sha256=P47sFqP5hPRymD1hYhuVxQLew6YejrydtwLeBBXfFk4,581
+ukrdc_stats/models/networks.py,sha256=-flU92NyexphXuzu6-tRU2FpYeBBw8DnJYYQokXjo4k,817
+ukrdc_stats/utils.py,sha256=YEMptXXkKYSYXBZ7da7xoAErzsQzY5oJdRZqCFvd3Y4,1506
+ukrdc_stats-0.2.0.dist-info/LICENSE,sha256=9gZSNfM_JPJY3hh2Pn3RiQtIy1vKLwb8gVwrgAXddqI,1078
+ukrdc_stats-0.2.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+ukrdc_stats-0.2.0.dist-info/METADATA,sha256=msGyHQ_N66lyDUM1ObppANyKLQJ-9SROxzZHqYCscGA,1570
+ukrdc_stats-0.2.0.dist-info/RECORD,,
