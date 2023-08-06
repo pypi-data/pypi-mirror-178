@@ -1,0 +1,3 @@
+mypy<1.0,>=0.991
+reprit<1.0,>=0.8.0
+typing_extensions<5.0,>=4.4.0
