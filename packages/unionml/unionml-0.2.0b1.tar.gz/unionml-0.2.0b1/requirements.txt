@@ -1,0 +1,18 @@
+click
+cookiecutter
+dataclasses_json
+docker
+fastapi
+flytekit>=1.1.0
+gitpython
+joblib
+mangum
+numpy
+pandas
+pydantic
+rich>=11.2.0
+scikit-learn
+typer
+typing-extensions >= 4.3.0
+uvicorn
+importlib-metadata;python_version<'3.8'
