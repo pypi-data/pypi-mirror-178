@@ -1,0 +1,11 @@
+cmdtrix/__init__.py,sha256=MsIPNGhA2yZ0Cng0GAJYLvWHbmMMadMY9gtcidM2XeI,187
+cmdtrix/main.py,sha256=6rQKyXWDppAxKOErXMaa5aUCZss99S2B8UGCd6DxdLQ,6557
+cmdtrix/requirements.txt,sha256=9DWVC2nKycFaDqBjBAcV1njp8cxtYI0zi9A5IiM0K0g,17
+cmdtrix/util/ArgsHandler.py,sha256=d5EINUZOLNmEN1tnfme5e6yVgWL6yECK-yKJqloJNzU,5859
+cmdtrix/util/Chars.py,sha256=gzk0rMClBQhWQuJDuHiwpIlyCLA6mIwK1QdftwlVnSw,295
+cmdtrix/util/RepeatedTimer.py,sha256=6umEGE0c0oeGkIxXuin_sBQNDrb7imc8XzczBZkh9D4,1157
+cmdtrix-0.0.8.dist-info/entry_points.txt,sha256=nfEFCtVyo4F4vfOyuo-q5MyxyRRkaBq-EcgZDaeqfA0,45
+cmdtrix-0.0.8.dist-info/LICENSE,sha256=NAVv5tZNRy959OCN6_-HDSJxJAU98noU00J6PBDJX14,1090
+cmdtrix-0.0.8.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+cmdtrix-0.0.8.dist-info/METADATA,sha256=oepojfvfws3nATLA-iw2wtbmU1tUZNGV7SPfJbQ-FSQ,4722
+cmdtrix-0.0.8.dist-info/RECORD,,
