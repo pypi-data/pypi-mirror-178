@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+mankspdf/__init__.py
+mankspdf/pdf2text.py
+mankspdf/pdfimage.py
+mankspdf.egg-info/PKG-INFO
+mankspdf.egg-info/SOURCES.txt
+mankspdf.egg-info/dependency_links.txt
+mankspdf.egg-info/top_level.txt
