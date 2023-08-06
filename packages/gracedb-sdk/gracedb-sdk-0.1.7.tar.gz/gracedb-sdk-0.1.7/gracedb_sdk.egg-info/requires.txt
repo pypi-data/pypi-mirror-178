@@ -1,0 +1,4 @@
+requests-gracedb
+
+[test]
+pytest
