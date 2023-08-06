@@ -1,0 +1,11 @@
+AIMM_simulator/AIMM_simulator.py,sha256=rTeTgPCW8G7TupPuv6SaHMpv0rw9uSWzHBVAVCHXbWw,34345
+AIMM_simulator/InH_pathloss_model.py,sha256=GHhumrAB22DazlFZJHJBa5dHdjYCM3SwCdiPIerjE9g,2940
+AIMM_simulator/NR_5G_standard_functions.py,sha256=vDxA8bRDPM7klR9BljdPRGkmLNoNMbE6FoWh_cStjuw,8353
+AIMM_simulator/UMa_pathloss_model.py,sha256=xMn6EQYwYMnukjvEspq_FPyt5ukbcxwTBB8ZMF7_zr8,4471
+AIMM_simulator/UMi_pathloss_model.py,sha256=KVi0QhloOSkQBzvQA1QzxtedNFxU56XmwhWPn6MZAkI,3710
+AIMM_simulator/__init__.py,sha256=xbCsuQnWx2JMV9xANbrjpLYISaJ1xW0m1zOCz7pvIZw,244
+AIMM_simulator/geometry_3d.py,sha256=Cpmc3dXeYLGoPCrMYIMf1Vf3eNjuuKunOmlt1pjXJoQ,12441
+aimm_simulator-2.0.0.dist-info/METADATA,sha256=L_l7oiF-WLBGPxdQq2S9KYkQTPXPK51HCchtRnsgilg,2273
+aimm_simulator-2.0.0.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+aimm_simulator-2.0.0.dist-info/licenses/LICENSE,sha256=y22x25o4JIS97WuNA3d8PWQanjZotEnusGt_KEhadgE,1056
+aimm_simulator-2.0.0.dist-info/RECORD,,
