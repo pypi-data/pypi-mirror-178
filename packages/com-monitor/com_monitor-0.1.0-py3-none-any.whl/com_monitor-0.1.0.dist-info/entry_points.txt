@@ -1,0 +1,3 @@
+[console_scripts]
+commonitor=commonitor:main
+
