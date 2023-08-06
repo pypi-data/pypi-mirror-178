@@ -1,0 +1,4 @@
+PIL
+scipy
+numpy
+setuptools
