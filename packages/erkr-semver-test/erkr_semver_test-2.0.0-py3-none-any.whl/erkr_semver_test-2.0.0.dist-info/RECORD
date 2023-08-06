@@ -1,0 +1,5 @@
+erkr_semver_test/__init__.py,sha256=7Mp8iqklf3_AKmDXbtfWFufmP2NUURhE5CXW4A0vn-c,22
+erkr_semver_test/main.py,sha256=xgu5EJuxUeF8tkeZUNYVooy6qAa29JeFnfMTvCvScdk,46
+erkr_semver_test-2.0.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+erkr_semver_test-2.0.0.dist-info/METADATA,sha256=60P0dAuaLIKtJrQnS66G7u5EgGdeYBza37D1O6i5aB0,621
+erkr_semver_test-2.0.0.dist-info/RECORD,,
