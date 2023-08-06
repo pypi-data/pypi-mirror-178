@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: zetane
+Version: 0.1.2
+Summary: CLI version of Zetane API
+Home-page: https://zetane.com
+Author: Zetane Systems
+Author-email: info@zetane.com
+License: LICENSE.md
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: python-dotenv
+Requires-Dist: tqdm
+Requires-Dist: requests
+Requires-Dist: filetype
+
+Zetane Protector API (patent pending) is an easy to use, menu driven advanced automated platform for testing and improving the robustness of machine learning models and their data. It provides AI professionals and stakeholders with deep insights into proposed machine learning solutions and helps validate, understand, and analyze the operational boundaries of machine learning data and models prior to deployment.
