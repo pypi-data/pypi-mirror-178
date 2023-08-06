@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/chumba/__init__.py
+src/chumba/statistic.py
+src/chumba/utils.py
+src/chumba/word.py
+src/chumba.egg-info/PKG-INFO
+src/chumba.egg-info/SOURCES.txt
+src/chumba.egg-info/dependency_links.txt
+src/chumba.egg-info/top_level.txt
+src/chumba/data/encodings.txt
+src/chumba/data/ojegov.txt
+src/chumba/data/words_en.txt
+src/chumba/data/words_ru.txt
