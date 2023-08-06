@@ -1,0 +1,3 @@
+[console_scripts]
+jds6600=jds6600.cli:main
+
