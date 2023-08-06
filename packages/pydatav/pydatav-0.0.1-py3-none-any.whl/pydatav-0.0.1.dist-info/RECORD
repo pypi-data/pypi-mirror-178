@@ -1,0 +1,16 @@
+poimage/__init__.py,sha256=pb0R5A-oFcevs7jq_Kon8aP1oRqLZ0tTyFnAXHRhPDQ,33
+poimage/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poimage/api/image.py,sha256=l5ZPooylSFEt_920h-l8b6QgUtNnk-tdWL9vh4wKRTw,1791
+poimage/core/ImageType.py,sha256=AZzGL9D7sz1NHEs0gNQheES8V9l1VYH1D5-ZS8l8-Kk,7280
+poimage/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poimage/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poimage/lib/image/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poimage/lib/image/add_watermark_service.py,sha256=5v2qQL6fg0Qn5N2US_k5RJflvW2LE3mE7z8sEb8gEb8,2790
+poimage/lib/image/eliminate_background.py,sha256=qPPtta6V7WLOHQ1slL4dTcPvIPbL8povZqF1C5Ug0G4,2237
+tests/__init__.py,sha256=P5p_okMtaW0QFYhe0Oieh2y3Ig54icHuiMnBCssM0h4,183
+tests/test.py,sha256=whvNIgeL4LekpEgIaXSNxHwR0Q1uFmA_vt3TDtFRjyE,761
+pydatav-0.0.1.dist-info/LICENSE,sha256=GQ6XaGbsxl2OlUBlk1jLBtkHC8U1p6Bw9E1P1XqYAlU,1093
+pydatav-0.0.1.dist-info/METADATA,sha256=jOENvpG2Unh9qx1lGHSL7qtvbQxqEJsfsUTg_w2nQPg,5325
+pydatav-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pydatav-0.0.1.dist-info/top_level.txt,sha256=osuaVBLZ3uMZgWl4iaI_9xHhAh-ZnjdG_89iKSLqFg4,14
+pydatav-0.0.1.dist-info/RECORD,,
