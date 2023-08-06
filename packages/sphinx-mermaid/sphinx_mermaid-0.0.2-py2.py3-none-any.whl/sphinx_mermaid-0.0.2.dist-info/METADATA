@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: sphinx-mermaid
+Version: 0.0.2
+Summary: Mermaid graph support for sphinx generated documentations
+Home-page: https://github.com/Doreapp/sphinx-mermaid
+Author: Antoine Mandin
+Author-email: doreapp.contact@gmail.com
+License: MIT license
+Keywords: sphinxmermaid,mermaid,rst,reStructuredText,sphinx
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: sphinx
+
+# Mermaid support for Sphinx documentation
+
+Mermaid graph support for sphinx generated documentations
+
+## Install
+
+```bash
+pip install sphinx-mermaid
+```
+
+## Setup in `conf.py`
+
+In the `conf.py` file of your documentation, add the extension:
+
+```python
+extensions = [
+    ...,
+    'sphinxmermaid'
+]
+```
+
+## Usage
+
+In your `rst` (or `md`) files, use the directive just like:
+
+```rst
+.. mermaid ::
+
+    graph TD
+    A --> B : label
+    B --> C
+```
+
+
