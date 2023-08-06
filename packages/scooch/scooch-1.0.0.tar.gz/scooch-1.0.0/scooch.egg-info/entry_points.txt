@@ -1,0 +1,3 @@
+[console_scripts]
+scooch = scooch.cli:main
+

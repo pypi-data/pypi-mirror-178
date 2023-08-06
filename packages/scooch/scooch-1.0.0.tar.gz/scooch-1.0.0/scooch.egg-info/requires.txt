@@ -1,0 +1,5 @@
+pyyaml==5.4.1
+sphinx
+sphinx_rtd_theme==0.5.1
+ruamel.yaml==0.16.12
+click==8.0.0a1
