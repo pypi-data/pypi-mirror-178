@@ -1,0 +1,14 @@
+soneda/__init__.py,sha256=F7OcpYAi8sNiEEb7FkWW39G_tkm9tVAcqEeoHnEttKE,27
+soneda/__main__.py,sha256=8CGgMhetRD4-hXSry-gdvbkdjxiSo0UXT8euUkPJ--c,152
+soneda/cli.py,sha256=_Agfa8ziHIbVr68X3WEfQ_Be_06X0dW29Bp0YvCSqz4,87
+soneda/logging.conf,sha256=H0Ul46rh7YBSdaDhA0ITEScw6L8MBDoc2tYELmr1YhI,546
+soneda/logging_conf.py,sha256=Y-Bqur1OPVMddSP3nwL49UtJcSr_B9nNsVmlwW0TJ9M,181
+soneda/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+soneda/twitter/app.py,sha256=dPFvwoIgdfH2Cuw2RGIXlz3NsrSaYAaY4DzZsCEADR0,1950
+soneda/twitter/client.py,sha256=Rf5i7a3EitAQ7GC_tt-hNg5uIdKwoCSdJ190yJbOcF0,5381
+soneda/twitter/exceptions.py,sha256=NDazphIXfxGEhwV4iRc5A_ApnrgAteqJAN3GzY9lroI,167
+soneda-0.0.0.dist-info/entry_points.txt,sha256=4ln4B4mgQoVY2wFJYgRWFi2KBsO7X0yxLd7wzrDIA70,46
+soneda-0.0.0.dist-info/LICENSE,sha256=AGQesRhMY0iGC6sldTUcj6lDlkpR4kHurHXnKJDI7qY,1069
+soneda-0.0.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+soneda-0.0.0.dist-info/METADATA,sha256=aBQP5f0d2oXKOMyy3lEBg-3Xf8LbBj0pckm1OxYtD2k,7173
+soneda-0.0.0.dist-info/RECORD,,
