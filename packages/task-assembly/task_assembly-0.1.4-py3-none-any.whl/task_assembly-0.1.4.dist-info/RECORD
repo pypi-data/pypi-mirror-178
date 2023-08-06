@@ -1,0 +1,8 @@
+task_assembly/__init__.py,sha256=pBp2Hfnk18xqDbKwV3TO_P9GPw6tqe2a_-NIdVV7mfQ,15488
+task_assembly/__main__.py,sha256=qdDtOLLmAFkq6jqbOEaKkiS22BhWvVxzNMMeOUUfBs8,9768
+task_assembly/handlers.py,sha256=FkBBRoAVBvx7zmLjIk5PI-l6c0NB-PJPlVUg0DHwvOA,1341
+task_assembly-0.1.4.dist-info/LICENSE,sha256=YN-3pDaMuQ22TDX2yUanmonp9fKIxz4h-GT216ik8Ds,1091
+task_assembly-0.1.4.dist-info/METADATA,sha256=ZmJ15xstlhCwRdKfHUzdmu8aS1iHlpTg9ANXd_9ZIaM,702
+task_assembly-0.1.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+task_assembly-0.1.4.dist-info/top_level.txt,sha256=2kexO2aOfZwmxgLHufjUdYMrc3bsotrO00pXeiIFbhw,14
+task_assembly-0.1.4.dist-info/RECORD,,
