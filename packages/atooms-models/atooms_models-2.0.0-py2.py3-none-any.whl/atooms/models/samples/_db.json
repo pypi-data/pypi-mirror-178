@@ -1,0 +1,79 @@
+[
+    {
+	"path": "coslovich_pastore_N300_rho1.655_T0.31.xyz",
+	"model": "coslovich_pastore",
+	"md5": "488db481cdac35e599922a26129c3e35",
+	"format": "xyz",
+	"potential_energy_per_particle": 0.0,
+	"number_of_particles": 300,
+	"density": 1.655,
+	"temperature": 0.31,
+	"state": "supercooled"
+    },
+    {
+	"path": "grigera_cavagna_giardina_parisi_N1000_rho1.0_T0.2461.xyz",
+	"model": "grigera_cavagna_giardina_parisi",
+	"md5": "0ac97fa8c69c320e48bd1fca80855e8a",
+	"format": "xyz",
+	"potential_energy_per_particle": 2.1449771790499375,
+	"number_of_particles": 1000,
+	"density": 1.0,
+	"temperature": 0.2461,
+	"state": "fluid"
+    },
+    {
+	"path": "kob_andersen_N150_rho1.2.xyz",
+	"model": "kob_andersen",
+	"md5": "8f4a9fe755e5c1966c10b50c9a53e6bf",
+	"format": "xyz",
+	"potential_energy_per_particle": 0.0,
+	"number_of_particles": 150,
+	"density": 1.2,
+	"temperature": 0.0,
+	"state": "supercooled"
+    },
+    {
+	"path": "lennard_jones_N500_rho0.85_T1.0.xyz",
+	"model": "lennard_jones",
+	"md5": "057ccbcee5f869aa5757fb1929094f8f",
+	"format": "xyz",
+	"potential_energy_per_particle": -2.65774861872754,
+	"number_of_particles": 500,
+	"density": 0.85,
+	"temperature": 1.0,
+	"state": "fluid"
+    },
+    {
+	"path": "https://framagit.org/atooms/models/-/raw/master/atooms/models/samples/lennard_jones/N500_rho0.85_T1.0.xyz",
+	"model": "lennard_jones",
+	"md5": "057ccbcee5f869aa5757fb1929094f8f",
+	"format": "xyz",
+	"potential_energy_per_particle": -2.65774861872754,
+	"number_of_particles": 500,
+	"density": 0.85,
+	"temperature": 1.0,
+	"state": "fluid"
+    },
+    {
+	"path": "lennard_jones_N108_rho1.00_T0.0.xyz",
+	"model": "lennard_jones",
+	"md5": "5cc3b80bc415fa5c262e83410ca65779",
+	"format": "xyz",
+	"potential_energy_per_particle": 0.0,
+	"number_of_particles": 108,
+	"density": 1.00,
+	"temperature": 0.00,
+	"state": "FCC crystal"
+    },
+    {
+	"path": "bernu_hiwatari_hansen_pastore_N216_rho0.5342_T0.208.xyz",
+	"model": "bernu_hiwatari_hansen_pastore",
+	"md5": "f61d7e58b9656cf9640f6e5754441930",
+	"format": "xyz",
+	"potential_energy_per_particle": 1.8746927108811235,
+	"number_of_particles": 216,
+	"density": 0.5341880341880343,
+	"temperature": 0.208,
+	"state": "glassy"
+    }    
+]
