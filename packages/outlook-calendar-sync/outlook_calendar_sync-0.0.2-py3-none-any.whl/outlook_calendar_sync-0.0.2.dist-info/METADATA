@@ -1,0 +1,114 @@
+Metadata-Version: 2.1
+Name: outlook-calendar-sync
+Version: 0.0.2
+Summary: CLI interface to scrape outlook calendar events from the webapp and insert them to a google calendar account.
+Home-page: https://github.com/mr55p-dev/python-outlook-calendar-sync
+Author: Ellis Lunnon
+Author-email: ellislunnon@gmail.com
+License: BSD-2-Clause
+Project-URL: Documentation, https://python-outlook-calendar-sync.readthedocs.io/
+Project-URL: Changelog, https://python-outlook-calendar-sync.readthedocs.io/en/latest/changelog.html
+Project-URL: Issue Tracker, https://github.com/mr55p-dev/python-outlook-calendar-sync/issues
+Keywords: outlook,calendar,gcal,office365,web-scraping,selenium,cli
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: selenium (>=4.6)
+Requires-Dist: beautifulsoup4 (>=4.11)
+Requires-Dist: google-api-python-client
+Requires-Dist: google-auth-httplib2
+Requires-Dist: google-auth-oauthlib
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: bump2version ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+
+========
+Overview
+========
+
+
+
+CLI interface to scrape outlook calendar events from the webapp and insert them to a google calendar account.
+
+* Free software: BSD 2-Clause License
+
+Installation
+============
+
+::
+
+    pip install outlook-calendar-sync
+
+You can also install the in-development version with::
+
+    pip install https://github.com/mr55p-dev/python-outlook-calendar-sync/archive/main.zip
+
+
+Documentation
+=============
+
+
+https://python-outlook-calendar-sync.readthedocs.io/
+
+
+Development
+===========
+
+To run all the tests run::
+
+    tox
+
+Note, to combine the coverage data from all the tox environments run:
+
+.. list-table::
+    :widths: 10 90
+    :stub-columns: 1
+
+    - - Windows
+      - ::
+
+            set PYTEST_ADDOPTS=--cov-append
+            tox
+
+    - - Other
+      - ::
+
+            PYTEST_ADDOPTS=--cov-append tox
+
+
+On the roadmap is:
+
+- [ ] Create some error handling for the outlook sign up process
+  - [ ] Exception on invalid username
+  - [ ] Exception on invalid password
+  - [ ] Exception on invalid auth code
+- [ ] Handle the case where authenticator is not required (either auto detect or use flag)
+- [ ] Switch from using css selectors to XPath
+- [ ] Put dependencies in the setuptools script
+
+
+Changelog
+=========
+
+0.0.0 (2022-11-24)
+------------------
+
+* First release on PyPI.
