@@ -3,36 +3,10 @@
 This repo contains 40000 packages uploaded to PyPI between 
 2022-11-23 00:17 and 2022-11-29 20:54.
 
-The repo is 59% (23930/40000) complete.
+The repo is 64% (25922/40000) complete.
 
-## Packages:
+Package contents can be found [in the code branch](https://github.com/pypi-data/pypi-mirror-178/tree/code/packages).
 
-| Name  | Count |
-| ----- | ----- |
-| tsdownsample | 245 |
-| ruff | 176 |
-| aceye | 168 |
-| expelliarmus | 166 |
-| lzip | 157 |
-| strstrdict | 146 |
-| spanishconjugator | 112 |
-| tf-nightly | 111 |
-| ncnn | 105 |
-| prospr | 95 |
-| aim | 95 |
-| clickhouse-driver | 94 |
-| nucliadb-node-binding | 88 |
-| optree | 87 |
-| ftThanos | 86 |
-| zenroom | 84 |
-| wenetruntime | 84 |
-| inels-mqtt-dev | 84 |
-| tf-nightly-cpu | 83 |
-| stim | 81 |
-| pyagrum-nightly | 80 |
-| h3 | 76 |
-| faust-cchardet | 74 |
-| raindancers-network.raindancers-cdk | 72 |
-| cbor2 | 72 |
+A browsable package list for all repositories [all packages here](https://pypi-data.github.io/website/repositories/pypi-mirror-178).
 
 
