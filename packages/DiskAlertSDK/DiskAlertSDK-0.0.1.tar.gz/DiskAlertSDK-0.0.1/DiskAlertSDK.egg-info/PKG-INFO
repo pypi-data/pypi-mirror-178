@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: DiskAlertSDK
+Version: 0.0.1
+Summary: DiskAlert SDK
+Home-page: https://github.com/Jyonn/DiskAlertSDK
+Author: Jyonn Liu
+Author-email: i@6-79.cn
+License: MIT Licence
+Keywords: disk,alert
+Platform: any
+
+for LabDiskAlert
+
