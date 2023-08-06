@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+Metric_Learning_Layers.egg-info/PKG-INFO
+Metric_Learning_Layers.egg-info/SOURCES.txt
+Metric_Learning_Layers.egg-info/dependency_links.txt
+Metric_Learning_Layers.egg-info/requires.txt
+Metric_Learning_Layers.egg-info/top_level.txt
+metric_learning_layers/__init__.py
+metric_learning_layers/mml.py
