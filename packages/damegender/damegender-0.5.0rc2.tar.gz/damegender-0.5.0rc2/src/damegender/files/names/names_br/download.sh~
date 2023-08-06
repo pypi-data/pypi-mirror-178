@@ -1,0 +1,6 @@
+mkdir -p orig
+cd orig
+wget -c https://data.brasil.io/dataset/genero-nomes/nomes.csv.gz
+gunzip nomes.csv.gz
+grep ",F," nomes.csv > brfemales.csv
+grep ",M," nomes.csv > brmales.csv
