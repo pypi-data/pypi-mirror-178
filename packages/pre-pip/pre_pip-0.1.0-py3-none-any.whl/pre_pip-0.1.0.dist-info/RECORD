@@ -1,0 +1,10 @@
+pre_pip/__init__.py,sha256=yuQjM5Yp5o_igm5DwOufCSyYn4OGR6VVdhMila-lTQA,183
+pre_pip/cli.py,sha256=yxv_cOWaRWpfOBgBRL7snd035BcqjQ-DoC8oIVsL76g,2181
+pre_pip/install.py,sha256=zWxduD7zY0n7h5GgO5Al4CEbz209A7-cXCQ-M1qGoAg,2550
+pre_pip/main.py,sha256=KsPBu24cQRGscC4I946SVBOK42cc-CfV7GqlUo0qilc,912
+pre_pip/uninstall.py,sha256=AAf_MBNTksUNSYs2xnntJu1nGqaEzlIbHjHqLif65Gg,1159
+pre_pip-0.1.0.dist-info/entry_points.txt,sha256=CTNdzsqQ6147x5aVShowyHKZvOQ-7K5LF3oanquxZmY,43
+pre_pip-0.1.0.dist-info/METADATA,sha256=7Vj3HJuGL1qI8WTjnzFvomLyyP-42bbTcArNe3bG01M,1731
+pre_pip-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+pre_pip-0.1.0.dist-info/LICENSE,sha256=Atnx47Inshw71smFyXInQBn3SOOHnTnDJh6E4uqPYcc,1069
+pre_pip-0.1.0.dist-info/RECORD,,
