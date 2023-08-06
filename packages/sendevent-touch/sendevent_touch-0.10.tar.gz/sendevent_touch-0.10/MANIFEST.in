@@ -1,0 +1,4 @@
+include sendevent_touch/requirements.txt
+include sendevent_touch/thirdparty.json
+include sendevent_touch/README.MD
+include sendevent_touch/LICENSE
