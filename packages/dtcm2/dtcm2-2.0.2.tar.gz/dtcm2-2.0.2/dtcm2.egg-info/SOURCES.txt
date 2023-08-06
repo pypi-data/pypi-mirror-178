@@ -1,0 +1,8 @@
+LICENSE
+dtcm2.py
+setup.py
+dtcm2.egg-info/PKG-INFO
+dtcm2.egg-info/SOURCES.txt
+dtcm2.egg-info/dependency_links.txt
+dtcm2.egg-info/requires.txt
+dtcm2.egg-info/top_level.txt

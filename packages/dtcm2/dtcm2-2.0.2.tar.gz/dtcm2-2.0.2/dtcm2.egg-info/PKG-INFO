@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: dtcm2
+Version: 2.0.2
+Summary: Declassed Tor Circuits Manager version 2
+Home-page: https://declassed.art/repository/dtcm2
+Author: AXY
+Author-email: axy@declassed.art
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Internet :: WWW/HTTP
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+
+========================================
+Declassed Tor Circuits Manager version 2
+========================================
+
+Maintain the specified number of circuits and attach streams to them in a round-robin manner.
+
+How to use:
+
+.. code:: python
+
+    from dtcm2 import TorCircuitsManager
+
+    async with TorCircuitsManager('127.0.0.1', 9051, 'my-secret-password',
+                                  hops=2, num_circuits=500) as tcm:
+        await tcm.run()
+
+Mind exceptions and re-run this block when shit happens. Up to you.
+
+This module uses torcontrol.
+See also Stem-based version 1: https://declassed.art/repository/dtcm
+
+:copyright: Copyright 2022 AXY axy@declassed.art
+:license: LGPLv3, see LICENSE for details.
+
+
