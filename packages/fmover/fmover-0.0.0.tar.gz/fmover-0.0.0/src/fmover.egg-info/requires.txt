@@ -1,0 +1,3 @@
+appdirs>=1.4.4
+notifypy>=1.0.3.0
+osxmetadata>=1.2.2
