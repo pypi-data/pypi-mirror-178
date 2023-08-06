@@ -1,0 +1,2 @@
+[console_scripts]
+astk = astk.cli:cli_fun
