@@ -1,0 +1,10 @@
+faqtory/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+faqtory/__main__.py,sha256=9kZTZSlL_JnpNQsa9k_K54Nv4U2CIXlYrhddEx4xv3A,21
+faqtory/cli.py,sha256=oAgF70pX3pByICnOm8FOrG9cnN6bt4Ny16UcDrwD_sk,3593
+faqtory/models.py,sha256=YKkO2jRdV4L8eE2zEfuvLRsof7ZwuHqEckODrzPoR6Y,1312
+faqtory/questions.py,sha256=f1l74VB5ym8jeBkMrgGB752lJRA8lfqLX4pE49vu3og,795
+faqtory-0.2.0.dist-info/entry_points.txt,sha256=tAu7lLVaf5vPvf5zKIyT220dkwthjzgd8CCbV8EJYC4,43
+faqtory-0.2.0.dist-info/LICENSE,sha256=y16ke4ycekV4XFNcLvji0CMm1WdqxcCsxaZXPytxcfI,1069
+faqtory-0.2.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+faqtory-0.2.0.dist-info/METADATA,sha256=FjVMVS7y2kyMrUMm6L9XiDM2iG2YGBy4wKnbGhrHHXU,2198
+faqtory-0.2.0.dist-info/RECORD,,
