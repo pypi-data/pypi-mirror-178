@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: wagtail-new-instance-selector
+Version: 3.0.5
+Summary: A widget for Wagtail's admin that allows you to create and select related items
+Home-page: https://github.com/H1ako/wagtail-instance-selector
+Author: The Interaction Consortium & Sobolev Nikita
+Author-email: nikita-sobolev-wd@yandex.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Wagtail
+Classifier: Framework :: Wagtail :: 2
+Classifier: Framework :: Wagtail :: 3
+Classifier: Framework :: Wagtail :: 4
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Utilities
+License-File: LICENSE
+
+Documentation at https://github.com/H1ako/wagtail-instance-selector
+
