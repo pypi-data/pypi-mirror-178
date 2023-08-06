@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+ditekmax/__init__.py
+ditekmax/functions.py
+ditekmax/greet.py
+ditekmax.egg-info/PKG-INFO
+ditekmax.egg-info/SOURCES.txt
+ditekmax.egg-info/dependency_links.txt
+ditekmax.egg-info/top_level.txt
