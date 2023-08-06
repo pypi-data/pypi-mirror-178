@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: asoke
+Version: 0.0.2
+Summary: A simple class-based dispatcher for ASGI apps and a quickstart wrapper
+Home-page: https://declassed.art/repository/asoke
+Author: AXY
+Author-email: axy@declassed.art
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Internet :: WWW/HTTP
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+=====
+Asoke
+=====
+
+Asoke is a simple class-based dispatcher for ASGI apps and a quickstart wrapper.
+It is based on Hypercorn and Starlette.
+
+Also it provides `quickstart` wrapper for ease of use.
+
+Example:
+
+.. code:: python
+
+    from asoke import expose, quickstart
+    from starlette.requests import Request
+    from starlette.responses import JSONResponse
+
+    class Items:
+
+        @expose(methods='GET')
+        async def get(self, request):
+            items = []
+            # get items somehow
+            return JSONResponse(dict(status='success', items=items))
+
+        @expose
+        async def put(self, request):
+            item = await request.json()
+            # put item somehow
+            return JSONResponse(dict(status='success'))
+
+    class Entities:
+
+        @expose(methods='GET')
+        async def get(self, request):
+            entities = []
+            # get entities somehow
+            return JSONResponse(dict(status='success', entities=entities))
+
+        @expose
+        async def put(self, request):
+            entity = await request.json()
+            # put entity somehow
+            return JSONResponse(dict(status='success'))
+
+    class Api:
+        items = Items()
+        entities = Entities()
+
+    if __name__ == "__main__":
+        quickstart(
+            Api(),
+            {
+                'bind': ['127.0.0.1:12345']
+                'alpn_protocols': ['h2']
+            },
+            base_uri = '/api'
+        )
+
+See also: https://declassed.art/en/blog/2022/07/06/asoke
+
+
