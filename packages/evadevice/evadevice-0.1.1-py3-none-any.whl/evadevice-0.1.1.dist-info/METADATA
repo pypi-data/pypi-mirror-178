@@ -1,0 +1,142 @@
+Metadata-Version: 2.1
+Name: evadevice
+Version: 0.1.1
+Summary: Automated Testing Tools for Android and iOS.
+Home-page: https://github.com/shizhao-git/evadevice
+Author: shizhao
+Author-email: shizhao@mail.nwpu.edu.cn
+License: UNKNOWN
+Keywords: automation,automated-test,game,android,ios,windows,linux,macos
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: adbutils
+Requires-Dist: airtest
+Requires-Dist: evatidevice
+Requires-Dist: tidevice
+Requires-Dist: uiautomator2
+
+# EvaDevice
+
+[![PyPI](https://img.shields.io/pypi/v/evadevice)](https://pypi.org/project/evadevice/)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/evadevice)](https://pypistats.org/search/evadevice)
+
+**EvaDevice** is Automated Testing Tools for Android and iOS.
+
+## Environment Config
+
+| System  | Windows                | Mac      | Linux                       |
+|:-------:|:----------------------:|:--------:|:---------------------------:|
+| iOS     | [iTunes][1] + [wda][3] | [wda][3] | libimobiledevice + [wda][3] |
+| Android | [adb][2]               | [adb][2] | [adb][2]                    |
+
+Ubuntu install libimobiledevice
+
+```shell
+sudo add-apt-repository ppa:pmcenery/ppa
+sudo apt-get update
+sudo apt-get install libimobiledevice-utils
+sudo service usbmuxd start
+```
+
+## Example Usage
+
+```python
+from evadevice import d, EvaDevice
+
+
+# Serial for target device, e.g. serialno for Android, udid for iOS.
+eva_device = EvaDevice(serial, airtest=True)
+
+# Return device list, e.g. {'android': ['xxxxxx'], 'ios': ['xxxxxx-xxxxxx']}.
+d.device_list()
+
+# callback demo.
+def callback(device):
+    if device["status"] == 0:
+        print(f"[{device['serial']}] 已离线")
+    elif device['status'] == 1:
+        print(f"[{device['serial']}] 已上线")
+
+# Start watch device.
+d.start_watch_device(callback)
+
+# device info.
+eva_device.device_info()
+
+# app list.
+eva_device.app_list()
+
+# app start.
+eva_device.app_start(pkg_name)
+
+# app stop.
+eva_device.app_stop(pkg_name)
+
+# app current.
+eva_device.app_current()
+
+# Install apk or ipa.
+eva_device.app_install("demo.apk")                     # use local path.
+eva_device.app_install("http://example.com/demo.apk")  # install from url.
+eva_device.app_install("demo.ipa")                     # use local path.
+eva_device.app_install("http://example.com/demo.ipa")  # install from url.
+
+# Uninstall apk or ipa.
+eva_device.app_uninstall(pkg_name)
+
+# Push dir and files.
+eva_device.push(src, dst, bundle_id/None)  # bundle_id for iOS, None for Android.
+
+# Pull dir and files.
+eva_device.pull(src, dst, bundle_id/None)  # bundle_id for iOS, None for Android.
+
+# auto_confirm_thread.
+# default text_pattern = "完成|关闭|好|好的|确定|确认|安装|继续安装|下次再说|暂不删除|允许|以后都允许|知道了" Android.
+# default text_pattern = "信任|安装|确定|允许|以后|以后都允许|稍后|稍后提醒我|不再提醒|取消|否"              iOS.
+eva_device.start_auto_confirm(text_pattern)
+eva_device.stop_auto_confirm(text_pattern)
+
+# Return screen info.
+eva_device.screen_info()
+
+# Unlock Screen for Android.
+eva_device.unlock_screen(password)
+
+# Perform keyevent on the device.
+eva_device.key_event(key_code)
+
+# Type a given text.
+eva_device.input_text(text, enter=True)
+
+# ocr
+eva_device.find_by_ocr(text)
+eva_device.click_by_ocr(text)
+
+# fast airtest.
+eva_device.airtest_template(path_or_url)
+eva_device.airtest_fast_wait(path_or_url)
+eva_device.airtest_fast_click(path_or_url)
+
+# more airtest.
+# e.g. evaDevice.airtest_wait(template).
+# e.g. evaDevice.airtest_touch(pos).
+eva_device.airtest_{airtest.core.api.*}(*args, **kwargs)  # 反射所有airtest.core.api方法.
+
+```
+
+## Installing EvaDevice
+
+EvaDevice is available on PyPI:
+
+```console
+$ python -m pip install evadevice
+```
+
+[1]: https://support.apple.com/zh-cn/HT210384
+[2]: https://developer.android.com/studio/releases/platform-tools
+[3]: https://github.com/shizhao-git/evadevice/blob/main/docs/INSTALL_WDA.md
+
+## LICENSE
+[MIT](LICENSE)
+
+
