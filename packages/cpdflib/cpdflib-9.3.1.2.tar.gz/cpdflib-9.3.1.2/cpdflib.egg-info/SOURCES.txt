@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+cffi/build.py
+cffi/cdef
+cffi/source.c
+cpdflib/__init__.py
+cpdflib.egg-info/PKG-INFO
+cpdflib.egg-info/SOURCES.txt
+cpdflib.egg-info/dependency_links.txt
+cpdflib.egg-info/requires.txt
+cpdflib.egg-info/top_level.txt

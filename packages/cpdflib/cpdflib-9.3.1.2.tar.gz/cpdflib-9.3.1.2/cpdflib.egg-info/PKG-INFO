@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: cpdflib
+Version: 9.3.1.2
+Summary:  Python CFFI bindings for PDFlib.
+Author: Florian Wagner
+Author-email: florian@wagner-flo.net
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# py-pdflib
+Python CFFI bindings for [PDFlib](https://www.pdflib.com). You need a
+copy of the library as well as a license to use this.
