@@ -1,0 +1,7 @@
+setup.py
+helocodedkfdkdnvl.egg-info/PKG-INFO
+helocodedkfdkdnvl.egg-info/SOURCES.txt
+helocodedkfdkdnvl.egg-info/dependency_links.txt
+helocodedkfdkdnvl.egg-info/top_level.txt
+libname/__init__.py
+libname/hello.py
