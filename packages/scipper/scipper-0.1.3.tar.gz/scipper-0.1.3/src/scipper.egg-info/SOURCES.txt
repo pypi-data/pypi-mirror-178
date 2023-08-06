@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+doc/deleteme.txt
+src/scipper/__init__.py
+src/scipper.egg-info/PKG-INFO
+src/scipper.egg-info/SOURCES.txt
+src/scipper.egg-info/dependency_links.txt
+src/scipper.egg-info/requires.txt
+src/scipper.egg-info/top_level.txt
+src/scipper/Rigol/DS1000de.py
+src/scipper/Rigol/__init__.py
