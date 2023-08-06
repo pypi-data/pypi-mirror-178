@@ -1,0 +1,10 @@
+django>=2.0<4
+django-cms>=3.5
+djangocms-text-ckeditor
+djangocms-attributes-field>=1.0.0
+pandas
+pillow
+django-filer
+django-sizefield
+six>=1.0
+django-simple-captcha
