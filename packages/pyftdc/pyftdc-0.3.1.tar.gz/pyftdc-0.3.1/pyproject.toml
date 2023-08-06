@@ -1,0 +1,48 @@
+[build-system]
+requires = [
+    "setuptools>=45",
+    "wheel",
+    "ninja",
+    "pybind11>=2.8.0",
+    "cmake>=3.21",
+    "scikit-build>=0.12",
+]
+build-backend = "setuptools.build_meta"
+#
+#[tool.isort]
+#profile = "black"
+#
+#[tool.pytest.ini_options]
+#minversion = "6.0"
+#addopts = ["-ra", "--showlocals", "--strict-markers", "--strict-config"]
+#xfail_strict = true
+#filterwarnings = ["error"]
+#testpaths = ["tests"]
+#
+#[tool.cibuildwheel]
+#test-command = "pytest {project}/tests"
+#test-extras = ["test"]
+#test-skip = ["*universal2:arm64"]
+## Setuptools bug causes collision between pypy and cpython artifacts
+#before-build = "rm -rf {project}/build"
+
+# Project
+[project]
+name = "pyftdc"
+version = "0.3.1"
+authors = [
+    { name="Jorge Imperial", email="jlimperial@protonmail.com" },
+]
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+
+]
+
+[project.urls]
+"Homepage" = "https://gitlab.com/jimper/mongo_ftdc"
+"Bug Tracker" = "https://gitlab.com/jimper/issues"
