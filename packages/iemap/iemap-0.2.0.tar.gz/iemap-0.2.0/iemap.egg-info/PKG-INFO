@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: iemap
+Version: 0.2.0
+Summary: Tools to use IEMAP Rest API
+Home-page: https://github.com/ai4mat/iemap-module
+Download-URL: https://github.com/ai4mat/iemap-module/archive/refs/tags/v0.2.0.tar.gz
+Author: Marco Puccini
+Author-email: marco.puccini@enea.it
+License: GPL
+Project-URL: Homepage, https://github.com/ai4mat/iemap-module
+Project-URL: Documentation, https://github.com/ai4mat/iemap-module
+Project-URL: Bug Tracker, https://github.com/ai4mat/iemap-module/issues
+Keywords: pypi,iemap,api
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# iemap-module
+
+This module provides simple functions to interact with the iemap API. 
+
+## Quickstart
+1. Create a virtual environment and install the module in it:
+    ```bash
+    pip install iemap
+    ```
+
+2. In your script or notebook, import the module:
+    ```python
+    import iemap
+    ```
+
