@@ -1,0 +1,14 @@
+optree/_C.cp37-win_amd64.pyd,sha256=pzdHf2ZMRmWkeoSUibcC_AGyCFBV7QhmYJUD-2JFJ_4,328704
+optree/_C.pyi,sha256=u_VI0MqU0mtw3A-A-ODlHkCgbAKBMYs0w3qriIxu9i8,2685
+optree/__init__.py,sha256=KfbZ1gOei9hylKHYW2k0Rs_4ncz1jPzanpqNRmNXGrc,2518
+optree/ops.py,sha256=LVPxOpICumq0w1ht0WCkI__RSYBVWPCOorXc3dLx-Rs,48104
+optree/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+optree/registry.py,sha256=iVOaC7lYRkxSAl3M7kWQU8pGpxnwZyES8aSiSw5zpyk,22438
+optree/typing.py,sha256=yhPlDZ6MyLJvAvuyWjlVO7-uaoWqnuN1eEJqESHqmVc,7830
+optree/utils.py,sha256=Sa9KEl8r9BykdZbk-TcmB7pOUAty9q3fhr5Mmc0ssA8,1586
+optree/version.py,sha256=lsrNckyE83tFVHKrGOj9DDJz3or7vPo5Yp7wybvU6OQ,1828
+optree-0.4.2.dist-info/LICENSE,sha256=RZja2xbfufL5FCOta59YPB8GvPC0vOmASdupSLssXak,11571
+optree-0.4.2.dist-info/METADATA,sha256=JX0NEN2fsKpoT4bEHBwOL7uUfa_wRBXC-vQ5A5Z6Pt0,75432
+optree-0.4.2.dist-info/WHEEL,sha256=-FqDJjo4HrkrIaThvtAYef2eEAn1_QvVe5nINCnUEbQ,101
+optree-0.4.2.dist-info/top_level.txt,sha256=wxgWsTkpSlcz3dX9fMJb8ShwAlFdBUpvrlMRYE31_Po,7
+optree-0.4.2.dist-info/RECORD,,
