@@ -1,0 +1,81 @@
+2015-07-22	Michael J. Schultz	<mjschultz@gmail.com>
+
+	* Add continuous integration (CI) tests for Django 1.8
+	* Drop CI tests for Django 1.5 and 1.6
+
+2015-07-10  Michael J. Schultz  <mjschultz@gmail.com>
+
+	* Handle race condition when saving visitor in middleware.
+
+2014-12-27	Byron Ruth	<b@devel.io>
+
+	* Replace IP validation with Django's built-in validators. This also
+	removes a Windows-specific issue of not having the `socket.inet_aton`
+	function. (#48, #47)
+
+2014-12-08  Michael J. Schultz  <mjschultz@gmail.com>
+
+    * Add tests to existing codebase with minor bugfixes
+    * Change /dashboard/ view to include past 7 days by default (#20, #28)
+    * Improve timezone support by removing `.date()` calls (#39)
+    * Increase scope of `TRACK_IGNORE_URLS` beyond Pageview tracking (#45)
+
+2013-11-07  Byron Ruth  <b@devel.io>
+
+    * Add PageView.method field for tracking the request method used
+
+2013-11-06  Byron Ruth  <b@devel.io>
+
+    * Update deprecated import path for Django 1.6+
+
+2013-11-01  Byron Ruth  <b@devel.io>
+
+    * Move stats dashboard endpoint / rather than /dashboard/
+    * Update initial migration to support custom user models for Django 1.5+
+
+2013-09-30  Byron Ruth  <b@devel.io>
+
+    * Fix MANIFEST.in file to graft templates directory
+
+2013-09-08	Byron Ruth	<b@devel.io>
+
+    * Add support custom user model in Django 1.5+
+
+2013-07-14	Byron Ruth	<b@devel.io>
+
+    * Remove deprecated module import for GIS by Tarak Blah
+    * Added start and end date to stats view context by Tarak Blah
+    * Remove registered users as requirement in manager by Tarak Blah
+
+2013-03-16  Byron Ruth  <b@devel.io>
+
+    * Fix offset-aware and offset-naive datetime errors by Chris Franklin
+
+2012-03-14  Byron Ruth  <b@devel.io>
+
+    * Add internal cache mechanism to reduce database hits in middleware
+    by one. Cache invalidates after `SESSION_COOKIE_AGE` and when the user
+    explicitly logs out.
+
+2012-03-08  Byron Ruth  <b@devel.io>
+
+    * Add `TRACK_PAGEVIEWS` and `TRACK_IGNORE_URLS` settings.
+    * Deprecate `TRACKING_USE_GEOIP` in favor of `TRACK_USING_GEOIP`
+    (even though this is not an officially supported feature)
+
+2012-03-03  Byron Ruth  <b@devel.io>
+
+    * Add `TRACK_ANONYMOUS_USERS` setting
+
+2012-01-30  Byron Ruth  <b@devel.io>
+
+    * Fix bug where the 'User-Agent' header was assumed to
+    exist which caused an exception.
+
+2012-01-25  Byron Ruth  <b@devel.io>
+
+    * Add `TRACK_AJAX_REQUESTS` setting
+
+2012-01-18  Byron Ruth  <b@devel.io>
+
+    * Initial release

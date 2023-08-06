@@ -1,0 +1,16 @@
+# .coveragerc to control coverage.py
+[run]
+branch = True
+source = .
+
+[report]
+omit =
+  setup.py
+  example/*
+  tracking/migrations/*
+  tracking/compat.py
+  tracking/tests/*
+
+exclude_lines =
+  # versioning is for packaging routines
+  def get_version

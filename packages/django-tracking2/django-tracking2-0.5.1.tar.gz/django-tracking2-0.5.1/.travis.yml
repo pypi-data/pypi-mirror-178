@@ -1,0 +1,37 @@
+language: python
+
+sudo: false
+
+python:
+    - "3.6"
+    - "3.7"
+    - "3.8"
+    - "3.9"
+    - "3.10"
+
+env:
+    - DJANGO="Django>=3.2,<3.3"
+    - DJANGO="Django>=4.0,<4.1"
+
+matrix:
+    exclude:
+        - python: "3.6"
+          env: DJANGO="Django>=4.0,<4.1"
+        - python: "3.7"
+          env: DJANGO="Django>=4.0,<4.1"
+
+addons:
+    apt:
+        packages:
+            - libgeoip-dev
+
+install:
+    - pip install "$DJANGO"
+    - pip install geoip
+    - pip install geoip2
+    - pip install coverage django-discover-runner mock unittest2
+    - pip freeze
+    - python setup.py develop
+
+script:
+    - python example/manage.py test --verbosity=2
