@@ -1,0 +1,9 @@
+README.md
+setup.py
+py_cli_interaction/__init__.py
+py_cli_interaction/interaction.py
+py_cli_interaction.egg-info/PKG-INFO
+py_cli_interaction.egg-info/SOURCES.txt
+py_cli_interaction.egg-info/dependency_links.txt
+py_cli_interaction.egg-info/requires.txt
+py_cli_interaction.egg-info/top_level.txt
