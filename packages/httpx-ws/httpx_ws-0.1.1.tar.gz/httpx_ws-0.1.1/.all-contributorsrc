@@ -1,0 +1,35 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "commitConvention": "angular",
+  "contributors": [
+    {
+      "login": "frankie567",
+      "name": "François Voron",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1144727?v=4",
+      "profile": "http://francoisvoron.com",
+      "contributions": [
+        "maintenance",
+        "code"
+      ]
+    },
+    {
+      "login": "kousikmitra",
+      "name": "Kousik Mitra",
+      "avatar_url": "https://avatars.githubusercontent.com/u/15109533?v=4",
+      "profile": "http://kousikmitra.github.io",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "skipCi": true,
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "projectName": "httpx-ws",
+  "projectOwner": "frankie567"
+}
