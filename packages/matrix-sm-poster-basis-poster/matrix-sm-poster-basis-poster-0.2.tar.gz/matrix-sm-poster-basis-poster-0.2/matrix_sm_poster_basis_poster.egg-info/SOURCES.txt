@@ -1,0 +1,13 @@
+COPYING
+LICENSE
+README.md
+setup.py
+basis_poster/Message.py
+basis_poster/PlatformHandler.py
+basis_poster/__init__.py
+basis_poster/functions.py
+matrix_sm_poster_basis_poster.egg-info/PKG-INFO
+matrix_sm_poster_basis_poster.egg-info/SOURCES.txt
+matrix_sm_poster_basis_poster.egg-info/dependency_links.txt
+matrix_sm_poster_basis_poster.egg-info/requires.txt
+matrix_sm_poster_basis_poster.egg-info/top_level.txt
