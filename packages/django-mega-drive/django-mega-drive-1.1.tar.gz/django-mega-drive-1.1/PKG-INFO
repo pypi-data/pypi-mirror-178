@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: django-mega-drive
+Version: 1.1
+Summary: mega drive storage for django implemented with mega.py package
+Author: Rahul Singh
+Author-email: rahulsingh32929@gmail.com
+License: MIT
+Keywords: django python django_mega_drive
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+QuickStart 
+
+Add 'mega_drive' to your settings INSTALLED_APPS::
+INSTALLED_APPS  = [..., 
+                   'mega_drive'
+                  ]
+

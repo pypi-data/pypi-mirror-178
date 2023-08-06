@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+django_mega_drive.egg-info/PKG-INFO
+django_mega_drive.egg-info/SOURCES.txt
+django_mega_drive.egg-info/dependency_links.txt
+django_mega_drive.egg-info/top_level.txt
+mega_drive/__init__.py
+mega_drive/app_setting.py
+mega_drive/apps.py
+mega_drive/mega.py
+mega_drive/storage.py
+mega_drive/utils.py
