@@ -1,0 +1,16 @@
+.gitignore
+.pre-commit-config.yaml
+LICENSE
+MANIFEST.in
+Pipfile
+Pipfile.lock
+README.md
+setup.cfg
+setup.py
+test.py
+.github/workflows/continuous-deployment.yaml
+census_error_analyzer/__init__.py
+census_error_analyzer.egg-info/PKG-INFO
+census_error_analyzer.egg-info/SOURCES.txt
+census_error_analyzer.egg-info/dependency_links.txt
+census_error_analyzer.egg-info/top_level.txt
