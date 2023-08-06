@@ -1,0 +1,3 @@
+[salt.loader]
+saltext.sap_likey = saltext.sap_likey
+
