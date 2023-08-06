@@ -1,0 +1,13 @@
+datasets
+fastcore
+rich
+torch
+transformers
+
+[dev]
+code_tokenizers
+ipywidgets
+matplotlib
+nbdev
+seaborn
+twine

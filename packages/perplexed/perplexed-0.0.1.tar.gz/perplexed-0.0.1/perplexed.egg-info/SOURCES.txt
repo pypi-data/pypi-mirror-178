@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+perplexed/__init__.py
+perplexed/_modidx.py
+perplexed/core.py
+perplexed.egg-info/PKG-INFO
+perplexed.egg-info/SOURCES.txt
+perplexed.egg-info/dependency_links.txt
+perplexed.egg-info/entry_points.txt
+perplexed.egg-info/not-zip-safe
+perplexed.egg-info/requires.txt
+perplexed.egg-info/top_level.txt
