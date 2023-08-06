@@ -1,0 +1,3 @@
+[console_scripts]
+revolution=sayrevolution:say_it
+
