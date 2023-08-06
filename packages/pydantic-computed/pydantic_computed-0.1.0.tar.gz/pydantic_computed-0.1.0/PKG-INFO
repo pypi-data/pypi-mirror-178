@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pydantic-computed
+Version: 0.1.0
+Summary: A new decorator for pydantic allowing you to define dynamic fields that are computed from other properties
+Home-page: https://github.com/Maydmor/pydantic-computed
+License: MIT
+Author: Jakob Leibetseder
+Author-email: leibetsederjakob@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pydantic (>=1.10.2,<2.0.0)
+Requires-Dist: setuptools (>=65.6.3,<66.0.0)
+Project-URL: Repository, https://github.com/Maydmor/pydantic-computed
+Description-Content-Type: text/markdown
+
+# pydantic-computed
+A new decorator for pydantic allowing you to define dynamic fields that are computed from other properties.
+
