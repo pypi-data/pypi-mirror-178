@@ -1,0 +1,9 @@
+eve_azure_ad_auth/__init__.py,sha256=44t9Cv92zpjS5mhQ_VW86HyqiEmJbJGNFmAkKwPMdzk,36
+eve_azure_ad_auth/__version__.py,sha256=r7pYpQ1iezvP6_Kvqd5vqw0OlWseNJ5tnBD1gzw3tqU,261
+eve_azure_ad_auth/auth.py,sha256=u-rne7_PLqOhBH8UWOTqmRq16cLzePO6UaYk-9R2pVE,598
+eve_azure_ad_auth/jwksutils.py,sha256=iFJ7TRXKWEswXlAb0N_XY9848kpt3tu8Zt-qJFuEoSI,728
+eve_azure_ad_auth/verifier.py,sha256=1q29VR_GMwzuIwKXFlQP4cJ2rUE7ar1vLVNUBqVwZ6U,1876
+Eve_Azure_Auth-0.3.0.dist-info/METADATA,sha256=i7dVjNpil9o4wN8KRTtZP6fBXn9SCpEU7-EB3EfJGWk,931
+Eve_Azure_Auth-0.3.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+Eve_Azure_Auth-0.3.0.dist-info/top_level.txt,sha256=ETOg2cFT72yEKwof7o9r2PYCcjOvSRdgefxFduDshCg,18
+Eve_Azure_Auth-0.3.0.dist-info/RECORD,,
