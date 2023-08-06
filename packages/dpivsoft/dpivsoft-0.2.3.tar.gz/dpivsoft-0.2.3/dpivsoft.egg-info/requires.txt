@@ -1,0 +1,12 @@
+numpy>=1.2
+reikna>=0.7.6
+scipy>=1.5
+opencv-python>=4.5
+matplotlib>=3
+PyYAML>=5.4
+pyopencl>=2021
+Shapely>=1.7
+importlib_resources>=5
+
+[dev]
+pytest>=3.7
