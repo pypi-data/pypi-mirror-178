@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+powerschoolpy.egg-info/PKG-INFO
+powerschoolpy.egg-info/SOURCES.txt
+powerschoolpy.egg-info/dependency_links.txt
+powerschoolpy.egg-info/not-zip-safe
+powerschoolpy.egg-info/requires.txt
+powerschoolpy.egg-info/top_level.txt
