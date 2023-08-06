@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+elasticsearch_py.tar.gz.egg-info/PKG-INFO
+elasticsearch_py.tar.gz.egg-info/SOURCES.txt
+elasticsearch_py.tar.gz.egg-info/dependency_links.txt
+elasticsearch_py.tar.gz.egg-info/not-zip-safe
+elasticsearch_py.tar.gz.egg-info/top_level.txt
