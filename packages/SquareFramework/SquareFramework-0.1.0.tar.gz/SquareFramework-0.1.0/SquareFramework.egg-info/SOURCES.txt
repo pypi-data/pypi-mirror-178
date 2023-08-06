@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+SquareFramework.egg-info/PKG-INFO
+SquareFramework.egg-info/SOURCES.txt
+SquareFramework.egg-info/dependency_links.txt
+SquareFramework.egg-info/top_level.txt
