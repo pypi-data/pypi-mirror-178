@@ -1,0 +1,2 @@
+[console_scripts]
+delugeclient = delugeClient.__main__:main
