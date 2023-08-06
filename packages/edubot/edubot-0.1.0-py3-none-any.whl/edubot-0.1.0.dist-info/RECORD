@@ -1,0 +1,7 @@
+edubot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+edubot/config.py,sha256=JLvMVLNcHEdy-iCAhXIHS11t1SwRYAZTPMdCl4mP8pw,154
+edubot/edubot.py,sha256=cXVozf6d4GMVq48ebshfMpgBmeTi3F-LbMhBYxB8dnA,2904
+edubot/sql.py,sha256=OlwReUQLxYnUVMszrDILmio_PtiT5TpoDxtEZU7ILxk,1003
+edubot-0.1.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+edubot-0.1.0.dist-info/METADATA,sha256=1ImlgyzGlxK-fibQg8-nG7aLulLMb_4oJMaTDg5_PfM,501
+edubot-0.1.0.dist-info/RECORD,,
