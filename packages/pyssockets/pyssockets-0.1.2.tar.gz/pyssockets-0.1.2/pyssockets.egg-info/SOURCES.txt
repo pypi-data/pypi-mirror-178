@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyssockets.c
+setup.py
+pyssockets.egg-info/PKG-INFO
+pyssockets.egg-info/SOURCES.txt
+pyssockets.egg-info/dependency_links.txt
+pyssockets.egg-info/top_level.txt
+src/Ctx.c
+src/callbacks.c
+src/states.c
