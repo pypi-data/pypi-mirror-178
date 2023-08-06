@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pymycode_packages"
+version = "0.0.7"
+authors = [
+  { name="Malfire", email="pymycode@protonmail.com" },
+]
+description = "PyMyCode's scripts"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+  'PyPDF2 ~= 2.11.2'
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/PyMyCode"
