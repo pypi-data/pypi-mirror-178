@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: mb-utils
+Version: 1.0.202211280444
+Summary: Basic logger and utils package
+Home-page: UNKNOWN
+Author: ['Malav Bateriwala']
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Requires-Dist: colorama
+Requires-Dist: fastprogress
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+UNKNOWN
+
+
