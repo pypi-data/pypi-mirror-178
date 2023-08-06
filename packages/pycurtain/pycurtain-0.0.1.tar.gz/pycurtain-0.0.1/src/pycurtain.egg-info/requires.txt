@@ -1,0 +1,8 @@
+pillow>=9.3.0
+requests>=2.28.1
+stability-sdk>=0.2.9
+
+[dev]
+pytest>=7.2.0
+check-manifest>=0.48
+openai>=0.25.0
