@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: confluence-calendar-api
+Version: 0.2.0
+Summary: Confluence Calendar API Python Wrapper
+Home-page: https://github.com/Knuckles-Team/confluence-calendar-api
+Author: Audel Rouhi
+Author-email: knucklessg1@gmail.com
+License: Unlicense
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: Public Domain
+Classifier: Environment :: Console
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: urllib3
+
+# Confluence Calendar API
+*Version: 0.2.0*
+
+Confluence Calendar API Python Wrapper
+
+### API Calls:
+- Get Calendars
+- Add Event
+
+### Usage:
+```python
+#!/usr/bin/python
+# coding: utf-8
+import confluence_calendar_api
+
+username = "<CONFLUENCE USERNAME>"
+password = "<CONFLUENCE PASSWORD>"
+confluence_url = "<CONFLUENCE URL>"
+client = confluence_calendar_api.Api(url=confluence_url, username=username, password=password)
+
+calendar = client.get_calendars(sub_calendar_id=12341)
+print(calendar)
+```
+
+#### Install Instructions
+Install Python Package
+
+```bash
+python -m pip install confluence-calendar-api
+```
+
+#### Build Instructions
+Build Python Package
+
+```bash
+sudo chmod +x ./*.py
+pip install .
+python setup.py bdist_wheel --universal
+# Test Pypi
+twine upload --repository-url https://test.pypi.org/legacy/ dist/* --verbose -u "Username" -p "Password"
+# Prod Pypi
+twine upload dist/* --verbose -u "Username" -p "Password"
+```
+
+
