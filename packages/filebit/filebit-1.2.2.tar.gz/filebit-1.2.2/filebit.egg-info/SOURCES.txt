@@ -1,0 +1,14 @@
+readme.md
+setup.py
+filebit/__init__.py
+filebit/__main__.py
+filebit/api.py
+filebit/crypto.py
+filebit/download.py
+filebit/upload.py
+filebit.egg-info/PKG-INFO
+filebit.egg-info/SOURCES.txt
+filebit.egg-info/dependency_links.txt
+filebit.egg-info/entry_points.txt
+filebit.egg-info/requires.txt
+filebit.egg-info/top_level.txt

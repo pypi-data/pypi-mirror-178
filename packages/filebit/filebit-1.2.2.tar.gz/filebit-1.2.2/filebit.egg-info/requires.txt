@@ -1,0 +1,6 @@
+cryptography
+requests
+requests-toolbelt
+docopt
+tqdm
+crc32c
