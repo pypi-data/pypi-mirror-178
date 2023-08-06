@@ -1,0 +1,25 @@
+[build-system]
+requires = [ "setuptools", "wheel",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vypr"
+version = "0.0.0"
+authors = [
+  { name="Josh Smeltzer", email="jsmeltzr@gmail.com" },
+]
+description = "\"Viper\", a Python3 visual processing application framework built on PySide6"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "PySide6"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/pypa/vypr"
+"Bug Tracker" = "https://github.com/pypa/vypr/issues"

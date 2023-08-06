@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: vypr
+Version: 0.0.0
+Summary: "Viper", a Python3 visual processing application framework built on PySide6
+Author-email: Josh Smeltzer <jsmeltzr@gmail.com>
+Project-URL: Homepage, https://github.com/pypa/vypr
+Project-URL: Bug Tracker, https://github.com/pypa/vypr/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# vypr
+"Viper", a Python3 visual processing application framework built on PySide6
