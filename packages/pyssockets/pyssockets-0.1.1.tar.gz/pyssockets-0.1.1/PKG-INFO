@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: pyssockets
+Version: 0.1.1
+Summary: SSockets wrapper for python
+Home-page: https://github.com/jlxip/pyssockets
+Author: jlxip
+License-File: LICENSE
