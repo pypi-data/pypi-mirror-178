@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: Camerons-Python
+Version: 0.0.2
+Summary: A set of classes and functions I have found useful across multiple projects.
+Author-email: Cameron Devine <cdevine@stmartin.edu>
+Project-URL: Homepage, https://github.com/CameronDevine/camerons-python
+Project-URL: Bug Tracker, https://github.com/CameronDevine/camerons-python/issues
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# Cameron's Python
+
+This is a set of Python classes and functions I have found useful across multiple projects.
