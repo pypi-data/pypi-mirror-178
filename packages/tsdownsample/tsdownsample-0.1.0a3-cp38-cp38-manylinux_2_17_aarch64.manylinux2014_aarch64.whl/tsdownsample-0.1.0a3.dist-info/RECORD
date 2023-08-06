@@ -1,0 +1,9 @@
+tsdownsample-0.1.0a3.dist-info/METADATA,sha256=4LMzoK2L-brrTG6qaxGI7uAcCxzTtufskni3fUrBNF8,4333
+tsdownsample-0.1.0a3.dist-info/WHEEL,sha256=dZs46yMT7iSkSE4bVgBQeY4ZKdojrBlc-Ldt6OTtIhU,130
+tsdownsample-0.1.0a3.dist-info/license_files/LICENSE,sha256=I_AmVQOrML7KNWhYEdPm2MZChf-_8hxuRX9j899jz3I,1078
+tsdownsample/_rust/__init__.py,sha256=L2sIq9cl4Ix4oRmZoNcM8o7xw2XuC-ld60Z4ledN_50,58
+tsdownsample/__init__.py,sha256=-B4TcWF7EEWNloyZRgwvWqaizAI_DeC0PFBy6Zjhxo4,90
+tsdownsample/downsamplers.py,sha256=Jnl2hp6r5i4dwK7TqmQXt8eD00kPQf0h_L1vAVTV6IA,1262
+tsdownsample/downsampling_interface.py,sha256=XNz_QexpvphP_KobJLl2mfFAX_ZD86H4DBqrjlrf2iQ,10129
+tsdownsample/_rust/_tsdownsample_rs.cpython-38-aarch64-linux-gnu.so,sha256=DxyoctOfGF3kKHEfB-Zs3yYvDYWDOpXHe6OU1VeOOi0,5628728
+tsdownsample-0.1.0a3.dist-info/RECORD,,
