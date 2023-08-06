@@ -1,0 +1,12 @@
+bitshuffle/h5.cpython-37m-x86_64-linux-gnu.so,sha256=kvbxr53vE8Pjf9H3TlsAKnoxU1B39yDkxtJ7DB8VHdY,13237448
+bitshuffle/__init__.py,sha256=Nri-fGx_BeBZimNe4JoibP1eAsnq2Sr3S7Op6JVdsGs,908
+bitshuffle/ext.cpython-37m-x86_64-linux-gnu.so,sha256=G4XGvOeRuwj6oSOmCW3avuWlrvs1teeTDL3geC4NdHg,13581288
+bitshuffle/plugin/libh5bshuf.cpython-37m-x86_64-linux-gnu.so,sha256=JTpyJBgijTE4M7MN3gQHCJOJ0crMRSbbqztSnMMOqK4,12465016
+bitshuffle/plugin/libh5LZF.cpython-37m-x86_64-linux-gnu.so,sha256=jn_Tw0cuVBHVbVq0U9ElvKf4RStd5kwl6lpoizYr_8c,50872
+bitshuffle-0.5.1.dist-info/top_level.txt,sha256=aysWHNjo4AFo3qaY8MnX5nkAo4CPfWIqbySPwO9UPbY,11
+bitshuffle-0.5.1.dist-info/METADATA,sha256=s15O6Ll-KCnN0Fd-KRa05KisM7Ik-GAu7tyC7H-rKrI,11266
+bitshuffle-0.5.1.dist-info/LICENSE,sha256=7zV8IGHPZ9spj58VZVcu4imtkmNYKp-dDr_1CU9dEKw,1148
+bitshuffle-0.5.1.dist-info/RECORD,,
+bitshuffle-0.5.1.dist-info/WHEEL,sha256=5qaUL7R7UuAgTpV1hnYjoipMHezG5YJtRxtV3_rU2Ew,150
+bitshuffle.libs/libgomp-a34b3233.so.1.0.0,sha256=1GXGWfRf6XU3wOEAn66x6m5ApWQt3_3un8G3PAcyQh4,168192
+bitshuffle.libs/libhdf5-d7ffa464.so.103.3.0,sha256=LXQZJl9iUCwH5aweGFqM6R1X9NUWctPdb8Idlgnksh8,4340600
