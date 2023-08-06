@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: NET
+Version: 1.1
+Summary: ## NET Package (Lib)
+Author: Hunter Mikesell
+Author-email: huntermikesell84@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+## NET Package (Lib)
+
+# A Simple (For Now) Package For Creating Servers, ETC
+
+Code-Examples
+
+1. `NET.https(url="https://google.com").statusCode()`
+2. `NET.build_in.server(host, port, max_connections)` (NEW)
+
+Usefull Links
+1. [Github](https://github.com/DeepSleepMusic)
+2. [DiscordServer](https://discord.gg/us-developers)
+
+# Information
+
+A package for networking such as creating servers/localhost ETC
+
