@@ -1,0 +1,17 @@
+fastgs/__init__.py,sha256=XJ5NZRv5ahaSlYm7_PUNTixULma76xIxwxi2Yy6Eb8w,23
+fastgs/_modidx.py,sha256=f8H4mUPPw7LElokevoDN3nn3Lgy-0jkU_skFNmVo88w,13621
+fastgs/multispectral.py,sha256=-fa5UlLX6a6x9j2Nk0jK4Q7vzQ156VUb4wkZR4IeNSc,7269
+fastgs/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastgs/test/fixture.py,sha256=XkGAjXhD1KMm8ofeOXNFZ9G93ys3R-ia-RdG93IotfA,1076
+fastgs/test/io.py,sha256=OtX-Bt4vI5jOaC9CHDCcRhkmFvOK8uIP_OZ7GJ4agOk,1837
+fastgs/vision/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastgs/vision/augment.py,sha256=sv7I1ncWYDWJwufmfG8mTKCAnxFSGgXvaTMiQIyMq20,1216
+fastgs/vision/core.py,sha256=lPNcVii80lYf37zhhvGrBqLrHxX_MvSjxwSqYJ3szYM,2726
+fastgs/vision/data.py,sha256=dzDE4oY7zeYhGEWJYquoc86-f-Zos4CfDaGTGL5kqHE,1852
+fastgs/vision/learner.py,sha256=5v4ki2dmSBwnoza4lcVG8Yd07ndmI4CDj_R9zcCh1M4,2638
+fastgs-0.0.27.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+fastgs-0.0.27.dist-info/METADATA,sha256=PfpXoZlJU0dobghsEBdVWbIyOBERWRVHNeEF33jiA30,4045
+fastgs-0.0.27.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+fastgs-0.0.27.dist-info/entry_points.txt,sha256=nNXGpEuGjdg9q_USH4KTYAyCfPlBWxDYeWgdqJZWps4,34
+fastgs-0.0.27.dist-info/top_level.txt,sha256=wJeozUxzUlJLm5zx1PXSMUZfN7TOIWnkjJtm3YfWHzo,7
+fastgs-0.0.27.dist-info/RECORD,,
