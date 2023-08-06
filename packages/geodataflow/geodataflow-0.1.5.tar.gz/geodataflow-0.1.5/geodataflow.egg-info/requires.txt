@@ -1,0 +1,14 @@
+numpy
+requests
+pyproj
+shapely
+GDAL
+pandas
+geopandas
+matplotlib
+
+[eodag]
+eodag>=2.4.0
+
+[gee]
+earthengine-api==0.1.320
