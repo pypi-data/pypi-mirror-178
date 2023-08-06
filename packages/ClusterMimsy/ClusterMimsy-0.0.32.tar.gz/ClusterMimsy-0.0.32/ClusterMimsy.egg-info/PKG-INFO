@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ClusterMimsy
+Version: 0.0.32
+Summary: A package for the ClusterMI algorithm
+Author: ClusterMimsyDev
+Author-email: <ClusterMimsyDev@gmail.com>
+Keywords: python,first package
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+
+A package for the ClusterMI algorithm

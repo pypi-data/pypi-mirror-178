@@ -1,0 +1,8 @@
+README.md
+setup.py
+ClusterMimsy/__init__.py
+ClusterMimsy/hello.py
+ClusterMimsy.egg-info/PKG-INFO
+ClusterMimsy.egg-info/SOURCES.txt
+ClusterMimsy.egg-info/dependency_links.txt
+ClusterMimsy.egg-info/top_level.txt
