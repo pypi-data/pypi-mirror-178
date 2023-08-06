@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+mobile_dropdown/MobileDropdown.py
+mobile_dropdown/__init__.py
+mobile_dropdown/_imports_.py
+mobile_dropdown/metadata.json
+mobile_dropdown/mobile_dropdown.dev.js
+mobile_dropdown/mobile_dropdown.min.js
+mobile_dropdown/package.json
+mobile_dropdown.egg-info/PKG-INFO
+mobile_dropdown.egg-info/SOURCES.txt
+mobile_dropdown.egg-info/dependency_links.txt
+mobile_dropdown.egg-info/top_level.txt
