@@ -1,0 +1,2 @@
+[console_scripts]
+pygetversions = getversions.main:main
