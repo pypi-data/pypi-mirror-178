@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+src/foreca_api/__init__.py
+src/foreca_api/api.py
+src/foreca_api.egg-info/PKG-INFO
+src/foreca_api.egg-info/SOURCES.txt
+src/foreca_api.egg-info/dependency_links.txt
+src/foreca_api.egg-info/requires.txt
+src/foreca_api.egg-info/top_level.txt
+src/foreca_api.egg-info/zip-safe

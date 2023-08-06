@@ -1,0 +1,118 @@
+Metadata-Version: 2.1
+Name: foreca-api
+Version: 0.1.0
+Summary: a package to integrate foreca weather api with python client
+Home-page: https://github.com/AliBigdeli/Python-Foreca-API
+Author: Ali Bigdeli
+Author-email: bigdeli.ali3@gmail.com
+License: MIT
+Keywords: Foreca,api,weather api,weather
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+
+<p align="center">
+
+<a href="https://www.foreca.com/" target="_blank"> <img src="https://www.foreca.com/public/images/logo/black.svg" style="max-width:1280 px;"/> </a>
+
+</p>
+
+<h1 align="center">Python Foreca Api Client</h1>
+<h3 align="center">a simple module to integrate with foreca weather api service</h3>
+
+# Overview
+- [Overview](#overview)
+- [Installation](#installation)
+- [Usage](#usage)
+- [References](#references)
+
+# Installation
+This module is a pip package to let you integrate with foreca weather api service provider. in order to use this module you have to install it by pip command or through setup.
+
+```bash
+pip install foreca_api
+```
+Import package into your project by:
+
+```bash
+from foreca_api.api import ForecaAPI
+```
+in order to use the module please consider looking at examples and documentations.
+
+# Usage
+Before starting to use this module you need to have an account for developers in foreca website, so please go inside the provided link and signup for 30 days free usage.
+
+https://corporate.foreca.com/en/weather-api-freetrial
+
+after signup just wait a few minute and you will get an email with 3 fields to use the service:
+- User
+- Password
+- Administrative password 
+
+and also letting you know that you can use the developer api with the link below:
+https://developer.foreca.com/
+
+
+in order to test the foreca api you can use postman or any other clients too but first of all you need to have an access_token which you can build through my module or you can do it yourself either way its fine. but remember you have an option to create an unlimited time access_token.
+
+For easy implementations i have provided two simple examples, one for creating authenticating and getting access key and one for simple example to get current data from a location
+
+```python
+# importing foreca module
+from foreca_api.api import ForecaAPI
+
+# creating an instance client
+client = ForecaAPI()
+
+# setting up username and password
+client.set_user_pass(username='USERNAME', password='PASSWORD')
+
+# trying to authenticate with provided credentials
+client.authenticate()
+
+# if everything is ok you get the access_token
+access_token = client.get_access_token()
+print(access_token)
+
+
+```
+
+now that you have access token with unlimited time access then there is no need for authenticating, you can just set the access_token and proceed with other requests.
+
+
+```python
+#importing foreca module
+from foreca_api.api import ForecaAPI
+
+# creating an instance client
+client = ForecaAPI()
+
+# setting the access token for headers in client object
+client.set_access_token(access_token="your access_token")
+
+# set the location we need the data for
+client.set_location(35.8439,50.9715)
+
+# requesting to get result of that specific place
+result = client.get_current_weather_location()
+
+print(result)
+```
+
+# References
+
+- https://developer.foreca.com/
+- https://developer.foreca.com/examples#Forecasts
+- https://www.foreca.com/
