@@ -1,0 +1,21 @@
+[project]
+name = "socketsc"
+version = "1.0"
+authors = [
+  { name="dan5py"},
+]
+description = "A simple socket library with events management"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://gitlab.com/dan5py/socketsc"
+"Bug Tracker" = "https://gitlab.com/dan5py/socketsc/issues"
