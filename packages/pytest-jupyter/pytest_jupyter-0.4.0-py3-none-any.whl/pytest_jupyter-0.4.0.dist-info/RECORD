@@ -1,0 +1,11 @@
+pytest_jupyter/__init__.py,sha256=UANDgMB4qcSDinKUHgv4gF2qcHxZKIXjWX34KjTAUm4,138
+pytest_jupyter/_version.py,sha256=xohaSTANzNFM8InaJHA7KONmzemaH3QYd_kw42SYdcw,124
+pytest_jupyter/echo_kernel.py,sha256=KHMPVit3tp913KUf8FRxJErq3i7FLDw_7eBIEA-JXXI,1555
+pytest_jupyter/jupyter_client.py,sha256=elceOZROllIa9wzgh0ZNJxIqMVWubJX0IgtwmJ1HlGg,1188
+pytest_jupyter/jupyter_core.py,sha256=ztotflesouWbyFgpuKBsSBnQNaTKoqEhGOTXaih9YJQ,4292
+pytest_jupyter/jupyter_server.py,sha256=DqOj-O8LtBtR1en0TKXJWxdK39u2ipPCUYUK9EKGsDE,16697
+pytest_jupyter/utils.py,sha256=uOUektfVzAIGlKwJUx9WOxIZfvbFnnwMc0Nbozfje8w,244
+pytest_jupyter-0.4.0.dist-info/METADATA,sha256=5ALRLptktU-wU4cAEEuxh_91JSYqm8zDC6O8107qXec,7518
+pytest_jupyter-0.4.0.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+pytest_jupyter-0.4.0.dist-info/licenses/LICENSE,sha256=1YIp204bdM8z6hxdli4y1ednDsvjtHPlzomSmztQh6c,2836
+pytest_jupyter-0.4.0.dist-info/RECORD,,
