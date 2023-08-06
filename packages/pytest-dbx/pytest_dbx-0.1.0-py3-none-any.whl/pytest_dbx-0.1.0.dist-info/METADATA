@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: pytest-dbx
+Version: 0.1.0
+Summary: Pytest plugin to run unit tests for dbx (Databricks CLI extensions) related code
+Home-page: https://github.com/jmeidam/pytest-dbx
+Author: Jeroen Meidam
+Author-email: j.meidam@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: dbx (>=0.8.7,<0.9.0)
+Requires-Dist: delta-spark (==2.1.1)
+Requires-Dist: ipython (>=8.5.0,<9.0.0)
+Requires-Dist: pytest (>=7.1.3,<8.0.0)
+Project-URL: Repository, https://github.com/jmeidam/pytest-dbx
+Description-Content-Type: text/markdown
+
+# pytest-dbx
+
+Pytest plugin for testing [dbx](https://github.com/databrickslabs/dbx)-based projects.
+
+## Install
+
+To use the fixtures in your project, simply add `pytest-dbx` to your project's dev-dependencies
+(where you would place all your test and build dependencies).
+
+## Fixtures
+
+In unit tests you can use the `dbx_spark` fixture to have a spark session available as in Databricks
+
+```python
+def test_function(dbx_spark):
+    sdf = dbx_spark.createDataFrame([[1], [2], [3]], ['a'])
+    assert sdf.count() == 3
+```
+
+The `dbutils_fixture` and `mlflow_local` are automatically used.
+

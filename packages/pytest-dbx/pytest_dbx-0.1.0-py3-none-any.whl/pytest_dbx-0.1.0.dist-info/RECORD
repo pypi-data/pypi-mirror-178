@@ -1,0 +1,8 @@
+pytest_dbx/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_dbx/common.py,sha256=GQiKPYiwcRk6HzIQ2CT06XdOhnBfgRnh1Xg2kzeywTc,639
+pytest_dbx/fixtures.py,sha256=y-BHPVS2ddj2JwfKz3_Urr6fnmefm0a7NymGhF8m24I,4502
+pytest_dbx-0.1.0.dist-info/entry_points.txt,sha256=uCpVXySrEAgsbPb1foA-LJrt0sWuQG22epghUWqmOfg,43
+pytest_dbx-0.1.0.dist-info/LICENSE,sha256=ltbfF6hPIPp453EAyO-HZybTjDRSRBfRt3wVQ3M5f9Q,1070
+pytest_dbx-0.1.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+pytest_dbx-0.1.0.dist-info/METADATA,sha256=Tg6xXvE0E1sQtR9lMu2l49KeVC8ATW1CT_ayM-WBqtA,1319
+pytest_dbx-0.1.0.dist-info/RECORD,,
