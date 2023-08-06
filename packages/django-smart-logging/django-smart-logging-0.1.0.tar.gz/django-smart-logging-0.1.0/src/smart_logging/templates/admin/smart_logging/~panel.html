@@ -1,0 +1,18 @@
+{% extends "admin/smart_logging/base.html" %}{% load static i18n %}
+{% block left %}
+    <div id="changelist" class="smart-logging">
+        <div id="config" class="panel logging active">
+            {% include "admin/smart_logging/_config.html" %}
+        </div>
+        <div id="active" class="panel logging ">
+            {% include "admin/smart_logging/_active.html" %}
+        </div>
+        <div id="handlers" class="panel logging">
+            {% include "admin/smart_logging/_handlers.html" %}
+        </div>
+        <div id="formatters" class="panel logging">
+            {% include "admin/smart_logging/_formatters.html" %}
+        </div>
+    </div>
+{% endblock left %}
+

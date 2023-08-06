@@ -1,0 +1,39 @@
+{% extends "admin/smart_logging/base.html" %}{% load static i18n %}
+{% block config %}selected{% endblock %}
+{% block left %}
+    <div id="changelist" class="smart-logging">
+        {% load i18n %}
+{#        <div class="flex">#}
+            <form method="post" id="loggingConfig">
+                {% csrf_token %}
+                <ul class="inline logging search-form">
+                    {{ form.as_ul }}
+                    <li class="float-right sticky">
+                        <input type="submit" value="{% trans "Save" %}">
+                    </li>
+                </ul>
+                {{ formset.management_form }}
+                <table class="filtered config">
+                    <tr class="header">
+                        <th>Logger</th>
+                        <th>Level</th>
+                        <th>Propagate</th>
+                        <th>Handlers</th>
+                    </tr>
+                    {% for frm in formset.forms %}
+                        {{ frm.errors }}
+                        <tr class="{{ frm.logger.value }} row" data-changes="0">
+                            <td class="logger search">{{ frm.logger }}{{ frm.logger.value }}</td>
+                            <td class="level">{{ frm.level }}</td>
+                            <td class="propagate">{{ frm.propagate }}</td>
+                            <td class="handlers">{{ frm.handlers.errors }}{{ frm.handlers }}</td>
+                            <td class="undo">undo</td>
+                        </tr>
+                    {% endfor %}
+                </table>
+                <input type="submit" value="{% trans "Save" %}">
+            </form>
+        </div>
+{#    </div>#}
+{% endblock left %}
+

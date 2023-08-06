@@ -1,0 +1,16 @@
+<table>
+    <tr>
+        <th>Name</th>
+        <td>Format</td>
+    </tr>
+    {% for name,conf in LOGGING_CONF.formatters.items %}
+        <tr>
+            <th>
+                {{ name }}
+            </th>
+            <td>
+                {{ conf.format }}
+            </td>
+        </tr>
+    {% endfor %}
+</table>

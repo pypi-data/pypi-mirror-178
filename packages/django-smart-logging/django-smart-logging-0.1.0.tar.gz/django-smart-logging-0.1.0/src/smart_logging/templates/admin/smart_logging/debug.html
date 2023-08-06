@@ -1,0 +1,28 @@
+{% extends "admin/smart_logging/base.html" %}{% load static i18n smart_logging %}
+{% block debug %}selected{% endblock %}
+{% block left %}
+    <script src="{% static "smart_logging/debug.js" %}" defer=""></script>
+    <div id="changelist" class="smart-logging">
+        <form>
+            <ul class="logging search-form">
+                <li><input type="text" name="logger" placeholder="Filter by logger name" class="search" id="id_logger">
+                </li>
+            </ul>
+
+            <table class="filtered">
+                {% for logger, config in data.items %}
+                    <tr>
+                        <td class="search">
+                            {{ logger }}
+                        </td>
+                        <td>
+                            <pre>{{ data|render:logger }}</pre>
+                        </td>
+                    </tr>
+
+                {% endfor %}
+            </table>
+        </form>
+    </div>
+{% endblock left %}
+

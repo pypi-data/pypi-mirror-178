@@ -1,0 +1,75 @@
+@mixin inline {
+
+}
+
+#changelist.smart-logging {
+  width: 100%;
+  .sticky{
+    position: sticky;
+  }
+  .float-right{
+    float: right;
+  }
+
+  label, input[type=checkbox]{
+    cursor:pointer;
+  }
+  table, form{
+    width: 100%;
+  }
+  ul {
+    margin-left: 0;
+    padding-left: 0;
+
+    li {
+      float: left;
+      display: inline;
+      list-style: none;
+      margin-right: 10px;    }
+  }
+  //table.online{
+  //  width: 100%;
+  //  thead{
+  //    width: 100%;
+  //    tr{
+  //      th{
+  //        text-transform: capitalize;
+  //        padding: 3px;
+  //      }
+  //    }
+  //  }
+  //  tbody{
+  //    width: 100%;
+  //    tr{
+  //      td:nth-of-type(2){
+  //        white-space: nowrap;
+  //      }
+  //    }
+  //  }
+  //}
+  table {
+    width: 100%;
+    tr{
+      &.changed{
+        border-left: 3px solid var(--link-fg);
+        border-right: 3px solid var(--link-fg);
+      }
+      td.undo{
+        cursor: pointer;
+      }
+    }
+  }
+  form {
+    input[name=logger] {
+      width: 400px;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+  }
+  //
+  //}
+  //
+
+
+}
+

@@ -1,0 +1,20 @@
+{% extends "smart_admin/console.html" %}{% load static i18n %}
+{% block extrastyle %}
+    {{ block.super }}
+    <link rel="stylesheet" type="text/css" href="{% static "smart_logging/style.css" %}">
+    {{ form.media }}
+{% endblock %}
+
+{% block left %}
+
+{% endblock left %}
+{% block buttons %}
+    <ul>
+        <li><a class="button logging {% block config %}{% endblock %}" href="./?page=config">Config</a></li>
+        <li><a class="button logging online {% block online %}{% endblock %}" href="./?page=online">Log</a></li>
+        {% if conf.SMART_LOG_DEBUG %}
+            <li><a class="button logging debug {% block debug %}{% endblock %}" href="./?page=debug">Debug</a></li>
+        {% endif %}
+    </ul>
+    {{ block.super }}
+{% endblock %}

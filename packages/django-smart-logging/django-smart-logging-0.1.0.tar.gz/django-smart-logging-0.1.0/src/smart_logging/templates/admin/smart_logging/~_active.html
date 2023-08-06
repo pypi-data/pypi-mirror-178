@@ -1,0 +1,21 @@
+<table class="filtered">
+    <tr class="header">
+        <th>Logger</th>
+        <th>Level</th>
+        <th>Handlers</th>
+    </tr>
+    {% for name,conf in active.items %}
+        <tr class="row">
+            <th class="filter">
+                {{ name }}
+            </th>
+            <td>
+                {{ conf.level }}
+            </td>
+            <td>
+                {{ conf.handlers|join:", " }}
+            </td>
+        </tr>
+    {% endfor %}
+</table>
+
