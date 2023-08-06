@@ -1,0 +1,39 @@
+[project]
+name = "plaid2"
+version = "0.2.0"
+description = "Plaid client, generated from the OpenAPI spec."
+authors = []
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "pydantic>=1.10.2",
+    "aiohttp>=3.8.3",
+    "requests>=2.28.1",
+    "urllib3>=1.26.12",
+]
+[project.optional-dependencies]
+
+
+
+
+[tool.pyright]
+
+[tool.pdm]
+[tool.pdm.dev-dependencies]
+dev = [
+    "pyright>=1.1.271",
+    "ipython>=7.34.0",
+    "sphinx-rtd-theme>=1.1.1",
+    "commonmark>=0.9.1",
+    "sphinxcontrib-fulltoc>=1.2.0",
+]
+[tool.ruff]
+line-length = 120
+
+[build-system]
+requires = ["pdm-pep517>=1.0.0"]
+build-backend = "pdm.pep517.api"
+
+keywords = []
+classifiers = []
