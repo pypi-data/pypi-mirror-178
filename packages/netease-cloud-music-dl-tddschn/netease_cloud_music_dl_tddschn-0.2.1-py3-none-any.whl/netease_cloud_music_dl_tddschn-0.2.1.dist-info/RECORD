@@ -1,0 +1,13 @@
+ncm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ncm/api.py,sha256=YkREtrOB8Ci_T383zi2f4O9_gHk07vosRpSMstTJoh4,3625
+ncm/config.py,sha256=xx4QJyLf66siXfMdhgnXmf5oZFHTzwu58qhJPVEs2Lg,2663
+ncm/constants.py,sha256=Ka-o_GHvSjNvQdbeGZGfCzoSyOYU34UYrBNhAFoe_5U,1571
+ncm/downloader.py,sha256=l-Gf1HsGnR2gfPWDSKVQ018nsM0uIShDFOyrKHtL50c,4646
+ncm/encrypt.py,sha256=vwtLbO8hf8enta_ZVgDVPIngWppumiWwcKA4uxinCiE,1069
+ncm/file_util.py,sha256=CB-BoANMw7YzJ00KizRmGi18bwaIvkbbFJWa3CpOM_Y,2532
+ncm/start.py,sha256=Z7DA7oeLpXl_WX_r_hYakaNz2TRMG0ffM3QbNnAq1vM,4114
+netease_cloud_music_dl_tddschn-0.2.1.dist-info/entry_points.txt,sha256=Vd9XDKVwFnpKpbEJyJZsBKCfjejTNOfRAcnwzpFo6eo,38
+netease_cloud_music_dl_tddschn-0.2.1.dist-info/LICENSE.txt,sha256=4oZA1J81XyYOiaJSLTgQbcnVoWn42FF5igtGa_yP4oA,1084
+netease_cloud_music_dl_tddschn-0.2.1.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+netease_cloud_music_dl_tddschn-0.2.1.dist-info/METADATA,sha256=d0-SBpwzdZkHPCRIKtPPW7nbhWfDHCPlUqdsYAZCSTg,6315
+netease_cloud_music_dl_tddschn-0.2.1.dist-info/RECORD,,
