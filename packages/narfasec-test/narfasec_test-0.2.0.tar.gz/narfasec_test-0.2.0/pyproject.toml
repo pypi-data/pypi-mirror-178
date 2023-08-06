@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "narfasec-test"
+version = "0.2.0"
+description = "Just a test"
+authors = ["narfasec"]
+readme = "README.md"
+packages = [{include = "src/example_package_narfasec"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+sherlog = 'src.example_package_narfasec.entry:main'
