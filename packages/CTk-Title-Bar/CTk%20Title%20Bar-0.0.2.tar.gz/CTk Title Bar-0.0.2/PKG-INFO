@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: CTk Title Bar
+Version: 0.0.2
+Summary: To create customize title bar for window
+Author: DKVG
+Author-email: gadellidk@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+To create customize title bar for window(Tkinter)
+
+Example :
+
+from tkinter import *
+from CTkTitle.CTkTitle import CTkTitlebar
+
+root = Tk()
+root.geometry('500x450')
+CTkTitlebar().Header(master=root, title='Customized Title Bar',icon_path=r'\ctbimage.png')
+
+root.mainloop()

@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+src/CTkTitle/CTkTitle.py
+src/CTkTitle/__init__.py
+src/CTk_Title_Bar.egg-info/PKG-INFO
+src/CTk_Title_Bar.egg-info/SOURCES.txt
+src/CTk_Title_Bar.egg-info/dependency_links.txt
+src/CTk_Title_Bar.egg-info/top_level.txt
