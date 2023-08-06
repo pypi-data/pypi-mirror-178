@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+dagdshort/__init__.py
+dagdshort/config.py
+dagdshort/exc.py
+dagdshort/shortener.py
+dagdshort.egg-info/PKG-INFO
+dagdshort.egg-info/SOURCES.txt
+dagdshort.egg-info/dependency_links.txt
+dagdshort.egg-info/requires.txt
+dagdshort.egg-info/top_level.txt
