@@ -1,0 +1,16 @@
+altair
+click
+emoji
+humanize
+nltk>=3.6.6
+pandas
+phonenumbers
+Pillow>=9.0.1
+plotly
+protobuf==3.20
+send2trash
+sql-query-tools
+streamlit
+stylecloud
+watchdog
+networkx

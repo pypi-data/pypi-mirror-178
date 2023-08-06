@@ -1,0 +1,78 @@
+{
+    "_SqliteDatabaseProperties": {
+        "primary_key": "key",
+        "dependencies": null
+    },
+    "attachment": {
+        "primary_key": "ROWID",
+        "dependencies": null
+    },
+    "chat": {
+        "primary_key": "ROWID",
+        "dependencies": null
+    },
+    "chat_handle_join": {
+        "primary_key": ["chat_id", "handle_id"],
+        "dependencies": ["chat", "handle"]
+    },
+    "chat_message_join": {
+        "primary_key": "message_id",
+        "dependencies": ["chat", "message"]
+    },
+    "deleted_messages": {
+        "primary_key": "ROWID",
+        "dependencies": null
+    },
+    "handle": {
+        "primary_key": "ROWID",
+        "dependencies": null
+    },
+    "kvtable": {
+        "primary_key": "ROWID",
+        "dependencies": null
+    },
+    "message": {
+        "primary_key": "ROWID",
+        "dependencies": null
+    },
+    "message_attachment_join": {
+        "primary_key": ["message_id", "attachment_id"],
+        "dependencies": ["message", "attachment"]
+    },
+    "message_processing_task": {
+        "primary_key": "ROWID",
+        "dependencies": null
+    },
+    "sqlite_sequence": {
+        "primary_key": "name",
+        "dependencies": null
+    },
+    "sqlite_stat1": {
+        "primary_key": ["tbl", "idx"],
+        "dependencies": null
+    },
+    "sync_deleted_attachments": {
+        "primary_key": "ROWID",
+        "dependencies": null
+    },
+    "sync_deleted_chats": {
+        "primary_key": "ROWID",
+        "dependencies": null
+    },
+    "sync_deleted_messages": {
+        "primary_key": "ROWID",
+        "dependencies": null
+    },
+    "chat_recoverable_message_join": {
+        "primary_key": null,
+        "dependencies": null
+    },
+    "unsynced_removed_recoverable_messages": {
+        "primary_key": null,
+        "dependencies": null
+    },
+    "recoverable_message_part": {
+        "primary_key": null,
+        "dependencies": null
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "emoji_text_map": {
+        "columnspec": {
+            "emoji": "object",
+            "plain_text": "object"
+        },
+        "primary_key": "emoji",
+        "dependencies": null
+    },
+    "stopwords": {
+        "columnspec": {
+            "stopword": "object"
+        },
+        "primary_key": "stopword",
+        "dependencies": null
+    },
+    "message_text_parsed_from_attributedbody": {
+        "columnspec": {
+            "message_id": "int",
+            "text": "object",
+            "is_text_parsed_from_attributedbody": "int"
+        },
+        "primary_key": "message_id",
+        "dependencies": null
+    },
+    "message_text_edit_history": {
+        "columnspec": {
+            "message_id": "int",
+            "text": "object",
+            "ts_edited": "float"
+        },
+        "primary_key": null,
+        "dependencies": null
+    },
+    "message_text_edit_history_json": {
+        "columnspec": {
+            "message_id": "int",
+            "edit_history": "object"
+        },
+        "primary_key": "message_id",
+        "dependencies": ["message_text_edit_history"]
+    }
+}
