@@ -1,0 +1,10 @@
+TMotorCANControl/CAN_Manager.py,sha256=InDzCrI7ypogz0TKr3FM_FtIAeU31DhMdINTVpovIRU,20142
+TMotorCANControl/CAN_manager_servo.py,sha256=7yol8oB2OhRx2qdAVqh4G1ZsuCMxMAZO6dmiHfKC34Y,21679
+TMotorCANControl/TMotorManager_mit_can.py,sha256=nssWOU3IDzt1pGkqk-ZrVkpvpZlROiRL2HwR3G8uvYs,30588
+TMotorCANControl/TMotorManager_servo_can.py,sha256=uA2hoAehb7BigzRiZYVhgiAONLIqCoWOU1oNsoHS_xo,22807
+TMotorCANControl/TMotorManager_servo_serial.py,sha256=VSvk9E1GIhRQlaSLKavZUlGA4u1QTB9VLWCxsI_C1F0,49111
+TMotorCANControl/__init__.py,sha256=yUYS2ZIYB_eYb1VrnnrG4bcaGM0JTOb7ItRTaqBtrHw,232
+TMotorCANControl-1.2.1.dist-info/METADATA,sha256=ZQFlqF_GmjyTWXeEQ0X_J6blgyfZL7UhPxCSns6Wfjw,9066
+TMotorCANControl-1.2.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+TMotorCANControl-1.2.1.dist-info/top_level.txt,sha256=jxeJdv6exzBMB-icp0qL4nR0zfBYvzpRVdGEeOWqtr8,17
+TMotorCANControl-1.2.1.dist-info/RECORD,,
