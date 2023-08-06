@@ -1,0 +1,39 @@
+[tool.black]
+line-length = 120
+
+[tool.isort]
+profile = "black"
+line_length = 120
+
+[tool.poetry]
+name = "gameoflife-ndimage"
+version = "0.1.3"
+description = "Quick simulation of arbitrary rulesets for nearest-neighbour cellular automata. Uses scipy.ndimage.correlate, and can export videos via ffmpeg-python."
+authors = ["RundownRhino <52856631+RundownRhino@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "gameoflife_ndimage" }]
+keywords = ["gameoflife", "cellular", "automata", "scipy"]
+repository = "https://github.com/RundownRhino/Cellular-Automata-Simulator"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.23.5"
+scipy = "^1.9.3"
+ffmpeg-python = "^0.2.0"
+pillow = "^9.3.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.10.0"
+isort = "^5.10.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    # seems to be something pytest-internal - I don't get it when calling the same test function manually
+    'ignore:the imp module is deprecated:DeprecationWarning',
+]
