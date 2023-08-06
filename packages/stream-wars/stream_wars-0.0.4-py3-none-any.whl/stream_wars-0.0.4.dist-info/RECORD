@@ -1,0 +1,15 @@
+stream_wars/__init__.py,sha256=ph5E6u92p1df46jrRm-vqws_rk5pINSaF3ZHgTzIfpU,1805
+stream_wars/frontend/build/asset-manifest.json,sha256=PhxsnIPYoZbZHchkQK6xKNRGyV7ygIsUbdP7I80Li_M,1254
+stream_wars/frontend/build/favicon.ico,sha256=PRD32mxgMXg0AIFmjErFs66XQ8qaJiqw_NMS-7n0i90,3870
+stream_wars/frontend/build/index.html,sha256=jD7c8zANuhqSIrhYTY5oiCNlPUxxYIg_aY-xqTa314I,2219
+stream_wars/frontend/build/logo192.png,sha256=w4Y5bscNs2CAdbX7-qxKscyqhroFpoqzk-xVHrZsPgA,5347
+stream_wars/frontend/build/logo512.png,sha256=nqT02nBQwMxAiSb2o5wlNiTpursdQ8eXfNghRFpgtGE,9664
+stream_wars/frontend/build/manifest.json,sha256=ULPYw5A68_eNhxuUVXqxT045yhkurKPSz6hjyGcnmhQ,492
+stream_wars/frontend/build/precache-manifest.0f035c538e0c3e45cbc258cee93da590.js,sha256=3oGX_ZSOze4dPWket1l761LeYi30M1wtiUSl3d_vfz8,1111
+stream_wars/frontend/build/robots.txt,sha256=P_AEjz7ev-V-rUzLtkVmAJS-M_ffY7b07mX2MfkcXTU,57
+stream_wars/frontend/build/service-worker.js,sha256=85m4aPN8jNApfQcluyjMsrBc1L2QrTaP04XcEmwxskE,1181
+stream_wars/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stream_wars-0.0.4.dist-info/LICENSE,sha256=DzpzW_EEUL91fXSpYNj0NF907a9O-zCIPEZZJe-_YJo,1085
+stream_wars-0.0.4.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+stream_wars-0.0.4.dist-info/METADATA,sha256=hTsbTqK18_BkRxl-OIPCZBWtPNbkEA1FpWoPQNe8Hfw,2899
+stream_wars-0.0.4.dist-info/RECORD,,
