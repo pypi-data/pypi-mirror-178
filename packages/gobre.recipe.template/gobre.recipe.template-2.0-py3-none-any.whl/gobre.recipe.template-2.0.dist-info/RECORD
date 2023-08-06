@@ -1,0 +1,14 @@
+gobre.recipe.template-2.0-py3.9-nspkg.pth,sha256=lYyWmllrqEClzlUbj_rCTYtK4-UAaLLq7ThA8Syk9f4,1688
+gobre/recipe/template/__init__.py,sha256=60nsePVt2qbI1HAOAEeK75RH2xTN37jbWFYmasDRFOU,7413
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/filters.py,sha256=ysjcfF4qddovk7Gq-ejSnXPZPKCHk3DRh4r4SUJlm28,246
+tests/test_recipe.py,sha256=mRX_veQeJi5JMv4_z0lP4Mj938gERD_xAgDqHvyvNVI,1008
+gobre.recipe.template-2.0.dist-info/AUTHORS,sha256=yzr9iraMOR3ljzix3rzGCk5_pChyf0W8lDkq3QOU4RU,213
+gobre.recipe.template-2.0.dist-info/LICENSE,sha256=sBSGxFucVKSZHwgJcJ_s2JQoeiYYG5knM-tnAiPxChs,1841
+gobre.recipe.template-2.0.dist-info/METADATA,sha256=M3UkqJXdW_DE-UPc8LgqkE_LruP-8iCybzqXXl77Xqc,4973
+gobre.recipe.template-2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+gobre.recipe.template-2.0.dist-info/entry_points.txt,sha256=5Vjxl49x6mk9UXWMbp00kykvOO6ZUZK5TabFmgMg7ek,53
+gobre.recipe.template-2.0.dist-info/namespace_packages.txt,sha256=FZvD4SD14LpAZEB83W8WOBU3mBAMJOP2LZ7K3i6B2WI,19
+gobre.recipe.template-2.0.dist-info/top_level.txt,sha256=DzzMy_ylhys1onxzUDmqHCGhNp2O4m6Lyy8Z5ARIxdQ,12
+gobre.recipe.template-2.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+gobre.recipe.template-2.0.dist-info/RECORD,,
