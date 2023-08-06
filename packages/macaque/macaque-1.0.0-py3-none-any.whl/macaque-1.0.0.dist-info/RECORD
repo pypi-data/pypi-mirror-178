@@ -1,0 +1,16 @@
+macaque/ADBKeyBoard.apk,sha256=L3Kva4gCQALo10EzinCvHrIbffGE3p94qSNbnS8CxP0,163634
+macaque/__init__.py,sha256=FFWMzRr_oyzqePRoXu7XxUUxVRCvbZBAehtzje5um2A,152
+macaque/__main__.py,sha256=It3UwIEP21KwUrZZLEslBKA1iHmj4uWAVLpbF2dhP_I,228
+macaque/aapt,sha256=w2EPjBXKm2pvsYCS9-2IhfwPILZqWGdtIM4P_WU52O0,1357680
+macaque/core.py,sha256=IRNqbP5HvwPCseJghr5MkCOX_4bi8A-vAbPQaIs2z9k,2443
+macaque/max.widget.black,sha256=Od0ZCZTl9kDmmTELkTYm5MKvPYP23xKp11b84Tl6r7o,34
+macaque/tools.py,sha256=ZuEKQHV65by1l0wtNVXiRpK2cz1DdsC-anNAaBdR6I4,597
+macaque/jar/framework.jar,sha256=rTluOJJKj2DFwh7ascXso1udYdWv00BxBwSQ3Vmv-fw,1149240
+macaque/jar/macaque-thirdpart.jar,sha256=0SZ_OoZFWDGMnazgXKceHgKvXdUDoIa3Gb2bcifaikk,85664
+macaque/jar/monkeyq.jar,sha256=UqSLQgexBirmDa9RmReTZvu0b7O0vEWIiDbC1Q2AonI,77375
+macaque-1.0.0.dist-info/LICENSE,sha256=0qmLpFIQ-2aJ5r2vQgYpzJPo_8YNlDf6df9zFgQKMK4,11361
+macaque-1.0.0.dist-info/METADATA,sha256=GGb45s-4uj1vI3JW2kDfwBK0I4_D66hbNPxYOfA5wIg,17126
+macaque-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+macaque-1.0.0.dist-info/entry_points.txt,sha256=j6srV5w7oOgnAyhfRwc0pLlN3RJjMLTv-v3dvUFV8NE,53
+macaque-1.0.0.dist-info/top_level.txt,sha256=6NI3KNKT1qYZXhbUENYO12Bw_i5KngGay1rcF5WT5lI,8
+macaque-1.0.0.dist-info/RECORD,,
