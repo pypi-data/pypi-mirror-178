@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #181818;">
+    <!-- Generator: sketchtool 64 (101010) - https://sketch.com -->
+    <title>3945C21B-FCCC-47D0-822B-561E9466983E</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Cell-/-a.RoomIcon">
+            <rect fill="none" x="0" y="0" width="40" height="40"></rect>
+            <g id="tabbar/devices" transform="translate(8.000000, 8.500000)" stroke="#C6C5CA" stroke-linejoin="round" stroke-width="1.5">
+                <polyline id="Stroke-126" points="15.2318053 22.2373684 23.0789474 22.2373684 23.0789474 0.11 0.5 0.11 0.5 22.2373684 9.74087811 22.2373684 13.3481568 18.2771788"></polyline>
+                <line x1="0.5" y1="11.1736842" x2="6.65789474" y2="11.1736842" id="Stroke-128"></line>
+                <line x1="6.65789474" y1="8.15631579" x2="6.65789474" y2="14.1910526" id="Stroke-130"></line>
+                <line x1="15.8947368" y1="11.1736842" x2="23.0789474" y2="11.1736842" id="Stroke-132"></line>
+            </g>
+        </g>
+    </g>
+</svg>
