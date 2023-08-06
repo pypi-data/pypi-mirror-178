@@ -1,0 +1,11 @@
+pytest_jupyter/__init__.py,sha256=RgW12p8TYDUWBMdTgdtirSJuZbcNPgvr8UXGL7MwLGo,304
+pytest_jupyter/_version.py,sha256=xeeGNK8K7P3Yp3t8eRyjQOQBxilO9cUgf03zcLsPoPc,124
+pytest_jupyter/echo_kernel.py,sha256=KHMPVit3tp913KUf8FRxJErq3i7FLDw_7eBIEA-JXXI,1555
+pytest_jupyter/jupyter_client.py,sha256=NqeK7uc7eqZGVx20FiL4LspF_2VbiWn11UYrIHBmpkg,2247
+pytest_jupyter/jupyter_core.py,sha256=aVTnQGoYrW4sSpUc95AL7KRiCqzZHLaBwRvJzqI_8Cg,2492
+pytest_jupyter/jupyter_server.py,sha256=Sar_NchKSoHO5Wy8QiMrlrE4uYZK4qo-SPN8sl5kolE,16759
+pytest_jupyter/utils.py,sha256=uOUektfVzAIGlKwJUx9WOxIZfvbFnnwMc0Nbozfje8w,244
+pytest_jupyter-0.2.1.dist-info/METADATA,sha256=CIU2dJVvtitfT-uYHVLxJpXhsDn5Uy-enJtI0gz6XWw,7225
+pytest_jupyter-0.2.1.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+pytest_jupyter-0.2.1.dist-info/licenses/LICENSE,sha256=1YIp204bdM8z6hxdli4y1ednDsvjtHPlzomSmztQh6c,2836
+pytest_jupyter-0.2.1.dist-info/RECORD,,
