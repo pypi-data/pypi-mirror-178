@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: taulukko
+Version: 2022.11.27
+Summary: Table (Finnish Taulukko) glued together to transform into hands-free living.
+Author-email: Stefan Hagen <stefan@hagen.link>
+Maintainer-email: Stefan Hagen <stefan@hagen.link>
+Project-URL: Homepage, https://git.sr.ht/~sthagen/taulukko
+Project-URL: Bug-Tracker, https://todo.sr.ht/~sthagen/taulukko
+Project-URL: Documentation, https://codes.dilettant.life/docs/taulukko
+Project-URL: Source-Code, https://git.sr.ht/~sthagen/taulukko
+Project-URL: Test-Coverage, https://codes.dilettant.life/coverage/taulukko
+Keywords: developer-tools,documentation-tools,html,markdown
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pytablereader (>=0.31.3)
+Requires-Dist: pytablewriter (>=0.64.2)
+Requires-Dist: typer (>=0.7.0)
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: hypothesis ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest-flake8 ; extra == 'dev'
+
+# taulukko
+
+Table (Finnish Taulukko) glued together to transform into hands-free living.
+
+[License: MIT](https://git.sr.ht/~sthagen/taulukko/tree/default/item/LICENSE)
+
+[![version](https://img.shields.io/pypi/v/taulukko.svg?style=flat)](https://pypi.python.org/pypi/taulukko/)
+[![downloads](https://pepy.tech/badge/taulukko/month)](https://pepy.tech/project/taulukko)
+[![wheel](https://img.shields.io/pypi/wheel/taulukko.svg?style=flat)](https://pypi.python.org/pypi/taulukko/)
+[![supported-versions](https://img.shields.io/pypi/pyversions/taulukko.svg?style=flat)](https://pypi.python.org/pypi/taulukko/)
+[![supported-implementations](https://img.shields.io/pypi/implementation/taulukko.svg?style=flat)](https://pypi.python.org/pypi/taulukko/)
+
+## Documentation
+
+User and developer [documentation of taulukko](https://codes.dilettant.life/docs/taulukko).
+
+## Bug Tracker
+
+Feature requests and bug reports are best entered in the [todos of taulukko](https://todo.sr.ht/~sthagen/taulukko).
+
+## Primary Source repository
+
+The primary source of `taulukko` lives somewhere on a mountain in Central Switzerland.
+But, we use decentralized version control (git), so any clone can become the source to everyone's benefit, no central only code.
+Anyway, the preferred public clones of `taulukko` are:
+
+* [on codeberg](https://codeberg.org/sthagen/taulukko) - a democratic community-driven, non-profit software development platform operated by Codeberg e.V.
+* [at sourcehut](https://git.sr.ht/~sthagen/taulukko) - a collection of tools useful for software development.
+
+## Status
+
+Experimental.
+
+**Note**: The default branch is `default`.
