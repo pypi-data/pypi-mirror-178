@@ -1,0 +1,11 @@
+cached-property
+cookiecutter
+click
+coloredlogs
+Jinja2
+PyYaml
+tabulate
+
+[test]
+coverage
+pyfakefs
