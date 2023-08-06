@@ -1,0 +1,8 @@
+fs/dropboxfs/__init__.py,sha256=HgHOR24UOBSa-P5w7bfbdkUwFzlFbsxjjzf6vsqaC3w,158
+fs/dropboxfs/dropboxfs.py,sha256=fU8tx2Va4njfW2yWGHARafN0tX3HgCK_HjZmqy8-VWI,7019
+fs/dropboxfs/opener.py,sha256=0hdiyGHq9hkL1l9c6p9-V9f5yKoqN5Xe3djzSh-uh4E,684
+fs.dropboxfs-0.3.0.dist-info/entry_points.txt,sha256=0CHJzVI8wUF5FL4a3wUxxrLoWlCOGV1GR1ZSWE8PMu0,55
+fs.dropboxfs-0.3.0.dist-info/LICENSE,sha256=tTPlKSGEoO1mlJuzNZ0bg2lEXDgmyNAJmaD28g8mgoI,1068
+fs.dropboxfs-0.3.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+fs.dropboxfs-0.3.0.dist-info/METADATA,sha256=jXmYG5nc9H1E7quSOUABdcXKhDZ_6ShU-hChT5m_zoE,1410
+fs.dropboxfs-0.3.0.dist-info/RECORD,,
