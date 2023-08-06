@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+pyfasim/__init__.py
+pyfasim/dfa.py
+pyfasim.egg-info/PKG-INFO
+pyfasim.egg-info/SOURCES.txt
+pyfasim.egg-info/dependency_links.txt
+pyfasim.egg-info/not-zip-safe
+pyfasim.egg-info/requires.txt
+pyfasim.egg-info/top_level.txt
