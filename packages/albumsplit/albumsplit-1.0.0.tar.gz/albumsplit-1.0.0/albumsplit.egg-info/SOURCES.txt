@@ -1,0 +1,9 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+albumsplit.egg-info/PKG-INFO
+albumsplit.egg-info/SOURCES.txt
+albumsplit.egg-info/dependency_links.txt
+albumsplit.egg-info/top_level.txt
+bin/albumsplit
