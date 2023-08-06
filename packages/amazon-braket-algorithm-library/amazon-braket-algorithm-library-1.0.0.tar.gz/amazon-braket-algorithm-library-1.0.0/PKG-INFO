@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: amazon-braket-algorithm-library
+Version: 1.0.0
+Summary: An open source library of quantum computing algorithms implemented on Amazon Braket
+Home-page: https://github.com/aws-samples/amazon-braket-algorithm-library
+Author: Amazon Web Services
+License: Apache License 2.0
+Keywords: Amazon AWS Quantum
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Requires-Python: >= 3.7.2
+Description-Content-Type: text/markdown
+Provides-Extra: test
+License-File: LICENSE
+License-File: NOTICE
+
+## My Project
+
+TODO: Fill this README out!
+
+Be sure to:
+
+* Change the title in this README
+* Edit your repository description on GitHub
+
+## Security
+
+See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
+
+## License
+
+This project is licensed under the Apache-2.0 License.
+

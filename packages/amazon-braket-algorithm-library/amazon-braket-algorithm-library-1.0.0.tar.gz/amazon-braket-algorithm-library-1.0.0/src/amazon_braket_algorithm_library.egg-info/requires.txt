@@ -1,0 +1,14 @@
+boto3>=1.22.3
+
+[test]
+black>=22.3.0
+flake8
+isort
+pytest
+pytest-cov
+pytest-rerunfailures
+pytest-xdist
+sphinx
+sphinx-rtd-theme
+sphinxcontrib-apidoc
+tox
