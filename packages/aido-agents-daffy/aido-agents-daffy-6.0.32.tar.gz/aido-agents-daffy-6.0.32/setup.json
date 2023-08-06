@@ -1,0 +1,25 @@
+{
+  "install_requires": [
+    "Pillow",
+    "PyYAML",
+    "aido-protocols-daffy",
+    "duckietown-world-daffy",
+    "numpy",
+    "zuper-commons-z6"
+  ],
+  "tests_require": [],
+  "srcdir": "src",
+  "package_name": "aido-agents-daffy",
+  "entry_points": {
+    "console_scripts": []
+  },
+  "zip_safe": true,
+  "include_package_data": true,
+  "modules": [
+    "aido_agents"
+  ],
+  "version": "6.0.28",
+  "author": "",
+  "author_email": "",
+  "url": ""
+}

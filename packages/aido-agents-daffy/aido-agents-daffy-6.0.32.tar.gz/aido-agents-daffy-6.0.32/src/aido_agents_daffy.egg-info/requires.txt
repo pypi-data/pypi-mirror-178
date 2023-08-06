@@ -1,0 +1,6 @@
+aido-protocols-daffy
+duckietown-world-daffy
+numpy
+PyYAML
+zuper-commons-z6
+Pillow
