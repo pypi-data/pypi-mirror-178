@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+aibotweb/__init__.py
+aibotweb/aibotweb.py
+aibotweb.egg-info/PKG-INFO
+aibotweb.egg-info/SOURCES.txt
+aibotweb.egg-info/dependency_links.txt
+aibotweb.egg-info/top_level.txt
