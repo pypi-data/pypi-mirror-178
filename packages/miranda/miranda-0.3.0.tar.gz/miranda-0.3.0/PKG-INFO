@@ -1,0 +1,170 @@
+Metadata-Version: 2.1
+Name: miranda
+Version: 0.3.0
+Summary: Python utilities for climate data collection and management
+Home-page: https://github.com/Ouranosinc/miranda
+Author: Trevor James Smith
+Author-email: smith.trevorj@ouranos.ca
+License: Apache Software License 2.0
+Keywords: climate meteorology archiving collection NetCDF
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Atmospheric Science
+Description-Content-Type: text/x-rst
+Provides-Extra: docs
+Provides-Extra: full
+Provides-Extra: dev
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+==============
+Miranda |logo|
+==============
+
+|build| |coveralls| |black|
+
+Python utilities for climate data collection, conversion, and management
+
+* Documentation: |docs|
+* Free Software: |license|
+
+Features
+--------
+
+Data collection functions for climate and forecast data hosted at:
+    * ECMWF (ERA5, ERA5-Land, TIGGE)
+    * ECCC (Canada) (Monthly Climate Summaries, ECCC GEOAPI - In development)
+    * NCAR (CORDEX-NA on AWS)
+
+Data conversion for `Climate and Forecasting (CF) <https://cfconventions.org/>`_ Variable and Metadata compliance:
+    * ECMWF (ERA5, ERA5-Land, TIGGE - In Development)
+    * ECCC (Canada) (Flat File Observations, Monthly Climate Summaries, Adjusted and Homogenized Climate Data, ECCC GEOAPI - In Development)
+    * MELCC (Québec)
+    * Hydro-Québec (In Development)
+
+Database structuring and facets validation:
+    * Simulations:
+       * WCRP (CMIP5, CMIP6, CMIP5-CORDEX, CORDEX-ADJUST, ISIMIP, etc.)
+    * Station-Observations:
+       * MELCC (Québec) (Needs `mdbtools <https://github.com/mdbtools/mdbtools>`_ installed)
+       * ECCC (Canada) (In Development)
+       * Hydro-Québec (In Development)
+    * Gridded-Observations:
+       * NRCAN (Canada) (Future)
+       * MELCC (Future)
+    * Reanalyses:
+       * ECMWF (ERA5, ERA5-Land, TIGGE)
+       * NASA (DayMET, AgMerra/AgCFSR, MERRA2) - In Development
+       * NCEP (CFSR/CFSv2) - In Development
+       * WFDEI-GEM-CaPa (University of Saskatchewan) - In Development
+
+Installation
+------------
+`miranda` is not yet available on PyPI, so the suggested method to install is as follows::
+
+    $ git clone git@github.com:Ouranosinc/miranda.git
+    $ cd miranda
+
+    # If using Anaconda:
+    $ conda create -n miranda -f environment.yml
+    $ conda activate miranda
+
+    $ pip install miranda[full]
+
+`miranda` also relies on `PyESSV <https://github.com/ES-DOC/pyessv>`_ for its climate data controlled vocabulary. This library requires additional installation steps::
+
+    $ mkdir -p ~/.esdoc
+    $ git clone git@github.com:ES-DOC/pyessv-archive.git ~/.esdoc/pyessv-archive
+
+*We strongly suggest using Anaconda3/miniconda3 (with the conda-forge repository enabled) to manage your environment and dependencies*
+ * Anaconda: https://www.anaconda.com/products/distribution
+ * Miniconda: https://docs.conda.io/en/latest/miniconda.html
+ * conda-forge: https://conda-forge.org/#about
+
+Contributing
+------------
+See the contributing documentation: https://miranda.readthedocs.io/en/latest/contributing.html
+
+.. |build| image:: https://github.com/Ouranosinc/miranda/actions/workflows/main.yml/badge.svg
+        :target: https://github.com/Ouranosinc/miranda/actions/workflows/main.yml
+        :alt: Build Status
+
+.. |coveralls| image:: https://coveralls.io/repos/github/Ouranosinc/miranda/badge.svg
+        :target: https://coveralls.io/github/Ouranosinc/miranda
+        :alt: Coveralls
+
+.. |docs| image:: https://readthedocs.org/projects/miranda/badge
+        :target: https://miranda.readthedocs.io/en/latest
+        :alt: Documentation Status
+
+.. |license| image:: https://img.shields.io/github/license/Ouranosinc/miranda.svg
+        :target: https://github.com/Ouranosinc/miranda/blob/master/LICENSE
+        :alt: License
+
+.. |black| image:: https://img.shields.io/badge/code%20style-black-000000.svg
+        :target: https://github.com/psf/black
+        :alt: Python Black
+
+.. |logo| image:: https://raw.githubusercontent.com/Ouranosinc/miranda/main/docs/_static/images/miranda-logo-small.png
+        :target: https://github.com/Ouranosinc/miranda
+        :alt: Miranda
+
+
+
+Documentation
+-------------
+
+The full documentation is at https://miranda.readthedocs.io/en/latest.
+
+
+
+=======
+History
+=======
+
+0.3.0 (2022-11-24)
+------------------
+Contributors to this version: Trevor James Smith (`@Zeitsperre <https://github.com/Zeitsperre>`_), Pascal Bourgault (`@aulemahal <https://github.com/aulemahal>`_), David Huard (`@huard <https://github.com/huard>`_), Travis Logan (`@tlogan2000 <https://github.com/tlogan2000>`_), Gabriel Rondeau-Genesse (`@RondeauG <https://github.com/RondeauG>`_), and Sébastien Biner (`@sbiner <https://github.com/sbiner>`_).
+
+Announcements
+^^^^^^^^^^^^^
+* First public release on PyPI.
+
+New features
+^^^^^^^^^^^^
+* Dataset conversion tools (``miranda.convert``) use a JSON-definition file to dynamically populate metadata, run data quality checks, and convert units to CF-compliant standard. Supported datasets are:
+    - ERA5/ERA5-Land (complete)
+    - MELCC (stations) (beta)
+    - ECCC (stations) (alpha)
+    - NASA DayMet (WIP)
+    - NASA AgMerra/AgCFSR (WIP)
+    - Hydro Québec (stations) (WIP)
+    - DEH (stations) (WIP)
+    - WFDEI-GEM-CAPA (WIP)
+* Module (``miranda.eccc``) for ECCC station data and ECCC Adjusted and Homogenized Canadian Climate Data (AHCCD) conversion (WIP).
+* Module (``miranda.ncar``) for fetching interpolated CORDEX-NAM (22i/44i) from NCAR AWS data storage.
+* Module (``miranda.ecmwf``) for fetching ECMWF ERA5/-Land (single-levels, pressure-levels, monthly-means) datasets via CDSAPI.
+* Module (``miranda.gis``) for setting specific subsetting domains used when converting gridded datasets.
+* Modules (``miranda.archive`` and ``miranda.remote``) for performing data archiving actions locally and remotely (powered by `fabric <https://github.com/fabric/fabric>`_ and `paramiko <https://github.com/paramiko/paramiko>`_) (WIP).
+* Module (``miranda.decode``) for ingesting and parsing dataset metadata based on filename and dataset attributes. Supported datasets are:
+    - `miranda` converted datasets
+    - CMIP6
+    - CMIP5
+    - CMIP5-CORDEX
+    - ISIMIP-FT
+    - CanDCS-U6 (PCIC)
+* Module (``miranda.structure``) for create constructing file-tree databases based on YAML-defined metadata schemas (WIP).
+* Modules (``miranda.cv`` and ``miranda.validators``) for validating metadata using ESGF controlled vocabularies (taken from `pyessv-archive <https://github.com/ES-DOC/pyessv-archive>`_) and schema definitions (powered by `schema <https://github.com/keleshev/schema>`_), respectively (WIP).
+
+

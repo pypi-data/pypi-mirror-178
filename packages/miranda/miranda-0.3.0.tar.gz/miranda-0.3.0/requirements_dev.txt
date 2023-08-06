@@ -1,0 +1,11 @@
+autopep8
+black
+bump2version
+coverage
+flake8
+pip
+pre-commit
+pytest
+pyupgrade
+tox
+wheel
