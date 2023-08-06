@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: touch-sdk
+Version: 0.0.4
+Summary: Port 6 Touch SDK
+Project-URL: Homepage, https://github.com/port6io/touch-sdk-py#readme
+Project-URL: Bug Tracker, https://github.com/port6io/touch-sdk-py/issues
+Author-email: Port 6 <developer@port6.io>
+License-File: LICENSE
+Keywords: bluetooth
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: ISC License (ISCL)
+Classifier: Operating System :: Android
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Human Machine Interfaces
+Requires-Python: >=3.7
+Requires-Dist: bleak==0.19.5
+Description-Content-Type: text/markdown
+
+# Touch SDK py
+
+Connects to Port 6 Touch SDK compatible Bluetooth devices – like [this WearOS app](https://play.google.com/store/apps/details?id=io.port6.watchbridge).
+
+## Example usage
+```
+import touch_sdk
+wm = touch_sdk.WatchManager()
+wm.start()
+```
