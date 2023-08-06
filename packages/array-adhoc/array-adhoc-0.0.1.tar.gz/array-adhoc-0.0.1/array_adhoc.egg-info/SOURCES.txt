@@ -1,0 +1,13 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+array_adhoc/__init__.py
+array_adhoc/cupy.py
+array_adhoc/numpy.py
+array_adhoc/torch.py
+array_adhoc.egg-info/PKG-INFO
+array_adhoc.egg-info/SOURCES.txt
+array_adhoc.egg-info/dependency_links.txt
+array_adhoc.egg-info/requires.txt
+array_adhoc.egg-info/top_level.txt
