@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: ParticleRigidityCalculationTools
+Version: 1.3
+Summary: Python library containing tools for dealing with conversions between particle energy and rigidity
+Home-page: https://github.com/ChrisSWDavis/ParticleRigidityCalculationTools
+Author: Me
+Author-email: ChrisSWDavis@gmail.com
+License: MIT
+Description: # ParticleRigidityCalculationTools
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
