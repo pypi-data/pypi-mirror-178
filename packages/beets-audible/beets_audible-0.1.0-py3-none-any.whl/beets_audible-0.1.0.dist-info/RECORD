@@ -1,0 +1,9 @@
+beetsplug/__init__.py,sha256=qEFeq3yuf3lQKVseALmL8aPM8fpCS54B_5pry00M3hk,76
+beetsplug/api.py,sha256=2qPd-gfs4EvjGg0cZ3aoSipHKSHhvn5wx5Y7KpIJrLk,2566
+beetsplug/audible.py,sha256=6v-wC64g35jJDoy7xFQtmlZMADnCILy-Cp1I0C8RcEk,20584
+beetsplug/book.py,sha256=zuHd-GSQUcuPSQ7OM8M95YJFNwGsPYOZIrPU_phi_Xg,6632
+beetsplug/goodreads.py,sha256=M9A_MofIbdHnp75HIZZ-WDgdpFVdtgCipBLzOr0gi-c,2548
+beets_audible-0.1.0.dist-info/LICENSE,sha256=8_PJDsSvCShwyLnsRMMhJ-h_Ae5fHEMJNH10VpprXKw,1068
+beets_audible-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+beets_audible-0.1.0.dist-info/METADATA,sha256=OtDq8H_YoUKUGo_90je-wfYKiCxko7bZXKYJ9MVrDJs,14018
+beets_audible-0.1.0.dist-info/RECORD,,
