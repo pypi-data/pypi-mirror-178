@@ -1,0 +1,16 @@
+reticuler/__init__.py,sha256=DL1dyM_g2qNdshUmzHCHg4dnSSGrI9AEjOF-uHJBidA,65
+reticuler/plot_ret.py,sha256=GeSY5a-cKObRUWZw5kU1KbnGxw4asmEPMjh_jXZv0as,3572
+reticuler/reticulate.py,sha256=4unCofOgdmq6aaKu2WTvwSXy2Fzeu6dB7ap6i1Olnbc,8114
+reticuler/system.py,sha256=l21RvHPJ54yxZR1mdHYkjCi4sJ3-c9I1-nx8R-Ccj-0,26461
+reticuler/extending_kernels/__init__.py,sha256=Hr_P_hxZFBgBAKX7QV7DGMBLQxEpbjxStIt459RmG9U,93
+reticuler/extending_kernels/extenders.py,sha256=0AAy2OTni9aEoHihFBJbZkjoX47oJCYmWR9Yxp5RmJM,7875
+reticuler/extending_kernels/pde_solvers.py,sha256=gZhOI9i56lK1BSe64Zv6UzCS852-jVd_0BBU9Ogectw,15613
+reticuler/extending_kernels/trajectory_integrators.py,sha256=YTzk0tr6MEzDa_SJpjHfucEuzKXtutvuKpiefpOLK0M,2842
+reticuler/user_interface/__init__.py,sha256=eOcvcwhSvrQ1XsIlnc6sx4UdIefT1Ua8EiLFiGXhlRQ,24
+reticuler/user_interface/graphics.py,sha256=6id3XcjAcGdH_fnKX4hz-7RNMmg_noqxCyHE_6uLSOM,2328
+reticuler-0.3.dist-info/LICENSE,sha256=hSOMB2WwYU-1W1tHAnUv3GbPimYYQjweYCeRa3-QE1I,1097
+reticuler-0.3.dist-info/METADATA,sha256=luNXRVTJaAvFj5i7mg0j-f_rpvadKgVcF62JgmxDEcY,2462
+reticuler-0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+reticuler-0.3.dist-info/entry_points.txt,sha256=pFUnT8xQsH44EIwNLrWh_ivtjkg-zbbSk2Cb0Gr7sIQ,92
+reticuler-0.3.dist-info/top_level.txt,sha256=UiS2gieQUJJ4qSyt2Z6Or81pYzPbovPSRDUH73-HWeM,10
+reticuler-0.3.dist-info/RECORD,,
