@@ -1,0 +1,8 @@
+README.md
+setup.py
+chaingang/__init__.py
+chaingang/selection_chaining.py
+chaingang.egg-info/PKG-INFO
+chaingang.egg-info/SOURCES.txt
+chaingang.egg-info/dependency_links.txt
+chaingang.egg-info/top_level.txt
