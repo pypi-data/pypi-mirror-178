@@ -1,0 +1,11 @@
+tsastats/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tsastats/arch.py,sha256=h_BH0VjZRjOcNzbeulYRIiajAfc_AyoVoepqCd8P40I,4080
+tsastats/content.py,sha256=7WlJUujH_rjmIuquMvc_slb3PzKCswab5auv0AFC2Kg,16910
+tsastats/model.py,sha256=qrKfojACBCV-3d-e3ujGHjsJ0a3AqMS29ilEVq_1Lss,4094
+tsastats/number.py,sha256=K7EYc8MNOyGu_J6zumtcU9ae-VDHMK5HIiQgHxMIvL4,510
+tsastats/syntax.py,sha256=5r-ZY9PsMVCL0q7LsPjY06YvZOBOC-ZEsSUroAC3WhM,1718
+tsastats-0.0.1.dist-info/LICENSE,sha256=2sjqNg2xu3uyl-ZqDtbR4YwJkIOIAB5uKmXWWREmaGU,1049
+tsastats-0.0.1.dist-info/METADATA,sha256=B6O57eT63sLVyc2ZL3FgKQd6WadGUa9AbZqdkqL23F8,546
+tsastats-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+tsastats-0.0.1.dist-info/top_level.txt,sha256=-z9nKd-lxaKb_nVWirf9jDV5WzS8sLGrFgjBKfmNSj8,9
+tsastats-0.0.1.dist-info/RECORD,,
