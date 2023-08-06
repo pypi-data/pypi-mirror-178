@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: RusticML
+Version: 0.0.3
+Summary: A simple machine learning framework
+Author: yaegerknight, ani_ash
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (==1.23.4)
+Requires-Dist: pickle (==4.0)
+
+## RusticML
+
+A machine learning framework written in Python that demonstrates the inner workings of frameworks like Pytorch and TensorFlow.
+
+### Features
+
+- Supports auto-diff backward propagation
+- Supports implementation of Multi-layer Perceptron
+- Supports popular activation functions such as Tanh, ReLU and Sigmoid
+
