@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: optical-dispersion-relations
+Version: 0.1.0
+Summary: Optical Dispersion Relations
+Author: George Duffett
+Project-URL: Homepage, https://github.com/g-duff/optical_dispersion_relations
+Project-URL: Bug Tracker, https://github.com/g-duff/optical_dispersion_relations/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy (>=1.23.4)
+
+# Optical dispersion relations
+
+## Features
+
+* A collection of exact and approximate optical dispersion relations.
+* Academic Sources eg textbooks and journal articles.
+* Fully tested (see `test/`) so users can calculate with confidence.
+
+## Install
+
+Download the latest release [here](https://github.com/g-duff/optical_dispersion_relations/releases/latest), and install with pip eg:
+
+```sh
+pip3 install optical_dispersion_relations-0.0.0-py3-none-any.whl
+```
+
+## Contribute
+
+Contributions and conversations warmly welcome.
