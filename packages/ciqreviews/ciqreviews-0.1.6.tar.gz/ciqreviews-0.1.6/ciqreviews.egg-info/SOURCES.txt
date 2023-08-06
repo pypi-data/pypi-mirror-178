@@ -1,0 +1,10 @@
+README.md
+setup.py
+ciqreviews/__init__.py
+ciqreviews/connectiq.py
+ciqreviews/main.py
+ciqreviews/test.py
+ciqreviews.egg-info/PKG-INFO
+ciqreviews.egg-info/SOURCES.txt
+ciqreviews.egg-info/dependency_links.txt
+ciqreviews.egg-info/top_level.txt
