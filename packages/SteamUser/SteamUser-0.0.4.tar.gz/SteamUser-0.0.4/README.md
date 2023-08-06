@@ -1,0 +1,1 @@
+Allows you to access the steam api and lookup user data
