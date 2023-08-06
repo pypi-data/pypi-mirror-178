@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: sagemaker-ssh-helper
+Version: 1.8.0
+Summary: A helper library to connect into Amazon SageMaker with AWS Systems Manager and SSH
+Home-page: https://github.com/aws-samples/sagemaker-ssh-helper
+Author: Amazon Web Services
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT No Attribution License (MIT-0)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: test
+License-File: LICENSE
+
+For the detailed description see [README.md](https://github.com/aws-samples/sagemaker-ssh-helper/blob/main/README.md).
