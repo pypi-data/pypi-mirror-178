@@ -1,0 +1,8 @@
+bezierview/__init__.py,sha256=LH4yHb7X3oGwpJN0qSZrIueSJLnjSzdetrN7JfqU_y8,319
+bezierview/bezier.py,sha256=Uz3ld4_M5t-kN9DPy_JQkVeDwhdkue-41bx-jz9ELrs,997
+bezierview/view.py,sha256=gnNIUctqwH2EC7NnWUNwPrnEWOYV7hETdCzh2MGqXY0,7996
+bezierview-0.0.3.dist-info/LICENSE,sha256=o7sf4eAXwJkf9DSbG92t-Chkfy26LbUz8XY13-lPCBk,1067
+bezierview-0.0.3.dist-info/METADATA,sha256=NY_ds0MX_D2uEdz9FUYZthpsEIRRGOGyypOPXtL3-K8,1479
+bezierview-0.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+bezierview-0.0.3.dist-info/top_level.txt,sha256=0rcz8Ptf1jlHSAizvGcmjEfX_6vgtOVMF0NLneoo9gI,11
+bezierview-0.0.3.dist-info/RECORD,,
