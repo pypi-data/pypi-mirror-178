@@ -1,0 +1,3 @@
+[console_scripts]
+deployme=deployme.cli.cli:cli
+
