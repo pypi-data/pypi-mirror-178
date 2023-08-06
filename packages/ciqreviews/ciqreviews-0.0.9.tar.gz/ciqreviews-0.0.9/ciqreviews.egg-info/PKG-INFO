@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ciqreviews
+Version: 0.0.9
+Summary: This package is used to analyse the downloads,reviews,ratings of some Garmin Connect IQ App
+Author: li2niu
+Author-email: <chuanyi.work@gmail.com>
+Keywords: connectiq,garmin,ciq
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
+Using Beautifulsoup4 to find the download and reviews statistics of some app
