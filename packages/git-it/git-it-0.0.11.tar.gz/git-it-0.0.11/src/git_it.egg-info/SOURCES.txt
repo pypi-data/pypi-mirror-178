@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+requirements.txt
+setup.cfg
+src/git_it.egg-info/PKG-INFO
+src/git_it.egg-info/SOURCES.txt
+src/git_it.egg-info/dependency_links.txt
+src/git_it.egg-info/entry_points.txt
+src/git_it.egg-info/requires.txt
+src/git_it.egg-info/top_level.txt
+src/gitit/__init__.py
+src/gitit/__main__.py
+src/gitit/add/__init__.py
+src/gitit/add/add.py
