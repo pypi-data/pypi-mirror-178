@@ -1,0 +1,8 @@
+dictum_backend_vertica/__init__.py,sha256=rPSfWgIeq2YWVPyESOAwCBt8vftsTpIkuLAGDEzyRQc,22
+dictum_backend_vertica/prefix.py,sha256=cdVeJeISYIbrgA3FmRTtL2n2mvOk0fv0aXH2Sk04YgE,174
+dictum_backend_vertica/vertica_backend.py,sha256=rhCDpfqFKhsrgHTga0pQZEVX-caM0O7mIOnSK-u3TCY,1995
+dictum_backend_vertica-0.1.5.dist-info/entry_points.txt,sha256=kQGJ7YSIs59QjpmU8BL1mnjvwTM7Y59pA0BxtgU7yJk,81
+dictum_backend_vertica-0.1.5.dist-info/LICENSE,sha256=NOlMUIe6bp-zTzWucd9eZTPF_Hy79sRBhqcegoBraeE,30582
+dictum_backend_vertica-0.1.5.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+dictum_backend_vertica-0.1.5.dist-info/METADATA,sha256=-kDkk7Aaws4N0k107uY3TFzYghNjTbcgukZevM-sUic,504
+dictum_backend_vertica-0.1.5.dist-info/RECORD,,
