@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: changetools
+Version: 0.1.0
+Summary: Change evaluation functions and decorators
+License: MIT
+Project-URL: Repository, https://github.com/whardier/changetools-python
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Text Processing :: Filters
+Classifier: Topic :: Text Processing :: General
+Classifier: Topic :: Text Processing
+Requires-Python: <4.0,>=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: black (~=22.10) ; extra == 'dev'
+Requires-Dist: build (~=0.9) ; extra == 'dev'
+Requires-Dist: flake8-awesome (~=1.3) ; extra == 'dev'
+Requires-Dist: mypy (~=0.991) ; extra == 'dev'
+Requires-Dist: pytest (~=7.2) ; extra == 'dev'
+Requires-Dist: tox (~=3.27) ; extra == 'dev'
+Requires-Dist: twine (~=4.0) ; extra == 'dev'
+
+# ChangeTools (Python)
+
+Change evaluation functions and decorators.
+
+## Direct example:
+
+```
+>>> from pathlib import Path
+>>> from functools import partial
+>>> from changetools import ChangeEvaluator
+>>> hello_path = Path('hello.txt')
+>>> _ = hello_path.write_text('hello')
+>>> change_evaluator = ChangeEvaluator(partial(hello_path.read_text))
+>>> change_evaluator.changed
+True
+>>> change_evaluator.changed
+False
+>>> _ = hello_path.write_text('hi')
+>>> change_evaluator.changed
+True
+>>> change_evaluator.changed
+False
+```
+
+## While example:
+
+```
+>>> hello_path = Path('hello.txt')
+>>> change_evaluator.changed
+KeyboardInterrupt
+>>> _ = hello_path.write_text('hello')
+>>> change_evaluator = ChangeEvaluator(partial(hello_path.read_text))
+>>> while change_evaluator.changed:
+...   _ = hello_path.write_text('hi')
+...
+```
+
+## For example using `cycle`:
+
+```
+>>> hello_path = Path('hello.txt')
+>>> change_evaluator = ChangeEvaluator(partial(hello_path.read_text))
+>>> _ = hello_path.write_text('hello')
+>>> for i in change_evaluator.cycle(10):
+...   print(i)
+...   _ = hello_path.write_text('hi')
+...
+0
+1
+```
