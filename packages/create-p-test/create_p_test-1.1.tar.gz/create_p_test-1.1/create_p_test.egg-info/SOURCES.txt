@@ -1,0 +1,9 @@
+README.md
+setup.py
+create_p_test.egg-info/PKG-INFO
+create_p_test.egg-info/SOURCES.txt
+create_p_test.egg-info/dependency_links.txt
+create_p_test.egg-info/not-zip-safe
+create_p_test.egg-info/top_level.txt
+function/__init__.py
+function/test_t.py
