@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: xdsl
+Version: 0.7.5
+Summary: xDSL.
+Home-page: https://xdsl.dev/
+Author: Mathieu Fehr
+Author-email: mathieu.fehr@ed.ac.uk
+License: MIT
+Project-URL: Documentation, https://www....html
+Project-URL: Source Code, https://github.com/xdslproject/xdsl
+Project-URL: Issue Tracker, https://github.com/xdslproject/xdsl/issues
+Platform: Linux
+Platform: Mac OS-X
+Platform: Unix
+License-File: LICENSE
+Requires-Dist: pytest (<8.0)
+Requires-Dist: filecheck (<0.0.23)
+Requires-Dist: lit (<16.0.0)
+Requires-Dist: frozenlist (<1.4.*)
+Provides-Extra: extras
+Requires-Dist: yapf (<0.33.*) ; extra == 'extras'
+Requires-Dist: toml (<0.11.*) ; extra == 'extras'
+
+
+      Add long description here.
