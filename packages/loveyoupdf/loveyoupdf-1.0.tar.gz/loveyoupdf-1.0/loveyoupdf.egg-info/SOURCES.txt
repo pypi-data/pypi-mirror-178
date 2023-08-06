@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+loveyoupdf/__init__.py
+loveyoupdf/pdf2image.py
+loveyoupdf/pdf2text.py
+loveyoupdf.egg-info/PKG-INFO
+loveyoupdf.egg-info/SOURCES.txt
+loveyoupdf.egg-info/dependency_links.txt
+loveyoupdf.egg-info/top_level.txt
