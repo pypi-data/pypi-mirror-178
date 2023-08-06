@@ -1,0 +1,17 @@
+pynm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pynm/cli.py,sha256=YbCm1TqmKfnEYmh1e-US6rs4LsflPgn0e2FxxS8gkmU,8427
+pynm/pynm.py,sha256=hhyYPRLKhsvb07RvHDwHYTc9UoC98hTw2UcCuxOBtVk,53583
+pynm/util.py,sha256=rpTSbfFxDRgVt3i0zR7Oib5adCAmaOmJyCpzb1jnxEo,2758
+pynm/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pynm/models/approx.py,sha256=n-iodaHG8KoTOKQIwcerN6VSFW1NAYuouW7Np5JoQ8o,7633
+pynm/models/centiles.py,sha256=YAjO9Tl583DlJAGN1Rl1mbI8FcnCYQ6bb6Qmfa6ZRZg,2009
+pynm/models/gamlss.py,sha256=di8hkZa44_QRwypdMhNOeRvah3Mwa3Tcxh3UoPdnLws,7572
+pynm/models/loess.py,sha256=a_GN5zSYWpsLaKk0NFlJHqdE_oy2Gaq46onrBKWyT-s,2478
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_pynm.py,sha256=IneSTDif7LfiQR6o4OQ_REIiqD1CdWHnaM9iDzb-Tz0,25695
+pynm-1.0.0b10.dist-info/LICENSE,sha256=04sgV7U2Eipl00LcZjmEYIf3k6rXkGSTL7pQRKFJTPc,1523
+pynm-1.0.0b10.dist-info/METADATA,sha256=oDD1bexBfenJpokvoLeyy-NRx1Kf1CxtmxsGmWQeguU,941
+pynm-1.0.0b10.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pynm-1.0.0b10.dist-info/entry_points.txt,sha256=wUqmfZe-qCqCzqaqcESDdTmO8wpyLmXZzw0M40J6Ew8,40
+pynm-1.0.0b10.dist-info/top_level.txt,sha256=_QeTACSGw7C_-X3ALgMtYGZr3kd7UykWWLNB10Bf79w,22
+pynm-1.0.0b10.dist-info/RECORD,,
