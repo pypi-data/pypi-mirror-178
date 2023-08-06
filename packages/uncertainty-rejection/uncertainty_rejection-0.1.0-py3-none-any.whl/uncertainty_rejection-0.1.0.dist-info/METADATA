@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: uncertainty-rejection
+Version: 0.1.0
+Summary: Analysis of uncertainty estimates for classification with rejection.
+License: Apache-2.0
+Author: Arthur Thuy
+Author-email: arthur.thuy@ugent.be
+Maintainer: Arthur Thuy
+Maintainer-email: arthur.thuy@ugent.be
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Dist: matplotlib (>=3.6.2,<4.0.0)
+Requires-Dist: numpy (>=1.23.5,<2.0.0)
+Requires-Dist: scipy (>=1.9.3,<2.0.0)
+Requires-Dist: tabulate (>=0.9.0,<0.10.0)
+Description-Content-Type: text/markdown
+
+# uncertainty_rejection
+
+Analysis of uncertainty estimates for classification with rejection.
+
+## Installation
+
+```bash
+$ pip install uncertainty-rejection
+```
+
+## Documentation
+
+The documentation is deployed to TODO.
+
+## Examples
+
+An example notebook is provided, which can be found in the TODO.
+
+## Contributing
+
+Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
+
+## License
+
+`uncertainty_rejection` was created by Arthur Thuy. It is licensed under the terms of the Apache License 2.0 license.
+
+## Credits
+
+`uncertainty_rejection` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+
