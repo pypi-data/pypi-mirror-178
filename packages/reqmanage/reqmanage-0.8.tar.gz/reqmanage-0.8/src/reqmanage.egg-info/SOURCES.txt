@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+src/reqmanage.egg-info/PKG-INFO
+src/reqmanage.egg-info/SOURCES.txt
+src/reqmanage.egg-info/dependency_links.txt
+src/reqmanage.egg-info/requires.txt
+src/reqmanage.egg-info/top_level.txt
