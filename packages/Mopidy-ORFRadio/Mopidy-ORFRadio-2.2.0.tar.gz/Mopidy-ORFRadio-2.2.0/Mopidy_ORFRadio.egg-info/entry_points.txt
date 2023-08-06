@@ -1,0 +1,2 @@
+[mopidy.ext]
+orfradio = mopidy_orfradio:Extension
