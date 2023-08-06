@@ -1,0 +1,16 @@
+ndp/__init__.py,sha256=9SNTJeY0eIp-OCkcOEZWs20w6RJbs7CHjy7FirCcQRg,184
+ndp/get_example_files.py,sha256=nNYeSfCiwDo2PDPNypdYkF_49YojY1PvoXzEvdwOU1Y,332
+ndp/get_notebooks.py,sha256=Z4Cz0sHPo2xMOufu3EIpzMNZgcKRhJ76mbohsh3kMsU,402
+ndp/reduce.py,sha256=iqSiZEjasMMV_gMm6zc7eK5A0AW8NGG9UrCz9SHt9Ok,21991
+ndp/schema.py,sha256=s2eNaaBI5tzAObuXjiLbiwHP5tFatIUC5dxeZHfLsdk,3582
+ndp/example_files/config.json,sha256=-I3fQt2HfBrKI4p9dWJdAzb39iFTsbghYh6g2fjLYKc,235
+ndp/example_files/schema.json,sha256=SwbcTA8zOvW8A7Io_RVHDnNYk8MIUeRutg9nUJiG4xs,4441
+ndp/jupyter/NDPReduce.ipynb,sha256=AqYdFRuoOMG2i8yjUlDVmkZhHogokFC1Jv5YDN8MSFg,80332
+ndp/jupyter/Schema.ipynb,sha256=qAj0tatRFGsLIRHQM0GrxXkL8YI9eB2bI89o5oOo2F4,16589
+ndp/test/test_get.py,sha256=qjwgCgTVdP_XPEizSGLQ2kvAHfupwn-vRLhppdlYCdY,750
+ndp/test/test_schema.py,sha256=yV59tskhkBNjY3aPkNEFU8J41drUkIR5qTqBy_rjxRA,1106
+ndp-0.0.1.dist-info/LICENSE,sha256=J_QS2jOKLvWvQXMUF7ct7SX8YQICkveGqoluMSBgpa0,1643
+ndp-0.0.1.dist-info/METADATA,sha256=GxpYmg47WLgnsAAnlGx0L2AVBuJYZcx5Ln0hVVbq05A,4848
+ndp-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ndp-0.0.1.dist-info/top_level.txt,sha256=cAPyxV7_fSFAnVQXnBRQpSxQnJBJmyz2Khn16GdCKCc,4
+ndp-0.0.1.dist-info/RECORD,,
