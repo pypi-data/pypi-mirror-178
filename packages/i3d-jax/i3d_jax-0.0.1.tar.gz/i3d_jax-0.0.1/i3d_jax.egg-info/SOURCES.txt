@@ -1,0 +1,11 @@
+LICENSE.md
+README.md
+setup.py
+i3d_jax/__init__.py
+i3d_jax/i3d.py
+i3d_jax.egg-info/PKG-INFO
+i3d_jax.egg-info/SOURCES.txt
+i3d_jax.egg-info/dependency_links.txt
+i3d_jax.egg-info/requires.txt
+i3d_jax.egg-info/top_level.txt
+i3d_jax/weights/i3d-kinetics-400.ckpt
