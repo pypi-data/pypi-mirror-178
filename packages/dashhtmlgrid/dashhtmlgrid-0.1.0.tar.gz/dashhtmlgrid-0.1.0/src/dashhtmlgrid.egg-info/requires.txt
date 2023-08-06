@@ -1,0 +1,16 @@
+pyyaml
+plotly
+webcolors
+
+[:python_version < "3.11"]
+tomli
+
+[build]
+build
+twine
+
+[dev]
+black
+bumpver
+isort
+pytest
