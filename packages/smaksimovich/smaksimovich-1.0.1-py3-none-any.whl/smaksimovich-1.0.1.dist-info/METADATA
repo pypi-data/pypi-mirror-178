@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: smaksimovich
+Version: 1.0.1
+Summary: A personal library of random utility code
+Author: Sam Maksimovich
+Author-email: maksimovich.sam@gmail.com
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: torch
+
