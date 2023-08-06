@@ -1,0 +1,12 @@
+django_postgresql_ws/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_postgresql_ws/base.py,sha256=FzLcq3J_P4ys8CdTCuvWD8ZPFe4vePnStjS3u07c-0Q,12839
+django_postgresql_ws/client.py,sha256=RLsYyqTlSlZyEB4SI0t0TsTItDcN3enyJoIoAKrqTE8,2052
+django_postgresql_ws/creation.py,sha256=bzIAbt3oikdEta3LWQ1jhSjlBm1kwnOvCsAUwYOYoE8,3649
+django_postgresql_ws/features.py,sha256=jJgqth-8aHNkN09wmEvqm-jPhzhoj13m7vw_bXvBdIA,3559
+django_postgresql_ws/introspection.py,sha256=-WQ_MzLd92us5b_22dn7j_-htQ0gKQZVg52_cczkkcw,11266
+django_postgresql_ws/operations.py,sha256=mbIdsu7NYXVn4G1tL4X3QfPnUedLo4PwT2-JrWunBL0,13674
+django_postgresql_ws/schema.py,sha256=0VlICTM-c6AeYCOJpOoMQU9YRcIVX1Ta7wHwyHB8d9U,14013
+django_postgresql_ws-0.1.0.dist-info/LICENSE,sha256=uEZBXRtRTpwd_xSiLeuQbXlLxUbKYSn5UKGM0JHipmk,1552
+django_postgresql_ws-0.1.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+django_postgresql_ws-0.1.0.dist-info/METADATA,sha256=A5-VHS5DJd8m0KxBycLe4E6fv3KfITyni8jHp8QA4pM,2373
+django_postgresql_ws-0.1.0.dist-info/RECORD,,

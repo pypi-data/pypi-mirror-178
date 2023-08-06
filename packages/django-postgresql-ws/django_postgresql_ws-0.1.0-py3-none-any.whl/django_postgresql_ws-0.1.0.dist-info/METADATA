@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: django-postgresql-ws
+Version: 0.1.0
+Summary: Django PostgreSQL backend proxied over WebSockets (for WASM)
+Home-page: https://github.com/SubstructureOne/django-postgresql-ws
+License: BSD-3-Clause
+Author: dek
+Author-email: dek@substructure.one
+Requires-Python: >=3.8,<4.0
+Classifier: Environment :: Web Environment
+Classifier: Framework :: AsyncIO
+Classifier: Framework :: Django
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Internet :: WWW/HTTP :: Browsers
+Requires-Dist: asgiref (>=3.5.2,<4.0.0)
+Requires-Dist: django (>=4.1.3,<5.0.0)
+Requires-Dist: pgwasm (>=0.2.1,<0.3.0)
+Project-URL: Repository, https://github.com/SubstructureOne/django-postgresql-ws
+Description-Content-Type: text/markdown
+
+django-postgresql-ws
+--------------------
+
+`django-postgresql-ws` is an alternative PostgreSQL backend for Django 
+proxied over WebSockets. It will only work when configured to run against a 
+WebSockets proxy that is then communicating with the PostgreSQL server. 
+websockify is the standard WebSockets proxy service it is tested against.
+
+The purpose of this backend is to allow a Django application to run against 
+a PostgreSQL server in a WebAssembly (Pyodide) environment, where native 
+sockets are 
+not allowed but WebSockets are. The WebSocket communication is handled by 
+the pgwasm library, which itself switches between using a the native 
+websockets libray when being run in a native environment, and using the 
+JS-proxied interface when run under Pyodide.
+
+This backend is based on a copy of the PostgreSQL backend that 
+ships with Django 4.1 with updates made to use `pgwasm` instead of 
+`psycopg2`. Note that while Django does not natively support async in its 
+implementation of its ORM, the database backend needs to be async in order 
+to communicate over WebSockets in Pyodide, since the JS interface receives 
+WebSockets messages via callbacks. The `async_to_sync` method provided by 
+`asgiref` properly handle running the async methods in the proper event loop.
+
