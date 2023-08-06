@@ -1,0 +1,6 @@
+README.md
+setup.py
+dreamr.egg-info/PKG-INFO
+dreamr.egg-info/SOURCES.txt
+dreamr.egg-info/dependency_links.txt
+dreamr.egg-info/top_level.txt
