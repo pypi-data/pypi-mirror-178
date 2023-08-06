@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+CANMatrix_IM.egg-info/PKG-INFO
+CANMatrix_IM.egg-info/SOURCES.txt
+CANMatrix_IM.egg-info/dependency_links.txt
+CANMatrix_IM.egg-info/requires.txt
+CANMatrix_IM.egg-info/top_level.txt
