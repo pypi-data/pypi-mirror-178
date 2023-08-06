@@ -1,0 +1,7 @@
+fastcore
+requests
+seaborn
+matplotlib
+fastai
+
+[dev]

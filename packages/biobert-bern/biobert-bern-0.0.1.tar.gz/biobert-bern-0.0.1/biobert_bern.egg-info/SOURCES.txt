@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+biobert_bern/__init__.py
+biobert_bern/_modidx.py
+biobert_bern/biobertApi.py
+biobert_bern/fmf_biobert.py
+biobert_bern.egg-info/PKG-INFO
+biobert_bern.egg-info/SOURCES.txt
+biobert_bern.egg-info/dependency_links.txt
+biobert_bern.egg-info/entry_points.txt
+biobert_bern.egg-info/not-zip-safe
+biobert_bern.egg-info/requires.txt
+biobert_bern.egg-info/top_level.txt
