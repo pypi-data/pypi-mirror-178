@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: py-spy-for-datakit
+Version: 0.3.14
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+License-File: LICENSE
+Summary: py-spy fork for sending data to datakit 
+Home-Page: https://github.com/GuanceCloud/py-spy-for-datakit
+Author: Yi Zhang <zhangyi905@guance.com>
+Author-email: Yi Zhang <zhangyi905@guance.com>
+License: MIT
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Source Code, https://github.com/GuanceCloud/py-spy-for-datakit
+
+py-spy-for-datakit: Send profiling data to datakit instead of writing to a file
+=====
+
+## Installation
+
+Prebuilt binary wheels can be installed from PyPI with:
+
+```
+pip install py-spy-for-datakit
+```
+
+If you're a Rust user, py-spy can also be installed with: ```cargo install py-spy-for-datakit```.
+
+## Usage
+
+py-spy works from the command line and takes either the PID of the program you want to sample from
+or the command line of the python program you want to run.
+
+``` bash
+sudo py-spy-for-datakit datakit --host 127.0.0.1 --port 9295 --service py-spy-demo --env dev --version v0.1 --pid 95768
+# OR
+sudo py-spy-for-datakit datakit --host 127.0.0.1 --port 9295 --service py-spy-demo --env dev --version v0.1 -- python myprogram.py
+```
+
+For more usage help, use `py-spy help` and `py-spy help datakit` command or refer to [py-spy](https://github.com/benfred/py-spy) project
+
