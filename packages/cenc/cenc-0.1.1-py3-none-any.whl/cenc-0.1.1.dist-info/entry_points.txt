@@ -1,0 +1,3 @@
+[console_scripts]
+cenc=cenc.main:app
+
