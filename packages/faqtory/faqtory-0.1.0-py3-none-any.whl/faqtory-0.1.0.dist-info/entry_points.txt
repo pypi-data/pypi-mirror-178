@@ -1,0 +1,3 @@
+[console_scripts]
+faq=faqtory.cli:run
+
