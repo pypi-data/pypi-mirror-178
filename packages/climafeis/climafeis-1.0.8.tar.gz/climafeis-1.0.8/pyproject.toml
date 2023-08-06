@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "climafeis"
+version = "1.0.8"
+description = "CLI Python application for scraping daily climate data from Canal CLIMA using requests and BeautifulSoup 4."
+authors = ["João Fauvel <jmmfauvel@gmail.com>"]
+license = "GPL-3.0-or-later"
+readme = "README.md"
+homepage = "https://github.com/joaofauvel/climafeis"
+repository = "https://github.com/joaofauvel/climafeis"
+keywords = ["scraping", "climate", "eto", "evapotranspiration", "dataset"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.28.1"
+numpy = "^1.23.5"
+pandas = "^1.5.2"
+beautifulsoup4 = "^4.11.1"
+html5lib = "^1.1"
+
+[tool.poetry.scripts]
+climafeis = 'climafeis.climascraper:main'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
