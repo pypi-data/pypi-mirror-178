@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "obsigit"
+version = "0.1.0"
+description = ""
+authors = ["aoout <wuz66280@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+fire = "^0.4.0"
+dacite = "^1.6.0"
+
+[tool.poetry.scripts]
+obsigit = "obsigit:main"
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^2.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
