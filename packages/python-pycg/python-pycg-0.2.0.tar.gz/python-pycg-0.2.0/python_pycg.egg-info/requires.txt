@@ -1,0 +1,10 @@
+numpy
+matplotlib
+pyquaternion
+pyyaml
+omegaconf
+scipy
+screeninfo
+tqdm
+pillow
+open3d==0.16.1+c65c7ef
