@@ -1,0 +1,2 @@
+[console_scripts]
+cookiecutter-x = cookiecutter_x.main:main

@@ -1,0 +1,16 @@
+cookiecutter_x/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cookiecutter_x/cli.py,sha256=veAEvhbjD3t_0TA8lcvUbUwd5bN8bSLravMUcGCiUG0,153
+cookiecutter_x/cookiecutter_templates.py,sha256=WOW_unzvwkCcRmh2VeQ_31tt7pLHW39SoaHv4VQQXZM,3022
+cookiecutter_x/core.py,sha256=WN_OKqqPvGyCfWVwDZix1LewiKm1SmFTgsq_D6cCtxU,3422
+cookiecutter_x/main.py,sha256=xHsQWxDJsykdvLSjbFvfVkx5YkCUlOZ99KRnOKNCQso,448
+cookiecutter_x/quick_start.py,sha256=9XlmXvtEiBPaH0QLjViR16KAdqVw924bH0RTQfMaRMM,2280
+cookiecutter_x/simple_templates.py,sha256=zBWh7_3HoJc63_3SXqqjAGtEAFRRsK1O0-9Rpn1iOqE,4051
+cookiecutter_x/template_processor.py,sha256=Q3AMFd8m1fgEetHmXTnzuVtsCv8JAdizU8C8fdBavWc,7022
+cookiecutter_x/utils.py,sha256=YY4wrrllnOV4hq44b60TmMjg9hoHL2iNtkKOJGUUBKw,1509
+cookiecutter_x/extensions/__init__.py,sha256=yV3zWYq_rBqOXamdJtGNAxRdTW6VG9jxz6Pqj-uddfg,1146
+cookiecutter_x-0.1.2.dist-info/LICENSE.txt,sha256=8xZfjf2hr5iFuzmXlPjrXuF1SsH7QwppiC4x2XZ1D3E,10686
+cookiecutter_x-0.1.2.dist-info/METADATA,sha256=wBZayFi7YwaGzXIXNFs5lhrDbAvcqNhlMqdi3MbFJHU,2329
+cookiecutter_x-0.1.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+cookiecutter_x-0.1.2.dist-info/entry_points.txt,sha256=ZDdGh8QBch8m9GaAEegD4RuPyRmN7y_wCBafRSr-nyk,60
+cookiecutter_x-0.1.2.dist-info/top_level.txt,sha256=muVbt6HmibRWw535fj3fV_b-xJQwmd6bRTQ2s39EpUk,15
+cookiecutter_x-0.1.2.dist-info/RECORD,,
