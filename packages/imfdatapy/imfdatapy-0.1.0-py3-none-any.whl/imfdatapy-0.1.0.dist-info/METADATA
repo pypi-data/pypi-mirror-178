@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: imfdatapy
+Version: 0.1.0
+Summary: A package for data extraction from the IMF!
+License: MIT
+Author: Irina Klein, Sou-Cheng T. Choi
+Requires-Python: >=3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: numpy (>=1.23.5)
+Requires-Dist: pandas (>=1.5.2)
+Requires-Dist: requests (>=2.28.1)
+Description-Content-Type: text/markdown
+
+# imfdatapy
+
+A package for data extraction from the International Monetary Fund (IMF)!
+This repository contains Python source code and Jupyter notebooks with examples on how to extract data from the IMF.
+
+## Installation
+
+```bash
+$ pip install imfdatapy
+```
+
+## Usage
+
+- TODO
+
+## Contributing
+
+Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
+
+## License
+
+`imfdatapy` was created by Irina Klein and Sou-Cheng T. Choi, Illinois Institute of Technology. It is licensed under the terms of the MIT license.
+
+## Credits
+
+`imfdatapy` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+
