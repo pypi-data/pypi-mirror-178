@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gmag"
+version = "2.0.1"
+description = "Get me a galaxy"
+readme = "README.md"
+authors = [
+    { name = "Junyu Chen" },
+]
+license = { file = "LICENSE.txt" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering :: Astronomy",
+    "Topic :: Scientific/Engineering :: Image Processing",
+]
+keywords = ["astronomy", "sdss", "fits", "galaxy", "image processing"]
+dependencies = [
+    "numpy>=1.18",
+    "astropy>=4.0",
+    "matplotlib>=3.2",
+    "requests>=2.23",
+    "tqdm>=4.48",
+    "tomli; python_version< '3.11'",
+]
+requires-python = ">=3.7"
+
+    [project.optional-dependencies]
+    build = ["build", "twine"]
+    dev = ["black"]
+
+    [project.urls]
+    repository = "https://github.com/Junyu474/GMAG"
+
+[tool.bumpver]
+current_version = "2.0.1"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message = "bump version {old_version} -> {new_version}"
+commit = true
+tag = false
+push = false
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = [
+    'current_version = "{version}"',
+    'version = "{version}"'
+]
+"gmag/__init__.py" = ["{version}"]
+

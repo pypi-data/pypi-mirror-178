@@ -1,0 +1,15 @@
+numpy>=1.18
+astropy>=4.0
+matplotlib>=3.2
+requests>=2.23
+tqdm>=4.48
+
+[:python_version < "3.11"]
+tomli
+
+[build]
+build
+twine
+
+[dev]
+black
