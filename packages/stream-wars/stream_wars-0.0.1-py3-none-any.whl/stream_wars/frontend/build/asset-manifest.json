@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/star-wars-crawl-greensock-with-hooks/static/css/main.85a27523.chunk.css",
+    "main.js": "/star-wars-crawl-greensock-with-hooks/static/js/main.3e1c7285.chunk.js",
+    "main.js.map": "/star-wars-crawl-greensock-with-hooks/static/js/main.3e1c7285.chunk.js.map",
+    "runtime-main.js": "/star-wars-crawl-greensock-with-hooks/static/js/runtime-main.35e632b9.js",
+    "runtime-main.js.map": "/star-wars-crawl-greensock-with-hooks/static/js/runtime-main.35e632b9.js.map",
+    "static/js/2.0dc68b28.chunk.js": "/star-wars-crawl-greensock-with-hooks/static/js/2.0dc68b28.chunk.js",
+    "static/js/2.0dc68b28.chunk.js.map": "/star-wars-crawl-greensock-with-hooks/static/js/2.0dc68b28.chunk.js.map",
+    "index.html": "/star-wars-crawl-greensock-with-hooks/index.html",
+    "precache-manifest.e0c6dc0858db6543e1351d31d8e85728.js": "/star-wars-crawl-greensock-with-hooks/precache-manifest.e0c6dc0858db6543e1351d31d8e85728.js",
+    "service-worker.js": "/star-wars-crawl-greensock-with-hooks/service-worker.js",
+    "static/css/main.85a27523.chunk.css.map": "/star-wars-crawl-greensock-with-hooks/static/css/main.85a27523.chunk.css.map",
+    "static/js/2.0dc68b28.chunk.js.LICENSE": "/star-wars-crawl-greensock-with-hooks/static/js/2.0dc68b28.chunk.js.LICENSE",
+    "static/media/Crawl.css": "/star-wars-crawl-greensock-with-hooks/static/media/StarJediHollow.f36aaf0d.woff2",
+    "static/media/volume_off.svg": "/star-wars-crawl-greensock-with-hooks/static/media/volume_off.04238fc3.svg",
+    "static/media/volume_on.svg": "/star-wars-crawl-greensock-with-hooks/static/media/volume_on.ef7f87ab.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.35e632b9.js",
+    "static/js/2.0dc68b28.chunk.js",
+    "static/css/main.85a27523.chunk.css",
+    "static/js/main.3e1c7285.chunk.js"
+  ]
+}
