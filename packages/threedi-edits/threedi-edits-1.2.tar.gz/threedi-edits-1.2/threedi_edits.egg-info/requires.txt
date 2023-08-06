@@ -1,0 +1,13 @@
+scipy
+cached_property
+shapely==2.0a1
+threedigrid_builder
+threedi_modelchecker
+
+[test]
+pytest
+mock
+pytest-cov
+pytest-flakes
+pytest-black
+pytest-benchmark

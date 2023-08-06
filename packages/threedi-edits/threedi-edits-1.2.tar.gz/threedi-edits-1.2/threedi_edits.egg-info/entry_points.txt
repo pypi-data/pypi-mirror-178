@@ -1,0 +1,2 @@
+[console_scripts]
+run-threedi-edits = threedi_edits.scripts:main
