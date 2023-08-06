@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+bin/tiktokget
+tiktokget.egg-info/PKG-INFO
+tiktokget.egg-info/SOURCES.txt
+tiktokget.egg-info/dependency_links.txt
+tiktokget.egg-info/requires.txt
+tiktokget.egg-info/top_level.txt
