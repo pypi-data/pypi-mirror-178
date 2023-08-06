@@ -1,0 +1,8 @@
+teleexception/__init__.py,sha256=OxORqP1j1oyDjzpAHZ3HPU4hh1hcmqlOFHXnjVGEtfQ,100
+teleexception/status/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+teleexception/status/http_status.py,sha256=18wCPi9mWw22sjRr-C08cIidMeY4dRfOIJm4H9MVyUA,44405
+teleexception/status/status_exception.py,sha256=c8Hn-TIuPn5wMydVaSeaESalv14XjtLOD38m2-gSpR0,373
+teleexception-0.2.13.dist-info/METADATA,sha256=2jSwoHmVOHOdQ1w00t6wh4pJTZ8ucZVNTc2QkMkOcq4,4011
+teleexception-0.2.13.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+teleexception-0.2.13.dist-info/top_level.txt,sha256=8UE4OrNUAjQojJfld8TkzSD2RaYtO4XlXHzQIGBrTXU,14
+teleexception-0.2.13.dist-info/RECORD,,
