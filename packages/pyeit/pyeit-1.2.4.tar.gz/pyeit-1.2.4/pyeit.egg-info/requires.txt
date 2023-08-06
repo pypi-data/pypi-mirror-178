@@ -1,0 +1,14 @@
+numpy
+scipy
+pandas
+matplotlib
+shapely
+trimesh
+
+[test]
+pytest
+pytest-cov
+tox
+imageio
+black
+flake8
