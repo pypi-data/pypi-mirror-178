@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: loyalcat
+Version: 0.0.5
+Author: yupix
+Author-email: yupi0982@outlook.jp
+License: MIT
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Natural Language :: Japanese
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.11, <4.0
