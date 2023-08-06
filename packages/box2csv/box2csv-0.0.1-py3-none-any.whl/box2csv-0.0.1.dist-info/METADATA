@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: box2csv
+Version: 0.0.1
+Summary: Extract shoebox and toolbox data to CSV files.
+Home-page: https://github.com/fmatter/box2csv
+Author: Florian Matter
+Author-email: florianmatter@gmail.com
+Project-URL: Bug Tracker, https://github.com/fmatter/box2csv/issues
+Keywords: shoebox,toolbox
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: colorlog
+Requires-Dist: click
+Requires-Dist: pandas (>=1.3.5)
+Requires-Dist: python-slugify (>=6.1.2)
+Requires-Dist: cldfbench (>=1.13.0)
+Requires-Dist: pycldf (>=1.29.0)
+Requires-Dist: importlib-resources (>=5.10.0)
+Provides-Extra: dev
+Requires-Dist: bump2version ; extra == 'dev'
+Requires-Dist: coverage[toml] ; extra == 'dev'
+Requires-Dist: prospector[with_pyroma] (==1.7.7) ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+Requires-Dist: sphinx-autoapi ; extra == 'dev'
+Requires-Dist: sphinxcontrib-napoleon ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Requires-Dist: myst-parser ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: jinja2 ; extra == 'dev'
+Requires-Dist: keepachangelog ; extra == 'dev'
+Provides-Extra: publishing
+Requires-Dist: twine ; extra == 'publishing'
+Requires-Dist: wheel ; extra == 'publishing'
+
+# box2csv
+
+Extract data from shoebox and toolbox projects to CSV files.
+
+![License](https://img.shields.io/github/license/fmatter/box2csv)
+[![Tests](https://img.shields.io/github/workflow/status/fmatter/box2csv/tests?label=tests)](https://github.com/fmatter/box2csv/actions/workflows/tests.yml)
+[![Linting](https://img.shields.io/github/workflow/status/fmatter/box2csv/lint?label=linting)](https://github.com/fmatter/box2csv/actions/workflows/lint.yml)
+[![Codecov](https://img.shields.io/codecov/c/github/fmatter/box2csv)](https://app.codecov.io/gh/fmatter/box2csv/)
+[![PyPI](https://img.shields.io/pypi/v/box2csv.svg)](https://pypi.org/project/box2csv)
+![Versions](https://img.shields.io/pypi/pyversions/box2csv)
+
+## Installation
+`pip install box2csv`
+
+## Usage
+At the moment, there is only one command: `box2csv corpus`, for collections of glossed texts.
+To create a file `mytextdatabase.csv` from a toolbox file `mytextdatabase.txt`:
+
+```shell
+box2csv corpus mytoolbox/mytextdatabase.txt
+```
+
+Project-specific configuration can be passed via `--conf your/config.yaml`; to see what options are available, check [the default configuration file](src/box2csv/data/interlinear_config.yaml) as well as the default configuration files for [toolbox](src/box2csv/data/toolbox.yaml) and [shoebox](src/box2csv/data/shoebox.yaml).
+
+To create a [CLDF](cldf.clld.org/) version of the corpus, add the option `--cldf`.
+For more help on how to run the command, use `box2csv corpus --help`.
+
+## Problems
+1. if running `box2csv` produces warnings, check your database for possible inconsistencies
+2. if that did not solve your problem, [open an issue](https://github.com/fmatter/box2csv/issues/new)

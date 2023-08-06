@@ -1,0 +1,2 @@
+[console_scripts]
+box2csv = box2csv.cli:main

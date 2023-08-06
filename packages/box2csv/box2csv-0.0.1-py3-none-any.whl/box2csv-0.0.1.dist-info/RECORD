@@ -1,0 +1,13 @@
+box2csv/__init__.py,sha256=WMiUJ8KShK79CKNWvZZyq6_v3PpKHpitWXUV9A12bbQ,3332
+box2csv/cldf.py,sha256=x8IYDQav3-EF1KSsOJZCoeI_zVOwSRM38cU1xb9vpf8,1816
+box2csv/cli.py,sha256=fKvxXk56dgupRT8pNtd7zq5_kBp5-wraAOu1fjMzgtE,1669
+box2csv/helpers.py,sha256=bWg5J1G23-a9zw9WjHDbsxBMpqgAW8QDnT-Mf28a0Sw,964
+box2csv/data/interlinear_config.yaml,sha256=R3qyKO3rdV2pzXojLoww5PFAMdhQiOhlBb8RwGDuLnI,438
+box2csv/data/shoebox.yaml,sha256=fAyFcVm4--q77tVHTgX8fE9y-MDiA0CT-xQx68BWnXA,217
+box2csv/data/toolbox.yaml,sha256=UpXOwuKj0bQZ9kUYwIXacOWNabrvQuFfK4GB2UwBVaA,221
+box2csv-0.0.1.dist-info/LICENSE,sha256=OPzV6bHGPCXFylyiCR3GYAK-EP8seLDbcbgO87DYM1o,11359
+box2csv-0.0.1.dist-info/METADATA,sha256=KZBlmCnZP5MD_uuVLFNYN0zGO4BI2tuNOPjGS6h2tEc,3584
+box2csv-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+box2csv-0.0.1.dist-info/entry_points.txt,sha256=gG4CKfEjXegXrUMaSeOdNxWApPVRWZx6Y-2xkj0s9IQ,45
+box2csv-0.0.1.dist-info/top_level.txt,sha256=xKu9MxGqkRt1_C16w0IhNa5HOk0yimqYl7_nwUvxLCk,8
+box2csv-0.0.1.dist-info/RECORD,,
