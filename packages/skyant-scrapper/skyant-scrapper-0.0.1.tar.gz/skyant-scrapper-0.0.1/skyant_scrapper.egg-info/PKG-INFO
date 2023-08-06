@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: skyant-scrapper
+Version: 0.0.1
+Summary: Hi-Level fields.
+Home-page: https://skyant.dev/projects/scrapper
+Author: Iurii Tarasenko
+Author-email: info@skyant.dev
+License: MIT
+Project-URL: Source & issues, https://gitlab.com/skyant/python/scrapper
+Project-URL: Donation, https://buymeacoffee.com/skyantdev
+Project-URL: Project news, https://www.linkedin.com/company/skyantdev
+Project-URL: Talk to us, https://groups.google.com/a/skyant.dev/g/community?label=scrapper
+Keywords: fields,web scrapping
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+hi level scrapper
