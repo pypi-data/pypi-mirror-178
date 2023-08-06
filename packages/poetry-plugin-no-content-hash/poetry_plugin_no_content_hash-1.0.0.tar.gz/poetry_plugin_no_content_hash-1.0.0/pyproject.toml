@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "poetry-plugin-no-content-hash"
+version = "1.0.0"
+description = "Poetry plugin to remove the content hash"
+authors = ["Marcel Jackwerth <marceljackwerth@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+packages = [
+    { include = "poetry_plugin_no_content_hash", from = "src" }
+]
+
+include = [
+    { path = "tests", format = "sdist" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.7.1"
+poetry = "^1.2"
+
+[tool.poetry.plugins."poetry.plugin"]
+export = "poetry_plugin_no_content_hash.plugin:NoContentHashPlugin"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
