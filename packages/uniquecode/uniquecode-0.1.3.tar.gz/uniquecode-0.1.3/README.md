@@ -1,0 +1,1 @@
+This module used to generate a unique code name based on id number.
