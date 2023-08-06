@@ -1,0 +1,54 @@
+from configparser import ConfigParser
+from pathlib import Path
+from importlib import import_module
+from collections import OrderedDict
+import Xponge
+import MDAnalysis
+mda = MDAnalysis
+ChainReader = MDAnalysis.coordinates.chain.ChainReader
+
+__version__ = "0.4.0"
+
+Configure = ConfigParser()
+ConfigurePath = Path(__file__).parent / "conf.ini"
+
+
+class Model():
+    id = 0
+    models = OrderedDict()
+    WORKING = None
+    def __init__(self, name, u):
+        self.u = u
+        self.name = name
+        self.id = Model.id
+        self.traj_files = []
+        Model.models[self.id] = self
+        Model.id += 1
+
+    def __repr__(self):
+        return f"Model.models[{self.id}]"
+
+    def __str__(self):
+        return repr(self)
+
+
+class MACROS:
+    VERSION = __version__
+    PACKAGE = "Visual Sponge"
+    PORT = 10696
+    DEBUG_MODE = False
+    APP = None
+    CMD = None
+    TEXT = ""
+    TEMP = None
+
+def Initialize():
+    Configure.read(ConfigurePath)
+    translation = import_module(".translation." + Configure.get("OTHER", "language", fallback="chinese"), __name__).translation
+    def localization(key):
+        return translation.get(key, key)
+    MACROS.localization = localization
+    MACROS.PORT = int(Configure.get("OTHER", "port", fallback="10696"))
+    if "FORCEFIELD" in Configure:
+        for key, value in Configure["FORCEFIELD"].items():
+            Xponge.source(value)
