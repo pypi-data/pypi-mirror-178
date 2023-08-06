@@ -1,0 +1,8 @@
+README.md
+setup.py
+bugfinder/__init__.py
+bugfinder.egg-info/PKG-INFO
+bugfinder.egg-info/SOURCES.txt
+bugfinder.egg-info/dependency_links.txt
+bugfinder.egg-info/entry_points.txt
+bugfinder.egg-info/top_level.txt
