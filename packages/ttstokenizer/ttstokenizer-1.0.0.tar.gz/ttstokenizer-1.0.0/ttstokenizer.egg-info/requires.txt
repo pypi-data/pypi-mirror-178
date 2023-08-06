@@ -1,0 +1,4 @@
+anyascii>=0.3.1
+inflect>=0.3.1
+numpy>=1.13.1
+nltk>=3.2.4

@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+ttstokenizer/__init__.py
+ttstokenizer/checkpoint20.npz
+ttstokenizer/expand.py
+ttstokenizer/g2p.py
+ttstokenizer/homographs.en
+ttstokenizer/tokenizer.py
+ttstokenizer.egg-info/PKG-INFO
+ttstokenizer.egg-info/SOURCES.txt
+ttstokenizer.egg-info/dependency_links.txt
+ttstokenizer.egg-info/requires.txt
+ttstokenizer.egg-info/top_level.txt
