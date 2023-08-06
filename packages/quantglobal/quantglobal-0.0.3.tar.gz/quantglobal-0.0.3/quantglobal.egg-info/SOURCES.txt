@@ -1,0 +1,9 @@
+README.md
+setup.py
+QuantGlobal/__init__.py
+QuantGlobal/basecode.py
+quantglobal.egg-info/PKG-INFO
+quantglobal.egg-info/SOURCES.txt
+quantglobal.egg-info/dependency_links.txt
+quantglobal.egg-info/requires.txt
+quantglobal.egg-info/top_level.txt
