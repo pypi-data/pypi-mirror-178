@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: detadantic
+Version: 0.0.1
+Summary: Provides Active Record style wrappers to Deta Base using Pydantic.
+Home-page: https://github.com/Jay184/detadantic
+Author: Jay
+Author-email: 0jaybae0@gmail.com
+Project-URL: Bug Tracker, https://github.com/Jay184/detadantic/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: deta (==1.1.0)
+Requires-Dist: pydantic (==1.10.2)
+Provides-Extra: dev
+Requires-Dist: pkginfo (==1.8.3) ; extra == 'dev'
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+
