@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: trentubuddy
+Version: 1.0.0
+Summary: A small discord bot framework and web scraper. Without getting sensitive information the web scraper will update a file with a list of CS Specializations and requirements based on the given patten. See README for more
+Author: Zachary Bricknell
+Project-URL: Homepage, https://github.com/Zachary-Bricknell/TrentUBuddy
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: discord (>=2.0.0)
+Requires-Dist: python-dotenv (>=0.21.0)
+Requires-Dist: selenium (>=4.5.0)
+Requires-Dist: bs4 (>=0.0.1)
+Requires-Dist: webdriver-manager (>=3.8.4)
+Requires-Dist: PyPDF2 (>=2.11.1)
+Requires-Dist: lxml (>=4.9.1)
+
+This is just a small framework to showcase web scrapers with a discord front end. Explicit use of the trentu.ca website, with permission to do so since it is public data and doesnt require backend access or login credentials. 
+
+Be sure to use this in a virtual enviornment wherever possible
+
+Besides installing pip to install this package (It will install the rest when you do) make sure you have a valid discord token to input when using the bot. This token is stored in a 
+.env file and is not protected so use at own risk. 
