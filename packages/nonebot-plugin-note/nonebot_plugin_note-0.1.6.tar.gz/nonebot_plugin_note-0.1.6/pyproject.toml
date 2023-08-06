@@ -1,0 +1,8 @@
+[project]
+name = "nonebot_plugin_note"
+version = "0.1.6"
+dependencies = [
+    "pillow",
+    "nonebot2",
+    "nonebot_plugin_apscheduler",
+]
