@@ -1,0 +1,2 @@
+FROM base
+ENV ONE TWO= THREE=world

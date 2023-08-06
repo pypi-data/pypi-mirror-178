@@ -1,0 +1,1 @@
+FROM myimage as builder
