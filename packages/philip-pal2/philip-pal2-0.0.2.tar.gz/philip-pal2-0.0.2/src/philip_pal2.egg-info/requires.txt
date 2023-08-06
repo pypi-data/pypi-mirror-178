@@ -1,0 +1,10 @@
+memory-map-manager>=1.6.0
+tabulate
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[testing]
+setuptools
+pytest
+pytest-cov

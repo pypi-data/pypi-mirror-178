@@ -1,0 +1,2 @@
+[console_scripts]
+philip-cli = philip_pal2.philip_cli:main
