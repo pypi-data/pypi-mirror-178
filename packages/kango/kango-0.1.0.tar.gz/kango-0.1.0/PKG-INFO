@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: kango
+Version: 0.1.0
+Summary: kango 
+Home-page: https://github.com/mardix/kango
+Author: Mardix
+Author-email: mardix@blackdevhub.io
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Database
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Kango
+
+
+## API
+
+### Connection
+
+```
+import kango
+
+#--- connect
+db = kango.db(hosts="http://host:8529", username="root", password:str)
+
+#--- select collection
+coll = db.select_collection('test')
+
+#--- insert item
+coll.insert({k:v, ...})
+
+#--- insert item with custom _key
+coll.insert({k:v,...}, _key='awesome')
+
+
+
+
+
+```
+

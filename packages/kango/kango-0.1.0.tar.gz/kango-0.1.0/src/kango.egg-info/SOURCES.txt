@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/kango/__init__.py
+src/kango/db.py
+src/kango/dict_mutator.py
+src/kango/dict_query.py
+src/kango/lib.py
+src/kango/lib_collection.py
+src/kango/lib_xql.py
+src/kango.egg-info/PKG-INFO
+src/kango.egg-info/SOURCES.txt
+src/kango.egg-info/dependency_links.txt
+src/kango.egg-info/requires.txt
+src/kango.egg-info/top_level.txt
