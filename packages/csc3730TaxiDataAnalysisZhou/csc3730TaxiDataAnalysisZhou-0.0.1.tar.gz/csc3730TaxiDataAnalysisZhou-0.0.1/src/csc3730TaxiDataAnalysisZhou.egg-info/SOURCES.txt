@@ -1,0 +1,8 @@
+README.txt
+pyproject.toml
+src/csc3730TaxiDataAnalysisZhou/TaxiDataAnalysis.py
+src/csc3730TaxiDataAnalysisZhou/__init__.py
+src/csc3730TaxiDataAnalysisZhou.egg-info/PKG-INFO
+src/csc3730TaxiDataAnalysisZhou.egg-info/SOURCES.txt
+src/csc3730TaxiDataAnalysisZhou.egg-info/dependency_links.txt
+src/csc3730TaxiDataAnalysisZhou.egg-info/top_level.txt
