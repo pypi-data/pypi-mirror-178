@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: NET
+Version: 1
+Summary: A Python Package For Networking Such As Servers/LocalHost ETC
+Author: Hunter Mikesell
+Author-email: huntermikesell84@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+NET Package (Lib)
+
+A Simple (For Now) Package For Creating Servers, ETC
+
+Basicly A Package For Networking!
+
+There Will Most Likely Be Future Updates For This Pkg!
+
+Example(s):
+print(NET.https(url="https://example.com").statusCode())
+NET.Server(port=4040)
+
+And Other Cool Things, Enjoy :)
