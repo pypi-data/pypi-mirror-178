@@ -1,0 +1,14 @@
+README.md
+setup.py
+tcShip/__init__.py
+tcShip/tcShip.py
+tcShip.egg-info/PKG-INFO
+tcShip.egg-info/SOURCES.txt
+tcShip.egg-info/dependency_links.txt
+tcShip.egg-info/requires.txt
+tcShip.egg-info/top_level.txt
+tcship.egg-info/PKG-INFO
+tcship.egg-info/SOURCES.txt
+tcship.egg-info/dependency_links.txt
+tcship.egg-info/requires.txt
+tcship.egg-info/top_level.txt
