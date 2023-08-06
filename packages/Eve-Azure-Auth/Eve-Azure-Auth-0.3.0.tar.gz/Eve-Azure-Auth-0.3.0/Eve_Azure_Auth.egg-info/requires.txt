@@ -1,0 +1,4 @@
+PyJWT
+cachecontrol
+cryptography
+eve
