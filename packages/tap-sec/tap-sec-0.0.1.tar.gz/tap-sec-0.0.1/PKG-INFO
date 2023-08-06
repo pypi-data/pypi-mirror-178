@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: tap-sec
+Version: 0.0.1
+Summary: `tap-sec` is a Singer tap for tap-sec, built with the Meltano Singer SDK.
+License: MIT
+Keywords: ELT,tap-sec
+Author: emcp
+Requires-Python: >=3.8,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: s3
+Requires-Dist: atomicwrites (>=1.4.1,<2.0.0)
+Requires-Dist: beautifulsoup4 (>=4.11.1,<5.0.0)
+Requires-Dist: fs-s3fs (>=1.1.1,<2.0.0); extra == "s3"
+Requires-Dist: lxml (>=4.9.1,<5.0.0)
+Requires-Dist: pandas (>=1.5.2,<2.0.0)
+Requires-Dist: requests (>=2.25.1,<3.0.0)
+Requires-Dist: singer-sdk (>=0.14.0,<0.15.0)
