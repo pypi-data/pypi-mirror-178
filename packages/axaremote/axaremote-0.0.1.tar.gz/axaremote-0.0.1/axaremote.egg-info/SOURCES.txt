@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+axaremote/__init__.py
+axaremote/__main__.py
+axaremote/axaremote.py
+axaremote.egg-info/PKG-INFO
+axaremote.egg-info/SOURCES.txt
+axaremote.egg-info/dependency_links.txt
+axaremote.egg-info/requires.txt
+axaremote.egg-info/top_level.txt
