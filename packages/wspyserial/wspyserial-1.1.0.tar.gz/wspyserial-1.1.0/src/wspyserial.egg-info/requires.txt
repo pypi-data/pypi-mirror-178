@@ -1,0 +1,9 @@
+pyserial>=3.5
+websockets>=10.3
+
+[dev]
+black
+bumpver
+isort
+pip-tools
+unittest

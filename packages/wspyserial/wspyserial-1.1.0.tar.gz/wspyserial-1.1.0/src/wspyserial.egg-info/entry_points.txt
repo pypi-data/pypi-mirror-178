@@ -1,0 +1,2 @@
+[console_scripts]
+wspyserial = wspyserial.__main__:main
