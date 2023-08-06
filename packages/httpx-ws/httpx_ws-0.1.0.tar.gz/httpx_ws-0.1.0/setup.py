@@ -1,0 +1,32 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+setup(
+    name='httpx-ws',
+    version='0.1.0',
+    description='WebSockets support for HTTPX',
+    long_description='# httpx-ws\n\nWebSockets support for HTTPX\n\n[![build](https://github.com/frankie567/httpx-ws/workflows/Build/badge.svg)](https://github.com/frankie567/httpx-ws/actions)\n[![codecov](https://codecov.io/gh/frankie567/httpx-ws/branch/main/graph/badge.svg?token=fL49kIvrj6)](https://codecov.io/gh/frankie567/httpx-ws)\n[![PyPI version](https://badge.fury.io/py/httpx-ws.svg)](https://badge.fury.io/py/httpx-ws)\n[![Downloads](https://pepy.tech/badge/httpx-ws)](https://pepy.tech/project/httpx-ws)\n\n<p align="center">\n<a href="https://github.com/sponsors/frankie567"><img src="https://md-btn.deta.dev/button.svg?text=Buy%20me%20a%20coffee%20%E2%98%95%EF%B8%8F&bg=ef4444&w=200&h=50"></a>\n</p>\n\n\n## Installation\n\n> Not released on PyPI yet 😅\n\n```bash\npip install httpx-ws\n```\n\n## Quickstart\n\n`httpx-ws` provides `connect_ws` and `aconnect_ws` to help connecting and communication with WebSockets. The resulting `WebSocketSession`/`AsyncWebSocketSession` object provides helpers to send and receive messages in the WebSocket.\n\n**Sync**\n\n```py\nfrom httpx_ws import connect_ws\n\nwith connect_ws("http://localhost:8000/ws") as ws:\n    message = ws.receive_text()\n    print(message)\n    ws.send_text("Hello!")\n```\n\n**Async**\n\n```py\nfrom httpx_ws import aconnect_ws\n\nasync with aconnect_ws("http://localhost:8000/ws") as ws:\n    message = await ws.receive_text()\n    print(message)\n    await ws.send_text("Hello!")\n```\n\nYou can also pass an `httpx.Client`/`httpx.AsyncClient` if you want to customize parameters or benefit from connection pooling:\n\n**Sync**\n\n```py\nimport httpx\nfrom httpx_ws import connect_ws\n\nwith httpx.Client() as client:\n    with connect_ws("http://localhost:8000/ws", client) as ws:\n        message = ws.receive_text()\n        print(message)\n        ws.send_text("Hello!")\n```\n\n**Async**\n\n```py\nimport httpx\nfrom httpx_ws import aconnect_ws\n\nwith httpx.AsyncClient() as client:\n    async with aconnect_ws("http://localhost:8000/ws", client) as ws:\n        message = await ws.receive_text()\n        print(message)\n        await ws.send_text("Hello!")\n```\n\n## Testing ASGI apps\n\nYou can use `httpx_ws` to test WebSockets defined in an ASGI app, [just like you do with HTTPX for HTTP endpoints](https://www.python-httpx.org/async/#calling-into-python-web-apps).\n\nFor this, we\'ve implemented a custom transport for HTTPX, `ASGIWebSocketTransport`. You need to instantiate a class of this transport and set it as parameter on your HTTPX client.\n\nLet\'s say you have this Starlette app:\n\n```py\nfrom starlette.applications import Starlette\nfrom starlette.responses import HTMLResponse\nfrom starlette.routing import Route, WebSocketRoute\n\n\nasync def http_hello(request):\n    return HTMLResponse("Hello World!")\n\nasync def ws_hello(websocket):\n    await websocket.accept()\n    await websocket.send_text("Hello World!")\n    await websocket.close()\n\n\napp = Starlette(\n    routes=[\n        Route("/http", http_hello),\n        WebSocketRoute("/ws", ws_hello),\n    ],\n)\n```\n\nYou can call it directly like this:\n\n```py\nimport httpx\nfrom httpx_ws import aconnect_ws\nfrom httpx_ws.transport import ASGIWebSocketTransport\n\nasync with httpx.AsyncClient(transport=ASGIWebSocketTransport(app)) as client:\n    http_response = await client.get("http://server/http")\n    assert http_response.status_code == 200\n\n    async with aconnect_ws("http://server/ws", client) as ws:\n        message = await ws.receive_text()\n        assert message == "Hello World!"\n```\n\nNotice that, in this case, you *must* pass the `client` instance to `aconnect_ws`. HTTP requests are handled normally.\n\n## Development\n\n### Setup environment\n\nWe use [Hatch](https://hatch.pypa.io/latest/install/) to manage the development environment and production build. Ensure it\'s installed on your system.\n\n### Run unit tests\n\nYou can run all the tests with:\n\n```bash\nhatch run test\n```\n\n### Format the code\n\nExecute the following command to apply `isort` and `black` formatting:\n\n```bash\nhatch run lint\n```\n\n## License\n\nThis project is licensed under the terms of the MIT license.\n',
+    author_email='François Voron <fvoron@gmail.com>',
+    classifiers=[
+        'Development Status :: 4 - Beta',
+        'Framework :: AsyncIO',
+        'Intended Audience :: Developers',
+        'License :: OSI Approved :: MIT License',
+        'Programming Language :: Python :: 3 :: Only',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Topic :: Internet :: WWW/HTTP :: Session',
+    ],
+    install_requires=[
+        'anyio',
+        'httpx',
+        'typing-extensions; python_version < "3.8"',
+        'wsproto',
+    ],
+    packages=[
+        'httpx_ws',
+        'tests',
+    ],
+)
