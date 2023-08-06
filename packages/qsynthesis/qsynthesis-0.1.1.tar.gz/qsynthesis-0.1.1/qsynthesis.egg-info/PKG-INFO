@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: qsynthesis
+Version: 0.1.1
+Summary: Python API to synthesize Triton AST's
+Home-page: https://github.com/quarkslab/qsynthesis
+Author: Robin David
+License: AGPL-3.0
+Project-URL: Documentation, https://quarkslab.github.io/qsynthesis/
+Project-URL: Bug Tracker, https://github.com/quarkslab/qsynthesis/issues
+Project-URL: Source, https://github.com/quarkslab/qsynthesis
+Classifier: Topic :: Security
+Classifier: Environment :: Console
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: all
+Provides-Extra: reassembly
+Provides-Extra: generator
+Provides-Extra: server
+License-File: LICENSE
+
+file: README.md
