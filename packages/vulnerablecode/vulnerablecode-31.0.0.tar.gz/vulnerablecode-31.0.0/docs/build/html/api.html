@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>API overview &mdash; VulnerableCode  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Google Summer of Code 2021 Final Report" href="soc_gsoc21.html" />
+    <link rel="prev" title="Importers" href="importers_link.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> VulnerableCode
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">VulnerableCode Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing to VulnerableCode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="misc.html">Miscellaneous</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorial</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tutorial_add_new_importer.html">Add a new importer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial_add_new_improver.html">Add a new improver</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="reference_importer_overview.html">Importer Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference_improver_overview.html">Improver Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference_framework_overview.html">Framework Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="command-line-interface.html">Command Line Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="importers_link.html">Importers</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#enable-the-api-key-authentication">Enable the API key authentication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#create-an-api-key-only-user">Create an API key-only user</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#access-the-api-using-curl">Access the API using curl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#api-endpoints">API endpoints</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Summer of Codes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="soc_gsoc21.html">Google Summer of Code 2021 Final Report</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">VulnerableCode</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>API overview</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/api.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="api-overview">
+<span id="api"></span><h1>API overview<a class="headerlink" href="#api-overview" title="Permalink to this headline"></a></h1>
+<section id="enable-the-api-key-authentication">
+<h2>Enable the API key authentication<a class="headerlink" href="#enable-the-api-key-authentication" title="Permalink to this headline"></a></h2>
+<p>There is a setting VULNERABLECODEIO_REQUIRE_AUTHENTICATION for this. Use it this
+way:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ VULNERABLECODEIO_REQUIRE_AUTHENTICATION=1 make run
+</pre></div>
+</div>
+</section>
+<section id="create-an-api-key-only-user">
+<h2>Create an API key-only user<a class="headerlink" href="#create-an-api-key-only-user" title="Permalink to this headline"></a></h2>
+<p>This can be done in the admin and from the command line:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ./manage.py create-api-user --email &quot;p4@nexb.com&quot; --first-name=&quot;Phil&quot; --last-name &quot;Goel&quot;
+User p4@nexb.com created with API key: ce8616b929d2adsddd6146346c2f26536423423491
+</pre></div>
+</div>
+</section>
+<section id="access-the-api-using-curl">
+<h2>Access the API using curl<a class="headerlink" href="#access-the-api-using-curl" title="Permalink to this headline"></a></h2>
+<blockquote>
+<div><p>curl -X GET -H ‘Authorization: Token &lt;YOUR TOKEN&gt; ‘ <a class="reference external" href="http://public.vulnerablecode.io/api/">http://public.vulnerablecode.io/api/</a></p>
+</div></blockquote>
+</section>
+<section id="api-endpoints">
+<h2>API endpoints<a class="headerlink" href="#api-endpoints" title="Permalink to this headline"></a></h2>
+<p>There are two primary endpoints:</p>
+<ul class="simple">
+<li><p>packages/: this is the main endpoint where you can lookup vulnerabilities by package.</p></li>
+<li><p>vulnerabilities.: for lookup by vulnerabilities</p></li>
+</ul>
+<p>And two secondary endpoints, used to query aliases and CPEs: cpes/ and alias/</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="importers_link.html" class="btn btn-neutral float-left" title="Importers" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="soc_gsoc21.html" class="btn btn-neutral float-right" title="Google Summer of Code 2021 Final Report" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright nexB Inc. and others.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
