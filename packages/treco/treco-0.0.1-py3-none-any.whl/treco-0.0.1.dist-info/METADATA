@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: treco
+Version: 0.0.1
+Summary: TradingEconomics data scraper
+Author: miodine
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/x-rst
+
+treco

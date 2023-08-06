@@ -1,0 +1,10 @@
+treco/__init__.py,sha256=qc-o5Pji7iIiIzcgfcf_1mILs9xocQmIGMxS2olx4Ec,46
+treco/core.py,sha256=bnqwk4UZHz74nHl33K17UKbobZ-sUWFcsY2Zttq2mME,6358
+treco/extras.py,sha256=QVsjD7nX71rELLef2HwzagAOfnAF7e9TPpKMjo5emIE,1373
+treco/forecasts.py,sha256=ZOlKYphhETqDc5Qflb2KCSNWak0si0qZuQaPBHPsQtg,2895
+treco/indicators.py,sha256=7uB5x-wMvu3kA37Mk9CDLBnJ8iQufF28kGASkWdQ9qE,1176
+treco/markets.py,sha256=QG2BQx2E_lZo33ab8oRWGg2lPvcqsNZTV3X3yIJOEec,2045
+treco/requirements.txt,sha256=qj5uet9SJm8aHjipMJE1SI8LCT2_Fr_7vFyGku9Yw_8,23
+treco-0.0.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+treco-0.0.1.dist-info/METADATA,sha256=_PpDT9AtpF5F55iLaI9HcH4VkyQgnh5yNsKd7ekCdJs,426
+treco-0.0.1.dist-info/RECORD,,
