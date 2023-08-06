@@ -1,0 +1,10 @@
+README.md
+setup.py
+classes/__init__.py
+classes/classes_slots.py
+lists/__init__.py
+lists/lists.py
+pyperf_test.egg-info/PKG-INFO
+pyperf_test.egg-info/SOURCES.txt
+pyperf_test.egg-info/dependency_links.txt
+pyperf_test.egg-info/top_level.txt
