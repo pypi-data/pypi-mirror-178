@@ -1,0 +1,9 @@
+LICENSE
+README.txt
+setup.py
+shhelptools/__init__.py
+shhelptools.egg-info/PKG-INFO
+shhelptools.egg-info/SOURCES.txt
+shhelptools.egg-info/dependency_links.txt
+shhelptools.egg-info/requires.txt
+shhelptools.egg-info/top_level.txt
