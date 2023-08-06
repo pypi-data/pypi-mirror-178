@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: DateTimePersian
+Version: 0.0.1
+Summary: Date Time Persian
+Home-page: UNKNOWN
+Author: Erfan Mahigir (Sarzamin Danesh Pishro)
+Author-email: <info@Lssc.ir>
+License: UNKNOWN
+Keywords: python,Date,Persian,Time,Gregorian,Convert,Iranian
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This library helps you to convert the Gregorian date to Iranian date and the Iranian date to Gregorian date.
+
