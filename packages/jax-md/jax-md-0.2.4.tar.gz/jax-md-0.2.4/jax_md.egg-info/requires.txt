@@ -1,0 +1,12 @@
+absl-py
+numpy
+jax
+jaxlib
+flax
+jraph
+dataclasses
+einops
+ml_collections
+e3nn-jax
+dm-haiku
+optax
