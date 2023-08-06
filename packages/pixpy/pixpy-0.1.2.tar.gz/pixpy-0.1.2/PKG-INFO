@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pixpy
+Version: 0.1.2
+Summary: A graphics/game dev library for learning
+Home-page: https://github.com/sasq64/pix
+Author: Jonas Minnberg
+Author-email: sasq64@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+License-File: LICENSE.md
+
+UNKNOWN
+
