@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: simple-elmo-pytorch
+Version: 0.1
+Summary: Simple_elmo pytorch is a Python library to work with pre-trained ELMo embeddings in PyTorch
+Author-email: joefox@inbox.ru
+
