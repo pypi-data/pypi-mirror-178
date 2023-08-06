@@ -1,0 +1,5 @@
+This document describes how to generate API documentation using sphinx.
+
+First, install sphinx (we assume you are able to do this via the official sphinx website).
+
+To build the docs, simply invoke (i.e., on windows) .\make.bat html
