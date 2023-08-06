@@ -1,0 +1,4 @@
+New "Capacitor.c83" bus1=83.1.2.3.0 bus2=83.0.0.0 phases=3 kvar=[600.0] kv=4.16 conn=wye cmatrix=[0 |1.87639338887875E-310 2.25607960651843E-308 |1.37463500341945E-305 0 1.3746233119172E-305] cuf=[91.9673] normamps=112.416759145095 emergamps=149.889012193461 
+New "Capacitor.c88a" bus1=88.1 bus2=88.0.0.0 phases=1 kvar=[50.0] kv=2.402 conn=wye cuf=[22.9876] normamps=28.1015820149875 emergamps=37.4687760199833 
+New "Capacitor.c90b" bus1=90.2 bus2=90.0.0.0 phases=1 kvar=[50.0] kv=2.402 conn=wye cuf=[22.9876] normamps=28.1015820149875 emergamps=37.4687760199833 
+New "Capacitor.c92c" bus1=92.3 bus2=92.0.0.0 phases=1 kvar=[50.0] kv=2.402 conn=wye cuf=[22.9876] normamps=28.1015820149875 emergamps=37.4687760199833 

@@ -1,0 +1,21 @@
+Clear
+
+New Circuit.123BusIEEE
+
+Redirect LineCode_123BusIEEE.dss
+Redirect LoadShape_123BusIEEE.dss
+Redirect GrowthShape_123BusIEEE.dss
+Redirect TCC_Curve_123BusIEEE.dss
+Redirect Spectrum_123BusIEEE.dss
+Redirect Line_123BusIEEE.dss
+Redirect Vsource_123BusIEEE.dss
+Redirect Load_123BusIEEE.dss
+Redirect Transformer_123BusIEEE.dss
+Redirect RegControl_123BusIEEE.dss
+Redirect Capacitor_123BusIEEE.dss
+
+Redirect Voltagebases_123BusIEEE.dss
+
+Buscoords Buscoords_123BusIEEE.dss
+
+solve
