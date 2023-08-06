@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/bkmk/__init__.py
+src/bkmk/__main__.py
+src/bkmk/base.py
+src/bkmk/bkmk_json.py
+src/bkmk/chrome_json.py
+src/bkmk/netscape_html.py
+src/bkmk/xbel.py
+src/bkmk.egg-info/PKG-INFO
+src/bkmk.egg-info/SOURCES.txt
+src/bkmk.egg-info/dependency_links.txt
+src/bkmk.egg-info/entry_points.txt
+src/bkmk.egg-info/top_level.txt
