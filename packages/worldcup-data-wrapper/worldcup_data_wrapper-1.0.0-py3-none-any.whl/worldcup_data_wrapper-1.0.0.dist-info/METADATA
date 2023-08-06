@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: worldcup-data-wrapper
+Version: 1.0.0
+Summary: Fetch world cup data
+Author-email: Thiago Lobo <thiagocostalobo@gmail.com>
+Keywords: world,cup,wrapper
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: requests (>=2.0.0)
+
+# world-cup-python

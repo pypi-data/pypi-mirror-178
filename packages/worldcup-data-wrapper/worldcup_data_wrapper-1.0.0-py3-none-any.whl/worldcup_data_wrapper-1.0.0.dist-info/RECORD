@@ -1,0 +1,12 @@
+worldcup_data/__init__.py,sha256=1lPZCDCrlHzCn2bGTi-vfKLFsqKf97cevYgJsOjJu_Q,19
+worldcup_data/__main__.py,sha256=nw-busLBfTI-9I8MkaOo5NAJqF7VjuyOR33KWaEoj2I,103
+worldcup_data/client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+worldcup_data/client/matches.py,sha256=1L8sRzgQCU1Ll8qRSaLjU62WZTrxmAKmrNwIkJ5nrks,464
+worldcup_data/constants/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+worldcup_data/constants/constants.py,sha256=zWzGNCr0gsvegsSG24UKoOWwF7F9LKWs4VqIdDTrNAU,76
+worldcup_data/domain/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+worldcup_data/domain/match.py,sha256=r8jiciWznkQXErlErSY7nZiH9oao7PZKoWlTV5vNtBI,444
+worldcup_data_wrapper-1.0.0.dist-info/METADATA,sha256=dfeqZxTIbvpsBOGJ_kRRIZGXl9gdWDLzFitODcDAtJg,436
+worldcup_data_wrapper-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+worldcup_data_wrapper-1.0.0.dist-info/top_level.txt,sha256=LTmRFHNB5caQ_7dj0HYBxJNfyZKa8xmL5OamtGE091g,14
+worldcup_data_wrapper-1.0.0.dist-info/RECORD,,
