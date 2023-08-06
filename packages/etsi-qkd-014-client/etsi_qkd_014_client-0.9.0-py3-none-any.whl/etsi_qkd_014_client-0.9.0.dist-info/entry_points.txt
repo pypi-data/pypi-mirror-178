@@ -1,0 +1,3 @@
+[console_scripts]
+qkd014-client=etsi_qkd_014_client.cli:main
+
