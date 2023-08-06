@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+bandwidth/k8_perf_888aaen.egg-info/PKG-INFO
+bandwidth/k8_perf_888aaen.egg-info/SOURCES.txt
+bandwidth/k8_perf_888aaen.egg-info/dependency_links.txt
+bandwidth/k8_perf_888aaen.egg-info/requires.txt
+bandwidth/k8_perf_888aaen.egg-info/top_level.txt
