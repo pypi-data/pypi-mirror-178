@@ -1,0 +1,13 @@
+cloud_cloner/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloud_cloner/__main__.py,sha256=JH-JzJIIDTPpWPJRtEqkBXx70fiUo2kz7hKlVBVIgPs,59
+cloud_cloner/bootstrap.py,sha256=hF4MgYCgFql4J6qi3lguqc6HQdP2gm6PpvtSxKBSjZc,34
+cloud_cloner/clone.py,sha256=RRRoznLcyqhqdM6jr2LCzINDzW7IWxhFC3oYAXNs5pA,1454
+cloud_cloner/clone_directory.py,sha256=ywHnDU7k0SxFWwsUbRyBre5IoHANKd2aTXdrrb4MUxU,587
+cloud_cloner/config.py,sha256=QApVdtUzCz0rZw1wq7qxV1Y-vs81pQ8HRatycUQIiVU,462
+cloud_cloner/rclone_config.py,sha256=F4zjiIe55CxhVTyne9Lt8tQCkN3aEve7G9_gQENKZwM,241
+cloud_cloner/run.py,sha256=7Re-KGpWu8UgAsLlEPlJuoO5Pn0fZq56bTCLsIfoowc,97
+cloud_cloner-0.1.1.dist-info/entry_points.txt,sha256=PbU-GmuxfSAZEqSqvaNWCFbwW0qNjIqZ_ynKSnnzVyE,53
+cloud_cloner-0.1.1.dist-info/LICENSE.txt,sha256=odjbXQhqOT0eQ63jX6oGm9tfXWx4sOLlqQ9UwF9ID0Y,1057
+cloud_cloner-0.1.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+cloud_cloner-0.1.1.dist-info/METADATA,sha256=ervvhgydOEKUIx-oa3rpGhZSj0d5HuwB7gE3TXtG8_M,1449
+cloud_cloner-0.1.1.dist-info/RECORD,,
