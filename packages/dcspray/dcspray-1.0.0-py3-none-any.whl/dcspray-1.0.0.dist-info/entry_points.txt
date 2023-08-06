@@ -1,0 +1,3 @@
+[console_scripts]
+dcspray=dcspray.cli:app
+
