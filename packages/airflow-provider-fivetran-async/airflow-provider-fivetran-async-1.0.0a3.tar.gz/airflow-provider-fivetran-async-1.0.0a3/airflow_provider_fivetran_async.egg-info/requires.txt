@@ -1,0 +1,10 @@
+apache-airflow>=2.2.0
+aiohttp
+asgiref
+airflow-provider-fivetran
+
+[tests]
+parameterized
+pytest
+pytest-asyncio
+pytest-cov
