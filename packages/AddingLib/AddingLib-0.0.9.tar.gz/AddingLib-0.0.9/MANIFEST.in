@@ -1,0 +1,5 @@
+include AddLibriary/*.txt
+include AddLibriary/*.cpp
+include AddLibriary/*.h
+include AddLibriary/*.qrc
+include AddLibriary/*.ttf
