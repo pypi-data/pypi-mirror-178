@@ -1,0 +1,9 @@
+api_analytics/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+api_analytics/core.py,sha256=NTCLgej07SuQu_idopVcEaSCNgff1ZNpFdooOwql-OQ,503
+api_analytics/fastapi.py,sha256=dHnQcN165y7sPYe6lbD3DRiOmtG3KIOTh0J7MTwRi7Q,1201
+api_analytics/flask.py,sha256=gGePb748dCXNBWbBlnbwnhx8pnxyN0uI7RZ-Kje4zas,1180
+api_analytics-1.0.5.dist-info/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+api_analytics-1.0.5.dist-info/METADATA,sha256=E5u3RxMwEWTCfi4FEmZr3GEwEdfIN1roNV0KJCBlbDs,43363
+api_analytics-1.0.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+api_analytics-1.0.5.dist-info/top_level.txt,sha256=hqAxpPVmt2Eb6-3C2JgfSMrUE5bugiGTlDX2sZB8YAU,14
+api_analytics-1.0.5.dist-info/RECORD,,
