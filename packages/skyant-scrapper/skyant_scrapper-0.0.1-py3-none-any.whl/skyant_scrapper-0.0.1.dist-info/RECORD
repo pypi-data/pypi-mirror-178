@@ -1,0 +1,12 @@
+skyant/scrapper/__init__.py,sha256=PtGCRXuZ0aAxLGu6EIpC70b5u-VTha4EIFKjVk7Xtn8,231
+skyant/scrapper/_field.py,sha256=EgEp2RIVFRmo1s3MGzDXsNb2g2XCSg9fN23lXDWNIy0,3725
+skyant/scrapper/_loader.py,sha256=W8KCW0chhHrwnu5WKcJic9BjwZpnuTinGZn6hpqfjyE,7527
+skyant/scrapper/catalog/__init__.py,sha256=3vwmdKcFbMnS7gXZf7Pzqwp4mFZ_FjHL4KT8pw6nuOo,97
+skyant/scrapper/catalog/_item.py,sha256=5-ZGpnWEQIIypr_8JlvZnHmpOHxirVSumGFWu9dWqJo,3498
+skyant/scrapper/catalog/_router.py,sha256=Fl7Sz3wOk5LARnoqdrQHf6Vyh6xKH4zNcPfTW8o6Zko,3620
+skyant/scrapper/catalog/_search.py,sha256=mA937_muuMXFPfXf7hDZZ_lpFqRJM23ifVhbgKv4sR0,3151
+skyant_scrapper-0.0.1.dist-info/LICENSE,sha256=RnvbQRTCmbSxI-21QqqyLDe8GWjyQ8NnrsQMFI6j59Y,1088
+skyant_scrapper-0.0.1.dist-info/METADATA,sha256=WLioTXCxw8uV1-aOoXQ9HLPpr37NBxWr9NrBuGsOtvU,981
+skyant_scrapper-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+skyant_scrapper-0.0.1.dist-info/top_level.txt,sha256=pem25Foh-nZaRE_yNl7trWUcfnGgLJbWphpx6Qn5l1U,7
+skyant_scrapper-0.0.1.dist-info/RECORD,,
