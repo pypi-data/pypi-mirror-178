@@ -1,0 +1,3 @@
+[console_scripts]
+stardist-stacked-timepoints=stardist_stacked_timepoints.__main__:main
+
