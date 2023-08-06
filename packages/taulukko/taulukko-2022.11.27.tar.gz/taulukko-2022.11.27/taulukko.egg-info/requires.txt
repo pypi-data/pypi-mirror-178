@@ -1,0 +1,13 @@
+pytablereader>=0.31.3
+pytablewriter>=0.64.2
+typer>=0.7.0
+
+[dev]
+black
+coverage
+flake8
+hypothesis
+mypy
+pytest
+pytest-cov
+pytest-flake8
