@@ -1,0 +1,13 @@
+README.md
+setup.py
+godule/__init__.py
+godule.egg-info/PKG-INFO
+godule.egg-info/SOURCES.txt
+godule.egg-info/dependency_links.txt
+godule.egg-info/requires.txt
+godule.egg-info/top_level.txt
+godule/data_readers/__init__.py
+godule/data_saving/__init__.py
+godule/latex/__init__.py
+godule/stats/__init__.py
+godule/visualization/__init__.py

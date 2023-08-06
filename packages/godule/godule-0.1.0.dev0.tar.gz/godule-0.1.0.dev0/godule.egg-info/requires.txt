@@ -1,0 +1,2 @@
+more_itertools
+matplotlib!=3.6.1,>=3.1
