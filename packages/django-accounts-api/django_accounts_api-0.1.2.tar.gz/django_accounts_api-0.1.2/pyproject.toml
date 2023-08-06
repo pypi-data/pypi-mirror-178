@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "django-accounts-api"
+version = "0.1.2"
+description = ""
+authors = ["PeteCoward <peter@catalpa.io>"]
+readme = "README.md"
+packages = [{include = "django_accounts_api"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+django = "^4.1.1"
+
+
+[tool.poetry.group.test.dependencies]
+pytest-django = "^4.5.2"
+pytest-cov = "^4.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^2.0.0"
+django-extensions = "^3.2.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
