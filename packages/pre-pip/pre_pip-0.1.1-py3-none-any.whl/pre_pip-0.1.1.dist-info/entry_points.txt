@@ -1,0 +1,3 @@
+[console_scripts]
+pre-pip=pre_pip.cli:cli
+
