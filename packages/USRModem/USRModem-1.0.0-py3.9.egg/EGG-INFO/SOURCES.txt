@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+USRModem/__init__.py
+USRModem/callAndAnswer.py
+USRModem/speechToText.py
+USRModem.egg-info/PKG-INFO
+USRModem.egg-info/SOURCES.txt
+USRModem.egg-info/dependency_links.txt
+USRModem.egg-info/entry_points.txt
+USRModem.egg-info/not-zip-safe
+USRModem.egg-info/top_level.txt
