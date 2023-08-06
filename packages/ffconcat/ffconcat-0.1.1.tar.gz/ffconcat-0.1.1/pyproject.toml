@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "ffconcat"
+version = "0.1.1"
+description = "Easily concat videos with FFmpeg from Python"
+authors = ["Alyetama <malyetama@pm.me>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+ffmpeg = "^1.4"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+ffconcat = 'ffconcat:ffconcat.main'
