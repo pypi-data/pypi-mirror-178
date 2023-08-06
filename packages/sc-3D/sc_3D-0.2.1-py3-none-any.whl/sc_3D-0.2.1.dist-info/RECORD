@@ -1,0 +1,9 @@
+sc3D/__init__.py,sha256=HGeNygfWLw0ycVCLWlF5h9PnjBB0NEYYkP0MMBM_7dg,47
+sc3D/sc3D.py,sha256=BBhADScXpV1-fN2z4V-qmsiQVNrXftaNK7vvl11cNu0,90868
+sc3D/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sc3D/_tests/test_sc3D.py,sha256=Sxo08h5dILiaCy8o8N-cXYc7R0PHvTsg8shV0_z1lSc,947
+sc_3D-0.2.1.dist-info/LICENSE,sha256=cqrLf0CwEchbboliYja_NTvGJl32cFuCe5YMuvDodok,1068
+sc_3D-0.2.1.dist-info/METADATA,sha256=Hn0bO1qhEY_Y5C70FEZt2_vS9uF7NK4KNWTgzn4vp-M,11141
+sc_3D-0.2.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+sc_3D-0.2.1.dist-info/top_level.txt,sha256=iTgJxubTT2LtirhQ4uGv2UCDJ6jASUwVoqe80l-_HHQ,5
+sc_3D-0.2.1.dist-info/RECORD,,
