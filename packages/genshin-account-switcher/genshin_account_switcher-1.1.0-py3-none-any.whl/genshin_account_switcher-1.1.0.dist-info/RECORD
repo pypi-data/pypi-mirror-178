@@ -1,0 +1,11 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/config.py,sha256=i-j52SmFV9lP-g8hNN0jZM0GusJrxTAMlxy4nX6qLQ0,2668
+src/main.py,sha256=Hz86_864FY_s-44JNmF6MiskzXBWAIGSpofmgkYR-No,6005
+src/genshin/__init__.py,sha256=7fN7nBjSSrLZyOH8ZJCEmtdxwCUmOJsDZOomyQ10MvM,1350
+src/genshin/linux.py,sha256=FGnctNrvitQ2T0HnD3WR-wfPh1LgmuxCejq8rOMe-qc,2428
+genshin_account_switcher-1.1.0.dist-info/LICENSE,sha256=mYluISwUlRhyOocFBuQndyF5ZKqTzDtalcVTCKd34gE,34227
+genshin_account_switcher-1.1.0.dist-info/METADATA,sha256=gtDrATslyu-T2WK-X1yDdBbWjbRIOCR7yO5_bJP8Fkc,2208
+genshin_account_switcher-1.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+genshin_account_switcher-1.1.0.dist-info/entry_points.txt,sha256=iuwGgE_yEg3wr_SHe-cFzvBwxTSbWhEwNy4OY8RgUUk,59
+genshin_account_switcher-1.1.0.dist-info/top_level.txt,sha256=YcVwFNe982fxcRix5gdyyDT02HWGy1VVPKQRfmf7B1I,16
+genshin_account_switcher-1.1.0.dist-info/RECORD,,
