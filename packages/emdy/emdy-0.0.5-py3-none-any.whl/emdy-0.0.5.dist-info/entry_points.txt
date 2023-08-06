@@ -1,0 +1,3 @@
+[console_scripts]
+emdy=emdy.emdy:cli
+
