@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+khnilPypiDemo/__init__.py
+khnilPypiDemo/faker_demo.py
+khnilPypiDemo/psutil_demo.py
+khnilPypiDemo.egg-info/PKG-INFO
+khnilPypiDemo.egg-info/SOURCES.txt
+khnilPypiDemo.egg-info/dependency_links.txt
+khnilPypiDemo.egg-info/top_level.txt
