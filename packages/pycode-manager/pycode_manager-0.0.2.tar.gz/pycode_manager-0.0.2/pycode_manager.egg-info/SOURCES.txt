@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+pycode_manager/__init__.py
+pycode_manager.egg-info/PKG-INFO
+pycode_manager.egg-info/SOURCES.txt
+pycode_manager.egg-info/dependency_links.txt
+pycode_manager.egg-info/requires.txt
+pycode_manager.egg-info/top_level.txt

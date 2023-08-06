@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: pycode_manager
+Version: 0.0.2
+Summary: A very basic code manager
+Home-page: https://codehub.gq
+Author: Kamal Koranga
+Author-email: codehub@gmail.com
+License: MIT
+Keywords: calculator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+This is a very simple code manager that add, run, show and delete python files.
+
+Change Log
+==========
+
+0.0.1 (26/11/2022)
+-------------------
+- First Release
+
