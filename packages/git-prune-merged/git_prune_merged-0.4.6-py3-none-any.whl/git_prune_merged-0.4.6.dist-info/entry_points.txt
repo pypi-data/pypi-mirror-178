@@ -1,0 +1,2 @@
+[console_scripts]
+git-prune-merged = src.main:cli
