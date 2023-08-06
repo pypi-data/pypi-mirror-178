@@ -1,0 +1,9 @@
+MANIFEST.in
+setup.cfg
+setup.py
+PyQwidgets.egg-info/PKG-INFO
+PyQwidgets.egg-info/SOURCES.txt
+PyQwidgets.egg-info/dependency_links.txt
+PyQwidgets.egg-info/top_level.txt
+Python/README.md
+Python/__init__.py
