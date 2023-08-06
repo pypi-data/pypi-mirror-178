@@ -1,0 +1,10 @@
+fastcore
+opencv-contrib-python>=4.6
+imageio>=2.19.3
+imageio-ffmpeg>=0.4.7
+seaborn
+scipy>=1.7.3
+black
+tqdm
+
+[dev]
