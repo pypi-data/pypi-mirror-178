@@ -1,0 +1,10 @@
+balance_service/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+balance_service/interfaces/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+balance_service/interfaces/nubank.py,sha256=lm4V4NNPKG8C-CUds6hhNJavNkVggs_0BJ7UNUX8rms,1071
+balance_service/repositories/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+balance_service/repositories/bank.py,sha256=69Sgo26sfDZ429YV-WudKpbYNpfvzsCJgfd5MExZVeY,323
+balance_service/repositories/user.py,sha256=bSkdH7I_ZuUiLH3qdjnN9k9j_PA5eqX7cqGL_CAbcHY,324
+balance_service-0.0.5.dist-info/METADATA,sha256=POxOE4IJ5L0VR5pHFKYSJ3L_ktez7cr1xqGHwYBbxUg,540
+balance_service-0.0.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+balance_service-0.0.5.dist-info/top_level.txt,sha256=W342tX61hzZtpX9Wp_MS07c1atW6w2nNlu2hcYhvBZA,16
+balance_service-0.0.5.dist-info/RECORD,,
