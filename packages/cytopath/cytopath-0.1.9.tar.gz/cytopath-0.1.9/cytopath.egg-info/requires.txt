@@ -1,0 +1,11 @@
+numpy>=1.20.0
+scipy
+anndata
+scvelo>=0.1.25
+joblib
+fastdtw
+hausdorff
+tqdm
+networkit
+tabulate
+numba
