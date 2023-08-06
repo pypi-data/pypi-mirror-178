@@ -1,0 +1,2 @@
+[console_scripts]
+archminer = archminer.cli:cli
