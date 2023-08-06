@@ -1,0 +1,12 @@
+my_helper.py,sha256=8I6fNRcqgV9bSmT1BFQRbOTpzEmZnIvpnJcPEfL-wBs,767
+helper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+helper/examples.txt,sha256=GbVHodrOdmPSjU6dihx6G9h5_6rR-r_2eGx0jBp-iXA,271
+helper/main.py,sha256=UuFilpD0cVCE9rx10Cx5iHENzI8MMPZqV8UfRLoAZCY,1347
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_main.py,sha256=b5nWX3JaCyAH4Sgai7UzivlGSBnPM__B8GpMC2xLD_4,746
+cli_assistant-0.1.0.dist-info/LICENSE.txt,sha256=6ZRRSlphIUJ-3GWTADnMQUft4p_rvbB-ANrc2kcSH1g,1074
+cli_assistant-0.1.0.dist-info/METADATA,sha256=-IvuXtGJ3JZp29EWqOQtY8ZwGCZW3R6qms9sio9LKt8,1560
+cli_assistant-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+cli_assistant-0.1.0.dist-info/entry_points.txt,sha256=zQM13TODyH57XPu6rfDhRbPfmiMugeWlv6UwSmsLZQw,41
+cli_assistant-0.1.0.dist-info/top_level.txt,sha256=l_feULW2PmVpXgkJFrC1yeIPMwMAMFSAmqoEf0_CjDg,23
+cli_assistant-0.1.0.dist-info/RECORD,,
