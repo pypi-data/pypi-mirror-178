@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: FImdlp
+Version: 0.1.1
+Author-email: Ricardo Montañana <ricardo.montanana@alu.uclm.es>
+Project-URL: Home, https://github.com/doctorado-ml/FImdlp
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# FImdlp
+
+Fayyad - Irani MDLP discretization algorithm
+
+## Build and usage sample
+
+```bash
+python setup.py build_ext --inplace
+python sample.py
+```
