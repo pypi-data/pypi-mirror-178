@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+vcdisk.py
+vcdisk.egg-info/PKG-INFO
+vcdisk.egg-info/SOURCES.txt
+vcdisk.egg-info/dependency_links.txt
+vcdisk.egg-info/requires.txt
+vcdisk.egg-info/top_level.txt
