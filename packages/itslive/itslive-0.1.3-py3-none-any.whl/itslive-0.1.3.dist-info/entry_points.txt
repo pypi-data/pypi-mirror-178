@@ -1,0 +1,3 @@
+[console_scripts]
+itslive-export=itslive.cli_export:cli
+
