@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/TestMarko.egg-info/PKG-INFO
+src/TestMarko.egg-info/SOURCES.txt
+src/TestMarko.egg-info/dependency_links.txt
+src/TestMarko.egg-info/top_level.txt
+src/testMarko/Test.py
+src/testMarko/__init__.py
+src/testMarko/solution.py
