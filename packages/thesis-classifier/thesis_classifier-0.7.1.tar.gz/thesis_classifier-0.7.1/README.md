@@ -1,0 +1,1 @@
+A Machine Learning model repository that used on my other thesis Project called thesis_be to classify hate speech

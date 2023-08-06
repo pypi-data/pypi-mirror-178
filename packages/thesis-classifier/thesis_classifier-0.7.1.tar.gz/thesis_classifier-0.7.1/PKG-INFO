@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: thesis_classifier
+Version: 0.7.1
+Summary: A Machine Learning model repository that used on my other thesis Project called thesis_be to classify hate speech
+Home-page: https://github.com/rfirmansyh/thesis_classifier
+Download-URL: https://github.com/rfirmansyh/thesis_classifier/archive/refs/tags/v0.7.1.tar.gz
+Author: Rahmad Firmansyah
+Author-email: rahmadfirmansyah.id@gmail.com
+License: MIT
+Keywords: rfirmansyh,thesis_classifier
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE.txt

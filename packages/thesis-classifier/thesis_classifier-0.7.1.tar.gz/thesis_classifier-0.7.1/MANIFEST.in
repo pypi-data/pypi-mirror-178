@@ -1,0 +1,2 @@
+recursive-include thesis_classifier *
+recursive-include thesis_classifier/data *

@@ -1,0 +1,42 @@
+from distutils.core import setup
+
+
+setup(
+    name='thesis_classifier',
+    packages=['thesis_classifier'],
+    version='0.7.1',
+    license='MIT',
+    description='A Machine Learning model repository that used on my other thesis Project called thesis_be to classify hate speech',   # Give a short description about your library
+    author='Rahmad Firmansyah',                   # Type in your name
+    author_email='rahmadfirmansyah.id@gmail.com',      # Type in your E-Mail
+    url='https://github.com/rfirmansyh/thesis_classifier',   # Provide either the link to your github or to your website
+    download_url='https://github.com/rfirmansyh/thesis_classifier/archive/refs/tags/v0.7.1.tar.gz',    # I explain this later on
+    keywords=['rfirmansyh', 'thesis_classifier'],   # Keywords that define your package best
+    install_requires=[            # I get to this in a second
+        'scikit-learn',
+        'pandas',
+        'joblib',
+        'sastrawi',
+        'unidecode',
+    ],
+    classifiers=[
+        'Development Status :: 3 - Alpha',      # Chose either "3 - Alpha", "4 - Beta" or "5 - Production/Stable" as the current state of your package
+        'Intended Audience :: Developers',      # Define that your audience are developers
+        'Topic :: Software Development :: Build Tools',
+        'License :: OSI Approved :: MIT License',   # Again, pick a license
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+    ],
+    include_package_data=True,
+    package_data={
+        'helper': ['preprocess'],
+        'models': [
+            'models/sklearn_MNB_2.model'
+        ],
+        'data': [
+             'data/stopwords.txt',
+             'data/hatespeech_preprocessed_details.csv'
+        ],
+    },
+)
