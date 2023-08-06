@@ -1,0 +1,8 @@
+colorama>=0.4.6
+toolz>=0.12.0
+pygments>=2.13.0
+
+[tests]
+pytest
+pytest-cov
+pendulum>=2.1.2
