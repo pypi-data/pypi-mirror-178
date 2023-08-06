@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: fdbuild
+Version: 0.0.0
+Summary: Straightforward meta-build system to configure, build and install multiple projects at once
+Home-page: https://gitlab.com/kwinft/fdbuild
+Author: Roman Gilg
+Author-email: subdiff@gmail.com
+Project-URL: Bug Tracker, https://gitlab.com/kwinft/fdbuild/-/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Build Tools
+Description-Content-Type: text/markdown
+
+# FDBuild
+
+Straightforward meta-build system to configure, build and install multiple projects at once.
+
+## Status
+The first official release in PyPi is currently being prepared
+[here](https://gitlab.com/kwinft/fdbuild/-/merge_requests/8).
+For now this package only reserves the package name in PyPi.

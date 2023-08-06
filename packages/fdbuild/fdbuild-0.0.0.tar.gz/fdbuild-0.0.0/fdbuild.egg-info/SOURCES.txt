@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+setup.cfg
+fdbuild.egg-info/PKG-INFO
+fdbuild.egg-info/SOURCES.txt
+fdbuild.egg-info/dependency_links.txt
+fdbuild.egg-info/top_level.txt
