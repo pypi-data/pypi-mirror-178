@@ -1,0 +1,9 @@
+{
+  "required": [
+    "RooTwoSidedCBShape",
+    "FlexibleInterpVarMkII",
+    "ResponseFunction",
+    "CMSSWCore"
+  ],
+  "strict": false
+}
