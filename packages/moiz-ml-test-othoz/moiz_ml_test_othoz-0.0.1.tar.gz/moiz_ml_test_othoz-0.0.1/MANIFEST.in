@@ -1,0 +1,3 @@
+include moiz_ml_test_othoz/*.txt
+include moiz_ml_test_othoz/*.pdf
+include moiz_ml_test_othoz/*.zip
