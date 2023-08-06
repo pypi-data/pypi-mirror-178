@@ -1,0 +1,13 @@
+absl-py==1.0.0
+keras==2.9.0
+ml_collections==0.1.1
+pandas==1.5.1
+pysam==0.19.0
+pyyaml==5.4.1
+tf-models-official==2.9.2
+
+[cpu]
+intel-tensorflow==2.9.1
+
+[gpu]
+tensorflow-gpu==2.9.1
