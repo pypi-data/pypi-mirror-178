@@ -1,0 +1,60 @@
+[tool.poetry]
+name = "lirc"
+version = "2.0.2"
+description = "Interact with the daemon in the Linux Infrared Remote Control package"
+authors = ["Eugene Triguba <eugenetriguba@gmail.com>"]
+license = "MIT"
+readme = "README.rst"
+repository = "https://github.com/eugenetriguba/lirc"
+keywords = ["LIRC", "IR"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: MacOS",
+    "Topic :: System :: Hardware",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[tool.taskipy.tasks]
+test = "task test_cov_missing"
+test_unit = "pytest tests/"
+test_cov = "task test_unit --cov=lirc/"
+test_cov_missing = "task test_cov -v --cov-report term-missing"
+test_ci = "task test_cov --cov-report=xml"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.8.3"
+isort = "^5.0.4"
+pytest = "^7"
+pytest-cov = "^4"
+bump2version = "^1.0.0"
+taskipy = "^1.2.1"
+black = "^20.8b1"
+sphinx = "^3.1.2"
+sphinx_rtd_theme = "^0.5.0"
+codecov = "^2.1.7"
+sphinxcontrib-napoleon = "^0.7"
+
+[tool.black]
+target_version = ['py36']
+include = '\.pyi?$'
+
+[tool.isort]
+profile = "black"
+known_first_party = ["lirc"]
+known_third_party = ["pytest"]
+
+[build-system]
+requires = ["poetry>=1.1"]
+build-backend = "poetry.masonry.api"
