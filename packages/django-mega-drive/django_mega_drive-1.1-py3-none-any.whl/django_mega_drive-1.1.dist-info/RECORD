@@ -1,0 +1,11 @@
+mega_drive/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mega_drive/app_setting.py,sha256=j4dRd7HQaVRVZtBS0k1HvdOTDhUCF5fvWqr2k27pOUY,1278
+mega_drive/apps.py,sha256=6_pruehChMI3tnGUtPMfMVxW0raGurTPlWoYCbO4RnY,147
+mega_drive/mega.py,sha256=Smhzq45VBMjupb7uTbhjJTk2W8xP4Ll-rRmZw3AFWIQ,3332
+mega_drive/storage.py,sha256=4EI5_0rIrWCseT9dWVWyIJl0lFfkCjLOWsNdTptuswI,3684
+mega_drive/utils.py,sha256=5jeOuXRhmZa569wWMNOFdw2nx10kP_SEMacX7W2KESM,344
+django_mega_drive-1.1.dist-info/LICENSE,sha256=aBoMP-H3-TmDXEJUw_rDJLTLJvCV-kpKgpm9J8c1aJ8,22
+django_mega_drive-1.1.dist-info/METADATA,sha256=pze4hf5GBUZiEkWoqL0uJHFXeYGnHJE_53kGNPrwodE,451
+django_mega_drive-1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+django_mega_drive-1.1.dist-info/top_level.txt,sha256=K747gkuoohzDJtMEKhyWMacAlF_97ano323FfT0LtbU,11
+django_mega_drive-1.1.dist-info/RECORD,,
