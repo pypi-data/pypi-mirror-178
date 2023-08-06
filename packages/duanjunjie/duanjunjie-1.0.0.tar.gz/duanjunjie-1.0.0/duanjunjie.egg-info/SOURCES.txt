@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+duanjunjie/__init__.py
+duanjunjie/pandas_sql.py
+duanjunjie.egg-info/PKG-INFO
+duanjunjie.egg-info/SOURCES.txt
+duanjunjie.egg-info/dependency_links.txt
+duanjunjie.egg-info/top_level.txt
