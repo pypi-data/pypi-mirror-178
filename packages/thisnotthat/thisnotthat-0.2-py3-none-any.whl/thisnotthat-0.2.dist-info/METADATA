@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: thisnotthat
+Version: 0.2
+License-File: LICENSE
+Requires-Dist: bokeh
+Requires-Dist: panel
+Requires-Dist: param
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: scikit-learn
+Requires-Dist: numpy (>=1.22)
+Requires-Dist: umap-learn
+Requires-Dist: hdbscan
+Requires-Dist: colorcet
+Requires-Dist: cmocean
+Requires-Dist: glasbey
+
