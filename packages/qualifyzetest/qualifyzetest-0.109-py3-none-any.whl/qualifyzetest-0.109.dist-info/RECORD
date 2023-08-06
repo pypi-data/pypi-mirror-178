@@ -1,0 +1,8 @@
+qualifyzetest/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qualifyzetest/main.py,sha256=xBSpCfDGZxxJVg1HJJ0JyochXYhrwxRFEwMuo7ualuQ,31
+qualifyzetest/module2/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qualifyzetest/module2/main2.py,sha256=Dekb0iZSZQ35_SI_twDCvl18VrTp4fVtOUZ8-PkfIu4,40
+qualifyzetest-0.109.dist-info/METADATA,sha256=yAkrjLMGBpd1v-bG_XlzQ7qvvszoeatlnHmm4yek2L8,444
+qualifyzetest-0.109.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+qualifyzetest-0.109.dist-info/top_level.txt,sha256=XAzw3CWLOP1lfUsDJJ-ltuWvHscdK9RYXelujgIyPV4,14
+qualifyzetest-0.109.dist-info/RECORD,,
