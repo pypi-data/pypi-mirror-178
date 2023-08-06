@@ -1,0 +1,67 @@
+[build-system]
+build-backend = "flit_core.buildapi"
+requires = ["flit_core >=3.4,<4"]
+
+[project]
+authors = [{name = "xinetzone", email = "735613050@qq.com"}]
+dynamic = ["version", "description"]
+license = {file = "LICENSE"}
+name = "visionz"
+readme = "README.md"
+requires-python = ">=3.8"
+
+dependencies = [
+  "d2py",
+]
+
+maintainers = [
+  {name = "xinetzone", email = "735613050@qq.com"},
+]
+
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python :: 3",
+  "Framework :: Sphinx",
+  "Framework :: Sphinx :: Theme",
+  "License :: OSI Approved :: Apache Software License",
+  "Operating System :: OS Independent",
+]
+
+[project.urls]
+Home = "https://github.com/xinetzone/vision"
+
+[project.optional-dependencies]
+doc = [
+  "myst-nb",
+  "xyzstyle",
+  "ipywidgets", # ==7.7.2, >=8.0.2
+  "sphinxext-rediraffe",
+  "sphinx-copybutton",
+  "plotly-geo",
+  "sphinx-plotly-directive",
+  "jupyter-dash",
+  "plotly",
+]
+
+coverage = [
+  "pytest-cov",
+  "pytest-regressions",
+  "codecov",
+  "vision[test]",
+]
+dev = [
+  "pyyaml",
+  "pre-commit",
+  "vision[coverage]",
+]
+test = [
+  "pytest",
+  "vision[doc]",
+]
+
+[project.entry-points]
+"sphinx.html_themes" = {vision = "visionz"}
+
+[tool.flit.sdist]
+# include = ["docs/"]
+exclude = ['docs', '.git', '.github']
