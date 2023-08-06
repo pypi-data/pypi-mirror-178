@@ -1,0 +1,16 @@
+socketsc/Logger.py,sha256=dQnXBOyR8ex6QhQ8XbWeRdwP8p_d5vdvx_KIwKHA1aE,970
+socketsc/__init__.py,sha256=Tnhjp67wu8W5B-iEYpg5CAUcnWvjkNORicw9s47jWc0,249
+socketsc/constants.py,sha256=OscdqoS1VE8hictzRCEzOV90Am3HhHDgJEEtleFoUPo,197
+socketsc/utils.py,sha256=c_TUCk0EwQIEC3ZifyHQ5cWdfjglsJEWteYTgPeLgNY,739
+socketsc/Client/ClientEventManager.py,sha256=XgcLJDd2XMyh2-p_bDJhg1TL1AgC5zg7Z711KQYkBNk,2407
+socketsc/Client/SocketClient.py,sha256=8FBApCZMqGd398vpmimEQkTAip9lVOWirBOVy5pC9To,3162
+socketsc/Server/ClientManager.py,sha256=ocRcXXUn6-8lZLSgrQLqz3CNYv_SmICXVoLUy9AkK5g,1393
+socketsc/Server/ServerEventManager.py,sha256=PoSi5kBC3wnL5cn27d8FkXKZW68fLMwJ4B_sN1dqFxM,2524
+socketsc/Server/ServerSocketWrapper.py,sha256=8zVneMzA0JV-wa-fR5YOPbiyfo6AMRATav4A_7SL5pQ,1458
+socketsc/Server/SocketServer.py,sha256=3GbxFVyNvW0Sh7c6G5CcjX5N55jxXR0UrLatsa3OCcM,3055
+socketsc/Server/SocketTCPRequestHandler.py,sha256=1sTJa96-YFwe0kixmmZvgk87SBdqf113B21Y-Q0B-5E,1551
+socketsc-1.0.dist-info/LICENSE,sha256=Qv2ilebwoUtMJnRsZwRy729xS5JZQzLauJ0tQzkAkTA,1088
+socketsc-1.0.dist-info/METADATA,sha256=dJlAKEV_E3geXB0yA8E57cezrOntiWfGUJZ6GwQLx0Q,1635
+socketsc-1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+socketsc-1.0.dist-info/top_level.txt,sha256=wI_6Xc64qOqkqz7Je8m4-9jKvGuenJtUiN2PbF5Fi6U,9
+socketsc-1.0.dist-info/RECORD,,
