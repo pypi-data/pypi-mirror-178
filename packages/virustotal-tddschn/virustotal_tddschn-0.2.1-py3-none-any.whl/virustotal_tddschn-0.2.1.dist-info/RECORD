@@ -1,0 +1,12 @@
+virustotal_tddschn/__init__.py,sha256=PmcQ2PI2oP8irnLtJLJby2YfW6sBvLAmL-VpABzTqwc,22
+virustotal_tddschn/brew_utils.py,sha256=aziSynysdLuc03auQsC5uwkqTnIp2xIHbHFbgyOQkNY,4848
+virustotal_tddschn/config.py,sha256=tOa1cvO6_begI2mGP5kFi33Ho3rLomdKuSzJzt_Wq0w,179
+virustotal_tddschn/hashing.py,sha256=C9xjymM6wvUWu2LgjhyTBX1zbvK08aBqx7WKsDr4xrs,540
+virustotal_tddschn/types.py,sha256=hklFk8JgpiA8sbZ4YLkucQKF0XzIL0oV8Ietrc-tkCo,295
+virustotal_tddschn/utils.py,sha256=aGak3eCHmgdk0Cy9EqgQwplkp0aGiYA7huwe5QPRNd8,1980
+virustotal_tddschn/virustotal_sum_search.py,sha256=LzzlxhGAPQwIQqG-Wz1gNtQcsR7BRq4LDN4Ux3Y9IjA,6089
+virustotal_tddschn-0.2.1.dist-info/entry_points.txt,sha256=mcJzWdKHrmcy3IZ9KW9bqPO8Ad8C87fKIfScwa6r79Y,70
+virustotal_tddschn-0.2.1.dist-info/LICENSE,sha256=iDPU2JFPtGTxMtJ4js-KodAQR-IHm4NPaG5m8cRoutA,1100
+virustotal_tddschn-0.2.1.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+virustotal_tddschn-0.2.1.dist-info/METADATA,sha256=GpjL3zeugoPszVKdW1aDyUIqt7vzi376ix8o2d3SSb0,5180
+virustotal_tddschn-0.2.1.dist-info/RECORD,,
