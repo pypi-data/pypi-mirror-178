@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: nx-nix
+Version: 1.0.0
+Summary: A fast and beautiful NixOS and Nix management utility
+Author: Michal
+Author-email: mchal_@tuta.io
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: randomname (>=0.1.5,<0.2.0)
+Requires-Dist: typer[all] (>=0.7.0,<0.8.0)
+Description-Content-Type: text/markdown
+
+# NX 
+
+A fast and beautiful NixOS and Nix management utility ❄
+
+
+## 💡 Features
+
+- Beautiful and powerful CLI using Python's [typer](https://typer.tiangolo.com/) library
+- Quick and easy deployment and management of NixOS systems and Nix profiles
+
+
+## 💾 Installation
+
+### 💽 From Binary
+
+**Install NX using `nix profile`**
+```bash
+  $ nix profile install gitlab:mchal_/nx
+  $ nx
+```
+
+## 📸 Screenshots
+
+![NX Screenshot](https://media.discordapp.net/attachments/1014738924515635302/1046919833339568208/image.png)
+
+## 📜 License
+
+[GPLv3-only](https://choosealicense.com/licenses/gpl-3.0/)
+
