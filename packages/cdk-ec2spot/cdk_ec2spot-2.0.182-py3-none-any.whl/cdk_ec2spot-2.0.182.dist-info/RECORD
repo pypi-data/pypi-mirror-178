@@ -1,0 +1,9 @@
+cdk_ec2spot/__init__.py,sha256=SQKSsxODkFpZmOje-DtRhD09ggBict473FuC3Cx-fFc,41966
+cdk_ec2spot/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+cdk_ec2spot/_jsii/__init__.py,sha256=O99YAtP9ySRtG4l4qMPkD6BLc4D1pQ81T6u-sqLDcKA,419
+cdk_ec2spot/_jsii/cdk-ec2spot@2.0.182.jsii.tgz,sha256=sn56rq1rMJXxJGgD2vCvCyjfr-Zeki03n-Qb9M7ua4E,27038
+cdk_ec2spot-2.0.182.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+cdk_ec2spot-2.0.182.dist-info/METADATA,sha256=_XZkeTfOaLhLWxIV9n9X_KP69DW_PyPQW1vYUx1hB0A,2640
+cdk_ec2spot-2.0.182.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cdk_ec2spot-2.0.182.dist-info/top_level.txt,sha256=flXEek0V0UCG_wSoq1qoUMtuwokKoW7R9DNZiQoMfGE,12
+cdk_ec2spot-2.0.182.dist-info/RECORD,,
