@@ -1,0 +1,2 @@
+[console_scripts]
+stock_hold = stockhold.stock_analysis.stock_analysis
