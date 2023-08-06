@@ -1,0 +1,9 @@
+lzip_extension.pypy39-pp73-x86-linux-gnu.so,sha256=CijghCQyxnzujuD9fYILhiHuxuxo-MNWkvPqrO13U_4,194052
+lzip-1.2.0.dist-info/top_level.txt,sha256=Kz1kY3I-5q9cR0tYFnKL3uFVOLS-szDfnd9iNgJV2So,20
+lzip-1.2.0.dist-info/METADATA,sha256=XwZsco7VFBEjmmrmamoV1QlMWy0VW0TErYOc7lwTERY,18469
+lzip-1.2.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+lzip-1.2.0.dist-info/RECORD,,
+lzip-1.2.0.dist-info/WHEEL,sha256=sBoTFRcakanSxtT3ZFQzkGsGWKYTAq4jydOrAzCOPlU,237
+lzip/version.py,sha256=iEgTRWv0Nfdkvd6jHzn8s_crUlsvtBQXjAd1zynVql4,49
+lzip/__init__.py,sha256=25l8kcZlwvzjx7I9kfHd_Len_BdH-5tw-Tiy-60mtvU,971
+lzip/lzip.py,sha256=i-Q-rS234ud_EJQ6BL09wmmQhcl6iQYLKxbVB7NBTF0,6582
