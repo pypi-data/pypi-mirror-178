@@ -1,0 +1,17 @@
+bounden/VERSION,sha256=jV8ONCJRwZUn18yx_J0kgauFGeeOgIqhbiPo1Chq3K8,8
+bounden/__init__.py,sha256=VcOwyYgaOZVSr6pLhPn7RnFNcnE0iLlJynEjSoRidU0,521
+bounden/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bounden/points/__init__.py,sha256=7KOUG3Ub84pzzzspC7TX6kIvJfmNDI1sZEBO2Ht-kbQ,122
+bounden/points/point.py,sha256=664pqywSlXxwoDc05ZizF8ddYuk1pKMyQeqj0DVnNjE,419
+bounden/points/point2.py,sha256=X4P0UQme9S7g69EcoX0Pnn4iqL1U-FpNfu6yjUvEEaE,583
+bounden/points/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bounden/points/types.py,sha256=U8pCWMUGCv6ai3uayaZLRL1ZgqeayFc0cbIN_icDYjU,341
+bounden/regions/__init__.py,sha256=AFhTDenF9mP6LJQ8R7LeutEfuTUpm0RFMGA09M1Z5_w,130
+bounden/regions/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bounden/regions/region.py,sha256=UxG82Ft9D-mT6tYTBTpBHgM_mPWST-GoZxAF4TBglYQ,809
+bounden/regions/region2.py,sha256=uc5BF6IV8f2E_WExgyOXCszLpngFwBmS9qiUECDe1s8,794
+bounden-1.0.0b1.dist-info/LICENSE,sha256=CS5aRwpnfY-tgdAPpg1pqOxHyzAJOKDdZG-V76v_ZNM,1073
+bounden-1.0.0b1.dist-info/METADATA,sha256=vC9W0GVtueim44kkbn_QghPuAuSvLvMJA9K3OiQUYYI,2013
+bounden-1.0.0b1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+bounden-1.0.0b1.dist-info/top_level.txt,sha256=l4KZ_LlmSCDfn4MWqizDeormsXukBtwk3NHruqxT0-I,8
+bounden-1.0.0b1.dist-info/RECORD,,
