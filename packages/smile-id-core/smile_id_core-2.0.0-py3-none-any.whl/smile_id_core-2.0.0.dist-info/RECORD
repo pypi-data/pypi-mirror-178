@@ -1,0 +1,11 @@
+smile_id_core/IdApi.py,sha256=YmXnlP4m8KhKk3B48kbfOs5XFWlByf82nHVDzxb7iis,2726
+smile_id_core/ServerError.py,sha256=6V3qT5RLXwfMPsrugyLHkFkD8I1a0SNalDiXxsU8o8s,127
+smile_id_core/Signature.py,sha256=4c-SiM5NDp7NJn-_1FST427-uUk7e8kEHBNkhTGluRs,1093
+smile_id_core/Utilities.py,sha256=X7F7fDNo98zcgCK9ADuT66cYwUtXs00h26XZyYDxscY,8962
+smile_id_core/WebApi.py,sha256=-zyk5D3Ye3bD_GPT7pWssoRPWO2MICOhezin0GmBFks,8852
+smile_id_core/__init__.py,sha256=UHURV1uU0QBAI3hKFhSsHC_SPs9yI7FYK-XW42mqqyo,333
+smile_id_core/image_upload.py,sha256=ED8Mzvom5P7B8YWEWp6kxMQaBs81HqS8u9IM4gC94FI,4260
+smile_id_core-2.0.0.dist-info/LICENSE.txt,sha256=itTKGFrBiNz3wbpjJaX2pDeDQapqmCFQ8h5pUhIyu_o,1071
+smile_id_core-2.0.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+smile_id_core-2.0.0.dist-info/METADATA,sha256=l_obaLgwkOt-zjXh3Yt93w44AiZG_q9izg57FI0isgw,22054
+smile_id_core-2.0.0.dist-info/RECORD,,
