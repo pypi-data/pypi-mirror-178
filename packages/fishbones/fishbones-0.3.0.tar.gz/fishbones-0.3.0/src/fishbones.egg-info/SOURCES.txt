@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/fishbones/__init__.py
+src/fishbones/endian.py
+src/fishbones/exceptions.py
+src/fishbones/integer.py
+src/fishbones/utils.py
+src/fishbones/virtual_pointer.py
+src/fishbones.egg-info/PKG-INFO
+src/fishbones.egg-info/SOURCES.txt
+src/fishbones.egg-info/dependency_links.txt
+src/fishbones.egg-info/top_level.txt
+src/fishbones/decompiler_builtins/__init__.py
+src/fishbones/decompiler_builtins/ghidra.py
+src/fishbones/decompiler_builtins/ida.py
