@@ -1,0 +1,27 @@
+name: Publish docs via GitHub Pages
+on:
+  release:
+    types: [created]
+  workflow_dispatch: {}
+
+jobs:
+  build:
+    name: Deploy docs
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
+      - name: prepare
+        run: |
+          pip install keras-autodoc -r ./requirements.txt
+          pip install Sphinx==3.5.4
+          pip install -e .
+          python docs/autogen.py
+          mv docs/generated_sources ./generated_sources
+          mv docs/mkdocs.yml ./
+      - name: Deploy docs
+        uses: mhausenblas/mkdocs-deploy-gh-pages@5498449191fe448fd9aa1c74969a6bf2c2a8bc49
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
