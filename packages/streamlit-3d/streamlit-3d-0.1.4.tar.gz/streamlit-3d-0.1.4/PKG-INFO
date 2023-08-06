@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: streamlit-3d
+Version: 0.1.4
+Summary: 3d model viewer
+Author: Anthony Alteirac
+Author-email: anthony@alteirac.com
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# streamlit_3d
+
+3d model viewer
+
+## Installation instructions 
+
+```sh
+pip install streamlit_3d
+```
+
+## Usage instructions
+
+```python
+import streamlit as st
+
+from streamlit_3d import streamlit_3d
+
+value = streamlit_3d()
+
+st.write(value)
