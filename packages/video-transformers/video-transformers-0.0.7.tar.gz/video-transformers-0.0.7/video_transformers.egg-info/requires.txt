@@ -1,0 +1,26 @@
+accelerate<0.15.0,>=0.14.0
+evaluate<0.4.0,>=0.3.0
+transformers<4.25.0,>=4.24.0
+timm<0.7.0,>=0.6.12
+click==8.0.4
+balanced-loss
+scikit-learn
+tensorboard
+opencv-python
+gradio>=3.1.6
+huggingface-hub<0.12.0,>=0.11.0
+
+[:python_version < "3.8"]
+importlib-metadata<4.3,>=1.1.0
+
+[dev]
+black==21.7b0
+flake8==3.9.2
+isort==5.9.2
+
+[test]
+black==21.7b0
+flake8==3.9.2
+isort==5.9.2
+onnx
+onnxruntime
