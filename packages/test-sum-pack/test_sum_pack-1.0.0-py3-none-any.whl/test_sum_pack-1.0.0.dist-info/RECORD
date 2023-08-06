@@ -1,0 +1,6 @@
+test_sum_pack/__init__.py,sha256=yPh0V1hi24HJhm2M_PAknTMvjiKdNk0gxC3EdTtPAcs,29
+test_sum_pack/test_sum.py,sha256=gl8rclTgpA7-KR2F6ahcx3LlZOLtvj-mK4dnecexKjs,35
+test_sum_pack-1.0.0.dist-info/METADATA,sha256=LIBwnDY9bmOdqLWxQ7dZEJKOi0RHm_uyIv4oqF1GCYc,392
+test_sum_pack-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+test_sum_pack-1.0.0.dist-info/top_level.txt,sha256=fH0u_lnL-SzgK2s20zLCuCwjC_BWQaI2DAVjukOaXhI,14
+test_sum_pack-1.0.0.dist-info/RECORD,,
