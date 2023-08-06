@@ -1,0 +1,9 @@
+LICENSE.txt,sha256=JeNdz5tf1QH7CIw_i5yqTWtlyhczLpjj3yhOyCRTEHE,1528
+libhttpcl.a,sha256=WwrwdpDdg2b_wz6WSHZTW17R-QEHfwrBLpEhtZ8betw,1220392
+libspeedyj.a,sha256=MRbSdnogu4Z-CrBQDbJu-O4R7c_m-CuUz4hG6gIHsY0,27320
+libzswagcl.dylib,sha256=aR-qCyyMv0OGOjig8OFCxXEDsOMQKhiQ6knpUarbGSY,1482464
+pyzswagcl.cpython-38-darwin.so,sha256=blWJhKOuqA0sCiTpM2wkVzz69SOcA9rzFQh9rt9LC4c,721936
+pyzswagcl-1.4.0.dist-info/METADATA,sha256=slNWLtLttWFGyl4rhPZQAADma3l4WVilon0HYjIhZqM,281
+pyzswagcl-1.4.0.dist-info/WHEEL,sha256=FD7-AF0nEqaeImnGafj5_AW9t4FL2N8tDssGZwowrv0,110
+pyzswagcl-1.4.0.dist-info/top_level.txt,sha256=68xZPCqJP4enWPpsst2_9GD8GiGgr8ImRsP5uHJO1jo,10
+pyzswagcl-1.4.0.dist-info/RECORD,,
