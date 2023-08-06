@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: abilian-devtools
+Version: 0.1.2
+Summary: A curated set of dependencies for quality software development
+License: MIT
+Author: Stefane Fermigier
+Author-email: sf@abilian.com
+Requires-Python: >=3.8.1,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: black
+Requires-Dist: deptry
+Requires-Dist: docformatter
+Requires-Dist: flake8 (>=6,<7)
+Requires-Dist: flake8-bandit
+Requires-Dist: flake8-bugbear
+Requires-Dist: flake8-cognitive-complexity
+Requires-Dist: flake8-comprehensions
+Requires-Dist: flake8-datetimez
+Requires-Dist: flake8-functions
+Requires-Dist: flake8-mutable
+Requires-Dist: flake8-pytest
+Requires-Dist: flake8-simplify
+Requires-Dist: flake8-super
+Requires-Dist: flake8-super-call
+Requires-Dist: flake8-tidy-imports
+Requires-Dist: flake8-tuple
+Requires-Dist: isort
+Requires-Dist: mypy
+Requires-Dist: nox
+Requires-Dist: pep8-naming
+Requires-Dist: pip
+Requires-Dist: pip-audit
+Requires-Dist: poetryup
+Requires-Dist: pre-commit
+Requires-Dist: profilehooks
+Requires-Dist: pyright
+Requires-Dist: pytest (>=7,<8)
+Requires-Dist: pytest-cov (>=4,<5)
+Requires-Dist: pytest-xdist
+Requires-Dist: reuse
+Requires-Dist: ruff
+Requires-Dist: safety
+Requires-Dist: vulture
+Description-Content-Type: text/markdown
+
+Nothing here (yet).
