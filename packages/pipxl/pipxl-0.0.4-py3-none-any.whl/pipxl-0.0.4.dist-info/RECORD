@@ -1,0 +1,15 @@
+pipxl/__about__.py,sha256=aVgXpX2_rjarVqnRQFBJrJhdi33kvO_foMG_N7SsOGM,141
+pipxl/__init__.py,sha256=I9vTCYSa1PQ8s4TSL4OwjIZhkpHKAQhoOs8kdgfg944,328
+pipxl/compile.py,sha256=gYPTl1RKSPTKES7lIPPq2yhwaN7JENU-T1QU-ZwqUUA,1325
+pipxl/data.py,sha256=ILbMfZyq4D5vNfbuzknpJHNjtwsMHqbVnr6JQ2qv7EU,1157
+pipxl/deptree.py,sha256=upLaRBZGgVTSx_k4nA1zXt_7GWZ_PjNoTkeeOs94lkY,2209
+pipxl/license.py,sha256=L2uQvy6biZp1p84U7XiFefsYF9Ek5hLHSSz3YeFdrHM,878
+pipxl/pip_cli.py,sha256=_L7kTYDwJmthkqaCN_kzQr1W9nLd65GNhKcjgGC8ioE,434
+pipxl/resolver.py,sha256=Dl9iCN4HMebpQlEwDmkL27NEMp9_i5sbbwS4fO4Xs28,3846
+pipxl/sync.py,sha256=W1jNp8DZ1LYAjN4X3gXA8UCRs-OY5RK9RwxUuL9Tipg,1935
+pipxl/cli/__init__.py,sha256=h_-29_CGeFTcquy_zGu7xqq841KkV214yMXv-rZwLDw,3574
+pipxl-0.0.4.dist-info/METADATA,sha256=ALITRmHnBNR98F1CWOUqWhR2hOUNdAtYPdZOvkEzF5Y,8747
+pipxl-0.0.4.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+pipxl-0.0.4.dist-info/entry_points.txt,sha256=5i0UD8qiHwb4tMOJBnTjBrZaL35GL91vAMkqMxSiOcc,41
+pipxl-0.0.4.dist-info/licenses/LICENSE.txt,sha256=RnOBGZCx18n_YKvuvEQOkiujKsmcxh8rn4Fp2zXB0Kk,1110
+pipxl-0.0.4.dist-info/RECORD,,
