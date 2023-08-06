@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "portugython"
+version = "0.0.14"
+authors = [
+  { name="Victor Kolis", email="victorkolis@protonmail.com" },
+]
+maintainers = [
+    { name="Victor Kolis", email="victorkolis@protonmail.com" },
+]
+description = "A Portuguese translation of the Python functions/modules/packages"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/InGnave/portugython"
+"Bug Tracker" = "https://github.com/pypa/portugython/issues"
