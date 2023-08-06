@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: clusterq
+Version: 0.1.5.post4
+Summary: ClusterQ is a extensible python library and command line tool to submit simulation jobs to HPC clusters
+Home-page: https://github.com/josemvas/clusterq
+License: LGPLv3+
+Keywords: cluster job hpc
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Operating System :: POSIX
+Requires-Python: >=3.3
+Description-Content-Type: text/markdown
+Requires-Dist: clinterface
+
+<!-- -*- mode: markdown -*- -->
+
+ClusterQ
+========
+
+**ClusterQ** is a extensible python library and command line tool to submit simulation jobs to HPC clusters. It is compatible with PBS, LSF and Slurm and currently supports the following simulation packages:
+
+* Autodock
+* deMon2k
+* DFTB+
+* Gaussian
+* ORCA
+* VASP
+
+
