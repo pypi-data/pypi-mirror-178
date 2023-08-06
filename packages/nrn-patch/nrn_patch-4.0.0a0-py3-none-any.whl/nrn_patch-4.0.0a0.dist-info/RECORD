@@ -1,0 +1,14 @@
+patch/__init__.py,sha256=7Gor2wH1AIwS2yQesyKIPPDZe_aZoAZ_Gg_JAP1qZLs,2576
+patch/core.py,sha256=ERrSk9dVTKsdyifMIWZBUFl4PLsroj-L3YqGPnA8iU4,2627
+patch/error_handler.py,sha256=154BjBqoGPe5brgFEfaNEEULWOst47TcmfHTWSayD8Q,6277
+patch/exceptions.py,sha256=zH5ZCREg2A2as9hMjbwUnB50V1htkaCQYDV1ZjGDin0,1038
+patch/interpreter.py,sha256=Al21k4ACYjCf0vG-QGTm1-oaMAUSjMN1SqKVqle1kc0,18767
+patch/objects.py,sha256=fCuPfCE1NuS5AW--qj2f6r9l00DYGuvSsgJy5CQjAL0,23111
+patch_extensions/__init__.py,sha256=jskLoWF0kS8eLvKkvl2qAdxmceY9DOrhJLQH0N_-dhU,1104
+patch_extensions/mod/glia__patch_extensions__VecStim__0.mod,sha256=0NSBaol7vnQBTARDpyVK5orL_iPdypxWUIqloSYFUn8,2741
+nrn_patch-4.0.0a0.dist-info/LICENSE,sha256=tJ_zaKC2tNV_HCEYSG7iwXiJjC_IYQpDiJYsgWkCMdI,1095
+nrn_patch-4.0.0a0.dist-info/METADATA,sha256=3GLaa2nJgIThvOsMvdMpaFvdbmQpgTtVnApI5oAzcRA,4968
+nrn_patch-4.0.0a0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+nrn_patch-4.0.0a0.dist-info/entry_points.txt,sha256=uRdAn-T08VcOzfZt2XrJR0CPTBfcT-ZwxrDhn0E88Vc,51
+nrn_patch-4.0.0a0.dist-info/top_level.txt,sha256=_cIQqADsVyOFZi4_cmEqW-13vFWPXvS5l2mu__etzCg,23
+nrn_patch-4.0.0a0.dist-info/RECORD,,
