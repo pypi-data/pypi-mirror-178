@@ -1,0 +1,14 @@
+numpy
+xarray
+netCDF4
+hvplot
+holoviews
+bokeh
+panel
+pandas
+metpy
+datashader
+cartopy
+geoviews
+jinja2<=3.0.3
+
