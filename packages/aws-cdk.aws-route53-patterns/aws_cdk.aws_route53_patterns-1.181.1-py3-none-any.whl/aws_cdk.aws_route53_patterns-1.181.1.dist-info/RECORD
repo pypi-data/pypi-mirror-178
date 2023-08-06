@@ -1,0 +1,10 @@
+aws_cdk/aws_route53_patterns/__init__.py,sha256=k8uq63OugWarGHwc3RXAl8SktbT8hV-LfFP4P6ZduO8,11638
+aws_cdk/aws_route53_patterns/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_route53_patterns/_jsii/__init__.py,sha256=JcYlCzxdva4v0kNBLy1grlBK9O9GuPEK-YUp1fOi2w8,682
+aws_cdk/aws_route53_patterns/_jsii/aws-route53-patterns@1.181.1.jsii.tgz,sha256=LqbTJFIoI2-Ad6M52k-hX_PgJDCE4kRG6n4oxk1aNAA,18921
+aws_cdk.aws_route53_patterns-1.181.1.dist-info/LICENSE,sha256=wX3LqRrxZ97zcDpw0dQ58Zb9AQalEDmXs6nP39muv7o,11391
+aws_cdk.aws_route53_patterns-1.181.1.dist-info/METADATA,sha256=qrehypf6PhUF4xaJMP89DkUSLpe_SA5iBISyAFps01U,3795
+aws_cdk.aws_route53_patterns-1.181.1.dist-info/NOTICE,sha256=piksgoXop22-zO1J9i3rVrv57wUN9siPK1pqGzZ7-AE,113
+aws_cdk.aws_route53_patterns-1.181.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aws_cdk.aws_route53_patterns-1.181.1.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_route53_patterns-1.181.1.dist-info/RECORD,,
