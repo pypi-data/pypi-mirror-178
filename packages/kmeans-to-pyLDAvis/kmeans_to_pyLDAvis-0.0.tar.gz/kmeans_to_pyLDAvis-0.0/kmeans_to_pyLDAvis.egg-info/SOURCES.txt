@@ -1,0 +1,12 @@
+setup.cfg
+setup.py
+kmeans_to_pyLDAvis/__init__.py
+kmeans_to_pyLDAvis/prepare.py
+kmeans_to_pyLDAvis/proportion.py
+kmeans_to_pyLDAvis/pyldavis.py
+kmeans_to_pyLDAvis/utils.py
+kmeans_to_pyLDAvis.egg-info/PKG-INFO
+kmeans_to_pyLDAvis.egg-info/SOURCES.txt
+kmeans_to_pyLDAvis.egg-info/dependency_links.txt
+kmeans_to_pyLDAvis.egg-info/not-zip-safe
+kmeans_to_pyLDAvis.egg-info/top_level.txt
