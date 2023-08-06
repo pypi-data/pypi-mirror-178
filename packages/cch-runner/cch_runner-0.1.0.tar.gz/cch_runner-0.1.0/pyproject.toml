@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "cch-runner"
+version = "0.1.0"
+description = "Provide interface for cch Runners."
+authors = ["Daniele Tentoni <daniele.tentoni.1996@gmail.com>"]
+readme = "README.rst"
+packages = [{include = "runner"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.10.0"
+pydocstyle = "^6.1.1"
+pre-commit = "^2.20.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 79
