@@ -1,0 +1,5 @@
+elvia-vault>=0.3.1
+pillow==9.0.1
+
+[dev]
+jupyterlab
