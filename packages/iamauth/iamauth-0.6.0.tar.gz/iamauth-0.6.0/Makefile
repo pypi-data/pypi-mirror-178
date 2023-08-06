@@ -1,0 +1,26 @@
+all: test build
+
+build: .venv
+	pipenv run flit build
+
+clean:
+	rm -rf dist
+
+ipython:
+	pipenv run ipython
+
+publish: build test
+	git diff HEAD --quiet
+	pipenv run flit publish
+
+test: .venv
+	pipenv run black --check iamauth tests
+	pipenv run pytest
+
+.PHONY: all build clean ipython publish test
+
+Pipfile.lock: Pipfile
+.venv: Pipfile.lock
+	mkdir -p $@
+	pipenv install --dev
+	touch $@
