@@ -1,0 +1,11 @@
+six
+urllib3
+requests_oauthlib
+certifi
+python_dateutil
+setuptools
+coverage
+nose
+pluggy
+py
+randomize

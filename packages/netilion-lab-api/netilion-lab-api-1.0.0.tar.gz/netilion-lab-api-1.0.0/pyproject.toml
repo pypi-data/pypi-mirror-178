@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=21.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "netilion-lab-api"
+version = "1.0.0"
+authors = [
+  { name="Tobias Schäuble", email="tobias.schaeuble@endress.com" },
+]
+description = "Client for accessing Netilion cloud (LAB)"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.4"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "six",
+    "urllib3",
+    "requests_oauthlib",
+    "certifi",
+    "python_dateutil",
+    "setuptools",
+    "coverage",
+    "nose",
+    "pluggy",
+    "py",
+    "randomize"
+]
+keywords = [
+    "Netilion",
+    "Cloud",
+    "IIoT",
+    "Automation",
+    "E+H",
+    "Endress+Hauser"
+]
+
+[project.urls]
+"Homepage" = "https://staging-env.netilion.endress.com/"
+"API" = "https://api.staging-env.netilion.endress.com/doc/v1/"
