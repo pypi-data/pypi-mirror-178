@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: spacy_iwnlp
+Version: 3.0.0
+Summary: Integration of IWNLP-py as spaCy extension
+Home-page: https://github.com/Liebeck/spacy-iwnlp
+Download-URL: https://github.com/Liebeck/spacy-iwnlp/archive/3.0.0.tar.gz
+Author: Dr. Matthias Liebeck
+Author-email: github@liebeck.io
+Keywords: IWNLP,NLP,German,lemmatization,Wiktionary,spaCy
+License-File: LICENSE.md
