@@ -1,0 +1,14 @@
+.gitignore
+LICENSE
+pyproject.toml
+setup.cfg
+.github/scripts/release.py
+.github/workflows/publish.yml
+.github/workflows/release.yml
+src/sense_hat_matrix/__init__.py
+src/sense_hat_matrix/app.py
+src/sense_hat_matrix.egg-info/PKG-INFO
+src/sense_hat_matrix.egg-info/SOURCES.txt
+src/sense_hat_matrix.egg-info/dependency_links.txt
+src/sense_hat_matrix.egg-info/entry_points.txt
+src/sense_hat_matrix.egg-info/top_level.txt
