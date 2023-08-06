@@ -1,0 +1,8 @@
+LICENSE
+README.md
+modularizador_ipynb.py
+setup.py
+modularizador.egg-info/PKG-INFO
+modularizador.egg-info/SOURCES.txt
+modularizador.egg-info/dependency_links.txt
+modularizador.egg-info/top_level.txt
