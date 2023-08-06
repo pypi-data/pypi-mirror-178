@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/noisy_cifar/CIFAR-N.zip
+src/noisy_cifar/__init__.py
+src/noisy_cifar/datasets.py
+src/noisy_cifar/utils.py
+src/noisy_cifar_owaix2quzq.egg-info/PKG-INFO
+src/noisy_cifar_owaix2quzq.egg-info/SOURCES.txt
+src/noisy_cifar_owaix2quzq.egg-info/dependency_links.txt
+src/noisy_cifar_owaix2quzq.egg-info/top_level.txt
