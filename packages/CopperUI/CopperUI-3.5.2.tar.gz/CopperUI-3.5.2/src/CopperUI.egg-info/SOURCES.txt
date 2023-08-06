@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/CopperUI/__init__.py
+src/CopperUI/__main__.py
+src/CopperUI/colors.py
+src/CopperUI/copperhead.py
+src/CopperUI/errors.py
+src/CopperUI/logs.py
+src/CopperUI.egg-info/PKG-INFO
+src/CopperUI.egg-info/SOURCES.txt
+src/CopperUI.egg-info/dependency_links.txt
+src/CopperUI.egg-info/top_level.txt
