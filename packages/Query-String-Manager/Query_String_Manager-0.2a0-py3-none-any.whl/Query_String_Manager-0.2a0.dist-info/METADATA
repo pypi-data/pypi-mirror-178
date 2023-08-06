@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: Query-String-Manager
+Version: 0.2a0
+Summary: Simple Python utility to generate/parse URL query strings, either raw or in Base64 format
+Home-page: https://github.com/Topazoo/Query-String-Manager
+Project-URL: Bug Tracker, https://github.com/Topazoo/Query-String-Manager/issues
+Project-URL: Changelog, https://github.com/Topazoo/Query-String-Manager/releases
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
