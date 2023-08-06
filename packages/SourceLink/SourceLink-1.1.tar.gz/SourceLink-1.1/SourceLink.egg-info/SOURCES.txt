@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+SourceLink/Contributors.py
+SourceLink/__init__.py
+SourceLink.egg-info/PKG-INFO
+SourceLink.egg-info/SOURCES.txt
+SourceLink.egg-info/dependency_links.txt
+SourceLink.egg-info/requires.txt
+SourceLink.egg-info/top_level.txt
