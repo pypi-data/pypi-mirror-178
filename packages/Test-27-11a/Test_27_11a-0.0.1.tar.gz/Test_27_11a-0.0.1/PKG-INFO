@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: Test_27_11a
+Version: 0.0.1
+Summary: A small example package
+Home-page: https://github.com/markodjukanovic90/
+Author: Marko Đukanović
+Author-email: Example Author <author@example.com>
+Project-URL: Homepage, https://github.com/markodjukanovic90
+Project-URL: Bug Tracker, https://github.com/markodjukanovic90
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Test is  a Test example on how to make a package 
+
+Minimal working example can be seen bellow:
+```python
+from Test.Test import Test
+
+test = Test("Testiranje")
+```
+
