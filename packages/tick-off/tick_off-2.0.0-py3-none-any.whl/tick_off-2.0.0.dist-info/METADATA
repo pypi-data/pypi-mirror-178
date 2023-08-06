@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: tick-off
+Version: 2.0.0
+Author: he-dev
+Requires-Python: >=3.10.5
+Description-Content-Type: text/plain
+License-File: LICENSE
+
+Tick-off token for results that expire.
