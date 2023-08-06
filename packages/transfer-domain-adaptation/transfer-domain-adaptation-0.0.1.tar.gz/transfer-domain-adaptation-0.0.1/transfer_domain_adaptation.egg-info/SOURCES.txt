@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+domain_transfer/__init__.py
+domain_transfer/transferKeras.py
+transfer_domain_adaptation.egg-info/PKG-INFO
+transfer_domain_adaptation.egg-info/SOURCES.txt
+transfer_domain_adaptation.egg-info/dependency_links.txt
+transfer_domain_adaptation.egg-info/requires.txt
+transfer_domain_adaptation.egg-info/top_level.txt
