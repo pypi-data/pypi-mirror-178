@@ -1,0 +1,10 @@
+harf_serde/__init__.py,sha256=P_32doVExMoBrd2jZ7UKK5-JqcOUELB_jtSGqf3ipTE,63
+harf_serde/har.py,sha256=bnzW3oQKX9QYETYyvemMBt7Y-pmkwsc79yBfVUHl8HM,994
+harf_serde/harf.py,sha256=gZ_eepaP-hTaIMQT0Ku-C6aKEhUQNBWcjeHDfh1LMhA,8779
+harf_serde/morphism.py,sha256=YRtZxAl3PHm1bhPG3HAiCr0KZhapWRAkSXzt1s29aiI,3079
+harf_serde/py.typed,sha256=DtCsIDq6KOv2NOEdQjTbeMWJKRh6ZEL2E-6Mf1RLeMA,59
+harf_serde-1.2b3.dist-info/LICENSE,sha256=nbhcDLUEYNk3NtjgYTYvkEInc3D2jcJABOIAvuLpUtw,1072
+harf_serde-1.2b3.dist-info/METADATA,sha256=-yBjU_M4jFAR_5J7_neEsgYqiNMW1u6vp7Ow5GUJ_Jk,4428
+harf_serde-1.2b3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+harf_serde-1.2b3.dist-info/top_level.txt,sha256=eUdmDP-e6x25DKOty053Vta0NZaFu35_mosmsxVt0a8,11
+harf_serde-1.2b3.dist-info/RECORD,,
