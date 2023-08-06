@@ -1,0 +1,15 @@
+tifffile
+scikit-image
+matplotlib==3.4.3
+tqdm
+pandas==1.3.4
+natsort
+jupyterlab
+ipywidgets
+joblib
+napari[all]
+pymunk==6.2.0
+pyglet==1.5.21
+raster-geometry==0.1.4.1
+matplotlib-scalebar==0.7.2
+psfmodels
