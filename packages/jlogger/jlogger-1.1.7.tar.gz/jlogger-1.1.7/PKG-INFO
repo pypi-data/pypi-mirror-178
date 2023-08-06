@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: jlogger
+Version: 1.1.7
+Summary: Setup the root logger as per the handler type with formatter
+Home-page: https://github.com/jimsxchen/genlogger.git
+Author: Jim Chen
+Author-email: jim.sxchen@gmail.com
+Maintainer: Jim Chen
+Maintainer-email: jim.sxchen@gmail.com
+License: LICENSE
+License-File: LICENSE
