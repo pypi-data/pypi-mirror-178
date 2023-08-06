@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+otsutil/__init__.py
+otsutil/classes.py
+otsutil/funcs.py
+otsutil.egg-info/PKG-INFO
+otsutil.egg-info/SOURCES.txt
+otsutil.egg-info/dependency_links.txt
+otsutil.egg-info/top_level.txt
