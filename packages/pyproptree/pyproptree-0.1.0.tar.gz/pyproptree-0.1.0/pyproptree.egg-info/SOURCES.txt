@@ -1,0 +1,7 @@
+pyproject.toml
+setup.cfg
+pyproptree.egg-info/PKG-INFO
+pyproptree.egg-info/SOURCES.txt
+pyproptree.egg-info/dependency_links.txt
+pyproptree.egg-info/requires.txt
+pyproptree.egg-info/top_level.txt
