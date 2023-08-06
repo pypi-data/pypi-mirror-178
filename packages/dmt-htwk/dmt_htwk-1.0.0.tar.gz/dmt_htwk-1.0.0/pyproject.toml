@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "dmt_htwk"
+version = "1.0.0"
+authors = [
+  { name="Martin Petersohn", email="martin.petersohn@stud.htwk-leipzig.de" },
+]
+description = "Eine IPython-Erweiterung, welche die Verbidung zum Assessment-System DMT ermöglicht und Aufgaben dynamisch im Notebook erstellt."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
