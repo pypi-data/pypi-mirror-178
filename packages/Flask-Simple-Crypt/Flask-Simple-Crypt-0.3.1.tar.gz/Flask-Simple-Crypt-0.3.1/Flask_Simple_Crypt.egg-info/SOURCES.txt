@@ -1,0 +1,11 @@
+LICENSE
+README.md
+flask_simple_crypt.py
+pyproject.toml
+setup.py
+Flask_Simple_Crypt.egg-info/PKG-INFO
+Flask_Simple_Crypt.egg-info/SOURCES.txt
+Flask_Simple_Crypt.egg-info/dependency_links.txt
+Flask_Simple_Crypt.egg-info/not-zip-safe
+Flask_Simple_Crypt.egg-info/requires.txt
+Flask_Simple_Crypt.egg-info/top_level.txt
