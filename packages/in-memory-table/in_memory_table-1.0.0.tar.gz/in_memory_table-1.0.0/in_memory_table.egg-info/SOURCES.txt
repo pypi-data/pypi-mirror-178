@@ -1,0 +1,13 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+in_memory_table/__init__.py
+in_memory_table/column_index.py
+in_memory_table/sorted_collection.py
+in_memory_table/table.py
+in_memory_table.egg-info/PKG-INFO
+in_memory_table.egg-info/SOURCES.txt
+in_memory_table.egg-info/dependency_links.txt
+in_memory_table.egg-info/top_level.txt
