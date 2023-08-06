@@ -1,0 +1,8 @@
+lxml
+rich
+docopt
+appdirs
+slugify
+iso639-lang
+Mastodon.py
+ttkSimpleDialog

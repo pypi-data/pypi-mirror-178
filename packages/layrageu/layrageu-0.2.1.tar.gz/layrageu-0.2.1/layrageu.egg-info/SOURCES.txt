@@ -1,0 +1,17 @@
+LICENSE
+README.rst
+setup.py
+layrageu/__init__.py
+layrageu/__main__.py
+layrageu/fodt2text.py
+layrageu/gui.py
+layrageu/loader.py
+layrageu/sender.py
+layrageu/settings.py
+layrageu/tui.py
+layrageu.egg-info/PKG-INFO
+layrageu.egg-info/SOURCES.txt
+layrageu.egg-info/dependency_links.txt
+layrageu.egg-info/entry_points.txt
+layrageu.egg-info/requires.txt
+layrageu.egg-info/top_level.txt
