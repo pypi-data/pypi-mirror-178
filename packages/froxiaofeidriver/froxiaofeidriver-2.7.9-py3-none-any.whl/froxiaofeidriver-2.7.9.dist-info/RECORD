@@ -1,0 +1,16 @@
+froxiaofeidriver/__init__.py,sha256=prBbqI171GYENxL0sBU12Ob5eY-lmSPmWKZ_aKaRWBY,356
+froxiaofeidriver/mycarmotor.py,sha256=rSfPhaOjEJ7szaHugGHNx2Cry-D84LAFDwiQTXr_B3Q,6180
+froxiaofeidriver/mycolor.py,sha256=wRGWCkHqxEoPAFaKC64A9TWHuXaBzKs8Q8wigf6mx6o,6482
+froxiaofeidriver/myfacecollect.py,sha256=EKdk-k1rowvhdHxVBrdByX0jL4sl5jITjRPBccOADYI,4484
+froxiaofeidriver/mygesture.py,sha256=b2FvAMKH1KMEiVgSPm2d6RbD1Acj7F-wT8y-YDXa4Uo,5893
+froxiaofeidriver/mypygame.py,sha256=jYZKFX7FuSHG2x10-HnvEsyDlwSvNX6NaRBTgEuHrak,2060
+froxiaofeidriver/myrecognizeLBP.py,sha256=b33EM-4qmW5B2IF-Y06sqejjSCizViQ5u3nZ11niXYQ,3984
+froxiaofeidriver/myserial.py,sha256=2fse9ej3g0AMZ3w5GcshTNFpWjbf7w2bdimgDCzeqsM,8043
+froxiaofeidriver/myservo.py,sha256=D1flD2uadjYSAUiy9fSh05YD7bnnhVs2PtZslhaYT3s,906
+froxiaofeidriver/mysound.py,sha256=M3XAIG-Ier4iTwB4d9IFT9X23QRf_mDF_B-ph-Jc_sE,5043
+froxiaofeidriver/mytts.py,sha256=QQ5eB1EkeEjbwDZ8N6nTw1DXLJ6VnuLaZ6igV7PtIM0,442
+froxiaofeidriver/myvideo.py,sha256=3I3UGG7wGp8FV_cvgOma4ARwRgjhc3r4ZNiZBLvR1ZU,92
+froxiaofeidriver-2.7.9.dist-info/METADATA,sha256=Geyf0H8lQg7Tb9ggKdLdtXovlgEONtEyS0eCowlhoo4,76
+froxiaofeidriver-2.7.9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+froxiaofeidriver-2.7.9.dist-info/top_level.txt,sha256=hZYTd9PFYMThogBOEz3WPFmVFju4DH_nzNg2TgJQp0Q,17
+froxiaofeidriver-2.7.9.dist-info/RECORD,,
