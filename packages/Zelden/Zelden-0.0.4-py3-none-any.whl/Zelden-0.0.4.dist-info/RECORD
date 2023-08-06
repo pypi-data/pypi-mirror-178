@@ -1,0 +1,13 @@
+zelden/__init__.py,sha256=IgS3qL-JCNJptfxPpmBBrppZ4Qh-5ahMf3Wv2Fcwo3g,107
+zelden/mechanics_test.py,sha256=CZgRv8R0RPznGvyz_x_6CKoMWueZHORNj1H7IlTrpxE,33
+zelden/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zelden/src/consts.py,sha256=u_s08ydVhWGLA3ruhFbyDi3Ap3oa8REmks_QYeq-zFg,136
+zelden/src/credentials.py,sha256=ZYsg9erHDTEGS1wN4dCa9TGPEqR0bg0a5tF6vufSJ90,329
+zelden/src/exceptions.py,sha256=Y3FZGWhurDQF8jJ5HzRPt_gf67qCedIT4SygaLV_sjc,431
+zelden/src/randomizer.py,sha256=3SF5cm0JTRsWQ_YT6WnWUOmGbMStcRpyMlAT2DwIl6w,1060
+zelden/src/set_json.py,sha256=d-4Jq_IXoUOELpI9vjI2DKe34zcm0f_rBjlnSTjrZO4,476
+Zelden-0.0.4.dist-info/LICENSE,sha256=3OXwLevoArLVa0jJemhT2ydZUYJv5btqjpWIjV2Olmg,1065
+Zelden-0.0.4.dist-info/METADATA,sha256=utyFYUUTd9kbpmHKk1s-7IqangNNQuteep21jZLV3CI,962
+Zelden-0.0.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+Zelden-0.0.4.dist-info/top_level.txt,sha256=HMqhXJD8MsvWWWTJS32aZ2e9-qeW6ZC0hbbJ6C-Njws,7
+Zelden-0.0.4.dist-info/RECORD,,
