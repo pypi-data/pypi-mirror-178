@@ -1,0 +1,2 @@
+[![PyPI - Version](https://img.shields.io/pypi/v/kringle.svg)](https://pypi.org/project/kringle)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/kringle.svg)](https://pypi.org/project/kringle)
