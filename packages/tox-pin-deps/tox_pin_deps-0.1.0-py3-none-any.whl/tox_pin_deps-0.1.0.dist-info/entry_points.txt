@@ -1,0 +1,2 @@
+[tox]
+pin_deps = tox_pin_deps.plugin
