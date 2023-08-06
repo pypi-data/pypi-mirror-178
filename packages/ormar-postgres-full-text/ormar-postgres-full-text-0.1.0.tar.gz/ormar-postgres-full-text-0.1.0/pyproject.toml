@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "ormar-postgres-full-text"
+version = "0.1.0"
+description = "Extension to use full text search from postgresql in ormar ORM."
+authors = ["Jegor Kitskerkin <jegor.kitskerkin@gmail.com>"]
+license = "MIT License"
+readme = "README.md"
+packages = [{include = "ormar_postgres_full_text"}]
+
+[tool.isort]
+profile = "black"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+ormar = {version = "0.11.3", extras = ["postgresql"]}
+
+
+[tool.poetry.group.dev.dependencies]
+alembic = "^1.8.1"
+black = "^22.10.0"
+isort = "^5.10.1"
+autoflake = "^2.0.0"
+flake8 = "^6.0.0"
+pre-commit = "^2.20.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
