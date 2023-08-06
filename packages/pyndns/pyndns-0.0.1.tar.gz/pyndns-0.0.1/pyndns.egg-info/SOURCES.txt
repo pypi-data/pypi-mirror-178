@@ -1,0 +1,7 @@
+README.md
+pyndns.py
+setup.py
+pyndns.egg-info/PKG-INFO
+pyndns.egg-info/SOURCES.txt
+pyndns.egg-info/dependency_links.txt
+pyndns.egg-info/top_level.txt
