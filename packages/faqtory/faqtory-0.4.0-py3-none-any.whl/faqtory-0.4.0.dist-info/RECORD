@@ -1,0 +1,11 @@
+faqtory/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+faqtory/__main__.py,sha256=3U77Eu21mJ-LY27RG-JEnpbh6Z63wGOom4i-EoLtUcY,59
+faqtory/cli.py,sha256=147c2X7IVfrhsQfST3bBjWmmV_GmrfV8CRp6LgFaWFg,5727
+faqtory/models.py,sha256=Pba7WUkZD8nVc3msgrwnMUxI6u1hM_sU-oLFVLH4pMk,1882
+faqtory/questions.py,sha256=jqnKLmDhgssJDZeoAZtUHVO_-UYkqAvI0iOzGQiPcxE,341
+faqtory/templates.py,sha256=BqVymR8RhcHAWR1bLWadrRPTHmzm2Vftq0crK0iiLF0,723
+faqtory-0.4.0.dist-info/entry_points.txt,sha256=tAu7lLVaf5vPvf5zKIyT220dkwthjzgd8CCbV8EJYC4,43
+faqtory-0.4.0.dist-info/LICENSE,sha256=y16ke4ycekV4XFNcLvji0CMm1WdqxcCsxaZXPytxcfI,1069
+faqtory-0.4.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+faqtory-0.4.0.dist-info/METADATA,sha256=dDkYpYJ94YZeWROi7TxkOxQ6fSSre0HNV7w42_79xao,3198
+faqtory-0.4.0.dist-info/RECORD,,
