@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: lcd-classification-model
+Version: 0.0.1
+Summary: Example classification model package by Neidu.
+Home-page: https://github.com/chineidu/LendingClubLoanPrediction
+Author: Chinedu Ezeofor
+Author-email: neiduezeofor@gmail.com
+License: BSD-3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: category-encoders (==2.5.1.post0)
+Requires-Dist: feature-engine (<1.6.0,>=1.5.1)
+Requires-Dist: numpy (<1.23.0,>=1.22.2)
+Requires-Dist: pandas (<1.5.0,>=1.4.2)
+Requires-Dist: pydantic (<1.11.0,>=1.10.2)
+Requires-Dist: tox (<3.29.1,>=3.27.1)
+Requires-Dist: scikit-learn (<1.2.0,>=1.1.3)
+Requires-Dist: strictyaml (<1.7.0,>=1.6.2)
+Requires-Dist: ruamel.yaml (<0.18.0,==0.17.21)
+Requires-Dist: joblib (<1.3.0,>=1.2.0)
+
+Example classification model package by Neidu.
