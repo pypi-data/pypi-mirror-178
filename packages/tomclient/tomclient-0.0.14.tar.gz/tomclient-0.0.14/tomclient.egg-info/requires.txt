@@ -1,0 +1,5 @@
+typer
+jsonrpc-websocket
+netifaces
+nvidia-ml-py
+requests
