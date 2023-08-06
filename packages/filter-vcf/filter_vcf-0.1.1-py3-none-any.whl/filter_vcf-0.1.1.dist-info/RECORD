@@ -1,0 +1,5 @@
+filter_vcf/__init__.py,sha256=PZ3AVN6qi4TF7q4ibOQZAsjYOY3X7weZB5rFqUdacsI,59
+filter_vcf/filter_vcf.py,sha256=qWSoyHbZd58YM1kjwQxdTtWmO-aUwXQxmHdq8kjTR4k,1079
+filter_vcf-0.1.1.dist-info/WHEEL,sha256=_LDBqpgIVFNHZvvFOGbg2pvJOENq6RHAyT5px-HeX0U,87
+filter_vcf-0.1.1.dist-info/METADATA,sha256=boNA3Psfn0rtuAezAkFEzHZKV0bHDIRaWCQAfEXa51M,336
+filter_vcf-0.1.1.dist-info/RECORD,,
