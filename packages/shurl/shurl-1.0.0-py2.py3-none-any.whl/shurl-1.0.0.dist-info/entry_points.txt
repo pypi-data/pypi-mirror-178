@@ -1,0 +1,2 @@
+[console_scripts]
+shurl = shurl.shurl:shurl
