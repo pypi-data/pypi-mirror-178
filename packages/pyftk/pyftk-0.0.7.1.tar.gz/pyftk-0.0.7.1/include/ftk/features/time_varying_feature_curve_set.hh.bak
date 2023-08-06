@@ -1,0 +1,105 @@
+#ifndef _FTK_TIME_VARYING_FEATURE_CURVE_SET_HH
+#define _FTK_TIME_VARYING_FEATURE_CURVE_SET_HH
+
+#include <ftk/features/feature_surface.hh>
+#include <ftk/tracking_graph/tracking_graph.hh>
+
+namespace ftk {
+
+struct time_varying_feature_curve_set_t {
+  time_varying_feature_curve_set_t();
+  time_varying_feature_curve_set_t(const feature_surface_t& s) { from_feature_surface(s); }
+
+  void from_feature_surface(const feature_surface_t& s);
+
+public:
+
+private:
+  std::map<int, feature_curve_set_t> m;
+  tracking_graph<> tg;
+};
+
+/////////////
+void time_varying_feature_curve_set_t::from_feature_surface2(const feature_surface_t& s)
+{
+  // 0. decompose into interval subsurfaces
+  // 1. 
+}
+
+void time_varying_feature_curve_set_t::from_feature_surface(const feature_surface_t& s)
+{
+  // 0. relabel the surface
+  // 1. sort ordinal points to feature_line_t of each individual timestep
+  // 2. iterate over triangles
+  //    1) iterate over each edge
+  //       a) if both vertices are in the same timestep, add an edge to the corresponding feature_line
+  // 3. relabel feature_line of each timestep
+  // 4. transform feature_line to feature_curve_set; each curve should have a consistent id
+  // 4. for each (t, t+1) interval, 
+  //    1) for each line on the lhs
+
+  std::vector<feature_point_t> mypts;
+  std::map<int, std::set<int>> nodes;
+  std::map<int, std::map<int, std::set<int>>> links;
+
+  const std::vector<feature_point_t>& pts = s.pts;
+
+  std::map<std::map<int, int>> map; // time, id, new_id
+  int j = 0;
+  for (int i = 0; i < pts.size(); i ++)
+    if (pts[i].ordinal) { // pts[i].timestep == t 
+      int t = pts[i].timestep;
+      nodes[t].insert(j);
+      map[t][i] = j;
+      mypts.push_back(pts[i]);
+      j ++;
+    }
+
+  fprintf(stderr, "#pts=%zu\n", map.size());
+
+  for (int i = 0; i < tris.size(); i ++) {
+    const auto &c = tris[i];
+
+    std::set<int> cc;
+    for (int j = 0; j < 3; j ++)
+      if (map.find(c[j]) != map.end())
+        cc.insert(map[c[j]]);
+
+    if (!cc.empty()) {
+      for (const auto k : cc)
+        links[k].insert(cc.begin(), cc.end());
+    }
+  }
+
+  auto cc = extract_connected_components<int, std::set<int>>(
+      [&](int i) { return links[i]; }, 
+      nodes);
+
+  for (const auto &component : cc) {
+    auto linear_graphs = connected_component_to_linear_components<int>(component, [&](int i) {return links[i];});
+    for (int j = 0; j < linear_graphs.size(); j ++) {
+      feature_curve_t traj;
+      traj.loop = is_loop<int>(linear_graphs[j], [&](int i) {return links[i];});
+      
+      for (int k = 0; k < linear_graphs[j].size(); k ++)
+        traj.push_back(mypts[linear_graphs[j][k]]);
+      // curve_set.add(traj); // , traj[0].id);
+      curve_set.add(traj, traj[0].id);
+      // fprintf(stderr, "curve_set.size=%zu\n", curve_set.size());
+    }
+  }
+
+  // fprintf(stderr, "curve_set.size=%zu\n", curve_set.size());
+  size_t count = 0;
+  for (const auto &kv : curve_set)
+    count += kv.second.size();
+  fprintf(stderr, "pts_count=%zu, curve_count=%zu\n", count, curve_set.size());
+
+  return curve_set;
+
+}
+
+
+} // namespace ftk
+
+#endif
