@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: encurtanet
+Version: 0.0.0.0.1
+Summary: Wrappper for https://encurta.net/api
+Author: Marcuth
+Author-email: marcuth2006@gmail.com
+License: MIT License
+Keywords: encurtanet wrapper api
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# Um simples wrapper (NÃ£o Oficial) da API do EncurtaNet para Python
