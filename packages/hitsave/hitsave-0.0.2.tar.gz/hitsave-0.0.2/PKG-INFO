@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: hitsave
+Version: 0.0.2
+Summary: Holistic data caching system.
+Project-URL: Homepage, https://hitsave.io
+Author-email: "E.W.Ayers" <contact@edayers.com>, George Seabridge <george@hitsave.io>
+License-File: LICENCE
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: blake3~=0.3.1
+Requires-Dist: typer~=0.6.1
+Description-Content-Type: text/markdown
+
+# Hitsave
+
+https://hitsave.io
+
+Coming Soon
