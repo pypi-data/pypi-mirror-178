@@ -1,0 +1,3 @@
+[console_scripts]
+teamtime=teamtime.teamtime:main
+
