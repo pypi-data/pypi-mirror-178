@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+src/pyllector/__init__.py
+src/pyllector/models.py
+src/pyllector/pyllector.py
+src/pyllector.egg-info/PKG-INFO
+src/pyllector.egg-info/SOURCES.txt
+src/pyllector.egg-info/dependency_links.txt
+src/pyllector.egg-info/top_level.txt
