@@ -1,0 +1,7 @@
+pyrepl>=0.9.0
+
+[:platform_system == "Windows" and python_version < "3.6"]
+pyreadline
+
+[:platform_system == "Windows" and python_version >= "3.6"]
+pyreadline3
