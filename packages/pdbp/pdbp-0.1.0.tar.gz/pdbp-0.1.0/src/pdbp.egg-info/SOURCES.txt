@@ -1,0 +1,11 @@
+.gitignore
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/pdbp.py
+src/pdbp.egg-info/PKG-INFO
+src/pdbp.egg-info/SOURCES.txt
+src/pdbp.egg-info/dependency_links.txt
+src/pdbp.egg-info/requires.txt
+src/pdbp.egg-info/top_level.txt
