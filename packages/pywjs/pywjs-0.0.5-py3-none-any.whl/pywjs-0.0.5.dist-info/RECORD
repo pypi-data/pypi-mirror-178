@@ -1,0 +1,13 @@
+pywjs/__init__.py,sha256=PmiiaREDWCgJbGa82LBRtyOUR_zPgmPtC5BHx-nnsfE,19
+pywjs/wbs/__init__.py,sha256=B8vuYeDnfPtyZZLVU_1UsmCf8T2hGBFhMhFpi3snzUs,162
+pywjs/wbs/allowed_func.py,sha256=lFBYkmbLouh09HHzNGWVGTWVROiIOa2K1fq3s7F3Bhk,8762
+pywjs/wbs/cache.py,sha256=f0OyRTLpZmlN9XYG6CMAjDwWJFFRTvc6xXdG02woRjw,11721
+pywjs/wbs/handle.py,sha256=_9x0RA73CyK_gs6usq13rwViptuFMtxXSGhFSvQmYBU,20566
+pywjs/wbs/logger.py,sha256=mQBGzS0mikWwoqwsvUxpPPyNZRIifyipi67gizGYD3g,1907
+pywjs/wbs/schema.py,sha256=2fZcrDkdyzgK4t9Wia0SVLH0HscZTUUXf3w3VVjdXsg,9461
+pywjs/wbs/server.py,sha256=76A4pQ8ooOwsvD5KGo6QERbTfmB92nsaGHxJ8Z0zDr0,3374
+pywjs/wbs/subscribe.py,sha256=pXtYPghfSIzZxKn9zfwEtuVYePu_KV9VhXLJaVMLceg,17920
+readme.md,sha256=tl-1DL9gBXUJbjwyT-m41gFsOT4lKiXtr1P6vTBlNbs,78842
+pywjs-0.0.5.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+pywjs-0.0.5.dist-info/METADATA,sha256=H3ykqgnQbJFyQaf2WHLAx84IdMjXAH-DDa0L2bxFM08,79395
+pywjs-0.0.5.dist-info/RECORD,,
