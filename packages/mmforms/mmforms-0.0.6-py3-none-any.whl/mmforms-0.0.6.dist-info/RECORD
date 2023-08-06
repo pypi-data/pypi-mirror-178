@@ -1,0 +1,10 @@
+mmforms/__init__.py,sha256=izsiYslclUyr3x4rtfa4f55T1WC4DNMrZ338M2w1CzM,1184
+mmforms/_base_elements.py,sha256=jYcCZRz6IrT2G6s9TqNgj5wyG5mJ9tlQ4pRzfXJuG-4,13793
+mmforms/bootstrap_elements.py,sha256=UMKRXl4LiWHCQ1Vxhcx7vDC1rAgvshb4iOgZTqzb6bE,2068
+mmforms/factories.py,sha256=UlaQgaanO9fuvSZneM8rjTmHWmCs5P9LgKOS0c-52G8,1655
+mmforms/standard_elements.py,sha256=HsrDGQIgkEPDxQyNKq5IRRfRIlC6JeF51WihY27NH3E,731
+mmforms-0.0.6.dist-info/LICENSE,sha256=HPjVpJJOVyOBdYoEFCoaK5zPZDSTs1uaqW85dHHsUt4,25351
+mmforms-0.0.6.dist-info/METADATA,sha256=iXagwrMBLi_TWgMa8Qzq1er7L7KlHgCbspAxJd2OTFE,903
+mmforms-0.0.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+mmforms-0.0.6.dist-info/top_level.txt,sha256=Geos01zpha5mTIeTzmg1f25LFOjQzwan8Py5AGV_dMI,8
+mmforms-0.0.6.dist-info/RECORD,,
