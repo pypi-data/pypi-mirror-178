@@ -1,0 +1,14 @@
+layrageu/__init__.py,sha256=-xOY_FLlrDVG0Tj85VKdf2P9-EMjYYb80ZsyLAe6osc,1774
+layrageu/__main__.py,sha256=Xj9xQ5WScExjNP8jfnV_li_VU83IB7wSlfnlWPFDpN0,1852
+layrageu/fodt2text.py,sha256=KmS8asbn6T-A14uQxxHD63X4QU8LQfq1CUxyHmL4ZgI,1805
+layrageu/gui.py,sha256=yZeYGjGzCOVI0D1i5XuSMc4j-e34JE7h42ftgOBXbD0,28970
+layrageu/loader.py,sha256=mRRmv3MY6B5D2Wfto7yn-Xlo9dDkEMvSxKoXxdoRTZc,11541
+layrageu/sender.py,sha256=esvmeJXk7pWFwjAV33Kdzula1qUhqa4GRJ0JznvswHo,5978
+layrageu/settings.py,sha256=UihOTkeL-9ok6oqNYEvE81Gfn77tkik3gkIEmb3eSKc,11316
+layrageu/tui.py,sha256=r2PZk9qXZI0uLZkoE7p7Voh8aV9gn18N9AA2F1FsVpg,14085
+layrageu-0.2.dist-info/LICENSE,sha256=puMd0jjat39o80bJ-APSusFVDbQbH8q1Iaf21NMTjls,34455
+layrageu-0.2.dist-info/METADATA,sha256=P-aMlix74OE6n5vbl2Z4EeEhqRjKwZYp-y-1axCnoCY,1402
+layrageu-0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+layrageu-0.2.dist-info/entry_points.txt,sha256=EavAf8WadXvPUVLWgQPmzxtuevUDeBm5ohIWVtmGdIc,80
+layrageu-0.2.dist-info/top_level.txt,sha256=n0ZMRpW5B4wEhTILknPg9LoX1-XZA6J0HEKH7y6_Wf0,9
+layrageu-0.2.dist-info/RECORD,,
