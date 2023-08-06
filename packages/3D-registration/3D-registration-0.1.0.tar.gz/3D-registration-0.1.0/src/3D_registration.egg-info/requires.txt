@@ -1,0 +1,10 @@
+numpy
+scipy
+statsmodels
+h5py
+tifffile
+
+[testing]
+tox
+pytest
+pytest-cov
