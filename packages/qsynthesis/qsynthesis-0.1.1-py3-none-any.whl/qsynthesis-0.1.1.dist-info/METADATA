@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: qsynthesis
+Version: 0.1.1
+Summary: Python API to synthesize Triton AST's
+Home-page: https://github.com/quarkslab/qsynthesis
+Author: Robin David
+License: AGPL-3.0
+Project-URL: Documentation, https://quarkslab.github.io/qsynthesis/
+Project-URL: Bug Tracker, https://github.com/quarkslab/qsynthesis/issues
+Project-URL: Source, https://github.com/quarkslab/qsynthesis
+Classifier: Topic :: Security
+Classifier: Environment :: Console
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: triton-library
+Requires-Dist: ordered-set
+Requires-Dist: psutil
+Requires-Dist: click
+Requires-Dist: plyvel
+Requires-Dist: requests
+Requires-Dist: capstone
+Requires-Dist: pydffi (>=0.9.1)
+Provides-Extra: all
+Requires-Dist: arybo ; extra == 'all'
+Requires-Dist: llvmlite ; extra == 'all'
+Requires-Dist: sympy ; extra == 'all'
+Requires-Dist: fastapi ; extra == 'all'
+Requires-Dist: uvicorn ; extra == 'all'
+Provides-Extra: generator
+Requires-Dist: sympy ; extra == 'generator'
+Provides-Extra: reassembly
+Requires-Dist: arybo ; extra == 'reassembly'
+Requires-Dist: llvmlite ; extra == 'reassembly'
+Provides-Extra: server
+Requires-Dist: fastapi ; extra == 'server'
+Requires-Dist: uvicorn ; extra == 'server'
+
+file: README.md
