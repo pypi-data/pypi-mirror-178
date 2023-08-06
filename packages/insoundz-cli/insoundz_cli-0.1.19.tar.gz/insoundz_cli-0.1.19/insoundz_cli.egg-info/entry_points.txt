@@ -1,0 +1,3 @@
+[console_scripts]
+insoundz_cli = insoundz_cli.cli:insoundz_cli
+
