@@ -1,0 +1,126 @@
+Metadata-Version: 2.1
+Name: tcShip
+Version: 0.0.1
+Summary: python package for tcship race
+Home-page: 
+Author: gaoxiaos
+Author-email: ai_hub@qq.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pygame (>=2.0.0)
+
+# tcship
+python package for tcship race.
+
+## INSTALL
+```
+pip install tcship
+```
+
+## SAMPLE
+### default with display
+```Python
+from tcShip import tc_ship,config
+import random
+
+def step_model(env, observation):
+    ship = observation["body"][0]
+    t1 = observation["target"][0]
+    t2 = observation["target"][1]
+    stone = observation['stone']
+
+    # 曼哈顿距离
+    d1 = abs(t1[0] - ship[0]) + abs(t1[1] - ship[1])
+    d2 = abs(t2[0] - ship[0]) + abs(t2[1] - ship[1])
+    if d1 > d2:
+        i = 1
+    else:
+        i = 0
+    # 最近星球坐标
+    target = observation["target"][i]
+
+    if ship[0] > target[0]:
+        next_step = "left"
+        next_ship = [ship[0] - 1, ship[1]]
+    elif ship[0] < target[0]:
+        next_step = "right"
+        next_ship = [ship[0] + 1, ship[1]]
+    else:
+        next_step = "down"
+        next_ship = [ship[0], ship[1] + 1]
+    # 思考下什么时候向上或者向下？
+    # elif ship[1] > target[1]:
+    #     next_step =  "up"
+    #     next_ship = [ship[0], ship[1] - 1]
+
+    #检查下下一步会不会撞上陨石
+    if next_ship not in stone:
+        return next_step
+    #仿照检测陨石，如何实现增加检测边界横坐标和纵坐标都不能 < 0或 > 16 ？#and ?>=0 and ?<= 16
+    else:
+        safe_action = ["right","left","up","down"]
+        safe_action.remove(next_step)
+        #思考是否有更好的方向选择替代随机选择？让飞船更快走到行星,以及此时随机选择出来的方向就一定安全么？
+        #比如同时可以选的方向为"up"和"down"，如果行星在飞船上方，那我们优先选择"up"。
+        return random.choice(safe_action)
+        ##思考下飞船方向能不能直接回头？如何避免？
+        # global last_action
+        # if last_action == "left" and action == "right":
+
+def main():
+    env = tc_ship()
+    observation = env.reset()
+    rew = 0
+    for _ in range(100):
+        action = step_model(env, observation)
+        print(action)
+        observation, reward, done, info = env.step(action)
+        rew += reward
+        env.sleep(0.5)
+
+        if done:
+            print("rew :  " + str(rew))
+            break
+
+main()
+```
+### config no display
+```Python
+from tcShip import tc_ship, config
+import random
+
+config.WORKSPACE = "tianchi" #"local"则展示可视化动画
+#正式版代码模版 
+def step_model(env, observation):
+    action_space = env.action_space
+    action = random.choice(action_space)
+    return action
+
+def main():
+    env = tc_ship()
+    observation = env.reset()
+    rew = 0
+    for _ in range(100):
+        action = step_model(env, observation)
+        print(action)
+        observation, reward, done, info = env.step(action)
+        rew += reward
+        env.sleep(0.5)
+
+        if done:
+            print("rew :  " + str(rew))
+            break
+
+main()
+```
+
+
+
+
+
+
+
