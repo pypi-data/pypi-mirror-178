@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: yit
+Version: 0.0.1
+Summary: (All in One)[Y]outube shorts, [I]nstagram reels, [T]iktok uploader
+Home-page: https://github.com/azimjohn/yit
+Author: Azimjon Pulatov
+Author-email: azimjohn@yahoo.com
+Maintainer: Azimjon Pulatov
+Maintainer-email: azimjohn@yahoo.com
+License: MIT
+Keywords: youtube instagram tiktok uploader
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.6.1
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# yit
+(All in One)[Y]outube shorts, [I]nstagram reels, [T]iktok uploader
+
+

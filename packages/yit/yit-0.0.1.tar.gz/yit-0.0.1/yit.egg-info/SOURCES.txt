@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+yit/__init__.py
+yit/__main__.py
+yit/main.py
+yit.egg-info/PKG-INFO
+yit.egg-info/SOURCES.txt
+yit.egg-info/dependency_links.txt
+yit.egg-info/entry_points.txt
+yit.egg-info/top_level.txt
