@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+Faizan_two_machines/__init__.py
+Faizan_two_machines/faizan_jsa.py
+Faizan_two_machines.egg-info/PKG-INFO
+Faizan_two_machines.egg-info/SOURCES.txt
+Faizan_two_machines.egg-info/dependency_links.txt
+Faizan_two_machines.egg-info/requires.txt
+Faizan_two_machines.egg-info/top_level.txt
