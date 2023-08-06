@@ -1,0 +1,10 @@
+README.md
+setup.py
+dictogc/__init__.py
+dictogc/dictogc.py
+dictogc.egg-info/PKG-INFO
+dictogc.egg-info/SOURCES.txt
+dictogc.egg-info/dependency_links.txt
+dictogc.egg-info/entry_points.txt
+dictogc.egg-info/requires.txt
+dictogc.egg-info/top_level.txt

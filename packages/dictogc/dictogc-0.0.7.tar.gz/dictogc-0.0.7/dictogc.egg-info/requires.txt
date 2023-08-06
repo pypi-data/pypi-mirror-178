@@ -1,0 +1,4 @@
+requests
+gcsa
+appdirs
+python-dateutil
