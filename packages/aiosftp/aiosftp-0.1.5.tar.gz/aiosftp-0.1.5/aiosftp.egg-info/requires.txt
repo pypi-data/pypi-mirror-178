@@ -1,0 +1,5 @@
+aiohttp==3.8.3
+asyncio==3.4.3
+uvloop==0.17.0
+asyncdb[default]>=2.1.30
+navconfig>=1.0.6
