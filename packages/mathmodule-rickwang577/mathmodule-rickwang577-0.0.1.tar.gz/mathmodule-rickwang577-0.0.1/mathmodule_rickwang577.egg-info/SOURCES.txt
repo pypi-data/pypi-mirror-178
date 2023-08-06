@@ -1,0 +1,5 @@
+setup.py
+mathmodule_rickwang577.egg-info/PKG-INFO
+mathmodule_rickwang577.egg-info/SOURCES.txt
+mathmodule_rickwang577.egg-info/dependency_links.txt
+mathmodule_rickwang577.egg-info/top_level.txt

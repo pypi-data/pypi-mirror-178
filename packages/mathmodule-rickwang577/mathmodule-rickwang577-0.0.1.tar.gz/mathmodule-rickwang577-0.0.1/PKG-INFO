@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: mathmodule-rickwang577
+Version: 0.0.1
+Summary: Simple Math Package
+Author: Rick Wang
+Author-email: yenhao0508@gmail.com
+Keywords: python,first package
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+
+My first Python package with a slightly longer description
