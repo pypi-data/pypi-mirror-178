@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+screpe.egg-info/PKG-INFO
+screpe.egg-info/SOURCES.txt
+screpe.egg-info/dependency_links.txt
+screpe.egg-info/requires.txt
+screpe.egg-info/top_level.txt
