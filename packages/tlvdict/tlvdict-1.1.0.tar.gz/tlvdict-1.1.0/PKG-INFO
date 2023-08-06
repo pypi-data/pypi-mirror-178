@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: tlvdict
+Version: 1.1.0
+Summary: A Python dict that handles TLV decode/encode, very useful for EMV Data.
+License: MIT
+Keywords: emv,tlv,tlvdict
+Author: Ian Starnes
+Author-email: ians@311labs.com
+Requires-Python: >=3.7,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Dist: pyobjict
+Description-Content-Type: text/markdown
+
+![](https://github.com/311labs/objict/workflows/tests/badge.svg)
+
+## TLV - Type/Tag Length Format
+
+Simple class that supports TLV encoding/decoding.
+
+
+## Simple to use!
+
+```python
+>>> from tlvdict import TLVDict
+>>> tlv = TLVDict.FromDict({"5F25": "200531", "9F06": "A0000000041010"})
+>>> tlv
+TLVDict([('5F25', '200531'), ('9F06', 'A0000000041010')])
+>>> tlv.build()
+'5F25032005319F0607A0000000041010'
+
+>>> tlv2 = TLVDict.FromHex("5F25032005319F0607A0000000041010")
+>>> tlv2
+TLVDict([('5f25', '200531'), ('9f06', 'A0000000041010')])
+
+```
+
+
+
