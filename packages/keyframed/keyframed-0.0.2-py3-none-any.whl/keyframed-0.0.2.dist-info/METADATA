@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: keyframed
+Version: 0.0.2
+Author: David Marx
+License: MIT
+Requires-Dist: traces
+Requires-Dist: numexpr
+Requires-Dist: loguru
+Requires-Dist: scipy
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+
+# Keyframed
+
+Data structures and convenience functions to facilitate working with keyframed parameters and interpolations
