@@ -1,0 +1,3 @@
+[console_scripts]
+sherlog=src.example_package_narfasec.entry:main
+
