@@ -1,0 +1,15 @@
+acceltools/__init__.py,sha256=rnObPjuBcEStqSO0S6gsdS_ot8ITOQjVj_-P1LUUYpg,22
+acceltools/base.py,sha256=OkQs9Ihwy8liHDYLBPA9gtx5pbKJS5FsGzDspzi4j2g,672
+acceltools/ecd.py,sha256=sgNZZlU7Qf_ZbZBrP4SBq6i07bkWhieS9Qm3CK1BMJ0,9265
+acceltools/nmr.py,sha256=pn-QmrhWBimQFQPe09kGppTnAAqi-uJc5bADsRadfnU,29152
+acceltools/plot.py,sha256=-068PShfN6NkzlvskcroRKIgepF4lVgRnn8-M2VrfG4,7041
+acceltools/series.py,sha256=femXS7ALj4OH1qDal3qu_kGFmdLBCAK3L_xY-Xaq1gE,7619
+acceltools/table.py,sha256=bN8PMvdwUPhj4p4d852cAXm8hdlnFIKOjrjEeJGi2WU,1039
+acceltools/future/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+acceltools/future/doc.py,sha256=YJ-j3k9b3TPsO72cJfaBhT0lFWb40eyyMInetZSVV8I,14773
+acceltools/future/mm.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+acceltools-0.1.1.dist-info/LICENSE,sha256=6kVvPMd5fpiLN44G42XCWHb0Q_nDhLOMW1K4py7EY1I,1059
+acceltools-0.1.1.dist-info/METADATA,sha256=9VGQXYAle4hldWvmx3o1W0brw-DURrkIc8vK3Earxm0,555
+acceltools-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+acceltools-0.1.1.dist-info/top_level.txt,sha256=xMPZfTY2vEetVeiculvp4EuNeXWfh9anEYKOozGXeTo,11
+acceltools-0.1.1.dist-info/RECORD,,
