@@ -1,0 +1,9 @@
+antipickle/__init__.py,sha256=Eg6vfGwLdfxARuyNCK-gj_Aej2zLuJu2zlIoe7IoxvE,4443
+antipickle/adapters.py,sha256=0HhSJuOAHZLfy9r5vMHEDS3US7GCHLpntzAoV5-RG0g,1964
+antipickle/adapters_default.py,sha256=BOSdhYk_R176urxYM64sLrA0yw2Gisfdah8uJtX0gPY,6901
+antipickle/base.py,sha256=oDPm17c-Ne8R4RGG01Q9GAxg9w7APkoRqPZr0aoiylw,4533
+antipickle/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+antipickle-0.2.0rc0.dist-info/METADATA,sha256=xQC5KkVqUeoId1ekdVIZ7EY6zFWkUpYvz8jGDiirwhE,6148
+antipickle-0.2.0rc0.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+antipickle-0.2.0rc0.dist-info/licenses/LICENSE,sha256=LBJzbkpgWGBl9hPC34ih2xZJG_qM5-Yuo44eC-KZVIw,1073
+antipickle-0.2.0rc0.dist-info/RECORD,,
