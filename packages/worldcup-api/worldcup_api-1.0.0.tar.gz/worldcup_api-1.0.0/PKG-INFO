@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: worldcup_api
+Version: 1.0.0
+Summary: Free World Cup API Wrapper
+Author-email: Shohih Abdul <shohih242@gmail.com>
+Project-URL: Homepage, https://github.com/DoellBarr/wordlcup_api
+Project-URL: Bug Tracker, https://github.com/DoeelBarr/wordlcup_api/issues
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## Free World Cup API Scrapper
+
+### Documentation
+> Soon

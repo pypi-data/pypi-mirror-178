@@ -1,0 +1,23 @@
+[project]
+name = "worldcup_api"
+version = "1.0.0"
+authors = [
+    { name = "Shohih Abdul", email = "shohih242@gmail.com"}
+]
+description = "Free World Cup API Wrapper"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+]
+[project.urls]
+"Homepage" = "https://github.com/DoellBarr/wordlcup_api"
+"Bug Tracker" = "https://github.com/DoeelBarr/wordlcup_api/issues"

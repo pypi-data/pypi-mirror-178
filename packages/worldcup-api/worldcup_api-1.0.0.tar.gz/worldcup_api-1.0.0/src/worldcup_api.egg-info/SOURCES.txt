@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/worldcup_api/__init__.py
+src/worldcup_api/api.py
+src/worldcup_api/exceptions.py
+src/worldcup_api/types.py
+src/worldcup_api.egg-info/PKG-INFO
+src/worldcup_api.egg-info/SOURCES.txt
+src/worldcup_api.egg-info/dependency_links.txt
+src/worldcup_api.egg-info/top_level.txt
