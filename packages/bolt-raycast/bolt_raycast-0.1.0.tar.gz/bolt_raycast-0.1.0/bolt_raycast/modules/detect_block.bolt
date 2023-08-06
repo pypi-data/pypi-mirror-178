@@ -1,0 +1,35 @@
+from bolt_raycast:branch_mixin import BranchMixin
+
+class DetectBlock(BranchMixin):
+    def __init__(self, ray, id, **kwargs):
+        super().__init__(**kwargs)
+        self._ray = ray
+        self._id = id
+    
+    def _create_opposite(self, **kwargs):
+        return DetectBlock(self._ray, self._id, **kwargs)
+    
+    def _lone_branch(self, cmds):
+        if self.inverted:
+            unless block ~ ~ ~ self._id:
+                self._emit_not_hit(cmds)
+        else:
+            if block ~ ~ ~ self._id:
+                self._emit_hit(cmds)
+    
+    def _init_double_branch(self):
+        store result score #has_block self._ray.objective if block ~ ~ ~ self._id
+    
+    def _double_branch(self, cmds):
+        if self.inverted:
+            if score #has_block self._ray.objective matches 0:
+                self._emit_not_hit(cmds)
+        else:
+            unless score #has_block self._ray.objective matches 0:
+                self._emit_hit(cmds)
+
+    def _emit_hit(self, cmds):
+        self._ray.emit_block("hit_block", cmds)
+    
+    def _emit_not_hit(self, cmds):
+        self._ray.emit_block("not_hit_block", cmds)
