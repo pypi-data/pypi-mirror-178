@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements-dev.txt
+requirements.txt
+setup.py
+gitlab_scripts.egg-info/PKG-INFO
+gitlab_scripts.egg-info/SOURCES.txt
+gitlab_scripts.egg-info/dependency_links.txt
+gitlab_scripts.egg-info/entry_points.txt
+gitlab_scripts.egg-info/top_level.txt
+gitlab_scripts.egg-info/zip-safe
+pycov_convert_relative_filenames/__init__.py
+pycov_convert_relative_filenames/__main__.py
