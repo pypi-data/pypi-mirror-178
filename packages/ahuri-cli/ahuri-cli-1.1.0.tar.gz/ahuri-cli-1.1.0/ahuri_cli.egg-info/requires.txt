@@ -1,0 +1,6 @@
+requests
+websockets
+yarl
+
+[windows]
+pyreadline3
