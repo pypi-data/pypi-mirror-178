@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: kringle
+Version: 0.0.1
+Summary: A TUI for running, testing, and managing Advent of Code solutions.
+Project-URL: Documentation, https://github.com/stephenlutes/kringle#readme
+Project-URL: Issues, https://github.com/stephenlutes/kringle/issues
+Project-URL: Source, https://github.com/stephenlutes/kringle
+Author: Stephen Lutes
+License-File: LICENSE.txt
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+=======
+Kringle
+=======
+
+A TUI for running, testing, and managing Advent of Code solutions.
+
+Installation
+------------
+
+``pip install kringle``
