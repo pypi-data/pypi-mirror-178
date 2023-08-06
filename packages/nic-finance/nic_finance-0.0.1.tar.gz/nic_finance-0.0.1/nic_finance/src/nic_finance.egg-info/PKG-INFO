@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: nic-finance
+Version: 0.0.1
+Summary: Librarie pour le calcul financiers
+Author: Nicolas-ngeleza
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+C'est module aide les devs python d'appeler les fonctions pour faire calculer financier
