@@ -1,0 +1,11 @@
+absbox/__init__.py,sha256=qrGSZDdH_C7kqd1MPL2Ym1xeSc_4iGfauosR5xG5Qkw,308
+absbox/client.py,sha256=R3jNJ6UmwptnASIq4WfrfORryVRCf_2RcsOLPnOp8Ds,9642
+absbox/local/china.py,sha256=0H8v9AnG-5BvnXm69rftrtvdAGKFoz5AcMLTUydcdm0,19263
+absbox/local/component.py,sha256=DHGiLwcjDXOAF6ugWgPH-8jErAJ6L-wd1WanssGaNfU,33594
+absbox/local/generic.py,sha256=w3G8yu7Z1yGdDRNWPK9Xe2XyMkMxeR19HiYh6VKJnSE,15937
+absbox/local/util.py,sha256=mHIA2eaNgKAzsEFUVDtapvdMA-27fHEG12DoVS5yjX4,8735
+AbsBox-0.5.2.0.dist-info/LICENSE,sha256=bs29fxEMupkQNH24x-tjgmOLyY2I38al_4X17xkKXho,11346
+AbsBox-0.5.2.0.dist-info/METADATA,sha256=Sr-kw5MxQeh9z07RixK_jYwxPOqWXoa23y5AHqysXYQ,1619
+AbsBox-0.5.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+AbsBox-0.5.2.0.dist-info/top_level.txt,sha256=qRm4ez_PCLZNx1jxSfHvNQiar_nhWVrYJm1umvonoL8,7
+AbsBox-0.5.2.0.dist-info/RECORD,,
