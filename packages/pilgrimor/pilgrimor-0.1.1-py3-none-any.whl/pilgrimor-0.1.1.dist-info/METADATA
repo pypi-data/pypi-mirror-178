@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: pilgrimor
+Version: 0.1.1
+Summary: 
+Home-page: https://github.com/pilgrimor/pilgrimor
+License: LICENSE
+Keywords: pilgrimor,migartions
+Author: Kiselev Aleksandr
+Author-email: askiselev00@gmail.com
+Maintainer: Kiselev Aleksandr
+Maintainer-email: askiselev00@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: System :: Networking
+Classifier: Typing :: Typed
+Requires-Dist: importlib-metadata (>=4.12.0,<5.0.0)
+Requires-Dist: psycopg (>=3.1.4,<4.0.0)
+Requires-Dist: psycopg-binary (>=3.1.4,<4.0.0)
+Requires-Dist: psycopg-c (>=3.1.4,<4.0.0)
+Requires-Dist: pydantic (>=1.9.1,<2.0.0)
+Requires-Dist: python-dotenv (>=0.20.0,<0.21.0)
+Requires-Dist: tomlkit (>=0.11.1,<0.12.0)
+Project-URL: Documentation, https://github.com/pilgrimor/pilgrimor
+Project-URL: Repository, https://github.com/pilgrimor/pilgrimor
+Description-Content-Type: text/markdown
+
+# pilgrimor
+Database migration tool with versioning
+for python projects
+
+## Installation:
+
+### with pip
+```
+pip install pilgrimor
+```
+
+### with poetry
+```
+poetry add pilgrimor
+```
+
+## Usage:
+
+### Main commands:
+* `initdb` - create technical migrations table.
+* `apply` - apply new migrations.
+* `apply —-version <version number>` - apply new migrations with version.
+* `rollback —-version <version number>`- rollback migrations to version inclusive.
+* `rollback —-latest` - rollback to latest version.
+
+### Necessary things
+You need to specify some fields in your pyproject.toml
+```
+[tool.pilgrimor]
+migrations_dir = "./migrations/"
+database_engine = "PSQL"
+env_file = "./.env"
+```
+migrations_dir - folder with migrations
+database_engine - there is only one database engine PSQL
+env_file = path to .env file
+
+### Migration file structure:
+Migration file contains two blocks - apply and rollback with sql commands.
+For example:
+```
+—- apply —-
+SQL CODE
+
+—- rollback —-
+SQL CODE
+```
+
+
