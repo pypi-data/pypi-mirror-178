@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+portugython/__init__.py
+portugython/aleatorio.py
+portugython/embutidos.py
+portugython/matematica.py
+portugython/pegasenha.py
+portugython.egg-info/PKG-INFO
+portugython.egg-info/SOURCES.txt
+portugython.egg-info/dependency_links.txt
+portugython.egg-info/top_level.txt
