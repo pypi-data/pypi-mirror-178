@@ -1,0 +1,2 @@
+[nbdev]
+biobert_bern = biobert_bern._modidx:d
