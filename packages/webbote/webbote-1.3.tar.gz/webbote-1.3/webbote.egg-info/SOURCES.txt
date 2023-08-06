@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+webbote/__init__.py
+webbote/webbote.py
+webbote.egg-info/PKG-INFO
+webbote.egg-info/SOURCES.txt
+webbote.egg-info/dependency_links.txt
+webbote.egg-info/top_level.txt
