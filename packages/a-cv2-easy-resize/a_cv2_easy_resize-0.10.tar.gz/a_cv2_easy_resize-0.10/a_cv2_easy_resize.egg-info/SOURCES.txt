@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+a_cv2_easy_resize/LICENSE
+a_cv2_easy_resize/README.MD
+a_cv2_easy_resize/__init__.py
+a_cv2_easy_resize/requirements.txt
+a_cv2_easy_resize/thirdparty.json
+a_cv2_easy_resize.egg-info/PKG-INFO
+a_cv2_easy_resize.egg-info/SOURCES.txt
+a_cv2_easy_resize.egg-info/dependency_links.txt
+a_cv2_easy_resize.egg-info/requires.txt
+a_cv2_easy_resize.egg-info/top_level.txt

@@ -1,0 +1,4 @@
+include a_cv2_easy_resize/requirements.txt
+include a_cv2_easy_resize/thirdparty.json
+include a_cv2_easy_resize/README.MD
+include a_cv2_easy_resize/LICENSE
