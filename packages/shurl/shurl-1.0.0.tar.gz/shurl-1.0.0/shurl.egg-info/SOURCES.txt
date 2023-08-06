@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+shurl/__init__.py
+shurl/shurl.py
+shurl.egg-info/PKG-INFO
+shurl.egg-info/SOURCES.txt
+shurl.egg-info/dependency_links.txt
+shurl.egg-info/entry_points.txt
+shurl.egg-info/top_level.txt
