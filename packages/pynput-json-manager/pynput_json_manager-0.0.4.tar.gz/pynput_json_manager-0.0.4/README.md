@@ -1,0 +1,69 @@
+# Json_Manager
+
+The purpose of the project is to provide a single package that handles experimental setups for your work. The structure of a set of experiments is as follows. We have a folder `path_to_information` which will contain the different options for our experiments (is it running? hyper-parameters,...) and a folder `exp_folder` which will contain one json file per-exp.
+
+To have a simple and straight-forward way to create and manage the files, we use pynput which requires some authorization at installation (see this [link](https://stackoverflow.com/questions/69620702/this-process-is-not-trusted-when-running-code-in-pycharm) for more information).
+
+
+## Tutorial
+
+I made a [tutorial](https://asciinema.org/a/kRLcyEj7vfAR5A9Uoks7nIyTu) (you can copy/paste the CLI from the video demo) for this package. In the tutorial, we create experiments which will depend on three parameters. The first one is an integer with default value 2, the second is bool with default value True and the last is a flaot with default value 2.5 (and only values of .0 or 0.5 are accepted). Then we create three experiments, before deleting one and removing the second option (the bool option).
+
+In the tutorial, we show how you can navigate when generating exp (i use the arrows of the keyboard) and type values when setting float/int variables.
+
+## How to use
+
+We can do several things here
+- [x] get a summary of all the experiments available
+- [x] add a new options for old and future experiements
+- [x] generate new experiments
+- [x] delete old experiments
+- [x] delete parameters in all experiments
+- [x] reset experiments values to default (in order to restart experiments for example)
+
+For all cli command, you can add the following arguments `--exp_folder` and `--path_to_information` to have a custom folder naming. Note that if the folders don't exist they are created by the program.
+
+### summary of all experiments
+
+simply run
+```
+python -m src.pynput_json_manager.manage_jsons --status
+```
+or use `get_status(exp_folder, path_to_information)`
+
+### add option
+
+simply run
+```
+python -m src.pynput_json_manager.manage_jsons --add_param
+```
+or use `add_parameters_to_exps(exp_folder, path_to_information)`
+
+### generate a new exp
+simply run
+```
+python -m src.pynput_json_manager.manage_jsons --generate
+```
+or use `create_exp(exp_folder, path_to_information)`
+
+### delete experiments
+simply run
+```
+python -m src.pynput_json_manager.manage_jsons --delete
+```
+or use `delete_exps(exp_folder, path_to_information)`
+
+### delete parameters
+simply run
+```
+python -m src.pynput_json_manager.manage_jsons --delete_param
+```
+or use `delete_key_in_exps(exp_folder, path_to_information)`
+
+### reset experiments
+simply run
+
+```
+python -m src.pynput_json_manager.manage_jsons --reset arg1 arg2
+```
+or use `reset_exps(exp_folder, path_to_information, keys_to_reset)`
