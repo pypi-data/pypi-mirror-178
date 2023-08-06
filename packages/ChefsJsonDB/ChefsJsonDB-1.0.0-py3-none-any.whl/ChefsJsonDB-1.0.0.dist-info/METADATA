@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: ChefsJsonDB
+Version: 1.0.0
+Summary: database for python users with easy to use and modify Json files
+Author: Noam Avned
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+ChefsJsonDB
+=======================
+
+A database using Json files instead of db files for easy use.  
+
+to import use ``import cjdb``
+
+
+Change Log
+=======================
+
+1.0.0 (25/11/2022)
+-------------------
+- First Release
