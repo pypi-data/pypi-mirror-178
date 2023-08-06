@@ -1,0 +1,1 @@
+A simple module will allow you to create Excel spreadsheets simply and without unnecessary fuss
