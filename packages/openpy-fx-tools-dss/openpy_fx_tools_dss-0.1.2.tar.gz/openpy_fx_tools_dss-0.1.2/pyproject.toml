@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "openpy-fx-tools-dss"
+version = "0.1.2"
+license = "LICENSE"
+description = "Python functions for extracting, executing routines, etc. from projects modeled in OpenDSS"
+authors = ["Jorge A. Lara S. <jlara@iee.unsj.edu.ar>"]
+maintainers = ["Jorge A. Lara S. <jlara@iee.unsj.edu.ar>"]
+readme = "README.md"
+repository = "https://github.com/jlara6/OpenPy-fx-tools-DSS"
+keywords = ["OpenDSS", "Distribution stystem", "Python", "smart grid"]
+
+packages = [{include = "openpy_fx_tools_dss"}]
+exclude = ["openpy_fx_tools_dss/IMEX_to_DSS/DIGS_to_DSS/*"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+colorama = "0.4.6"
+numpy = "1.23.5"
+openpyxl = "3.0.10"
+pandas = "1.5.2"
+py-dss-interface = "1.0.2"
+opendssdirect-py = "0.7.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
