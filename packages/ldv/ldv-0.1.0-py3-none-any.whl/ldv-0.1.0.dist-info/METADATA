@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: ldv
+Version: 0.1.0
+Summary: Light Data Versioning
+Home-page: https://github.com/martinnorin/ldv
+Author: Martin Norin
+Author-email: jobb@martinnorin.se
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: click
+Provides-Extra: all
+Requires-Dist: boto3 ; extra == 'all'
+Requires-Dist: watchdog ; extra == 'all'
+Provides-Extra: aws
+Requires-Dist: boto3 ; extra == 'aws'
+Provides-Extra: listener
+Requires-Dist: watchdog ; extra == 'listener'
+
+# ldv
+Light Data Versioning
