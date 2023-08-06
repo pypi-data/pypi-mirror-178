@@ -1,0 +1,11 @@
+Django
+fastapi
+Flask
+requests
+
+[build]
+build
+twine
+
+[dev]
+pytest
