@@ -1,0 +1,9 @@
+gqvis/__init__.py,sha256=bDcgRFo_-bJDwTDTl5yLE-R3gI7fa-6VOPtxHoJnSVA,53
+gqvis/gqvis.py,sha256=yvMvKCXTQzNx_UWO3KBLUdZRTmhCCqWceaYuwQ5GNfE,5834
+gqvis/template/dummyData.js,sha256=OiY3auCBoJHGb9EkHx6zjxEKQC4R5TezELopKApfxSQ,793
+gqvis/template/graphVisualisation.js,sha256=GkiFy-2TuDt4Tjj40TCmOYtAA3fROimXARNv8jzZ8Zo,13020
+gqvis/template/template.html,sha256=aQq2B7ItaL8wMZp6q6JLR7sBzQ9PoqGeGN_KeZOaZMI,17669
+gqvis-0.1.12.dist-info/License.md,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+gqvis-0.1.12.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+gqvis-0.1.12.dist-info/METADATA,sha256=76UNJ9YD8741TFBBiDMeSxXv29FaK6attsiPg8Q4NLE,4605
+gqvis-0.1.12.dist-info/RECORD,,
