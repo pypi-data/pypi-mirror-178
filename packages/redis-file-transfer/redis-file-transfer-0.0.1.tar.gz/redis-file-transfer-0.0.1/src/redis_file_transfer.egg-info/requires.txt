@@ -1,0 +1,8 @@
+
+[dev]
+black
+flake8
+pytest
+invoke
+pytest-cov
+isort
