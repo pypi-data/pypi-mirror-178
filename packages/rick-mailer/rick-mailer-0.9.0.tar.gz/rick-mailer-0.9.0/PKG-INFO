@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: rick-mailer
+Version: 0.9.0
+Summary: Simple library to send emails
+Home-page: https://github.com/oddbit-project/rick-mailer
+Author: João Pinheiro
+License: BSD-3-Clause
+Project-URL: Documentation, https://oddbit-project.github.io/rick-mailer/
+Project-URL: Source, https://github.com/oddbit-project/rick-mailer
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+License-File: LICENSE
+
+rick_mailer - SMTP Client
+--
+[![Tests](https://github.com/oddbit-project/rick_mailer/workflows/Tests/badge.svg?branch=master)](https://github.com/oddbit-project/rick_mailer/actions)
+[![pypi](https://img.shields.io/pypi/v/rick-mailer.svg)](https://pypi.org/project/rick-mailer/)
+[![license](https://img.shields.io/pypi/l/rick-mailer.svg)](https://github.com/oddbit-project/rick_mailer/blob/master/LICENSE)
+
+
+rick_mailer is a standalone version of Django's email client implementation, with minor changes. 
+
+## License
+As rick_mailer is mostly Django code, it is licensed under Django license and copyright - see the included [License file](LICENSE).
+
+
+## Documentation
+
+TBD
+
+
