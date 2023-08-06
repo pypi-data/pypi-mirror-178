@@ -1,0 +1,6 @@
+librosa
+matplotlib
+music21
+numpy
+pretty_midi
+scipy
