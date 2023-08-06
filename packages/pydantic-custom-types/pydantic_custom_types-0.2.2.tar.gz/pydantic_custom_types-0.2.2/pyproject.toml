@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "pydantic-custom-types"
+version = "0.2.2"
+description = "Custom types for pydantic used in SRE peipelins for validation input vars"
+authors = ["per lejon <per.lejon@netigate.se>"]
+readme = "README.md"
+packages = [{include = "pydantic_custom_types"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+build = "^0.9.0"
+python-decouple = "^3.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
