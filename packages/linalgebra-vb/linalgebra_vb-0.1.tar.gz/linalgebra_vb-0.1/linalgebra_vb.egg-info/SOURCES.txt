@@ -1,0 +1,8 @@
+setup.py
+linalgebra_vb/Linearalgebracalcs.py
+linalgebra_vb/__init__.py
+linalgebra_vb.egg-info/PKG-INFO
+linalgebra_vb.egg-info/SOURCES.txt
+linalgebra_vb.egg-info/dependency_links.txt
+linalgebra_vb.egg-info/not-zip-safe
+linalgebra_vb.egg-info/top_level.txt
