@@ -1,0 +1,10 @@
+AncientLibrary/__init__.py,sha256=Wq26TRqelHjsFQqRdp3jKfQ1BChu8gjAtd8R5QQS3I0,34
+AncientLibrary/algebra.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+AncientLibrary/machine.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+AncientLibrary/solver.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+AncientLibrary/stats.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+AncientLibrary/visuals.py,sha256=43YDkDQCaP6Ws7n096mRFpp3KeXI357TwEiR5KB2xc8,4325
+AncientLibrary-0.0.5.dist-info/METADATA,sha256=2Xm1TbTfdoCI8Wk3zvdk9RgR7a5P7eNsTEMqjVNCx9I,751
+AncientLibrary-0.0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+AncientLibrary-0.0.5.dist-info/top_level.txt,sha256=JpFrVgeqjkv0-SGSkxbudzp-BL7NJa4gI4WD-onXMJc,15
+AncientLibrary-0.0.5.dist-info/RECORD,,
