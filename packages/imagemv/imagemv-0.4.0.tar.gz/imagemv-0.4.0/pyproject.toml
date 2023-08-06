@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "imagemv"
+version = "0.4.0"
+authors = [
+  { name="ttime", email="tmp-imagemv@danieljames.ch" },
+]
+description = "Move photos and videos into a directory tree structure sorted by date taken"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Multimedia :: Graphics",
+    "Topic :: Multimedia :: Video",
+    "Topic :: System :: Archiving",
+]
+
+[project.scripts]
+imagemv = "imagemv.cli:main"
+
+[tool.black]
+target-version = ['py39']
+
+[project.urls]
+"Homepage" = "https://gitlab.com/ttime/imagemv"
+"Bug Tracker" = "https://gitlab.com/ttime/imagemv/-/issues"

@@ -1,0 +1,55 @@
+# imagemv
+
+Move photos and videos into a directory tree sorted by date taken.
+
+## Use as a Sync and / or Backup Script
+
+Optionally keep the original files in the source directory (copy instead of move). 
+Either keep all of them or only up to a certain age (as defined by a configurable number of days). This is a useful feature if the source directory is synced with a mobile phone or similar device with limited storage.
+
+```
+../DEST/
+│
+├── 2022/
+│   ├── 08/
+│   │   ├── 23/
+│   │   │   └── IMG_20220823_154532.jpg
+│   ├── 09/
+│   │   ├── 03/
+│   │   │   ├── Screenshot-1.png
+│   │   │   └── VID_2022-08-24_08:34:56.mp4
+│   │   ├── 04/
+│   │   │   ├── Matrix.mov
+├── 2023/
+│   ├── 01/   
+```
+
+The program will recursively traverse the source directory and sort all image files found based on their metadata. If no date is found, the program will try to parse the date from the filename. Failing that, the file's [`st-mtime`](https://en.wikipedia.org/wiki/Stat_(system_call)) will be used.
+
+Original metadata and filenames are preserved. When an image with the same filename already exists at the destination path, the program will skip the file and continue processing with the next file.
+
+## Usage
+
+```
+imagemv
+
+Usage:
+  imagemv.py SOURCE DEST [--keep=<days>] [--dry-run]
+  imagemv.py SOURCE DEST [--keep-all] [--dry-run]
+  imagemv.py (-h | --help)
+  imagemv.py (-v | --version)
+
+Options:
+  -h --help          Show this screen.
+  -v --version       Show version.
+  --verbose          Print more information about progress.
+  --keep=<days>      Keep original files which are newer than the specified age in <days> [default: 0].
+  --keep-all         Keep all original files.
+  --dry-run          Simulation mode (no changes will be written to the filesystem).
+```
+
+### Example
+
+```
+imagemv --dry-run --keep=365 ~/phone-sync/DCIM/Camera ~/Images
+```
