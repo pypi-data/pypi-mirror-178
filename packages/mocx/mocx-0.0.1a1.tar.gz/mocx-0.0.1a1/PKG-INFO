@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: mocx
+Version: 0.0.1a1
+Home-page: https://codeberg.org/Fresh2dev/mocx
+Author: donald
+Author-email: hello@fresh2.dev
+Project-URL: Repository, https://codeberg.org/Fresh2dev/mocx
+Project-URL: Issues, https://codeberg.org/Fresh2dev/mocx/issues
+Project-URL: Documentation, https://www.Fresh2.dev/code/r/mocx/i/docs
+Project-URL: Changelog, https://www.Fresh2.dev/code/r/mocx/i/docs/changelog
+Project-URL: Funding, https://www.Fresh2.dev/tip
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: build
+Provides-Extra: docs
+Provides-Extra: dev
+Provides-Extra: tests
+Provides-Extra: fastapi
+License-File: LICENSE
+
+# mocx
+
+1. `myke set-version`
