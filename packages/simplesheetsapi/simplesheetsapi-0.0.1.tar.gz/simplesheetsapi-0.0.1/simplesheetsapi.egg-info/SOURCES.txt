@@ -1,0 +1,7 @@
+setup.py
+simplesheetsapi/__init__.py
+simplesheetsapi.egg-info/PKG-INFO
+simplesheetsapi.egg-info/SOURCES.txt
+simplesheetsapi.egg-info/dependency_links.txt
+simplesheetsapi.egg-info/requires.txt
+simplesheetsapi.egg-info/top_level.txt
