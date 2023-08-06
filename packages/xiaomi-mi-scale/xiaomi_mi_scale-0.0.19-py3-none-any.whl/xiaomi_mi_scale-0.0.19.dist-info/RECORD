@@ -1,0 +1,10 @@
+xiaomi_mi_scale/Xiaomi_Scale_Body_Metrics.py,sha256=LQtIZaEgWzQeZ983uV2Q5kOMtxhzaah5cqZfwKEOd5I,8321
+xiaomi_mi_scale/__init__.py,sha256=JipUneJwnKIlRoX5s8dMHuWxkN9aDY1pDy1gKxXknCI,799
+xiaomi_mi_scale/body_scales.py,sha256=NNv4tkVnyPvfrjQwRriVyf_xji8XwnwCr3DSl5Rrr2U,6847
+xiaomi_mi_scale/body_score.py,sha256=pGOXqSljOgqac3qEQ5A1Bv1BWgOgPdY1UqsoxcB_mUY,6812
+xiaomi_mi_scale/parser.py,sha256=Rm5vboVlYCkLgokHkJoh8Kb-A5V7vTIlry8-GIy3Azw,5054
+xiaomi_mi_scale-0.0.19.dist-info/METADATA,sha256=mpC5yB0zicUB8suBrtpOCHkv3z81KeuwulUDFpPndVY,603
+xiaomi_mi_scale-0.0.19.dist-info/WHEEL,sha256=sb4ZHsmozXdkdXRvpMHZmhxsxQvL8DERDUEGA9tAfc8,83
+xiaomi_mi_scale-0.0.19.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xiaomi_mi_scale-0.0.19.dist-info/license_files/LICENSE,sha256=eK2NOn3Gs6NpuvFYlOkz_iN5YkoOIoACzIaUi0gxyjI,1088
+xiaomi_mi_scale-0.0.19.dist-info/RECORD,,
