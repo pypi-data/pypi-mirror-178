@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+bandwidth/k8perf.egg-info/PKG-INFO
+bandwidth/k8perf.egg-info/SOURCES.txt
+bandwidth/k8perf.egg-info/dependency_links.txt
+bandwidth/k8perf.egg-info/entry_points.txt
+bandwidth/k8perf.egg-info/requires.txt
+bandwidth/k8perf.egg-info/top_level.txt
