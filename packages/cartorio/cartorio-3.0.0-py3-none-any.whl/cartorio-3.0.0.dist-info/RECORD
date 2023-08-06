@@ -1,0 +1,9 @@
+cartorio/__init__.py,sha256=yZvQUlf7cCdWMq3hSZnJ3ov4qvnlCdUvfL6428JNQsk,64
+cartorio/log.py,sha256=3KwTMUraa6ILQMwM_9qDSVcskh9Ij5wIM4K8_pTjBTE,5002
+cartorio/conf/logging.conf,sha256=LJESSeMqUxwdQ0H9rggCtkLMgYoXujcUCKcFE9pwIb4,482
+cartorio-3.0.0.dist-info/LICENSE,sha256=ll2Cla6H4x84HBsz7qOrw2gOOnPLhjJ_cjns71N872g,1100
+cartorio-3.0.0.dist-info/METADATA,sha256=BEKjfE6Q9HcY_eP2XQfj0kJJMMorJ03w3I1JcFFgOkY,2326
+cartorio-3.0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+cartorio-3.0.0.dist-info/entry_points.txt,sha256=sSXyTYRVbP_CKF-A0UT512nxLe5ZbvJAR_ImhkHJJxc,53
+cartorio-3.0.0.dist-info/top_level.txt,sha256=eEAskRpcG--T6rNp_I0QDvZ6XMNT2u67AcDBE9Awm-Y,9
+cartorio-3.0.0.dist-info/RECORD,,
