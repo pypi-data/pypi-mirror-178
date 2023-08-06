@@ -1,0 +1,14 @@
+supSMSASM/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+supSMSASM/cli.py,sha256=GCDOBAwunIb9TTEPUpSKJ1hi2OQkxnUCMiBplTehiHw,6585
+supSMSASM/include/macros.inc,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+supSMSASM/ldscript/NTSC-J_1.0.ld,sha256=a0w50IsDP9FzLJoNKLBoxP4ZZF8WuNUZ9r6p3f8n-Ts,2327684
+supSMSASM/ldscript/NTSC-J_1.1.ld,sha256=6hPTGj4Ob_3MeaDPkWVTr1mhWas94-d53AIZb6TQSow,2308772
+supSMSASM/ldscript/NTSC-U.ld,sha256=pMVRywWXtuCy3pwS0GZ5EbBAiTYiBMFrkzR7RfShgtM,2224580
+supSMSASM/ldscript/PAL.ld,sha256=tPBda836AryOzuIziKS87MX_uSe10_Gd1Vlf-nRRKOE,2313820
+supSMSASM/ldscript/common.ld,sha256=rVXpxBUbIgCoavzhXjEj60f_HscHwgKbtvD45r44g9w,118
+supSMSASM-0.0.6.dist-info/LICENSE,sha256=eUag5H5xavzS6jXameTsIN73KldDmYDsQguAiLhLLWM,1097
+supSMSASM-0.0.6.dist-info/METADATA,sha256=_o3V2rLn7WUPEjtDlHTZkHA_rmU4vckoxpS3ihl511M,3992
+supSMSASM-0.0.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+supSMSASM-0.0.6.dist-info/entry_points.txt,sha256=rZ4mwnvAtxRTFTAyO4W2iukarxDTxUsh6XSR2FUPPUs,49
+supSMSASM-0.0.6.dist-info/top_level.txt,sha256=GFka6_FxRihpJovxFm1Qw_s-J-9upj818oj5vSlGibc,10
+supSMSASM-0.0.6.dist-info/RECORD,,
