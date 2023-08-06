@@ -1,0 +1,8 @@
+whlctl/__init__.py,sha256=IlUYwmgM_V08AZfGfJbCVXh8l2o2DiZMgwYb6AFxhTU,175
+whlctl/cli.py,sha256=bJWahSqusZJUKqi9ScnHEXn8Xv3lsJiJtymi9663NJo,1570
+whlctl/whlctl.py,sha256=4i2dBpBc_xVoBTP4K2fDyMFKnCjgDMm2Fm7yna3JLJU,2524
+whlctl-0.1.1.dist-info/entry_points.txt,sha256=-xYU2F57-OkdH6XpqUJGKHTsTjREQZjcomvmQ73GeuY,42
+whlctl-0.1.1.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+whlctl-0.1.1.dist-info/WHEEL,sha256=kdeDBNPvBI0w3meLKPoGgAnEr54n1jzrZWUoaLmGzVY,99
+whlctl-0.1.1.dist-info/METADATA,sha256=zoX3skgn4EfEzEA_ZQZ-1v0l0eHVDyabjCFzHblBGVA,2399
+whlctl-0.1.1.dist-info/RECORD,,
