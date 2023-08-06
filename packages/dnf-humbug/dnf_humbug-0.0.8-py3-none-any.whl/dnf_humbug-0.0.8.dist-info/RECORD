@@ -1,0 +1,8 @@
+dnf_humbug/__init__.py,sha256=avvPHPc5fMVjEV5MHtj75k_LU5HhNA_GvXBd0AQ8ZLk,87
+dnf_humbug/__main__.py,sha256=avvPHPc5fMVjEV5MHtj75k_LU5HhNA_GvXBd0AQ8ZLk,87
+dnf_humbug/app.py,sha256=wqvLtJ9QINa0bBB8et051c5rW5UDBif_ZtOdXfXH3XA,9749
+dnf_humbug-0.0.8.dist-info/METADATA,sha256=NUNeNhZHn6Hw2bzi21PFm08PilgDkiwcWNOdtB5b7p4,1724
+dnf_humbug-0.0.8.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+dnf_humbug-0.0.8.dist-info/entry_points.txt,sha256=yNyZIMKtUVXTH_herLiIjPkhHOu4d0jU4RxXYAm_-Mg,51
+dnf_humbug-0.0.8.dist-info/top_level.txt,sha256=_a1FWq3AJ2OUW5tO45tsxzeL6Ij5CyTxbdBjwuWNlfU,11
+dnf_humbug-0.0.8.dist-info/RECORD,,
