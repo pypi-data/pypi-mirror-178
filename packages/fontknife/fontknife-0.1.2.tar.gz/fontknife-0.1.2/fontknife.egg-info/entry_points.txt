@@ -1,0 +1,2 @@
+[console_scripts]
+fontknife = fontknife.commands.__main__:main
