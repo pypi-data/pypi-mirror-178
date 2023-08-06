@@ -1,0 +1,3 @@
+[console_scripts]
+layrageu = layrageu.tui:main
+layrageu-gui = layrageu.gui:main
