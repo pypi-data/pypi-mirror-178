@@ -1,0 +1,8 @@
+numpy>=1.13.3
+six>=1.10
+
+[tests]
+gevent!=1.5a1
+psutil
+pytest
+pytest-forked
