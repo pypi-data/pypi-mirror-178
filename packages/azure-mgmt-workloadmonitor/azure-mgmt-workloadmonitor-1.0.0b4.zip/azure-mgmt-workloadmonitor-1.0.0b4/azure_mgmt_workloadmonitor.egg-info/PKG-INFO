@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: azure-mgmt-workloadmonitor
+Version: 1.0.0b4
+Summary: Microsoft Azure Workload Monitor Management Client Library for Python
+Home-page: https://github.com/Azure/azure-sdk-for-python
+Author: Microsoft Corporation
+Author-email: azpysdkhelp@microsoft.com
+License: MIT License
+Keywords: azure,azure sdk
+Classifier: Development Status :: 7 - Inactive
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+The package has been deprecated. For more info, please see https://github.com/azure-deprecation/dashboard/issues/239
+
+
+# Release History
+
+## 1.0.0b4 (2022-11-29)
+
+### Other Changes
+
+  - Deprecated this package. For more info, please see https://github.com/azure-deprecation/dashboard/issues/239
+
+## 1.0.0b3 (2022-10-27)
+
+### Other Changes
+
+  - Added generated samples in github repo
+  - Drop support for python<3.7.0
+
+## 1.0.0b2 (2020-11-09)
+
+**Features**
+
+  - Added operation group HealthMonitorsOperations
+
+**Breaking changes**
+
+  - Removed operation group MonitorsOperations
+
+## 1.0.0b1 (2020-10-29)
+
+* Initial Release
