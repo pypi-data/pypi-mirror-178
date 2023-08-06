@@ -1,0 +1,36 @@
+
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trelloscheduler-cli"
+version = "1.0.0"
+description = "Create a Trello schedule through a commandline interface"
+readme = "README.md"
+authors = [{ name = "Olin Gallet", email = "olindgallet@olingallet.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["trello", "cli", "scheduler"]
+dependencies = [
+	"certifi",
+	"charset-normalizer",
+	"idna",
+	"oauthlib",
+	"plumbum",
+	"py-trello",
+	"python-dateutil",
+	"pytz",
+	"request",
+	"requests-oauthlib",
+	"six",
+	"urllib3"
+]
+
+requires-python = ">=3.9"
+
+[project.scripts]
+trelloschedulercli = "trellocli.__main__:main"

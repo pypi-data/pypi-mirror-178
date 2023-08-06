@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/trellocli/__init__.py
+src/trellocli/__main__.py
+src/trellocli/trellobot.py
+src/trellocli/exceptions/environmentvarsnotsetexception.py
+src/trellocli/fparser/daystringutils.py
+src/trellocli/system/environment.py
+src/trellocli/system/jsonloader.py
+src/trellocli/system/terminal.py
+src/trelloscheduler_cli.egg-info/PKG-INFO
+src/trelloscheduler_cli.egg-info/SOURCES.txt
+src/trelloscheduler_cli.egg-info/dependency_links.txt
+src/trelloscheduler_cli.egg-info/entry_points.txt
+src/trelloscheduler_cli.egg-info/requires.txt
+src/trelloscheduler_cli.egg-info/top_level.txt
