@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: quant-global
+Version: 0.0.2
+Summary: This package allows access to data provided by Quantitative Global Indices.
+Author: Quantitative Global Indices, LLC (Earl Charles)
+Author-email: <echarles@qg-indices.com>
+License: UNKNOWN
+Keywords: python,quantitative finance,alternative data,statistics,stocks
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: requests
+
+UNKNOWN
+
