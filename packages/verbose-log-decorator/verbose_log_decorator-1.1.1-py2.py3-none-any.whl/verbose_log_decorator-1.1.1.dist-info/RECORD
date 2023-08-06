@@ -1,0 +1,9 @@
+log_decorator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+log_decorator/async_log.py,sha256=mNTKAJfkzMJ993P2UFxliC0C_bpMzmK0GeRmzWmbbcY,3047
+log_decorator/log.py,sha256=8ZeaMkULRUWTmjVuOBKE9fxqlRc3e-W6twGiZz5D1mM,5839
+log_decorator/log_formatter.py,sha256=pi1ElEhZs1UtxXsWav9xtp19ZQA8t-goc_P4ZQxVkS4,2900
+verbose_log_decorator-1.1.1.dist-info/LICENSE,sha256=n0f1RaVijvQIrIFeXwWmFZn3SBoj4zFVhW3DFx-FejI,11342
+verbose_log_decorator-1.1.1.dist-info/METADATA,sha256=YklrnpKshYm8T5yNrOoCESUbrLzmDyqutiMx424_TU0,8411
+verbose_log_decorator-1.1.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+verbose_log_decorator-1.1.1.dist-info/top_level.txt,sha256=cUgMSi7VKAYL-48YOROr9ez2VFnktI4UH6nh1oWxO5A,14
+verbose_log_decorator-1.1.1.dist-info/RECORD,,
