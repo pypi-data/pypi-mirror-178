@@ -1,0 +1,4 @@
+[console_scripts]
+fedit = pyutilities.io.fedit:fedit
+pyftp = pyutilities.network.pyftp:pyftp
+pyssh = pyutilities.network.pyssh:pyssh
