@@ -1,0 +1,9 @@
+mdb_codegen/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mdb_codegen/data_loader.py,sha256=XcYuqhvTsoWBGfsfDKqwDZYOhuaNRGIwfyezF3Q9PHM,4362
+mdb_codegen/djaccess.py,sha256=gXNFL_CZ6fW5fLnlArw755T8d96_AANY6G54DRQyBDY,16142
+mdb_codegen/jsontools.py,sha256=mu1N-Y_dxnPKtflHpBs8dPvQCoc65s3XJW3tUuJ4zH8,6885
+mdb_codegen/mdb-codegen.py,sha256=Fcv726qaogHr3Vet_rZPJ96P3S-fCl0Sj1drM_wtd9c,2633
+mdb_codegen/mdbtools.py,sha256=f7gZkO-xwRdxY9b6NU-5YL-9IyB95eQHDNlJfsHbFdI,9461
+mdb_codegen-0.1.4.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+mdb_codegen-0.1.4.dist-info/METADATA,sha256=hCdilrDPhz9sxXWHWQroVzTSXvtJafXx6IhxA-fWsz0,1220
+mdb_codegen-0.1.4.dist-info/RECORD,,
