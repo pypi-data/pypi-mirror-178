@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: TIPN-sim-package
+Version: 0.0.1
+Summary: This is a test package for Petri net simulation
+Author: Pathirathna
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This is a test package for Petri net simulation
