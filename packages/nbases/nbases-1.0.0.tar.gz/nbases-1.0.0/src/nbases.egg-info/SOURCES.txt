@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/nbases/__init__.py
+src/nbases/errors.py
+src/nbases/nbase.py
+src/nbases.egg-info/PKG-INFO
+src/nbases.egg-info/SOURCES.txt
+src/nbases.egg-info/dependency_links.txt
+src/nbases.egg-info/top_level.txt

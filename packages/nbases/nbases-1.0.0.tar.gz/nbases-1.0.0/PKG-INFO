@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: nbases
+Version: 1.0.0
+Summary: nbases - number bases conversions
+Author-email: Can Gulmez <ahmetcangulmez02@gmail.com>
+Project-URL: Homepage, https://github.com/CanGulmez/nbases
+Keywords: math, logic, numbers, engineering
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## nbases - number bases conversions
+
+**nbases** package contains basically four class. These are `Decimal`,
+`Binary`, `Octal`, `Hex`. Each class has some methods which provides 
+conversions (like decimal to octal or hexadecimal to binary etc.).
+
+### Installiation
+
++ `pip install nbases`
++ `conda install nbases`
+
+### License
+
++ MIT License

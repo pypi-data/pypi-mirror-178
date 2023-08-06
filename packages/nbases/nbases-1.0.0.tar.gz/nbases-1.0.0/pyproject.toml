@@ -1,0 +1,23 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nbases"
+version = "1.0.0"
+authors = [
+   {name = "Can Gulmez", email = "ahmetcangulmez02@gmail.com"},
+]
+description = "nbases - number bases conversions"
+keywords= ["math, logic, numbers, engineering"]
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+[project.urls]
+"Homepage" = "https://github.com/CanGulmez/nbases"
