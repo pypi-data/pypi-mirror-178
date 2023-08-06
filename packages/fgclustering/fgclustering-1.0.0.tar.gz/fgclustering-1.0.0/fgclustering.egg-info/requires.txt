@@ -1,0 +1,11 @@
+pandas
+numpy
+matplotlib
+seaborn>=0.12
+sklearn
+kmedoids
+scipy
+tqdm
+statsmodels>=0.13.5
+Sphinx>=4.2.0
+numexpr>=2.8.4
