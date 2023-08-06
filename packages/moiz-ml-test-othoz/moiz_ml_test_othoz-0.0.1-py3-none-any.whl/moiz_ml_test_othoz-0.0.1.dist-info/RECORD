@@ -1,0 +1,15 @@
+moiz_ml_test_othoz/README.pdf,sha256=u75e9n2Uz_VZMLDOQxHIy4d7lTWXXQY4PoUExI_5rNI,91973
+moiz_ml_test_othoz/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+moiz_ml_test_othoz/dataset_generator.py,sha256=GRb5pqdGs_l6FJvN5wRxdMdDs8m93THtQelLWVWraLY,2372
+moiz_ml_test_othoz/evaluate.py,sha256=_65uAjbGf-GC0vJHx6ucs2_8XZZtBD2PVOC6WU-Dyxc,2087
+moiz_ml_test_othoz/evaluation_results.pdf,sha256=9DgB2iklpb5VjjeUpQl_ZpPweL2N6vkiwHa955_psDA,547765
+moiz_ml_test_othoz/requirements.txt,sha256=-RWbuAsN25eMocTmLnJ07KXUrlZxoW0qo0iz1bzQE-g,135
+moiz_ml_test_othoz/research_paper.pdf,sha256=mdkW89iBVDfcIsY4Wxh6AKt4nO2Cm6_DloCQSBg0Sok,164158
+moiz_ml_test_othoz/settings.py,sha256=tK-Z-luD6J2fTcfXwMY7FDfTHo2PeDuHwlzmBn1_EIw,1917
+moiz_ml_test_othoz/train.py,sha256=y5Dmk9CLZlDhIueiTYHpXJb06wiWlpIPZgCOdfBdPRg,11485
+moiz_ml_test_othoz/trained_models.zip,sha256=E_VVB4N-kD35VRVqjfDS5P6I1_nKOpqPQiKTVoqpb9E,478882
+moiz_ml_test_othoz-0.0.1.dist-info/LICENSE,sha256=o07L7Wx3siJMEqLvvVANlvsw_rpsGVmwru0UElQaKmY,89
+moiz_ml_test_othoz-0.0.1.dist-info/METADATA,sha256=nBOyfnSOemKA5p79epoDSHy5Q6N4DllxgyadqMJ4tco,2038
+moiz_ml_test_othoz-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+moiz_ml_test_othoz-0.0.1.dist-info/top_level.txt,sha256=uNvPfAnbCwA10Dz3PWDiNJwQdAK7gTf-n0jKKuyaSgQ,19
+moiz_ml_test_othoz-0.0.1.dist-info/RECORD,,

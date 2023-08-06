@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: moiz-ml-test-othoz
+Version: 0.0.1
+Summary: Implemented addition of two numbers in a sequence of varying length in keras.
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Please install required libraries mentioned in requirements.txt if needed:
+"pip install -r requirements.txt"
+
+dataset_generator.py is used to generate train and test data of varying 
+sequence length and places it in /datasets directory.
+Datasets of varying sequence length can be created by using arguments 
+mentioned under main function in dataset_generator.py
+
+train.py implements Train class that is responsible for training models 
+using data in /datasets directory. Trained models are stored in /trained_models.
+
+Before proceeding with training please make sure that ‘sequence_length’ is set 
+to the right value in settings.py. 
+For example ‘settings.sequence_length’ should be set to 150 when using training
+and test data with 150 sequence length.
+Four models have been trained with following sequence lengths’ data.
+Sequence lengths: [150, 300, 400, 600].
+These models can be found in /trained_models directory.
+
+Keras tuner is also implemented which tunes gradient clip values, learning rates
+and momentum to be used with optimizer. ‘tune_hyper_parameters’ should be set to 
+False in settings.py when training normal models.
+
+After training each model, it is evaluated on test data automatically. 
+Mean loss and rmse are displayed for the test data. Moreover, 20 random examples 
+are picked from test data and their corresponding label, prediction, rmse are printed.
+Train and validation loss and metrics plots are also saved for each model 
+in the model directory which can be used to see if the model is overfitting or not.
+
+Evaluation results are shown in “evaluation_results.pdf” file.
