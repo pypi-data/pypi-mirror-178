@@ -1,0 +1,3 @@
+[console_scripts]
+pypi-multidl=pypi_multidl:main
+
