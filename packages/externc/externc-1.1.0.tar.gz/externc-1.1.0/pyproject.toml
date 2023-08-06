@@ -1,0 +1,21 @@
+# ExternC pyproject.toml
+
+[project]
+name = "externc"
+version = "1.1.0"
+description = "Inline C function declarations"
+readme = "readme.md"
+classifiers = [
+  "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: C"
+]
+authors = [
+  { name = "Fabizocker456" }
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

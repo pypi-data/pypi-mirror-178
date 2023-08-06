@@ -1,0 +1,8 @@
+LICENSE
+pyproject.toml
+src/externc/__init__.py
+src/externc/compilers.py
+src/externc.egg-info/PKG-INFO
+src/externc.egg-info/SOURCES.txt
+src/externc.egg-info/dependency_links.txt
+src/externc.egg-info/top_level.txt
