@@ -1,0 +1,7 @@
+cryptg/__init__.py,sha256=rTNOwF3ce-f98yb-D2HCVVZKEQ16ra6nE4AXxAzrBnA,23
+cryptg/cryptg.cp310-win_amd64.pyd,sha256=T2x3yKMvzA2pbUR_hYbOvInn0HhsekmcdBSnEXXJaxg,250880
+cryptg_anyos-0.4.1.dist-info/LICENSE.txt,sha256=9Ofzc7m5lpUDN-jUGkopOcLZC3cl6brz1QhKInF60yg,7169
+cryptg_anyos-0.4.1.dist-info/METADATA,sha256=hMVwJ49UG1pjA_yiS_vMIKa6D9seiyv1B8W4qkfFj1g,1415
+cryptg_anyos-0.4.1.dist-info/WHEEL,sha256=rneS2j8QNmAwdNKHN86s6-qP7AMcWZgqiEoH3bdbh_Y,102
+cryptg_anyos-0.4.1.dist-info/top_level.txt,sha256=PvMevMfLwwMBcIb6BM-uwKT1h3izfPzNCpCuvWqRuew,7
+cryptg_anyos-0.4.1.dist-info/RECORD,,
