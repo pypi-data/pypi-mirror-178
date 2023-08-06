@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: wcatapi
+Version: 1.0.4
+Summary: CatApi
+Home-page: https://api.wispace.ru/cat
+Author: WiSpace
+Author-email: wiforumit@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# CatApi
+
+random_cat() -> img: random cat
+
+## class img
+
+img.download(filename: str, encoding: str): download img
+
+img.as_bytes(): get bytes from img
+
+img.as_file(): get file from img
+
+img.url: url to img
+
+
