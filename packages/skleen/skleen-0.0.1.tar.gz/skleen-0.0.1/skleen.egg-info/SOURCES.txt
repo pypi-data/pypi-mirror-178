@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+skleen.egg-info/PKG-INFO
+skleen.egg-info/SOURCES.txt
+skleen.egg-info/dependency_links.txt
+skleen.egg-info/top_level.txt
