@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ftThanos
+Version: 0.0.76
+Summary: A client for 76 API
+Home-page: UNKNOWN
+Author: Thanos 76
+Author-email: thanos@76paris.fr
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: python-dotenv
+Requires-Dist: requests
+
+UNKNOWN
+
