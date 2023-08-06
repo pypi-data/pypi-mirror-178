@@ -1,0 +1,9 @@
+xprocess/__init__.py,sha256=qkI-74NAyiEhN41r_IFp3fZDfCmC1W62W5FRwiTawV4,241
+xprocess/pytest_xprocess.py,sha256=6--ahNadcebS0eZF-dFj_moP3-txpZxGb7OAiU7b7gY,3528
+xprocess/xprocess.py,sha256=FlnIVkk-33OgRI670YkJkUHBLX_qKmaip7s0YAKjF9M,14853
+pytest_xprocess-0.21.0.dist-info/LICENSE,sha256=6J7tEHTTqUMZi6E5uAhE9bRFuGC7p0qK6twGEFZhZOo,1054
+pytest_xprocess-0.21.0.dist-info/METADATA,sha256=8AjZXTn45u11D8IC3ypWDIUGGt7ewJYf97A4Kpoa5Ys,3736
+pytest_xprocess-0.21.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pytest_xprocess-0.21.0.dist-info/entry_points.txt,sha256=nWw9ZydecoFQEUazA_AUIssdynrFCthMHpxPxayKnz0,47
+pytest_xprocess-0.21.0.dist-info/top_level.txt,sha256=dVCa4M5kOA7zR9uIL-T_IoGL5HDSFIooLESEWyfGw3g,9
+pytest_xprocess-0.21.0.dist-info/RECORD,,
