@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: nba_player_stats
+Version: 0.0.1
+Summary: View NBA player stats in the terminal
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Quickly view NBA player stats in the terminal using data retrieved from basketball-reference.
+
+Supports viewing averages, totals, and advanced statistics for regular season and playoffs.
+
+![NBA stats demo](assets/nba-stats-demo.gif)
