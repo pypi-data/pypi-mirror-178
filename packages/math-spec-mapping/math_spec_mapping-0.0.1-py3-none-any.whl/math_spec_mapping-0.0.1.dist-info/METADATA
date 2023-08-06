@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: math-spec-mapping
+Version: 0.0.1
+Summary: A library for easy mapping of mathematical specifications.
+Author-email: Sean McOwen <Sean@Block.Science>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: graphviz (>=0.20.1)
+Requires-Dist: ipython (>=7.7.0)
+
+# Mathematical Specification Mapping Library
+
+The following is a work-in-progress library for easy mapping of mathematical specifications.
