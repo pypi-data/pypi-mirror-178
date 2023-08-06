@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: hubspot_etl_pipeline_webserver
+Version: 0.0.8
+Summary: Hubspot ETL webserver.
+Project-URL: Homepage, https://github.com/wesley950/glowing-octo-sniffle
+Project-URL: Bug Tracker, https://github.com/wesley950/glowing-octo-sniffle/issues
+Author-email: Wesley Barros <wesleybarros950@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: flask
+Requires-Dist: google-cloud-bigquery
+Requires-Dist: pandas
+Requires-Dist: python-dotenv
+Requires-Dist: selenium
+Requires-Dist: super-eureka
+Description-Content-Type: text/markdown
+
+# webserver
+This is the webserver for the Hubspot data extraction ETL "pipeline". Its purpose is to receive POST requests from the Zapier integration with the exported report download link.
