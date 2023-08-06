@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: pysnmptui_K0HAX
+Version: 0.1.2022112704
+Summary: Python SNMP TUI (Terminal User Interface)
+Author-email: Michael Englehorn <michael+pypi@englehorn.com>
+Project-URL: Homepage, https://github.com/K0HAX/pysnmptui
+Project-URL: Bug Tracker, https://github.com/K0HAX/pysnmptui/issues
+Keywords: snmp,tui
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pysnmptui
+
+Python SNMP TUI (Terminal User Interface)
+
+## Configuration
+
+You can use a configuration file instead of command line flags.
+
+Invoke pysnmptui with `pysnmptui -c config.yaml` if your config file is named "config.yaml" and in the current directory.
+
+Below is an example config.yaml.
+
+```
+Host: 127.0.0.1
+Username: v3user
+AuthProto: SHA
+AuthPassword: password
+PrivProto: AES
+PrivPassword: password
+Version: 3
+ExtraMibs:
+  - IF-MIB
+  - ENTITY-MIB
+  - ./mibs/CISCO-SMI
+  - ./mibs/CISCO-TC
+  - ./mibs/CISCO-IF-EXTENSION-MIB
+  - ./mibs/CISCO-VTP-MIB
+  - ./mibs/CISCO-CDP-MIB
+```
