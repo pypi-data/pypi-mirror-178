@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "maxsetup"
+version = "0.7.0"
+description = "This is a module that automates the file structure and settings of a new project."
+authors = ["Max Ludden <dev@maxludden.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+rich = "^12.6.0"
+loguru = "^0.6.0"
+ujson = "^5.5.0"
+max-yaml = "^0.1.0"
+maxconsole = "^0.4.0"
+maxprogress = "^0.4.0"
+maxcolor = "^1.0.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.10.0"
+ipython = "^8.5.0"
+ipywidgets = "^8.0.2"
+
+[tool.poetry.scripts]
+maxconsole = 'maxconsole:main'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
