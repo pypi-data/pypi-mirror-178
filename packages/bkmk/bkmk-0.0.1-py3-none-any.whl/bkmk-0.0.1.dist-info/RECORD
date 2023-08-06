@@ -1,0 +1,13 @@
+bkmk/__init__.py,sha256=5r7XS9Sa4jQE_QaoXj-oI_kLV4aN68KT2Vs-iAKH7OA,5351
+bkmk/__main__.py,sha256=D48J_s8vO1cL97O7plydMhrVSEm1uxqR6mA2LY4fRyc,3245
+bkmk/base.py,sha256=V4Yc6HoVVBojMBkzTsXmtVXkhlaPNA9-p_uFFQ8P0mI,4603
+bkmk/bkmk_json.py,sha256=ELZFSkZHJ64OaJo1IBpFIVjQV7m6tgFydvB0pSv3ees,2364
+bkmk/chrome_json.py,sha256=Tj0qNuziWj52B34dq13g3dRoYfZu6JkiYD__9fQzWgQ,5239
+bkmk/netscape_html.py,sha256=UNuPPXWMm-m1c7CrYU1fE6UIMGaNojAeVVJ6NxIEIXk,8270
+bkmk/xbel.py,sha256=sfxxkIBFl590aDqfKhMBn2XbLKT10pqkkPbkBoXazBM,5638
+bkmk-0.0.1.dist-info/LICENSE,sha256=-cTHe6o4KABO5UuKTy2y6I7USmI3pJOWW_VR-sD8ti0,1023
+bkmk-0.0.1.dist-info/METADATA,sha256=BgycUObcmAn003SBQ9g7euUI8JFy1NWwiehfkQM0Zw0,2192
+bkmk-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+bkmk-0.0.1.dist-info/entry_points.txt,sha256=NVvAxhDmT5eNpI6uHBvWQPtwMBUWNDB9ORagSXKUkyY,44
+bkmk-0.0.1.dist-info/top_level.txt,sha256=avo-aLGMbjwY2yiMgpptMEK1eQ8no16o8kqkWDhub24,5
+bkmk-0.0.1.dist-info/RECORD,,
