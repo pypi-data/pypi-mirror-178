@@ -1,0 +1,3 @@
+[spacy_factories]
+entityLinker = spacy_canonicalizer.EntityLinker:EntityLinker
+
