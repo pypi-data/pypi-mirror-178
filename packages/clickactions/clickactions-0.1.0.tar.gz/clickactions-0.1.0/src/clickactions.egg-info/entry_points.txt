@@ -1,0 +1,8 @@
+[clickactions.command]
+py-debug = clickactions.command.py_debug:command
+
+[clickactions.example.echo]
+echo = clickactions.example.echo.echo_command:command
+
+[console_scripts]
+clickactions-examples-echo = clickactions.example.echo.echo_commands:commands

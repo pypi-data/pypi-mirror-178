@@ -1,0 +1,38 @@
+[build-system]
+requires = ['setuptools>=42']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = "clickactions"
+version = "0.1.0"
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+dependencies = [
+    'click',
+    "filelock",
+    "pyyaml",
+    "pydevd"
+]
+
+requires-python = ">=3.8"
+authors = [{ name = "Shahim Essaid" }]
+
+[project.scripts]
+clickactions-examples-echo = "clickactions.example.echo.echo_commands:commands"
+
+[tool.setuptools]
+#zip-safe = false
+include-package-data = true
+
+[project.optional-dependencies]
+build = ["build", "twine"]
+
+[project.entry-points."clickactions.command"]
+py-debug = "clickactions.command.py_debug:command"
+
+[project.entry-points."clickactions.example.echo"]
+echo = "clickactions.example.echo.echo_command:command"

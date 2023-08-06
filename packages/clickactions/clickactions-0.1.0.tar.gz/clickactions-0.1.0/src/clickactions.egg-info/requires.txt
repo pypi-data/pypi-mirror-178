@@ -1,0 +1,8 @@
+click
+filelock
+pyyaml
+pydevd
+
+[build]
+build
+twine
