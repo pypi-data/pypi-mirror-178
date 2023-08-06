@@ -1,0 +1,6 @@
+# Sohbet
+
+[https://www.sohbete.com.tr](https://www.sohbete.com.tr) canlı çevrimiçi rastgele görüntülü sohbet odaları seçeneği ile gerçek zamanlı canlı kameralı chat sesli görüntülü konuşma ve sohbet fırsatı bulduruyor.
+Özellikle Almanya, Amerika, Rusya yada Fransa, İngiltere, Danimarka ya da İsviçre, İsveç, Norveç yabancı ülkelerden kişilerle canlı çevrimiçi kameralı ve görüntülü sohbet ederek tanışmak isteyen kişileri çevrimiçi kullanıcıların bir araya geldiği görüntülü sohbet odaları içerisinde eşleştirerek ya da kullanıcıların seçtikleri kişilerle anlık gerçek zamanlı chat fırsatı ile tanışmalarını sağlıyor.
+Telefondan ya da bilgisayarla hiç bir ücret ödemeden kayıt olmadan kolaylıkla kullanılabilen omegle ve random chat tarzı omegle alternatifi rastgele görüntülü sohbet odaları uygulamasız da internet bağlantısı destekleyen mikrofon ve kamera özellikleri bulunan cihazlar ile anonim olarak görüntülü konuşma avantajlarından yararlanmanızı sağlar.
+Mirc görüntülü sohbet alt yapısını kullanan eski chat sitelerinin yeni nesil en son sürümü kullanılarak hazırlanmış canlı görüntülü sohbet uygulaması kullanıcıların tüm kişisel ve cihaz verilerinin aktarım sırasında şifrelenerek huzurlu ve güven içerisinde en iyi ücretsiz görüntülü sohbet siteleri fırsatlarından yararlanmaları amaçlanmaktadır.
