@@ -1,0 +1,7 @@
+importlib_resources
+pandas
+transformers
+numpy
+torch
+IPython
+huggingface_hub<1.0.0,>=0.1.0
