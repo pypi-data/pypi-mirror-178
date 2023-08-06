@@ -1,0 +1,6 @@
+requests
+pyyaml>=5.1
+appdirs
+
+[test]
+pytest>=6.0
