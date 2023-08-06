@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gemovi"
+description = "Visualization tool for generative models"
+authors = [
+    {name = "Nathan Jessurun", email = "ntjessu@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+dependencies = [
+     "numpy",
+     "pandas",
+     "pyqtgraph",
+     "pyyaml",
+     "torch",
+     "torchvision",
+     "qtextras",
+     "scikit-learn",
+]
+dynamic = ["version"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Build Tools",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+]
+
+[project.optional-dependencies]
+train = ["pytorch-lightning>=1.4"]
+
+[tool.setuptools.packages.find]
+include = ["gemovi*"]
+
+[tool.setuptools.dynamic]
+version = { attr = "gemovi.__version__" }
+
+[tool.isort]
+profile = "black"
+reverse_relative = true
+combine_as_imports = true
+
+[tool.unimport]
+ignore_init = true
+exclude = "types_.py"
+
+[tool.piptools.compile]
+input_files = ["./pyproject.toml", "requirements-unreleased.txt"]
+output_file = "requirements-pinned.txt"
+#verbose = true
+extra = ["full"]

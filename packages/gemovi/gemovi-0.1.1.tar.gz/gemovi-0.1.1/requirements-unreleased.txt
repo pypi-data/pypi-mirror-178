@@ -1,0 +1,2 @@
+pyqtgraph@git+https://github.com/pyqtgraph/pyqtgraph.git@025c5d0
+qtextras@git+https://gitlab.com/s3a/qtextras.git@91a093d
