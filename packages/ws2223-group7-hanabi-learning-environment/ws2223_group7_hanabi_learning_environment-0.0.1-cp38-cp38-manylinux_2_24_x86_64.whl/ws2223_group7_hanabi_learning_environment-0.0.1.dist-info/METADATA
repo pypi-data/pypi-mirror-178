@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: ws2223-group7-hanabi-learning-environment
+Version: 0.0.1
+Summary: ws2223-group7 Learning environment for the game of hanabi.
+Author: ws2223-group7/hanabi-learning-environment
+License-File: LICENSE
+Requires-Dist: cffi
+
+ws2223-group7 Learning environment for the game of hanabi.
