@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+setup.yml
+skyant/rest/__init__.py
+skyant/rest/app/__init__.py
+skyant/rest/app/_platform.py
+skyant_rest.egg-info/PKG-INFO
+skyant_rest.egg-info/SOURCES.txt
+skyant_rest.egg-info/dependency_links.txt
+skyant_rest.egg-info/requires.txt
+skyant_rest.egg-info/top_level.txt

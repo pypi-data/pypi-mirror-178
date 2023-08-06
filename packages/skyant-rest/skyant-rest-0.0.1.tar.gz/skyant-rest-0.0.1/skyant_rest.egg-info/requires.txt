@@ -1,0 +1,7 @@
+fastapi
+email-validator
+pydantic
+google.auth
+hypercorn
+pyyaml
+uvicorn
