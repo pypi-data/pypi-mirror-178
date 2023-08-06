@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+pycodemarker/__init__.py
+pycodemarker/codemarker.py
+pycodemarker/log_helper.py
+pycodemarker/publisher.py
+pycodemarker.egg-info/PKG-INFO
+pycodemarker.egg-info/SOURCES.txt
+pycodemarker.egg-info/dependency_links.txt
+pycodemarker.egg-info/top_level.txt
