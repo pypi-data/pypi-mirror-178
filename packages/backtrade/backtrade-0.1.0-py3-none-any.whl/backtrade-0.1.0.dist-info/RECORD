@@ -1,0 +1,12 @@
+backtrade/__init__.py,sha256=uoq0Jr2Cbd9MnNPZECDcXGP7XwfUc60_sSCjBK0XZnk,322
+backtrade/backtest/__init__.py,sha256=ZvxwnmBq43Ie6QFbOKvYMpRYeQBr175i6Hd1VIKAs-0,136
+backtrade/backtest/backtest.py,sha256=3jJhpQ3NQBhmAHrf9nCktnl6dfnh2izePYAki_F95rU,9206
+backtrade/backtest/dtypes.py,sha256=hNGyjz_buA5gDX-kfILDD9zh9yiGI6K7Jifj78hw-qo,1471
+backtrade/finished_order.py,sha256=r5qqFmmDW5o8Elxn00ilH8G1qAiTzH4OAxNkmuv-A70,594
+backtrade/logic.py,sha256=UeG2x_kJrj2Tf-gvE6sq76RFEOzgaEMFPMSCfsGUNj0,4693
+backtrade/order.py,sha256=UjuJzc3PFt8Wfj2au-d0_4ys8xjW5hHxaTRGuWimPOM,455
+backtrade/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+backtrade-0.1.0.dist-info/LICENSE,sha256=8Y-ucdY4Exe735EYL78lad7R2QSpIcB2XF1saOAdI04,35088
+backtrade-0.1.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+backtrade-0.1.0.dist-info/METADATA,sha256=LHdvgiZTad1AOle5azGpBq4HJjai0jDgjNojF8PRj94,5650
+backtrade-0.1.0.dist-info/RECORD,,
