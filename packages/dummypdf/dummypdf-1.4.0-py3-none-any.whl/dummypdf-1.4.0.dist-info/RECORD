@@ -1,0 +1,12 @@
+dummypdf/__init__.py,sha256=maYVqhi9XIPzs0QURph9q-rF4uJbxb-ZICJc4-3r-MM,924
+dummypdf/__main__.py,sha256=3EucVmqf3rtJU_3aCrNEzKp0mlmy9NOFNxIvhdAcaec,9571
+dummypdf/errors.py,sha256=sPBcvfGXpfd_k4YPwIeXMs96F9WqvVEHNMbbVxpG8BY,1031
+dummypdf/pdf.py,sha256=dSms3tb00RfNwwP926Dc4lr4gl0tvWKNCoUrYEEQi-s,4404
+dummypdf-1.4.0.dist-info/AUTHORS,sha256=X7TYIj4k0AjeEe6iTOp7-KDz32OoVuzW8P8msPZQ9mI,17
+dummypdf-1.4.0.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+dummypdf-1.4.0.dist-info/METADATA,sha256=JGdwFaKbDIiRw7UpIgXwB8j1piQ-mGYIhELVqbmsweY,2608
+dummypdf-1.4.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dummypdf-1.4.0.dist-info/entry_points.txt,sha256=Wj-PN9v-Iuhl7FOBNDrs5a5631HR3rPLAGwIGjufVZE,52
+dummypdf-1.4.0.dist-info/top_level.txt,sha256=SnU1tIGu7h_dznZ_cBPK9ur1yU59LNs-Qlmc7I34EMw,9
+dummypdf-1.4.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+dummypdf-1.4.0.dist-info/RECORD,,
