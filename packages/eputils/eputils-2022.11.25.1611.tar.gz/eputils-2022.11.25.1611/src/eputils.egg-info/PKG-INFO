@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: eputils
+Version: 2022.11.25.1611
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# eputils package
+
+Various common classes used across the ep project
