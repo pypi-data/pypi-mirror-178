@@ -1,0 +1,10 @@
+kgcreator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kgcreator/__main__.py,sha256=8hDtWlaFZK24KhfNq_ZKgtXqYHsDQDetukOCMlsbW0Q,59
+kgcreator/cli.py,sha256=tr6Ia2R3z9RLr9Yj0Q3urEozekpfbhasWzeMXXpGI4U,425
+kgcreator/kgcreator.py,sha256=cX7R1eN1ai3x8yDZQmPRBtPFV2Mvvfm3M1FYRkzeQcY,2603
+kgcreator-0.11.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+kgcreator-0.11.dist-info/METADATA,sha256=zFK0-hBSbDL7rVC7aHOGY-PGvS3wqmEOBqxe4sCZLCY,2550
+kgcreator-0.11.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+kgcreator-0.11.dist-info/entry_points.txt,sha256=W8FNwQ3XonX2QY289k8BVFWikK1M1YL2bjly9JkQkKU,48
+kgcreator-0.11.dist-info/top_level.txt,sha256=cNn07-2v-w_TdbGrsaskH-duuttNx_RT0tjzezKhpZg,10
+kgcreator-0.11.dist-info/RECORD,,
